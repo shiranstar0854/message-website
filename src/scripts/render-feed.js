@@ -29,6 +29,25 @@
     `).join("");
   }
 
+  function renderSummary(value) {
+    const summary = String(value || "").trim();
+    if (!summary) return "";
+    if (summary.length <= 120) {
+      return `<p class="feed-summary">${escapeHtml(summary)}</p>`;
+    }
+
+    const preview = `${summary.slice(0, 120).trim()}...`;
+    return `
+      <details class="feed-summary-disclosure">
+        <summary>
+          <span class="feed-summary-preview">${escapeHtml(preview)}</span>
+          <span class="feed-summary-toggle" aria-hidden="true"></span>
+        </summary>
+        <p class="feed-summary-full">${escapeHtml(summary)}</p>
+      </details>
+    `;
+  }
+
   function renderFeed(container, items) {
     if (!items.length) {
       container.innerHTML = '<div class="empty-state">当前筛选条件下没有可展示的信息。</div>';
@@ -47,7 +66,7 @@
         <article class="feed-card">
           <div>
             <h3><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a></h3>
-            <p>${escapeHtml(item.summary)}</p>
+            ${renderSummary(item.summary)}
             <div class="item-meta">
               <span>${escapeHtml(item.source)}</span>
               <span>${formatDate(item.publishedAt)}</span>
@@ -67,6 +86,7 @@
   window.MessageChooseRender = {
     formatDate,
     renderChannelSummary,
-    renderFeed
+    renderFeed,
+    renderSummary
   };
 })();

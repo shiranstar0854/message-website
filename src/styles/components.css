@@ -194,9 +194,67 @@ output {
   letter-spacing: 0;
 }
 
-.feed-card p {
+.feed-summary,
+.feed-summary-full {
   margin: 0 0 12px;
   color: var(--muted);
+}
+
+.feed-summary-disclosure {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.feed-summary-disclosure summary {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.feed-summary-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.feed-summary-preview {
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.feed-summary-toggle {
+  display: inline-flex;
+  width: max-content;
+  align-items: center;
+  color: var(--teal-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.feed-summary-toggle::after {
+  content: "展开内容";
+}
+
+.feed-summary-disclosure[open] .feed-summary-preview {
+  display: none;
+}
+
+.feed-summary-disclosure[open] .feed-summary-toggle::after {
+  content: "收起内容";
+}
+
+.feed-summary-full {
+  margin-top: 10px;
+  max-height: 18rem;
+  padding: 10px 12px;
+  overflow-y: auto;
+  background: var(--surface-alt);
+  border-radius: 7px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .feed-card a {
