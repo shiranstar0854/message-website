@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-24T00:00:00.000Z",
+  "sources": [
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "category": "tech",
+      "status": "healthy",
+      "lastCheckedAt": "2026-05-24T00:00:00.000Z",
+      "lastSuccessAt": "2026-05-24T00:00:00.000Z",
+      "failureCount": 0
+    },
+    {
+      "id": "federal-reserve",
+      "name": "Federal Reserve",
+      "category": "finance",
+      "status": "healthy",
+      "lastCheckedAt": "2026-05-24T00:00:00.000Z",
+      "lastSuccessAt": "2026-05-24T00:00:00.000Z",
+      "failureCount": 0
+    },
+    {
+      "id": "bbc-world",
+      "name": "BBC World",
+      "category": "news",
+      "status": "healthy",
+      "lastCheckedAt": "2026-05-24T00:00:00.000Z",
+      "lastSuccessAt": "2026-05-24T00:00:00.000Z",
+      "failureCount": 0
+    }
+  ]
+}

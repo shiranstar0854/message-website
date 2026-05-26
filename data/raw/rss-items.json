@@ -1,0 +1,90 @@
+[
+  {
+    "sourceId": "techcrunch",
+    "sourceName": "TechCrunch",
+    "sourceType": "rss",
+    "category": "tech",
+    "credibility": 82,
+    "fetchedAt": "2026-05-24T00:00:00.000Z",
+    "items": [
+      {
+        "title": "AI infrastructure teams shift spending toward inference platforms",
+        "link": "https://example.com/tech/ai-inference-platforms?utm_source=rss",
+        "pubDate": "2026-05-23T13:00:00.000Z",
+        "contentSnippet": "Cloud providers and model developers are paying closer attention to inference cost, latency and security."
+      },
+      {
+        "title": "Developer security tooling moves closer to the code review workflow",
+        "link": "https://example.com/tech/security-code-review",
+        "pubDate": "2026-05-22T09:15:00.000Z",
+        "contentSnippet": "New platform updates connect dependency risk, identity controls and review automation."
+      }
+    ]
+  },
+  {
+    "sourceId": "the-verge",
+    "sourceName": "The Verge",
+    "sourceType": "rss",
+    "category": "tech",
+    "credibility": 80,
+    "fetchedAt": "2026-05-24T00:00:00.000Z",
+    "items": [
+      {
+        "title": "AI infrastructure teams shift spending toward inference platforms",
+        "link": "https://example.com/tech/ai-inference-platforms?ref=homepage",
+        "pubDate": "2026-05-23T14:10:00.000Z",
+        "contentSnippet": "A similar report highlights how model serving economics are becoming a platform decision."
+      },
+      {
+        "title": "Consumer device makers add local AI controls after privacy reviews",
+        "link": "https://example.com/tech/local-ai-controls",
+        "pubDate": "2026-05-21T16:45:00.000Z",
+        "contentSnippet": "Device vendors are moving more inference and permission controls onto local hardware."
+      }
+    ]
+  },
+  {
+    "sourceId": "federal-reserve",
+    "sourceName": "Federal Reserve",
+    "sourceType": "rss",
+    "category": "finance",
+    "credibility": 96,
+    "fetchedAt": "2026-05-24T00:00:00.000Z",
+    "items": [
+      {
+        "title": "Central bank officials outline bank supervision priorities",
+        "link": "https://example.com/finance/supervision-priorities",
+        "pubDate": "2026-05-23T10:30:00.000Z",
+        "contentSnippet": "Officials emphasized liquidity monitoring, cyber resilience and market structure risks."
+      },
+      {
+        "title": "Inflation expectations report points to slower consumer price pressure",
+        "link": "https://example.com/finance/inflation-expectations",
+        "pubDate": "2026-05-20T12:00:00.000Z",
+        "contentSnippet": "Survey data suggests medium-term inflation expectations eased modestly."
+      }
+    ]
+  },
+  {
+    "sourceId": "bbc-world",
+    "sourceName": "BBC World",
+    "sourceType": "rss",
+    "category": "news",
+    "credibility": 86,
+    "fetchedAt": "2026-05-24T00:00:00.000Z",
+    "items": [
+      {
+        "title": "Election officials publish final timeline for national vote",
+        "link": "https://example.com/news/election-timeline",
+        "pubDate": "2026-05-23T08:20:00.000Z",
+        "contentSnippet": "The timetable clarifies registration windows, observer access and reporting checkpoints."
+      },
+      {
+        "title": "Security council members debate new sanctions package",
+        "link": "https://example.com/news/security-council-sanctions",
+        "pubDate": "2026-05-22T19:00:00.000Z",
+        "contentSnippet": "Diplomats said negotiations will continue after several amendments were proposed."
+      }
+    ]
+  }
+]

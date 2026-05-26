@@ -1,0 +1,38 @@
+{
+  "baseScore": 38,
+  "sourceCredibilityWeight": 0.32,
+  "duplicatePenalty": 2,
+  "freshness": {
+    "halfLifeHours": 84,
+    "weight": 18
+  },
+  "categoryBoosts": {
+    "tech": 2,
+    "finance": 3,
+    "news": 1
+  },
+  "sourceBoosts": {
+    "Federal Reserve": 4,
+    "U.S. SEC Press Releases": 4
+  },
+  "keywordWeights": {
+    "highValue": [
+      { "term": "AI", "score": 8 },
+      { "term": "artificial intelligence", "score": 8 },
+      { "term": "security", "score": 6 },
+      { "term": "chip", "score": 5 },
+      { "term": "regulation", "score": 6 },
+      { "term": "central bank", "score": 8 },
+      { "term": "inflation", "score": 6 },
+      { "term": "market structure", "score": 7 },
+      { "term": "election", "score": 5 },
+      { "term": "policy", "score": 4 }
+    ],
+    "riskSignals": [
+      { "term": "breach", "score": 8 },
+      { "term": "sanction", "score": 6 },
+      { "term": "default", "score": 7 },
+      { "term": "recall", "score": 5 }
+    ]
+  }
+}

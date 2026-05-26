@@ -1,0 +1,21 @@
+{
+  "allowedCategories": ["tech", "finance", "news"],
+  "blockedSources": [],
+  "blockedTerms": [
+    "celebrity gossip",
+    "horoscope",
+    "coupon",
+    "giveaway",
+    "sponsored post"
+  ],
+  "lowValueTitlePatterns": [
+    "sponsored",
+    "daily deals",
+    "coupon",
+    "promo code",
+    "rumor roundup"
+  ],
+  "minimumTitleLength": 12,
+  "requireUrl": true,
+  "maxAgeDays": 30
+}

@@ -1,0 +1,45 @@
+{
+  "category": "news",
+  "sources": [
+    {
+      "id": "bbc-world",
+      "name": "BBC World",
+      "type": "rss",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "enabled": true,
+      "credibility": 86,
+      "updateFrequency": "hourly",
+      "purpose": "International public-interest news"
+    },
+    {
+      "id": "npr-news",
+      "name": "NPR News",
+      "type": "rss",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "enabled": true,
+      "credibility": 84,
+      "updateFrequency": "hourly",
+      "purpose": "U.S. public news and policy reporting"
+    },
+    {
+      "id": "nytimes-home",
+      "name": "The New York Times",
+      "type": "rss",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "enabled": true,
+      "credibility": 84,
+      "updateFrequency": "hourly",
+      "purpose": "Broad news agenda and breaking developments"
+    },
+    {
+      "id": "gnews-api",
+      "name": "GNews API",
+      "type": "api",
+      "url": "https://gnews.io/api/v4/top-headlines?token=${GNEWS_API_KEY}&lang=en",
+      "enabled": false,
+      "credibility": 72,
+      "updateFrequency": "hourly",
+      "purpose": "Optional API-backed headline enrichment"
+    }
+  ]
+}

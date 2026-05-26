@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message Choose</title>
+    <meta name="description" content="科技、金融、新闻信息筛选台">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand-block">
+        <a class="brand-mark" href="#feed" aria-label="Message Choose 首页">
+          <span class="brand-symbol" aria-hidden="true">MC</span>
+          <span>
+            <strong>Message Choose</strong>
+            <small>科技 · 金融 · 新闻</small>
+          </span>
+        </a>
+      </div>
+      <div class="header-status" aria-live="polite">
+        <span id="generated-at">等待数据</span>
+        <span id="total-count">0 条</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="overview-band" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">信息筛选台</h1>
+          <p>按来源、关键词、评分和发布时间整理三类信息，优先展示高价值内容。</p>
+        </div>
+        <div class="overview-metrics" id="channel-summary" aria-label="频道概览"></div>
+      </section>
+
+      <section class="control-band" aria-label="筛选条件">
+        <div class="filter-row filter-row-primary">
+          <div class="segmented-control" id="channel-filter" aria-label="频道筛选"></div>
+          <label class="search-field">
+            <span>关键词</span>
+            <input id="keyword-filter" type="search" placeholder="搜索标题、摘要、标签">
+          </label>
+        </div>
+        <div class="filter-row">
+          <label>
+            <span>来源</span>
+            <select id="source-filter">
+              <option value="all">全部来源</option>
+            </select>
+          </label>
+          <label>
+            <span>最低评分</span>
+            <input id="score-filter" type="range" min="0" max="100" value="60">
+            <output id="score-output" for="score-filter">60</output>
+          </label>
+          <label>
+            <span>排序</span>
+            <select id="sort-filter">
+              <option value="score-desc">评分优先</option>
+              <option value="time-desc">最新优先</option>
+              <option value="time-asc">最早优先</option>
+            </select>
+          </label>
+          <button class="ghost-button" id="clear-filters" type="button">重置</button>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <aside class="source-panel" aria-labelledby="source-title">
+          <h2 id="source-title">来源状态</h2>
+          <div id="source-status"></div>
+        </aside>
+
+        <section class="feed-panel" aria-labelledby="feed-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="feed-title">筛选结果</h2>
+              <p id="result-summary">正在加载信息</p>
+            </div>
+          </div>
+          <div class="feed-list" id="feed" aria-live="polite"></div>
+        </section>
+      </div>
+    </main>
+
+    <noscript>请启用 JavaScript 查看信息筛选结果。</noscript>
+
+    <script src="src/scripts/render-feed.js"></script>
+    <script src="src/scripts/source-status.js"></script>
+    <script src="src/scripts/filters-ui.js"></script>
+    <script src="src/scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "sourceId": "sec-press",
+    "sourceName": "U.S. SEC Press Releases",
+    "sourceType": "api",
+    "category": "finance",
+    "credibility": 94,
+    "fetchedAt": "2026-05-24T00:00:00.000Z",
+    "body": {
+      "items": [
+        {
+          "headline": "Regulator proposes market structure disclosure update",
+          "url": "https://example.com/finance/market-structure-disclosure",
+          "published_at": "2026-05-23T17:00:00.000Z",
+          "summary": "The proposal would increase transparency around execution quality and routing incentives."
+        }
+      ]
+    }
+  },
+  {
+    "sourceId": "github-blog-api",
+    "sourceName": "GitHub Blog API",
+    "sourceType": "api",
+    "category": "tech",
+    "credibility": 88,
+    "fetchedAt": "2026-05-24T00:00:00.000Z",
+    "body": {
+      "items": [
+        {
+          "headline": "Platform release adds policy controls for enterprise developers",
+          "url": "https://example.com/tech/developer-platform-policy",
+          "published_at": "2026-05-22T21:00:00.000Z",
+          "summary": "Enterprise administrators can now combine identity rules, audit trails and code review policy."
+        }
+      ]
+    }
+  }
+]

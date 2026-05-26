@@ -1,0 +1,45 @@
+{
+  "category": "finance",
+  "sources": [
+    {
+      "id": "federal-reserve",
+      "name": "Federal Reserve",
+      "type": "rss",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "enabled": true,
+      "credibility": 96,
+      "updateFrequency": "daily",
+      "purpose": "Official monetary policy and supervision releases"
+    },
+    {
+      "id": "sec-press",
+      "name": "U.S. SEC Press Releases",
+      "type": "rss",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "enabled": true,
+      "credibility": 94,
+      "updateFrequency": "daily",
+      "purpose": "Official enforcement, market structure and disclosure news"
+    },
+    {
+      "id": "imf-news",
+      "name": "IMF News",
+      "type": "rss",
+      "url": "https://www.imf.org/en/News/rss?language=eng",
+      "enabled": true,
+      "credibility": 90,
+      "updateFrequency": "daily",
+      "purpose": "Macro and international financial stability context"
+    },
+    {
+      "id": "alpha-vantage-news",
+      "name": "Alpha Vantage News Sentiment",
+      "type": "api",
+      "url": "https://www.alphavantage.co/query?function=NEWS_SENTIMENT&apikey=${ALPHA_VANTAGE_API_KEY}",
+      "enabled": false,
+      "credibility": 76,
+      "updateFrequency": "hourly",
+      "purpose": "Market news enrichment when an API key is configured"
+    }
+  ]
+}

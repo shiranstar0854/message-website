@@ -1,0 +1,45 @@
+{
+  "category": "tech",
+  "sources": [
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "type": "rss",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true,
+      "credibility": 82,
+      "updateFrequency": "hourly",
+      "purpose": "Startup, AI, platform and venture technology coverage"
+    },
+    {
+      "id": "the-verge",
+      "name": "The Verge",
+      "type": "rss",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "enabled": true,
+      "credibility": 80,
+      "updateFrequency": "hourly",
+      "purpose": "Consumer technology, platforms, policy and product shifts"
+    },
+    {
+      "id": "ars-technica",
+      "name": "Ars Technica",
+      "type": "rss",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "enabled": true,
+      "credibility": 84,
+      "updateFrequency": "daily",
+      "purpose": "Deep technical reporting and security analysis"
+    },
+    {
+      "id": "github-blog-api",
+      "name": "GitHub Blog API",
+      "type": "api",
+      "url": "https://api.github.com/repos/github/blog/releases",
+      "enabled": false,
+      "credibility": 88,
+      "updateFrequency": "ad hoc",
+      "purpose": "Official developer platform release data when enabled"
+    }
+  ]
+}

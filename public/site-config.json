@@ -1,0 +1,24 @@
+{
+  "siteName": "Message Choose",
+  "tagline": "科技、金融、新闻信息筛选台",
+  "defaultLimit": 8,
+  "defaultSort": "score-desc",
+  "scoreFloor": 60,
+  "channels": [
+    {
+      "id": "tech",
+      "label": "科技",
+      "description": "AI、云计算、芯片、开发者平台与安全基础设施。"
+    },
+    {
+      "id": "finance",
+      "label": "金融",
+      "description": "央行、监管、市场结构、宏观数据与风险信号。"
+    },
+    {
+      "id": "news",
+      "label": "新闻",
+      "description": "公共政策、国际事件、社会治理与重大突发消息。"
+    }
+  ]
+}
