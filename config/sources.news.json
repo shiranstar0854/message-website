@@ -32,6 +32,16 @@
       "purpose": "Broad news agenda and breaking developments"
     },
     {
+      "id": "chinanews-breaking",
+      "name": "中国新闻网即时新闻",
+      "type": "rss",
+      "url": "https://www.chinanews.com.cn/rss/scroll-news.xml",
+      "enabled": true,
+      "credibility": 84,
+      "updateFrequency": "hourly",
+      "purpose": "China breaking and general-interest news"
+    },
+    {
       "id": "gnews-api",
       "name": "GNews API",
       "type": "api",

@@ -26,10 +26,30 @@
       "name": "IMF News",
       "type": "rss",
       "url": "https://www.imf.org/en/News/rss?language=eng",
-      "enabled": true,
+      "enabled": false,
       "credibility": 90,
       "updateFrequency": "daily",
       "purpose": "Macro and international financial stability context"
+    },
+    {
+      "id": "chinanews-finance",
+      "name": "中国新闻网财经",
+      "type": "rss",
+      "url": "https://www.chinanews.com.cn/rss/finance.xml",
+      "enabled": true,
+      "credibility": 84,
+      "updateFrequency": "hourly",
+      "purpose": "China macroeconomic, market and business news"
+    },
+    {
+      "id": "cnbc-business",
+      "name": "CNBC Business News",
+      "type": "rss",
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "enabled": true,
+      "credibility": 86,
+      "updateFrequency": "hourly",
+      "purpose": "U.S. business, markets and financial news"
     },
     {
       "id": "alpha-vantage-news",

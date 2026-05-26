@@ -14,54 +14,14 @@
 
   const FALLBACK_DATA = {
     siteName: "Message Choose",
-    generatedAt: "2026-05-24T00:00:00.000Z",
-    totalItems: 3,
+    generatedAt: "",
+    totalItems: 0,
     channels: {
-      tech: { label: "科技", count: 1, items: [] },
-      finance: { label: "金融", count: 1, items: [] },
-      news: { label: "新闻", count: 1, items: [] }
+      tech: { label: "科技", count: 0, items: [] },
+      finance: { label: "金融", count: 0, items: [] },
+      news: { label: "新闻", count: 0, items: [] }
     },
-    items: [
-      {
-        id: "fallback-tech",
-        title: "AI infrastructure teams shift spending toward inference platforms",
-        url: "https://example.com/tech/ai-inference-platforms",
-        source: "TechCrunch",
-        sourceType: "rss",
-        category: "tech",
-        publishedAt: "2026-05-23T13:00:00.000Z",
-        summary: "Cloud providers and model developers are paying closer attention to inference cost, latency and security.",
-        score: 92,
-        tags: ["AI", "cloud"],
-        duplicateCount: 1
-      },
-      {
-        id: "fallback-finance",
-        title: "Central bank officials outline bank supervision priorities",
-        url: "https://example.com/finance/supervision-priorities",
-        source: "Federal Reserve",
-        sourceType: "rss",
-        category: "finance",
-        publishedAt: "2026-05-23T10:30:00.000Z",
-        summary: "Officials emphasized liquidity monitoring, cyber resilience and market structure risks.",
-        score: 90,
-        tags: ["policy", "risk"],
-        duplicateCount: 0
-      },
-      {
-        id: "fallback-news",
-        title: "Election officials publish final timeline for national vote",
-        url: "https://example.com/news/election-timeline",
-        source: "BBC World",
-        sourceType: "rss",
-        category: "news",
-        publishedAt: "2026-05-23T08:20:00.000Z",
-        summary: "The timetable clarifies registration windows, observer access and reporting checkpoints.",
-        score: 78,
-        tags: ["election"],
-        duplicateCount: 0
-      }
-    ]
+    items: []
   };
 
   const FALLBACK_HEALTH = {

@@ -32,6 +32,26 @@
       "purpose": "Deep technical reporting and security analysis"
     },
     {
+      "id": "36kr",
+      "name": "36Kr",
+      "type": "rss",
+      "url": "https://36kr.com/feed",
+      "enabled": true,
+      "credibility": 78,
+      "updateFrequency": "hourly",
+      "purpose": "China technology, startups and venture market coverage"
+    },
+    {
+      "id": "solidot",
+      "name": "Solidot",
+      "type": "rss",
+      "url": "https://www.solidot.org/index.rss",
+      "enabled": true,
+      "credibility": 76,
+      "updateFrequency": "daily",
+      "purpose": "Chinese-language technology and open source developments"
+    },
+    {
       "id": "github-blog-api",
       "name": "GitHub Blog API",
       "type": "api",

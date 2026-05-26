@@ -1,5 +1,6 @@
 const path = require("node:path");
 const { readSources, writeJson } = require("./lib/file-utils");
+const { extractItems } = require("./lib/rss-parser");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 
@@ -25,6 +26,7 @@ async function fetchRssSources() {
         url: source.url,
         status: response.status,
         ok: response.ok,
+        itemCount: extractItems(body).length,
         fetchedAt,
         body
       });
@@ -50,6 +52,18 @@ if (require.main === module) {
   fetchRssSources()
     .then((results) => {
       writeJson(path.join(ROOT_DIR, "data", "raw", "rss-items.json"), results);
+      writeJson(path.join(ROOT_DIR, "src", "data", "source-health.json"), {
+        generatedAt: new Date().toISOString(),
+        sources: results.map((result) => ({
+          id: result.sourceId,
+          name: result.sourceName,
+          category: result.category,
+          status: result.ok && result.itemCount > 0 ? "healthy" : result.ok ? "empty" : "failed",
+          lastCheckedAt: result.fetchedAt,
+          lastSuccessAt: result.ok && result.itemCount > 0 ? result.fetchedAt : null,
+          failureCount: result.ok ? 0 : 1
+        }))
+      });
       console.log(`Fetched ${results.length} RSS source records.`);
     })
     .catch((error) => {
