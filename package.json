@@ -14,7 +14,10 @@
     "dedupe": "node scripts/dedupe-items.js",
     "score": "node scripts/score-items.js",
     "generate:latest": "node scripts/generate-latest-data.js",
-    "build:data": "node scripts/normalize-items.js && node scripts/filter-items.js && node scripts/dedupe-items.js && node scripts/score-items.js && node scripts/generate-latest-data.js"
+    "build:data": "node scripts/normalize-items.js && node scripts/filter-items.js && node scripts/dedupe-items.js && node scripts/score-items.js && node scripts/generate-latest-data.js",
+    "audit:sources": "node scripts/source-audit.js",
+    "archive:daily": "node scripts/archive-daily-data.js",
+    "update:daily": "npm run fetch:rss && npm run build:data && npm run audit:sources && npm run archive:daily"
   },
   "engines": {
     "node": ">=18"

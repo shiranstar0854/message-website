@@ -167,6 +167,14 @@ output {
   border-radius: 50%;
 }
 
+.status-empty::before {
+  background: var(--gold);
+}
+
+.status-failed::before {
+  background: var(--red);
+}
+
 .feed-list {
   display: grid;
   gap: 10px;
