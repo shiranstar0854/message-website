@@ -174,3 +174,31 @@ test("scores items and builds channel-limited latest data sorted by score", () =
   assert.equal(latest.channels.finance.items[0].id, "market");
   assert.equal(latest.generatedAt, "2026-05-24T12:00:00.000Z");
 });
+
+test("latest data publishes compact display fields only", () => {
+  const latest = buildLatestData([{
+    id: "compact",
+    title: "Compact website payload",
+    url: "https://example.com/compact",
+    source: "Example",
+    sourceType: "rss",
+    category: "tech",
+    publishedAt: "2026-05-24T00:00:00.000Z",
+    summary: "x".repeat(900),
+    tags: Array.from({ length: 10 }, (_, index) => `tag-${index}`),
+    score: 88,
+    duplicateCount: 2,
+    raw: { content: "unpublished source payload" },
+    scoreBreakdown: { freshness: 10 },
+    filterReasons: []
+  }], {
+    channels: [{ id: "tech", label: "Technology" }]
+  });
+
+  assert.equal(latest.items[0].summary.length, 500);
+  assert.equal(latest.items[0].tags.length, 8);
+  assert.equal(latest.items[0].duplicateCount, 2);
+  assert.equal("raw" in latest.items[0], false);
+  assert.equal("scoreBreakdown" in latest.items[0], false);
+  assert.equal("filterReasons" in latest.items[0], false);
+});

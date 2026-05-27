@@ -1,6 +1,7 @@
 const crypto = require("node:crypto");
 
 const DEFAULT_FETCHED_AT = () => new Date().toISOString();
+const PUBLISHED_SUMMARY_LIMIT = 500;
 
 function normalizeText(value) {
   return String(value || "")
@@ -311,10 +312,31 @@ function sortItems(items, sortBy = "score-desc") {
   });
 }
 
+function buildPublishedItem(item) {
+  const summary = String(item.summary || "");
+  const publishedSummary = summary.length > PUBLISHED_SUMMARY_LIMIT
+    ? `${summary.slice(0, PUBLISHED_SUMMARY_LIMIT - 3).trimEnd()}...`
+    : summary;
+
+  return {
+    id: item.id,
+    title: item.title,
+    url: item.url,
+    source: item.source,
+    sourceType: item.sourceType,
+    category: item.category,
+    publishedAt: item.publishedAt,
+    summary: publishedSummary,
+    tags: (item.tags || []).slice(0, 8),
+    score: item.score,
+    duplicateCount: Number(item.duplicateCount || 0)
+  };
+}
+
 function buildLatestData(items, siteConfig = {}, generatedAt = DEFAULT_FETCHED_AT()) {
   const defaultLimit = Number(siteConfig.defaultLimit || 12);
   const channels = {};
-  const sortedItems = sortItems(items);
+  const sortedItems = sortItems(items).map(buildPublishedItem);
   const channelConfig = siteConfig.channels || [
     { id: "tech", label: "Technology" },
     { id: "finance", label: "Finance" },
@@ -351,5 +373,6 @@ module.exports = {
   dedupeItems,
   scoreItems,
   sortItems,
+  buildPublishedItem,
   buildLatestData
 };

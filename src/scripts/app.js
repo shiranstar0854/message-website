@@ -36,7 +36,7 @@
     if (window.location.protocol === "file:") return fallback;
 
     try {
-      const response = await fetch(url, { cache: "no-store" });
+      const response = await fetch(url, { cache: "no-cache" });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     } catch {
@@ -55,10 +55,10 @@
     }).format(date)}`;
   }
 
-  function updateSummary(data, filteredItems) {
+  function updateSummary(data, displayedCount, filteredCount) {
     document.getElementById("generated-at").textContent = formatGeneratedAt(data.generatedAt);
-    document.getElementById("total-count").textContent = `${filteredItems.length} 条`;
-    document.getElementById("result-summary").textContent = `当前显示 ${filteredItems.length} 条，数据池 ${data.totalItems || data.items.length} 条。`;
+    document.getElementById("total-count").textContent = `${filteredCount} 条`;
+    document.getElementById("result-summary").textContent = `当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
   }
 
   async function init() {
@@ -71,13 +71,32 @@
     const feed = document.getElementById("feed");
     const summary = document.getElementById("channel-summary");
     const sourceStatus = document.getElementById("source-status");
+    const loadMoreButton = document.getElementById("load-more");
+    const pageSize = Number(data.defaultLimit || config.defaultLimit || 8);
+    let activeState = null;
+    let visibleLimit = pageSize;
+
+    function renderResults(resetLimit) {
+      if (resetLimit) visibleLimit = pageSize;
+      const filteredItems = window.MessageChooseFilters.applyFilters(data.items || [], activeState);
+      const displayedItems = filteredItems.slice(0, visibleLimit);
+      window.MessageChooseRender.renderFeed(feed, displayedItems);
+      updateSummary(data, displayedItems.length, filteredItems.length);
+
+      const remainingCount = filteredItems.length - displayedItems.length;
+      loadMoreButton.hidden = remainingCount <= 0;
+      loadMoreButton.textContent = `显示更多（剩余 ${remainingCount} 条）`;
+    }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     window.MessageChooseFilters.initFilters(config, data, (state) => {
-      const filteredItems = window.MessageChooseFilters.applyFilters(data.items || [], state);
-      window.MessageChooseRender.renderFeed(feed, filteredItems);
-      updateSummary(data, filteredItems);
+      activeState = state;
+      renderResults(true);
+    });
+    loadMoreButton.addEventListener("click", () => {
+      visibleLimit += pageSize;
+      renderResults(false);
     });
   }
 
