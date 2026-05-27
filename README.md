@@ -34,7 +34,7 @@ npm.cmd run generate:latest
 
 ## 自动更新
 
-`.github/workflows/daily-update.yml` 每天北京时间 `08:17` 自动更新 RSS 数据，也支持在 GitHub Actions 页面手动触发。更新任务会在来源短暂不可访问时保留上一份有效数据，并生成来源审计和每日归档。
+`.github/workflows/daily-update.yml` 每天北京时间 `08:17` 自动更新 RSS 数据，并在 `08:47` 提供不重复发布的备用触发，也支持手动触发。更新任务会在来源短暂不可访问时保留上一份有效数据，并生成来源审计和每日归档。
 
 ## 数据字段
 
