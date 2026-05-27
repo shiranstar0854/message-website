@@ -84,8 +84,9 @@
       updateSummary(data, displayedItems.length, filteredItems.length);
 
       const remainingCount = filteredItems.length - displayedItems.length;
+      const nextVisibleLimit = Math.min(filteredItems.length, visibleLimit * 2);
       loadMoreButton.hidden = remainingCount <= 0;
-      loadMoreButton.textContent = `显示更多（剩余 ${remainingCount} 条）`;
+      loadMoreButton.textContent = `展开至 ${nextVisibleLimit} 条（剩余 ${remainingCount} 条）`;
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
@@ -95,7 +96,7 @@
       renderResults(true);
     });
     loadMoreButton.addEventListener("click", () => {
-      visibleLimit += pageSize;
+      visibleLimit *= 2;
       renderResults(false);
     });
   }
