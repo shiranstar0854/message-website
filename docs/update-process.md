@@ -1,6 +1,6 @@
 # 更新流程
 
-阶段 4 已实现自动更新。由于 GitHub 内置 `schedule` 未产生运行记录，工作流文件 `.github/workflows/daily-update.yml` 只保留 `workflow_dispatch` 入口，由外部调度器定时调用。当前外部任务按小时触发一次，也支持在 GitHub Actions 页面手动触发。
+阶段 4 的更新工作流已实现。由于 GitHub 内置 `schedule` 未产生运行记录，工作流文件 `.github/workflows/daily-update.yml` 只保留 `workflow_dispatch` 入口，供托管在外部平台的调度器调用，也支持在 GitHub Actions 页面手动触发。线上定时调度需在外部平台完成授权和部署后才会生效。
 
 ## 执行流程
 
@@ -9,13 +9,27 @@ npm.cmd test
 npm.cmd run update:daily
 ```
 
-外部调度器调用命令：
+本机手动验证触发链路时可执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/trigger-daily-update.ps1
 ```
 
-触发脚本只从本机 Git Credential Manager 读取既有 GitHub 登录凭据，不会将访问令牌写入仓库文件。
+触发脚本只从本机 Git Credential Manager 读取既有 GitHub 登录凭据，不会将访问令牌写入仓库文件，也不用于线上定时任务。线上外部调度器必须通过平台 Secret 保存可触发该工作流的受限 GitHub 令牌。
+
+## 托管外部调度
+
+线上定时器采用 Cloudflare Workers Cron，配置位于 `external-scheduler/cloudflare/wrangler.jsonc`，每 10 分钟从 Cloudflare 基础设施触发一次，不依赖本机开机状态或本机时间任务。
+
+部署前需要创建仅限本仓库、具备 Actions 写入权限的 GitHub Token，并将其以 `GITHUB_TOKEN` Secret 存入 Cloudflare Worker。部署命令如下：
+
+```powershell
+npx wrangler login
+npx wrangler secret put GITHUB_TOKEN --config external-scheduler/cloudflare/wrangler.jsonc
+npx wrangler deploy --config external-scheduler/cloudflare/wrangler.jsonc
+```
+
+令牌不应写入配置文件或提交到 GitHub。未完成 Cloudflare 授权、Secret 配置及部署前，线上定时触发不会生效。
 
 `update:daily` 会依次执行：
 
@@ -29,7 +43,7 @@ powershell -ExecutionPolicy Bypass -File scripts/trigger-daily-update.ps1
 - 每个来源请求最多尝试 2 次，每次最多等待 20 秒。
 - 单一来源最终请求失败或返回空数据时，健康状态会记录 `failed` 或 `empty`、HTTP 状态、错误信息及连续失败次数。
 - 如果该来源存在上一次成功抓取内容，页面生成流程会继续使用旧内容，并在审计报告标记 `usedFallback: true`。
-- 外部调度成功触发时，每次运行都会刷新当天最新归档文件并创建数据更新提交。
+- 外部调度器成功触发后，每次运行都会刷新当天最新归档文件并创建数据更新提交。
 - API 来源默认关闭。如需启用，必须先通过 GitHub Actions Secrets 配置凭据，并在本地验证抓取结果。
 
 ## 人工介入
