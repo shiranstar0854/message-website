@@ -34,7 +34,7 @@ npm.cmd run generate:latest
 
 ## 自动更新
 
-测试期间 `.github/workflows/daily-update.yml` 按北京时间每小时 `03/13/23/33/43/53` 分自动更新 RSS 数据，也支持手动触发。该偏移避开整点高负载窗口。更新任务会在来源短暂不可访问时保留上一份有效数据，并刷新来源审计和当天最新归档。确认自动运行稳定后，应将计划恢复为每日更新以控制提交数量。
+`.github/workflows/daily-update.yml` 通过 `workflow_dispatch` 执行更新，由外部定时任务按小时触发，也支持手动触发。更新任务会在来源短暂不可访问时保留上一份有效数据，并刷新来源审计和当天最新归档。外部触发脚本为 `scripts/trigger-daily-update.ps1`，它读取本机已有 GitHub 登录凭据，不在仓库中保存令牌。
 
 ## 数据字段
 
