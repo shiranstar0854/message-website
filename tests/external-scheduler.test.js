@@ -1,4 +1,6 @@
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
 const test = require("node:test");
 
 async function loadScheduler() {
@@ -36,4 +38,11 @@ test("Cloudflare scheduler reports rejected GitHub dispatches", async () => {
     dispatchWorkflow({ GITHUB_TOKEN: "test-token" }, async () => new Response("denied", { status: 403 })),
     /GitHub workflow dispatch failed \(403\): denied/
   );
+});
+
+test("Cloudflare scheduler runs daily at 08:00 Beijing time", () => {
+  const configPath = path.join(__dirname, "..", "external-scheduler", "cloudflare", "wrangler.jsonc");
+  const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+
+  assert.deepEqual(config.triggers.crons, ["0 0 * * *"]);
 });

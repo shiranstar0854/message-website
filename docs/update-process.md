@@ -1,6 +1,6 @@
 # 更新流程
 
-阶段 4 的更新工作流已实现。由于 GitHub 内置 `schedule` 未产生运行记录，工作流文件 `.github/workflows/daily-update.yml` 只保留 `workflow_dispatch` 入口，供托管在外部平台的调度器调用，也支持在 GitHub Actions 页面手动触发。线上定时调度需在外部平台完成授权和部署后才会生效。
+阶段 4 的更新工作流已实现。由于 GitHub 内置 `schedule` 未产生运行记录，工作流文件 `.github/workflows/daily-update.yml` 只保留 `workflow_dispatch` 入口，供托管在外部平台的调度器调用，也支持在 GitHub Actions 页面手动触发。线上定时调度已部署到 Cloudflare Workers Cron。
 
 ## 执行流程
 
@@ -19,7 +19,7 @@ powershell -ExecutionPolicy Bypass -File scripts/trigger-daily-update.ps1
 
 ## 托管外部调度
 
-线上定时器采用 Cloudflare Workers Cron，配置位于 `external-scheduler/cloudflare/wrangler.jsonc`，每 10 分钟从 Cloudflare 基础设施触发一次，不依赖本机开机状态或本机时间任务。
+线上定时器采用 Cloudflare Workers Cron，配置位于 `external-scheduler/cloudflare/wrangler.jsonc`，按 `0 0 * * *`（UTC）从 Cloudflare 基础设施触发，即每日北京时间 `08:00` 执行一次，不依赖本机开机状态或本机时间任务。
 
 部署前需要创建仅限本仓库、具备 Actions 写入权限的 GitHub Token，并将其以 `GITHUB_TOKEN` Secret 存入 Cloudflare Worker。部署命令如下：
 
@@ -29,7 +29,7 @@ npx wrangler secret put GITHUB_TOKEN --config external-scheduler/cloudflare/wran
 npx wrangler deploy --config external-scheduler/cloudflare/wrangler.jsonc
 ```
 
-令牌不应写入配置文件或提交到 GitHub。未完成 Cloudflare 授权、Secret 配置及部署前，线上定时触发不会生效。
+令牌不应写入配置文件或提交到 GitHub。生产 Worker 已完成 Cloudflare 授权、Secret 配置与部署；后续修改调度配置后需要重新运行部署命令才能生效。
 
 `update:daily` 会依次执行：
 
