@@ -3,8 +3,7 @@ name: Daily information update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 0 * * *"
-    - cron: "47 0 * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
@@ -26,32 +25,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Determine whether an update is due
-        id: update
-        shell: bash
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "required=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          archive="data/archive/daily/$(date -u +%F).json"
-          if [ -f "$archive" ]; then
-            echo "Daily archive already exists at $archive; skipping backup schedule."
-            echo "required=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "required=true" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Run tests before update
-        if: steps.update.outputs.required == 'true'
         run: npm test
 
       - name: Fetch, process, audit, and archive feeds
-        if: steps.update.outputs.required == 'true'
         run: npm run update:daily
 
       - name: Commit changed data
-        if: steps.update.outputs.required == 'true'
         run: |
           git add data/raw/rss-items.json \
             data/normalized/normalized-items.json \
