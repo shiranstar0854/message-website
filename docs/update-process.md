@@ -1,6 +1,6 @@
 # 更新流程
 
-阶段 4 已实现自动更新。测试期间工作流文件 `.github/workflows/daily-update.yml` 每 `10` 分钟运行一次，也支持在 GitHub Actions 页面手动触发。GitHub Actions 的计划任务可能因平台调度产生延迟，确认链路稳定后应改回低频生产计划。
+阶段 4 已实现自动更新。测试期间工作流文件 `.github/workflows/daily-update.yml` 按北京时间每小时 `03/13/23/33/43/53` 分运行，也支持在 GitHub Actions 页面手动触发。偏移分钟用于避开 GitHub Actions 整点高负载窗口；计划任务仍可能因平台调度产生延迟，确认链路稳定后应改回低频生产计划。
 
 ## 执行流程
 
