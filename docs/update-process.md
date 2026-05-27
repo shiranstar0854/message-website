@@ -19,7 +19,7 @@ powershell -ExecutionPolicy Bypass -File scripts/trigger-daily-update.ps1
 
 ## 托管外部调度
 
-线上定时器采用 Cloudflare Workers Cron，配置位于 `external-scheduler/cloudflare/wrangler.jsonc`。主计划 `0 0 * * *`（UTC）对应每日北京时间 `08:00`；补偿计划 `30 0 * * *`（UTC）对应北京时间 `08:30`。补偿计划会读取当天 GitHub Actions 运行记录，只有未发现 `cloudflare-primary` 主触发记录时才再次调用工作流，不依赖本机开机状态或本机时间任务。
+线上定时器采用 Cloudflare Workers Cron，配置位于 `external-scheduler/cloudflare/wrangler.jsonc`。主计划 `0 0 * * *`（UTC）对应每日北京时间 `08:00`；补偿计划 `30 0 * * *`（UTC）对应北京时间 `08:30`。补偿计划会读取当天 GitHub Actions 运行记录，只有已发现成功完成的 `cloudflare-primary` 主触发运行时才跳过补偿；主运行缺失或失败时会以 `cloudflare-retry` 再次调用工作流，不依赖本机开机状态或本机时间任务。
 
 部署前需要创建仅限本仓库、具备 Actions 写入权限的 GitHub Token，并将其以 `GITHUB_TOKEN` Secret 存入 Cloudflare Worker。部署命令如下：
 

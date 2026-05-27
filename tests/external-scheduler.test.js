@@ -58,7 +58,7 @@ test("Cloudflare scheduler runs at 08:00 Beijing time and checks again at 08:30"
   assert.deepEqual(config.triggers.crons, ["0 0 * * *", "30 0 * * *"]);
 });
 
-test("Cloudflare retry trigger skips dispatch after a primary run exists", async () => {
+test("Cloudflare retry trigger skips dispatch after a successful primary run exists", async () => {
   const { runScheduledTrigger } = await loadScheduler();
   const requests = [];
 
@@ -73,6 +73,7 @@ test("Cloudflare retry trigger skips dispatch after a primary run exists", async
             {
               display_title: "Daily information update (cloudflare-primary)",
               created_at: "2026-05-28T00:00:35Z",
+              conclusion: "success",
             },
           ],
         }),
@@ -96,6 +97,38 @@ test("Cloudflare retry trigger dispatches only when the primary run is missing",
       requests.push({ url, options });
       if (url.includes("/runs?")) {
         return new Response(JSON.stringify({ workflow_runs: [] }), { status: 200 });
+      }
+      return new Response(null, { status: 204 });
+    }
+  );
+
+  assert.equal(requests.length, 2);
+  assert.equal(
+    requests[1].options.body,
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-retry" } })
+  );
+});
+
+test("Cloudflare retry trigger dispatches after a failed primary run", async () => {
+  const { runScheduledTrigger } = await loadScheduler();
+  const requests = [];
+
+  await runScheduledTrigger(
+    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { GITHUB_TOKEN: "test-token" },
+    async (url, options) => {
+      requests.push({ url, options });
+      if (url.includes("/runs?")) {
+        return new Response(
+          JSON.stringify({
+            workflow_runs: [{
+              display_title: "Daily information update (cloudflare-primary)",
+              created_at: "2026-05-28T00:00:35Z",
+              conclusion: "failure",
+            }],
+          }),
+          { status: 200 }
+        );
       }
       return new Response(null, { status: 204 });
     }

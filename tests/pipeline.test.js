@@ -43,6 +43,25 @@ test("normalizes rss and api records into the shared item shape", () => {
   assert.equal(api.summary, "Policy makers held rates steady.");
 });
 
+test("rejects non-web and malformed item urls", () => {
+  const unsafe = normalizeRawItem({
+    title: "Unsafe feed entry",
+    link: "javascript:alert(document.domain)",
+    source: "Untrusted feed",
+    category: "news"
+  }, "2026-05-24T00:00:00.000Z");
+  const malformed = normalizeRawItem({
+    title: "Malformed feed entry",
+    link: "not a valid absolute url",
+    source: "Untrusted feed",
+    category: "news"
+  }, "2026-05-24T00:00:00.000Z");
+
+  assert.equal(unsafe.url, "");
+  assert.equal(malformed.url, "");
+  assert.deepEqual(filterItems([unsafe, malformed], { requireUrl: true }), []);
+});
+
 test("filters items by category, blocked source, low-value phrases, and minimum title length", () => {
   const rules = {
     allowedCategories: ["tech", "finance", "news"],

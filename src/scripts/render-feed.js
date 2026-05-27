@@ -19,6 +19,15 @@
       .replace(/"/g, "&quot;");
   }
 
+  function safeExternalUrl(value) {
+    try {
+      const url = new URL(String(value || ""));
+      return ["http:", "https:"].includes(url.protocol) ? url.toString() : "";
+    } catch {
+      return "";
+    }
+  }
+
   function renderChannelSummary(container, data) {
     const channels = Object.values(data.channels || {});
     container.innerHTML = channels.map((channel) => `
@@ -61,11 +70,15 @@
         .join("");
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
+      const safeUrl = safeExternalUrl(item.url);
+      const title = safeUrl
+        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+        : escapeHtml(item.title);
 
       return `
         <article class="feed-card">
           <div>
-            <h3><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a></h3>
+            <h3>${title}</h3>
             ${renderSummary(item.summary)}
             <div class="item-meta">
               <span>${escapeHtml(item.source)}</span>
@@ -87,6 +100,7 @@
     formatDate,
     renderChannelSummary,
     renderFeed,
-    renderSummary
+    renderSummary,
+    safeExternalUrl
   };
 })();

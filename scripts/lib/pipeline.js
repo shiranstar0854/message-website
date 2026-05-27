@@ -36,6 +36,9 @@ function normalizeUrl(value) {
 
   try {
     const url = new URL(String(value).trim());
+    if (!["http:", "https:"].includes(url.protocol)) {
+      return "";
+    }
     [
       "utm_source",
       "utm_medium",
@@ -49,7 +52,7 @@ function normalizeUrl(value) {
     url.hash = "";
     return url.toString().replace(/\/$/, "");
   } catch {
-    return String(value).trim();
+    return "";
   }
 }
 

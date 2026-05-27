@@ -38,7 +38,7 @@ export async function dispatchWorkflow(env, triggerReason = PRIMARY_TRIGGER, req
   }
 }
 
-export async function hasPrimaryRunForScheduledDay(env, scheduledTime, request = fetch) {
+export async function hasSuccessfulPrimaryRunForScheduledDay(env, scheduledTime, request = fetch) {
   const dayStart = new Date(scheduledTime);
   dayStart.setUTCHours(0, 0, 0, 0);
   const nextDayStart = dayStart.getTime() + DAY_IN_MILLISECONDS;
@@ -61,6 +61,7 @@ export async function hasPrimaryRunForScheduledDay(env, scheduledTime, request =
     const createdAt = Date.parse(run.created_at);
     return (
       run.display_title === PRIMARY_RUN_TITLE &&
+      run.conclusion === "success" &&
       createdAt >= dayStart.getTime() &&
       createdAt < nextDayStart
     );
@@ -73,8 +74,8 @@ export async function runScheduledTrigger(controller, env, request = fetch) {
   }
 
   if (controller.cron === RETRY_CRON) {
-    const primaryRunExists = await hasPrimaryRunForScheduledDay(env, controller.scheduledTime, request);
-    if (!primaryRunExists) {
+    const successfulPrimaryRunExists = await hasSuccessfulPrimaryRunForScheduledDay(env, controller.scheduledTime, request);
+    if (!successfulPrimaryRunExists) {
       return dispatchWorkflow(env, RETRY_TRIGGER, request);
     }
   }
