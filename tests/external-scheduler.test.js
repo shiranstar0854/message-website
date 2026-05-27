@@ -11,10 +11,14 @@ test("Cloudflare scheduler dispatches the GitHub update workflow", async () => {
   const { dispatchWorkflow } = await loadScheduler();
   let recordedRequest;
 
-  await dispatchWorkflow({ GITHUB_TOKEN: "test-token" }, async (url, options) => {
-    recordedRequest = { url, options };
-    return new Response(null, { status: 204 });
-  });
+  await dispatchWorkflow(
+    { GITHUB_TOKEN: "test-token" },
+    "cloudflare-primary",
+    async (url, options) => {
+      recordedRequest = { url, options };
+      return new Response(null, { status: 204 });
+    }
+  );
 
   assert.equal(
     recordedRequest.url,
@@ -22,7 +26,10 @@ test("Cloudflare scheduler dispatches the GitHub update workflow", async () => {
   );
   assert.equal(recordedRequest.options.method, "POST");
   assert.equal(recordedRequest.options.headers.Authorization, "Bearer test-token");
-  assert.equal(recordedRequest.options.body, JSON.stringify({ ref: "main" }));
+  assert.equal(
+    recordedRequest.options.body,
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-primary" } })
+  );
 });
 
 test("Cloudflare scheduler requires a GitHub secret", async () => {
@@ -35,14 +42,68 @@ test("Cloudflare scheduler reports rejected GitHub dispatches", async () => {
   const { dispatchWorkflow } = await loadScheduler();
 
   await assert.rejects(
-    dispatchWorkflow({ GITHUB_TOKEN: "test-token" }, async () => new Response("denied", { status: 403 })),
+    dispatchWorkflow(
+      { GITHUB_TOKEN: "test-token" },
+      "cloudflare-primary",
+      async () => new Response("denied", { status: 403 })
+    ),
     /GitHub workflow dispatch failed \(403\): denied/
   );
 });
 
-test("Cloudflare scheduler runs daily at 08:00 Beijing time", () => {
+test("Cloudflare scheduler runs at 08:00 Beijing time and checks again at 08:30", () => {
   const configPath = path.join(__dirname, "..", "external-scheduler", "cloudflare", "wrangler.jsonc");
   const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-  assert.deepEqual(config.triggers.crons, ["0 0 * * *"]);
+  assert.deepEqual(config.triggers.crons, ["0 0 * * *", "30 0 * * *"]);
+});
+
+test("Cloudflare retry trigger skips dispatch after a primary run exists", async () => {
+  const { runScheduledTrigger } = await loadScheduler();
+  const requests = [];
+
+  await runScheduledTrigger(
+    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { GITHUB_TOKEN: "test-token" },
+    async (url) => {
+      requests.push(url);
+      return new Response(
+        JSON.stringify({
+          workflow_runs: [
+            {
+              display_title: "Daily information update (cloudflare-primary)",
+              created_at: "2026-05-28T00:00:35Z",
+            },
+          ],
+        }),
+        { status: 200 }
+      );
+    }
+  );
+
+  assert.equal(requests.length, 1);
+  assert.match(requests[0], /\/runs\?/);
+});
+
+test("Cloudflare retry trigger dispatches only when the primary run is missing", async () => {
+  const { runScheduledTrigger } = await loadScheduler();
+  const requests = [];
+
+  await runScheduledTrigger(
+    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { GITHUB_TOKEN: "test-token" },
+    async (url, options) => {
+      requests.push({ url, options });
+      if (url.includes("/runs?")) {
+        return new Response(JSON.stringify({ workflow_runs: [] }), { status: 200 });
+      }
+      return new Response(null, { status: 204 });
+    }
+  );
+
+  assert.equal(requests.length, 2);
+  assert.equal(
+    requests[1].options.body,
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-retry" } })
+  );
 });

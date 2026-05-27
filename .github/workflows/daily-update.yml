@@ -1,7 +1,13 @@
 name: Daily information update
+run-name: Daily information update (${{ inputs.trigger_reason || 'manual' }})
 
 on:
   workflow_dispatch:
+    inputs:
+      trigger_reason:
+        description: Trigger source for scheduled update tracking
+        required: false
+        type: string
 
 permissions:
   contents: write
