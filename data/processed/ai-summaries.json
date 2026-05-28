@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T10:55:28.566Z",
+  "generatedAt": "2026-05-28T11:04:54.268Z",
   "method": "extractive",
   "totalSummaries": 60,
   "items": [
@@ -287,7 +287,7 @@
       "sourceId": "36kr",
       "category": "tech",
       "score": 87,
-      "aiSummary": "2026 AI+产业大会在京举办，聚焦AI落地解决真问题",
+      "aiSummary": "当大模型API调用成本一年内骤降超过80%，百万Token仅需几分钱时，产业竞争便不再纠结于技术指标的高低，而是回归到最朴素的价值衡量——能否在实际场景中降本增效。",
       "summaryReason": "36Kr / tech · score 87",
       "summaryMethod": "extractive"
     },
@@ -299,7 +299,7 @@
       "sourceId": "36kr",
       "category": "tech",
       "score": 87,
-      "aiSummary": "AI改造母婴。",
+      "aiSummary": "作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，AI母婴智能硬件品牌珂迪Coddie（以下简称“Coddie”）完成天使轮融资，融资金额数千万元，由钟鼎资本投资，向阳资本担任独家财务顾问。",
       "summaryReason": "36Kr / tech · score 87",
       "summaryMethod": "extractive"
     },
@@ -311,7 +311,7 @@
       "sourceId": "36kr",
       "category": "tech",
       "score": 87,
-      "aiSummary": "信任才是最重要的资产。",
+      "aiSummary": "文丨果脯 2026年5月21日，腾讯魔方工作室群开发的《洛克王国：世界》上线了S2赛季更新。",
       "summaryReason": "36Kr / tech · score 87",
       "summaryMethod": "extractive"
     },
@@ -484,42 +484,6 @@
       "summaryMethod": "extractive"
     },
     {
-      "id": "finance-item-89c4b9cace",
-      "title": "中德隐形冠军齐聚扬州 数智赋能共促产业链深度融合",
-      "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630250.shtml",
-      "source": "中国新闻网财经",
-      "sourceId": "chinanews-finance",
-      "category": "finance",
-      "score": 86,
-      "aiSummary": "中新网扬州5月28日电 (徐珊珊 崔佳明)5月28日，以“数智赋能、创新发展”为主题的2026世界隐形冠军扬州创新发展大会在扬州举行。",
-      "summaryReason": "中国新闻网财经 / finance · score 86",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-item-ac2cc44d8d",
-      "title": "全球媒体聚焦｜外媒：欧洲企业加码在华业务 “融入中国供应链已成必然选择”",
-      "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630242.shtml",
-      "source": "中国新闻网财经",
-      "sourceId": "chinanews-finance",
-      "category": "finance",
-      "score": 86,
-      "aiSummary": "中国欧盟商会5月27日发布的一项最新调查报告显示，为保持全球竞争力，越来越多欧洲企业正维持或扩大其在中国大陆的供应链布局。",
-      "summaryReason": "中国新闻网财经 / finance · score 86",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-item-e36598b891",
-      "title": "外国记者解码“中国电动车之乡”：看中国制造如何“骑”向全球?",
-      "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630240.shtml",
-      "source": "中国新闻网财经",
-      "sourceId": "chinanews-finance",
-      "category": "finance",
-      "score": 86,
-      "aiSummary": "而有着“中国电动车之乡”美誉的无锡锡山，更是国内绿色代步产业的核心阵地。",
-      "summaryReason": "中国新闻网财经 / finance · score 86",
-      "summaryMethod": "extractive"
-    },
-    {
       "id": "tech-openai-news-3a55d7fc07",
       "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
       "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
@@ -553,6 +517,42 @@
       "score": 86,
       "aiSummary": "The Securities and Exchange Commission today proposed amendments to its rules and forms governing registered offerings that are designed to increase efficiency, flexibility, and...",
       "summaryReason": "U.S. SEC Press Releases / finance · score 86",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "finance-item-89c4b9cace",
+      "title": "中德隐形冠军齐聚扬州 数智赋能共促产业链深度融合",
+      "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630250.shtml",
+      "source": "中国新闻网财经",
+      "sourceId": "chinanews-finance",
+      "category": "finance",
+      "score": 85,
+      "aiSummary": "中新网扬州5月28日电 (徐珊珊 崔佳明)5月28日，以“数智赋能、创新发展”为主题的2026世界隐形冠军扬州创新发展大会在扬州举行。",
+      "summaryReason": "中国新闻网财经 / finance · score 85",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "finance-item-ac2cc44d8d",
+      "title": "全球媒体聚焦｜外媒：欧洲企业加码在华业务 “融入中国供应链已成必然选择”",
+      "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630242.shtml",
+      "source": "中国新闻网财经",
+      "sourceId": "chinanews-finance",
+      "category": "finance",
+      "score": 85,
+      "aiSummary": "中国欧盟商会5月27日发布的一项最新调查报告显示，为保持全球竞争力，越来越多欧洲企业正维持或扩大其在中国大陆的供应链布局。",
+      "summaryReason": "中国新闻网财经 / finance · score 85",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "finance-item-e36598b891",
+      "title": "外国记者解码“中国电动车之乡”：看中国制造如何“骑”向全球?",
+      "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630240.shtml",
+      "source": "中国新闻网财经",
+      "sourceId": "chinanews-finance",
+      "category": "finance",
+      "score": 85,
+      "aiSummary": "而有着“中国电动车之乡”美誉的无锡锡山，更是国内绿色代步产业的核心阵地。",
+      "summaryReason": "中国新闻网财经 / finance · score 85",
       "summaryMethod": "extractive"
     },
     {

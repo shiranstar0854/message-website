@@ -101,6 +101,51 @@
     }).join("");
   }
 
+  function renderWeeklyReview(container, summaryContainer, review) {
+    const channels = review.channels || [];
+    if (!channels.length) {
+      container.innerHTML = '<div class="empty-state">暂无每周复盘。</div>';
+      if (summaryContainer) summaryContainer.textContent = "周报数据尚未生成";
+      return;
+    }
+
+    if (summaryContainer) {
+      summaryContainer.textContent = `${escapeHtml(review.weekId || "本周")} · 覆盖 ${Number(review.totals?.archiveCount || 0)} 个每日归档，${Number(review.totals?.itemCount || 0)} 条候选信息`;
+    }
+
+    container.innerHTML = channels.map((channel) => {
+      const highlights = (channel.highlights || []).slice(0, 3);
+      const sources = (channel.topSources || []).slice(0, 4)
+        .map((entry) => `<span class="tag">${escapeHtml(entry.source)} ${Number(entry.count || 0)}</span>`)
+        .join("");
+
+      return `
+        <article class="weekly-column">
+          <div class="weekly-column-head">
+            <strong>${escapeHtml(channel.label || channel.id)}</strong>
+            <span>${Number(channel.totalItems || 0)} 条</span>
+          </div>
+          <div class="tag-row" aria-label="${escapeHtml(channel.label || channel.id)}主要来源">${sources}</div>
+          <ul class="weekly-highlight-list">
+            ${highlights.map((item) => {
+              const safeUrl = safeExternalUrl(item.url);
+              const title = safeUrl
+                ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+                : escapeHtml(item.title);
+              return `
+                <li>
+                  <h3>${title}</h3>
+                  <p>${escapeHtml(item.summary || "")}</p>
+                  <span>${escapeHtml(item.source || "")} · ${Number(item.score || 0)}</span>
+                </li>
+              `;
+            }).join("")}
+          </ul>
+        </article>
+      `;
+    }).join("");
+  }
+
   function renderEmptyState(container, state) {
     const actions = state.actions || [];
     container.innerHTML = `
@@ -123,6 +168,7 @@
     renderChannelSummary,
     renderEmptyState,
     renderFeed,
+    renderWeeklyReview,
     renderSummary,
     safeExternalUrl
   };

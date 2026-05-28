@@ -2,6 +2,13 @@
   "enabled": true,
   "method": "extractive",
   "note": "Phase 5 baseline. This produces deterministic summaries from enriched excerpts without requiring an external AI key; the same output fields can later be replaced by model-generated summaries.",
+  "llmProduction": {
+    "enabled": false,
+    "provider": "",
+    "model": "",
+    "requiredSecret": "",
+    "note": "Future production path: keep the same aiSummary, summaryReason and weekly-review output fields, then replace extractive generation with a configured model call once provider, model and secret are confirmed."
+  },
   "daily": {
     "maxItemsPerChannel": 20,
     "summaryMaxLength": 180,

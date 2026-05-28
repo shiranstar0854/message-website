@@ -2,7 +2,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const { summarizeLatestData } = require("../scripts/generate-ai-summary");
-const { buildWeeklyReview, isoWeekId } = require("../scripts/generate-weekly-review");
+const { buildWeeklyReview, filterEnabledSourceItems, isoWeekId } = require("../scripts/generate-weekly-review");
 
 test("daily summary generation adds compact summary fields to top channel items", () => {
   const latest = {
@@ -64,4 +64,16 @@ test("weekly review builds channel highlights from daily archives", () => {
   assert.equal(review.totals.archiveCount, 1);
   assert.equal(review.channels.find((channel) => channel.id === "finance").highlights[0].source, "Federal Reserve");
   assert.equal(review.channels.find((channel) => channel.id === "news").highlights[0].summary, "The briefing highlighted a global policy issue.");
+});
+
+test("weekly review source filter excludes disabled historical sources", () => {
+  const filtered = filterEnabledSourceItems([
+    { id: "current", sourceId: "enabled-source", source: "Enabled Source" },
+    { id: "old", sourceId: "disabled-source", source: "Disabled Source" }
+  ], [
+    { id: "enabled-source", name: "Enabled Source", enabled: true },
+    { id: "disabled-source", name: "Disabled Source", enabled: false }
+  ]);
+
+  assert.deepEqual(filtered.map((item) => item.id), ["current"]);
 });

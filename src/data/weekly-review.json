@@ -1,6 +1,6 @@
 {
   "weekId": "2026-W22",
-  "generatedAt": "2026-05-28T10:55:35.889Z",
+  "generatedAt": "2026-05-28T11:05:01.722Z",
   "method": "extractive",
   "archiveDays": [
     "2026-05-26",
@@ -9,25 +9,17 @@
   ],
   "totals": {
     "archiveCount": 3,
-    "itemCount": 180
+    "itemCount": 82
   },
   "channels": [
     {
       "id": "tech",
       "label": "科技",
-      "totalItems": 56,
+      "totalItems": 27,
       "topSources": [
         {
           "source": "36Kr",
           "count": 15
-        },
-        {
-          "source": "TechCrunch",
-          "count": 14
-        },
-        {
-          "source": "Ars Technica",
-          "count": 11
         },
         {
           "source": "OpenAI News",
@@ -38,104 +30,104 @@
           "count": 4
         },
         {
-          "source": "The Verge",
-          "count": 4
+          "source": "GitHub Blog",
+          "count": 2
+        },
+        {
+          "source": "Microsoft Azure Blog",
+          "count": 1
         }
       ],
       "highlights": [
         {
-          "id": "tech-ars-technica-d139148591",
-          "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
-          "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile",
-          "source": "Ars Technica",
-          "score": 100,
-          "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
-          "publishedAt": "2026-05-26T17:46:01.000Z"
+          "id": "tech-openai-news-6f071c9489",
+          "title": "Election information and safeguards in 2026",
+          "url": "https://openai.com/index/election-safeguards-2026",
+          "source": "OpenAI News",
+          "score": 95,
+          "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+          "publishedAt": "2026-05-27T00:00:00.000Z"
         },
         {
-          "id": "tech-techcrunch-fe5a45240d",
-          "title": "Iranian hackers blamed for breach of Los Angeles transit system that took weeks to recover",
-          "url": "https://techcrunch.com/2026/05/26/iranian-hackers-blamed-for-breach-of-los-angeles-transit-system-that-took-weeks-to-recover",
-          "source": "TechCrunch",
-          "score": 100,
-          "summary": "An Israeli cybersecurity firm said Iran’s government is behind Ababil of Minab, a fake hacktivist persona that has claimed a series of data breaches after the start of the war in Iran.",
-          "publishedAt": "2026-05-26T15:26:27.000Z"
+          "id": "tech-openai-news-77830561c9",
+          "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+          "url": "https://openai.com/index/cisco",
+          "source": "OpenAI News",
+          "score": 92,
+          "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+          "publishedAt": "2026-05-27T11:00:00.000Z"
         },
         {
-          "id": "tech-ars-technica-59ba9e6d60",
-          "title": "Trump abruptly cancels EO signing event after top AI firm CEOs declined to go",
-          "url": "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos",
-          "source": "Ars Technica",
-          "score": 100,
-          "summary": "Trump delays AI safety testing EO, claiming it would be an innovation “blocker.”",
-          "publishedAt": "2026-05-22T16:51:40.000Z"
+          "id": "tech-36kr-7f0b0a8844",
+          "title": "智象未来CEO梅涛：多模态模型Token的毛利率，远高于语言模型",
+          "url": "https://36kr.com/p/3820602297208966?f=rss",
+          "source": "36Kr",
+          "score": 91,
+          "summary": "在算力成本大幅下降之前，视频生成初创公司尽量不要在To C上和巨头公司打起来。",
+          "publishedAt": "2026-05-28T08:20:12.000Z"
         },
         {
-          "id": "tech-the-verge-8309136014",
-          "title": "Pope Leo calls for being ‘profoundly human’ in the age of AI",
-          "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
-          "source": "The Verge",
-          "score": 98,
-          "summary": "Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on \"safeguarding the human person in the t...",
-          "publishedAt": "2026-05-25T15:05:07.000Z"
+          "id": "tech-openai-news-45e6707874",
+          "title": "Building self-improving tax agents with Codex",
+          "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+          "source": "OpenAI News",
+          "score": 91,
+          "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+          "publishedAt": "2026-05-27T07:00:00.000Z"
         },
         {
-          "id": "tech-ars-technica-d0b081f707",
-          "title": "Millions of AI agents imperiled by critical vulnerability in open source package",
-          "url": "https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package",
-          "source": "Ars Technica",
-          "score": 97,
-          "summary": "\"BadHost\" was found in Starlette, a package with 325 million weekly downloads.",
-          "publishedAt": "2026-05-26T19:50:33.000Z"
+          "id": "tech-36kr-bfd8867711",
+          "title": "上海：推动AI+广告全链路应用，培育一批拥有核心技术和国际化能力的本土广告品牌企业",
+          "url": "https://36kr.com/newsflashes/3827004757595012?f=rss",
+          "source": "36Kr",
+          "score": 91,
+          "summary": "36氪获悉，上海市人民政府发布关于推进服务业扩能提质的实施意见。其中提出，推动AI+广告全链路应用，加快人工智能生成内容（AIGC）创意生成、多模态内容生产等技术融合赋能，培育一批拥有核心技术和国际化能力的本土广告品牌企业。拓展人力资源管理咨询、高级人才寻访等高附加值业态，开发招聘大模型、智能面试等新产品。支持咨询服务机构拓展健康咨询、环境社会治理（ESG）咨询等新业务，发展订阅制、解决方案授权制等新模式。",
+          "publishedAt": "2026-05-27T03:50:33.000Z"
         },
         {
-          "id": "tech-ars-technica-207a663649",
-          "title": "Is Peter Thiel the target of Pope Leo's Gandalf quote? An investigation.",
-          "url": "https://arstechnica.com/tech-policy/2026/05/is-peter-thiel-the-target-of-pope-leos-gandalf-quote-an-investigation",
-          "source": "Ars Technica",
-          "score": 96,
-          "summary": "Parsing a papal proclamation.",
-          "publishedAt": "2026-05-26T22:27:32.000Z"
+          "id": "tech-36kr-2eb938ea27",
+          "title": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录",
+          "url": "https://36kr.com/p/3826932509364869?f=rss",
+          "source": "36Kr",
+          "score": 91,
+          "summary": "当大模型API调用成本一年内骤降超过80%，百万Token仅需几分钱时，产业竞争便不再纠结于技术指标的高低，而是回归到最朴素的价值衡量——能否在实际场景中降本增效。行业的聚光灯，从实验室的榜单，转向了真实的生产线、医院诊室、物流仓库和城市管理后台。 2026年，谁能在复杂场景中解决真问题，谁才是这场变革的主角。 5月19日至20日，以“带着AI去前线”为主题的2026 AI Partner·北京亦庄AI+产业大会在北京经开区通明湖...",
+          "publishedAt": "2026-05-27T02:38:25.000Z"
         },
         {
-          "id": "tech-techcrunch-5e34ef7969",
-          "title": "7-Eleven data breach affects over 185,000 people&#8217;s personal data",
-          "url": "https://techcrunch.com/2026/05/26/7-eleven-data-breach-affects-over-185000-peoples-personal-data",
-          "source": "TechCrunch",
-          "score": 96,
-          "summary": "The data breach included names, dates of birth, postal addresses, and Social Security numbers, according to a state government listing.",
-          "publishedAt": "2026-05-26T13:04:56.000Z"
+          "id": "tech-36kr-8e27717797",
+          "title": "经过华为、传音、拓竹历练，95后打造AI母婴界特斯拉｜36氪首发",
+          "url": "https://36kr.com/p/3826922264286083?f=rss",
+          "source": "36Kr",
+          "score": 91,
+          "summary": "作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，AI母婴智能硬件品牌珂迪Coddie（以下简称“Coddie”）完成天使轮融资，融资金额数千万元，由钟鼎资本投资，向阳资本担任独家财务顾问。 Coddie团队于2026年初组建，由95后连续创业者何鋡威创立。何鋡威毕业于德国慕尼黑工业大学，先后任职华为、传音控股、拓竹科技等全球化科技企业。技术负责人毕业于国内顶级高校计算机专业，曾就职半导体龙头上...",
+          "publishedAt": "2026-05-27T02:27:05.000Z"
         },
         {
-          "id": "tech-ars-technica-15585f6e6b",
-          "title": "Citing Gandalf, Pope Leo says we must \"disarm\" AI",
-          "url": "https://arstechnica.com/tech-policy/2026/05/citing-gandalf-pope-leo-says-we-must-disarm-ai",
-          "source": "Ars Technica",
-          "score": 96,
-          "summary": "In an age of AI, Pope looks for \"artisans of hope.\"",
-          "publishedAt": "2026-05-25T21:07:42.000Z"
+          "id": "tech-36kr-72bd722878",
+          "title": "营销内容从“用AI”到“管AI”的10倍提效| 2026AI Partner·北京亦庄AI+产业大会",
+          "url": "https://36kr.com/p/3824179485233541?f=rss",
+          "source": "36Kr",
+          "score": 91,
+          "summary": "从2022年首创数字人直播带货，到如今服务LVMH、欧莱雅、宝洁等全球集团，集思科技在三年间积累了超60亿GMV的实战成绩。 2023年被称作Agent元年，但2026年才是营销内容Agent真正落地应用的节点，而品牌最核心的资产不是视觉，是上下文——把创始人对品牌的理解沉淀为AI可调用的智力资产。 以下为演讲内容，经36氪整理编辑： 李世尊丨集思科技CEO 大家好，我是集思科技李世尊。简单介绍一下集思科技，以及我们在营销领域做的...",
+          "publishedAt": "2026-05-26T02:44:02.000Z"
         }
       ],
       "themes": [
-        "FBI agent explains how easy it is to ID people posting AI porn without consent",
-        "Iranian hackers blamed for breach of Los Angeles transit system that took wee...",
-        "Trump abruptly cancels EO signing event after top AI firm CEOs declined to go",
-        "Pope Leo calls for being ‘profoundly human’ in the age of AI",
-        "Millions of AI agents imperiled by critical vulnerability in open source package"
+        "Election information and safeguards in 2026",
+        "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "智象未来CEO梅涛：多模态模型Token的毛利率，远高于语言模型",
+        "Building self-improving tax agents with Codex",
+        "上海：推动AI+广告全链路应用，培育一批拥有核心技术和国际化能力的本土广告品牌企业"
       ]
     },
     {
       "id": "finance",
       "label": "金融",
-      "totalItems": 54,
+      "totalItems": 27,
       "topSources": [
         {
-          "source": "CNBC Business News",
-          "count": 27
-        },
-        {
           "source": "中国新闻网财经",
-          "count": 22
+          "count": 21
         },
         {
           "source": "Federal Reserve",
@@ -143,46 +135,10 @@
         },
         {
           "source": "U.S. SEC Press Releases",
-          "count": 2
+          "count": 3
         }
       ],
       "highlights": [
-        {
-          "id": "finance-cnbc-business-news-fda9a36c9d",
-          "title": "Pope Leo is concerned about AI replacing human work. Traders share his concern long term",
-          "url": "https://www.cnbc.com/2026/05/26/traders-share-pope-leos-worries-on-ais-job-market-impact.html",
-          "source": "CNBC Business News",
-          "score": 100,
-          "summary": "The leader of the Catholic Church warned about artificial intelligence upending the labor market. Traders on Kalshi see unemployment jumping before 2030.",
-          "publishedAt": "2026-05-26T19:31:51.000Z"
-        },
-        {
-          "id": "finance-cnbc-business-news-4cf3c3c8df",
-          "title": "SK Hynix hits $1 trillion valuation as AI boom lifts South Korean chip stocks",
-          "url": "https://www.cnbc.com/2026/05/27/sk-hynix-shares-ai-chip-rally-1-trillion.html",
-          "source": "CNBC Business News",
-          "score": 99,
-          "summary": "Shares of SK Hynix soared over 11% on Wednesday, pushing the South Korean memory-chip maker above the $1 trillion market capitalization mark.",
-          "publishedAt": "2026-05-27T04:52:07.000Z"
-        },
-        {
-          "id": "finance-cnbc-business-news-1784a20fc1",
-          "title": "AutoZone stock has worst day in four years, despite retailer beating Wall Street estimates",
-          "url": "https://www.cnbc.com/2026/05/26/autozone-stock-on-pace-for-worst-trading-day-since-march-2020.html",
-          "source": "CNBC Business News",
-          "score": 99,
-          "summary": "Concerns include international growth and margin compression as well as pressures from inflation, energy costs and potential supply chain disruptions.",
-          "publishedAt": "2026-05-26T20:16:13.000Z"
-        },
-        {
-          "id": "finance-cnbc-business-news-977f33a8ef",
-          "title": "Singapore reports lower-than-expected inflation for April at 1.8%, revises economic growth higher",
-          "url": "https://www.cnbc.com/2026/05/25/singapore-inflation-gdp-iran-war-energy.html",
-          "source": "CNBC Business News",
-          "score": 98,
-          "summary": "Core inflation — which strips out prices of private transport and accommodation — came in at 1.4%, against estimates of 1.7%.",
-          "publishedAt": "2026-05-25T08:10:15.000Z"
-        },
         {
           "id": "finance-federal-reserve-968d407396",
           "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
@@ -202,48 +158,76 @@
           "publishedAt": "2026-05-26T18:00:00.000Z"
         },
         {
-          "id": "finance-cnbc-business-news-7490cce473",
-          "title": "European markets head for mixed open as traders assess fragile U.S.-Iran truce",
-          "url": "https://www.cnbc.com/2026/05/27/european-markets-stoxx-600-ftse-dax-cac-iran-news.html",
-          "source": "CNBC Business News",
-          "score": 94,
-          "summary": "European stocks are expected to open in mixed territory on Wednesday as regional investors assess the latest military operations against Iran.",
-          "publishedAt": "2026-05-27T05:19:17.000Z"
+          "id": "finance-item-5377f1987a",
+          "title": "首批“数字食安服务站”落地，美团与监管部门数据打通共治违规商户",
+          "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630206.shtml",
+          "source": "中国新闻网财经",
+          "score": 93,
+          "summary": "5月27日，“数字赋能共护食安”——重庆市网络餐饮食品安全政企共治暨“数字食安服务站”共建活动启动仪式在沙坪坝区举行。",
+          "publishedAt": "2026-05-28T08:01:38.000Z"
         },
         {
-          "id": "finance-cnbc-business-news-b36fdbb545",
-          "title": "European companies double down on China manufacturing despite EU de-risking push",
-          "url": "https://www.cnbc.com/2026/05/27/european-companies-expand-china-supply-chains-automation-costs.html",
-          "source": "CNBC Business News",
-          "score": 94,
-          "summary": "Low manufacturing costs in China are keeping many European businesses' supply chains in the country despite pressure in the EU to reduce overseas reliance.",
-          "publishedAt": "2026-05-27T04:49:15.000Z"
+          "id": "finance-item-2781554127",
+          "title": "探馆2026世界智能产业博览会：AI如何“长出身体”？",
+          "url": "https://www.chinanews.com.cn/cj/2026/05-27/10629195.shtml",
+          "source": "中国新闻网财经",
+          "score": 93,
+          "summary": "中新网天津5月27日电 题：探馆2026世界智能产业博览会：AI如何“长出身体”？",
+          "publishedAt": "2026-05-27T02:07:37.000Z"
+        },
+        {
+          "id": "finance-item-b16a7c2827",
+          "title": "三问Token套餐，解码运营商的“新生意”",
+          "url": "https://www.chinanews.com.cn/cj/2026/05-27/10629118.shtml",
+          "source": "中国新闻网财经",
+          "score": 93,
+          "summary": "三大运营商为何集体入局？普通用户需要买吗？对AI产业发展有何影响？",
+          "publishedAt": "2026-05-26T23:49:08.000Z"
+        },
+        {
+          "id": "finance-item-ec31cb0072",
+          "title": "AI筛选简历会带来求职不公吗？简历该怎么调整？",
+          "url": "https://www.chinanews.com.cn/cj/2026/05-27/10629112.shtml",
+          "source": "中国新闻网财经",
+          "score": 93,
+          "summary": "职来职往：AI筛选简历会带来求职不公吗",
+          "publishedAt": "2026-05-26T23:37:48.000Z"
+        },
+        {
+          "id": "finance-item-da27c969e9",
+          "title": "AI商业化：“收费”是大模型的趋势吗？",
+          "url": "https://www.chinanews.com.cn/cj/2026/05-26/10628479.shtml",
+          "source": "中国新闻网财经",
+          "score": 93,
+          "summary": "“收费”是大模型的趋势吗",
+          "publishedAt": "2026-05-25T23:15:14.000Z"
+        },
+        {
+          "id": "finance-federal-reserve-32ff854990",
+          "title": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+          "source": "Federal Reserve",
+          "score": 93,
+          "summary": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
+          "publishedAt": "2026-05-22T20:15:00.000Z"
         }
       ],
       "themes": [
-        "Pope Leo is concerned about AI replacing human work. Traders share his concer...",
-        "SK Hynix hits $1 trillion valuation as AI boom lifts South Korean chip stocks",
-        "AutoZone stock has worst day in four years, despite retailer beating Wall Str...",
-        "Singapore reports lower-than-expected inflation for April at 1.8%, revises ec...",
-        "Agencies publish resolution plan feedback letters for certain domestic and fo..."
+        "Agencies publish resolution plan feedback letters for certain domestic and fo...",
+        "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
+        "首批“数字食安服务站”落地，美团与监管部门数据打通共治违规商户",
+        "探馆2026世界智能产业博览会：AI如何“长出身体”？",
+        "三问Token套餐，解码运营商的“新生意”"
       ]
     },
     {
       "id": "news",
       "label": "新闻",
-      "totalItems": 60,
+      "totalItems": 20,
       "topSources": [
-        {
-          "source": "The New York Times",
-          "count": 28
-        },
         {
           "source": "UN News",
           "count": 10
-        },
-        {
-          "source": "BBC World",
-          "count": 9
         },
         {
           "source": "中国新闻网即时新闻",
@@ -252,92 +236,88 @@
         {
           "source": "NASA Breaking News",
           "count": 3
-        },
-        {
-          "source": "NPR News",
-          "count": 3
         }
       ],
       "highlights": [
         {
-          "id": "news-the-new-york-times-1546e6b5b4",
-          "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
-          "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
-          "source": "The New York Times",
-          "score": 99,
-          "summary": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality through technology.",
-          "publishedAt": "2026-05-26T21:54:36.000Z"
+          "id": "news-un-news-1340f32964",
+          "title": "Security Council LIVE: Founding principles of the UN facing ‘profound strain’, Guterres warns",
+          "url": "https://news.un.org/feed/view/en/story/2026/05/1167585",
+          "source": "UN News",
+          "score": 93,
+          "summary": "The Security Council is meeting for a high-level debate on strengthening the UN-centred international system amid mounting pressure on multilateralism and deepening geopolitical...",
+          "publishedAt": "2026-05-26T12:00:00.000Z"
         },
         {
-          "id": "news-npr-news-6b5ec5aeca",
-          "title": "Researchers are building AI-powered robot labs. What does this mean for science?",
-          "url": "https://www.npr.org/2026/05/26/nx-s1-5823706/researchers-are-building-ai-powered-robot-labs-what-does-this-mean-for-science",
-          "source": "NPR News",
-          "score": 99,
-          "summary": "Thanks to new technologies like artificial intelligence, scientists are increasingly freed from the constraints of the laboratory. It raises questions about how much humans should outsource to robots.",
-          "publishedAt": "2026-05-26T21:26:42.000Z"
+          "id": "news-item-4ac2338779",
+          "title": "近800家科创企业亮相澳门 聚焦AI走向物理世界",
+          "url": "https://www.chinanews.com.cn/dwq/2026/05-28/10630344.shtml",
+          "source": "中国新闻网即时新闻",
+          "score": 92,
+          "summary": "中新社澳门5月28日电 (记者 郑嘉伟)在澳门举行的第六届BEYOND国际科技创新博览会(下称“BEYOND EXPO”)28日进入展览展示环节，近800家科创企业集中亮相，展示AI(人工智能)从数字系统走向物理世界的产业进程。",
+          "publishedAt": "2026-05-28T10:26:25.000Z"
         },
         {
-          "id": "news-the-new-york-times-2422bf1072",
-          "title": "Main Takeaways From Pope Leo’s Encyclical on A.I.",
-          "url": "https://www.nytimes.com/2026/05/25/us/pope-leo-encyclical-highlights.html",
-          "source": "The New York Times",
-          "score": 99,
-          "summary": "In his letter, the first American pontiff called for putting care for humans at the heart of technological change.",
-          "publishedAt": "2026-05-25T21:16:24.000Z"
+          "id": "news-nasa-breaking-news-a43ca72566",
+          "title": "Released: NASA Goddard Issues Draft Request for Proposal for the Landsat 10 Spacecraft",
+          "url": "https://science.nasa.gov/missions/landsat/released-nasa-goddard-issues-draft-request-for-proposal-for-the-landsat-10-spacecraft",
+          "source": "NASA Breaking News",
+          "score": 92,
+          "summary": "The Landsat 10 Spacecraft Draft Request for Proposal (DRFP) is available for review via SAM.",
+          "publishedAt": "2026-05-27T20:40:24.000Z"
         },
         {
-          "id": "news-the-new-york-times-0b41cd8032",
-          "title": "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
-          "url": "https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html",
-          "source": "The New York Times",
-          "score": 99,
-          "summary": "The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the papacy?",
-          "publishedAt": "2026-05-25T18:35:03.000Z"
+          "id": "news-nasa-breaking-news-0fe218ea9a",
+          "title": "Students Build Moon Robots for NASA’s 2026 Lunabotics Challenge",
+          "url": "https://www.nasa.gov/image-article/students-build-moon-robots-for-nasas-2026-lunabotics-challenge",
+          "source": "NASA Breaking News",
+          "score": 91,
+          "summary": "Katherine Rauscher of Michigan Technological University prepares her team’s prototype lunar robot for its turn during the finals for NASA’s 2026 Lunabotics Challenge competition...",
+          "publishedAt": "2026-05-27T15:42:44.000Z"
         },
         {
-          "id": "news-the-new-york-times-1f9876c6e8",
-          "title": "Xi Jinping Quit Smoking. China Still Cannot.",
-          "url": "https://www.nytimes.com/2026/05/27/business/china-smoking-economy.html",
-          "source": "The New York Times",
-          "score": 98,
-          "summary": "China’s tobacco monopoly has become so financially vital to the government that even its powerful leader has failed to curb the country’s smoking habit.",
-          "publishedAt": "2026-05-27T04:00:09.000Z"
+          "id": "news-un-news-69f037bf46",
+          "title": "Ebola outbreak in DR Congo collides with conflict and hunger, WHO warns",
+          "url": "https://news.un.org/feed/view/en/story/2026/05/1167592",
+          "source": "UN News",
+          "score": 90,
+          "summary": "The UN World Health Organization (WHO) on Wednesday warned that eastern Democratic Republic of the Congo faces a “catastrophic collision of disease and conflict” as a fast-sprea...",
+          "publishedAt": "2026-05-27T12:00:00.000Z"
         },
         {
-          "id": "news-the-new-york-times-4119f44756",
-          "title": "Cornyn Crushed: 7 Takeaways From Tuesday’s Runoffs in Texas",
-          "url": "https://www.nytimes.com/2026/05/26/us/politics/texas-runoff-senate-cornyn-paxton.html",
-          "source": "The New York Times",
-          "score": 97,
-          "summary": "President Trump’s record of ousting those he sees as disloyal continued apace with Senator John Cornyn’s defeat. Whether his relationship with Senate Republicans can be repaired is another question.",
-          "publishedAt": "2026-05-27T03:10:44.000Z"
+          "id": "news-un-news-44dac8d466",
+          "title": "World News in Brief: Sudan and Haiti updates, Afghan women’s rights",
+          "url": "https://news.un.org/feed/view/en/story/2026/05/1167591",
+          "source": "UN News",
+          "score": 87,
+          "summary": "The United Nations is raising alarm over continued drone attacks in Sudan’s Darfur region after multiple strikes reportedly killed civilians and intensified fears for communitie...",
+          "publishedAt": "2026-05-26T12:00:00.000Z"
         },
         {
-          "id": "news-npr-news-e1b2b038c3",
-          "title": "Pope Leo takes aim at big tech in sweeping encyclical on AI",
-          "url": "https://www.npr.org/2026/05/25/nx-s1-5828375/pope-leo-to-weigh-in-on-the-perils-and-promises-of-artificial-intelligence",
-          "source": "NPR News",
-          "score": 97,
-          "summary": "\"Magnifica Humanitas\" tackles the social, economic and political challenges associated with artificial intelligence.",
-          "publishedAt": "2026-05-25T09:32:58.000Z"
+          "id": "news-un-news-946f369953",
+          "title": "Middle East update: Airstrikes and evacuation orders in Lebanon, aid restrictions in Gaza",
+          "url": "https://news.un.org/feed/view/en/story/2026/05/1167590",
+          "source": "UN News",
+          "score": 87,
+          "summary": "Intensified Israeli airstrikes overnight in Lebanon forced people to again flee their homes, while humanitarians in the Gaza Strip report continued restrictions in bringing aid...",
+          "publishedAt": "2026-05-26T12:00:00.000Z"
         },
         {
-          "id": "news-the-new-york-times-57e925c3c7",
-          "title": "Artificial Intelligence Floods Court Dockets with Home-Brewed Lawsuits",
-          "url": "https://www.nytimes.com/2026/05/25/us/politics/artificial-intelliegence-courts.html",
-          "source": "The New York Times",
-          "score": 97,
-          "summary": "For years, courts have welcomed cases brought by self-represented litigants. Now those plaintiffs have A.I., and their filings are consuming more and more bandwidth.",
-          "publishedAt": "2026-05-25T09:00:44.000Z"
+          "id": "news-un-news-fba4cc0051",
+          "title": "Ukraine: Russian attack destroys humanitarian food aid in Dnipro",
+          "url": "https://news.un.org/feed/view/en/story/2026/05/1167586",
+          "source": "UN News",
+          "score": 87,
+          "summary": "The World Food Programme (WFP) has deplored a Russian attack on a warehouse in Dnipro, Ukraine that destroyed “a significant quantity” of food aid destined for thousands in fron...",
+          "publishedAt": "2026-05-26T12:00:00.000Z"
         }
       ],
       "themes": [
-        "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the Ne...",
-        "Researchers are building AI-powered robot labs. What does this mean for science?",
-        "Main Takeaways From Pope Leo’s Encyclical on A.I.",
-        "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
-        "Xi Jinping Quit Smoking. China Still Cannot."
+        "Security Council LIVE: Founding principles of the UN facing ‘profound strain’...",
+        "近800家科创企业亮相澳门 聚焦AI走向物理世界",
+        "Released: NASA Goddard Issues Draft Request for Proposal for the Landsat 10 S...",
+        "Students Build Moon Robots for NASA’s 2026 Lunabotics Challenge",
+        "Ebola outbreak in DR Congo collides with conflict and hunger, WHO warns"
       ]
     }
   ]

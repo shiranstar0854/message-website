@@ -411,12 +411,77 @@ output {
   font-weight: 700;
 }
 
+.weekly-panel {
+  margin-bottom: 12px;
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.weekly-review {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.weekly-column {
+  min-width: 0;
+  padding: 12px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.weekly-column-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.weekly-column-head strong {
+  font-size: 1rem;
+}
+
+.weekly-column-head span,
+.weekly-highlight-list span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.weekly-highlight-list {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.weekly-highlight-list h3 {
+  margin: 0 0 4px;
+  font-size: 0.94rem;
+  line-height: 1.35;
+}
+
+.weekly-highlight-list p {
+  margin: 0 0 5px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 620px) {
   .segmented-control {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .feed-card {
+    grid-template-columns: 1fr;
+  }
+
+  .weekly-review {
     grid-template-columns: 1fr;
   }
 

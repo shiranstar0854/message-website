@@ -1,6 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
-const { readJson, writeJson } = require("./lib/file-utils");
+const { readJson, readSources, writeJson } = require("./lib/file-utils");
 const { sortItems, truncateText } = require("./lib/pipeline");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
@@ -55,6 +55,14 @@ function uniqueItems(items) {
   });
 }
 
+function filterEnabledSourceItems(items, sources) {
+  const enabled = sources.filter((source) => source.enabled !== false);
+  const enabledIds = new Set(enabled.map((source) => source.id));
+  const enabledNames = new Set(enabled.map((source) => source.name));
+
+  return items.filter((item) => enabledIds.has(item.sourceId) || enabledNames.has(item.source));
+}
+
 function buildChannelReview(category, items, rules) {
   const channelItems = uniqueItems(items.filter((item) => item.category === category));
   const sorted = sortItems(channelItems);
@@ -99,7 +107,12 @@ function buildWeeklyReview(archives, rules = {}, nowIso = new Date().toISOString
 function generateWeeklyReview(nowIso = new Date().toISOString()) {
   const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
   const archives = loadDailyArchives(rules.weekly?.lookbackDays || 7, new Date(nowIso));
-  const review = buildWeeklyReview(archives, rules, nowIso);
+  const sources = readSources(ROOT_DIR);
+  const filteredArchives = archives.map((archive) => ({
+    ...archive,
+    items: filterEnabledSourceItems(archive.items || [], sources)
+  }));
+  const review = buildWeeklyReview(filteredArchives, rules, nowIso);
   writeJson(path.join(ROOT_DIR, "src", "data", "weekly-review.json"), review);
   writeJson(path.join(ROOT_DIR, "data", "archive", "weekly", `${review.weekId}.json`), review);
   return review;
@@ -114,5 +127,6 @@ module.exports = {
   isoWeekId,
   loadDailyArchives,
   buildWeeklyReview,
+  filterEnabledSourceItems,
   generateWeeklyReview
 };
