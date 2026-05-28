@@ -2,34 +2,115 @@
   "category": "tech",
   "sources": [
     {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "type": "rss",
+      "url": "https://github.blog/feed/",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 90,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official GitHub product, developer platform and engineering updates"
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "type": "rss",
+      "url": "https://openai.com/news/rss.xml",
+      "enabled": true,
+      "articleEnrichment": {
+        "enabled": false,
+        "reason": "Article pages were blocked during enrichment; keep RSS text and media for summary input."
+      },
+      "credibility": 90,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official OpenAI product, research and company announcements"
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "type": "rss",
+      "url": "https://blog.google/technology/ai/rss/",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 88,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official Google AI product and research updates"
+    },
+    {
+      "id": "google-security",
+      "name": "Google Security Blog",
+      "type": "rss",
+      "url": "https://security.googleblog.com/feeds/posts/default?alt=rss",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 88,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official Google security and infrastructure updates"
+    },
+    {
+      "id": "microsoft-azure",
+      "name": "Microsoft Azure Blog",
+      "type": "rss",
+      "url": "https://azure.microsoft.com/en-us/blog/feed/",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 88,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official Microsoft cloud platform updates"
+    },
+    {
+      "id": "cisa-news",
+      "name": "CISA News",
+      "type": "rss",
+      "url": "https://www.cisa.gov/news.xml",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 92,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official U.S. cybersecurity and infrastructure security updates"
+    },
+    {
       "id": "techcrunch",
       "name": "TechCrunch",
       "type": "rss",
       "url": "https://techcrunch.com/feed/",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 82,
       "updateFrequency": "hourly",
-      "purpose": "Startup, AI, platform and venture technology coverage"
+      "accessPolicy": "disabled-media-source",
+      "purpose": "Disabled: ordinary media source, not a free official primary source"
     },
     {
       "id": "the-verge",
       "name": "The Verge",
       "type": "rss",
       "url": "https://www.theverge.com/rss/index.xml",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 80,
       "updateFrequency": "hourly",
-      "purpose": "Consumer technology, platforms, policy and product shifts"
+      "accessPolicy": "disabled-media-source",
+      "purpose": "Disabled: ordinary media source, not a free official primary source"
     },
     {
       "id": "ars-technica",
       "name": "Ars Technica",
       "type": "rss",
       "url": "https://feeds.arstechnica.com/arstechnica/index",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 84,
       "updateFrequency": "daily",
-      "purpose": "Deep technical reporting and security analysis"
+      "accessPolicy": "disabled-media-source",
+      "purpose": "Disabled: media source and article pages previously returned 202 during probing"
     },
     {
       "id": "36kr",
@@ -37,8 +118,10 @@
       "type": "rss",
       "url": "https://36kr.com/feed",
       "enabled": true,
+      "articleEnrichment": { "enabled": true },
       "credibility": 78,
       "updateFrequency": "hourly",
+      "accessPolicy": "free-media-source",
       "purpose": "China technology, startups and venture market coverage"
     },
     {
@@ -47,8 +130,10 @@
       "type": "rss",
       "url": "https://www.solidot.org/index.rss",
       "enabled": true,
+      "articleEnrichment": { "enabled": true },
       "credibility": 76,
       "updateFrequency": "daily",
+      "accessPolicy": "free-media-source",
       "purpose": "Chinese-language technology and open source developments"
     },
     {
@@ -59,7 +144,8 @@
       "enabled": false,
       "credibility": 88,
       "updateFrequency": "ad hoc",
-      "purpose": "Official developer platform release data when enabled"
+      "accessPolicy": "disabled-replaced-by-rss",
+      "purpose": "Disabled: replaced by the official GitHub Blog RSS feed"
     }
   ]
 }

@@ -37,7 +37,30 @@
     `;
   }
 
+  function summarizeSourceHealth(health) {
+    const sources = health.sources || [];
+    const healthy = sources.filter((source) => source.status === "healthy").length;
+    const abnormal = sources.length - healthy;
+    const lastCheckedAt = sources
+      .map((source) => source.lastCheckedAt)
+      .filter(Boolean)
+      .sort()
+      .at(-1);
+    const timeLabel = window.MessageChooseRender?.formatDate
+      ? window.MessageChooseRender.formatDate(lastCheckedAt)
+      : "时间未知";
+
+    return {
+      healthy,
+      abnormal,
+      lastCheckedAt,
+      hasWarning: abnormal > 0,
+      text: `来源 ${healthy} 个正常，${abnormal} 个异常，最近检查 ${timeLabel}`
+    };
+  }
+
   window.MessageChooseSourceStatus = {
-    renderSourceStatus
+    renderSourceStatus,
+    summarizeSourceHealth
   };
 })();

@@ -76,24 +76,14 @@
 }
 
 .content-grid {
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 18px;
+  display: block;
   margin-top: 18px;
-  align-items: start;
 }
 
-.source-panel,
 .feed-panel {
   min-width: 0;
 }
 
-.source-panel {
-  position: sticky;
-  top: 96px;
-}
-
-.source-panel h2,
 .feed-panel h2 {
   margin: 0;
 }
@@ -111,13 +101,8 @@
 }
 
 @media (max-width: 960px) {
-  .overview-band,
-  .content-grid {
+  .overview-band {
     grid-template-columns: 1fr;
-  }
-
-  .source-panel {
-    position: static;
   }
 
   .filter-row,

@@ -55,10 +55,19 @@
     }).format(date)}`;
   }
 
-  function updateSummary(data, displayedCount, filteredCount) {
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function updateSummary(data, displayedCount, filteredCount, message = "") {
     document.getElementById("generated-at").textContent = formatGeneratedAt(data.generatedAt);
     document.getElementById("total-count").textContent = `${filteredCount} 条`;
-    document.getElementById("result-summary").textContent = `当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
+    document.getElementById("result-summary").textContent = message
+      || `当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
   }
 
   async function init() {
@@ -70,18 +79,41 @@
 
     const feed = document.getElementById("feed");
     const summary = document.getElementById("channel-summary");
+    const sourceDisclosure = document.getElementById("source-disclosure");
+    const sourceSummary = document.getElementById("source-summary");
     const sourceStatus = document.getElementById("source-status");
+    const sourceToggle = document.getElementById("source-toggle");
     const loadMoreButton = document.getElementById("load-more");
     const pageSize = Number(data.defaultLimit || config.defaultLimit || 8);
     let activeState = null;
+    let filterControls = null;
     let visibleLimit = pageSize;
 
     function renderResults(resetLimit) {
       if (resetLimit) visibleLimit = pageSize;
-      const filteredItems = window.MessageChooseFilters.applyFilters(data.items || [], activeState);
+      const filterResult = window.MessageChooseFilters.getFilterResult(data.items || [], activeState);
+      const filteredItems = filterResult.items;
       const displayedItems = filteredItems.slice(0, visibleLimit);
-      window.MessageChooseRender.renderFeed(feed, displayedItems);
-      updateSummary(data, displayedItems.length, filteredItems.length);
+      if (filterResult.isSourceRelaxed && filteredItems.length > 0) {
+        feed.innerHTML = `<div class="fallback-notice">所选来源“${escapeHtml(filterResult.selectedSource)}”未找到“${escapeHtml(filterResult.keyword)}”，以下为其他来源的匹配结果。</div><div id="fallback-feed"></div>`;
+        window.MessageChooseRender.renderFeed(feed.querySelector("#fallback-feed"), displayedItems);
+        updateSummary(data, displayedItems.length, filteredItems.length, `已放宽来源，显示 ${displayedItems.length} / ${filteredItems.length} 条跨来源匹配结果。`);
+      } else if (!filteredItems.length) {
+        window.MessageChooseRender.renderEmptyState(feed, {
+          title: "没有匹配结果",
+          detail: activeState.source !== "all" && activeState.keyword
+            ? `关键词“${activeState.keyword}”在来源“${activeState.source}”、最低评分 ${activeState.minScore} 下没有匹配。`
+            : `当前频道、来源和最低评分 ${activeState.minScore} 下没有匹配。`,
+          actions: [
+            { id: "clear-keyword", label: "清除关键词" },
+            { id: "reset-filters", label: "重置筛选" }
+          ]
+        });
+        updateSummary(data, 0, 0);
+      } else {
+        window.MessageChooseRender.renderFeed(feed, displayedItems);
+        updateSummary(data, displayedItems.length, filteredItems.length);
+      }
 
       const remainingCount = filteredItems.length - displayedItems.length;
       const nextVisibleLimit = Math.min(filteredItems.length, visibleLimit * 2);
@@ -91,9 +123,23 @@
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
-    window.MessageChooseFilters.initFilters(config, data, (state) => {
+    const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);
+    sourceSummary.textContent = sourceHealthSummary.text;
+    sourceDisclosure.classList.toggle("has-warning", sourceHealthSummary.hasWarning);
+    sourceToggle.addEventListener("click", () => {
+      const expanded = sourceToggle.getAttribute("aria-expanded") === "true";
+      sourceToggle.setAttribute("aria-expanded", String(!expanded));
+      sourceStatus.hidden = expanded;
+    });
+
+    filterControls = window.MessageChooseFilters.initFilters(config, data, (state) => {
       activeState = state;
       renderResults(true);
+    });
+    feed.addEventListener("click", (event) => {
+      const action = event.target.closest("[data-empty-action]")?.dataset.emptyAction;
+      if (action === "clear-keyword") filterControls?.clearKeyword();
+      if (action === "reset-filters") filterControls?.resetFilters();
     });
     loadMoreButton.addEventListener("click", () => {
       visibleLimit *= 2;

@@ -31,13 +31,36 @@
   function applyFilters(items, state) {
     const keyword = normalize(state.keyword);
     return sortItems(items.filter((item) => {
-      const text = normalize(`${item.title} ${item.summary} ${(item.tags || []).join(" ")}`);
+      const text = normalize(`${item.title} ${item.summary} ${item.contentExcerpt || ""} ${(item.tags || []).join(" ")}`);
       const channelMatch = state.channel === "all" || item.category === state.channel;
       const sourceMatch = state.source === "all" || item.source === state.source;
       const keywordMatch = !keyword || text.includes(keyword);
       const scoreMatch = Number(item.score || 0) >= Number(state.minScore || 0);
       return channelMatch && sourceMatch && keywordMatch && scoreMatch;
     }), state.sort);
+  }
+
+  function getFilterResult(items, state) {
+    const strictItems = applyFilters(items, state);
+    const shouldRelaxSource = strictItems.length === 0
+      && state.source !== "all"
+      && normalize(state.keyword);
+
+    if (!shouldRelaxSource) {
+      return {
+        items: strictItems,
+        isSourceRelaxed: false,
+        selectedSource: state.source,
+        keyword: state.keyword
+      };
+    }
+
+    return {
+      items: applyFilters(items, { ...state, source: "all" }),
+      isSourceRelaxed: true,
+      selectedSource: state.source,
+      keyword: state.keyword
+    };
   }
 
   function initFilters(config, data, onChange) {
@@ -106,6 +129,10 @@
     });
 
     clearButton.addEventListener("click", () => {
+      resetFilters();
+    });
+
+    function resetFilters() {
       state.channel = "all";
       state.keyword = "";
       state.source = "all";
@@ -116,14 +143,25 @@
       scoreFilter.value = state.minScore;
       sortFilter.value = state.sort;
       emit();
-    });
+    }
+
+    function clearKeyword() {
+      state.keyword = "";
+      keywordFilter.value = "";
+      emit();
+    }
 
     emit();
-    return state;
+    return {
+      state,
+      clearKeyword,
+      resetFilters
+    };
   }
 
   window.MessageChooseFilters = {
     applyFilters,
+    getFilterResult,
     initFilters
   };
 })();

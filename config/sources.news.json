@@ -2,34 +2,64 @@
   "category": "news",
   "sources": [
     {
+      "id": "nasa-breaking-news",
+      "name": "NASA Breaking News",
+      "type": "rss",
+      "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 90,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official NASA public-interest science and agency updates"
+    },
+    {
+      "id": "un-news",
+      "name": "UN News",
+      "type": "rss",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 88,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official United Nations public-interest news"
+    },
+    {
       "id": "bbc-world",
       "name": "BBC World",
       "type": "rss",
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 86,
       "updateFrequency": "hourly",
-      "purpose": "International public-interest news"
+      "accessPolicy": "disabled-media-source",
+      "purpose": "Disabled: ordinary media source, not a free official primary source"
     },
     {
       "id": "npr-news",
       "name": "NPR News",
       "type": "rss",
       "url": "https://feeds.npr.org/1001/rss.xml",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 84,
       "updateFrequency": "hourly",
-      "purpose": "U.S. public news and policy reporting"
+      "accessPolicy": "disabled-media-source",
+      "purpose": "Disabled: ordinary media source, not a direct official primary source"
     },
     {
       "id": "nytimes-home",
       "name": "The New York Times",
       "type": "rss",
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 84,
       "updateFrequency": "hourly",
-      "purpose": "Broad news agenda and breaking developments"
+      "accessPolicy": "disabled-paywall",
+      "purpose": "Disabled: article pages returned 403 during probing and the source may require subscription"
     },
     {
       "id": "chinanews-breaking",
@@ -37,9 +67,23 @@
       "type": "rss",
       "url": "https://www.chinanews.com.cn/rss/scroll-news.xml",
       "enabled": true,
+      "articleEnrichment": { "enabled": true },
       "credibility": 84,
       "updateFrequency": "hourly",
+      "accessPolicy": "free-media-source",
       "purpose": "China breaking and general-interest news"
+    },
+    {
+      "id": "chinaorg-china",
+      "name": "China.org.cn China",
+      "type": "rss",
+      "url": "http://www.china.org.cn/english/rss/201724.xml",
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
+      "credibility": 80,
+      "updateFrequency": "daily",
+      "accessPolicy": "disabled-stale-feed",
+      "purpose": "Disabled: RSS probe returned only stale 2008 items"
     },
     {
       "id": "gnews-api",
@@ -49,7 +93,8 @@
       "enabled": false,
       "credibility": 72,
       "updateFrequency": "hourly",
-      "purpose": "Optional API-backed headline enrichment"
+      "accessPolicy": "disabled-api-key",
+      "purpose": "Disabled: requires API key and is not a direct official primary source"
     }
   ]
 }

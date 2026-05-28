@@ -3,11 +3,13 @@ const assert = require("node:assert/strict");
 
 const {
   normalizeRawItem,
+  normalizeImageUrl,
   filterItems,
   dedupeItems,
   scoreItems,
   buildLatestData
 } = require("../scripts/lib/pipeline");
+const { extractItems } = require("../scripts/lib/rss-parser");
 
 test("normalizes rss and api records into the shared item shape", () => {
   const rss = normalizeRawItem({
@@ -43,6 +45,22 @@ test("normalizes rss and api records into the shared item shape", () => {
   assert.equal(api.summary, "Policy makers held rates steady.");
 });
 
+test("extracts RSS content and media fields for display enrichment", () => {
+  const items = extractItems(`
+    <rss><channel><item>
+      <title>Media story</title>
+      <link>https://example.test/story</link>
+      <description><![CDATA[Short <img src="https://example.test/fallback.jpg"> summary]]></description>
+      <content:encoded><![CDATA[<p>Long story body</p>]]></content:encoded>
+      <media:thumbnail url="https://example.test/thumb.jpg" />
+    </item></channel></rss>
+  `);
+
+  assert.equal(items.length, 1);
+  assert.equal(items[0].content, "<p>Long story body</p>");
+  assert.equal(items[0].feedImageUrl, "https://example.test/thumb.jpg");
+});
+
 test("rejects non-web and malformed item urls", () => {
   const unsafe = normalizeRawItem({
     title: "Unsafe feed entry",
@@ -61,6 +79,33 @@ test("rejects non-web and malformed item urls", () => {
   assert.equal(malformed.url, "");
   assert.deepEqual(filterItems([unsafe, malformed], { requireUrl: true }), []);
 });
+
+test("normalizes optional excerpts and only accepts https images", () => {
+  const item = normalizeRawItem({
+    sourceName: "Source A",
+    sourceId: "source-a",
+    category: "news",
+    title: "Image item",
+    link: "https://example.test/item",
+    content: "<p>Detailed article text</p>",
+    feedImageUrl: "http://example.test/image.jpg"
+  }, "2026-05-24T00:00:00.000Z");
+  const secureItem = normalizeRawItem({
+    sourceName: "Source A",
+    sourceId: "source-a",
+    category: "news",
+    title: "Secure image item",
+    link: "https://example.test/item-2",
+    feedImageUrl: "https://example.test/image.jpg"
+  }, "2026-05-24T00:00:00.000Z");
+
+  assert.equal(item.sourceId, "source-a");
+  assert.equal(item.contentExcerpt, "Detailed article text");
+  assert.equal(item.imageUrl, undefined);
+  assert.equal(secureItem.imageUrl, "https://example.test/image.jpg");
+  assert.equal(normalizeImageUrl("javascript:alert(1)"), "");
+});
+
 
 test("filters items by category, blocked source, low-value phrases, and minimum title length", () => {
   const rules = {
@@ -204,6 +249,8 @@ test("latest data publishes compact display fields only", () => {
     category: "tech",
     publishedAt: "2026-05-24T00:00:00.000Z",
     summary: "x".repeat(900),
+    contentExcerpt: "y".repeat(900),
+    imageUrl: "https://example.com/image.jpg",
     tags: Array.from({ length: 10 }, (_, index) => `tag-${index}`),
     score: 88,
     duplicateCount: 2,
@@ -215,6 +262,8 @@ test("latest data publishes compact display fields only", () => {
   });
 
   assert.equal(latest.items[0].summary.length, 500);
+  assert.equal(latest.items[0].contentExcerpt.length, 500);
+  assert.equal(latest.items[0].imageUrl, "https://example.com/image.jpg");
   assert.equal(latest.items[0].tags.length, 8);
   assert.equal(latest.items[0].duplicateCount, 2);
   assert.equal("raw" in latest.items[0], false);

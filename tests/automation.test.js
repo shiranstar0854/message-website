@@ -7,7 +7,7 @@ const { compactItem, selectArchiveItems } = require("../scripts/archive-daily-da
 
 const PRIOR_XML = "<rss><channel><item><title>Existing item</title><link>https://example.test/existing</link></item></channel></rss>";
 
-test("retains previous usable RSS body when the latest source request fails", () => {
+test("retains previous usable RSS items when the latest source request fails", () => {
   const failedResult = {
     sourceId: "source-a",
     sourceName: "Source A",
@@ -36,7 +36,9 @@ test("retains previous usable RSS body when the latest source request fails", ()
   }, "2026-05-26T02:00:01.000Z");
 
   assert.equal(effective[0].stale, true);
-  assert.equal(effective[0].body, PRIOR_XML);
+  assert.equal("body" in effective[0], false);
+  assert.equal(effective[0].items.length, 1);
+  assert.equal(effective[0].items[0].title, "Existing item");
   assert.equal(effective[0].latestAttempt.error, "timeout");
   assert.equal(health.sources[0].status, "failed");
   assert.equal(health.sources[0].failureCount, 3);
@@ -64,13 +66,21 @@ test("builds source audit metrics and marks fallback data", () => {
     ],
     filtered: [{ source: "Source A" }],
     deduped: [{ source: "Source A" }],
-    scored: [{ source: "Source A" }]
+    scored: [{ source: "Source A" }],
+    enrichment: {
+      totals: { attempted: 1, failed: 0 },
+      sources: {
+        "source-a": { attempted: 1, excerptCount: 1, imageCount: 0, failed: 0 }
+      }
+    }
   }, "2026-05-26T02:00:01.000Z");
 
   assert.equal(audit.totals.rawItems, 2);
   assert.equal(audit.sources[0].usedFallback, true);
   assert.equal(audit.sources[0].filteredOutItems, 1);
   assert.equal(audit.sources[0].newestPublishedAt, "2026-05-25T02:00:00.000Z");
+  assert.equal(audit.sources[0].enrichmentAttempted, 1);
+  assert.equal(audit.sources[0].enrichmentExcerptCount, 1);
 });
 
 test("daily archive compacts article payloads", () => {
@@ -83,6 +93,8 @@ test("daily archive compacts article payloads", () => {
     category: "tech",
     publishedAt: "2026-05-26T01:00:00.000Z",
     summary: "x".repeat(800),
+    contentExcerpt: "y".repeat(900),
+    imageUrl: "https://example.test/image.jpg",
     score: 95,
     duplicateCount: 0,
     tags: Array.from({ length: 12 }, (_, index) => `tag-${index}`),
@@ -90,6 +102,8 @@ test("daily archive compacts article payloads", () => {
   });
 
   assert.equal(archived.summary.length, 500);
+  assert.equal(archived.contentExcerpt.length, 500);
+  assert.equal(archived.imageUrl, "https://example.test/image.jpg");
   assert.equal(archived.tags.length, 8);
   assert.equal("raw" in archived, false);
 });

@@ -1,6 +1,6 @@
 const path = require("node:path");
 const { normalizeRawItem } = require("./lib/pipeline");
-const { extractItems } = require("./lib/rss-parser");
+const { getRecordItems } = require("./fetch-rss");
 const { readJson, writeJson } = require("./lib/file-utils");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
@@ -20,7 +20,7 @@ function normalizeAll() {
   const normalized = [];
 
   rssRecords.forEach((record) => {
-    const items = record.body ? extractItems(record.body) : (record.items || []);
+    const items = getRecordItems(record);
     items.forEach((item) => {
       normalized.push(normalizeRawItem({
         ...record,

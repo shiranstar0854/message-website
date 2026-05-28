@@ -20,7 +20,7 @@ function newestBySource(items) {
   }, {});
 }
 
-function buildSourceAudit({ health, rawRecords, normalized, filtered, deduped, scored }, generatedAt = new Date().toISOString()) {
+function buildSourceAudit({ health, rawRecords, normalized, filtered, deduped, scored, enrichment }, generatedAt = new Date().toISOString()) {
   const normalizedCounts = countBySource(normalized);
   const filteredCounts = countBySource(filtered);
   const dedupedCounts = countBySource(deduped);
@@ -37,10 +37,13 @@ function buildSourceAudit({ health, rawRecords, normalized, filtered, deduped, s
       normalizedItems: normalized.length,
       filteredItems: filtered.length,
       dedupedItems: deduped.length,
-      scoredItems: scored.length
+      scoredItems: scored.length,
+      enrichmentAttempted: Number(enrichment?.totals?.attempted || 0),
+      enrichmentFailed: Number(enrichment?.totals?.failed || 0)
     },
     sources: health.sources.map((source) => {
       const raw = rawById.get(source.id) || {};
+      const enrichmentStats = enrichment?.sources?.[source.id] || {};
       return {
         id: source.id,
         name: source.name,
@@ -58,7 +61,11 @@ function buildSourceAudit({ health, rawRecords, normalized, filtered, deduped, s
         normalizedItems: Number(normalizedCounts[source.name] || 0),
         retainedItems: Number(scoredCounts[source.name] || 0),
         filteredOutItems: Number(normalizedCounts[source.name] || 0) - Number(filteredCounts[source.name] || 0),
-        deduplicatedItems: Number(filteredCounts[source.name] || 0) - Number(dedupedCounts[source.name] || 0)
+        deduplicatedItems: Number(filteredCounts[source.name] || 0) - Number(dedupedCounts[source.name] || 0),
+        enrichmentAttempted: Number(enrichmentStats.attempted || 0),
+        enrichmentExcerptCount: Number(enrichmentStats.excerptCount || 0),
+        enrichmentImageCount: Number(enrichmentStats.imageCount || 0),
+        enrichmentFailedCount: Number(enrichmentStats.failed || 0)
       };
     })
   };
@@ -71,7 +78,8 @@ function generateSourceAudit() {
     normalized: readJson(path.join(ROOT_DIR, "data", "normalized", "normalized-items.json"), []),
     filtered: readJson(path.join(ROOT_DIR, "data", "processed", "filtered-items.json"), []),
     deduped: readJson(path.join(ROOT_DIR, "data", "processed", "deduped-items.json"), []),
-    scored: readJson(path.join(ROOT_DIR, "data", "processed", "scored-items.json"), [])
+    scored: readJson(path.join(ROOT_DIR, "data", "processed", "scored-items.json"), []),
+    enrichment: readJson(path.join(ROOT_DIR, "data", "processed", "article-enrichment.json"), {})
   });
   writeJson(path.join(ROOT_DIR, "data", "processed", "source-audit.json"), audit);
   return audit;

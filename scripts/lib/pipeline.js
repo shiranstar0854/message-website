@@ -2,6 +2,7 @@ const crypto = require("node:crypto");
 
 const DEFAULT_FETCHED_AT = () => new Date().toISOString();
 const PUBLISHED_SUMMARY_LIMIT = 500;
+const CONTENT_EXCERPT_LIMIT = 500;
 
 function normalizeText(value) {
   return String(value || "")
@@ -56,6 +57,23 @@ function normalizeUrl(value) {
   }
 }
 
+function normalizeImageUrl(value) {
+  if (!value) return "";
+
+  try {
+    const url = new URL(String(value).trim());
+    return url.protocol === "https:" ? url.toString() : "";
+  } catch {
+    return "";
+  }
+}
+
+function truncateText(value, limit = CONTENT_EXCERPT_LIMIT) {
+  const text = String(value || "").trim();
+  if (text.length <= limit) return text;
+  return `${text.slice(0, Math.max(0, limit - 3)).trimEnd()}...`;
+}
+
 function firstDefined(...values) {
   return values.find((value) => value !== undefined && value !== null && String(value).trim() !== "");
 }
@@ -68,6 +86,7 @@ function normalizeDate(value, fallback) {
 
 function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefaults = {}) {
   const raw = rawItem.item || rawItem.record || rawItem;
+  const sourceId = firstDefined(rawItem.sourceId, raw.sourceId, sourceDefaults.id, "");
   const sourceName = firstDefined(rawItem.sourceName, raw.sourceName, raw.source, sourceDefaults.name, "Unknown Source");
   const sourceType = firstDefined(rawItem.sourceType, raw.sourceType, sourceDefaults.type, "rss");
   const category = firstDefined(rawItem.category, raw.category, sourceDefaults.category, "news");
@@ -88,8 +107,26 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     raw.summary,
     raw.contentSnippet,
     raw.description,
-    raw.content,
     raw.excerpt,
+    raw.content,
+    ""
+  ));
+  const contentExcerpt = truncateText(decodeHtml(firstDefined(
+    raw.contentExcerpt,
+    raw.content,
+    raw.encoded,
+    raw.description,
+    raw.summary,
+    raw.contentSnippet,
+    ""
+  )));
+  const imageUrl = normalizeImageUrl(firstDefined(
+    raw.imageUrl,
+    raw.feedImageUrl,
+    raw.mediaUrl,
+    raw.thumbnail,
+    raw.urlToImage,
+    raw.enclosure?.url,
     ""
   ));
   const tags = Array.isArray(raw.tags)
@@ -105,6 +142,7 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
 
   return {
     id,
+    sourceId: normalizeText(sourceId),
     title,
     url,
     source: normalizeText(sourceName),
@@ -112,6 +150,8 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     category: normalizeText(category).toLowerCase(),
     publishedAt,
     summary,
+    ...(contentExcerpt ? { contentExcerpt } : {}),
+    ...(imageUrl ? { imageUrl } : {}),
     fetchedAt,
     credibility: Number.isFinite(credibility) ? credibility : 70,
     tags,
@@ -320,9 +360,12 @@ function buildPublishedItem(item) {
   const publishedSummary = summary.length > PUBLISHED_SUMMARY_LIMIT
     ? `${summary.slice(0, PUBLISHED_SUMMARY_LIMIT - 3).trimEnd()}...`
     : summary;
+  const contentExcerpt = truncateText(item.contentExcerpt || "", CONTENT_EXCERPT_LIMIT);
+  const imageUrl = normalizeImageUrl(item.imageUrl || "");
 
   return {
     id: item.id,
+    sourceId: item.sourceId,
     title: item.title,
     url: item.url,
     source: item.source,
@@ -330,6 +373,8 @@ function buildPublishedItem(item) {
     category: item.category,
     publishedAt: item.publishedAt,
     summary: publishedSummary,
+    ...(contentExcerpt ? { contentExcerpt } : {}),
+    ...(imageUrl ? { imageUrl } : {}),
     tags: (item.tags || []).slice(0, 8),
     score: item.score,
     duplicateCount: Number(item.duplicateCount || 0)
@@ -370,6 +415,8 @@ function buildLatestData(items, siteConfig = {}, generatedAt = DEFAULT_FETCHED_A
 module.exports = {
   normalizeText,
   normalizeUrl,
+  normalizeImageUrl,
+  truncateText,
   normalizeRawItem,
   filterItems,
   titleSimilarity,

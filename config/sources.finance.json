@@ -7,8 +7,10 @@
       "type": "rss",
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "enabled": true,
+      "articleEnrichment": { "enabled": true },
       "credibility": 96,
       "updateFrequency": "daily",
+      "accessPolicy": "free-official",
       "purpose": "Official monetary policy and supervision releases"
     },
     {
@@ -17,9 +19,26 @@
       "type": "rss",
       "url": "https://www.sec.gov/news/pressreleases.rss",
       "enabled": true,
+      "articleEnrichment": {
+        "enabled": false,
+        "reason": "Article pages were blocked during enrichment; keep RSS text for summary input."
+      },
       "credibility": 94,
       "updateFrequency": "daily",
+      "accessPolicy": "free-official",
       "purpose": "Official enforcement, market structure and disclosure news"
+    },
+    {
+      "id": "cfpb-newsroom",
+      "name": "CFPB Newsroom",
+      "type": "rss",
+      "url": "https://www.consumerfinance.gov/about-us/newsroom/feed/",
+      "enabled": true,
+      "articleEnrichment": { "enabled": true },
+      "credibility": 90,
+      "updateFrequency": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "Official U.S. consumer finance policy and enforcement updates"
     },
     {
       "id": "imf-news",
@@ -27,9 +46,11 @@
       "type": "rss",
       "url": "https://www.imf.org/en/News/rss?language=eng",
       "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 90,
       "updateFrequency": "daily",
-      "purpose": "Macro and international financial stability context"
+      "accessPolicy": "disabled-unverified-feed",
+      "purpose": "Disabled: current probe returned HTML instead of RSS XML"
     },
     {
       "id": "chinanews-finance",
@@ -37,19 +58,35 @@
       "type": "rss",
       "url": "https://www.chinanews.com.cn/rss/finance.xml",
       "enabled": true,
+      "articleEnrichment": { "enabled": true },
       "credibility": 84,
       "updateFrequency": "hourly",
+      "accessPolicy": "free-media-source",
       "purpose": "China macroeconomic, market and business news"
+    },
+    {
+      "id": "chinaorg-business",
+      "name": "China.org.cn Business",
+      "type": "rss",
+      "url": "http://www.china.org.cn/english/rss/201726.xml",
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
+      "credibility": 80,
+      "updateFrequency": "daily",
+      "accessPolicy": "disabled-stale-feed",
+      "purpose": "Disabled: RSS probe returned only stale 2008 items"
     },
     {
       "id": "cnbc-business",
       "name": "CNBC Business News",
       "type": "rss",
       "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
-      "enabled": true,
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 86,
       "updateFrequency": "hourly",
-      "purpose": "U.S. business, markets and financial news"
+      "accessPolicy": "disabled-media-source",
+      "purpose": "Disabled: ordinary media source and may require subscriptions for full reading"
     },
     {
       "id": "alpha-vantage-news",
@@ -59,7 +96,8 @@
       "enabled": false,
       "credibility": 76,
       "updateFrequency": "hourly",
-      "purpose": "Market news enrichment when an API key is configured"
+      "accessPolicy": "disabled-api-key",
+      "purpose": "Disabled: requires API key and is not a direct official primary source"
     }
   ]
 }

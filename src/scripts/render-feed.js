@@ -59,7 +59,10 @@
 
   function renderFeed(container, items) {
     if (!items.length) {
-      container.innerHTML = '<div class="empty-state">当前筛选条件下没有可展示的信息。</div>';
+      renderEmptyState(container, {
+        title: "当前筛选条件下没有可展示的信息。",
+        detail: ""
+      });
       return;
     }
 
@@ -71,6 +74,7 @@
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
       const safeUrl = safeExternalUrl(item.url);
+      const summary = item.contentExcerpt || item.summary;
       const title = safeUrl
         ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
         : escapeHtml(item.title);
@@ -79,7 +83,7 @@
         <article class="feed-card">
           <div>
             <h3>${title}</h3>
-            ${renderSummary(item.summary)}
+            ${renderSummary(summary)}
             <div class="item-meta">
               <span>${escapeHtml(item.source)}</span>
               <span>${formatDate(item.publishedAt)}</span>
@@ -96,9 +100,27 @@
     }).join("");
   }
 
+  function renderEmptyState(container, state) {
+    const actions = state.actions || [];
+    container.innerHTML = `
+      <div class="empty-state">
+        <h3>${escapeHtml(state.title || "没有匹配结果")}</h3>
+        ${state.detail ? `<p>${escapeHtml(state.detail)}</p>` : ""}
+        ${actions.length ? `
+          <div class="empty-actions">
+            ${actions.map((action) => `
+              <button class="ghost-button" type="button" data-empty-action="${escapeHtml(action.id)}">${escapeHtml(action.label)}</button>
+            `).join("")}
+          </div>
+        ` : ""}
+      </div>
+    `;
+  }
+
   window.MessageChooseRender = {
     formatDate,
     renderChannelSummary,
+    renderEmptyState,
     renderFeed,
     renderSummary,
     safeExternalUrl

@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Run tests before update
         run: npm test
 
@@ -42,6 +45,7 @@ jobs:
             data/processed/filtered-items.json \
             data/processed/deduped-items.json \
             data/processed/scored-items.json \
+            data/processed/article-enrichment.json \
             data/processed/source-audit.json \
             data/archive/daily \
             src/data/latest-items.json \

@@ -67,12 +67,15 @@
       </section>
 
       <div class="content-grid">
-        <aside class="source-panel" aria-labelledby="source-title">
-          <h2 id="source-title">来源状态</h2>
-          <div id="source-status"></div>
-        </aside>
-
         <section class="feed-panel" aria-labelledby="feed-title">
+          <div class="source-disclosure" id="source-disclosure">
+            <button class="source-summary-button" id="source-toggle" type="button" aria-expanded="false" aria-controls="source-status">
+              <span id="source-summary">来源状态加载中</span>
+              <span class="source-chevron" aria-hidden="true"></span>
+            </button>
+            <div id="source-status" hidden></div>
+          </div>
+
           <div class="section-heading">
             <div>
               <h2 id="feed-title">筛选结果</h2>

@@ -23,6 +23,7 @@ async function fetchRssSource(source, fetchedAt) {
         signal: AbortSignal.timeout(20000)
       });
       const body = await response.text();
+      const items = extractItems(body);
       lastResult = {
         sourceId: source.id,
         sourceName: source.name,
@@ -32,10 +33,10 @@ async function fetchRssSource(source, fetchedAt) {
         url: source.url,
         status: response.status,
         ok: response.ok,
-        itemCount: extractItems(body).length,
+        itemCount: items.length,
         fetchedAt,
         attempts: attempt,
-        body
+        items
       };
     } catch (error) {
       lastResult = {
@@ -77,6 +78,22 @@ function isUsableResult(result) {
   return result.ok === true && Number(result.itemCount || 0) > 0;
 }
 
+function getRecordItems(record) {
+  if (Array.isArray(record?.items)) return record.items;
+  if (record?.body) return extractItems(record.body);
+  return [];
+}
+
+function compactResult(result) {
+  const items = getRecordItems(result);
+  const { body, ...rest } = result;
+  return {
+    ...rest,
+    itemCount: Number(result.itemCount || items.length || 0),
+    items
+  };
+}
+
 function buildSourceHealth(results, previousHealth = { sources: [] }, generatedAt = new Date().toISOString()) {
   const previousById = new Map((previousHealth.sources || []).map((source) => [source.id, source]));
   return {
@@ -107,17 +124,18 @@ function buildEffectiveResults(results, previousResults = []) {
 
   return results.map((result) => {
     if (isUsableResult(result)) {
-      return { ...result, stale: false };
+      return { ...compactResult(result), stale: false };
     }
 
     const previous = previousById.get(result.sourceId);
-    const previousItemCount = previous?.body ? extractItems(previous.body).length : 0;
+    const previousItems = getRecordItems(previous);
+    const previousItemCount = previousItems.length;
     if (!previous || previousItemCount === 0) {
-      return { ...result, stale: false };
+      return { ...compactResult(result), stale: false };
     }
 
     return {
-      ...previous,
+      ...compactResult(previous),
       sourceName: result.sourceName,
       category: result.category,
       credibility: result.credibility,
@@ -161,6 +179,7 @@ if (require.main === module) {
 module.exports = {
   fetchRssSources,
   fetchRssSource,
+  getRecordItems,
   isUsableResult,
   buildSourceHealth,
   buildEffectiveResults,
