@@ -15,6 +15,8 @@ function compactItem(item) {
     publishedAt: item.publishedAt,
     summary: String(item.summary || "").slice(0, 500),
     ...(item.contentExcerpt ? { contentExcerpt: String(item.contentExcerpt).slice(0, 500) } : {}),
+    ...(item.aiSummary ? { aiSummary: String(item.aiSummary).slice(0, 240) } : {}),
+    ...(item.summaryReason ? { summaryReason: String(item.summaryReason).slice(0, 160) } : {}),
     ...(item.imageUrl ? { imageUrl: item.imageUrl } : {}),
     score: item.score,
     duplicateCount: Number(item.duplicateCount || 0),

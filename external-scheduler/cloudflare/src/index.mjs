@@ -1,11 +1,15 @@
-const DISPATCH_URL =
+const DAILY_DISPATCH_URL =
   "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-update.yml/dispatches";
+const WEEKLY_DISPATCH_URL =
+  "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/weekly-review.yml/dispatches";
 const RUNS_URL =
   "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-update.yml/runs";
 const PRIMARY_CRON = "0 0 * * *";
 const RETRY_CRON = "30 0 * * *";
+const WEEKLY_CRON = "0 1 * * 1";
 const PRIMARY_TRIGGER = "cloudflare-primary";
 const RETRY_TRIGGER = "cloudflare-retry";
+const WEEKLY_TRIGGER = "cloudflare-weekly";
 const PRIMARY_RUN_TITLE = `Daily information update (${PRIMARY_TRIGGER})`;
 const DAY_IN_MILLISECONDS = 24 * 60 * 60 * 1000;
 
@@ -22,8 +26,8 @@ function getHeaders(env) {
   };
 }
 
-export async function dispatchWorkflow(env, triggerReason = PRIMARY_TRIGGER, request = fetch) {
-  const response = await request(DISPATCH_URL, {
+export async function dispatchWorkflow(env, triggerReason = PRIMARY_TRIGGER, request = fetch, dispatchUrl = DAILY_DISPATCH_URL) {
+  const response = await request(dispatchUrl, {
     method: "POST",
     headers: {
       ...getHeaders(env),
@@ -78,6 +82,10 @@ export async function runScheduledTrigger(controller, env, request = fetch) {
     if (!successfulPrimaryRunExists) {
       return dispatchWorkflow(env, RETRY_TRIGGER, request);
     }
+  }
+
+  if (controller.cron === WEEKLY_CRON) {
+    return dispatchWorkflow(env, WEEKLY_TRIGGER, request, WEEKLY_DISPATCH_URL);
   }
 }
 

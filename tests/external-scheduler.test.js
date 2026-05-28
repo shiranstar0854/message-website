@@ -51,11 +51,11 @@ test("Cloudflare scheduler reports rejected GitHub dispatches", async () => {
   );
 });
 
-test("Cloudflare scheduler runs at 08:00 Beijing time and checks again at 08:30", () => {
+test("Cloudflare scheduler runs daily updates and weekly review from Cloudflare cron", () => {
   const configPath = path.join(__dirname, "..", "external-scheduler", "cloudflare", "wrangler.jsonc");
   const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-  assert.deepEqual(config.triggers.crons, ["0 0 * * *", "30 0 * * *"]);
+  assert.deepEqual(config.triggers.crons, ["0 0 * * *", "30 0 * * *", "0 1 * * 1"]);
 });
 
 test("Cloudflare retry trigger skips dispatch after a successful primary run exists", async () => {
@@ -138,5 +138,28 @@ test("Cloudflare retry trigger dispatches after a failed primary run", async () 
   assert.equal(
     requests[1].options.body,
     JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-retry" } })
+  );
+});
+
+test("Cloudflare weekly cron dispatches the weekly review workflow", async () => {
+  const { runScheduledTrigger } = await loadScheduler();
+  let recordedRequest;
+
+  await runScheduledTrigger(
+    { cron: "0 1 * * 1", scheduledTime: Date.parse("2026-06-01T01:00:00Z") },
+    { GITHUB_TOKEN: "test-token" },
+    async (url, options) => {
+      recordedRequest = { url, options };
+      return new Response(null, { status: 204 });
+    }
+  );
+
+  assert.equal(
+    recordedRequest.url,
+    "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/weekly-review.yml/dispatches"
+  );
+  assert.equal(
+    recordedRequest.options.body,
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-weekly" } })
   );
 });

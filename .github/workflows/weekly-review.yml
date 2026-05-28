@@ -1,0 +1,51 @@
+name: Weekly information review
+run-name: Weekly information review (${{ inputs.trigger_reason || 'manual' }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      trigger_reason:
+        description: Trigger source for weekly review tracking
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-information-review
+  cancel-in-progress: false
+
+jobs:
+  review-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests before review
+        run: npm test
+
+      - name: Generate weekly review
+        run: npm run review:weekly
+
+      - name: Commit weekly review
+        run: |
+          git add src/data/weekly-review.json data/archive/weekly
+          if git diff --cached --quiet; then
+            echo "No weekly review changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update weekly information review"
+          git push

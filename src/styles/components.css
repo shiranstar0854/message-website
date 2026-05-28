@@ -312,6 +312,13 @@ output {
   overflow-wrap: anywhere;
 }
 
+.summary-reason {
+  margin: -4px 0 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .feed-card a {
   text-decoration: none;
 }

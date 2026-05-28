@@ -74,7 +74,7 @@
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
       const safeUrl = safeExternalUrl(item.url);
-      const summary = item.contentExcerpt || item.summary;
+      const summary = item.aiSummary || item.contentExcerpt || item.summary;
       const title = safeUrl
         ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
         : escapeHtml(item.title);
@@ -84,6 +84,7 @@
           <div>
             <h3>${title}</h3>
             ${renderSummary(summary)}
+            ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}
             <div class="item-meta">
               <span>${escapeHtml(item.source)}</span>
               <span>${formatDate(item.publishedAt)}</span>

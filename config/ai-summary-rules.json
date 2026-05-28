@@ -1,4 +1,16 @@
 {
-  "enabled": false,
-  "note": "Reserved for task.md phase 5. The current implementation only covers phases 1-3."
+  "enabled": true,
+  "method": "extractive",
+  "note": "Phase 5 baseline. This produces deterministic summaries from enriched excerpts without requiring an external AI key; the same output fields can later be replaced by model-generated summaries.",
+  "daily": {
+    "maxItemsPerChannel": 20,
+    "summaryMaxLength": 180,
+    "reasonMaxLength": 120,
+    "minimumScore": 60
+  },
+  "weekly": {
+    "lookbackDays": 7,
+    "maxHighlightsPerChannel": 8,
+    "maxSourcesPerChannel": 6
+  }
 }
