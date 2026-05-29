@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-29T02:45:41.813Z",
+  "generatedAt": "2026-05-29T03:09:41.054Z",
   "totals": {
-    "attempted": 51,
-    "excerptCount": 51,
-    "imageCount": 28,
+    "attempted": 53,
+    "excerptCount": 53,
+    "imageCount": 36,
     "failed": 0,
-    "skipped": 64
+    "skipped": 66
   },
   "sources": {
     "github-blog": {
@@ -25,15 +25,15 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 56,
+      "skipped": 58,
       "disabled": true
     },
     "google-ai": {
       "sourceId": "google-ai",
       "sourceName": "Google AI Blog",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -71,9 +71,9 @@
     "36kr": {
       "sourceId": "36kr",
       "sourceName": "36Kr",
-      "attempted": 8,
-      "excerptCount": 8,
-      "imageCount": 8,
+      "attempted": 11,
+      "excerptCount": 11,
+      "imageCount": 11,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -81,8 +81,8 @@
     "solidot": {
       "sourceId": "solidot",
       "sourceName": "Solidot",
-      "attempted": 3,
-      "excerptCount": 3,
+      "attempted": 1,
+      "excerptCount": 1,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
@@ -121,8 +121,8 @@
     "chinanews-finance": {
       "sourceId": "chinanews-finance",
       "sourceName": "中国新闻网财经",
-      "attempted": 13,
-      "excerptCount": 13,
+      "attempted": 14,
+      "excerptCount": 14,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
@@ -131,9 +131,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 3,
-      "excerptCount": 3,
-      "imageCount": 3,
+      "attempted": 7,
+      "excerptCount": 7,
+      "imageCount": 7,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -141,9 +141,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 10,
-      "excerptCount": 10,
-      "imageCount": 10,
+      "attempted": 11,
+      "excerptCount": 11,
+      "imageCount": 11,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -151,8 +151,8 @@
     "chinanews-breaking": {
       "sourceId": "chinanews-breaking",
       "sourceName": "中国新闻网即时新闻",
-      "attempted": 7,
-      "excerptCount": 7,
+      "attempted": 2,
+      "excerptCount": 2,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
