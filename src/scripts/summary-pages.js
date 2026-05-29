@@ -54,7 +54,7 @@
     const container = document.getElementById("daily-summary-list");
     loadJson("src/data/daily-summary.json", { channelSummaries: [] }).then((data) => {
       const channelSummaries = data.channelSummaries || [];
-      meta.textContent = `${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务 · ${data.method || "extractive"}`;
+      meta.textContent = `摘要更新时间：${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务 · ${data.method || "extractive"}`;
       if (!channelSummaries.length) {
         window.MessageChooseRender.renderEmptyState(container, {
           title: "暂无每日摘要",

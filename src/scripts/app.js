@@ -47,7 +47,7 @@
   function formatGeneratedAt(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "数据时间未知";
-    return `更新 ${new Intl.DateTimeFormat("zh-CN", {
+    return `信息流更新 ${new Intl.DateTimeFormat("zh-CN", {
       month: "2-digit",
       day: "2-digit",
       hour: "2-digit",
@@ -67,7 +67,7 @@
     document.getElementById("generated-at").textContent = formatGeneratedAt(data.generatedAt);
     document.getElementById("total-count").textContent = `${filteredCount} 条`;
     document.getElementById("result-summary").textContent = message
-      || `当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
+      || `信息流更新时间：${formatGeneratedAt(data.generatedAt).replace("信息流更新 ", "")}；当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
   }
 
   async function init() {
