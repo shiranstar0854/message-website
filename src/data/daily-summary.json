@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-29T03:14:15.970Z",
-  "method": "extractive",
+  "generatedAt": "2026-05-29T03:17:44.431Z",
+  "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
   "llmConfigured": true,
-  "fallbackCount": 1,
-  "errorCount": 1,
+  "fallbackCount": 0,
+  "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "今日科技重点集中在：OpenAI’s Frontier Governance Framework；Election information and safeguards in 2026；Catch up on 12 major I/O 2026 moments。",
+      "overview": "OpenAI发布前沿治理框架，保障选举安全；Google I/O 2026展示新模型；光帆科技与腾讯合作AI穿戴设备；美联储指AI投资影响中性利率。",
       "keyPoints": [
-        "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emergin...",
-        "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI tra...",
-        "Relive some of our top onstage moments this year, including the debut of our newest models, updates to Search and more."
+        "OpenAI前沿治理框架及AI安全实践",
+        "全球选举信息保护与AI透明度措施",
+        "Google I/O 2026发布新模型及搜索更新"
       ],
       "highlights": [
         {
@@ -59,16 +59,16 @@
           "summary": "据报道，美联储巴尔金5月28日表示，人工智能领域的投资正对中性利率构成压力。"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance",
       "label": "金融",
-      "overview": "今日金融重点集中在：AI算力驱动需求爆发 国产光通信产品出海热销；汽车之家发布一季度财报：战略转型加速，全球化版图持续拓展；Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations。",
+      "overview": "AI算力驱动国产光通信产品出口订单排至2028年；汽车之家一季度财报显示战略转型加速；美联储发布银行决议计划反馈信及执法行动。",
       "keyPoints": [
-        "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。",
-        "北京时间2026年5月28日晚，中国领先的汽车互联网服务平台——汽车之家(纽约证券交易所股票代码：ATHM；港交所代号：2518)对外披露2026年第一季度未经审计财务业绩。",
-        "The Federal Deposit Insurance Corporation and the Federal Reserve Board today published feedback letters for several..."
+        "国产光通信产品量价齐升，出口订单排至2028年",
+        "汽车之家一季度财报：战略转型与全球化拓展",
+        "美联储发布部分银行决议计划反馈信"
       ],
       "highlights": [
         {
@@ -112,16 +112,16 @@
           "summary": "中新社北京5月28日电 (记者 刘亮)中国电信28日公布，中国电信研究院近日联合清华大学、无锡沐创集成电路设计有限公司，成功完成基于国产抗量子芯片的AI(人工智能)多智能体可信通信创新试验。"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news",
       "label": "新闻",
-      "overview": "今日新闻重点集中在：Security Council LIVE: Mounting attacks and Russian threats prompt emergency Ukraine meeting；NASA’s X-59 Prepares for First Supersonic Flight；Curiosity Blog, Sols 4900-4907: Pasadena, We Have a Drill Sample!。",
+      "overview": "联合国安理会就乌克兰局势召开紧急会议；NASA X-59准备首次超音速飞行；好奇号火星车成功钻取样本。",
       "keyPoints": [
-        "The UN Security Council is meeting in emergency session on Ukraine, with Secretary-General António Guterres telling a...",
-        "NASA Armstrong Public Affairs Specialist NASA’s X-59 quiet supersonic research aircraft is preparing for some of its...",
-        "Mars Science Laboratory Mission Team Members Written by Abigail Fraeman, Deputy Project Scientist at Jet Propulsion L..."
+        "安理会紧急会议讨论乌克兰局势",
+        "NASA X-59静音超音速飞机首飞在即",
+        "好奇号火星车钻取样本成功"
       ],
       "highlights": [
         {
@@ -165,12 +165,7 @@
           "summary": "The Security Council is meeting for a high-level debate on strengthening the UN-centred international system amid mounting pressure on multilateralism and deepening geopolitical..."
         }
       ],
-      "summaryMethod": "extractive"
-    }
-  ],
-  "errors": [
-    {
-      "message": "Unexpected end of JSON input"
+      "summaryMethod": "deepseek-chat-completions"
     }
   ],
   "totalSummaries": 3,
