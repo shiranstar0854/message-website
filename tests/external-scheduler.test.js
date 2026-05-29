@@ -55,7 +55,7 @@ test("Cloudflare scheduler runs daily updates and weekly review from Cloudflare 
   const configPath = path.join(__dirname, "..", "external-scheduler", "cloudflare", "wrangler.jsonc");
   const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-  assert.deepEqual(config.triggers.crons, ["0 0 * * *", "30 0 * * *", "0 1 * * 1"]);
+  assert.deepEqual(config.triggers.crons, ["0 11 * * *", "30 11 * * *", "0 1 * * 1"]);
 });
 
 test("Cloudflare retry trigger skips dispatch after a successful primary run exists", async () => {
@@ -63,7 +63,7 @@ test("Cloudflare retry trigger skips dispatch after a successful primary run exi
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url) => {
       requests.push(url);
@@ -91,7 +91,7 @@ test("Cloudflare retry trigger dispatches only when the primary run is missing",
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });
@@ -114,7 +114,7 @@ test("Cloudflare retry trigger dispatches after a failed primary run", async () 
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });

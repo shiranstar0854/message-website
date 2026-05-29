@@ -4,8 +4,8 @@ const WEEKLY_DISPATCH_URL =
   "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/weekly-review.yml/dispatches";
 const RUNS_URL =
   "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-update.yml/runs";
-const PRIMARY_CRON = "0 0 * * *";
-const RETRY_CRON = "30 0 * * *";
+const PRIMARY_CRON = "0 11 * * *";
+const RETRY_CRON = "30 11 * * *";
 const WEEKLY_CRON = "0 1 * * 1";
 const PRIMARY_TRIGGER = "cloudflare-primary";
 const RETRY_TRIGGER = "cloudflare-retry";
