@@ -13,7 +13,7 @@ test("Cloudflare scheduler dispatches the GitHub update workflow", async () => {
 
   await dispatchWorkflow(
     { GITHUB_TOKEN: "test-token" },
-    "cloudflare-primary",
+    "cloudflare-daily-primary",
     async (url, options) => {
       recordedRequest = { url, options };
       return new Response(null, { status: 204 });
@@ -28,7 +28,30 @@ test("Cloudflare scheduler dispatches the GitHub update workflow", async () => {
   assert.equal(recordedRequest.options.headers.Authorization, "Bearer test-token");
   assert.equal(
     recordedRequest.options.body,
-    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-primary" } })
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-daily-primary" } })
+  );
+});
+
+test("Cloudflare scheduler dispatches the GitHub summary workflow", async () => {
+  const { runScheduledTrigger } = await loadScheduler();
+  let recordedRequest;
+
+  await runScheduledTrigger(
+    { cron: "0 11 * * *", scheduledTime: Date.parse("2026-05-28T11:00:00Z") },
+    { GITHUB_TOKEN: "test-token" },
+    async (url, options) => {
+      recordedRequest = { url, options };
+      return new Response(null, { status: 204 });
+    }
+  );
+
+  assert.equal(
+    recordedRequest.url,
+    "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-summary.yml/dispatches"
+  );
+  assert.equal(
+    recordedRequest.options.body,
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-summary-primary" } })
   );
 });
 
@@ -55,15 +78,15 @@ test("Cloudflare scheduler runs daily updates and weekly review from Cloudflare 
   const configPath = path.join(__dirname, "..", "external-scheduler", "cloudflare", "wrangler.jsonc");
   const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-  assert.deepEqual(config.triggers.crons, ["0 11 * * *", "30 11 * * *", "0 1 * * 1"]);
+  assert.deepEqual(config.triggers.crons, ["0 0 * * *", "30 0 * * *", "0 11 * * *", "30 11 * * *", "0 1 * * 1"]);
 });
 
-test("Cloudflare retry trigger skips dispatch after a successful primary run exists", async () => {
+test("Cloudflare daily retry trigger skips dispatch after a successful primary run exists", async () => {
   const { runScheduledTrigger } = await loadScheduler();
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
+    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url) => {
       requests.push(url);
@@ -71,7 +94,7 @@ test("Cloudflare retry trigger skips dispatch after a successful primary run exi
         JSON.stringify({
           workflow_runs: [
             {
-              display_title: "Daily information update (cloudflare-primary)",
+              display_title: "Daily information update (cloudflare-daily-primary)",
               created_at: "2026-05-28T00:00:35Z",
               conclusion: "success",
             },
@@ -86,12 +109,12 @@ test("Cloudflare retry trigger skips dispatch after a successful primary run exi
   assert.match(requests[0], /\/runs\?/);
 });
 
-test("Cloudflare retry trigger dispatches only when the primary run is missing", async () => {
+test("Cloudflare daily retry trigger dispatches only when the primary run is missing", async () => {
   const { runScheduledTrigger } = await loadScheduler();
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
+    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });
@@ -105,16 +128,16 @@ test("Cloudflare retry trigger dispatches only when the primary run is missing",
   assert.equal(requests.length, 2);
   assert.equal(
     requests[1].options.body,
-    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-retry" } })
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-daily-retry" } })
   );
 });
 
-test("Cloudflare retry trigger dispatches after a failed primary run", async () => {
+test("Cloudflare daily retry trigger dispatches after a failed primary run", async () => {
   const { runScheduledTrigger } = await loadScheduler();
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
+    { cron: "30 0 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });
@@ -122,7 +145,7 @@ test("Cloudflare retry trigger dispatches after a failed primary run", async () 
         return new Response(
           JSON.stringify({
             workflow_runs: [{
-              display_title: "Daily information update (cloudflare-primary)",
+              display_title: "Daily information update (cloudflare-daily-primary)",
               created_at: "2026-05-28T00:00:35Z",
               conclusion: "failure",
             }],
@@ -137,7 +160,35 @@ test("Cloudflare retry trigger dispatches after a failed primary run", async () 
   assert.equal(requests.length, 2);
   assert.equal(
     requests[1].options.body,
-    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-retry" } })
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-daily-retry" } })
+  );
+});
+
+test("Cloudflare summary retry dispatches only when the summary primary run is missing", async () => {
+  const { runScheduledTrigger } = await loadScheduler();
+  const requests = [];
+
+  await runScheduledTrigger(
+    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
+    { GITHUB_TOKEN: "test-token" },
+    async (url, options) => {
+      requests.push({ url, options });
+      if (url.includes("/runs?")) {
+        assert.match(url, /daily-summary\.yml\/runs/);
+        return new Response(JSON.stringify({ workflow_runs: [] }), { status: 200 });
+      }
+      return new Response(null, { status: 204 });
+    }
+  );
+
+  assert.equal(requests.length, 2);
+  assert.equal(
+    requests[1].url,
+    "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-summary.yml/dispatches"
+  );
+  assert.equal(
+    requests[1].options.body,
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-summary-retry" } })
   );
 });
 

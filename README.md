@@ -36,7 +36,7 @@ npm.cmd run generate:latest
 
 ## 自动更新
 
-`.github/workflows/daily-update.yml` 通过 `workflow_dispatch` 执行更新，由托管在 Cloudflare Workers Cron 的外部定时任务于每日北京时间 `08:00` 触发；若当天没有检测到成功的主触发运行，则在 `08:30` 补偿触发一次。`.github/workflows/weekly-review.yml` 由同一个 Cloudflare Worker 于每周一北京时间 `09:00` 触发。Cloudflare 调度器实现位于 `external-scheduler/cloudflare/`，部署时通过 Worker Secret 保存受限 GitHub Token，不依赖本机定时任务。更新任务会在来源短暂不可访问时保留上一份有效数据，并刷新来源审计、每日摘要和当天最新归档。`scripts/trigger-daily-update.ps1` 仅用于本机手动验证触发链路。
+`.github/workflows/daily-update.yml` 通过 `workflow_dispatch` 执行信息流更新，由托管在 Cloudflare Workers Cron 的外部定时任务于每日北京时间 `08:00` 触发；若当天没有检测到成功的主触发运行，则在 `08:30` 补偿触发一次。`.github/workflows/daily-summary.yml` 于每日北京时间 `19:00` 生成每日摘要；若当天没有检测到成功的主触发运行，则在 `19:30` 补偿触发一次。`.github/workflows/weekly-review.yml` 由同一个 Cloudflare Worker 于每周一北京时间 `09:00` 触发。Cloudflare 调度器实现位于 `external-scheduler/cloudflare/`，部署时通过 Worker Secret 保存受限 GitHub Token，不依赖本机定时任务。信息流更新会在来源短暂不可访问时保留上一份有效数据，并刷新来源审计和当天最新归档；摘要更新会基于当天最新信息流生成三类每日摘要。`scripts/trigger-daily-update.ps1` 仅用于本机手动验证触发链路。
 
 ## 数据字段
 
