@@ -194,8 +194,9 @@ function buildDailyBriefPrompt(summaryItems, rules = {}) {
   return [
     "Create a daily important-affairs summary for a public dashboard.",
     "Cover only three areas: tech, finance, news.",
-    "Return JSON only with key channelSummaries.",
-    "channelSummaries must be an object keyed by tech, finance, news. Each value must include overview and keyPoints.",
+    "Return minified valid JSON only. Do not wrap it in markdown.",
+    "Do not include line breaks inside JSON string values.",
+    "Use exactly this shape: {\"channelSummaries\":{\"tech\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]},\"finance\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]},\"news\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]}}}.",
     "Use only the provided items. Keep overview concise and readable in Chinese.",
     "",
     JSON.stringify({

@@ -7,7 +7,8 @@ const DEFAULT_SYSTEM_PROMPT = [
   "You write concise Chinese summaries for a public information dashboard.",
   "Use only the provided input.",
   "Do not claim you read the full article unless the excerpt contains it.",
-  "Return valid JSON only."
+  "Return valid minified JSON only.",
+  "Do not use markdown, comments, trailing commas, or line breaks inside string values."
 ].join(" ");
 
 function getLlmConfig(rules = {}, env = process.env) {

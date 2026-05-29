@@ -112,8 +112,9 @@ function buildWeeklyReview(archives, rules = {}, nowIso = new Date().toISOString
 function buildWeeklyPrompt(review, rules = {}) {
   return [
     "Create a weekly review for a public tech/finance/news dashboard.",
-    "Return JSON only with keys: executiveSummary, channelReviews.",
-    "channelReviews must be an object keyed by tech, finance, news. Each value must include summary and watchlist.",
+    "Return minified valid JSON only. Do not wrap it in markdown.",
+    "Do not include line breaks inside JSON string values.",
+    "Use exactly this shape: {\"executiveSummary\":\"...\",\"channelReviews\":{\"tech\":{\"summary\":\"...\",\"watchlist\":[\"...\"]},\"finance\":{\"summary\":\"...\",\"watchlist\":[\"...\"]},\"news\":{\"summary\":\"...\",\"watchlist\":[\"...\"]}}}.",
     "Use only the provided highlights and source counts.",
     "",
     JSON.stringify({
