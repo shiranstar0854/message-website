@@ -2,6 +2,11 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { readJson, readSources, writeJson } = require("./lib/file-utils");
 const { sortItems, truncateText } = require("./lib/pipeline");
+const {
+  getLlmConfig,
+  isLlmConfigured,
+  requestDeepSeekJson
+} = require("./lib/deepseek-summary-client");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const CHANNEL_LABELS = {
@@ -104,7 +109,96 @@ function buildWeeklyReview(archives, rules = {}, nowIso = new Date().toISOString
   };
 }
 
-function generateWeeklyReview(nowIso = new Date().toISOString()) {
+function buildWeeklyPrompt(review, rules = {}) {
+  return [
+    "Create a weekly review for a public tech/finance/news dashboard.",
+    "Return JSON only with keys: executiveSummary, channelReviews.",
+    "channelReviews must be an object keyed by tech, finance, news. Each value must include summary and watchlist.",
+    "Use only the provided highlights and source counts.",
+    "",
+    JSON.stringify({
+      weekId: review.weekId,
+      archiveDays: review.archiveDays,
+      totals: review.totals,
+      channels: review.channels.map((channel) => ({
+        id: channel.id,
+        label: channel.label,
+        totalItems: channel.totalItems,
+        topSources: channel.topSources,
+        highlights: (channel.highlights || []).slice(0, Number(rules.weekly?.maxHighlightsPerChannel || 8))
+      }))
+    }, null, 2)
+  ].join("\n");
+}
+
+function applyWeeklyLlmResponse(review, responseJson, rules = {}, generatedAt = new Date().toISOString()) {
+  const weeklyRules = rules.weekly || {};
+  const channelReviews = responseJson.channelReviews || {};
+  return {
+    ...review,
+    method: getLlmConfig(rules).provider,
+    modelSummary: truncateText(responseJson.executiveSummary || "", Number(weeklyRules.executiveSummaryMaxLength || 600)),
+    channels: review.channels.map((channel) => {
+      const modelReview = channelReviews[channel.id] || {};
+      return {
+        ...channel,
+        modelSummary: truncateText(modelReview.summary || "", Number(weeklyRules.channelSummaryMaxLength || 360)),
+        watchlist: Array.isArray(modelReview.watchlist)
+          ? modelReview.watchlist.slice(0, 5).map((item) => truncateText(item, 90)).filter(Boolean)
+          : []
+      };
+    }),
+    summaryStats: {
+      llmEnabled: Boolean(rules.llmProduction?.enabled),
+      llmConfigured: true,
+      llmAttempted: 1,
+      llmSucceeded: 1,
+      fallbackCount: 0,
+      errorCount: 0,
+      generatedAt
+    }
+  };
+}
+
+async function enhanceWeeklyReviewWithLlm(review, rules = {}, generatedAt = new Date().toISOString(), options = {}) {
+  const env = options.env || process.env;
+  const llmConfigured = isLlmConfigured(rules, env);
+  if (!llmConfigured) {
+    return {
+      ...review,
+      summaryStats: {
+        llmEnabled: Boolean(rules.llmProduction?.enabled),
+        llmConfigured: false,
+        llmAttempted: 0,
+        llmSucceeded: 0,
+        fallbackCount: rules.llmProduction?.enabled ? 1 : 0,
+        errorCount: 0,
+        generatedAt
+      }
+    };
+  }
+
+  try {
+    const responseJson = await requestDeepSeekJson(buildWeeklyPrompt(review, rules), rules, options);
+    return applyWeeklyLlmResponse(review, responseJson, rules, generatedAt);
+  } catch (error) {
+    return {
+      ...review,
+      summaryStats: {
+        llmEnabled: Boolean(rules.llmProduction?.enabled),
+        llmConfigured: true,
+        llmAttempted: 1,
+        llmSucceeded: 0,
+        fallbackCount: 1,
+        errorCount: 1,
+        generatedAt
+      },
+      summaryErrors: [{ message: truncateText(error.message, 180) }]
+    };
+  }
+}
+
+async function generateWeeklyReview(nowIso = new Date().toISOString(), options = {}) {
   const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
   const archives = loadDailyArchives(rules.weekly?.lookbackDays || 7, new Date(nowIso));
   const sources = readSources(ROOT_DIR);
@@ -112,21 +206,29 @@ function generateWeeklyReview(nowIso = new Date().toISOString()) {
     ...archive,
     items: filterEnabledSourceItems(archive.items || [], sources)
   }));
-  const review = buildWeeklyReview(filteredArchives, rules, nowIso);
+  const review = await enhanceWeeklyReviewWithLlm(buildWeeklyReview(filteredArchives, rules, nowIso), rules, nowIso, options);
   writeJson(path.join(ROOT_DIR, "src", "data", "weekly-review.json"), review);
   writeJson(path.join(ROOT_DIR, "data", "archive", "weekly", `${review.weekId}.json`), review);
   return review;
 }
 
 if (require.main === module) {
-  const review = generateWeeklyReview();
-  console.log(`Generated weekly review ${review.weekId} from ${review.totals.archiveCount} daily archives.`);
+  generateWeeklyReview()
+    .then((review) => {
+      console.log(`Generated weekly review ${review.weekId} from ${review.totals.archiveCount} daily archives.`);
+    })
+    .catch((error) => {
+      console.error(error);
+      process.exitCode = 1;
+    });
 }
 
 module.exports = {
   isoWeekId,
   loadDailyArchives,
   buildWeeklyReview,
+  buildWeeklyPrompt,
+  enhanceWeeklyReviewWithLlm,
   filterEnabledSourceItems,
   generateWeeklyReview
 };

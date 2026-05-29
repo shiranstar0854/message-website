@@ -1,8 +1,20 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-const { summarizeLatestData } = require("../scripts/generate-ai-summary");
-const { buildWeeklyReview, filterEnabledSourceItems, isoWeekId } = require("../scripts/generate-weekly-review");
+const {
+  buildDeepSeekRequestBody,
+  buildDailyChannelSummaries,
+  buildDailySummaryOutput,
+  isLlmConfigured,
+  summarizeLatestData,
+  summarizeLatestDataWithLlm
+} = require("../scripts/generate-ai-summary");
+const {
+  buildWeeklyReview,
+  enhanceWeeklyReviewWithLlm,
+  filterEnabledSourceItems,
+  isoWeekId
+} = require("../scripts/generate-weekly-review");
 
 test("daily summary generation adds compact summary fields to top channel items", () => {
   const latest = {
@@ -29,6 +41,163 @@ test("daily summary generation adds compact summary fields to top channel items"
   assert.equal(summarized.items[0].summaryMethod, "extractive");
   assert.match(summarized.items[0].aiSummary, /developer workflow/);
   assert.equal(summarized.channels.tech.items[0].aiSummary, summarized.items[0].aiSummary);
+});
+
+test("daily summary LLM path falls back when the required secret is missing", async () => {
+  const latest = {
+    generatedAt: "2026-05-28T00:00:00.000Z",
+    channels: {
+      finance: { id: "finance", items: [{ id: "finance-1" }] }
+    },
+    items: [{
+      id: "finance-1",
+      title: "Market update",
+      url: "https://example.test/finance",
+      source: "Official Source",
+      category: "finance",
+      score: 91,
+      contentExcerpt: "A public market update explained liquidity and policy expectations."
+    }]
+  };
+  const rules = {
+    method: "extractive",
+    llmProduction: {
+      enabled: true,
+      provider: "deepseek-chat-completions",
+      model: "deepseek-v4-flash",
+      requiredSecret: "DEEPSEEK_API_KEY"
+    },
+    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80 }
+  };
+
+  const summarized = await summarizeLatestDataWithLlm(latest, rules, "2026-05-28T01:00:00.000Z", {
+    env: {}
+  });
+
+  assert.equal(isLlmConfigured(rules, {}), false);
+  assert.equal(summarized.items[0].summaryMethod, "extractive");
+  assert.equal(summarized.summaryStats.llmConfigured, false);
+  assert.equal(summarized.summaryStats.fallbackCount, 0);
+});
+
+test("daily summary output builds channel-level important-affairs summaries", async () => {
+  const summarized = {
+    summaryMethod: "extractive",
+    summaryStats: { llmConfigured: false, fallbackCount: 0, errorCount: 0 },
+    items: [{
+      id: "tech-1",
+      title: "AI platform update",
+      url: "https://example.test/tech",
+      source: "Official Source",
+      sourceId: "official-source",
+      category: "tech",
+      publishedAt: "2026-05-28T00:00:00.000Z",
+      score: 92,
+      aiSummary: "A platform update changed the developer workflow.",
+      summaryReason: "Official Source / tech"
+    }, {
+      id: "finance-1",
+      title: "Market update",
+      url: "https://example.test/finance",
+      source: "Official Source",
+      sourceId: "official-source",
+      category: "finance",
+      publishedAt: "2026-05-28T00:00:00.000Z",
+      score: 91,
+      aiSummary: "A market update explained liquidity expectations.",
+      summaryReason: "Official Source / finance"
+    }, {
+      id: "news-1",
+      title: "Policy briefing",
+      url: "https://example.test/news",
+      source: "Public Agency",
+      sourceId: "public-agency",
+      category: "news",
+      publishedAt: "2026-05-28T00:00:00.000Z",
+      score: 92,
+      aiSummary: "The briefing described a new public policy timeline.",
+      summaryReason: "Public Agency / news"
+    }]
+  };
+  const output = await buildDailySummaryOutput(summarized, {
+    method: "extractive",
+    llmProduction: { enabled: false },
+    daily: { maxHighlightsPerChannel: 3 }
+  }, "2026-05-28T01:00:00.000Z", { env: {} });
+
+  assert.equal(output.summaryShape, "channel-daily-brief");
+  assert.equal(output.totalSummaries, 3);
+  assert.deepEqual(output.channelSummaries.map((channel) => channel.id), ["tech", "finance", "news"]);
+  assert.equal(output.channelSummaries.find((channel) => channel.id === "tech").highlights[0].title, "AI platform update");
+});
+
+test("daily channel summary uses one DeepSeek call when configured", async () => {
+  const rules = {
+    method: "extractive",
+    llmProduction: {
+      enabled: true,
+      provider: "deepseek-chat-completions",
+      endpoint: "https://api.deepseek.com/chat/completions",
+      model: "deepseek-v4-flash",
+      requiredSecret: "DEEPSEEK_API_KEY",
+      maxRetries: 0,
+      maxOutputTokens: 260
+    },
+    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80, reasonMaxLength: 60 }
+  };
+  const calls = [];
+  const fetchImpl = async (url, init) => {
+    calls.push({ url, init });
+    return {
+      ok: true,
+      status: 200,
+      json: async () => ({
+        choices: [{
+          message: {
+            content: JSON.stringify({
+              channelSummaries: {
+                tech: { overview: "科技重点是平台更新。", keyPoints: ["平台能力变化"] },
+                finance: { overview: "金融重点是市场流动性。", keyPoints: ["流动性预期"] },
+                news: { overview: "新闻重点是政策时间线。", keyPoints: ["政策执行范围"] }
+              }
+            })
+          }
+        }]
+      })
+    };
+  };
+
+  const result = await buildDailyChannelSummaries([
+    { id: "tech-1", title: "AI platform update", source: "Official", category: "tech", score: 90, aiSummary: "Platform update.", url: "https://example.test/tech" },
+    { id: "finance-1", title: "Market update", source: "Official", category: "finance", score: 90, aiSummary: "Market update.", url: "https://example.test/finance" },
+    { id: "news-1", title: "Policy briefing", source: "Official", category: "news", score: 90, aiSummary: "Policy update.", url: "https://example.test/news" }
+  ], rules, {
+    env: { DEEPSEEK_API_KEY: "test-key" },
+    fetchImpl
+  });
+  const body = JSON.parse(calls[0].init.body);
+
+  assert.equal(calls[0].url, "https://api.deepseek.com/chat/completions");
+  assert.equal(calls[0].init.headers.Authorization, "Bearer test-key");
+  assert.equal(body.model, "deepseek-v4-flash");
+  assert.equal(body.response_format.type, "json_object");
+  assert.equal(calls.length, 1);
+  assert.equal(result.channels.find((channel) => channel.id === "news").overview, "新闻重点是政策时间线。");
+  assert.equal(result.stats.llmSucceeded, 1);
+});
+
+test("DeepSeek request body uses configured model and JSON mode", () => {
+  const body = buildDeepSeekRequestBody("Summarize Developer update as JSON", {
+    llmProduction: {
+      model: "deepseek-v4-flash"
+    },
+    daily: { summaryMaxLength: 100, reasonMaxLength: 80 }
+  }, {});
+
+  assert.equal(body.model, "deepseek-v4-flash");
+  assert.equal(body.response_format.type, "json_object");
+  assert.match(body.messages[1].content, /Developer update/);
+  assert.match(body.messages[0].content, /JSON/);
 });
 
 test("weekly review builds channel highlights from daily archives", () => {
@@ -64,6 +233,56 @@ test("weekly review builds channel highlights from daily archives", () => {
   assert.equal(review.totals.archiveCount, 1);
   assert.equal(review.channels.find((channel) => channel.id === "finance").highlights[0].source, "Federal Reserve");
   assert.equal(review.channels.find((channel) => channel.id === "news").highlights[0].summary, "The briefing highlighted a global policy issue.");
+});
+
+test("weekly review LLM path adds model summaries when DeepSeek is configured", async () => {
+  const review = buildWeeklyReview([{
+    date: "2026-05-28",
+    items: [{
+      id: "tech-1",
+      title: "AI platform update",
+      url: "https://example.test/tech",
+      source: "Official Source",
+      category: "tech",
+      score: 91,
+      aiSummary: "A platform update changed the developer workflow.",
+      publishedAt: "2026-05-28T00:00:00.000Z"
+    }]
+  }], {
+    weekly: { maxHighlightsPerChannel: 4, maxSourcesPerChannel: 3 }
+  }, "2026-05-28T02:00:00.000Z");
+  const rules = {
+    llmProduction: {
+      enabled: true,
+      provider: "deepseek-chat-completions",
+      endpoint: "https://api.deepseek.com/chat/completions",
+      model: "deepseek-v4-flash",
+      requiredSecret: "DEEPSEEK_API_KEY"
+    }
+  };
+  const enhanced = await enhanceWeeklyReviewWithLlm(review, rules, "2026-05-28T03:00:00.000Z", {
+    env: { DEEPSEEK_API_KEY: "test-key" },
+    fetchImpl: async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({
+        choices: [{
+          message: {
+            content: JSON.stringify({
+              executiveSummary: "本周科技信息集中在平台更新。",
+              channelReviews: {
+                tech: { summary: "科技频道关注开发者平台变化。", watchlist: ["继续观察平台更新"] }
+              }
+            })
+          }
+        }]
+      })
+    })
+  });
+
+  assert.equal(enhanced.method, "deepseek-chat-completions");
+  assert.equal(enhanced.modelSummary, "本周科技信息集中在平台更新。");
+  assert.equal(enhanced.channels.find((channel) => channel.id === "tech").modelSummary, "科技频道关注开发者平台变化。");
 });
 
 test("weekly review source filter excludes disabled historical sources", () => {

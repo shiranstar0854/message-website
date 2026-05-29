@@ -57,3 +57,11 @@ npm.cmd run generate:latest
 评分后会增加 `score`、`scoreBreakdown`、`duplicateCount` 和 `duplicates`。
 
 前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`tags`、`score` 和 `duplicateCount` 等字段。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
+
+## DeepSeek 摘要页面
+
+- `daily-summary.html` 读取 `src/data/daily-summary.json`，只展示科技、金融、新闻三类每日重要事务总结。
+- `weekly-review.html` 读取 `src/data/weekly-review.json`。
+- `history.html` 读取 `src/data/history-index.json`，并展示最近 10 天每日归档。
+- 模型接口默认配置为 DeepSeek Chat Completions：`https://api.deepseek.com/chat/completions`。
+- 自动化启用模型调用前，需要在 GitHub Actions secrets 配置 `DEEPSEEK_API_KEY`，并将 `config/ai-summary-rules.json` 的 `llmProduction.enabled` 改为 `true`。

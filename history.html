@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>历史信息 - Message Choose</title>
+    <meta name="description" content="最近 10 天历史信息归档">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body data-page="history">
+    <header class="app-header">
+      <div class="brand-block">
+        <a class="brand-mark" href="index.html" aria-label="Message Choose 首页">
+          <span class="brand-symbol" aria-hidden="true">MC</span>
+          <span>
+            <strong>Message Choose</strong>
+            <small>10 天历史</small>
+          </span>
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="index.html">信息流</a>
+        <a href="daily-summary.html">每日摘要</a>
+        <a href="weekly-review.html">每周复盘</a>
+        <a href="history.html" aria-current="page">历史</a>
+      </nav>
+    </header>
+
+    <main class="app-shell page-shell">
+      <section class="overview-band page-hero" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">历史信息</h1>
+          <p id="history-meta">正在加载最近 10 天归档</p>
+        </div>
+      </section>
+      <section class="history-layout">
+        <aside class="history-days" id="history-days" aria-label="历史日期"></aside>
+        <div class="history-content">
+          <div class="section-heading">
+            <div>
+              <h2 id="history-date-title">归档内容</h2>
+              <p id="history-date-meta">选择一个日期查看</p>
+            </div>
+          </div>
+          <div class="feed-list" id="history-feed" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/scripts/render-feed.js"></script>
+    <script src="src/scripts/page-transitions.js"></script>
+    <script src="src/scripts/summary-pages.js"></script>
+  </body>
+</html>

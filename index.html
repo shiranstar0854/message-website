@@ -23,6 +23,12 @@
         <span id="generated-at">等待数据</span>
         <span id="total-count">0 条</span>
       </div>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="index.html" aria-current="page">信息流</a>
+        <a href="daily-summary.html">每日摘要</a>
+        <a href="weekly-review.html">每周复盘</a>
+        <a href="history.html">历史</a>
+      </nav>
     </header>
 
     <main class="app-shell">
@@ -68,16 +74,6 @@
 
       <div class="content-grid">
         <section class="feed-panel" aria-labelledby="feed-title">
-          <section class="weekly-panel" aria-labelledby="weekly-title">
-            <div class="section-heading">
-              <div>
-                <h2 id="weekly-title">每周复盘</h2>
-                <p id="weekly-summary">正在加载周报</p>
-              </div>
-            </div>
-            <div class="weekly-review" id="weekly-review"></div>
-          </section>
-
           <div class="source-disclosure" id="source-disclosure">
             <button class="source-summary-button" id="source-toggle" type="button" aria-expanded="false" aria-controls="source-status">
               <span id="source-summary">来源状态加载中</span>
@@ -103,6 +99,7 @@
     <script src="src/scripts/render-feed.js"></script>
     <script src="src/scripts/source-status.js"></script>
     <script src="src/scripts/filters-ui.js"></script>
+    <script src="src/scripts/page-transitions.js"></script>
     <script src="src/scripts/app.js"></script>
   </body>
 </html>

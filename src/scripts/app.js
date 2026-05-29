@@ -32,11 +32,6 @@
     ]
   };
 
-  const FALLBACK_WEEKLY_REVIEW = {
-    channels: [],
-    totals: { archiveCount: 0, itemCount: 0 }
-  };
-
   async function loadJson(url, fallback) {
     if (window.location.protocol === "file:") return fallback;
 
@@ -76,17 +71,14 @@
   }
 
   async function init() {
-    const [config, data, health, weeklyReview] = await Promise.all([
+    const [config, data, health] = await Promise.all([
       loadJson("public/site-config.json", FALLBACK_CONFIG),
       loadJson("src/data/latest-items.json", FALLBACK_DATA),
-      loadJson("src/data/source-health.json", FALLBACK_HEALTH),
-      loadJson("src/data/weekly-review.json", FALLBACK_WEEKLY_REVIEW)
+      loadJson("src/data/source-health.json", FALLBACK_HEALTH)
     ]);
 
     const feed = document.getElementById("feed");
     const summary = document.getElementById("channel-summary");
-    const weekly = document.getElementById("weekly-review");
-    const weeklySummary = document.getElementById("weekly-summary");
     const sourceDisclosure = document.getElementById("source-disclosure");
     const sourceSummary = document.getElementById("source-summary");
     const sourceStatus = document.getElementById("source-status");
@@ -130,7 +122,6 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
-    window.MessageChooseRender.renderWeeklyReview(weekly, weeklySummary, weeklyReview);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);
     sourceSummary.textContent = sourceHealthSummary.text;

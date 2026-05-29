@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>每周复盘 - Message Choose</title>
+    <meta name="description" content="每周科技、金融、新闻复盘">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body data-page="weekly-review">
+    <header class="app-header">
+      <div class="brand-block">
+        <a class="brand-mark" href="index.html" aria-label="Message Choose 首页">
+          <span class="brand-symbol" aria-hidden="true">MC</span>
+          <span>
+            <strong>Message Choose</strong>
+            <small>每周复盘</small>
+          </span>
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="index.html">信息流</a>
+        <a href="daily-summary.html">每日摘要</a>
+        <a href="weekly-review.html" aria-current="page">每周复盘</a>
+        <a href="history.html">历史</a>
+      </nav>
+    </header>
+
+    <main class="app-shell page-shell">
+      <section class="overview-band page-hero" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">每周复盘</h1>
+          <p id="weekly-meta">正在加载周报数据</p>
+        </div>
+      </section>
+      <section class="weekly-panel standalone-weekly">
+        <p class="model-summary" id="weekly-model-summary"></p>
+        <div class="weekly-review" id="weekly-review"></div>
+      </section>
+    </main>
+
+    <script src="src/scripts/render-feed.js"></script>
+    <script src="src/scripts/page-transitions.js"></script>
+    <script src="src/scripts/summary-pages.js"></script>
+  </body>
+</html>

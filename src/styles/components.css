@@ -419,6 +419,99 @@ output {
   border-radius: var(--radius);
 }
 
+.standalone-weekly {
+  margin-bottom: 0;
+}
+
+.model-summary,
+.weekly-model-summary {
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.daily-brief-card {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.daily-brief-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.daily-brief-head h2 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.daily-brief-head span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.daily-keypoints {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink);
+}
+
+.daily-evidence summary {
+  cursor: pointer;
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.daily-evidence .feed-list {
+  margin-top: 10px;
+}
+
+.weekly-watchlist {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.weekly-watchlist span {
+  padding: 7px 8px;
+  color: var(--teal-dark);
+  background: #e5f3f0;
+  border-radius: 7px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.history-day-button {
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  padding: 12px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.history-day-button[aria-pressed="true"] {
+  border-color: rgba(42, 157, 143, 0.55);
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.12);
+}
+
+.history-day-button span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .weekly-review {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

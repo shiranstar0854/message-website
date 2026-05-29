@@ -126,6 +126,12 @@
             <span>${Number(channel.totalItems || 0)} 条</span>
           </div>
           <div class="tag-row" aria-label="${escapeHtml(channel.label || channel.id)}主要来源">${sources}</div>
+          ${channel.modelSummary ? `<p class="weekly-model-summary">${escapeHtml(channel.modelSummary)}</p>` : ""}
+          ${channel.watchlist?.length ? `
+            <div class="weekly-watchlist">
+              ${channel.watchlist.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+            </div>
+          ` : ""}
           <ul class="weekly-highlight-list">
             ${highlights.map((item) => {
               const safeUrl = safeExternalUrl(item.url);

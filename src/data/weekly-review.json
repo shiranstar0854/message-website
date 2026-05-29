@@ -1,21 +1,22 @@
 {
   "weekId": "2026-W22",
-  "generatedAt": "2026-05-28T11:05:01.722Z",
+  "generatedAt": "2026-05-29T03:03:16.086Z",
   "method": "extractive",
   "archiveDays": [
     "2026-05-26",
     "2026-05-27",
-    "2026-05-28"
+    "2026-05-28",
+    "2026-05-29"
   ],
   "totals": {
-    "archiveCount": 3,
-    "itemCount": 82
+    "archiveCount": 4,
+    "itemCount": 142
   },
   "channels": [
     {
       "id": "tech",
       "label": "科技",
-      "totalItems": 27,
+      "totalItems": 28,
       "topSources": [
         {
           "source": "36Kr",
@@ -23,7 +24,7 @@
         },
         {
           "source": "OpenAI News",
-          "count": 5
+          "count": 6
         },
         {
           "source": "Solidot",
@@ -123,7 +124,7 @@
     {
       "id": "finance",
       "label": "金融",
-      "totalItems": 27,
+      "totalItems": 28,
       "topSources": [
         {
           "source": "中国新闻网财经",
@@ -131,7 +132,7 @@
         },
         {
           "source": "Federal Reserve",
-          "count": 3
+          "count": 4
         },
         {
           "source": "U.S. SEC Press Releases",
@@ -320,5 +321,14 @@
         "Ebola outbreak in DR Congo collides with conflict and hunger, WHO warns"
       ]
     }
-  ]
+  ],
+  "summaryStats": {
+    "llmEnabled": true,
+    "llmConfigured": false,
+    "llmAttempted": 0,
+    "llmSucceeded": 0,
+    "fallbackCount": 1,
+    "errorCount": 0,
+    "generatedAt": "2026-05-29T03:03:16.086Z"
+  }
 }

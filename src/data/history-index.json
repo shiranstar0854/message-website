@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-05-29T02:45:56.291Z",
+  "retentionDays": 10,
+  "totalDays": 4,
+  "days": [
+    {
+      "date": "2026-05-29",
+      "generatedAt": "2026-05-29T02:45:50.257Z",
+      "url": "data/archive/daily/2026-05-29.json",
+      "totalItems": 60,
+      "totals": {
+        "sources": 15,
+        "healthySources": 15,
+        "rawItems": 1257,
+        "normalizedItems": 1257,
+        "filteredItems": 271,
+        "dedupedItems": 262,
+        "scoredItems": 262,
+        "enrichmentAttempted": 52,
+        "enrichmentFailed": 0
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 261
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "generatedAt": "2026-05-28T11:04:54.184Z",
+      "url": "data/archive/daily/2026-05-28.json",
+      "totalItems": 60,
+      "totals": {
+        "sources": 15,
+        "healthySources": 15,
+        "rawItems": 1257,
+        "normalizedItems": 1257,
+        "filteredItems": 271,
+        "dedupedItems": 262,
+        "scoredItems": 262,
+        "enrichmentAttempted": 52,
+        "enrichmentFailed": 0
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 262
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "generatedAt": "2026-05-27T05:30:51.736Z",
+      "url": "data/archive/daily/2026-05-27.json",
+      "totalItems": 60,
+      "totals": {
+        "sources": 13,
+        "healthySources": 13,
+        "rawItems": 293,
+        "normalizedItems": 293,
+        "filteredItems": 270,
+        "dedupedItems": 265,
+        "scoredItems": 265
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 265
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "generatedAt": "2026-05-26T03:42:29.598Z",
+      "url": "data/archive/daily/2026-05-26.json",
+      "totalItems": 60,
+      "totals": {
+        "sources": 13,
+        "healthySources": 13,
+        "rawItems": 297,
+        "normalizedItems": 297,
+        "filteredItems": 269,
+        "dedupedItems": 264,
+        "scoredItems": 264
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 264
+      }
+    }
+  ]
+}
