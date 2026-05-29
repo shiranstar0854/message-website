@@ -10,7 +10,7 @@
     "requiredSecret": "DEEPSEEK_API_KEY",
     "timeoutMs": 15000,
     "maxRetries": 0,
-    "maxOutputTokens": 500,
+    "maxOutputTokens": 1200,
     "fallbackMethod": "extractive",
     "note": "Keep disabled until the GitHub Actions secret DEEPSEEK_API_KEY is configured. When enabled, selected daily and weekly outputs use DeepSeek chat completions JSON output and fall back to extractive summaries on failure."
   },

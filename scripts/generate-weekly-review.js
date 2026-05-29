@@ -115,7 +115,7 @@ function buildWeeklyPrompt(review, rules = {}) {
     "Return minified valid JSON only. Do not wrap it in markdown.",
     "Do not include line breaks inside JSON string values.",
     "Use exactly this shape: {\"executiveSummary\":\"...\",\"channelReviews\":{\"tech\":{\"summary\":\"...\",\"watchlist\":[\"...\"]},\"finance\":{\"summary\":\"...\",\"watchlist\":[\"...\"]},\"news\":{\"summary\":\"...\",\"watchlist\":[\"...\"]}}}.",
-    "Use only the provided highlights and source counts.",
+    "Use only the provided highlights and source counts. Keep executiveSummary under 180 Chinese characters and each channel summary under 100 Chinese characters.",
     "",
     JSON.stringify({
       weekId: review.weekId,

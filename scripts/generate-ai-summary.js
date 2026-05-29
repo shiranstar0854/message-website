@@ -197,7 +197,7 @@ function buildDailyBriefPrompt(summaryItems, rules = {}) {
     "Return minified valid JSON only. Do not wrap it in markdown.",
     "Do not include line breaks inside JSON string values.",
     "Use exactly this shape: {\"channelSummaries\":{\"tech\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]},\"finance\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]},\"news\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]}}}.",
-    "Use only the provided items. Keep overview concise and readable in Chinese.",
+    "Use only the provided items. Keep each overview under 120 Chinese characters. Use at most three keyPoints per channel.",
     "",
     JSON.stringify({
       channels: DEFAULT_CHANNELS.map((channel) => ({
