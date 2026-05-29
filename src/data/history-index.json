@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-29T03:09:50.080Z",
+  "generatedAt": "2026-05-29T03:14:20.066Z",
   "retentionDays": 10,
   "totalDays": 4,
   "days": [
     {
       "date": "2026-05-29",
-      "generatedAt": "2026-05-29T03:09:44.882Z",
+      "generatedAt": "2026-05-29T03:14:15.939Z",
       "url": "data/archive/daily/2026-05-29.json",
       "totalItems": 60,
       "totals": {
@@ -14,14 +14,14 @@
         "rawItems": 1259,
         "normalizedItems": 1259,
         "filteredItems": 274,
-        "dedupedItems": 268,
-        "scoredItems": 268,
+        "dedupedItems": 269,
+        "scoredItems": 269,
         "enrichmentAttempted": 53,
         "enrichmentFailed": 0
       },
       "archivePolicy": {
         "maxItemsPerChannel": 20,
-        "availableItems": 268
+        "availableItems": 269
       }
     },
     {

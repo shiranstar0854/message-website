@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T03:09:44.928Z",
+  "generatedAt": "2026-05-29T03:14:15.970Z",
   "method": "extractive",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
@@ -64,13 +64,21 @@
     {
       "id": "finance",
       "label": "金融",
-      "overview": "今日金融重点集中在：汽车之家发布一季度财报：战略转型加速，全球化版图持续拓展；Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations；AI算力驱动需求爆发 国产光通信产品出海热销。",
+      "overview": "今日金融重点集中在：AI算力驱动需求爆发 国产光通信产品出海热销；汽车之家发布一季度财报：战略转型加速，全球化版图持续拓展；Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations。",
       "keyPoints": [
+        "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。",
         "北京时间2026年5月28日晚，中国领先的汽车互联网服务平台——汽车之家(纽约证券交易所股票代码：ATHM；港交所代号：2518)对外披露2026年第一季度未经审计财务业绩。",
-        "The Federal Deposit Insurance Corporation and the Federal Reserve Board today published feedback letters for several...",
-        "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。"
+        "The Federal Deposit Insurance Corporation and the Federal Reserve Board today published feedback letters for several..."
       ],
       "highlights": [
+        {
+          "id": "finance-item-1b734c3aeb",
+          "title": "AI算力驱动需求爆发 国产光通信产品出海热销",
+          "url": "https://www.chinanews.com.cn/cj/2026/05-29/10630659.shtml",
+          "source": "中国新闻网财经",
+          "score": 94,
+          "summary": "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。"
+        },
         {
           "id": "finance-item-55bd43f47c",
           "title": "汽车之家发布一季度财报：战略转型加速，全球化版图持续拓展",
@@ -86,14 +94,6 @@
           "source": "Federal Reserve",
           "score": 93,
           "summary": "The Federal Deposit Insurance Corporation and the Federal Reserve Board today published feedback letters for several resolution plans submitted in July 2025."
-        },
-        {
-          "id": "finance-item-1b734c3aeb",
-          "title": "AI算力驱动需求爆发 国产光通信产品出海热销",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-29/10630659.shtml",
-          "source": "中国新闻网财经",
-          "score": 92,
-          "summary": "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。"
         },
         {
           "id": "finance-federal-reserve-26ca1529dc",
@@ -170,7 +170,7 @@
   ],
   "errors": [
     {
-      "message": "Expected ',' or '}' after property value in JSON at position 374"
+      "message": "Unexpected end of JSON input"
     }
   ],
   "totalSummaries": 3,
@@ -199,6 +199,19 @@
       "score": 97,
       "aiSummary": "The UN Security Council is meeting in emergency session on Ukraine, with Secretary-General António Guterres telling ambassadors following what Kyiv describes as the most devasta...",
       "summaryReason": "UN News / news · score 97",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "finance-item-1b734c3aeb",
+      "title": "AI算力驱动需求爆发 国产光通信产品出海热销",
+      "url": "https://www.chinanews.com.cn/cj/2026/05-29/10630659.shtml",
+      "source": "中国新闻网财经",
+      "sourceId": "chinanews-finance",
+      "category": "finance",
+      "publishedAt": "2026-05-29T02:06:36.000Z",
+      "score": 94,
+      "aiSummary": "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。",
+      "summaryReason": "中国新闻网财经 / finance · score 94",
       "summaryMethod": "extractive"
     },
     {
@@ -264,19 +277,6 @@
       "score": 93,
       "aiSummary": "The Federal Deposit Insurance Corporation and the Federal Reserve Board today published feedback letters for several resolution plans submitted in July 2025.",
       "summaryReason": "Federal Reserve / finance · score 93 · Banking and Consumer Regulatory Policy",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-item-1b734c3aeb",
-      "title": "AI算力驱动需求爆发 国产光通信产品出海热销",
-      "url": "https://www.chinanews.com.cn/cj/2026/05-29/10630659.shtml",
-      "source": "中国新闻网财经",
-      "sourceId": "chinanews-finance",
-      "category": "finance",
-      "publishedAt": "2026-05-29T02:06:36.000Z",
-      "score": 92,
-      "aiSummary": "眼下，国产光通信产品订单火爆，走俏国际市场，呈现量价齐升的景气态势，多家企业出口订单已排到2028年。",
-      "summaryReason": "中国新闻网财经 / finance · score 92",
       "summaryMethod": "extractive"
     },
     {
@@ -930,28 +930,28 @@
       "summaryMethod": "extractive"
     },
     {
-      "id": "news-item-827d3984fd",
-      "title": "中国气象局：6月这些地方需防范高温热浪天气",
-      "url": "https://www.chinanews.com.cn/sh/2026/05-29/10630691.shtml",
+      "id": "news-item-f5f3a86bdf",
+      "title": "《北部湾经济区开放发展规划》公开征求意见：构建平陆运河综合交通体系",
+      "url": "https://www.chinanews.com.cn/aseaninfo/2026/05-29/10630698.shtml",
       "source": "中国新闻网即时新闻",
       "sourceId": "chinanews-breaking",
       "category": "news",
-      "publishedAt": "2026-05-29T03:06:04.000Z",
+      "publishedAt": "2026-05-29T03:11:24.000Z",
       "score": 84,
-      "aiSummary": "邵萌 摄 中新网5月29日电(记者 邵萌)5月29日，中国气象局举行新闻发布会。",
+      "aiSummary": "近日，《北部湾经济区开放发展规划(征求意见稿)》公开征求意见。",
       "summaryReason": "中国新闻网即时新闻 / news · score 84",
       "summaryMethod": "extractive"
     },
     {
-      "id": "news-item-dd08cde1f9",
-      "title": "旅游业应跳出“走马观花”模式",
-      "url": "https://www.chinanews.com.cn/sh/2026/05-29/10630686.shtml",
+      "id": "news-item-38ca14581f",
+      "title": "老挝人革党中央总书记、国家主席通伦将访华",
+      "url": "https://www.chinanews.com.cn/gn/2026/05-29/10630690.shtml",
       "source": "中国新闻网即时新闻",
       "sourceId": "chinanews-breaking",
       "category": "news",
-      "publishedAt": "2026-05-29T03:01:48.000Z",
+      "publishedAt": "2026-05-29T03:09:10.000Z",
       "score": 84,
-      "aiSummary": "据文化和旅游部数据中心测算，今年一季度，全国乡村旅游接待总人次为7.93亿，同比增长12.2%。",
+      "aiSummary": "中新社北京5月29日电 中共中央对外联络部发言人胡兆明5月29日宣布：应中共中央总书记、国家主席习近平邀请，老挝人革党中央总书记、国家主席通伦将于6月2日至6日对中国进行国事访问。",
       "summaryReason": "中国新闻网即时新闻 / news · score 84",
       "summaryMethod": "extractive"
     }
