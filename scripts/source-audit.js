@@ -72,9 +72,14 @@ function buildSourceAudit({ health, rawRecords, normalized, filtered, deduped, s
 }
 
 function generateSourceAudit() {
+  const rawRecords = [
+    ...readJson(path.join(ROOT_DIR, "data", "raw", "rss-items.json"), []),
+    ...readJson(path.join(ROOT_DIR, "data", "raw", "webpage-items.json"), []),
+    ...readJson(path.join(ROOT_DIR, "data", "raw", "api-items.json"), [])
+  ];
   const audit = buildSourceAudit({
     health: readJson(path.join(ROOT_DIR, "src", "data", "source-health.json"), { sources: [] }),
-    rawRecords: readJson(path.join(ROOT_DIR, "data", "raw", "rss-items.json"), []),
+    rawRecords,
     normalized: readJson(path.join(ROOT_DIR, "data", "normalized", "normalized-items.json"), []),
     filtered: readJson(path.join(ROOT_DIR, "data", "processed", "filtered-items.json"), []),
     deduped: readJson(path.join(ROOT_DIR, "data", "processed", "deduped-items.json"), []),

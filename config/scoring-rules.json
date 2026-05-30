@@ -13,8 +13,25 @@
   },
   "sourceBoosts": {
     "Federal Reserve": 4,
-    "U.S. SEC Press Releases": 4
+    "U.S. SEC Press Releases": 4,
+    "中国人民银行新闻发布": 5,
+    "中国证监会新闻发布": 5,
+    "中国政府网要闻": 4
   },
+  "sourceAuthorityBoosts": {
+    "official-agency": 5,
+    "official-market": 4,
+    "official-media": 3,
+    "media": 0
+  },
+  "timelinessBoosts": {
+    "realtime": 4,
+    "hourly": 3,
+    "daily": 1,
+    "periodic": 0
+  },
+  "officialFreshnessWindowHours": 24,
+  "officialFreshnessBoost": 5,
   "keywordWeights": {
     "highValue": [
       { "term": "AI", "score": 8 },

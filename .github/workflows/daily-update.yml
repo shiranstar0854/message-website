@@ -41,6 +41,7 @@ jobs:
       - name: Commit changed data
         run: |
           git add data/raw/rss-items.json \
+            data/raw/webpage-items.json \
             data/normalized/normalized-items.json \
             data/processed/filtered-items.json \
             data/processed/deduped-items.json \
@@ -50,7 +51,8 @@ jobs:
             data/archive/daily \
             src/data/history-index.json \
             src/data/latest-items.json \
-            src/data/source-health.json
+            src/data/source-health.json \
+            index.html
           if git diff --cached --quiet; then
             echo "No data changes to publish."
             exit 0

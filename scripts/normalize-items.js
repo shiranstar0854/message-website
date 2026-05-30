@@ -17,6 +17,7 @@ function flattenApiBody(record) {
 function normalizeAll() {
   const rssRecords = readJson(path.join(ROOT_DIR, "data", "raw", "rss-items.json"), []);
   const apiRecords = readJson(path.join(ROOT_DIR, "data", "raw", "api-items.json"), []);
+  const webRecords = readJson(path.join(ROOT_DIR, "data", "raw", "webpage-items.json"), []);
   const normalized = [];
 
   rssRecords.forEach((record) => {
@@ -33,6 +34,16 @@ function normalizeAll() {
     flattenApiBody(record).forEach((item) => {
       normalized.push(normalizeRawItem({
         ...record,
+        item
+      }, record.fetchedAt || new Date().toISOString()));
+    });
+  });
+
+  webRecords.forEach((record) => {
+    (record.items || []).forEach((item) => {
+      normalized.push(normalizeRawItem({
+        ...record,
+        sourceLastCheckedAt: record.fetchedAt,
         item
       }, record.fetchedAt || new Date().toISOString()));
     });

@@ -47,7 +47,8 @@ jobs:
             data/archive/daily \
             src/data/daily-summary.json \
             src/data/history-index.json \
-            src/data/latest-items.json
+            src/data/latest-items.json \
+            index.html
           if git diff --cached --quiet; then
             echo "No summary changes to publish."
             exit 0

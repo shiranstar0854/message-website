@@ -8,6 +8,7 @@
 - `daily-summary.html`：每日摘要页，只展示科技、金融、新闻三类每日重要事务总结。
 - `weekly-review.html`：每周复盘页，展示最近归档数据形成的周度复盘。
 - `history.html`：历史信息页，展示最近 10 天每日归档。
+- `about.html`：关于与规则页，说明来源类型、评分规则、摘要风险和更新时间。
 
 线上入口：
 
@@ -23,11 +24,15 @@ https://0854937.xyz/
 
 首页支持：
 
+- 三类今日重点：复用每日摘要，先展示科技、金融、新闻结论层。
 - 频道筛选：科技、金融、新闻、全部。
 - 关键词搜索：匹配标题、摘要、正文摘录和标签。
 - 来源筛选：指定来源或全部来源。
 - 最低评分：过滤低价值信息。
 - 排序：评分优先、最新优先、最早优先。
+- 来源状态：显示活跃来源、异常来源、最近检查和最近成功时间。
+
+评分综合来源可信度、关键词命中、发布时间新鲜度、重复/聚合信号、频道权重和官方来源加权。评分只用于排序，不代表投资建议或事实核验结论。
 
 如果选择了具体来源并输入关键词，但该来源没有结果，页面会自动放宽到其他来源，并显示说明。
 
@@ -79,7 +84,7 @@ https://0854937.xyz/history.html
 
 ### 每日信息流更新
 
-用途：抓取 RSS、标准化、过滤、去重、评分、文章富化、生成首页信息流、来源审计和每日归档。
+用途：抓取 RSS 和官方网页来源、标准化、过滤、去重、评分、文章富化、生成首页信息流、静态摘要、来源审计和每日归档。
 
 时间：
 
@@ -225,6 +230,12 @@ npm.cmd test
 npm.cmd run build:data
 ```
 
+只抓取中国官方网页来源：
+
+```bash
+npm.cmd run fetch:web
+```
+
 完整信息流更新：
 
 ```bash
@@ -268,6 +279,7 @@ npx.cmd --yes wrangler@latest deploy
 处理数据：
 
 - `data/raw/rss-items.json`
+- `data/raw/webpage-items.json`
 - `data/normalized/normalized-items.json`
 - `data/processed/filtered-items.json`
 - `data/processed/deduped-items.json`

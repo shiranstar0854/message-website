@@ -28,6 +28,8 @@ test("normalizes rss and api records into the shared item shape", () => {
     sourceType: "api",
     category: "finance",
     credibility: 95,
+    sourceAuthority: "official-agency",
+    timelinessTier: "hourly",
     headline: "Rate decision released",
     url: "https://example.com/rates",
     published_at: "2026-05-22T12:30:00.000Z",
@@ -42,6 +44,9 @@ test("normalizes rss and api records into the shared item shape", () => {
 
   assert.equal(api.title, "Rate decision released");
   assert.equal(api.sourceType, "api");
+  assert.equal(api.sourceAuthority, "official-agency");
+  assert.equal(api.timelinessTier, "hourly");
+  assert.equal(api.sourceLastCheckedAt, "2026-05-24T00:00:00.000Z");
   assert.equal(api.summary, "Policy makers held rates steady.");
 });
 
@@ -182,6 +187,8 @@ test("scores items and builds channel-limited latest data sorted by score", () =
       summary: "AI regulation has infrastructure impact.",
       publishedAt: "2026-05-24T00:00:00.000Z",
       credibility: 90,
+      sourceAuthority: "official-agency",
+      timelinessTier: "hourly",
       duplicates: [{ id: "dup" }]
     },
     {
@@ -211,9 +218,13 @@ test("scores items and builds channel-limited latest data sorted by score", () =
   const scored = scoreItems(items, {
     baseScore: 40,
     sourceCredibilityWeight: 0.3,
-    freshness: { halfLifeHours: 72, weight: 20 },
-    duplicatePenalty: 2,
-    keywordWeights: {
+      freshness: { halfLifeHours: 72, weight: 20 },
+      duplicatePenalty: 2,
+      sourceAuthorityBoosts: { "official-agency": 5 },
+      timelinessBoosts: { hourly: 3 },
+      officialFreshnessWindowHours: 24,
+      officialFreshnessBoost: 5,
+      keywordWeights: {
       highValue: [
         { term: "AI", score: 12 },
         { term: "regulation", score: 8 },
@@ -233,6 +244,8 @@ test("scores items and builds channel-limited latest data sorted by score", () =
   }, "2026-05-24T12:00:00.000Z");
 
   assert.ok(scored.find((item) => item.id === "ai").score > scored.find((item) => item.id === "market").score);
+  assert.equal(scored.find((item) => item.id === "ai").scoreBreakdown.authorityBoost, 5);
+  assert.equal(scored.find((item) => item.id === "ai").scoreBreakdown.officialFreshnessBoost, 5);
   assert.equal(latest.channels.tech.items.length, 1);
   assert.equal(latest.channels.tech.items[0].id, "ai");
   assert.equal(latest.channels.finance.items[0].id, "market");
@@ -248,6 +261,10 @@ test("latest data publishes compact display fields only", () => {
     sourceType: "rss",
     category: "tech",
     publishedAt: "2026-05-24T00:00:00.000Z",
+    fetchedAt: "2026-05-24T01:00:00.000Z",
+    sourceLastCheckedAt: "2026-05-24T01:00:00.000Z",
+    sourceAuthority: "official-market",
+    timelinessTier: "daily",
     summary: "x".repeat(900),
     contentExcerpt: "y".repeat(900),
     imageUrl: "https://example.com/image.jpg",
@@ -264,6 +281,8 @@ test("latest data publishes compact display fields only", () => {
   assert.equal(latest.items[0].summary.length, 500);
   assert.equal(latest.items[0].contentExcerpt.length, 500);
   assert.equal(latest.items[0].imageUrl, "https://example.com/image.jpg");
+  assert.equal(latest.items[0].fetchedAt, "2026-05-24T01:00:00.000Z");
+  assert.equal(latest.items[0].sourceAuthority, "official-market");
   assert.equal(latest.items[0].tags.length, 8);
   assert.equal(latest.items[0].duplicateCount, 2);
   assert.equal("raw" in latest.items[0], false);

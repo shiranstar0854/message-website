@@ -3,10 +3,10 @@
 面向科技、金融、新闻三类信息的静态信息筛选网站。当前版本已实现 `task.md` 的前五个阶段基础能力：
 
 1. 静态网站框架和演示数据。
-2. RSS 与官方 API 来源配置、抓取脚本、统一字段标准化。
+2. RSS、官方网页与官方 API 来源配置、抓取脚本、统一字段标准化。
 3. 过滤、去重、评分和 `src/data/latest-items.json` 生成流程。
 4. GitHub Actions 每日更新、来源审计和每日归档。
-5. 每日摘要字段、首页摘要展示、每周复盘数据和 Cloudflare 远端周报触发。
+5. 每日摘要字段、首页摘要展示、来源透明度、每周复盘数据和 Cloudflare 远端周报触发。
 
 阶段 5 当前使用无需外部密钥的确定性摘要基线，后续可替换为 AI 大模型生成；阶段 6 的反馈优化暂未实现。
 
@@ -21,10 +21,11 @@ npm.cmd run update:daily
 npm.cmd run review:weekly
 ```
 
-如需抓取真实 RSS 数据：
+如需分别抓取真实 RSS 与官方网页数据：
 
 ```bash
 npm.cmd run fetch:rss
+npm.cmd run fetch:web
 npm.cmd run normalize
 npm.cmd run filter
 npm.cmd run dedupe
@@ -32,7 +33,7 @@ npm.cmd run score
 npm.cmd run generate:latest
 ```
 
-官方 API 来源默认关闭。需要密钥的来源应先在环境变量中配置对应 key，再把配置文件里的 `enabled` 改为 `true`。
+官方网页来源用于接入中国政府网、人民银行、证监会、交易所、国家发展改革委、财政部、国家统计局、科技部等公开渠道。官方 API 来源默认关闭；需要密钥的来源应先在环境变量中配置对应 key，再把配置文件里的 `enabled` 改为 `true`。
 
 ## 自动更新
 
@@ -51,17 +52,21 @@ npm.cmd run generate:latest
 - `publishedAt`
 - `summary`
 - `fetchedAt`
+- `sourceLastCheckedAt`
+- `sourceAuthority`
+- `timelinessTier`
 - `credibility`
 - `tags`
 
 评分后会增加 `score`、`scoreBreakdown`、`duplicateCount` 和 `duplicates`。
 
-前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`tags`、`score` 和 `duplicateCount` 等字段。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
+前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`fetchedAt`、`sourceLastCheckedAt`、`sourceAuthority`、`timelinessTier`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`tags`、`score` 和 `duplicateCount` 等字段。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
 
 ## DeepSeek 摘要页面
 
 - `daily-summary.html` 读取 `src/data/daily-summary.json`，只展示科技、金融、新闻三类每日重要事务总结。
 - `weekly-review.html` 读取 `src/data/weekly-review.json`。
 - `history.html` 读取 `src/data/history-index.json`，并展示最近 10 天每日归档。
+- `about.html` 说明来源类型、评分规则、摘要风险、非投资建议和更新时间。
 - 模型接口默认配置为 DeepSeek Chat Completions：`https://api.deepseek.com/chat/completions`。
 - 自动化启用模型调用前，需要在 GitHub Actions secrets 配置 `DEEPSEEK_API_KEY`，并将 `config/ai-summary-rules.json` 的 `llmProduction.enabled` 改为 `true`。

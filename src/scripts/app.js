@@ -32,6 +32,11 @@
     ]
   };
 
+  const FALLBACK_DAILY = {
+    generatedAt: "",
+    channelSummaries: []
+  };
+
   async function loadJson(url, fallback) {
     if (window.location.protocol === "file:") return fallback;
 
@@ -70,11 +75,55 @@
       || `信息流更新时间：${formatGeneratedAt(data.generatedAt).replace("信息流更新 ", "")}；当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
   }
 
+  function formatShortDate(value) {
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "时间未知";
+    return new Intl.DateTimeFormat("zh-CN", {
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    }).format(date);
+  }
+
+  function renderDailyFocus(daily, data, health) {
+    const meta = document.getElementById("daily-focus-meta");
+    const grid = document.getElementById("daily-focus-grid");
+    if (!meta || !grid) return;
+
+    const healthy = (health.sources || []).filter((source) => source.status === "healthy").length;
+    const abnormal = (health.sources || []).length - healthy;
+    const summaries = daily.channelSummaries || [];
+    meta.textContent = `摘要更新 ${formatShortDate(daily.generatedAt || data.generatedAt)}；活跃来源 ${healthy} 个，异常来源 ${abnormal} 个。`;
+
+    if (!summaries.length) {
+      grid.innerHTML = `
+        <article class="focus-card"><strong>科技</strong><p>暂无摘要，信息流更新后会显示本频道重点。</p></article>
+        <article class="focus-card"><strong>金融</strong><p>暂无摘要，信息流更新后会显示本频道重点。</p></article>
+        <article class="focus-card"><strong>新闻</strong><p>暂无摘要，信息流更新后会显示本频道重点。</p></article>
+      `;
+      return;
+    }
+
+    grid.innerHTML = summaries.slice(0, 3).map((channel) => `
+      <article class="focus-card">
+        <strong>${escapeHtml(channel.label || channel.id)}</strong>
+        <p>${escapeHtml(channel.overview || "")}</p>
+        ${(channel.keyPoints || []).length ? `
+          <ul>
+            ${(channel.keyPoints || []).slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
+          </ul>
+        ` : ""}
+      </article>
+    `).join("");
+  }
+
   async function init() {
-    const [config, data, health] = await Promise.all([
+    const [config, data, health, daily] = await Promise.all([
       loadJson("public/site-config.json", FALLBACK_CONFIG),
       loadJson("src/data/latest-items.json", FALLBACK_DATA),
-      loadJson("src/data/source-health.json", FALLBACK_HEALTH)
+      loadJson("src/data/source-health.json", FALLBACK_HEALTH),
+      loadJson("src/data/daily-summary.json", FALLBACK_DAILY)
     ]);
 
     const feed = document.getElementById("feed");
@@ -122,6 +171,7 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
+    renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);
     sourceSummary.textContent = sourceHealthSummary.text;

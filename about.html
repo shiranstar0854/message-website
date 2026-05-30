@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>关于与规则 - Message Choose</title>
+    <meta name="description" content="Message Choose 来源、评分、摘要和更新时间规则">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand-block">
+        <a class="brand-mark" href="index.html" aria-label="Message Choose 首页">
+          <span class="brand-symbol" aria-hidden="true">MC</span>
+          <span>
+            <strong>Message Choose</strong>
+            <small>关于/规则</small>
+          </span>
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="index.html">信息流</a>
+        <a href="daily-summary.html">每日摘要</a>
+        <a href="weekly-review.html">每周复盘</a>
+        <a href="history.html">历史</a>
+        <a href="about.html" aria-current="page">关于/规则</a>
+      </nav>
+    </header>
+
+    <main class="app-shell page-shell">
+      <section class="overview-band page-hero" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">关于与规则</h1>
+          <p>这个页面说明 Message Choose 如何选择来源、计算评分、生成摘要和展示更新时间。</p>
+        </div>
+      </section>
+
+      <section class="rules-grid" aria-label="站点规则">
+        <article class="rule-panel">
+          <h2>来源类型</h2>
+          <p>来源分为官方机构、官方市场、官方媒体和普通媒体。优先展示可公开访问、无需登录、能够稳定获得标题、链接和发布时间的来源。</p>
+        </article>
+        <article class="rule-panel">
+          <h2>中国官方来源</h2>
+          <p>第一阶段接入中国政府网、人民银行、证监会、上交所、深交所、国家发展改革委、财政部、国家统计局、科技部等公开发布渠道。</p>
+        </article>
+        <article class="rule-panel">
+          <h2>评分规则</h2>
+          <p>评分综合来源可信度、发布时间新鲜度、关键词命中、频道权重、官方来源加权和重复信息惩罚。评分只用于排序，不等同于事实核验。</p>
+        </article>
+        <article class="rule-panel">
+          <h2>摘要规则</h2>
+          <p>每日摘要按科技、金融、新闻三类生成。AI 摘要可能出现遗漏或表述偏差，重要信息应点击原文核对。</p>
+        </article>
+        <article class="rule-panel">
+          <h2>更新时间</h2>
+          <p>信息流与每日摘要分开更新。页面显示发布时间、采集时间和来源最近检查时间，用于判断信息即时性。</p>
+        </article>
+        <article class="rule-panel">
+          <h2>风险说明</h2>
+          <p>金融、监管和市场内容仅作信息筛选与阅读辅助，不构成投资建议、交易建议或法律意见。</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="src/scripts/page-transitions.js?v=20260529-2"></script>
+  </body>
+</html>

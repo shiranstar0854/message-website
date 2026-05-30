@@ -14,6 +14,33 @@
       "purpose": "Official GitHub product, developer platform and engineering updates"
     },
     {
+      "id": "most-work",
+      "name": "科技部工作动态",
+      "type": "webpage",
+      "url": "https://www.most.gov.cn/kjbgz/",
+      "enabled": true,
+      "credibility": 94,
+      "updateFrequency": "daily",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "accessPolicy": "free-official",
+      "purpose": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "includeUrlPattern": "/kjbgz/20\\d{4}/t20\\d{6}_\\d+\\.html"
+    },
+    {
+      "id": "miit-dynamics",
+      "name": "工业和信息化部工作动态",
+      "type": "webpage",
+      "url": "https://www.miit.gov.cn/xwdt/gxdt/index.html",
+      "enabled": false,
+      "credibility": 94,
+      "updateFrequency": "daily",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "accessPolicy": "disabled-needs-adapter",
+      "purpose": "候选来源：工信部产业政策和信息化工作动态；当前页面需专门适配后再启用"
+    },
+    {
       "id": "openai-news",
       "name": "OpenAI News",
       "type": "rss",

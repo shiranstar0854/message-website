@@ -19,6 +19,18 @@
       empty: "无新数据",
       failed: "失败"
     };
+    const authorityLabels = {
+      "official-agency": "官方机构",
+      "official-market": "官方市场",
+      "official-media": "官方媒体",
+      media: "媒体"
+    };
+
+    function formatDate(value) {
+      return window.MessageChooseRender?.formatDate
+        ? window.MessageChooseRender.formatDate(value)
+        : "时间未知";
+    }
 
     container.innerHTML = `
       <div class="source-list">
@@ -28,6 +40,10 @@
             <div class="source-meta">
               <span class="status-dot status-${escapeHtml(source.status || "unknown")}">${escapeHtml(statusLabels[source.status] || "未知")}</span>
               <span>${escapeHtml(source.category)}</span>
+              ${source.sourceAuthority ? `<span>${escapeHtml(authorityLabels[source.sourceAuthority] || source.sourceAuthority)}</span>` : ""}
+              ${source.timelinessTier ? `<span>${escapeHtml(source.timelinessTier)}</span>` : ""}
+              <span>最近检查 ${escapeHtml(formatDate(source.lastCheckedAt))}</span>
+              <span>最近成功 ${escapeHtml(formatDate(source.lastSuccessAt))}</span>
               <span>失败 ${Number(source.failureCount || 0)}</span>
               ${Number(source.attempts || 1) > 1 ? `<span>尝试 ${Number(source.attempts)} 次</span>` : ""}
             </div>

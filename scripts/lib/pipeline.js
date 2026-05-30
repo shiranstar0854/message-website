@@ -91,6 +91,9 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
   const sourceType = firstDefined(rawItem.sourceType, raw.sourceType, sourceDefaults.type, "rss");
   const category = firstDefined(rawItem.category, raw.category, sourceDefaults.category, "news");
   const credibility = Number(firstDefined(rawItem.credibility, raw.credibility, sourceDefaults.credibility, 70));
+  const sourceAuthority = firstDefined(rawItem.sourceAuthority, raw.sourceAuthority, sourceDefaults.sourceAuthority, "media");
+  const timelinessTier = firstDefined(rawItem.timelinessTier, raw.timelinessTier, sourceDefaults.timelinessTier, "daily");
+  const sourceLastCheckedAt = firstDefined(rawItem.sourceLastCheckedAt, raw.sourceLastCheckedAt, rawItem.fetchedAt, fetchedAt);
   const title = decodeHtml(firstDefined(raw.title, raw.headline, raw.name, raw.guid, "Untitled item"));
   const rawUrl = firstDefined(raw.link, raw.url, raw.href, raw.guid, "");
   const url = normalizeUrl(typeof rawUrl === "object" ? rawUrl.href : rawUrl);
@@ -153,7 +156,10 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(imageUrl ? { imageUrl } : {}),
     fetchedAt,
+    sourceLastCheckedAt,
     credibility: Number.isFinite(credibility) ? credibility : 70,
+    sourceAuthority: normalizeText(sourceAuthority).toLowerCase(),
+    timelinessTier: normalizeText(timelinessTier).toLowerCase(),
     tags,
     raw
   };
@@ -313,6 +319,9 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
   const duplicatePenalty = Number(rules.duplicatePenalty || 3);
   const categoryBoosts = rules.categoryBoosts || {};
   const sourceBoosts = rules.sourceBoosts || {};
+  const sourceAuthorityBoosts = rules.sourceAuthorityBoosts || {};
+  const timelinessBoosts = rules.timelinessBoosts || {};
+  const officialFreshnessWindowHours = Number(rules.officialFreshnessWindowHours || 24);
 
   return items.map((item) => {
     const credibilityScore = Number(item.credibility || 70) * sourceCredibilityWeight;
@@ -320,8 +329,20 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
     const keywords = keywordScore(item, rules.keywordWeights);
     const categoryBoost = Number(categoryBoosts[item.category] || 0);
     const sourceBoost = Number(sourceBoosts[item.source] || 0);
+    const authorityBoost = Number(sourceAuthorityBoosts[item.sourceAuthority] || 0);
+    const timelinessBoost = Number(timelinessBoosts[item.timelinessTier] || 0);
+    const publishedTime = new Date(item.publishedAt || nowIso).getTime();
+    const nowTime = new Date(nowIso).getTime();
+    const ageHours = Number.isNaN(publishedTime) || Number.isNaN(nowTime)
+      ? Number.POSITIVE_INFINITY
+      : Math.max(0, (nowTime - publishedTime) / (60 * 60 * 1000));
+    const officialFreshnessBoost = ["official-agency", "official-market"].includes(item.sourceAuthority)
+      && ageHours <= officialFreshnessWindowHours
+      ? Number(rules.officialFreshnessBoost || 0)
+      : 0;
     const duplicatePenaltyScore = Number(item.duplicateCount || (item.duplicates || []).length || 0) * duplicatePenalty;
-    const rawScore = baseScore + credibilityScore + freshnessScore + keywords + categoryBoost + sourceBoost - duplicatePenaltyScore;
+    const rawScore = baseScore + credibilityScore + freshnessScore + keywords + categoryBoost + sourceBoost
+      + authorityBoost + timelinessBoost + officialFreshnessBoost - duplicatePenaltyScore;
     const score = Math.max(0, Math.min(100, Math.round(rawScore)));
 
     return {
@@ -334,6 +355,9 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
         keywords,
         categoryBoost,
         sourceBoost,
+        authorityBoost,
+        timelinessBoost,
+        officialFreshnessBoost,
         duplicatePenalty: duplicatePenaltyScore
       }
     };
@@ -372,6 +396,10 @@ function buildPublishedItem(item) {
     sourceType: item.sourceType,
     category: item.category,
     publishedAt: item.publishedAt,
+    fetchedAt: item.fetchedAt,
+    sourceLastCheckedAt: item.sourceLastCheckedAt,
+    sourceAuthority: item.sourceAuthority,
+    timelinessTier: item.timelinessTier,
     summary: publishedSummary,
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(imageUrl ? { imageUrl } : {}),

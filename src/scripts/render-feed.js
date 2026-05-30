@@ -57,6 +57,24 @@
     `;
   }
 
+  function sourceAuthorityLabel(value) {
+    return {
+      "official-agency": "官方机构",
+      "official-market": "官方市场",
+      "official-media": "官方媒体",
+      media: "媒体"
+    }[value] || value || "来源";
+  }
+
+  function timelinessLabel(value) {
+    return {
+      realtime: "实时",
+      hourly: "小时级",
+      daily: "日更",
+      periodic: "定期"
+    }[value] || value || "频率未知";
+  }
+
   function renderFeed(container, items) {
     if (!items.length) {
       renderEmptyState(container, {
@@ -87,7 +105,10 @@
             ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}
             <div class="item-meta">
               <span>${escapeHtml(item.source)}</span>
-              <span>${formatDate(item.publishedAt)}</span>
+              <span>发布 ${formatDate(item.publishedAt)}</span>
+              <span>采集 ${formatDate(item.fetchedAt)}</span>
+              <span>${escapeHtml(sourceAuthorityLabel(item.sourceAuthority))}</span>
+              <span>${escapeHtml(timelinessLabel(item.timelinessTier))}</span>
               <span>${escapeHtml(item.sourceType || "rss")}${duplicateText}</span>
             </div>
             <div class="tag-row" aria-label="标签">${tags}</div>

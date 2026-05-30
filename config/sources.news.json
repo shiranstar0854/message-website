@@ -14,6 +14,27 @@
       "purpose": "Official NASA public-interest science and agency updates"
     },
     {
+      "id": "govcn-yaowen",
+      "name": "中国政府网要闻",
+      "type": "webpage",
+      "adapter": "json-list",
+      "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
+      "enabled": true,
+      "credibility": 96,
+      "updateFrequency": "hourly",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "maxItems": 60,
+      "accessPolicy": "free-official",
+      "purpose": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "mapping": {
+        "title": "TITLE",
+        "url": "URL",
+        "publishedAt": "DOCRELPUBTIME",
+        "summary": "SUB_TITLE"
+      }
+    },
+    {
       "id": "un-news",
       "name": "UN News",
       "type": "rss",
