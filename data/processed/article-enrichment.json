@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-29T03:17:39.967Z",
+  "generatedAt": "2026-05-30T00:01:21.867Z",
   "totals": {
-    "attempted": 53,
-    "excerptCount": 53,
-    "imageCount": 36,
+    "attempted": 49,
+    "excerptCount": 49,
+    "imageCount": 31,
     "failed": 0,
-    "skipped": 66
+    "skipped": 68
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,15 +25,15 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 58,
+      "skipped": 59,
       "disabled": true
     },
     "google-ai": {
       "sourceId": "google-ai",
       "sourceName": "Google AI Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 4,
+      "excerptCount": 4,
+      "imageCount": 4,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -71,9 +71,9 @@
     "36kr": {
       "sourceId": "36kr",
       "sourceName": "36Kr",
-      "attempted": 11,
-      "excerptCount": 11,
-      "imageCount": 11,
+      "attempted": 6,
+      "excerptCount": 6,
+      "imageCount": 6,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -81,8 +81,8 @@
     "solidot": {
       "sourceId": "solidot",
       "sourceName": "Solidot",
-      "attempted": 1,
-      "excerptCount": 1,
+      "attempted": 3,
+      "excerptCount": 3,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
@@ -91,9 +91,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 4,
-      "excerptCount": 4,
-      "imageCount": 4,
+      "attempted": 5,
+      "excerptCount": 5,
+      "imageCount": 5,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -105,7 +105,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 8,
+      "skipped": 9,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -121,8 +121,8 @@
     "chinanews-finance": {
       "sourceId": "chinanews-finance",
       "sourceName": "中国新闻网财经",
-      "attempted": 14,
-      "excerptCount": 14,
+      "attempted": 11,
+      "excerptCount": 11,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
@@ -141,9 +141,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 11,
-      "excerptCount": 11,
-      "imageCount": 11,
+      "attempted": 9,
+      "excerptCount": 9,
+      "imageCount": 9,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -151,8 +151,8 @@
     "chinanews-breaking": {
       "sourceId": "chinanews-breaking",
       "sourceName": "中国新闻网即时新闻",
-      "attempted": 2,
-      "excerptCount": 2,
+      "attempted": 4,
+      "excerptCount": 4,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
