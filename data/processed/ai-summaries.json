@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-30T05:44:20.114Z",
-  "method": "extractive",
+  "generatedAt": "2026-05-30T11:00:19.756Z",
+  "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
-  "llmConfigured": false,
-  "fallbackCount": 1,
+  "llmConfigured": true,
+  "fallbackCount": 0,
   "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "今日科技重点集中在：OpenAI’s Frontier Governance Framework；Take our I/O 2026 quiz, vibe coded in Google AI Studio.；9 demos of Gemini Omni and Gemini 3.5 in action。",
+      "overview": "科技领域多项进展：OpenAI发布前沿治理框架；Google AI Studio推出互动测验；Gemini Omni与3.5模型展示强大能力；波士顿儿童医院用AI诊断罕见病；Braintrust借助Codex提升开发效率。",
       "keyPoints": [
-        "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emergin...",
-        "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
-        "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execu..."
+        "OpenAI发布AI安全与治理框架",
+        "Google推出Gemini Omni及3.5模型",
+        "AI助力罕见病诊断取得突破"
       ],
       "highlights": [
         {
@@ -59,16 +59,16 @@
           "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance",
       "label": "金融",
-      "overview": "今日金融重点集中在：吴清主席会见花旗集团董事会主席兼首席执行官范洁恩；吴清主席出席国际证监会组织理事会视频会议；吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米。",
+      "overview": "证监会主席吴清近期密集会见国际金融机构及监管高层，包括花旗集团、国际证监会组织、马来西亚证监会、澳门金管局及香港财政司，加强跨境监管合作与对话。",
       "keyPoints": [
-        ",2026-05-16",
-        ",2026-05-15",
-        ",2026-04-14"
+        "吴清会见花旗集团董事长",
+        "出席国际证监会组织会议",
+        "会见马来西亚证监会主席"
       ],
       "highlights": [
         {
@@ -112,16 +112,16 @@
           "summary": ",2026-03-20"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news",
       "label": "新闻",
-      "overview": "今日新闻重点集中在：习近平同埃及总统塞西就中埃建交70周年互致贺电；努力成为跨越太平洋的“友谊使者”——习近平主席复信激励中美青少年和友好人士为两国关系稳定健康可持续发展贡献力量；今年前四个月我国物流需求保持韧性增长。",
+      "overview": "国内要闻：习近平与埃及总统互致建交70周年贺电；复信推动中美青少年交流；“5年5万”倡议提前达标；前4月物流数据韧性增长；粤港澳大湾区游艇政策调整。",
       "keyPoints": [
-        "5月30日，国家主席习近平同埃及总统塞西互致贺电，庆祝两国建交70周年。",
-        "“很高兴得知两国学生搭乘‘中美青年友谊号’，共同经历了难忘的友谊之旅。",
-        "中国物流与采购联合会今天（5月29日）公布1—4月份物流运行数据。"
+        "中埃建交70周年互致贺电",
+        "习近平复信激励中美青少年",
+        "5年5万倡议提前两年半实现"
       ],
       "highlights": [
         {
@@ -165,7 +165,7 @@
           "summary": "同意自即日起在粤港澳大湾区内地九市暂时调整实施《中华人民共和国海关事务担保条例》、《中华人民共和国船舶登记条例》的有关规定，对经粤港澳大湾区内地九市指定口岸暂时入出内地且仅限在粤港澳大湾区内地九市自由行的港澳游艇，实行免担保和临时船舶国籍登记政策。"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     }
   ],
   "totalSummaries": 3,
