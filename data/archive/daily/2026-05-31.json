@@ -1,0 +1,1380 @@
+{
+  "date": "2026-05-31",
+  "generatedAt": "2026-05-31T00:02:05.253Z",
+  "totals": {
+    "sources": 24,
+    "healthySources": 23,
+    "rawItems": 1486,
+    "normalizedItems": 1486,
+    "filteredItems": 440,
+    "dedupedItems": 429,
+    "scoredItems": 429,
+    "enrichmentAttempted": 53,
+    "enrichmentFailed": 0
+  },
+  "sourceHealth": [
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 10,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 978,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 20,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "google-security",
+      "name": "Google Security Blog",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 25,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "microsoft-azure",
+      "name": "Microsoft Azure Blog",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 10,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "cisa-news",
+      "name": "CISA News",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 10,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "36kr",
+      "name": "36Kr",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 30,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "solidot",
+      "name": "Solidot",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 20,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "federal-reserve",
+      "name": "Federal Reserve",
+      "category": "finance",
+      "status": "healthy",
+      "itemCount": 20,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "sec-press",
+      "name": "U.S. SEC Press Releases",
+      "category": "finance",
+      "status": "healthy",
+      "itemCount": 25,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "cfpb-newsroom",
+      "name": "CFPB Newsroom",
+      "category": "finance",
+      "status": "healthy",
+      "itemCount": 16,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "chinanews-finance",
+      "name": "中国新闻网财经",
+      "category": "finance",
+      "status": "healthy",
+      "itemCount": 30,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "nasa-breaking-news",
+      "name": "NASA Breaking News",
+      "category": "news",
+      "status": "healthy",
+      "itemCount": 10,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "un-news",
+      "name": "UN News",
+      "category": "news",
+      "status": "healthy",
+      "itemCount": 30,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "chinanews-breaking",
+      "name": "中国新闻网即时新闻",
+      "category": "news",
+      "status": "healthy",
+      "itemCount": 30,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:29.607Z",
+      "lastSuccessAt": "2026-05-31T00:01:29.607Z",
+      "failureCount": 0
+    },
+    {
+      "id": "most-work",
+      "name": "科技部工作动态",
+      "category": "tech",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 20,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "pbc-news",
+      "name": "中国人民银行新闻发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "status": "healthy",
+      "itemCount": 15,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "csrc-news",
+      "name": "中国证监会新闻发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "status": "healthy",
+      "itemCount": 21,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "sse-news",
+      "name": "上海证券交易所要闻",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-market",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 15,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "szse-news",
+      "name": "深圳证券交易所要闻",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-market",
+      "timelinessTier": "daily",
+      "status": "failed",
+      "itemCount": 0,
+      "responseStatus": null,
+      "attempts": 1,
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": null,
+      "failureCount": 1
+    },
+    {
+      "id": "ndrc-news",
+      "name": "国家发展改革委新闻发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 25,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "mof-news",
+      "name": "财政部财政新闻",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 25,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "stats-data-release",
+      "name": "国家统计局数据发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 21,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    },
+    {
+      "id": "govcn-yaowen",
+      "name": "中国政府网要闻",
+      "category": "news",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "status": "healthy",
+      "itemCount": 60,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-05-31T00:01:37.225Z",
+      "lastSuccessAt": "2026-05-31T00:01:37.225Z",
+      "failureCount": 0
+    }
+  ],
+  "archivePolicy": {
+    "maxItemsPerChannel": 20,
+    "availableItems": 429
+  },
+  "items": [
+    {
+      "id": "finance-item-24a1163144",
+      "title": "吴清主席会见花旗集团董事会主席兼首席执行官范洁恩",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7633210/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": ",2026-05-16",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-b5fe19c3fc",
+      "title": "吴清主席出席国际证监会组织理事会视频会议",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7633097/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": ",2026-05-15",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-b40606e5c3",
+      "title": "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7626187/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": ",2026-04-14",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-a99b831b55",
+      "title": "吴清主席会见澳门金融管理局行政管理委员会主席黄善文",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7623163/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": ",2026-03-31",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-da7544e065",
+      "title": "吴清主席会见香港特区政府财政司司长陈茂波一行",
+      "url": "https://www.csrc.gov.cn/csrc/c106311/c7621120/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": ",2026-03-20",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-a960c04202",
+      "title": "证监会严肃查处老虎等机构非法跨境展业案件",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7634330/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "近日，证监会依法对Tiger Brokers (NZ) Limited（以下简称老虎）、富途证券国际（香港）有限,2026-05-22",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-14ac3d8fea",
+      "title": "中国证监会有关部门负责人就《综合整治非法跨境证券期货基金经营活动实施方案》答记者问",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7634328/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "近日，经国务院同意，中国证监会、工业和信息化部、公安部、中国人民银行、市场监管总局、金融监管总局、国,2026-05-22",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-4937cb14f3",
+      "title": "中国证监会 工业和信息化部 公安部 中国人民银行 市场监管总局 金融监管总局 国家网信办 国家外汇局关于印发《综合整治非法跨境证券期货基金经营活动实施方案》的通知",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7634326/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "证监发〔2026〕28号各省、自治区、直辖市人民政府，新疆生产建设兵团：《综合整治非法跨境证券期货基金经营,2026-05-22",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-0eee7204fc",
+      "title": "中国证监会等八部门联合印发《综合整治非法跨境证券期货基金经营活动实施方案》",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7634324/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为进一步防范和打击非法跨境证券期货基金经营活动，维护金融市场秩序和投资者合法权益，近日，经国务院同意,2026-05-22",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-dbd9fa01b2",
+      "title": "国家统计局2026年常规统计督察第9统计督察组进驻中国证监会开展统计督察",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7633553/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "根据党中央、国务院授权，国家统计局2026年常规统计督察第9统计督察组近日进驻中国证监会开展统计督察，并于,2026-05-18",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-d9a2cb7433",
+      "title": "2024 年1月19日新闻发布会",
+      "url": "https://www.csrc.gov.cn/csrc/c100029/c7458464/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "2024年1月19日，证监会举行新闻发布会，证监会综合业务司主要负责人周小舟、发行司司长严伯进、机构司司长申,2024-01-19",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-b45c5af13a",
+      "title": "中国证监会发布《私募投资基金信息披露监督管理办法》",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7616846/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为贯彻党中央、国务院关于金融监管的工作部署，落实《国务院关于加强监管防范风险推动资本市场高质量发展的,2026-02-27",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-e3c3f11b06",
+      "title": "中国证监会发布《公开募集证券投资基金业绩比较基准指引》",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7610827/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为落实《推动公募基金高质量发展行动方案》，坚持以投资者为本，规范公募基金业绩比较基准的选取和使用，切,2026-01-23",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-5957ee796e",
+      "title": "中国证监会修订发布《公开募集证券投资基金销售费用管理规定》",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7606047/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为落实《推动公募基金高质量发展行动方案》，进一步降低基金投资者投资成本，规范公募基金销售市场秩序，保,2025-12-31",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-047720b4d9",
+      "title": "中国证监会发布《证券期货市场监督管理措施实施办法》",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7606032/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为贯彻党的二十大和二十届二中、三中、四中全会及中央金融工作会议、中央全面依法治国工作会议精神，落实法,2025-12-31",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-5c54f68f3f",
+      "title": "中国证监会发布关于修改《证券期货行政执法当事人承诺制度实施规定》的决定",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7606003/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为贯彻落实中央金融工作会议精神和新“国九条”关于完善行政执法当事人承诺制度的要求，进一步明确行政执法,2025-12-31",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-4bf430114e",
+      "title": "中国证监会印发《中国证监会关于推出商业不动产投资信托基金试点的公告》",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7605669/content.shtml",
+      "source": "中国证监会新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-31T00:01:37.225Z",
+      "summary": "中国证监会新闻、政策解读、监管通知和市场执法信息",
+      "contentExcerpt": "为贯彻落实党中央、国务院决策部署和资本市场新“国九条”要求，推动不动产投资信托基金（REITs）市场高质量,2025-12-31",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "finance-item-7fc4011b97",
+      "title": "蓝佛安出席2026年上合组织成员国财长和央行行长会议并举行多场双边会谈",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202605/t20260530_3990894.htm",
+      "source": "财政部财政新闻",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    },
+    {
+      "id": "finance-u-s-sec-press-releases-5055e71cfd",
+      "title": "SEC Proposes Rescission of Climate-Related Disclosure Rules",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-49-sec-proposes-rescission-climate-related-disclosure-rules",
+      "source": "U.S. SEC Press Releases",
+      "sourceType": "rss",
+      "category": "finance",
+      "publishedAt": "2026-05-29T14:50:00.000Z",
+      "summary": "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that require companies to provide certain climate-related information in their registration statements and annual reports. The Commission’s…",
+      "contentExcerpt": "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that require companies to provide certain climate-related information in their registration statements and annual reports. The Commission’s…",
+      "score": 98,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "finance-item-3b58508336",
+      "title": "中国人民银行举办货币政策委员会学术讲座",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026052919143210143/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "contentExcerpt": "中国人民银行举办货币政策委员会学术讲座。中国人民银行党委书记、行长潘功胜出席并主持讲座。国家外汇管理局副局长徐志斌、刘斌出席。副局长李斌作总结发言。中国社会科学院学部委员、国家金融与发展实验室理事长李扬以。货币、利率与货币政策。围绕货币理论、利率市场化以及国际上货币政策与治理范式转型等问题。中国人民银行各部门、各分支机构、部分所属单位。国家外汇管理局各部门有关同志分别在主会场和分会场参加讲座。 。",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "tech-openai-news-63eee503d2",
+      "title": "OpenAI’s Frontier Governance Framework",
+      "url": "https://openai.com/index/openai-frontier-governance-framework",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+      "contentExcerpt": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "Safety"
+      ]
+    },
+    {
+      "id": "tech-google-ai-blog-e6ea868542",
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T19:00:00.000Z",
+      "summary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+      "contentExcerpt": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-1440x810.png",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "Developer tools",
+        "AI"
+      ]
+    },
+    {
+      "id": "tech-google-ai-blog-7099ab3e16",
+      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T17:30:00.000Z",
+      "summary": "Watch 9 videos showing the capabilities of Gemini Omni and Gemini 3.5, announced at Google I/O 2026.",
+      "contentExcerpt": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows. Your browser does not support the audio element. At Google I/O 2026, we announced our latest models: Gemini Omni and the Gemini 3.5 family of models. Gemini Omni is our new model that can create anything from any input, starting with video. With Omni, you can combine images, audio, video and text as input and generate high-quality videos grounded...",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_herosocial.width-1300.png",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "Gemini models",
+        "Google DeepMind",
+        "AI"
+      ]
+    },
+    {
+      "id": "tech-microsoft-azure-blog-ce019304c6",
+      "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
+      "source": "Microsoft Azure Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T14:46:32.000Z",
+      "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work. The post Claude Opus 4.8 is now available in Microsoft Foundry appeared first on Microsoft Azure Blog .",
+      "contentExcerpt": "As AI applications become more complex, teams need models that can handle longer-running work, reason more deeply across complex analysis use tools more...",
+      "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTIzMzY3LWF0S3NUTQ?revision=2",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "AI + machine learning",
+        "AI"
+      ]
+    },
+    {
+      "id": "tech-openai-news-54eed69f83",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+      "contentExcerpt": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-openai-news-33dd0a1359",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "url": "https://openai.com/index/braintrust",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+      "contentExcerpt": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-google-ai-blog-d94f270ada",
+      "title": "Check out real-life AI prototypes from the Futures Lab.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "summary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+      "contentExcerpt": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-1440x810.png",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "Learning & Education",
+        "AI"
+      ]
+    },
+    {
+      "id": "tech-openai-news-6f071c9489",
+      "title": "Election information and safeguards in 2026",
+      "url": "https://openai.com/index/election-safeguards-2026",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+      "contentExcerpt": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ]
+    },
+    {
+      "id": "tech-item-634d741529",
+      "title": "第九届中国平方公里阵列射电望远镜（SKA）科学年度研讨会在沪召开",
+      "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196681.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    },
+    {
+      "id": "tech-item-f77c7f0ef2",
+      "title": "科技部副部长邱勇赴吉尔吉斯斯坦出席上海合作组织成员国第十届科技部长会议",
+      "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196680.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-05-26T00:00:00.000Z",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    },
+    {
+      "id": "tech-solidot-746cbefb9d",
+      "title": "一家美国公司一个月内在 Claude AI 上花费了 5 亿美元",
+      "url": "https://www.solidot.org/story?sid=84441",
+      "source": "Solidot",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-30T14:37:12.000Z",
+      "summary": "Axios 报道，一家未公布名字的公司一个月内在 Claude AI 上花掉了 5 亿美元，原因是公司忘记了为员工设置 Claude 使用限制。虽然没有公开名字，但能在 AI 上每月随意支出 5 亿美元且没有自己的 AI 大模型的公司寥寥无几。报道称，美国公司开始感受到在 AI 上过度支出带来的压力，企业领导者开始质疑 AI 支出飙升是否带来了实质性的回报。亚马逊早些时候被报道其员工为完成内部指标而虚增 token 消耗量。本周亚马逊取消了内部排行榜，防止员工为提高排名而将 AI 用于不必要的任务。",
+      "contentExcerpt": "Solidot是至顶网的科技资讯网站，主要面对开源自由软件和关心科技资讯读者群，包括众多中国开源软件的开发者，爱好者和布道者。口号是“奇客的知识，重要的东西”。",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-solidot-9095e64a8a",
+      "title": "Krafton 同意向《Subnautica 2》开发商支付 2.5 亿美元奖金",
+      "url": "https://www.solidot.org/story?sid=84440",
+      "source": "Solidot",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-30T14:07:47.000Z",
+      "summary": "水下生存游戏《Subnautica》的开发商 Unknown Worlds Entertainment 因一笔 2.5 亿美元的奖金而与母公司、韩国发行商 Krafton 闹上法庭。在这起备受瞩目的案件中，Krafton CEO Changhan Kim 不想支付奖金，他在咨询了 ChatGPT 之后以莫须有理由突然解雇了 Unknown Worlds 的主要高管。今年三月法庭裁决 Unknown Worlds 前 CEO Ted Gill 恢复原职。Unknown Worlds 也在本月释出了《Subnautica 2》的抢先体验版本（early access）。虽然还在开发之中，但《Subnautica 2》的销量已经突破 400 万份拷贝，Steam 平台最高同时在线玩家数逾 46.7 万人。这一佳绩已经满足了双方达成的奖金支付条件：当月销售额突破 6980 万美元，每 1 美元 Krafton 就需要向 Unknown Worlds 前股东支付 3.12 美元或最高 2.5 亿美元。根据韩国媒体报道，Krafton 已同意支付奖金。",
+      "contentExcerpt": "Solidot是至顶网的科技资讯网站，主要面对开源自由软件和关心科技资讯读者群，包括众多中国开源软件的开发者，爱好者和布道者。口号是“奇客的知识，重要的东西”。",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-36kr-2dd9f6d1f3",
+      "title": "6.24亿日元，乐奇AI眼镜创日本Makuake平台众筹新纪录",
+      "url": "https://36kr.com/newsflashes/3831673401190273?f=rss",
+      "source": "36Kr",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-30T10:59:44.000Z",
+      "summary": "北京时间5月30日，乐奇AI眼镜在日本第一的众筹平台Makuake创下了全新纪录，截至目前，该项目已累计斩获超6.24亿日元的销售额，成为同品类历史最高众筹额，刷新了该平台成立13年以来的全品类最高销售纪录。据了解，Rokid的此次众筹将于北京时间今晚21:00（日本时间22:00）正式收官。",
+      "contentExcerpt": "北京时间5月30日，乐奇AI眼镜在日本第一的众筹平台Makuake创下了全新纪录，截至目前，该项目已累计斩获超6.24亿日元的销售额，成为同品类历史最高众筹额，刷新了该平台成立13年以来的全品类最高销售纪录。据了解，Rokid的此次众筹将于北京时间今晚21:00（日本时间22:00）正式收官。",
+      "imageUrl": "https://img.36krcdn.com/20191024/v2_1571894049839_img_jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-openai-news-bbfafadd67",
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T03:00:00.000Z",
+      "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+      "contentExcerpt": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [
+        "Product"
+      ]
+    },
+    {
+      "id": "tech-openai-news-ccb2982689",
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+      "contentExcerpt": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [
+        "Safety"
+      ]
+    },
+    {
+      "id": "tech-item-8a871c99b1",
+      "title": "《人体基因数据研究伦理指引》发布",
+      "url": "https://www.most.gov.cn/kjbgz/202605/t20260525_196672.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    },
+    {
+      "id": "tech-36kr-15960d3c79",
+      "title": "9点1氪｜泡泡玛特大涨，段永平日赚10亿；诺基亚发布首款微聊手机，售价199元；滴滴回应“乘客车内排泄”",
+      "url": "https://36kr.com/p/3831073348855433?f=rss",
+      "source": "36Kr",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-30T00:52:20.000Z",
+      "summary": "今日热点导览 黄仁勋披露“赶飞机”细节，特朗普要出发时来电话 国内航线燃油附加费6月5日起首次下调 铁路将实施新规：违规乘车拒不补票将被限制购票 iPhone 17系列中国销量破3000万台，Pro Max版占近一半 SpaceX据悉将IPO估值目标下调至至少1.8万亿美元 TOP3大新闻 泡泡玛特上涨，段永平单日盈利近10亿港币 泡泡玛特迎来强势上涨，5月29日盘中最大涨幅超12%，截至29日记者发稿报收176港元，涨幅达8.98%。此番行情走高，与知名投资人段永平大举布局相关。据港交所5月27日披露的信息显示，知名投资人段永平举牌泡泡玛特，当时的持仓市值超117亿港元。伴随29日股价上扬，其单日账面盈利接近10亿港元。泡泡玛特29日大涨之后，段永平在雪球平台上接连两次发布同款表情包，引发市场热议。（中国新闻周刊） &nbsp; 诺基亚发布首款微聊手机，售价199元 5月29日，诺基亚发布了200 4G手机，售价199元，是首款微聊手机，可通过微信小程序与其他手机视频通话，主打学生、长辈及备用机市场。据官方旗舰店销售页面介绍，该手机搭载2.4英寸屏幕、1450mAh电池，支持双...",
+      "contentExcerpt": "泡泡玛特迎来强势上涨，截至29日报收176港元，涨幅达8.98%。",
+      "imageUrl": "https://img.36krcdn.com/hsossms/20260530/v2_ec6f570ecddd46baa58d90eae0b35edb@6100851_oswg81603oswg1053oswg495_img_jpg?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+      "score": 89,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-36kr-1bd41032e3",
+      "title": "最前线｜中科创星第十二期“好望角科学沙龙”聚焦“太空智驾”，卫星将从被动响应走向自主决策",
+      "url": "https://36kr.com/p/3831071878358659?f=rss",
+      "source": "36Kr",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-30T00:48:34.000Z",
+      "summary": "“太空智驾时代将到来，卫星和星座会如同L4级自动驾驶汽车一样，在太空具备自主环境感知、任务规划和机动决策能力。” 5月28日，在上海举行的“好望角科学沙龙”上，中国科学院西安光学精密机械研究所（简称“西安光机所”）副所长邵晓鹏在演讲中提出了这一判断。 西安光机所副所长邵晓鹏在沙龙上演讲 “好望角科学沙龙”是由中科创星发起，中科创星、东壁科技数据、上海市研发公共服务平台管理中心、曲率引擎共同主办的科创融合与跨界交流平台。本期沙龙以“星际智控——太空智驾与遥感技术的产业共振”为主题，汇聚了航天领域专家，以及来自科创企业、投资机构与地方政府的近百位代表，共同探讨卫星和星座从被动响应向自主决策升级的技术路径与落地模式。 过去几年，全球商业航天进入加速阶段，卫星在轨数量持续攀升，空间碎片、轨道碰撞等风险也在增加。传统依赖地面站逐一管控的卫星在轨管理模式已难以为继，强调卫星自主感知、自主响应与自主决策能力的“太空智驾”概念应运而生。 在以《计算成像：重塑“太空智驾”》为题的演讲中，邵晓鹏表示，“AI+光学”的新范式，将推动航天光学载荷从传统的“精密机械”向“智能信息终端”转变，并进一步提升卫...",
+      "contentExcerpt": "“AI+光学”的新范式，将推动航天光学载荷从“精密机械”向“智能信息终端”转变",
+      "imageUrl": "https://img.36krcdn.com/hsossms/20260530/v2_fe0b0fabc2604650b7de4330e0e4ddbf@5920579_oswg946768oswg1053oswg495_img_png?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+      "score": 89,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-36kr-d9392e9729",
+      "title": "千里科技再添筹码，或将整合吉利辅助驾驶团队｜36氪独家",
+      "url": "https://36kr.com/p/3830580716365449?f=rss",
+      "source": "36Kr",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-29T16:28:31.000Z",
+      "summary": "为助力千里科技成为“第二个华为”，吉利决定为它增添新的技术筹码。 36氪从多位产业人士处了解到，吉利中央研究院数百人的辅助驾驶团队，将在近期被整合入千里科技。目前，吉利研究院辅助驾驶团队，已有人收到了转移合同的通知。 有接近吉利的知情人士告诉36氪：“这轮整合后，吉利研究院辅助驾驶团队，被平移至千里智驾与极氪的合资公司千里浩瀚，千里浩瀚今后主要负责为吉利的车型提供定制化开发和量产交付。千里智驾可以将更多精力转移至主线研发，提供平台级能力。吉利暂定了这样一个整合方案。”针对以上信息，36氪向吉利求证，截止发稿，没有回应。 据公开信息显示，千里智驾是千里科技负责辅助驾驶研发的子公司，千里科技通过重庆江河间接持有千里智驾30%的股份。 千里浩瀚是千里智驾和极氪的合资公司，千里智驾和极氪分别持有千里浩瀚48%、47%的股份。 2025年8月，极氪辅助驾驶团队、旷世科技旗下辅助驾驶子公司迈驰智行，以及吉利研究院少数人，被整合入千里智驾，组成了一个约2000人规模的辅助驾驶研发团队。 有吉利人士对36氪表示，前一轮整合中，被保留在吉利研究院的辅助驾驶团队，主要负责对供应商提定制化需求、测试等...",
+      "contentExcerpt": "千里科技冲击2026年底百万辆ASD装车目标。",
+      "imageUrl": "https://img.36krcdn.com/hsossms/20260530/v2_b8bd6ca7c45d4dfea07b17da1b0ca3cf@6215398_oswg529617oswg1053oswg495_img_png?x-oss-process=image/resize,m_mfit,w_600,h_400,limit_0/crop,w_600,h_400,g_center",
+      "score": 88,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "tech-google-ai-blog-2165740ba1",
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-05-28T15:00:00.000Z",
+      "summary": "Here are 12 of the biggest Google I/O 2026 keynote moments, including news about Gemini Omni, Gemini 3.5 Flash and more.",
+      "contentExcerpt": "Relive some of our top onstage moments this year, including the debut of our newest models, updates to Search and more. Your browser does not support the audio element. Our biggest, boldest new developments took center stage at Google I/O 2026. We announced technical breakthroughs, like Gemini Omni’s ability to create anything from any input, starting with video. And we shared product updates to help you day-to-day, like the brand new, intelligent Search box that will let you search across mo...",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH_SS.width-1300.png",
+      "score": 88,
+      "duplicateCount": 0,
+      "tags": [
+        "Search",
+        "Android",
+        "Google Labs",
+        "Shopping",
+        "AI",
+        "Gemini App",
+        "Gemini models"
+      ]
+    },
+    {
+      "id": "news-item-b917f368d6",
+      "title": "全国科技工作者日 多场活动弘扬科学家精神",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070696.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-f02a83df1d",
+      "title": "“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070694.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "建设社会主义现代化强国，关键在科技自立自强。习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-0742c55db0",
+      "title": "李强对安全生产工作作出重要批示强调：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070687.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "全国安全生产视频会议5月30日在京召开。中共中央政治局常委、国务院总理李强日前对做好安全生产工作作出重要批示。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-b6e09ef656",
+      "title": "【视频】李强对安全生产工作作出重要批示：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
+      "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026053001/index.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院领导人的日常政务活动视频汇总。",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-efb938bae1",
+      "title": "习近平同埃及总统塞西就中埃建交70周年互致贺电",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070675.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "5月30日，国家主席习近平同埃及总统塞西互致贺电，庆祝两国建交70周年。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-c682159cca",
+      "title": "努力成为跨越太平洋的“友谊使者”——习近平主席复信激励中美青少年和友好人士为两国关系稳定健康可持续发展贡献力量",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070665.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-30T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "“很高兴得知两国学生搭乘‘中美青年友谊号’，共同经历了难忘的友谊之旅。”5月23日，国家主席习近平复信参加“共航蔚蓝：中美青年友谊行”活动的两国学生，对两国青少年的友好交流给予充分肯定，并寄予殷切期望。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-85f623dea3",
+      "title": "今年前四个月我国物流需求保持韧性增长",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070639.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中国物流与采购联合会今天（5月29日）公布1—4月份物流运行数据。今年以来，我国物流需求保持韧性增长，结构不断优化，各细分领域均保持稳定增长。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-54f7843ce6",
+      "title": "“5年5万”倡议提前两年半实现预期目标",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070631.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "外交部发言人毛宁29日在例行记者会上答问时说，日前，习近平主席复信参加“共航蔚蓝：中美青年友谊行”活动的两国学生，宣布自2023年11月提出“5年邀请5万名美国青少年来华交流学习”倡议以来，已有超过5万名美国青少年来华参访，提前两年半实现预期目标。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-5ff6ba302c",
+      "title": "国务院关于同意在粤港澳大湾区内地九市暂时调整实施有关行政法规规定的批复",
+      "url": "https://www.gov.cn/zhengce/content/202605/content_7070622.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "同意自即日起在粤港澳大湾区内地九市暂时调整实施《中华人民共和国海关事务担保条例》、《中华人民共和国船舶登记条例》的有关规定，对经粤港澳大湾区内地九市指定口岸暂时入出内地且仅限在粤港澳大湾区内地九市自由行的港澳游艇，实行免担保和临时船舶国籍登记政策。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-dc575ddcde",
+      "title": "老挝人革党中央总书记、国家主席通伦将访华",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070606.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央对外联络部发言人胡兆明5月29日宣布：应中共中央总书记、国家主席习近平邀请，老挝人革党中央总书记、国家主席通伦将于6月2日至6日对中国进行国事访问。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-97f038178a",
+      "title": "“全球治理之友小组”会议联合公报",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070650.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "2026年5月28日，“全球治理之友小组”会议在纽约联合国总部举行，主题是“改革完善全球治理 携手应对全球挑战”。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-01479767eb",
+      "title": "王毅出席“全球治理之友小组”会议",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070644.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央政治局委员、外交部长王毅28日在纽约联合国总部出席“全球治理之友小组”会议。巴基斯坦、土库曼斯坦、吉尔吉斯斯坦、古巴、津巴布韦外长等60余国代表出席。联合国常务副秘书长阿明娜作通报。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-3cfce22fda",
+      "title": "“三夏”大规模小麦机收全面展开 全国将投入各类农机具超1700万台（套）",
+      "url": "https://www.gov.cn/lianbo/202605/content_7070589.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者从农业农村部获悉：截至5月28日17时，各地已收夏粮小麦4897万亩、当日机收面积已超过1000万亩，今年全国“三夏”大规模小麦机收全面展开。当前麦收总体进度已近两成，西南地区及湖北麦收已进入尾声，河南、安徽进度近一成，江苏、陕西等地陆续开收。今年“三夏”，全国将投入各类农机具超1700万台（套），其中联合收割机80多万台、参与跨区作业的20多万台。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-733dccb0b9",
+      "title": "图表：《城市更新“十五五”规划》发布",
+      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202605/content_7070581.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院日前印发《城市更新“十五五”规划》，明确了“十五五”时期城市更新工作的目标指标、重点任务、重大工程和政策举措。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-un-news-0b0a97ce25",
+      "title": "Security Council LIVE: Mounting attacks and Russian threats prompt emergency Ukraine meeting",
+      "url": "https://news.un.org/feed/view/en/story/2026/05/1167597",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-05-28T12:00:00.000Z",
+      "summary": "The UN&nbsp;Security Council is meeting in emergency session on Ukraine, with Secretary-General António Guterres telling ambassadors following what Kyiv describes as the most devastating attack on its capital to date, that “the time for peace is now.” In the early hours of 23-24 May, Russia launched a massive barrage of missiles and drones against multiple Ukrainian cities. Moscow has since threatened further sustained strikes. Sharp divisions among Council members are expected, with European...",
+      "contentExcerpt": "The UN Security Council is meeting in emergency session on Ukraine, with Secretary-General António Guterres telling ambassadors following what Kyiv describes as the most devastating attack on its capital to date, that “the time for peace is now.” In the early hours of 23-24 May, Russia launched a massive barrage of missiles and drones against multiple Ukrainian cities. Moscow has since threatened further sustained strikes. Sharp divisions among Council members are expected, with European nati...",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/28-05-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "news-item-555fa8218b",
+      "title": "前4个月全国网上商品和服务零售额增长6.6%",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070570.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者从商务部了解到，今年前四个月，全国网上商品和服务零售额同比增长6.6%，网上商品零售额对社会消费品零售总额增长贡献率为72.2%。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-1483e52a83",
+      "title": "各地一批重大工程扎实推进",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070569.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "各地一批重大工程建设扎实推进，为高质量发展夯实基础。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-353bbf3bae",
+      "title": "【视频】谌贻琴在山东调研：坚定不移实施就业优先战略 多措并举做好稳就业促就业工作",
+      "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026052802/index.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院领导人的日常政务活动视频汇总。",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-25dfd2b15b",
+      "title": "【视频】张国清出席全国“安全生产月”活动启动仪式",
+      "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026052801/index.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院领导人的日常政务活动视频汇总。",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-3283d5b67f",
+      "title": "我国开展第三次全国残疾人抽样调查",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070555.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院办公厅5月28日发布通知，国务院决定自2026年6月起开展第三次全国残疾人抽样调查。调查对象为我国境内抽取调查小区的全部常住人口，全国共抽取约280万人。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  ]
+}

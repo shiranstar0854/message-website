@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-30T05:43:04.137Z",
+  "generatedAt": "2026-05-31T00:01:59.467Z",
   "totals": {
     "attempted": 53,
     "excerptCount": 53,
-    "imageCount": 28,
+    "imageCount": 26,
     "failed": 0,
-    "skipped": 68
+    "skipped": 67
   },
   "sources": {
     "github-blog": {
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -71,9 +71,9 @@
     "36kr": {
       "sourceId": "36kr",
       "sourceName": "36Kr",
-      "attempted": 6,
-      "excerptCount": 6,
-      "imageCount": 6,
+      "attempted": 4,
+      "excerptCount": 4,
+      "imageCount": 4,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -81,8 +81,8 @@
     "solidot": {
       "sourceId": "solidot",
       "sourceName": "Solidot",
-      "attempted": 1,
-      "excerptCount": 1,
+      "attempted": 2,
+      "excerptCount": 2,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
@@ -105,7 +105,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 9,
+      "skipped": 8,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -131,9 +131,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
