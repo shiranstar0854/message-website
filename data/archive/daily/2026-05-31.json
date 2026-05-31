@@ -1,16 +1,16 @@
 {
   "date": "2026-05-31",
-  "generatedAt": "2026-05-31T04:16:07.256Z",
+  "generatedAt": "2026-05-31T09:01:52.809Z",
   "totals": {
     "sources": 20,
-    "healthySources": 8,
-    "rawItems": 30,
-    "normalizedItems": 30,
-    "filteredItems": 29,
-    "dedupedItems": 29,
-    "scoredItems": 29,
+    "healthySources": 7,
+    "rawItems": 34,
+    "normalizedItems": 34,
+    "filteredItems": 33,
+    "dedupedItems": 33,
+    "scoredItems": 33,
     "enrichmentAttempted": 25,
-    "enrichmentFailed": 1
+    "enrichmentFailed": 3
   },
   "sourceHealth": [
     {
@@ -22,7 +22,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -35,8 +35,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
+      "lastSuccessAt": "2026-05-31T09:01:09.757Z",
       "failureCount": 0
     },
     {
@@ -48,8 +48,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
+      "lastSuccessAt": "2026-05-31T09:01:09.757Z",
       "failureCount": 0
     },
     {
@@ -61,7 +61,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -74,7 +74,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T04:02:10.336Z",
       "failureCount": 0
     },
@@ -87,7 +87,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -100,7 +100,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -113,8 +113,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
+      "lastSuccessAt": "2026-05-31T09:01:09.757Z",
       "failureCount": 0
     },
     {
@@ -126,7 +126,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -134,14 +134,14 @@
       "id": "nasa-breaking-news",
       "name": "NASA Breaking News",
       "category": "news",
-      "status": "healthy",
-      "itemCount": 5,
-      "responseStatus": 200,
-      "attempts": 1,
+      "status": "failed",
+      "itemCount": 0,
+      "responseStatus": 429,
+      "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
       "lastSuccessAt": "2026-05-31T04:15:11.643Z",
-      "failureCount": 0
+      "failureCount": 1
     },
     {
       "id": "un-news",
@@ -152,8 +152,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:11.643Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-05-31T09:01:09.757Z",
+      "lastSuccessAt": "2026-05-31T09:01:09.757Z",
       "failureCount": 0
     },
     {
@@ -168,7 +168,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -184,7 +184,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -200,7 +200,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -211,14 +211,14 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-market",
       "timelinessTier": "daily",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
+      "responseStatus": null,
       "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
       "lastSuccessAt": null,
-      "failureCount": 0
+      "failureCount": 1
     },
     {
       "id": "szse-news",
@@ -227,14 +227,14 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-market",
       "timelinessTier": "daily",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
+      "responseStatus": null,
       "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
       "lastSuccessAt": null,
-      "failureCount": 0
+      "failureCount": 1
     },
     {
       "id": "ndrc-news",
@@ -248,7 +248,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -264,8 +264,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
-      "lastSuccessAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
+      "lastSuccessAt": "2026-05-31T09:01:19.279Z",
       "failureCount": 0
     },
     {
@@ -280,8 +280,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
-      "lastSuccessAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
+      "lastSuccessAt": "2026-05-31T09:01:19.279Z",
       "failureCount": 0
     },
     {
@@ -292,18 +292,18 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 9,
+      "itemCount": 13,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-05-31T04:15:32.801Z",
-      "lastSuccessAt": "2026-05-31T04:15:32.801Z",
+      "lastCheckedAt": "2026-05-31T09:01:19.279Z",
+      "lastSuccessAt": "2026-05-31T09:01:19.279Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 29
+    "availableItems": 33
   },
   "items": [
     {
@@ -355,6 +355,78 @@
       "tags": []
     },
     {
+      "id": "news-item-cb09eb1244",
+      "title": "习近平：前瞻布局和发展未来产业",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "今天进行二十届中央政治局第二十四次集体学习，内容是前瞻布局和发展未来产业，主要是总结近年来我国未来产业发展情况，分析世界未来产业发展趋势，对培育发展未来产业进行思考。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-2a7227b626",
+      "title": "习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员的回信",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070716.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "来信收到了。得知你们在一大会址和南湖红船旁，用心用情讲述党的历史、革命故事和英雄事迹，厚植了爱党、爱国、爱社会主义的情感，得到了锻炼与成长，我感到欣慰。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-53765ef068",
+      "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "在“六一”国际儿童节即将到来之际，中共中央总书记、国家主席、中央军委主席习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员回信，对他们予以亲切勉励，并祝他们和全国的少年儿童节日快乐。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-44c6b57d82",
+      "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月1日出版的第11期《求是》杂志将发表中共中央总书记、国家主席、中央军委主席习近平的重要文章《前瞻布局和发展未来产业》。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
       "id": "news-item-e161e0b895",
       "title": "前4月电力市场交易电量同比增长25.6%",
       "url": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
@@ -383,7 +455,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -401,7 +473,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "建设社会主义现代化强国，关键在科技自立自强。习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -419,7 +491,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "全国安全生产视频会议5月30日在京召开。中共中央政治局常委、国务院总理李强日前对做好安全生产工作作出重要批示。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -436,7 +508,7 @@
       "publishedAt": "2026-05-30T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -454,7 +526,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "5月30日，国家主席习近平同埃及总统塞西互致贺电，庆祝两国建交70周年。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -472,7 +544,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "“很高兴得知两国学生搭乘‘中美青年友谊号’，共同经历了难忘的友谊之旅。”5月23日，国家主席习近平复信参加“共航蔚蓝：中美青年友谊行”活动的两国学生，对两国青少年的友好交流给予充分肯定，并寄予殷切期望。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -490,7 +562,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "记者29日获悉，中央网信办、教育部、工业和信息化部、人力资源社会保障部近日联合印发《2026年提升全民数字素养与技能工作要点》，部署了6个方面15项重点任务。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -506,8 +578,8 @@
       "category": "news",
       "publishedAt": "2026-05-29T16:14:26.000Z",
       "summary": "This NASA&#160;Hubble Space Telescope&#160;image released on May 27, 2026, features the dwarf irregular galaxy ESO 490-017, roughly 12,000 light-years in diameter and some 23 million light-years&#160;away in the constellation Canis Major. The galaxy’s low surface brightness makes it appear as a faint, starry swarm behind brighter foreground stars that are easily recognized by their&#160;diffraction spikes. [&#8230;]",
-      "contentExcerpt": "This NASA Hubble Space Telescope image released on May 27, 2026, features the dwarf irregular galaxy ESO 490-017, roughly 12,000 light-years in diameter and some 23 million light-years away in the constellation Canis Major. The galaxy’s low surface brightness makes it appear as a faint, starry swarm behind brighter foreground stars that are easily recognized by their diffraction spikes. Numerous red, orange, and beige dots are distant galaxies peppering the black background, many exhibiting d...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/eso490-017-1-flat-final-crop.jpg",
+      "contentExcerpt": "This NASA Hubble Space Telescope image captures the faint glow of the dwarf irregular galaxy ESO 490-017. Credit: NASA, ESA, R. Tully (University of Hawaii); Image Processing: G. Kober (NASA/Catholic University of America) This NASA&nbsp; Hubble Space Telescope &nbsp;image released on May 27, 2026, features the dwarf irregular galaxy ESO 490-017, roughly 12,000 light-years in diameter and some 23 million light-years&nbsp;away in the constellation Canis Major. The galaxy’s low surface brightne...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/eso490-017-1-flat-final-crop.jpg?w=2048",
       "score": 90,
       "duplicateCount": 0,
       "tags": [
@@ -540,7 +612,7 @@
       "summary": "Matches organised by a former professional player are providing a brief respite from the harsh reality of life for the thousands living in overcrowded tents, schools or damaged buildings in the shattered Occupied Palestinian Territory of Gaza.",
       "contentExcerpt": "Matches organised by a former professional player are providing a brief respite from the harsh reality of life for the thousands living in overcrowded tents, schools or damaged buildings in the shattered Occupied Palestinian Territory of Gaza.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/29-05-2026-UN-News-Gaza-soccer-02.jpg/image770x420cropped.jpg",
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0,
       "tags": []
     },
@@ -555,7 +627,7 @@
       "summary": "NASA has selected seven companies to provide construction, revitalization, and infrastructure improvements at the agency’s Johnson Space Center in Houston. The Johnson Space Center Multiple Award Construction Contract supports up to $300 million in upgrades to mission‑support facilities, utilities, and equipment across the NASA Johnson campus. All funds must be obligated by Sept. 30, 2026. [&#8230;]",
       "contentExcerpt": "NASA has selected seven companies to provide construction, revitalization, and infrastructure improvements at the agency’s Johnson Space Center in Houston. The Johnson Space Center Multiple Award Construction Contract supports up to $300 million in upgrades to mission‑support facilities, utilities, and equipment across the NASA Johnson campus. All funds must be obligated by Sept. 30, 2026. The indefinite-delivery/indefinite-quantity award enables rapid execution of facility projects essential...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/nasa-meatball-1.webp",
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0,
       "tags": [
         "Johnson Space Center",
@@ -571,9 +643,9 @@
       "category": "news",
       "publishedAt": "2026-05-29T20:49:43.000Z",
       "summary": "NASA will host a public event featuring three crew members from the agency’s SpaceX Crew-11 mission at 11 a.m. EDT Monday, June 1. The event, which takes place during the crew’s standard postflight visit, will be held in the Webb Auditorium at NASA Headquarters in the Mary W. Jackson building, 300 E. Street SW in [&#8230;]",
-      "contentExcerpt": "NASA will host a public event featuring three crew members from the agency’s SpaceX Crew-11 mission at 11 a.m. EDT Monday, June 1. The event, which takes place during the crew’s standard postflight visit, will be held in the Webb Auditorium at NASA Headquarters in the Mary W. Jackson building, 300 E. Street SW in Washington. The crew members, including NASA astronauts Zena Cardman and Mike Fincke and JAXA (Japan Aerospace Exploration Agency) astronaut Kimiya Yui, will discuss their recent 167...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/crew-11-hq-visit-advisory-may-29.jpg",
-      "score": 83,
+      "contentExcerpt": "NASA&#8217;s SpaceX Crew-11 astronauts gather together for a crew portrait wearing their Dragon pressure suits during a suit verification check inside the International Space Station&#8217;s Kibo laboratory module. Clockwise from bottom left are, NASA astronaut Mike Fincke, Roscosmos cosmonaut Oleg Platonov, NASA astronaut Zena Cardman, and JAXA (Japan Aerospace Exploration Agency) astronaut Kimiya Yui. Credit: NASA NASA will host a public event featuring three crew members from the agency’s...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/crew-11-hq-visit-advisory-may-29.jpg?w=2048",
+      "score": 82,
       "duplicateCount": 0,
       "tags": [
         "International Space Station (ISS)",
@@ -590,7 +662,7 @@
       "category": "news",
       "publishedAt": "2026-05-29T16:33:00.000Z",
       "summary": "Engineers at NASA’s Goddard Space Flight Center in Greenbelt, Maryland, have completed their final inspection of a key element for the agency’s Nancy Grace Roman Space Telescope: the primary mirror. This 7.9-foot (2.4-meter) mirror will collect and focus light from cosmic objects near and far, helping Roman capture stunning panoramas of space. &#8220;The Roman engineering [&#8230;]",
-      "contentExcerpt": "Engineers at NASA’s Goddard Space Flight Center in Greenbelt, Maryland, have completed their final inspection of a key element for the agency’s Nancy Grace Roman Space Telescope: the primary mirror. This 7.9-foot (2.4-meter) mirror will collect and focus light from cosmic objects near and far, helping Roman capture stunning panoramas of space. “The Roman engineering team laid eyes on the telescope for the final time before it, in turn, becomes the eyes of humanity, revealing the wonders of th...",
+      "contentExcerpt": "4 Min Read NASA’s Roman Space Telescope Primary Mirror Gets Last Look This photo peers down the barrel of the Roman telescope with its visor-like sunshade deployed. Credits: NASA/Sydney Rohde Engineers at NASA’s Goddard Space Flight Center in Greenbelt, Maryland, have completed their final inspection of a key element for the agency’s Nancy Grace Roman Space Telescope: the primary mirror. This 7.9-foot (2.4-meter) mirror will collect and focus light from cosmic objects near and far, helping Ro...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/mirror01.jpg",
       "score": 82,
       "duplicateCount": 0,
@@ -600,29 +672,6 @@
         "Galaxies",
         "Goddard Space Flight Center",
         "Stars",
-        "The Universe"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-15bc83ae04",
-      "title": "Hubble Captures M88 on Journey to Center of Virgo Cluster",
-      "url": "https://science.nasa.gov/missions/hubble/hubble-captures-m88-on-journey-to-center-of-virgo-cluster",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-05-29T11:29:09.000Z",
-      "summary": "This NASA Hubble Space Telescope image features the active spiral galaxy Messier 88 (M88), located about 63 million light-years away.",
-      "contentExcerpt": "The focus of this NASA/ESA Hubble Space Telescope image is an active spiral galaxy on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation Coma Berenices (Berenice’s Hair). M88 is an active galaxy, which means that its center harbors a supermassive black hole that is snacking on gas and dust. Astronomers estimate the black hole is around 100 million times as massive as the Sun, a...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/galaxies/spiral/Hubble_M88_potm2605a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 82,
-      "duplicateCount": 0,
-      "tags": [
-        "Astrophysics",
-        "Astrophysics Division",
-        "Galaxies",
-        "Goddard Space Flight Center",
-        "Hubble Space Telescope",
-        "Spiral Galaxies",
         "The Universe"
       ]
     },
@@ -657,51 +706,6 @@
       "tags": []
     },
     {
-      "id": "news-un-news-a900012817",
-      "title": "Banning children from social media is not enough, UN warns – platforms must be made safe by design",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167608",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "Blocking children from social media is no substitute for making platforms safe in the first place, the UN human rights office warned Friday, as it issued a 10-point framework urging governments and tech companies to go further and faster to protect children online.",
-      "contentExcerpt": "Blocking children from social media is no substitute for making platforms safe in the first place, the UN human rights office warned Friday, as it issued a 10-point framework urging governments and tech companies to go further and faster to protect children online.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-01-2024-UNICEF-Macedonia.jpg/image770x420cropped.jpg",
-      "score": 81,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-un-news-7bf6a07453",
-      "title": "Conflict-related sexual violence cases more than doubled in 2025, UN warns",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167603",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "Nearly 10,000 cases of conflict-related sexual violence were recorded worldwide last year – more than double the previous year&#039;s figure – as rape, sexual slavery and abduction were deployed as weapons of war across Africa, the Middle East, Europe and the Caribbean.",
-      "contentExcerpt": "Nearly 10,000 cases of conflict-related sexual violence were recorded worldwide last year – more than double the previous year's figure – as rape, sexual slavery and abduction were deployed as weapons of war across Africa, the Middle East, Europe and the Caribbean.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/29-05-2026-UNCIEF-SVC.jpg/image770x420cropped.jpg",
-      "score": 81,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-un-news-0a0b9a01c0",
-      "title": "‘A disease you get when you care for someone’: WHO on the Ebola frontline",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167602",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "summary": "Two weeks into the latest deadly Ebola outbreak, the World Health Organization (WHO) estimates there are now 906 suspected cases of Ebola in the Democratic Republic of Congo (DRC), including 223 suspected deaths.",
-      "contentExcerpt": "Two weeks into the latest deadly Ebola outbreak, the World Health Organization (WHO) estimates there are now 906 suspected cases of Ebola in the Democratic Republic of Congo (DRC), including 223 suspected deaths.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/28-05-2026-WHO-DR-Congo-ebola-01.jpg/image770x420cropped.jpg",
-      "score": 81,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
       "id": "tech-google-ai-blog-e6ea868542",
       "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
       "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
@@ -712,7 +716,7 @@
       "summary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
       "contentExcerpt": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-1440x810.png",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "Developer tools",
@@ -730,7 +734,7 @@
       "summary": "Watch 9 videos showing the capabilities of Gemini Omni and Gemini 3.5, announced at Google I/O 2026.",
       "contentExcerpt": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows. Your browser does not support the audio element. At Google I/O 2026, we announced our latest models: Gemini Omni and the Gemini 3.5 family of models. Gemini Omni is our new model that can create anything from any input, starting with video. With Omni, you can combine images, audio, video and text as input and generate high-quality videos grounded...",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_herosocial.width-1300.png",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "Gemini models",
@@ -748,7 +752,7 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
       "contentExcerpt": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": []
     },
@@ -762,7 +766,7 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
       "contentExcerpt": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": []
     },

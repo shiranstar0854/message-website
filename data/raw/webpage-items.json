@@ -11,7 +11,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -28,7 +28,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -45,7 +45,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -59,12 +59,12 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "ok": false,
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -76,12 +76,12 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "ok": false,
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -96,7 +96,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -113,7 +113,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [
       {
@@ -143,7 +143,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [
       {
@@ -172,10 +172,58 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 9,
-    "fetchedAt": "2026-05-31T04:15:32.801Z",
+    "itemCount": 13,
+    "fetchedAt": "2026-05-31T09:01:19.279Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "习近平：前瞻布局和发展未来产业",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员的回信",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070716.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "前4月电力市场交易电量同比增长25.6%",
         "link": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
