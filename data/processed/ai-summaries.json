@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-31T04:06:20.464Z",
-  "method": "extractive",
+  "generatedAt": "2026-05-31T11:01:07.058Z",
+  "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
-  "llmConfigured": false,
-  "fallbackCount": 1,
+  "llmConfigured": true,
+  "fallbackCount": 0,
   "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "今日科技重点集中在：Take our I/O 2026 quiz, vibe coded in Google AI Studio.；9 demos of Gemini Omni and Gemini 3.5 in action；Boston Children’s uses AI to unlock new diagnoses。",
+      "overview": "谷歌AI Studio打造I/O 2026问答，Gemini Omni与3.5展示推理与创作；OpenAI助力波士顿儿童医院诊断罕见病，Braintrust用Codex加速编码。",
       "keyPoints": [
-        "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
-        "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execu...",
-        "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagno..."
+        "谷歌AI Studio制成I/O 2026问答",
+        "Gemini Omni与3.5展示新能力",
+        "OpenAI用于医疗诊断与代码生成"
       ],
       "highlights": [
         {
@@ -23,7 +23,7 @@
           "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
           "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
           "source": "Google AI Blog",
-          "score": 91,
+          "score": 90,
           "summary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements."
         },
         {
@@ -31,7 +31,7 @@
           "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
           "source": "Google AI Blog",
-          "score": 91,
+          "score": 90,
           "summary": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows."
         },
         {
@@ -39,7 +39,7 @@
           "title": "Boston Children’s uses AI to unlock new diagnoses",
           "url": "https://openai.com/index/boston-childrens-hospital",
           "source": "OpenAI News",
-          "score": 91,
+          "score": 90,
           "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases."
         },
         {
@@ -47,7 +47,7 @@
           "title": "How Braintrust turns customer requests into code with Codex",
           "url": "https://openai.com/index/braintrust",
           "source": "OpenAI News",
-          "score": 91,
+          "score": 90,
           "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
         },
         {
@@ -59,16 +59,16 @@
           "summary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work."
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance",
       "label": "金融",
-      "overview": "今日金融重点集中在：2026年5月中国采购经理指数运行情况；蓝佛安出席2026年上合组织成员国财长和央行行长会议并举行多场双边会谈；SEC Proposes Rescission of Climate-Related Disclosure Rules。",
+      "overview": "中国5月采购经理指数运行情况公布；蓝佛安出席上合组织财长会议；美国SEC提议撤销气候披露规则。",
       "keyPoints": [
-        "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-        "财政部财政政策、国债、预算和财政运行新闻",
-        "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that requi..."
+        "中国5月PMI数据发布",
+        "上合组织财长会议举行",
+        "SEC提议取消气候披露规则"
       ],
       "highlights": [
         {
@@ -96,18 +96,50 @@
           "summary": "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that require companies to provide certain climate-related information..."
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news",
       "label": "新闻",
-      "overview": "今日新闻重点集中在：前4月电力市场交易电量同比增长25.6%；全国科技工作者日 多场活动弘扬科学家精神；“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设。",
+      "overview": "习近平主持政治局学习前瞻未来产业，给红领巾讲解员回信并祝儿童节快乐；《求是》杂志发表相关文章；前4月电力市场交易电量增长25.6%。",
       "keyPoints": [
-        "记者从国家能源局获悉：前4月，全国累计完成电力市场交易电量24307亿千瓦时，同比增长25.6%。",
-        "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。",
-        "习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。"
+        "习近平强调前瞻布局未来产业",
+        "习近平回信勉励红领巾讲解员",
+        "前4月电力市场交易电量增长25.6%"
       ],
       "highlights": [
+        {
+          "id": "news-item-cb09eb1244",
+          "title": "习近平：前瞻布局和发展未来产业",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
+          "source": "中国政府网要闻",
+          "score": 100,
+          "summary": "今天进行二十届中央政治局第二十四次集体学习，内容是前瞻布局和发展未来产业，主要是总结近年来我国未来产业发展情况，分析世界未来产业发展趋势，对培育发展未来产业进行思考。"
+        },
+        {
+          "id": "news-item-2a7227b626",
+          "title": "习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员的回信",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070716.htm",
+          "source": "中国政府网要闻",
+          "score": 100,
+          "summary": "得知你们在一大会址和南湖红船旁，用心用情讲述党的历史、革命故事和英雄事迹，厚植了爱党、爱国、爱社会主义的情感，得到了锻炼与成长，我感到欣慰。"
+        },
+        {
+          "id": "news-item-53765ef068",
+          "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
+          "source": "中国政府网要闻",
+          "score": 100,
+          "summary": "在“六一”国际儿童节即将到来之际，中共中央总书记、国家主席、中央军委主席习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员回信，对他们予以亲切勉励，并祝他们和全国的少年儿童节日快乐。"
+        },
+        {
+          "id": "news-item-44c6b57d82",
+          "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
+          "source": "中国政府网要闻",
+          "score": 100,
+          "summary": "6月1日出版的第11期《求是》杂志将发表中共中央总书记、国家主席、中央军委主席习近平的重要文章《前瞻布局和发展未来产业》。"
+        },
         {
           "id": "news-item-e161e0b895",
           "title": "前4月电力市场交易电量同比增长25.6%",
@@ -115,41 +147,9 @@
           "source": "中国政府网要闻",
           "score": 100,
           "summary": "记者从国家能源局获悉：前4月，全国累计完成电力市场交易电量24307亿千瓦时，同比增长25.6%。"
-        },
-        {
-          "id": "news-item-b917f368d6",
-          "title": "全国科技工作者日 多场活动弘扬科学家精神",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070696.htm",
-          "source": "中国政府网要闻",
-          "score": 96,
-          "summary": "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。"
-        },
-        {
-          "id": "news-item-f02a83df1d",
-          "title": "“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070694.htm",
-          "source": "中国政府网要闻",
-          "score": 96,
-          "summary": "习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。"
-        },
-        {
-          "id": "news-item-0742c55db0",
-          "title": "李强对安全生产工作作出重要批示强调：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070687.htm",
-          "source": "中国政府网要闻",
-          "score": 96,
-          "summary": "中共中央政治局常委、国务院总理李强日前对做好安全生产工作作出重要批示。"
-        },
-        {
-          "id": "news-item-b6e09ef656",
-          "title": "【视频】李强对安全生产工作作出重要批示：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
-          "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026053001/index.shtml",
-          "source": "中国政府网要闻",
-          "score": 96,
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     }
   ],
   "totalSummaries": 3,
@@ -165,6 +165,58 @@
       "score": 100,
       "aiSummary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
       "summaryReason": "国家统计局数据发布 / finance · score 100 · official-agency · daily",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-cb09eb1244",
+      "title": "习近平：前瞻布局和发展未来产业",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "今天进行二十届中央政治局第二十四次集体学习，内容是前瞻布局和发展未来产业，主要是总结近年来我国未来产业发展情况，分析世界未来产业发展趋势，对培育发展未来产业进行思考。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-2a7227b626",
+      "title": "习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员的回信",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070716.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "得知你们在一大会址和南湖红船旁，用心用情讲述党的历史、革命故事和英雄事迹，厚植了爱党、爱国、爱社会主义的情感，得到了锻炼与成长，我感到欣慰。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-53765ef068",
+      "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "在“六一”国际儿童节即将到来之际，中共中央总书记、国家主席、中央军委主席习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员回信，对他们予以亲切勉励，并祝他们和全国的少年儿童节日快乐。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-44c6b57d82",
+      "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "6月1日出版的第11期《求是》杂志将发表中共中央总书记、国家主席、中央军委主席习近平的重要文章《前瞻布局和发展未来产业》。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -214,9 +266,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -227,9 +279,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -240,9 +292,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "中共中央政治局常委、国务院总理李强日前对做好安全生产工作作出重要批示。",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -253,9 +305,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -266,9 +318,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "5月30日，国家主席习近平同埃及总统塞西互致贺电，庆祝两国建交70周年。",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -279,9 +331,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "“很高兴得知两国学生搭乘‘中美青年友谊号’，共同经历了难忘的友谊之旅。",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -292,9 +344,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 96,
+      "score": 95,
       "aiSummary": "记者29日获悉，中央网信办、教育部、工业和信息化部、人力资源社会保障部近日联合印发《2026年提升全民数字素养与技能工作要点》，部署了6个方面15项重点任务。",
-      "summaryReason": "中国政府网要闻 / news · score 96 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -305,9 +357,9 @@
       "sourceId": "google-ai",
       "category": "tech",
       "publishedAt": "2026-05-29T19:00:00.000Z",
-      "score": 91,
+      "score": 90,
       "aiSummary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
-      "summaryReason": "Google AI Blog / tech · score 91 · Developer tools · AI",
+      "summaryReason": "Google AI Blog / tech · score 90 · Developer tools · AI",
       "summaryMethod": "extractive"
     },
     {
@@ -318,35 +370,9 @@
       "sourceId": "google-ai",
       "category": "tech",
       "publishedAt": "2026-05-29T17:30:00.000Z",
-      "score": 91,
+      "score": 90,
       "aiSummary": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows.",
-      "summaryReason": "Google AI Blog / tech · score 91 · Gemini models · Google DeepMind",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-54eed69f83",
-      "title": "Boston Children’s uses AI to unlock new diagnoses",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 91,
-      "aiSummary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
-      "summaryReason": "OpenAI News / tech · score 91",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-33dd0a1359",
-      "title": "How Braintrust turns customer requests into code with Codex",
-      "url": "https://openai.com/index/braintrust",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 91,
-      "aiSummary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
-      "summaryReason": "OpenAI News / tech · score 91",
+      "summaryReason": "Google AI Blog / tech · score 90 · Gemini models · Google DeepMind",
       "summaryMethod": "extractive"
     },
     {
@@ -358,8 +384,34 @@
       "category": "news",
       "publishedAt": "2026-05-29T16:14:26.000Z",
       "score": 90,
-      "aiSummary": "This NASA Hubble Space Telescope image released on May 27, 2026, features the dwarf irregular galaxy ESO 490-017, roughly 12,000 light-years in diameter and some 23 million ligh...",
+      "aiSummary": "This NASA Hubble Space Telescope image captures the faint glow of the dwarf irregular galaxy ESO 490-017.",
       "summaryReason": "NASA Breaking News / news · score 90 · Irregular Galaxies",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "tech-openai-news-54eed69f83",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "score": 90,
+      "aiSummary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+      "summaryReason": "OpenAI News / tech · score 90",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "tech-openai-news-33dd0a1359",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "url": "https://openai.com/index/braintrust",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "score": 90,
+      "aiSummary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+      "summaryReason": "OpenAI News / tech · score 90",
       "summaryMethod": "extractive"
     },
     {
@@ -396,9 +448,9 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-05-30T12:00:00.000Z",
-      "score": 84,
+      "score": 83,
       "aiSummary": "Matches organised by a former professional player are providing a brief respite from the harsh reality of life for the thousands living in overcrowded tents, schools or damaged...",
-      "summaryReason": "UN News / news · score 84",
+      "summaryReason": "UN News / news · score 83",
       "summaryMethod": "extractive"
     },
     {
@@ -409,9 +461,9 @@
       "sourceId": "nasa-breaking-news",
       "category": "news",
       "publishedAt": "2026-05-29T21:24:11.000Z",
-      "score": 83,
+      "score": 82,
       "aiSummary": "NASA has selected seven companies to provide construction, revitalization, and infrastructure improvements at the agency’s Johnson Space Center in Houston.",
-      "summaryReason": "NASA Breaking News / news · score 83 · Johnson Space Center · NASA Centers & Facilities",
+      "summaryReason": "NASA Breaking News / news · score 82 · Johnson Space Center · NASA Centers & Facilities",
       "summaryMethod": "extractive"
     },
     {
@@ -422,9 +474,9 @@
       "sourceId": "nasa-breaking-news",
       "category": "news",
       "publishedAt": "2026-05-29T20:49:43.000Z",
-      "score": 83,
-      "aiSummary": "NASA will host a public event featuring three crew members from the agency’s SpaceX Crew-11 mission at 11 a.m.",
-      "summaryReason": "NASA Breaking News / news · score 83 · International Space Station (ISS) · Humans in Space",
+      "score": 82,
+      "aiSummary": "NASA&#8217;s SpaceX Crew-11 astronauts gather together for a crew portrait wearing their Dragon pressure suits during a suit verification check inside the International Space St...",
+      "summaryReason": "NASA Breaking News / news · score 82 · International Space Station (ISS) · Humans in Space",
       "summaryMethod": "extractive"
     },
     {
@@ -436,21 +488,8 @@
       "category": "news",
       "publishedAt": "2026-05-29T16:33:00.000Z",
       "score": 82,
-      "aiSummary": "Engineers at NASA’s Goddard Space Flight Center in Greenbelt, Maryland, have completed their final inspection of a key element for the agency’s Nancy Grace Roman Space Telescope...",
+      "aiSummary": "4 Min Read NASA’s Roman Space Telescope Primary Mirror Gets Last Look This photo peers down the barrel of the Roman telescope with its visor-like sunshade deployed.",
       "summaryReason": "NASA Breaking News / news · score 82 · Nancy Grace Roman Space Telescope · Exoplanets",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-15bc83ae04",
-      "title": "Hubble Captures M88 on Journey to Center of Virgo Cluster",
-      "url": "https://science.nasa.gov/missions/hubble/hubble-captures-m88-on-journey-to-center-of-virgo-cluster",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T11:29:09.000Z",
-      "score": 82,
-      "aiSummary": "The focus of this NASA/ESA Hubble Space Telescope image is an active spiral galaxy on a journey lasting hundreds of millions of years.",
-      "summaryReason": "NASA Breaking News / news · score 82 · Astrophysics · Astrophysics Division",
       "summaryMethod": "extractive"
     },
     {
@@ -476,45 +515,6 @@
       "publishedAt": "2026-05-29T12:00:00.000Z",
       "score": 81,
       "aiSummary": "The UN Secretary-General has expressed alarm after a drone struck a residential building in the Romanian city of Galați overnight into Friday, reportedly injuring two people.",
-      "summaryReason": "UN News / news · score 81",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-a900012817",
-      "title": "Banning children from social media is not enough, UN warns – platforms must be made safe by design",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167608",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "Blocking children from social media is no substitute for making platforms safe in the first place, the UN human rights office warned Friday, as it issued a 10-point framework ur...",
-      "summaryReason": "UN News / news · score 81",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-7bf6a07453",
-      "title": "Conflict-related sexual violence cases more than doubled in 2025, UN warns",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167603",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "Nearly 10,000 cases of conflict-related sexual violence were recorded worldwide last year – more than double the previous year's figure – as rape, sexual slavery and abduction w...",
-      "summaryReason": "UN News / news · score 81",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-0a0b9a01c0",
-      "title": "‘A disease you get when you care for someone’: WHO on the Ebola frontline",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167602",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "Two weeks into the latest deadly Ebola outbreak, the World Health Organization (WHO) estimates there are now 906 suspected cases of Ebola in the Democratic Republic of Congo (DR...",
       "summaryReason": "UN News / news · score 81",
       "summaryMethod": "extractive"
     }
