@@ -373,3 +373,4 @@ git push origin main
 cd external-scheduler/cloudflare
 npx.cmd --yes wrangler@latest deploy
 ```
+Automation schedule note: daily information updates run at Beijing 08:00 and 17:00. Each run has a delayed compensation trigger 30 minutes later, at 08:30 and 17:30. Items outside the 48-hour freshness window are not published; sources with no fresh items remain enabled and visible as empty rather than failed.

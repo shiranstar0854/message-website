@@ -6,9 +6,41 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const RAW_PATH = path.join(ROOT_DIR, "data", "raw", "rss-items.json");
 const HEALTH_PATH = path.join(ROOT_DIR, "src", "data", "source-health.json");
 const MAX_ATTEMPTS = 2;
+const MAX_ITEMS_PER_SOURCE = 15;
+const MAX_ITEM_AGE_HOURS = 48;
 
 function wait(delayMs) {
   return new Promise((resolve) => setTimeout(resolve, delayMs));
+}
+
+function itemDateMs(item, fallback) {
+  const date = new Date(item?.publishedAt || item?.published_at || item?.pubDate || item?.isoDate || item?.date || item?.published || item?.updated || fallback);
+  const time = date.getTime();
+  return Number.isNaN(time) ? new Date(fallback).getTime() : time;
+}
+
+function sourceItemLimit(source = {}) {
+  const configured = Number(source.maxItems || MAX_ITEMS_PER_SOURCE);
+  if (!Number.isFinite(configured) || configured <= 0) return MAX_ITEMS_PER_SOURCE;
+  return Math.min(configured, MAX_ITEMS_PER_SOURCE);
+}
+
+function sourceMaxAgeHours(source = {}) {
+  const configured = Number(source.maxAgeHours || MAX_ITEM_AGE_HOURS);
+  if (!Number.isFinite(configured) || configured <= 0) return MAX_ITEM_AGE_HOURS;
+  return Math.min(configured, MAX_ITEM_AGE_HOURS);
+}
+
+function limitNewestItems(items, source = {}, fallbackDate = new Date().toISOString()) {
+  const nowTime = new Date(fallbackDate).getTime();
+  const maxAgeMs = sourceMaxAgeHours(source) * 60 * 60 * 1000;
+  return [...(items || [])]
+    .filter((item) => {
+      const publishedTime = itemDateMs(item, fallbackDate);
+      return Number.isNaN(nowTime) || publishedTime >= nowTime - maxAgeMs;
+    })
+    .sort((left, right) => itemDateMs(right, fallbackDate) - itemDateMs(left, fallbackDate))
+    .slice(0, sourceItemLimit(source));
 }
 
 async function fetchRssSource(source, fetchedAt) {
@@ -23,7 +55,7 @@ async function fetchRssSource(source, fetchedAt) {
         signal: AbortSignal.timeout(20000)
       });
       const body = await response.text();
-      const items = extractItems(body);
+      const items = limitNewestItems(extractItems(body), source, fetchedAt);
       lastResult = {
         sourceId: source.id,
         sourceName: source.name,
@@ -79,8 +111,9 @@ function isUsableResult(result) {
 }
 
 function getRecordItems(record) {
-  if (Array.isArray(record?.items)) return record.items;
-  if (record?.body) return extractItems(record.body);
+  const fallbackDate = record?.fetchedAt || new Date().toISOString();
+  if (Array.isArray(record?.items)) return limitNewestItems(record.items, record, fallbackDate);
+  if (record?.body) return limitNewestItems(extractItems(record.body), record, fallbackDate);
   return [];
 }
 
@@ -102,6 +135,7 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
       const previous = previousById.get(result.sourceId) || {};
       const healthy = isUsableResult(result);
       const status = healthy ? "healthy" : result.ok ? "empty" : "failed";
+      const failed = status === "failed";
       return {
         id: result.sourceId,
         name: result.sourceName,
@@ -113,7 +147,7 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
         error: result.error || null,
         lastCheckedAt: result.fetchedAt,
         lastSuccessAt: healthy ? result.fetchedAt : previous.lastSuccessAt || null,
-        failureCount: healthy ? 0 : Number(previous.failureCount || 0) + 1
+        failureCount: failed ? Number(previous.failureCount || 0) + 1 : 0
       };
     })
   };
@@ -125,6 +159,9 @@ function buildEffectiveResults(results, previousResults = []) {
   return results.map((result) => {
     if (isUsableResult(result)) {
       return { ...compactResult(result), stale: false };
+    }
+    if (result.ok === true) {
+      return { ...compactResult(result), items: [], itemCount: 0, stale: false };
     }
 
     const previous = previousById.get(result.sourceId);
@@ -180,6 +217,7 @@ module.exports = {
   fetchRssSources,
   fetchRssSource,
   getRecordItems,
+  limitNewestItems,
   isUsableResult,
   buildSourceHealth,
   buildEffectiveResults,

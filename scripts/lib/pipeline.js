@@ -208,9 +208,13 @@ function getFilterReasons(item, rules = {}) {
     reasons.push("title-too-short");
   }
 
-  if (Number(rules.maxAgeDays || 0) > 0 && item.publishedAt) {
-    const ageMs = Date.now() - new Date(item.publishedAt).getTime();
-    if (ageMs > Number(rules.maxAgeDays) * 24 * 60 * 60 * 1000) {
+  const maxAgeHours = Number(rules.maxAgeHours || 0) > 0
+    ? Number(rules.maxAgeHours)
+    : Number(rules.maxAgeDays || 0) * 24;
+  if (maxAgeHours > 0 && item.publishedAt) {
+    const nowTime = rules.nowIso ? new Date(rules.nowIso).getTime() : Date.now();
+    const ageMs = nowTime - new Date(item.publishedAt).getTime();
+    if (ageMs > maxAgeHours * 60 * 60 * 1000) {
       reasons.push("too-old");
     }
   }

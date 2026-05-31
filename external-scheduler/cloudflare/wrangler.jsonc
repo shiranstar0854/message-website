@@ -1,11 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "message-website-scheduler",
+  "account_id": "a8abea82fa3146d40c3a0c2e23bb6d03",
   "main": "src/index.mjs",
   "compatibility_date": "2026-05-27",
   "workers_dev": false,
   "triggers": {
-    "crons": ["0 0 * * *", "30 0 * * *", "0 11 * * *", "30 11 * * *", "0 1 * * 1"]
+    "crons": ["0,30 0,9,11 * * *", "0 1 * * 1"]
   },
   "observability": {
     "enabled": true

@@ -144,24 +144,24 @@
       "name": "36Kr",
       "type": "rss",
       "url": "https://36kr.com/feed",
-      "enabled": true,
-      "articleEnrichment": { "enabled": true },
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 78,
       "updateFrequency": "hourly",
-      "accessPolicy": "free-media-source",
-      "purpose": "China technology, startups and venture market coverage"
+      "accessPolicy": "disabled-redundant-media-source",
+      "purpose": "Disabled: reduces source redundancy; not an official primary source"
     },
     {
       "id": "solidot",
       "name": "Solidot",
       "type": "rss",
       "url": "https://www.solidot.org/index.rss",
-      "enabled": true,
-      "articleEnrichment": { "enabled": true },
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 76,
       "updateFrequency": "daily",
-      "accessPolicy": "free-media-source",
-      "purpose": "Chinese-language technology and open source developments"
+      "accessPolicy": "disabled-redundant-media-source",
+      "purpose": "Disabled: reduces source redundancy; not an official primary source"
     },
     {
       "id": "github-blog-api",

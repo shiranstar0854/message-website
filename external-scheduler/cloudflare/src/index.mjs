@@ -8,17 +8,17 @@ const DAILY_RUNS_URL =
   "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-update.yml/runs";
 const SUMMARY_RUNS_URL =
   "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-summary.yml/runs";
-const DAILY_PRIMARY_CRON = "0 0 * * *";
-const DAILY_RETRY_CRON = "30 0 * * *";
-const SUMMARY_PRIMARY_CRON = "0 11 * * *";
-const SUMMARY_RETRY_CRON = "30 11 * * *";
+const DAILY_WINDOW_CRON = "0,30 0,9,11 * * *";
 const WEEKLY_CRON = "0 1 * * 1";
 const DAILY_PRIMARY_TRIGGER = "cloudflare-daily-primary";
 const DAILY_RETRY_TRIGGER = "cloudflare-daily-retry";
+const DAILY_AFTERNOON_PRIMARY_TRIGGER = "cloudflare-daily-afternoon-primary";
+const DAILY_AFTERNOON_RETRY_TRIGGER = "cloudflare-daily-afternoon-retry";
 const SUMMARY_PRIMARY_TRIGGER = "cloudflare-summary-primary";
 const SUMMARY_RETRY_TRIGGER = "cloudflare-summary-retry";
 const WEEKLY_TRIGGER = "cloudflare-weekly";
 const DAILY_PRIMARY_RUN_TITLE = `Daily information update (${DAILY_PRIMARY_TRIGGER})`;
+const DAILY_AFTERNOON_PRIMARY_RUN_TITLE = `Daily information update (${DAILY_AFTERNOON_PRIMARY_TRIGGER})`;
 const SUMMARY_PRIMARY_RUN_TITLE = `Daily summary update (${SUMMARY_PRIMARY_TRIGGER})`;
 const DAY_IN_MILLISECONDS = 24 * 60 * 60 * 1000;
 
@@ -82,22 +82,43 @@ export async function hasSuccessfulPrimaryRunForScheduledDay(env, scheduledTime,
 }
 
 export async function runScheduledTrigger(controller, env, request = fetch) {
-  if (controller.cron === DAILY_PRIMARY_CRON) {
+  const scheduledAt = new Date(controller.scheduledTime);
+  const hour = scheduledAt.getUTCHours();
+  const minute = scheduledAt.getUTCMinutes();
+
+  if (controller.cron === DAILY_WINDOW_CRON && hour === 0 && minute === 0) {
     return dispatchWorkflow(env, DAILY_PRIMARY_TRIGGER, request);
   }
 
-  if (controller.cron === DAILY_RETRY_CRON) {
+  if (controller.cron === DAILY_WINDOW_CRON && hour === 0 && minute === 30) {
     const successfulPrimaryRunExists = await hasSuccessfulPrimaryRunForScheduledDay(env, controller.scheduledTime, request);
     if (!successfulPrimaryRunExists) {
       return dispatchWorkflow(env, DAILY_RETRY_TRIGGER, request);
     }
   }
 
-  if (controller.cron === SUMMARY_PRIMARY_CRON) {
+  if (controller.cron === DAILY_WINDOW_CRON && hour === 9 && minute === 0) {
+    return dispatchWorkflow(env, DAILY_AFTERNOON_PRIMARY_TRIGGER, request);
+  }
+
+  if (controller.cron === DAILY_WINDOW_CRON && hour === 9 && minute === 30) {
+    const successfulPrimaryRunExists = await hasSuccessfulPrimaryRunForScheduledDay(
+      env,
+      controller.scheduledTime,
+      request,
+      DAILY_RUNS_URL,
+      DAILY_AFTERNOON_PRIMARY_RUN_TITLE
+    );
+    if (!successfulPrimaryRunExists) {
+      return dispatchWorkflow(env, DAILY_AFTERNOON_RETRY_TRIGGER, request);
+    }
+  }
+
+  if (controller.cron === DAILY_WINDOW_CRON && hour === 11 && minute === 0) {
     return dispatchWorkflow(env, SUMMARY_PRIMARY_TRIGGER, request, SUMMARY_DISPATCH_URL);
   }
 
-  if (controller.cron === SUMMARY_RETRY_CRON) {
+  if (controller.cron === DAILY_WINDOW_CRON && hour === 11 && minute === 30) {
     const successfulPrimaryRunExists = await hasSuccessfulPrimaryRunForScheduledDay(
       env,
       controller.scheduledTime,

@@ -46,6 +46,40 @@ test("retains previous usable RSS items when the latest source request fails", (
   assert.equal(health.sources[0].lastSuccessAt, "2026-05-25T02:00:00.000Z");
 });
 
+test("does not reuse RSS fallback when latest request succeeds with no fresh items", () => {
+  const emptyResult = {
+    sourceId: "source-a",
+    sourceName: "Source A",
+    category: "news",
+    credibility: 80,
+    url: "https://feed.test/rss",
+    ok: true,
+    itemCount: 0,
+    fetchedAt: "2026-05-26T02:00:00.000Z",
+    items: []
+  };
+  const previous = [{
+    sourceId: "source-a",
+    sourceName: "Source A",
+    ok: true,
+    itemCount: 1,
+    fetchedAt: "2026-05-25T02:00:00.000Z",
+    body: PRIOR_XML
+  }];
+
+  const effective = buildEffectiveResults([emptyResult], previous);
+  const health = buildSourceHealth([emptyResult], {
+    sources: [{ id: "source-a", failureCount: 2, lastSuccessAt: "2026-05-25T02:00:00.000Z" }]
+  }, "2026-05-26T02:00:01.000Z");
+
+  assert.equal(effective[0].stale, false);
+  assert.equal(effective[0].itemCount, 0);
+  assert.deepEqual(effective[0].items, []);
+  assert.equal(health.sources[0].status, "empty");
+  assert.equal(health.sources[0].failureCount, 0);
+  assert.equal(health.sources[0].lastSuccessAt, "2026-05-25T02:00:00.000Z");
+});
+
 test("builds source audit metrics and marks fallback data", () => {
   const audit = buildSourceAudit({
     health: {

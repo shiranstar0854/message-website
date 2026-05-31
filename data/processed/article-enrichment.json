@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-31T00:01:59.467Z",
+  "generatedAt": "2026-05-31T04:15:54.461Z",
   "totals": {
-    "attempted": 53,
-    "excerptCount": 53,
-    "imageCount": 26,
-    "failed": 0,
-    "skipped": 67
+    "attempted": 25,
+    "excerptCount": 24,
+    "imageCount": 22,
+    "failed": 1,
+    "skipped": 3
   },
   "sources": {
     "github-blog": {
@@ -25,15 +25,15 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 59,
+      "skipped": 2,
       "disabled": true
     },
     "google-ai": {
       "sourceId": "google-ai",
       "sourceName": "Google AI Blog",
-      "attempted": 4,
-      "excerptCount": 4,
-      "imageCount": 4,
+      "attempted": 3,
+      "excerptCount": 3,
+      "imageCount": 3,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -63,26 +63,6 @@
       "sourceName": "CISA News",
       "attempted": 0,
       "excerptCount": 0,
-      "imageCount": 0,
-      "failed": 0,
-      "skipped": 0,
-      "disabled": false
-    },
-    "36kr": {
-      "sourceId": "36kr",
-      "sourceName": "36Kr",
-      "attempted": 4,
-      "excerptCount": 4,
-      "imageCount": 4,
-      "failed": 0,
-      "skipped": 0,
-      "disabled": false
-    },
-    "solidot": {
-      "sourceId": "solidot",
-      "sourceName": "Solidot",
-      "attempted": 2,
-      "excerptCount": 2,
       "imageCount": 0,
       "failed": 0,
       "skipped": 0,
@@ -105,7 +85,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 8,
+      "skipped": 1,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -118,22 +98,12 @@
       "skipped": 0,
       "disabled": false
     },
-    "chinanews-finance": {
-      "sourceId": "chinanews-finance",
-      "sourceName": "中国新闻网财经",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
-      "failed": 0,
-      "skipped": 0,
-      "disabled": false
-    },
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 5,
+      "excerptCount": 5,
+      "imageCount": 5,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -141,19 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
-      "failed": 0,
-      "skipped": 0,
-      "disabled": false
-    },
-    "chinanews-breaking": {
-      "sourceId": "chinanews-breaking",
-      "sourceName": "中国新闻网即时新闻",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 7,
+      "excerptCount": 7,
+      "imageCount": 7,
       "failed": 0,
       "skipped": 0,
       "disabled": false

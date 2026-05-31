@@ -10,6 +10,33 @@ const {
   buildLatestData
 } = require("../scripts/lib/pipeline");
 const { extractItems } = require("../scripts/lib/rss-parser");
+const { limitNewestItems: limitNewestRssItems } = require("../scripts/fetch-rss");
+
+test("limits RSS source items to fifteen newest records", () => {
+  const items = Array.from({ length: 20 }, (_, index) => ({
+    title: `Official item ${index}`,
+    link: `https://example.test/rss/${index}`,
+    pubDate: `2026-05-30T${String(index).padStart(2, "0")}:00:00.000Z`
+  }));
+
+  const limited = limitNewestRssItems(items, { maxItems: 30 }, "2026-05-30T20:00:00.000Z");
+
+  assert.equal(limited.length, 15);
+  assert.equal(limited[0].pubDate, "2026-05-30T19:00:00.000Z");
+  assert.equal(limited.at(-1).pubDate, "2026-05-30T05:00:00.000Z");
+});
+
+test("RSS source limiting drops records older than forty eight hours", () => {
+  const items = [
+    { title: "Fresh official item", link: "https://example.test/fresh", pubDate: "2026-05-30T12:00:00.000Z" },
+    { title: "Old official item", link: "https://example.test/old", pubDate: "2026-05-28T11:59:59.000Z" },
+    { title: "Stale 2024 official item", link: "https://example.test/2024", pubDate: "2024-05-30T12:00:00.000Z" }
+  ];
+
+  const limited = limitNewestRssItems(items, {}, "2026-05-30T12:00:00.000Z");
+
+  assert.deepEqual(limited.map((item) => item.title), ["Fresh official item"]);
+});
 
 test("normalizes rss and api records into the shared item shape", () => {
   const rss = normalizeRawItem({
@@ -134,6 +161,26 @@ test("filters items by category, blocked source, low-value phrases, and minimum 
   const filtered = filterItems(items, rules);
 
   assert.deepEqual(filtered.map((item) => item.id), ["1"]);
+  assert.deepEqual(filtered[0].filterReasons, []);
+});
+
+test("filters out items older than configured hard age window", () => {
+  const rules = {
+    allowedCategories: ["tech"],
+    requireUrl: true,
+    minimumTitleLength: 6,
+    maxAgeHours: 48,
+    nowIso: "2026-05-30T12:00:00.000Z"
+  };
+
+  const items = [
+    { id: "fresh", title: "Fresh platform update", url: "https://a.test/fresh", source: "Trusted", category: "tech", summary: "", publishedAt: "2026-05-28T12:00:00.000Z" },
+    { id: "old", title: "Old platform update", url: "https://a.test/old", source: "Trusted", category: "tech", summary: "", publishedAt: "2026-05-28T11:59:59.000Z" }
+  ];
+
+  const filtered = filterItems(items, rules);
+
+  assert.deepEqual(filtered.map((item) => item.id), ["fresh"]);
   assert.deepEqual(filtered[0].filterReasons, []);
 });
 

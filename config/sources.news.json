@@ -24,7 +24,7 @@
       "updateFrequency": "hourly",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "maxItems": 60,
+      "maxItems": 15,
       "accessPolicy": "free-official",
       "purpose": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "mapping": {
@@ -87,12 +87,12 @@
       "name": "中国新闻网即时新闻",
       "type": "rss",
       "url": "https://www.chinanews.com.cn/rss/scroll-news.xml",
-      "enabled": true,
-      "articleEnrichment": { "enabled": true },
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 84,
       "updateFrequency": "hourly",
-      "accessPolicy": "free-media-source",
-      "purpose": "China breaking and general-interest news"
+      "accessPolicy": "disabled-redundant-media-source",
+      "purpose": "Disabled: reduces source redundancy; not an official primary source"
     },
     {
       "id": "chinaorg-china",

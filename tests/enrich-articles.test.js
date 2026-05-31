@@ -49,6 +49,39 @@ test("falls back to feed excerpt and rejects non-https page images", () => {
   assert.equal(extracted.excerptSource, "feed");
 });
 
+test("ignores date-only article text and falls back to feed excerpt", () => {
+  const extracted = extractArticleData(`
+    <html>
+      <body>
+        <article>
+          <p>,2026-04-14</p>
+          <p>2026-05-16</p>
+        </article>
+      </body>
+    </html>
+  `, {
+    url: "https://example.test/story",
+    summary: "Official feed summary should remain visible"
+  });
+
+  assert.equal(extracted.contentExcerpt, "Official feed summary should remain visible");
+  assert.equal(extracted.excerptSource, "feed");
+});
+
+test("removes trailing article date noise from extracted text", () => {
+  const extracted = extractArticleData(`
+    <html><body><article>
+      <p>This official release contains enough useful context for display,2026-05-22</p>
+    </article></body></html>
+  `, {
+    url: "https://example.test/story",
+    summary: "Feed summary"
+  });
+
+  assert.equal(extracted.contentExcerpt, "This official release contains enough useful context for display");
+  assert.equal(extracted.excerptSource, "article");
+});
+
 test("selects at most twenty ranked items per channel and skips disabled sources", () => {
   const sources = [
     { id: "enabled", name: "Enabled", articleEnrichment: { enabled: true } },

@@ -70,3 +70,4 @@ npm.cmd run generate:latest
 - `about.html` 说明来源类型、评分规则、摘要风险、非投资建议和更新时间。
 - 模型接口默认配置为 DeepSeek Chat Completions：`https://api.deepseek.com/chat/completions`。
 - 自动化启用模型调用前，需要在 GitHub Actions secrets 配置 `DEEPSEEK_API_KEY`，并将 `config/ai-summary-rules.json` 的 `llmProduction.enabled` 改为 `true`。
+Automation note: the daily information workflow now runs at Beijing 08:00 with a 08:30 retry, and again at Beijing 17:00 with a 17:30 retry. The corresponding Cloudflare UTC crons are `0 0 * * *`, `30 0 * * *`, `0 9 * * *`, and `30 9 * * *`. Sources that have no items inside the 48-hour freshness window remain enabled and visible as `empty`; they are not treated as failed, and stale cached items are not republished.

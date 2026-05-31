@@ -59,6 +59,15 @@ function paragraphsFromArticle(root) {
     .filter((text) => text.length >= 40));
 }
 
+function cleanExcerpt(value) {
+  const text = normalizeText(value)
+    .replace(/^,+/, "")
+    .replace(/,?\s*20\d{2}[-/]\d{1,2}[-/]\d{1,2}\s*$/, "")
+    .trim();
+  if (!text || /^20\d{2}[-/]\d{1,2}[-/]\d{1,2}$/.test(text)) return "";
+  return text.length >= 20 ? text : "";
+}
+
 function resolveHttpsImageUrl(value, baseUrl = "") {
   if (!value) return "";
   try {
@@ -85,7 +94,7 @@ function extractArticleData(html, item = {}) {
     "twitter:image:src"
   ]), item.url);
 
-  const pageExcerpt = truncateText(articleText || metaDescription, 500);
+  const pageExcerpt = cleanExcerpt(truncateText(articleText || metaDescription, 500));
   const feedExcerpt = truncateText(item.contentExcerpt || item.summary || "", 500);
   const imageUrl = metaImage || normalizeImageUrl(item.imageUrl || "");
 

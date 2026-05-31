@@ -155,12 +155,12 @@
       "name": "中国新闻网财经",
       "type": "rss",
       "url": "https://www.chinanews.com.cn/rss/finance.xml",
-      "enabled": true,
-      "articleEnrichment": { "enabled": true },
+      "enabled": false,
+      "articleEnrichment": { "enabled": false },
       "credibility": 84,
       "updateFrequency": "hourly",
-      "accessPolicy": "free-media-source",
-      "purpose": "China macroeconomic, market and business news"
+      "accessPolicy": "disabled-redundant-media-source",
+      "purpose": "Disabled: reduces source redundancy; not an official primary source"
     },
     {
       "id": "chinaorg-business",
