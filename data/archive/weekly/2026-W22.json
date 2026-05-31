@@ -1,45 +1,60 @@
 {
   "weekId": "2026-W22",
-  "generatedAt": "2026-05-29T03:03:16.086Z",
-  "method": "extractive",
+  "generatedAt": "2026-05-31T01:01:12.170Z",
+  "method": "deepseek-chat-completions",
   "archiveDays": [
     "2026-05-26",
     "2026-05-27",
     "2026-05-28",
-    "2026-05-29"
+    "2026-05-29",
+    "2026-05-30",
+    "2026-05-31"
   ],
   "totals": {
-    "archiveCount": 4,
-    "itemCount": 142
+    "archiveCount": 6,
+    "itemCount": 262
   },
   "channels": [
     {
       "id": "tech",
       "label": "科技",
-      "totalItems": 28,
+      "totalItems": 62,
       "topSources": [
         {
           "source": "36Kr",
-          "count": 15
+          "count": 33
         },
         {
           "source": "OpenAI News",
-          "count": 6
+          "count": 10
         },
         {
           "source": "Solidot",
+          "count": 7
+        },
+        {
+          "source": "Google AI Blog",
           "count": 4
         },
         {
           "source": "GitHub Blog",
-          "count": 2
+          "count": 3
         },
         {
-          "source": "Microsoft Azure Blog",
-          "count": 1
+          "source": "科技部工作动态",
+          "count": 3
         }
       ],
       "highlights": [
+        {
+          "id": "tech-openai-news-63eee503d2",
+          "title": "OpenAI’s Frontier Governance Framework",
+          "url": "https://openai.com/index/openai-frontier-governance-framework",
+          "source": "OpenAI News",
+          "score": 100,
+          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+          "publishedAt": "2026-05-28T00:00:00.000Z"
+        },
         {
           "id": "tech-openai-news-6f071c9489",
           "title": "Election information and safeguards in 2026",
@@ -50,85 +65,86 @@
           "publishedAt": "2026-05-27T00:00:00.000Z"
         },
         {
-          "id": "tech-openai-news-77830561c9",
-          "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
-          "url": "https://openai.com/index/cisco",
+          "id": "tech-google-ai-blog-e6ea868542",
+          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
+          "source": "Google AI Blog",
+          "score": 94,
+          "summary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+          "publishedAt": "2026-05-29T19:00:00.000Z"
+        },
+        {
+          "id": "tech-google-ai-blog-7099ab3e16",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
+          "source": "Google AI Blog",
+          "score": 93,
+          "summary": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows.",
+          "publishedAt": "2026-05-29T17:30:00.000Z"
+        },
+        {
+          "id": "tech-openai-news-54eed69f83",
+          "title": "Boston Children’s uses AI to unlock new diagnoses",
+          "url": "https://openai.com/index/boston-childrens-hospital",
           "source": "OpenAI News",
+          "score": 93,
+          "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+          "publishedAt": "2026-05-29T12:00:00.000Z"
+        },
+        {
+          "id": "tech-openai-news-33dd0a1359",
+          "title": "How Braintrust turns customer requests into code with Codex",
+          "url": "https://openai.com/index/braintrust",
+          "source": "OpenAI News",
+          "score": 93,
+          "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+          "publishedAt": "2026-05-29T12:00:00.000Z"
+        },
+        {
+          "id": "tech-google-ai-blog-d94f270ada",
+          "title": "Check out real-life AI prototypes from the Futures Lab.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
+          "source": "Google AI Blog",
+          "score": 93,
+          "summary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+          "publishedAt": "2026-05-29T12:00:00.000Z"
+        },
+        {
+          "id": "tech-36kr-bb5e408068",
+          "title": "40余款AI大模型集中亮相2026世界智能产业博览会",
+          "url": "https://36kr.com/newsflashes/3831203586745984?f=rss",
+          "source": "36Kr",
           "score": 92,
-          "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
-          "publishedAt": "2026-05-27T11:00:00.000Z"
-        },
-        {
-          "id": "tech-36kr-7f0b0a8844",
-          "title": "智象未来CEO梅涛：多模态模型Token的毛利率，远高于语言模型",
-          "url": "https://36kr.com/p/3820602297208966?f=rss",
-          "source": "36Kr",
-          "score": 91,
-          "summary": "在算力成本大幅下降之前，视频生成初创公司尽量不要在To C上和巨头公司打起来。",
-          "publishedAt": "2026-05-28T08:20:12.000Z"
-        },
-        {
-          "id": "tech-openai-news-45e6707874",
-          "title": "Building self-improving tax agents with Codex",
-          "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-          "source": "OpenAI News",
-          "score": 91,
-          "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
-          "publishedAt": "2026-05-27T07:00:00.000Z"
-        },
-        {
-          "id": "tech-36kr-bfd8867711",
-          "title": "上海：推动AI+广告全链路应用，培育一批拥有核心技术和国际化能力的本土广告品牌企业",
-          "url": "https://36kr.com/newsflashes/3827004757595012?f=rss",
-          "source": "36Kr",
-          "score": 91,
-          "summary": "36氪获悉，上海市人民政府发布关于推进服务业扩能提质的实施意见。其中提出，推动AI+广告全链路应用，加快人工智能生成内容（AIGC）创意生成、多模态内容生产等技术融合赋能，培育一批拥有核心技术和国际化能力的本土广告品牌企业。拓展人力资源管理咨询、高级人才寻访等高附加值业态，开发招聘大模型、智能面试等新产品。支持咨询服务机构拓展健康咨询、环境社会治理（ESG）咨询等新业务，发展订阅制、解决方案授权制等新模式。",
-          "publishedAt": "2026-05-27T03:50:33.000Z"
-        },
-        {
-          "id": "tech-36kr-2eb938ea27",
-          "title": "前两天，我们在亦庄听到了AI最真实的声音｜2026 AI Partner大会金句实录",
-          "url": "https://36kr.com/p/3826932509364869?f=rss",
-          "source": "36Kr",
-          "score": 91,
-          "summary": "当大模型API调用成本一年内骤降超过80%，百万Token仅需几分钱时，产业竞争便不再纠结于技术指标的高低，而是回归到最朴素的价值衡量——能否在实际场景中降本增效。行业的聚光灯，从实验室的榜单，转向了真实的生产线、医院诊室、物流仓库和城市管理后台。 2026年，谁能在复杂场景中解决真问题，谁才是这场变革的主角。 5月19日至20日，以“带着AI去前线”为主题的2026 AI Partner·北京亦庄AI+产业大会在北京经开区通明湖...",
-          "publishedAt": "2026-05-27T02:38:25.000Z"
-        },
-        {
-          "id": "tech-36kr-8e27717797",
-          "title": "经过华为、传音、拓竹历练，95后打造AI母婴界特斯拉｜36氪首发",
-          "url": "https://36kr.com/p/3826922264286083?f=rss",
-          "source": "36Kr",
-          "score": 91,
-          "summary": "作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，AI母婴智能硬件品牌珂迪Coddie（以下简称“Coddie”）完成天使轮融资，融资金额数千万元，由钟鼎资本投资，向阳资本担任独家财务顾问。 Coddie团队于2026年初组建，由95后连续创业者何鋡威创立。何鋡威毕业于德国慕尼黑工业大学，先后任职华为、传音控股、拓竹科技等全球化科技企业。技术负责人毕业于国内顶级高校计算机专业，曾就职半导体龙头上...",
-          "publishedAt": "2026-05-27T02:27:05.000Z"
-        },
-        {
-          "id": "tech-36kr-72bd722878",
-          "title": "营销内容从“用AI”到“管AI”的10倍提效| 2026AI Partner·北京亦庄AI+产业大会",
-          "url": "https://36kr.com/p/3824179485233541?f=rss",
-          "source": "36Kr",
-          "score": 91,
-          "summary": "从2022年首创数字人直播带货，到如今服务LVMH、欧莱雅、宝洁等全球集团，集思科技在三年间积累了超60亿GMV的实战成绩。 2023年被称作Agent元年，但2026年才是营销内容Agent真正落地应用的节点，而品牌最核心的资产不是视觉，是上下文——把创始人对品牌的理解沉淀为AI可调用的智力资产。 以下为演讲内容，经36氪整理编辑： 李世尊丨集思科技CEO 大家好，我是集思科技李世尊。简单介绍一下集思科技，以及我们在营销领域做的...",
-          "publishedAt": "2026-05-26T02:44:02.000Z"
+          "summary": "正在天津举行的2026世界智能产业博览会上，“AI大模型对话”“生成式AI演示”“AI智能体应用”是本届展会上的关注热点。",
+          "publishedAt": "2026-05-30T03:01:49.000Z"
         }
       ],
       "themes": [
+        "OpenAI’s Frontier Governance Framework",
         "Election information and safeguards in 2026",
-        "Cisco and OpenAI redefine enterprise engineering with Codex",
-        "智象未来CEO梅涛：多模态模型Token的毛利率，远高于语言模型",
-        "Building self-improving tax agents with Codex",
-        "上海：推动AI+广告全链路应用，培育一批拥有核心技术和国际化能力的本土广告品牌企业"
+        "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+        "9 demos of Gemini Omni and Gemini 3.5 in action",
+        "Boston Children’s uses AI to unlock new diagnoses"
+      ],
+      "modelSummary": "OpenAI发布前沿治理框架与选举保障；Google展示Gemini Omni及3.5；天津世界智能产业博览会集中亮相40多款AI大模型。",
+      "watchlist": [
+        "OpenAI前沿治理框架",
+        "Gemini Omni",
+        "世界智能产业博览会"
       ]
     },
     {
       "id": "finance",
       "label": "金融",
-      "totalItems": 28,
+      "totalItems": 63,
       "topSources": [
         {
           "source": "中国新闻网财经",
-          "count": 21
+          "count": 35
+        },
+        {
+          "source": "中国证监会新闻发布",
+          "count": 17
         },
         {
           "source": "Federal Reserve",
@@ -136,199 +152,223 @@
         },
         {
           "source": "U.S. SEC Press Releases",
-          "count": 3
+          "count": 4
+        },
+        {
+          "source": "中国人民银行新闻发布",
+          "count": 2
+        },
+        {
+          "source": "财政部财政新闻",
+          "count": 1
         }
       ],
       "highlights": [
         {
-          "id": "finance-federal-reserve-968d407396",
-          "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
-          "source": "Federal Reserve",
-          "score": 97,
-          "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "publishedAt": "2026-05-22T20:00:00.000Z"
+          "id": "finance-item-11cf073f69",
+          "title": "吴清主席会见花旗集团董事会主席兼首席执行官范洁恩",
+          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633210/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": ",2026-05-16",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-federal-reserve-8384580699",
-          "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm",
-          "source": "Federal Reserve",
-          "score": 96,
-          "summary": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
-          "publishedAt": "2026-05-26T18:00:00.000Z"
+          "id": "finance-item-d7ff9ab08d",
+          "title": "吴清主席出席国际证监会组织理事会视频会议",
+          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633097/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": ",2026-05-15",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-item-5377f1987a",
-          "title": "首批“数字食安服务站”落地，美团与监管部门数据打通共治违规商户",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630206.shtml",
-          "source": "中国新闻网财经",
-          "score": 93,
-          "summary": "5月27日，“数字赋能共护食安”——重庆市网络餐饮食品安全政企共治暨“数字食安服务站”共建活动启动仪式在沙坪坝区举行。",
-          "publishedAt": "2026-05-28T08:01:38.000Z"
+          "id": "finance-item-7f3c2e9619",
+          "title": "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米",
+          "url": "https://www.csrc.gov.cn/csrc/c106311/c7626187/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": ",2026-04-14",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-item-2781554127",
-          "title": "探馆2026世界智能产业博览会：AI如何“长出身体”？",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-27/10629195.shtml",
-          "source": "中国新闻网财经",
-          "score": 93,
-          "summary": "中新网天津5月27日电 题：探馆2026世界智能产业博览会：AI如何“长出身体”？",
-          "publishedAt": "2026-05-27T02:07:37.000Z"
+          "id": "finance-item-b972096c73",
+          "title": "吴清主席会见澳门金融管理局行政管理委员会主席黄善文",
+          "url": "https://www.csrc.gov.cn/csrc/c106311/c7623163/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": ",2026-03-31",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-item-b16a7c2827",
-          "title": "三问Token套餐，解码运营商的“新生意”",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-27/10629118.shtml",
-          "source": "中国新闻网财经",
-          "score": 93,
-          "summary": "三大运营商为何集体入局？普通用户需要买吗？对AI产业发展有何影响？",
-          "publishedAt": "2026-05-26T23:49:08.000Z"
+          "id": "finance-item-6aec4cc0d6",
+          "title": "吴清主席会见香港特区政府财政司司长陈茂波一行",
+          "url": "https://www.csrc.gov.cn/csrc/c106311/c7621120/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": ",2026-03-20",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-item-ec31cb0072",
-          "title": "AI筛选简历会带来求职不公吗？简历该怎么调整？",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-27/10629112.shtml",
-          "source": "中国新闻网财经",
-          "score": 93,
-          "summary": "职来职往：AI筛选简历会带来求职不公吗",
-          "publishedAt": "2026-05-26T23:37:48.000Z"
+          "id": "finance-item-9cb9bfc584",
+          "title": "证监会严肃查处老虎等机构非法跨境展业案件",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7634330/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": "近日，证监会依法对Tiger Brokers (NZ) Limited（以下简称老虎）、富途证券国际（香港）有限,2026-05-22",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-item-da27c969e9",
-          "title": "AI商业化：“收费”是大模型的趋势吗？",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-26/10628479.shtml",
-          "source": "中国新闻网财经",
-          "score": 93,
-          "summary": "“收费”是大模型的趋势吗",
-          "publishedAt": "2026-05-25T23:15:14.000Z"
+          "id": "finance-item-38fdc12d1b",
+          "title": "中国证监会有关部门负责人就《综合整治非法跨境证券期货基金经营活动实施方案》答记者问",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7634328/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": "近日，经国务院同意，中国证监会、工业和信息化部、公安部、中国人民银行、市场监管总局、金融监管总局、国,2026-05-22",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         },
         {
-          "id": "finance-federal-reserve-32ff854990",
-          "title": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
-          "source": "Federal Reserve",
-          "score": 93,
-          "summary": "Kevin Warsh takes oath of office as chairman and a member of the Board of Governors of the Federal Reserve System, and the Federal Open Market Committee unanimously selects Warsh as its chairman",
-          "publishedAt": "2026-05-22T20:15:00.000Z"
+          "id": "finance-item-fc55252d43",
+          "title": "中国证监会 工业和信息化部 公安部 中国人民银行 市场监管总局 金融监管总局 国家网信办 国家外汇局关于印发《综合整治非法跨境证券期货基金经营活动实施方案》的通知",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7634326/content.shtml",
+          "source": "中国证监会新闻发布",
+          "score": 100,
+          "summary": "证监发〔2026〕28号各省、自治区、直辖市人民政府，新疆生产建设兵团：《综合整治非法跨境证券期货基金经营,2026-05-22",
+          "publishedAt": "2026-05-30T05:42:43.399Z"
         }
       ],
       "themes": [
-        "Agencies publish resolution plan feedback letters for certain domestic and fo...",
-        "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
-        "首批“数字食安服务站”落地，美团与监管部门数据打通共治违规商户",
-        "探馆2026世界智能产业博览会：AI如何“长出身体”？",
-        "三问Token套餐，解码运营商的“新生意”"
+        "吴清主席会见花旗集团董事会主席兼首席执行官范洁恩",
+        "吴清主席出席国际证监会组织理事会视频会议",
+        "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米",
+        "吴清主席会见澳门金融管理局行政管理委员会主席黄善文",
+        "吴清主席会见香港特区政府财政司司长陈茂波一行"
+      ],
+      "modelSummary": "证监会主席吴清会见花旗、马来西亚、澳门、香港等机构推进国际合作；联合七部门整治非法跨境证券业务。",
+      "watchlist": [
+        "跨境证券整治方案",
+        "证监会国际合作"
       ]
     },
     {
       "id": "news",
       "label": "新闻",
-      "totalItems": 20,
+      "totalItems": 55,
       "topSources": [
         {
-          "source": "UN News",
-          "count": 10
+          "source": "中国政府网要闻",
+          "count": 22
         },
         {
-          "source": "中国新闻网即时新闻",
-          "count": 7
+          "source": "UN News",
+          "count": 13
         },
         {
           "source": "NASA Breaking News",
-          "count": 3
+          "count": 11
+        },
+        {
+          "source": "中国新闻网即时新闻",
+          "count": 9
         }
       ],
       "highlights": [
         {
-          "id": "news-un-news-1340f32964",
-          "title": "Security Council LIVE: Founding principles of the UN facing ‘profound strain’, Guterres warns",
-          "url": "https://news.un.org/feed/view/en/story/2026/05/1167585",
+          "id": "news-item-efb938bae1",
+          "title": "习近平同埃及总统塞西就中埃建交70周年互致贺电",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070675.htm",
+          "source": "中国政府网要闻",
+          "score": 100,
+          "summary": "5月30日，国家主席习近平同埃及总统塞西互致贺电，庆祝两国建交70周年。",
+          "publishedAt": "2026-05-30T00:00:00.000Z"
+        },
+        {
+          "id": "news-item-c682159cca",
+          "title": "努力成为跨越太平洋的“友谊使者”——习近平主席复信激励中美青少年和友好人士为两国关系稳定健康可持续发展贡献力量",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070665.htm",
+          "source": "中国政府网要闻",
+          "score": 100,
+          "summary": "“很高兴得知两国学生搭乘‘中美青年友谊号’，共同经历了难忘的友谊之旅。",
+          "publishedAt": "2026-05-30T00:00:00.000Z"
+        },
+        {
+          "id": "news-un-news-0b0a97ce25",
+          "title": "Security Council LIVE: Mounting attacks and Russian threats prompt emergency Ukraine meeting",
+          "url": "https://news.un.org/feed/view/en/story/2026/05/1167597",
           "source": "UN News",
-          "score": 93,
-          "summary": "The Security Council is meeting for a high-level debate on strengthening the UN-centred international system amid mounting pressure on multilateralism and deepening geopolitical...",
-          "publishedAt": "2026-05-26T12:00:00.000Z"
+          "score": 97,
+          "summary": "The UN Security Council is meeting in emergency session on Ukraine, with Secretary-General António Guterres telling ambassadors following what Kyiv describes as the most devasta...",
+          "publishedAt": "2026-05-28T12:00:00.000Z"
         },
         {
-          "id": "news-item-4ac2338779",
-          "title": "近800家科创企业亮相澳门 聚焦AI走向物理世界",
-          "url": "https://www.chinanews.com.cn/dwq/2026/05-28/10630344.shtml",
-          "source": "中国新闻网即时新闻",
-          "score": 92,
-          "summary": "中新社澳门5月28日电 (记者 郑嘉伟)在澳门举行的第六届BEYOND国际科技创新博览会(下称“BEYOND EXPO”)28日进入展览展示环节，近800家科创企业集中亮相，展示AI(人工智能)从数字系统走向物理世界的产业进程。",
-          "publishedAt": "2026-05-28T10:26:25.000Z"
+          "id": "news-item-b917f368d6",
+          "title": "全国科技工作者日 多场活动弘扬科学家精神",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070696.htm",
+          "source": "中国政府网要闻",
+          "score": 96,
+          "summary": "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。",
+          "publishedAt": "2026-05-30T00:00:00.000Z"
         },
         {
-          "id": "news-nasa-breaking-news-a43ca72566",
-          "title": "Released: NASA Goddard Issues Draft Request for Proposal for the Landsat 10 Spacecraft",
-          "url": "https://science.nasa.gov/missions/landsat/released-nasa-goddard-issues-draft-request-for-proposal-for-the-landsat-10-spacecraft",
-          "source": "NASA Breaking News",
-          "score": 92,
-          "summary": "The Landsat 10 Spacecraft Draft Request for Proposal (DRFP) is available for review via SAM.",
-          "publishedAt": "2026-05-27T20:40:24.000Z"
+          "id": "news-item-f02a83df1d",
+          "title": "“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070694.htm",
+          "source": "中国政府网要闻",
+          "score": 96,
+          "summary": "建设社会主义现代化强国，关键在科技自立自强。习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。",
+          "publishedAt": "2026-05-30T00:00:00.000Z"
         },
         {
-          "id": "news-nasa-breaking-news-0fe218ea9a",
-          "title": "Students Build Moon Robots for NASA’s 2026 Lunabotics Challenge",
-          "url": "https://www.nasa.gov/image-article/students-build-moon-robots-for-nasas-2026-lunabotics-challenge",
-          "source": "NASA Breaking News",
-          "score": 91,
-          "summary": "Katherine Rauscher of Michigan Technological University prepares her team’s prototype lunar robot for its turn during the finals for NASA’s 2026 Lunabotics Challenge competition...",
-          "publishedAt": "2026-05-27T15:42:44.000Z"
+          "id": "news-item-0742c55db0",
+          "title": "李强对安全生产工作作出重要批示强调：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070687.htm",
+          "source": "中国政府网要闻",
+          "score": 96,
+          "summary": "全国安全生产视频会议5月30日在京召开。中共中央政治局常委、国务院总理李强日前对做好安全生产工作作出重要批示。",
+          "publishedAt": "2026-05-30T00:00:00.000Z"
         },
         {
-          "id": "news-un-news-69f037bf46",
-          "title": "Ebola outbreak in DR Congo collides with conflict and hunger, WHO warns",
-          "url": "https://news.un.org/feed/view/en/story/2026/05/1167592",
-          "source": "UN News",
-          "score": 90,
-          "summary": "The UN World Health Organization (WHO) on Wednesday warned that eastern Democratic Republic of the Congo faces a “catastrophic collision of disease and conflict” as a fast-sprea...",
-          "publishedAt": "2026-05-27T12:00:00.000Z"
+          "id": "news-item-b6e09ef656",
+          "title": "【视频】李强对安全生产工作作出重要批示：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
+          "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026053001/index.shtml",
+          "source": "中国政府网要闻",
+          "score": 96,
+          "summary": "国务院领导人的日常政务活动视频汇总。",
+          "publishedAt": "2026-05-30T00:00:00.000Z"
         },
         {
-          "id": "news-un-news-44dac8d466",
-          "title": "World News in Brief: Sudan and Haiti updates, Afghan women’s rights",
-          "url": "https://news.un.org/feed/view/en/story/2026/05/1167591",
-          "source": "UN News",
-          "score": 87,
-          "summary": "The United Nations is raising alarm over continued drone attacks in Sudan’s Darfur region after multiple strikes reportedly killed civilians and intensified fears for communitie...",
-          "publishedAt": "2026-05-26T12:00:00.000Z"
-        },
-        {
-          "id": "news-un-news-946f369953",
-          "title": "Middle East update: Airstrikes and evacuation orders in Lebanon, aid restrictions in Gaza",
-          "url": "https://news.un.org/feed/view/en/story/2026/05/1167590",
-          "source": "UN News",
-          "score": 87,
-          "summary": "Intensified Israeli airstrikes overnight in Lebanon forced people to again flee their homes, while humanitarians in the Gaza Strip report continued restrictions in bringing aid...",
-          "publishedAt": "2026-05-26T12:00:00.000Z"
-        },
-        {
-          "id": "news-un-news-fba4cc0051",
-          "title": "Ukraine: Russian attack destroys humanitarian food aid in Dnipro",
-          "url": "https://news.un.org/feed/view/en/story/2026/05/1167586",
-          "source": "UN News",
-          "score": 87,
-          "summary": "The World Food Programme (WFP) has deplored a Russian attack on a warehouse in Dnipro, Ukraine that destroyed “a significant quantity” of food aid destined for thousands in fron...",
-          "publishedAt": "2026-05-26T12:00:00.000Z"
+          "id": "news-item-85f623dea3",
+          "title": "今年前四个月我国物流需求保持韧性增长",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070639.htm",
+          "source": "中国政府网要闻",
+          "score": 96,
+          "summary": "中国物流与采购联合会今天（5月29日）公布1—4月份物流运行数据。",
+          "publishedAt": "2026-05-29T00:00:00.000Z"
         }
       ],
       "themes": [
-        "Security Council LIVE: Founding principles of the UN facing ‘profound strain’...",
-        "近800家科创企业亮相澳门 聚焦AI走向物理世界",
-        "Released: NASA Goddard Issues Draft Request for Proposal for the Landsat 10 S...",
-        "Students Build Moon Robots for NASA’s 2026 Lunabotics Challenge",
-        "Ebola outbreak in DR Congo collides with conflict and hunger, WHO warns"
+        "习近平同埃及总统塞西就中埃建交70周年互致贺电",
+        "努力成为跨越太平洋的“友谊使者”——习近平主席复信激励中美青少年和友好人士为两国关系稳定健康可持续发展贡献力量",
+        "Security Council LIVE: Mounting attacks and Russian threats prompt emergency...",
+        "全国科技工作者日 多场活动弘扬科学家精神",
+        "“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设"
+      ],
+      "modelSummary": "习近平与埃及总统互致贺电庆祝建交70周年；联合国安理会紧急讨论乌克兰局势；国务院部署安全生产工作。",
+      "watchlist": [
+        "中埃建交70周年",
+        "乌克兰局势紧急会议",
+        "安全生产"
       ]
     }
   ],
+  "modelSummary": "本周科技聚焦OpenAI前沿治理框架与选举保障、Google I/O发布Gemini Omni及3.5，世界智能产业博览会展示40余款AI大模型。金融方面，证监会发布跨境证券整治方案并开展国际合作。时政方面，中埃建交70周年互致贺电，联合国安理会就乌克兰局势紧急会议，国务院部署安全生产工作。",
   "summaryStats": {
     "llmEnabled": true,
-    "llmConfigured": false,
-    "llmAttempted": 0,
-    "llmSucceeded": 0,
-    "fallbackCount": 1,
+    "llmConfigured": true,
+    "llmAttempted": 1,
+    "llmSucceeded": 1,
+    "fallbackCount": 0,
     "errorCount": 0,
-    "generatedAt": "2026-05-29T03:03:16.086Z"
+    "generatedAt": "2026-05-31T01:01:12.170Z"
   }
 }
