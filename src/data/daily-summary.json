@@ -1,37 +1,41 @@
 {
-  "generatedAt": "2026-06-01T08:34:25.026Z",
-  "method": "extractive",
+  "generatedAt": "2026-06-01T11:01:13.895Z",
+  "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
-  "llmConfigured": false,
-  "fallbackCount": 1,
+  "llmConfigured": true,
+  "fallbackCount": 0,
   "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "今日科技暂无足够高价值信息形成总结。",
-      "focus": "聚焦点：科技暂无足够新内容。",
-      "whyItMatters": "重要性：当前没有足够新内容，暂不形成明确判断。",
-      "watchlist": [],
-      "keyPoints": [],
+      "overview": "暂无科技动态数据",
+      "focus": "今日无科技相关重要事项",
+      "whyItMatters": "保持关注后续更新",
+      "watchlist": [
+        "暂无"
+      ],
+      "keyPoints": [
+        "暂无"
+      ],
       "highlights": [],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance",
       "label": "金融",
-      "overview": "今日金融重点集中在：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问；2026年5月中国采购经理指数运行情况。",
-      "focus": "聚焦点：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-      "whyItMatters": "重要性：这些信息来自国家发展改革委新闻发布、国家统计局数据发布，集中体现本频道最新可观察变化。",
+      "overview": "国家发改委发布《国务院关于对外投资的规定》答记者问，5月PMI数据公布",
+      "focus": "对外投资新规细则；5月PMI走势反映经济景气状况",
+      "whyItMatters": "新规影响企业对外投资行为；PMI是经济先行指标",
       "watchlist": [
-        "继续关注：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-        "继续关注：2026年5月中国采购经理指数运行情况"
+        "后续对外投资政策执行效果",
+        "PMI连续变化趋势"
       ],
       "keyPoints": [
-        "国家发展改革委宏观政策、价格、产业和经济运行信息",
-        "国家统计局宏观经济、价格、工业、投资和人口数据发布"
+        "《对外投资规定》7月1日起施行",
+        "5月PMI数据发布，反映制造业与非制造业景气度"
       ],
       "highlights": [
         {
@@ -51,23 +55,22 @@
           "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news",
       "label": "新闻",
-      "overview": "今日新闻重点集中在：国务院任免国家工作人员（2026年6月1日）；我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%；李强签署国务院令 公布《国务院关于对外投资的规定》。",
-      "focus": "聚焦点：国务院任免国家工作人员（2026年6月1日）",
-      "whyItMatters": "重要性：这些信息来自中国政府网要闻，集中体现本频道最新可观察变化。",
+      "overview": "国务院任命袁古洁为香港中联办副主任；李强签署对外投资规定；多式联运增长超15%",
+      "focus": "香港人事变动；对外投资新规出台；运输结构调整成效",
+      "whyItMatters": "香港事务与对外投资政策影响深远；多式联运体现物流效率提升",
       "watchlist": [
-        "继续关注：国务院任免国家工作人员（2026年6月1日）",
-        "继续关注：我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-        "继续关注：李强签署国务院令 公布《国务院关于对外投资的规定》"
+        "中联办后续人事动态",
+        "对外投资细则实施反馈"
       ],
       "keyPoints": [
-        "任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
-        "全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
-        "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。"
+        "袁古洁任香港中联办副主任",
+        "《对外投资规定》7月施行",
+        "集装箱多式联运量增超15%"
       ],
       "highlights": [
         {
@@ -111,7 +114,7 @@
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
         }
       ],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     }
   ],
   "totalSummaries": 3,
