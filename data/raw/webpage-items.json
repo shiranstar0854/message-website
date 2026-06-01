@@ -11,7 +11,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -25,12 +25,12 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "ok": false,
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -45,7 +45,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -60,7 +60,7 @@
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
     "ok": false,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "error": "fetch failed",
     "items": [],
@@ -77,7 +77,7 @@
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
     "ok": false,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "error": "fetch failed",
     "items": [],
@@ -96,7 +96,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -112,23 +112,10 @@
     "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
-    "items": [
-      {
-        "title": "蓝佛安出席2026年上合组织成员国财长和央行行长会议并举行多场双边会谈",
-        "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202605/t20260530_3990894.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "财政部财政政策、国债、预算和财政运行新闻",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "daily",
-        "tags": [
-          "official-agency",
-          "daily"
-        ]
-      }
-    ],
+    "items": [],
     "stale": false
   },
   {
@@ -143,7 +130,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "items": [
       {
@@ -172,10 +159,70 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 13,
-    "fetchedAt": "2026-05-31T09:01:19.279Z",
+    "itemCount": 10,
+    "fetchedAt": "2026-06-01T00:01:14.312Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "人工智能相关产品拉动外贸增长",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "制造业稳定运行 新动能加速扩张",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070734.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "5月份PMI数据出炉 我国经济总体产出保持扩张",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070730.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院山西留神峪煤矿事故调查组公告",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070728.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "《习近平法治文选》第一卷英文版出版发行",
+        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070725.htm",
+        "publishedAt": "2026-05-31T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "习近平：前瞻布局和发展未来产业",
         "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
@@ -228,102 +275,6 @@
         "title": "前4月电力市场交易电量同比增长25.6%",
         "link": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
         "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "全国科技工作者日 多场活动弘扬科学家精神",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070696.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070694.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "李强对安全生产工作作出重要批示强调：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070687.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "【视频】李强对安全生产工作作出重要批示：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
-        "link": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026053001/index.shtml",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "加拿大总理卡尼会见王毅",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070700.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "习近平同埃及总统塞西就中埃建交70周年互致贺电",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070675.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "努力成为跨越太平洋的“友谊使者”——习近平主席复信激励中美青少年和友好人士为两国关系稳定健康可持续发展贡献力量",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070665.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "四部门部署2026年提升全民数字素养与技能工作",
-        "link": "https://www.gov.cn/lianbo/202605/content_7070654.htm",
-        "publishedAt": "2026-05-30T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
