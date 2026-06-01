@@ -561,6 +561,22 @@ output {
   line-height: 1.65;
 }
 
+.summary-focus,
+.summary-explainer {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.summary-focus {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.summary-explainer {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .daily-brief-card {
   display: grid;
   gap: 12px;

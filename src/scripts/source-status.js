@@ -16,8 +16,8 @@
 
     const statusLabels = {
       healthy: "正常",
-      empty: "无新数据",
-      failed: "失败"
+      empty: "暂无48小时内新内容",
+      failed: "抓取失败"
     };
     const authorityLabels = {
       "official-agency": "官方机构",
@@ -44,7 +44,7 @@
               ${source.timelinessTier ? `<span>${escapeHtml(source.timelinessTier)}</span>` : ""}
               <span>最近检查 ${escapeHtml(formatDate(source.lastCheckedAt))}</span>
               <span>最近成功 ${escapeHtml(formatDate(source.lastSuccessAt))}</span>
-              <span>失败 ${Number(source.failureCount || 0)}</span>
+              ${Number(source.failureCount || 0) > 0 ? `<span>失败 ${Number(source.failureCount || 0)}</span>` : ""}
               ${Number(source.attempts || 1) > 1 ? `<span>尝试 ${Number(source.attempts)} 次</span>` : ""}
             </div>
           </div>
@@ -56,7 +56,8 @@
   function summarizeSourceHealth(health) {
     const sources = health.sources || [];
     const healthy = sources.filter((source) => source.status === "healthy").length;
-    const abnormal = sources.length - healthy;
+    const empty = sources.filter((source) => source.status === "empty").length;
+    const abnormal = sources.filter((source) => source.status === "failed").length;
     const lastCheckedAt = sources
       .map((source) => source.lastCheckedAt)
       .filter(Boolean)
@@ -68,10 +69,11 @@
 
     return {
       healthy,
+      empty,
       abnormal,
       lastCheckedAt,
       hasWarning: abnormal > 0,
-      text: `来源 ${healthy} 个正常，${abnormal} 个异常，最近检查 ${timeLabel}`
+      text: `来源 ${healthy} 个有新内容，${empty} 个暂无48小时内新内容，${abnormal} 个抓取失败，最近检查 ${timeLabel}`
     };
   }
 

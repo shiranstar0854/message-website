@@ -1,159 +1,225 @@
 {
-  "generatedAt": "2026-05-31T11:01:07.058Z",
-  "method": "deepseek-chat-completions",
+  "generatedAt": "2026-06-01T08:34:25.026Z",
+  "method": "extractive",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
-  "llmConfigured": true,
-  "fallbackCount": 0,
+  "llmConfigured": false,
+  "fallbackCount": 1,
   "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "谷歌AI Studio打造I/O 2026问答，Gemini Omni与3.5展示推理与创作；OpenAI助力波士顿儿童医院诊断罕见病，Braintrust用Codex加速编码。",
-      "keyPoints": [
-        "谷歌AI Studio制成I/O 2026问答",
-        "Gemini Omni与3.5展示新能力",
-        "OpenAI用于医疗诊断与代码生成"
-      ],
-      "highlights": [
-        {
-          "id": "tech-google-ai-blog-e6ea868542",
-          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
-          "source": "Google AI Blog",
-          "score": 90,
-          "summary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements."
-        },
-        {
-          "id": "tech-google-ai-blog-7099ab3e16",
-          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
-          "source": "Google AI Blog",
-          "score": 90,
-          "summary": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows."
-        },
-        {
-          "id": "tech-openai-news-54eed69f83",
-          "title": "Boston Children’s uses AI to unlock new diagnoses",
-          "url": "https://openai.com/index/boston-childrens-hospital",
-          "source": "OpenAI News",
-          "score": 90,
-          "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases."
-        },
-        {
-          "id": "tech-openai-news-33dd0a1359",
-          "title": "How Braintrust turns customer requests into code with Codex",
-          "url": "https://openai.com/index/braintrust",
-          "source": "OpenAI News",
-          "score": 90,
-          "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
-        },
-        {
-          "id": "tech-google-ai-blog-d94f270ada",
-          "title": "Check out real-life AI prototypes from the Futures Lab.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
-          "source": "Google AI Blog",
-          "score": 90,
-          "summary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work."
-        }
-      ],
-      "summaryMethod": "deepseek-chat-completions"
+      "overview": "今日科技暂无足够高价值信息形成总结。",
+      "focus": "聚焦点：科技暂无足够新内容。",
+      "whyItMatters": "重要性：当前没有足够新内容，暂不形成明确判断。",
+      "watchlist": [],
+      "keyPoints": [],
+      "highlights": [],
+      "summaryMethod": "extractive"
     },
     {
       "id": "finance",
       "label": "金融",
-      "overview": "中国5月采购经理指数运行情况公布；蓝佛安出席上合组织财长会议；美国SEC提议撤销气候披露规则。",
+      "overview": "今日金融重点集中在：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问；2026年5月中国采购经理指数运行情况。",
+      "focus": "聚焦点：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
+      "whyItMatters": "重要性：这些信息来自国家发展改革委新闻发布、国家统计局数据发布，集中体现本频道最新可观察变化。",
+      "watchlist": [
+        "继续关注：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
+        "继续关注：2026年5月中国采购经理指数运行情况"
+      ],
       "keyPoints": [
-        "中国5月PMI数据发布",
-        "上合组织财长会议举行",
-        "SEC提议取消气候披露规则"
+        "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "国家统计局宏观经济、价格、工业、投资和人口数据发布"
       ],
       "highlights": [
+        {
+          "id": "finance-item-2ad37299fe",
+          "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
+          "source": "国家发展改革委新闻发布",
+          "score": 100,
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息"
+        },
         {
           "id": "finance-item-e55a907b89",
           "title": "2026年5月中国采购经理指数运行情况",
           "url": "http://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
           "source": "国家统计局数据发布",
-          "score": 100,
-          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布"
-        },
-        {
-          "id": "finance-item-7fc4011b97",
-          "title": "蓝佛安出席2026年上合组织成员国财长和央行行长会议并举行多场双边会谈",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202605/t20260530_3990894.htm",
-          "source": "财政部财政新闻",
           "score": 99,
-          "summary": "财政部财政政策、国债、预算和财政运行新闻"
-        },
-        {
-          "id": "finance-u-s-sec-press-releases-5055e71cfd",
-          "title": "SEC Proposes Rescission of Climate-Related Disclosure Rules",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-49-sec-proposes-rescission-climate-related-disclosure-rules",
-          "source": "U.S. SEC Press Releases",
-          "score": 97,
-          "summary": "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that require companies to provide certain climate-related information..."
+          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布"
         }
       ],
-      "summaryMethod": "deepseek-chat-completions"
+      "summaryMethod": "extractive"
     },
     {
       "id": "news",
       "label": "新闻",
-      "overview": "习近平主持政治局学习前瞻未来产业，给红领巾讲解员回信并祝儿童节快乐；《求是》杂志发表相关文章；前4月电力市场交易电量增长25.6%。",
+      "overview": "今日新闻重点集中在：国务院任免国家工作人员（2026年6月1日）；我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%；李强签署国务院令 公布《国务院关于对外投资的规定》。",
+      "focus": "聚焦点：国务院任免国家工作人员（2026年6月1日）",
+      "whyItMatters": "重要性：这些信息来自中国政府网要闻，集中体现本频道最新可观察变化。",
+      "watchlist": [
+        "继续关注：国务院任免国家工作人员（2026年6月1日）",
+        "继续关注：我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
+        "继续关注：李强签署国务院令 公布《国务院关于对外投资的规定》"
+      ],
       "keyPoints": [
-        "习近平强调前瞻布局未来产业",
-        "习近平回信勉励红领巾讲解员",
-        "前4月电力市场交易电量增长25.6%"
+        "任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
+        "全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
+        "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。"
       ],
       "highlights": [
         {
-          "id": "news-item-cb09eb1244",
-          "title": "习近平：前瞻布局和发展未来产业",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
+          "id": "news-item-8975ededd7",
+          "title": "国务院任免国家工作人员（2026年6月1日）",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "今天进行二十届中央政治局第二十四次集体学习，内容是前瞻布局和发展未来产业，主要是总结近年来我国未来产业发展情况，分析世界未来产业发展趋势，对培育发展未来产业进行思考。"
+          "summary": "任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。"
         },
         {
-          "id": "news-item-2a7227b626",
-          "title": "习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员的回信",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070716.htm",
+          "id": "news-item-9a63007ce5",
+          "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "得知你们在一大会址和南湖红船旁，用心用情讲述党的历史、革命故事和英雄事迹，厚植了爱党、爱国、爱社会主义的情感，得到了锻炼与成长，我感到欣慰。"
+          "summary": "全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。"
         },
         {
-          "id": "news-item-53765ef068",
-          "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
+          "id": "news-item-e56ba9a94a",
+          "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "在“六一”国际儿童节即将到来之际，中共中央总书记、国家主席、中央军委主席习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员回信，对他们予以亲切勉励，并祝他们和全国的少年儿童节日快乐。"
+          "summary": "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。"
         },
         {
-          "id": "news-item-44c6b57d82",
-          "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
+          "id": "news-item-54b91da87e",
+          "title": "国务院关于对外投资的规定",
+          "url": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "6月1日出版的第11期《求是》杂志将发表中共中央总书记、国家主席、中央军委主席习近平的重要文章《前瞻布局和发展未来产业》。"
+          "summary": "《国务院关于对外投资的规定》已经2026年4月17日国务院第83次常务会议通过，现予公布，自2026年7月1日起施行。"
         },
         {
-          "id": "news-item-e161e0b895",
-          "title": "前4月电力市场交易电量同比增长25.6%",
-          "url": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
+          "id": "news-item-d700d62dfe",
+          "title": "孩子们的快乐，真的很简单！",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070752.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "记者从国家能源局获悉：前4月，全国累计完成电力市场交易电量24307亿千瓦时，同比增长25.6%。"
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
         }
       ],
-      "summaryMethod": "deepseek-chat-completions"
+      "summaryMethod": "extractive"
     }
   ],
   "totalSummaries": 3,
   "items": [
+    {
+      "id": "finance-item-2ad37299fe",
+      "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
+      "source": "国家发展改革委新闻发布",
+      "sourceId": "ndrc-news",
+      "category": "finance",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "summaryReason": "国家发展改革委新闻发布 / finance · score 100 · official-agency · daily",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-8975ededd7",
+      "title": "国务院任免国家工作人员（2026年6月1日）",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-9a63007ce5",
+      "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-e56ba9a94a",
+      "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-54b91da87e",
+      "title": "国务院关于对外投资的规定",
+      "url": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "《国务院关于对外投资的规定》已经2026年4月17日国务院第83次常务会议通过，现予公布，自2026年7月1日起施行。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-d700d62dfe",
+      "title": "孩子们的快乐，真的很简单！",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070752.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-f4bd10fd77",
+      "title": "前4月全国社会物流总额同比增长5.5% 即时零售交易额增长29.2%",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070749.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "中国物流与采购联合会数据显示：1—4月，全国社会物流总额121.7万亿元，同比增长5.5%，物流运行整体平稳、运行向好，物流市场需求持续扩容，供需适配性稳步提升。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-533ed93dbd",
+      "title": "守护童心 筑梦未来——习近平总书记的深情寄望鼓舞新时代少年儿童成长成才",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070741.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "当代中国少年儿童既是实现第一个百年奋斗目标的经历者、见证者，更是实现第二个百年奋斗目标、建设社会主义现代化强国的生力军。",
+      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
     {
       "id": "finance-item-e55a907b89",
       "title": "2026年5月中国采购经理指数运行情况",
@@ -162,9 +228,74 @@
       "sourceId": "stats-data-release",
       "category": "finance",
       "publishedAt": "2026-05-31T00:00:00.000Z",
-      "score": 100,
+      "score": 99,
       "aiSummary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-      "summaryReason": "国家统计局数据发布 / finance · score 100 · official-agency · daily",
+      "summaryReason": "国家统计局数据发布 / finance · score 99 · official-agency · daily",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-d23c6d1fee",
+      "title": "人工智能相关产品拉动外贸增长",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-05512d32cb",
+      "title": "制造业稳定运行 新动能加速扩张",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070734.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "国家统计局、中国物流与采购联合会今天（5月31日）发布5月份中国采购经理指数。",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-bee75d4319",
+      "title": "5月份PMI数据出炉 我国经济总体产出保持扩张",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070730.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "国家统计局服务业调查中心、中国物流与采购联合会31日发布数据显示，5月份，制造业采购经理指数（PMI）为50.0%，比上月下降0.3个百分点；非制造业商务活动指数和综合PMI产出指数分别为50.1%和50.5%，比上月上升0.7个和0.4个百分点，我国经济总体产出保持扩张。",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-bb09937030",
+      "title": "国务院山西留神峪煤矿事故调查组公告",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070728.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "国务院山西长治山西通洲集团留神峪煤业有限公司“5·22”特别重大瓦斯爆炸事故调查组决定于2026年5月31日至6月20日，设立举报电话和举报信箱，受理本次事故有关问题的来信和来电。",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-item-d5b63358e6",
+      "title": "《习近平法治文选》第一卷英文版出版发行",
+      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070725.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-05-31T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "中共中央党史和文献研究院翻译的《习近平法治文选》第一卷英文版，近日由中央编译出版社出版，面向海内外发行。",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -175,9 +306,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-31T00:00:00.000Z",
-      "score": 100,
+      "score": 95,
       "aiSummary": "今天进行二十届中央政治局第二十四次集体学习，内容是前瞻布局和发展未来产业，主要是总结近年来我国未来产业发展情况，分析世界未来产业发展趋势，对培育发展未来产业进行思考。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -188,9 +319,9 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-31T00:00:00.000Z",
-      "score": 100,
+      "score": 95,
       "aiSummary": "得知你们在一大会址和南湖红船旁，用心用情讲述党的历史、革命故事和英雄事迹，厚植了爱党、爱国、爱社会主义的情感，得到了锻炼与成长，我感到欣慰。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
+      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
@@ -201,242 +332,34 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-05-31T00:00:00.000Z",
-      "score": 100,
+      "score": 95,
       "aiSummary": "在“六一”国际儿童节即将到来之际，中共中央总书记、国家主席、中央军委主席习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员回信，对他们予以亲切勉励，并祝他们和全国的少年儿童节日快乐。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-44c6b57d82",
-      "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
-      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-31T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "6月1日出版的第11期《求是》杂志将发表中共中央总书记、国家主席、中央军委主席习近平的重要文章《前瞻布局和发展未来产业》。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-e161e0b895",
-      "title": "前4月电力市场交易电量同比增长25.6%",
-      "url": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-31T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "记者从国家能源局获悉：前4月，全国累计完成电力市场交易电量24307亿千瓦时，同比增长25.6%。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-item-7fc4011b97",
-      "title": "蓝佛安出席2026年上合组织成员国财长和央行行长会议并举行多场双边会谈",
-      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202605/t20260530_3990894.htm",
-      "source": "财政部财政新闻",
-      "sourceId": "mof-news",
-      "category": "finance",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 99,
-      "aiSummary": "财政部财政政策、国债、预算和财政运行新闻",
-      "summaryReason": "财政部财政新闻 / finance · score 99 · official-agency · daily",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-u-s-sec-press-releases-5055e71cfd",
-      "title": "SEC Proposes Rescission of Climate-Related Disclosure Rules",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-49-sec-proposes-rescission-climate-related-disclosure-rules",
-      "source": "U.S. SEC Press Releases",
-      "sourceId": "sec-press",
-      "category": "finance",
-      "publishedAt": "2026-05-29T14:50:00.000Z",
-      "score": 97,
-      "aiSummary": "The Securities and Exchange Commission today proposed the rescission of overly burdensome and costly rules that require companies to provide certain climate-related information...",
-      "summaryReason": "U.S. SEC Press Releases / finance · score 97",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-b917f368d6",
-      "title": "全国科技工作者日 多场活动弘扬科学家精神",
-      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070696.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "第十个全国科技工作者日期间，各地举办了丰富多彩的活动，科普新知、弘扬科学家精神。",
       "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
       "summaryMethod": "extractive"
     },
     {
-      "id": "news-item-f02a83df1d",
-      "title": "“科技兴则民族兴，科技强则国家强”——习近平总书记重要论述指引科技强国建设",
-      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070694.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "习近平总书记深刻指出，中国式现代化要靠科技现代化作支撑，实现高质量发展要靠科技创新培育新动能。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-0742c55db0",
-      "title": "李强对安全生产工作作出重要批示强调：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
-      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070687.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "中共中央政治局常委、国务院总理李强日前对做好安全生产工作作出重要批示。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-b6e09ef656",
-      "title": "【视频】李强对安全生产工作作出重要批示：坚决贯彻落实习近平总书记关于安全生产的重要指示精神 切实维护人民群众生命财产安全和社会大局稳定",
-      "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202605/2026053001/index.shtml",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-efb938bae1",
-      "title": "习近平同埃及总统塞西就中埃建交70周年互致贺电",
-      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070675.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "5月30日，国家主席习近平同埃及总统塞西互致贺电，庆祝两国建交70周年。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-c682159cca",
-      "title": "努力成为跨越太平洋的“友谊使者”——习近平主席复信激励中美青少年和友好人士为两国关系稳定健康可持续发展贡献力量",
-      "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070665.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "“很高兴得知两国学生搭乘‘中美青年友谊号’，共同经历了难忘的友谊之旅。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-ff889c1245",
-      "title": "四部门部署2026年提升全民数字素养与技能工作",
-      "url": "https://www.gov.cn/lianbo/202605/content_7070654.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-05-30T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "记者29日获悉，中央网信办、教育部、工业和信息化部、人力资源社会保障部近日联合印发《2026年提升全民数字素养与技能工作要点》，部署了6个方面15项重点任务。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-google-ai-blog-e6ea868542",
-      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
-      "source": "Google AI Blog",
-      "sourceId": "google-ai",
-      "category": "tech",
-      "publishedAt": "2026-05-29T19:00:00.000Z",
-      "score": 90,
-      "aiSummary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
-      "summaryReason": "Google AI Blog / tech · score 90 · Developer tools · AI",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-google-ai-blog-7099ab3e16",
-      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
-      "source": "Google AI Blog",
-      "sourceId": "google-ai",
-      "category": "tech",
-      "publishedAt": "2026-05-29T17:30:00.000Z",
-      "score": 90,
-      "aiSummary": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows.",
-      "summaryReason": "Google AI Blog / tech · score 90 · Gemini models · Google DeepMind",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-748394b420",
-      "title": "Hubble Spies Faint Irregular Galaxy",
-      "url": "https://www.nasa.gov/image-article/hubble-spies-faint-irregular-galaxy",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T16:14:26.000Z",
-      "score": 90,
-      "aiSummary": "This NASA Hubble Space Telescope image captures the faint glow of the dwarf irregular galaxy ESO 490-017.",
-      "summaryReason": "NASA Breaking News / news · score 90 · Irregular Galaxies",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-54eed69f83",
-      "title": "Boston Children’s uses AI to unlock new diagnoses",
-      "url": "https://openai.com/index/boston-childrens-hospital",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 90,
-      "aiSummary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
-      "summaryReason": "OpenAI News / tech · score 90",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-33dd0a1359",
-      "title": "How Braintrust turns customer requests into code with Codex",
-      "url": "https://openai.com/index/braintrust",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 90,
-      "aiSummary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
-      "summaryReason": "OpenAI News / tech · score 90",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-google-ai-blog-d94f270ada",
-      "title": "Check out real-life AI prototypes from the Futures Lab.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
-      "source": "Google AI Blog",
-      "sourceId": "google-ai",
-      "category": "tech",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 90,
-      "aiSummary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
-      "summaryReason": "Google AI Blog / tech · score 90 · Learning & Education · AI",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-08bee685f4",
-      "title": "Gaza children trapped ‘in an endless cycle of suffering’: UNICEF",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167604",
+      "id": "news-un-news-1b4c7504f9",
+      "title": "Under fire, Kharkiv is already building for a peaceful tomorrow",
+      "url": "https://news.un.org/feed/view/en/story/2026/05/1167611",
       "source": "UN News",
       "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
+      "publishedAt": "2026-05-31T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads.",
+      "summaryReason": "UN News / news · score 91",
+      "summaryMethod": "extractive"
+    },
+    {
+      "id": "news-un-news-802459d49c",
+      "title": "‘You are not alone’: WHO chief vows to stand with DR Congo through Ebola outbreak",
+      "url": "https://news.un.org/feed/view/en/story/2026/05/1167612",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-05-30T12:00:00.000Z",
       "score": 89,
-      "aiSummary": "The dire conditions in the Gaza Strip are trapping children “in an endless cycle of suffering” and their heartbroken parents can only look on, an official with the UN child righ...",
+      "aiSummary": "Community trust will be decisive in bringing the rapidly evolving Ebola outbreak in eastern Democratic Republic of the Congo under control, WHO Director-General Tedros Adhanom G...",
       "summaryReason": "UN News / news · score 89",
       "summaryMethod": "extractive"
     },
@@ -448,73 +371,8 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-05-30T12:00:00.000Z",
-      "score": 83,
+      "score": 81,
       "aiSummary": "Matches organised by a former professional player are providing a brief respite from the harsh reality of life for the thousands living in overcrowded tents, schools or damaged...",
-      "summaryReason": "UN News / news · score 83",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-ecd31b9b70",
-      "title": "NASA Awards Contract for Johnson Space Center Infrastructure",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-johnson-space-center-infrastructure",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T21:24:11.000Z",
-      "score": 82,
-      "aiSummary": "NASA has selected seven companies to provide construction, revitalization, and infrastructure improvements at the agency’s Johnson Space Center in Houston.",
-      "summaryReason": "NASA Breaking News / news · score 82 · Johnson Space Center · NASA Centers & Facilities",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-b0d1c388d8",
-      "title": "NASA Hosts SpaceX Crew-11 Astronauts for Public Event at Headquarters",
-      "url": "https://www.nasa.gov/news-release/nasa-hosts-spacex-crew-11-astronauts-for-public-event-at-headquarters",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T20:49:43.000Z",
-      "score": 82,
-      "aiSummary": "NASA&#8217;s SpaceX Crew-11 astronauts gather together for a crew portrait wearing their Dragon pressure suits during a suit verification check inside the International Space St...",
-      "summaryReason": "NASA Breaking News / news · score 82 · International Space Station (ISS) · Humans in Space",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-c8cf193814",
-      "title": "NASA’s Roman Space Telescope Primary Mirror Gets Last Look",
-      "url": "https://www.nasa.gov/missions/roman-space-telescope/nasas-roman-space-telescope-primary-mirror-gets-last-look",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T16:33:00.000Z",
-      "score": 82,
-      "aiSummary": "4 Min Read NASA’s Roman Space Telescope Primary Mirror Gets Last Look This photo peers down the barrel of the Roman telescope with its visor-like sunshade deployed.",
-      "summaryReason": "NASA Breaking News / news · score 82 · Nancy Grace Roman Space Telescope · Exoplanets",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-d191fc34c1",
-      "title": "Gaza: 26 killed over Eid holiday, UN rights investigators report",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167610",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "At least 26 Palestinians were killed in the Gaza Strip since Tuesday – the eve of one of the most important holidays in Islam – the UN human rights office, OHCHR, reported on Fr...",
-      "summaryReason": "UN News / news · score 81",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-ad248170a1",
-      "title": "World News in Brief: Drone strike in Romania condemned, Lebanon and South Sudan updates",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167609",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-05-29T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "The UN Secretary-General has expressed alarm after a drone struck a residential building in the Romanian city of Galați overnight into Friday, reportedly injuring two people.",
       "summaryReason": "UN News / news · score 81",
       "summaryMethod": "extractive"
     }

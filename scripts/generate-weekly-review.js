@@ -87,7 +87,12 @@ function buildChannelReview(category, items, rules) {
     totalItems: channelItems.length,
     topSources: countSources(channelItems).slice(0, Number(rules.maxSourcesPerChannel || 6)),
     highlights,
-    themes: highlights.slice(0, 5).map((item) => truncateText(item.title, 80))
+    themes: highlights.slice(0, 5).map((item) => truncateText(item.title, 80)),
+    focus: highlights[0] ? `本周聚焦：${truncateText(highlights[0].title, 90)}` : `本周聚焦：${CHANNEL_LABELS[category] || category}暂无足够内容。`,
+    whyItMatters: highlights.length
+      ? `重要性：${CHANNEL_LABELS[category] || category}频道的高分条目集中来自${countSources(channelItems).slice(0, 3).map((entry) => entry.source).join("、") || "主要来源"}，反映本周主要变化方向。`
+      : "重要性：当前样本不足，暂不形成明确复盘判断。",
+    weekSignals: highlights.slice(0, 3).map((item) => `信号：${truncateText(item.title, 80)}`)
   };
 }
 
@@ -114,8 +119,8 @@ function buildWeeklyPrompt(review, rules = {}) {
     "Create a weekly review for a public tech/finance/news dashboard.",
     "Return minified valid JSON only. Do not wrap it in markdown.",
     "Do not include line breaks inside JSON string values.",
-    "Use exactly this shape: {\"executiveSummary\":\"...\",\"channelReviews\":{\"tech\":{\"summary\":\"...\",\"watchlist\":[\"...\"]},\"finance\":{\"summary\":\"...\",\"watchlist\":[\"...\"]},\"news\":{\"summary\":\"...\",\"watchlist\":[\"...\"]}}}.",
-    "Use only the provided highlights and source counts. Keep executiveSummary under 180 Chinese characters and each channel summary under 100 Chinese characters.",
+    "Use exactly this shape: {\"executiveSummary\":\"...\",\"channelReviews\":{\"tech\":{\"summary\":\"...\",\"focus\":\"...\",\"whyItMatters\":\"...\",\"weekSignals\":[\"...\"],\"watchlist\":[\"...\"]},\"finance\":{\"summary\":\"...\",\"focus\":\"...\",\"whyItMatters\":\"...\",\"weekSignals\":[\"...\"],\"watchlist\":[\"...\"]},\"news\":{\"summary\":\"...\",\"focus\":\"...\",\"whyItMatters\":\"...\",\"weekSignals\":[\"...\"],\"watchlist\":[\"...\"]}}}.",
+    "Use only the provided highlights and source counts. Explain the weekly focus, why it matters, observable signals, and what to watch next. Keep executiveSummary under 180 Chinese characters and each channel summary under 100 Chinese characters.",
     "",
     JSON.stringify({
       weekId: review.weekId,
@@ -144,6 +149,11 @@ function applyWeeklyLlmResponse(review, responseJson, rules = {}, generatedAt = 
       return {
         ...channel,
         modelSummary: truncateText(modelReview.summary || "", Number(weeklyRules.channelSummaryMaxLength || 360)),
+        focus: truncateText(modelReview.focus || channel.focus || "", Number(weeklyRules.focusMaxLength || 160)),
+        whyItMatters: truncateText(modelReview.whyItMatters || channel.whyItMatters || "", Number(weeklyRules.whyItMattersMaxLength || 220)),
+        weekSignals: Array.isArray(modelReview.weekSignals)
+          ? modelReview.weekSignals.slice(0, 4).map((item) => truncateText(item, 110)).filter(Boolean)
+          : channel.weekSignals,
         watchlist: Array.isArray(modelReview.watchlist)
           ? modelReview.watchlist.slice(0, 5).map((item) => truncateText(item, 90)).filter(Boolean)
           : []

@@ -70,10 +70,17 @@
             <span>${escapeHtml(channel.summaryMethod || data.method || "extractive")}</span>
           </div>
           <p class="model-summary">${escapeHtml(channel.overview || "")}</p>
+          ${channel.focus ? `<p class="summary-focus">${escapeHtml(channel.focus)}</p>` : ""}
+          ${channel.whyItMatters ? `<p class="summary-explainer">${escapeHtml(channel.whyItMatters)}</p>` : ""}
           ${(channel.keyPoints || []).length ? `
             <ul class="daily-keypoints">
               ${(channel.keyPoints || []).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
             </ul>
+          ` : ""}
+          ${(channel.watchlist || []).length ? `
+            <div class="weekly-watchlist">
+              ${(channel.watchlist || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+            </div>
           ` : ""}
           ${(channel.highlights || []).length ? `
             <details class="daily-evidence">

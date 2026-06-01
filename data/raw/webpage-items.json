@@ -11,7 +11,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -25,12 +25,12 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "ok": false,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
-    "attempts": 1,
-    "error": "fetch failed",
-    "items": [],
+    "status": 200,
+    "ok": true,
     "itemCount": 0,
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
+    "attempts": 1,
+    "items": [],
     "stale": false
   },
   {
@@ -45,7 +45,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -59,12 +59,12 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
-    "ok": false,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
-    "attempts": 1,
-    "error": "fetch failed",
-    "items": [],
+    "status": 200,
+    "ok": true,
     "itemCount": 0,
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
+    "attempts": 1,
+    "items": [],
     "stale": false
   },
   {
@@ -76,12 +76,12 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
-    "ok": false,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
-    "attempts": 1,
-    "error": "fetch failed",
-    "items": [],
+    "status": 200,
+    "ok": true,
     "itemCount": 0,
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
+    "attempts": 1,
+    "items": [],
     "stale": false
   },
   {
@@ -95,10 +95,23 @@
     "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
+        "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -113,7 +126,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -130,7 +143,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
     "attempts": 1,
     "items": [
       {
@@ -159,10 +172,94 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 10,
-    "fetchedAt": "2026-06-01T00:01:14.312Z",
+    "itemCount": 15,
+    "fetchedAt": "2026-06-01T08:23:18.065Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "国务院任免国家工作人员（2026年6月1日）",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院关于对外投资的规定",
+        "link": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "孩子们的快乐，真的很简单！",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070752.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "前4月全国社会物流总额同比增长5.5% 即时零售交易额增长29.2%",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070749.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "守护童心 筑梦未来——习近平总书记的深情寄望鼓舞新时代少年儿童成长成才",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070741.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "人工智能相关产品拉动外贸增长",
         "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
@@ -250,30 +347,6 @@
       {
         "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
         "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "《求是》杂志发表习近平总书记重要文章《前瞻布局和发展未来产业》",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070713.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "前4月电力市场交易电量同比增长25.6%",
-        "link": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
         "publishedAt": "2026-05-31T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",

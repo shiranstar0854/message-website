@@ -128,7 +128,11 @@ test("daily summary output builds channel-level important-affairs summaries", as
   assert.equal(output.summaryShape, "channel-daily-brief");
   assert.equal(output.totalSummaries, 3);
   assert.deepEqual(output.channelSummaries.map((channel) => channel.id), ["tech", "finance", "news"]);
-  assert.equal(output.channelSummaries.find((channel) => channel.id === "tech").highlights[0].title, "AI platform update");
+  const techSummary = output.channelSummaries.find((channel) => channel.id === "tech");
+  assert.equal(techSummary.highlights[0].title, "AI platform update");
+  assert.match(techSummary.focus, /AI platform update/);
+  assert.match(techSummary.whyItMatters, /Official Source/);
+  assert.equal(techSummary.watchlist.length, 1);
 });
 
 test("daily channel summary uses one DeepSeek call when configured", async () => {
@@ -183,6 +187,8 @@ test("daily channel summary uses one DeepSeek call when configured", async () =>
   assert.equal(body.response_format.type, "json_object");
   assert.equal(calls.length, 1);
   assert.equal(result.channels.find((channel) => channel.id === "news").overview, "新闻重点是政策时间线。");
+  assert.ok(result.channels.find((channel) => channel.id === "tech").focus);
+  assert.ok(result.channels.find((channel) => channel.id === "tech").whyItMatters);
   assert.equal(result.stats.llmSucceeded, 1);
 });
 
@@ -232,6 +238,8 @@ test("weekly review builds channel highlights from daily archives", () => {
   assert.equal(review.weekId, isoWeekId(new Date("2026-05-28T02:00:00.000Z")));
   assert.equal(review.totals.archiveCount, 1);
   assert.equal(review.channels.find((channel) => channel.id === "finance").highlights[0].source, "Federal Reserve");
+  assert.match(review.channels.find((channel) => channel.id === "finance").focus, /Central bank update/);
+  assert.match(review.channels.find((channel) => channel.id === "finance").whyItMatters, /Federal Reserve/);
   assert.equal(review.channels.find((channel) => channel.id === "news").highlights[0].summary, "The briefing highlighted a global policy issue.");
 });
 
@@ -281,6 +289,8 @@ test("weekly review LLM path adds model summaries when DeepSeek is configured", 
   });
 
   assert.equal(enhanced.method, "deepseek-chat-completions");
+  assert.ok(enhanced.channels.find((channel) => channel.id === "tech").focus);
+  assert.ok(enhanced.channels.find((channel) => channel.id === "tech").weekSignals.length);
   assert.equal(enhanced.modelSummary, "本周科技信息集中在平台更新。");
   assert.equal(enhanced.channels.find((channel) => channel.id === "tech").modelSummary, "科技频道关注开发者平台变化。");
 });

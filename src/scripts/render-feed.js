@@ -148,6 +148,13 @@
           </div>
           <div class="tag-row" aria-label="${escapeHtml(channel.label || channel.id)}主要来源">${sources}</div>
           ${channel.modelSummary ? `<p class="weekly-model-summary">${escapeHtml(channel.modelSummary)}</p>` : ""}
+          ${channel.focus ? `<p class="summary-focus">${escapeHtml(channel.focus)}</p>` : ""}
+          ${channel.whyItMatters ? `<p class="summary-explainer">${escapeHtml(channel.whyItMatters)}</p>` : ""}
+          ${channel.weekSignals?.length ? `
+            <ul class="daily-keypoints">
+              ${channel.weekSignals.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+            </ul>
+          ` : ""}
           ${channel.watchlist?.length ? `
             <div class="weekly-watchlist">
               ${channel.watchlist.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}

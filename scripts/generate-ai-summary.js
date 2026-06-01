@@ -170,6 +170,14 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
 function buildExtractiveChannelSummary(channelId, items, rules = {}) {
   const topItems = sortItems(items).slice(0, Number(rules.daily?.maxHighlightsPerChannel || 5));
   const titles = topItems.map((item) => item.title).filter(Boolean).slice(0, 3);
+  const topSources = [...new Set(topItems.map((item) => item.source).filter(Boolean))].slice(0, 3);
+  const focus = titles.length
+    ? `聚焦点：${titles[0]}`
+    : `聚焦点：${CHANNEL_LABELS[channelId] || channelId}暂无足够新内容。`;
+  const whyItMatters = topItems.length
+    ? `重要性：这些信息来自${topSources.join("、") || "主要来源"}，集中体现本频道最新可观察变化。`
+    : "重要性：当前没有足够新内容，暂不形成明确判断。";
+  const watchlist = topItems.slice(0, 3).map((item) => `继续关注：${truncateText(item.title, 70)}`);
   const overview = titles.length
     ? `今日${CHANNEL_LABELS[channelId] || channelId}重点集中在：${titles.join("；")}。`
     : `今日${CHANNEL_LABELS[channelId] || channelId}暂无足够高价值信息形成总结。`;
@@ -178,6 +186,9 @@ function buildExtractiveChannelSummary(channelId, items, rules = {}) {
     id: channelId,
     label: CHANNEL_LABELS[channelId] || channelId,
     overview: truncateText(overview, Number(rules.daily?.channelOverviewMaxLength || 260)),
+    focus: truncateText(focus, Number(rules.daily?.focusMaxLength || 140)),
+    whyItMatters: truncateText(whyItMatters, Number(rules.daily?.whyItMattersMaxLength || 180)),
+    watchlist,
     keyPoints: topItems.slice(0, 3).map((item) => truncateText(item.aiSummary || item.contentExcerpt || item.summary || item.title, 120)),
     highlights: topItems.map((item) => ({
       id: item.id,
@@ -196,8 +207,8 @@ function buildDailyBriefPrompt(summaryItems, rules = {}) {
     "Cover only three areas: tech, finance, news.",
     "Return minified valid JSON only. Do not wrap it in markdown.",
     "Do not include line breaks inside JSON string values.",
-    "Use exactly this shape: {\"channelSummaries\":{\"tech\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]},\"finance\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]},\"news\":{\"overview\":\"...\",\"keyPoints\":[\"...\"]}}}.",
-    "Use only the provided items. Keep each overview under 120 Chinese characters. Use at most three keyPoints per channel.",
+    "Use exactly this shape: {\"channelSummaries\":{\"tech\":{\"overview\":\"...\",\"focus\":\"...\",\"whyItMatters\":\"...\",\"keyPoints\":[\"...\"],\"watchlist\":[\"...\"]},\"finance\":{\"overview\":\"...\",\"focus\":\"...\",\"whyItMatters\":\"...\",\"keyPoints\":[\"...\"],\"watchlist\":[\"...\"]},\"news\":{\"overview\":\"...\",\"focus\":\"...\",\"whyItMatters\":\"...\",\"keyPoints\":[\"...\"],\"watchlist\":[\"...\"]}}}.",
+    "Use only the provided items. Explain the concrete focus, why it matters, and what to keep watching. Keep each overview under 120 Chinese characters. Use at most three keyPoints and three watchlist items per channel.",
     "",
     JSON.stringify({
       channels: DEFAULT_CHANNELS.map((channel) => ({
@@ -222,9 +233,14 @@ function applyDailyBriefResponse(fallbackSummaries, responseJson, rules = {}) {
     return {
       ...channel,
       overview: truncateText(modelChannel.overview || channel.overview, Number(rules.daily?.channelOverviewMaxLength || 260)),
+      focus: truncateText(modelChannel.focus || channel.focus || "", Number(rules.daily?.focusMaxLength || 140)),
+      whyItMatters: truncateText(modelChannel.whyItMatters || channel.whyItMatters || "", Number(rules.daily?.whyItMattersMaxLength || 180)),
       keyPoints: Array.isArray(modelChannel.keyPoints)
         ? modelChannel.keyPoints.slice(0, 5).map((point) => truncateText(point, 120)).filter(Boolean)
         : channel.keyPoints,
+      watchlist: Array.isArray(modelChannel.watchlist)
+        ? modelChannel.watchlist.slice(0, 3).map((point) => truncateText(point, 100)).filter(Boolean)
+        : channel.watchlist,
       summaryMethod: getLlmConfig(rules).provider
     };
   });

@@ -91,10 +91,12 @@
     const grid = document.getElementById("daily-focus-grid");
     if (!meta || !grid) return;
 
-    const healthy = (health.sources || []).filter((source) => source.status === "healthy").length;
-    const abnormal = (health.sources || []).length - healthy;
+    const sources = health.sources || [];
+    const healthy = sources.filter((source) => source.status === "healthy").length;
+    const empty = sources.filter((source) => source.status === "empty").length;
+    const abnormal = sources.filter((source) => source.status === "failed").length;
     const summaries = daily.channelSummaries || [];
-    meta.textContent = `摘要更新 ${formatShortDate(daily.generatedAt || data.generatedAt)}；活跃来源 ${healthy} 个，异常来源 ${abnormal} 个。`;
+    meta.textContent = `摘要更新 ${formatShortDate(daily.generatedAt || data.generatedAt)}；有新内容来源 ${healthy} 个，暂无48小时内新内容 ${empty} 个，抓取失败 ${abnormal} 个。`;
 
     if (!summaries.length) {
       grid.innerHTML = `
