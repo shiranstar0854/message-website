@@ -11,7 +11,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -28,8 +28,8 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
-    "attempts": 2,
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "attempts": 1,
     "items": [],
     "stale": false
   },
@@ -45,7 +45,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -62,7 +62,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -76,12 +76,12 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
-    "ok": false,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
-    "attempts": 2,
-    "error": "fetch failed",
-    "items": [],
+    "status": 200,
+    "ok": true,
     "itemCount": 0,
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "attempts": 1,
+    "items": [],
     "stale": false
   },
   {
@@ -96,7 +96,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 2,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [
       {
@@ -138,7 +138,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [
       {
@@ -168,7 +168,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -184,10 +184,34 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 12,
-    "fetchedAt": "2026-06-02T09:01:22.163Z",
+    "itemCount": 14,
+    "fetchedAt": "2026-06-02T09:32:14.331Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "国务院印发《加快农业农村现代化“十五五”规划》",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
+        "publishedAt": "2026-06-02T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+        "link": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
+        "publishedAt": "2026-06-02T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "王毅同巴西外长维埃拉举行中巴外长级全面战略对话",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070853.htm",

@@ -170,6 +170,75 @@ test("web source health merges with existing rss health and preserves fallback d
   assert.equal(merged.sources.length, 2);
 });
 
+test("web source health keeps previous empty status through transient failures", () => {
+  const result = {
+    sourceId: "szse-news",
+    sourceName: "SZSE News",
+    sourceType: "webpage",
+    sourceAuthority: "official-market",
+    timelinessTier: "daily",
+    category: "finance",
+    ok: false,
+    fetchedAt: "2026-06-02T09:00:00.000Z",
+    attempts: 2,
+    error: "fetch failed"
+  };
+  const previousHealth = {
+    sources: [{
+      id: "szse-news",
+      name: "SZSE News",
+      category: "finance",
+      status: "empty",
+      itemCount: 0,
+      responseStatus: 200,
+      failureCount: 0,
+      lastCheckedAt: "2026-06-02T08:30:00.000Z"
+    }]
+  };
+
+  const health = buildSourceHealth([result], previousHealth, "2026-06-02T09:00:01.000Z");
+
+  assert.equal(health.sources[0].status, "empty");
+  assert.equal(health.sources[0].responseStatus, 200);
+  assert.equal(health.sources[0].failureCount, 1);
+  assert.equal(health.sources[0].error, null);
+  assert.equal(health.sources[0].latestAttempt.error, "fetch failed");
+});
+
+test("web source health marks failed after repeated transient failures", () => {
+  const result = {
+    sourceId: "szse-news",
+    sourceName: "SZSE News",
+    sourceType: "webpage",
+    sourceAuthority: "official-market",
+    timelinessTier: "daily",
+    category: "finance",
+    ok: false,
+    fetchedAt: "2026-06-02T10:00:00.000Z",
+    attempts: 2,
+    error: "fetch failed"
+  };
+  const previousHealth = {
+    sources: [{
+      id: "szse-news",
+      name: "SZSE News",
+      category: "finance",
+      status: "empty",
+      itemCount: 0,
+      responseStatus: 200,
+      failureCount: 2,
+      lastCheckedAt: "2026-06-02T09:30:00.000Z"
+    }]
+  };
+
+  const health = buildSourceHealth([result], previousHealth, "2026-06-02T10:00:01.000Z");
+
+  assert.equal(health.sources[0].status, "failed");
+  assert.equal(health.sources[0].responseStatus, null);
+  assert.equal(health.sources[0].failureCount, 3);
+  assert.equal(health.sources[0].error, "fetch failed");
+});
+
 test("does not reuse webpage fallback when latest request succeeds with no dated items", () => {
   const result = {
     sourceId: "csrc-news",

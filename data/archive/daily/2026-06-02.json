@@ -1,14 +1,14 @@
 {
   "date": "2026-06-02",
-  "generatedAt": "2026-06-02T09:01:46.653Z",
+  "generatedAt": "2026-06-02T09:32:34.212Z",
   "totals": {
     "sources": 20,
     "healthySources": 8,
-    "rawItems": 36,
-    "normalizedItems": 36,
-    "filteredItems": 36,
-    "dedupedItems": 36,
-    "scoredItems": 36,
+    "rawItems": 39,
+    "normalizedItems": 39,
+    "filteredItems": 39,
+    "dedupedItems": 39,
+    "scoredItems": 39,
     "enrichmentAttempted": 24,
     "enrichmentFailed": 0
   },
@@ -22,7 +22,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -31,12 +31,12 @@
       "name": "OpenAI News",
       "category": "tech",
       "status": "healthy",
-      "itemCount": 3,
+      "itemCount": 4,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
-      "lastSuccessAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
       "failureCount": 0
     },
     {
@@ -48,8 +48,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
-      "lastSuccessAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
       "failureCount": 0
     },
     {
@@ -61,7 +61,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -74,7 +74,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
       "lastSuccessAt": "2026-05-31T04:02:10.336Z",
       "failureCount": 0
     },
@@ -87,7 +87,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -100,7 +100,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -113,8 +113,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
-      "lastSuccessAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
       "failureCount": 0
     },
     {
@@ -126,7 +126,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -139,8 +139,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
-      "lastSuccessAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
       "failureCount": 0
     },
     {
@@ -152,8 +152,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:12.373Z",
-      "lastSuccessAt": "2026-06-02T09:01:12.373Z",
+      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
       "failureCount": 0
     },
     {
@@ -168,7 +168,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -182,9 +182,9 @@
       "status": "empty",
       "itemCount": 0,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -200,7 +200,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -216,7 +216,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -227,14 +227,14 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-market",
       "timelinessTier": "daily",
-      "status": "failed",
+      "status": "empty",
       "itemCount": 0,
-      "responseStatus": null,
-      "attempts": 2,
-      "error": "fetch failed",
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
       "lastSuccessAt": null,
-      "failureCount": 1
+      "failureCount": 0
     },
     {
       "id": "ndrc-news",
@@ -248,8 +248,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
-      "lastSuccessAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastSuccessAt": "2026-06-02T09:32:14.331Z",
       "failureCount": 0
     },
     {
@@ -264,8 +264,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
-      "lastSuccessAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastSuccessAt": "2026-06-02T09:32:14.331Z",
       "failureCount": 0
     },
     {
@@ -280,7 +280,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -292,18 +292,18 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 12,
+      "itemCount": 14,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:01:22.163Z",
-      "lastSuccessAt": "2026-06-02T09:01:22.163Z",
+      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastSuccessAt": "2026-06-02T09:32:14.331Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 36
+    "availableItems": 39
   },
   "items": [
     {
@@ -372,71 +372,39 @@
       "tags": []
     },
     {
-      "id": "tech-openai-news-f9f27c3f88",
-      "title": "Our views on AI policy and political advocacy",
-      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
-      "contentExcerpt": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "id": "news-item-a8ef470e2f",
+      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
       "score": 100,
       "duplicateCount": 0,
       "tags": [
-        "Global Affairs"
+        "official-agency",
+        "hourly"
       ]
     },
     {
-      "id": "tech-google-ai-blog-312495d49a",
-      "title": "How we used Gemini to build Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
-      "source": "Google AI Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T16:00:00.000Z",
-      "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
-      "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
-      "score": 93,
+      "id": "news-item-208d1e8eb6",
+      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
       "duplicateCount": 0,
       "tags": [
-        "Gemini models",
-        "Google Labs",
-        "Developer tools",
-        "AI"
-      ]
-    },
-    {
-      "id": "tech-openai-news-de25d7330f",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "tech-openai-news-d71c1c5476",
-      "title": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T10:00:00.000Z",
-      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Product"
+        "official-agency",
+        "hourly"
       ]
     },
     {
@@ -756,43 +724,87 @@
       "tags": []
     },
     {
-      "id": "news-nasa-breaking-news-9ddbc969a9",
-      "title": "Fire’s Footprint on Santa Rosa Island",
-      "url": "https://science.nasa.gov/earth/earth-observatory/fires-footprint-on-santa-rosa-island",
-      "source": "NASA Breaking News",
+      "id": "tech-openai-news-f9f27c3f88",
+      "title": "Our views on AI policy and political advocacy",
+      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+      "source": "OpenAI News",
       "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T04:01:00.000Z",
-      "summary": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands.",
-      "contentExcerpt": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands. On May 15, 2026, a fire was spotted from aircraft on the southeastern side of Santa Rosa Island, part of California’s Channel Islands National Park. The blaze spread over the next several days, ultimately burning 18,379 acres (7,438 hectares)—about one-third of the island. These images show the expansion of the fire’s burned area between May 16 (left)...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fire%E2%80%99s-footprint-on-santa-rosa-island/channelislandsfire_oli_20260524_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 86,
+      "category": "tech",
+      "publishedAt": "2026-06-01T17:00:00.000Z",
+      "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "contentExcerpt": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "score": 100,
       "duplicateCount": 0,
       "tags": [
-        "Earth Observatory",
-        "Landsat 8 / LDCM (Landsat Data Continuity Mission)",
-        "Landsat 9",
-        "Wildfires"
+        "Global Affairs"
       ]
     },
     {
-      "id": "news-nasa-breaking-news-581a957586",
-      "title": "NASA Invites Media to See Roman Space Telescope Arrive at Kennedy",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-see-roman-space-telescope-arrive-at-kennedy",
-      "source": "NASA Breaking News",
+      "id": "tech-openai-news-968c7d1345",
+      "title": "Codex is becoming a productivity tool for everyone",
+      "url": "https://openai.com/index/codex-for-knowledge-work",
+      "source": "OpenAI News",
       "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T21:22:52.000Z",
-      "summary": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media [&#8230;]",
-      "contentExcerpt": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media will be able to witness the arrival and unloading of the space telescope in its transport container at NASA Kennedy’s turn basin....",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/roman-option-3.jpg",
-      "score": 85,
+      "category": "tech",
+      "publishedAt": "2026-06-02T02:00:00.000Z",
+      "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "contentExcerpt": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
-        "Nancy Grace Roman Space Telescope",
-        "Goddard Space Flight Center",
-        "Kennedy Space Center",
-        "Science Mission Directorate"
+        "Global Affairs"
+      ]
+    },
+    {
+      "id": "tech-google-ai-blog-312495d49a",
+      "title": "How we used Gemini to build Google I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T16:00:00.000Z",
+      "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
+      "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Gemini models",
+        "Google Labs",
+        "Developer tools",
+        "AI"
+      ]
+    },
+    {
+      "id": "tech-openai-news-de25d7330f",
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ]
+    },
+    {
+      "id": "tech-openai-news-d71c1c5476",
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T10:00:00.000Z",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Product"
       ]
     }
   ]

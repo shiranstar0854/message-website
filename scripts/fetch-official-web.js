@@ -8,6 +8,7 @@ const HEALTH_PATH = path.join(ROOT_DIR, "src", "data", "source-health.json");
 const MAX_ITEMS_PER_SOURCE = 15;
 const MAX_ITEM_AGE_HOURS = 48;
 const MAX_ATTEMPTS = 2;
+const TRANSIENT_FAILURE_GRACE_RUNS = 2;
 
 function wait(delayMs) {
   return new Promise((resolve) => setTimeout(resolve, delayMs));
@@ -260,7 +261,18 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
     sources: results.map((result) => {
       const previous = previousById.get(result.sourceId) || {};
       const healthy = isUsableResult(result);
-      const status = healthy ? "healthy" : result.ok ? "empty" : "failed";
+      const failedAttempt = result.ok !== true;
+      const nextFailureCount = failedAttempt ? Number(previous.failureCount || 0) + 1 : 0;
+      const canKeepPreviousStatus = failedAttempt
+        && ["healthy", "empty"].includes(previous.status)
+        && nextFailureCount <= TRANSIENT_FAILURE_GRACE_RUNS;
+      const status = canKeepPreviousStatus
+        ? previous.status
+        : healthy
+          ? "healthy"
+          : result.ok
+            ? "empty"
+            : "failed";
       const failed = status === "failed";
       return {
         id: result.sourceId,
@@ -270,13 +282,20 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
         sourceAuthority: result.sourceAuthority || null,
         timelinessTier: result.timelinessTier || null,
         status,
-        itemCount: Number(result.itemCount || 0),
-        responseStatus: result.status || null,
+        itemCount: canKeepPreviousStatus ? Number(previous.itemCount || 0) : Number(result.itemCount || 0),
+        responseStatus: canKeepPreviousStatus ? previous.responseStatus || null : result.status || null,
         attempts: Number(result.attempts || 1),
-        error: result.error || null,
+        error: failed ? result.error || null : null,
         lastCheckedAt: result.fetchedAt,
         lastSuccessAt: healthy ? result.fetchedAt : previous.lastSuccessAt || null,
-        failureCount: failed ? Number(previous.failureCount || 0) + 1 : 0
+        failureCount: failedAttempt ? nextFailureCount : 0,
+        ...(canKeepPreviousStatus ? {
+          latestAttempt: {
+            ok: false,
+            error: result.error || null,
+            checkedAt: result.fetchedAt
+          }
+        } : {})
       };
     })
   };
