@@ -11,7 +11,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -25,12 +25,12 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "ok": false,
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -45,7 +45,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -62,7 +62,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -77,7 +77,7 @@
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
     "ok": false,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "error": "fetch failed",
     "items": [],
@@ -95,10 +95,22 @@
     "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "国家发展改革委与塞尔维亚有关部门签署合作文件",
+        "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405632.html",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      },
       {
         "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
         "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
@@ -126,7 +138,7 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -142,23 +154,10 @@
     "url": "http://www.stats.gov.cn/sj/zxfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
-    "items": [
-      {
-        "title": "2026年5月中国采购经理指数运行情况",
-        "link": "http://www.stats.gov.cn/sj/zxfb/202605/t20260531_1963824.html",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "daily",
-        "tags": [
-          "official-agency",
-          "daily"
-        ]
-      }
-    ],
+    "items": [],
     "stale": false
   },
   {
@@ -172,10 +171,58 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 15,
-    "fetchedAt": "2026-06-01T09:01:30.494Z",
+    "itemCount": 11,
+    "fetchedAt": "2026-06-02T00:01:16.744Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "创造属于我们这个时代的新文化——习近平文化思想引领文化传承发展开创新局面",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070850.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "科技赋能夏收夏种 助力粮食稳产丰收",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070836.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "我国推进儿童友好建设城乡全覆盖",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070835.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "谌贻琴在出席“六一”主题活动时勉励少年儿童：牢记习近平总书记嘱托 在新征程上跑好历史接力赛",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070816.htm",
+        "publishedAt": "2026-06-01T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "国务院任免国家工作人员（2026年6月1日）",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
@@ -252,102 +299,6 @@
         "title": "守护童心 筑梦未来——习近平总书记的深情寄望鼓舞新时代少年儿童成长成才",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070741.htm",
         "publishedAt": "2026-06-01T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "人工智能相关产品拉动外贸增长",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "制造业稳定运行 新动能加速扩张",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070734.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "5月份PMI数据出炉 我国经济总体产出保持扩张",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070730.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "国务院山西留神峪煤矿事故调查组公告",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070728.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "《习近平法治文选》第一卷英文版出版发行",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070725.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "习近平：前瞻布局和发展未来产业",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070720.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "习近平给中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员的回信",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070716.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "习近平回信勉励中共一大纪念馆、南湖革命纪念馆少先队红领巾讲解员：传承红色基因增长知识本领 在新征程上跑好历史接力赛 祝全国小朋友们“六一”国际儿童节快乐",
-        "link": "https://www.gov.cn/yaowen/liebiao/202605/content_7070715.htm",
-        "publishedAt": "2026-05-31T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",

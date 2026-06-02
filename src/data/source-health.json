@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T09:01:46.918Z",
+  "generatedAt": "2026-06-02T00:01:32.591Z",
   "sources": [
     {
       "id": "github-blog",
@@ -10,7 +10,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -18,26 +18,26 @@
       "id": "openai-news",
       "name": "OpenAI News",
       "category": "tech",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 2,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
       "failureCount": 0
     },
     {
       "id": "google-ai",
       "name": "Google AI Blog",
       "category": "tech",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 1,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
       "failureCount": 0
     },
     {
@@ -49,7 +49,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -62,7 +62,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
       "lastSuccessAt": "2026-05-31T04:02:10.336Z",
       "failureCount": 0
     },
@@ -75,7 +75,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -88,7 +88,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -96,13 +96,13 @@
       "id": "sec-press",
       "name": "U.S. SEC Press Releases",
       "category": "finance",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 1,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
       "failureCount": 0
     },
     {
@@ -114,7 +114,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -122,13 +122,13 @@
       "id": "nasa-breaking-news",
       "name": "NASA Breaking News",
       "category": "news",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 7,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
-      "lastSuccessAt": "2026-05-31T04:15:11.643Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
       "failureCount": 0
     },
     {
@@ -136,12 +136,12 @@
       "name": "UN News",
       "category": "news",
       "status": "healthy",
-      "itemCount": 3,
+      "itemCount": 7,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:16.102Z",
-      "lastSuccessAt": "2026-06-01T09:01:16.102Z",
+      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
       "failureCount": 0
     },
     {
@@ -156,7 +156,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -167,14 +167,14 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
+      "responseStatus": null,
       "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
       "lastSuccessAt": null,
-      "failureCount": 0
+      "failureCount": 1
     },
     {
       "id": "csrc-news",
@@ -188,7 +188,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -204,7 +204,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -220,7 +220,7 @@
       "responseStatus": null,
       "attempts": 1,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
       "lastSuccessAt": null,
       "failureCount": 1
     },
@@ -232,12 +232,12 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "status": "healthy",
-      "itemCount": 1,
+      "itemCount": 2,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
-      "lastSuccessAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastSuccessAt": "2026-06-02T00:01:16.744Z",
       "failureCount": 0
     },
     {
@@ -252,7 +252,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -263,13 +263,13 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "status": "healthy",
-      "itemCount": 1,
+      "status": "empty",
+      "itemCount": 0,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
-      "lastSuccessAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastSuccessAt": null,
       "failureCount": 0
     },
     {
@@ -280,12 +280,12 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 15,
+      "itemCount": 11,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-01T09:01:30.494Z",
-      "lastSuccessAt": "2026-06-01T09:01:30.494Z",
+      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastSuccessAt": "2026-06-02T00:01:16.744Z",
       "failureCount": 0
     }
   ]
