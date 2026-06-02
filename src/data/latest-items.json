@@ -1,8 +1,8 @@
 {
   "siteName": "Message Choose",
-  "generatedAt": "2026-06-02T03:41:49.319Z",
+  "generatedAt": "2026-06-02T09:01:46.653Z",
   "defaultLimit": 8,
-  "totalItems": 33,
+  "totalItems": 36,
   "channels": {
     "tech": {
       "id": "tech",
@@ -19,8 +19,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-01T17:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:16.419Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
@@ -40,8 +40,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-01T16:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:16.419Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
@@ -53,7 +53,7 @@
             "Developer tools",
             "AI"
           ],
-          "score": 94,
+          "score": 93,
           "duplicateCount": 0
         },
         {
@@ -65,8 +65,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-01T12:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:16.419Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
@@ -74,7 +74,7 @@
           "tags": [
             "Global Affairs"
           ],
-          "score": 94,
+          "score": 93,
           "duplicateCount": 0
         },
         {
@@ -86,8 +86,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-01T10:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:16.419Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
@@ -104,8 +104,30 @@
       "id": "finance",
       "label": "金融",
       "description": "央行、监管、市场结构、宏观数据与风险信号。",
-      "count": 3,
+      "count": 4,
       "items": [
+        {
+          "id": "finance-item-27284b737d",
+          "sourceId": "mof-news",
+          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
+          "source": "财政部财政新闻",
+          "sourceType": "webpage",
+          "category": "finance",
+          "publishedAt": "2026-06-02T00:00:00.000Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "daily",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
+          "tags": [
+            "official-agency",
+            "daily"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
         {
           "id": "finance-item-d864638b2e",
           "sourceId": "ndrc-news",
@@ -115,8 +137,8 @@
           "sourceType": "webpage",
           "category": "finance",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "daily",
           "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
@@ -137,8 +159,8 @@
           "sourceType": "webpage",
           "category": "finance",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "daily",
           "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
@@ -159,14 +181,14 @@
           "sourceType": "rss",
           "category": "finance",
           "publishedAt": "2026-06-01T16:39:44.000Z",
-          "fetchedAt": "2026-06-02T03:41:16.419Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
           "contentExcerpt": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
           "tags": [],
-          "score": 93,
+          "score": 92,
           "duplicateCount": 0
         }
       ]
@@ -175,7 +197,7 @@
       "id": "news",
       "label": "新闻",
       "description": "公共政策、国际事件、社会治理与重大突发消息。",
-      "count": 26,
+      "count": 28,
       "items": [
         {
           "id": "news-un-news-27877aac4c",
@@ -186,15 +208,40 @@
           "sourceType": "rss",
           "category": "news",
           "publishedAt": "2026-06-01T12:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:16.419Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
           "contentExcerpt": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UN-Photo-Kayoko-Gotoh.jpg/image770x420cropped.jpg",
           "tags": [],
-          "score": 98,
+          "score": 97,
+          "duplicateCount": 0
+        },
+        {
+          "id": "news-nasa-breaking-news-68bdbb5e73",
+          "sourceId": "nasa-breaking-news",
+          "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+          "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
+          "source": "NASA Breaking News",
+          "sourceType": "rss",
+          "category": "news",
+          "publishedAt": "2026-06-02T09:00:00.000Z",
+          "fetchedAt": "2026-06-02T09:01:12.373Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
+          "contentExcerpt": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent into a darkened bedroom and hop around just like the footage I had seen of Apollo astronauts.” Today, with more than 16 years at NASA’s Johnson Space Center under his belt, Wray is proud...",
+          "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/jsc2022e072191.jpg",
+          "tags": [
+            "Johnson Space Center",
+            "Artemis",
+            "General",
+            "People of Johnson"
+          ],
+          "score": 95,
           "duplicateCount": 0
         },
         {
@@ -206,8 +253,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -217,7 +264,7 @@
             "official-agency",
             "hourly"
           ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         },
         {
@@ -229,8 +276,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -240,7 +287,7 @@
             "official-agency",
             "hourly"
           ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         },
         {
@@ -252,8 +299,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -263,7 +310,7 @@
             "official-agency",
             "hourly"
           ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         },
         {
@@ -275,8 +322,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -286,7 +333,7 @@
             "official-agency",
             "hourly"
           ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         },
         {
@@ -298,8 +345,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -309,7 +356,7 @@
             "official-agency",
             "hourly"
           ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         },
         {
@@ -321,8 +368,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+          "fetchedAt": "2026-06-02T09:01:22.163Z",
+          "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -332,36 +379,35 @@
             "official-agency",
             "hourly"
           ],
-          "score": 96,
-          "duplicateCount": 0
-        },
-        {
-          "id": "news-item-9a63007ce5",
-          "sourceId": "govcn-yaowen",
-          "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T03:41:31.818Z",
-          "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "2025年，我国多式联运发展保持稳步增长态势。全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         }
       ]
     }
   },
   "items": [
+    {
+      "id": "finance-item-27284b737d",
+      "sourceId": "mof-news",
+      "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
+      "source": "财政部财政新闻",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
     {
       "id": "tech-openai-news-f9f27c3f88",
       "sourceId": "openai-news",
@@ -371,8 +417,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-01T17:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
@@ -392,8 +438,8 @@
       "sourceType": "webpage",
       "category": "finance",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
@@ -414,8 +460,8 @@
       "sourceType": "webpage",
       "category": "finance",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
@@ -436,15 +482,40 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
       "contentExcerpt": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UN-Photo-Kayoko-Gotoh.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 98,
+      "score": 97,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-nasa-breaking-news-68bdbb5e73",
+      "sourceId": "nasa-breaking-news",
+      "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T09:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
+      "contentExcerpt": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent into a darkened bedroom and hop around just like the footage I had seen of Apollo astronauts.” Today, with more than 16 years at NASA’s Johnson Space Center under his belt, Wray is proud...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/jsc2022e072191.jpg",
+      "tags": [
+        "Johnson Space Center",
+        "Artemis",
+        "General",
+        "People of Johnson"
+      ],
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -456,8 +527,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -467,7 +538,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -479,8 +550,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -490,7 +561,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -502,8 +573,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -513,7 +584,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -525,8 +596,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -536,7 +607,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -548,8 +619,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -559,7 +630,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -571,8 +642,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -582,7 +653,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -594,8 +665,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -605,7 +676,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -617,8 +688,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -628,7 +699,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -640,8 +711,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -651,7 +722,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -663,8 +734,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -674,7 +745,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -686,8 +757,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -697,7 +768,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -709,8 +780,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:31.818Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "fetchedAt": "2026-06-02T09:01:22.163Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:22.163Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -720,7 +791,7 @@
         "official-agency",
         "hourly"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -732,8 +803,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T23:45:59.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
@@ -743,53 +814,7 @@
         "Armstrong Flight Research Center",
         "Johnson Space Center"
       ],
-      "score": 94,
-      "duplicateCount": 0
-    },
-    {
-      "id": "tech-google-ai-blog-312495d49a",
-      "sourceId": "google-ai",
-      "title": "How we used Gemini to build Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
-      "source": "Google AI Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T16:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
-      "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
-      "tags": [
-        "Gemini models",
-        "Google Labs",
-        "Developer tools",
-        "AI"
-      ],
-      "score": 94,
-      "duplicateCount": 0
-    },
-    {
-      "id": "tech-openai-news-de25d7330f",
-      "sourceId": "openai-news",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "tags": [
-        "Global Affairs"
-      ],
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0
     },
     {
@@ -801,8 +826,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T18:29:50.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
@@ -810,6 +835,73 @@
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ed07-0027-56large.jpg",
       "tags": [
         "General"
+      ],
+      "score": 93,
+      "duplicateCount": 0
+    },
+    {
+      "id": "tech-google-ai-blog-312495d49a",
+      "sourceId": "google-ai",
+      "title": "How we used Gemini to build Google I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T16:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
+      "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
+      "tags": [
+        "Gemini models",
+        "Google Labs",
+        "Developer tools",
+        "AI"
+      ],
+      "score": 93,
+      "duplicateCount": 0
+    },
+    {
+      "id": "tech-openai-news-de25d7330f",
+      "sourceId": "openai-news",
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "tags": [
+        "Global Affairs"
+      ],
+      "score": 93,
+      "duplicateCount": 0
+    },
+    {
+      "id": "tech-openai-news-d71c1c5476",
+      "sourceId": "openai-news",
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T10:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "tags": [
+        "Product"
       ],
       "score": 93,
       "duplicateCount": 0
@@ -823,35 +915,14 @@
       "sourceType": "rss",
       "category": "finance",
       "publishedAt": "2026-06-01T16:39:44.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
       "contentExcerpt": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
       "tags": [],
-      "score": 93,
-      "duplicateCount": 0
-    },
-    {
-      "id": "tech-openai-news-d71c1c5476",
-      "sourceId": "openai-news",
-      "title": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T10:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "tags": [
-        "Product"
-      ],
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0
     },
     {
@@ -863,15 +934,15 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
       "contentExcerpt": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNHCR-Lebanon.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0
     },
     {
@@ -883,8 +954,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-05-31T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
@@ -892,6 +963,31 @@
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_Ukraine_Kharkov%203.jpg/image770x420cropped.jpg",
       "tags": [],
       "score": 89,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-nasa-breaking-news-9ddbc969a9",
+      "sourceId": "nasa-breaking-news",
+      "title": "Fire’s Footprint on Santa Rosa Island",
+      "url": "https://science.nasa.gov/earth/earth-observatory/fires-footprint-on-santa-rosa-island",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T04:01:00.000Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands.",
+      "contentExcerpt": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands. On May 15, 2026, a fire was spotted from aircraft on the southeastern side of Santa Rosa Island, part of California’s Channel Islands National Park. The blaze spread over the next several days, ultimately burning 18,379 acres (7,438 hectares)—about one-third of the island. These images show the expansion of the fire’s burned area between May 16 (left)...",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fire%E2%80%99s-footprint-on-santa-rosa-island/channelislandsfire_oli_20260524_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "tags": [
+        "Earth Observatory",
+        "Landsat 8 / LDCM (Landsat Data Continuity Mission)",
+        "Landsat 9",
+        "Wildfires"
+      ],
+      "score": 86,
       "duplicateCount": 0
     },
     {
@@ -903,8 +999,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T21:22:52.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media [&#8230;]",
@@ -916,7 +1012,7 @@
         "Kennedy Space Center",
         "Science Mission Directorate"
       ],
-      "score": 86,
+      "score": 85,
       "duplicateCount": 0
     },
     {
@@ -928,13 +1024,13 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T18:13:46.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view.",
-      "contentExcerpt": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view. Planets gather after sunset, the Moon passes in front of Venus, summer officially begins and deep sky treasures rise into view. That's What's Up for June. Early this month, look west shortly after sunset to see Venus and Jupiter. They are two of the brightest planets in our sky and around June 9th, they'll appear close together after sunset. This is called a planetary...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/psd/solar-system/skywatching/2026/june/55129740863_8d1388b2d2_o.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "contentExcerpt": "Skywatching Skywatching Home What’s Up Meteor Showers Eclipses Daily Moon Guide More Tips &#038; Guides Skywatching FAQ Night Sky Network Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view. Skywatching Highlights June 9: Venus and Jupiter conjunction June 11–15: Mercury joins Venus and Jupiter after sunset June 17: Moon passes in front of Venus &#038; close Moon and Venus pairing June 21: June solstice &#038; start of a...",
+      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar-system/skywatching/2026/june/june9.png?w=1920&#038;h=1080&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
       "tags": [
         "Skywatching",
         "Skywatching Tips",
@@ -952,18 +1048,18 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T14:30:17.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA&#8217;S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where stars are between one and three million years [&#8230;]",
-      "contentExcerpt": "This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA’S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where stars are between one and three million years old. Brick-orange dust clouds along the bottom edge illustrate the raw materials of this active stellar nursery. Westerlund 2 resides in a raucous stellar...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/55270825152-a1118117db-o.jpg",
+      "contentExcerpt": "X-ray: NASA/CXC/SAO/Sejong Univ./Hur et al; JWST: ESA/Webb, NASA & CSA, V. Almendros-Abad, M. Guarcello, K. Monsch, and the EWOCS team. Image Processing: NASA/CXC/SAO/L. Frattare and K. Arcand This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA&#8217;S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where s...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/55270825152-a1118117db-o.jpg?w=2014",
       "tags": [
         "Chandra X-Ray Observatory",
         "Star Clusters"
       ],
-      "score": 85,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -975,8 +1071,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:03:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level.&#160; Here are some opportunities [&#8230;]",
@@ -986,7 +1082,7 @@
         "Learning Resources",
         "Grades 9 - 12"
       ],
-      "score": 85,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -998,15 +1094,15 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Families in Gaza living on or near the so-called Yellow Line controlled by the Israeli military have told the UN they live in constant fear of being killed or injured.",
       "contentExcerpt": "Families in Gaza living on or near the so-called Yellow Line controlled by the Israeli military have told the UN they live in constant fear of being killed or injured.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_UNNews_Eid_In_Gaza_10.jpg/image560x340cropped.jpg",
       "tags": [],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     },
     {
@@ -1018,15 +1114,15 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Years after conflicts fade from the headlines, the weapons used to fight them often continue to circulate – crossing borders, fuelling crime and undermining an often-fragile peace. Now, ghost guns, 3D-printed firearms and increasingly sophisticated trafficking networks are creating new challenges for governments worldwide.",
       "contentExcerpt": "Years after conflicts fade from the headlines, the weapons used to fight them often continue to circulate – crossing borders, fuelling crime and undermining an often-fragile peace. Now, ghost guns, 3D-printed firearms and increasingly sophisticated trafficking networks are creating new challenges for governments worldwide.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-Wikipedia-MKII-Stingray.jpg/image560x340cropped.jpg",
       "tags": [],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     },
     {
@@ -1038,15 +1134,15 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "As hostilities escalate in Lebanon despite a recent ceasefire extension, the United Nations continues to push for peace and support displaced civilians by providing food, protection and other assistance.",
       "contentExcerpt": "As hostilities escalate in Lebanon despite a recent ceasefire extension, the United Nations continues to push for peace and support displaced civilians by providing food, protection and other assistance.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-04-2026-UNICEF-Lebanon-01.jpg/image560x340cropped.jpg",
       "tags": [],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     },
     {
@@ -1058,15 +1154,15 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Four nurses who fell ill with Ebola&nbsp;in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that sparked an international health alert.&nbsp;",
       "contentExcerpt": "Four nurses who fell ill with Ebola&nbsp;in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that sparked an international health alert.&nbsp;",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/28-05-2026-WHO-DR-Congo-ebola-05.jpg/image560x340cropped.jpg",
       "tags": [],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     },
     {
@@ -1078,8 +1174,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-01T04:01:00.000Z",
-      "fetchedAt": "2026-06-02T03:41:16.419Z",
-      "sourceLastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "fetchedAt": "2026-06-02T09:01:12.373Z",
+      "sourceLastCheckedAt": "2026-06-02T09:01:12.373Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Satellites observed striking upper-atmosphere phenomena generated by an intensifying tropical cyclone.",
@@ -1092,7 +1188,7 @@
         "Hurricanes & Typhoons",
         "Visible Infrared Imaging Radiometer Suite (VIIRS)"
       ],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     }
   ]
