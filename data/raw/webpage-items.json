@@ -11,7 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -28,7 +31,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -45,7 +51,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -62,7 +71,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -79,7 +91,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -96,7 +111,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 2,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [
       {
@@ -138,7 +156,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [
       {
@@ -168,7 +189,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -184,13 +208,28 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 14,
-    "fetchedAt": "2026-06-02T09:32:14.331Z",
+    "itemCount": 15,
+    "fetchedAt": "2026-06-02T09:39:57.215Z",
+    "cacheTtlHours": 48,
+    "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+    "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
     "attempts": 1,
     "items": [
       {
         "title": "国务院印发《加快农业农村现代化“十五五”规划》",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
+        "publishedAt": "2026-06-02T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "中央财政下达育儿补贴补助资金999亿元",
+        "link": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
         "publishedAt": "2026-06-02T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",

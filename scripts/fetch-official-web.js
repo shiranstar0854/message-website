@@ -59,6 +59,12 @@ function sourceMaxAgeHours(source = {}) {
   return Math.min(configured, MAX_ITEM_AGE_HOURS);
 }
 
+function cacheExpiresAt(fetchedAt, maxAgeHours) {
+  const time = new Date(fetchedAt).getTime();
+  if (Number.isNaN(time)) return null;
+  return new Date(time + sourceMaxAgeHours({ maxAgeHours }) * 60 * 60 * 1000).toISOString();
+}
+
 function limitNewestItems(items, source = {}, fallbackDate = new Date().toISOString()) {
   const nowTime = new Date(fallbackDate).getTime();
   const maxAgeMs = sourceMaxAgeHours(source) * 60 * 60 * 1000;
@@ -159,6 +165,7 @@ function extractHtmlItems(source, html, fetchedAt) {
 
 async function fetchWebpageSource(source, fetchedAt) {
   let lastResult = null;
+  const cacheTtlHours = sourceMaxAgeHours(source);
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
     try {
@@ -191,6 +198,9 @@ async function fetchWebpageSource(source, fetchedAt) {
         ok: response.ok,
         itemCount: items.length,
         fetchedAt,
+        cacheTtlHours,
+        cacheStartedAt: fetchedAt,
+        cacheExpiresAt: cacheExpiresAt(fetchedAt, cacheTtlHours),
         attempts: attempt,
         items
       };
@@ -206,6 +216,9 @@ async function fetchWebpageSource(source, fetchedAt) {
         url: source.url,
         ok: false,
         fetchedAt,
+        cacheTtlHours,
+        cacheStartedAt: fetchedAt,
+        cacheExpiresAt: cacheExpiresAt(fetchedAt, cacheTtlHours),
         attempts: attempt,
         error: error.message
       };
@@ -288,6 +301,15 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
         error: failed ? result.error || null : null,
         lastCheckedAt: result.fetchedAt,
         lastSuccessAt: healthy ? result.fetchedAt : previous.lastSuccessAt || null,
+        cacheTtlHours: canKeepPreviousStatus
+          ? Number(previous.cacheTtlHours || result.cacheTtlHours || MAX_ITEM_AGE_HOURS)
+          : Number(result.cacheTtlHours || previous.cacheTtlHours || MAX_ITEM_AGE_HOURS),
+        cacheStartedAt: canKeepPreviousStatus
+          ? previous.cacheStartedAt || previous.lastCheckedAt || null
+          : result.cacheStartedAt || result.fetchedAt || null,
+        cacheExpiresAt: canKeepPreviousStatus
+          ? previous.cacheExpiresAt || null
+          : result.cacheExpiresAt || null,
         failureCount: failedAttempt ? nextFailureCount : 0,
         ...(canKeepPreviousStatus ? {
           latestAttempt: {

@@ -16,6 +16,9 @@ test("retains previous usable RSS items when the latest source request fails", (
     url: "https://feed.test/rss",
     ok: false,
     fetchedAt: "2026-05-26T02:00:00.000Z",
+    cacheTtlHours: 24,
+    cacheStartedAt: "2026-05-26T02:00:00.000Z",
+    cacheExpiresAt: "2026-05-27T02:00:00.000Z",
     error: "timeout"
   };
   const previous = [{
@@ -44,6 +47,8 @@ test("retains previous usable RSS items when the latest source request fails", (
   assert.equal(health.sources[0].failureCount, 3);
   assert.equal(health.sources[0].error, "timeout");
   assert.equal(health.sources[0].lastSuccessAt, "2026-05-25T02:00:00.000Z");
+  assert.equal(health.sources[0].cacheTtlHours, 24);
+  assert.equal(health.sources[0].cacheExpiresAt, "2026-05-27T02:00:00.000Z");
 });
 
 test("does not reuse RSS fallback when latest request succeeds with no fresh items", () => {
@@ -90,7 +95,10 @@ test("builds source audit metrics and marks fallback data", () => {
         status: "failed",
         failureCount: 1,
         lastCheckedAt: "2026-05-26T02:00:00.000Z",
-        lastSuccessAt: "2026-05-25T02:00:00.000Z"
+        lastSuccessAt: "2026-05-25T02:00:00.000Z",
+        cacheTtlHours: 48,
+        cacheStartedAt: "2026-05-26T02:00:00.000Z",
+        cacheExpiresAt: "2026-05-28T02:00:00.000Z"
       }]
     },
     rawRecords: [{ sourceId: "source-a", itemCount: 2, stale: true }],
@@ -113,6 +121,8 @@ test("builds source audit metrics and marks fallback data", () => {
   assert.equal(audit.sources[0].usedFallback, true);
   assert.equal(audit.sources[0].filteredOutItems, 1);
   assert.equal(audit.sources[0].newestPublishedAt, "2026-05-25T02:00:00.000Z");
+  assert.equal(audit.sources[0].cacheTtlHours, 48);
+  assert.equal(audit.sources[0].cacheExpiresAt, "2026-05-28T02:00:00.000Z");
   assert.equal(audit.sources[0].enrichmentAttempted, 1);
   assert.equal(audit.sources[0].enrichmentExcerptCount, 1);
 });

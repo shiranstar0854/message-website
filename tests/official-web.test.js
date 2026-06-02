@@ -122,12 +122,15 @@ test("webpage source retries transient fetch failures before marking failed", as
       type: "webpage",
       category: "finance",
       url: "https://www.szse.cn/aboutus/trends/news/index.html",
+      maxAgeHours: 6,
       includeUrlPattern: "/aboutus/trends/news/t20\\d{6}_\\d+\\.html"
-    }, "2026-05-30T12:00:00.000Z");
+    }, "2026-05-30T04:00:00.000Z");
 
     assert.equal(calls, 2);
     assert.equal(result.ok, true);
     assert.equal(result.attempts, 2);
+    assert.equal(result.cacheTtlHours, 6);
+    assert.equal(result.cacheExpiresAt, "2026-05-30T10:00:00.000Z");
     assert.equal(result.itemCount, 1);
     assert.equal(result.items[0].title, "Official market update after retry");
   } finally {
@@ -192,7 +195,10 @@ test("web source health keeps previous empty status through transient failures",
       itemCount: 0,
       responseStatus: 200,
       failureCount: 0,
-      lastCheckedAt: "2026-06-02T08:30:00.000Z"
+      lastCheckedAt: "2026-06-02T08:30:00.000Z",
+      cacheTtlHours: 48,
+      cacheStartedAt: "2026-06-02T08:30:00.000Z",
+      cacheExpiresAt: "2026-06-04T08:30:00.000Z"
     }]
   };
 
@@ -202,6 +208,9 @@ test("web source health keeps previous empty status through transient failures",
   assert.equal(health.sources[0].responseStatus, 200);
   assert.equal(health.sources[0].failureCount, 1);
   assert.equal(health.sources[0].error, null);
+  assert.equal(health.sources[0].cacheTtlHours, 48);
+  assert.equal(health.sources[0].cacheStartedAt, "2026-06-02T08:30:00.000Z");
+  assert.equal(health.sources[0].cacheExpiresAt, "2026-06-04T08:30:00.000Z");
   assert.equal(health.sources[0].latestAttempt.error, "fetch failed");
 });
 

@@ -31,6 +31,12 @@ function sourceMaxAgeHours(source = {}) {
   return Math.min(configured, MAX_ITEM_AGE_HOURS);
 }
 
+function cacheExpiresAt(fetchedAt, maxAgeHours) {
+  const time = new Date(fetchedAt).getTime();
+  if (Number.isNaN(time)) return null;
+  return new Date(time + sourceMaxAgeHours({ maxAgeHours }) * 60 * 60 * 1000).toISOString();
+}
+
 function limitNewestItems(items, source = {}, fallbackDate = new Date().toISOString()) {
   const nowTime = new Date(fallbackDate).getTime();
   const maxAgeMs = sourceMaxAgeHours(source) * 60 * 60 * 1000;
@@ -45,6 +51,7 @@ function limitNewestItems(items, source = {}, fallbackDate = new Date().toISOStr
 
 async function fetchRssSource(source, fetchedAt) {
   let lastResult = null;
+  const cacheTtlHours = sourceMaxAgeHours(source);
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
     try {
@@ -67,6 +74,9 @@ async function fetchRssSource(source, fetchedAt) {
         ok: response.ok,
         itemCount: items.length,
         fetchedAt,
+        cacheTtlHours,
+        cacheStartedAt: fetchedAt,
+        cacheExpiresAt: cacheExpiresAt(fetchedAt, cacheTtlHours),
         attempts: attempt,
         items
       };
@@ -80,6 +90,9 @@ async function fetchRssSource(source, fetchedAt) {
         url: source.url,
         ok: false,
         fetchedAt,
+        cacheTtlHours,
+        cacheStartedAt: fetchedAt,
+        cacheExpiresAt: cacheExpiresAt(fetchedAt, cacheTtlHours),
         attempts: attempt,
         error: error.message
       };
@@ -147,6 +160,9 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
         error: result.error || null,
         lastCheckedAt: result.fetchedAt,
         lastSuccessAt: healthy ? result.fetchedAt : previous.lastSuccessAt || null,
+        cacheTtlHours: Number(result.cacheTtlHours || previous.cacheTtlHours || MAX_ITEM_AGE_HOURS),
+        cacheStartedAt: result.cacheStartedAt || result.fetchedAt || null,
+        cacheExpiresAt: result.cacheExpiresAt || null,
         failureCount: failed ? Number(previous.failureCount || 0) + 1 : 0
       };
     })

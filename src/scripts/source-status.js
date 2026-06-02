@@ -32,6 +32,15 @@
         : "时间未知";
     }
 
+    function formatCacheWindow(source) {
+      const hours = Number(source.cacheTtlHours || 0);
+      if (!hours && !source.cacheExpiresAt) return "";
+      const duration = hours ? `\u7f13\u5b58 ${hours} \u5c0f\u65f6` : "\u7f13\u5b58\u65f6\u95f4\u672a\u77e5";
+      return source.cacheExpiresAt
+        ? `${duration}\uff0c\u5230\u671f ${formatDate(source.cacheExpiresAt)}`
+        : duration;
+    }
+
     container.innerHTML = `
       <div class="source-list">
         ${sources.map((source) => `
@@ -44,6 +53,7 @@
               ${source.timelinessTier ? `<span>${escapeHtml(source.timelinessTier)}</span>` : ""}
               <span>最近检查 ${escapeHtml(formatDate(source.lastCheckedAt))}</span>
               <span>最近成功 ${escapeHtml(formatDate(source.lastSuccessAt))}</span>
+              ${formatCacheWindow(source) ? `<span>${escapeHtml(formatCacheWindow(source))}</span>` : ""}
               ${Number(source.failureCount || 0) > 0 ? `<span>失败 ${Number(source.failureCount || 0)}</span>` : ""}
               ${Number(source.attempts || 1) > 1 ? `<span>尝试 ${Number(source.attempts)} 次</span>` : ""}
             </div>

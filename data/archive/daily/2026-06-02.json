@@ -1,14 +1,14 @@
 {
   "date": "2026-06-02",
-  "generatedAt": "2026-06-02T09:32:34.212Z",
+  "generatedAt": "2026-06-02T09:40:22.380Z",
   "totals": {
     "sources": 20,
     "healthySources": 8,
-    "rawItems": 39,
-    "normalizedItems": 39,
-    "filteredItems": 39,
-    "dedupedItems": 39,
-    "scoredItems": 39,
+    "rawItems": 40,
+    "normalizedItems": 40,
+    "filteredItems": 40,
+    "dedupedItems": 40,
+    "scoredItems": 40,
     "enrichmentAttempted": 24,
     "enrichmentFailed": 0
   },
@@ -22,8 +22,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -35,8 +38,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
-      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
+      "lastSuccessAt": "2026-06-02T09:39:39.775Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -48,8 +54,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
-      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
+      "lastSuccessAt": "2026-06-02T09:39:39.775Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -61,8 +70,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -74,8 +86,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
       "lastSuccessAt": "2026-05-31T04:02:10.336Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -87,8 +102,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -100,8 +118,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -113,8 +134,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
-      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
+      "lastSuccessAt": "2026-06-02T09:39:39.775Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -126,8 +150,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -139,8 +166,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
-      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
+      "lastSuccessAt": "2026-06-02T09:39:39.775Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -152,8 +182,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:31:51.256Z",
-      "lastSuccessAt": "2026-06-02T09:31:51.256Z",
+      "lastCheckedAt": "2026-06-02T09:39:39.775Z",
+      "lastSuccessAt": "2026-06-02T09:39:39.775Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:39.775Z",
+      "cacheExpiresAt": "2026-06-04T09:39:39.775Z",
       "failureCount": 0
     },
     {
@@ -168,8 +201,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
       "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -184,8 +220,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
       "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -200,8 +239,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
       "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -216,8 +258,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
       "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -232,8 +277,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
       "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -248,8 +296,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
-      "lastSuccessAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
+      "lastSuccessAt": "2026-06-02T09:39:57.215Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -264,8 +315,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
-      "lastSuccessAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
+      "lastSuccessAt": "2026-06-02T09:39:57.215Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -280,8 +334,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
       "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     },
     {
@@ -292,18 +349,21 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 14,
+      "itemCount": 15,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T09:32:14.331Z",
-      "lastSuccessAt": "2026-06-02T09:32:14.331Z",
+      "lastCheckedAt": "2026-06-02T09:39:57.215Z",
+      "lastSuccessAt": "2026-06-02T09:39:57.215Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-02T09:39:57.215Z",
+      "cacheExpiresAt": "2026-06-04T09:39:57.215Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 39
+    "availableItems": 40
   },
   "items": [
     {
@@ -381,6 +441,24 @@
       "publishedAt": "2026-06-02T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-e9f5e3569b",
+      "title": "中央财政下达育儿补贴补助资金999亿元",
+      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "score": 100,
       "duplicateCount": 0,
@@ -704,21 +782,6 @@
       "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
       "contentExcerpt": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNHCR-Lebanon.jpg/image770x420cropped.jpg",
-      "score": 89,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-un-news-1b4c7504f9",
-      "title": "Under fire, Kharkiv is already building for a peaceful tomorrow",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167611",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-05-31T12:00:00.000Z",
-      "summary": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
-      "contentExcerpt": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_Ukraine_Kharkov%203.jpg/image770x420cropped.jpg",
       "score": 89,
       "duplicateCount": 0,
       "tags": []
