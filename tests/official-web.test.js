@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 
 const {
   extractHtmlItems,
+  fetchWebpageSource,
   mapJsonItems,
   limitNewestItems,
   buildSourceHealth,
@@ -93,6 +94,45 @@ test("extracts official html and inline-script list items without navigation lin
     "深交所与投服中心签署新一轮合作备忘录"
   ]);
   assert.equal(items[0].publishedAt, "2026-05-29T00:00:00.000Z");
+});
+
+test("webpage source retries transient fetch failures before marking failed", async () => {
+  const originalFetch = global.fetch;
+  let calls = 0;
+  global.fetch = async () => {
+    calls += 1;
+    if (calls === 1) throw new Error("fetch failed");
+    return {
+      ok: true,
+      status: 200,
+      headers: { get: () => "text/html" },
+      text: async () => `
+        <script>
+          var curHref = './t20260530_620831.html';
+          var curTitle ='Official market update after retry';
+        </script>
+      `
+    };
+  };
+
+  try {
+    const result = await fetchWebpageSource({
+      id: "szse-news",
+      name: "SZSE News",
+      type: "webpage",
+      category: "finance",
+      url: "https://www.szse.cn/aboutus/trends/news/index.html",
+      includeUrlPattern: "/aboutus/trends/news/t20\\d{6}_\\d+\\.html"
+    }, "2026-05-30T12:00:00.000Z");
+
+    assert.equal(calls, 2);
+    assert.equal(result.ok, true);
+    assert.equal(result.attempts, 2);
+    assert.equal(result.itemCount, 1);
+    assert.equal(result.items[0].title, "Official market update after retry");
+  } finally {
+    global.fetch = originalFetch;
+  }
 });
 
 test("web source health merges with existing rss health and preserves fallback data", () => {

@@ -7,6 +7,11 @@ const RAW_PATH = path.join(ROOT_DIR, "data", "raw", "webpage-items.json");
 const HEALTH_PATH = path.join(ROOT_DIR, "src", "data", "source-health.json");
 const MAX_ITEMS_PER_SOURCE = 15;
 const MAX_ITEM_AGE_HOURS = 48;
+const MAX_ATTEMPTS = 2;
+
+function wait(delayMs) {
+  return new Promise((resolve) => setTimeout(resolve, delayMs));
+}
 
 function normalizeText(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
@@ -152,54 +157,66 @@ function extractHtmlItems(source, html, fetchedAt) {
 }
 
 async function fetchWebpageSource(source, fetchedAt) {
-  try {
-    const response = await fetch(source.url, {
-      headers: {
-        "user-agent": "message-choose/0.1 (+https://github.com)",
-        ...(source.headers || {})
-      },
-      signal: AbortSignal.timeout(Number(source.timeoutMs || 30000))
-    });
-    const contentType = response.headers.get("content-type") || "";
-    const body = contentType.includes("json") || source.adapter === "json-list"
-      ? await response.json()
-      : await response.text();
-    const items = typeof body === "string"
-      ? extractHtmlItems(source, body, fetchedAt)
-      : mapJsonItems(source, body, fetchedAt);
+  let lastResult = null;
 
-    return {
-      sourceId: source.id,
-      sourceName: source.name,
-      sourceType: "webpage",
-      sourceAuthority: source.sourceAuthority,
-      timelinessTier: source.timelinessTier,
-      category: source.category,
-      credibility: source.credibility,
-      url: source.url,
-      status: response.status,
-      ok: response.ok,
-      itemCount: items.length,
-      fetchedAt,
-      attempts: 1,
-      items
-    };
-  } catch (error) {
-    return {
-      sourceId: source.id,
-      sourceName: source.name,
-      sourceType: "webpage",
-      sourceAuthority: source.sourceAuthority,
-      timelinessTier: source.timelinessTier,
-      category: source.category,
-      credibility: source.credibility,
-      url: source.url,
-      ok: false,
-      fetchedAt,
-      attempts: 1,
-      error: error.message
-    };
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    try {
+      const response = await fetch(source.url, {
+        headers: {
+          "user-agent": "message-choose/0.1 (+https://github.com)",
+          accept: "text/html,application/json,application/xhtml+xml,*/*",
+          ...(source.headers || {})
+        },
+        signal: AbortSignal.timeout(Number(source.timeoutMs || 30000))
+      });
+      const contentType = response.headers.get("content-type") || "";
+      const body = contentType.includes("json") || source.adapter === "json-list"
+        ? await response.json()
+        : await response.text();
+      const items = typeof body === "string"
+        ? extractHtmlItems(source, body, fetchedAt)
+        : mapJsonItems(source, body, fetchedAt);
+
+      lastResult = {
+        sourceId: source.id,
+        sourceName: source.name,
+        sourceType: "webpage",
+        sourceAuthority: source.sourceAuthority,
+        timelinessTier: source.timelinessTier,
+        category: source.category,
+        credibility: source.credibility,
+        url: source.url,
+        status: response.status,
+        ok: response.ok,
+        itemCount: items.length,
+        fetchedAt,
+        attempts: attempt,
+        items
+      };
+    } catch (error) {
+      lastResult = {
+        sourceId: source.id,
+        sourceName: source.name,
+        sourceType: "webpage",
+        sourceAuthority: source.sourceAuthority,
+        timelinessTier: source.timelinessTier,
+        category: source.category,
+        credibility: source.credibility,
+        url: source.url,
+        ok: false,
+        fetchedAt,
+        attempts: attempt,
+        error: error.message
+      };
+    }
+
+    if (lastResult.ok === true || attempt === MAX_ATTEMPTS) {
+      return lastResult;
+    }
+    await wait(1000);
   }
+
+  return lastResult;
 }
 
 function isUsableResult(result) {

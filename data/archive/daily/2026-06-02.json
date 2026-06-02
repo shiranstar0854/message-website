@@ -1,14 +1,14 @@
 {
   "date": "2026-06-02",
-  "generatedAt": "2026-06-02T00:01:34.565Z",
+  "generatedAt": "2026-06-02T03:41:49.319Z",
   "totals": {
     "sources": 20,
     "healthySources": 7,
-    "rawItems": 31,
-    "normalizedItems": 31,
-    "filteredItems": 31,
-    "dedupedItems": 31,
-    "scoredItems": 31,
+    "rawItems": 33,
+    "normalizedItems": 33,
+    "filteredItems": 33,
+    "dedupedItems": 33,
+    "scoredItems": 33,
     "enrichmentAttempted": 23,
     "enrichmentFailed": 0
   },
@@ -22,7 +22,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -31,12 +31,12 @@
       "name": "OpenAI News",
       "category": "tech",
       "status": "healthy",
-      "itemCount": 2,
+      "itemCount": 3,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
-      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "lastSuccessAt": "2026-06-02T03:41:16.419Z",
       "failureCount": 0
     },
     {
@@ -48,8 +48,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
-      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "lastSuccessAt": "2026-06-02T03:41:16.419Z",
       "failureCount": 0
     },
     {
@@ -61,7 +61,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -74,7 +74,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
       "lastSuccessAt": "2026-05-31T04:02:10.336Z",
       "failureCount": 0
     },
@@ -87,7 +87,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -100,7 +100,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -113,8 +113,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
-      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "lastSuccessAt": "2026-06-02T03:41:16.419Z",
       "failureCount": 0
     },
     {
@@ -126,7 +126,7 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "failureCount": 0
     },
@@ -139,8 +139,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
-      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "lastSuccessAt": "2026-06-02T03:41:16.419Z",
       "failureCount": 0
     },
     {
@@ -152,8 +152,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:07.977Z",
-      "lastSuccessAt": "2026-06-02T00:01:07.977Z",
+      "lastCheckedAt": "2026-06-02T03:41:16.419Z",
+      "lastSuccessAt": "2026-06-02T03:41:16.419Z",
       "failureCount": 0
     },
     {
@@ -168,7 +168,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -179,14 +179,14 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "status": "failed",
+      "status": "empty",
       "itemCount": 0,
-      "responseStatus": null,
+      "responseStatus": 200,
       "attempts": 1,
-      "error": "fetch failed",
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "error": null,
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
-      "failureCount": 1
+      "failureCount": 0
     },
     {
       "id": "csrc-news",
@@ -200,7 +200,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -216,7 +216,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -227,14 +227,14 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-market",
       "timelinessTier": "daily",
-      "status": "failed",
+      "status": "empty",
       "itemCount": 0,
-      "responseStatus": null,
+      "responseStatus": 200,
       "attempts": 1,
-      "error": "fetch failed",
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "error": null,
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
-      "failureCount": 1
+      "failureCount": 0
     },
     {
       "id": "ndrc-news",
@@ -248,8 +248,8 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
-      "lastSuccessAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "lastSuccessAt": "2026-06-02T03:41:31.818Z",
       "failureCount": 0
     },
     {
@@ -264,7 +264,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -280,7 +280,7 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
       "lastSuccessAt": null,
       "failureCount": 0
     },
@@ -292,20 +292,88 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 11,
+      "itemCount": 12,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-02T00:01:16.744Z",
-      "lastSuccessAt": "2026-06-02T00:01:16.744Z",
+      "lastCheckedAt": "2026-06-02T03:41:31.818Z",
+      "lastSuccessAt": "2026-06-02T03:41:31.818Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 31
+    "availableItems": 33
   },
   "items": [
+    {
+      "id": "tech-openai-news-f9f27c3f88",
+      "title": "Our views on AI policy and political advocacy",
+      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T17:00:00.000Z",
+      "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "contentExcerpt": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ]
+    },
+    {
+      "id": "tech-google-ai-blog-312495d49a",
+      "title": "How we used Gemini to build Google I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T16:00:00.000Z",
+      "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
+      "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "Gemini models",
+        "Google Labs",
+        "Developer tools",
+        "AI"
+      ]
+    },
+    {
+      "id": "tech-openai-news-de25d7330f",
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ]
+    },
+    {
+      "id": "tech-openai-news-d71c1c5476",
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-01T10:00:00.000Z",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Product"
+      ]
+    },
     {
       "id": "finance-item-d864638b2e",
       "title": "国家发展改革委与塞尔维亚有关部门签署合作文件",
@@ -316,7 +384,7 @@
       "publishedAt": "2026-06-01T00:00:00.000Z",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
       "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -333,7 +401,7 @@
       "publishedAt": "2026-06-01T00:00:00.000Z",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
       "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -368,6 +436,24 @@
       "score": 98,
       "duplicateCount": 0,
       "tags": []
+    },
+    {
+      "id": "news-item-36ef61976c",
+      "title": "王毅同巴西外长维埃拉举行中巴外长级全面战略对话",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070853.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央政治局委员、外交部长王毅1日在北京同巴西外长维埃拉举行第五次中巴外长级全面战略对话。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
     },
     {
       "id": "news-item-b916b1cb7d",
@@ -578,7 +664,7 @@
       "summary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
       "contentExcerpt": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen work. This contract has a maximum potential value of $8.4 million, which runs through Feb. 1, 2027. The contractor will...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/nasa-meatball-1.webp",
-      "score": 95,
+      "score": 94,
       "duplicateCount": 0,
       "tags": [
         "Armstrong Flight Research Center",
@@ -596,7 +682,7 @@
       "summary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
       "contentExcerpt": "Johnson Space Center Office of Communications NASA’s C-20A research aircraft takes off from the Edwards Air Force Base runway on an envelope-expansion flight test with the unmanned aerial vehicle synthetic aperture radar pod. Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13. During the mission, select maneuvers will be conducted at low altitudes over the Ho...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ed07-0027-56large.jpg",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "General"
@@ -628,7 +714,7 @@
       "summary": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
       "contentExcerpt": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_Ukraine_Kharkov%203.jpg/image770x420cropped.jpg",
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0,
       "tags": []
     },
@@ -663,7 +749,7 @@
       "summary": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view.",
       "contentExcerpt": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view. Planets gather after sunset, the Moon passes in front of Venus, summer officially begins and deep sky treasures rise into view. That's What's Up for June. Early this month, look west shortly after sunset to see Venus and Jupiter. They are two of the brightest planets in our sky and around June 9th, they'll appear close together after sunset. This is called a planetary...",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/psd/solar-system/skywatching/2026/june/55129740863_8d1388b2d2_o.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 86,
+      "score": 85,
       "duplicateCount": 0,
       "tags": [
         "Skywatching",
@@ -687,76 +773,6 @@
       "tags": [
         "Chandra X-Ray Observatory",
         "Star Clusters"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-2e9441b316",
-      "title": "Space Out This Summer with Variety of NASA STEM Activities",
-      "url": "https://www.nasa.gov/learning-resources/space-out-this-summer-with-variety-of-nasa-stem-activities",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T12:03:00.000Z",
-      "summary": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level.&#160; Here are some opportunities [&#8230;]",
-      "contentExcerpt": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level. Here are some opportunities to level up your skills with NASA STEM this summer. From Monday, June 1, through Sept. 30, students ages 13 to 18 are invited to flex their creativity in the online Stardance Chal...",
-      "imageUrl": "https://images-assets.nasa.gov/image/art002e012476/art002e012476~large.jpg",
-      "score": 85,
-      "duplicateCount": 0,
-      "tags": [
-        "Learning Resources",
-        "Grades 9 - 12"
-      ]
-    },
-    {
-      "id": "tech-google-ai-blog-312495d49a",
-      "title": "How we used Gemini to build Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
-      "source": "Google AI Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T16:00:00.000Z",
-      "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
-      "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Gemini models",
-        "Google Labs",
-        "Developer tools",
-        "AI"
-      ]
-    },
-    {
-      "id": "tech-openai-news-de25d7330f",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "tech-openai-news-d71c1c5476",
-      "title": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-01T10:00:00.000Z",
-      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Product"
       ]
     }
   ]
