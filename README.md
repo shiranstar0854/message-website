@@ -6,7 +6,7 @@
 2. RSS、官方网页与官方 API 来源配置、抓取脚本、统一字段标准化。
 3. 过滤、去重、评分和 `src/data/latest-items.json` 生成流程。
 4. GitHub Actions 每日更新、来源审计和每日归档。
-5. 每日摘要字段、首页摘要展示、来源透明度、每周复盘数据和 Cloudflare 远端周报触发。
+5. 每日摘要字段、首页核心热点、来源透明度、每周复盘数据和 Cloudflare 远端周报触发。
 
 阶段 5 当前使用无需外部密钥的确定性摘要基线，后续可替换为 AI 大模型生成；阶段 6 的反馈优化暂未实现。
 
@@ -60,7 +60,7 @@ npm.cmd run generate:latest
 
 评分后会增加 `score`、`scoreBreakdown`、`duplicateCount` 和 `duplicates`。
 
-前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`fetchedAt`、`sourceLastCheckedAt`、`sourceAuthority`、`timelinessTier`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`tags`、`score` 和 `duplicateCount` 等字段。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
+前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`fetchedAt`、`sourceLastCheckedAt`、`sourceAuthority`、`timelinessTier`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`sourceLanguage`、`summaryLanguage`、`tags`、`keywords`、`score` 和 `duplicateCount` 等字段。英文来源条目会进入 AI 中文摘要队列，前端优先展示中文 `aiSummary`，并保留英文原文标题链接。首页会基于评分和发布时间生成“今日核心热点 Top 5”；关键词搜索会匹配标题、摘要、中文摘要、标签和 `keywords`，并在有搜索词时优先按相关性排序。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
 
 ## DeepSeek 摘要页面
 

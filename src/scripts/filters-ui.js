@@ -11,6 +11,32 @@
     return String(value || "").toLowerCase().trim();
   }
 
+  function tokenizeKeyword(value) {
+    return normalize(value).split(/\s+/).filter(Boolean);
+  }
+
+  function searchableText(item) {
+    return {
+      title: normalize(item.title),
+      summary: normalize(`${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""}`),
+      source: normalize(item.source),
+      labels: normalize(`${(item.tags || []).join(" ")} ${(item.keywords || []).join(" ")}`)
+    };
+  }
+
+  function getSearchScore(item, terms) {
+    if (!terms.length) return 0;
+    const text = searchableText(item);
+    return terms.reduce((score, term) => {
+      let next = score;
+      if (text.title.includes(term)) next += 5;
+      if (text.labels.includes(term)) next += 4;
+      if (text.summary.includes(term)) next += 2;
+      if (text.source.includes(term)) next += 1;
+      return next;
+    }, 0);
+  }
+
   function uniqueSources(items) {
     return [...new Set(items.map((item) => item.source).filter(Boolean))].sort((left, right) => left.localeCompare(right));
   }
@@ -28,16 +54,25 @@
     });
   }
 
+  function sortSearchResults(items, terms) {
+    if (!terms.length) return null;
+    return [...items].sort((left, right) => getSearchScore(right, terms) - getSearchScore(left, terms)
+      || Number(right.score || 0) - Number(left.score || 0)
+      || new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0));
+  }
+
   function applyFilters(items, state) {
-    const keyword = normalize(state.keyword);
-    return sortItems(items.filter((item) => {
-      const text = normalize(`${item.title} ${item.summary} ${item.contentExcerpt || ""} ${(item.tags || []).join(" ")}`);
+    const terms = tokenizeKeyword(state.keyword);
+    const filteredItems = items.filter((item) => {
+      const text = searchableText(item);
+      const combinedText = `${text.title} ${text.summary} ${text.source} ${text.labels}`;
       const channelMatch = state.channel === "all" || item.category === state.channel;
       const sourceMatch = state.source === "all" || item.source === state.source;
-      const keywordMatch = !keyword || text.includes(keyword);
+      const keywordMatch = !terms.length || terms.every((term) => combinedText.includes(term));
       const scoreMatch = Number(item.score || 0) >= Number(state.minScore || 0);
       return channelMatch && sourceMatch && keywordMatch && scoreMatch;
-    }), state.sort);
+    });
+    return sortSearchResults(filteredItems, terms) || sortItems(filteredItems, state.sort);
   }
 
   function getFilterResult(items, state) {
@@ -78,57 +113,61 @@
     const clearButton = document.getElementById("clear-filters");
     const channels = [{ id: "all", label: "全部" }, ...(config.channels || [])];
 
-    channelFilter.innerHTML = channels.map((channel) => `
-      <button class="segment-button" type="button" data-channel="${channel.id}" aria-pressed="${channel.id === state.channel}">
-        ${channel.label}
-      </button>
-    `).join("");
+    if (channelFilter) {
+      channelFilter.innerHTML = channels.map((channel) => `
+        <button class="segment-button" type="button" data-channel="${channel.id}" aria-pressed="${channel.id === state.channel}">
+          ${channel.label}
+        </button>
+      `).join("");
+    }
 
-    sourceFilter.innerHTML = [
-      '<option value="all">全部来源</option>',
-      ...uniqueSources(data.items || []).map((source) => `<option value="${source}">${source}</option>`)
-    ].join("");
+    if (sourceFilter) {
+      sourceFilter.innerHTML = [
+        '<option value="all">全部来源</option>',
+        ...uniqueSources(data.items || []).map((source) => `<option value="${source}">${source}</option>`)
+      ].join("");
+    }
 
-    scoreFilter.value = state.minScore;
-    scoreOutput.value = state.minScore;
-    sortFilter.value = state.sort;
+    if (scoreFilter) scoreFilter.value = state.minScore;
+    if (scoreOutput) scoreOutput.value = state.minScore;
+    if (sortFilter) sortFilter.value = state.sort;
 
     function emit() {
-      channelFilter.querySelectorAll(".segment-button").forEach((button) => {
+      channelFilter?.querySelectorAll(".segment-button").forEach((button) => {
         button.setAttribute("aria-pressed", String(button.dataset.channel === state.channel));
       });
-      scoreOutput.value = state.minScore;
+      if (scoreOutput) scoreOutput.value = state.minScore;
       onChange({ ...state });
     }
 
-    channelFilter.addEventListener("click", (event) => {
+    channelFilter?.addEventListener("click", (event) => {
       const button = event.target.closest("[data-channel]");
       if (!button) return;
       state.channel = button.dataset.channel;
       emit();
     });
 
-    keywordFilter.addEventListener("input", () => {
+    keywordFilter?.addEventListener("input", () => {
       state.keyword = keywordFilter.value;
       emit();
     });
 
-    sourceFilter.addEventListener("change", () => {
+    sourceFilter?.addEventListener("change", () => {
       state.source = sourceFilter.value;
       emit();
     });
 
-    scoreFilter.addEventListener("input", () => {
+    scoreFilter?.addEventListener("input", () => {
       state.minScore = Number(scoreFilter.value);
       emit();
     });
 
-    sortFilter.addEventListener("change", () => {
+    sortFilter?.addEventListener("change", () => {
       state.sort = sortFilter.value;
       emit();
     });
 
-    clearButton.addEventListener("click", () => {
+    clearButton?.addEventListener("click", () => {
       resetFilters();
     });
 
@@ -138,16 +177,16 @@
       state.source = "all";
       state.minScore = Number(config.scoreFloor || DEFAULT_STATE.minScore);
       state.sort = config.defaultSort || DEFAULT_STATE.sort;
-      keywordFilter.value = "";
-      sourceFilter.value = "all";
-      scoreFilter.value = state.minScore;
-      sortFilter.value = state.sort;
+      if (keywordFilter) keywordFilter.value = "";
+      if (sourceFilter) sourceFilter.value = "all";
+      if (scoreFilter) scoreFilter.value = state.minScore;
+      if (sortFilter) sortFilter.value = state.sort;
       emit();
     }
 
     function clearKeyword() {
       state.keyword = "";
-      keywordFilter.value = "";
+      if (keywordFilter) keywordFilter.value = "";
       emit();
     }
 
@@ -162,6 +201,7 @@
   window.MessageChooseFilters = {
     applyFilters,
     getFilterResult,
+    getSearchScore,
     initFilters
   };
 })();

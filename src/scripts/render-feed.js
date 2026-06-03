@@ -85,8 +85,9 @@
     }
 
     container.innerHTML = items.map((item) => {
-      const tags = [item.category, ...(item.tags || []).slice(0, 3)]
+      const tags = [item.category, ...(item.keywords || []).slice(0, 3), ...(item.tags || []).slice(0, 2)]
         .filter(Boolean)
+        .filter((tag, index, list) => list.indexOf(tag) === index)
         .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
         .join("");
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";

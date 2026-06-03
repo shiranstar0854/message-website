@@ -120,6 +120,47 @@
     `).join("");
   }
 
+  function channelLabel(data, category) {
+    return data.channels?.[category]?.label || category || "新闻";
+  }
+
+  function selectTopHotspots(items) {
+    return [...(items || [])]
+      .sort((left, right) => Number(right.score || 0) - Number(left.score || 0)
+        || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
+      .slice(0, 5);
+  }
+
+  function renderTopHotspots(data) {
+    const container = document.getElementById("top-hotspot-list");
+    if (!container) return;
+
+    const items = selectTopHotspots(data.items || []);
+    if (!items.length) return;
+
+    container.innerHTML = items.map((item, index) => {
+      const safeUrl = window.MessageChooseRender.safeExternalUrl(item.url);
+      const title = safeUrl
+        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+        : escapeHtml(item.title);
+      return `
+        <article class="top-hotspot-card${index === 0 ? " is-primary" : ""}">
+          <div class="top-hotspot-rank">Top ${index + 1}</div>
+          <div class="top-hotspot-body">
+            <h3>${title}</h3>
+            <p>${escapeHtml(item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。")}</p>
+            <div class="top-hotspot-meta">
+              <span>${escapeHtml(item.source)}</span>
+              <span>${escapeHtml(channelLabel(data, item.category))}</span>
+              <span>${escapeHtml(formatShortDate(item.publishedAt))}</span>
+              <strong>${Number(item.score || 0)}</strong>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join("");
+  }
+
   async function init() {
     const [config, data, health, daily] = await Promise.all([
       loadJson("public/site-config.json", FALLBACK_CONFIG),
@@ -173,6 +214,7 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
+    renderTopHotspots(data);
     renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);

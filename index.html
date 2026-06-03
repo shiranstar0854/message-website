@@ -42,87 +42,97 @@
             <span>保留发布时间与采集时间</span>
             <span>异常来源公开提示</span>
           </div>
+          <div class="search-engine-row home-search-row">
+            <label class="search-field" aria-label="关键词搜索">
+              <span>关键词搜索</span>
+              <input id="keyword-filter" type="search" placeholder="搜索标题、摘要、来源或关键词">
+            </label>
+          </div>
         </div>
-        <div class="overview-metrics" id="channel-summary" aria-label="频道概览"></div>
       </section>
 
-      <section class="daily-focus-band" aria-labelledby="daily-focus-title">
-        <div class="section-heading">
-          <div>
-            <h2 id="daily-focus-title">三类今日重点</h2>
-            <p id="daily-focus-meta">读取每日摘要中</p>
-          </div>
-          <a class="text-link" href="daily-summary.html">查看完整摘要</a>
-        </div>
+      <section class="daily-focus-band" aria-labelledby="top-hotspots-title">
+        <div class="overview-metrics channel-summary-strip" id="channel-summary" aria-label="频道概览"></div>
         <!-- STATIC_SUMMARY_START -->
           <div class="static-summary-meta">
-            信息流更新 06/02 17:40；活跃来源 8 个，异常来源 12 个。
+            信息流更新 06/03 17:18；活跃来源 8 个，异常来源 12 个。
           </div>
-          <div class="focus-grid" id="daily-focus-grid">
+          <div class="top-hotspots-head">
+            <div>
+              <h2 id="top-hotspots-title">今日核心热点 Top 5</h2>
+              <p>按评分和发布时间筛出最值得先看的信息。</p>
+            </div>
+          </div>
+          
+          <div class="top-hotspots" id="top-hotspot-list">
             
-              <article class="focus-card">
-                <strong>科技</strong>
-                <p>暂无科技动态数据</p>
+              <article class="top-hotspot-card is-primary">
+                <div class="top-hotspot-rank">Top 1</div>
+                <div class="top-hotspot-body">
+                  <h3><a href="https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm">中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度</a></h3>
+                  <p>财政部财政政策、国债、预算和财政运行新闻</p>
+                  <div class="top-hotspot-meta">
+                    <span>财政部财政新闻</span>
+                    <span>金融</span>
+                    <span>06/02 08:00</span>
+                    <strong>100</strong>
+                  </div>
+                </div>
               </article>
-              <article class="focus-card">
-                <strong>金融</strong>
-                <p>国家发改委发布《国务院关于对外投资的规定》答记者问，5月PMI数据公布</p>
+              <article class="top-hotspot-card">
+                <div class="top-hotspot-rank">Top 2</div>
+                <div class="top-hotspot-body">
+                  <h3><a href="https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm">国务院印发《加快农业农村现代化“十五五”规划》</a></h3>
+                  <p>日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。</p>
+                  <div class="top-hotspot-meta">
+                    <span>中国政府网要闻</span>
+                    <span>新闻</span>
+                    <span>06/02 08:00</span>
+                    <strong>100</strong>
+                  </div>
+                </div>
               </article>
-              <article class="focus-card">
-                <strong>新闻</strong>
-                <p>国务院任命袁古洁为香港中联办副主任；李强签署对外投资规定；多式联运增长超15%</p>
+              <article class="top-hotspot-card">
+                <div class="top-hotspot-rank">Top 3</div>
+                <div class="top-hotspot-body">
+                  <h3><a href="https://www.gov.cn/lianbo/202606/content_7070880.htm">中央财政下达育儿补贴补助资金999亿元</a></h3>
+                  <p>记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。</p>
+                  <div class="top-hotspot-meta">
+                    <span>中国政府网要闻</span>
+                    <span>新闻</span>
+                    <span>06/02 08:00</span>
+                    <strong>100</strong>
+                  </div>
+                </div>
               </article>
-          </div>
-          <div class="static-top-items">
-            <h3>最新高分条目</h3>
-            <ul>
-              
-                <li><a href="https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm">中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度</a><span>财政部财政新闻 · 100</span></li>
-                <li><a href="https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm">国务院印发《加快农业农村现代化“十五五”规划》</a><span>中国政府网要闻 · 100</span></li>
-                <li><a href="https://www.gov.cn/lianbo/202606/content_7070880.htm">中央财政下达育儿补贴补助资金999亿元</a><span>中国政府网要闻 · 100</span></li>
-                <li><a href="https://www.gov.cn/zhengce/content/202606/content_7070901.htm">国务院关于印发《加快农业农村现代化“十五五”规划》的通知</a><span>中国政府网要闻 · 100</span></li>
-                <li><a href="https://openai.com/index/our-views-on-ai-policy-and-political-advocacy">Our views on AI policy and political advocacy</a><span>OpenAI News · 100</span></li>
-                <li><a href="https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405632.html">国家发展改革委与塞尔维亚有关部门签署合作文件</a><span>国家发展改革委新闻发布 · 99</span></li>
-            </ul>
+              <article class="top-hotspot-card">
+                <div class="top-hotspot-rank">Top 4</div>
+                <div class="top-hotspot-body">
+                  <h3><a href="https://www.gov.cn/zhengce/content/202606/content_7070901.htm">国务院关于印发《加快农业农村现代化“十五五”规划》的通知</a></h3>
+                  <p>为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。</p>
+                  <div class="top-hotspot-meta">
+                    <span>中国政府网要闻</span>
+                    <span>新闻</span>
+                    <span>06/02 08:00</span>
+                    <strong>100</strong>
+                  </div>
+                </div>
+              </article>
+              <article class="top-hotspot-card">
+                <div class="top-hotspot-rank">Top 5</div>
+                <div class="top-hotspot-body">
+                  <h3><a href="https://openai.com/index/our-views-on-ai-policy-and-political-advocacy">Our views on AI policy and political advocacy</a></h3>
+                  <p>Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.</p>
+                  <div class="top-hotspot-meta">
+                    <span>OpenAI News</span>
+                    <span>科技</span>
+                    <span>06/02 01:00</span>
+                    <strong>100</strong>
+                  </div>
+                </div>
+              </article>
           </div>
           <!-- STATIC_SUMMARY_END -->
-      </section>
-
-      <section class="score-explainer" aria-label="评分说明">
-        <strong>评分说明</strong>
-        <p>评分综合来源可信度、关键词命中、发布时间新鲜度、重复/聚合信号、频道权重和官方来源加权；分数用于排序，不代表投资建议或事实核验结论。</p>
-      </section>
-
-      <section class="control-band" aria-label="筛选条件">
-        <div class="filter-row filter-row-primary">
-          <div class="segmented-control" id="channel-filter" aria-label="频道筛选"></div>
-          <label class="search-field">
-            <span>关键词</span>
-            <input id="keyword-filter" type="search" placeholder="搜索标题、摘要、标签">
-          </label>
-        </div>
-        <div class="filter-row">
-          <label>
-            <span>来源</span>
-            <select id="source-filter">
-              <option value="all">全部来源</option>
-            </select>
-          </label>
-          <label>
-            <span>最低评分</span>
-            <input id="score-filter" type="range" min="0" max="100" value="60">
-            <output id="score-output" for="score-filter">60</output>
-          </label>
-          <label>
-            <span>排序</span>
-            <select id="sort-filter">
-              <option value="score-desc">评分优先</option>
-              <option value="time-desc">最新优先</option>
-              <option value="time-asc">最早优先</option>
-            </select>
-          </label>
-          <button class="ghost-button" id="clear-filters" type="button">重置</button>
-        </div>
       </section>
 
       <div class="content-grid">

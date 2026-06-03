@@ -314,8 +314,13 @@ test("latest data publishes compact display fields only", () => {
     timelinessTier: "daily",
     summary: "x".repeat(900),
     contentExcerpt: "y".repeat(900),
+    aiSummary: "中文摘要解释 AI policy and market structure.",
+    summaryReason: "Official Source / tech",
+    sourceLanguage: "en",
+    summaryLanguage: "zh",
     imageUrl: "https://example.com/image.jpg",
     tags: Array.from({ length: 10 }, (_, index) => `tag-${index}`),
+    keywordHits: [{ term: "AI", score: 8 }, { term: "market structure", score: 7 }],
     score: 88,
     duplicateCount: 2,
     raw: { content: "unpublished source payload" },
@@ -327,10 +332,15 @@ test("latest data publishes compact display fields only", () => {
 
   assert.equal(latest.items[0].summary.length, 500);
   assert.equal(latest.items[0].contentExcerpt.length, 500);
+  assert.equal(latest.items[0].aiSummary, "中文摘要解释 AI policy and market structure.");
+  assert.equal(latest.items[0].summaryReason, "Official Source / tech");
+  assert.equal(latest.items[0].sourceLanguage, "en");
+  assert.equal(latest.items[0].summaryLanguage, "zh");
   assert.equal(latest.items[0].imageUrl, "https://example.com/image.jpg");
   assert.equal(latest.items[0].fetchedAt, "2026-05-24T01:00:00.000Z");
   assert.equal(latest.items[0].sourceAuthority, "official-market");
   assert.equal(latest.items[0].tags.length, 8);
+  assert.deepEqual(latest.items[0].keywords.slice(0, 2), ["AI", "market structure"]);
   assert.equal(latest.items[0].duplicateCount, 2);
   assert.equal("raw" in latest.items[0], false);
   assert.equal("scoreBreakdown" in latest.items[0], false);

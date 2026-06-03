@@ -27,40 +27,62 @@ function formatDate(value) {
   }).format(date);
 }
 
-function renderChannelSummary(channel) {
+function selectTopHotspots(items, limit = 5) {
+  return [...(items || [])]
+    .sort((left, right) => Number(right.score || 0) - Number(left.score || 0)
+      || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
+    .slice(0, limit);
+}
+
+function channelLabel(channels, category) {
+  return channels?.[category]?.label || category || "新闻";
+}
+
+function renderTopHotspots(items, channels = {}) {
+  if (!items.length) {
+    return `
+          <div class="top-hotspots" id="top-hotspot-list">
+            <div class="empty-state compact-empty">暂无核心热点，信息流更新后会自动生成。</div>
+          </div>`;
+  }
+
   return `
-              <article class="focus-card">
-                <strong>${escapeHtml(channel.label || channel.id)}</strong>
-                <p>${escapeHtml(channel.overview || "暂无摘要，信息流更新后会显示本频道重点。")}</p>
-              </article>`;
+          <div class="top-hotspots" id="top-hotspot-list">
+            ${items.map((item, index) => `
+              <article class="top-hotspot-card${index === 0 ? " is-primary" : ""}">
+                <div class="top-hotspot-rank">Top ${index + 1}</div>
+                <div class="top-hotspot-body">
+                  <h3><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h3>
+                  <p>${escapeHtml(item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。")}</p>
+                  <div class="top-hotspot-meta">
+                    <span>${escapeHtml(item.source)}</span>
+                    <span>${escapeHtml(channelLabel(channels, item.category))}</span>
+                    <span>${escapeHtml(formatDate(item.publishedAt))}</span>
+                    <strong>${Number(item.score || 0)}</strong>
+                  </div>
+                </div>
+              </article>`).join("")}
+          </div>`;
 }
 
 function generateStaticSummary() {
   const latest = readJson(path.join(ROOT_DIR, "src", "data", "latest-items.json"), { items: [], generatedAt: "" });
-  const daily = readJson(path.join(ROOT_DIR, "src", "data", "daily-summary.json"), { channelSummaries: [] });
   const health = readJson(path.join(ROOT_DIR, "src", "data", "source-health.json"), { sources: [] });
   const healthy = (health.sources || []).filter((source) => source.status === "healthy").length;
   const failed = (health.sources || []).filter((source) => source.status !== "healthy").length;
-  const focus = (daily.channelSummaries || []).slice(0, 3);
-  const topItems = (latest.items || []).slice(0, 6);
+  const topHotspots = selectTopHotspots(latest.items || [], 5);
 
   return `${START_MARKER}
           <div class="static-summary-meta">
             信息流更新 ${escapeHtml(formatDate(latest.generatedAt))}；活跃来源 ${healthy} 个，异常来源 ${failed} 个。
           </div>
-          <div class="focus-grid" id="daily-focus-grid">
-            ${focus.length ? focus.map(renderChannelSummary).join("") : `
-              <article class="focus-card"><strong>科技</strong><p>暂无摘要，信息流更新后会显示本频道重点。</p></article>
-              <article class="focus-card"><strong>金融</strong><p>暂无摘要，信息流更新后会显示本频道重点。</p></article>
-              <article class="focus-card"><strong>新闻</strong><p>暂无摘要，信息流更新后会显示本频道重点。</p></article>`}
+          <div class="top-hotspots-head">
+            <div>
+              <h2 id="top-hotspots-title">今日核心热点 Top 5</h2>
+              <p>按评分和发布时间筛出最值得先看的信息。</p>
+            </div>
           </div>
-          <div class="static-top-items">
-            <h3>最新高分条目</h3>
-            <ul>
-              ${topItems.map((item) => `
-                <li><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a><span>${escapeHtml(item.source)} · ${Number(item.score || 0)}</span></li>`).join("")}
-            </ul>
-          </div>
+          ${renderTopHotspots(topHotspots, latest.channels || {})}
           ${END_MARKER}`;
 }
 
@@ -83,5 +105,7 @@ if (require.main === module) {
 
 module.exports = {
   generateStaticSummary,
+  selectTopHotspots,
+  renderTopHotspots,
   updateIndexHtml
 };

@@ -5,7 +5,9 @@ const {
   buildDeepSeekRequestBody,
   buildDailyChannelSummaries,
   buildDailySummaryOutput,
+  detectItemLanguage,
   isLlmConfigured,
+  selectSummaryIds,
   summarizeLatestData,
   summarizeLatestDataWithLlm
 } = require("../scripts/generate-ai-summary");
@@ -78,6 +80,101 @@ test("daily summary LLM path falls back when the required secret is missing", as
   assert.equal(summarized.items[0].summaryMethod, "extractive");
   assert.equal(summarized.summaryStats.llmConfigured, false);
   assert.equal(summarized.summaryStats.fallbackCount, 0);
+});
+
+test("daily summary LLM path translates selected item summaries to Chinese", async () => {
+  const latest = {
+    generatedAt: "2026-05-28T00:00:00.000Z",
+    channels: {
+      tech: { id: "tech", items: [{ id: "tech-1" }] }
+    },
+    items: [{
+      id: "tech-1",
+      title: "Codex becomes a productivity tool",
+      url: "https://example.test/tech",
+      source: "OpenAI News",
+      category: "tech",
+      score: 91,
+      contentExcerpt: "Codex helps knowledge workers with research, data analysis, and workflow automation."
+    }]
+  };
+  const rules = {
+    method: "extractive",
+    llmProduction: {
+      enabled: true,
+      provider: "deepseek-chat-completions",
+      endpoint: "https://api.deepseek.com/chat/completions",
+      model: "deepseek-v4-flash",
+      requiredSecret: "DEEPSEEK_API_KEY",
+      maxRetries: 0,
+      maxOutputTokens: 260
+    },
+    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80, reasonMaxLength: 60 }
+  };
+  const calls = [];
+  const fetchImpl = async (url, init) => {
+    calls.push({ url, init });
+    return {
+      ok: true,
+      status: 200,
+      json: async () => ({
+        choices: [{
+          message: {
+            content: JSON.stringify({
+              aiSummary: "Codex 正在成为面向知识工作的生产力工具。",
+              summaryReason: "高分科技来源，涉及工作流自动化。"
+            })
+          }
+        }]
+      })
+    };
+  };
+
+  const summarized = await summarizeLatestDataWithLlm(latest, rules, "2026-05-28T01:00:00.000Z", {
+    env: { DEEPSEEK_API_KEY: "test-key" },
+    fetchImpl
+  });
+
+  assert.equal(calls.length, 1);
+  assert.equal(summarized.summaryStats.llmAttempted, 1);
+  assert.equal(summarized.summaryStats.llmSucceeded, 1);
+  assert.equal(summarized.items[0].summaryMethod, "deepseek-chat-completions");
+  assert.equal(summarized.items[0].sourceLanguage, "en");
+  assert.equal(summarized.items[0].summaryLanguage, "zh");
+  assert.match(summarized.items[0].aiSummary, /生产力工具/);
+  assert.ok(summarized.items[0].keywords.includes("Codex"));
+});
+
+test("English source items are selected for AI Chinese translation even below normal score floor", () => {
+  const latest = {
+    items: [{
+      id: "english-low-score",
+      title: "UN briefing outlines climate response",
+      url: "https://example.test/un",
+      source: "UN News",
+      category: "news",
+      score: 45,
+      contentExcerpt: "The briefing outlined a coordinated climate response with funding, public health support, and local adaptation measures."
+    }, {
+      id: "chinese-low-score",
+      title: "本地政策简讯",
+      url: "https://example.test/cn",
+      source: "中文来源",
+      category: "news",
+      score: 45,
+      contentExcerpt: "本地政策简讯介绍后续执行安排。"
+    }]
+  };
+
+  const selected = selectSummaryIds(latest, {
+    maxItemsPerChannel: 1,
+    minimumScore: 60,
+    maxEnglishTranslationItems: 5
+  });
+
+  assert.equal(detectItemLanguage(latest.items[0]), "en");
+  assert.equal(selected.has("english-low-score"), true);
+  assert.equal(selected.has("chinese-low-score"), false);
 });
 
 test("daily summary output builds channel-level important-affairs summaries", async () => {
