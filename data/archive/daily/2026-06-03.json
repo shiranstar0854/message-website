@@ -1,16 +1,16 @@
 {
   "date": "2026-06-03",
-  "generatedAt": "2026-06-03T00:01:29.034Z",
+  "generatedAt": "2026-06-03T09:01:37.509Z",
   "totals": {
     "sources": 20,
     "healthySources": 12,
-    "rawItems": 43,
-    "normalizedItems": 43,
-    "filteredItems": 42,
-    "dedupedItems": 42,
-    "scoredItems": 42,
-    "enrichmentAttempted": 28,
-    "enrichmentFailed": 0
+    "rawItems": 49,
+    "normalizedItems": 49,
+    "filteredItems": 48,
+    "dedupedItems": 48,
+    "scoredItems": 48,
+    "enrichmentAttempted": 30,
+    "enrichmentFailed": 1
   },
   "sourceHealth": [
     {
@@ -22,11 +22,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -38,11 +38,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -54,11 +54,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -70,11 +70,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -86,11 +86,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
       "lastSuccessAt": "2026-05-31T04:02:10.336Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -102,11 +102,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -118,11 +118,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -134,11 +134,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -150,11 +150,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -166,11 +166,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -182,11 +182,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:51.509Z",
-      "lastSuccessAt": "2026-06-03T00:00:51.509Z",
+      "lastCheckedAt": "2026-06-03T09:00:53.247Z",
+      "lastSuccessAt": "2026-06-03T09:00:53.247Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:51.509Z",
-      "cacheExpiresAt": "2026-06-05T00:00:51.509Z",
+      "cacheStartedAt": "2026-06-03T09:00:53.247Z",
+      "cacheExpiresAt": "2026-06-05T09:00:53.247Z",
       "failureCount": 0
     },
     {
@@ -201,11 +201,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 0
     },
     {
@@ -215,17 +215,17 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "status": "healthy",
-      "itemCount": 1,
-      "responseStatus": 200,
-      "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
-      "lastSuccessAt": "2026-06-03T00:00:55.857Z",
+      "status": "failed",
+      "itemCount": 0,
+      "responseStatus": null,
+      "attempts": 2,
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
+      "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
+      "failureCount": 1
     },
     {
       "id": "csrc-news",
@@ -239,11 +239,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 0
     },
     {
@@ -256,13 +256,13 @@
       "status": "empty",
       "itemCount": 0,
       "responseStatus": 200,
-      "attempts": 1,
+      "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 0
     },
     {
@@ -277,11 +277,11 @@
       "responseStatus": null,
       "attempts": 2,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 1
     },
     {
@@ -291,16 +291,16 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 1,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
-      "lastSuccessAt": null,
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
+      "lastSuccessAt": "2026-06-03T09:00:59.777Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 0
     },
     {
@@ -311,15 +311,15 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "status": "healthy",
-      "itemCount": 2,
+      "itemCount": 3,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
-      "lastSuccessAt": "2026-06-03T00:00:55.857Z",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
+      "lastSuccessAt": "2026-06-03T09:00:59.777Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 0
     },
     {
@@ -329,17 +329,17 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
-      "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
+      "responseStatus": null,
+      "attempts": 2,
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
+      "failureCount": 1
     },
     {
       "id": "govcn-yaowen",
@@ -349,23 +349,57 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 6,
+      "itemCount": 10,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-03T00:00:55.857Z",
-      "lastSuccessAt": "2026-06-03T00:00:55.857Z",
+      "lastCheckedAt": "2026-06-03T09:00:59.777Z",
+      "lastSuccessAt": "2026-06-03T09:00:59.777Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-03T00:00:55.857Z",
-      "cacheExpiresAt": "2026-06-05T00:00:55.857Z",
+      "cacheStartedAt": "2026-06-03T09:00:59.777Z",
+      "cacheExpiresAt": "2026-06-05T09:00:59.777Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 42
+    "availableItems": 48
   },
   "items": [
+    {
+      "id": "finance-item-a7e1b4b248",
+      "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
+      "source": "国家发展改革委新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    },
+    {
+      "id": "finance-item-32ef619a3a",
+      "title": "财政部党校举行第82期处级干部进修班毕业典礼",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260603_3991101.htm",
+      "source": "财政部财政新闻",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    },
     {
       "id": "finance-u-s-sec-press-releases-f61d1b0566",
       "title": "SEC Publishes Draft Strategic Plan for Public Comment",
@@ -390,7 +424,7 @@
       "publishedAt": "2026-06-02T00:00:00.000Z",
       "summary": "财政部财政政策、国债、预算和财政运行新闻",
       "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -407,7 +441,7 @@
       "publishedAt": "2026-06-02T00:00:00.000Z",
       "summary": "财政部财政政策、国债、预算和财政运行新闻",
       "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -423,8 +457,8 @@
       "category": "finance",
       "publishedAt": "2026-06-02T00:00:00.000Z",
       "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "contentExcerpt": "中国人民银行召开2026年组织人事部门负责人会议。落实全国组织部长会议和中国人民银行工作会议要求。部署推进2026年组织人事工作重点任务。中央纪委国家监委驻中国人民银行纪检监察组组长、中国人民银行党委委员曲吉山出席会议并讲话。组织人事工作政治性强、政策性强、头绪多。做好新形势下的组织人事工作。为金融强国建设提供坚强干部人才队伍保证和组织体系保证。中国人民银行各级组织人事部门和组工干部要以高度的政治责任感。",
-      "score": 99,
+      "contentExcerpt": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "score": 98,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -442,7 +476,7 @@
       "summary": "Agencies remove additional references to reputation risk",
       "contentExcerpt": "The federal bank regulatory agencies today jointly updated certain interagency documents to remove references to reputation risk. The agencies are taking this",
       "imageUrl": "https://www.federalreserve.gov/images/social-media/social-default-image-opengraph.jpg",
-      "score": 97,
+      "score": 96,
       "duplicateCount": 0,
       "tags": [
         "Banking and Consumer Regulatory Policy"
@@ -458,7 +492,7 @@
       "publishedAt": "2026-06-01T16:39:44.000Z",
       "summary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
       "contentExcerpt": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0,
       "tags": []
     },
@@ -473,11 +507,367 @@
       "summary": "The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied. CFPB officials met with Bilt to understand the issues caused by the transition and what steps Bilt has taken to ensure customers affected by challenges with the transition were made whole.",
       "contentExcerpt": "WASHINGTON, D.C. — The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied. CFPB officials met with Bilt to understand the issues caused by the transition and what steps Bilt has taken to ensure customers affected by challenges with the transition were made whole. Following our discussions and at our direction that Bilt ensures full redress, Bilt notified the CFPB that they proactively reached out to the limited number of po...",
       "imageUrl": "https://www.consumerfinance.gov/static/img/logo_open-graph_facebook.d0dedfbe1787.png",
-      "score": 86,
+      "score": 85,
       "duplicateCount": 0,
       "tags": [
         "Press release"
       ]
+    },
+    {
+      "id": "news-item-24eacb2d79",
+      "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-223abc0d7f",
+      "title": "《习近平的文化情缘》等纪录片在老挝启播",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。老挝人民革命党中央总书记、国家主席通伦发来贺信，对节目播出表示祝贺。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-85e5dfa365",
+      "title": "助力三夏抢收 设备更新政策发力显效",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070947.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "今年，我国继续加力推进大规模设备更新，最近一段时间，在夏粮主产区，更新上岗的农业设备派上了大用场。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-a3ac4d242e",
+      "title": "我国将培育壮大农业新兴产业和未来产业",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070939.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院2日对外公布的《加快农业农村现代化“十五五”规划》将因地制宜发展农业新质生产力摆在更加突出的战略位置，并首次提出培育壮大农业领域新兴产业和未来产业。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-0b54ef9c63",
+      "title": "图表：2025年全国A级景区接待游客75.1亿人次",
+      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7070934.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "文化和旅游部6月2日发布2025年文化和旅游发展统计公报。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-664acc4f0c",
+      "title": "刘国中在河北调研时强调：毫不放松抓好“三夏”生产 扎实有效开展常态化监测帮扶",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070919.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央政治局委员、国务院副总理刘国中1日至2日到河北调研。他强调，要深入学习贯彻习近平总书记关于“三农”工作的重要指示批示精神，按照党中央、国务院部署，毫不放松抓好“三夏”生产，夯实全年粮食丰收基础，扎实有效开展常态化监测帮扶，持续巩固拓展脱贫攻坚成果，为乡村全面振兴、经济社会高质量发展打下坚实基础。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-04cdfb9295",
+      "title": "第十一次中英战略对话在北京举行",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070956.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央政治局委员、外交部长王毅2日在北京同英国外交大臣库珀举行第十一次中英战略对话。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-a8ef470e2f",
+      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-e9f5e3569b",
+      "title": "中央财政下达育儿补贴补助资金999亿元",
+      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-item-208d1e8eb6",
+      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    },
+    {
+      "id": "news-un-news-27877aac4c",
+      "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167619",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
+      "contentExcerpt": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UN-Photo-Kayoko-Gotoh.jpg/image770x420cropped.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "news-nasa-breaking-news-1cb155da8d",
+      "title": "Typhoon Jangmi",
+      "url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-03T04:00:00.000Z",
+      "summary": "The sprawling storm promised to deliver torrential rain across a wide swath of southern Japan.",
+      "contentExcerpt": "The sprawling storm promised to deliver torrential rain across a wide swath of southern Japan. From late May into early June 2026, a broad, slow-spinning storm churned north-northwest over the Philippine Sea toward southern Japan. Typhoon Jangmi’s rainbands unleashed torrential rainfall across a vast swath of the region, triggering flooding concerns in several areas. The VIIRS (Visible Infrared Imaging Radiometer Suite) on the Suomi NPP satellite captured this nighttime image (above) of the s...",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/typhoon-jangmi/typhoonjangmieye_vir_20260530_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "Earth Observatory",
+        "Hurricanes & Typhoons",
+        "NOAA-20 (JPSS-1)",
+        "Suomi NPP (Suomi National Polar-orbiting Partnership)"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-87eac95345",
+      "title": "NASA Testing Wastewater Treatment Facility for Future Moon Base",
+      "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-testing-wastewater-treatment-facility-for-future-moon-base",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T14:31:18.000Z",
+      "summary": "A mobile wastewater treatment system built at NASA&#8217;s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport and arrived at the University of North Dakota in Grand Forks. Graduate students at the university will test the technology under conditions designed to closely mimic the [&#8230;]",
+      "contentExcerpt": "A mobile wastewater treatment system built at NASA’s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport and arrived at the University of North Dakota in Grand Forks. Graduate students at the university will test the technology under conditions designed to closely mimic the challenges of operating on another planetary surface. The Divergent Deployable Wastewater Treatment Facility is designed to turn crew wastewater into...",
+      "imageUrl": "https://images-assets.nasa.gov/image/KSC-20260421-PH-KLS01_0041/KSC-20260421-PH-KLS01_0041~large.jpg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "Kennedy Space Center",
+        "Artemis",
+        "Exploration Systems Development Mission Directorate",
+        "Missions",
+        "Moon Base",
+        "Research and Technology at Kennedy Space Center",
+        "Sustainability at Kennedy Space Center"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-817f955938",
+      "title": "Be a Clump Scout and Help Reveal Secrets of Stellar Nurseries",
+      "url": "https://science.nasa.gov/get-involved/citizen-science/help-galaxy-zoo-clump-scout-ii-project",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T13:19:54.000Z",
+      "summary": "Help identify star-forming clumps in galaxy images, and help train machines to do the same.",
+      "contentExcerpt": "In the mid-20th century, astronomers discovered strange \"clumpy\" galaxies filled with mysterious bright blobs – massive stellar nurseries where stars are born at an explosive rate. Curiously, these clumpy galaxies were much more common in the early universe than they are today. We still don’t know why they vanished. The Euclid space telescope, an ESA (European Space Agency) mission with critical contributions from NASA, has begun to capture images of millions of galaxies. These images – far m...",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/citizen-science/projects/2026/Galaxy_clump_featured_image.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "Astrophysics Division",
+        "Citizen Science"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-68bdbb5e73",
+      "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T09:00:00.000Z",
+      "summary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
+      "contentExcerpt": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent into a darkened bedroom and hop around just like the footage I had seen of Apollo astronauts.” Today, with more than 16 years at NASA’s Johnson Space Center under his belt, Wray is proud...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/jsc2022e072191.jpg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "Johnson Space Center",
+        "Artemis",
+        "General",
+        "People of Johnson"
+      ]
+    },
+    {
+      "id": "news-un-news-81b98d374f",
+      "title": "UN urges world not to forget Rohingya refugees as aid cuts threaten vital support",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167623",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "summary": "As the world approaches nine years since the mass displacement of Rohingya refugees from Myanmar into Bangladesh, the UN refugee agency (UNHCR) has appealed to the international community not to abandon the 1.2 million refugees living in the country, most of them in camps in Cox’s Bazar.",
+      "contentExcerpt": "As the world approaches nine years since the mass displacement of Rohingya refugees from Myanmar into Bangladesh, the UN refugee agency (UNHCR) has appealed to the international community not to abandon the 1.2 million refugees living in the country, most of them in camps in Cox’s Bazar.",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-03-2025_UNICEF_Rohingya.jpg/image770x420cropped.jpg",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "news-un-news-adea3555fb",
+      "title": "UN deplores another wave of Russian attacks across Ukraine",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167622",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "summary": "Overnight attacks in three key cities in Ukraine have left several civilians dead, scores more injured, and homes, hospitals and shops destroyed or damaged, the UN Humanitarian Coordinator in the country said on Tuesday.&nbsp;",
+      "contentExcerpt": "Overnight attacks in three key cities in Ukraine have left several civilians dead, scores more injured, and homes, hospitals and shops destroyed or damaged, the UN Humanitarian Coordinator in the country said on Tuesday.",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/02-06-2026-UNICEF-Ukraine-02.jpg/image770x420cropped.jpg",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": []
+    },
+    {
+      "id": "news-nasa-breaking-news-061b839247",
+      "title": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-modification-contract-for-reduced-gravity-test-aircraft",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-01T23:45:59.000Z",
+      "summary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
+      "contentExcerpt": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen work. This contract has a maximum potential value of $8.4 million, which runs through Feb. 1, 2027. The contractor will...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/nasa-meatball-1.webp",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [
+        "Armstrong Flight Research Center",
+        "Johnson Space Center"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-d63ae3d0ae",
+      "title": "NASA to Conduct Low-Altitude Flights Near Houston",
+      "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-near-houston",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-01T18:29:50.000Z",
+      "summary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
+      "contentExcerpt": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13. During the mission, select maneuvers will be conducted at low altitudes over the Houston area. Pilots will fly remote sensing payloads in raster patterns, or parallel back-and-forth lines. The instruments flown could help researchers map the movement of the gases...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ed07-0027-56large.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [
+        "General"
+      ]
+    },
+    {
+      "id": "news-un-news-ad73a69177",
+      "title": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167618",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
+      "contentExcerpt": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNHCR-Lebanon.jpg/image770x420cropped.jpg",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": []
     },
     {
       "id": "tech-openai-news-f9f27c3f88",
@@ -505,7 +895,7 @@
       "publishedAt": "2026-06-02T12:00:00.000Z",
       "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
       "contentExcerpt": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": []
     },
@@ -519,7 +909,7 @@
       "publishedAt": "2026-06-02T09:00:00.000Z",
       "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
       "contentExcerpt": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "Product"
@@ -534,7 +924,7 @@
       "category": "tech",
       "publishedAt": "2026-06-02T12:00:00.000Z",
       "summary": "",
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0,
       "tags": []
     },
@@ -548,7 +938,7 @@
       "publishedAt": "2026-06-02T07:00:00.000Z",
       "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
       "contentExcerpt": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Global Affairs"
@@ -564,7 +954,7 @@
       "publishedAt": "2026-06-02T02:00:00.000Z",
       "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
       "contentExcerpt": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Global Affairs"
@@ -581,7 +971,7 @@
       "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
       "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "Gemini models",
@@ -600,7 +990,7 @@
       "publishedAt": "2026-06-01T12:00:00.000Z",
       "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
       "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "Global Affairs"
@@ -616,7 +1006,7 @@
       "publishedAt": "2026-06-01T10:00:00.000Z",
       "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
       "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "Product"
@@ -633,7 +1023,7 @@
       "summary": "At Microsoft Build 2026, GitHub introduced new tools, updates, and surfaces so agents can work the way you already work. The post GitHub Copilot app: The agent-native desktop experience appeared first on The GitHub Blog .",
       "contentExcerpt": "Mario Rodriguez leads the GitHub Product team as Chief Product Officer. His core identity is being a learner and his passion is creating developer tools—so much so that he has spent the last 20 years living that mission in leadership roles across Microsoft and GitHub. Mario most recently oversaw GitHub’s AI strategy and the GitHub Copilot product line, launching and growing Copilot across thousands of organizations and millions of users. Mario spends time outside of GitHub with his wife and t...",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/06/MSFTBuild_Blog_Header_01.jpg",
-      "score": 87,
+      "score": 86,
       "duplicateCount": 0,
       "tags": [
         "Company news",
@@ -644,361 +1034,6 @@
         "GitHub Copilot CLI",
         "GitHub Copilot code review",
         "GitHub Copilot SDK"
-      ]
-    },
-    {
-      "id": "news-item-85e5dfa365",
-      "title": "助力三夏抢收 设备更新政策发力显效",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070947.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "今年，我国继续加力推进大规模设备更新，最近一段时间，在夏粮主产区，更新上岗的农业设备派上了大用场。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    },
-    {
-      "id": "news-item-a3ac4d242e",
-      "title": "我国将培育壮大农业新兴产业和未来产业",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070939.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "国务院2日对外公布的《加快农业农村现代化“十五五”规划》将因地制宜发展农业新质生产力摆在更加突出的战略位置，并首次提出培育壮大农业领域新兴产业和未来产业。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    },
-    {
-      "id": "news-item-664acc4f0c",
-      "title": "刘国中在河北调研时强调：毫不放松抓好“三夏”生产 扎实有效开展常态化监测帮扶",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070919.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中共中央政治局委员、国务院副总理刘国中1日至2日到河北调研。他强调，要深入学习贯彻习近平总书记关于“三农”工作的重要指示批示精神，按照党中央、国务院部署，毫不放松抓好“三夏”生产，夯实全年粮食丰收基础，扎实有效开展常态化监测帮扶，持续巩固拓展脱贫攻坚成果，为乡村全面振兴、经济社会高质量发展打下坚实基础。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    },
-    {
-      "id": "news-item-a8ef470e2f",
-      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    },
-    {
-      "id": "news-item-e9f5e3569b",
-      "title": "中央财政下达育儿补贴补助资金999亿元",
-      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    },
-    {
-      "id": "news-item-208d1e8eb6",
-      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
-      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    },
-    {
-      "id": "news-un-news-27877aac4c",
-      "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167619",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
-      "contentExcerpt": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UN-Photo-Kayoko-Gotoh.jpg/image770x420cropped.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-nasa-breaking-news-87eac95345",
-      "title": "NASA Testing Wastewater Treatment Facility for Future Moon Base",
-      "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-testing-wastewater-treatment-facility-for-future-moon-base",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T14:31:18.000Z",
-      "summary": "A mobile wastewater treatment system built at NASA&#8217;s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport and arrived at the University of North Dakota in Grand Forks. Graduate students at the university will test the technology under conditions designed to closely mimic the [&#8230;]",
-      "contentExcerpt": "A mobile wastewater treatment system built at NASA’s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport and arrived at the University of North Dakota in Grand Forks. Graduate students at the university will test the technology under conditions designed to closely mimic the challenges of operating on another planetary surface. The Divergent Deployable Wastewater Treatment Facility is designed to turn crew wastewater into...",
-      "imageUrl": "https://images-assets.nasa.gov/image/KSC-20260421-PH-KLS01_0041/KSC-20260421-PH-KLS01_0041~large.jpg",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Kennedy Space Center",
-        "Artemis",
-        "Exploration Systems Development Mission Directorate",
-        "Missions",
-        "Moon Base",
-        "Research and Technology at Kennedy Space Center",
-        "Sustainability at Kennedy Space Center"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-817f955938",
-      "title": "Be a Clump Scout and Help Reveal Secrets of Stellar Nurseries",
-      "url": "https://science.nasa.gov/get-involved/citizen-science/help-galaxy-zoo-clump-scout-ii-project",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T13:19:54.000Z",
-      "summary": "Help identify star-forming clumps in galaxy images, and help train machines to do the same.",
-      "contentExcerpt": "In the mid-20th century, astronomers discovered strange \"clumpy\" galaxies filled with mysterious bright blobs – massive stellar nurseries where stars are born at an explosive rate. Curiously, these clumpy galaxies were much more common in the early universe than they are today. We still don’t know why they vanished. The Euclid space telescope, an ESA (European Space Agency) mission with critical contributions from NASA, has begun to capture images of millions of galaxies. These images – far m...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/citizen-science/projects/2026/Galaxy_clump_featured_image.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Astrophysics Division",
-        "Citizen Science"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-68bdbb5e73",
-      "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
-      "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T09:00:00.000Z",
-      "summary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
-      "contentExcerpt": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent into a darkened bedroom and hop around just like the footage I had seen of Apollo astronauts.” Today, with more than 16 years at NASA’s Johnson Space Center under his belt, Wray is proud...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/jsc2022e072191.jpg",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Johnson Space Center",
-        "Artemis",
-        "General",
-        "People of Johnson"
-      ]
-    },
-    {
-      "id": "news-un-news-81b98d374f",
-      "title": "UN urges world not to forget Rohingya refugees as aid cuts threaten vital support",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167623",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "As the world approaches nine years since the mass displacement of Rohingya refugees from Myanmar into Bangladesh, the UN refugee agency (UNHCR) has appealed to the international community not to abandon the 1.2 million refugees living in the country, most of them in camps in Cox’s Bazar.",
-      "contentExcerpt": "As the world approaches nine years since the mass displacement of Rohingya refugees from Myanmar into Bangladesh, the UN refugee agency (UNHCR) has appealed to the international community not to abandon the 1.2 million refugees living in the country, most of them in camps in Cox’s Bazar.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-03-2025_UNICEF_Rohingya.jpg/image770x420cropped.jpg",
-      "score": 92,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-un-news-adea3555fb",
-      "title": "UN deplores another wave of Russian attacks across Ukraine",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167622",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "Overnight attacks in three key cities in Ukraine have left several civilians dead, scores more injured, and homes, hospitals and shops destroyed or damaged, the UN Humanitarian Coordinator in the country said on Tuesday.&nbsp;",
-      "contentExcerpt": "Overnight attacks in three key cities in Ukraine have left several civilians dead, scores more injured, and homes, hospitals and shops destroyed or damaged, the UN Humanitarian Coordinator in the country said on Tuesday.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/02-06-2026-UNICEF-Ukraine-02.jpg/image770x420cropped.jpg",
-      "score": 92,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-nasa-breaking-news-061b839247",
-      "title": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-modification-contract-for-reduced-gravity-test-aircraft",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T23:45:59.000Z",
-      "summary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
-      "contentExcerpt": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen work. This contract has a maximum potential value of $8.4 million, which runs through Feb. 1, 2027. The contractor will...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/nasa-meatball-1.webp",
-      "score": 92,
-      "duplicateCount": 0,
-      "tags": [
-        "Armstrong Flight Research Center",
-        "Johnson Space Center"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-d63ae3d0ae",
-      "title": "NASA to Conduct Low-Altitude Flights Near Houston",
-      "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-near-houston",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T18:29:50.000Z",
-      "summary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
-      "contentExcerpt": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13. During the mission, select maneuvers will be conducted at low altitudes over the Houston area. Pilots will fly remote sensing payloads in raster patterns, or parallel back-and-forth lines. The instruments flown could help researchers map the movement of the gases...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ed07-0027-56large.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "General"
-      ]
-    },
-    {
-      "id": "news-un-news-ad73a69177",
-      "title": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167618",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
-      "contentExcerpt": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNHCR-Lebanon.jpg/image770x420cropped.jpg",
-      "score": 88,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-nasa-breaking-news-921c32f292",
-      "title": "NASA Space Roboticist Challenge",
-      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-space-roboticist-challenge",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T20:56:53.000Z",
-      "summary": "The Fly Foundational Robots (FFR) mission will launch a robotic arm, with seven degrees of freedom, to low Earth orbit. NASA is opening access to the robotic arm to a select group of U.S. researchers — principal investigators, post-doctoral researchers, professors, and highly qualified graduate students — who have a compelling experiment and the capability [&#8230;]",
-      "contentExcerpt": "The Fly Foundational Robots (FFR) mission will launch a robotic arm, with seven degrees of freedom, to low Earth orbit. NASA is opening access to the robotic arm to a select group of U.S. researchers — principal investigators, post-doctoral researchers, professors, and highly qualified graduate students — who have a compelling experiment and the capability to execute it. All participants must submit eligibility documentation at registration. Once your eligibility is reviewed and confirmed, yo...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/ffr-graphic-update.jpg",
-      "score": 86,
-      "duplicateCount": 0,
-      "tags": [
-        "Center of Excellence for Collaborative Innovation (CoECI)",
-        "CoECI News",
-        "Opportunities to Contribute to NASA Missions & Get Involved",
-        "Prizes, Challenges, & Crowdsourcing News",
-        "Prizes, Challenges, and Crowdsourcing Program"
-      ]
-    },
-    {
-      "id": "news-un-news-388b7dfeab",
-      "title": "Lebanon hospital strikes impact most vulnerable patients, warns WHO",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167621",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "The UN health agency in Lebanon is verifying reports of strikes on a hospital in the southern city of Tyre on Monday, amid a concerning rise in attacks on healthcare in the country.",
-      "contentExcerpt": "The UN health agency in Lebanon is verifying reports of strikes on a hospital in the southern city of Tyre on Monday, amid a concerning rise in attacks on healthcare in the country.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-04-2026-UNICEF-Lebanon-03.jpg/image770x420cropped.jpg",
-      "score": 84,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-un-news-43516702a9",
-      "title": "El Niño confirmed, set to fuel more extreme weather, says WMO",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167620",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "The UN urged all countries on Tuesday to bolster early warning systems after confirming the onset of El Niño, warning that the Pacific Ocean-warming phenomenon will bring above-average temperatures “nearly everywhere” and fuel more extreme weather.",
-      "contentExcerpt": "The UN urged all countries on Tuesday to bolster early warning systems after confirming the onset of El Niño, warning that the Pacific Ocean-warming phenomenon will bring above-average temperatures “nearly everywhere” and fuel more extreme weather.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2016/04/24255/image770x420cropped.jpg",
-      "score": 84,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-nasa-breaking-news-9ddbc969a9",
-      "title": "Fire’s Footprint on Santa Rosa Island",
-      "url": "https://science.nasa.gov/earth/earth-observatory/fires-footprint-on-santa-rosa-island",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T04:01:00.000Z",
-      "summary": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands.",
-      "contentExcerpt": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands. On May 15, 2026, a fire was spotted from aircraft on the southeastern side of Santa Rosa Island, part of California’s Channel Islands National Park. The blaze spread over the next several days, ultimately burning 18,379 acres (7,438 hectares)—about one-third of the island. These images show the expansion of the fire’s burned area between May 16 (left)...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fire%E2%80%99s-footprint-on-santa-rosa-island/channelislandsfire_oli_20260524_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 84,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth Observatory",
-        "Landsat 8 / LDCM (Landsat Data Continuity Mission)",
-        "Landsat 9",
-        "Wildfires"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-581a957586",
-      "title": "NASA Invites Media to See Roman Space Telescope Arrive at Kennedy",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-see-roman-space-telescope-arrive-at-kennedy",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T21:22:52.000Z",
-      "summary": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media [&#8230;]",
-      "contentExcerpt": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media will be able to witness the arrival and unloading of the space telescope in its transport container at NASA Kennedy’s turn basin....",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/roman-option-3.jpg",
-      "score": 83,
-      "duplicateCount": 0,
-      "tags": [
-        "Nancy Grace Roman Space Telescope",
-        "Goddard Space Flight Center",
-        "Kennedy Space Center",
-        "Science Mission Directorate"
       ]
     }
   ]
