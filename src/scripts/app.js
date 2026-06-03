@@ -75,67 +75,6 @@
       || `信息流更新时间：${formatGeneratedAt(data.generatedAt).replace("信息流更新 ", "")}；当前显示 ${displayedCount} / ${filteredCount} 条，数据池 ${data.totalItems || data.items.length} 条。`;
   }
 
-  function renderTopHotspots(data) {
-    const list = document.getElementById("top-hotspots-list");
-    const meta = document.getElementById("top-hotspots-meta");
-    if (!list) return;
-
-    const hotspots = (data.topHotspots || []).length
-      ? data.topHotspots
-      : (data.items || []).slice(0, 5).map((item) => ({
-        id: item.id,
-        title: item.title,
-        displayTitle: item.displayTitle || item.title,
-        displaySummary: item.displaySummary || item.aiSummary || item.contentExcerpt || item.summary || "",
-        importance: item.hotspotScore || item.score || 0,
-        impactAreas: item.impactAreas || item.refinedTags || [],
-        source: item.source,
-        publishedAt: item.publishedAt,
-        score: item.score,
-        url: item.url
-      }));
-
-    if (meta) {
-      meta.textContent = `信息流更新 ${formatShortDate(data.generatedAt)}，优先展示 ${hotspots.length} 条核心事件`;
-    }
-
-    if (!hotspots.length) {
-      list.innerHTML = `
-        <article class="hotspot-card">
-          <strong>暂无核心热点</strong>
-          <p>当前信息流还没有足够内容形成 Top 5。</p>
-        </article>
-      `;
-      return;
-    }
-
-    list.innerHTML = hotspots.map((item, index) => {
-      const safeUrl = window.MessageChooseRender.safeExternalUrl(item.url);
-      const title = safeUrl
-        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.displayTitle || item.title)}</a>`
-        : escapeHtml(item.displayTitle || item.title);
-      const areas = (item.impactAreas || []).slice(0, 3)
-        .map((area) => `<span>${escapeHtml(area)}</span>`)
-        .join("");
-
-      return `
-        <article class="hotspot-card">
-          <div class="hotspot-rank">#${index + 1}</div>
-          <div class="hotspot-body">
-            <h3>${title}</h3>
-            <p>${escapeHtml(item.displaySummary || "暂无摘要")}</p>
-            <div class="hotspot-meta">
-              <span>${escapeHtml(item.source || "未知来源")}</span>
-              <span>发布 ${formatShortDate(item.publishedAt)}</span>
-              <span>重要性 ${Number(item.importance || item.score || 0)}</span>
-            </div>
-            <div class="impact-row" aria-label="影响领域">${areas}</div>
-          </div>
-        </article>
-      `;
-    }).join("");
-  }
-
   function formatShortDate(value) {
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "时间未知";
@@ -234,7 +173,6 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
-    renderTopHotspots(data);
     renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);

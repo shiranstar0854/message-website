@@ -42,7 +42,7 @@ function generateStaticSummary() {
   const healthy = (health.sources || []).filter((source) => source.status === "healthy").length;
   const failed = (health.sources || []).filter((source) => source.status !== "healthy").length;
   const focus = (daily.channelSummaries || []).slice(0, 3);
-  const topItems = (latest.topHotspots || latest.items || []).slice(0, 6);
+  const topItems = (latest.items || []).slice(0, 6);
 
   return `${START_MARKER}
           <div class="static-summary-meta">
@@ -58,7 +58,7 @@ function generateStaticSummary() {
             <h3>最新高分条目</h3>
             <ul>
               ${topItems.map((item) => `
-                <li><a href="${escapeHtml(item.url)}">${escapeHtml(item.displayTitle || item.title)}</a><span>${escapeHtml(item.source)} · ${Number(item.score || item.importance || 0)}</span></li>`).join("")}
+                <li><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a><span>${escapeHtml(item.source)} · ${Number(item.score || 0)}</span></li>`).join("")}
             </ul>
           </div>
           ${END_MARKER}`;

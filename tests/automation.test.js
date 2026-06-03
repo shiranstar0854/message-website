@@ -131,40 +131,24 @@ test("daily archive compacts article payloads", () => {
   const archived = compactItem({
     id: "item-a",
     title: "Title",
-    displayTitle: "中文标题",
-    originalTitle: "Title",
     url: "https://example.test/item",
     source: "Source A",
     sourceType: "rss",
     category: "tech",
     publishedAt: "2026-05-26T01:00:00.000Z",
     summary: "x".repeat(800),
-    displaySummary: "中文摘要",
-    originalSummary: "Original summary",
     contentExcerpt: "y".repeat(900),
     imageUrl: "https://example.test/image.jpg",
     score: 95,
     duplicateCount: 0,
     tags: Array.from({ length: 12 }, (_, index) => `tag-${index}`),
-    refinedTags: ["AI芯片"],
-    impactAreas: ["科技"],
-    language: "en",
-    translationMethod: "deepseek-chat-completions",
     raw: { large: "ignored" }
   });
 
   assert.equal(archived.summary.length, 500);
-  assert.equal(archived.displayTitle, "中文标题");
-  assert.equal(archived.originalTitle, "Title");
-  assert.equal(archived.displaySummary, "中文摘要");
-  assert.equal(archived.originalSummary, "Original summary");
   assert.equal(archived.contentExcerpt.length, 500);
   assert.equal(archived.imageUrl, "https://example.test/image.jpg");
   assert.equal(archived.tags.length, 8);
-  assert.deepEqual(archived.refinedTags, ["AI芯片"]);
-  assert.deepEqual(archived.impactAreas, ["科技"]);
-  assert.equal(archived.language, "en");
-  assert.equal(archived.translationMethod, "deepseek-chat-completions");
   assert.equal("raw" in archived, false);
 });
 

@@ -75,7 +75,6 @@
   font-weight: 800;
 }
 
-.top-hotspots-band,
 .daily-focus-band,
 .score-explainer,
 .rule-panel {
@@ -87,94 +86,6 @@
 
 .daily-focus-band {
   margin-bottom: 14px;
-}
-
-.top-hotspots-band {
-  margin-bottom: 14px;
-  border-color: rgba(53, 80, 112, 0.22);
-}
-
-.top-hotspots-list {
-  display: grid;
-  gap: 10px;
-}
-
-.hotspot-card {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 12px;
-  padding: 14px;
-  background: #fbfaf4;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
-.hotspot-card:hover {
-  border-color: rgba(242, 169, 59, 0.58);
-  box-shadow: 0 10px 28px rgba(30, 41, 49, 0.07);
-}
-
-.hotspot-rank {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: #fff;
-  background: var(--blue);
-  border-radius: 7px;
-  font-size: 0.9rem;
-  font-weight: 850;
-}
-
-.hotspot-body {
-  min-width: 0;
-}
-
-.hotspot-body h3 {
-  margin: 0 0 6px;
-  font-size: 1.03rem;
-  line-height: 1.35;
-}
-
-.hotspot-body a {
-  text-decoration: none;
-}
-
-.hotspot-body a:hover {
-  color: var(--teal-dark);
-}
-
-.hotspot-body p {
-  margin: 0 0 10px;
-  color: var(--muted);
-  line-height: 1.58;
-}
-
-.hotspot-meta,
-.impact-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  align-items: center;
-}
-
-.hotspot-meta {
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.impact-row {
-  margin-top: 8px;
-}
-
-.impact-row span {
-  padding: 3px 7px;
-  color: var(--blue);
-  background: #eef2f6;
-  border-radius: 999px;
-  font-size: 0.76rem;
-  font-weight: 800;
 }
 
 .static-summary-meta {
@@ -539,13 +450,6 @@ output {
   font-weight: 700;
 }
 
-.original-title {
-  margin: -3px 0 8px;
-  color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.45;
-}
-
 .feed-card a {
   text-decoration: none;
 }
@@ -826,30 +730,6 @@ output {
 }
 
 @media (max-width: 620px) {
-  .metric-tile {
-    min-height: 64px;
-    padding: 10px;
-  }
-
-  .metric-tile strong {
-    font-size: 1.35rem;
-  }
-
-  .metric-tile span {
-    font-size: 0.78rem;
-  }
-
-  .hotspot-card {
-    grid-template-columns: 1fr;
-  }
-
-  .hotspot-rank {
-    width: max-content;
-    min-width: 42px;
-    height: 34px;
-    padding: 0 10px;
-  }
-
   .segmented-control {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
