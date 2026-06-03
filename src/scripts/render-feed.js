@@ -85,22 +85,30 @@
     }
 
     container.innerHTML = items.map((item) => {
-      const tags = [item.category, ...(item.tags || []).slice(0, 3)]
+      const tags = [item.category, ...(item.refinedTags || item.tags || []).slice(0, 4)]
         .filter(Boolean)
         .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
+        .join("");
+      const impactAreas = (item.impactAreas || []).slice(0, 3)
+        .map((area) => `<span>${escapeHtml(area)}</span>`)
         .join("");
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
       const safeUrl = safeExternalUrl(item.url);
-      const summary = item.aiSummary || item.contentExcerpt || item.summary;
+      const summary = item.displaySummary || item.aiSummary || item.contentExcerpt || item.summary;
+      const displayTitle = item.displayTitle || item.title;
       const title = safeUrl
-        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
-        : escapeHtml(item.title);
+        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle)}</a>`
+        : escapeHtml(displayTitle);
+      const originalTitle = item.originalTitle && item.originalTitle !== displayTitle
+        ? `<p class="original-title">原文：${escapeHtml(item.originalTitle)}</p>`
+        : "";
 
       return `
         <article class="feed-card">
           <div>
             <h3>${title}</h3>
+            ${originalTitle}
             ${renderSummary(summary)}
             ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}
             <div class="item-meta">
@@ -112,6 +120,7 @@
               <span>${escapeHtml(item.sourceType || "rss")}${duplicateText}</span>
             </div>
             <div class="tag-row" aria-label="标签">${tags}</div>
+            ${impactAreas ? `<div class="impact-row" aria-label="影响领域">${impactAreas}</div>` : ""}
           </div>
           <div class="score-block" aria-label="评分 ${score}">
             <div class="score-value">${score}</div>

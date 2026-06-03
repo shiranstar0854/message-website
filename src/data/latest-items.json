@@ -1,8 +1,86 @@
 {
   "siteName": "Message Choose",
-  "generatedAt": "2026-06-02T09:40:22.380Z",
+  "generatedAt": "2026-06-03T06:58:33.379Z",
   "defaultLimit": 8,
-  "totalItems": 40,
+  "totalItems": 24,
+  "topHotspots": [
+    {
+      "id": "finance-item-27284b737d",
+      "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+      "displayTitle": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+      "displaySummary": "财政部财政政策、国债、预算和财政运行新闻",
+      "importance": 117,
+      "impactAreas": [
+        "宏观",
+        "政策",
+        "金融"
+      ],
+      "source": "财政部财政新闻",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "score": 99,
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm"
+    },
+    {
+      "id": "news-item-e9f5e3569b",
+      "title": "中央财政下达育儿补贴补助资金999亿元",
+      "displayTitle": "中央财政下达育儿补贴补助资金999亿元",
+      "displaySummary": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
+      "importance": 114,
+      "impactAreas": [
+        "宏观",
+        "政策",
+        "公共事务"
+      ],
+      "source": "中国政府网要闻",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "score": 96,
+      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm"
+    },
+    {
+      "id": "news-item-a8ef470e2f",
+      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
+      "displayTitle": "国务院印发《加快农业农村现代化“十五五”规划》",
+      "displaySummary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
+      "importance": 112,
+      "impactAreas": [
+        "公共事务"
+      ],
+      "source": "中国政府网要闻",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "score": 96,
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm"
+    },
+    {
+      "id": "news-item-208d1e8eb6",
+      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+      "displayTitle": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+      "displaySummary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
+      "importance": 112,
+      "impactAreas": [
+        "公共事务"
+      ],
+      "source": "中国政府网要闻",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "score": 96,
+      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm"
+    },
+    {
+      "id": "news-un-news-27877aac4c",
+      "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+      "displayTitle": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+      "displaySummary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for rest...",
+      "importance": 110,
+      "impactAreas": [
+        "科技",
+        "公共安全",
+        "金融"
+      ],
+      "source": "UN News",
+      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "score": 95,
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167619"
+    }
+  ],
   "channels": {
     "tech": {
       "id": "tech",
@@ -14,6 +92,8 @@
           "id": "tech-openai-news-f9f27c3f88",
           "sourceId": "openai-news",
           "title": "Our views on AI policy and political advocacy",
+          "displayTitle": "Our views on AI policy and political advocacy",
+          "originalTitle": "Our views on AI policy and political advocacy",
           "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
           "source": "OpenAI News",
           "sourceType": "rss",
@@ -24,10 +104,23 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+          "displaySummary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+          "originalSummary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
           "contentExcerpt": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
           "tags": [
             "Global Affairs"
           ],
+          "refinedTags": [
+            "市场监管"
+          ],
+          "impactAreas": [
+            "金融",
+            "政策",
+            "科技"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 109,
           "score": 100,
           "duplicateCount": 0
         },
@@ -35,6 +128,8 @@
           "id": "tech-openai-news-968c7d1345",
           "sourceId": "openai-news",
           "title": "Codex is becoming a productivity tool for everyone",
+          "displayTitle": "Codex is becoming a productivity tool for everyone",
+          "originalTitle": "Codex is becoming a productivity tool for everyone",
           "url": "https://openai.com/index/codex-for-knowledge-work",
           "source": "OpenAI News",
           "sourceType": "rss",
@@ -45,17 +140,28 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+          "displaySummary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+          "originalSummary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
           "contentExcerpt": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
           "tags": [
             "Global Affairs"
           ],
-          "score": 95,
+          "refinedTags": [],
+          "impactAreas": [
+            "科技"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 100,
+          "score": 92,
           "duplicateCount": 0
         },
         {
           "id": "tech-google-ai-blog-312495d49a",
           "sourceId": "google-ai",
           "title": "How we used Gemini to build Google I/O 2026",
+          "displayTitle": "How we used Gemini to build Google I/O 2026",
+          "originalTitle": "How we used Gemini to build Google I/O 2026",
           "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
           "source": "Google AI Blog",
           "sourceType": "rss",
@@ -66,6 +172,8 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
+          "displaySummary": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was...",
+          "originalSummary": "Learn how Googlers used AI to produce Google I/O 2026.",
           "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
           "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
           "tags": [
@@ -74,13 +182,27 @@
             "Developer tools",
             "AI"
           ],
-          "score": 93,
+          "refinedTags": [
+            "AI模型",
+            "开发者平台"
+          ],
+          "impactAreas": [
+            "科技",
+            "产业",
+            "开发者"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 101,
+          "score": 90,
           "duplicateCount": 0
         },
         {
           "id": "tech-openai-news-de25d7330f",
           "sourceId": "openai-news",
           "title": "Building the infrastructure for the Intelligence Age in Michigan",
+          "displayTitle": "Building the infrastructure for the Intelligence Age in Michigan",
+          "originalTitle": "Building the infrastructure for the Intelligence Age in Michigan",
           "url": "https://openai.com/index/stargate-michigan-data-center",
           "source": "OpenAI News",
           "sourceType": "rss",
@@ -91,17 +213,31 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+          "displaySummary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+          "originalSummary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
           "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
           "tags": [
             "Global Affairs"
           ],
-          "score": 93,
+          "refinedTags": [
+            "AI模型"
+          ],
+          "impactAreas": [
+            "科技",
+            "产业"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 99,
+          "score": 90,
           "duplicateCount": 0
         },
         {
           "id": "tech-openai-news-d71c1c5476",
           "sourceId": "openai-news",
           "title": "OpenAI frontier models and Codex are now available on AWS",
+          "displayTitle": "OpenAI frontier models and Codex are now available on AWS",
+          "originalTitle": "OpenAI frontier models and Codex are now available on AWS",
           "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
           "source": "OpenAI News",
           "sourceType": "rss",
@@ -112,11 +248,25 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+          "displaySummary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement w...",
+          "originalSummary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
           "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
           "tags": [
             "Product"
           ],
-          "score": 93,
+          "refinedTags": [
+            "AI模型",
+            "云计算"
+          ],
+          "impactAreas": [
+            "科技",
+            "产业",
+            "企业服务"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 101,
+          "score": 90,
           "duplicateCount": 0
         }
       ]
@@ -125,12 +275,13 @@
       "id": "finance",
       "label": "金融",
       "description": "央行、监管、市场结构、宏观数据与风险信号。",
-      "count": 4,
+      "count": 2,
       "items": [
         {
           "id": "finance-item-27284b737d",
           "sourceId": "mof-news",
           "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+          "displayTitle": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
           "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
           "source": "财政部财政新闻",
           "sourceType": "webpage",
@@ -141,55 +292,23 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "daily",
           "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "displaySummary": "财政部财政政策、国债、预算和财政运行新闻",
           "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
           "tags": [
             "official-agency",
             "daily"
           ],
-          "score": 100,
-          "duplicateCount": 0
-        },
-        {
-          "id": "finance-item-d864638b2e",
-          "sourceId": "ndrc-news",
-          "title": "国家发展改革委与塞尔维亚有关部门签署合作文件",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405632.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceType": "webpage",
-          "category": "finance",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T09:39:57.215Z",
-          "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "daily",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "tags": [
-            "official-agency",
-            "daily"
+          "refinedTags": [
+            "财政政策"
           ],
-          "score": 99,
-          "duplicateCount": 0
-        },
-        {
-          "id": "finance-item-2ad37299fe",
-          "sourceId": "ndrc-news",
-          "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceType": "webpage",
-          "category": "finance",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T09:39:57.215Z",
-          "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "daily",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "tags": [
-            "official-agency",
-            "daily"
+          "impactAreas": [
+            "宏观",
+            "政策",
+            "金融"
           ],
+          "language": "zh",
+          "translationMethod": "source-original",
+          "hotspotScore": 117,
           "score": 99,
           "duplicateCount": 0
         },
@@ -197,6 +316,8 @@
           "id": "finance-u-s-sec-press-releases-29e2ec8346",
           "sourceId": "sec-press",
           "title": "SEC Announces Four New Members of Investor Advisory Committee",
+          "displayTitle": "SEC Announces Four New Members of Investor Advisory Committee",
+          "originalTitle": "SEC Announces Four New Members of Investor Advisory Committee",
           "url": "https://www.sec.gov/newsroom/press-releases/2026-50-sec-announces-four-new-members-investor-advisory-committee",
           "source": "U.S. SEC Press Releases",
           "sourceType": "rss",
@@ -207,9 +328,21 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
+          "displaySummary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;w...",
+          "originalSummary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
           "contentExcerpt": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
           "tags": [],
-          "score": 92,
+          "refinedTags": [
+            "市场监管"
+          ],
+          "impactAreas": [
+            "金融",
+            "政策"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 98,
+          "score": 89,
           "duplicateCount": 0
         }
       ]
@@ -218,12 +351,13 @@
       "id": "news",
       "label": "新闻",
       "description": "公共政策、国际事件、社会治理与重大突发消息。",
-      "count": 31,
+      "count": 17,
       "items": [
         {
           "id": "news-item-a8ef470e2f",
           "sourceId": "govcn-yaowen",
           "title": "国务院印发《加快农业农村现代化“十五五”规划》",
+          "displayTitle": "国务院印发《加快农业农村现代化“十五五”规划》",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -234,19 +368,28 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "displaySummary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
           "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
           ],
-          "score": 100,
+          "refinedTags": [],
+          "impactAreas": [
+            "公共事务"
+          ],
+          "language": "zh",
+          "translationMethod": "source-original",
+          "hotspotScore": 112,
+          "score": 96,
           "duplicateCount": 0
         },
         {
           "id": "news-item-e9f5e3569b",
           "sourceId": "govcn-yaowen",
           "title": "中央财政下达育儿补贴补助资金999亿元",
+          "displayTitle": "中央财政下达育儿补贴补助资金999亿元",
           "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -257,19 +400,32 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "displaySummary": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
           "contentExcerpt": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
           ],
-          "score": 100,
+          "refinedTags": [
+            "财政政策"
+          ],
+          "impactAreas": [
+            "宏观",
+            "政策",
+            "公共事务"
+          ],
+          "language": "zh",
+          "translationMethod": "source-original",
+          "hotspotScore": 114,
+          "score": 96,
           "duplicateCount": 0
         },
         {
           "id": "news-item-208d1e8eb6",
           "sourceId": "govcn-yaowen",
           "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+          "displayTitle": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
           "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -280,19 +436,29 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "displaySummary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
           "contentExcerpt": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
           ],
-          "score": 100,
+          "refinedTags": [],
+          "impactAreas": [
+            "公共事务"
+          ],
+          "language": "zh",
+          "translationMethod": "source-original",
+          "hotspotScore": 112,
+          "score": 96,
           "duplicateCount": 0
         },
         {
           "id": "news-un-news-27877aac4c",
           "sourceId": "un-news",
           "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+          "displayTitle": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+          "originalTitle": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167619",
           "source": "UN News",
           "sourceType": "rss",
@@ -303,16 +469,34 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
+          "displaySummary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for rest...",
+          "originalSummary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
           "contentExcerpt": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UN-Photo-Kayoko-Gotoh.jpg/image770x420cropped.jpg",
           "tags": [],
-          "score": 97,
+          "refinedTags": [
+            "网络安全",
+            "市场监管",
+            "地缘政治",
+            "国际组织"
+          ],
+          "impactAreas": [
+            "科技",
+            "公共安全",
+            "金融"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 110,
+          "score": 95,
           "duplicateCount": 0
         },
         {
           "id": "news-nasa-breaking-news-68bdbb5e73",
           "sourceId": "nasa-breaking-news",
           "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+          "displayTitle": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+          "originalTitle": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
           "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
           "source": "NASA Breaking News",
           "sourceType": "rss",
@@ -323,6 +507,8 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
+          "displaySummary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my bac...",
+          "originalSummary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
           "contentExcerpt": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent into a darkened bedroom and hop around just like the footage I had seen of Apollo astronauts.” Today, with more than 16 years at NASA’s Johnson Space Center under his belt, Wray is proud...",
           "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/jsc2022e072191.jpg",
           "tags": [
@@ -331,76 +517,122 @@
             "General",
             "People of Johnson"
           ],
-          "score": 95,
+          "refinedTags": [],
+          "impactAreas": [
+            "公共事务"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 101,
+          "score": 92,
           "duplicateCount": 0
         },
         {
-          "id": "news-item-36ef61976c",
-          "sourceId": "govcn-yaowen",
-          "title": "王毅同巴西外长维埃拉举行中巴外长级全面战略对话",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070853.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
+          "id": "news-nasa-breaking-news-061b839247",
+          "sourceId": "nasa-breaking-news",
+          "title": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
+          "displayTitle": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
+          "originalTitle": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
+          "url": "https://www.nasa.gov/news-release/nasa-awards-modification-contract-for-reduced-gravity-test-aircraft",
+          "source": "NASA Breaking News",
+          "sourceType": "rss",
           "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T09:39:57.215Z",
-          "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "中共中央政治局委员、外交部长王毅1日在北京同巴西外长维埃拉举行第五次中巴外长级全面战略对话。",
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "publishedAt": "2026-06-01T23:45:59.000Z",
+          "fetchedAt": "2026-06-02T09:39:39.775Z",
+          "sourceLastCheckedAt": "2026-06-02T09:39:39.775Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
+          "displaySummary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Arm...",
+          "originalSummary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
+          "contentExcerpt": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen work. This contract has a maximum potential value of $8.4 million, which runs through Feb. 1, 2027. The contractor will...",
+          "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/nasa-meatball-1.webp",
           "tags": [
-            "official-agency",
-            "hourly"
+            "Armstrong Flight Research Center",
+            "Johnson Space Center"
           ],
-          "score": 95,
+          "refinedTags": [
+            "地缘政治"
+          ],
+          "impactAreas": [
+            "国际",
+            "风险",
+            "公共事务"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 101,
+          "score": 91,
           "duplicateCount": 0
         },
         {
-          "id": "news-item-b916b1cb7d",
-          "sourceId": "govcn-yaowen",
-          "title": "创造属于我们这个时代的新文化——习近平文化思想引领文化传承发展开创新局面",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070850.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
+          "id": "news-nasa-breaking-news-d63ae3d0ae",
+          "sourceId": "nasa-breaking-news",
+          "title": "NASA to Conduct Low-Altitude Flights Near Houston",
+          "displayTitle": "NASA to Conduct Low-Altitude Flights Near Houston",
+          "originalTitle": "NASA to Conduct Low-Altitude Flights Near Houston",
+          "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-near-houston",
+          "source": "NASA Breaking News",
+          "sourceType": "rss",
           "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T09:39:57.215Z",
-          "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "2023年6月2日，习近平总书记在文化传承发展座谈会上发表重要讲话，深刻阐释中华文化传承发展的重大理论和现实问题，发出“赓续历史文脉、谱写当代华章”的时代号召。",
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "publishedAt": "2026-06-01T18:29:50.000Z",
+          "fetchedAt": "2026-06-02T09:39:39.775Z",
+          "sourceLastCheckedAt": "2026-06-02T09:39:39.775Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
+          "displaySummary": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights a...",
+          "originalSummary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
+          "contentExcerpt": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13. During the mission, select maneuvers will be conducted at low altitudes over the Houston area. Pilots will fly remote sensing payloads in raster patterns, or parallel back-and-forth lines. The instruments flown could help researchers map the movement of the gases...",
+          "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ed07-0027-56large.jpg",
           "tags": [
-            "official-agency",
-            "hourly"
+            "General"
           ],
-          "score": 95,
+          "refinedTags": [],
+          "impactAreas": [
+            "公共事务"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 97,
+          "score": 90,
           "duplicateCount": 0
         },
         {
-          "id": "news-item-4e13fa3f05",
-          "sourceId": "govcn-yaowen",
-          "title": "科技赋能夏收夏种 助力粮食稳产丰收",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070836.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
+          "id": "news-un-news-ad73a69177",
+          "sourceId": "un-news",
+          "title": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
+          "displayTitle": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
+          "originalTitle": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167618",
+          "source": "UN News",
+          "sourceType": "rss",
           "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "fetchedAt": "2026-06-02T09:39:57.215Z",
-          "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "“三夏”农忙时节，各地以智慧农机赋能夏收夏种，助力粮食稳产丰收。",
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
+          "publishedAt": "2026-06-01T12:00:00.000Z",
+          "fetchedAt": "2026-06-02T09:39:39.775Z",
+          "sourceLastCheckedAt": "2026-06-02T09:39:39.775Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
+          "displaySummary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes...",
+          "originalSummary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
+          "contentExcerpt": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.",
+          "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNHCR-Lebanon.jpg/image770x420cropped.jpg",
+          "tags": [],
+          "refinedTags": [
+            "网络安全",
+            "市场监管",
+            "地缘政治"
           ],
-          "score": 95,
+          "impactAreas": [
+            "科技",
+            "公共安全",
+            "金融"
+          ],
+          "language": "en",
+          "translationMethod": "fallback-original",
+          "hotspotScore": 100,
+          "score": 87,
           "duplicateCount": 0
         }
       ]
@@ -408,100 +640,11 @@
   },
   "items": [
     {
-      "id": "finance-item-27284b737d",
-      "sourceId": "mof-news",
-      "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
-      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
-      "source": "财政部财政新闻",
-      "sourceType": "webpage",
-      "category": "finance",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "daily",
-      "summary": "财政部财政政策、国债、预算和财政运行新闻",
-      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-      "tags": [
-        "official-agency",
-        "daily"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-a8ef470e2f",
-      "sourceId": "govcn-yaowen",
-      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-e9f5e3569b",
-      "sourceId": "govcn-yaowen",
-      "title": "中央财政下达育儿补贴补助资金999亿元",
-      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-208d1e8eb6",
-      "sourceId": "govcn-yaowen",
-      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
-      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
       "id": "tech-openai-news-f9f27c3f88",
       "sourceId": "openai-news",
       "title": "Our views on AI policy and political advocacy",
+      "displayTitle": "Our views on AI policy and political advocacy",
+      "originalTitle": "Our views on AI policy and political advocacy",
       "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
       "source": "OpenAI News",
       "sourceType": "rss",
@@ -512,61 +655,167 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "displaySummary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+      "originalSummary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
       "contentExcerpt": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
       "tags": [
         "Global Affairs"
       ],
+      "refinedTags": [
+        "市场监管"
+      ],
+      "impactAreas": [
+        "金融",
+        "政策",
+        "科技"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 109,
       "score": 100,
       "duplicateCount": 0
     },
     {
-      "id": "finance-item-d864638b2e",
-      "sourceId": "ndrc-news",
-      "title": "国家发展改革委与塞尔维亚有关部门签署合作文件",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405632.html",
-      "source": "国家发展改革委新闻发布",
+      "id": "finance-item-27284b737d",
+      "sourceId": "mof-news",
+      "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+      "displayTitle": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
+      "source": "财政部财政新闻",
       "sourceType": "webpage",
       "category": "finance",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
       "fetchedAt": "2026-06-02T09:39:57.215Z",
       "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "displaySummary": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
       "tags": [
         "official-agency",
         "daily"
       ],
+      "refinedTags": [
+        "财政政策"
+      ],
+      "impactAreas": [
+        "宏观",
+        "政策",
+        "金融"
+      ],
+      "language": "zh",
+      "translationMethod": "source-original",
+      "hotspotScore": 117,
       "score": 99,
       "duplicateCount": 0
     },
     {
-      "id": "finance-item-2ad37299fe",
-      "sourceId": "ndrc-news",
-      "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
-      "source": "国家发展改革委新闻发布",
+      "id": "news-item-a8ef470e2f",
+      "sourceId": "govcn-yaowen",
+      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
+      "displayTitle": "国务院印发《加快农业农村现代化“十五五”规划》",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
+      "source": "中国政府网要闻",
       "sourceType": "webpage",
-      "category": "finance",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
       "fetchedAt": "2026-06-02T09:39:57.215Z",
       "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
       "sourceAuthority": "official-agency",
-      "timelinessTier": "daily",
-      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "displaySummary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
+      "contentExcerpt": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
-        "daily"
+        "hourly"
       ],
-      "score": 99,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "zh",
+      "translationMethod": "source-original",
+      "hotspotScore": 112,
+      "score": 96,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-e9f5e3569b",
+      "sourceId": "govcn-yaowen",
+      "title": "中央财政下达育儿补贴补助资金999亿元",
+      "displayTitle": "中央财政下达育儿补贴补助资金999亿元",
+      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:39:57.215Z",
+      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "displaySummary": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
+      "contentExcerpt": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "refinedTags": [
+        "财政政策"
+      ],
+      "impactAreas": [
+        "宏观",
+        "政策",
+        "公共事务"
+      ],
+      "language": "zh",
+      "translationMethod": "source-original",
+      "hotspotScore": 114,
+      "score": 96,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-208d1e8eb6",
+      "sourceId": "govcn-yaowen",
+      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+      "displayTitle": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
+      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-02T00:00:00.000Z",
+      "fetchedAt": "2026-06-02T09:39:57.215Z",
+      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "displaySummary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
+      "contentExcerpt": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "zh",
+      "translationMethod": "source-original",
+      "hotspotScore": 112,
+      "score": 96,
       "duplicateCount": 0
     },
     {
       "id": "news-un-news-27877aac4c",
       "sourceId": "un-news",
       "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+      "displayTitle": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
+      "originalTitle": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167619",
       "source": "UN News",
       "sourceType": "rss",
@@ -577,16 +826,34 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
+      "displaySummary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for rest...",
+      "originalSummary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.&nbsp;",
       "contentExcerpt": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for restraint and dialogue.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UN-Photo-Kayoko-Gotoh.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 97,
+      "refinedTags": [
+        "网络安全",
+        "市场监管",
+        "地缘政治",
+        "国际组织"
+      ],
+      "impactAreas": [
+        "科技",
+        "公共安全",
+        "金融"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 110,
+      "score": 95,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-68bdbb5e73",
       "sourceId": "nasa-breaking-news",
       "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+      "displayTitle": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
+      "originalTitle": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
       "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -597,6 +864,8 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
+      "displaySummary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my bac...",
+      "originalSummary": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent [&#8230;]",
       "contentExcerpt": "Scott Wray’s experience with spacewalks started when he was about 6 years old. A tent resembling a lunar lander provided the perfect imaginary spacecraft. “I would lie on my back with my feet propped up on a pillow as I imagined going through a launch countdown sequence,” he said. “Then I would exit the tent into a darkened bedroom and hop around just like the footage I had seen of Apollo astronauts.” Today, with more than 16 years at NASA’s Johnson Space Center under his belt, Wray is proud...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/jsc2022e072191.jpg",
       "tags": [
@@ -605,13 +874,22 @@
         "General",
         "People of Johnson"
       ],
-      "score": 95,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 101,
+      "score": 92,
       "duplicateCount": 0
     },
     {
       "id": "tech-openai-news-968c7d1345",
       "sourceId": "openai-news",
       "title": "Codex is becoming a productivity tool for everyone",
+      "displayTitle": "Codex is becoming a productivity tool for everyone",
+      "originalTitle": "Codex is becoming a productivity tool for everyone",
       "url": "https://openai.com/index/codex-for-knowledge-work",
       "source": "OpenAI News",
       "sourceType": "rss",
@@ -622,293 +900,28 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "displaySummary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "originalSummary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
       "contentExcerpt": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
       "tags": [
         "Global Affairs"
       ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-36ef61976c",
-      "sourceId": "govcn-yaowen",
-      "title": "王毅同巴西外长维埃拉举行中巴外长级全面战略对话",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070853.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中共中央政治局委员、外交部长王毅1日在北京同巴西外长维埃拉举行第五次中巴外长级全面战略对话。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
+      "refinedTags": [],
+      "impactAreas": [
+        "科技"
       ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-b916b1cb7d",
-      "sourceId": "govcn-yaowen",
-      "title": "创造属于我们这个时代的新文化——习近平文化思想引领文化传承发展开创新局面",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070850.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "2023年6月2日，习近平总书记在文化传承发展座谈会上发表重要讲话，深刻阐释中华文化传承发展的重大理论和现实问题，发出“赓续历史文脉、谱写当代华章”的时代号召。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-4e13fa3f05",
-      "sourceId": "govcn-yaowen",
-      "title": "科技赋能夏收夏种 助力粮食稳产丰收",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070836.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "“三夏”农忙时节，各地以智慧农机赋能夏收夏种，助力粮食稳产丰收。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-2cc6b95406",
-      "sourceId": "govcn-yaowen",
-      "title": "我国推进儿童友好建设城乡全覆盖",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070835.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "记者从国家发展改革委了解到，今年，国家将推动儿童友好建设从试点城市向全部城市拓展、从城市向农村延伸，在建设范围上实现城乡全域覆盖。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-63b952beb9",
-      "sourceId": "govcn-yaowen",
-      "title": "谌贻琴在出席“六一”主题活动时勉励少年儿童：牢记习近平总书记嘱托 在新征程上跑好历史接力赛",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070816.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月1日，国务委员、国务院妇女儿童工作委员会主任谌贻琴来到中国妇女儿童博物馆，出席“童绘共同体——少年儿童美术作品展”主题活动，向孩子们致以节日祝贺。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-8975ededd7",
-      "sourceId": "govcn-yaowen",
-      "title": "国务院任免国家工作人员（2026年6月1日）",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "国务院任免国家工作人员。任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-9a63007ce5",
-      "sourceId": "govcn-yaowen",
-      "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "2025年，我国多式联运发展保持稳步增长态势。全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-e56ba9a94a",
-      "sourceId": "govcn-yaowen",
-      "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-54b91da87e",
-      "sourceId": "govcn-yaowen",
-      "title": "国务院关于对外投资的规定",
-      "url": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "《国务院关于对外投资的规定》已经2026年4月17日国务院第83次常务会议通过，现予公布，自2026年7月1日起施行。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-d700d62dfe",
-      "sourceId": "govcn-yaowen",
-      "title": "孩子们的快乐，真的很简单！",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070752.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-f4bd10fd77",
-      "sourceId": "govcn-yaowen",
-      "title": "前4月全国社会物流总额同比增长5.5% 即时零售交易额增长29.2%",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070749.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国物流与采购联合会数据显示：1—4月，全国社会物流总额121.7万亿元，同比增长5.5%，物流运行整体平稳、运行向好，物流市场需求持续扩容，供需适配性稳步提升。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-533ed93dbd",
-      "sourceId": "govcn-yaowen",
-      "title": "守护童心 筑梦未来——习近平总书记的深情寄望鼓舞新时代少年儿童成长成才",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070741.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-01T00:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:57.215Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:57.215Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "当代中国少年儿童既是实现第一个百年奋斗目标的经历者、见证者，更是实现第二个百年奋斗目标、建设社会主义现代化强国的生力军。",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "score": 95,
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 100,
+      "score": 92,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-061b839247",
       "sourceId": "nasa-breaking-news",
       "title": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
+      "displayTitle": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
+      "originalTitle": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
       "url": "https://www.nasa.gov/news-release/nasa-awards-modification-contract-for-reduced-gravity-test-aircraft",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -919,19 +932,34 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
+      "displaySummary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Arm...",
+      "originalSummary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen [&#8230;]",
       "contentExcerpt": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Armstrong Flight Research Center in Edwards, California, and Johnson Space Center in Houston. The award is a firm-fixed-price contract and will be time and material for any over and above and unforeseen work. This contract has a maximum potential value of $8.4 million, which runs through Feb. 1, 2027. The contractor will...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/nasa-meatball-1.webp",
       "tags": [
         "Armstrong Flight Research Center",
         "Johnson Space Center"
       ],
-      "score": 93,
+      "refinedTags": [
+        "地缘政治"
+      ],
+      "impactAreas": [
+        "国际",
+        "风险",
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 101,
+      "score": 91,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-d63ae3d0ae",
       "sourceId": "nasa-breaking-news",
       "title": "NASA to Conduct Low-Altitude Flights Near Houston",
+      "displayTitle": "NASA to Conduct Low-Altitude Flights Near Houston",
+      "originalTitle": "NASA to Conduct Low-Altitude Flights Near Houston",
       "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-near-houston",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -942,18 +970,29 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
-      "contentExcerpt": "Johnson Space Center Office of Communications NASA’s C-20A research aircraft takes off from the Edwards Air Force Base runway on an envelope-expansion flight test with the unmanned aerial vehicle synthetic aperture radar pod. Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13. During the mission, select maneuvers will be conducted at low altitudes over the Ho...",
+      "displaySummary": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights a...",
+      "originalSummary": "Five research&#160;aircraft&#160;will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13.&#160;During the mission, select maneuvers will be conducted at low altitudes over the Houston area.&#160; Pilots&#160;will&#160;fly remote sensing payloads in raster patterns,&#160;or&#160;parallel back-and-forth lines. The instruments flown could help [&#8230;]",
+      "contentExcerpt": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston. Flights are expected from Wednesday, June 3 to Saturday, June 13. During the mission, select maneuvers will be conducted at low altitudes over the Houston area. Pilots will fly remote sensing payloads in raster patterns, or parallel back-and-forth lines. The instruments flown could help researchers map the movement of the gases...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ed07-0027-56large.jpg",
       "tags": [
         "General"
       ],
-      "score": 93,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 97,
+      "score": 90,
       "duplicateCount": 0
     },
     {
       "id": "tech-google-ai-blog-312495d49a",
       "sourceId": "google-ai",
       "title": "How we used Gemini to build Google I/O 2026",
+      "displayTitle": "How we used Gemini to build Google I/O 2026",
+      "originalTitle": "How we used Gemini to build Google I/O 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
       "source": "Google AI Blog",
       "sourceType": "rss",
@@ -964,6 +1003,8 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Learn how Googlers used AI to produce Google I/O 2026.",
+      "displaySummary": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was...",
+      "originalSummary": "Learn how Googlers used AI to produce Google I/O 2026.",
       "contentExcerpt": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year. Your browser does not support the audio element. Google I/O 2026 was all about how we’re making AI helpful for everyone in new ways. But we didn’t just make announcements about our innovations in AI at I/O — we used those tools to bring I/O to life, too. It’s both a strange and exciting moment to be building anything. We're living through an incredible shift where AI tools are getting...",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_IO_social.width-1300.png",
       "tags": [
@@ -972,13 +1013,27 @@
         "Developer tools",
         "AI"
       ],
-      "score": 93,
+      "refinedTags": [
+        "AI模型",
+        "开发者平台"
+      ],
+      "impactAreas": [
+        "科技",
+        "产业",
+        "开发者"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 101,
+      "score": 90,
       "duplicateCount": 0
     },
     {
       "id": "tech-openai-news-de25d7330f",
       "sourceId": "openai-news",
       "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "displayTitle": "Building the infrastructure for the Intelligence Age in Michigan",
+      "originalTitle": "Building the infrastructure for the Intelligence Age in Michigan",
       "url": "https://openai.com/index/stargate-michigan-data-center",
       "source": "OpenAI News",
       "sourceType": "rss",
@@ -989,17 +1044,31 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "displaySummary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "originalSummary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
       "contentExcerpt": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
       "tags": [
         "Global Affairs"
       ],
-      "score": 93,
+      "refinedTags": [
+        "AI模型"
+      ],
+      "impactAreas": [
+        "科技",
+        "产业"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 99,
+      "score": 90,
       "duplicateCount": 0
     },
     {
       "id": "tech-openai-news-d71c1c5476",
       "sourceId": "openai-news",
       "title": "OpenAI frontier models and Codex are now available on AWS",
+      "displayTitle": "OpenAI frontier models and Codex are now available on AWS",
+      "originalTitle": "OpenAI frontier models and Codex are now available on AWS",
       "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
       "source": "OpenAI News",
       "sourceType": "rss",
@@ -1010,17 +1079,33 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "displaySummary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement w...",
+      "originalSummary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
       "contentExcerpt": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
       "tags": [
         "Product"
       ],
-      "score": 93,
+      "refinedTags": [
+        "AI模型",
+        "云计算"
+      ],
+      "impactAreas": [
+        "科技",
+        "产业",
+        "企业服务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 101,
+      "score": 90,
       "duplicateCount": 0
     },
     {
       "id": "finance-u-s-sec-press-releases-29e2ec8346",
       "sourceId": "sec-press",
       "title": "SEC Announces Four New Members of Investor Advisory Committee",
+      "displayTitle": "SEC Announces Four New Members of Investor Advisory Committee",
+      "originalTitle": "SEC Announces Four New Members of Investor Advisory Committee",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-50-sec-announces-four-new-members-investor-advisory-committee",
       "source": "U.S. SEC Press Releases",
       "sourceType": "rss",
@@ -1031,15 +1116,29 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
+      "displaySummary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;w...",
+      "originalSummary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
       "contentExcerpt": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;will serve four-year terms,&nbsp;while the fourth new member will serve as the…",
       "tags": [],
-      "score": 92,
+      "refinedTags": [
+        "市场监管"
+      ],
+      "impactAreas": [
+        "金融",
+        "政策"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 98,
+      "score": 89,
       "duplicateCount": 0
     },
     {
       "id": "news-un-news-ad73a69177",
       "sourceId": "un-news",
       "title": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
+      "displayTitle": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
+      "originalTitle": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167618",
       "source": "UN News",
       "sourceType": "rss",
@@ -1050,36 +1149,33 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
+      "displaySummary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes...",
+      "originalSummary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.&nbsp;",
       "contentExcerpt": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes on Beirut’s southern suburbs, and confusion over the status of US-Iran peace talks linked to the faltering ceasefires. Follow live here from New York.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNHCR-Lebanon.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 89,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-un-news-1b4c7504f9",
-      "sourceId": "un-news",
-      "title": "Under fire, Kharkiv is already building for a peaceful tomorrow",
-      "url": "https://news.un.org/feed/view/en/story/2026/05/1167611",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-05-31T12:00:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:39.775Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:39.775Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
-      "contentExcerpt": "Every day in Kharkiv begins with uncertainty: air raid sirens interrupt sleep; missiles strike residential neighbourhoods, industrial sites, and roads. Anxious citizens rush into metro stations during bombardments and children study underground.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_Ukraine_Kharkov%203.jpg/image560x340cropped.jpg",
-      "tags": [],
-      "score": 89,
+      "refinedTags": [
+        "网络安全",
+        "市场监管",
+        "地缘政治"
+      ],
+      "impactAreas": [
+        "科技",
+        "公共安全",
+        "金融"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 100,
+      "score": 87,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-9ddbc969a9",
       "sourceId": "nasa-breaking-news",
       "title": "Fire’s Footprint on Santa Rosa Island",
+      "displayTitle": "Fire’s Footprint on Santa Rosa Island",
+      "originalTitle": "Fire’s Footprint on Santa Rosa Island",
       "url": "https://science.nasa.gov/earth/earth-observatory/fires-footprint-on-santa-rosa-island",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1090,21 +1186,36 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands.",
-      "contentExcerpt": "Earth Observatory Science Earth Observatory Fire’s Footprint on Santa… Earth Earth Observatory Image of the Day EO Explorer Topics All Topics Atmosphere Land Heat &#038; Radiation Life on Earth Human Dimensions Natural Events Oceans Remote Sensing Technology Snow &#038; Ice Water More Content Collections Global Maps World of Change Articles Notes from the Field Blog Earth Matters Blog Blue Marble: Next Generation EO Kids Mission: Biomes About About Us Subscribe 🛜 RSS Contact Us Search May 16...",
-      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/fire%E2%80%99s-footprint-on-santa-rosa-island/channelislandsfire653_oli2_20260516.jpg",
+      "displaySummary": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands. On May 15, 2026, a fire was spott...",
+      "originalSummary": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands.",
+      "contentExcerpt": "A wildland fire charred grassland, coastal sage scrub, and chaparral across one-third of the island, the second largest of the Channel Islands. On May 15, 2026, a fire was spotted from aircraft on the southeastern side of Santa Rosa Island, part of California’s Channel Islands National Park. The blaze spread over the next several days, ultimately burning 18,379 acres (7,438 hectares)—about one-third of the island. These images show the expansion of the fire’s burned area between May 16 (left)...",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fire%E2%80%99s-footprint-on-santa-rosa-island/channelislandsfire_oli_20260524_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "tags": [
         "Earth Observatory",
         "Landsat 8 / LDCM (Landsat Data Continuity Mission)",
         "Landsat 9",
         "Wildfires"
       ],
-      "score": 86,
+      "refinedTags": [
+        "市场监管"
+      ],
+      "impactAreas": [
+        "金融",
+        "政策",
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 93,
+      "score": 83,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-581a957586",
       "sourceId": "nasa-breaking-news",
       "title": "NASA Invites Media to See Roman Space Telescope Arrive at Kennedy",
+      "displayTitle": "NASA Invites Media to See Roman Space Telescope Arrive at Kennedy",
+      "originalTitle": "NASA Invites Media to See Roman Space Telescope Arrive at Kennedy",
       "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-see-roman-space-telescope-arrive-at-kennedy",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1115,21 +1226,32 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media [&#8230;]",
-      "contentExcerpt": "NASA’s Nancy Grace Roman Space Telescope stands complete in the largest clean room at the agency’s Goddard Space Flight Center in Greenbelt, Maryland. With its deep, sweeping views of the universe, Roman will observe billions of cosmic objects to explore fundamental questions about dark energy and planets outside our solar system. Credit: NASA/Scott Wiessinger Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center i...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/roman-option-3.jpg?w=2048",
+      "displaySummary": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observat...",
+      "originalSummary": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media [&#8230;]",
+      "contentExcerpt": "Registration is open for media to cover the arrival of NASA’s Nancy Grace Roman Space Telescope at the agency’s Kennedy Space Center in Florida in the coming weeks. The observatory will arrive aboard NASA’s Pegasus barge from NASA’s Goddard Space Flight Center in Greenbelt, Maryland, where teams completed its construction, assembly, and testing. Credentialed media will be able to witness the arrival and unloading of the space telescope in its transport container at NASA Kennedy’s turn basin....",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/roman-option-3.jpg",
       "tags": [
         "Nancy Grace Roman Space Telescope",
         "Goddard Space Flight Center",
         "Kennedy Space Center",
         "Science Mission Directorate"
       ],
-      "score": 85,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 90,
+      "score": 82,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-5600b94f16",
       "sourceId": "nasa-breaking-news",
       "title": "What’s Up: June 2026 Skywatching Tips from NASA",
+      "displayTitle": "What’s Up: June 2026 Skywatching Tips from NASA",
+      "originalTitle": "What’s Up: June 2026 Skywatching Tips from NASA",
       "url": "https://science.nasa.gov/solar-system/whats-up-june-2026-skywatching-tips-from-nasa",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1140,20 +1262,31 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view.",
-      "contentExcerpt": "Skywatching Skywatching Home What’s Up Meteor Showers Eclipses Daily Moon Guide More Tips &#038; Guides Skywatching FAQ Night Sky Network Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view. Skywatching Highlights June 9: Venus and Jupiter conjunction June 11–15: Mercury joins Venus and Jupiter after sunset June 17: Moon passes in front of Venus &#038; close Moon and Venus pairing June 21: June solstice &#038; start of a...",
-      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar-system/skywatching/2026/june/june9.png?w=1920&#038;h=1080&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
+      "displaySummary": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view. Planets gather after sunset, the Moon passes in fro...",
+      "originalSummary": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view.",
+      "contentExcerpt": "Venus and Jupiter meet after sunset, the Moon passes in front of Venus, summer begins, and deep-sky treasures rise into view. Planets gather after sunset, the Moon passes in front of Venus, summer officially begins and deep sky treasures rise into view. That's What's Up for June. Early this month, look west shortly after sunset to see Venus and Jupiter. They are two of the brightest planets in our sky and around June 9th, they'll appear close together after sunset. This is called a planetary...",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/psd/solar-system/skywatching/2026/june/55129740863_8d1388b2d2_o.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "tags": [
         "Skywatching",
         "Skywatching Tips",
         "The Solar System"
       ],
-      "score": 85,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 89,
+      "score": 82,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-95437bd412",
       "sourceId": "nasa-breaking-news",
       "title": "Pretty in Pink",
+      "displayTitle": "Pretty in Pink",
+      "originalTitle": "Pretty in Pink",
       "url": "https://www.nasa.gov/image-article/pretty-in-pink-2",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1164,19 +1297,34 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA&#8217;S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where stars are between one and three million years [&#8230;]",
-      "contentExcerpt": "X-ray: NASA/CXC/SAO/Sejong Univ./Hur et al; JWST: ESA/Webb, NASA & CSA, V. Almendros-Abad, M. Guarcello, K. Monsch, and the EWOCS team. Image Processing: NASA/CXC/SAO/L. Frattare and K. Arcand This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA&#8217;S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where s...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/55270825152-a1118117db-o.jpg?w=2014",
+      "displaySummary": "This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA’S James Webb Space Telescope (red, orange, gree...",
+      "originalSummary": "This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA&#8217;S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where stars are between one and three million years [&#8230;]",
+      "contentExcerpt": "This image of Westerlund 2 released on March 19, 2026, features Chandra X-ray Observatory data (pink) and infrared data from NASA’S James Webb Space Telescope (red, orange, green, cyan, and blue). Scores of gleaming stars ringed in neon pink stretch across the frame, highlighting a cluster where stars are between one and three million years old. Brick-orange dust clouds along the bottom edge illustrate the raw materials of this active stellar nursery. Westerlund 2 resides in a raucous stellar...",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/55270825152-a1118117db-o.jpg",
       "tags": [
         "Chandra X-Ray Observatory",
         "Star Clusters"
       ],
-      "score": 84,
+      "refinedTags": [
+        "云计算"
+      ],
+      "impactAreas": [
+        "科技",
+        "企业服务",
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 91,
+      "score": 82,
       "duplicateCount": 0
     },
     {
       "id": "news-nasa-breaking-news-2e9441b316",
       "sourceId": "nasa-breaking-news",
       "title": "Space Out This Summer with Variety of NASA STEM Activities",
+      "displayTitle": "Space Out This Summer with Variety of NASA STEM Activities",
+      "originalTitle": "Space Out This Summer with Variety of NASA STEM Activities",
       "url": "https://www.nasa.gov/learning-resources/space-out-this-summer-with-variety-of-nasa-stem-activities",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1187,19 +1335,30 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level.&#160; Here are some opportunities [&#8230;]",
-      "contentExcerpt": "4 Min Read Space Out This Summer with Variety of NASA STEM Activities Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level.&nbsp; Here are some opportunities to level up your skills with NASA STEM this summer. Rise to Stardance Challenge From Monday, June 1, th...",
-      "imageUrl": "https://images-assets.nasa.gov/image/art002e012476/art002e012476~large.jpg?w=1920&#038;h=1440&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
+      "displaySummary": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going ou...",
+      "originalSummary": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level.&#160; Here are some opportunities [&#8230;]",
+      "contentExcerpt": "Summer is “Go” for launch, and NASA has a universe of ways to help you to jump in, explore, and create! Whether you prefer to spend this season fueling your creativity, going outdoors into nature, or daydreaming about your future, NASA offers ways to take your interests to the next level. Here are some opportunities to level up your skills with NASA STEM this summer. From Monday, June 1, through Sept. 30, students ages 13 to 18 are invited to flex their creativity in the online Stardance Chal...",
+      "imageUrl": "https://images-assets.nasa.gov/image/art002e012476/art002e012476~large.jpg",
       "tags": [
         "Learning Resources",
         "Grades 9 - 12"
       ],
-      "score": 84,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 88,
+      "score": 81,
       "duplicateCount": 0
     },
     {
       "id": "news-un-news-9f397a67e1",
       "sourceId": "un-news",
       "title": "World News in Brief: Updates from Gaza, the West Bank and Afghanistan, UN development reforms, change at the top of WFP",
+      "displayTitle": "World News in Brief: Updates from Gaza, the West Bank and Afghanistan, UN development reforms, change at the top of WFP",
+      "originalTitle": "World News in Brief: Updates from Gaza, the West Bank and Afghanistan, UN development reforms, change at the top of WFP",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167617",
       "source": "UN News",
       "sourceType": "rss",
@@ -1210,16 +1369,27 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Families in Gaza living on or near the so-called Yellow Line controlled by the Israeli military have told the UN they live in constant fear of being killed or injured.",
+      "displaySummary": "Families in Gaza living on or near the so-called Yellow Line controlled by the Israeli military have told the UN they live in constant fear of being killed or injured.",
+      "originalSummary": "Families in Gaza living on or near the so-called Yellow Line controlled by the Israeli military have told the UN they live in constant fear of being killed or injured.",
       "contentExcerpt": "Families in Gaza living on or near the so-called Yellow Line controlled by the Israeli military have told the UN they live in constant fear of being killed or injured.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_UNNews_Eid_In_Gaza_10.jpg/image560x340cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_UNNews_Eid_In_Gaza_10.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 83,
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 88,
+      "score": 81,
       "duplicateCount": 0
     },
     {
       "id": "news-un-news-f667130aec",
       "sourceId": "un-news",
       "title": "From Libyan deserts to 3D-printed guns: The weapons that never go away",
+      "displayTitle": "From Libyan deserts to 3D-printed guns: The weapons that never go away",
+      "originalTitle": "From Libyan deserts to 3D-printed guns: The weapons that never go away",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167616",
       "source": "UN News",
       "sourceType": "rss",
@@ -1230,16 +1400,31 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Years after conflicts fade from the headlines, the weapons used to fight them often continue to circulate – crossing borders, fuelling crime and undermining an often-fragile peace. Now, ghost guns, 3D-printed firearms and increasingly sophisticated trafficking networks are creating new challenges for governments worldwide.",
+      "displaySummary": "Years after conflicts fade from the headlines, the weapons used to fight them often continue to circulate – crossing borders, fuelling crime and undermining an often-fragile pea...",
+      "originalSummary": "Years after conflicts fade from the headlines, the weapons used to fight them often continue to circulate – crossing borders, fuelling crime and undermining an often-fragile peace. Now, ghost guns, 3D-printed firearms and increasingly sophisticated trafficking networks are creating new challenges for governments worldwide.",
       "contentExcerpt": "Years after conflicts fade from the headlines, the weapons used to fight them often continue to circulate – crossing borders, fuelling crime and undermining an often-fragile peace. Now, ghost guns, 3D-printed firearms and increasingly sophisticated trafficking networks are creating new challenges for governments worldwide.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-Wikipedia-MKII-Stingray.jpg/image560x340cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-Wikipedia-MKII-Stingray.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 83,
+      "refinedTags": [
+        "地缘政治"
+      ],
+      "impactAreas": [
+        "国际",
+        "风险",
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 90,
+      "score": 81,
       "duplicateCount": 0
     },
     {
       "id": "news-un-news-5e79be76bc",
       "sourceId": "un-news",
       "title": "Lebanon: Families flee Beirut as Israel threatens renewed strikes on Hezbollah",
+      "displayTitle": "Lebanon: Families flee Beirut as Israel threatens renewed strikes on Hezbollah",
+      "originalTitle": "Lebanon: Families flee Beirut as Israel threatens renewed strikes on Hezbollah",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167615",
       "source": "UN News",
       "sourceType": "rss",
@@ -1250,16 +1435,31 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "As hostilities escalate in Lebanon despite a recent ceasefire extension, the United Nations continues to push for peace and support displaced civilians by providing food, protection and other assistance.",
+      "displaySummary": "As hostilities escalate in Lebanon despite a recent ceasefire extension, the United Nations continues to push for peace and support displaced civilians by providing food, protec...",
+      "originalSummary": "As hostilities escalate in Lebanon despite a recent ceasefire extension, the United Nations continues to push for peace and support displaced civilians by providing food, protection and other assistance.",
       "contentExcerpt": "As hostilities escalate in Lebanon despite a recent ceasefire extension, the United Nations continues to push for peace and support displaced civilians by providing food, protection and other assistance.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-04-2026-UNICEF-Lebanon-01.jpg/image560x340cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-04-2026-UNICEF-Lebanon-01.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 83,
+      "refinedTags": [
+        "国际组织"
+      ],
+      "impactAreas": [
+        "国际",
+        "政策",
+        "公共事务"
+      ],
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 90,
+      "score": 81,
       "duplicateCount": 0
     },
     {
       "id": "news-un-news-c2e346b1f1",
       "sourceId": "un-news",
       "title": "DR Congo Ebola outbreak: Nurses discharged after full recovery",
+      "displayTitle": "DR Congo Ebola outbreak: Nurses discharged after full recovery",
+      "originalTitle": "DR Congo Ebola outbreak: Nurses discharged after full recovery",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167613",
       "source": "UN News",
       "sourceType": "rss",
@@ -1270,36 +1470,19 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Four nurses who fell ill with Ebola&nbsp;in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that sparked an international health alert.&nbsp;",
-      "contentExcerpt": "Four nurses who fell ill with Ebola&nbsp;in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that sparked an international health alert.&nbsp;",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/28-05-2026-WHO-DR-Congo-ebola-05.jpg/image560x340cropped.jpg",
+      "displaySummary": "Four nurses who fell ill with Ebola in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that s...",
+      "originalSummary": "Four nurses who fell ill with Ebola&nbsp;in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that sparked an international health alert.&nbsp;",
+      "contentExcerpt": "Four nurses who fell ill with Ebola in the eastern Democratic Republic of the Congo (DRC) have been discharged from hospital after recovering from the often-fatal illness that sparked an international health alert.",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/28-05-2026-WHO-DR-Congo-ebola-05.jpg/image770x420cropped.jpg",
       "tags": [],
-      "score": 83,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-nasa-breaking-news-0dc74e88f2",
-      "sourceId": "nasa-breaking-news",
-      "title": "Gravity Waves From Super Typhoon Sinlaku",
-      "url": "https://science.nasa.gov/earth/earth-observatory/gravity-waves-from-super-typhoon-sinlaku",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-01T04:01:00.000Z",
-      "fetchedAt": "2026-06-02T09:39:39.775Z",
-      "sourceLastCheckedAt": "2026-06-02T09:39:39.775Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Satellites observed striking upper-atmosphere phenomena generated by an intensifying tropical cyclone.",
-      "contentExcerpt": "Earth Observatory Science Earth Observatory Gravity Waves From Super… Earth Earth Observatory Image of the Day EO Explorer Topics All Topics Atmosphere Land Heat &#038; Radiation Life on Earth Human Dimensions Natural Events Oceans Remote Sensing Technology Snow &#038; Ice Water More Content Collections Global Maps World of Change Articles Notes from the Field Blog Earth Matters Blog Blue Marble: Next Generation EO Kids Mission: Biomes About About Us Subscribe 🛜 RSS Contact Us Search Atmosph...",
-      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/gravity-waves-from-super-typhoon-sinlaku/sinlaku_gravitywaves_vir_20260412.jpg?w=2160&#038;h=1733&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
-      "tags": [
-        "Aqua",
-        "Earth Observatory",
-        "Earth's Atmosphere",
-        "Hurricanes & Typhoons",
-        "Visible Infrared Imaging Radiometer Suite (VIIRS)"
+      "refinedTags": [],
+      "impactAreas": [
+        "公共事务"
       ],
-      "score": 83,
+      "language": "en",
+      "translationMethod": "fallback-original",
+      "hotspotScore": 88,
+      "score": 81,
       "duplicateCount": 0
     }
   ]

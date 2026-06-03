@@ -99,9 +99,12 @@ function buildSummaryPrompt(item, dailyRules = {}) {
   const summaryMaxLength = Number(dailyRules.summaryMaxLength || 180);
   const reasonMaxLength = Number(dailyRules.reasonMaxLength || 120);
   return [
-    "Summarize this item for a daily tech/finance/news dashboard.",
-    `Output limits: aiSummary <= ${summaryMaxLength} Chinese characters; summaryReason <= ${reasonMaxLength} Chinese characters.`,
-    "Return JSON only with keys: aiSummary, summaryReason.",
+    "Enrich this item for a Chinese daily tech/finance/news dashboard.",
+    `Output limits: aiSummary <= ${summaryMaxLength} Chinese characters; summaryReason <= ${reasonMaxLength} Chinese characters; displaySummary <= ${summaryMaxLength} Chinese characters.`,
+    "If the title or excerpt is English, translate the title and summary into natural Chinese. If it is already Chinese, keep the title meaning unchanged.",
+    "Return JSON only with keys: aiSummary, summaryReason, displayTitle, displaySummary, refinedTags, impactAreas, language.",
+    "refinedTags must use only concrete tags such as AI芯片, AI模型, 云计算, 网络安全, 美联储, 央行, 财报, 市场监管, 地缘政治, 国际组织, 财政政策, 宏观数据, 消费电子, 开发者平台.",
+    "impactAreas must use short Chinese areas such as 科技, 金融, 宏观, 国际, 政策, 商业, 消费, 公共事务.",
     "",
     JSON.stringify({
       title: item.title,
@@ -117,9 +120,22 @@ function buildSummaryPrompt(item, dailyRules = {}) {
 }
 
 function parseSummaryResponse(responseJson, item, dailyRules = {}) {
+  const refinedTags = Array.isArray(responseJson.refinedTags)
+    ? responseJson.refinedTags.map(normalizeText).filter(Boolean).slice(0, 5)
+    : [];
+  const impactAreas = Array.isArray(responseJson.impactAreas)
+    ? responseJson.impactAreas.map(normalizeText).filter(Boolean).slice(0, 3)
+    : [];
+  const language = ["en", "zh", "unknown"].includes(responseJson.language) ? responseJson.language : undefined;
+
   return {
     aiSummary: truncateText(responseJson.aiSummary || summarizeText(item, dailyRules.summaryMaxLength), dailyRules.summaryMaxLength || 180),
-    summaryReason: truncateText(responseJson.summaryReason || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120)
+    summaryReason: truncateText(responseJson.summaryReason || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
+    ...(responseJson.displayTitle ? { displayTitle: truncateText(responseJson.displayTitle, 120) } : {}),
+    ...(responseJson.displaySummary ? { displaySummary: truncateText(responseJson.displaySummary, dailyRules.summaryMaxLength || 180) } : {}),
+    ...(refinedTags.length ? { refinedTags } : {}),
+    ...(impactAreas.length ? { impactAreas } : {}),
+    ...(language ? { language } : {})
   };
 }
 
@@ -150,7 +166,34 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
       continue;
     }
 
-    items.push(applyExtractiveSummary(item, dailyRules, generatedAt));
+    const fallback = applyExtractiveSummary(item, dailyRules, generatedAt);
+    if (!llmConfigured) {
+      items.push(fallback);
+      continue;
+    }
+
+    stats.llmAttempted += 1;
+    try {
+      const modelSummary = await requestDeepSeekSummary(item, rules, options);
+      items.push({
+        ...fallback,
+        ...modelSummary,
+        originalTitle: item.originalTitle || item.title,
+        originalSummary: item.originalSummary || item.summary || item.contentExcerpt || "",
+        summaryMethod: getLlmConfig(rules).provider,
+        translationMethod: modelSummary.displayTitle ? getLlmConfig(rules).provider : "fallback-original",
+        summaryGeneratedAt: generatedAt
+      });
+      stats.llmSucceeded += 1;
+    } catch (error) {
+      items.push(fallback);
+      stats.fallbackCount += 1;
+      stats.errorCount += 1;
+      errors.push({
+        id: item.id,
+        message: truncateText(error.message, 180)
+      });
+    }
   }
 
   const channels = mergeItemsIntoChannels(latestData, items);

@@ -10,19 +10,27 @@ function compactItem(item) {
   return {
     id: item.id,
     title: item.title,
+    ...(item.displayTitle ? { displayTitle: item.displayTitle } : {}),
+    ...(item.originalTitle ? { originalTitle: item.originalTitle } : {}),
     url: item.url,
     source: item.source,
     sourceType: item.sourceType,
     category: item.category,
     publishedAt: item.publishedAt,
     summary: String(item.summary || "").slice(0, 500),
+    ...(item.displaySummary ? { displaySummary: String(item.displaySummary).slice(0, 240) } : {}),
+    ...(item.originalSummary ? { originalSummary: String(item.originalSummary).slice(0, 500) } : {}),
     ...(item.contentExcerpt ? { contentExcerpt: String(item.contentExcerpt).slice(0, 500) } : {}),
     ...(item.aiSummary ? { aiSummary: String(item.aiSummary).slice(0, 240) } : {}),
     ...(item.summaryReason ? { summaryReason: String(item.summaryReason).slice(0, 160) } : {}),
     ...(item.imageUrl ? { imageUrl: item.imageUrl } : {}),
     score: item.score,
     duplicateCount: Number(item.duplicateCount || 0),
-    tags: (item.tags || []).slice(0, 8)
+    tags: (item.tags || []).slice(0, 8),
+    ...(item.refinedTags ? { refinedTags: item.refinedTags.slice(0, 5) } : {}),
+    ...(item.impactAreas ? { impactAreas: item.impactAreas.slice(0, 3) } : {}),
+    ...(item.language ? { language: item.language } : {}),
+    ...(item.translationMethod ? { translationMethod: item.translationMethod } : {})
   };
 }
 

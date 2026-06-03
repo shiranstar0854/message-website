@@ -7,6 +7,9 @@ const {
   filterItems,
   dedupeItems,
   scoreItems,
+  detectItemLanguage,
+  inferRefinedTags,
+  buildTopHotspots,
   buildLatestData
 } = require("../scripts/lib/pipeline");
 const { extractItems } = require("../scripts/lib/rss-parser");
@@ -335,4 +338,94 @@ test("latest data publishes compact display fields only", () => {
   assert.equal("raw" in latest.items[0], false);
   assert.equal("scoreBreakdown" in latest.items[0], false);
   assert.equal("filterReasons" in latest.items[0], false);
+});
+
+test("latest data adds refined tags, impact areas, language, and hotspot ranking", () => {
+  const latest = buildLatestData([
+    {
+      id: "ai-chip",
+      title: "NVIDIA announces new AI chip platform for data centers",
+      url: "https://example.com/ai-chip",
+      source: "Official Tech",
+      sourceType: "rss",
+      category: "tech",
+      publishedAt: "2026-06-03T00:00:00.000Z",
+      fetchedAt: "2026-06-03T01:00:00.000Z",
+      sourceAuthority: "official-agency",
+      timelinessTier: "daily",
+      summary: "The company described a GPU platform for AI workloads.",
+      contentExcerpt: "The company described a GPU platform for AI workloads in data centers.",
+      tags: [],
+      score: 95,
+      duplicateCount: 2
+    },
+    {
+      id: "macro",
+      title: "统计部门发布最新PMI数据",
+      url: "https://example.com/pmi",
+      source: "Official Macro",
+      sourceType: "webpage",
+      category: "finance",
+      publishedAt: "2026-06-02T00:00:00.000Z",
+      fetchedAt: "2026-06-03T01:00:00.000Z",
+      sourceAuthority: "official-agency",
+      timelinessTier: "daily",
+      summary: "宏观数据反映采购经理指数变化。",
+      tags: [],
+      score: 88,
+      duplicateCount: 0
+    }
+  ], {
+    channels: [
+      { id: "tech", label: "Technology" },
+      { id: "finance", label: "Finance" }
+    ]
+  }, "2026-06-03T02:00:00.000Z");
+
+  const aiItem = latest.items.find((item) => item.id === "ai-chip");
+  const macroItem = latest.items.find((item) => item.id === "macro");
+
+  assert.equal(detectItemLanguage(aiItem), "en");
+  assert.equal(aiItem.language, "en");
+  assert.ok(aiItem.refinedTags.includes("AI芯片"));
+  assert.ok(aiItem.impactAreas.includes("科技"));
+  assert.equal(aiItem.displayTitle, "NVIDIA announces new AI chip platform for data centers");
+  assert.equal(aiItem.originalTitle, aiItem.title);
+  assert.equal(macroItem.language, "zh");
+  assert.ok(macroItem.refinedTags.includes("宏观数据"));
+  assert.equal(latest.topHotspots.length, 2);
+  assert.equal(latest.topHotspots[0].id, "ai-chip");
+});
+
+test("top hotspots keep compact public fields", () => {
+  const hotspots = buildTopHotspots([{
+    id: "hot",
+    title: "Original title",
+    displayTitle: "中文标题",
+    displaySummary: "一句话解释",
+    url: "https://example.test/hot",
+    source: "Official",
+    publishedAt: "2026-06-03T00:00:00.000Z",
+    sourceAuthority: "official-agency",
+    score: 90,
+    refinedTags: ["AI模型"],
+    impactAreas: ["科技"],
+    hotspotScore: 120,
+    raw: { ignored: true }
+  }], "2026-06-03T01:00:00.000Z");
+
+  assert.deepEqual(Object.keys(hotspots[0]), [
+    "id",
+    "title",
+    "displayTitle",
+    "displaySummary",
+    "importance",
+    "impactAreas",
+    "source",
+    "publishedAt",
+    "score",
+    "url"
+  ]);
+  assert.equal(hotspots[0].displayTitle, "中文标题");
+  assert.equal(hotspots[0].importance, 120);
 });

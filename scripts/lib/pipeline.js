@@ -3,6 +3,25 @@ const crypto = require("node:crypto");
 const DEFAULT_FETCHED_AT = () => new Date().toISOString();
 const PUBLISHED_SUMMARY_LIMIT = 500;
 const CONTENT_EXCERPT_LIMIT = 500;
+const DISPLAY_SUMMARY_LIMIT = 180;
+const HOTSPOT_LIMIT = 5;
+
+const TOPIC_TAXONOMY = [
+  { label: "AI芯片", terms: ["ai chip", "gpu", "nvidia", "芯片", "算力", "半导体"], impactAreas: ["科技", "资本市场"] },
+  { label: "AI模型", terms: ["ai model", "llm", "large language model", "openai", "gemini", "模型", "人工智能"], impactAreas: ["科技", "产业"] },
+  { label: "云计算", terms: ["cloud", "azure", "aws", "google cloud", "云计算", "数据中心"], impactAreas: ["科技", "企业服务"] },
+  { label: "网络安全", terms: ["security", "cyber", "cisa", "breach", "vulnerability", "网络安全", "漏洞"], impactAreas: ["科技", "公共安全"] },
+  { label: "美联储", terms: ["federal reserve", "fed", "fomc", "美联储"], impactAreas: ["金融", "宏观"] },
+  { label: "央行", terms: ["central bank", "pbc", "人民银行", "央行", "货币政策"], impactAreas: ["金融", "宏观"] },
+  { label: "财报", terms: ["earnings", "revenue", "profit", "财报", "营收", "利润"], impactAreas: ["资本市场", "商业"] },
+  { label: "市场监管", terms: ["sec", "csrc", "regulation", "enforcement", "监管", "证监会", "执法"], impactAreas: ["金融", "政策"] },
+  { label: "地缘政治", terms: ["sanction", "geopolitical", "war", "conflict", "地缘", "制裁", "冲突"], impactAreas: ["国际", "风险"] },
+  { label: "国际组织", terms: ["un news", "united nations", "imf", "world bank", "联合国", "国际货币基金"], impactAreas: ["国际", "政策"] },
+  { label: "财政政策", terms: ["fiscal", "treasury", "budget", "财政", "国债", "预算", "补贴"], impactAreas: ["宏观", "政策"] },
+  { label: "宏观数据", terms: ["inflation", "pmi", "gdp", "cpi", "statistics", "统计", "通胀", "采购经理"], impactAreas: ["宏观", "金融"] },
+  { label: "消费电子", terms: ["iphone", "android", "device", "consumer electronics", "消费电子", "手机"], impactAreas: ["科技", "消费"] },
+  { label: "开发者平台", terms: ["developer", "github", "api", "sdk", "开发者", "平台"], impactAreas: ["科技", "开发者"] }
+];
 
 function normalizeText(value) {
   return String(value || "")
@@ -72,6 +91,64 @@ function truncateText(value, limit = CONTENT_EXCERPT_LIMIT) {
   const text = String(value || "").trim();
   if (text.length <= limit) return text;
   return `${text.slice(0, Math.max(0, limit - 3)).trimEnd()}...`;
+}
+
+function textIncludesTerm(text, term) {
+  const normalizedText = String(text || "").toLowerCase();
+  const normalizedTerm = String(term || "").toLowerCase();
+  return Boolean(normalizedTerm && normalizedText.includes(normalizedTerm));
+}
+
+function inferRefinedTags(item, taxonomy = TOPIC_TAXONOMY, limit = 5) {
+  const haystack = normalizeText([
+    item.title,
+    item.displayTitle,
+    item.summary,
+    item.aiSummary,
+    item.contentExcerpt,
+    ...(item.tags || [])
+  ].filter(Boolean).join(" "));
+  const matched = taxonomy
+    .filter((topic) => (topic.terms || []).some((term) => textIncludesTerm(haystack, term)))
+    .map((topic) => topic.label);
+  const existing = (item.refinedTags || []).filter(Boolean);
+  return [...new Set([...existing, ...matched])].slice(0, limit);
+}
+
+function inferImpactAreas(item, refinedTags = inferRefinedTags(item), taxonomy = TOPIC_TAXONOMY, limit = 3) {
+  const explicit = (item.impactAreas || []).filter(Boolean);
+  const taxonomyAreas = refinedTags.flatMap((tag) => {
+    const topic = taxonomy.find((entry) => entry.label === tag);
+    return topic?.impactAreas || [];
+  });
+  const categoryAreas = {
+    tech: ["科技"],
+    finance: ["金融"],
+    news: ["公共事务"]
+  }[item.category] || [];
+  return [...new Set([...explicit, ...taxonomyAreas, ...categoryAreas])].slice(0, limit);
+}
+
+function detectItemLanguage(item) {
+  const text = normalizeText([item.title, item.summary, item.contentExcerpt].filter(Boolean).join(" "));
+  if (!text) return "unknown";
+  const latinWords = text.match(/[A-Za-z]{3,}/g) || [];
+  const cjkChars = text.match(/[\u4e00-\u9fff]/g) || [];
+  return latinWords.length >= 4 && latinWords.length > cjkChars.length ? "en" : "zh";
+}
+
+function calculateHotspotScore(item, nowIso = DEFAULT_FETCHED_AT()) {
+  const base = Number(item.score || 0);
+  const officialBoost = ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority) ? 8 : 0;
+  const duplicateBoost = Math.min(12, Number(item.duplicateCount || 0) * 3);
+  const tagBoost = Math.min(10, (item.refinedTags || []).length * 2);
+  const publishedTime = new Date(item.publishedAt || nowIso).getTime();
+  const nowTime = new Date(nowIso).getTime();
+  const ageHours = Number.isNaN(publishedTime) || Number.isNaN(nowTime)
+    ? 72
+    : Math.max(0, (nowTime - publishedTime) / (60 * 60 * 1000));
+  const freshnessBoost = Math.max(0, 10 - Math.floor(ageHours / 12));
+  return Math.round(base + officialBoost + duplicateBoost + tagBoost + freshnessBoost);
 }
 
 function firstDefined(...values) {
@@ -383,18 +460,27 @@ function sortItems(items, sortBy = "score-desc") {
   });
 }
 
-function buildPublishedItem(item) {
+function buildPublishedItem(item, generatedAt = DEFAULT_FETCHED_AT()) {
   const summary = String(item.summary || "");
   const publishedSummary = summary.length > PUBLISHED_SUMMARY_LIMIT
     ? `${summary.slice(0, PUBLISHED_SUMMARY_LIMIT - 3).trimEnd()}...`
     : summary;
   const contentExcerpt = truncateText(item.contentExcerpt || "", CONTENT_EXCERPT_LIMIT);
   const imageUrl = normalizeImageUrl(item.imageUrl || "");
+  const language = item.language || detectItemLanguage(item);
+  const refinedTags = inferRefinedTags(item);
+  const impactAreas = inferImpactAreas(item, refinedTags);
+  const fallbackSummary = item.aiSummary || contentExcerpt || publishedSummary;
+  const displayTitle = normalizeText(item.displayTitle || item.translatedTitle || item.title);
+  const displaySummary = truncateText(item.displaySummary || fallbackSummary, DISPLAY_SUMMARY_LIMIT);
+  const hotspotScore = calculateHotspotScore({ ...item, refinedTags }, generatedAt);
 
   return {
     id: item.id,
     sourceId: item.sourceId,
     title: item.title,
+    displayTitle,
+    ...(language === "en" ? { originalTitle: item.originalTitle || item.title } : {}),
     url: item.url,
     source: item.source,
     sourceType: item.sourceType,
@@ -405,18 +491,47 @@ function buildPublishedItem(item) {
     sourceAuthority: item.sourceAuthority,
     timelinessTier: item.timelinessTier,
     summary: publishedSummary,
+    ...(displaySummary ? { displaySummary } : {}),
+    ...(language === "en" && publishedSummary ? { originalSummary: item.originalSummary || publishedSummary } : {}),
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(imageUrl ? { imageUrl } : {}),
     tags: (item.tags || []).slice(0, 8),
+    refinedTags,
+    impactAreas,
+    language,
+    translationMethod: item.translationMethod || (language === "en" ? "fallback-original" : "source-original"),
+    hotspotScore,
     score: item.score,
     duplicateCount: Number(item.duplicateCount || 0)
   };
 }
 
+function buildTopHotspots(items, generatedAt = DEFAULT_FETCHED_AT(), limit = HOTSPOT_LIMIT) {
+  return [...items]
+    .filter((item) => item.url && item.displayTitle)
+    .sort((left, right) => Number(right.hotspotScore || calculateHotspotScore(right, generatedAt))
+      - Number(left.hotspotScore || calculateHotspotScore(left, generatedAt))
+      || Number(right.score || 0) - Number(left.score || 0)
+      || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
+    .slice(0, limit)
+    .map((item) => ({
+      id: item.id,
+      title: item.title,
+      displayTitle: item.displayTitle || item.title,
+      displaySummary: item.displaySummary || item.summary || "",
+      importance: Number(item.hotspotScore || calculateHotspotScore(item, generatedAt)),
+      impactAreas: (item.impactAreas || []).slice(0, 3),
+      source: item.source,
+      publishedAt: item.publishedAt,
+      score: item.score,
+      url: item.url
+    }));
+}
+
 function buildLatestData(items, siteConfig = {}, generatedAt = DEFAULT_FETCHED_AT()) {
   const defaultLimit = Number(siteConfig.defaultLimit || 12);
   const channels = {};
-  const sortedItems = sortItems(items).map(buildPublishedItem);
+  const sortedItems = sortItems(items).map((item) => buildPublishedItem(item, generatedAt));
   const channelConfig = siteConfig.channels || [
     { id: "tech", label: "Technology" },
     { id: "finance", label: "Finance" },
@@ -439,6 +554,7 @@ function buildLatestData(items, siteConfig = {}, generatedAt = DEFAULT_FETCHED_A
     generatedAt,
     defaultLimit,
     totalItems: sortedItems.length,
+    topHotspots: buildTopHotspots(sortedItems, generatedAt),
     channels,
     items: sortedItems
   };
@@ -456,5 +572,10 @@ module.exports = {
   scoreItems,
   sortItems,
   buildPublishedItem,
-  buildLatestData
+  buildTopHotspots,
+  buildLatestData,
+  detectItemLanguage,
+  inferRefinedTags,
+  inferImpactAreas,
+  calculateHotspotScore
 };
