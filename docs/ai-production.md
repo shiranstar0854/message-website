@@ -18,9 +18,10 @@ frontend data.
   tech, finance, and news.
 - Weekly reviews are published to `src/data/weekly-review.json` and shown on
   `weekly-review.html`.
-- Daily archives are indexed in `src/data/history-index.json` and shown on
-  `history.html`.
-- History retention is controlled by `history.retentionDays`; the default is
+- Daily archive JSON files are stored in `data/archive/daily/` and are kept in
+  the repository as the full historical record.
+- `src/data/history-index.json` is the web-facing index for `history.html`; it
+  lists only the latest `history.retentionDays` daily archives, defaulting to
   10 days.
 - A failed DeepSeek request falls back to local extractive output.
 - `data/processed/ai-summaries.json` records `llmEnabled`, `llmConfigured`,

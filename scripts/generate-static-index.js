@@ -38,6 +38,29 @@ function channelLabel(channels, category) {
   return channels?.[category]?.label || category || "新闻";
 }
 
+function isEnglishSourceItem(item) {
+  return item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
+}
+
+function displayTitle(item) {
+  return item.translatedTitle || item.title || "未命名信息";
+}
+
+function shortExplanation(item) {
+  return item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。";
+}
+
+function importanceText(item) {
+  return item.importance || item.summaryReason || `评分 ${Number(item.score || 0)}，来自${item.source || "公开来源"}。`;
+}
+
+function impactAreas(item, channels = {}) {
+  const areas = item.impactAreas?.length
+    ? item.impactAreas
+    : (item.keywords || item.tags || []).slice(0, 4);
+  return areas.length ? areas : [channelLabel(channels, item.category)];
+}
+
 function renderTopHotspots(items, channels = {}) {
   if (!items.length) {
     return `
@@ -52,13 +75,18 @@ function renderTopHotspots(items, channels = {}) {
               <article class="top-hotspot-card${index === 0 ? " is-primary" : ""}">
                 <div class="top-hotspot-rank">Top ${index + 1}</div>
                 <div class="top-hotspot-body">
-                  <h3><a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></h3>
-                  <p>${escapeHtml(item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。")}</p>
+                  <h3><a href="${escapeHtml(item.url)}">${escapeHtml(displayTitle(item))}</a></h3>
+                  <p>${escapeHtml(shortExplanation(item))}</p>
+                  <div class="top-hotspot-importance"><strong>重要性</strong><span>${escapeHtml(importanceText(item))}</span></div>
+                  <div class="top-hotspot-impact" aria-label="影响领域">
+                    ${impactAreas(item, channels).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
+                  </div>
                   <div class="top-hotspot-meta">
                     <span>${escapeHtml(item.source)}</span>
                     <span>${escapeHtml(channelLabel(channels, item.category))}</span>
                     <span>${escapeHtml(formatDate(item.publishedAt))}</span>
                     <strong>${Number(item.score || 0)}</strong>
+                    ${isEnglishSourceItem(item) ? `<a href="${escapeHtml(item.url)}">原文入口</a>` : ""}
                   </div>
                 </div>
               </article>`).join("")}

@@ -1,9 +1,12 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const os = require("node:os");
+const path = require("node:path");
 
 const { buildSourceHealth, buildEffectiveResults } = require("../scripts/fetch-rss");
 const { buildSourceAudit } = require("../scripts/source-audit");
-const { compactItem, selectArchiveItems } = require("../scripts/archive-daily-data");
+const { compactItem, selectArchiveItems, buildHistoryIndex } = require("../scripts/archive-daily-data");
 
 const PRIOR_XML = "<rss><channel><item><title>Existing item</title><link>https://example.test/existing</link></item></channel></rss>";
 
@@ -131,6 +134,7 @@ test("daily archive compacts article payloads", () => {
   const archived = compactItem({
     id: "item-a",
     title: "Title",
+    translatedTitle: "中文标题",
     url: "https://example.test/item",
     source: "Source A",
     sourceType: "rss",
@@ -138,17 +142,32 @@ test("daily archive compacts article payloads", () => {
     publishedAt: "2026-05-26T01:00:00.000Z",
     summary: "x".repeat(800),
     contentExcerpt: "y".repeat(900),
+    aiSummary: "a".repeat(300),
+    summaryReason: "r".repeat(300),
+    importance: "重要性说明",
+    sourceLanguage: "en",
+    summaryLanguage: "zh",
     imageUrl: "https://example.test/image.jpg",
     score: 95,
     duplicateCount: 0,
     tags: Array.from({ length: 12 }, (_, index) => `tag-${index}`),
+    keywords: Array.from({ length: 12 }, (_, index) => `keyword-${index}`),
+    impactAreas: ["AI政策", "地缘政治", "消费电子", "财报", "额外标签"],
     raw: { large: "ignored" }
   });
 
+  assert.equal(archived.translatedTitle, "中文标题");
   assert.equal(archived.summary.length, 500);
   assert.equal(archived.contentExcerpt.length, 500);
+  assert.equal(archived.aiSummary.length, 240);
+  assert.equal(archived.summaryReason.length, 160);
+  assert.equal(archived.importance, "重要性说明");
+  assert.equal(archived.sourceLanguage, "en");
+  assert.equal(archived.summaryLanguage, "zh");
   assert.equal(archived.imageUrl, "https://example.test/image.jpg");
   assert.equal(archived.tags.length, 8);
+  assert.equal(archived.keywords.length, 8);
+  assert.deepEqual(archived.impactAreas, ["AI政策", "地缘政治", "消费电子", "财报"]);
   assert.equal("raw" in archived, false);
 });
 
@@ -162,4 +181,46 @@ test("daily archive retains at most twenty ranked items per channel", () => {
   assert.equal(selected.filter((item) => item.category === "tech").length, 20);
   assert.equal(selected.filter((item) => item.category === "news").length, 20);
   assert.equal(selected.find((item) => item.id === "tech-0").id, "tech-0");
+});
+
+test("history index exposes latest days without deleting older archive files", (t) => {
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "message-archive-"));
+  t.after(() => fs.rmSync(tempRoot, { recursive: true, force: true }));
+  const archiveDir = path.join(tempRoot, "daily");
+  const indexPath = path.join(tempRoot, "history-index.json");
+  fs.mkdirSync(archiveDir, { recursive: true });
+
+  for (let day = 1; day <= 12; day += 1) {
+    const date = `2026-05-${String(day).padStart(2, "0")}`;
+    fs.writeFileSync(path.join(archiveDir, `${date}.json`), JSON.stringify({
+      date,
+      generatedAt: `${date}T00:00:00.000Z`,
+      items: [{ id: date }],
+      totals: { scoredItems: 1 }
+    }));
+  }
+
+  const index = buildHistoryIndex(10, {
+    archiveDir,
+    historyIndexPath: indexPath,
+    now: "2026-06-04T00:00:00.000Z"
+  });
+  const remainingFiles = fs.readdirSync(archiveDir).filter((file) => file.endsWith(".json"));
+
+  assert.equal(index.totalArchiveDays, 12);
+  assert.equal(index.totalDays, 10);
+  assert.deepEqual(index.days.map((day) => day.date), [
+    "2026-05-12",
+    "2026-05-11",
+    "2026-05-10",
+    "2026-05-09",
+    "2026-05-08",
+    "2026-05-07",
+    "2026-05-06",
+    "2026-05-05",
+    "2026-05-04",
+    "2026-05-03"
+  ]);
+  assert.equal(remainingFiles.length, 12);
+  assert.equal(fs.existsSync(path.join(archiveDir, "2026-05-01.json")), true);
 });

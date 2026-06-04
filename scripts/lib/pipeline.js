@@ -25,6 +25,17 @@ const ENGLISH_STOPWORDS = new Set([
   "will",
   "your"
 ]);
+const FINE_KEYWORD_RULES = [
+  { label: "AI芯片", pattern: /(ai chip|gpu|nvidia|semiconductor|accelerator|芯片|算力|英伟达)/i },
+  { label: "AI政策", pattern: /(ai policy|artificial intelligence|regulation|safety|governance|监管|安全)/i },
+  { label: "美联储", pattern: /(federal reserve|fed\b|fomc|powell|美联储|联邦储备)/i },
+  { label: "央行", pattern: /(central bank|人民银行|央行|利率|降息|加息)/i },
+  { label: "财报", pattern: /(earnings|revenue|profit|guidance|quarter|财报|营收|利润)/i },
+  { label: "地缘政治", pattern: /(geopolitic|sanction|tariff|war|conflict|election|diplomacy|制裁|关税|冲突|选举|外交)/i },
+  { label: "消费电子", pattern: /(apple|iphone|android|device|consumer electronics|pc|smartphone|消费电子|手机|电脑)/i },
+  { label: "公共政策", pattern: /(policy|government|国务院|财政|补贴|规划|公共|民生)/i },
+  { label: "市场监管", pattern: /(sec|csrc|监管|证券|交易所|market structure|披露)/i }
+];
 
 function normalizeText(value) {
   return String(value || "")
@@ -362,6 +373,10 @@ function extractPublishedKeywords(item, limit = KEYWORD_LIMIT) {
   (item.tags || []).forEach((tag) => pushKeyword(keywords, seen, tag));
 
   const text = normalizeText(`${item.title || ""} ${item.aiSummary || ""} ${item.summary || ""} ${item.contentExcerpt || ""}`);
+  FINE_KEYWORD_RULES.forEach((rule) => {
+    if (rule.pattern.test(text)) pushKeyword(keywords, seen, rule.label);
+  });
+
   [...text.matchAll(/[A-Za-z][A-Za-z0-9+-]{2,}/g)]
     .map((match) => match[0])
     .filter((word) => !ENGLISH_STOPWORDS.has(word.toLowerCase()))
@@ -452,11 +467,15 @@ function buildPublishedItem(item) {
   const contentExcerpt = truncateText(item.contentExcerpt || "", CONTENT_EXCERPT_LIMIT);
   const imageUrl = normalizeImageUrl(item.imageUrl || "");
   const keywords = extractPublishedKeywords(item);
+  const impactAreas = Array.isArray(item.impactAreas) && item.impactAreas.length
+    ? item.impactAreas.slice(0, 4).map(normalizeText).filter(Boolean)
+    : keywords.slice(0, 4);
 
   return {
     id: item.id,
     sourceId: item.sourceId,
     title: item.title,
+    ...(item.translatedTitle ? { translatedTitle: truncateText(item.translatedTitle, 120) } : {}),
     url: item.url,
     source: item.source,
     sourceType: item.sourceType,
@@ -470,6 +489,8 @@ function buildPublishedItem(item) {
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(item.aiSummary ? { aiSummary: truncateText(item.aiSummary, PUBLISHED_SUMMARY_LIMIT) } : {}),
     ...(item.summaryReason ? { summaryReason: truncateText(item.summaryReason, 180) } : {}),
+    ...(item.importance ? { importance: truncateText(item.importance, 180) } : {}),
+    ...(impactAreas.length ? { impactAreas } : {}),
     ...(item.sourceLanguage ? { sourceLanguage: item.sourceLanguage } : {}),
     ...(item.summaryLanguage ? { summaryLanguage: item.summaryLanguage } : {}),
     ...(imageUrl ? { imageUrl } : {}),

@@ -124,6 +124,29 @@
     return data.channels?.[category]?.label || category || "新闻";
   }
 
+  function isEnglishSourceItem(item) {
+    return item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
+  }
+
+  function displayTitle(item) {
+    return item.translatedTitle || item.title || "未命名信息";
+  }
+
+  function shortExplanation(item) {
+    return item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。";
+  }
+
+  function importanceText(item) {
+    return item.importance || item.summaryReason || `评分 ${Number(item.score || 0)}，来自${item.source || "公开来源"}。`;
+  }
+
+  function impactAreas(item, data) {
+    const areas = (item.impactAreas || []).length
+      ? item.impactAreas
+      : (item.keywords || item.tags || []).slice(0, 4);
+    return areas.length ? areas : [channelLabel(data, item.category)];
+  }
+
   function selectTopHotspots(items) {
     return [...(items || [])]
       .sort((left, right) => Number(right.score || 0) - Number(left.score || 0)
@@ -141,19 +164,24 @@
     container.innerHTML = items.map((item, index) => {
       const safeUrl = window.MessageChooseRender.safeExternalUrl(item.url);
       const title = safeUrl
-        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
-        : escapeHtml(item.title);
+        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle(item))}</a>`
+        : escapeHtml(displayTitle(item));
       return `
         <article class="top-hotspot-card${index === 0 ? " is-primary" : ""}">
           <div class="top-hotspot-rank">Top ${index + 1}</div>
           <div class="top-hotspot-body">
             <h3>${title}</h3>
-            <p>${escapeHtml(item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。")}</p>
+            <p>${escapeHtml(shortExplanation(item))}</p>
+            <div class="top-hotspot-importance"><strong>重要性</strong><span>${escapeHtml(importanceText(item))}</span></div>
+            <div class="top-hotspot-impact" aria-label="影响领域">
+              ${impactAreas(item, data).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
+            </div>
             <div class="top-hotspot-meta">
               <span>${escapeHtml(item.source)}</span>
               <span>${escapeHtml(channelLabel(data, item.category))}</span>
               <span>${escapeHtml(formatShortDate(item.publishedAt))}</span>
               <strong>${Number(item.score || 0)}</strong>
+              ${safeUrl && isEnglishSourceItem(item) ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">原文入口</a>` : ""}
             </div>
           </div>
         </article>

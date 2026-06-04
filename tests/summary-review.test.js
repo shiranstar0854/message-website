@@ -121,8 +121,11 @@ test("daily summary LLM path translates selected item summaries to Chinese", asy
         choices: [{
           message: {
             content: JSON.stringify({
+              translatedTitle: "Codex 成为知识工作的生产力工具",
               aiSummary: "Codex 正在成为面向知识工作的生产力工具。",
-              summaryReason: "高分科技来源，涉及工作流自动化。"
+              summaryReason: "高分科技来源，涉及工作流自动化。",
+              importance: "影响知识工作者的 AI 工具使用方式。",
+              impactAreas: ["AI政策", "开发者工具"]
             })
           }
         }]
@@ -141,6 +144,9 @@ test("daily summary LLM path translates selected item summaries to Chinese", asy
   assert.equal(summarized.items[0].summaryMethod, "deepseek-chat-completions");
   assert.equal(summarized.items[0].sourceLanguage, "en");
   assert.equal(summarized.items[0].summaryLanguage, "zh");
+  assert.equal(summarized.items[0].translatedTitle, "Codex 成为知识工作的生产力工具");
+  assert.equal(summarized.items[0].importance, "影响知识工作者的 AI 工具使用方式。");
+  assert.deepEqual(summarized.items[0].impactAreas, ["AI政策", "开发者工具"]);
   assert.match(summarized.items[0].aiSummary, /生产力工具/);
   assert.ok(summarized.items[0].keywords.includes("Codex"));
 });

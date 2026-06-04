@@ -53,6 +53,16 @@ function buildReason(item, maxLength = 120) {
   return truncateText(parts.join(" · "), maxLength);
 }
 
+function buildImportance(item, maxLength = 140) {
+  const parts = [
+    item.sourceAuthority?.startsWith("official") ? "官方来源" : item.source || "来源",
+    `评分 ${Number(item.score || 0)}`,
+    item.duplicateCount > 0 ? `合并 ${Number(item.duplicateCount)} 条重复` : "",
+    item.timelinessTier ? `更新频率 ${item.timelinessTier}` : ""
+  ].filter(Boolean);
+  return truncateText(parts.join("；"), maxLength);
+}
+
 function shouldSummarize(item, rules) {
   return Number(item.score || 0) >= Number(rules.minimumScore || 0)
     && Boolean(item.title)
@@ -96,6 +106,7 @@ function applyExtractiveSummary(item, rules, generatedAt) {
     ...item,
     aiSummary: summarizeText(item, rules.summaryMaxLength),
     summaryReason: buildReason(item, rules.reasonMaxLength),
+    importance: buildImportance(item, rules.importanceMaxLength),
     sourceLanguage: detectItemLanguage(item),
     summaryMethod: "extractive",
     summaryGeneratedAt: generatedAt
@@ -147,8 +158,9 @@ function buildSummaryPrompt(item, dailyRules = {}) {
     "Summarize this item for a daily tech/finance/news dashboard.",
     "Write aiSummary and summaryReason in concise Chinese.",
     "If the source material is primarily English, translate and summarize it into natural Chinese. Do not copy English sentences into aiSummary.",
-    `Output limits: aiSummary <= ${summaryMaxLength} Chinese characters; summaryReason <= ${reasonMaxLength} Chinese characters.`,
-    "Return JSON only with keys: aiSummary, summaryReason.",
+    `Output limits: translatedTitle <= 50 Chinese characters; aiSummary <= ${summaryMaxLength} Chinese characters; summaryReason <= ${reasonMaxLength} Chinese characters; importance <= 80 Chinese characters.`,
+    "Return JSON only with keys: translatedTitle, aiSummary, summaryReason, importance, impactAreas.",
+    "impactAreas must be an array of 2 to 4 concise Chinese tags, for example: AI芯片, 美联储, 财报, 地缘政治, 消费电子.",
     "",
     JSON.stringify({
       title: item.title,
@@ -165,8 +177,13 @@ function buildSummaryPrompt(item, dailyRules = {}) {
 
 function parseSummaryResponse(responseJson, item, dailyRules = {}) {
   return {
+    translatedTitle: truncateText(responseJson.translatedTitle || "", 120),
     aiSummary: truncateText(responseJson.aiSummary || summarizeText(item, dailyRules.summaryMaxLength), dailyRules.summaryMaxLength || 180),
-    summaryReason: truncateText(responseJson.summaryReason || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120)
+    summaryReason: truncateText(responseJson.summaryReason || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
+    importance: truncateText(responseJson.importance || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
+    impactAreas: Array.isArray(responseJson.impactAreas)
+      ? responseJson.impactAreas.slice(0, 4).map((value) => truncateText(value, 20)).filter(Boolean)
+      : []
   };
 }
 
@@ -382,6 +399,9 @@ async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) 
       score: item.score,
       aiSummary: item.aiSummary,
       summaryReason: item.summaryReason,
+      translatedTitle: item.translatedTitle,
+      importance: item.importance,
+      impactAreas: item.impactAreas,
       summaryMethod: item.summaryMethod
     }))
   };
@@ -420,6 +440,7 @@ module.exports = {
   splitSentences,
   summarizeText,
   buildReason,
+  buildImportance,
   getLlmConfig,
   isLlmConfigured,
   buildSummaryPrompt,

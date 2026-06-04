@@ -29,10 +29,18 @@ test("static homepage renders Top 5 block with Chinese summary fallback", () => 
     category: "tech",
     publishedAt: "2026-06-02T00:00:00.000Z",
     score: 99,
-    aiSummary: "中文摘要优先展示。"
+    translatedTitle: "OpenAI 更新政策观点",
+    aiSummary: "中文摘要优先展示。",
+    importance: "影响 AI 政策讨论。",
+    impactAreas: ["AI政策", "地缘政治"],
+    sourceLanguage: "en"
   }]);
 
   assert.match(html, /Top 1/);
+  assert.match(html, /OpenAI 更新政策观点/);
   assert.match(html, /中文摘要优先展示/);
+  assert.match(html, /重要性/);
+  assert.match(html, /AI政策/);
+  assert.match(html, /原文入口/);
   assert.match(html, /top-hotspot-card is-primary/);
 });

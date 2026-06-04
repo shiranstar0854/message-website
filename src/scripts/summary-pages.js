@@ -125,7 +125,7 @@
     }
 
     loadJson("src/data/history-index.json", { days: [], retentionDays: 10 }).then((index) => {
-      meta.textContent = `保留最近 ${Number(index.retentionDays || 10)} 天 · 当前 ${Number(index.totalDays || index.days.length || 0)} 天`;
+      meta.textContent = `网页显示最近 ${Number(index.retentionDays || 10)} 天 · 当前 ${Number(index.totalDays || index.days.length || 0)} 天`;
       if (!index.days?.length) {
         window.MessageChooseRender.renderEmptyState(feed, {
           title: "暂无历史归档",

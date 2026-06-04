@@ -314,8 +314,11 @@ test("latest data publishes compact display fields only", () => {
     timelinessTier: "daily",
     summary: "x".repeat(900),
     contentExcerpt: "y".repeat(900),
+    translatedTitle: "紧凑网站负载",
     aiSummary: "中文摘要解释 AI policy and market structure.",
     summaryReason: "Official Source / tech",
+    importance: "高分官方市场来源，涉及 AI 政策。",
+    impactAreas: ["AI政策", "市场监管"],
     sourceLanguage: "en",
     summaryLanguage: "zh",
     imageUrl: "https://example.com/image.jpg",
@@ -334,6 +337,9 @@ test("latest data publishes compact display fields only", () => {
   assert.equal(latest.items[0].contentExcerpt.length, 500);
   assert.equal(latest.items[0].aiSummary, "中文摘要解释 AI policy and market structure.");
   assert.equal(latest.items[0].summaryReason, "Official Source / tech");
+  assert.equal(latest.items[0].translatedTitle, "紧凑网站负载");
+  assert.equal(latest.items[0].importance, "高分官方市场来源，涉及 AI 政策。");
+  assert.deepEqual(latest.items[0].impactAreas, ["AI政策", "市场监管"]);
   assert.equal(latest.items[0].sourceLanguage, "en");
   assert.equal(latest.items[0].summaryLanguage, "zh");
   assert.equal(latest.items[0].imageUrl, "https://example.com/image.jpg");

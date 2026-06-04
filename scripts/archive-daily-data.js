@@ -10,6 +10,7 @@ function compactItem(item) {
   return {
     id: item.id,
     title: item.title,
+    ...(item.translatedTitle ? { translatedTitle: String(item.translatedTitle).slice(0, 120) } : {}),
     url: item.url,
     source: item.source,
     sourceType: item.sourceType,
@@ -19,10 +20,15 @@ function compactItem(item) {
     ...(item.contentExcerpt ? { contentExcerpt: String(item.contentExcerpt).slice(0, 500) } : {}),
     ...(item.aiSummary ? { aiSummary: String(item.aiSummary).slice(0, 240) } : {}),
     ...(item.summaryReason ? { summaryReason: String(item.summaryReason).slice(0, 160) } : {}),
+    ...(item.importance ? { importance: String(item.importance).slice(0, 180) } : {}),
+    ...(item.sourceLanguage ? { sourceLanguage: item.sourceLanguage } : {}),
+    ...(item.summaryLanguage ? { summaryLanguage: item.summaryLanguage } : {}),
     ...(item.imageUrl ? { imageUrl: item.imageUrl } : {}),
     score: item.score,
     duplicateCount: Number(item.duplicateCount || 0),
-    tags: (item.tags || []).slice(0, 8)
+    tags: (item.tags || []).slice(0, 8),
+    ...(item.keywords?.length ? { keywords: item.keywords.slice(0, 8) } : {}),
+    ...(item.impactAreas?.length ? { impactAreas: item.impactAreas.slice(0, 4) } : {})
   };
 }
 
@@ -33,19 +39,15 @@ function selectArchiveItems(items) {
     .slice(0, MAX_ITEMS_PER_CHANNEL));
 }
 
-function buildHistoryIndex(retentionDays = DEFAULT_RETENTION_DAYS) {
-  const archiveDir = path.join(ROOT_DIR, "data", "archive", "daily");
+function buildHistoryIndex(retentionDays = DEFAULT_RETENTION_DAYS, options = {}) {
+  const archiveDir = options.archiveDir || path.join(ROOT_DIR, "data", "archive", "daily");
+  const historyIndexPath = options.historyIndexPath || path.join(ROOT_DIR, "src", "data", "history-index.json");
   const files = fs.existsSync(archiveDir)
-    ? fs.readdirSync(archiveDir).filter((file) => file.endsWith(".json")).sort().reverse()
+    ? fs.readdirSync(archiveDir).filter((file) => file.endsWith(".json"))
     : [];
-  const retained = files.slice(0, Number(retentionDays || DEFAULT_RETENTION_DAYS));
-  const expired = files.slice(Number(retentionDays || DEFAULT_RETENTION_DAYS));
+  const visibleDays = Number(retentionDays || DEFAULT_RETENTION_DAYS);
 
-  expired.forEach((file) => {
-    fs.unlinkSync(path.join(archiveDir, file));
-  });
-
-  const days = retained.map((file) => {
+  const allDays = files.map((file) => {
     const archive = readJson(path.join(archiveDir, file), {});
     return {
       date: archive.date || file.replace(/\.json$/, ""),
@@ -55,15 +57,17 @@ function buildHistoryIndex(retentionDays = DEFAULT_RETENTION_DAYS) {
       totals: archive.totals || {},
       archivePolicy: archive.archivePolicy || {}
     };
-  });
+  }).sort((a, b) => String(b.date || b.generatedAt).localeCompare(String(a.date || a.generatedAt)));
+  const days = allDays.slice(0, visibleDays);
 
   const index = {
-    generatedAt: new Date().toISOString(),
-    retentionDays: Number(retentionDays || DEFAULT_RETENTION_DAYS),
+    generatedAt: options.now || new Date().toISOString(),
+    retentionDays: visibleDays,
+    totalArchiveDays: allDays.length,
     totalDays: days.length,
     days
   };
-  writeJson(path.join(ROOT_DIR, "src", "data", "history-index.json"), index);
+  writeJson(historyIndexPath, index);
   return index;
 }
 

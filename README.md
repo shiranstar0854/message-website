@@ -60,13 +60,13 @@ npm.cmd run generate:latest
 
 评分后会增加 `score`、`scoreBreakdown`、`duplicateCount` 和 `duplicates`。
 
-前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`fetchedAt`、`sourceLastCheckedAt`、`sourceAuthority`、`timelinessTier`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`sourceLanguage`、`summaryLanguage`、`tags`、`keywords`、`score` 和 `duplicateCount` 等字段。英文来源条目会进入 AI 中文摘要队列，前端优先展示中文 `aiSummary`，并保留英文原文标题链接。首页会基于评分和发布时间生成“今日核心热点 Top 5”；关键词搜索会匹配标题、摘要、中文摘要、标签和 `keywords`，并在有搜索词时优先按相关性排序。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
+前端发布文件 `src/data/latest-items.json` 为轻量展示结构，仅保留页面需要的 `id`、`title`、`translatedTitle`、`url`、`source`、`sourceType`、`category`、`publishedAt`、`fetchedAt`、`sourceLastCheckedAt`、`sourceAuthority`、`timelinessTier`、`summary`、`contentExcerpt`、`aiSummary`、`summaryReason`、`importance`、`impactAreas`、`sourceLanguage`、`summaryLanguage`、`tags`、`keywords`、`score` 和 `duplicateCount` 等字段。英文来源条目会进入 AI 中文摘要队列，前端优先展示中文 `translatedTitle` 和 `aiSummary`，并保留英文原文入口。首页会基于评分和发布时间生成“今日核心热点 Top 5”；关键词搜索会匹配标题、摘要、中文摘要、标签和 `keywords`，并按标题匹配、关键词匹配、相关度、时间新鲜度和热度排序。每周复盘输出到 `src/data/weekly-review.json`，历史周报保存在 `data/archive/weekly/`。
 
 ## DeepSeek 摘要页面
 
 - `daily-summary.html` 读取 `src/data/daily-summary.json`，只展示科技、金融、新闻三类每日重要事务总结。
 - `weekly-review.html` 读取 `src/data/weekly-review.json`。
-- `history.html` 读取 `src/data/history-index.json`，并展示最近 10 天每日归档。
+- `history.html` 读取 `src/data/history-index.json`，并展示最近 10 天每日归档；`data/archive/daily/` 中的每日 JSON 作为 GitHub 历史记录完整保留。
 - `about.html` 说明来源类型、评分规则、摘要风险、非投资建议和更新时间。
 - 模型接口默认配置为 DeepSeek Chat Completions：`https://api.deepseek.com/chat/completions`。
 - 自动化启用模型调用前，需要在 GitHub Actions secrets 配置 `DEEPSEEK_API_KEY`，并将 `config/ai-summary-rules.json` 的 `llmProduction.enabled` 改为 `true`。

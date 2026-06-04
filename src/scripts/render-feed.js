@@ -75,6 +75,14 @@
     }[value] || value || "频率未知";
   }
 
+  function isEnglishSourceItem(item) {
+    return item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
+  }
+
+  function displayTitle(item) {
+    return item.translatedTitle || item.title || "未命名信息";
+  }
+
   function renderFeed(container, items) {
     if (!items.length) {
       renderEmptyState(container, {
@@ -95,13 +103,17 @@
       const safeUrl = safeExternalUrl(item.url);
       const summary = item.aiSummary || item.contentExcerpt || item.summary;
       const title = safeUrl
-        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
-        : escapeHtml(item.title);
+        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle(item))}</a>`
+        : escapeHtml(displayTitle(item));
+      const originalEntry = safeUrl && isEnglishSourceItem(item)
+        ? `<a class="original-entry" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">原文入口</a>`
+        : "";
 
       return `
         <article class="feed-card">
           <div>
             <h3>${title}</h3>
+            ${item.translatedTitle && item.title && item.translatedTitle !== item.title ? `<p class="original-title">原文：${escapeHtml(item.title)}</p>` : ""}
             ${renderSummary(summary)}
             ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}
             <div class="item-meta">
@@ -111,6 +123,7 @@
               <span>${escapeHtml(sourceAuthorityLabel(item.sourceAuthority))}</span>
               <span>${escapeHtml(timelinessLabel(item.timelinessTier))}</span>
               <span>${escapeHtml(item.sourceType || "rss")}${duplicateText}</span>
+              ${originalEntry}
             </div>
             <div class="tag-row" aria-label="标签">${tags}</div>
           </div>

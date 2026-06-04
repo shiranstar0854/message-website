@@ -36,7 +36,7 @@ npx wrangler deploy --config external-scheduler/cloudflare/wrangler.jsonc
 1. 抓取已启用 RSS，并更新 `data/raw/rss-items.json` 与 `src/data/source-health.json`。
 2. 生成标准化、过滤、去重、评分与前端展示数据。
 3. 输出 `data/processed/source-audit.json` 来源审计报告。
-4. 输出 `data/archive/daily/YYYY-MM-DD.json` 轻量每日快照，每频道保留评分最高的 20 条，供后续每周复盘使用。
+4. 输出 `data/archive/daily/YYYY-MM-DD.json` 轻量每日快照，每频道保留评分最高的 20 条，供后续每周复盘使用；GitHub 保留全部每日 JSON，网页历史索引只展示最近 10 天。
 
 ## 故障处理
 

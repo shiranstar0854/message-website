@@ -17,24 +17,38 @@
 
   function searchableText(item) {
     return {
-      title: normalize(item.title),
-      summary: normalize(`${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""}`),
+      title: normalize(`${item.translatedTitle || ""} ${item.title || ""}`),
+      summary: normalize(`${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""}`),
       source: normalize(item.source),
-      labels: normalize(`${(item.tags || []).join(" ")} ${(item.keywords || []).join(" ")}`)
+      labels: normalize(`${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.keywords || []).join(" ")}`)
+    };
+  }
+
+  function freshnessScore(item) {
+    const publishedTime = new Date(item.publishedAt || 0).getTime();
+    if (Number.isNaN(publishedTime)) return 0;
+    const ageHours = Math.max(0, (Date.now() - publishedTime) / (60 * 60 * 1000));
+    return Math.max(0, 20 - Math.min(20, ageHours / 12));
+  }
+
+  function getSearchBreakdown(item, terms) {
+    const text = searchableText(item);
+    const title = terms.reduce((score, term) => score + (text.title.includes(term) ? 1 : 0), 0);
+    const keyword = terms.reduce((score, term) => score + (text.labels.includes(term) ? 1 : 0), 0);
+    const relevance = terms.reduce((score, term) => score + (text.summary.includes(term) || text.source.includes(term) ? 1 : 0), 0);
+    return {
+      title,
+      keyword,
+      relevance,
+      freshness: freshnessScore(item),
+      heat: Number(item.score || 0)
     };
   }
 
   function getSearchScore(item, terms) {
     if (!terms.length) return 0;
-    const text = searchableText(item);
-    return terms.reduce((score, term) => {
-      let next = score;
-      if (text.title.includes(term)) next += 5;
-      if (text.labels.includes(term)) next += 4;
-      if (text.summary.includes(term)) next += 2;
-      if (text.source.includes(term)) next += 1;
-      return next;
-    }, 0);
+    const score = getSearchBreakdown(item, terms);
+    return score.title * 100 + score.keyword * 70 + score.relevance * 35 + score.freshness + score.heat / 5;
   }
 
   function uniqueSources(items) {
@@ -56,9 +70,16 @@
 
   function sortSearchResults(items, terms) {
     if (!terms.length) return null;
-    return [...items].sort((left, right) => getSearchScore(right, terms) - getSearchScore(left, terms)
-      || Number(right.score || 0) - Number(left.score || 0)
-      || new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0));
+    return [...items].sort((left, right) => {
+      const leftScore = getSearchBreakdown(left, terms);
+      const rightScore = getSearchBreakdown(right, terms);
+      return rightScore.title - leftScore.title
+        || rightScore.keyword - leftScore.keyword
+        || rightScore.relevance - leftScore.relevance
+        || rightScore.freshness - leftScore.freshness
+        || rightScore.heat - leftScore.heat
+        || new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0);
+    });
   }
 
   function applyFilters(items, state) {
@@ -201,6 +222,7 @@
   window.MessageChooseFilters = {
     applyFilters,
     getFilterResult,
+    getSearchBreakdown,
     getSearchScore,
     initFilters
   };
