@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T11:00:52.298Z",
+  "generatedAt": "2026-06-04T11:00:43.673Z",
   "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
@@ -11,59 +11,59 @@
     {
       "id": "tech",
       "label": "科技",
-      "overview": "OpenAI发布AI政策立场，倡导安全监管；Travelers部署AI理赔助手；Codex拓展至多角色工作流。",
-      "focus": "AI政策透明度与企业级AI应用落地",
-      "whyItMatters": "AI监管方向影响全球科技发展，企业AI效率提升将重塑行业竞争格局。",
+      "overview": "OpenAI发布美国AI治理蓝图及公共政策议程，中国推进核聚变研究合作，企业级AI代理应用案例涌现，谷歌搜索推出AI购物工具。",
+      "focus": "聚焦AI治理框架、核聚变科研合作、企业AI落地实践。",
+      "whyItMatters": "影响AI安全监管方向、能源技术突破及产业智能化转型进程。",
       "watchlist": [
-        "OpenAI后续监管政策演进",
-        "Travelers理赔效率数据",
-        "Codex新应用领域拓展"
+        "美国AI治理立法进展",
+        "国际核聚变合作项目",
+        "企业AI代理应用扩展"
       ],
       "keyPoints": [
-        "OpenAI明确不代理任何政治集团，呼吁国际AI安全合作",
-        "Travelers用AI理赔助手实现7×24小时服务，高峰期规模扩张",
-        "Codex插件让分析师、设计师等角色用AI提升生产力"
+        "OpenAI提出联邦AI治理蓝图",
+        "中国召开国际托卡马克研讨会",
+        "Endava展示AI代理加速软件交付"
       ],
       "highlights": [
         {
-          "id": "tech-openai-news-f9f27c3f88",
-          "title": "Our views on AI policy and political advocacy",
-          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+          "id": "tech-openai-news-a3d6a8c521",
+          "title": "A blueprint for democratic governance of frontier AI",
+          "url": "https://openai.com/index/frontier-safety-blueprint",
           "source": "OpenAI News",
-          "score": 100,
-          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf."
+          "score": 99,
+          "summary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。"
         },
         {
-          "id": "tech-openai-news-bd9e099ef4",
-          "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-          "url": "https://openai.com/index/travelers",
-          "source": "OpenAI News",
-          "score": 93,
-          "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand."
+          "id": "tech-item-916a2c96b7",
+          "title": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
+          "url": "https://www.most.gov.cn/kjbgz/202606/t20260603_196744.html",
+          "source": "科技部工作动态",
+          "score": 98,
+          "summary": "科技部在上海组织召开2026年度国际托卡马克物理与工程活动中方研讨会，聚焦核聚变研究合作与进展。"
         },
         {
-          "id": "tech-openai-news-da2f1a51b8",
-          "title": "Codex for every role, tool, and workflow",
-          "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+          "id": "tech-openai-news-5c3dfacb54",
+          "title": "OpenAI public policy agenda",
+          "url": "https://openai.com/index/public-policy-agenda",
           "source": "OpenAI News",
-          "score": 93,
-          "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
+          "score": 97,
+          "summary": "OpenAI发布公共政策议程，涵盖AI安全、青少年保护、劳动力转型及全球标准，旨在确保AI技术造福社会。"
         },
         {
-          "id": "tech-openai-news-572c5eef4e",
-          "title": "Advancing youth safety and opportunity through global leadership",
-          "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+          "id": "tech-openai-news-010cdd7fc8",
+          "title": "How Endava is redesigning software delivery around AI agents",
+          "url": "https://openai.com/index/endava-frontiers",
           "source": "OpenAI News",
+          "score": 96,
+          "summary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。"
+        },
+        {
+          "id": "tech-google-ai-blog-7129e27945",
+          "title": "5 ways Google Search can level up your thrift and vintage shopping",
+          "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips",
+          "source": "Google AI Blog",
           "score": 92,
-          "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people."
-        },
-        {
-          "id": "tech-openai-news-968c7d1345",
-          "title": "Codex is becoming a productivity tool for everyone",
-          "url": "https://openai.com/index/codex-for-knowledge-work",
-          "source": "OpenAI News",
-          "score": 92,
-          "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation."
+          "summary": "谷歌搜索推出AI工具，帮助用户提升旧货和二手购物体验。2026年“复古”和“如何淘二手”搜索量创新高，用户可通过AI模式、圈选搜索等功能轻松找到心仪商品。"
         }
       ],
       "summaryMethod": "deepseek-chat-completions"
@@ -71,59 +71,59 @@
     {
       "id": "finance",
       "label": "金融",
-      "overview": "发改委召开国企改革座谈会；中央财政下达999亿元育儿补贴；财政部发行贴现国债；SEC发布战略草案。",
-      "focus": "国企改革深化与财政育儿补贴政策",
-      "whyItMatters": "国企改革影响国家经济布局，育儿补贴直接提振生育意愿，国债发行反映财政融资节奏。",
+      "overview": "国内成品油价格将调整，国资委召开国企改革座谈会，央行强调互金监管与上合财金合作。",
+      "focus": "能源价格变动影响、国资改革深化、金融监管与政策协调。",
+      "whyItMatters": "成品油调价影响经济成本，国企改革指引政策重点，央行表态规范金融行业。",
       "watchlist": [
-        "国企改革实施方案细节",
-        "育儿补贴实际落地效果",
-        "后续国债发行规模与利率"
+        "成品油调价幅度及影响",
+        "国资改革具体措施",
+        "互联网金融监管政策动向"
       ],
       "keyPoints": [
-        "发改委听取国企改革意见，推动服务国家战略",
-        "中央财政999亿元育儿补贴落实制度",
-        "财政部发行2026年三十三期贴现国债"
+        "成品油价格调整在即",
+        "国资委座谈聚焦国企改革",
+        "央行强调互金监管与上合合作"
       ],
       "highlights": [
+        {
+          "id": "finance-item-1231d7d94d",
+          "title": "2026年6月4日国内成品油价格调整",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+          "source": "国家发展改革委新闻发布",
+          "score": 100,
+          "summary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。"
+        },
         {
           "id": "finance-item-a7e1b4b248",
           "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
           "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
           "source": "国家发展改革委新闻发布",
-          "score": 100,
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息"
+          "score": 99,
+          "summary": "国家发改委主任郑栅洁主持国有企业座谈会，聚焦深化国资国企改革与更好服务国家重大战略，听取各方面意见建议，涉及宏观政策、价格、产业和经济运行信息。"
         },
         {
           "id": "finance-item-32ef619a3a",
           "title": "财政部党校举行第82期处级干部进修班毕业典礼",
           "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260603_3991101.htm",
           "source": "财政部财政新闻",
-          "score": 100,
-          "summary": "财政部财政政策、国债、预算和财政运行新闻"
-        },
-        {
-          "id": "finance-u-s-sec-press-releases-f61d1b0566",
-          "title": "SEC Publishes Draft Strategic Plan for Public Comment",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-51-sec-publishes-draft-strategic-plan-public-comment",
-          "source": "U.S. SEC Press Releases",
-          "score": 100,
-          "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 yea..."
-        },
-        {
-          "id": "finance-item-27284b737d",
-          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
-          "source": "财政部财政新闻",
           "score": 99,
-          "summary": "财政部财政政策、国债、预算和财政运行新闻"
+          "summary": "财政部党校举行第82期处级干部进修班毕业典礼，完成干部培训任务。"
         },
         {
-          "id": "finance-item-0e9d3d5e8c",
-          "title": "财政部发行2026年记账式贴现（三十三期）国债",
-          "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260602_3991018.htm",
-          "source": "财政部财政新闻",
-          "score": 99,
-          "summary": "财政部财政政策、国债、预算和财政运行新闻"
+          "id": "finance-item-6ddcd7c1cb",
+          "title": "中国人民银行副行长陶玲出席中国互联网金融协会成立十周年工作座谈会",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060314191251365/index.html",
+          "source": "中国人民银行新闻发布",
+          "score": 98,
+          "summary": "中国人民银行副行长陶玲出席中国互联网金融协会成立十周年座谈会，强调协会要走中国特色金融发展之路，以强监管、防风险、促发展为主线，完善自律制度，强化自律功能，助力金融监管，规范经营行为。"
+        },
+        {
+          "id": "finance-item-fe85b91a7f",
+          "title": "中国人民银行副行长邹澜出席上海合作组织成员国财长和央行行长会议",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060314175989980/index.html",
+          "source": "中国人民银行新闻发布",
+          "score": 98,
+          "summary": "中国人民银行副行长邹澜出席在吉尔吉斯斯坦比什凯克举行的上海合作组织成员国财长和央行行长会议，与各方讨论财金合作、货币政策及金融稳定风险，并会见吉尔吉斯央行副行长，就深化合作交换意见。"
         }
       ],
       "summaryMethod": "deepseek-chat-completions"
@@ -131,59 +131,59 @@
     {
       "id": "news",
       "label": "新闻",
-      "overview": "习近平经济思想引领贸易强国建设；三部中国纪录片在老挝启播；设备更新助力夏粮抢收；农业培育新兴产业。",
-      "focus": "贸易强国建设与农业农村现代化",
-      "whyItMatters": "贸易与农业政策关乎国家竞争力与粮食安全，纪录片启播增强文化软实力。",
+      "overview": "公积金政策优化扩围，5月物流景气指数回升，也门饥饿危机加剧，长线外资持续加码中国硬科技。",
+      "focus": "住房保障政策、经济景气指标、国际人道危机、外资投资动向。",
+      "whyItMatters": "公积金调整影响民生消费，物流指数反映经济活力，也门危机体现国际责任，外资动向显示中国吸引力。",
       "watchlist": [
-        "贸易强国具体措施进展",
-        "农业新兴产业培育方向",
-        "设备更新对农业效率提升数据"
+        "公积金政策后续效果",
+        "物流业持续景气度",
+        "也门人道主义援助进展"
       ],
       "keyPoints": [
-        "以开放创新推动贸易强国，实现优进优出",
-        "设备更新政策在夏粮主产区显效",
-        "十五五规划首提培育农业新兴产业"
+        "超60城调整公积金政策",
+        "5月物流业景气指数50.3%",
+        "长线外资增持中国科技股"
       ],
       "highlights": [
         {
-          "id": "news-item-24eacb2d79",
-          "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
+          "id": "news-item-ff89c0aeef",
+          "title": "提额扩围拓场景 住房公积金惠民再升级",
+          "url": "https://www.gov.cn/zhengce/202606/content_7071043.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。"
+          "summary": "今年全国超60城调整公积金政策，涉及提额、降首付、扩提取、异地互认等，旨在释放住房消费潜力、保障民生。"
         },
         {
-          "id": "news-item-223abc0d7f",
-          "title": "《习近平的文化情缘》等纪录片在老挝启播",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
+          "id": "news-item-ba359b7858",
+          "title": "5月中国物流业景气指数为50.3% 需求重回扩张区间 市场预期保持向好",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071042.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。"
+          "summary": "5月中国物流业景气指数为50.3%，较上月回升0.6个百分点，需求重回扩张区间，市场预期保持向好。"
         },
         {
-          "id": "news-item-85e5dfa365",
-          "title": "助力三夏抢收 设备更新政策发力显效",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070947.htm",
+          "id": "news-item-dd48d7849b",
+          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
           "source": "中国政府网要闻",
-          "score": 95,
-          "summary": "今年，我国继续加力推进大规模设备更新，最近一段时间，在夏粮主产区，更新上岗的农业设备派上了大用场。"
+          "score": 100,
+          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。"
         },
         {
-          "id": "news-item-a3ac4d242e",
-          "title": "我国将培育壮大农业新兴产业和未来产业",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070939.htm",
-          "source": "中国政府网要闻",
-          "score": 95,
-          "summary": "国务院2日对外公布的《加快农业农村现代化“十五五”规划》将因地制宜发展农业新质生产力摆在更加突出的战略位置，并首次提出培育壮大农业领域新兴产业和未来产业。"
+          "id": "news-un-news-aa14a79485",
+          "title": "Yemen: Hunger crisis deepens as funding cuts leave millions without support",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167643",
+          "source": "UN News",
+          "score": 97,
+          "summary": "联合国支持的粮食安全平台最新分析显示，也门政府控制区近半数人口面临严重粮食不安全，若国际援助继续削减，危机将进一步恶化。"
         },
         {
-          "id": "news-item-0b54ef9c63",
-          "title": "图表：2025年全国A级景区接待游客75.1亿人次",
-          "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7070934.htm",
+          "id": "news-item-c59277d04a",
+          "title": "长线外资看好中国 持续加码硬科技",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071033.htm",
           "source": "中国政府网要闻",
           "score": 95,
-          "summary": "文化和旅游部6月2日发布2025年文化和旅游发展统计公报。"
+          "summary": "多家国际金融机构发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。"
         }
       ],
       "summaryMethod": "deepseek-chat-completions"
@@ -192,6 +192,107 @@
   "totalSummaries": 3,
   "items": [
     {
+      "id": "finance-item-1231d7d94d",
+      "title": "2026年6月4日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+      "source": "国家发展改革委新闻发布",
+      "sourceId": "ndrc-news",
+      "category": "finance",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。",
+      "summaryReason": "发改委官方发布，直接关系民生和工业经济，具有重大政策信号意义。",
+      "translatedTitle": "2026年6月4日国内成品油价格调整",
+      "importance": "作为国家发改委官方发布的成品油调价信息，影响广泛，涉及能源成本与宏观经济。",
+      "impactAreas": [
+        "国内油价",
+        "能源政策",
+        "宏观经济"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-ff89c0aeef",
+      "title": "提额扩围拓场景 住房公积金惠民再升级",
+      "url": "https://www.gov.cn/zhengce/202606/content_7071043.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "今年全国超60城调整公积金政策，涉及提额、降首付、扩提取、异地互认等，旨在释放住房消费潜力、保障民生。",
+      "summaryReason": "公积金政策直接影响数亿缴存职工购房成本，密集调整显示政府稳楼市、惠民生决心。",
+      "translatedTitle": "住房公积金政策密集调整，惠民力度加大",
+      "importance": "覆盖范围广、调整力度大，对稳定房地产市场、促进消费有积极作用。",
+      "impactAreas": [
+        "住房公积金",
+        "房地产",
+        "民生",
+        "消费"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-ba359b7858",
+      "title": "5月中国物流业景气指数为50.3% 需求重回扩张区间 市场预期保持向好",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071042.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "5月中国物流业景气指数为50.3%，较上月回升0.6个百分点，需求重回扩张区间，市场预期保持向好。",
+      "summaryReason": "作为经济先行指标，物流业景气指数回升反映经济活动复苏，提振市场信心。",
+      "translatedTitle": "5月中国物流业景气指数50.3% 需求重回扩张区间",
+      "importance": "物流业景气指数重回扩张区间，表明经济景气改善。",
+      "impactAreas": [
+        "物流业",
+        "经济指标",
+        "市场预期"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-dd48d7849b",
+      "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
+      "summaryReason": "官方要闻，体现中国领导人对发展中国家的鼓励与信心，具有政治和外交意义。",
+      "translatedTitle": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+      "importance": "展现中国发展成就与全球视野，对发展中国家具有激励作用。",
+      "impactAreas": [
+        "外交政策",
+        "发展模式",
+        "国际关系"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "tech-openai-news-a3d6a8c521",
+      "title": "A blueprint for democratic governance of frontier AI",
+      "url": "https://openai.com/index/frontier-safety-blueprint",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-06-03T10:00:00.000Z",
+      "score": 99,
+      "aiSummary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。",
+      "summaryReason": "该蓝图可能影响未来AI监管政策，对技术发展和国家安全具有指导意义。",
+      "translatedTitle": "前沿AI民主治理蓝图",
+      "importance": "前沿AI治理是当前全球焦点，此蓝图可能成为政策参考。",
+      "impactAreas": [
+        "AI治理",
+        "国家安全",
+        "政策法规"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
       "id": "finance-item-a7e1b4b248",
       "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
       "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
@@ -199,10 +300,17 @@
       "sourceId": "ndrc-news",
       "category": "finance",
       "publishedAt": "2026-06-03T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "summaryReason": "国家发展改革委新闻发布 / finance · score 100 · official-agency · daily",
-      "summaryMethod": "extractive"
+      "score": 99,
+      "aiSummary": "国家发改委主任郑栅洁主持国有企业座谈会，聚焦深化国资国企改革与更好服务国家重大战略，听取各方面意见建议，涉及宏观政策、价格、产业和经济运行信息。",
+      "summaryReason": "体现国家层面对国企改革的高度重视，可能释放政策信号，影响相关行业和资本市场预期。",
+      "translatedTitle": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动更好服务国家重大战略听取意见",
+      "importance": "国家发改委一把手亲自主持国企座谈会，凸显国企改革在国家战略中的关键地位。",
+      "impactAreas": [
+        "国企改革",
+        "国家战略",
+        "宏观政策"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance-item-32ef619a3a",
@@ -212,36 +320,138 @@
       "sourceId": "mof-news",
       "category": "finance",
       "publishedAt": "2026-06-03T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "财政部财政政策、国债、预算和财政运行新闻",
-      "summaryReason": "财政部财政新闻 / finance · score 100 · official-agency · daily",
-      "summaryMethod": "extractive"
+      "score": 99,
+      "aiSummary": "财政部党校举行第82期处级干部进修班毕业典礼，完成干部培训任务。",
+      "summaryReason": "展示财政部干部培训工作进展，体现财政系统内部建设。",
+      "translatedTitle": "财政部党校第82期处级干部进修班毕业",
+      "importance": "内部培训消息，对市场影响有限，但体现官方动态。",
+      "impactAreas": [
+        "财政政策",
+        "干部培训"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-24eacb2d79",
-      "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
+      "id": "tech-item-916a2c96b7",
+      "title": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
+      "url": "https://www.most.gov.cn/kjbgz/202606/t20260603_196744.html",
+      "source": "科技部工作动态",
+      "sourceId": "most-work",
+      "category": "tech",
       "publishedAt": "2026-06-03T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
-      "summaryMethod": "extractive"
+      "score": 98,
+      "aiSummary": "科技部在上海组织召开2026年度国际托卡马克物理与工程活动中方研讨会，聚焦核聚变研究合作与进展。",
+      "summaryReason": "该研讨会涉及国际核聚变前沿合作，对能源科技发展具有战略意义。",
+      "translatedTitle": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
+      "importance": "作为官方科技部门主导的国际聚变会议，体现我国在核聚变领域的积极参与和布局。",
+      "impactAreas": [
+        "核聚变",
+        "国际科技合作",
+        "能源"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-223abc0d7f",
-      "title": "《习近平的文化情缘》等纪录片在老挝启播",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
+      "id": "finance-item-6ddcd7c1cb",
+      "title": "中国人民银行副行长陶玲出席中国互联网金融协会成立十周年工作座谈会",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060314191251365/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceId": "pbc-news",
+      "category": "finance",
       "publishedAt": "2026-06-03T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。",
-      "summaryReason": "中国政府网要闻 / news · score 100 · official-agency · hourly",
-      "summaryMethod": "extractive"
+      "score": 98,
+      "aiSummary": "中国人民银行副行长陶玲出席中国互联网金融协会成立十周年座谈会，强调协会要走中国特色金融发展之路，以强监管、防风险、促发展为主线，完善自律制度，强化自律功能，助力金融监管，规范经营行为。",
+      "summaryReason": "央行高层讲话为互联网金融行业定调，强调监管与自律并重，影响行业未来发展方向。",
+      "translatedTitle": "央行副行长陶玲出席互联网金融协会十周年座谈会",
+      "importance": "央行副行长明确表态，对互联网金融行业具有强监管、防风险、促发展的指导意义，推动行业规范健康发展。",
+      "impactAreas": [
+        "互联网金融",
+        "金融监管",
+        "行业发展"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "finance-item-fe85b91a7f",
+      "title": "中国人民银行副行长邹澜出席上海合作组织成员国财长和央行行长会议",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060314175989980/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceId": "pbc-news",
+      "category": "finance",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 98,
+      "aiSummary": "中国人民银行副行长邹澜出席在吉尔吉斯斯坦比什凯克举行的上海合作组织成员国财长和央行行长会议，与各方讨论财金合作、货币政策及金融稳定风险，并会见吉尔吉斯央行副行长，就深化合作交换意见。",
+      "summaryReason": "该会议涉及多边财金合作与货币政策协调，影响区域金融稳定，是重要的经济外交事件。",
+      "translatedTitle": "中国人民银行副行长邹澜出席上合组织成员国财长和央行行长会议",
+      "importance": "显示中国参与国际金融治理，推动上合组织框架下的经济合作，对维护区域金融稳定有积极作用。",
+      "impactAreas": [
+        "金融合作",
+        "货币政策",
+        "国际会议"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-aa14a79485",
+      "title": "Yemen: Hunger crisis deepens as funding cuts leave millions without support",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167643",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 97,
+      "aiSummary": "联合国支持的粮食安全平台最新分析显示，也门政府控制区近半数人口面临严重粮食不安全，若国际援助继续削减，危机将进一步恶化。",
+      "summaryReason": "该新闻聚焦也门人道主义危机，因资金缺口导致数百万民众失去支持，凸显国际援助体系的脆弱性及地缘政治影响。",
+      "translatedTitle": "也门：资金削减导致饥荒危机加深，数百万人失去支持",
+      "importance": "也门饥荒危机因资金削减急剧恶化，威胁数百万人生命，警示全球粮食安全与援助体系的紧迫挑战。",
+      "impactAreas": [
+        "人道主义危机",
+        "粮食安全",
+        "国际援助",
+        "地缘政治"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "tech-openai-news-5c3dfacb54",
+      "title": "OpenAI public policy agenda",
+      "url": "https://openai.com/index/public-policy-agenda",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-06-03T10:00:00.000Z",
+      "score": 97,
+      "aiSummary": "OpenAI发布公共政策议程，涵盖AI安全、青少年保护、劳动力转型及全球标准，旨在确保AI技术造福社会。",
+      "summaryReason": "OpenAI作为AI领军企业，其政策立场对全球AI治理具有重要导向作用。",
+      "translatedTitle": "OpenAI公共政策议程",
+      "importance": "OpenAI的政策议程将影响全球AI监管方向，对科技行业和公共政策有重大指引意义。",
+      "impactAreas": [
+        "AI政策",
+        "监管",
+        "安全",
+        "劳动力"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "finance-item-1383166147",
+      "title": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
+      "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+      "source": "国家统计局数据发布",
+      "sourceId": "stats-data-release",
+      "category": "finance",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 97,
+      "aiSummary": "国家统计局发布2026年5月下旬流通领域重要生产资料市场价格变动数据，涵盖钢铁、煤炭、化工等关键品类，反映近期物价走势和经济运行状况。",
+      "summaryReason": "该数据是官方权威发布，直接反映生产端物价变化，对判断通胀压力及宏观经济走势具有重要参考价值。",
+      "translatedTitle": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
+      "importance": "重要经济先行指标，监测工业品价格波动，为政策制定和市场预期提供依据。",
+      "impactAreas": [
+        "宏观经济",
+        "物价",
+        "统计局数据"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance-u-s-sec-press-releases-f61d1b0566",
@@ -251,62 +461,260 @@
       "sourceId": "sec-press",
       "category": "finance",
       "publishedAt": "2026-06-02T14:30:00.000Z",
-      "score": 100,
-      "aiSummary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 yea...",
-      "summaryReason": "U.S. SEC Press Releases / finance · score 100",
-      "summaryMethod": "extractive"
+      "score": 97,
+      "aiSummary": "美国证券交易委员会（SEC）发布战略规划草案，聚焦回归90多年前国会设立的三大核心使命：保护投资者、维护公平有序高效市场。草案现公开征求意见。",
+      "summaryReason": "SEC作为核心金融监管机构，其战略方向影响市场规则与投资者保护，对金融行业有长期指导意义。",
+      "translatedTitle": "美国SEC发布战略规划草案征求意见",
+      "importance": "高。SEC战略规划将重塑监管重点，影响资本市场运作。",
+      "impactAreas": [
+        "证券监管",
+        "投资者保护",
+        "金融市场"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "tech-openai-news-f9f27c3f88",
-      "title": "Our views on AI policy and political advocacy",
-      "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+      "id": "tech-openai-news-010cdd7fc8",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
       "source": "OpenAI News",
       "sourceId": "openai-news",
       "category": "tech",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "score": 100,
-      "aiSummary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
-      "summaryReason": "OpenAI News / tech · score 100 · Global Affairs",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "score": 96,
+      "aiSummary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。",
+      "summaryReason": "该案例展示AI代理在软件工程中的实际应用，具有行业标杆意义，预示开发流程的深度变革。",
+      "translatedTitle": "Endava利用AI代理重塑软件交付",
+      "importance": "AI代理将重塑软件交付模式，提升效率与自动化水平，是企业数字化转型的重要方向。",
+      "impactAreas": [
+        "AI代理",
+        "软件开发",
+        "企业自动化",
+        "技术变革"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "finance-item-27284b737d",
-      "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
-      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
-      "source": "财政部财政新闻",
-      "sourceId": "mof-news",
-      "category": "finance",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 99,
-      "aiSummary": "财政部财政政策、国债、预算和财政运行新闻",
-      "summaryReason": "财政部财政新闻 / finance · score 99 · official-agency · daily",
-      "summaryMethod": "extractive"
+      "id": "news-item-c59277d04a",
+      "title": "长线外资看好中国 持续加码硬科技",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071033.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "多家国际金融机构发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。",
+      "summaryReason": "外资持续加码硬科技，反映国际资本对中国科技创新和长期经济增长信心增强。",
+      "translatedTitle": "长线外资看好中国 持续加码硬科技",
+      "importance": "长线外资动向是市场风向标，硬科技投资体现中国产业升级吸引力。",
+      "impactAreas": [
+        "外资动向",
+        "硬科技",
+        "中国经济",
+        "投资布局"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "finance-item-0e9d3d5e8c",
-      "title": "财政部发行2026年记账式贴现（三十三期）国债",
-      "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260602_3991018.htm",
-      "source": "财政部财政新闻",
-      "sourceId": "mof-news",
-      "category": "finance",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 99,
-      "aiSummary": "财政部财政政策、国债、预算和财政运行新闻",
-      "summaryReason": "财政部财政新闻 / finance · score 99 · official-agency · daily",
-      "summaryMethod": "extractive"
+      "id": "news-item-33445ea181",
+      "title": "图表：2026年5月份中国物流业景气指数为50.3%",
+      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071030.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "5月中国物流业景气指数为50.3%，环比回升0.6个百分点，重回扩张区间，显示物流业务活动趋于活跃，行业景气度有所改善。",
+      "summaryReason": "物流景气指数是经济运行先行指标，重回扩张区间反映经济复苏动力增强，对研判宏观走势有重要参考价值。",
+      "translatedTitle": "5月中国物流业景气指数50.3%",
+      "importance": "物流业景气指数重回扩张区间，表明物流活动回暖，经济复苏基础进一步巩固，释放积极信号。",
+      "impactAreas": [
+        "宏观经济",
+        "物流行业",
+        "景气指数"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "finance-item-ece6b1fe97",
-      "title": "中国人民银行召开2026年组织人事部门负责人会议",
-      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060219164482474/index.html",
-      "source": "中国人民银行新闻发布",
-      "sourceId": "pbc-news",
-      "category": "finance",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 98,
-      "aiSummary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summaryReason": "中国人民银行新闻发布 / finance · score 98 · official-agency · hourly",
-      "summaryMethod": "extractive"
+      "id": "news-item-200f8002b5",
+      "title": "2026年全国高考报名人数1290万人",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071017.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "2026年全国高考报名人数达1290万人，由国务院及相关部门发布，反映教育政策与人口趋势。",
+      "summaryReason": "高考报名人数是教育政策与人口结构的重要指标，影响教育资源配置和社会关注。",
+      "translatedTitle": "2026年全国高考报名人数1290万人",
+      "importance": "高考报名人数直接关联高等教育资源和青年就业，是国家教育决策的关键参考数据。",
+      "impactAreas": [
+        "教育政策",
+        "人口趋势",
+        "社会关注"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-bfc2f5edf5",
+      "title": "【视频】丁薛祥在云南调研",
+      "url": "https://politics.cntv.cn/special/gwyvideo/shipin/202606/2026060301/index.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "国务院副总理丁薛祥赴云南开展调研，关注地方发展与政策落实。视频报道聚焦调研行程与重点议题。",
+      "summaryReason": "高评分官方要闻，涉及国家级领导人调研，反映政策导向与地方动态。",
+      "translatedTitle": "丁薛祥在云南调研",
+      "importance": "作为国务院副总理的调研活动，传递政策信号与区域发展重点，具有较高政治与经济关注度。",
+      "impactAreas": [
+        "政务",
+        "地方经济",
+        "政策调研"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-7db825335e",
+      "title": "丁薛祥在云南调研时强调：全面贯彻党的教育方针 深入推进基础教育高质量发展",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071009.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "中共中央政治局常委、国务院副总理丁薛祥6月1日至2日在云南调研基础教育，强调全面贯彻党的教育方针，深入推进基础教育高质量发展。",
+      "summaryReason": "高层领导实地调研基础教育，释放政策信号，对教育领域改革和发展具有指导意义。",
+      "translatedTitle": "丁薛祥在云南调研强调推进基础教育高质量发展",
+      "importance": "国家高层直接关注基础教育，体现教育优先发展战略，可能影响后续教育政策调整。",
+      "impactAreas": [
+        "教育改革",
+        "基础教育",
+        "政策导向"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-6195116a84",
+      "title": "需求重回扩张区间——5月份我国物流业相关数据分析",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070976.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "中国物流与采购联合会发布数据，5月份物流业景气指数为50.3%，环比回升0.6个百分点，重回扩张区间，显示物流需求逐步恢复。",
+      "summaryReason": "物流业景气指数是经济先行指标，回升预示经济运行回暖，对判断宏观经济走势有重要参考价值。",
+      "translatedTitle": "需求重回扩张区间——5月份我国物流业相关数据分析",
+      "importance": "物流业景气指数重返扩张区间，反映经济复苏势头，对生产、消费及供应链稳定具有积极信号。",
+      "impactAreas": [
+        "物流",
+        "经济指标",
+        "供应链"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-28097904d7",
+      "title": "5月份中国物流业景气指数为50.3%",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070974.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "5月中国物流业景气指数50.3%，较上月回升0.6个百分点，重回扩张区间，显示物流活动趋于活跃。",
+      "summaryReason": "物流业景气指数是行业先行指标，回升反映供应链与消费需求改善，对判断经济复苏有重要参考价值。",
+      "translatedTitle": "5月份中国物流业景气指数为50.3%",
+      "importance": "物流业是经济晴雨表，景气指数重回扩张区间，预示经济活力增强。",
+      "impactAreas": [
+        "物流行业",
+        "宏观经济",
+        "供应链",
+        "消费"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-24eacb2d79",
+      "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "中国政府强调加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易，推动从贸易大国向贸易强国转变。",
+      "summaryReason": "该新闻为官方要闻，体现国家贸易战略方向，对经济政策研究有参考价值。",
+      "translatedTitle": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
+      "importance": "中央明确贸易强国建设路径，指导未来贸易发展，具有战略性意义。",
+      "impactAreas": [
+        "对外贸易",
+        "经济战略",
+        "对外开放"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-223abc0d7f",
+      "title": "《习近平的文化情缘》等纪录片在老挝启播",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "6月1日，中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》三部纪录片在老挝国家电视台启播，老挝国家主席通伦发贺信祝贺。",
+      "summaryReason": "该事件标志着中国官方纪录片在老挝主流媒体落地，老挝最高领导人发贺信，体现中老两国在文化传播领域的深度合作与友好关系。",
+      "translatedTitle": "《习近平的文化情缘》等纪录片在老挝启播",
+      "importance": "展示中国文化软实力，强化中老双边关系，提升国际传播影响力。",
+      "impactAreas": [
+        "中国文化",
+        "国际传播",
+        "中老关系"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-117037675a",
+      "title": "Curiosity Blog, Sols 4908-4912: Goodbye Campo Marte, It’s Been Fun!",
+      "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4908-4912-goodbye-campo-marte-its-been-fun",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "news",
+      "publishedAt": "2026-06-04T01:28:11.000Z",
+      "score": 94,
+      "aiSummary": "好奇号火星车完成第47次成功钻孔“坎波马尔特”，团队利用停留时间进行多项观测，现已准备离开该区域。",
+      "summaryReason": "该里程碑展示了火星车长期探索能力，为火星地质研究提供重要样本。",
+      "translatedTitle": "好奇号博客：告别坎波马尔特，乐趣无穷！",
+      "importance": "好奇号持续成功钻孔，对理解火星历史具有重要意义。",
+      "impactAreas": [
+        "太空探索",
+        "火星探测",
+        "NASA"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-6b33bb602b",
+      "title": "Kyrgyzstan wins seat on UN Security Council for first time ever",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167636",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 94,
+      "aiSummary": "联合国安理会选举结果出炉，吉尔吉斯斯坦首次获得席位，同奥地利、葡萄牙、特立尼达和多巴哥、津巴布韦一起当选。这标志着中亚国家在联合国安全架构中的参与度提升。",
+      "summaryReason": "吉尔吉斯斯坦首次加入安理会，反映出联合国对中亚地区代表性的调整，具有地缘政治意义。",
+      "translatedTitle": "吉尔吉斯斯坦首次当选联合国安理会非常任理事国",
+      "importance": "吉尔吉斯斯坦首次进入安理会，扩大了中亚国家在国际安全事务中的话语权，影响地区平衡。",
+      "impactAreas": [
+        "联合国",
+        "地缘政治",
+        "中亚"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance-federal-reserve-21243553bd",
@@ -316,127 +724,159 @@
       "sourceId": "federal-reserve",
       "category": "finance",
       "publishedAt": "2026-06-02T15:00:00.000Z",
-      "score": 96,
-      "aiSummary": "The federal bank regulatory agencies today jointly updated certain interagency documents to remove references to reputation risk.",
-      "summaryReason": "Federal Reserve / finance · score 96 · Banking and Consumer Regulatory Policy",
-      "summaryMethod": "extractive"
+      "score": 93,
+      "aiSummary": "联邦银行监管机构联合更新多项跨机构文件，移除关于声誉风险的引用，表明监管重点可能转向其他风险领域。",
+      "summaryReason": "该行动反映监管层对声誉风险态度的转变，可能简化银行合规要求，影响金融行业风险管理策略。",
+      "translatedTitle": "机构删除更多声誉风险相关表述",
+      "importance": "降低银行声誉风险管理负担，但可能增加其他风险领域的监管关注。",
+      "impactAreas": [
+        "银行监管",
+        "政策调整",
+        "金融合规"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-85e5dfa365",
-      "title": "助力三夏抢收 设备更新政策发力显效",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070947.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
+      "id": "news-nasa-breaking-news-1668c4958d",
+      "title": "Journey to the Center of the Virgo Cluster",
+      "url": "https://www.nasa.gov/image-article/journey-to-the-center-of-the-virgo-cluster",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
       "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "今年，我国继续加力推进大规模设备更新，最近一段时间，在夏粮主产区，更新上岗的农业设备派上了大用场。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-03T15:48:44.000Z",
+      "score": 92,
+      "aiSummary": "NASA/ESA哈勃望远镜2026年5月29日发布的图像聚焦于活跃螺旋星系M88，距地球约6300万光年。该星系中心存在一个约1亿倍太阳质量的超大质量黑洞，正在吞噬气体和尘埃，属于活跃星系。图像展示了星系在室女座星系团中长达数亿年的旅程。",
+      "summaryReason": "该新闻展示了哈勃望远镜对星系演化及黑洞活动的观测成果，为理解星系动力学和黑洞吸积过程提供重要数据。",
+      "translatedTitle": "室女座星系团中心之旅",
+      "importance": "哈勃望远镜最新图像揭示了室女座星系团中M88星系的活跃状态，对研究星系演化和超大质量黑洞具有重要意义。",
+      "impactAreas": [
+        "天文学",
+        "太空探索",
+        "黑洞研究"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-a3ac4d242e",
-      "title": "我国将培育壮大农业新兴产业和未来产业",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070939.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
+      "id": "news-nasa-breaking-news-d8411ef7b9",
+      "title": "NASA Drains 66-Million-Gallon Reservoir to Upgrade Critical Water System",
+      "url": "https://www.nasa.gov/centers-and-facilities/stennis/reservoir-drained-to-upgrade-water-system",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
       "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "国务院2日对外公布的《加快农业农村现代化“十五五”规划》将因地制宜发展农业新质生产力摆在更加突出的战略位置，并首次提出培育壮大农业领域新兴产业和未来产业。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-03T13:50:10.000Z",
+      "score": 92,
+      "aiSummary": "NASA在密西西比州斯坦尼斯航天中心排空一个6600万加仑的水库，以便升级高压工业供水设施。这是自1960年代建成以来水位最低的一次，旨在更换关键设备，确保火箭发动机测试的供水安全。",
+      "summaryReason": "该升级对维持火箭发动机测试至关重要，保障航天任务顺利进行。",
+      "translatedTitle": "NASA排空6600万加仑水库升级关键供水系统",
+      "importance": "体现了NASA对基础设施的持续维护，确保测试能力与安全性。",
+      "impactAreas": [
+        "NASA",
+        "基础设施",
+        "航天测试"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-0b54ef9c63",
-      "title": "图表：2025年全国A级景区接待游客75.1亿人次",
-      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7070934.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "文化和旅游部6月2日发布2025年文化和旅游发展统计公报。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
+      "id": "tech-google-ai-blog-7129e27945",
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips",
+      "source": "Google AI Blog",
+      "sourceId": "google-ai",
+      "category": "tech",
+      "publishedAt": "2026-06-03T13:00:00.000Z",
+      "score": 92,
+      "aiSummary": "谷歌搜索推出AI工具，帮助用户提升旧货和二手购物体验。2026年“复古”和“如何淘二手”搜索量创新高，用户可通过AI模式、圈选搜索等功能轻松找到心仪商品。",
+      "summaryReason": "谷歌将AI应用于二手购物场景，提升搜索效率，反映AI在电商领域的渗透趋势。",
+      "translatedTitle": "谷歌搜索AI工具助你淘二手好物",
+      "importance": "AI赋能传统购物模式，推动消费电子与电商创新。",
+      "impactAreas": [
+        "AI",
+        "搜索",
+        "电商",
+        "消费电子"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-664acc4f0c",
-      "title": "刘国中在河北调研时强调：毫不放松抓好“三夏”生产 扎实有效开展常态化监测帮扶",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070919.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "中共中央政治局委员、国务院副总理刘国中1日至2日到河北调研。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-04cdfb9295",
-      "title": "第十一次中英战略对话在北京举行",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070956.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "中共中央政治局委员、外交部长王毅2日在北京同英国外交大臣库珀举行第十一次中英战略对话。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-a8ef470e2f",
-      "title": "国务院印发《加快农业农村现代化“十五五”规划》",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-e9f5e3569b",
-      "title": "中央财政下达育儿补贴补助资金999亿元",
-      "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-item-208d1e8eb6",
-      "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
-      "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
-      "summaryReason": "中国政府网要闻 / news · score 95 · official-agency · hourly",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-un-news-27877aac4c",
-      "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167619",
+      "id": "news-un-news-aaae5d9513",
+      "title": "Growing up with sirens: UN child rights envoy on the toll of the Ukraine-Russia war",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167641",
       "source": "UN News",
       "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "score": 95,
-      "aiSummary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council on Monday, underlining the need for rest...",
-      "summaryReason": "UN News / news · score 95",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "战争严重影响了乌克兰儿童，他们不得不在防空洞上课或线上学习，长期承受空袭警报带来的心理压力。",
+      "summaryReason": "该报道来自联合国新闻，强调了战争对儿童心理和教育的长期影响，具有人道主义关注点。",
+      "translatedTitle": "在警报声中成长：联合国儿童权利特使谈俄乌战争对儿童的影响",
+      "importance": "战争对儿童的影响是紧迫的人道主义问题，反映了冲突的长期后果。",
+      "impactAreas": [
+        "地缘政治",
+        "儿童权益",
+        "人道主义危机"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-0adfe605f3",
+      "title": "World News in Brief: UN urges restraint as Gulf tensions rise, fear and uncertainty in Lebanon, hunger grows in the Sahel",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167639",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "联合国秘书长古特雷斯对美伊交火及伊朗攻击科威特和巴林的报道表示震惊，呼吁各方保持最大克制，避免局势升级。",
+      "summaryReason": "该事件涉及美伊冲突升级，影响中东地缘政治稳定，对全球金融市场和能源供应有潜在影响。",
+      "translatedTitle": "联合国呼吁海湾紧张局势中保持克制",
+      "importance": "高，美伊冲突可能引发地区战争，影响全球石油供应和地缘政治格局。",
+      "impactAreas": [
+        "地缘政治",
+        "能源",
+        "金融市场"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-e3385a705d",
+      "title": "‘We are catching up’ – WHO chief on DR Congo’s Ebola fight",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167632",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "WHO负责人表示刚果（金）埃博拉疫情显示进展迹象，但在检测、监测、疫苗开发和社区信任方面仍面临重大挑战。",
+      "summaryReason": "埃博拉疫情控制进展直接关系到非洲及全球公共卫生安全，WHO的最新评估对各国防控策略有重要参考价值。",
+      "translatedTitle": "WHO负责人称刚果（金）埃博拉疫情取得进展但挑战仍存",
+      "importance": "埃博拉病毒致死率高，疫情进展反映全球公共卫生应对能力，对国际旅行和贸易政策有潜在影响。",
+      "impactAreas": [
+        "公共卫生",
+        "传染病防控",
+        "疫苗研发",
+        "社区信任"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-ae51c1bc5e",
+      "title": "Gaza’s public servants systematically targeted in Israeli strikes",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167631",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "尽管加沙名义停火已数月，以色列无人机和空袭仍持续杀害巴勒斯坦人，包括对和平与重建至关重要的警察部队。联合国人权办公室谴责此类针对性攻击。",
+      "summaryReason": "该新闻揭示停火后仍有系统性攻击，威胁当地秩序与重建，凸显冲突持续与人道主义危机恶化。",
+      "translatedTitle": "加沙公共部门工作人员遭以军系统性空袭",
+      "importance": "加沙停火脆弱，公共部门工作人员遭针对，严重影响安全与重建，可能引发国际关注与外交压力。",
+      "impactAreas": [
+        "地缘政治",
+        "人道主义",
+        "冲突"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news-nasa-breaking-news-1cb155da8d",
@@ -446,10 +886,17 @@
       "sourceId": "nasa-breaking-news",
       "category": "news",
       "publishedAt": "2026-06-03T04:00:00.000Z",
-      "score": 94,
-      "aiSummary": "The sprawling storm promised to deliver torrential rain across a wide swath of southern Japan.",
-      "summaryReason": "NASA Breaking News / news · score 94 · Earth Observatory · Hurricanes & Typhoons",
-      "summaryMethod": "extractive"
+      "score": 91,
+      "aiSummary": "NASA地球观测站发布台风蔷蜜卫星图像，展示其规模与路径。该台风源于西北太平洋，对周边地区构成潜在威胁。",
+      "summaryReason": "台风是重要的自然灾害，NASA的观测数据有助于预警和防灾，对亚太地区安全有直接影响。",
+      "translatedTitle": "台风蔷蜜",
+      "importance": "台风蔷蜜可能影响多个国家，需关注其动态及可能造成的灾害损失。",
+      "impactAreas": [
+        "台风",
+        "气象观测",
+        "自然灾害"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "tech-openai-news-bd9e099ef4",
@@ -459,88 +906,80 @@
       "sourceId": "openai-news",
       "category": "tech",
       "publishedAt": "2026-06-02T12:00:00.000Z",
-      "score": 93,
-      "aiSummary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-      "summaryReason": "OpenAI News / tech · score 93",
-      "summaryMethod": "extractive"
+      "score": 90,
+      "aiSummary": "Travelers与OpenAI合作推出AI理赔助手，提供全天候理赔指导和客户支持，并在需求高峰期自动扩展运营能力，提升理赔效率与客户体验。",
+      "summaryReason": "此案例展示了AI在保险理赔中的大规模实际应用，标志着企业级AI在传统行业的深度落地。",
+      "translatedTitle": "Travelers借助OpenAI全国部署AI理赔助手",
+      "importance": "Travelers全国部署AI理赔系统，利用OpenAI技术实现自动化客户支持与可扩展运营，为保险业数字化转型树立标杆。",
+      "impactAreas": [
+        "保险科技",
+        "AI应用",
+        "客户服务",
+        "企业级AI"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "tech-openai-news-da2f1a51b8",
-      "title": "Codex for every role, tool, and workflow",
-      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-06-02T09:00:00.000Z",
-      "score": 93,
-      "aiSummary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
-      "summaryReason": "OpenAI News / tech · score 93 · Product",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-87eac95345",
-      "title": "NASA Testing Wastewater Treatment Facility for Future Moon Base",
-      "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-testing-wastewater-treatment-facility-for-future-moon-base",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
+      "id": "news-un-news-acc67142cf",
+      "title": "‘Women and girls cannot wait’: Lebanon’s crisis is putting lives at risk",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167628",
+      "source": "UN News",
+      "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-06-02T14:31:18.000Z",
-      "score": 92,
-      "aiSummary": "A mobile wastewater treatment system built at NASA’s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport...",
-      "summaryReason": "NASA Breaking News / news · score 92 · Kennedy Space Center · Artemis",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "score": 89,
+      "aiSummary": "联合国人口基金警告，尽管有停火协议，但黎巴嫩妇女和女孩在暴力和流离失所中付出越来越惨痛的代价，生命面临严峻威胁。",
+      "summaryReason": "该新闻来自联合国官方，提及停火后危机未解，突出妇女儿童脆弱处境，具有人道主义关注价值。",
+      "translatedTitle": "黎巴嫩危机持续，妇女和女孩面临生命危险",
+      "importance": "黎巴嫩人道危机加剧，联合国机构发出紧急呼吁，显示冲突对弱势群体的严重影响，值得国际社会关注。",
+      "impactAreas": [
+        "人道危机",
+        "性别平等",
+        "中东局势",
+        "联合国"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-nasa-breaking-news-817f955938",
-      "title": "Be a Clump Scout and Help Reveal Secrets of Stellar Nurseries",
-      "url": "https://science.nasa.gov/get-involved/citizen-science/help-galaxy-zoo-clump-scout-ii-project",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
+      "id": "news-un-news-5b72038f62",
+      "title": "World News in Brief: Violence hampers Ebola efforts, aid delivery in Darfur and Gaza, Nicaraguan activist’s death in custody",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167629",
+      "source": "UN News",
+      "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-06-02T13:19:54.000Z",
-      "score": 92,
-      "aiSummary": "In the mid-20th century, astronomers discovered strange \"clumpy\" galaxies filled with mysterious bright blobs – massive stellar nurseries where stars are born at an explosive rate.",
-      "summaryReason": "NASA Breaking News / news · score 92 · Astrophysics Division · Citizen Science",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "score": 89,
+      "aiSummary": "联合国人道事务协调办公室称，刚果（金）东部暴力升级持续影响平民和抗击埃博拉的努力。",
+      "summaryReason": "疫情与冲突叠加加剧人道危机，影响全球公共卫生安全。",
+      "translatedTitle": "刚果（金）东部暴力阻碍埃博拉抗疫",
+      "importance": "暴力升级威胁抗疫进展，需国际关注。",
+      "impactAreas": [
+        "地缘政治",
+        "公共卫生",
+        "人道危机"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-nasa-breaking-news-68bdbb5e73",
-      "title": "Spacewalking With Scott Wray, Artemis EVA Training Lead",
-      "url": "https://www.nasa.gov/centers-and-facilities/johnson/spacewalking-with-scott-wray-artemis-eva-training-lead",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
+      "id": "news-un-news-7c44871686",
+      "title": "Haiti: UN rights office welcomes new judicial units to tackle gang violence and impunity",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167627",
+      "source": "UN News",
+      "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-06-02T09:00:00.000Z",
-      "score": 92,
-      "aiSummary": "Scott Wray’s experience with spacewalks started when he was about 6 years old.",
-      "summaryReason": "NASA Breaking News / news · score 92 · Johnson Space Center · Artemis",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-572c5eef4e",
-      "title": "Advancing youth safety and opportunity through global leadership",
-      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-06-02T07:00:00.000Z",
-      "score": 92,
-      "aiSummary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
-      "summaryReason": "OpenAI News / tech · score 92 · Global Affairs",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-968c7d1345",
-      "title": "Codex is becoming a productivity tool for everyone",
-      "url": "https://openai.com/index/codex-for-knowledge-work",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-06-02T02:00:00.000Z",
-      "score": 92,
-      "aiSummary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
-      "summaryReason": "OpenAI News / tech · score 92 · Global Affairs",
-      "summaryMethod": "extractive"
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "score": 89,
+      "aiSummary": "联合国人权高专办欢迎海地设立两个专门司法部门，认为这是解决普遍有罪不罚现象的重要一步，旨在应对帮派暴力。",
+      "summaryReason": "海地帮派暴力问题严重，新司法部门有助于恢复法治，减少有罪不罚。",
+      "translatedTitle": "联合国人权办欢迎海地设立专门司法部门打击帮派暴力",
+      "importance": "显示联合国支持海地司法改革，对缓解当地暴力局势有积极意义。",
+      "impactAreas": [
+        "海地",
+        "联合国",
+        "人权",
+        "司法"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news-un-news-81b98d374f",
@@ -550,10 +989,17 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-06-02T12:00:00.000Z",
-      "score": 91,
-      "aiSummary": "As the world approaches nine years since the mass displacement of Rohingya refugees from Myanmar into Bangladesh, the UN refugee agency (UNHCR) has appealed to the international...",
-      "summaryReason": "UN News / news · score 91",
-      "summaryMethod": "extractive"
+      "score": 89,
+      "aiSummary": "联合国难民署呼吁国际社会不要遗忘孟加拉国的120万罗兴亚难民，援助削减正危及他们的基本生活与安全。",
+      "summaryReason": "罗兴亚难民危机已持续近九年，援助削减可能导致人道主义灾难恶化，需要国际社会持续关注与支持。",
+      "translatedTitle": "联合国呼吁关注罗兴亚难民，援助削减带来威胁",
+      "importance": "罗兴亚难民问题长期被边缘化，援助削减将加剧人道危机，影响地区稳定。",
+      "impactAreas": [
+        "人道主义",
+        "难民",
+        "国际援助"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news-un-news-adea3555fb",
@@ -563,101 +1009,181 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-06-02T12:00:00.000Z",
-      "score": 91,
-      "aiSummary": "Overnight attacks in three key cities in Ukraine have left several civilians dead, scores more injured, and homes, hospitals and shops destroyed or damaged, the UN Humanitarian...",
-      "summaryReason": "UN News / news · score 91",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-061b839247",
-      "title": "NASA Awards Modification Contract for Reduced Gravity Test Aircraft",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-modification-contract-for-reduced-gravity-test-aircraft",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-01T23:45:59.000Z",
-      "score": 90,
-      "aiSummary": "NASA selected Denmar Technical Services of Nevada to provide aircraft modifications, maintenance, and testing services to the Human Spaceflight Mission Directorate at NASA’s Arm...",
-      "summaryReason": "NASA Breaking News / news · score 90 · Armstrong Flight Research Center · Johnson Space Center",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "news-nasa-breaking-news-d63ae3d0ae",
-      "title": "NASA to Conduct Low-Altitude Flights Near Houston",
-      "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-near-houston",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-01T18:29:50.000Z",
-      "score": 90,
-      "aiSummary": "Johnson Space Center Office of Communications Five research aircraft will support a Student Airborne Research Program (SARP) mission out of Ellington Field in Houston.",
-      "summaryReason": "NASA Breaking News / news · score 90 · General",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-google-ai-blog-312495d49a",
-      "title": "How we used Gemini to build Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
-      "source": "Google AI Blog",
-      "sourceId": "google-ai",
-      "category": "tech",
-      "publishedAt": "2026-06-01T16:00:00.000Z",
-      "score": 90,
-      "aiSummary": "From the jellyfish pre-show to our “TPU Training Day” film, see how Gemini helped make I/O happen this year.",
-      "summaryReason": "Google AI Blog / tech · score 90 · Gemini models · Google Labs",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-de25d7330f",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
-      "score": 90,
-      "aiSummary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
-      "summaryReason": "OpenAI News / tech · score 90 · Global Affairs",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "tech-openai-news-d71c1c5476",
-      "title": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "tech",
-      "publishedAt": "2026-06-01T10:00:00.000Z",
-      "score": 90,
-      "aiSummary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement w...",
-      "summaryReason": "OpenAI News / tech · score 90 · Product",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-u-s-sec-press-releases-29e2ec8346",
-      "title": "SEC Announces Four New Members of Investor Advisory Committee",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-50-sec-announces-four-new-members-investor-advisory-committee",
-      "source": "U.S. SEC Press Releases",
-      "sourceId": "sec-press",
-      "category": "finance",
-      "publishedAt": "2026-06-01T16:39:44.000Z",
       "score": 89,
-      "aiSummary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&nbsp;Three of the four new members&nbsp;w...",
-      "summaryReason": "U.S. SEC Press Releases / finance · score 89",
-      "summaryMethod": "extractive"
+      "aiSummary": "乌克兰三座主要城市夜间遭袭，导致平民死伤，房屋、医院和商店受损。联合国人道协调员谴责俄罗斯新一轮攻击。",
+      "summaryReason": "联合国谴责俄罗斯新一轮攻击，凸显乌克兰人道危机持续恶化，影响国际社会对冲突的关注。",
+      "translatedTitle": "联合国谴责俄罗斯新一轮对乌克兰袭击",
+      "importance": "高重要性，因为袭击造成平民伤亡和基础设施损坏，联合国介入，反映冲突升级。",
+      "impactAreas": [
+        "地缘政治",
+        "人道主义",
+        "战争"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-un-news-ad73a69177",
-      "title": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167618",
+      "id": "news-un-news-4b84db79b8",
+      "title": "UN mission reports rising tensions along the Blue Line in Lebanon",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167625",
       "source": "UN News",
       "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-06-01T12:00:00.000Z",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
       "score": 87,
-      "aiSummary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and Hezbollah amid warnings of Israeli strikes...",
-      "summaryReason": "UN News / news · score 87",
-      "summaryMethod": "extractive"
+      "aiSummary": "联合国安理会应法国请求紧急开会，应对以色列与真主党在黎巴嫩的暴力升级，美国调解未果，国际担忧加深。",
+      "summaryReason": "安理会紧急会议凸显局势危险，中东冲突可能扩大，影响联合国维和及地区稳定。",
+      "translatedTitle": "联合国报告黎巴嫩蓝线紧张局势升级",
+      "importance": "中东紧张局势升级，可能引发更大规模冲突，联合国介入显示严重性。",
+      "impactAreas": [
+        "地缘政治",
+        "联合国",
+        "冲突安全"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-a7c01d4b3d",
+      "title": "A Moonlit Earth as Seen From Artemis II",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-moonlit-earth-as-seen-from-artemis-ii",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "news",
+      "publishedAt": "2026-06-04T04:01:00.000Z",
+      "score": 86,
+      "aiSummary": "NASA发布阿尔忒弥斯二号任务从月球轨道拍摄的地球影像，地球在月光下呈现独特景象，展示地球大气层和地月系统之美。",
+      "summaryReason": "该影像具有科学和视觉双重价值，为公众提供从月球视角欣赏地球的难得机会，推动空间探索公众关注。",
+      "translatedTitle": "阿尔忒弥斯二号拍摄月夜地球",
+      "importance": "展现地月系统动态，为未来月球任务和地球观测提供新视角。",
+      "impactAreas": [
+        "空间探索",
+        "地球观测",
+        "NASA"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-2bdeff9a46",
+      "title": "NASA Finds New Way Earth May Have Received Elements Needed for Life",
+      "url": "https://science.nasa.gov/science-research/planetary-science/astrobiology/nasa-finds-new-way-earth-may-have-received-elements-needed-for-life",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T18:01:00.000Z",
+      "score": 85,
+      "aiSummary": "NASA支持的研究揭示了早期地球可能通过新途径获得生命必需元素，并指出木星在输送这些元素中扮演了关键角色，为理解地球宜居性提供了新视角。",
+      "summaryReason": "该发现挑战了传统理论，为天体生物学和行星形成研究提供了重要线索。",
+      "translatedTitle": "NASA发现地球获得生命所需元素的新途径",
+      "importance": "对理解地球生命起源和行星宜居性具有深远意义。",
+      "impactAreas": [
+        "天体生物学",
+        "行星科学",
+        "生命起源"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-cbebc66f9b",
+      "title": "International Sea Level Satellite Observes El Niño Precursor",
+      "url": "https://science.nasa.gov/photojournal/international-sea-level-satellite-observes-el-nino-precursor",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T17:27:22.000Z",
+      "score": 85,
+      "aiSummary": "Sentinel-6 Michael Freilich卫星2026年3-5月数据显示海平面升高，预示厄尔尼诺现象即将到来。",
+      "summaryReason": "厄尔尼诺影响全球气候，该观测提供预警，对防灾和气象预测重要。",
+      "translatedTitle": "国际海平面卫星观测到厄尔尼诺前兆",
+      "importance": "厄尔尼诺引发极端天气，卫星数据有助于提前应对，减少灾害损失。",
+      "impactAreas": [
+        "气候变化",
+        "气象预测",
+        "防灾减灾"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "tech-openai-news-8fe777fefb",
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-06-03T13:15:00.000Z",
+      "score": 85,
+      "aiSummary": "GPT-Rosalind新增生物推理、药物化学、基因组分析和实验工作流能力，助力生命科学研究。",
+      "summaryReason": "增强AI在生命科学领域的应用，加速药物发现和基因组研究，提升实验效率。",
+      "translatedTitle": "GPT-Rosalind新功能介绍",
+      "importance": "推动AI在生命科学领域的深度应用，为生物医学研究提供新工具。",
+      "impactAreas": [
+        "AI模型",
+        "生命科学",
+        "药物研发",
+        "基因组学"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "tech-openai-news-e2a15d8f34",
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "url": "https://openai.com/index/wasmer",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 85,
+      "aiSummary": "Wasmer使用OpenAI的Codex（GPT-5.5）将开发速度提升10-20倍，在数周内交付了边缘Node.js运行时，展示了AI辅助编程的巨大潜力。",
+      "summaryReason": "该案例证明AI可大幅加速软件开发，尤其适合边缘计算等底层基础设施构建，对开发者生态和云服务有深远影响。",
+      "translatedTitle": "Wasmer利用Codex构建边缘Node.js运行时",
+      "importance": "展示AI辅助编程的实际效能，推动边缘计算与AI融合，加速技术迭代。",
+      "impactAreas": [
+        "AI编程",
+        "边缘计算",
+        "Node.js",
+        "开发效率"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-c8810cc64e",
+      "title": "NASA Says Farewell to MAVEN Mars Mission, Hosts Media Call Today",
+      "url": "https://www.nasa.gov/news-release/nasa-says-farewell-to-maven-mars-mission-hosts-media-call-today",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T13:12:05.000Z",
+      "score": 84,
+      "aiSummary": "MAVEN探测器于2014年进入火星轨道，运行超11年，首次专注于观测火星高层大气、电离层及与太阳风相互作用，研究大气逃逸。NASA今日宣布结束任务并召开媒体电话会。",
+      "summaryReason": "MAVEN是首个致力于火星大气研究的任务，其数据对理解火星气候演变和大气流失机制至关重要，任务结束标志着一个重要科学阶段的完成。",
+      "translatedTitle": "NASA告别MAVEN火星任务，今日举行媒体电话会",
+      "importance": "MAVEN任务提供了火星大气逃逸的关键观测数据，深化了对行星演化的认知，其结束是行星科学领域的重大事件。",
+      "impactAreas": [
+        "太空探索",
+        "NASA",
+        "火星科学",
+        "大气研究"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-b8181fed81",
+      "title": "Regional health agency issues measles alert for World Cup",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167642",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "score": 83,
+      "aiSummary": "随着美洲世界杯热潮升温，该地区持续暴发麻疹疫情，各国被敦促加强监测和疫苗接种。",
+      "summaryReason": "世界杯期间人员密集流动，麻疹传播风险显著增加，需提前防范公共卫生危机。",
+      "translatedTitle": "地区卫生机构发布世界杯麻疹警报",
+      "importance": "公共卫生事件影响大型国际赛事安全，涉及跨境疾病防控与旅游健康。",
+      "impactAreas": [
+        "公共卫生",
+        "国际赛事",
+        "疫苗",
+        "流行病"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "tech-github-blog-83e84a459b",
@@ -667,23 +1193,17 @@
       "sourceId": "github-blog",
       "category": "tech",
       "publishedAt": "2026-06-02T17:30:03.000Z",
-      "score": 86,
-      "aiSummary": "Mario Rodriguez leads the GitHub Product team as Chief Product Officer.",
-      "summaryReason": "GitHub Blog / tech · score 86 · Company news · News & insights",
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "finance-cfpb-newsroom-73a907948e",
-      "title": "The CFPB Works To Ensure Bilt Consumers Are Made Whole",
-      "url": "https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-works-to-ensure-bilt-consumers-are-made-whole",
-      "source": "CFPB Newsroom",
-      "sourceId": "cfpb-newsroom",
-      "category": "finance",
-      "publishedAt": "2026-06-02T04:00:00.000Z",
-      "score": 85,
-      "aiSummary": "— The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied.",
-      "summaryReason": "CFPB Newsroom / finance · score 85 · Press release",
-      "summaryMethod": "extractive"
+      "score": 83,
+      "aiSummary": "GitHub发布全新Copilot桌面应用，采用原生AI代理设计，旨在为开发者提供更智能的编码辅助体验。",
+      "summaryReason": "GitHub Copilot是主流AI编码工具，桌面原生代理体验标志着AI辅助开发进入新阶段，影响全球开发者生态。",
+      "translatedTitle": "GitHub Copilot应用：原生代理桌面体验",
+      "importance": "对开发者工具市场影响显著，可能改变AI编码助手竞争格局。",
+      "impactAreas": [
+        "开发者工具",
+        "AI代理",
+        "编码辅助"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
     }
   ]
 }
