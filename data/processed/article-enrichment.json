@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-03T09:01:34.331Z",
+  "generatedAt": "2026-06-04T00:01:14.822Z",
   "totals": {
-    "attempted": 30,
-    "excerptCount": 28,
-    "imageCount": 24,
-    "failed": 1,
+    "attempted": 36,
+    "excerptCount": 35,
+    "imageCount": 29,
+    "failed": 0,
     "skipped": 9
   },
   "sources": {
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 7,
+      "skipped": 8,
       "disabled": true
     },
     "google-ai": {
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 6,
+      "excerptCount": 6,
+      "imageCount": 6,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -85,7 +85,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 2,
+      "skipped": 1,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 6,
-      "excerptCount": 6,
-      "imageCount": 6,
+      "attempted": 5,
+      "excerptCount": 5,
+      "imageCount": 5,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 4,
-      "excerptCount": 4,
-      "imageCount": 4,
+      "attempted": 7,
+      "excerptCount": 7,
+      "imageCount": 7,
       "failed": 0,
       "skipped": 0,
       "disabled": false
