@@ -11,10 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
     "items": [
       {
@@ -44,10 +44,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 2,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
     "items": [
       {
@@ -89,10 +89,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -106,15 +106,15 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "ok": false,
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
+    "attempts": 2,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -127,10 +127,10 @@
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
     "ok": false,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 2,
     "error": "fetch failed",
     "items": [],
@@ -148,13 +148,25 @@
     "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "2026年6月4日国内成品油价格调整",
+        "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+        "publishedAt": "2026-06-04T00:00:00.000Z",
+        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      },
       {
         "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
         "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
@@ -182,10 +194,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
     "items": [
       {
@@ -214,13 +226,38 @@
     "url": "http://www.stats.gov.cn/sj/zxfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
+        "link": "http://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+        "publishedAt": "2026-06-03T00:00:00.000Z",
+        "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      },
+      {
+        "title": "2026年5月下旬流通领域重要生产资料市场...",
+        "link": "http://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+        "publishedAt": "2026-06-03T00:00:00.000Z",
+        "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -234,13 +271,49 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 9,
-    "fetchedAt": "2026-06-04T00:00:59.812Z",
+    "itemCount": 13,
+    "fetchedAt": "2026-06-04T09:00:56.600Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-    "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+    "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+    "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "提额扩围拓场景 住房公积金惠民再升级",
+        "link": "https://www.gov.cn/zhengce/202606/content_7071043.htm",
+        "publishedAt": "2026-06-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "5月中国物流业景气指数为50.3% 需求重回扩张区间 市场预期保持向好",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071042.htm",
+        "publishedAt": "2026-06-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+        "publishedAt": "2026-06-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "全国麦收高效有序推进",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071034.htm",
@@ -256,6 +329,18 @@
       {
         "title": "长线外资看好中国 持续加码硬科技",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071033.htm",
+        "publishedAt": "2026-06-03T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "图表：2026年5月份中国物流业景气指数为50.3%",
+        "link": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071030.htm",
         "publishedAt": "2026-06-03T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",

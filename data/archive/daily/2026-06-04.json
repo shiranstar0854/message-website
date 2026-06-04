@@ -1,15 +1,15 @@
 {
   "date": "2026-06-04",
-  "generatedAt": "2026-06-04T00:01:19.875Z",
+  "generatedAt": "2026-06-04T09:01:23.719Z",
   "totals": {
     "sources": 20,
-    "healthySources": 15,
-    "rawItems": 59,
-    "normalizedItems": 59,
-    "filteredItems": 57,
-    "dedupedItems": 57,
-    "scoredItems": 57,
-    "enrichmentAttempted": 36,
+    "healthySources": 14,
+    "rawItems": 57,
+    "normalizedItems": 57,
+    "filteredItems": 55,
+    "dedupedItems": 54,
+    "scoredItems": 54,
+    "enrichmentAttempted": 31,
     "enrichmentFailed": 0
   },
   "sourceHealth": [
@@ -22,11 +22,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -34,15 +34,15 @@
       "name": "OpenAI News",
       "category": "tech",
       "status": "healthy",
-      "itemCount": 8,
+      "itemCount": 6,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -54,11 +54,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -70,27 +70,27 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
       "id": "microsoft-azure",
       "name": "Microsoft Azure Blog",
       "category": "tech",
-      "status": "healthy",
-      "itemCount": 6,
+      "status": "empty",
+      "itemCount": 0,
       "responseStatus": 200,
-      "attempts": 1,
+      "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -102,11 +102,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -118,11 +118,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -134,27 +134,27 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
       "id": "cfpb-newsroom",
       "name": "CFPB Newsroom",
       "category": "finance",
-      "status": "healthy",
-      "itemCount": 1,
+      "status": "empty",
+      "itemCount": 0,
       "responseStatus": 200,
-      "attempts": 1,
+      "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -166,11 +166,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -182,11 +182,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:55.864Z",
-      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "lastCheckedAt": "2026-06-04T09:00:49.633Z",
+      "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:55.864Z",
-      "cacheExpiresAt": "2026-06-06T00:00:55.864Z",
+      "cacheStartedAt": "2026-06-04T09:00:49.633Z",
+      "cacheExpiresAt": "2026-06-06T09:00:49.633Z",
       "failureCount": 0
     },
     {
@@ -201,11 +201,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
-      "lastSuccessAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
+      "lastSuccessAt": "2026-06-04T09:00:56.600Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     },
     {
@@ -220,11 +220,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
-      "lastSuccessAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
+      "lastSuccessAt": "2026-06-04T09:00:56.600Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     },
     {
@@ -239,11 +239,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     },
     {
@@ -253,17 +253,17 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-market",
       "timelinessTier": "daily",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
-      "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
+      "responseStatus": null,
+      "attempts": 2,
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
+      "failureCount": 1
     },
     {
       "id": "szse-news",
@@ -277,11 +277,11 @@
       "responseStatus": null,
       "attempts": 2,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 1
     },
     {
@@ -292,15 +292,15 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "status": "healthy",
-      "itemCount": 1,
+      "itemCount": 2,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
-      "lastSuccessAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
+      "lastSuccessAt": "2026-06-04T09:00:56.600Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     },
     {
@@ -315,11 +315,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
-      "lastSuccessAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
+      "lastSuccessAt": "2026-06-04T09:00:56.600Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     },
     {
@@ -329,16 +329,16 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 2,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
-      "lastSuccessAt": null,
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
+      "lastSuccessAt": "2026-06-04T09:00:56.600Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     },
     {
@@ -349,335 +349,51 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 9,
+      "itemCount": 13,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-04T00:00:59.812Z",
-      "lastSuccessAt": "2026-06-04T00:00:59.812Z",
+      "lastCheckedAt": "2026-06-04T09:00:56.600Z",
+      "lastSuccessAt": "2026-06-04T09:00:56.600Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-04T00:00:59.812Z",
-      "cacheExpiresAt": "2026-06-06T00:00:59.812Z",
+      "cacheStartedAt": "2026-06-04T09:00:56.600Z",
+      "cacheExpiresAt": "2026-06-06T09:00:56.600Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 57
+    "availableItems": 54
   },
   "items": [
     {
-      "id": "tech-openai-news-a3d6a8c521",
-      "title": "A blueprint for democratic governance of frontier AI",
-      "url": "https://openai.com/index/frontier-safety-blueprint",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-03T10:00:00.000Z",
-      "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
-      "contentExcerpt": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
-      "score": 100,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "tech-item-916a2c96b7",
-      "title": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
-      "url": "https://www.most.gov.cn/kjbgz/202606/t20260603_196744.html",
-      "source": "科技部工作动态",
+      "id": "finance-item-1231d7d94d",
+      "title": "2026年6月4日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+      "source": "国家发展改革委新闻发布",
       "sourceType": "webpage",
-      "category": "tech",
-      "publishedAt": "2026-06-03T00:00:00.000Z",
-      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
-      "score": 99,
+      "category": "finance",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "score": 100,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "daily"
-      ]
-    },
-    {
-      "id": "tech-openai-news-5c3dfacb54",
-      "title": "OpenAI public policy agenda",
-      "url": "https://openai.com/index/public-policy-agenda",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-03T10:00:00.000Z",
-      "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-      "contentExcerpt": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-      "score": 98,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "tech-microsoft-azure-blog-ff4b3baaf1",
-      "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
-      "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases",
-      "source": "Microsoft Azure Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T16:59:00.000Z",
-      "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications. The post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog .",
-      "contentExcerpt": "AI is driving a fundamental shift in how work gets done and how applications are built. As the 2026 Microsoft Work Trend Index Report highlights, a growing share of workers are moving beyond asking questions to handing off entire tasks and orchestrating multi-agent systems. This shift introduces a new constraint. The challenge is no longer model capability, but consistent, shared data context across the business. Developers and business users know what they want to automate, and today’s model...",
-      "imageUrl": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/06/Azure_Data_full.jpg",
-      "score": 97,
-      "duplicateCount": 0,
-      "tags": [
-        "AI + machine learning",
-        "Databases",
-        "Hybrid + multicloud",
-        "Internet of things",
-        "Security",
-        "Microsoft Fabric"
-      ]
-    },
-    {
-      "id": "tech-google-ai-blog-7129e27945",
-      "title": "5 ways Google Search can level up your thrift and vintage shopping",
-      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips",
-      "source": "Google AI Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-03T13:00:00.000Z",
-      "summary": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
-      "contentExcerpt": "Uncover second-hand scores with AI tools in Search. Your browser does not support the audio element. With search interest in “vintage” and “how to thrift” hitting all-time highs this year, 2026 is proving that old is new again. Check out a few thrifting trends below for inspiration, then learn how Google tools can help you score the best finds, from a \"vintage jersey\" to \"thrifted heels\" (both trending on Search!). Your next favorite find is just a search, snap or circle away. With AI Mode in...",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.width-1300.png",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Search",
-        "Shopping",
-        "AI"
-      ]
-    },
-    {
-      "id": "tech-microsoft-azure-blog-0868ab9e29",
-      "title": "AI alone won’t change your business. The system running it will.",
-      "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will",
-      "source": "Microsoft Azure Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T19:15:57.000Z",
-      "summary": "We are building a comprehensive agent platform: one that supports many models, is open, and gives you flexibility at every layer of the stack. The post AI alone won’t change your business. The system running it will. appeared first on Microsoft Azure Blog .",
-      "contentExcerpt": "Jun 2, 2026 | Jay Parikh - Executive Vice President, CoreAI AI has arrived in the enterprise, and the shift is happening all at once. Every function, every role, every workflow is being reshaped. At the same time, a new class of organizations is emerging, one that will look fundamentally different from the companies that defined the last era of business. The winners won’t be those with the most demos, but those that turn AI into a governed, continuously improving system for running real work....",
-      "imageUrl": "https://blogs.microsoft.com/wp-content/uploads/2026/06/OMB-Jay-Parikh-Build-Hero-2-1024x576.png",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "AI + machine learning",
-        "AI"
-      ]
-    },
-    {
-      "id": "tech-microsoft-azure-blog-d87adbed60",
-      "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
-      "url": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview",
-      "source": "Microsoft Azure Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T18:15:00.000Z",
-      "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows. The post Announcing Microsoft Discovery general availability and Microsoft Discovery app preview appeared first on Microsoft Azure Blog .",
-      "contentExcerpt": "Breakthroughs in science and engineering rarely come from a single insight. They emerge through cycles of hypothesis, experimentation, refinement, and review across teams, tools, and data. Today at Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows across scientific and engineering disciplines. We are also introducing the Microsoft Discovery app in prev...",
-      "imageUrl": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/06/Azure_Discovery-8.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "AI + machine learning",
-        "Internet of things",
+      ],
+      "keywords": [
         "AI",
-        "Copilot",
-        "Generative AI"
-      ]
-    },
-    {
-      "id": "tech-microsoft-azure-blog-d66baa4ef4",
-      "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
-      "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads",
-      "source": "Microsoft Azure Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T16:30:09.000Z",
-      "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads. The post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog .",
-      "contentExcerpt": "As organizations increasingly embrace the agentic era for AI, customer demands for compute are reshaping the architecture of cloud infrastructure as we know it. Today at Microsoft Build 2026, we are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed from the ground up for scale-out, cloud-native, and Linux-based agentic AI workloads, with up to 50% better generational performance over Cobalt 100. Cobalt 200 is purpose-built from silicon to serv...",
-      "imageUrl": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/06/Azure_Cobalt-2.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "Compute",
-        "Containers",
-        "Databases",
-        "Hybrid + multicloud"
-      ]
-    },
-    {
-      "id": "tech-microsoft-azure-blog-c0566d1ec6",
-      "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
-      "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq",
-      "source": "Microsoft Azure Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T16:00:00.000Z",
-      "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers. The post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog .",
-      "contentExcerpt": "Developers building agent fleets keep hitting the same pattern: the agent logic is ready, but the knowledge infrastructure underneath is complex to do well. Getting to production means solving for stability, scale, data access, answer quality, security, and content ingestion all at once. Today, we are enabling developers to have faster impact by simplifying the enterprise knowledge platform. Your company’s IQ, powered by Microsoft IQ, is the collective intelligence locked in documents, emails...",
-      "imageUrl": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2026/06/Slide5.webp",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "AI + machine learning",
-        "AI"
-      ]
-    },
-    {
-      "id": "tech-microsoft-azure-blog-db1e63d61c",
-      "title": "A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry",
-      "url": "https://azure.microsoft.com/en-us/blog/a-developers-guide-to-managing-models-cost-and-quality-in-microsoft-foundry",
-      "source": "Microsoft Azure Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T16:00:00.000Z",
-      "summary": "Microsoft Foundry helps teams move beyond model access to operate AI at scale—selecting, evaluating, optimizing, and governing models across the full lifecycle. The post A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry appeared first on Microsoft Azure Blog .",
-      "contentExcerpt": "The hardest part of building AI systems today is no longer getting access to a capable model. It is knowing how to choose, validate, optimize, and operate the right model across the full lifecycle of a real application. Take a retrieval-augmented generation (RAG)-based customer support copilot or a tool-calling agent that helps employees complete business workflows. In a prototype, it may be enough to pick a strong model, connect a few data sources, and get a useful response. In production, t...",
-      "imageUrl": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2026/06/Slide2-1.webp",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "AI + machine learning",
-        "AI"
-      ]
-    },
-    {
-      "id": "tech-openai-news-bd9e099ef4",
-      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-      "url": "https://openai.com/index/travelers",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-      "contentExcerpt": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "tech-openai-news-da2f1a51b8",
-      "title": "Codex for every role, tool, and workflow",
-      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T09:00:00.000Z",
-      "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
-      "contentExcerpt": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "Product"
-      ]
-    },
-    {
-      "id": "tech-openai-news-572c5eef4e",
-      "title": "Advancing youth safety and opportunity through global leadership",
-      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T07:00:00.000Z",
-      "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
-      "contentExcerpt": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "tech-cisa-news-1d434ecc25",
-      "title": "CISA Urges Stronger Security for Automatic Tank Gauge Systems",
-      "url": "https://www.cisa.gov/news-events/news/cisa-urges-stronger-security-automatic-tank-gauge-systems",
-      "source": "CISA News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "",
-      "score": 90,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "tech-openai-news-968c7d1345",
-      "title": "Codex is becoming a productivity tool for everyone",
-      "url": "https://openai.com/index/codex-for-knowledge-work",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T02:00:00.000Z",
-      "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
-      "contentExcerpt": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
-      "score": 90,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ]
-    },
-    {
-      "id": "tech-openai-news-8fe777fefb",
-      "title": "Introducing new capabilities to GPT-Rosalind",
-      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-03T13:15:00.000Z",
-      "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-      "contentExcerpt": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-      "score": 86,
-      "duplicateCount": 0,
-      "tags": [
-        "Product"
-      ]
-    },
-    {
-      "id": "tech-openai-news-e2a15d8f34",
-      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-      "url": "https://openai.com/index/wasmer",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-03T12:00:00.000Z",
-      "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
-      "contentExcerpt": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
-      "score": 86,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "tech-github-blog-83e84a459b",
-      "title": "GitHub Copilot app: The agent-native desktop experience",
-      "url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
-      "source": "GitHub Blog",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-02T17:30:03.000Z",
-      "summary": "At Microsoft Build 2026, GitHub introduced new tools, updates, and surfaces so agents can work the way you already work. The post GitHub Copilot app: The agent-native desktop experience appeared first on The GitHub Blog .",
-      "contentExcerpt": "Mario Rodriguez leads the GitHub Product team as Chief Product Officer. His core identity is being a learner and his passion is creating developer tools—so much so that he has spent the last 20 years living that mission in leadership roles across Microsoft and GitHub. Mario most recently oversaw GitHub’s AI strategy and the GitHub Copilot product line, launching and growing Copilot across thousands of organizations and millions of users. Mario spends time outside of GitHub with his wife and t...",
-      "imageUrl": "https://github.blog/wp-content/uploads/2026/06/MSFTBuild_Blog_Header_01.jpg",
-      "score": 84,
-      "duplicateCount": 0,
-      "tags": [
-        "Company news",
-        "News & insights",
-        "Product",
-        "GitHub Copilot",
-        "GitHub Copilot app",
-        "GitHub Copilot CLI",
-        "GitHub Copilot code review",
-        "GitHub Copilot SDK"
+        "日国内成品油价格调整",
+        "国家发展改革委宏观政策",
+        "价格",
+        "产业和经济运行信息"
+      ],
+      "impactAreas": [
+        "AI",
+        "日国内成品油价格调整",
+        "国家发展改革委宏观政策",
+        "价格"
       ]
     },
     {
@@ -690,11 +406,27 @@
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
       "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "daily"
+      ],
+      "keywords": [
+        "AI",
+        "郑栅洁主任主持召开国有企",
+        "业座谈会",
+        "围绕深化国资国企改革及推",
+        "动国有企业更好服务国家重",
+        "大战略听取意见建议",
+        "国家发展改革委宏观政策",
+        "价格"
+      ],
+      "impactAreas": [
+        "AI",
+        "郑栅洁主任主持召开国有企",
+        "业座谈会",
+        "围绕深化国资国企改革及推"
       ]
     },
     {
@@ -707,11 +439,26 @@
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "财政部财政政策、国债、预算和财政运行新闻",
       "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "daily"
+      ],
+      "keywords": [
+        "AI",
+        "公共政策",
+        "财政部党校举行第",
+        "期处级干部进修班毕业典礼",
+        "财政部财政政策",
+        "国债",
+        "预算和财政运行新闻"
+      ],
+      "impactAreas": [
+        "AI",
+        "公共政策",
+        "财政部党校举行第",
+        "期处级干部进修班毕业典礼"
       ]
     },
     {
@@ -724,11 +471,27 @@
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
       "contentExcerpt": "中国人民银行副行长陶玲出席中国互联网金融协会成立十周年工作座谈会。中国互联网金融协会召开成立十周年工作座谈会。中国人民银行党委委员、副行长陶玲出席会议并讲话。推动中国互联网金融协会走中国特色金融发展之路。以强监管、防风险、促发展为主线。敦促互联网金融行业深刻汲取风险教训。强化金融运行规律认识。全面接受金融监管。中国互联网金融协会要立足全国性行业自律组织定位。完善行业自律制度。强化行业自律功能。助力金融监管。规范经营行为。",
-      "score": 99,
+      "score": 98,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "AI政策",
+        "央行",
+        "市场监管",
+        "中国人民银行副行长陶玲出",
+        "席中国互联网金融协会成立",
+        "十周年工作座谈会",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ],
+      "impactAreas": [
+        "AI政策",
+        "央行",
+        "市场监管",
+        "中国人民银行副行长陶玲出"
       ]
     },
     {
@@ -741,11 +504,59 @@
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
       "contentExcerpt": "中国人民银行副行长邹澜出席上海合作组织成员国财长和央行行长会议。2026年5月29日。中国人民银行副行长邹澜出席在吉尔吉斯斯坦比什凯克召开的上海合作组织成员国财长和央行行长会议。与各方就上海合作组织成员国财金合作、货币政策形势及金融稳定风险等议题进行讨论。会议期间。邹澜副行长会见了吉尔吉斯斯坦央行副行长阿扎特·艾别科维奇·科祖别科夫。就深化双方合作交换了意见。",
-      "score": 99,
+      "score": 98,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "央行",
+        "中国人民银行副行长邹澜出",
+        "席上海合作组织成员国财长",
+        "和央行行长会议",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信",
+        "席在吉尔吉斯斯坦比什凯克",
+        "召开的上海合作组织成员国"
+      ],
+      "impactAreas": [
+        "央行",
+        "中国人民银行副行长邹澜出",
+        "席上海合作组织成员国财长",
+        "和央行行长会议"
+      ]
+    },
+    {
+      "id": "finance-item-1383166147",
+      "title": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
+      "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
+      "source": "国家统计局数据发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+      "contentExcerpt": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+      "score": 97,
+      "duplicateCount": 1,
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "月下旬流通领域重要生产资",
+        "料市场价格变动情况",
+        "国家统计局宏观经济",
+        "价格",
+        "工业",
+        "投资和人口数据发布"
+      ],
+      "impactAreas": [
+        "AI",
+        "月下旬流通领域重要生产资",
+        "料市场价格变动情况",
+        "国家统计局宏观经济"
       ]
     },
     {
@@ -758,9 +569,25 @@
       "publishedAt": "2026-06-02T14:30:00.000Z",
       "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 years ago: protecting investors; maintaining fair, orderly, and efficient…",
       "contentExcerpt": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 years ago: protecting investors; maintaining fair, orderly, and efficient…",
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0,
-      "tags": []
+      "tags": [],
+      "keywords": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Publishes",
+        "Draft",
+        "Strategic",
+        "Plan",
+        "for"
+      ],
+      "impactAreas": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Publishes"
+      ]
     },
     {
       "id": "finance-federal-reserve-21243553bd",
@@ -773,27 +600,128 @@
       "summary": "Agencies remove additional references to reputation risk",
       "contentExcerpt": "The federal bank regulatory agencies today jointly updated certain interagency documents to remove references to reputation risk. The agencies are taking this",
       "imageUrl": "https://www.federalreserve.gov/images/social-media/social-default-image-opengraph.jpg",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "Banking and Consumer Regulatory Policy"
+      ],
+      "keywords": [
+        "policy",
+        "Agencies",
+        "remove",
+        "additional",
+        "references",
+        "reputation",
+        "risk",
+        "The"
+      ],
+      "impactAreas": [
+        "policy",
+        "Agencies",
+        "remove",
+        "additional"
       ]
     },
     {
-      "id": "finance-cfpb-newsroom-73a907948e",
-      "title": "The CFPB Works To Ensure Bilt Consumers Are Made Whole",
-      "url": "https://www.consumerfinance.gov/about-us/newsroom/the-cfpb-works-to-ensure-bilt-consumers-are-made-whole",
-      "source": "CFPB Newsroom",
-      "sourceType": "rss",
-      "category": "finance",
-      "publishedAt": "2026-06-02T04:00:00.000Z",
-      "summary": "The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied. CFPB officials met with Bilt to understand the issues caused by the transition and what steps Bilt has taken to ensure customers affected by challenges with the transition were made whole.",
-      "contentExcerpt": "WASHINGTON, D.C. — The CFPB has been working to ensure consumers affected by Bilt’s transition to a new bank partner are appropriately remedied. CFPB officials met with Bilt to understand the issues caused by the transition and what steps Bilt has taken to ensure customers affected by challenges with the transition were made whole. Following our discussions and at our direction that Bilt ensures full redress, Bilt notified the CFPB that they proactively reached out to the limited number of po...",
-      "imageUrl": "https://www.consumerfinance.gov/static/img/logo_open-graph_facebook.d0dedfbe1787.png",
-      "score": 83,
+      "id": "news-item-ff89c0aeef",
+      "title": "提额扩围拓场景 住房公积金惠民再升级",
+      "url": "https://www.gov.cn/zhengce/202606/content_7071043.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "今年以来，住房公积金政策迎来密集调整。记者梳理发现，全国已有超过60个城市调整优化了公积金政策，从贷款额度、首付比例、提取范围、异地互认、覆盖群体、服务创新等方面发力，进一步释放住房消费潜力，保障民生福祉。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
       "duplicateCount": 0,
       "tags": [
-        "Press release"
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "提额扩围拓场景",
+        "住房公积金惠民再升级",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "今年以来",
+        "住房公积金政策迎来密集调"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "提额扩围拓场景",
+        "住房公积金惠民再升级",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-ba359b7858",
+      "title": "5月中国物流业景气指数为50.3% 需求重回扩张区间 市场预期保持向好",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071042.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中国物流与采购联合会发布的5月份中国物流业景气指数为50.3%，较上月回升0.6个百分点，需求重回扩张区间，市场预期保持向好。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "月中国物流业景气指数为",
+        "需求重回扩张区间",
+        "市场预期保持向好",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中国物流与采购联合会发布"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "月中国物流业景气指数为",
+        "需求重回扩张区间",
+        "市场预期保持向好"
+      ]
+    },
+    {
+      "id": "news-item-dd48d7849b",
+      "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "实现现代化是近代以来中国人民的不懈追求，也是世界各国人民的共同追求。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "总书记的人民情怀",
+        "中国可以成功",
+        "其他发展中国家同样可以成",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "实现现代化是近代以来中国"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "总书记的人民情怀",
+        "中国可以成功",
+        "其他发展中国家同样可以成"
       ]
     },
     {
@@ -807,9 +735,25 @@
       "summary": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the&nbsp;latest analysis by&nbsp;the leading UN-backed global food security platform.",
       "contentExcerpt": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the latest analysis by the leading UN-backed global food security platform.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026-UNICEF-Yemen.jpg/image770x420cropped.jpg",
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0,
-      "tags": []
+      "tags": [],
+      "keywords": [
+        "AI",
+        "security",
+        "公共政策",
+        "市场监管",
+        "Yemen",
+        "Hunger",
+        "crisis",
+        "deepens"
+      ],
+      "impactAreas": [
+        "AI",
+        "security",
+        "公共政策",
+        "市场监管"
+      ]
     },
     {
       "id": "news-item-c59277d04a",
@@ -822,11 +766,61 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "近期，多家国际金融机构纷纷发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "长线外资看好中国",
+        "持续加码硬科技",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "近期",
+        "多家国际金融机构纷纷发布"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "长线外资看好中国",
+        "持续加码硬科技",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-33445ea181",
+      "title": "图表：2026年5月份中国物流业景气指数为50.3%",
+      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071030.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者6月3日从中国物流与采购联合会获悉，5月份中国物流业景气指数为50.3%，较上月回升0.6个百分点，物流业景气指数重回扩张区间。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "图表",
+        "月份中国物流业景气指数为",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者",
+        "日从中国物流与采购联合会"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "图表",
+        "月份中国物流业景气指数为",
+        "中国政府网要闻列表"
       ]
     },
     {
@@ -840,11 +834,25 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "年全国高考报名人数",
+        "万人",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "年全国高考报名人数",
+        "万人",
+        "中国政府网要闻列表"
       ]
     },
     {
@@ -857,11 +865,25 @@
       "publishedAt": "2026-06-03T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "视频",
+        "丁薛祥在云南调研",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "视频",
+        "丁薛祥在云南调研",
+        "中国政府网要闻列表"
       ]
     },
     {
@@ -875,11 +897,27 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月1日至2日，中共中央政治局常委、国务院副总理丁薛祥在云南调研基础教育等工作。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "丁薛祥在云南调研时强调",
+        "全面贯彻党的教育方针",
+        "深入推进基础教育高质量发",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日至"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "丁薛祥在云南调研时强调",
+        "全面贯彻党的教育方针",
+        "深入推进基础教育高质量发"
       ]
     },
     {
@@ -893,11 +931,27 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国物流与采购联合会3日发布的数据显示，5月份中国物流业景气指数为50.3%，较上月回升0.6个百分点。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "需求重回扩张区间",
+        "月份我国物流业相关数据分",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中国物流与采购联合会",
+        "日发布的数据显示"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "需求重回扩张区间",
+        "月份我国物流业相关数据分",
+        "中国政府网要闻列表"
       ]
     },
     {
@@ -911,11 +965,27 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "记者3日从中国物流与采购联合会获悉，5月份中国物流业景气指数为50.3%，较上月回升0.6个百分点，物流业景气指数重回扩张区间。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "月份中国物流业景气指数为",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者",
+        "日从中国物流与采购联合会",
+        "获悉"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "月份中国物流业景气指数为",
+        "中国政府网要闻列表",
+        "覆盖国务院"
       ]
     },
     {
@@ -929,11 +999,27 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "以开放创新应对全球贸易变",
+        "践行习近平经济思想推动贸",
+        "易强国建设迈出新步伐",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "要加快建设贸易强国"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "以开放创新应对全球贸易变",
+        "践行习近平经济思想推动贸",
+        "易强国建设迈出新步伐"
       ]
     },
     {
@@ -947,11 +1033,60 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。老挝人民革命党中央总书记、国家主席通伦发来贺信，对节目播出表示祝贺。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平的文化情缘",
+        "等纪录片在老挝启播",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "由中国中央广播电视总台制",
+        "作的"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平的文化情缘",
+        "等纪录片在老挝启播",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-117037675a",
+      "title": "Curiosity Blog, Sols 4908-4912: Goodbye Campo Marte, It’s Been Fun!",
+      "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4908-4912-goodbye-campo-marte-its-been-fun",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-04T01:28:11.000Z",
+      "summary": "By Susanne P. Schwenzer, Professor of Planetary Mineralogy at The Open University, UK Earth planning date: Friday, May 29, 2026 Drilling always keeps the rover in place for a little while, and our 47th successful drill, “Campo Marte,” was no exception. The team used the time wisely and on top of the drilling, we also […]",
+      "contentExcerpt": "Mars Science Laboratory Mission Team Members By Susanne P. Schwenzer, Professor of Planetary Mineralogy at The Open University, UK Earth planning date: Friday, May 29, 2026 Drilling always keeps the rover in place for a little while, and our 47th successful drill, “Campo Marte,” was no exception. The team used the time wisely and on top of the drilling, we also have many observations. Thinking for a long time about a workspace always gets me attached to the area — some more than others; at th...",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/msl/2026/curiosity-rover-updates/may/https___mars.nasa.gov_msl-raw-images_msss_04908_mhli_4908MH0003260001801155C00_DXXX.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 94,
+      "duplicateCount": 0,
+      "tags": [
+        "Blogs"
+      ],
+      "keywords": [
+        "AI",
+        "Blogs",
+        "Curiosity",
+        "Blog",
+        "Sols",
+        "Goodbye",
+        "Campo",
+        "Marte"
+      ],
+      "impactAreas": [
+        "AI",
+        "Blogs",
+        "Curiosity",
+        "Blog"
       ]
     },
     {
@@ -965,9 +1100,25 @@
       "summary": "A closely watched Security Council election delivered a mix of continuity and change on Wednesday, as Austria, Portugal, Trinidad and Tobago, Zimbabwe – and first-time member Kyrgyzstan, secured seats around the iconic horseshoe table.",
       "contentExcerpt": "A closely watched Security Council election delivered a mix of continuity and change on Wednesday, as Austria, Portugal, Trinidad and Tobago, Zimbabwe – and first-time member Kyrgyzstan, secured seats around the iconic horseshoe table.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026-UN-Photo-Kyrgyzstan.jpg/image770x420cropped.jpg",
-      "score": 95,
+      "score": 94,
       "duplicateCount": 0,
-      "tags": []
+      "tags": [],
+      "keywords": [
+        "security",
+        "election",
+        "地缘政治",
+        "市场监管",
+        "Kyrgyzstan",
+        "wins",
+        "seat",
+        "Council"
+      ],
+      "impactAreas": [
+        "security",
+        "election",
+        "地缘政治",
+        "市场监管"
+      ]
     },
     {
       "id": "news-nasa-breaking-news-1668c4958d",
@@ -980,10 +1131,26 @@
       "summary": "The focus of this NASA/ESA&#160;Hubble&#160;Space Telescope&#160;image&#160;released on May 29, 2026, is an active&#160;spiral galaxy&#160;on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation&#160;Coma Berenices&#160;(Berenice’s Hair). M88 is an active galaxy, which means that its center harbors [&#8230;]",
       "contentExcerpt": "The focus of this NASA/ESA Hubble Space Telescope image released on May 29, 2026, is an active spiral galaxy on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation Coma Berenices (Berenice’s Hair). M88 is an active galaxy, which means that its center harbors a supermassive black hole that is snacking on gas and dust. Astronomers estimate the black hole is around 100 million time...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/hubble-m88-potm2605a.jpg",
-      "score": 94,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Spiral Galaxies"
+      ],
+      "keywords": [
+        "AI",
+        "Spiral Galaxies",
+        "Journey",
+        "the",
+        "Center",
+        "Virgo",
+        "Cluster",
+        "focus"
+      ],
+      "impactAreas": [
+        "AI",
+        "Spiral Galaxies",
+        "Journey",
+        "the"
       ]
     },
     {
@@ -997,11 +1164,27 @@
       "summary": "A powerful but mostly unseen water system at work during rocket engine tests at NASA’s Stennis Space Center near Bay St. Louis, Mississippi, underwent an upgrade in May. Crews brought the High Pressure Industrial Water Facility’s 66-million-gallon reservoir to its lowest level since construction in the 1960s by pumping out about 40 million gallons of [&#8230;]",
       "contentExcerpt": "A powerful but mostly unseen water system at work during rocket engine tests at NASA’s Stennis Space Center near Bay St. Louis, Mississippi, underwent an upgrade in May. Crews brought the High Pressure Industrial Water Facility’s 66-million-gallon reservoir to its lowest level since construction in the 1960s by pumping out about 40 million gallons of water over three days. This brought the reservoir, measuring 800 feet in diameter and about 25 feet deep, down to the level needed to replace a...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/s1003201.jpg",
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Stennis Space Center",
         "Stennis Test Facility and Support Infrastructure"
+      ],
+      "keywords": [
+        "AI",
+        "Stennis Space Center",
+        "NASA",
+        "Drains",
+        "Million-Gallon",
+        "Reservoir",
+        "Upgrade",
+        "Critical"
+      ],
+      "impactAreas": [
+        "AI",
+        "Stennis Space Center",
+        "NASA",
+        "Drains"
       ]
     },
     {
@@ -1015,9 +1198,25 @@
       "summary": "Children in Ukraine have been profoundly impacted by years of war, sheltering in underground schools – or forced to study online – and living with the psychological strain of constant air raid sirens that could spell death for them and their families.",
       "contentExcerpt": "Children in Ukraine have been profoundly impacted by years of war, sheltering in underground schools – or forced to study online – and living with the psychological strain of constant air raid sirens that could spell death for them and their families.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026_Ukraine%20Frazier%202.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
-      "tags": []
+      "tags": [],
+      "keywords": [
+        "AI",
+        "地缘政治",
+        "Growing",
+        "sirens",
+        "child",
+        "rights",
+        "envoy",
+        "the"
+      ],
+      "impactAreas": [
+        "AI",
+        "地缘政治",
+        "Growing",
+        "sirens"
+      ]
     },
     {
       "id": "news-un-news-0adfe605f3",
@@ -1030,9 +1229,25 @@
       "summary": "UN Secretary-General António Guterres expressed alarm on Tuesday over reported overnight exchanges of fire between the United States and Iran, as well as reports that Iran targeted Kuwait and Bahrain.",
       "contentExcerpt": "UN Secretary-General António Guterres expressed alarm on Tuesday over reported overnight exchanges of fire between the United States and Iran, as well as reports that Iran targeted Kuwait and Bahrain.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-04-2026-UNICEF-Lebanon-04.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
-      "tags": []
+      "tags": [],
+      "keywords": [
+        "AI",
+        "市场监管",
+        "World",
+        "Brief",
+        "urges",
+        "restraint",
+        "Gulf",
+        "tensions"
+      ],
+      "impactAreas": [
+        "AI",
+        "市场监管",
+        "World",
+        "Brief"
+      ]
     },
     {
       "id": "news-un-news-e3385a705d",
@@ -1045,100 +1260,346 @@
       "summary": "The head of the World Health Organization (WHO) said on Wednesday that the Ebola outbreak in the Democratic Republic of the Congo (DRC) is showing signs of progress – but significant challenges remain in testing, surveillance, vaccine development and building community trust.&nbsp;",
       "contentExcerpt": "The head of the World Health Organization (WHO) said on Wednesday that the Ebola outbreak in the Democratic Republic of the Congo (DRC) is showing signs of progress – but significant challenges remain in testing, surveillance, vaccine development and building community trust.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-WHO-DR-Congo-01.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-un-news-ae51c1bc5e",
-      "title": "Gaza’s public servants systematically targeted in Israeli strikes",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167631",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-03T12:00:00.000Z",
-      "summary": "Months since Gaza’s nominal ceasefire began, Palestinians continue to be killed and maimed in drone and airstrikes, including the enclave’s police force which is crucial to peace and reconstruction efforts, the UN human rights office (OHCHR) said on Wednesday.",
-      "contentExcerpt": "Months since Gaza’s nominal ceasefire began, Palestinians continue to be killed and maimed in drone and airstrikes, including the enclave’s police force which is crucial to peace and reconstruction efforts, the UN human rights office (OHCHR) said on Wednesday.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/26-05-2026_UNNews_Eid_In_Gaza_07.jpg/image770x420cropped.jpg",
-      "score": 92,
-      "duplicateCount": 0,
-      "tags": []
-    },
-    {
-      "id": "news-nasa-breaking-news-1cb155da8d",
-      "title": "Typhoon Jangmi",
-      "url": "https://science.nasa.gov/earth/earth-observatory/typhoon-jangmi",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-03T04:00:00.000Z",
-      "summary": "The sprawling storm promised to deliver torrential rain across a wide swath of southern Japan.",
-      "contentExcerpt": "The sprawling storm promised to deliver torrential rain across a wide swath of southern Japan. From late May into early June 2026, a broad, slow-spinning storm churned north-northwest over the Philippine Sea toward southern Japan. Typhoon Jangmi’s rainbands unleashed torrential rainfall across a vast swath of the region, triggering flooding concerns in several areas. The VIIRS (Visible Infrared Imaging Radiometer Suite) on the Suomi NPP satellite captured this nighttime image (above) of the s...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/typhoon-jangmi/typhoonjangmieye_vir_20260530_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 92,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth Observatory",
-        "Hurricanes & Typhoons",
-        "NOAA-20 (JPSS-1)",
-        "Suomi NPP (Suomi National Polar-orbiting Partnership)"
+      "tags": [],
+      "keywords": [
+        "AI",
+        "are",
+        "catching",
+        "WHO",
+        "chief",
+        "Congo",
+        "Ebola",
+        "fight"
+      ],
+      "impactAreas": [
+        "AI",
+        "are",
+        "catching",
+        "WHO"
       ]
     },
     {
-      "id": "news-nasa-breaking-news-87eac95345",
-      "title": "NASA Testing Wastewater Treatment Facility for Future Moon Base",
-      "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-testing-wastewater-treatment-facility-for-future-moon-base",
-      "source": "NASA Breaking News",
+      "id": "tech-openai-news-a3d6a8c521",
+      "title": "A blueprint for democratic governance of frontier AI",
+      "url": "https://openai.com/index/frontier-safety-blueprint",
+      "source": "OpenAI News",
       "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T14:31:18.000Z",
-      "summary": "A mobile wastewater treatment system built at NASA&#8217;s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport and arrived at the University of North Dakota in Grand Forks. Graduate students at the university will test the technology under conditions designed to closely mimic the [&#8230;]",
-      "contentExcerpt": "A mobile wastewater treatment system built at NASA’s Kennedy Space Center in Florida that can help prepare for long-duration missions on the Moon and Mars departed the spaceport and arrived at the University of North Dakota in Grand Forks. Graduate students at the university will test the technology under conditions designed to closely mimic the challenges of operating on another planetary surface. The Divergent Deployable Wastewater Treatment Facility is designed to turn crew wastewater into...",
-      "imageUrl": "https://images-assets.nasa.gov/image/KSC-20260421-PH-KLS01_0041/KSC-20260421-PH-KLS01_0041~large.jpg",
-      "score": 90,
+      "category": "tech",
+      "publishedAt": "2026-06-03T10:00:00.000Z",
+      "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
+      "contentExcerpt": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
-        "Kennedy Space Center",
-        "Artemis",
-        "Exploration Systems Development Mission Directorate",
-        "Missions",
-        "Moon Base",
-        "Research and Technology at Kennedy Space Center",
-        "Sustainability at Kennedy Space Center"
+        "Global Affairs"
+      ],
+      "keywords": [
+        "AI",
+        "security",
+        "Global Affairs",
+        "AI政策",
+        "市场监管",
+        "blueprint",
+        "for",
+        "democratic"
+      ],
+      "impactAreas": [
+        "AI",
+        "security",
+        "Global Affairs",
+        "AI政策"
       ]
     },
     {
-      "id": "news-nasa-breaking-news-817f955938",
-      "title": "Be a Clump Scout and Help Reveal Secrets of Stellar Nurseries",
-      "url": "https://science.nasa.gov/get-involved/citizen-science/help-galaxy-zoo-clump-scout-ii-project",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-02T13:19:54.000Z",
-      "summary": "Help identify star-forming clumps in galaxy images, and help train machines to do the same.",
-      "contentExcerpt": "In the mid-20th century, astronomers discovered strange \"clumpy\" galaxies filled with mysterious bright blobs – massive stellar nurseries where stars are born at an explosive rate. Curiously, these clumpy galaxies were much more common in the early universe than they are today. We still don’t know why they vanished. The Euclid space telescope, an ESA (European Space Agency) mission with critical contributions from NASA, has begun to capture images of millions of galaxies. These images – far m...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/citizen-science/projects/2026/Galaxy_clump_featured_image.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 90,
+      "id": "tech-item-916a2c96b7",
+      "title": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
+      "url": "https://www.most.gov.cn/kjbgz/202606/t20260603_196744.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-06-03T00:00:00.000Z",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "score": 98,
       "duplicateCount": 0,
       "tags": [
-        "Astrophysics Division",
-        "Citizen Science"
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "年度国际托卡马克物理与工",
+        "程活动中方研讨会在上海召",
+        "科技部科技政策",
+        "科研合作",
+        "标准和创新体系工作动态"
+      ],
+      "impactAreas": [
+        "AI",
+        "年度国际托卡马克物理与工",
+        "程活动中方研讨会在上海召",
+        "科技部科技政策"
       ]
     },
     {
-      "id": "news-un-news-acc67142cf",
-      "title": "‘Women and girls cannot wait’: Lebanon’s crisis is putting lives at risk",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167628",
-      "source": "UN News",
+      "id": "tech-openai-news-5c3dfacb54",
+      "title": "OpenAI public policy agenda",
+      "url": "https://openai.com/index/public-policy-agenda",
+      "source": "OpenAI News",
       "sourceType": "rss",
-      "category": "news",
+      "category": "tech",
+      "publishedAt": "2026-06-03T10:00:00.000Z",
+      "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
+      "contentExcerpt": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ],
+      "keywords": [
+        "AI",
+        "policy",
+        "Global Affairs",
+        "AI政策",
+        "公共政策",
+        "OpenAI",
+        "public",
+        "agenda"
+      ],
+      "impactAreas": [
+        "AI",
+        "policy",
+        "Global Affairs",
+        "AI政策"
+      ]
+    },
+    {
+      "id": "tech-openai-news-010cdd7fc8",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "地缘政治",
+        "How",
+        "Endava",
+        "redesigning",
+        "software",
+        "delivery",
+        "around"
+      ],
+      "impactAreas": [
+        "AI",
+        "地缘政治",
+        "How",
+        "Endava"
+      ]
+    },
+    {
+      "id": "tech-google-ai-blog-7129e27945",
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-03T13:00:00.000Z",
+      "summary": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
+      "contentExcerpt": "Uncover second-hand scores with AI tools in Search. Your browser does not support the audio element. With search interest in “vintage” and “how to thrift” hitting all-time highs this year, 2026 is proving that old is new again. Check out a few thrifting trends below for inspiration, then learn how Google tools can help you score the best finds, from a \"vintage jersey\" to \"thrifted heels\" (both trending on Search!). Your next favorite find is just a search, snap or circle away. With AI Mode in...",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.width-1300.png",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "Search",
+        "Shopping",
+        "AI"
+      ],
+      "keywords": [
+        "AI",
+        "Search",
+        "Shopping",
+        "市场监管",
+        "ways",
+        "Google",
+        "can",
+        "level"
+      ],
+      "impactAreas": [
+        "AI",
+        "Search",
+        "Shopping",
+        "市场监管"
+      ]
+    },
+    {
+      "id": "tech-openai-news-bd9e099ef4",
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "url": "https://openai.com/index/travelers",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
       "publishedAt": "2026-06-02T12:00:00.000Z",
-      "summary": "Women and girls in Lebanon are paying an increasingly devastating price as violence and displacement continue despite a ceasefire, the UN reproductive health agency (UNFPA) warned on Tuesday.",
-      "contentExcerpt": "Women and girls in Lebanon are paying an increasingly devastating price as violence and displacement continue despite a ceasefire, the UN reproductive health agency (UNFPA) warned on Tuesday.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/06-03-2026-UNICEF-Lebanon-01.jpg/image770x420cropped.jpg",
+      "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
+      "contentExcerpt": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
       "score": 90,
       "duplicateCount": 0,
-      "tags": []
+      "tags": [],
+      "keywords": [
+        "AI",
+        "Travelers",
+        "deploys",
+        "AI-powered",
+        "claims",
+        "countrywide",
+        "OpenAI",
+        "built"
+      ],
+      "impactAreas": [
+        "AI",
+        "Travelers",
+        "deploys",
+        "AI-powered"
+      ]
+    },
+    {
+      "id": "tech-cisa-news-1d434ecc25",
+      "title": "CISA Urges Stronger Security for Automatic Tank Gauge Systems",
+      "url": "https://www.cisa.gov/news-events/news/cisa-urges-stronger-security-automatic-tank-gauge-systems",
+      "source": "CISA News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "summary": "",
+      "score": 89,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "security",
+        "市场监管",
+        "CISA",
+        "Urges",
+        "Stronger",
+        "for",
+        "Automatic",
+        "Tank"
+      ],
+      "impactAreas": [
+        "security",
+        "市场监管",
+        "CISA",
+        "Urges"
+      ]
+    },
+    {
+      "id": "tech-openai-news-8fe777fefb",
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-03T13:15:00.000Z",
+      "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
+      "contentExcerpt": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
+      "score": 85,
+      "duplicateCount": 0,
+      "tags": [
+        "Product"
+      ],
+      "keywords": [
+        "Product",
+        "Introducing",
+        "new",
+        "capabilities",
+        "GPT-Rosalind",
+        "advances",
+        "life",
+        "sciences"
+      ],
+      "impactAreas": [
+        "Product",
+        "Introducing",
+        "new",
+        "capabilities"
+      ]
+    },
+    {
+      "id": "tech-openai-news-e2a15d8f34",
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "url": "https://openai.com/index/wasmer",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-03T12:00:00.000Z",
+      "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
+      "contentExcerpt": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
+      "score": 85,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "How",
+        "Wasmer",
+        "used",
+        "Codex",
+        "build",
+        "Node",
+        "runtime",
+        "for"
+      ],
+      "impactAreas": [
+        "How",
+        "Wasmer",
+        "used",
+        "Codex"
+      ]
+    },
+    {
+      "id": "tech-github-blog-83e84a459b",
+      "title": "GitHub Copilot app: The agent-native desktop experience",
+      "url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
+      "source": "GitHub Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-02T17:30:03.000Z",
+      "summary": "At Microsoft Build 2026, GitHub introduced new tools, updates, and surfaces so agents can work the way you already work. The post GitHub Copilot app: The agent-native desktop experience appeared first on The GitHub Blog .",
+      "contentExcerpt": "Mario Rodriguez leads the GitHub Product team as Chief Product Officer. His core identity is being a learner and his passion is creating developer tools—so much so that he has spent the last 20 years living that mission in leadership roles across Microsoft and GitHub. Mario most recently oversaw GitHub’s AI strategy and the GitHub Copilot product line, launching and growing Copilot across thousands of organizations and millions of users. Mario spends time outside of GitHub with his wife and t...",
+      "imageUrl": "https://github.blog/wp-content/uploads/2026/06/MSFTBuild_Blog_Header_01.jpg",
+      "score": 83,
+      "duplicateCount": 0,
+      "tags": [
+        "Company news",
+        "News & insights",
+        "Product",
+        "GitHub Copilot",
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "GitHub Copilot code review",
+        "GitHub Copilot SDK"
+      ],
+      "keywords": [
+        "Company news",
+        "News & insights",
+        "Product",
+        "GitHub Copilot",
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "GitHub Copilot code review",
+        "GitHub Copilot SDK"
+      ],
+      "impactAreas": [
+        "Company news",
+        "News & insights",
+        "Product",
+        "GitHub Copilot"
+      ]
     }
   ]
 }
