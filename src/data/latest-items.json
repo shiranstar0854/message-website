@@ -1,15 +1,51 @@
 {
   "siteName": "Message Choose",
-  "generatedAt": "2026-06-05T00:01:15.359Z",
+  "generatedAt": "2026-06-05T09:01:18.598Z",
   "defaultLimit": 8,
-  "totalItems": 41,
+  "totalItems": 48,
   "channels": {
     "tech": {
       "id": "tech",
       "label": "科技",
       "description": "AI、云计算、芯片、开发者平台与安全基础设施。",
-      "count": 9,
+      "count": 10,
       "items": [
+        {
+          "id": "tech-item-40ffe19889",
+          "sourceId": "most-work",
+          "title": "科技部组织召开2026年全国科技监督工作会",
+          "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
+          "source": "科技部工作动态",
+          "sourceType": "webpage",
+          "category": "tech",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "daily",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "impactAreas": [
+            "AI",
+            "科技部组织召开",
+            "年全国科技监督工作会",
+            "科技部科技政策"
+          ],
+          "tags": [
+            "official-agency",
+            "daily"
+          ],
+          "keywords": [
+            "AI",
+            "科技部组织召开",
+            "年全国科技监督工作会",
+            "科技部科技政策",
+            "科研合作",
+            "标准和创新体系工作动态"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
         {
           "id": "tech-github-blog-1ea8d75964",
           "sourceId": "github-blog",
@@ -19,8 +55,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-04T16:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
@@ -47,7 +83,7 @@
             "Universe",
             "back"
           ],
-          "score": 100,
+          "score": 99,
           "duplicateCount": 0
         },
         {
@@ -59,8 +95,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-03T10:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
@@ -84,7 +120,7 @@
             "for",
             "democratic"
           ],
-          "score": 97,
+          "score": 96,
           "duplicateCount": 0
         },
         {
@@ -96,8 +132,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-03T10:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
@@ -121,7 +157,7 @@
             "public",
             "agenda"
           ],
-          "score": 95,
+          "score": 94,
           "duplicateCount": 0
         },
         {
@@ -133,8 +169,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-04T12:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
@@ -156,7 +192,7 @@
             "delivery",
             "around"
           ],
-          "score": 94,
+          "score": 93,
           "duplicateCount": 0
         },
         {
@@ -168,8 +204,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "An action plan for AI-powered biological resilience",
@@ -193,7 +229,7 @@
             "action",
             "plan"
           ],
-          "score": 93,
+          "score": 92,
           "duplicateCount": 0
         },
         {
@@ -205,8 +241,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-03T13:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
@@ -233,7 +269,7 @@
             "can",
             "level"
           ],
-          "score": 91,
+          "score": 90,
           "duplicateCount": 0
         },
         {
@@ -245,8 +281,8 @@
           "sourceType": "rss",
           "category": "tech",
           "publishedAt": "2026-06-04T09:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
@@ -270,44 +306,7 @@
             "ChatGPT",
             "introduces"
           ],
-          "score": 86,
-          "duplicateCount": 0
-        },
-        {
-          "id": "tech-openai-news-8fe777fefb",
-          "sourceId": "openai-news",
-          "title": "Introducing new capabilities to GPT-Rosalind",
-          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-          "source": "OpenAI News",
-          "sourceType": "rss",
-          "category": "tech",
-          "publishedAt": "2026-06-03T13:15:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
-          "sourceAuthority": "media",
-          "timelinessTier": "daily",
-          "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-          "contentExcerpt": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-          "impactAreas": [
-            "Product",
-            "Introducing",
-            "new",
-            "capabilities"
-          ],
-          "tags": [
-            "Product"
-          ],
-          "keywords": [
-            "Product",
-            "Introducing",
-            "new",
-            "capabilities",
-            "GPT-Rosalind",
-            "advances",
-            "life",
-            "sciences"
-          ],
-          "score": 83,
+          "score": 85,
           "duplicateCount": 0
         }
       ]
@@ -316,7 +315,7 @@
       "id": "finance",
       "label": "金融",
       "description": "央行、监管、市场结构、宏观数据与风险信号。",
-      "count": 2,
+      "count": 3,
       "items": [
         {
           "id": "finance-item-1231d7d94d",
@@ -327,8 +326,8 @@
           "sourceType": "webpage",
           "category": "finance",
           "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:50.132Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "daily",
           "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
@@ -350,7 +349,45 @@
             "价格",
             "产业和经济运行信息"
           ],
-          "score": 100,
+          "score": 99,
+          "duplicateCount": 0
+        },
+        {
+          "id": "finance-item-77faa3388c",
+          "sourceId": "pbc-news",
+          "title": "中国人民银行公告〔2026〕第14号",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060418264767948/index.html",
+          "source": "中国人民银行新闻发布",
+          "sourceType": "webpage",
+          "category": "finance",
+          "publishedAt": "2026-06-04T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "hourly",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "contentExcerpt": "中国人民银行定于2026年6月13日发行国家宝藏（融合交流）金银纪念币一套。一、纪念币图案（一）正面图案。15克圆形金质纪念币背面图案为晋归义羌侯金印造型。并刊。字样及面额。3克圆形金质纪念币背面图案为鸭形玻璃注造型。15克圆形银质纪念币背面图案为驿使图画像砖造型。15克圆形银质纪念币背面图案为青瓷对书俑造型。衬以竹简等装饰组合设计。国家宝藏·青瓷对书俑。15克圆形银质纪念币背面图案为青瓷莲花尊造型。国家宝藏青瓷莲花尊。",
+          "impactAreas": [
+            "央行",
+            "中国人民银行公告",
+            "中国人民银行新闻发布",
+            "货币政策和金融市场运行信"
+          ],
+          "tags": [
+            "official-agency",
+            "hourly"
+          ],
+          "keywords": [
+            "央行",
+            "中国人民银行公告",
+            "中国人民银行新闻发布",
+            "货币政策和金融市场运行信",
+            "中国人民银行定于",
+            "日发行国家宝藏",
+            "融合交流",
+            "金银纪念币一套"
+          ],
+          "score": 98,
           "duplicateCount": 0
         },
         {
@@ -362,8 +399,8 @@
           "sourceType": "rss",
           "category": "finance",
           "publishedAt": "2026-06-04T18:39:49.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
@@ -385,7 +422,7 @@
             "Business",
             "Capital"
           ],
-          "score": 93,
+          "score": 92,
           "duplicateCount": 0
         }
       ]
@@ -394,8 +431,203 @@
       "id": "news",
       "label": "新闻",
       "description": "公共政策、国际事件、社会治理与重大突发消息。",
-      "count": 30,
+      "count": 35,
       "items": [
+        {
+          "id": "news-item-e9745422d0",
+          "sourceId": "govcn-yaowen",
+          "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+          "source": "中国政府网要闻",
+          "sourceType": "webpage",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "hourly",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+          "impactAreas": [
+            "地缘政治",
+            "公共政策",
+            "外交部介绍习近平总书记访",
+            "问朝鲜有关安排"
+          ],
+          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "tags": [
+            "official-agency",
+            "hourly"
+          ],
+          "keywords": [
+            "地缘政治",
+            "公共政策",
+            "外交部介绍习近平总书记访",
+            "问朝鲜有关安排",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "应朝鲜劳动党总书记"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
+        {
+          "id": "news-item-29c1ff9b38",
+          "sourceId": "govcn-yaowen",
+          "title": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
+          "source": "中国政府网要闻",
+          "sourceType": "webpage",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "hourly",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "contentExcerpt": "中共中央对外联络部发言人5日宣布：应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+          "impactAreas": [
+            "公共政策",
+            "习近平将对朝鲜民主主义人",
+            "民共和国进行国事访问",
+            "中国政府网要闻列表"
+          ],
+          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "tags": [
+            "official-agency",
+            "hourly"
+          ],
+          "keywords": [
+            "公共政策",
+            "习近平将对朝鲜民主主义人",
+            "民共和国进行国事访问",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "中共中央对外联络部发言人",
+            "日宣布"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
+        {
+          "id": "news-item-4e93b6412d",
+          "sourceId": "govcn-yaowen",
+          "title": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071077.htm",
+          "source": "中国政府网要闻",
+          "sourceType": "webpage",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "hourly",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "contentExcerpt": "6月5日是世界环境日，今年我国环境日主题为“全面绿色转型，共建美丽中国”。",
+          "impactAreas": [
+            "公共政策",
+            "共建天蓝地绿水清的美丽家",
+            "践行习近平生态文明思想的",
+            "时代答卷"
+          ],
+          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "tags": [
+            "official-agency",
+            "hourly"
+          ],
+          "keywords": [
+            "公共政策",
+            "共建天蓝地绿水清的美丽家",
+            "践行习近平生态文明思想的",
+            "时代答卷",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "日是世界环境日"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
+        {
+          "id": "news-item-16e35179cd",
+          "sourceId": "govcn-yaowen",
+          "title": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+          "source": "中国政府网要闻",
+          "sourceType": "webpage",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "hourly",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "contentExcerpt": "水运连着国运。在推进中国式现代化新征程上，习近平总书记深入思考世情、国情、水情，作出重要论断，“推进中国式现代化，要把水资源问题考虑进去”。",
+          "impactAreas": [
+            "公共政策",
+            "总书记的人民情怀",
+            "推进中国式现代化",
+            "要把水资源问题考虑进去"
+          ],
+          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "tags": [
+            "official-agency",
+            "hourly"
+          ],
+          "keywords": [
+            "公共政策",
+            "总书记的人民情怀",
+            "推进中国式现代化",
+            "要把水资源问题考虑进去",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "水运连着国运"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
+        {
+          "id": "news-item-95fdc76139",
+          "sourceId": "govcn-yaowen",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+          "source": "中国政府网要闻",
+          "sourceType": "webpage",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+          "sourceAuthority": "official-agency",
+          "timelinessTier": "hourly",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "contentExcerpt": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
+          "impactAreas": [
+            "地缘政治",
+            "公共政策",
+            "王毅会见下任联合国秘书长",
+            "候选人巴切莱特"
+          ],
+          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "tags": [
+            "official-agency",
+            "hourly"
+          ],
+          "keywords": [
+            "地缘政治",
+            "公共政策",
+            "王毅会见下任联合国秘书长",
+            "候选人巴切莱特",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "中共中央政治局委员"
+          ],
+          "score": 100,
+          "duplicateCount": 0
+        },
         {
           "id": "news-un-news-0d967114c4",
           "sourceId": "un-news",
@@ -405,8 +637,8 @@
           "sourceType": "rss",
           "category": "news",
           "publishedAt": "2026-06-04T12:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
@@ -429,7 +661,7 @@
             "scales",
             "Ebola"
           ],
-          "score": 98,
+          "score": 97,
           "duplicateCount": 0
         },
         {
@@ -441,8 +673,8 @@
           "sourceType": "rss",
           "category": "news",
           "publishedAt": "2026-06-04T12:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+          "fetchedAt": "2026-06-05T09:00:46.511Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
@@ -465,7 +697,7 @@
             "Somalia",
             "clinics"
           ],
-          "score": 98,
+          "score": 97,
           "duplicateCount": 0
         },
         {
@@ -477,8 +709,8 @@
           "sourceType": "webpage",
           "category": "news",
           "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:50.132Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+          "fetchedAt": "2026-06-05T09:00:54.246Z",
+          "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -504,205 +736,244 @@
             "各地精准发力",
             "不断推出新举措"
           ],
-          "score": 96,
-          "duplicateCount": 0
-        },
-        {
-          "id": "news-item-f68cbda076",
-          "sourceId": "govcn-yaowen",
-          "title": "我国自贸试验区持续提升对外开放水平",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071058.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
-          "category": "news",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:50.132Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "今年以来，我国自贸试验区建设不断优化布局，在制度创新、扩大开放等方面持续发力，开放型经济质量和发展活力稳步提升。",
-          "impactAreas": [
-            "公共政策",
-            "我国自贸试验区持续提升对",
-            "外开放水平",
-            "中国政府网要闻列表"
-          ],
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "keywords": [
-            "公共政策",
-            "我国自贸试验区持续提升对",
-            "外开放水平",
-            "中国政府网要闻列表",
-            "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "今年以来",
-            "我国自贸试验区建设不断优"
-          ],
-          "score": 96,
-          "duplicateCount": 0
-        },
-        {
-          "id": "news-item-ff89c0aeef",
-          "sourceId": "govcn-yaowen",
-          "title": "提额扩围拓场景 住房公积金惠民再升级",
-          "url": "https://www.gov.cn/zhengce/202606/content_7071043.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
-          "category": "news",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:50.132Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "今年以来，住房公积金政策迎来密集调整。记者梳理发现，全国已有超过60个城市调整优化了公积金政策，从贷款额度、首付比例、提取范围、异地互认、覆盖群体、服务创新等方面发力，进一步释放住房消费潜力，保障民生福祉。",
-          "impactAreas": [
-            "公共政策",
-            "提额扩围拓场景",
-            "住房公积金惠民再升级",
-            "中国政府网要闻列表"
-          ],
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "keywords": [
-            "公共政策",
-            "提额扩围拓场景",
-            "住房公积金惠民再升级",
-            "中国政府网要闻列表",
-            "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "今年以来",
-            "住房公积金政策迎来密集调"
-          ],
-          "score": 96,
-          "duplicateCount": 0
-        },
-        {
-          "id": "news-item-ba359b7858",
-          "sourceId": "govcn-yaowen",
-          "title": "5月中国物流业景气指数为50.3% 需求重回扩张区间 市场预期保持向好",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071042.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
-          "category": "news",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:50.132Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "中国物流与采购联合会发布的5月份中国物流业景气指数为50.3%，较上月回升0.6个百分点，需求重回扩张区间，市场预期保持向好。",
-          "impactAreas": [
-            "公共政策",
-            "月中国物流业景气指数为",
-            "需求重回扩张区间",
-            "市场预期保持向好"
-          ],
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "keywords": [
-            "公共政策",
-            "月中国物流业景气指数为",
-            "需求重回扩张区间",
-            "市场预期保持向好",
-            "中国政府网要闻列表",
-            "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "中国物流与采购联合会发布"
-          ],
-          "score": 96,
-          "duplicateCount": 0
-        },
-        {
-          "id": "news-item-dd48d7849b",
-          "sourceId": "govcn-yaowen",
-          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
-          "category": "news",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:50.132Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "实现现代化是近代以来中国人民的不懈追求，也是世界各国人民的共同追求。",
-          "impactAreas": [
-            "公共政策",
-            "总书记的人民情怀",
-            "中国可以成功",
-            "其他发展中国家同样可以成"
-          ],
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "keywords": [
-            "公共政策",
-            "总书记的人民情怀",
-            "中国可以成功",
-            "其他发展中国家同样可以成",
-            "中国政府网要闻列表",
-            "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "实现现代化是近代以来中国"
-          ],
-          "score": 96,
-          "duplicateCount": 0
-        },
-        {
-          "id": "news-un-news-aa14a79485",
-          "sourceId": "un-news",
-          "title": "Yemen: Hunger crisis deepens as funding cuts leave millions without support",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167643",
-          "source": "UN News",
-          "sourceType": "rss",
-          "category": "news",
-          "publishedAt": "2026-06-03T12:00:00.000Z",
-          "fetchedAt": "2026-06-05T00:00:42.203Z",
-          "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
-          "sourceAuthority": "media",
-          "timelinessTier": "daily",
-          "summary": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the&nbsp;latest analysis by&nbsp;the leading UN-backed global food security platform.",
-          "contentExcerpt": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the latest analysis by the leading UN-backed global food security platform.",
-          "impactAreas": [
-            "AI",
-            "security",
-            "公共政策",
-            "市场监管"
-          ],
-          "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026-UNICEF-Yemen.jpg/image770x420cropped.jpg",
-          "tags": [],
-          "keywords": [
-            "AI",
-            "security",
-            "公共政策",
-            "市场监管",
-            "Yemen",
-            "Hunger",
-            "crisis",
-            "deepens"
-          ],
-          "score": 96,
+          "score": 95,
           "duplicateCount": 0
         }
       ]
     }
   },
   "items": [
+    {
+      "id": "tech-item-40ffe19889",
+      "sourceId": "most-work",
+      "title": "科技部组织召开2026年全国科技监督工作会",
+      "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "impactAreas": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策"
+      ],
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策",
+        "科研合作",
+        "标准和创新体系工作动态"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-e9745422d0",
+      "sourceId": "govcn-yaowen",
+      "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+      "impactAreas": [
+        "地缘政治",
+        "公共政策",
+        "外交部介绍习近平总书记访",
+        "问朝鲜有关安排"
+      ],
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "地缘政治",
+        "公共政策",
+        "外交部介绍习近平总书记访",
+        "问朝鲜有关安排",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应朝鲜劳动党总书记"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-29c1ff9b38",
+      "sourceId": "govcn-yaowen",
+      "title": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央对外联络部发言人5日宣布：应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+      "impactAreas": [
+        "公共政策",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问",
+        "中国政府网要闻列表"
+      ],
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中共中央对外联络部发言人",
+        "日宣布"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-4e93b6412d",
+      "sourceId": "govcn-yaowen",
+      "title": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071077.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月5日是世界环境日，今年我国环境日主题为“全面绿色转型，共建美丽中国”。",
+      "impactAreas": [
+        "公共政策",
+        "共建天蓝地绿水清的美丽家",
+        "践行习近平生态文明思想的",
+        "时代答卷"
+      ],
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "共建天蓝地绿水清的美丽家",
+        "践行习近平生态文明思想的",
+        "时代答卷",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日是世界环境日"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-16e35179cd",
+      "sourceId": "govcn-yaowen",
+      "title": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "水运连着国运。在推进中国式现代化新征程上，习近平总书记深入思考世情、国情、水情，作出重要论断，“推进中国式现代化，要把水资源问题考虑进去”。",
+      "impactAreas": [
+        "公共政策",
+        "总书记的人民情怀",
+        "推进中国式现代化",
+        "要把水资源问题考虑进去"
+      ],
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "总书记的人民情怀",
+        "推进中国式现代化",
+        "要把水资源问题考虑进去",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "水运连着国运"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-item-95fdc76139",
+      "sourceId": "govcn-yaowen",
+      "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
+      "impactAreas": [
+        "地缘政治",
+        "公共政策",
+        "王毅会见下任联合国秘书长",
+        "候选人巴切莱特"
+      ],
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "地缘政治",
+        "公共政策",
+        "王毅会见下任联合国秘书长",
+        "候选人巴切莱特",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中共中央政治局委员"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
     {
       "id": "tech-github-blog-1ea8d75964",
       "sourceId": "github-blog",
@@ -712,8 +983,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-04T16:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
@@ -740,7 +1011,7 @@
         "Universe",
         "back"
       ],
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0
     },
     {
@@ -752,8 +1023,8 @@
       "sourceType": "webpage",
       "category": "finance",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:50.132Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
@@ -775,7 +1046,45 @@
         "价格",
         "产业和经济运行信息"
       ],
-      "score": 100,
+      "score": 99,
+      "duplicateCount": 0
+    },
+    {
+      "id": "finance-item-77faa3388c",
+      "sourceId": "pbc-news",
+      "title": "中国人民银行公告〔2026〕第14号",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060418264767948/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "contentExcerpt": "中国人民银行定于2026年6月13日发行国家宝藏（融合交流）金银纪念币一套。一、纪念币图案（一）正面图案。15克圆形金质纪念币背面图案为晋归义羌侯金印造型。并刊。字样及面额。3克圆形金质纪念币背面图案为鸭形玻璃注造型。15克圆形银质纪念币背面图案为驿使图画像砖造型。15克圆形银质纪念币背面图案为青瓷对书俑造型。衬以竹简等装饰组合设计。国家宝藏·青瓷对书俑。15克圆形银质纪念币背面图案为青瓷莲花尊造型。国家宝藏青瓷莲花尊。",
+      "impactAreas": [
+        "央行",
+        "中国人民银行公告",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ],
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "央行",
+        "中国人民银行公告",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信",
+        "中国人民银行定于",
+        "日发行国家宝藏",
+        "融合交流",
+        "金银纪念币一套"
+      ],
+      "score": 98,
       "duplicateCount": 0
     },
     {
@@ -787,8 +1096,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
@@ -811,7 +1120,7 @@
         "scales",
         "Ebola"
       ],
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0
     },
     {
@@ -823,8 +1132,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
@@ -847,7 +1156,7 @@
         "Somalia",
         "clinics"
       ],
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0
     },
     {
@@ -859,8 +1168,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-03T10:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
@@ -884,7 +1193,7 @@
         "for",
         "democratic"
       ],
-      "score": 97,
+      "score": 96,
       "duplicateCount": 0
     },
     {
@@ -896,8 +1205,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:50.132Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -923,7 +1232,7 @@
         "各地精准发力",
         "不断推出新举措"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -935,8 +1244,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:50.132Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -962,7 +1271,7 @@
         "今年以来",
         "我国自贸试验区建设不断优"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -974,8 +1283,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:50.132Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -1001,7 +1310,7 @@
         "今年以来",
         "住房公积金政策迎来密集调"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -1013,8 +1322,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:50.132Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -1040,7 +1349,7 @@
         "部门政策和公共事务即时发",
         "中国物流与采购联合会发布"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -1052,8 +1361,8 @@
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:50.132Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "fetchedAt": "2026-06-05T09:00:54.246Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:54.246Z",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
@@ -1079,7 +1388,7 @@
         "部门政策和公共事务即时发",
         "实现现代化是近代以来中国"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -1091,8 +1400,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the&nbsp;latest analysis by&nbsp;the leading UN-backed global food security platform.",
@@ -1115,7 +1424,7 @@
         "crisis",
         "deepens"
       ],
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0
     },
     {
@@ -1127,8 +1436,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-03T10:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
@@ -1152,7 +1461,7 @@
         "public",
         "agenda"
       ],
-      "score": 95,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -1164,8 +1473,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T20:36:24.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
@@ -1191,7 +1500,7 @@
         "Composite",
         "Manufacturing"
       ],
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0
     },
     {
@@ -1203,8 +1512,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T18:01:59.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
@@ -1234,7 +1543,77 @@
         "Wildfires",
         "NASA-Funded"
       ],
-      "score": 94,
+      "score": 93,
+      "duplicateCount": 0
+    },
+    {
+      "id": "tech-openai-news-010cdd7fc8",
+      "sourceId": "openai-news",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "impactAreas": [
+        "AI",
+        "地缘政治",
+        "How",
+        "Endava"
+      ],
+      "tags": [],
+      "keywords": [
+        "AI",
+        "地缘政治",
+        "How",
+        "Endava",
+        "redesigning",
+        "software",
+        "delivery",
+        "around"
+      ],
+      "score": 93,
+      "duplicateCount": 0
+    },
+    {
+      "id": "finance-u-s-sec-press-releases-e4acdcac84",
+      "sourceId": "sec-press",
+      "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
+      "source": "U.S. SEC Press Releases",
+      "sourceType": "rss",
+      "category": "finance",
+      "publishedAt": "2026-06-04T18:39:49.000Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+      "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+      "impactAreas": [
+        "市场监管",
+        "SEC",
+        "Announces",
+        "New"
+      ],
+      "tags": [],
+      "keywords": [
+        "市场监管",
+        "SEC",
+        "Announces",
+        "New",
+        "Members",
+        "Small",
+        "Business",
+        "Capital"
+      ],
+      "score": 92,
       "duplicateCount": 0
     },
     {
@@ -1246,8 +1625,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T15:58:03.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA&#8217;s Juno spacecraft captured this color-enhanced view of Jupiter&#8217;s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds [&#8230;]",
@@ -1270,77 +1649,7 @@
         "spacecraft",
         "captured"
       ],
-      "score": 94,
-      "duplicateCount": 0
-    },
-    {
-      "id": "tech-openai-news-010cdd7fc8",
-      "sourceId": "openai-news",
-      "title": "How Endava is redesigning software delivery around AI agents",
-      "url": "https://openai.com/index/endava-frontiers",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "tech",
-      "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-      "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-      "impactAreas": [
-        "AI",
-        "地缘政治",
-        "How",
-        "Endava"
-      ],
-      "tags": [],
-      "keywords": [
-        "AI",
-        "地缘政治",
-        "How",
-        "Endava",
-        "redesigning",
-        "software",
-        "delivery",
-        "around"
-      ],
-      "score": 94,
-      "duplicateCount": 0
-    },
-    {
-      "id": "finance-u-s-sec-press-releases-e4acdcac84",
-      "sourceId": "sec-press",
-      "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
-      "source": "U.S. SEC Press Releases",
-      "sourceType": "rss",
-      "category": "finance",
-      "publishedAt": "2026-06-04T18:39:49.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
-      "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
-      "impactAreas": [
-        "市场监管",
-        "SEC",
-        "Announces",
-        "New"
-      ],
-      "tags": [],
-      "keywords": [
-        "市场监管",
-        "SEC",
-        "Announces",
-        "New",
-        "Members",
-        "Small",
-        "Business",
-        "Capital"
-      ],
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0
     },
     {
@@ -1352,8 +1661,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-04T00:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "An action plan for AI-powered biological resilience",
@@ -1377,7 +1686,7 @@
         "action",
         "plan"
       ],
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0
     },
     {
@@ -1389,8 +1698,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "A closely watched Security Council election delivered a mix of continuity and change on Wednesday, as Austria, Portugal, Trinidad and Tobago, Zimbabwe – and first-time member Kyrgyzstan, secured seats around the iconic horseshoe table.",
@@ -1413,7 +1722,7 @@
         "seat",
         "Council"
       ],
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0
     },
     {
@@ -1425,8 +1734,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Across the Middle East, countries facing severe energy access challenges are turning to renewables to power essential infrastructure, from hospitals to schools and street lighting.",
@@ -1449,7 +1758,7 @@
         "renewables",
         "power"
       ],
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0
     },
     {
@@ -1461,8 +1770,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "UN High Commissioner for Human Rights Volker Türk called on Thursday for greater protection for environmental and land defenders, noting that hundreds worldwide have been killed or detained in recent years.",
@@ -1485,7 +1794,7 @@
         "attacks",
         "environmental"
       ],
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0
     },
     {
@@ -1497,8 +1806,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
@@ -1521,7 +1830,7 @@
         "need",
         "for"
       ],
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0
     },
     {
@@ -1533,19 +1842,19 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T01:28:11.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "By Susanne P. Schwenzer, Professor of Planetary Mineralogy at The Open University, UK Earth planning date: Friday, May 29, 2026 Drilling always keeps the rover in place for a little while, and our 47th successful drill, “Campo Marte,” was no exception. The team used the time wisely and on top of the drilling, we also […]",
-      "contentExcerpt": "Mars Science Laboratory Mission Team Members By Susanne P. Schwenzer, Professor of Planetary Mineralogy at The Open University, UK Earth planning date: Friday, May 29, 2026 Drilling always keeps the rover in place for a little while, and our 47th successful drill, “Campo Marte,” was no exception. The team used the time wisely and on top of the drilling, we also have many observations. Thinking for a long time about a workspace always gets me attached to the area — some more than others; at th...",
+      "contentExcerpt": "Curiosity Navigation Curiosity Home Mission Overview Where is Curiosity? Mission Updates Science Overview Instruments Highlights Exploration Goals News and Features Multimedia Curiosity Raw Images Images Videos Audio Mosaics More Resources Mars Missions Mars Perseverance Rover Mars Curiosity Rover MAVEN Mars Reconnaissance Orbiter Mars Odyssey More Mars Missions Mars Home 5 min read Curiosity Blog, Sols 4908-4912: Goodbye Campo Marte, It’s Been Fun! NASA’s Mars rover Curiosity acquired this i...",
       "impactAreas": [
         "AI",
         "Blogs",
         "Curiosity",
         "Blog"
       ],
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/msl/2026/curiosity-rover-updates/may/https___mars.nasa.gov_msl-raw-images_msss_04908_mhli_4908MH0003260001801155C00_DXXX.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/msl/2026/curiosity-rover-updates/may/https___mars.nasa.gov_msl-raw-images_msss_04908_mhli_4908MH0003260001801155C00_DXXX.jpg?w=1024&#038;h=1024&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
       "tags": [
         "Blogs"
       ],
@@ -1559,7 +1868,7 @@
         "Campo",
         "Marte"
       ],
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0
     },
     {
@@ -1571,19 +1880,19 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T15:48:44.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The focus of this NASA/ESA&#160;Hubble&#160;Space Telescope&#160;image&#160;released on May 29, 2026, is an active&#160;spiral galaxy&#160;on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation&#160;Coma Berenices&#160;(Berenice’s Hair). M88 is an active galaxy, which means that its center harbors [&#8230;]",
-      "contentExcerpt": "The focus of this NASA/ESA Hubble Space Telescope image released on May 29, 2026, is an active spiral galaxy on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation Coma Berenices (Berenice’s Hair). M88 is an active galaxy, which means that its center harbors a supermassive black hole that is snacking on gas and dust. Astronomers estimate the black hole is around 100 million time...",
+      "contentExcerpt": "This NASA/ESA Hubble Space Telescope image features the spiral galaxy Messier 88 (M88). ESA/Hubble & NASA, D. Thilker The focus of this NASA/ESA&nbsp; Hubble&nbsp;Space Telescope &nbsp;image&nbsp;released on May 29, 2026, is an active&nbsp;spiral galaxy&nbsp;on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation&nbsp;Coma Berenices&nbsp;(Berenice’s Hair). M88 is an active galaxy...",
       "impactAreas": [
         "AI",
         "Spiral Galaxies",
         "Journey",
         "the"
       ],
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/hubble-m88-potm2605a.jpg",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/hubble-m88-potm2605a.jpg?w=2048",
       "tags": [
         "Spiral Galaxies"
       ],
@@ -1597,7 +1906,7 @@
         "Cluster",
         "focus"
       ],
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0
     },
     {
@@ -1609,8 +1918,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-03T13:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
@@ -1637,7 +1946,7 @@
         "can",
         "level"
       ],
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0
     },
     {
@@ -1649,8 +1958,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
@@ -1661,7 +1970,7 @@
         "Undeclared",
         "chemical"
       ],
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-02-2022_UNICEF_Syria.jpg/image770x420cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-02-2022_UNICEF_Syria.jpg/image560x340cropped.jpg",
       "tags": [],
       "keywords": [
         "security",
@@ -1673,7 +1982,7 @@
         "Syria",
         "including"
       ],
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0
     },
     {
@@ -1685,8 +1994,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T13:50:10.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "A powerful but mostly unseen water system at work during rocket engine tests at NASA’s Stennis Space Center near Bay St. Louis, Mississippi, underwent an upgrade in May. Crews brought the High Pressure Industrial Water Facility’s 66-million-gallon reservoir to its lowest level since construction in the 1960s by pumping out about 40 million gallons of [&#8230;]",
@@ -1712,7 +2021,7 @@
         "Upgrade",
         "Critical"
       ],
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0
     },
     {
@@ -1724,8 +2033,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Children in Ukraine have been profoundly impacted by years of war, sheltering in underground schools – or forced to study online – and living with the psychological strain of constant air raid sirens that could spell death for them and their families.",
@@ -1736,7 +2045,7 @@
         "Growing",
         "sirens"
       ],
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026_Ukraine%20Frazier%202.jpg/image770x420cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026_Ukraine%20Frazier%202.jpg/image560x340cropped.jpg",
       "tags": [],
       "keywords": [
         "AI",
@@ -1748,7 +2057,7 @@
         "envoy",
         "the"
       ],
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0
     },
     {
@@ -1760,8 +2069,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "UN Secretary-General António Guterres expressed alarm on Tuesday over reported overnight exchanges of fire between the United States and Iran, as well as reports that Iran targeted Kuwait and Bahrain.",
@@ -1784,7 +2093,7 @@
         "Gulf",
         "tensions"
       ],
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0
     },
     {
@@ -1796,8 +2105,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The head of the World Health Organization (WHO) said on Wednesday that the Ebola outbreak in the Democratic Republic of the Congo (DRC) is showing signs of progress – but significant challenges remain in testing, surveillance, vaccine development and building community trust.&nbsp;",
@@ -1820,7 +2129,7 @@
         "Ebola",
         "fight"
       ],
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0
     },
     {
@@ -1832,8 +2141,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Months since Gaza’s nominal ceasefire began, Palestinians continue to be killed and maimed in drone and airstrikes, including the enclave’s police force which is crucial to peace and reconstruction efforts, the UN human rights office (OHCHR) said on Wednesday.",
@@ -1856,7 +2165,49 @@
         "Israeli",
         "strikes"
       ],
-      "score": 90,
+      "score": 89,
+      "duplicateCount": 0
+    },
+    {
+      "id": "news-nasa-breaking-news-b4239884e7",
+      "sourceId": "nasa-breaking-news",
+      "title": "Fighting Fire With Fire",
+      "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-05T04:01:00.000Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "In fire-prone ecosystems in Australia’s Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season.",
+      "contentExcerpt": "Earth Observatory Science Earth Observatory Fighting Fire With Fire Earth Earth Observatory Image of the Day EO Explorer Topics All Topics Atmosphere Land Heat &#038; Radiation Life on Earth Human Dimensions Natural Events Oceans Remote Sensing Technology Snow &#038; Ice Water More Content Collections Global Maps World of Change Articles Notes from the Field Blog Earth Matters Blog Blue Marble: Next Generation EO Kids Mission: Biomes About About Us Subscribe 🛜 RSS Contact Us Search Smoke str...",
+      "impactAreas": [
+        "Aqua",
+        "Earth Observatory",
+        "Wildfires",
+        "Wildland Fire Management"
+      ],
+      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/fighting-fire-with-fire/australiafires_amo_20260528.jpg?w=2160&#038;h=1700&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
+      "tags": [
+        "Aqua",
+        "Earth Observatory",
+        "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+        "Wildfires",
+        "Wildland Fire Management"
+      ],
+      "keywords": [
+        "Aqua",
+        "Earth Observatory",
+        "Wildfires",
+        "Wildland Fire Management",
+        "Fighting",
+        "Fire",
+        "fire-prone",
+        "ecosystems"
+      ],
+      "score": 86,
       "duplicateCount": 0
     },
     {
@@ -1868,8 +2219,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-04T09:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
@@ -1893,7 +2244,7 @@
         "ChatGPT",
         "introduces"
       ],
-      "score": 86,
+      "score": 85,
       "duplicateCount": 0
     },
     {
@@ -1905,8 +2256,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "A Serbian peacekeeper serving in Lebanon died early Thursday after mortar fire on his position near Marjayoun in the country’s southeast, the UN Interim Force in Lebanon (UNIFIL) has announced.",
@@ -1929,7 +2280,7 @@
         "Serbian",
         "serving"
       ],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     },
     {
@@ -1941,8 +2292,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-04T04:01:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "An astronaut’s photo, taken en route to the Moon, reveals our planet and its place in space in a novel way.",
@@ -1970,7 +2321,7 @@
         "Seen",
         "Artemis"
       ],
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0
     },
     {
@@ -1982,8 +2333,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T18:01:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA-supported scientists have provided new information about how the early Earth may have acquired some elements necessary for the planet to become habitable. They also suggest a new role for Jupiter in the distribution of these elements throughout the young solar system. The study, published today in Science Advances, examines this history by looking at […]",
@@ -2008,7 +2359,7 @@
         "May",
         "Received"
       ],
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0
     },
     {
@@ -2020,8 +2371,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T17:27:22.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Description Sea level height data from the international Sentinel-6 Michael Freilich satellite collected from March to May 2026 show higher, warmer water moving from the western Pacific Ocean to just off the coast of Colombia, Ecuador, and Peru. This phenomenon is known as a warm Kelvin wave, signified in this animation of the data by […]",
@@ -2047,7 +2398,7 @@
         "Observes",
         "Precursor"
       ],
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0
     },
     {
@@ -2059,8 +2410,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-03T13:15:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
@@ -2084,7 +2435,7 @@
         "life",
         "sciences"
       ],
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0
     },
     {
@@ -2096,8 +2447,8 @@
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
@@ -2119,49 +2470,6 @@
         "runtime",
         "for"
       ],
-      "score": 83,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-nasa-breaking-news-c8810cc64e",
-      "sourceId": "nasa-breaking-news",
-      "title": "NASA Says Farewell to MAVEN Mars Mission, Hosts Media Call Today",
-      "url": "https://www.nasa.gov/news-release/nasa-says-farewell-to-maven-mars-mission-hosts-media-call-today",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-03T13:12:05.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "The first mission devoted to observing the Martian atmosphere and its evolution, NASA’s MAVEN (Mars Atmosphere and Volatile Evolution), has ended after more than 11 years in orbit at Mars and a decade beyond its primary, one-year mission. The spacecraft was heard last on Dec. 6, when it experienced an unexpected loss of signal after [&#8230;]",
-      "contentExcerpt": "Artist’s concept of NASA’s MAVEN spacecraft at Mars. The spacecraft entered orbit around the planet in 2014 and has completed over eleven years of observing the Martian upper atmosphere, ionosphere, and interactions with the Sun and solar wind to explore the loss of the Red Planet&#8217;s atmosphere to space. Credit: NASA/Goddard/University of Colorado/Laboratory for Atmospheric and Space Physics The first mission devoted to observing the Martian atmosphere and its evolution, NASA’s MAVEN (Ma...",
-      "impactAreas": [
-        "Deep Space Network",
-        "Goddard Space Flight Center",
-        "Jet Propulsion Laboratory",
-        "Mars"
-      ],
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/c-original.jpg?w=2048",
-      "tags": [
-        "MAVEN (Mars Atmosphere and Volatile EvolutioN)",
-        "Deep Space Network",
-        "Goddard Space Flight Center",
-        "Jet Propulsion Laboratory",
-        "Mars",
-        "Science Mission Directorate"
-      ],
-      "keywords": [
-        "Deep Space Network",
-        "Goddard Space Flight Center",
-        "Jet Propulsion Laboratory",
-        "Mars",
-        "Science Mission Directorate",
-        "NASA",
-        "Farewell",
-        "MAVEN"
-      ],
       "score": 82,
       "duplicateCount": 0
     },
@@ -2174,8 +2482,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Unsafe food causes an estimated 866 million illnesses and 1.5 million deaths every year worldwide, highlighting the often-overlooked toll of contaminated food on health, development and fragile economies, according to new data from the UN health agency.",
@@ -2198,7 +2506,7 @@
         "year",
         "children"
       ],
-      "score": 82,
+      "score": 81,
       "duplicateCount": 0
     },
     {
@@ -2210,8 +2518,8 @@
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-03T12:00:00.000Z",
-      "fetchedAt": "2026-06-05T00:00:42.203Z",
-      "sourceLastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "fetchedAt": "2026-06-05T09:00:46.511Z",
+      "sourceLastCheckedAt": "2026-06-05T09:00:46.511Z",
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "As World Cup fever rises in the Americas, countries are urged to strengthen measles surveillance and vaccination amid ongoing outbreaks across the region.&nbsp;",
@@ -2234,7 +2542,7 @@
         "for",
         "World"
       ],
-      "score": 82,
+      "score": 81,
       "duplicateCount": 0
     }
   ]

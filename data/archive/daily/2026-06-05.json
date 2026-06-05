@@ -1,15 +1,15 @@
 {
   "date": "2026-06-05",
-  "generatedAt": "2026-06-05T00:01:15.359Z",
+  "generatedAt": "2026-06-05T09:01:18.598Z",
   "totals": {
     "sources": 20,
-    "healthySources": 8,
-    "rawItems": 41,
-    "normalizedItems": 41,
-    "filteredItems": 41,
-    "dedupedItems": 41,
-    "scoredItems": 41,
-    "enrichmentAttempted": 23,
+    "healthySources": 10,
+    "rawItems": 48,
+    "normalizedItems": 48,
+    "filteredItems": 48,
+    "dedupedItems": 48,
+    "scoredItems": 48,
+    "enrichmentAttempted": 25,
     "enrichmentFailed": 0
   },
   "sourceHealth": [
@@ -22,11 +22,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "lastSuccessAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "lastSuccessAt": "2026-06-05T09:00:46.511Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -38,11 +38,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "lastSuccessAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "lastSuccessAt": "2026-06-05T09:00:46.511Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -54,11 +54,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "lastSuccessAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "lastSuccessAt": "2026-06-05T09:00:46.511Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -70,11 +70,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -86,11 +86,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -102,11 +102,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
       "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -118,11 +118,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
       "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -134,11 +134,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "lastSuccessAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "lastSuccessAt": "2026-06-05T09:00:46.511Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -150,11 +150,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -166,11 +166,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "lastSuccessAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "lastSuccessAt": "2026-06-05T09:00:46.511Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -182,11 +182,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:42.203Z",
-      "lastSuccessAt": "2026-06-05T00:00:42.203Z",
+      "lastCheckedAt": "2026-06-05T09:00:46.511Z",
+      "lastSuccessAt": "2026-06-05T09:00:46.511Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:42.203Z",
-      "cacheExpiresAt": "2026-06-07T00:00:42.203Z",
+      "cacheStartedAt": "2026-06-05T09:00:46.511Z",
+      "cacheExpiresAt": "2026-06-07T09:00:46.511Z",
       "failureCount": 0
     },
     {
@@ -196,16 +196,16 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 1,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
-      "lastSuccessAt": null,
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "lastSuccessAt": "2026-06-05T09:00:54.246Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     },
     {
@@ -215,16 +215,16 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 1,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
-      "lastSuccessAt": null,
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "lastSuccessAt": "2026-06-05T09:00:54.246Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     },
     {
@@ -239,11 +239,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     },
     {
@@ -258,11 +258,11 @@
       "responseStatus": null,
       "attempts": 2,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 1
     },
     {
@@ -277,11 +277,11 @@
       "responseStatus": null,
       "attempts": 2,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 1
     },
     {
@@ -296,11 +296,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
-      "lastSuccessAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "lastSuccessAt": "2026-06-05T09:00:54.246Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     },
     {
@@ -315,11 +315,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     },
     {
@@ -334,11 +334,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     },
     {
@@ -349,23 +349,54 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 5,
+      "itemCount": 10,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-05T00:00:50.132Z",
-      "lastSuccessAt": "2026-06-05T00:00:50.132Z",
+      "lastCheckedAt": "2026-06-05T09:00:54.246Z",
+      "lastSuccessAt": "2026-06-05T09:00:54.246Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-05T00:00:50.132Z",
-      "cacheExpiresAt": "2026-06-07T00:00:50.132Z",
+      "cacheStartedAt": "2026-06-05T09:00:54.246Z",
+      "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 41
+    "availableItems": 48
   },
   "items": [
+    {
+      "id": "tech-item-40ffe19889",
+      "title": "科技部组织召开2026年全国科技监督工作会",
+      "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策",
+        "科研合作",
+        "标准和创新体系工作动态"
+      ],
+      "impactAreas": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策"
+      ]
+    },
     {
       "id": "tech-github-blog-1ea8d75964",
       "title": "GitHub Universe is back: All together now, in the agentic era",
@@ -377,7 +408,7 @@
       "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
       "contentExcerpt": "Ariel Kanter is a writer, editor, and content strategist. Her work has been featured in The New York Times, Vanity Fair, New York Magazine, and, of course, on GitHub. You can find her on Substack at Rel's Recs. Get inspired by five of the most memorable, magical, and quirky Universe sessions to date. From Appwrite to Zulip, Universe 2025’s Open Source Zone was stacked with standout projects showing just how far open source can go. Meet the maintainers—and if you want to join them in 2026, you...",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/06/1200x630-U25-Blog-Hero_x2.png?fit=2400%2C1260",
-      "score": 100,
+      "score": 99,
       "duplicateCount": 0,
       "tags": [
         "Company news",
@@ -411,7 +442,7 @@
       "publishedAt": "2026-06-03T10:00:00.000Z",
       "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
       "contentExcerpt": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
-      "score": 97,
+      "score": 96,
       "duplicateCount": 0,
       "tags": [
         "Global Affairs"
@@ -443,7 +474,7 @@
       "publishedAt": "2026-06-03T10:00:00.000Z",
       "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
       "contentExcerpt": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-      "score": 95,
+      "score": 94,
       "duplicateCount": 0,
       "tags": [
         "Global Affairs"
@@ -475,7 +506,7 @@
       "publishedAt": "2026-06-04T12:00:00.000Z",
       "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
       "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -505,7 +536,7 @@
       "publishedAt": "2026-06-04T00:00:00.000Z",
       "summary": "An action plan for AI-powered biological resilience",
       "contentExcerpt": "An action plan for AI-powered biological resilience",
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Global Affairs"
@@ -538,7 +569,7 @@
       "summary": "Uncover second-hand scores with AI tools in Google Search and Shopping.",
       "contentExcerpt": "Uncover second-hand scores with AI tools in Search. Your browser does not support the audio element. With search interest in “vintage” and “how to thrift” hitting all-time highs this year, 2026 is proving that old is new again. Check out a few thrifting trends below for inspiration, then learn how Google tools can help you score the best finds, from a \"vintage jersey\" to \"thrifted heels\" (both trending on Search!). Your next favorite find is just a search, snap or circle away. With AI Mode in...",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.width-1300.png",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "Search",
@@ -572,7 +603,7 @@
       "publishedAt": "2026-06-04T09:00:00.000Z",
       "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
       "contentExcerpt": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
-      "score": 86,
+      "score": 85,
       "duplicateCount": 0,
       "tags": [
         "Research"
@@ -604,7 +635,7 @@
       "publishedAt": "2026-06-03T13:15:00.000Z",
       "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
       "contentExcerpt": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0,
       "tags": [
         "Product"
@@ -636,7 +667,7 @@
       "publishedAt": "2026-06-03T12:00:00.000Z",
       "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
       "contentExcerpt": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -657,63 +688,173 @@
       ]
     },
     {
-      "id": "finance-item-1231d7d94d",
-      "title": "2026年6月4日国内成品油价格调整",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
-      "source": "国家发展改革委新闻发布",
+      "id": "news-item-e9745422d0",
+      "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+      "source": "中国政府网要闻",
       "sourceType": "webpage",
-      "category": "finance",
-      "publishedAt": "2026-06-04T00:00:00.000Z",
-      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
       "score": 100,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
-        "daily"
+        "hourly"
       ],
       "keywords": [
-        "AI",
-        "日国内成品油价格调整",
-        "国家发展改革委宏观政策",
-        "价格",
-        "产业和经济运行信息"
+        "地缘政治",
+        "公共政策",
+        "外交部介绍习近平总书记访",
+        "问朝鲜有关安排",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应朝鲜劳动党总书记"
       ],
       "impactAreas": [
-        "AI",
-        "日国内成品油价格调整",
-        "国家发展改革委宏观政策",
-        "价格"
+        "地缘政治",
+        "公共政策",
+        "外交部介绍习近平总书记访",
+        "问朝鲜有关安排"
       ]
     },
     {
-      "id": "finance-u-s-sec-press-releases-e4acdcac84",
-      "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
-      "source": "U.S. SEC Press Releases",
-      "sourceType": "rss",
-      "category": "finance",
-      "publishedAt": "2026-06-04T18:39:49.000Z",
-      "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
-      "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
-      "score": 93,
+      "id": "news-item-29c1ff9b38",
+      "title": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央对外联络部发言人5日宣布：应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
       "duplicateCount": 0,
-      "tags": [],
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
       "keywords": [
-        "市场监管",
-        "SEC",
-        "Announces",
-        "New",
-        "Members",
-        "Small",
-        "Business",
-        "Capital"
+        "公共政策",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中共中央对外联络部发言人",
+        "日宣布"
       ],
       "impactAreas": [
-        "市场监管",
-        "SEC",
-        "Announces",
-        "New"
+        "公共政策",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-4e93b6412d",
+      "title": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071077.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月5日是世界环境日，今年我国环境日主题为“全面绿色转型，共建美丽中国”。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "共建天蓝地绿水清的美丽家",
+        "践行习近平生态文明思想的",
+        "时代答卷",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日是世界环境日"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "共建天蓝地绿水清的美丽家",
+        "践行习近平生态文明思想的",
+        "时代答卷"
+      ]
+    },
+    {
+      "id": "news-item-16e35179cd",
+      "title": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "水运连着国运。在推进中国式现代化新征程上，习近平总书记深入思考世情、国情、水情，作出重要论断，“推进中国式现代化，要把水资源问题考虑进去”。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "总书记的人民情怀",
+        "推进中国式现代化",
+        "要把水资源问题考虑进去",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "水运连着国运"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "总书记的人民情怀",
+        "推进中国式现代化",
+        "要把水资源问题考虑进去"
+      ]
+    },
+    {
+      "id": "news-item-95fdc76139",
+      "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "地缘政治",
+        "公共政策",
+        "王毅会见下任联合国秘书长",
+        "候选人巴切莱特",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中共中央政治局委员"
+      ],
+      "impactAreas": [
+        "地缘政治",
+        "公共政策",
+        "王毅会见下任联合国秘书长",
+        "候选人巴切莱特"
       ]
     },
     {
@@ -727,7 +868,7 @@
       "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
       "contentExcerpt": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/25-09-2023-UNICEF-Sudan-refugees.jpg/image770x420cropped.jpg",
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -758,7 +899,7 @@
       "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
       "contentExcerpt": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-UNICEF-Afghanistan.jpg/image770x420cropped.jpg",
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -789,7 +930,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "各地精准发力，不断推出新举措，培育新场景、新业态，激发消费新活力。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -823,7 +964,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "今年以来，我国自贸试验区建设不断优化布局，在制度创新、扩大开放等方面持续发力，开放型经济质量和发展活力稳步提升。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -857,7 +998,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "今年以来，住房公积金政策迎来密集调整。记者梳理发现，全国已有超过60个城市调整优化了公积金政策，从贷款额度、首付比例、提取范围、异地互认、覆盖群体、服务创新等方面发力，进一步释放住房消费潜力，保障民生福祉。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -891,7 +1032,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国物流与采购联合会发布的5月份中国物流业景气指数为50.3%，较上月回升0.6个百分点，需求重回扩张区间，市场预期保持向好。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -925,7 +1066,7 @@
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "实现现代化是近代以来中国人民的不懈追求，也是世界各国人民的共同追求。",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -959,7 +1100,7 @@
       "summary": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the&nbsp;latest analysis by&nbsp;the leading UN-backed global food security platform.",
       "contentExcerpt": "Nearly half of the population in Government-controlled areas of Yemen are facing high levels of acute food insecurity with the crisis set to deepen further if international aid cuts continue, according to the latest analysis by the leading UN-backed global food security platform.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026-UNICEF-Yemen.jpg/image770x420cropped.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -990,7 +1131,7 @@
       "summary": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
       "contentExcerpt": "Public Affairs Officer, NASA Langley Research Center NASA’s Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for a 2026 spring review at NASA’s Langley Research Center in Hampton, Virginia. The meeting took place May 5-7, bringing together about 150 people from the consortium, a 22-member public-private partnership. The review gave NASA and industry partners a chance to look at recent progress and plan for the w...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/boeing-hicam-feature.png",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "Hi-Rate Composite Aircraft Manufacturing",
@@ -1024,7 +1165,7 @@
       "summary": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
       "contentExcerpt": "Writer/Editor (IV), Earth Science Division Wildfire smoke is stoking a new challenge for cleaner air. A NASA-supported study published Thursday found that, over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames. Wildfires have become an increasingly important contributor to ground-level ozone, or smog, across much of the United States, researchers report June 4 in the journal Science...",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/articles/2026/goes-fp-cobbna-nam-jun2023_00231%20(1).png/jcr:content/renditions/cq5dam.web.1280.1280.png",
-      "score": 94,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "Air Quality",
@@ -1062,7 +1203,7 @@
       "summary": "NASA&#8217;s Juno spacecraft captured this color-enhanced view of Jupiter&#8217;s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds [&#8230;]",
       "contentExcerpt": "NASA’s Juno spacecraft captured this color-enhanced view of Jupiter’s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds and cyclonic storms in an area known to scientists as a folded filamentary region. In these regions, the zonal jets that create the famili...",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/pia25729orig.jpg",
-      "score": 94,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -1093,7 +1234,7 @@
       "summary": "A closely watched Security Council election delivered a mix of continuity and change on Wednesday, as Austria, Portugal, Trinidad and Tobago, Zimbabwe – and first-time member Kyrgyzstan, secured seats around the iconic horseshoe table.",
       "contentExcerpt": "A closely watched Security Council election delivered a mix of continuity and change on Wednesday, as Austria, Portugal, Trinidad and Tobago, Zimbabwe – and first-time member Kyrgyzstan, secured seats around the iconic horseshoe table.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026-UN-Photo-Kyrgyzstan.jpg/image770x420cropped.jpg",
-      "score": 93,
+      "score": 92,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -1124,7 +1265,7 @@
       "summary": "Across the Middle East, countries facing severe energy access challenges are turning to renewables to power essential infrastructure, from hospitals to schools and street lighting.",
       "contentExcerpt": "Across the Middle East, countries facing severe energy access challenges are turning to renewables to power essential infrastructure, from hospitals to schools and street lighting.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-UNOPS-Yemen-solar-01.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -1155,7 +1296,7 @@
       "summary": "UN High Commissioner for Human Rights Volker Türk called on Thursday for greater protection for environmental and land defenders, noting that hundreds worldwide have been killed or detained in recent years.",
       "contentExcerpt": "UN High Commissioner for Human Rights Volker Türk called on Thursday for greater protection for environmental and land defenders, noting that hundreds worldwide have been killed or detained in recent years.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/08-11-2022_Unsplash_climate-protest.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -1186,7 +1327,7 @@
       "summary": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
       "contentExcerpt": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-Tahzib-Vevers-Earle-Cousteau.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -1207,165 +1348,96 @@
       ]
     },
     {
-      "id": "news-nasa-breaking-news-117037675a",
-      "title": "Curiosity Blog, Sols 4908-4912: Goodbye Campo Marte, It’s Been Fun!",
-      "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4908-4912-goodbye-campo-marte-its-been-fun",
-      "source": "NASA Breaking News",
+      "id": "finance-item-1231d7d94d",
+      "title": "2026年6月4日国内成品油价格调整",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+      "source": "国家发展改革委新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "score": 99,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "日国内成品油价格调整",
+        "国家发展改革委宏观政策",
+        "价格",
+        "产业和经济运行信息"
+      ],
+      "impactAreas": [
+        "AI",
+        "日国内成品油价格调整",
+        "国家发展改革委宏观政策",
+        "价格"
+      ]
+    },
+    {
+      "id": "finance-item-77faa3388c",
+      "title": "中国人民银行公告〔2026〕第14号",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060418264767948/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceType": "webpage",
+      "category": "finance",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "contentExcerpt": "中国人民银行定于2026年6月13日发行国家宝藏（融合交流）金银纪念币一套。一、纪念币图案（一）正面图案。15克圆形金质纪念币背面图案为晋归义羌侯金印造型。并刊。字样及面额。3克圆形金质纪念币背面图案为鸭形玻璃注造型。15克圆形银质纪念币背面图案为驿使图画像砖造型。15克圆形银质纪念币背面图案为青瓷对书俑造型。衬以竹简等装饰组合设计。国家宝藏·青瓷对书俑。15克圆形银质纪念币背面图案为青瓷莲花尊造型。国家宝藏青瓷莲花尊。",
+      "score": 98,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "央行",
+        "中国人民银行公告",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信",
+        "中国人民银行定于",
+        "日发行国家宝藏",
+        "融合交流",
+        "金银纪念币一套"
+      ],
+      "impactAreas": [
+        "央行",
+        "中国人民银行公告",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ]
+    },
+    {
+      "id": "finance-u-s-sec-press-releases-e4acdcac84",
+      "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
+      "source": "U.S. SEC Press Releases",
       "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-04T01:28:11.000Z",
-      "summary": "By Susanne P. Schwenzer, Professor of Planetary Mineralogy at The Open University, UK Earth planning date: Friday, May 29, 2026 Drilling always keeps the rover in place for a little while, and our 47th successful drill, “Campo Marte,” was no exception. The team used the time wisely and on top of the drilling, we also […]",
-      "contentExcerpt": "Mars Science Laboratory Mission Team Members By Susanne P. Schwenzer, Professor of Planetary Mineralogy at The Open University, UK Earth planning date: Friday, May 29, 2026 Drilling always keeps the rover in place for a little while, and our 47th successful drill, “Campo Marte,” was no exception. The team used the time wisely and on top of the drilling, we also have many observations. Thinking for a long time about a workspace always gets me attached to the area — some more than others; at th...",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/msl/2026/curiosity-rover-updates/may/https___mars.nasa.gov_msl-raw-images_msss_04908_mhli_4908MH0003260001801155C00_DXXX.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "category": "finance",
+      "publishedAt": "2026-06-04T18:39:49.000Z",
+      "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+      "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
       "score": 92,
       "duplicateCount": 0,
-      "tags": [
-        "Blogs"
-      ],
-      "keywords": [
-        "AI",
-        "Blogs",
-        "Curiosity",
-        "Blog",
-        "Sols",
-        "Goodbye",
-        "Campo",
-        "Marte"
-      ],
-      "impactAreas": [
-        "AI",
-        "Blogs",
-        "Curiosity",
-        "Blog"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-1668c4958d",
-      "title": "Journey to the Center of the Virgo Cluster",
-      "url": "https://www.nasa.gov/image-article/journey-to-the-center-of-the-virgo-cluster",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-03T15:48:44.000Z",
-      "summary": "The focus of this NASA/ESA&#160;Hubble&#160;Space Telescope&#160;image&#160;released on May 29, 2026, is an active&#160;spiral galaxy&#160;on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation&#160;Coma Berenices&#160;(Berenice’s Hair). M88 is an active galaxy, which means that its center harbors [&#8230;]",
-      "contentExcerpt": "The focus of this NASA/ESA Hubble Space Telescope image released on May 29, 2026, is an active spiral galaxy on a journey lasting hundreds of millions of years. The galaxy Messier 88 (M88), also known as NGC 4501, is located about 63 million light-years away in the constellation Coma Berenices (Berenice’s Hair). M88 is an active galaxy, which means that its center harbors a supermassive black hole that is snacking on gas and dust. Astronomers estimate the black hole is around 100 million time...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/hubble-m88-potm2605a.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "Spiral Galaxies"
-      ],
-      "keywords": [
-        "AI",
-        "Spiral Galaxies",
-        "Journey",
-        "the",
-        "Center",
-        "Virgo",
-        "Cluster",
-        "focus"
-      ],
-      "impactAreas": [
-        "AI",
-        "Spiral Galaxies",
-        "Journey",
-        "the"
-      ]
-    },
-    {
-      "id": "news-un-news-e5178a7935",
-      "title": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167652",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-04T12:00:00.000Z",
-      "summary": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
-      "contentExcerpt": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-02-2022_UNICEF_Syria.jpg/image770x420cropped.jpg",
-      "score": 90,
-      "duplicateCount": 0,
       "tags": [],
       "keywords": [
-        "security",
         "市场监管",
-        "Undeclared",
-        "chemical",
-        "weapons",
-        "found",
-        "Syria",
-        "including"
+        "SEC",
+        "Announces",
+        "New",
+        "Members",
+        "Small",
+        "Business",
+        "Capital"
       ],
       "impactAreas": [
-        "security",
         "市场监管",
-        "Undeclared",
-        "chemical"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-d8411ef7b9",
-      "title": "NASA Drains 66-Million-Gallon Reservoir to Upgrade Critical Water System",
-      "url": "https://www.nasa.gov/centers-and-facilities/stennis/reservoir-drained-to-upgrade-water-system",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-03T13:50:10.000Z",
-      "summary": "A powerful but mostly unseen water system at work during rocket engine tests at NASA’s Stennis Space Center near Bay St. Louis, Mississippi, underwent an upgrade in May. Crews brought the High Pressure Industrial Water Facility’s 66-million-gallon reservoir to its lowest level since construction in the 1960s by pumping out about 40 million gallons of [&#8230;]",
-      "contentExcerpt": "A powerful but mostly unseen water system at work during rocket engine tests at NASA’s Stennis Space Center near Bay St. Louis, Mississippi, underwent an upgrade in May. Crews brought the High Pressure Industrial Water Facility’s 66-million-gallon reservoir to its lowest level since construction in the 1960s by pumping out about 40 million gallons of water over three days. This brought the reservoir, measuring 800 feet in diameter and about 25 feet deep, down to the level needed to replace a...",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/05/s1003201.jpg",
-      "score": 90,
-      "duplicateCount": 0,
-      "tags": [
-        "Stennis Space Center",
-        "Stennis Test Facility and Support Infrastructure"
-      ],
-      "keywords": [
-        "AI",
-        "Stennis Space Center",
-        "NASA",
-        "Drains",
-        "Million-Gallon",
-        "Reservoir",
-        "Upgrade",
-        "Critical"
-      ],
-      "impactAreas": [
-        "AI",
-        "Stennis Space Center",
-        "NASA",
-        "Drains"
-      ]
-    },
-    {
-      "id": "news-un-news-aaae5d9513",
-      "title": "Growing up with sirens: UN child rights envoy on the toll of the Ukraine-Russia war",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167641",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-03T12:00:00.000Z",
-      "summary": "Children in Ukraine have been profoundly impacted by years of war, sheltering in underground schools – or forced to study online – and living with the psychological strain of constant air raid sirens that could spell death for them and their families.",
-      "contentExcerpt": "Children in Ukraine have been profoundly impacted by years of war, sheltering in underground schools – or forced to study online – and living with the psychological strain of constant air raid sirens that could spell death for them and their families.",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/03-06-2026_Ukraine%20Frazier%202.jpg/image770x420cropped.jpg",
-      "score": 90,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "AI",
-        "地缘政治",
-        "Growing",
-        "sirens",
-        "child",
-        "rights",
-        "envoy",
-        "the"
-      ],
-      "impactAreas": [
-        "AI",
-        "地缘政治",
-        "Growing",
-        "sirens"
+        "SEC",
+        "Announces",
+        "New"
       ]
     }
   ]
