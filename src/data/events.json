@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-06T06:55:57.857Z",
+  "generatedAt": "2026-06-06T07:07:28.781Z",
   "totalEvents": 3,
   "events": [
     {
       "id": "ai-policy",
       "title": "AI 政策与基础设施",
       "summary": "财政部财政政策、国债、预算和财政运行新闻 相关来源：财政部财政新闻、科技部工作动态、GitHub Blog",
-      "whyItMatters": "AI 政策与基础设施 会影响用户对政策、市场、产业或国际变化的判断；包含 2 条官方或市场权威来源，仍处在高时效窗口内。",
+      "whyItMatters": "AI 政策与基础设施 会影响用户对政策、市场、产业或国际变化的判断；包含 3 条官方或市场权威来源，仍处在高时效窗口内。",
       "impactAreas": [
         "宏观",
         "AI",
@@ -19,14 +19,14 @@
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
       "updatedAt": "2026-06-05T00:00:00.000Z",
-      "itemCount": 18,
+      "itemCount": 19,
       "sources": [
         "财政部财政新闻",
         "科技部工作动态",
         "GitHub Blog",
         "UN News",
-        "NASA Breaking News",
-        "Google AI Blog"
+        "中国政府网要闻",
+        "NASA Breaking News"
       ],
       "keywords": [
         "宏观",
@@ -88,22 +88,22 @@
           "score": 97
         },
         {
+          "id": "news-item-392bfbad6c",
+          "title": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
+          "summary": "为做好私募投资基金加强监管、防范风险工作，促进私募基金高质量发展，经国务院同意，现提出以下意见。",
+          "url": "https://www.gov.cn/zhengce/content/202606/content_7071204.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 96
+        },
+        {
           "id": "international-un-news-0d967114c4",
           "title": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
           "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167655",
-          "source": "UN News",
-          "sourceAuthority": "media",
-          "sourceAuthorityLabel": "媒体",
-          "category": "international",
-          "publishedAt": "2026-06-04T12:00:00.000Z",
-          "score": 96
-        },
-        {
-          "id": "international-un-news-149c8f462c",
-          "title": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
-          "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167653",
           "source": "UN News",
           "sourceAuthority": "media",
           "sourceAuthorityLabel": "媒体",
@@ -162,22 +162,22 @@
           "score": 97
         },
         {
+          "id": "news-item-392bfbad6c",
+          "title": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
+          "summary": "为做好私募投资基金加强监管、防范风险工作，促进私募基金高质量发展，经国务院同意，现提出以下意见。",
+          "url": "https://www.gov.cn/zhengce/content/202606/content_7071204.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 96
+        },
+        {
           "id": "international-un-news-0d967114c4",
           "title": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
           "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167655",
-          "source": "UN News",
-          "sourceAuthority": "media",
-          "sourceAuthorityLabel": "媒体",
-          "category": "international",
-          "publishedAt": "2026-06-04T12:00:00.000Z",
-          "score": 96
-        },
-        {
-          "id": "international-un-news-149c8f462c",
-          "title": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
-          "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167653",
           "source": "UN News",
           "sourceAuthority": "media",
           "sourceAuthorityLabel": "媒体",
@@ -191,7 +191,7 @@
       "id": "global-affairs",
       "title": "国际关系与跨境影响",
       "summary": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。 相关来源：中国政府网要闻、NASA Breaking News",
-      "whyItMatters": "国际关系与跨境影响 会影响用户对政策、市场、产业或国际变化的判断；包含 1 条官方或市场权威来源，仍处在高时效窗口内。",
+      "whyItMatters": "国际关系与跨境影响 会影响用户对政策、市场、产业或国际变化的判断；包含 2 条官方或市场权威来源，仍处在高时效窗口内。",
       "impactAreas": [
         "国际",
         "地缘政治",
@@ -204,7 +204,7 @@
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
       "updatedAt": "2026-06-05T00:00:00.000Z",
-      "itemCount": 2,
+      "itemCount": 3,
       "sources": [
         "中国政府网要闻",
         "NASA Breaking News"
@@ -233,6 +233,18 @@
           "score": 97
         },
         {
+          "id": "international-item-95fdc76139",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "summary": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "international",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 97
+        },
+        {
           "id": "international-nasa-breaking-news-b4239884e7",
           "title": "Fighting Fire With Fire",
           "summary": "In fire-prone ecosystems in Australia's Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season. In May and June of most years, NASA satellites typically begin to detect large numbers of wildland fires throughout the Top End and Arnhem Land regions of Australia’s Northern Territory. On some days, especially in the afternoon, the blazes can resemble sizable wildfires in satellite imagery, spreading widely and producing expansive smoke plumes. That was...",
@@ -251,6 +263,18 @@
           "title": "外交部介绍习近平总书记访问朝鲜有关安排",
           "summary": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
           "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "international",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 97
+        },
+        {
+          "id": "international-item-95fdc76139",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "summary": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
           "source": "中国政府网要闻",
           "sourceAuthority": "official-agency",
           "sourceAuthorityLabel": "官方机构",
@@ -333,7 +357,7 @@
         {
           "id": "news-nasa-breaking-news-ad4d222d8a",
           "title": "NASA Announces Winners of 2026 University Innovation Competition",
-          "summary": "The Massachusetts Institute of Technology team that won the 2026 RASC-AL competition for their project, Exploration-Class Lunar Integrated Power SystEm. Credit: National Institute of Aerospace NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by...",
+          "summary": "NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by innovating new system concepts and prototypes. Another team from the same university won second place overall for their project, Mars Exploration Layered Infrastructure for Operations, Researc...",
           "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-announces-winners-of-2026-university-innovation-competition",
           "source": "NASA Breaking News",
           "sourceAuthority": "media",
@@ -371,7 +395,7 @@
         {
           "id": "news-nasa-breaking-news-ad4d222d8a",
           "title": "NASA Announces Winners of 2026 University Innovation Competition",
-          "summary": "The Massachusetts Institute of Technology team that won the 2026 RASC-AL competition for their project, Exploration-Class Lunar Integrated Power SystEm. Credit: National Institute of Aerospace NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by...",
+          "summary": "NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by innovating new system concepts and prototypes. Another team from the same university won second place overall for their project, Mars Exploration Layered Infrastructure for Operations, Researc...",
           "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-announces-winners-of-2026-university-innovation-competition",
           "source": "NASA Breaking News",
           "sourceAuthority": "media",
