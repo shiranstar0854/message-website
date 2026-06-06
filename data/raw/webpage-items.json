@@ -11,10 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 1,
     "items": [
       {
@@ -63,7 +63,14 @@
         ]
       }
     ],
-    "stale": false
+    "stale": true,
+    "latestAttempt": {
+      "fetchedAt": "2026-06-06T00:00:27.432Z",
+      "ok": false,
+      "status": null,
+      "itemCount": 0,
+      "error": "fetch failed"
+    }
   },
   {
     "sourceId": "csrc-news",
@@ -77,10 +84,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -95,10 +102,10 @@
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
     "ok": false,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 2,
     "error": "fetch failed",
     "items": [],
@@ -115,10 +122,10 @@
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
     "ok": false,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 2,
     "error": "fetch failed",
     "items": [],
@@ -136,26 +143,13 @@
     "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 1,
-    "items": [
-      {
-        "title": "2026年6月4日国内成品油价格调整",
-        "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
-        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "daily",
-        "tags": [
-          "official-agency",
-          "daily"
-        ]
-      }
-    ],
+    "items": [],
     "stale": false
   },
   {
@@ -169,13 +163,26 @@
     "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "蓝佛安会见新开发银行行长罗塞芙",
+        "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "财政部财政政策、国债、预算和财政运行新闻",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -190,10 +197,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -209,16 +216,112 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 10,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "itemCount": 13,
+    "fetchedAt": "2026-06-06T00:00:27.432Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
+    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
     "attempts": 1,
     "items": [
       {
+        "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
+        "publishedAt": "2026-06-06T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "各地麦收高效推进 助力夏粮颗粒归仓",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071307.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "环境日：全民参与 共建美丽中国",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071305.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071287.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071274.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
         "title": "外交部介绍习近平总书记访问朝鲜有关安排",
         "link": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071268.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院任免国家工作人员（2026年6月5日）",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071218.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
+        "link": "https://www.gov.cn/zhengce/content/202606/content_7071204.htm",
         "publishedAt": "2026-06-05T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -268,66 +371,6 @@
         "title": "王毅会见下任联合国秘书长候选人巴切莱特",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
         "publishedAt": "2026-06-05T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "各地培育新场景新业态 激发消费活力",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071059.htm",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "我国自贸试验区持续提升对外开放水平",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071058.htm",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "提额扩围拓场景 住房公积金惠民再升级",
-        "link": "https://www.gov.cn/zhengce/202606/content_7071043.htm",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "5月中国物流业景气指数为50.3% 需求重回扩张区间 市场预期保持向好",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071042.htm",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
