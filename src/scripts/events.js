@@ -25,6 +25,10 @@
   }
 
   function formatDate(value) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(value || ""))) {
+      const [, month, day] = String(value).split("-");
+      return `${Number(month)}月${Number(day)}日`;
+    }
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "时间未知";
     return new Intl.DateTimeFormat("zh-CN", {
@@ -99,6 +103,7 @@
 
     container.innerHTML = events.map((event) => {
       const evidenceItems = event.evidenceItems || event.items || [];
+      const timeline = event.timeline || evidenceItems;
       return `
         <article class="event-card">
           <div class="event-card-head">
@@ -106,7 +111,7 @@
               <h2>${escapeHtml(event.title || "重点事件")}</h2>
               <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
             </div>
-            <strong>${Number(event.itemCount || evidenceItems.length || 0)} 条</strong>
+            <strong>${escapeHtml(event.heat || "中")}</strong>
           </div>
           <div class="event-explainer-grid">
             <section>
@@ -123,6 +128,25 @@
           <div class="tag-row" aria-label="影响范围">
             ${(event.impactAreas || event.keywords || []).slice(0, 6).map((keyword) => `<span class="tag">${escapeHtml(keyword)}</span>`).join("")}
           </div>
+          <h3 class="event-evidence-title">时间线</h3>
+          <ol class="event-timeline">
+            ${timeline.map((item) => {
+              const safeUrl = safeExternalUrl(item.url);
+              const title = safeUrl
+                ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+                : escapeHtml(item.title);
+              return `
+                <li>
+                  <time>${escapeHtml(formatDate(item.publishedAt || item.date))}</time>
+                  <div>
+                    <h3>${title}</h3>
+                    <p>${escapeHtml(item.summary || "")}</p>
+                    <span>${escapeHtml(item.source || "公开来源")} · ${Number(item.score || 0)}</span>
+                  </div>
+                </li>
+              `;
+            }).join("")}
+          </ol>
           <h3 class="event-evidence-title">证据条目</h3>
           <ul class="event-item-list">
             ${evidenceItems.map((item) => {
@@ -148,7 +172,7 @@
     const data = await loadJson("src/data/events.json", FALLBACK_EVENTS);
     const meta = document.getElementById("events-meta");
     if (meta) {
-      meta.textContent = `事件更新时间：${formatDate(data.generatedAt)}；共 ${Number(data.totalEvents || 0)} 个重点事件。`;
+      meta.textContent = `事件更新时间：${formatDate(data.generatedAt)}；回看近 ${Number(data.lookbackDays || 90)} 天；共 ${Number(data.totalEvents || 0)} 个重点事件。`;
     }
     renderExplainedEvents(document.getElementById("events-list"), data);
   }

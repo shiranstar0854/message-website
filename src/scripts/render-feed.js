@@ -76,18 +76,31 @@
   }
 
   function isEnglishSourceItem(item) {
-    return item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
+    return item.source_language === "en" || item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
   }
 
   function displayTitle(item) {
-    return item.titleZh || item.translatedTitle || item.title || "未命名信息";
+    return item.title_zh || item.titleZh || item.translatedTitle || item.title || "未命名信息";
+  }
+
+  function displaySummary(item) {
+    return item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "";
   }
 
   function impactText(item) {
     if (item.importance || item.summaryReason) return item.importance || item.summaryReason;
-    const areas = (item.impactAreas || item.keywords || []).slice(0, 2);
+    const areas = (item.impactAreas || item.article_keywords || item.keywords || []).slice(0, 2);
     if (areas.length) return `影响范围：${areas.join("、")}。`;
     return `评分 ${Number(item.score || 0)}，用于判断优先阅读价值。`;
+  }
+
+  function translationLabel(item) {
+    return {
+      translated: "已翻译",
+      failed: "翻译失败",
+      pending: "待翻译",
+      not_required: "中文来源"
+    }[item.translation_status] || "";
   }
 
   function renderFeed(container, items) {
@@ -100,7 +113,8 @@
     }
 
     container.innerHTML = items.map((item) => {
-      const tags = [item.category, ...(item.keywords || []).slice(0, 3), ...(item.tags || []).slice(0, 2)]
+      const articleKeywords = item.article_keywords || item.keywords || [];
+      const tags = [item.category, ...articleKeywords.slice(0, 3), ...(item.tags || []).slice(0, 2)]
         .filter(Boolean)
         .filter((tag, index, list) => list.indexOf(tag) === index)
         .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
@@ -108,19 +122,21 @@
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
       const safeUrl = safeExternalUrl(item.url);
-      const summary = item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary;
+      const summary = displaySummary(item);
       const title = safeUrl
         ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle(item))}</a>`
         : escapeHtml(displayTitle(item));
       const originalEntry = safeUrl && isEnglishSourceItem(item)
         ? `<a class="original-entry" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">原文入口</a>`
         : "";
+      const originalTitle = item.title_original || item.title;
+      const translationText = translationLabel(item);
 
       return `
         <article class="feed-card">
           <div>
             <h3>${title}</h3>
-            ${item.translatedTitle && item.title && item.translatedTitle !== item.title ? `<p class="original-title">原文：${escapeHtml(item.title)}</p>` : ""}
+            ${originalTitle && displayTitle(item) !== originalTitle ? `<p class="original-title">原文：${escapeHtml(originalTitle)}</p>` : ""}
             ${renderSummary(summary)}
             <p class="impact-line"><span>意义/影响</span>${escapeHtml(impactText(item))}</p>
             ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}
@@ -130,6 +146,7 @@
               <span>采集 ${formatDate(item.fetchedAt)}</span>
               <span>${escapeHtml(sourceAuthorityLabel(item.sourceAuthority))}</span>
               <span>${escapeHtml(timelinessLabel(item.timelinessTier))}</span>
+              ${translationText ? `<span>${escapeHtml(translationText)}</span>` : ""}
               <span>${escapeHtml(item.sourceType || "rss")}${duplicateText}</span>
               ${originalEntry}
             </div>

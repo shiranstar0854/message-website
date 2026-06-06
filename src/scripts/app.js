@@ -98,6 +98,14 @@
     }).format(date);
   }
 
+  function formatTimelineDate(value) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(value || ""))) {
+      const [, month, day] = String(value).split("-");
+      return `${Number(month)}月${Number(day)}日`;
+    }
+    return formatShortDate(value);
+  }
+
   function renderDailyFocus(daily, data, health) {
     const meta = document.getElementById("daily-focus-meta");
     const grid = document.getElementById("daily-focus-grid");
@@ -137,15 +145,16 @@
   }
 
   function isEnglishSourceItem(item) {
-    return item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
+    return item.source_language === "en" || item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
   }
 
   function displayTitle(item) {
-    return item.titleZh || item.translatedTitle || item.title || "未命名信息";
+    return item.title_zh || item.titleZh || item.translatedTitle || item.title || "未命名信息";
   }
 
   function shortExplanation(item) {
-    return item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。";
+    const text = item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "暂无摘要。";
+    return text.length > 86 ? `${text.slice(0, 83).trimEnd()}...` : text;
   }
 
   function importanceText(item) {
@@ -155,7 +164,7 @@
   function impactAreas(item, data) {
     const areas = (item.impactAreas || []).length
       ? item.impactAreas
-      : (item.keywords || item.tags || []).slice(0, 4);
+      : (item.article_keywords || item.keywords || item.tags || []).slice(0, 4);
     return areas.length ? areas : [channelLabel(data, item.category)];
   }
 
@@ -179,7 +188,7 @@
   }
 
   function hotspotEventKey(item) {
-    const keywords = (item.impactAreas || item.keywords || item.tags || []).slice(0, 2).join("|").toLowerCase();
+    const keywords = (item.impactAreas || item.article_keywords || item.keywords || item.tags || []).slice(0, 2).join("|").toLowerCase();
     return keywords || String(displayTitle(item)).toLowerCase().slice(0, 24);
   }
 
@@ -206,26 +215,21 @@
       const summary = shortExplanation(item);
       const source = item.source || "公开来源";
       const updatedAt = formatShortDate(item.publishedAt);
+      const heat = Number(item.score || 0) >= 90 ? "高" : Number(item.score || 0) >= 75 ? "中" : "低";
       const cardContent = `
-        <div class="top-hotspot-rank">Top ${index + 1}</div>
+        <div class="top-hotspot-rank">#${index + 1}</div>
         <div class="top-hotspot-body">
           <h3>${escapeHtml(displayTitle(item))}</h3>
-          <p class="top-hotspot-summary"><span>摘要</span>${escapeHtml(summary)}</p>
-          ${index === 0 ? `
-            <p class="top-hotspot-why"><span>为什么重要</span>${escapeHtml(importanceText(item))}</p>
-          ` : ""}
-          <div class="top-hotspot-impact" aria-label="影响领域">
-            ${hotspotTags(item, data).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
-          </div>
+          <p class="top-hotspot-summary">${escapeHtml(summary)}</p>
+          <p class="top-hotspot-why">${escapeHtml(importanceText(item))}</p>
           <div class="top-hotspot-meta">
-            <span>${escapeHtml(channelLabel(data, item.category))}</span>
-            <span>来源 ${escapeHtml(source)}</span>
-            <span>更新 ${escapeHtml(updatedAt)}</span>
-            <strong>${Number(item.score || 0)}</strong>
+            <span>来源：${escapeHtml(source)}</span>
+            <span>热度：${heat}</span>
+            <span>更新时间：${escapeHtml(updatedAt)}</span>
           </div>
         </div>`;
       return `
-        <article class="top-hotspot-card${index === 0 ? " is-primary top-hotspot-main" : ""}">
+        <article class="top-hotspot-card top-hotspot-row${index === 0 ? " is-primary" : ""}">
           ${safeUrl
             ? `<a class="top-hotspot-link" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${cardContent}</a>`
             : `<div class="top-hotspot-link">${cardContent}</div>`}
@@ -233,65 +237,42 @@
       `;
     };
 
-    const [primary, ...secondary] = items;
-    container.innerHTML = `
-      ${renderHotspotCard(primary, 0)}
-      <div class="top-hotspot-secondary">
-        ${secondary.map((item, index) => renderHotspotCard(item, index + 1)).join("")}
-      </div>
-    `;
+    container.innerHTML = items.map((item, index) => renderHotspotCard(item, index)).join("");
   }
 
-  function renderTopEvents(eventData, data) {
-    const container = document.getElementById("top-hotspot-list");
-    if (!container) return false;
+  function renderHomeEvents(eventData) {
+    const container = document.getElementById("home-event-list");
+    if (!container) return;
     const events = [...(eventData.events || [])]
       .sort((left, right) => eventRankScore(right) - eventRankScore(left)
         || new Date(right.updatedAt || 0).getTime() - new Date(left.updatedAt || 0).getTime())
-      .slice(0, 5);
-    if (!events.length) return false;
+      .slice(0, 3);
+    if (!events.length) {
+      container.innerHTML = `<div class="empty-state compact-empty">暂无可追踪事件，信息流更新后会自动生成。</div>`;
+      return;
+    }
 
-    const renderEventCard = (event, index) => {
+    container.innerHTML = events.map((event) => {
       const evidence = event.evidenceItems || event.items || [];
-      const safeUrl = window.MessageChooseRender.safeExternalUrl(evidence[0]?.url);
-      const body = `
-        <div class="top-hotspot-rank">${index === 0 ? "最该看" : `Top ${index + 1}`}</div>
-        <div class="top-hotspot-body">
-          <h3>${escapeHtml(event.title || "重点事件")}</h3>
-          <p class="top-hotspot-summary"><span>发生了什么</span>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
-          <p class="top-hotspot-why"><span>为什么重要</span>${escapeHtml(event.whyItMatters || "该事件可能影响政策、市场或产业判断。")}</p>
-          <div class="top-hotspot-impact" aria-label="影响范围">
-            ${(event.impactAreas || event.keywords || []).slice(0, 3).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
-          </div>
-          ${index === 0 && event.watchlist?.length ? `
-            <ul class="top-hotspot-watchlist">
-              ${event.watchlist.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-            </ul>
-          ` : ""}
-          <div class="top-hotspot-meta">
-            <span>证据 ${Number(event.itemCount || evidence.length || 0)} 条</span>
-            <span>更新 ${escapeHtml(formatShortDate(event.updatedAt))}</span>
-            ${evidence[0]?.source ? `<span>来源 ${escapeHtml(evidence[0].source)}</span>` : ""}
-            <strong>${Number(evidence[0]?.score || 0)}</strong>
-          </div>
-        </div>`;
       return `
-        <article class="top-hotspot-card${index === 0 ? " is-primary top-hotspot-main" : ""}">
-          ${safeUrl
-            ? `<a class="top-hotspot-link" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${body}</a>`
-            : `<div class="top-hotspot-link">${body}</div>`}
+        <article class="home-event-card">
+          <div class="home-event-head">
+            <h3>${escapeHtml(event.title || "重点事件")}</h3>
+            <span>热度：${escapeHtml(event.heat || "中")}</span>
+          </div>
+          <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
+          <ol class="home-event-timeline">
+            ${(event.timeline || evidence).slice(-4).map((item) => `
+              <li>
+                <time>${escapeHtml(formatTimelineDate(item.date || item.publishedAt))}</time>
+                <span>${escapeHtml(item.title || "")}</span>
+              </li>
+            `).join("")}
+          </ol>
+          <a class="text-link" href="events.html">查看事件追踪</a>
         </article>
       `;
-    };
-
-    const [primary, ...secondary] = events;
-    container.innerHTML = `
-      ${renderEventCard(primary, 0)}
-      <div class="top-hotspot-secondary">
-        ${secondary.map((event, index) => renderEventCard(event, index + 1)).join("")}
-      </div>
-    `;
-    return true;
+    }).join("");
   }
 
   function eventRankScore(event) {
@@ -364,7 +345,8 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
-    if (!renderTopEvents(eventData, data)) renderTopHotspots(data);
+    renderTopHotspots(data);
+    renderHomeEvents(eventData);
     renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);

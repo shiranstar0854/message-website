@@ -1,6 +1,6 @@
 {
   "siteName": "Message Choose",
-  "generatedAt": "2026-06-06T07:07:28.781Z",
+  "generatedAt": "2026-06-06T08:07:41.325Z",
   "defaultLimit": 8,
   "totalItems": 40,
   "channels": {
@@ -14,6 +14,9 @@
           "id": "tech-item-40ffe19889",
           "sourceId": "most-work",
           "title": "科技部组织召开2026年全国科技监督工作会",
+          "title_original": "科技部组织召开2026年全国科技监督工作会",
+          "title_zh": "科技部组织召开2026年全国科技监督工作会",
+          "titleZh": "科技部组织召开2026年全国科技监督工作会",
           "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
           "source": "科技部工作动态",
           "sourceType": "webpage",
@@ -24,6 +27,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "daily",
           "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "summary_original": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "summary_zh": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "summaryZh": "科技部科技政策、科研合作、标准和创新体系工作动态",
           "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
           "impactAreas": [
             "AI",
@@ -31,10 +37,20 @@
             "年全国科技监督工作会",
             "科技部科技政策"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "tags": [
             "official-agency",
             "daily"
+          ],
+          "article_keywords": [
+            "AI",
+            "科技部组织召开",
+            "年全国科技监督工作会",
+            "科技部科技政策",
+            "科研合作",
+            "标准和创新体系工作动态"
           ],
           "keywords": [
             "AI",
@@ -51,6 +67,7 @@
           "id": "tech-google-ai-blog-f7238edb25",
           "sourceId": "google-ai",
           "title": "The latest AI news we announced in May 2026",
+          "title_original": "The latest AI news we announced in May 2026",
           "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
           "source": "Google AI Blog",
           "sourceType": "rss",
@@ -61,6 +78,7 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Here are Google’s latest AI updates from May 2026",
+          "summary_original": "Here are Google’s latest AI updates from May 2026",
           "contentExcerpt": "Here’s a recap of our biggest AI updates from May, including announcements from Google I/O 2026, the Android Show and Google Health. Google’s May 2026 updates center on the new \"agentic\" era, featuring the Gemini 3.5 model and Gemini Omni for advanced reasoning and creation. You can now use proactive tools like the updated Gemini app, Universal Cart for shopping, and the new Google Health app to manage your daily tasks more efficiently. Explore these features across new hardware, including th...",
           "impactAreas": [
             "AI",
@@ -68,7 +86,9 @@
             "Android",
             "Google DeepMind"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_social.width-1300.png",
           "tags": [
             "Search",
@@ -79,6 +99,16 @@
             "Google Health",
             "Shopping",
             "Google Cloud"
+          ],
+          "article_keywords": [
+            "AI",
+            "Search",
+            "Android",
+            "Google DeepMind",
+            "Google Labs",
+            "Quantum computing",
+            "Google Health",
+            "Shopping"
           ],
           "keywords": [
             "AI",
@@ -91,12 +121,14 @@
             "Shopping"
           ],
           "score": 93,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "tech-openai-news-f13346f127",
           "sourceId": "openai-news",
           "title": "Dreaming: Better memory for a more helpful ChatGPT",
+          "title_original": "Dreaming: Better memory for a more helpful ChatGPT",
           "url": "https://openai.com/index/chatgpt-memory-dreaming",
           "source": "OpenAI News",
           "sourceType": "rss",
@@ -107,6 +139,7 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+          "summary_original": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
           "contentExcerpt": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
           "impactAreas": [
             "Research",
@@ -114,9 +147,21 @@
             "Better",
             "memory"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "tags": [
             "Research"
+          ],
+          "article_keywords": [
+            "Research",
+            "Dreaming",
+            "Better",
+            "memory",
+            "for",
+            "helpful",
+            "ChatGPT",
+            "introduces"
           ],
           "keywords": [
             "Research",
@@ -129,7 +174,8 @@
             "introduces"
           ],
           "score": 82,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         }
       ]
     },
@@ -150,6 +196,7 @@
           "id": "business-github-blog-1ea8d75964",
           "sourceId": "github-blog",
           "title": "GitHub Universe is back: All together now, in the agentic era",
+          "title_original": "GitHub Universe is back: All together now, in the agentic era",
           "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
           "source": "GitHub Blog",
           "sourceType": "rss",
@@ -161,34 +208,49 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
+          "summary_original": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
           "contentExcerpt": "Ariel Kanter is a writer, editor, and content strategist. Her work has been featured in The New York Times, Vanity Fair, New York Magazine, and, of course, on GitHub. You can find her on Substack at Rel's Recs. Get inspired by five of the most memorable, magical, and quirky Universe sessions to date. From Appwrite to Zulip, Universe 2025’s Open Source Zone was stacked with standout projects showing just how far open source can go. Meet the maintainers—and if you want to join them in 2026, you...",
           "impactAreas": [
             "商业"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://github.blog/wp-content/uploads/2026/06/1200x630-U25-Blog-Hero_x2.png?fit=2400%2C1260",
           "tags": [
             "Company news",
             "News & insights",
             "GitHub Universe"
           ],
-          "keywords": [
+          "article_keywords": [
             "AI",
             "security",
+            "商业",
             "Company news",
             "News & insights",
             "GitHub Universe",
             "GitHub",
-            "Universe",
-            "back"
+            "Universe"
+          ],
+          "keywords": [
+            "AI",
+            "security",
+            "商业",
+            "Company news",
+            "News & insights",
+            "GitHub Universe",
+            "GitHub",
+            "Universe"
           ],
           "score": 97,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "business-openai-news-010cdd7fc8",
           "sourceId": "openai-news",
           "title": "How Endava is redesigning software delivery around AI agents",
+          "title_original": "How Endava is redesigning software delivery around AI agents",
           "url": "https://openai.com/index/endava-frontiers",
           "source": "OpenAI News",
           "sourceType": "rss",
@@ -200,29 +262,44 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+          "summary_original": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
           "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
           "impactAreas": [
             "商业"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "tags": [],
-          "keywords": [
+          "article_keywords": [
             "AI",
+            "商业",
             "地缘政治",
             "How",
             "Endava",
             "redesigning",
             "software",
-            "delivery",
-            "around"
+            "delivery"
+          ],
+          "keywords": [
+            "AI",
+            "商业",
+            "地缘政治",
+            "How",
+            "Endava",
+            "redesigning",
+            "software",
+            "delivery"
           ],
           "score": 90,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "business-u-s-sec-press-releases-e4acdcac84",
           "sourceId": "sec-press",
           "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
+          "title_original": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
           "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
           "source": "U.S. SEC Press Releases",
           "sourceType": "rss",
@@ -234,24 +311,38 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+          "summary_original": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
           "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
           "impactAreas": [
             "商业"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "tags": [],
-          "keywords": [
+          "article_keywords": [
+            "商业",
             "市场监管",
             "SEC",
             "Announces",
             "New",
             "Members",
             "Small",
-            "Business",
-            "Capital"
+            "Business"
+          ],
+          "keywords": [
+            "商业",
+            "市场监管",
+            "SEC",
+            "Announces",
+            "New",
+            "Members",
+            "Small",
+            "Business"
           ],
           "score": 88,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         }
       ]
     },
@@ -265,6 +356,9 @@
           "id": "macro-item-ff1cff3de8",
           "sourceId": "mof-news",
           "title": "蓝佛安会见新开发银行行长罗塞芙",
+          "title_original": "蓝佛安会见新开发银行行长罗塞芙",
+          "title_zh": "蓝佛安会见新开发银行行长罗塞芙",
+          "titleZh": "蓝佛安会见新开发银行行长罗塞芙",
           "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
           "source": "财政部财政新闻",
           "sourceType": "webpage",
@@ -276,17 +370,33 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "daily",
           "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
+          "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
+          "summaryZh": "财政部财政政策、国债、预算和财政运行新闻",
           "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
           "impactAreas": [
             "宏观"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "tags": [
             "official-agency",
             "daily"
           ],
+          "article_keywords": [
+            "AI",
+            "宏观",
+            "公共政策",
+            "蓝佛安会见新开发银行行长",
+            "罗塞芙",
+            "财政部财政政策",
+            "国债",
+            "预算和财政运行新闻"
+          ],
           "keywords": [
             "AI",
+            "宏观",
             "公共政策",
             "蓝佛安会见新开发银行行长",
             "罗塞芙",
@@ -301,6 +411,7 @@
           "id": "macro-nasa-breaking-news-cf72aeb8a7",
           "sourceId": "nasa-breaking-news",
           "title": "NASA Hosts 2026 Review on Advanced Composite Manufacturing",
+          "title_original": "NASA Hosts 2026 Review on Advanced Composite Manufacturing",
           "url": "https://www.nasa.gov/directorates/armd/aavp/hicam/nasa-hosts-2026-review-on-advanced-composite-manufacturing",
           "source": "NASA Breaking News",
           "sourceType": "rss",
@@ -312,28 +423,42 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
+          "summary_original": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
           "contentExcerpt": "Public Affairs Officer, NASA Langley Research Center NASA’s Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for a 2026 spring review at NASA’s Langley Research Center in Hampton, Virginia. The meeting took place May 5-7, bringing together about 150 people from the consortium, a 22-member public-private partnership. The review gave NASA and industry partners a chance to look at recent progress and plan for the w...",
           "impactAreas": [
             "宏观"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/boeing-hicam-feature.png",
           "tags": [
             "Hi-Rate Composite Aircraft Manufacturing",
             "Langley Research Center"
           ],
-          "keywords": [
+          "article_keywords": [
             "AI",
+            "宏观",
             "Langley Research Center",
             "NASA",
             "Hosts",
             "Review",
             "Advanced",
-            "Composite",
-            "Manufacturing"
+            "Composite"
+          ],
+          "keywords": [
+            "AI",
+            "宏观",
+            "Langley Research Center",
+            "NASA",
+            "Hosts",
+            "Review",
+            "Advanced",
+            "Composite"
           ],
           "score": 93,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         }
       ]
     },
@@ -347,6 +472,9 @@
           "id": "international-item-e9745422d0",
           "sourceId": "govcn-yaowen",
           "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+          "title_original": "外交部介绍习近平总书记访问朝鲜有关安排",
+          "title_zh": "外交部介绍习近平总书记访问朝鲜有关安排",
+          "titleZh": "外交部介绍习近平总书记访问朝鲜有关安排",
           "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -358,25 +486,40 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
           ],
-          "keywords": [
+          "article_keywords": [
+            "国际",
             "地缘政治",
             "公共政策",
             "外交部介绍习近平总书记访",
             "问朝鲜有关安排",
             "中国政府网要闻列表",
             "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "应朝鲜劳动党总书记"
+            "部门政策和公共事务即时发"
+          ],
+          "keywords": [
+            "国际",
+            "地缘政治",
+            "公共政策",
+            "外交部介绍习近平总书记访",
+            "问朝鲜有关安排",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发"
           ],
           "score": 97,
           "duplicateCount": 0
@@ -385,6 +528,9 @@
           "id": "international-item-95fdc76139",
           "sourceId": "govcn-yaowen",
           "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "title_original": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "title_zh": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "titleZh": "王毅会见下任联合国秘书长候选人巴切莱特",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -396,25 +542,40 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
           ],
-          "keywords": [
+          "article_keywords": [
+            "国际",
             "地缘政治",
             "公共政策",
             "王毅会见下任联合国秘书长",
             "候选人巴切莱特",
             "中国政府网要闻列表",
             "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "中共中央政治局委员"
+            "部门政策和公共事务即时发"
+          ],
+          "keywords": [
+            "国际",
+            "地缘政治",
+            "公共政策",
+            "王毅会见下任联合国秘书长",
+            "候选人巴切莱特",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发"
           ],
           "score": 97,
           "duplicateCount": 0
@@ -423,6 +584,7 @@
           "id": "international-un-news-0d967114c4",
           "sourceId": "un-news",
           "title": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
+          "title_original": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167655",
           "source": "UN News",
           "sourceType": "rss",
@@ -434,30 +596,45 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
+          "summary_original": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
           "contentExcerpt": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/25-09-2023-UNICEF-Sudan-refugees.jpg/image770x420cropped.jpg",
           "tags": [],
-          "keywords": [
+          "article_keywords": [
             "AI",
             "security",
+            "国际",
             "地缘政治",
             "市场监管",
             "World",
             "Brief",
-            "scales",
-            "Ebola"
+            "scales"
+          ],
+          "keywords": [
+            "AI",
+            "security",
+            "国际",
+            "地缘政治",
+            "市场监管",
+            "World",
+            "Brief",
+            "scales"
           ],
           "score": 96,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "international-un-news-149c8f462c",
           "sourceId": "un-news",
           "title": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
+          "title_original": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167653",
           "source": "UN News",
           "sourceType": "rss",
@@ -469,30 +646,45 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
+          "summary_original": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
           "contentExcerpt": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-UNICEF-Afghanistan.jpg/image770x420cropped.jpg",
           "tags": [],
-          "keywords": [
+          "article_keywords": [
             "AI",
             "security",
+            "国际",
             "地缘政治",
             "市场监管",
             "food",
             "lines",
-            "Somalia",
-            "clinics"
+            "Somalia"
+          ],
+          "keywords": [
+            "AI",
+            "security",
+            "国际",
+            "地缘政治",
+            "市场监管",
+            "food",
+            "lines",
+            "Somalia"
           ],
           "score": 96,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "international-nasa-breaking-news-d2f19946bb",
           "sourceId": "nasa-breaking-news",
           "title": "NASA-Funded Study Shows Wildfire Smoke’s Hidden Ozone Toll",
+          "title_original": "NASA-Funded Study Shows Wildfire Smoke’s Hidden Ozone Toll",
           "url": "https://science.nasa.gov/earth/nasa-funded-study-shows-wildfire-smokes-hidden-ozone-toll",
           "source": "NASA Breaking News",
           "sourceType": "rss",
@@ -504,12 +696,15 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
+          "summary_original": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
           "contentExcerpt": "Writer/Editor (IV), Earth Science Division Wildfire smoke is stoking a new challenge for cleaner air. A NASA-supported study published Thursday found that, over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames. Wildfires have become an increasingly important contributor to ground-level ozone, or smog, across much of the United States, researchers report June 4 in the journal Science...",
           "impactAreas": [
             "国际",
             "商业"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/articles/2026/goes-fp-cobbna-nam-jun2023_00231%20(1).png/jcr:content/renditions/cq5dam.web.1280.1280.png",
           "tags": [
             "Air Quality",
@@ -519,23 +714,35 @@
             "Human Dimensions",
             "Wildfires"
           ],
-          "keywords": [
+          "article_keywords": [
             "AI",
+            "国际",
+            "商业",
             "Air Quality",
             "Earth",
             "Earth's Atmosphere",
             "Goddard Space Flight Center",
-            "Human Dimensions",
-            "Wildfires",
-            "NASA-Funded"
+            "Human Dimensions"
+          ],
+          "keywords": [
+            "AI",
+            "国际",
+            "商业",
+            "Air Quality",
+            "Earth",
+            "Earth's Atmosphere",
+            "Goddard Space Flight Center",
+            "Human Dimensions"
           ],
           "score": 91,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "international-un-news-85d05adea9",
           "sourceId": "un-news",
           "title": "World Ocean Assessment highlights urgent need for science and global action",
+          "title_original": "World Ocean Assessment highlights urgent need for science and global action",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167646",
           "source": "UN News",
           "sourceType": "rss",
@@ -547,30 +754,45 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
+          "summary_original": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
           "contentExcerpt": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-Tahzib-Vevers-Earle-Cousteau.jpg/image770x420cropped.jpg",
           "tags": [],
-          "keywords": [
+          "article_keywords": [
             "AI",
+            "国际",
             "World",
             "Ocean",
             "Assessment",
             "highlights",
             "urgent",
-            "need",
-            "for"
+            "need"
+          ],
+          "keywords": [
+            "AI",
+            "国际",
+            "World",
+            "Ocean",
+            "Assessment",
+            "highlights",
+            "urgent",
+            "need"
           ],
           "score": 90,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "international-un-news-e5178a7935",
           "sourceId": "un-news",
           "title": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
+          "title_original": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167652",
           "source": "UN News",
           "sourceType": "rss",
@@ -582,30 +804,45 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
+          "summary_original": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
           "contentExcerpt": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-02-2022_UNICEF_Syria.jpg/image770x420cropped.jpg",
           "tags": [],
-          "keywords": [
+          "article_keywords": [
             "security",
+            "国际",
             "市场监管",
             "Undeclared",
             "chemical",
             "weapons",
             "found",
-            "Syria",
-            "including"
+            "Syria"
+          ],
+          "keywords": [
+            "security",
+            "国际",
+            "市场监管",
+            "Undeclared",
+            "chemical",
+            "weapons",
+            "found",
+            "Syria"
           ],
           "score": 88,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "international-nasa-breaking-news-b4239884e7",
           "sourceId": "nasa-breaking-news",
           "title": "Fighting Fire With Fire",
+          "title_original": "Fighting Fire With Fire",
           "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire",
           "source": "NASA Breaking News",
           "sourceType": "rss",
@@ -617,11 +854,14 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "In fire-prone ecosystems in Australia’s Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season.",
+          "summary_original": "In fire-prone ecosystems in Australia’s Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season.",
           "contentExcerpt": "In fire-prone ecosystems in Australia's Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season. In May and June of most years, NASA satellites typically begin to detect large numbers of wildland fires throughout the Top End and Arnhem Land regions of Australia’s Northern Territory. On some days, especially in the afternoon, the blazes can resemble sizable wildfires in satellite imagery, spreading widely and producing expansive smoke plumes. That was...",
           "impactAreas": [
             "国际"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fighting-fire-with-fire/australiafires_amo_20260528_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
           "tags": [
             "Aqua",
@@ -630,18 +870,29 @@
             "Wildfires",
             "Wildland Fire Management"
           ],
-          "keywords": [
+          "article_keywords": [
+            "国际",
             "Aqua",
             "Earth Observatory",
             "Wildfires",
             "Wildland Fire Management",
             "Fighting",
             "Fire",
-            "fire-prone",
-            "ecosystems"
+            "fire-prone"
+          ],
+          "keywords": [
+            "国际",
+            "Aqua",
+            "Earth Observatory",
+            "Wildfires",
+            "Wildland Fire Management",
+            "Fighting",
+            "Fire",
+            "fire-prone"
           ],
           "score": 84,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         }
       ]
     },
@@ -655,6 +906,9 @@
           "id": "news-item-551a8848e4",
           "sourceId": "govcn-yaowen",
           "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+          "title_original": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+          "title_zh": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+          "titleZh": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -665,6 +919,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "双方认为，中国共产党和老挝人革党肩负为人民谋幸福、为国家谋发展、为人类谋进步的历史使命。坚持党的领导和社会主义道路是中老关系的最鲜明本质特征，也是中老关系发展的最坚实政治基础。",
           "impactAreas": [
             "公共政策",
@@ -672,11 +929,23 @@
             "民主共和国关于构建新时代",
             "全天候中老命运共同体的联"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
+          ],
+          "article_keywords": [
+            "公共政策",
+            "中华人民共和国和老挝人民",
+            "民主共和国关于构建新时代",
+            "全天候中老命运共同体的联",
+            "合声明",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发"
           ],
           "keywords": [
             "公共政策",
@@ -695,6 +964,7 @@
           "id": "news-un-news-13de89631f",
           "sourceId": "un-news",
           "title": "AI’s environmental costs threaten water, land and climate",
+          "title_original": "AI’s environmental costs threaten water, land and climate",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
           "source": "UN News",
           "sourceType": "rss",
@@ -705,6 +975,7 @@
           "sourceAuthority": "media",
           "timelinessTier": "daily",
           "summary": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology&#039;s environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
+          "summary_original": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology&#039;s environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
           "contentExcerpt": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology's environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
           "impactAreas": [
             "AI",
@@ -712,9 +983,21 @@
             "AI政策",
             "地缘政治"
           ],
+          "source_language": "en",
           "sourceLanguage": "en",
+          "translation_status": "failed",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/05-06-2025-Unsplash-data-centre-02.jpg/image770x420cropped.jpg",
           "tags": [],
+          "article_keywords": [
+            "AI",
+            "artificial intelligence",
+            "AI政策",
+            "地缘政治",
+            "environmental",
+            "costs",
+            "threaten",
+            "water"
+          ],
           "keywords": [
             "AI",
             "artificial intelligence",
@@ -726,12 +1009,16 @@
             "water"
           ],
           "score": 97,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
           "id": "news-item-60e2d4f002",
           "sourceId": "govcn-yaowen",
           "title": "各地麦收高效推进 助力夏粮颗粒归仓",
+          "title_original": "各地麦收高效推进 助力夏粮颗粒归仓",
+          "title_zh": "各地麦收高效推进 助力夏粮颗粒归仓",
+          "titleZh": "各地麦收高效推进 助力夏粮颗粒归仓",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071307.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -742,6 +1029,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "当前，我国各地加快冬小麦收获进度，确保夏粮颗粒归仓。",
           "impactAreas": [
             "公共政策",
@@ -749,11 +1039,23 @@
             "助力夏粮颗粒归仓",
             "中国政府网要闻列表"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
+          ],
+          "article_keywords": [
+            "公共政策",
+            "各地麦收高效推进",
+            "助力夏粮颗粒归仓",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "当前",
+            "我国各地加快冬小麦收获进"
           ],
           "keywords": [
             "公共政策",
@@ -772,6 +1074,9 @@
           "id": "news-item-721d56f2cd",
           "sourceId": "govcn-yaowen",
           "title": "环境日：全民参与 共建美丽中国",
+          "title_original": "环境日：全民参与 共建美丽中国",
+          "title_zh": "环境日：全民参与 共建美丽中国",
+          "titleZh": "环境日：全民参与 共建美丽中国",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071305.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -782,6 +1087,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "6月5日，全国各地广泛开展生态环保主题宣传实践活动，倡导全社会积极行动起来，促进全面绿色转型，共建美丽中国。",
           "impactAreas": [
             "公共政策",
@@ -789,11 +1097,23 @@
             "全民参与",
             "共建美丽中国"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
+          ],
+          "article_keywords": [
+            "公共政策",
+            "环境日",
+            "全民参与",
+            "共建美丽中国",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "全国各地广泛开展生态环保"
           ],
           "keywords": [
             "公共政策",
@@ -812,6 +1132,9 @@
           "id": "news-item-1ae3da7d9d",
           "sourceId": "govcn-yaowen",
           "title": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+          "title_original": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+          "title_zh": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+          "titleZh": "李强会见老挝人民革命党中央总书记、国家主席通伦",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071287.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -822,6 +1145,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "6月5日上午，国务院总理李强在北京人民大会堂会见来华进行国事访问的老挝人民革命党中央总书记、国家主席通伦。",
           "impactAreas": [
             "公共政策",
@@ -829,11 +1155,23 @@
             "央总书记",
             "国家主席通伦"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
+          ],
+          "article_keywords": [
+            "公共政策",
+            "李强会见老挝人民革命党中",
+            "央总书记",
+            "国家主席通伦",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "日上午"
           ],
           "keywords": [
             "公共政策",
@@ -852,6 +1190,9 @@
           "id": "news-item-051403da52",
           "sourceId": "govcn-yaowen",
           "title": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+          "title_original": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+          "title_zh": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+          "titleZh": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071274.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -862,28 +1203,43 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "国务院总理李强6月5日主持召开国务院常务会议，听取关于做好就业工作的汇报，审议通过《实施就业优先战略“十五五”规划》，研究推进新型工业化有关工作，研究未来产业发展有关工作，审议通过《退役军人就业创业促进条例（草案）》。",
           "impactAreas": [
             "公共政策",
+            "商业",
             "李强主持召开国务院常务会",
-            "听取关于做好就业工作汇报",
-            "审议通过"
+            "听取关于做好就业工作汇报"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
           ],
-          "keywords": [
+          "article_keywords": [
             "公共政策",
+            "商业",
             "李强主持召开国务院常务会",
             "听取关于做好就业工作汇报",
             "审议通过",
             "实施就业优先战略",
             "十五五",
-            "规划",
-            "中国政府网要闻列表"
+            "规划"
+          ],
+          "keywords": [
+            "公共政策",
+            "商业",
+            "李强主持召开国务院常务会",
+            "听取关于做好就业工作汇报",
+            "审议通过",
+            "实施就业优先战略",
+            "十五五",
+            "规划"
           ],
           "score": 96,
           "duplicateCount": 0
@@ -892,6 +1248,9 @@
           "id": "news-item-a3ee3690e7",
           "sourceId": "govcn-yaowen",
           "title": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+          "title_original": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+          "title_zh": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+          "titleZh": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071268.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -902,6 +1261,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "6月5日下午，中共中央总书记、国家主席习近平在人民大会堂同来华进行国事访问的老挝人民革命党中央总书记、国家主席通伦举行会谈。",
           "impactAreas": [
             "公共政策",
@@ -909,11 +1271,23 @@
             "央总书记",
             "国家主席通伦举行会谈"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
+          ],
+          "article_keywords": [
+            "公共政策",
+            "习近平同老挝人民革命党中",
+            "央总书记",
+            "国家主席通伦举行会谈",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "日下午"
           ],
           "keywords": [
             "公共政策",
@@ -932,6 +1306,9 @@
           "id": "news-item-b247f3d2ab",
           "sourceId": "govcn-yaowen",
           "title": "国务院任免国家工作人员（2026年6月5日）",
+          "title_original": "国务院任免国家工作人员（2026年6月5日）",
+          "title_zh": "国务院任免国家工作人员（2026年6月5日）",
+          "titleZh": "国务院任免国家工作人员（2026年6月5日）",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071218.htm",
           "source": "中国政府网要闻",
           "sourceType": "webpage",
@@ -942,6 +1319,9 @@
           "sourceAuthority": "official-agency",
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "任命刘苏社为文化和旅游部副部长；任命洪宗明为退役军人事务部副部长；任命丁向群（女）为国家金融监督管理总局局长。",
           "impactAreas": [
             "公共政策",
@@ -949,11 +1329,23 @@
             "中国政府网要闻列表",
             "覆盖国务院"
           ],
+          "source_language": "zh",
           "sourceLanguage": "zh",
+          "translation_status": "not_required",
           "imageUrl": "https://www.gov.cn/images/150.jpg",
           "tags": [
             "official-agency",
             "hourly"
+          ],
+          "article_keywords": [
+            "公共政策",
+            "国务院任免国家工作人员",
+            "中国政府网要闻列表",
+            "覆盖国务院",
+            "部门政策和公共事务即时发",
+            "任命刘苏社为文化和旅游部",
+            "副部长",
+            "任命洪宗明为退役军人事务"
           ],
           "keywords": [
             "公共政策",
@@ -976,6 +1368,9 @@
       "id": "news-item-551a8848e4",
       "sourceId": "govcn-yaowen",
       "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+      "title_original": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+      "title_zh": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+      "titleZh": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -986,6 +1381,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "双方认为，中国共产党和老挝人革党肩负为人民谋幸福、为国家谋发展、为人类谋进步的历史使命。坚持党的领导和社会主义道路是中老关系的最鲜明本质特征，也是中老关系发展的最坚实政治基础。",
       "impactAreas": [
         "公共政策",
@@ -993,11 +1391,23 @@
         "民主共和国关于构建新时代",
         "全天候中老命运共同体的联"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "中华人民共和国和老挝人民",
+        "民主共和国关于构建新时代",
+        "全天候中老命运共同体的联",
+        "合声明",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
       ],
       "keywords": [
         "公共政策",
@@ -1016,6 +1426,9 @@
       "id": "macro-item-ff1cff3de8",
       "sourceId": "mof-news",
       "title": "蓝佛安会见新开发银行行长罗塞芙",
+      "title_original": "蓝佛安会见新开发银行行长罗塞芙",
+      "title_zh": "蓝佛安会见新开发银行行长罗塞芙",
+      "titleZh": "蓝佛安会见新开发银行行长罗塞芙",
       "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
       "source": "财政部财政新闻",
       "sourceType": "webpage",
@@ -1027,17 +1440,33 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
+      "summaryZh": "财政部财政政策、国债、预算和财政运行新闻",
       "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
       "impactAreas": [
         "宏观"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "tags": [
         "official-agency",
         "daily"
       ],
+      "article_keywords": [
+        "AI",
+        "宏观",
+        "公共政策",
+        "蓝佛安会见新开发银行行长",
+        "罗塞芙",
+        "财政部财政政策",
+        "国债",
+        "预算和财政运行新闻"
+      ],
       "keywords": [
         "AI",
+        "宏观",
         "公共政策",
         "蓝佛安会见新开发银行行长",
         "罗塞芙",
@@ -1052,6 +1481,9 @@
       "id": "tech-item-40ffe19889",
       "sourceId": "most-work",
       "title": "科技部组织召开2026年全国科技监督工作会",
+      "title_original": "科技部组织召开2026年全国科技监督工作会",
+      "title_zh": "科技部组织召开2026年全国科技监督工作会",
+      "titleZh": "科技部组织召开2026年全国科技监督工作会",
       "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
       "source": "科技部工作动态",
       "sourceType": "webpage",
@@ -1062,6 +1494,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "summary_original": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "summary_zh": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "summaryZh": "科技部科技政策、科研合作、标准和创新体系工作动态",
       "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
       "impactAreas": [
         "AI",
@@ -1069,10 +1504,20 @@
         "年全国科技监督工作会",
         "科技部科技政策"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "tags": [
         "official-agency",
         "daily"
+      ],
+      "article_keywords": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策",
+        "科研合作",
+        "标准和创新体系工作动态"
       ],
       "keywords": [
         "AI",
@@ -1089,6 +1534,9 @@
       "id": "international-item-e9745422d0",
       "sourceId": "govcn-yaowen",
       "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+      "title_original": "外交部介绍习近平总书记访问朝鲜有关安排",
+      "title_zh": "外交部介绍习近平总书记访问朝鲜有关安排",
+      "titleZh": "外交部介绍习近平总书记访问朝鲜有关安排",
       "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1100,25 +1548,40 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
       ],
-      "keywords": [
+      "article_keywords": [
+        "国际",
         "地缘政治",
         "公共政策",
         "外交部介绍习近平总书记访",
         "问朝鲜有关安排",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "应朝鲜劳动党总书记"
+        "部门政策和公共事务即时发"
+      ],
+      "keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "外交部介绍习近平总书记访",
+        "问朝鲜有关安排",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
       ],
       "score": 97,
       "duplicateCount": 0
@@ -1127,6 +1590,9 @@
       "id": "international-item-95fdc76139",
       "sourceId": "govcn-yaowen",
       "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+      "title_original": "王毅会见下任联合国秘书长候选人巴切莱特",
+      "title_zh": "王毅会见下任联合国秘书长候选人巴切莱特",
+      "titleZh": "王毅会见下任联合国秘书长候选人巴切莱特",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1138,25 +1604,40 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中共中央政治局委员、外交部长王毅4日在京会见下任联合国秘书长候选人、智利前总统巴切莱特。",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
       ],
-      "keywords": [
+      "article_keywords": [
+        "国际",
         "地缘政治",
         "公共政策",
         "王毅会见下任联合国秘书长",
         "候选人巴切莱特",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "中共中央政治局委员"
+        "部门政策和公共事务即时发"
+      ],
+      "keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "王毅会见下任联合国秘书长",
+        "候选人巴切莱特",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
       ],
       "score": 97,
       "duplicateCount": 0
@@ -1165,6 +1646,7 @@
       "id": "business-github-blog-1ea8d75964",
       "sourceId": "github-blog",
       "title": "GitHub Universe is back: All together now, in the agentic era",
+      "title_original": "GitHub Universe is back: All together now, in the agentic era",
       "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
       "source": "GitHub Blog",
       "sourceType": "rss",
@@ -1176,34 +1658,49 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
+      "summary_original": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
       "contentExcerpt": "Ariel Kanter is a writer, editor, and content strategist. Her work has been featured in The New York Times, Vanity Fair, New York Magazine, and, of course, on GitHub. You can find her on Substack at Rel's Recs. Get inspired by five of the most memorable, magical, and quirky Universe sessions to date. From Appwrite to Zulip, Universe 2025’s Open Source Zone was stacked with standout projects showing just how far open source can go. Meet the maintainers—and if you want to join them in 2026, you...",
       "impactAreas": [
         "商业"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/06/1200x630-U25-Blog-Hero_x2.png?fit=2400%2C1260",
       "tags": [
         "Company news",
         "News & insights",
         "GitHub Universe"
       ],
-      "keywords": [
+      "article_keywords": [
         "AI",
         "security",
+        "商业",
         "Company news",
         "News & insights",
         "GitHub Universe",
         "GitHub",
-        "Universe",
-        "back"
+        "Universe"
+      ],
+      "keywords": [
+        "AI",
+        "security",
+        "商业",
+        "Company news",
+        "News & insights",
+        "GitHub Universe",
+        "GitHub",
+        "Universe"
       ],
       "score": 97,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-un-news-13de89631f",
       "sourceId": "un-news",
       "title": "AI’s environmental costs threaten water, land and climate",
+      "title_original": "AI’s environmental costs threaten water, land and climate",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
       "source": "UN News",
       "sourceType": "rss",
@@ -1214,6 +1711,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology&#039;s environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
+      "summary_original": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology&#039;s environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
       "contentExcerpt": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology's environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
       "impactAreas": [
         "AI",
@@ -1221,9 +1719,21 @@
         "AI政策",
         "地缘政治"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/05-06-2025-Unsplash-data-centre-02.jpg/image770x420cropped.jpg",
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "artificial intelligence",
+        "AI政策",
+        "地缘政治",
+        "environmental",
+        "costs",
+        "threaten",
+        "water"
+      ],
       "keywords": [
         "AI",
         "artificial intelligence",
@@ -1235,12 +1745,16 @@
         "water"
       ],
       "score": 97,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-item-60e2d4f002",
       "sourceId": "govcn-yaowen",
       "title": "各地麦收高效推进 助力夏粮颗粒归仓",
+      "title_original": "各地麦收高效推进 助力夏粮颗粒归仓",
+      "title_zh": "各地麦收高效推进 助力夏粮颗粒归仓",
+      "titleZh": "各地麦收高效推进 助力夏粮颗粒归仓",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071307.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1251,6 +1765,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "当前，我国各地加快冬小麦收获进度，确保夏粮颗粒归仓。",
       "impactAreas": [
         "公共政策",
@@ -1258,11 +1775,23 @@
         "助力夏粮颗粒归仓",
         "中国政府网要闻列表"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "各地麦收高效推进",
+        "助力夏粮颗粒归仓",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当前",
+        "我国各地加快冬小麦收获进"
       ],
       "keywords": [
         "公共政策",
@@ -1281,6 +1810,9 @@
       "id": "news-item-721d56f2cd",
       "sourceId": "govcn-yaowen",
       "title": "环境日：全民参与 共建美丽中国",
+      "title_original": "环境日：全民参与 共建美丽中国",
+      "title_zh": "环境日：全民参与 共建美丽中国",
+      "titleZh": "环境日：全民参与 共建美丽中国",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071305.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1291,6 +1823,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月5日，全国各地广泛开展生态环保主题宣传实践活动，倡导全社会积极行动起来，促进全面绿色转型，共建美丽中国。",
       "impactAreas": [
         "公共政策",
@@ -1298,11 +1833,23 @@
         "全民参与",
         "共建美丽中国"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "环境日",
+        "全民参与",
+        "共建美丽中国",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "全国各地广泛开展生态环保"
       ],
       "keywords": [
         "公共政策",
@@ -1321,6 +1868,9 @@
       "id": "news-item-1ae3da7d9d",
       "sourceId": "govcn-yaowen",
       "title": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+      "title_original": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+      "title_zh": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+      "titleZh": "李强会见老挝人民革命党中央总书记、国家主席通伦",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071287.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1331,6 +1881,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月5日上午，国务院总理李强在北京人民大会堂会见来华进行国事访问的老挝人民革命党中央总书记、国家主席通伦。",
       "impactAreas": [
         "公共政策",
@@ -1338,11 +1891,23 @@
         "央总书记",
         "国家主席通伦"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "李强会见老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日上午"
       ],
       "keywords": [
         "公共政策",
@@ -1361,6 +1926,9 @@
       "id": "news-item-051403da52",
       "sourceId": "govcn-yaowen",
       "title": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+      "title_original": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+      "title_zh": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+      "titleZh": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071274.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1371,28 +1939,43 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "国务院总理李强6月5日主持召开国务院常务会议，听取关于做好就业工作的汇报，审议通过《实施就业优先战略“十五五”规划》，研究推进新型工业化有关工作，研究未来产业发展有关工作，审议通过《退役军人就业创业促进条例（草案）》。",
       "impactAreas": [
         "公共政策",
+        "商业",
         "李强主持召开国务院常务会",
-        "听取关于做好就业工作汇报",
-        "审议通过"
+        "听取关于做好就业工作汇报"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
       ],
-      "keywords": [
+      "article_keywords": [
         "公共政策",
+        "商业",
         "李强主持召开国务院常务会",
         "听取关于做好就业工作汇报",
         "审议通过",
         "实施就业优先战略",
         "十五五",
-        "规划",
-        "中国政府网要闻列表"
+        "规划"
+      ],
+      "keywords": [
+        "公共政策",
+        "商业",
+        "李强主持召开国务院常务会",
+        "听取关于做好就业工作汇报",
+        "审议通过",
+        "实施就业优先战略",
+        "十五五",
+        "规划"
       ],
       "score": 96,
       "duplicateCount": 0
@@ -1401,6 +1984,9 @@
       "id": "news-item-a3ee3690e7",
       "sourceId": "govcn-yaowen",
       "title": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+      "title_original": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+      "title_zh": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+      "titleZh": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071268.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1411,6 +1997,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月5日下午，中共中央总书记、国家主席习近平在人民大会堂同来华进行国事访问的老挝人民革命党中央总书记、国家主席通伦举行会谈。",
       "impactAreas": [
         "公共政策",
@@ -1418,11 +2007,23 @@
         "央总书记",
         "国家主席通伦举行会谈"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平同老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦举行会谈",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日下午"
       ],
       "keywords": [
         "公共政策",
@@ -1441,6 +2042,9 @@
       "id": "news-item-b247f3d2ab",
       "sourceId": "govcn-yaowen",
       "title": "国务院任免国家工作人员（2026年6月5日）",
+      "title_original": "国务院任免国家工作人员（2026年6月5日）",
+      "title_zh": "国务院任免国家工作人员（2026年6月5日）",
+      "titleZh": "国务院任免国家工作人员（2026年6月5日）",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071218.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1451,6 +2055,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "任命刘苏社为文化和旅游部副部长；任命洪宗明为退役军人事务部副部长；任命丁向群（女）为国家金融监督管理总局局长。",
       "impactAreas": [
         "公共政策",
@@ -1458,11 +2065,23 @@
         "中国政府网要闻列表",
         "覆盖国务院"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "国务院任免国家工作人员",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "任命刘苏社为文化和旅游部",
+        "副部长",
+        "任命洪宗明为退役军人事务"
       ],
       "keywords": [
         "公共政策",
@@ -1481,6 +2100,9 @@
       "id": "news-item-392bfbad6c",
       "sourceId": "govcn-yaowen",
       "title": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
+      "title_original": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
+      "title_zh": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
+      "titleZh": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
       "url": "https://www.gov.cn/zhengce/content/202606/content_7071204.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1491,6 +2113,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "为做好私募投资基金加强监管、防范风险工作，促进私募基金高质量发展，经国务院同意，现提出以下意见。",
       "impactAreas": [
         "AI政策",
@@ -1498,11 +2123,23 @@
         "市场监管",
         "国务院办公厅关于加强监管"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "AI政策",
+        "公共政策",
+        "市场监管",
+        "国务院办公厅关于加强监管",
+        "防范风险促进私募投资基金",
+        "高质量发展的指导意见",
+        "中国政府网要闻列表",
+        "覆盖国务院"
       ],
       "keywords": [
         "AI政策",
@@ -1521,6 +2158,9 @@
       "id": "news-item-29c1ff9b38",
       "sourceId": "govcn-yaowen",
       "title": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "title_original": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "title_zh": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "titleZh": "习近平将对朝鲜民主主义人民共和国进行国事访问",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1531,6 +2171,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中共中央对外联络部发言人5日宣布：应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
       "impactAreas": [
         "公共政策",
@@ -1538,11 +2181,23 @@
         "民共和国进行国事访问",
         "中国政府网要闻列表"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "中共中央对外联络部发言人",
+        "日宣布"
       ],
       "keywords": [
         "公共政策",
@@ -1561,6 +2216,9 @@
       "id": "news-item-4e93b6412d",
       "sourceId": "govcn-yaowen",
       "title": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+      "title_original": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+      "title_zh": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+      "titleZh": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071077.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1571,6 +2229,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月5日是世界环境日，今年我国环境日主题为“全面绿色转型，共建美丽中国”。",
       "impactAreas": [
         "公共政策",
@@ -1578,11 +2239,23 @@
         "践行习近平生态文明思想的",
         "时代答卷"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "共建天蓝地绿水清的美丽家",
+        "践行习近平生态文明思想的",
+        "时代答卷",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日是世界环境日"
       ],
       "keywords": [
         "公共政策",
@@ -1601,6 +2274,9 @@
       "id": "news-item-16e35179cd",
       "sourceId": "govcn-yaowen",
       "title": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+      "title_original": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+      "title_zh": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+      "titleZh": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
@@ -1611,6 +2287,9 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "水运连着国运。在推进中国式现代化新征程上，习近平总书记深入思考世情、国情、水情，作出重要论断，“推进中国式现代化，要把水资源问题考虑进去”。",
       "impactAreas": [
         "公共政策",
@@ -1618,11 +2297,23 @@
         "推进中国式现代化",
         "要把水资源问题考虑进去"
       ],
+      "source_language": "zh",
       "sourceLanguage": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "总书记的人民情怀",
+        "推进中国式现代化",
+        "要把水资源问题考虑进去",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "水运连着国运"
       ],
       "keywords": [
         "公共政策",
@@ -1641,6 +2332,7 @@
       "id": "international-un-news-0d967114c4",
       "sourceId": "un-news",
       "title": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
+      "title_original": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167655",
       "source": "UN News",
       "sourceType": "rss",
@@ -1652,30 +2344,45 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
+      "summary_original": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
       "contentExcerpt": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/25-09-2023-UNICEF-Sudan-refugees.jpg/image770x420cropped.jpg",
       "tags": [],
-      "keywords": [
+      "article_keywords": [
         "AI",
         "security",
+        "国际",
         "地缘政治",
         "市场监管",
         "World",
         "Brief",
-        "scales",
-        "Ebola"
+        "scales"
+      ],
+      "keywords": [
+        "AI",
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "World",
+        "Brief",
+        "scales"
       ],
       "score": 96,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "international-un-news-149c8f462c",
       "sourceId": "un-news",
       "title": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
+      "title_original": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167653",
       "source": "UN News",
       "sourceType": "rss",
@@ -1687,30 +2394,45 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
+      "summary_original": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
       "contentExcerpt": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-UNICEF-Afghanistan.jpg/image770x420cropped.jpg",
       "tags": [],
-      "keywords": [
+      "article_keywords": [
         "AI",
         "security",
+        "国际",
         "地缘政治",
         "市场监管",
         "food",
         "lines",
-        "Somalia",
-        "clinics"
+        "Somalia"
+      ],
+      "keywords": [
+        "AI",
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "food",
+        "lines",
+        "Somalia"
       ],
       "score": 96,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-nasa-breaking-news-7ff8c68b85",
       "sourceId": "nasa-breaking-news",
       "title": "NASA&#8217;s X-59 Aircraft Flies Supersonic for First Time",
+      "title_original": "NASA&#8217;s X-59 Aircraft Flies Supersonic for First Time",
       "url": "https://www.nasa.gov/aeronautics/x-59-first-supersonic-flight",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1721,6 +2443,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA’s&#160;experimental&#160;X-59&#160;aircraft&#160;marked&#160;a major milestone&#160;Friday,&#160;June&#160;5,&#160;when it&#160;flew faster than the speed of sound for the first time,&#160;setting the stage for&#160;demonstrating&#160;its quiet supersonic capabilities&#160;later this year.&#160; NASA test pilot Jim “Clue” Less&#160;took off&#160;and landed&#160;at Edwards Air Force Base&#160;in California, reaching a top speed of&#160;approximately&#160;Mach&#160;1.1&#160;(713&#160;mph)&...",
+      "summary_original": "NASA’s&#160;experimental&#160;X-59&#160;aircraft&#160;marked&#160;a major milestone&#160;Friday,&#160;June&#160;5,&#160;when it&#160;flew faster than the speed of sound for the first time,&#160;setting the stage for&#160;demonstrating&#160;its quiet supersonic capabilities&#160;later this year.&#160; NASA test pilot Jim “Clue” Less&#160;took off&#160;and landed&#160;at Edwards Air Force Base&#160;in California, reaching a top speed of&#160;approximately&#160;Mach&#160;1.1&#160;(713&#160;mph)&...",
       "contentExcerpt": "NASA’s experimental X-59 aircraft marked a major milestone Friday, June 5, when it flew faster than the speed of sound for the first time, setting the stage for demonstrating its quiet supersonic capabilities later this year. NASA test pilot Jim “Clue” Less took off and landed at Edwards Air Force Base in California, reaching a top speed of approximately Mach 1.1 (713 mph) and altitude of 43,400 feet. The X-59’s flight began at 11:08 a.m. PDT and lasted 81 minutes, with the team focusing on f...",
       "impactAreas": [
         "AI",
@@ -1728,7 +2451,9 @@
         "Low Boom Flight Demonstrator",
         "NASA Aircraft"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/x59-first-supersonic-flight-m-1-077-clean.jpg",
       "tags": [
         "Aeronautics",
@@ -1737,6 +2462,16 @@
         "NASA Aircraft",
         "Quesst: The Flights",
         "Supersonic Flight"
+      ],
+      "article_keywords": [
+        "AI",
+        "Aeronautics",
+        "Low Boom Flight Demonstrator",
+        "NASA Aircraft",
+        "Quesst: The Flights",
+        "Supersonic Flight",
+        "地缘政治",
+        "NASA"
       ],
       "keywords": [
         "AI",
@@ -1749,12 +2484,14 @@
         "NASA"
       ],
       "score": 93,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-nasa-breaking-news-84c76e79e5",
       "sourceId": "nasa-breaking-news",
       "title": "NASA Concludes Antenna Mishap Investigation, Releases Report",
+      "title_original": "NASA Concludes Antenna Mishap Investigation, Releases Report",
       "url": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/nasa-concludes-antenna-mishap-investigation-releases-report",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1765,6 +2502,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA has completed the investigation into the damage sustained last year at its 70-meter radio-frequency antenna, known as the Deep Space Station 14 (DSS-14), at the Goldstone Deep Space Communications Complex near Barstow, California. The agency has classified the event as a Type A mishap based on the total cost of damages. The antenna will [&#8230;]",
+      "summary_original": "NASA has completed the investigation into the damage sustained last year at its 70-meter radio-frequency antenna, known as the Deep Space Station 14 (DSS-14), at the Goldstone Deep Space Communications Complex near Barstow, California. The agency has classified the event as a Type A mishap based on the total cost of damages. The antenna will [&#8230;]",
       "contentExcerpt": "NASA has completed the investigation into the damage sustained last year at its 70-meter radio-frequency antenna, known as the Deep Space Station 14 (DSS-14), at the Goldstone Deep Space Communications Complex near Barstow, California. The agency has classified the event as a Type A mishap based on the total cost of damages. The antenna will remain offline to complete repairs and previously scheduled upgrades. “NASA takes safety and any departure from established procedures seriously, and the...",
       "impactAreas": [
         "AI",
@@ -1772,12 +2510,24 @@
         "AI政策",
         "NASA"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/01/sunsetatgoldstone-1.jpg",
       "tags": [
         "Space Communications & Navigation Program",
         "Communicating and Navigating with Missions",
         "Deep Space Network"
+      ],
+      "article_keywords": [
+        "AI",
+        "Deep Space Network",
+        "AI政策",
+        "NASA",
+        "Concludes",
+        "Antenna",
+        "Mishap",
+        "Investigation"
       ],
       "keywords": [
         "AI",
@@ -1790,12 +2540,14 @@
         "Investigation"
       ],
       "score": 93,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-nasa-breaking-news-7933a15baa",
       "sourceId": "nasa-breaking-news",
       "title": "First Steps: America’s Grueling Second Spacewalk",
+      "title_original": "First Steps: America’s Grueling Second Spacewalk",
       "url": "https://www.nasa.gov/image-article/first-steps-americas-grueling-second-spacewalk",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1806,6 +2558,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "One year after Gemini IV astronaut Edward H. White completed NASA’s first spacewalk the agency prepared for a demanding second excursion. Originally scheduled for Gemini VIII, the extravehicular activity (EVA) was reassigned to Gemini IX-A after that mission ended early, with Gene Cernan taking on the task. On June 5, 1966—the mission’s third day—Cernan exited [&#8230;]",
+      "summary_original": "One year after Gemini IV astronaut Edward H. White completed NASA’s first spacewalk the agency prepared for a demanding second excursion. Originally scheduled for Gemini VIII, the extravehicular activity (EVA) was reassigned to Gemini IX-A after that mission ended early, with Gene Cernan taking on the task. On June 5, 1966—the mission’s third day—Cernan exited [&#8230;]",
       "contentExcerpt": "One year after Gemini IV astronaut Edward H. White completed NASA’s first spacewalk the agency prepared for a demanding second excursion. Originally scheduled for Gemini VIII, the extravehicular activity (EVA) was reassigned to Gemini IX-A after that mission ended early, with Gene Cernan taking on the task. On June 5, 1966—the mission’s third day—Cernan exited the spacecraft and quickly found himself fighting his own equipment. His spacesuit was so rigid that even simple movements required in...",
       "impactAreas": [
         "AI",
@@ -1813,11 +2566,23 @@
         "Gemini",
         "地缘政治"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/s66-38515orig.jpg",
       "tags": [
         "Eugene A. Cernan",
         "Gemini"
+      ],
+      "article_keywords": [
+        "AI",
+        "Eugene A. Cernan",
+        "Gemini",
+        "地缘政治",
+        "市场监管",
+        "First",
+        "Steps",
+        "America"
       ],
       "keywords": [
         "AI",
@@ -1830,12 +2595,14 @@
         "America"
       ],
       "score": 93,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "tech-google-ai-blog-f7238edb25",
       "sourceId": "google-ai",
       "title": "The latest AI news we announced in May 2026",
+      "title_original": "The latest AI news we announced in May 2026",
       "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
       "source": "Google AI Blog",
       "sourceType": "rss",
@@ -1846,6 +2613,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Here are Google’s latest AI updates from May 2026",
+      "summary_original": "Here are Google’s latest AI updates from May 2026",
       "contentExcerpt": "Here’s a recap of our biggest AI updates from May, including announcements from Google I/O 2026, the Android Show and Google Health. Google’s May 2026 updates center on the new \"agentic\" era, featuring the Gemini 3.5 model and Gemini Omni for advanced reasoning and creation. You can now use proactive tools like the updated Gemini app, Universal Cart for shopping, and the new Google Health app to manage your daily tasks more efficiently. Explore these features across new hardware, including th...",
       "impactAreas": [
         "AI",
@@ -1853,7 +2621,9 @@
         "Android",
         "Google DeepMind"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_social.width-1300.png",
       "tags": [
         "Search",
@@ -1864,6 +2634,16 @@
         "Google Health",
         "Shopping",
         "Google Cloud"
+      ],
+      "article_keywords": [
+        "AI",
+        "Search",
+        "Android",
+        "Google DeepMind",
+        "Google Labs",
+        "Quantum computing",
+        "Google Health",
+        "Shopping"
       ],
       "keywords": [
         "AI",
@@ -1876,12 +2656,14 @@
         "Shopping"
       ],
       "score": 93,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "macro-nasa-breaking-news-cf72aeb8a7",
       "sourceId": "nasa-breaking-news",
       "title": "NASA Hosts 2026 Review on Advanced Composite Manufacturing",
+      "title_original": "NASA Hosts 2026 Review on Advanced Composite Manufacturing",
       "url": "https://www.nasa.gov/directorates/armd/aavp/hicam/nasa-hosts-2026-review-on-advanced-composite-manufacturing",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1893,33 +2675,48 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
+      "summary_original": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
       "contentExcerpt": "Public Affairs Officer, NASA Langley Research Center NASA’s Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for a 2026 spring review at NASA’s Langley Research Center in Hampton, Virginia. The meeting took place May 5-7, bringing together about 150 people from the consortium, a 22-member public-private partnership. The review gave NASA and industry partners a chance to look at recent progress and plan for the w...",
       "impactAreas": [
         "宏观"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/boeing-hicam-feature.png",
       "tags": [
         "Hi-Rate Composite Aircraft Manufacturing",
         "Langley Research Center"
       ],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "宏观",
         "Langley Research Center",
         "NASA",
         "Hosts",
         "Review",
         "Advanced",
-        "Composite",
-        "Manufacturing"
+        "Composite"
+      ],
+      "keywords": [
+        "AI",
+        "宏观",
+        "Langley Research Center",
+        "NASA",
+        "Hosts",
+        "Review",
+        "Advanced",
+        "Composite"
       ],
       "score": 93,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-un-news-1941638a36",
       "sourceId": "un-news",
       "title": "Haiti: Harrowing needs must be met with long-term engagement",
+      "title_original": "Haiti: Harrowing needs must be met with long-term engagement",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167661",
       "source": "UN News",
       "sourceType": "rss",
@@ -1930,6 +2727,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Escalating gang violence across Haiti has pushed displacement to record levels, deepening an already severe humanitarian crisis and leaving nearly 1.5 million people without a stable place to live, according to new figures released Friday by the UN migration agency, IOM.",
+      "summary_original": "Escalating gang violence across Haiti has pushed displacement to record levels, deepening an already severe humanitarian crisis and leaving nearly 1.5 million people without a stable place to live, according to new figures released Friday by the UN migration agency, IOM.",
       "contentExcerpt": "Escalating gang violence across Haiti has pushed displacement to record levels, deepening an already severe humanitarian crisis and leaving nearly 1.5 million people without a stable place to live, according to new figures released Friday by the UN migration agency, IOM.",
       "impactAreas": [
         "AI",
@@ -1937,9 +2735,21 @@
         "Harrowing",
         "needs"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/21-05-2026_WFP_Haiti-04.jpg/image770x420cropped.jpg",
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "Haiti",
+        "Harrowing",
+        "needs",
+        "must",
+        "met",
+        "long-term",
+        "engagement"
+      ],
       "keywords": [
         "AI",
         "Haiti",
@@ -1950,13 +2760,15 @@
         "long-term",
         "engagement"
       ],
-      "score": 92,
-      "duplicateCount": 0
+      "score": 91,
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "international-nasa-breaking-news-d2f19946bb",
       "sourceId": "nasa-breaking-news",
       "title": "NASA-Funded Study Shows Wildfire Smoke’s Hidden Ozone Toll",
+      "title_original": "NASA-Funded Study Shows Wildfire Smoke’s Hidden Ozone Toll",
       "url": "https://science.nasa.gov/earth/nasa-funded-study-shows-wildfire-smokes-hidden-ozone-toll",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -1968,12 +2780,15 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
+      "summary_original": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
       "contentExcerpt": "Writer/Editor (IV), Earth Science Division Wildfire smoke is stoking a new challenge for cleaner air. A NASA-supported study published Thursday found that, over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames. Wildfires have become an increasingly important contributor to ground-level ozone, or smog, across much of the United States, researchers report June 4 in the journal Science...",
       "impactAreas": [
         "国际",
         "商业"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/articles/2026/goes-fp-cobbna-nam-jun2023_00231%20(1).png/jcr:content/renditions/cq5dam.web.1280.1280.png",
       "tags": [
         "Air Quality",
@@ -1983,23 +2798,35 @@
         "Human Dimensions",
         "Wildfires"
       ],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "国际",
+        "商业",
         "Air Quality",
         "Earth",
         "Earth's Atmosphere",
         "Goddard Space Flight Center",
-        "Human Dimensions",
-        "Wildfires",
-        "NASA-Funded"
+        "Human Dimensions"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "商业",
+        "Air Quality",
+        "Earth",
+        "Earth's Atmosphere",
+        "Goddard Space Flight Center",
+        "Human Dimensions"
       ],
       "score": 91,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-nasa-breaking-news-47bf1dc087",
       "sourceId": "nasa-breaking-news",
       "title": "Colorful, Chaotic Jupiter",
+      "title_original": "Colorful, Chaotic Jupiter",
       "url": "https://www.nasa.gov/image-article/colorful-chaotic-jupiter",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -2010,6 +2837,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA&#8217;s Juno spacecraft captured this color-enhanced view of Jupiter&#8217;s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds [&#8230;]",
+      "summary_original": "NASA&#8217;s Juno spacecraft captured this color-enhanced view of Jupiter&#8217;s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds [&#8230;]",
       "contentExcerpt": "NASA’s Juno spacecraft captured this color-enhanced view of Jupiter’s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds and cyclonic storms in an area known to scientists as a folded filamentary region. In these regions, the zonal jets that create the famili...",
       "impactAreas": [
         "AI",
@@ -2017,9 +2845,21 @@
         "Chaotic",
         "Jupiter"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/pia25729orig.jpg",
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "Colorful",
+        "Chaotic",
+        "Jupiter",
+        "NASA",
+        "Juno",
+        "spacecraft",
+        "captured"
+      ],
       "keywords": [
         "AI",
         "Colorful",
@@ -2031,12 +2871,14 @@
         "captured"
       ],
       "score": 90,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "business-openai-news-010cdd7fc8",
       "sourceId": "openai-news",
       "title": "How Endava is redesigning software delivery around AI agents",
+      "title_original": "How Endava is redesigning software delivery around AI agents",
       "url": "https://openai.com/index/endava-frontiers",
       "source": "OpenAI News",
       "sourceType": "rss",
@@ -2048,29 +2890,44 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "summary_original": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
       "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
       "impactAreas": [
         "商业"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "tags": [],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "商业",
         "地缘政治",
         "How",
         "Endava",
         "redesigning",
         "software",
-        "delivery",
-        "around"
+        "delivery"
+      ],
+      "keywords": [
+        "AI",
+        "商业",
+        "地缘政治",
+        "How",
+        "Endava",
+        "redesigning",
+        "software",
+        "delivery"
       ],
       "score": 90,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "international-un-news-85d05adea9",
       "sourceId": "un-news",
       "title": "World Ocean Assessment highlights urgent need for science and global action",
+      "title_original": "World Ocean Assessment highlights urgent need for science and global action",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167646",
       "source": "UN News",
       "sourceType": "rss",
@@ -2082,30 +2939,45 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
+      "summary_original": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
       "contentExcerpt": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-Tahzib-Vevers-Earle-Cousteau.jpg/image770x420cropped.jpg",
       "tags": [],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "国际",
         "World",
         "Ocean",
         "Assessment",
         "highlights",
         "urgent",
-        "need",
-        "for"
+        "need"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "World",
+        "Ocean",
+        "Assessment",
+        "highlights",
+        "urgent",
+        "need"
       ],
       "score": 90,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-un-news-6e1d8fce76",
       "sourceId": "un-news",
       "title": "From the Field: In crisis-hit Middle East, renewables power daily life",
+      "title_original": "From the Field: In crisis-hit Middle East, renewables power daily life",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167651",
       "source": "UN News",
       "sourceType": "rss",
@@ -2116,6 +2988,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Across the Middle East, countries facing severe energy access challenges are turning to renewables to power essential infrastructure, from hospitals to schools and street lighting.",
+      "summary_original": "Across the Middle East, countries facing severe energy access challenges are turning to renewables to power essential infrastructure, from hospitals to schools and street lighting.",
       "contentExcerpt": "Across the Middle East, countries facing severe energy access challenges are turning to renewables to power essential infrastructure, from hospitals to schools and street lighting.",
       "impactAreas": [
         "AI",
@@ -2123,9 +2996,21 @@
         "Field",
         "crisis-hit"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-UNOPS-Yemen-solar-01.jpg/image770x420cropped.jpg",
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "the",
+        "Field",
+        "crisis-hit",
+        "Middle",
+        "East",
+        "renewables",
+        "power"
+      ],
       "keywords": [
         "AI",
         "the",
@@ -2137,12 +3022,14 @@
         "power"
       ],
       "score": 89,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-un-news-cdda5dbd85",
       "sourceId": "un-news",
       "title": "Killed for speaking up: UN sounds alarm over attacks on environmental defenders",
+      "title_original": "Killed for speaking up: UN sounds alarm over attacks on environmental defenders",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167647",
       "source": "UN News",
       "sourceType": "rss",
@@ -2153,6 +3040,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "UN High Commissioner for Human Rights Volker Türk called on Thursday for greater protection for environmental and land defenders, noting that hundreds worldwide have been killed or detained in recent years.",
+      "summary_original": "UN High Commissioner for Human Rights Volker Türk called on Thursday for greater protection for environmental and land defenders, noting that hundreds worldwide have been killed or detained in recent years.",
       "contentExcerpt": "UN High Commissioner for Human Rights Volker Türk called on Thursday for greater protection for environmental and land defenders, noting that hundreds worldwide have been killed or detained in recent years.",
       "impactAreas": [
         "AI",
@@ -2160,9 +3048,21 @@
         "for",
         "speaking"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/08-11-2022_Unsplash_climate-protest.jpg/image770x420cropped.jpg",
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "Killed",
+        "for",
+        "speaking",
+        "sounds",
+        "alarm",
+        "attacks",
+        "environmental"
+      ],
       "keywords": [
         "AI",
         "Killed",
@@ -2174,12 +3074,14 @@
         "environmental"
       ],
       "score": 89,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "business-u-s-sec-press-releases-e4acdcac84",
       "sourceId": "sec-press",
       "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
+      "title_original": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
       "source": "U.S. SEC Press Releases",
       "sourceType": "rss",
@@ -2191,29 +3093,44 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+      "summary_original": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
       "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
       "impactAreas": [
         "商业"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "tags": [],
-      "keywords": [
+      "article_keywords": [
+        "商业",
         "市场监管",
         "SEC",
         "Announces",
         "New",
         "Members",
         "Small",
-        "Business",
-        "Capital"
+        "Business"
+      ],
+      "keywords": [
+        "商业",
+        "市场监管",
+        "SEC",
+        "Announces",
+        "New",
+        "Members",
+        "Small",
+        "Business"
       ],
       "score": 88,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "international-un-news-e5178a7935",
       "sourceId": "un-news",
       "title": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
+      "title_original": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167652",
       "source": "UN News",
       "sourceType": "rss",
@@ -2225,30 +3142,45 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
+      "summary_original": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
       "contentExcerpt": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-02-2022_UNICEF_Syria.jpg/image770x420cropped.jpg",
       "tags": [],
-      "keywords": [
+      "article_keywords": [
         "security",
+        "国际",
         "市场监管",
         "Undeclared",
         "chemical",
         "weapons",
         "found",
-        "Syria",
-        "including"
+        "Syria"
+      ],
+      "keywords": [
+        "security",
+        "国际",
+        "市场监管",
+        "Undeclared",
+        "chemical",
+        "weapons",
+        "found",
+        "Syria"
       ],
       "score": 88,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-nasa-breaking-news-ad4d222d8a",
       "sourceId": "nasa-breaking-news",
       "title": "NASA Announces Winners of 2026 University Innovation Competition",
+      "title_original": "NASA Announces Winners of 2026 University Innovation Competition",
       "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-announces-winners-of-2026-university-innovation-competition",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -2259,6 +3191,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by innovating new system concepts and prototypes. Another&#160;team&#160;from&#160;the same university&#160;won second place overall for their project,&#160;Mars Exploration Layered Infrastructur...",
+      "summary_original": "NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by innovating new system concepts and prototypes. Another&#160;team&#160;from&#160;the same university&#160;won second place overall for their project,&#160;Mars Exploration Layered Infrastructur...",
       "contentExcerpt": "NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place winner for the 2026 Revolutionary Aerospace Systems Concepts – Academic Linkage (RASC-AL) competition, which challenges students to bridge gaps in aerospace technology by innovating new system concepts and prototypes. Another team from the same university won second place overall for their project, Mars Exploration Layered Infrastructure for Operations, Researc...",
       "impactAreas": [
         "CoECI News",
@@ -2266,7 +3199,9 @@
         "市场监管",
         "NASA"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/2026-rasc-al-photo-first-place-massachusetts-institute-of-technology-eclipse.jpg",
       "tags": [
         "Center of Excellence for Collaborative Innovation (CoECI)",
@@ -2276,6 +3211,16 @@
         "Prizes, Challenges, & Crowdsourcing News",
         "Prizes, Challenges, and Crowdsourcing Program",
         "Space Technology Mission Directorate"
+      ],
+      "article_keywords": [
+        "CoECI News",
+        "Langley Research Center",
+        "市场监管",
+        "NASA",
+        "Announces",
+        "Winners",
+        "University",
+        "Innovation"
       ],
       "keywords": [
         "CoECI News",
@@ -2288,12 +3233,14 @@
         "Innovation"
       ],
       "score": 85,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-nasa-breaking-news-b03a8d629a",
       "sourceId": "nasa-breaking-news",
       "title": "NASA’s Artemis II Moon Mission Research Continues on Earth",
+      "title_original": "NASA’s Artemis II Moon Mission Research Continues on Earth",
       "url": "https://science.nasa.gov/uncategorized/nasas-artemis-ii-moon-mission-research-continues-on-earth",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -2304,6 +3251,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "Since NASA’s Artemis II crew members safely splashed down in the Pacific Ocean on April 10 after their record-setting mission around the Moon, science teams have been busy collecting more data and combing through observations collected on the test flight. Results from these science investigations will help support safe human exploration of deep space and […]",
+      "summary_original": "Since NASA’s Artemis II crew members safely splashed down in the Pacific Ocean on April 10 after their record-setting mission around the Moon, science teams have been busy collecting more data and combing through observations collected on the test flight. Results from these science investigations will help support safe human exploration of deep space and […]",
       "contentExcerpt": "5 min read NASA’s Artemis II Moon Mission Research Continues on Earth Artemis II astronaut Victor Glover walks on a treadmill while in a space suit harnessed to NASA’s Active Response Gravity Offload System at NASA’s Johnson Space Center. Glover is simulating a walk on a planetary surface while in a suit that has been offloaded to lunar gravity. Artemis II astronauts completed this and other suited tasks before their mission launched and within a few days of landing, giving researchers a chan...",
       "impactAreas": [
         "Artemis 2",
@@ -2311,7 +3259,9 @@
         "Human Research Program",
         "Missions"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://images-assets.nasa.gov/image/jsc2026e001967/jsc2026e001967~large.jpg?w=1920&#038;h=1280&#038;fit=clip&#038;crop=faces%2Cfocalpoint",
       "tags": [
         "Artemis 2",
@@ -2321,6 +3271,16 @@
         "Lunar Discovery & Exploration Program",
         "Missions",
         "Uncategorized"
+      ],
+      "article_keywords": [
+        "Artemis 2",
+        "Biological & Physical Sciences",
+        "Human Research Program",
+        "Missions",
+        "Uncategorized",
+        "NASA",
+        "Artemis",
+        "Moon"
       ],
       "keywords": [
         "Artemis 2",
@@ -2333,49 +3293,14 @@
         "Moon"
       ],
       "score": 85,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-un-news-56a4e21e73",
-      "sourceId": "un-news",
-      "title": "Lebanon crisis: Needs soar as UN launches new funding appeal",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167659",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "fetchedAt": "2026-06-06T00:00:19.959Z",
-      "sourceLastCheckedAt": "2026-06-06T00:00:19.959Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "The UN in Lebanon appealed for an additional $331.5 million on Friday to help 1.4 million people in crisis as already massive needs continue to grow, three months since deadly violence erupted between Hezbollah fighters and Israeli forces.",
-      "contentExcerpt": "The UN in Lebanon appealed for an additional $331.5 million on Friday to help 1.4 million people in crisis as already massive needs continue to grow, three months since deadly violence erupted between Hezbollah fighters and Israeli forces.",
-      "impactAreas": [
-        "Lebanon",
-        "crisis",
-        "Needs",
-        "soar"
-      ],
-      "sourceLanguage": "en",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-03-2026-WFP-Lebanon.jpg/image560x340cropped.jpg",
-      "tags": [],
-      "keywords": [
-        "Lebanon",
-        "crisis",
-        "Needs",
-        "soar",
-        "launches",
-        "new",
-        "funding",
-        "appeal"
-      ],
-      "score": 84,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "international-nasa-breaking-news-b4239884e7",
       "sourceId": "nasa-breaking-news",
       "title": "Fighting Fire With Fire",
+      "title_original": "Fighting Fire With Fire",
       "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire",
       "source": "NASA Breaking News",
       "sourceType": "rss",
@@ -2387,11 +3312,14 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "In fire-prone ecosystems in Australia’s Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season.",
+      "summary_original": "In fire-prone ecosystems in Australia’s Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season.",
       "contentExcerpt": "In fire-prone ecosystems in Australia's Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season. In May and June of most years, NASA satellites typically begin to detect large numbers of wildland fires throughout the Top End and Arnhem Land regions of Australia’s Northern Territory. On some days, especially in the afternoon, the blazes can resemble sizable wildfires in satellite imagery, spreading widely and producing expansive smoke plumes. That was...",
       "impactAreas": [
         "国际"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fighting-fire-with-fire/australiafires_amo_20260528_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "tags": [
         "Aqua",
@@ -2400,23 +3328,87 @@
         "Wildfires",
         "Wildland Fire Management"
       ],
-      "keywords": [
+      "article_keywords": [
+        "国际",
         "Aqua",
         "Earth Observatory",
         "Wildfires",
         "Wildland Fire Management",
         "Fighting",
         "Fire",
-        "fire-prone",
-        "ecosystems"
+        "fire-prone"
+      ],
+      "keywords": [
+        "国际",
+        "Aqua",
+        "Earth Observatory",
+        "Wildfires",
+        "Wildland Fire Management",
+        "Fighting",
+        "Fire",
+        "fire-prone"
       ],
       "score": 84,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
+    },
+    {
+      "id": "news-un-news-56a4e21e73",
+      "sourceId": "un-news",
+      "title": "Lebanon crisis: Needs soar as UN launches new funding appeal",
+      "title_original": "Lebanon crisis: Needs soar as UN launches new funding appeal",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167659",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-05T12:00:00.000Z",
+      "fetchedAt": "2026-06-06T00:00:19.959Z",
+      "sourceLastCheckedAt": "2026-06-06T00:00:19.959Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "The UN in Lebanon appealed for an additional $331.5 million on Friday to help 1.4 million people in crisis as already massive needs continue to grow, three months since deadly violence erupted between Hezbollah fighters and Israeli forces.",
+      "summary_original": "The UN in Lebanon appealed for an additional $331.5 million on Friday to help 1.4 million people in crisis as already massive needs continue to grow, three months since deadly violence erupted between Hezbollah fighters and Israeli forces.",
+      "contentExcerpt": "The UN in Lebanon appealed for an additional $331.5 million on Friday to help 1.4 million people in crisis as already massive needs continue to grow, three months since deadly violence erupted between Hezbollah fighters and Israeli forces.",
+      "impactAreas": [
+        "Lebanon",
+        "crisis",
+        "Needs",
+        "soar"
+      ],
+      "source_language": "en",
+      "sourceLanguage": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/24-03-2026-WFP-Lebanon.jpg/image560x340cropped.jpg",
+      "tags": [],
+      "article_keywords": [
+        "Lebanon",
+        "crisis",
+        "Needs",
+        "soar",
+        "launches",
+        "new",
+        "funding",
+        "appeal"
+      ],
+      "keywords": [
+        "Lebanon",
+        "crisis",
+        "Needs",
+        "soar",
+        "launches",
+        "new",
+        "funding",
+        "appeal"
+      ],
+      "score": 83,
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "tech-openai-news-f13346f127",
       "sourceId": "openai-news",
       "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "title_original": "Dreaming: Better memory for a more helpful ChatGPT",
       "url": "https://openai.com/index/chatgpt-memory-dreaming",
       "source": "OpenAI News",
       "sourceType": "rss",
@@ -2427,6 +3419,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+      "summary_original": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
       "contentExcerpt": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
       "impactAreas": [
         "Research",
@@ -2434,9 +3427,21 @@
         "Better",
         "memory"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "tags": [
         "Research"
+      ],
+      "article_keywords": [
+        "Research",
+        "Dreaming",
+        "Better",
+        "memory",
+        "for",
+        "helpful",
+        "ChatGPT",
+        "introduces"
       ],
       "keywords": [
         "Research",
@@ -2449,12 +3454,14 @@
         "introduces"
       ],
       "score": 82,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-un-news-00c86de944",
       "sourceId": "un-news",
       "title": "Building trust on patrol: One police officer’s peacekeeping journey in South Sudan",
+      "title_original": "Building trust on patrol: One police officer’s peacekeeping journey in South Sudan",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167656",
       "source": "UN News",
       "sourceType": "rss",
@@ -2465,6 +3472,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "From a police station in Germany to the UN Mission in South Sudan, Stephanie Königs has been talking to UN News about her journey to becoming a peacekeeper – and the importance of trust and empathy in the field.&nbsp;",
+      "summary_original": "From a police station in Germany to the UN Mission in South Sudan, Stephanie Königs has been talking to UN News about her journey to becoming a peacekeeper – and the importance of trust and empathy in the field.&nbsp;",
       "contentExcerpt": "From a police station in Germany to the UN Mission in South Sudan, Stephanie Königs has been talking to UN News about her journey to becoming a peacekeeper – and the importance of trust and empathy in the field.&nbsp;",
       "impactAreas": [
         "Building",
@@ -2472,9 +3480,21 @@
         "patrol",
         "One"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/29-05-2026-UN-Stephanie-Konigs-01.jpg/image560x340cropped.jpg",
       "tags": [],
+      "article_keywords": [
+        "Building",
+        "trust",
+        "patrol",
+        "One",
+        "police",
+        "officer",
+        "peacekeeping",
+        "journey"
+      ],
       "keywords": [
         "Building",
         "trust",
@@ -2486,12 +3506,14 @@
         "journey"
       ],
       "score": 81,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "news-un-news-215072a12f",
       "sourceId": "un-news",
       "title": "Lebanon: Another peacekeeper dies in new attack",
+      "title_original": "Lebanon: Another peacekeeper dies in new attack",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167645",
       "source": "UN News",
       "sourceType": "rss",
@@ -2502,6 +3524,7 @@
       "sourceAuthority": "media",
       "timelinessTier": "daily",
       "summary": "A Serbian peacekeeper serving in Lebanon died early Thursday after mortar fire on his position near Marjayoun in the country’s southeast, the UN Interim Force in Lebanon (UNIFIL) has announced.",
+      "summary_original": "A Serbian peacekeeper serving in Lebanon died early Thursday after mortar fire on his position near Marjayoun in the country’s southeast, the UN Interim Force in Lebanon (UNIFIL) has announced.",
       "contentExcerpt": "A Serbian peacekeeper serving in Lebanon died early Thursday after mortar fire on his position near Marjayoun in the country’s southeast, the UN Interim Force in Lebanon (UNIFIL) has announced.",
       "impactAreas": [
         "Lebanon",
@@ -2509,9 +3532,21 @@
         "peacekeeper",
         "dies"
       ],
+      "source_language": "en",
       "sourceLanguage": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/13-05-2026-UNIFIL-Lebanon.jpg/image560x340cropped.jpg",
       "tags": [],
+      "article_keywords": [
+        "Lebanon",
+        "Another",
+        "peacekeeper",
+        "dies",
+        "new",
+        "attack",
+        "Serbian",
+        "serving"
+      ],
       "keywords": [
         "Lebanon",
         "Another",
@@ -2523,7 +3558,16 @@
         "serving"
       ],
       "score": 81,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
     }
-  ]
+  ],
+  "translationGeneratedAt": "2026-06-06T08:07:41.412Z",
+  "translationStats": {
+    "llmConfigured": false,
+    "attempted": 25,
+    "translated": 0,
+    "failed": 25,
+    "notRequired": 15
+  }
 }

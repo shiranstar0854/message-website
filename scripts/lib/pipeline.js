@@ -36,6 +36,14 @@ const FINE_KEYWORD_RULES = [
   { label: "公共政策", pattern: /(policy|government|国务院|财政|补贴|规划|公共|民生)/i },
   { label: "市场监管", pattern: /(sec|csrc|监管|证券|交易所|market structure|披露)/i }
 ];
+const KEYWORD_CATEGORY_LABELS = {
+  tech: "科技",
+  finance: "金融",
+  business: "商业",
+  macro: "宏观",
+  international: "国际",
+  news: "新闻"
+};
 
 const DERIVED_CATEGORY_RULES = [
   {
@@ -413,16 +421,31 @@ function pushKeyword(keywords, seen, value) {
   keywords.push(keyword);
 }
 
-function extractPublishedKeywords(item, limit = KEYWORD_LIMIT) {
+function extractArticleKeywords(item, limit = KEYWORD_LIMIT) {
   const keywords = [];
   const seen = new Set();
 
+  (item.article_keywords || []).forEach((keyword) => pushKeyword(keywords, seen, keyword));
   (item.keywordHits || []).forEach((entry) => pushKeyword(keywords, seen, entry.term));
+  (item.impactAreas || []).forEach((area) => pushKeyword(keywords, seen, area));
   (item.tags || []).forEach((tag) => pushKeyword(keywords, seen, tag));
 
-  const text = normalizeText(`${item.title || ""} ${item.aiSummary || ""} ${item.summary || ""} ${item.contentExcerpt || ""}`);
+  const text = normalizeText([
+    item.title_zh,
+    item.titleZh,
+    item.translatedTitle,
+    item.title,
+    item.summary_zh,
+    item.summaryZh,
+    item.aiSummary,
+    item.summary,
+    item.contentExcerpt
+  ].filter(Boolean).join(" "));
   FINE_KEYWORD_RULES.forEach((rule) => {
     if (rule.pattern.test(text)) pushKeyword(keywords, seen, rule.label);
+  });
+  DERIVED_CATEGORY_RULES.forEach((rule) => {
+    if (rule.pattern.test(text)) pushKeyword(keywords, seen, KEYWORD_CATEGORY_LABELS[rule.id] || rule.id);
   });
 
   [...text.matchAll(/[A-Za-z][A-Za-z0-9+-]{2,}/g)]
@@ -437,6 +460,39 @@ function extractPublishedKeywords(item, limit = KEYWORD_LIMIT) {
     .forEach((word) => pushKeyword(keywords, seen, word));
 
   return keywords.slice(0, limit);
+}
+
+function extractPublishedKeywords(item, limit = KEYWORD_LIMIT) {
+  return extractArticleKeywords(item, limit);
+}
+
+function canonicalSourceLanguage(item) {
+  return normalizeText(item.source_language || item.sourceLanguage || "").toLowerCase();
+}
+
+function canonicalTitleZh(item, sourceLanguage) {
+  return firstDefined(
+    item.title_zh,
+    item.titleZh,
+    item.translatedTitle,
+    sourceLanguage === "zh" ? item.title : ""
+  );
+}
+
+function canonicalSummaryZh(item, sourceLanguage) {
+  return firstDefined(
+    item.summary_zh,
+    item.summaryZh,
+    item.summaryLanguage === "zh" ? item.aiSummary : "",
+    sourceLanguage === "zh" ? item.summary : ""
+  );
+}
+
+function canonicalTranslationStatus(item, sourceLanguage, titleZh, summaryZh) {
+  const explicit = firstDefined(item.translation_status, item.translationStatus, "");
+  if (explicit) return normalizeText(explicit).toLowerCase();
+  if (sourceLanguage !== "en") return "not_required";
+  return titleZh || summaryZh ? "translated" : "pending";
 }
 
 function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
@@ -514,16 +570,23 @@ function buildPublishedItem(item) {
     : summary;
   const contentExcerpt = truncateText(item.contentExcerpt || "", CONTENT_EXCERPT_LIMIT);
   const imageUrl = normalizeImageUrl(item.imageUrl || "");
-  const keywords = extractPublishedKeywords(item);
+  const sourceLanguage = canonicalSourceLanguage(item);
+  const titleZh = canonicalTitleZh(item, sourceLanguage);
+  const summaryZh = canonicalSummaryZh(item, sourceLanguage);
+  const translationStatus = canonicalTranslationStatus(item, sourceLanguage, titleZh, summaryZh);
+  const translatedAt = firstDefined(item.translated_at, item.translatedAt, translationStatus === "translated" ? item.summaryGeneratedAt : "");
+  const articleKeywords = extractArticleKeywords(item);
+  const keywords = articleKeywords;
   const impactAreas = Array.isArray(item.impactAreas) && item.impactAreas.length
     ? item.impactAreas.slice(0, 4).map(normalizeText).filter(Boolean)
-    : keywords.slice(0, 4);
+    : articleKeywords.slice(0, 4);
 
   return {
     id: item.id,
     sourceId: item.sourceId,
     title: item.title,
-    ...(item.titleZh ? { titleZh: truncateText(item.titleZh, 120) } : {}),
+    title_original: truncateText(item.title || "", 180),
+    ...(titleZh ? { title_zh: truncateText(titleZh, 120), titleZh: truncateText(titleZh, 120) } : {}),
     ...(item.translatedTitle ? { translatedTitle: truncateText(item.translatedTitle, 120) } : {}),
     url: item.url,
     source: item.source,
@@ -536,16 +599,20 @@ function buildPublishedItem(item) {
     sourceAuthority: item.sourceAuthority,
     timelinessTier: item.timelinessTier,
     summary: publishedSummary,
-    ...(item.summaryZh ? { summaryZh: truncateText(item.summaryZh, PUBLISHED_SUMMARY_LIMIT) } : {}),
+    summary_original: publishedSummary,
+    ...(summaryZh ? { summary_zh: truncateText(summaryZh, PUBLISHED_SUMMARY_LIMIT), summaryZh: truncateText(summaryZh, PUBLISHED_SUMMARY_LIMIT) } : {}),
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(item.aiSummary ? { aiSummary: truncateText(item.aiSummary, PUBLISHED_SUMMARY_LIMIT) } : {}),
     ...(item.summaryReason ? { summaryReason: truncateText(item.summaryReason, 180) } : {}),
     ...(item.importance ? { importance: truncateText(item.importance, 180) } : {}),
     ...(impactAreas.length ? { impactAreas } : {}),
-    ...(item.sourceLanguage ? { sourceLanguage: item.sourceLanguage } : {}),
+    ...(sourceLanguage ? { source_language: sourceLanguage, sourceLanguage } : {}),
     ...(item.summaryLanguage ? { summaryLanguage: item.summaryLanguage } : {}),
+    ...(translatedAt ? { translated_at: translatedAt } : {}),
+    translation_status: translationStatus,
     ...(imageUrl ? { imageUrl } : {}),
     tags: (item.tags || []).slice(0, 8),
+    ...(articleKeywords.length ? { article_keywords: articleKeywords } : {}),
     ...(keywords.length ? { keywords } : {}),
     score: item.score,
     duplicateCount: Number(item.duplicateCount || 0)
@@ -595,6 +662,7 @@ module.exports = {
   scoreItems,
   sortItems,
   extractPublishedKeywords,
+  extractArticleKeywords,
   buildPublishedItem,
   buildLatestData
 };

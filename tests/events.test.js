@@ -11,9 +11,9 @@ test("buildEvents groups related high-value items into event clusters", () => {
       summary: "New AI safety framework.",
       source: "Source A",
       category: "tech",
-      publishedAt: "2026-06-02T00:00:00.000Z",
+      publishedAt: "2026-06-01T00:00:00.000Z",
       score: 92,
-      keywords: ["AI政策"]
+      article_keywords: ["AI政策"]
     },
     {
       id: "ai-2",
@@ -21,7 +21,7 @@ test("buildEvents groups related high-value items into event clusters", () => {
       summary: "Lawmakers discuss model governance.",
       source: "Source B",
       category: "news",
-      publishedAt: "2026-06-02T01:00:00.000Z",
+      publishedAt: "2026-06-04T01:00:00.000Z",
       score: 90,
       keywords: ["AI政策"]
     },
@@ -44,5 +44,8 @@ test("buildEvents groups related high-value items into event clusters", () => {
   assert.ok(data.events[0].whyItMatters);
   assert.ok(data.events[0].impactAreas.length > 0);
   assert.equal(data.events[0].watchlist.length, 3);
+  assert.equal(data.events[0].lookbackDays, undefined);
+  assert.equal(data.events[0].timeline.length, 2);
+  assert.deepEqual(data.events[0].timeline.map((item) => item.date), ["2026-06-01", "2026-06-04"]);
   assert.deepEqual(data.events[0].evidenceItems.map((item) => item.id), ["ai-1", "ai-2"]);
 });

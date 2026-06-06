@@ -57,16 +57,14 @@ test("static homepage renders Top 5 block with Chinese summary fallback", () => 
     sourceLanguage: "en"
   }]);
 
-  assert.match(html, /Top 1/);
+  assert.match(html, /#1/);
   assert.match(html, /OpenAI 更新政策观点/);
   assert.match(html, /中文摘要优先展示/);
-  assert.match(html, /为什么重要/);
   assert.match(html, /影响 AI 政策讨论/);
-  assert.match(html, /AI政策/);
-  assert.match(html, /地缘政治/);
-  assert.doesNotMatch(html, /消费电子/);
+  assert.match(html, /来源：OpenAI News/);
+  assert.match(html, /热度：高/);
   assert.match(html, /top-hotspot-link/);
-  assert.match(html, /top-hotspot-card is-primary/);
+  assert.match(html, /top-hotspot-card top-hotspot-row is-primary/);
 });
 
 test("static homepage renders summaries and source meta for non-primary hotspots", () => {
@@ -92,8 +90,8 @@ test("static homepage renders summaries and source meta for non-primary hotspots
   ]);
 
   assert.match(html, /Second summary/);
-  assert.match(html, /来源 Second Source/);
-  assert.match(html, /更新 /);
+  assert.match(html, /来源：Second Source/);
+  assert.match(html, /更新时间：/);
 });
 
 test("static homepage renders empty Top 5 state", () => {
@@ -103,7 +101,7 @@ test("static homepage renders empty Top 5 state", () => {
   assert.match(html, /compact-empty/);
 });
 
-test("static homepage renders event-first hotspot block with explanation fields", () => {
+test("static homepage renders event tracking block with timeline fields", () => {
   const html = renderTopEvents([{
     title: "AI 政策与基础设施",
     summary: "发生了新的 AI 治理讨论。",
@@ -112,19 +110,31 @@ test("static homepage renders event-first hotspot block with explanation fields"
     watchlist: ["跟踪监管文本", "观察企业反应"],
     updatedAt: "2026-06-02T00:00:00.000Z",
     itemCount: 3,
-    evidenceItems: [{
-      title: "Evidence",
-      url: "https://example.test/evidence",
-      source: "Official Source",
-      score: 91
-    }]
+    heat: "高",
+    timeline: [
+      {
+        date: "2026-06-01",
+        title: "首次传出合作消息",
+        summary: "双方开始接触。",
+        source: "Official Source",
+        score: 90
+      },
+      {
+        date: "2026-06-02",
+        title: "公司回应仍在谈判",
+        summary: "合作细节未定。",
+        source: "Reuters",
+        score: 91
+      }
+    ]
   }]);
 
-  assert.match(html, /最该看/);
-  assert.match(html, /发生了什么/);
-  assert.match(html, /为什么重要/);
-  assert.match(html, /跟踪监管文本/);
-  assert.match(html, /证据 3 条/);
+  assert.match(html, /home-event-list/);
+  assert.match(html, /热度：高/);
+  assert.match(html, /发生了新的 AI 治理讨论/);
+  assert.match(html, /首次传出合作消息/);
+  assert.match(html, /公司回应仍在谈判/);
+  assert.match(html, /查看事件追踪/);
 });
 
 test("static homepage sorts event hotspots by explanation and evidence strength", () => {

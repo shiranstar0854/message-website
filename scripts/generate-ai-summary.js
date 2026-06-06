@@ -102,33 +102,48 @@ function mergeItemsIntoChannels(latestData, items) {
 }
 
 function applyExtractiveSummary(item, rules, generatedAt) {
+  const sourceLanguage = detectItemLanguage(item);
   const summarized = {
     ...item,
+    title_original: item.title_original || item.title,
+    summary_original: item.summary_original || item.summary || item.contentExcerpt || "",
     aiSummary: summarizeText(item, rules.summaryMaxLength),
     summaryReason: buildReason(item, rules.reasonMaxLength),
     importance: buildImportance(item, rules.importanceMaxLength),
-    sourceLanguage: detectItemLanguage(item),
+    source_language: item.source_language || sourceLanguage,
+    sourceLanguage,
+    translation_status: item.translation_status || (sourceLanguage === "en" ? "failed" : "not_required"),
     summaryMethod: "extractive",
     summaryGeneratedAt: generatedAt
   };
   return {
     ...summarized,
+    article_keywords: extractPublishedKeywords(summarized),
     keywords: extractPublishedKeywords(summarized)
   };
 }
 
 async function applyLlmSummary(item, rules, generatedAt, options = {}) {
   const summary = await requestDeepSeekSummary(item, rules, options);
+  const sourceLanguage = detectItemLanguage(item);
   const summarized = {
     ...item,
     ...summary,
-    sourceLanguage: detectItemLanguage(item),
+    title_original: item.title_original || item.title,
+    title_zh: summary.translatedTitle || item.title_zh || item.titleZh || item.translatedTitle,
+    summary_original: item.summary_original || item.summary || item.contentExcerpt || "",
+    summary_zh: summary.aiSummary || item.summary_zh || item.summaryZh,
+    source_language: item.source_language || sourceLanguage,
+    sourceLanguage,
     summaryLanguage: "zh",
+    translated_at: generatedAt,
+    translation_status: sourceLanguage === "en" ? "translated" : "not_required",
     summaryMethod: getLlmConfig(rules).provider,
     summaryGeneratedAt: generatedAt
   };
   return {
     ...summarized,
+    article_keywords: extractPublishedKeywords(summarized),
     keywords: extractPublishedKeywords(summarized)
   };
 }

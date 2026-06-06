@@ -38,10 +38,10 @@
 
   function searchableText(item) {
     return {
-      title: normalize(`${item.titleZh || ""} ${item.translatedTitle || ""} ${item.title || ""}`),
-      summary: normalize(`${item.summaryZh || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""}`),
+      title: normalize(`${item.title_zh || ""} ${item.titleZh || ""} ${item.translatedTitle || ""} ${item.title_original || ""} ${item.title || ""}`),
+      summary: normalize(`${item.summary_zh || ""} ${item.summaryZh || ""} ${item.summary_original || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""}`),
       source: normalize(item.source),
-      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.keywords || []).join(" ")}`)
+      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.article_keywords || item.keywords || []).join(" ")}`)
     };
   }
 
