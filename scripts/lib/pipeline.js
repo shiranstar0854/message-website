@@ -37,6 +37,24 @@ const FINE_KEYWORD_RULES = [
   { label: "市场监管", pattern: /(sec|csrc|监管|证券|交易所|market structure|披露)/i }
 ];
 
+const DERIVED_CATEGORY_RULES = [
+  {
+    id: "macro",
+    labels: ["宏观"],
+    pattern: /(\bgdp\b|\binflation\b|\bcpi\b|\bppi\b|\bfomc\b|federal reserve|central bank|rate decision|interest rate|\brate\b|treasury|财政|货币政策|宏观|通胀|物价|利率|降息|加息|央行|人民银行|美联储|国债|预算|统计局|经济运行)/i
+  },
+  {
+    id: "international",
+    labels: ["国际"],
+    pattern: /(\bglobal\b|\bworld\b|international|geopolitic|diplomacy|sanction|tariff|\bwar\b|conflict|election|foreign|联合国|国际|全球|外交|地缘|制裁|关税|战争|冲突|选举|海外)/i
+  },
+  {
+    id: "business",
+    labels: ["商业"],
+    pattern: /(\bearnings\b|\brevenue\b|\bprofit\b|\bcompany\b|\bstartup\b|\bipo\b|\bmerger\b|\bacquisition\b|\benterprise\b|\bbusiness\b|\bretail\b|\bconsumer\b|财报|营收|利润|公司|企业|商业|并购|上市|创业|消费|零售|国企|民企)/i
+  }
+];
+
 function normalizeText(value) {
   return String(value || "")
     .replace(/<[^>]+>/g, " ")
@@ -99,6 +117,30 @@ function normalizeImageUrl(value) {
   } catch {
     return "";
   }
+}
+
+function detectSourceLanguage(raw, title, summary) {
+  const explicit = firstDefined(raw.sourceLanguage, raw.language, raw.lang, "");
+  if (explicit) return normalizeText(explicit).slice(0, 8).toLowerCase();
+  const text = `${title || ""} ${summary || ""}`;
+  if (/[A-Za-z]/.test(text) && !/[\u4e00-\u9fff]/u.test(text)) return "en";
+  if (/[\u4e00-\u9fff]/u.test(text)) return "zh";
+  return "";
+}
+
+function deriveCategory(baseCategory, item) {
+  const current = normalizeText(baseCategory).toLowerCase() || "news";
+  const text = normalizeText(`${item.title || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${(item.tags || []).join(" ")}`);
+  const match = DERIVED_CATEGORY_RULES.find((rule) => rule.pattern.test(text));
+  return match?.id || current;
+}
+
+function deriveImpactAreas(item) {
+  const text = normalizeText(`${item.title || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${(item.tags || []).join(" ")}`);
+  const areas = DERIVED_CATEGORY_RULES
+    .filter((rule) => rule.pattern.test(text))
+    .flatMap((rule) => rule.labels);
+  return [...new Set(areas)].slice(0, 4);
 }
 
 function truncateText(value, limit = CONTENT_EXCERPT_LIMIT) {
@@ -170,8 +212,11 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     : Array.isArray(raw.categories)
       ? raw.categories.map(normalizeText).filter(Boolean)
       : [];
+  const sourceLanguage = detectSourceLanguage(raw, title, summary || contentExcerpt);
+  const derivedCategory = deriveCategory(category, { title, summary, contentExcerpt, tags });
+  const impactAreas = deriveImpactAreas({ title, summary, contentExcerpt, tags });
   const id = [
-    slugify(category),
+    slugify(derivedCategory),
     slugify(sourceName),
     hashText(`${title}|${url}|${publishedAt}`)
   ].join("-");
@@ -183,7 +228,8 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     url,
     source: normalizeText(sourceName),
     sourceType: normalizeText(sourceType).toLowerCase(),
-    category: normalizeText(category).toLowerCase(),
+    category: derivedCategory,
+    ...(derivedCategory !== normalizeText(category).toLowerCase() ? { primaryCategory: normalizeText(category).toLowerCase() } : {}),
     publishedAt,
     summary,
     ...(contentExcerpt ? { contentExcerpt } : {}),
@@ -194,6 +240,8 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     sourceAuthority: normalizeText(sourceAuthority).toLowerCase(),
     timelinessTier: normalizeText(timelinessTier).toLowerCase(),
     tags,
+    ...(impactAreas.length ? { impactAreas } : {}),
+    ...(sourceLanguage ? { sourceLanguage } : {}),
     raw
   };
 }
@@ -475,17 +523,20 @@ function buildPublishedItem(item) {
     id: item.id,
     sourceId: item.sourceId,
     title: item.title,
+    ...(item.titleZh ? { titleZh: truncateText(item.titleZh, 120) } : {}),
     ...(item.translatedTitle ? { translatedTitle: truncateText(item.translatedTitle, 120) } : {}),
     url: item.url,
     source: item.source,
     sourceType: item.sourceType,
     category: item.category,
+    ...(item.primaryCategory ? { primaryCategory: item.primaryCategory } : {}),
     publishedAt: item.publishedAt,
     fetchedAt: item.fetchedAt,
     sourceLastCheckedAt: item.sourceLastCheckedAt,
     sourceAuthority: item.sourceAuthority,
     timelinessTier: item.timelinessTier,
     summary: publishedSummary,
+    ...(item.summaryZh ? { summaryZh: truncateText(item.summaryZh, PUBLISHED_SUMMARY_LIMIT) } : {}),
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(item.aiSummary ? { aiSummary: truncateText(item.aiSummary, PUBLISHED_SUMMARY_LIMIT) } : {}),
     ...(item.summaryReason ? { summaryReason: truncateText(item.summaryReason, 180) } : {}),

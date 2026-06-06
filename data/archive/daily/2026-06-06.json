@@ -1,0 +1,1571 @@
+{
+  "date": "2026-06-06",
+  "generatedAt": "2026-06-06T06:55:57.857Z",
+  "totals": {
+    "sources": 20,
+    "healthySources": 10,
+    "rawItems": 43,
+    "normalizedItems": 43,
+    "filteredItems": 43,
+    "dedupedItems": 43,
+    "scoredItems": 43,
+    "enrichmentAttempted": 33,
+    "enrichmentFailed": 0
+  },
+  "sourceHealth": [
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 1,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-06T06:54:59.769Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 2,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-06T06:54:59.769Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "google-ai",
+      "name": "Google AI Blog",
+      "category": "tech",
+      "status": "healthy",
+      "itemCount": 1,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-06T06:54:59.769Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "google-security",
+      "name": "Google Security Blog",
+      "category": "tech",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 2,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-05-31T03:45:27.330Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "microsoft-azure",
+      "name": "Microsoft Azure Blog",
+      "category": "tech",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 2,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "cisa-news",
+      "name": "CISA News",
+      "category": "tech",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 2,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "federal-reserve",
+      "name": "Federal Reserve",
+      "category": "finance",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 2,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "sec-press",
+      "name": "U.S. SEC Press Releases",
+      "category": "finance",
+      "status": "healthy",
+      "itemCount": 1,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-06T06:54:59.769Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "cfpb-newsroom",
+      "name": "CFPB Newsroom",
+      "category": "finance",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 2,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-04T00:00:55.864Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "nasa-breaking-news",
+      "name": "NASA Breaking News",
+      "category": "news",
+      "status": "healthy",
+      "itemCount": 9,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-06T06:54:59.769Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "un-news",
+      "name": "UN News",
+      "category": "news",
+      "status": "healthy",
+      "itemCount": 11,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:54:59.769Z",
+      "lastSuccessAt": "2026-06-06T06:54:59.769Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:54:59.769Z",
+      "cacheExpiresAt": "2026-06-08T06:54:59.769Z",
+      "failureCount": 0
+    },
+    {
+      "id": "most-work",
+      "name": "科技部工作动态",
+      "category": "tech",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 1,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": "2026-06-06T06:55:23.650Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "pbc-news",
+      "name": "中国人民银行新闻发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "status": "healthy",
+      "itemCount": 1,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": "2026-06-06T06:55:23.650Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "csrc-news",
+      "name": "中国证监会新闻发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "sse-news",
+      "name": "上海证券交易所要闻",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-market",
+      "timelinessTier": "daily",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "szse-news",
+      "name": "深圳证券交易所要闻",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-market",
+      "timelinessTier": "daily",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "ndrc-news",
+      "name": "国家发展改革委新闻发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "mof-news",
+      "name": "财政部财政新闻",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "healthy",
+      "itemCount": 1,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": "2026-06-06T06:55:23.650Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "stats-data-release",
+      "name": "国家统计局数据发布",
+      "category": "finance",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "status": "empty",
+      "itemCount": 0,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": null,
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    },
+    {
+      "id": "govcn-yaowen",
+      "name": "中国政府网要闻",
+      "category": "news",
+      "sourceType": "webpage",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "status": "healthy",
+      "itemCount": 15,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-06T06:55:23.650Z",
+      "lastSuccessAt": "2026-06-06T06:55:23.650Z",
+      "cacheTtlHours": 48,
+      "cacheStartedAt": "2026-06-06T06:55:23.650Z",
+      "cacheExpiresAt": "2026-06-08T06:55:23.650Z",
+      "failureCount": 0
+    }
+  ],
+  "archivePolicy": {
+    "maxItemsPerChannel": 20,
+    "availableItems": 43
+  },
+  "items": [
+    {
+      "id": "news-item-307e4cd883",
+      "title": "全国夏粮小麦收获进度过半 已收1.84亿亩",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071355.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-06T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "截至6月5日17时，全国已收获夏粮小麦1.84亿亩，收获进度54.29%。当日收获1803万亩、投入联合收割机23.68万台（去年当日收获1506万亩、投入联合收割机21.07万台）。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "全国夏粮小麦收获进度过半",
+        "已收",
+        "亿亩",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "截至"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "全国夏粮小麦收获进度过半",
+        "已收",
+        "亿亩"
+      ]
+    },
+    {
+      "id": "news-item-b76ebfd43a",
+      "title": "共同谱写中朝友好崭新篇章——写在习近平总书记对朝鲜进行国事访问之际",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071340.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-06T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "共同谱写中朝友好崭新篇章",
+        "写在习近平总书记对朝鲜进",
+        "行国事访问之际",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应朝鲜劳动党总书记"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "共同谱写中朝友好崭新篇章",
+        "写在习近平总书记对朝鲜进",
+        "行国事访问之际"
+      ]
+    },
+    {
+      "id": "news-item-551a8848e4",
+      "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-06T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "双方认为，中国共产党和老挝人革党肩负为人民谋幸福、为国家谋发展、为人类谋进步的历史使命。坚持党的领导和社会主义道路是中老关系的最鲜明本质特征，也是中老关系发展的最坚实政治基础。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "中华人民共和国和老挝人民",
+        "民主共和国关于构建新时代",
+        "全天候中老命运共同体的联",
+        "合声明",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "中华人民共和国和老挝人民",
+        "民主共和国关于构建新时代",
+        "全天候中老命运共同体的联"
+      ]
+    },
+    {
+      "id": "news-un-news-13de89631f",
+      "title": "AI’s environmental costs threaten water, land and climate",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology&#039;s environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
+      "contentExcerpt": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology's environmental footprint is also expanding at a pace that could strain the planet’s natural resources.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/05-06-2025-Unsplash-data-centre-02.jpg/image770x420cropped.jpg",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "artificial intelligence",
+        "AI政策",
+        "地缘政治",
+        "environmental",
+        "costs",
+        "threaten",
+        "water"
+      ],
+      "impactAreas": [
+        "AI",
+        "artificial intelligence",
+        "AI政策",
+        "地缘政治"
+      ]
+    },
+    {
+      "id": "news-item-60e2d4f002",
+      "title": "各地麦收高效推进 助力夏粮颗粒归仓",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071307.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "当前，我国各地加快冬小麦收获进度，确保夏粮颗粒归仓。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "各地麦收高效推进",
+        "助力夏粮颗粒归仓",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当前",
+        "我国各地加快冬小麦收获进"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "各地麦收高效推进",
+        "助力夏粮颗粒归仓",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-f3d429e24d",
+      "title": "图表：2026年前4个月我国服务进出口总额同比增长4.9%",
+      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071301.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "商务部6月5日发布数据显示，2026年1至4月，我国服务进出口总额24853.2亿元，同比增长4.9%。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "图表",
+        "年前",
+        "个月我国服务进出口总额同",
+        "比增长",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "图表",
+        "年前",
+        "个月我国服务进出口总额同"
+      ]
+    },
+    {
+      "id": "news-item-1ae3da7d9d",
+      "title": "李强会见老挝人民革命党中央总书记、国家主席通伦",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071287.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月5日上午，国务院总理李强在北京人民大会堂会见来华进行国事访问的老挝人民革命党中央总书记、国家主席通伦。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "李强会见老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日上午"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "李强会见老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦"
+      ]
+    },
+    {
+      "id": "news-item-051403da52",
+      "title": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071274.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "国务院总理李强6月5日主持召开国务院常务会议，听取关于做好就业工作的汇报，审议通过《实施就业优先战略“十五五”规划》，研究推进新型工业化有关工作，研究未来产业发展有关工作，审议通过《退役军人就业创业促进条例（草案）》。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "李强主持召开国务院常务会",
+        "听取关于做好就业工作汇报",
+        "审议通过",
+        "实施就业优先战略",
+        "十五五",
+        "规划",
+        "中国政府网要闻列表"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "李强主持召开国务院常务会",
+        "听取关于做好就业工作汇报",
+        "审议通过"
+      ]
+    },
+    {
+      "id": "news-item-a3ee3690e7",
+      "title": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071268.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月5日下午，中共中央总书记、国家主席习近平在人民大会堂同来华进行国事访问的老挝人民革命党中央总书记、国家主席通伦举行会谈。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平同老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦举行会谈",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日下午"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平同老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦举行会谈"
+      ]
+    },
+    {
+      "id": "news-item-d5b4986c2d",
+      "title": "【视频】李强会见老挝人民革命党中央总书记、国家主席通伦",
+      "url": "https://tv.cctv.com/2026/06/05/VIDEIDjZHdqfWV7WVJdF1sCu260605.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "[视频]李强会见老挝人民革命党中央总书记、国家主席通伦",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "视频",
+        "李强会见老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "视频",
+        "李强会见老挝人民革命党中",
+        "央总书记"
+      ]
+    },
+    {
+      "id": "news-item-bb043f2b68",
+      "title": "【视频】李强主持召开国务院常务会议",
+      "url": "https://tv.cctv.com/2026/06/05/VIDE09rptXGwerkZXjiAernW260605.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "视频",
+        "李强主持召开国务院常务会",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "视频",
+        "李强主持召开国务院常务会",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-721d56f2cd",
+      "title": "环境日：全民参与 共建美丽中国",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071305.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月5日，全国各地广泛开展生态环保主题宣传实践活动，倡导全社会积极行动起来，促进全面绿色转型，共建美丽中国。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "环境日",
+        "全民参与",
+        "共建美丽中国",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "全国各地广泛开展生态环保"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "环境日",
+        "全民参与",
+        "共建美丽中国"
+      ]
+    },
+    {
+      "id": "news-item-4eeb44970c",
+      "title": "【视频】习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "url": "https://tv.cctv.com/2026/06/05/VIDEVCVNgjQtGSF48I62iMBA260605.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "视频",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "视频",
+        "习近平将对朝鲜民主主义人",
+        "民共和国进行国事访问"
+      ]
+    },
+    {
+      "id": "news-item-13417badfd",
+      "title": "【视频】习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+      "url": "https://tv.cctv.com/2026/06/05/VIDEENTCvgVaQQlSGttPO4Xy260605.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "视频",
+        "习近平同老挝人民革命党中",
+        "央总书记",
+        "国家主席通伦举行会谈",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "视频",
+        "习近平同老挝人民革命党中",
+        "央总书记"
+      ]
+    },
+    {
+      "id": "news-item-4a96a2a007",
+      "title": "【视频】习近平举行仪式欢迎老挝人民革命党中央总书记、国家主席通伦访华",
+      "url": "https://tv.cctv.com/2026/06/05/VIDEGxc9angi0s9cJALFOWyP260605.shtml",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "习近平举行仪式欢迎老挝人民革命党中央总书记、国家主席通伦访华",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "视频",
+        "习近平举行仪式欢迎老挝人",
+        "民革命党中央总书记",
+        "国家主席通伦访华",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "视频",
+        "习近平举行仪式欢迎老挝人",
+        "民革命党中央总书记"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-7ff8c68b85",
+      "title": "NASA&#8217;s X-59 Aircraft Flies Supersonic for First Time",
+      "url": "https://www.nasa.gov/aeronautics/x-59-first-supersonic-flight",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-05T20:44:57.000Z",
+      "summary": "NASA’s&#160;experimental&#160;X-59&#160;aircraft&#160;marked&#160;a major milestone&#160;Friday,&#160;June&#160;5,&#160;when it&#160;flew faster than the speed of sound for the first time,&#160;setting the stage for&#160;demonstrating&#160;its quiet supersonic capabilities&#160;later this year.&#160; NASA test pilot Jim “Clue” Less&#160;took off&#160;and landed&#160;at Edwards Air Force Base&#160;in California, reaching a top speed of&#160;approximately&#160;Mach&#160;1.1&#160;(713&#160;mph)&...",
+      "contentExcerpt": "NASA’s experimental X-59 aircraft marked a major milestone Friday, June 5, when it flew faster than the speed of sound for the first time, setting the stage for demonstrating its quiet supersonic capabilities later this year. NASA test pilot Jim “Clue” Less took off and landed at Edwards Air Force Base in California, reaching a top speed of approximately Mach 1.1 (713 mph) and altitude of 43,400 feet. The X-59’s flight began at 11:08 a.m. PDT and lasted 81 minutes, with the team focusing on f...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/x59-first-supersonic-flight-m-1-077-clean.jpg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Aeronautics",
+        "Armstrong Flight Research Center",
+        "Low Boom Flight Demonstrator",
+        "NASA Aircraft",
+        "Quesst: The Flights",
+        "Supersonic Flight"
+      ],
+      "keywords": [
+        "AI",
+        "Aeronautics",
+        "Low Boom Flight Demonstrator",
+        "NASA Aircraft",
+        "Quesst: The Flights",
+        "Supersonic Flight",
+        "地缘政治",
+        "NASA"
+      ],
+      "impactAreas": [
+        "AI",
+        "Aeronautics",
+        "Low Boom Flight Demonstrator",
+        "NASA Aircraft"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-84c76e79e5",
+      "title": "NASA Concludes Antenna Mishap Investigation, Releases Report",
+      "url": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/nasa-concludes-antenna-mishap-investigation-releases-report",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-05T17:00:00.000Z",
+      "summary": "NASA has completed the investigation into the damage sustained last year at its 70-meter radio-frequency antenna, known as the Deep Space Station 14 (DSS-14), at the Goldstone Deep Space Communications Complex near Barstow, California. The agency has classified the event as a Type A mishap based on the total cost of damages. The antenna will [&#8230;]",
+      "contentExcerpt": "NASA has completed the investigation into the damage sustained last year at its 70-meter radio-frequency antenna, known as the Deep Space Station 14 (DSS-14), at the Goldstone Deep Space Communications Complex near Barstow, California. The agency has classified the event as a Type A mishap based on the total cost of damages. The antenna will remain offline to complete repairs and previously scheduled upgrades. “NASA takes safety and any departure from established procedures seriously, and the...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/01/sunsetatgoldstone-1.jpg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Space Communications & Navigation Program",
+        "Communicating and Navigating with Missions",
+        "Deep Space Network"
+      ],
+      "keywords": [
+        "AI",
+        "Deep Space Network",
+        "AI政策",
+        "NASA",
+        "Concludes",
+        "Antenna",
+        "Mishap",
+        "Investigation"
+      ],
+      "impactAreas": [
+        "AI",
+        "Deep Space Network",
+        "AI政策",
+        "NASA"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-7933a15baa",
+      "title": "First Steps: America’s Grueling Second Spacewalk",
+      "url": "https://www.nasa.gov/image-article/first-steps-americas-grueling-second-spacewalk",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-05T15:47:27.000Z",
+      "summary": "One year after Gemini IV astronaut Edward H. White completed NASA’s first spacewalk the agency prepared for a demanding second excursion. Originally scheduled for Gemini VIII, the extravehicular activity (EVA) was reassigned to Gemini IX-A after that mission ended early, with Gene Cernan taking on the task. On June 5, 1966—the mission’s third day—Cernan exited [&#8230;]",
+      "contentExcerpt": "One year after Gemini IV astronaut Edward H. White completed NASA’s first spacewalk the agency prepared for a demanding second excursion. Originally scheduled for Gemini VIII, the extravehicular activity (EVA) was reassigned to Gemini IX-A after that mission ended early, with Gene Cernan taking on the task. On June 5, 1966—the mission’s third day—Cernan exited the spacecraft and quickly found himself fighting his own equipment. His spacesuit was so rigid that even simple movements required in...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/s66-38515orig.jpg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Eugene A. Cernan",
+        "Gemini"
+      ],
+      "keywords": [
+        "AI",
+        "Eugene A. Cernan",
+        "Gemini",
+        "地缘政治",
+        "市场监管",
+        "First",
+        "Steps",
+        "America"
+      ],
+      "impactAreas": [
+        "AI",
+        "Eugene A. Cernan",
+        "Gemini",
+        "地缘政治"
+      ]
+    },
+    {
+      "id": "news-un-news-1941638a36",
+      "title": "Haiti: Harrowing needs must be met with long-term engagement",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167661",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-05T12:00:00.000Z",
+      "summary": "Escalating gang violence across Haiti has pushed displacement to record levels, deepening an already severe humanitarian crisis and leaving nearly 1.5 million people without a stable place to live, according to new figures released Friday by the UN migration agency, IOM.",
+      "contentExcerpt": "Escalating gang violence across Haiti has pushed displacement to record levels, deepening an already severe humanitarian crisis and leaving nearly 1.5 million people without a stable place to live, according to new figures released Friday by the UN migration agency, IOM.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/21-05-2026_WFP_Haiti-04.jpg/image770x420cropped.jpg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "Haiti",
+        "Harrowing",
+        "needs",
+        "must",
+        "met",
+        "long-term",
+        "engagement"
+      ],
+      "impactAreas": [
+        "AI",
+        "Haiti",
+        "Harrowing",
+        "needs"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-47bf1dc087",
+      "title": "Colorful, Chaotic Jupiter",
+      "url": "https://www.nasa.gov/image-article/colorful-chaotic-jupiter",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-04T15:58:03.000Z",
+      "summary": "NASA&#8217;s Juno spacecraft captured this color-enhanced view of Jupiter&#8217;s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds [&#8230;]",
+      "contentExcerpt": "NASA’s Juno spacecraft captured this color-enhanced view of Jupiter’s northern hemisphere during its 61st close flyby of the giant planet on May 12, 2024. Citizen scientist Gary Eason made this image using raw data from the JunoCam instrument, applying digital processing techniques to enhance color and clarity. It provides a detailed view of chaotic clouds and cyclonic storms in an area known to scientists as a folded filamentary region. In these regions, the zonal jets that create the famili...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/pia25729orig.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "Colorful",
+        "Chaotic",
+        "Jupiter",
+        "NASA",
+        "Juno",
+        "spacecraft",
+        "captured"
+      ],
+      "impactAreas": [
+        "AI",
+        "Colorful",
+        "Chaotic",
+        "Jupiter"
+      ]
+    },
+    {
+      "id": "macro-item-26a4b9920e",
+      "title": "中国人民银行副行长陆磊出席加勒比开发银行2026年年会",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060516430689094/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "contentExcerpt": "中国人民银行副行长陆磊出席加勒比开发银行2026年年会。中国人民银行副行长陆磊出席在巴哈马举行的加勒比开发银行2026年年会。参会各方就加勒比地区转型和未来发展等议题进行交流。会议期间。陆磊会见了加勒比开发银行行长丹尼尔·贝斯特。就加强双边合作等议题交换了意见。",
+      "sourceLanguage": "zh",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "央行",
+        "中国人民银行副行长陆磊出",
+        "席加勒比开发银行",
+        "年年会",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信",
+        "席在巴哈马举行的加勒比开",
+        "发银行"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-ff1cff3de8",
+      "title": "蓝佛安会见新开发银行行长罗塞芙",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
+      "source": "财政部财政新闻",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
+      "sourceLanguage": "zh",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "公共政策",
+        "蓝佛安会见新开发银行行长",
+        "罗塞芙",
+        "财政部财政政策",
+        "国债",
+        "预算和财政运行新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-nasa-breaking-news-cf72aeb8a7",
+      "title": "NASA Hosts 2026 Review on Advanced Composite Manufacturing",
+      "url": "https://www.nasa.gov/directorates/armd/aavp/hicam/nasa-hosts-2026-review-on-advanced-composite-manufacturing",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "macro",
+      "publishedAt": "2026-06-04T20:36:24.000Z",
+      "summary": "NASA’s&#160;Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for&#160;a&#160;2026&#160;spring&#160;review at NASA’s Langley Research Center in Hampton, Virginia.&#160;&#160; The meeting took place May 5-7, bringing together&#160;about 150 people from the&#160;consortium, a&#160;22-member public-private partnership.&#160;&#160; The review gave NASA and industry partners a chance to look at recent progress and [&#...",
+      "contentExcerpt": "Public Affairs Officer, NASA Langley Research Center NASA’s Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its full team of Advanced Composites Consortium partners for a 2026 spring review at NASA’s Langley Research Center in Hampton, Virginia. The meeting took place May 5-7, bringing together about 150 people from the consortium, a 22-member public-private partnership. The review gave NASA and industry partners a chance to look at recent progress and plan for the w...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/boeing-hicam-feature.png",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Hi-Rate Composite Aircraft Manufacturing",
+        "Langley Research Center"
+      ],
+      "keywords": [
+        "AI",
+        "Langley Research Center",
+        "NASA",
+        "Hosts",
+        "Review",
+        "Advanced",
+        "Composite",
+        "Manufacturing"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "tech-item-40ffe19889",
+      "title": "科技部组织召开2026年全国科技监督工作会",
+      "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
+      "source": "科技部工作动态",
+      "sourceType": "webpage",
+      "category": "tech",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "contentExcerpt": "科技部科技政策、科研合作、标准和创新体系工作动态",
+      "sourceLanguage": "zh",
+      "score": 98,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策",
+        "科研合作",
+        "标准和创新体系工作动态"
+      ],
+      "impactAreas": [
+        "AI",
+        "科技部组织召开",
+        "年全国科技监督工作会",
+        "科技部科技政策"
+      ]
+    },
+    {
+      "id": "tech-google-ai-blog-f7238edb25",
+      "title": "The latest AI news we announced in May 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
+      "source": "Google AI Blog",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-05T14:45:00.000Z",
+      "summary": "Here are Google’s latest AI updates from May 2026",
+      "contentExcerpt": "Here’s a recap of our biggest AI updates from May, including announcements from Google I/O 2026, the Android Show and Google Health. Google’s May 2026 updates center on the new \"agentic\" era, featuring the Gemini 3.5 model and Gemini Omni for advanced reasoning and creation. You can now use proactive tools like the updated Gemini app, Universal Cart for shopping, and the new Google Health app to manage your daily tasks more efficiently. Explore these features across new hardware, including th...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_social.width-1300.png",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Search",
+        "Android",
+        "Google DeepMind",
+        "Google Labs",
+        "Quantum computing",
+        "Google Health",
+        "Shopping",
+        "Google Cloud"
+      ],
+      "keywords": [
+        "AI",
+        "Search",
+        "Android",
+        "Google DeepMind",
+        "Google Labs",
+        "Quantum computing",
+        "Google Health",
+        "Shopping"
+      ],
+      "impactAreas": [
+        "AI",
+        "Search",
+        "Android",
+        "Google DeepMind"
+      ]
+    },
+    {
+      "id": "tech-openai-news-f13346f127",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "tech",
+      "publishedAt": "2026-06-04T09:00:00.000Z",
+      "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+      "contentExcerpt": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+      "sourceLanguage": "en",
+      "score": 82,
+      "duplicateCount": 0,
+      "tags": [
+        "Research"
+      ],
+      "keywords": [
+        "Research",
+        "Dreaming",
+        "Better",
+        "memory",
+        "for",
+        "helpful",
+        "ChatGPT",
+        "introduces"
+      ],
+      "impactAreas": [
+        "Research",
+        "Dreaming",
+        "Better",
+        "memory"
+      ]
+    },
+    {
+      "id": "international-item-e9745422d0",
+      "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-05T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "地缘政治",
+        "公共政策",
+        "外交部介绍习近平总书记访",
+        "问朝鲜有关安排",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应朝鲜劳动党总书记"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-0d967114c4",
+      "title": "World News in Brief: UN scales up Ebola response, refugees ‘exiled’ in Africa, Political tensions escalate in Somalia",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167655",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
+      "contentExcerpt": "The UN and its partners are continuing efforts to contain Ebola outbreaks in both the Democratic Republic of the Congo (DRC) and Uganda, while warning that insecurity and misinformation remain major obstacles to the response.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/25-09-2023-UNICEF-Sudan-refugees.jpg/image770x420cropped.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "security",
+        "地缘政治",
+        "市场监管",
+        "World",
+        "Brief",
+        "scales",
+        "Ebola"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-149c8f462c",
+      "title": "From food lines in Somalia to clinics in Afghanistan, Hormuz crisis sends shockwaves through global aid networks",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167653",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
+      "contentExcerpt": "What began as a geopolitical crisis in the Middle East nearly 100 days ago is increasingly becoming a food security crisis elsewhere, with UN agencies warning of rising hunger in Africa and malnourished children being turned away from medical clinics in Afghanistan.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-UNICEF-Afghanistan.jpg/image770x420cropped.jpg",
+      "score": 96,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "security",
+        "地缘政治",
+        "市场监管",
+        "food",
+        "lines",
+        "Somalia",
+        "clinics"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-nasa-breaking-news-d2f19946bb",
+      "title": "NASA-Funded Study Shows Wildfire Smoke’s Hidden Ozone Toll",
+      "url": "https://science.nasa.gov/earth/nasa-funded-study-shows-wildfire-smokes-hidden-ozone-toll",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-04T18:01:59.000Z",
+      "summary": "Over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames.",
+      "contentExcerpt": "Writer/Editor (IV), Earth Science Division Wildfire smoke is stoking a new challenge for cleaner air. A NASA-supported study published Thursday found that, over the last decade, wildfires have worsened ground-level ozone pollution across much of the contiguous United States, creating unhealthy air far from active flames. Wildfires have become an increasingly important contributor to ground-level ozone, or smog, across much of the United States, researchers report June 4 in the journal Science...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/articles/2026/goes-fp-cobbna-nam-jun2023_00231%20(1).png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "Air Quality",
+        "Earth",
+        "Earth's Atmosphere",
+        "Goddard Space Flight Center",
+        "Human Dimensions",
+        "Wildfires"
+      ],
+      "keywords": [
+        "AI",
+        "Air Quality",
+        "Earth",
+        "Earth's Atmosphere",
+        "Goddard Space Flight Center",
+        "Human Dimensions",
+        "Wildfires",
+        "NASA-Funded"
+      ],
+      "impactAreas": [
+        "国际",
+        "商业"
+      ]
+    },
+    {
+      "id": "international-un-news-85d05adea9",
+      "title": "World Ocean Assessment highlights urgent need for science and global action",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167646",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
+      "contentExcerpt": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, scientists and ocean advocates gathered on Tuesday evening with a shared sense of urgency – and anticipation.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/04-06-2026-Tahzib-Vevers-Earle-Cousteau.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "World",
+        "Ocean",
+        "Assessment",
+        "highlights",
+        "urgent",
+        "need",
+        "for"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-e5178a7935",
+      "title": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167652",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
+      "contentExcerpt": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of the same type used in the notorious 2013 Ghouta attack – in what the UN’s top disarmament official called a “momentous discovery” for international security.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/24-02-2022_UNICEF_Syria.jpg/image770x420cropped.jpg",
+      "score": 88,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "security",
+        "市场监管",
+        "Undeclared",
+        "chemical",
+        "weapons",
+        "found",
+        "Syria",
+        "including"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-nasa-breaking-news-b4239884e7",
+      "title": "Fighting Fire With Fire",
+      "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-05T04:01:00.000Z",
+      "summary": "In fire-prone ecosystems in Australia’s Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season.",
+      "contentExcerpt": "In fire-prone ecosystems in Australia's Northern Territory, prescribed burns are lit to minimize the severity of fires later in the season. In May and June of most years, NASA satellites typically begin to detect large numbers of wildland fires throughout the Top End and Arnhem Land regions of Australia’s Northern Territory. On some days, especially in the afternoon, the blazes can resemble sizable wildfires in satellite imagery, spreading widely and producing expansive smoke plumes. That was...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/fighting-fire-with-fire/australiafires_amo_20260528_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 84,
+      "duplicateCount": 0,
+      "tags": [
+        "Aqua",
+        "Earth Observatory",
+        "Moderate Resolution Imaging Spectroradiometer (MODIS)",
+        "Wildfires",
+        "Wildland Fire Management"
+      ],
+      "keywords": [
+        "Aqua",
+        "Earth Observatory",
+        "Wildfires",
+        "Wildland Fire Management",
+        "Fighting",
+        "Fire",
+        "fire-prone",
+        "ecosystems"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "business-github-blog-1ea8d75964",
+      "title": "GitHub Universe is back: All together now, in the agentic era",
+      "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+      "source": "GitHub Blog",
+      "sourceType": "rss",
+      "category": "business",
+      "publishedAt": "2026-06-04T16:00:00.000Z",
+      "summary": "GitHub Universe is back: returning to the historic Fort Mason Center in San Francisco on October 28–29, 2026. The post GitHub Universe is back: All together now, in the agentic era appeared first on The GitHub Blog .",
+      "contentExcerpt": "Ariel Kanter is a writer, editor, and content strategist. Her work has been featured in The New York Times, Vanity Fair, New York Magazine, and, of course, on GitHub. You can find her on Substack at Rel's Recs. Get inspired by five of the most memorable, magical, and quirky Universe sessions to date. From Appwrite to Zulip, Universe 2025’s Open Source Zone was stacked with standout projects showing just how far open source can go. Meet the maintainers—and if you want to join them in 2026, you...",
+      "sourceLanguage": "en",
+      "imageUrl": "https://github.blog/wp-content/uploads/2026/06/1200x630-U25-Blog-Hero_x2.png?fit=2400%2C1260",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "Company news",
+        "News & insights",
+        "GitHub Universe"
+      ],
+      "keywords": [
+        "AI",
+        "security",
+        "Company news",
+        "News & insights",
+        "GitHub Universe",
+        "GitHub",
+        "Universe",
+        "back"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-openai-news-010cdd7fc8",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "business",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "contentExcerpt": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "sourceLanguage": "en",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "地缘政治",
+        "How",
+        "Endava",
+        "redesigning",
+        "software",
+        "delivery",
+        "around"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-u-s-sec-press-releases-e4acdcac84",
+      "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
+      "source": "U.S. SEC Press Releases",
+      "sourceType": "rss",
+      "category": "business",
+      "publishedAt": "2026-06-04T18:39:49.000Z",
+      "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+      "contentExcerpt": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee. The new members were appointed to four-year terms&nbsp;and&nbsp;will join&nbsp;the&nbsp;15&nbsp;current&nbsp;…",
+      "sourceLanguage": "en",
+      "score": 88,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "市场监管",
+        "SEC",
+        "Announces",
+        "New",
+        "Members",
+        "Small",
+        "Business",
+        "Capital"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    }
+  ]
+}

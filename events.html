@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>每日摘要 - Message Choose</title>
-    <meta name="description" content="每日科技、金融、新闻摘要">
+    <title>重点事件 - Message Choose</title>
+    <meta name="description" content="从每日信息流中聚合重点事件和相关报道">
     <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="src/styles/main.css">
   </head>
-  <body data-page="daily-summary">
+  <body data-page="events">
     <header class="app-header">
       <div class="brand-block">
         <a class="brand-mark" href="index.html" aria-label="Message Choose 首页">
           <span class="brand-symbol" aria-hidden="true">MC</span>
           <span>
             <strong>Message Choose</strong>
-            <small>每日摘要</small>
+            <small>重点事件</small>
           </span>
         </a>
       </div>
       <nav class="top-nav" aria-label="页面导航">
         <a href="index.html">信息流</a>
-        <a href="daily-summary.html" aria-current="page">每日摘要</a>
+        <a href="daily-summary.html">每日摘要</a>
         <a href="weekly-review.html">每周复盘</a>
-        <a href="events.html">重点事件</a>
+        <a href="events.html" aria-current="page">重点事件</a>
         <a href="history.html">历史</a>
         <a href="about.html">关于/规则</a>
       </nav>
@@ -32,15 +32,15 @@
     <main class="app-shell page-shell">
       <section class="overview-band page-hero" aria-labelledby="page-title">
         <div>
-          <h1 id="page-title">每日摘要</h1>
-          <p id="daily-meta">正在加载摘要数据</p>
+          <h1 id="page-title">重点事件追踪</h1>
+          <p id="events-meta">正在加载事件聚合数据</p>
         </div>
       </section>
-      <section class="summary-page-grid" id="daily-summary-list" aria-live="polite"></section>
+      <section class="events-list" id="events-list" aria-live="polite"></section>
     </main>
 
     <script src="src/scripts/render-feed.js?v=20260529-2"></script>
     <script src="src/scripts/page-transitions.js?v=20260529-2"></script>
-    <script src="src/scripts/summary-pages.js?v=20260529-2"></script>
+    <script src="src/scripts/events.js?v=20260529-2"></script>
   </body>
 </html>

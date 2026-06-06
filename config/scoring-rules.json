@@ -9,6 +9,9 @@
   "categoryBoosts": {
     "tech": 2,
     "finance": 3,
+    "business": 2,
+    "macro": 4,
+    "international": 2,
     "news": 1
   },
   "sourceBoosts": {
@@ -43,7 +46,13 @@
       { "term": "inflation", "score": 6 },
       { "term": "market structure", "score": 7 },
       { "term": "election", "score": 5 },
-      { "term": "policy", "score": 4 }
+      { "term": "policy", "score": 4 },
+      { "term": "earnings", "score": 5 },
+      { "term": "GDP", "score": 6 },
+      { "term": "tariff", "score": 5 },
+      { "term": "财报", "score": 5 },
+      { "term": "宏观", "score": 6 },
+      { "term": "国际", "score": 4 }
     ],
     "riskSignals": [
       { "term": "breach", "score": 8 },

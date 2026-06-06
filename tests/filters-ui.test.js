@@ -73,3 +73,47 @@ test("keyword search sorts by relevance before score and time", () => {
 
   assert.deepEqual(Array.from(result, (item) => item.id), ["title-and-keyword", "score-only"]);
 });
+
+test("keyword search expands Chinese and English aliases", () => {
+  const filters = loadFilters();
+  const items = [{
+    id: "macro",
+    title: "Federal Reserve rate decision",
+    source: "Federal Reserve",
+    category: "macro",
+    score: 90,
+    summary: "Policy makers discuss inflation."
+  }, {
+    id: "tech",
+    title: "Developer platform update",
+    source: "Tech Source",
+    category: "tech",
+    score: 95,
+    summary: "General product update."
+  }];
+
+  const result = filters.applyFilters(items, {
+    channel: "all",
+    source: "all",
+    keyword: "宏观",
+    minScore: 0,
+    sort: "score-desc"
+  });
+
+  assert.deepEqual(Array.from(result, (item) => item.id), ["macro"]);
+});
+
+test("keyword search exposes hit labels for rendered feedback", () => {
+  const filters = loadFilters();
+  const labels = filters.getSearchHitLabels({
+    title: "AI infrastructure policy",
+    source: "OpenAI News",
+    summary: "Policy update for compute governance.",
+    keywords: ["AI", "policy"],
+    score: 90,
+    publishedAt: new Date().toISOString()
+  }, ["AI", "policy"]);
+
+  assert.ok(labels.includes("标题命中"));
+  assert.ok(labels.includes("关键词命中"));
+});

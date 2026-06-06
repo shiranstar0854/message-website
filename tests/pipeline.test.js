@@ -138,6 +138,33 @@ test("normalizes optional excerpts and only accepts https images", () => {
   assert.equal(normalizeImageUrl("javascript:alert(1)"), "");
 });
 
+test("derives expanded categories and language metadata from item text", () => {
+  const macro = normalizeRawItem({
+    sourceName: "Federal Reserve",
+    sourceType: "rss",
+    category: "finance",
+    credibility: 95,
+    title: "Federal Reserve rate decision highlights inflation risks",
+    link: "https://example.test/fed",
+    summary: "Central bank policy update."
+  }, "2026-05-24T00:00:00.000Z");
+  const business = normalizeRawItem({
+    sourceName: "Business Source",
+    sourceType: "rss",
+    category: "news",
+    title: "上市公司发布财报并披露利润增长",
+    link: "https://example.test/business",
+    summary: "公司营收和利润变化。"
+  }, "2026-05-24T00:00:00.000Z");
+
+  assert.equal(macro.category, "macro");
+  assert.equal(macro.primaryCategory, "finance");
+  assert.equal(macro.sourceLanguage, "en");
+  assert.ok(macro.impactAreas.includes("宏观"));
+  assert.equal(business.category, "business");
+  assert.equal(business.primaryCategory, "news");
+});
+
 
 test("filters items by category, blocked source, low-value phrases, and minimum title length", () => {
   const rules = {
@@ -314,6 +341,8 @@ test("latest data publishes compact display fields only", () => {
     timelinessTier: "daily",
     summary: "x".repeat(900),
     contentExcerpt: "y".repeat(900),
+    titleZh: "中文标题",
+    summaryZh: "中文摘要",
     translatedTitle: "紧凑网站负载",
     aiSummary: "中文摘要解释 AI policy and market structure.",
     summaryReason: "Official Source / tech",
@@ -335,6 +364,8 @@ test("latest data publishes compact display fields only", () => {
 
   assert.equal(latest.items[0].summary.length, 500);
   assert.equal(latest.items[0].contentExcerpt.length, 500);
+  assert.equal(latest.items[0].titleZh, "中文标题");
+  assert.equal(latest.items[0].summaryZh, "中文摘要");
   assert.equal(latest.items[0].aiSummary, "中文摘要解释 AI policy and market structure.");
   assert.equal(latest.items[0].summaryReason, "Official Source / tech");
   assert.equal(latest.items[0].translatedTitle, "紧凑网站负载");

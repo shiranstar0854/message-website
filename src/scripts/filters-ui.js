@@ -15,12 +15,33 @@
     return normalize(value).split(/\s+/).filter(Boolean);
   }
 
+  const TERM_ALIASES = {
+    ai: ["人工智能", "大模型", "生成式ai", "artificial intelligence"],
+    人工智能: ["ai", "大模型", "artificial intelligence"],
+    芯片: ["chip", "semiconductor", "gpu", "半导体"],
+    半导体: ["chip", "semiconductor", "芯片"],
+    金融: ["finance", "market", "市场", "监管"],
+    宏观: ["macro", "gdp", "inflation", "通胀", "利率", "央行", "美联储"],
+    商业: ["business", "company", "earnings", "财报", "企业", "公司"],
+    国际: ["global", "world", "international", "外交", "地缘", "制裁"],
+    政策: ["policy", "regulation", "监管"],
+    监管: ["regulation", "policy", "sec", "csrc", "证监会"]
+  };
+
+  function expandTerm(term) {
+    return [...new Set([term, ...(TERM_ALIASES[term] || [])].filter(Boolean).map(normalize))];
+  }
+
+  function expandTerms(terms) {
+    return terms.map(expandTerm);
+  }
+
   function searchableText(item) {
     return {
-      title: normalize(`${item.translatedTitle || ""} ${item.title || ""}`),
-      summary: normalize(`${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""}`),
+      title: normalize(`${item.titleZh || ""} ${item.translatedTitle || ""} ${item.title || ""}`),
+      summary: normalize(`${item.summaryZh || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""}`),
       source: normalize(item.source),
-      labels: normalize(`${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.keywords || []).join(" ")}`)
+      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.keywords || []).join(" ")}`)
     };
   }
 
@@ -31,11 +52,16 @@
     return Math.max(0, 20 - Math.min(20, ageHours / 12));
   }
 
+  function fieldMatches(field, expandedTerm) {
+    return expandedTerm.some((term) => field.includes(term));
+  }
+
   function getSearchBreakdown(item, terms) {
     const text = searchableText(item);
-    const title = terms.reduce((score, term) => score + (text.title.includes(term) ? 1 : 0), 0);
-    const keyword = terms.reduce((score, term) => score + (text.labels.includes(term) ? 1 : 0), 0);
-    const relevance = terms.reduce((score, term) => score + (text.summary.includes(term) || text.source.includes(term) ? 1 : 0), 0);
+    const expandedTerms = expandTerms(terms);
+    const title = expandedTerms.reduce((score, term) => score + (fieldMatches(text.title, term) ? 1 : 0), 0);
+    const keyword = expandedTerms.reduce((score, term) => score + (fieldMatches(text.labels, term) ? 1 : 0), 0);
+    const relevance = expandedTerms.reduce((score, term) => score + (fieldMatches(text.summary, term) || fieldMatches(text.source, term) ? 1 : 0), 0);
     return {
       title,
       keyword,
@@ -49,6 +75,17 @@
     if (!terms.length) return 0;
     const score = getSearchBreakdown(item, terms);
     return score.title * 100 + score.keyword * 70 + score.relevance * 35 + score.freshness + score.heat / 5;
+  }
+
+  function getSearchHitLabels(item, terms) {
+    if (!terms.length) return [];
+    const breakdown = getSearchBreakdown(item, terms);
+    return [
+      breakdown.title > 0 ? "标题命中" : "",
+      breakdown.keyword > 0 ? "关键词命中" : "",
+      breakdown.relevance > 0 ? "摘要/来源命中" : "",
+      breakdown.freshness > 0 ? "新近发布" : ""
+    ].filter(Boolean);
   }
 
   function uniqueSources(items) {
@@ -87,13 +124,18 @@
     const filteredItems = items.filter((item) => {
       const text = searchableText(item);
       const combinedText = `${text.title} ${text.summary} ${text.source} ${text.labels}`;
+      const expandedTerms = expandTerms(terms);
       const channelMatch = state.channel === "all" || item.category === state.channel;
       const sourceMatch = state.source === "all" || item.source === state.source;
-      const keywordMatch = !terms.length || terms.every((term) => combinedText.includes(term));
+      const keywordMatch = !terms.length || expandedTerms.every((term) => fieldMatches(combinedText, term));
       const scoreMatch = Number(item.score || 0) >= Number(state.minScore || 0);
       return channelMatch && sourceMatch && keywordMatch && scoreMatch;
     });
-    return sortSearchResults(filteredItems, terms) || sortItems(filteredItems, state.sort);
+    const sortedItems = sortSearchResults(filteredItems, terms) || sortItems(filteredItems, state.sort);
+    return sortedItems.map((item) => ({
+      ...item,
+      searchHitLabels: terms.length ? getSearchHitLabels(item, terms) : []
+    }));
   }
 
   function getFilterResult(items, state) {
@@ -211,11 +253,32 @@
       emit();
     }
 
+    function lowerScoreFloor() {
+      state.minScore = 0;
+      if (scoreFilter) scoreFilter.value = state.minScore;
+      emit();
+    }
+
+    function viewAll() {
+      state.channel = "all";
+      state.keyword = "";
+      state.source = "all";
+      state.minScore = 0;
+      state.sort = "score-desc";
+      if (keywordFilter) keywordFilter.value = "";
+      if (sourceFilter) sourceFilter.value = "all";
+      if (scoreFilter) scoreFilter.value = state.minScore;
+      if (sortFilter) sortFilter.value = state.sort;
+      emit();
+    }
+
     emit();
     return {
       state,
       clearKeyword,
-      resetFilters
+      resetFilters,
+      lowerScoreFloor,
+      viewAll
     };
   }
 
@@ -224,6 +287,7 @@
     getFilterResult,
     getSearchBreakdown,
     getSearchScore,
+    getSearchHitLabels,
     initFilters
   };
 })();

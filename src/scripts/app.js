@@ -8,6 +8,9 @@
     channels: [
       { id: "tech", label: "科技", description: "AI、云计算、芯片、开发者平台与安全基础设施。" },
       { id: "finance", label: "金融", description: "央行、监管、市场结构、宏观数据与风险信号。" },
+      { id: "business", label: "商业", description: "公司经营、财报、产业竞争、并购上市与消费市场。" },
+      { id: "macro", label: "宏观", description: "财政货币政策、经济数据、利率、通胀与周期信号。" },
+      { id: "international", label: "国际", description: "国际关系、地缘政治、全球监管和跨境市场事件。" },
       { id: "news", label: "新闻", description: "公共政策、国际事件、社会治理与重大突发消息。" }
     ]
   };
@@ -19,6 +22,9 @@
     channels: {
       tech: { label: "科技", count: 0, items: [] },
       finance: { label: "金融", count: 0, items: [] },
+      business: { label: "商业", count: 0, items: [] },
+      macro: { label: "宏观", count: 0, items: [] },
+      international: { label: "国际", count: 0, items: [] },
       news: { label: "新闻", count: 0, items: [] }
     },
     items: []
@@ -35,6 +41,12 @@
   const FALLBACK_DAILY = {
     generatedAt: "",
     channelSummaries: []
+  };
+
+  const FALLBACK_EVENTS = {
+    generatedAt: "",
+    totalEvents: 0,
+    events: []
   };
 
   async function loadJson(url, fallback) {
@@ -129,11 +141,11 @@
   }
 
   function displayTitle(item) {
-    return item.translatedTitle || item.title || "未命名信息";
+    return item.titleZh || item.translatedTitle || item.title || "未命名信息";
   }
 
   function shortExplanation(item) {
-    return item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。";
+    return item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || "暂无摘要。";
   }
 
   function importanceText(item) {
@@ -147,11 +159,36 @@
     return areas.length ? areas : [channelLabel(data, item.category)];
   }
 
+  function hotspotTags(item, data) {
+    return impactAreas(item, data).slice(0, 2);
+  }
+
   function selectTopHotspots(items) {
+    const seenKeys = new Set();
     return [...(items || [])]
-      .sort((left, right) => Number(right.score || 0) - Number(left.score || 0)
+      .sort((left, right) => hotspotRankScore(right) - hotspotRankScore(left)
+        || Number(right.score || 0) - Number(left.score || 0)
         || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
+      .filter((item) => {
+        const key = hotspotEventKey(item);
+        if (seenKeys.has(key)) return false;
+        seenKeys.add(key);
+        return true;
+      })
       .slice(0, 5);
+  }
+
+  function hotspotEventKey(item) {
+    const keywords = (item.impactAreas || item.keywords || item.tags || []).slice(0, 2).join("|").toLowerCase();
+    return keywords || String(displayTitle(item)).toLowerCase().slice(0, 24);
+  }
+
+  function hotspotRankScore(item) {
+    const publishedTime = new Date(item.publishedAt || 0).getTime();
+    const freshness = Number.isNaN(publishedTime) ? 0 : Math.max(0, 12 - (Date.now() - publishedTime) / (6 * 60 * 60 * 1000));
+    const readableBonus = (item.aiSummary || item.summaryZh || item.contentExcerpt ? 8 : 0) + (item.importance || item.summaryReason ? 5 : 0);
+    const sourceBonus = ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority) ? 4 : 0;
+    return Number(item.score || 0) + freshness + readableBonus + sourceBonus;
   }
 
   function renderTopHotspots(data) {
@@ -159,42 +196,119 @@
     if (!container) return;
 
     const items = selectTopHotspots(data.items || []);
-    if (!items.length) return;
+    if (!items.length) {
+      container.innerHTML = `<div class="empty-state compact-empty">暂无核心热点，信息流更新后会自动生成。</div>`;
+      return;
+    }
 
-    container.innerHTML = items.map((item, index) => {
+    const renderHotspotCard = (item, index) => {
       const safeUrl = window.MessageChooseRender.safeExternalUrl(item.url);
-      const title = safeUrl
-        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle(item))}</a>`
-        : escapeHtml(displayTitle(item));
-      return `
-        <article class="top-hotspot-card${index === 0 ? " is-primary" : ""}">
-          <div class="top-hotspot-rank">Top ${index + 1}</div>
-          <div class="top-hotspot-body">
-            <h3>${title}</h3>
-            <p>${escapeHtml(shortExplanation(item))}</p>
-            <div class="top-hotspot-importance"><strong>重要性</strong><span>${escapeHtml(importanceText(item))}</span></div>
-            <div class="top-hotspot-impact" aria-label="影响领域">
-              ${impactAreas(item, data).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
-            </div>
-            <div class="top-hotspot-meta">
-              <span>${escapeHtml(item.source)}</span>
-              <span>${escapeHtml(channelLabel(data, item.category))}</span>
-              <span>${escapeHtml(formatShortDate(item.publishedAt))}</span>
-              <strong>${Number(item.score || 0)}</strong>
-              ${safeUrl && isEnglishSourceItem(item) ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">原文入口</a>` : ""}
-            </div>
+      const summary = shortExplanation(item);
+      const source = item.source || "公开来源";
+      const updatedAt = formatShortDate(item.publishedAt);
+      const cardContent = `
+        <div class="top-hotspot-rank">Top ${index + 1}</div>
+        <div class="top-hotspot-body">
+          <h3>${escapeHtml(displayTitle(item))}</h3>
+          <p class="top-hotspot-summary"><span>摘要</span>${escapeHtml(summary)}</p>
+          ${index === 0 ? `
+            <p class="top-hotspot-why"><span>为什么重要</span>${escapeHtml(importanceText(item))}</p>
+          ` : ""}
+          <div class="top-hotspot-impact" aria-label="影响领域">
+            ${hotspotTags(item, data).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
           </div>
+          <div class="top-hotspot-meta">
+            <span>${escapeHtml(channelLabel(data, item.category))}</span>
+            <span>来源 ${escapeHtml(source)}</span>
+            <span>更新 ${escapeHtml(updatedAt)}</span>
+            <strong>${Number(item.score || 0)}</strong>
+          </div>
+        </div>`;
+      return `
+        <article class="top-hotspot-card${index === 0 ? " is-primary top-hotspot-main" : ""}">
+          ${safeUrl
+            ? `<a class="top-hotspot-link" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${cardContent}</a>`
+            : `<div class="top-hotspot-link">${cardContent}</div>`}
         </article>
       `;
-    }).join("");
+    };
+
+    const [primary, ...secondary] = items;
+    container.innerHTML = `
+      ${renderHotspotCard(primary, 0)}
+      <div class="top-hotspot-secondary">
+        ${secondary.map((item, index) => renderHotspotCard(item, index + 1)).join("")}
+      </div>
+    `;
+  }
+
+  function renderTopEvents(eventData, data) {
+    const container = document.getElementById("top-hotspot-list");
+    if (!container) return false;
+    const events = [...(eventData.events || [])]
+      .sort((left, right) => eventRankScore(right) - eventRankScore(left)
+        || new Date(right.updatedAt || 0).getTime() - new Date(left.updatedAt || 0).getTime())
+      .slice(0, 5);
+    if (!events.length) return false;
+
+    const renderEventCard = (event, index) => {
+      const evidence = event.evidenceItems || event.items || [];
+      const safeUrl = window.MessageChooseRender.safeExternalUrl(evidence[0]?.url);
+      const body = `
+        <div class="top-hotspot-rank">${index === 0 ? "最该看" : `Top ${index + 1}`}</div>
+        <div class="top-hotspot-body">
+          <h3>${escapeHtml(event.title || "重点事件")}</h3>
+          <p class="top-hotspot-summary"><span>发生了什么</span>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
+          <p class="top-hotspot-why"><span>为什么重要</span>${escapeHtml(event.whyItMatters || "该事件可能影响政策、市场或产业判断。")}</p>
+          <div class="top-hotspot-impact" aria-label="影响范围">
+            ${(event.impactAreas || event.keywords || []).slice(0, 3).map((area) => `<span>${escapeHtml(area)}</span>`).join("")}
+          </div>
+          ${index === 0 && event.watchlist?.length ? `
+            <ul class="top-hotspot-watchlist">
+              ${event.watchlist.slice(0, 3).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+            </ul>
+          ` : ""}
+          <div class="top-hotspot-meta">
+            <span>证据 ${Number(event.itemCount || evidence.length || 0)} 条</span>
+            <span>更新 ${escapeHtml(formatShortDate(event.updatedAt))}</span>
+            ${evidence[0]?.source ? `<span>来源 ${escapeHtml(evidence[0].source)}</span>` : ""}
+            <strong>${Number(evidence[0]?.score || 0)}</strong>
+          </div>
+        </div>`;
+      return `
+        <article class="top-hotspot-card${index === 0 ? " is-primary top-hotspot-main" : ""}">
+          ${safeUrl
+            ? `<a class="top-hotspot-link" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${body}</a>`
+            : `<div class="top-hotspot-link">${body}</div>`}
+        </article>
+      `;
+    };
+
+    const [primary, ...secondary] = events;
+    container.innerHTML = `
+      ${renderEventCard(primary, 0)}
+      <div class="top-hotspot-secondary">
+        ${secondary.map((event, index) => renderEventCard(event, index + 1)).join("")}
+      </div>
+    `;
+    return true;
+  }
+
+  function eventRankScore(event) {
+    const evidence = event.evidenceItems || event.items || [];
+    const updatedTime = new Date(event.updatedAt || 0).getTime();
+    const freshness = Number.isNaN(updatedTime) ? 0 : Math.max(0, 16 - (Date.now() - updatedTime) / (6 * 60 * 60 * 1000));
+    const topScore = Number(evidence[0]?.score || 0);
+    return topScore + freshness + (event.whyItMatters ? 8 : 0) + (event.watchlist?.length ? 5 : 0) + Math.min(10, Number(event.itemCount || evidence.length || 0));
   }
 
   async function init() {
-    const [config, data, health, daily] = await Promise.all([
+    const [config, data, health, daily, eventData] = await Promise.all([
       loadJson("public/site-config.json", FALLBACK_CONFIG),
       loadJson("src/data/latest-items.json", FALLBACK_DATA),
       loadJson("src/data/source-health.json", FALLBACK_HEALTH),
-      loadJson("src/data/daily-summary.json", FALLBACK_DAILY)
+      loadJson("src/data/daily-summary.json", FALLBACK_DAILY),
+      loadJson("src/data/events.json", FALLBACK_EVENTS)
     ]);
 
     const feed = document.getElementById("feed");
@@ -225,6 +339,8 @@
             ? `关键词“${activeState.keyword}”在来源“${activeState.source}”、最低评分 ${activeState.minScore} 下没有匹配。`
             : `当前频道、来源和最低评分 ${activeState.minScore} 下没有匹配。`,
           actions: [
+            { id: "lower-score", label: "降低评分门槛" },
+            { id: "view-all", label: "查看全部" },
             { id: "clear-keyword", label: "清除关键词" },
             { id: "reset-filters", label: "重置筛选" }
           ]
@@ -232,7 +348,13 @@
         updateSummary(data, 0, 0);
       } else {
         window.MessageChooseRender.renderFeed(feed, displayedItems);
-        updateSummary(data, displayedItems.length, filteredItems.length);
+        const keyword = activeState.keyword?.trim();
+        const labels = keyword && displayedItems[0]?.searchHitLabels?.length
+          ? `；首条命中：${displayedItems[0].searchHitLabels.join("、")}`
+          : "";
+        updateSummary(data, displayedItems.length, filteredItems.length, keyword
+          ? `搜索“${keyword}”找到 ${filteredItems.length} 条，当前显示 ${displayedItems.length} 条${labels}。`
+          : "");
       }
 
       const remainingCount = filteredItems.length - displayedItems.length;
@@ -242,7 +364,7 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
-    renderTopHotspots(data);
+    if (!renderTopEvents(eventData, data)) renderTopHotspots(data);
     renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);
@@ -262,6 +384,8 @@
       const action = event.target.closest("[data-empty-action]")?.dataset.emptyAction;
       if (action === "clear-keyword") filterControls?.clearKeyword();
       if (action === "reset-filters") filterControls?.resetFilters();
+      if (action === "lower-score") filterControls?.lowerScoreFloor();
+      if (action === "view-all") filterControls?.viewAll();
     });
     loadMoreButton.addEventListener("click", () => {
       visibleLimit *= 2;
