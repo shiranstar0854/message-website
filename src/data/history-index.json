@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-06T00:00:51.171Z",
+  "generatedAt": "2026-06-06T09:00:51.907Z",
   "retentionDays": 10,
   "totalArchiveDays": 12,
   "totalDays": 10,
   "days": [
     {
       "date": "2026-06-06",
-      "generatedAt": "2026-06-06T00:00:50.794Z",
+      "generatedAt": "2026-06-06T09:00:51.485Z",
       "url": "data/archive/daily/2026-06-06.json",
-      "totalItems": 27,
+      "totalItems": 34,
       "totals": {
         "sources": 20,
         "healthySources": 9,
@@ -17,7 +17,7 @@
         "filteredItems": 41,
         "dedupedItems": 41,
         "scoredItems": 41,
-        "enrichmentAttempted": 24,
+        "enrichmentAttempted": 32,
         "enrichmentFailed": 0
       },
       "archivePolicy": {
