@@ -1,41 +1,49 @@
 {
   "weekId": "2026-W23",
-  "generatedAt": "2026-06-01T08:33:53.799Z",
-  "method": "extractive",
+  "generatedAt": "2026-06-07T01:00:22.951Z",
+  "method": "deepseek-chat-completions",
   "archiveDays": [
-    "2026-05-26",
-    "2026-05-27",
     "2026-05-28",
     "2026-05-29",
     "2026-05-30",
     "2026-05-31",
-    "2026-06-01"
+    "2026-06-01",
+    "2026-06-02",
+    "2026-06-03",
+    "2026-06-04",
+    "2026-06-05",
+    "2026-06-06",
+    "2026-06-07"
   ],
   "totals": {
-    "archiveCount": 7,
-    "itemCount": 165
+    "archiveCount": 11,
+    "itemCount": 351
   },
   "channels": [
     {
       "id": "tech",
       "label": "科技",
-      "totalItems": 21,
+      "totalItems": 43,
       "topSources": [
         {
           "source": "OpenAI News",
-          "count": 10
+          "count": 24
         },
         {
           "source": "Google AI Blog",
-          "count": 4
-        },
-        {
-          "source": "科技部工作动态",
-          "count": 3
+          "count": 7
         },
         {
           "source": "GitHub Blog",
-          "count": 3
+          "count": 5
+        },
+        {
+          "source": "科技部工作动态",
+          "count": 5
+        },
+        {
+          "source": "CISA News",
+          "count": 1
         },
         {
           "source": "Microsoft Azure Blog",
@@ -43,6 +51,24 @@
         }
       ],
       "highlights": [
+        {
+          "id": "tech-item-40ffe19889",
+          "title": "科技部组织召开2026年全国科技监督工作会",
+          "url": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
+          "source": "科技部工作动态",
+          "score": 100,
+          "summary": "科技部召开2026年全国科技监督工作会，部署科技政策、科研合作、标准制定和创新体系等领域的工作动态。",
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        },
+        {
+          "id": "tech-openai-news-f9f27c3f88",
+          "title": "Our views on AI policy and political advocacy",
+          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+          "source": "OpenAI News",
+          "score": 100,
+          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+          "publishedAt": "2026-06-01T17:00:00.000Z"
+        },
         {
           "id": "tech-openai-news-63eee503d2",
           "title": "OpenAI’s Frontier Governance Framework",
@@ -53,115 +79,147 @@
           "publishedAt": "2026-05-28T00:00:00.000Z"
         },
         {
-          "id": "tech-openai-news-6f071c9489",
-          "title": "Election information and safeguards in 2026",
-          "url": "https://openai.com/index/election-safeguards-2026",
+          "id": "tech-github-blog-1ea8d75964",
+          "title": "GitHub Universe is back: All together now, in the agentic era",
+          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+          "source": "GitHub Blog",
+          "score": 99,
+          "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
+          "publishedAt": "2026-06-04T16:00:00.000Z"
+        },
+        {
+          "id": "tech-openai-news-a3d6a8c521",
+          "title": "A blueprint for democratic governance of frontier AI",
+          "url": "https://openai.com/index/frontier-safety-blueprint",
           "source": "OpenAI News",
-          "score": 95,
-          "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
-          "publishedAt": "2026-05-27T00:00:00.000Z"
+          "score": 99,
+          "summary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。",
+          "publishedAt": "2026-06-03T10:00:00.000Z"
         },
         {
-          "id": "tech-google-ai-blog-e6ea868542",
-          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz",
-          "source": "Google AI Blog",
-          "score": 94,
-          "summary": "We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
-          "publishedAt": "2026-05-29T19:00:00.000Z"
+          "id": "tech-item-916a2c96b7",
+          "title": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
+          "url": "https://www.most.gov.cn/kjbgz/202606/t20260603_196744.html",
+          "source": "科技部工作动态",
+          "score": 98,
+          "summary": "科技部在上海组织召开2026年度国际托卡马克物理与工程活动中方研讨会，聚焦核聚变研究合作与进展。",
+          "publishedAt": "2026-06-03T00:00:00.000Z"
         },
         {
-          "id": "tech-google-ai-blog-7099ab3e16",
-          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
-          "source": "Google AI Blog",
-          "score": 93,
-          "summary": "With Gemini Omni, Gemini’s ability to reason meets the ability to create, while Gemini 3.5 is built to help you execute complex, agentic workflows.",
-          "publishedAt": "2026-05-29T17:30:00.000Z"
-        },
-        {
-          "id": "tech-openai-news-54eed69f83",
-          "title": "Boston Children’s uses AI to unlock new diagnoses",
-          "url": "https://openai.com/index/boston-childrens-hospital",
+          "id": "tech-openai-news-5c3dfacb54",
+          "title": "OpenAI public policy agenda",
+          "url": "https://openai.com/index/public-policy-agenda",
           "source": "OpenAI News",
-          "score": 93,
-          "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
-          "publishedAt": "2026-05-29T12:00:00.000Z"
+          "score": 97,
+          "summary": "OpenAI发布公共政策议程，涵盖AI安全、青少年保护、劳动力转型及全球标准，旨在确保AI技术造福社会。",
+          "publishedAt": "2026-06-03T10:00:00.000Z"
         },
         {
-          "id": "tech-openai-news-33dd0a1359",
-          "title": "How Braintrust turns customer requests into code with Codex",
-          "url": "https://openai.com/index/braintrust",
+          "id": "tech-openai-news-010cdd7fc8",
+          "title": "How Endava is redesigning software delivery around AI agents",
+          "url": "https://openai.com/index/endava-frontiers",
           "source": "OpenAI News",
-          "score": 93,
-          "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
-          "publishedAt": "2026-05-29T12:00:00.000Z"
-        },
-        {
-          "id": "tech-google-ai-blog-d94f270ada",
-          "title": "Check out real-life AI prototypes from the Futures Lab.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs",
-          "source": "Google AI Blog",
-          "score": 93,
-          "summary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
-          "publishedAt": "2026-05-29T12:00:00.000Z"
-        },
-        {
-          "id": "tech-openai-news-bbfafadd67",
-          "title": "Strengthening societal resilience with Rosalind Biodefense",
-          "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-          "source": "OpenAI News",
-          "score": 92,
-          "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S.",
-          "publishedAt": "2026-05-29T03:00:00.000Z"
+          "score": 96,
+          "summary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。",
+          "publishedAt": "2026-06-04T12:00:00.000Z"
         }
       ],
       "themes": [
+        "科技部组织召开2026年全国科技监督工作会",
+        "Our views on AI policy and political advocacy",
         "OpenAI’s Frontier Governance Framework",
-        "Election information and safeguards in 2026",
-        "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-        "9 demos of Gemini Omni and Gemini 3.5 in action",
-        "Boston Children’s uses AI to unlock new diagnoses"
+        "GitHub Universe is back: All together now, in the agentic era",
+        "A blueprint for democratic governance of frontier AI"
       ],
-      "focus": "本周聚焦：OpenAI’s Frontier Governance Framework",
-      "whyItMatters": "重要性：科技频道的高分条目集中来自OpenAI News、Google AI Blog、科技部工作动态，反映本周主要变化方向。",
+      "focus": "AI安全与监管政策",
+      "whyItMatters": "塑造未来AI全球规则，影响技术发展方向。",
       "weekSignals": [
-        "信号：OpenAI’s Frontier Governance Framework",
-        "信号：Election information and safeguards in 2026",
-        "信号：Take our I/O 2026 quiz, vibe coded in Google AI Studio."
+        "OpenAI发布前沿治理框架及政策议程",
+        "GitHub Universe回归聚焦智能体",
+        "科技部召开全国科技监督工作会"
+      ],
+      "modelSummary": "AI治理框架与公共政策议程主导，开源社区聚焦智能体时代。",
+      "watchlist": [
+        "EU/加州AI法规进展",
+        "GitHub Universe 2026成果"
       ]
     },
     {
       "id": "finance",
       "label": "金融",
-      "totalItems": 30,
+      "totalItems": 46,
       "topSources": [
         {
           "source": "中国证监会新闻发布",
           "count": 17
         },
         {
-          "source": "Federal Reserve",
-          "count": 4
-        },
-        {
           "source": "U.S. SEC Press Releases",
-          "count": 4
+          "count": 7
         },
         {
           "source": "中国人民银行新闻发布",
-          "count": 2
+          "count": 6
         },
         {
-          "source": "财政部财政新闻",
-          "count": 1
+          "source": "Federal Reserve",
+          "count": 5
         },
         {
           "source": "国家发展改革委新闻发布",
-          "count": 1
+          "count": 4
+        },
+        {
+          "source": "财政部财政新闻",
+          "count": 4
         }
       ],
       "highlights": [
+        {
+          "id": "finance-item-1231d7d94d",
+          "title": "2026年6月4日国内成品油价格调整",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
+          "source": "国家发展改革委新闻发布",
+          "score": 100,
+          "summary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。",
+          "publishedAt": "2026-06-04T00:00:00.000Z"
+        },
+        {
+          "id": "finance-item-a7e1b4b248",
+          "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
+          "source": "国家发展改革委新闻发布",
+          "score": 100,
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "publishedAt": "2026-06-03T00:00:00.000Z"
+        },
+        {
+          "id": "finance-item-32ef619a3a",
+          "title": "财政部党校举行第82期处级干部进修班毕业典礼",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260603_3991101.htm",
+          "source": "财政部财政新闻",
+          "score": 100,
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "publishedAt": "2026-06-03T00:00:00.000Z"
+        },
+        {
+          "id": "finance-u-s-sec-press-releases-f61d1b0566",
+          "title": "SEC Publishes Draft Strategic Plan for Public Comment",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-51-sec-publishes-draft-strategic-plan-public-comment",
+          "source": "U.S. SEC Press Releases",
+          "score": 100,
+          "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 yea...",
+          "publishedAt": "2026-06-02T14:30:00.000Z"
+        },
+        {
+          "id": "finance-item-27284b737d",
+          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
+          "source": "财政部财政新闻",
+          "score": 100,
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "publishedAt": "2026-06-02T00:00:00.000Z"
+        },
         {
           "id": "finance-item-2ad37299fe",
           "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
@@ -188,183 +246,149 @@
           "score": 100,
           "summary": ",2026-05-16",
           "publishedAt": "2026-05-30T05:42:43.399Z"
-        },
-        {
-          "id": "finance-item-d7ff9ab08d",
-          "title": "吴清主席出席国际证监会组织理事会视频会议",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633097/content.shtml",
-          "source": "中国证监会新闻发布",
-          "score": 100,
-          "summary": ",2026-05-15",
-          "publishedAt": "2026-05-30T05:42:43.399Z"
-        },
-        {
-          "id": "finance-item-7f3c2e9619",
-          "title": "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7626187/content.shtml",
-          "source": "中国证监会新闻发布",
-          "score": 100,
-          "summary": ",2026-04-14",
-          "publishedAt": "2026-05-30T05:42:43.399Z"
-        },
-        {
-          "id": "finance-item-b972096c73",
-          "title": "吴清主席会见澳门金融管理局行政管理委员会主席黄善文",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7623163/content.shtml",
-          "source": "中国证监会新闻发布",
-          "score": 100,
-          "summary": ",2026-03-31",
-          "publishedAt": "2026-05-30T05:42:43.399Z"
-        },
-        {
-          "id": "finance-item-6aec4cc0d6",
-          "title": "吴清主席会见香港特区政府财政司司长陈茂波一行",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7621120/content.shtml",
-          "source": "中国证监会新闻发布",
-          "score": 100,
-          "summary": ",2026-03-20",
-          "publishedAt": "2026-05-30T05:42:43.399Z"
-        },
-        {
-          "id": "finance-item-9cb9bfc584",
-          "title": "证监会严肃查处老虎等机构非法跨境展业案件",
-          "url": "https://www.csrc.gov.cn/csrc/c100028/c7634330/content.shtml",
-          "source": "中国证监会新闻发布",
-          "score": 100,
-          "summary": "近日，证监会依法对Tiger Brokers (NZ) Limited（以下简称老虎）、富途证券国际（香港）有限,2026-05-22",
-          "publishedAt": "2026-05-30T05:42:43.399Z"
         }
       ],
       "themes": [
-        "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-        "2026年5月中国采购经理指数运行情况",
-        "吴清主席会见花旗集团董事会主席兼首席执行官范洁恩",
-        "吴清主席出席国际证监会组织理事会视频会议",
-        "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米"
+        "2026年6月4日国内成品油价格调整",
+        "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
+        "财政部党校举行第82期处级干部进修班毕业典礼",
+        "SEC Publishes Draft Strategic Plan for Public Comment",
+        "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度"
       ],
-      "focus": "本周聚焦：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-      "whyItMatters": "重要性：金融频道的高分条目集中来自中国证监会新闻发布、Federal Reserve、U.S. SEC Press Releases，反映本周主要变化方向。",
+      "focus": "政策调整与监管框架重建",
+      "whyItMatters": "影响市场预期与财政支出方向。",
       "weekSignals": [
-        "信号：司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-        "信号：2026年5月中国采购经理指数运行情况",
-        "信号：吴清主席会见花旗集团董事会主席兼首席执行官范洁恩"
+        "国内成品油价格调整",
+        "SEC公布战略计划草案",
+        "中央财政下达育儿补贴999亿元"
+      ],
+      "modelSummary": "燃油调价、SEC战略计划、育儿补贴及PMI数据发布。",
+      "watchlist": [
+        "价格调整后续影响",
+        "SEC战略计划反馈"
       ]
     },
     {
       "id": "news",
       "label": "新闻",
-      "totalItems": 76,
+      "totalItems": 156,
       "topSources": [
         {
           "source": "中国政府网要闻",
-          "count": 39
+          "count": 87
         },
         {
           "source": "UN News",
-          "count": 22
+          "count": 38
         },
         {
           "source": "NASA Breaking News",
-          "count": 15
+          "count": 31
         }
       ],
       "highlights": [
         {
-          "id": "news-item-8975ededd7",
-          "title": "国务院任免国家工作人员（2026年6月1日）",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
+          "id": "news-item-307e4cd883",
+          "title": "全国夏粮小麦收获进度过半 已收1.84亿亩",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071355.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "国务院任免国家工作人员。任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "截至6月5日17时，全国已收获夏粮小麦1.84亿亩，收获进度54.29%。",
+          "publishedAt": "2026-06-06T00:00:00.000Z"
         },
         {
-          "id": "news-item-9a63007ce5",
-          "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
+          "id": "news-item-b76ebfd43a",
+          "title": "共同谱写中朝友好崭新篇章——写在习近平总书记对朝鲜进行国事访问之际",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071340.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "2025年，我国多式联运发展保持稳步增长态势。全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "应朝鲜劳动党总书记金正恩邀请，国家主席习近平将于6月8日至9日对朝鲜进行国事访问，旨在深化中朝传统友谊，推动双边关系发展。",
+          "publishedAt": "2026-06-06T00:00:00.000Z"
         },
         {
-          "id": "news-item-e56ba9a94a",
-          "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
+          "id": "news-item-551a8848e4",
+          "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "中老双方强调坚持党的领导和社会主义道路是两国关系最鲜明本质特征和最坚实政治基础，共同肩负为人民谋幸福、为国家谋发展、为人类谋进步的历史使命。",
+          "publishedAt": "2026-06-06T00:00:00.000Z"
         },
         {
-          "id": "news-item-54b91da87e",
-          "title": "国务院关于对外投资的规定",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
+          "id": "news-item-e9745422d0",
+          "title": "外交部介绍习近平总书记访问朝鲜有关安排",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "《国务院关于对外投资的规定》已经2026年4月17日国务院第83次常务会议通过，现予公布，自2026年7月1日起施行。",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
+          "publishedAt": "2026-06-05T00:00:00.000Z"
         },
         {
-          "id": "news-item-d700d62dfe",
-          "title": "孩子们的快乐，真的很简单！",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070752.htm",
+          "id": "news-item-29c1ff9b38",
+          "title": "习近平将对朝鲜民主主义人民共和国进行国事访问",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "中共中央对外联络部宣布，应朝鲜领导人金正恩邀请，习近平将于6月8日至9日对朝鲜进行国事访问。",
+          "publishedAt": "2026-06-05T00:00:00.000Z"
         },
         {
-          "id": "news-item-f4bd10fd77",
-          "title": "前4月全国社会物流总额同比增长5.5% 即时零售交易额增长29.2%",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070749.htm",
+          "id": "news-item-4e93b6412d",
+          "title": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071077.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "中国物流与采购联合会数据显示：1—4月，全国社会物流总额121.7万亿元，同比增长5.5%，物流运行整体平稳、运行向好，物流市场需求持续扩容，供需适配性稳步提升。",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "6月5日世界环境日，我国主题为“全面绿色转型，共建美丽中国”，强调践行习近平生态文明思想，推动绿色低碳发展。",
+          "publishedAt": "2026-06-05T00:00:00.000Z"
         },
         {
-          "id": "news-item-533ed93dbd",
-          "title": "守护童心 筑梦未来——习近平总书记的深情寄望鼓舞新时代少年儿童成长成才",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070741.htm",
+          "id": "news-item-16e35179cd",
+          "title": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "当代中国少年儿童既是实现第一个百年奋斗目标的经历者、见证者，更是实现第二个百年奋斗目标、建设社会主义现代化强国的生力军。",
-          "publishedAt": "2026-06-01T00:00:00.000Z"
+          "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。",
+          "publishedAt": "2026-06-05T00:00:00.000Z"
         },
         {
-          "id": "news-item-e161e0b895",
-          "title": "前4月电力市场交易电量同比增长25.6%",
-          "url": "https://www.gov.cn/lianbo/202605/content_7070704.htm",
+          "id": "news-item-95fdc76139",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "记者从国家能源局获悉：前4月，全国累计完成电力市场交易电量24307亿千瓦时，同比增长25.6%。",
-          "publishedAt": "2026-05-31T00:00:00.000Z"
+          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
+          "publishedAt": "2026-06-05T00:00:00.000Z"
         }
       ],
       "themes": [
-        "国务院任免国家工作人员（2026年6月1日）",
-        "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-        "李强签署国务院令 公布《国务院关于对外投资的规定》",
-        "国务院关于对外投资的规定",
-        "孩子们的快乐，真的很简单！"
+        "全国夏粮小麦收获进度过半 已收1.84亿亩",
+        "共同谱写中朝友好崭新篇章——写在习近平总书记对朝鲜进行国事访问之际",
+        "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
+        "外交部介绍习近平总书记访问朝鲜有关安排",
+        "习近平将对朝鲜民主主义人民共和国进行国事访问"
       ],
-      "focus": "本周聚焦：国务院任免国家工作人员（2026年6月1日）",
-      "whyItMatters": "重要性：新闻频道的高分条目集中来自中国政府网要闻、UN News、NASA Breaking News，反映本周主要变化方向。",
+      "focus": "外交与粮食安全",
+      "whyItMatters": "巩固双边关系，确保农业稳定。",
       "weekSignals": [
-        "信号：国务院任免国家工作人员（2026年6月1日）",
-        "信号：我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-        "信号：李强签署国务院令 公布《国务院关于对外投资的规定》"
+        "夏粮小麦收获进度54%",
+        "习近平即将访问朝鲜",
+        "中老发布联合声明"
+      ],
+      "modelSummary": "夏粮收获过半，习近平将访朝，中老联合声明强调命运共同体。",
+      "watchlist": [
+        "访问朝鲜成果",
+        "夏粮最终产量"
       ]
     }
   ],
+  "modelSummary": "本周科技聚焦AI治理与法规，金融关注政策调整，新闻主打外交与农业进展。几大信号预示监管趋严与区域合作深化。",
   "summaryStats": {
     "llmEnabled": true,
-    "llmConfigured": false,
-    "llmAttempted": 0,
-    "llmSucceeded": 0,
-    "fallbackCount": 1,
+    "llmConfigured": true,
+    "llmAttempted": 1,
+    "llmSucceeded": 1,
+    "fallbackCount": 0,
     "errorCount": 0,
-    "generatedAt": "2026-06-01T08:33:53.799Z"
+    "generatedAt": "2026-06-07T01:00:22.951Z"
   }
 }
