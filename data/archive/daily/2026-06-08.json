@@ -1,15 +1,15 @@
 {
   "date": "2026-06-08",
-  "generatedAt": "2026-06-08T00:01:02.354Z",
+  "generatedAt": "2026-06-08T09:01:06.193Z",
   "totals": {
     "sources": 20,
-    "healthySources": 2,
-    "rawItems": 6,
-    "normalizedItems": 6,
-    "filteredItems": 6,
-    "dedupedItems": 6,
-    "scoredItems": 6,
-    "enrichmentAttempted": 6,
+    "healthySources": 3,
+    "rawItems": 13,
+    "normalizedItems": 13,
+    "filteredItems": 13,
+    "dedupedItems": 13,
+    "scoredItems": 13,
+    "enrichmentAttempted": 13,
     "enrichmentFailed": 0
   },
   "sourceHealth": [
@@ -22,11 +22,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-06T09:00:20.176Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -38,11 +38,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-06T09:00:20.176Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -54,11 +54,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-07T09:00:26.928Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -70,11 +70,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -86,11 +86,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -102,11 +102,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -118,11 +118,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -134,11 +134,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-06T09:00:20.176Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -150,43 +150,43 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
       "id": "nasa-breaking-news",
       "name": "NASA Breaking News",
       "category": "news",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
+      "responseStatus": 429,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
       "lastSuccessAt": "2026-06-07T09:00:26.928Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
+      "failureCount": 1
     },
     {
       "id": "un-news",
       "name": "UN News",
       "category": "news",
       "status": "healthy",
-      "itemCount": 2,
+      "itemCount": 3,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:26.476Z",
-      "lastSuccessAt": "2026-06-08T00:00:26.476Z",
+      "lastCheckedAt": "2026-06-08T09:00:30.743Z",
+      "lastSuccessAt": "2026-06-08T09:00:30.743Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:26.476Z",
-      "cacheExpiresAt": "2026-06-10T00:00:26.476Z",
+      "cacheStartedAt": "2026-06-08T09:00:30.743Z",
+      "cacheExpiresAt": "2026-06-10T09:00:30.743Z",
       "failureCount": 0
     },
     {
@@ -201,11 +201,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 0
     },
     {
@@ -215,17 +215,17 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
-      "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "responseStatus": null,
+      "attempts": 2,
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+      "failureCount": 1
     },
     {
       "id": "csrc-news",
@@ -239,11 +239,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 0
     },
     {
@@ -253,17 +253,17 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-market",
       "timelinessTier": "daily",
-      "status": "empty",
+      "status": "failed",
       "itemCount": 0,
-      "responseStatus": 200,
-      "attempts": 1,
-      "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "responseStatus": null,
+      "attempts": 2,
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+      "failureCount": 1
     },
     {
       "id": "szse-news",
@@ -277,11 +277,11 @@
       "responseStatus": null,
       "attempts": 2,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 1
     },
     {
@@ -296,11 +296,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 0
     },
     {
@@ -310,16 +310,16 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
-      "status": "empty",
-      "itemCount": 0,
+      "status": "healthy",
+      "itemCount": 1,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
-      "lastSuccessAt": null,
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
+      "lastSuccessAt": "2026-06-08T09:00:43.099Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 0
     },
     {
@@ -334,11 +334,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 0
     },
     {
@@ -349,23 +349,228 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 4,
+      "itemCount": 9,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-08T00:00:40.932Z",
-      "lastSuccessAt": "2026-06-08T00:00:40.932Z",
+      "lastCheckedAt": "2026-06-08T09:00:43.099Z",
+      "lastSuccessAt": "2026-06-08T09:00:43.099Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-      "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+      "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+      "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 6
+    "availableItems": 13
   },
   "items": [
+    {
+      "id": "macro-item-341501ee15",
+      "title": "廖岷会见英中贸易协会主席吴思田",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+      "source": "财政部财政新闻",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
+      "sourceLanguage": "zh",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "daily"
+      ],
+      "keywords": [
+        "AI",
+        "公共政策",
+        "廖岷会见英中贸易协会主席",
+        "吴思田",
+        "财政部财政政策",
+        "国债",
+        "预算和财政运行新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "news-item-810a0f4ec9",
+      "title": "习近平出席金正恩举行的欢迎仪式",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071434.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "当地时间6月8日中午，朝鲜劳动党总书记、国务委员长金正恩在平壤金日成广场为中共中央总书记、国家主席习近平举行盛大欢迎仪式。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平出席金正恩举行的欢",
+        "迎仪式",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日中午"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平出席金正恩举行的欢",
+        "迎仪式",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-cffa143ed6",
+      "title": "习近平抵达平壤开始对朝鲜进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071431.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日中午，中共中央总书记、国家主席习近平乘专机抵达平壤，开始对朝鲜进行国事访问。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平抵达平壤开始对朝鲜",
+        "进行国事访问",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日中午",
+        "中共中央总书记"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平抵达平壤开始对朝鲜",
+        "进行国事访问",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-b4b4e533ee",
+      "title": "习近平离京对朝鲜进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071418.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日上午，中共中央总书记、国家主席习近平乘专机离开北京，应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，对朝鲜进行国事访问。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平离京对朝鲜进行国事",
+        "访问",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日上午",
+        "中共中央总书记"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平离京对朝鲜进行国事",
+        "访问",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-307cbbe0c3",
+      "title": "推动中朝关系与时俱进取得更大发展",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071413.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。此次访问是习近平总书记时隔7年再次对朝鲜进行国事访问。访问期间，两党两国最高领导人将就双边关系及共同关心的问题交换意见，为中朝传统友好注入新的时代内涵。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "公共政策",
+        "推动中朝关系与时俱进取得",
+        "更大发展",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应朝鲜劳动党总书记",
+        "朝鲜民主主义人民共和国国"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "推动中朝关系与时俱进取得",
+        "更大发展",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-bb56c982ed",
+      "title": "“空天地海”新一代通信网建设提速 助力经济社会数智化转型",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "​5月31日凌晨，西昌卫星发射中心，长征二号丁运载火箭划破夜空，将卫星互联网技术试验卫星送入预定轨道。该试验卫星主要用于开展手机宽带直连卫星、天地网络融合等技术试验验证。",
+      "sourceLanguage": "zh",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "keywords": [
+        "消费电子",
+        "公共政策",
+        "空天地海",
+        "新一代通信网建设提速",
+        "助力经济社会数智化转型",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "消费电子",
+        "公共政策",
+        "空天地海",
+        "新一代通信网建设提速"
+      ]
+    },
     {
       "id": "news-item-51a424c511",
       "title": "习近平在朝鲜媒体发表署名文章",
@@ -413,7 +618,7 @@
       "contentExcerpt": "今年以来，我国积极稳妥扩大农村交通基础设施有效投资，深入实施新一轮农村公路提升行动，持续优化完善农村公路网络。",
       "sourceLanguage": "zh",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -448,7 +653,7 @@
       "contentExcerpt": "应朝鲜劳动党总书记、国务委员长金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜民主主义人民共和国进行国事访问。",
       "sourceLanguage": "zh",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -483,7 +688,7 @@
       "contentExcerpt": "正值“三夏”时节，广袤沃野上，夏粮丰收在望。金色麦海间农机穿梭轰鸣，奏响高效、精准、智能的夏收交响曲，成为我国推进农业强国建设的生动注脚。",
       "sourceLanguage": "zh",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -507,6 +712,38 @@
       ]
     },
     {
+      "id": "news-un-news-d7d4550ce0",
+      "title": "Humanity’s future depends on protecting the rapidly changing ocean",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167654",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-07T12:00:00.000Z",
+      "summary": "The ocean covers more than 70 per cent of the planet&nbsp;and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
+      "contentExcerpt": "The ocean covers more than 70 per cent of the planet and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
+      "sourceLanguage": "en",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/13-05-2026-Ocean-Image-Bank-Polynesia.jpg/image770x420cropped.jpg",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [],
+      "keywords": [
+        "AI",
+        "Humanity",
+        "future",
+        "depends",
+        "protecting",
+        "the",
+        "rapidly",
+        "changing"
+      ],
+      "impactAreas": [
+        "AI",
+        "Humanity",
+        "future",
+        "depends"
+      ]
+    },
+    {
       "id": "news-un-news-a4d82f38f3",
       "title": "Five things you need to know about ocean plastics",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167637",
@@ -518,7 +755,7 @@
       "contentExcerpt": "From surgical gloves to water bottles, shopping bags and chewing gum, every part of our daily lives includes plastic. They epitomise convenience – their durability makes our dependence on them inextricable, but it also stifles the environment.",
       "sourceLanguage": "en",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/09-06-2025-Unsplash-Indonesia.jpg/image770x420cropped.jpg",
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [
@@ -550,7 +787,7 @@
       "contentExcerpt": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
       "sourceLanguage": "en",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-MINUSCA-CAR-09.jpg/image770x420cropped.jpg",
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0,
       "tags": [],
       "keywords": [

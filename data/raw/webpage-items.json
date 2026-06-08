@@ -11,10 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -28,15 +28,15 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "ok": false,
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "attempts": 2,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -51,10 +51,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -68,15 +68,15 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "ok": false,
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "attempts": 2,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -89,10 +89,10 @@
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
     "ok": false,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 2,
     "error": "fetch failed",
     "items": [],
@@ -111,10 +111,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -130,13 +130,26 @@
     "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "廖岷会见英中贸易协会主席吴思田",
+        "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "财政部财政政策、国债、预算和财政运行新闻",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -151,10 +164,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -170,13 +183,73 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 4,
-    "fetchedAt": "2026-06-08T00:00:40.932Z",
+    "itemCount": 9,
+    "fetchedAt": "2026-06-08T09:00:43.099Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T00:00:40.932Z",
-    "cacheExpiresAt": "2026-06-10T00:00:40.932Z",
+    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
+    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "习近平出席金正恩举行的欢迎仪式",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071434.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "习近平抵达平壤开始对朝鲜进行国事访问",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071431.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "习近平离京对朝鲜进行国事访问",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071418.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "推动中朝关系与时俱进取得更大发展",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071413.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "“空天地海”新一代通信网建设提速 助力经济社会数智化转型",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "习近平在朝鲜媒体发表署名文章",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071403.htm",
