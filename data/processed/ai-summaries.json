@@ -1,116 +1,281 @@
 {
-  "generatedAt": "2026-06-07T11:00:26.755Z",
-  "method": "extractive",
+  "generatedAt": "2026-06-08T11:00:30.737Z",
+  "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
   "llmConfigured": true,
-  "fallbackCount": 1,
-  "errorCount": 1,
+  "fallbackCount": 0,
+  "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "今日科技重点集中在：The latest AI news we announced in May 2026。",
-      "focus": "聚焦点：The latest AI news we announced in May 2026",
-      "whyItMatters": "重要性：这些信息来自Google AI Blog，集中体现本频道最新可观察变化。",
-      "watchlist": [
-        "继续关注：The latest AI news we announced in May 2026"
-      ],
-      "keyPoints": [
-        "谷歌在2026年5月发布一系列AI更新，包括Gemini 3.5模型和Gemini Omni，进入“智能体”时代。推出主动式工具如更新版Gemini应用、Universal Cart购物车和Google Health应用，提升日常任务..."
-      ],
-      "highlights": [
-        {
-          "id": "tech-google-ai-blog-f7238edb25",
-          "title": "The latest AI news we announced in May 2026",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
-          "source": "Google AI Blog",
-          "score": 90,
-          "summary": "谷歌在2026年5月发布一系列AI更新，包括Gemini 3.5模型和Gemini Omni，进入“智能体”时代。推出主动式工具如更新版Gemini应用、Universal Cart购物车和Google Health应用，提升日常任务管理效率。这些功能也应用于新硬件。"
-        }
-      ],
-      "summaryMethod": "extractive"
+      "overview": "今日科技领域无重大事件。",
+      "focus": "无",
+      "whyItMatters": "无",
+      "watchlist": [],
+      "keyPoints": [],
+      "highlights": [],
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "finance",
       "label": "金融",
-      "overview": "今日金融暂无足够高价值信息形成总结。",
-      "focus": "聚焦点：金融暂无足够新内容。",
-      "whyItMatters": "重要性：当前没有足够新内容，暂不形成明确判断。",
+      "overview": "今日金融领域无重大事件。",
+      "focus": "无",
+      "whyItMatters": "无",
       "watchlist": [],
       "keyPoints": [],
       "highlights": [],
-      "summaryMethod": "extractive"
+      "summaryMethod": "deepseek-chat-completions"
     },
     {
       "id": "news",
       "label": "新闻",
-      "overview": "今日新闻重点集中在：“农业农村是大有可为的广阔天地”——习近平总书记关于“三农”重要论述引领农业强国建设；我国服务贸易持续扩能提质；全国夏粮小麦收获进度过半 已收1.84亿亩。",
-      "focus": "聚焦点：“农业农村是大有可为的广阔天地”——习近平总书记关于“三农”重要论述引领农业强国建设",
-      "whyItMatters": "重要性：这些信息来自中国政府网要闻，集中体现本频道最新可观察变化。",
+      "overview": "习近平对朝鲜进行国事访问，中朝高层密切互动；同时我国成功发射卫星互联网试验星，加速空天地海一体化通信网建设。",
+      "focus": "中朝关系与新一代通信网",
+      "whyItMatters": "中朝传统友谊注入新内涵，通信网助力经济社会数智化转型。",
       "watchlist": [
-        "继续关注：“农业农村是大有可为的广阔天地”——习近平总书记关于“三农”重要论述引领农业强国建设",
-        "继续关注：我国服务贸易持续扩能提质",
-        "继续关注：全国夏粮小麦收获进度过半 已收1.84亿亩"
+        "中朝会谈成果",
+        "卫星互联网技术验证进展",
+        "空天地海一体化通信网络发展"
       ],
       "keyPoints": [
-        "习总书记关于“三农”的重要论述指引农业强国建设。当前夏粮丰收在望，高效智能农机穿梭作业，成为推进农业现代化的生动实践。",
-        "今年我国服务贸易规模稳步增长，结构优化，对外贸支撑增强，展现高质量发展态势。",
-        "截至6月5日，全国夏粮小麦收获进度达54.29%，已收1.84亿亩。当日收获1803万亩，投入联合收割机23.68万台，较去年有所增加。"
+        "习近平乘专机抵达平壤，金正恩举行欢迎仪式",
+        "习近平时隔7年再次访朝",
+        "长征二号丁火箭成功发射卫星互联网试验卫星"
       ],
       "highlights": [
         {
-          "id": "news-item-f83f68d54c",
-          "title": "“农业农村是大有可为的广阔天地”——习近平总书记关于“三农”重要论述引领农业强国建设",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071380.htm",
+          "id": "news-item-810a0f4ec9",
+          "title": "习近平出席金正恩举行的欢迎仪式",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071434.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "习总书记关于“三农”的重要论述指引农业强国建设。当前夏粮丰收在望，高效智能农机穿梭作业，成为推进农业现代化的生动实践。"
+          "summary": "当地时间6月8日中午，朝鲜领导人金正恩在平壤为习近平举行盛大欢迎仪式。"
         },
         {
-          "id": "news-item-372a59214f",
-          "title": "我国服务贸易持续扩能提质",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071371.htm",
+          "id": "news-item-cffa143ed6",
+          "title": "习近平抵达平壤开始对朝鲜进行国事访问",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071431.htm",
           "source": "中国政府网要闻",
-          "score": 95,
-          "summary": "今年我国服务贸易规模稳步增长，结构优化，对外贸支撑增强，展现高质量发展态势。"
+          "score": 100,
+          "summary": "6月8日中午，习近平乘专机抵达平壤，对朝鲜进行国事访问，彰显中朝高层密切互动。"
         },
         {
-          "id": "news-item-307e4cd883",
-          "title": "全国夏粮小麦收获进度过半 已收1.84亿亩",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071355.htm",
+          "id": "news-item-b4b4e533ee",
+          "title": "习近平离京对朝鲜进行国事访问",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071418.htm",
           "source": "中国政府网要闻",
-          "score": 95,
-          "summary": "截至6月5日，全国夏粮小麦收获进度达54.29%，已收1.84亿亩。当日收获1803万亩，投入联合收割机23.68万台，较去年有所增加。"
+          "score": 100,
+          "summary": "习近平应金正恩邀请，乘专机离京对朝鲜进行国事访问。"
         },
         {
-          "id": "news-item-b76ebfd43a",
-          "title": "共同谱写中朝友好崭新篇章——写在习近平总书记对朝鲜进行国事访问之际",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071340.htm",
+          "id": "news-item-307cbbe0c3",
+          "title": "推动中朝关系与时俱进取得更大发展",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071413.htm",
           "source": "中国政府网要闻",
-          "score": 95,
-          "summary": "应朝鲜最高领导人金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问，旨在深化传统友谊，推动双边关系发展。"
+          "score": 100,
+          "summary": "应朝鲜最高领导人金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问，这是习近平时隔7年再次访朝。双方最高领导人将就双边关系及共同关心问题交换意见，为传统友谊注入新内涵。"
         },
         {
-          "id": "news-item-551a8848e4",
-          "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
+          "id": "news-item-bb56c982ed",
+          "title": "“空天地海”新一代通信网建设提速 助力经济社会数智化转型",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
           "source": "中国政府网要闻",
-          "score": 95,
-          "summary": "中老双方共同声明，坚持党的领导和社会主义道路是双边关系最本质特征和坚实基础，两党肩负为人民谋幸福、为国家谋发展、为人类谋进步的历史使命。"
+          "score": 100,
+          "summary": "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。"
         }
       ],
-      "summaryMethod": "extractive"
-    }
-  ],
-  "errors": [
-    {
-      "message": "Unterminated string in JSON at position 103"
+      "summaryMethod": "deepseek-chat-completions"
     }
   ],
   "totalSummaries": 3,
   "items": [
+    {
+      "id": "news-item-810a0f4ec9",
+      "title": "习近平出席金正恩举行的欢迎仪式",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071434.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "当地时间6月8日中午，朝鲜领导人金正恩在平壤为习近平举行盛大欢迎仪式。",
+      "summaryReason": "中朝最高层会晤具有重大外交意义，显示两国友好关系。",
+      "translatedTitle": "习近平出席金正恩举行的欢迎仪式",
+      "importance": "中朝首脑会晤，体现两国高层战略沟通，对地区局势有重要影响。",
+      "impactAreas": [
+        "中朝关系",
+        "外交",
+        "东亚局势"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-cffa143ed6",
+      "title": "习近平抵达平壤开始对朝鲜进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071431.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "6月8日中午，习近平乘专机抵达平壤，对朝鲜进行国事访问，彰显中朝高层密切互动。",
+      "summaryReason": "这是中朝领导人近期重要会晤，影响东北亚外交格局与地区稳定。",
+      "translatedTitle": "习近平抵达平壤开始对朝鲜进行国事访问",
+      "importance": "中朝最高层外交活动，具有深远政治象征意义和地区战略影响。",
+      "impactAreas": [
+        "中朝关系",
+        "地缘政治",
+        "外交"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-b4b4e533ee",
+      "title": "习近平离京对朝鲜进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071418.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "习近平应金正恩邀请，乘专机离京对朝鲜进行国事访问。",
+      "summaryReason": "中朝领导人会晤影响东北亚地缘政治格局。",
+      "translatedTitle": "习近平离京对朝鲜进行国事访问",
+      "importance": "中朝高层交往对地区稳定具有关键作用。",
+      "impactAreas": [
+        "地缘政治",
+        "外交",
+        "东北亚"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-307cbbe0c3",
+      "title": "推动中朝关系与时俱进取得更大发展",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071413.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "应朝鲜最高领导人金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问，这是习近平时隔7年再次访朝。双方最高领导人将就双边关系及共同关心问题交换意见，为传统友谊注入新内涵。",
+      "summaryReason": "中朝高层时隔7年再次互动，体现传统友好延续，对东北亚地缘政治格局有重要影响，反映中国外交战略方向。",
+      "translatedTitle": "习近平访问朝鲜推动中朝关系发展",
+      "importance": "中朝最高领导人会晤，深化双边关系，对朝鲜半岛局势及中国周边外交具有重大意义。",
+      "impactAreas": [
+        "地缘政治",
+        "外交关系",
+        "朝鲜半岛"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-bb56c982ed",
+      "title": "“空天地海”新一代通信网建设提速 助力经济社会数智化转型",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
+      "summaryReason": "该事件显示国家在卫星互联网领域的重大进展，直接关系到新一代通信基础设施和数字经济发展，具有政策导向性。",
+      "translatedTitle": "“空天地海”新一代通信网建设提速，助力数智化转型",
+      "importance": "卫星互联网技术试验卫星发射成功，是“空天地海”通信网建设的关键一步，将推动6G、天地融合等前沿技术发展。",
+      "impactAreas": [
+        "卫星互联网",
+        "通信技术",
+        "新基建",
+        "数字化转型"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-51a424c511",
+      "title": "习近平在朝鲜媒体发表署名文章",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071403.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "习近平在赴朝鲜国事访问前夕，在朝鲜《劳动新闻》发表题为《继往开来、砥砺同行 续写中朝传统友谊崭新篇章》的署名文章。",
+      "summaryReason": "中朝高层互动，传统友谊续写新篇章，体现外交战略。",
+      "translatedTitle": "习近平在朝鲜媒体发表署名文章",
+      "importance": "中国最高领导人出访并发表署名文章，具有重大外交意义。",
+      "impactAreas": [
+        "外交",
+        "地缘政治",
+        "中朝关系"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-un-news-e3b0ae800c",
+      "title": "From firefights to football matches: Life on a UN peacekeeping frontline",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167666",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "international",
+      "publishedAt": "2026-06-07T12:00:00.000Z",
+      "score": 97,
+      "aiSummary": "中非共和国泽米奥镇，2025年12月总统选举前夕，AAKG民兵发动攻势试图夺城破坏选举。联合国维和部队介入，局势紧张。",
+      "summaryReason": "事件涉及联合国维和行动与地区选举安全，反映冲突地区稳定挑战，对国际和平有警示意义。",
+      "translatedTitle": "联合国维和前线：从枪战到足球",
+      "importance": "中非选举前夕民兵进攻，显示维和任务风险与地缘政治波动，影响地区稳定。",
+      "impactAreas": [
+        "联合国维和",
+        "中非共和国",
+        "选举安全",
+        "地缘政治"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-27f12f150a",
+      "title": "我国持续优化完善农村公路网络",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071400.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-07T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "今年我国积极扩大农村交通基础设施投资，实施新一轮农村公路提升行动，持续优化农村公路网络，助力乡村振兴。",
+      "summaryReason": "体现国家加大农村基建力度，促进区域均衡发展，政策信号明确。",
+      "translatedTitle": "我国持续优化完善农村公路网络",
+      "importance": "农村公路网络优化直接惠及民生，是乡村振兴重要支撑，投资带动效应显著。",
+      "impactAreas": [
+        "农村交通",
+        "基础设施",
+        "乡村振兴",
+        "政策投资"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-aad658b973",
+      "title": "中朝多领域合作为两国友好注入源源动力",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071399.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-07T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "应朝鲜邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。此行旨在深化中朝多领域合作，为两国友好注入新动力。",
+      "summaryReason": "习近平访朝是近期重大外交事件，对中朝关系及东北亚地缘政治格局有重要影响。",
+      "translatedTitle": "习近平将访问朝鲜",
+      "importance": "中朝最高领导人互动，关乎双边关系及地区稳定。",
+      "impactAreas": [
+        "外交",
+        "地缘政治",
+        "东北亚"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
     {
       "id": "news-item-f83f68d54c",
       "title": "“农业农村是大有可为的广阔天地”——习近平总书记关于“三农”重要论述引领农业强国建设",
@@ -119,342 +284,55 @@
       "sourceId": "govcn-yaowen",
       "category": "news",
       "publishedAt": "2026-06-07T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "习总书记关于“三农”的重要论述指引农业强国建设。当前夏粮丰收在望，高效智能农机穿梭作业，成为推进农业现代化的生动实践。",
-      "summaryReason": "该论述为农业强国建设指明方向，夏粮丰收关乎粮食安全和农民增收，智能农机展示科技兴农成果，对乡村振兴具有重要指导意义。",
-      "translatedTitle": "农业农村是大有可为的广阔天地——习近平总书记关于“三农”重要论述引领农业强国建设",
-      "importance": "农业强国建设是国家战略，总书记论述引领方向，夏粮丰收和智能农机体现实际成效，对保障粮食安全、促进农村发展至关重要。",
+      "score": 95,
+      "aiSummary": "习近平总书记“三农”重要论述引领下，三夏时节夏粮丰收在望，智慧农机高效精准作业，奏响夏收交响曲，成为农业强国建设生动注脚。",
+      "summaryReason": "夏粮丰收事关粮食安全，智慧农机展现农业现代化，总书记论述为农业强国提供方向指引。",
+      "translatedTitle": "习近平三农论述引领农业强国",
+      "importance": "农业是国之大者，夏粮丰收稳定经济基本面，智慧农业提升国家竞争力。",
       "impactAreas": [
-        "农业",
+        "农业政策",
         "粮食安全",
-        "乡村振兴",
-        "政策"
+        "智慧农业"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "international-un-news-b256b7c4ca",
-      "title": "World News in Brief: Millions displaced in South Sudan, global meat supply quadruples, Middle East crisis deepens global hunger",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167668",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "international",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "score": 96,
-      "aiSummary": "联合国难民署称，南苏丹东部琼莱州数月冲突迫使数十万人逃离家园，成为近年来最严重的冲突相关流离失所紧急情况之一。",
-      "summaryReason": "该事件暴露出冲突导致的大规模人道主义危机，数百万人口面临安全与生存威胁，国际社会需紧急关注。",
-      "translatedTitle": "全球要闻：南苏丹流离失所、肉类供应翻四倍、中东危机加剧饥饿",
-      "importance": "南苏丹流离失所危机加剧地区不稳定，人道主义需求迫切，可能引发更大规模难民潮。",
-      "impactAreas": [
-        "冲突",
-        "人道主义",
-        "非洲",
-        "流离失所"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-372a59214f",
-      "title": "我国服务贸易持续扩能提质",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071371.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-06T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "今年我国服务贸易规模稳步增长，结构优化，对外贸支撑增强，展现高质量发展态势。",
-      "summaryReason": "摘要概括了服务贸易规模增长、结构优化及对外贸的支撑作用，信息完整且简明。",
-      "translatedTitle": "我国服务贸易持续扩能提质",
-      "importance": "服务贸易是外贸高质量发展的重要指标，增速和结构优化反映经济韧性。",
-      "impactAreas": [
-        "服务贸易",
-        "外贸",
-        "经济结构"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-307e4cd883",
-      "title": "全国夏粮小麦收获进度过半 已收1.84亿亩",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071355.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-06T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "截至6月5日，全国夏粮小麦收获进度达54.29%，已收1.84亿亩。当日收获1803万亩，投入联合收割机23.68万台，较去年有所增加。",
-      "summaryReason": "夏粮收获进度过半，反映国内粮食生产进展，对粮食安全和经济稳定有重要指示意义。",
-      "translatedTitle": "全国夏粮小麦收获进度过半 已收1.84亿亩",
-      "importance": "夏粮是全年粮食生产第一仗，收获顺利有利于稳定市场预期和保障农民收益。",
-      "impactAreas": [
-        "农业",
-        "粮食安全",
-        "经济"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-b76ebfd43a",
-      "title": "共同谱写中朝友好崭新篇章——写在习近平总书记对朝鲜进行国事访问之际",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071340.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-06T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "应朝鲜最高领导人金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问，旨在深化传统友谊，推动双边关系发展。",
-      "summaryReason": "此访是近年来中朝高层交往的重要事件，对维护地区稳定、加强战略沟通具有关键意义。",
-      "translatedTitle": "共同谱写中朝友好崭新篇章——写在习近平总书记对朝鲜进行国事访问之际",
-      "importance": "重大外交行动，影响东北亚地缘政治格局及中朝合作走向。",
-      "impactAreas": [
-        "地缘政治",
-        "外交关系",
-        "东北亚安全"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-551a8848e4",
-      "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-06T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "中老双方共同声明，坚持党的领导和社会主义道路是双边关系最本质特征和坚实基础，两党肩负为人民谋幸福、为国家谋发展、为人类谋进步的历史使命。",
-      "summaryReason": "该联合声明标志着中老关系进入新阶段，为新时代全天候命运共同体奠定政治基础，具有重要外交影响。",
-      "translatedTitle": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
-      "importance": "此声明是中老两国最高层政治共识的体现，对稳定双边关系和区域合作具有重大意义。",
-      "impactAreas": [
-        "中老关系",
-        "外交",
-        "命运共同体"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-nasa-breaking-news-7ff8c68b85",
-      "title": "NASA&#8217;s X-59 Aircraft Flies Supersonic for First Time",
-      "url": "https://www.nasa.gov/aeronautics/x-59-first-supersonic-flight",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T20:44:57.000Z",
-      "score": 90,
-      "aiSummary": "NASA实验性X-59飞机于6月5日首次突破音速，达到马赫1.1，飞行高度43400英尺，时长81分钟。此次成功为后续静音超音速演示奠定基础。",
-      "summaryReason": "X-59是静音超音速计划核心机，首次超音速飞行验证能力，为低噪音超音速测试铺路，有望推动商业超音速航空发展。",
-      "translatedTitle": "NASA X-59飞机首次超音速飞行",
-      "importance": "NASA低音爆技术验证关键节点，可能重塑超音速飞行规则，影响未来航空运输业。",
-      "impactAreas": [
-        "航空技术",
-        "超音速飞行",
-        "NASA",
-        "静音技术"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-nasa-breaking-news-84c76e79e5",
-      "title": "NASA Concludes Antenna Mishap Investigation, Releases Report",
-      "url": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/nasa-concludes-antenna-mishap-investigation-releases-report",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T17:00:00.000Z",
-      "score": 90,
-      "aiSummary": "NASA完成对Goldstone深空通信综合大楼70米天线（DSS-14）去年损坏的调查，将事故列为A级（最高级别），基于总损失成本。天线将继续离线进行维修和预定升级。NASA强调对安全和规程的重视。",
-      "summaryReason": "深空通信关键设施受损，影响航天任务通信能力，事故级别高，修复周期长，体现航天运营风险。",
-      "translatedTitle": "NASA完成天线事故调查并发布报告",
-      "importance": "NASA深空通信网络核心天线受损，修复成本高、周期长，可能影响深空任务数据传输。",
-      "impactAreas": [
-        "航天",
-        "深空通信",
-        "设备故障",
-        "NASA"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-nasa-breaking-news-7933a15baa",
-      "title": "First Steps: America’s Grueling Second Spacewalk",
-      "url": "https://www.nasa.gov/image-article/first-steps-americas-grueling-second-spacewalk",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T15:47:27.000Z",
-      "score": 90,
-      "aiSummary": "双子座4号完成首次太空行走一年后，NASA准备第二次更艰难的舱外活动。原计划双子座8号的任务调整至双子座9A号，宇航员尤金·塞尔南于1966年6月5日执行。由于宇航服僵硬，简单动作都异常费力，塞尔南在舱外与设备搏斗。",
-      "summaryReason": "此事件是NASA太空探索史上的重要里程碑，展示了早期太空行走的挑战与技术局限性。",
-      "translatedTitle": "美国第二次艰难太空行走",
-      "importance": "该任务标志着美国太空行走能力的进步，但面临设备僵硬等工程难题，为后续改进提供经验。",
-      "impactAreas": [
-        "太空探索",
-        "宇航技术",
-        "航天历史"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "tech-google-ai-blog-f7238edb25",
-      "title": "The latest AI news we announced in May 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
-      "source": "Google AI Blog",
-      "sourceId": "google-ai",
-      "category": "tech",
-      "publishedAt": "2026-06-05T14:45:00.000Z",
-      "score": 90,
-      "aiSummary": "谷歌在2026年5月发布一系列AI更新，包括Gemini 3.5模型和Gemini Omni，进入“智能体”时代。推出主动式工具如更新版Gemini应用、Universal Cart购物车和Google Health应用，提升日常任务管理效率。这些功能也应用于新硬件。",
-      "summaryReason": "谷歌AI进入智能体时代，Gemini 3.5和Omni提升推理与创作能力，主动工具增强用户体验，跨硬件整合生态。",
-      "translatedTitle": "2026年5月谷歌AI最新动态",
-      "importance": "谷歌AI重大升级，标志从被动响应到主动智能体的转变，影响AI应用生态。",
-      "impactAreas": [
-        "AI模型",
-        "智能体",
-        "谷歌生态"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "international-un-news-13f8311f78",
-      "title": "‘The ocean has no boundaries’: Beauty and life in a war zone",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167648",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "international",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "score": 90,
-      "aiSummary": "美以于2月28日对伊朗发起打击，引发重大地缘政治危机，霍尔木兹海峡成为全球焦点，局势紧张。",
-      "summaryReason": "霍尔木兹海峡是重要能源通道，危机加剧中东动荡，影响全球能源供应和地缘政治稳定。",
-      "translatedTitle": "美以打击伊朗致霍尔木兹海峡成全球热点",
-      "importance": "全球能源安全与中东地缘格局受直接冲击，可能引发更大范围冲突。",
-      "impactAreas": [
-        "地缘政治",
-        "能源安全",
-        "中东局势"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-un-news-557fa30ae5",
-      "title": "Faith, fear and trust: Inside DR Congo’s fight against Ebola",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167667",
+      "id": "news-un-news-d7d4550ce0",
+      "title": "Humanity’s future depends on protecting the rapidly changing ocean",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167654",
       "source": "UN News",
       "sourceId": "un-news",
       "category": "news",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
+      "publishedAt": "2026-06-07T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "海洋覆盖地球70%以上，调节气候、维持生物多样性，支撑全球经济和文化遗产。保护海洋是人类未来的关键。",
+      "summaryReason": "海洋是地球生命的基础，其变化直接影响气候、生态和人类福祉，保护行动刻不容缓。",
+      "translatedTitle": "人类未来取决于保护快速变化的海洋",
+      "importance": "海洋调节气候、维持生态平衡，关乎人类生存与发展，保护海洋即保护未来。",
+      "impactAreas": [
+        "海洋保护",
+        "气候变化",
+        "生物多样性"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-a4d82f38f3",
+      "title": "Five things you need to know about ocean plastics",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167637",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-06T12:00:00.000Z",
       "score": 89,
-      "aiSummary": "刚果（金）东部村庄，卫生工作者为埃博拉死者下葬时遭威胁，被迫离开。当地居民因不信任和恐惧，甚至威胁召来武装分子。信任缺失成为抗疫关键障碍。",
-      "summaryReason": "反映疫情中社区信任危机，卫生工作者安全受威胁，阻碍防疫工作，凸显人道主义挑战。",
-      "translatedTitle": "刚果（金）抗击埃博拉：信仰、恐惧与信任",
-      "importance": "埃博拉疫情本就严重，信任缺失导致防控难上加难，威胁全球公共卫生安全。",
+      "aiSummary": "塑料制品充斥日常生活，从手套到水瓶，其耐用性带来便利，却对环境造成严重负担。",
+      "summaryReason": "该报道揭示塑料污染的普遍性与环境威胁，提醒公众关注可持续发展。",
+      "translatedTitle": "关于海洋塑料的五个关键事实",
+      "importance": "塑料污染是全球性环境挑战，影响海洋生态与人类健康，亟需行动。",
       "impactAreas": [
-        "公共卫生",
-        "地缘政治",
-        "人道主义",
-        "疫情"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-un-news-1941638a36",
-      "title": "Haiti: Harrowing needs must be met with long-term engagement",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167661",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "score": 89,
-      "aiSummary": "联合国移民机构数据显示，海地帮派暴力升级导致流离失所人数创纪录，近150万人无稳定住所，人道主义危机加剧。",
-      "summaryReason": "该事件反映海地安全局势恶化，引发严重人道主义危机，影响数百万民众基本生存，需国际社会长期关注。",
-      "translatedTitle": "海地：长期介入以应对严峻需求",
-      "importance": "海地流离失所人数创新高，显示帮派暴力已造成大规模人道灾难，亟需长期国际援助与安全干预。",
-      "impactAreas": [
-        "人道主义危机",
-        "暴力冲突",
-        "移民"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-nasa-breaking-news-ad4d222d8a",
-      "title": "NASA Announces Winners of 2026 University Innovation Competition",
-      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-announces-winners-of-2026-university-innovation-competition",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T20:17:11.000Z",
-      "score": 82,
-      "aiSummary": "NASA宣布麻省理工学院的“探索级月球集成电源系统”获得2026年RASC-AL竞赛第一名，第二名是该校的“火星探索分层基础设施”项目。竞赛旨在挑战学生创新航空航天系统概念。",
-      "summaryReason": "该消息涉及NASA年度创新竞赛结果，展示了大学在太空技术方面的最新突破，对航天领域有参考价值。",
-      "translatedTitle": "NASA公布2026年大学创新竞赛获奖者",
-      "importance": "NASA学生竞赛获奖项目反映航天技术前沿趋势，MIT团队获奖凸显高校创新能力。",
-      "impactAreas": [
-        "航天技术",
-        "高校创新",
-        "NASA"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-nasa-breaking-news-b03a8d629a",
-      "title": "NASA’s Artemis II Moon Mission Research Continues on Earth",
-      "url": "https://science.nasa.gov/uncategorized/nasas-artemis-ii-moon-mission-research-continues-on-earth",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T19:16:48.000Z",
-      "score": 82,
-      "aiSummary": "阿耳忒弥斯二号乘组于4月10日成功溅落后，科研团队持续收集并分析飞行数据，这些研究将助力深空载人探索，并为未来月球表面科学任务及月球基地建设提供蓝图。",
-      "summaryReason": "作为NASA重返月球的关键测试任务，其研究进展直接关联人类深空探索能力建设，影响未来月球基地和长期驻留计划。",
-      "translatedTitle": "NASA阿耳忒弥斯二号月球任务研究在地球上继续",
-      "importance": "阿耳忒弥斯二号是NASA载人月球探索的关键一步，其科学研究成果将决定后续任务方向及月球基地可行性。",
-      "impactAreas": [
-        "太空探索",
-        "NASA",
-        "月球基地",
-        "深空探测"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-un-news-e8713ebbf0",
-      "title": "‘The true cost of peace’: UN honours fallen peacekeepers as dangers mount",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167665",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "联合国于周五向过去78年间牺牲的4500多名维和人员致敬，强调和平的代价日益沉重。",
-      "summaryReason": "维和人员牺牲数字触目惊心，反映全球冲突与维和任务风险持续上升。",
-      "translatedTitle": "‘和平的真正代价’：联合国在危险加剧之际表彰牺牲维和人员",
-      "importance": "突显维和行动的高昂代价，呼吁国际社会关注并支持联合国维和使命。",
-      "impactAreas": [
-        "联合国",
-        "国际安全",
-        "维和行动"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-un-news-56a4e21e73",
-      "title": "Lebanon crisis: Needs soar as UN launches new funding appeal",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167659",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-06-05T12:00:00.000Z",
-      "score": 81,
-      "aiSummary": "联合国在黎巴嫩发起额外3.315亿美元募捐，以帮助140万受危机影响民众。三个月来真主党与以色列冲突导致需求持续增长。",
-      "summaryReason": "黎巴嫩人道危机升级，联合国呼吁国际援助，影响地区稳定与难民问题。",
-      "translatedTitle": "黎巴嫩危机：需求激增，联合国发起新资金呼吁",
-      "importance": "黎巴嫩冲突持续，人道需求激增，联合国紧急募捐凸显危机严重性，可能影响中东局势及全球人道主义响应。",
-      "impactAreas": [
-        "人道主义",
-        "中东冲突",
-        "联合国",
-        "难民"
+        "塑料污染",
+        "海洋生态",
+        "环境保护"
       ],
       "summaryMethod": "deepseek-chat-completions"
     }
