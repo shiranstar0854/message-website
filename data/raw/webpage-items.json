@@ -11,10 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -28,15 +28,40 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "ok": false,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "status": 200,
+    "ok": true,
+    "itemCount": 2,
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 2,
-    "error": "fetch failed",
-    "items": [],
-    "itemCount": 0,
+    "items": [
+      {
+        "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+        "link": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "中老两国央行续签相关合作文件",
+        "link": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -51,10 +76,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -68,15 +93,28 @@
     "category": "finance",
     "credibility": 92,
     "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
-    "ok": false,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "status": 200,
+    "ok": true,
+    "itemCount": 1,
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
-    "attempts": 2,
-    "error": "fetch failed",
-    "items": [],
-    "itemCount": 0,
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+    "attempts": 1,
+    "items": [
+      {
+        "title": "推动境内外资本市场互学互鉴 “2026年交易所国际培训班暨欧亚资本市场交流活动”成功举办",
+        "link": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260608_10821075.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "上海证券交易所新闻、规则、市场服务和上市公司相关动态",
+        "sourceAuthority": "official-market",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-market",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -89,10 +127,10 @@
     "credibility": 92,
     "url": "https://www.szse.cn/aboutus/trends/news/index.html",
     "ok": false,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 2,
     "error": "fetch failed",
     "items": [],
@@ -110,13 +148,26 @@
     "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "国家发展改革委与老挝有关部门签署合作文件",
+        "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260608_1405748.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -131,10 +182,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 1,
     "items": [
       {
@@ -164,11 +215,11 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+    "attempts": 2,
     "items": [],
     "stale": false
   },
@@ -183,16 +234,16 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 9,
-    "fetchedAt": "2026-06-08T09:00:43.099Z",
+    "itemCount": 15,
+    "fetchedAt": "2026-06-09T00:00:36.305Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-08T09:00:43.099Z",
-    "cacheExpiresAt": "2026-06-10T09:00:43.099Z",
+    "cacheStartedAt": "2026-06-09T00:00:36.305Z",
+    "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
     "attempts": 1,
     "items": [
       {
-        "title": "习近平出席金正恩举行的欢迎仪式",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071434.htm",
+        "title": "习近平和彭丽媛观看朝鲜专场文艺演出",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071529.htm",
         "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -203,8 +254,8 @@
         ]
       },
       {
-        "title": "习近平抵达平壤开始对朝鲜进行国事访问",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071431.htm",
+        "title": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071528.htm",
         "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -215,8 +266,8 @@
         ]
       },
       {
-        "title": "习近平离京对朝鲜进行国事访问",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071418.htm",
+        "title": "我国海洋生态状况稳中向好",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071522.htm",
         "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -227,8 +278,8 @@
         ]
       },
       {
-        "title": "推动中朝关系与时俱进取得更大发展",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071413.htm",
+        "title": "“十五五”现代化应急体系有了“建设指南”",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071514.htm",
         "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -239,8 +290,8 @@
         ]
       },
       {
-        "title": "“空天地海”新一代通信网建设提速 助力经济社会数智化转型",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
+        "title": "习近平出席金正恩举行的欢迎宴会",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071505.htm",
         "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -251,8 +302,8 @@
         ]
       },
       {
-        "title": "习近平在朝鲜媒体发表署名文章",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071403.htm",
+        "title": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071504.htm",
         "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
@@ -263,9 +314,9 @@
         ]
       },
       {
-        "title": "我国持续优化完善农村公路网络",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071400.htm",
-        "publishedAt": "2026-06-07T00:00:00.000Z",
+        "title": "【视频】习近平在朝鲜媒体发表署名文章",
+        "link": "https://tv.cctv.com/2026/06/08/VIDENVElayHpBe7r8jdln6uu260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -275,9 +326,9 @@
         ]
       },
       {
-        "title": "中朝多领域合作为两国友好注入源源动力",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071399.htm",
-        "publishedAt": "2026-06-07T00:00:00.000Z",
+        "title": "【视频】习近平同金正恩举行会谈",
+        "link": "https://tv.cctv.com/2026/06/08/VIDE1PCryEXC67mzAWtN7Z4A260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -287,9 +338,81 @@
         ]
       },
       {
-        "title": "“农业农村是大有可为的广阔天地”——习近平总书记关于“三农”重要论述引领农业强国建设",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071380.htm",
-        "publishedAt": "2026-06-07T00:00:00.000Z",
+        "title": "【视频】习近平出席金正恩举行的欢迎仪式",
+        "link": "https://tv.cctv.com/2026/06/08/VIDEERWuxUKOoThkpAYbMqIA260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
+        "link": "https://tv.cctv.com/2026/06/08/VIDEhpj4Z4APgEqA8ttWGr1i260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】习近平离京对朝鲜进行国事访问",
+        "link": "https://tv.cctv.com/2026/06/08/VIDECC0jmvGvWVMlkxnawjpd260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】丁薛祥出席三峡水运新通道工程开工仪式",
+        "link": "https://tv.cctv.com/2026/06/08/VIDEsjsYU1Vb4nU4RfDlIfCG260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "丁薛祥出席三峡水运新通道工程开工仪式",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071474.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "习近平同金正恩举行会谈",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071471.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院印发《现代化应急体系建设“十五五”规划》",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071459.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
