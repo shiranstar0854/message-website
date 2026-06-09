@@ -1,14 +1,77 @@
 {
-  "generatedAt": "2026-06-06T00:00:51.171Z",
+  "generatedAt": "2026-06-09T00:01:03.164Z",
   "retentionDays": 10,
-  "totalArchiveDays": 12,
+  "totalArchiveDays": 15,
   "totalDays": 10,
   "days": [
     {
+      "date": "2026-06-09",
+      "generatedAt": "2026-06-09T00:01:02.755Z",
+      "url": "data/archive/daily/2026-06-09.json",
+      "totalItems": 36,
+      "totals": {
+        "sources": 20,
+        "healthySources": 10,
+        "rawItems": 39,
+        "normalizedItems": 39,
+        "filteredItems": 37,
+        "dedupedItems": 37,
+        "scoredItems": 37,
+        "enrichmentAttempted": 32,
+        "enrichmentFailed": 1
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 37
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "generatedAt": "2026-06-08T09:01:06.193Z",
+      "url": "data/archive/daily/2026-06-08.json",
+      "totalItems": 13,
+      "totals": {
+        "sources": 20,
+        "healthySources": 3,
+        "rawItems": 13,
+        "normalizedItems": 13,
+        "filteredItems": 13,
+        "dedupedItems": 13,
+        "scoredItems": 13,
+        "enrichmentAttempted": 13,
+        "enrichmentFailed": 0
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 13
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "generatedAt": "2026-06-07T09:00:57.731Z",
+      "url": "data/archive/daily/2026-06-07.json",
+      "totalItems": 18,
+      "totals": {
+        "sources": 20,
+        "healthySources": 4,
+        "rawItems": 18,
+        "normalizedItems": 18,
+        "filteredItems": 18,
+        "dedupedItems": 18,
+        "scoredItems": 18,
+        "enrichmentAttempted": 18,
+        "enrichmentFailed": 0
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 18
+      }
+    },
+    {
       "date": "2026-06-06",
-      "generatedAt": "2026-06-06T00:00:50.794Z",
+      "generatedAt": "2026-06-06T09:00:51.485Z",
       "url": "data/archive/daily/2026-06-06.json",
-      "totalItems": 27,
+      "totalItems": 34,
       "totals": {
         "sources": 20,
         "healthySources": 9,
@@ -17,7 +80,7 @@
         "filteredItems": 41,
         "dedupedItems": 41,
         "scoredItems": 41,
-        "enrichmentAttempted": 24,
+        "enrichmentAttempted": 32,
         "enrichmentFailed": 0
       },
       "archivePolicy": {
@@ -149,69 +212,6 @@
       "archivePolicy": {
         "maxItemsPerChannel": 20,
         "availableItems": 33
-      }
-    },
-    {
-      "date": "2026-05-30",
-      "generatedAt": "2026-05-30T05:43:15.035Z",
-      "url": "data/archive/daily/2026-05-30.json",
-      "totalItems": 60,
-      "totals": {
-        "sources": 24,
-        "healthySources": 24,
-        "rawItems": 1486,
-        "normalizedItems": 1486,
-        "filteredItems": 444,
-        "dedupedItems": 432,
-        "scoredItems": 432,
-        "enrichmentAttempted": 53,
-        "enrichmentFailed": 0
-      },
-      "archivePolicy": {
-        "maxItemsPerChannel": 20,
-        "availableItems": 432
-      }
-    },
-    {
-      "date": "2026-05-29",
-      "generatedAt": "2026-05-29T03:17:44.384Z",
-      "url": "data/archive/daily/2026-05-29.json",
-      "totalItems": 60,
-      "totals": {
-        "sources": 15,
-        "healthySources": 15,
-        "rawItems": 1259,
-        "normalizedItems": 1259,
-        "filteredItems": 274,
-        "dedupedItems": 269,
-        "scoredItems": 269,
-        "enrichmentAttempted": 53,
-        "enrichmentFailed": 0
-      },
-      "archivePolicy": {
-        "maxItemsPerChannel": 20,
-        "availableItems": 269
-      }
-    },
-    {
-      "date": "2026-05-28",
-      "generatedAt": "2026-05-28T11:04:54.184Z",
-      "url": "data/archive/daily/2026-05-28.json",
-      "totalItems": 60,
-      "totals": {
-        "sources": 15,
-        "healthySources": 15,
-        "rawItems": 1257,
-        "normalizedItems": 1257,
-        "filteredItems": 271,
-        "dedupedItems": 262,
-        "scoredItems": 262,
-        "enrichmentAttempted": 52,
-        "enrichmentFailed": 0
-      },
-      "archivePolicy": {
-        "maxItemsPerChannel": 20,
-        "availableItems": 262
       }
     }
   ]
