@@ -10,26 +10,13 @@
     "url": "https://www.most.gov.cn/kjbgz/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
-    "items": [
-      {
-        "title": "科技部组织召开2026年全国科技监督工作会",
-        "link": "https://www.most.gov.cn/kjbgz/202606/t20260605_196754.html",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
-        "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "daily",
-        "tags": [
-          "official-agency",
-          "daily"
-        ]
-      }
-    ],
+    "items": [],
     "stale": false
   },
   {
@@ -43,17 +30,29 @@
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-05T09:00:54.246Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-05T09:00:54.246Z",
-    "cacheExpiresAt": "2026-06-07T09:00:54.246Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
     "items": [
       {
-        "title": "中国人民银行公告〔2026〕第14号",
-        "link": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060418264767948/index.html",
-        "publishedAt": "2026-06-04T00:00:00.000Z",
+        "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+        "link": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "中老两国央行续签相关合作文件",
+        "link": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -63,14 +62,7 @@
         ]
       }
     ],
-    "stale": true,
-    "latestAttempt": {
-      "fetchedAt": "2026-06-06T00:00:27.432Z",
-      "ok": false,
-      "status": null,
-      "itemCount": 0,
-      "error": "fetch failed"
-    }
+    "stale": false
   },
   {
     "sourceId": "csrc-news",
@@ -84,52 +76,294 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
     "items": [],
     "stale": false
   },
   {
-    "sourceId": "sse-news",
-    "sourceName": "上海证券交易所要闻",
+    "sourceId": "yicai-finance",
+    "sourceName": "第一财经",
     "sourceType": "webpage",
-    "sourceAuthority": "official-market",
-    "timelinessTier": "daily",
+    "sourceAuthority": "financial-media",
+    "timelinessTier": "hourly",
     "category": "finance",
-    "credibility": 92,
-    "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/",
-    "ok": false,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "credibility": 88,
+    "url": "https://www.yicai.com/",
+    "status": 200,
+    "ok": true,
+    "itemCount": 10,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
-    "attempts": 2,
-    "error": "fetch failed",
-    "items": [],
-    "itemCount": 0,
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
+    "attempts": 1,
+    "items": [
+      {
+        "title": "5月汽车销量前十已无燃油车",
+        "link": "https://www.yicai.com/news/103221115.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "在永州，寻找低线城市高质量发展的密码",
+        "link": "https://www.yicai.com/news/103221036.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+        "link": "https://www.yicai.com/news/103220407.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+        "link": "https://www.yicai.com/news/103218925.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+        "link": "https://www.yicai.com/news/103219174.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "关于开设“涉企侵权投诉举报专区”的公告",
+        "link": "https://www.yicai.com/news/102062384.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "第一财经网络举报受理和处置规则",
+        "link": "https://www.yicai.com/news/102944648.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "江水边的创新土壤",
+        "link": "https://www.yicai.com/news/102997655.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "普洛斯算力中心引入浙江国资战略股东",
+        "link": "https://www.yicai.com/news/102794012.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
+        "link": "https://www.yicai.com/news/102464166.html",
+        "publishedAt": "2026-06-09T06:09:51.635Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      }
+    ],
     "stale": false
   },
   {
-    "sourceId": "szse-news",
-    "sourceName": "深圳证券交易所要闻",
+    "sourceId": "nbd-finance",
+    "sourceName": "每日经济新闻",
     "sourceType": "webpage",
-    "sourceAuthority": "official-market",
-    "timelinessTier": "daily",
+    "sourceAuthority": "financial-media",
+    "timelinessTier": "hourly",
     "category": "finance",
-    "credibility": 92,
-    "url": "https://www.szse.cn/aboutus/trends/news/index.html",
-    "ok": false,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "credibility": 86,
+    "url": "https://www.nbd.com.cn/",
+    "status": 200,
+    "ok": true,
+    "itemCount": 10,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
-    "attempts": 2,
-    "error": "fetch failed",
-    "items": [],
-    "itemCount": 0,
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
+    "attempts": 1,
+    "items": [
+      {
+        "title": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420923.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "今年前5个月我国货物贸易进出口同比增长15.3%",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420871.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "微信官宣大动作！腾讯凑齐美团京东“三巨头” 2026-06-09 13:37",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420970.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "以色列发动大规模空袭！战况激烈，联合国：3天内记录到超2100起交火 2026-06-09 13:36",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420968.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "行业ETF风向标丨中韩半导体ETF华泰柏瑞（513310）成交额超50亿元，三只科创半导体设备ETF半日涨幅超6.5% 2026-06-09 13:27",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420934.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "A股震荡反弹，沪指半日涨0.51% 2026-06-09 13:00",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420921.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度 2026-06-09 13:00",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420923.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "失误频发，郑钦文再遭“一轮游”，即时世界排名下滑至第159位！去年她在这里打进四强 2026-06-09 12:59",
+        "link": "https://www.nbd.com.cn/articles/2026-06-09/4420940.html",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -143,13 +377,26 @@
     "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "国家发展改革委与老挝有关部门签署合作文件",
+        "link": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260608_1405748.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -163,17 +410,29 @@
     "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
     "items": [
       {
-        "title": "蓝佛安会见新开发银行行长罗塞芙",
-        "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "财政部将于6月在香港发行150亿元人民币国债",
+        "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "summary": "财政部财政政策、国债、预算和财政运行新闻",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      },
+      {
+        "title": "廖岷会见英中贸易协会主席吴思田",
+        "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "财政部财政政策、国债、预算和财政运行新闻",
         "sourceAuthority": "official-agency",
         "timelinessTier": "daily",
@@ -197,10 +456,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -216,17 +475,17 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 13,
-    "fetchedAt": "2026-06-06T00:00:27.432Z",
+    "itemCount": 15,
+    "fetchedAt": "2026-06-09T06:09:51.635Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-06T00:00:27.432Z",
-    "cacheExpiresAt": "2026-06-08T00:00:27.432Z",
+    "cacheStartedAt": "2026-06-09T06:09:51.635Z",
+    "cacheExpiresAt": "2026-06-11T06:09:51.635Z",
     "attempts": 1,
     "items": [
       {
-        "title": "中华人民共和国和老挝人民民主共和国关于构建新时代全天候中老命运共同体的联合声明",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071330.htm",
-        "publishedAt": "2026-06-06T00:00:00.000Z",
+        "title": "习近平参访朝鲜劳动党中央干部学校",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071564.htm",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -236,9 +495,9 @@
         ]
       },
       {
-        "title": "各地麦收高效推进 助力夏粮颗粒归仓",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071307.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "习近平和彭丽媛参谒中朝友谊塔",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071562.htm",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -248,9 +507,9 @@
         ]
       },
       {
-        "title": "环境日：全民参与 共建美丽中国",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071305.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "习近平向加拿大新任总督路易丝·阿伯致贺电",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071551.htm",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -260,9 +519,9 @@
         ]
       },
       {
-        "title": "李强会见老挝人民革命党中央总书记、国家主席通伦",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071287.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071543.htm",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -272,9 +531,9 @@
         ]
       },
       {
-        "title": "李强主持召开国务院常务会议 听取关于做好就业工作汇报 审议通过《实施就业优先战略“十五五”规划》等",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071274.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "习近平和彭丽媛观看朝鲜专场文艺演出",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071529.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -284,9 +543,9 @@
         ]
       },
       {
-        "title": "外交部介绍习近平总书记访问朝鲜有关安排",
-        "link": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071528.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -296,9 +555,9 @@
         ]
       },
       {
-        "title": "习近平同老挝人民革命党中央总书记、国家主席通伦举行会谈",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071268.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "我国海洋生态状况稳中向好",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071522.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -308,9 +567,9 @@
         ]
       },
       {
-        "title": "国务院任免国家工作人员（2026年6月5日）",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071218.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "“十五五”现代化应急体系有了“建设指南”",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071514.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -320,9 +579,9 @@
         ]
       },
       {
-        "title": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
-        "link": "https://www.gov.cn/zhengce/content/202606/content_7071204.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "习近平出席金正恩举行的欢迎宴会",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071505.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -332,9 +591,9 @@
         ]
       },
       {
-        "title": "习近平将对朝鲜民主主义人民共和国进行国事访问",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071504.htm",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -344,9 +603,9 @@
         ]
       },
       {
-        "title": "共建天蓝地绿水清的美丽家园——践行习近平生态文明思想的时代答卷",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071077.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "【视频】习近平在朝鲜媒体发表署名文章",
+        "link": "https://tv.cctv.com/2026/06/08/VIDENVElayHpBe7r8jdln6uu260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -356,9 +615,9 @@
         ]
       },
       {
-        "title": "总书记的人民情怀 | “推进中国式现代化，要把水资源问题考虑进去”",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "【视频】习近平同金正恩举行会谈",
+        "link": "https://tv.cctv.com/2026/06/08/VIDE1PCryEXC67mzAWtN7Z4A260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
@@ -368,9 +627,33 @@
         ]
       },
       {
-        "title": "王毅会见下任联合国秘书长候选人巴切莱特",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
-        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "title": "【视频】习近平出席金正恩举行的欢迎仪式",
+        "link": "https://tv.cctv.com/2026/06/08/VIDEERWuxUKOoThkpAYbMqIA260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
+        "link": "https://tv.cctv.com/2026/06/08/VIDEhpj4Z4APgEqA8ttWGr1i260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】习近平离京对朝鲜进行国事访问",
+        "link": "https://tv.cctv.com/2026/06/08/VIDECC0jmvGvWVMlkxnawjpd260608.shtml",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",

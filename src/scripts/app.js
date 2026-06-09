@@ -2,7 +2,7 @@
   const FALLBACK_CONFIG = {
     siteName: "Message Choose",
     tagline: "科技、金融、新闻信息筛选台",
-    defaultLimit: 8,
+    defaultLimit: 6,
     defaultSort: "score-desc",
     scoreFloor: 60,
     channels: [
@@ -48,6 +48,7 @@
     totalEvents: 0,
     events: []
   };
+  const EVENT_REFRESH_MS = 120000;
 
   async function loadJson(url, fallback) {
     if (window.location.protocol === "file:") return fallback;
@@ -254,6 +255,11 @@
 
     container.innerHTML = events.map((event) => {
       const evidence = event.evidenceItems || event.items || [];
+      const latest = event.latestUpdate || evidence[0] || {};
+      const latestUrl = window.MessageChooseRender.safeExternalUrl(latest.url);
+      const latestTitle = latestUrl
+        ? `<a href="${escapeHtml(latestUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(latest.title || "")}</a>`
+        : escapeHtml(latest.title || "");
       return `
         <article class="home-event-card">
           <div class="home-event-head">
@@ -261,11 +267,16 @@
             <span>热度：${escapeHtml(event.heat || "中")}</span>
           </div>
           <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
+          <div class="home-event-latest">
+            <strong>最新进展</strong>
+            <p>${latestTitle}</p>
+            <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 时间：${escapeHtml(formatShortDate(latest.publishedAt || event.updatedAt))}</span>
+          </div>
           <ol class="home-event-timeline">
-            ${(event.timeline || evidence).slice(-4).map((item) => `
+            ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => `
               <li>
                 <time>${escapeHtml(formatTimelineDate(item.date || item.publishedAt))}</time>
-                <span>${escapeHtml(item.title || "")}</span>
+                <span>${escapeHtml(item.title || "")}<small>${escapeHtml(item.source || "")}</small></span>
               </li>
             `).join("")}
           </ol>
@@ -299,7 +310,7 @@
     const sourceStatus = document.getElementById("source-status");
     const sourceToggle = document.getElementById("source-toggle");
     const loadMoreButton = document.getElementById("load-more");
-    const pageSize = Number(data.defaultLimit || config.defaultLimit || 8);
+    const pageSize = Number(data.defaultLimit || config.defaultLimit || 6);
     let activeState = null;
     let filterControls = null;
     let visibleLimit = pageSize;
@@ -347,6 +358,17 @@
     window.MessageChooseRender.renderChannelSummary(summary, data);
     renderTopHotspots(data);
     renderHomeEvents(eventData);
+    if (window.location.protocol !== "file:") {
+      setInterval(async () => {
+        const refreshedEvents = await loadJson("src/data/events.json", FALLBACK_EVENTS);
+        if (refreshedEvents.generatedAt && refreshedEvents.generatedAt !== eventData.generatedAt) {
+          eventData.generatedAt = refreshedEvents.generatedAt;
+          eventData.totalEvents = refreshedEvents.totalEvents;
+          eventData.events = refreshedEvents.events || [];
+          renderHomeEvents(eventData);
+        }
+      }, EVENT_REFRESH_MS);
+    }
     renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);

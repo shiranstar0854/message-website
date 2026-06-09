@@ -323,12 +323,13 @@ function buildSourceHealth(results, previousHealth = { sources: [] }, generatedA
   };
 }
 
-function mergeSourceHealth(previousHealth, nextHealth) {
+function mergeSourceHealth(previousHealth, nextHealth, activeSourceIds = null) {
   const nextIds = new Set(nextHealth.sources.map((source) => source.id));
+  const isActiveSource = (source) => !activeSourceIds || activeSourceIds.has(source.id);
   return {
     generatedAt: nextHealth.generatedAt,
     sources: [
-      ...(previousHealth.sources || []).filter((source) => !nextIds.has(source.id)),
+      ...(previousHealth.sources || []).filter((source) => !nextIds.has(source.id) && isActiveSource(source)),
       ...nextHealth.sources
     ]
   };
@@ -349,7 +350,8 @@ function writeFetchOutputs(results) {
   const previousHealth = readJson(HEALTH_PATH, { sources: [] });
   const effectiveResults = buildEffectiveResults(results, previousResults);
   const webHealth = buildSourceHealth(results, previousHealth);
-  const mergedHealth = mergeSourceHealth(previousHealth, webHealth);
+  const activeSourceIds = new Set(readSources(ROOT_DIR).filter((source) => source.enabled !== false).map((source) => source.id));
+  const mergedHealth = mergeSourceHealth(previousHealth, webHealth, activeSourceIds);
   writeJson(RAW_PATH, effectiveResults);
   writeJson(HEALTH_PATH, mergedHealth);
   return { effectiveResults, health: mergedHealth };

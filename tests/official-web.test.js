@@ -173,6 +173,24 @@ test("web source health merges with existing rss health and preserves fallback d
   assert.equal(merged.sources.length, 2);
 });
 
+test("web source health drops removed sources when active source ids are provided", () => {
+  const previousHealth = {
+    generatedAt: "2026-05-29T01:00:00.000Z",
+    sources: [
+      { id: "rss-source", name: "RSS Source", status: "healthy" },
+      { id: "sse-news", name: "SSE News", status: "healthy" }
+    ]
+  };
+  const nextHealth = {
+    generatedAt: "2026-05-30T01:00:00.000Z",
+    sources: [{ id: "yicai-finance", name: "第一财经", status: "healthy" }]
+  };
+
+  const merged = mergeSourceHealth(previousHealth, nextHealth, new Set(["rss-source", "yicai-finance"]));
+
+  assert.deepEqual(merged.sources.map((source) => source.id), ["rss-source", "yicai-finance"]);
+});
+
 test("web source health keeps previous empty status through transient failures", () => {
   const result = {
     sourceId: "szse-news",

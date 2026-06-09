@@ -118,6 +118,11 @@ function renderTopEvents(events) {
 
   const renderEventCard = (event, index) => {
     const evidence = event.evidenceItems || event.items || [];
+    const latest = event.latestUpdate || evidence[0] || {};
+    const latestUrl = latest.url ? escapeHtml(latest.url) : "";
+    const latestTitle = latestUrl
+      ? `<a href="${latestUrl}">${escapeHtml(latest.title || "")}</a>`
+      : escapeHtml(latest.title || "");
     return `
               <article class="home-event-card">
                 <div class="home-event-head">
@@ -125,11 +130,16 @@ function renderTopEvents(events) {
                   <span>热度：${escapeHtml(event.heat || "中")}</span>
                 </div>
                 <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
+                <div class="home-event-latest">
+                  <strong>最新进展</strong>
+                  <p>${latestTitle}</p>
+                  <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 时间：${escapeHtml(formatDate(latest.publishedAt || event.updatedAt))}</span>
+                </div>
                 <ol class="home-event-timeline">
-                  ${(event.timeline || evidence).slice(-4).map((item) => `
+                  ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => `
                     <li>
                       <time>${escapeHtml(formatDate(item.publishedAt || item.date))}</time>
-                      <span>${escapeHtml(item.title || "")}</span>
+                      <span>${escapeHtml(item.title || "")}<small>${escapeHtml(item.source || "")}</small></span>
                     </li>
                   `).join("")}
                 </ol>

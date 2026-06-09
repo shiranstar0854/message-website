@@ -137,6 +137,7 @@
           <div>
             <h3>${title}</h3>
             ${originalTitle && displayTitle(item) !== originalTitle ? `<p class="original-title">原文：${escapeHtml(originalTitle)}</p>` : ""}
+            <p class="feed-locator"><span>事件定位</span>来源：${escapeHtml(item.source || "公开来源")} · 发布时间：${formatDate(item.publishedAt)} · 采集：${formatDate(item.fetchedAt)}</p>
             ${renderSummary(summary)}
             <p class="impact-line"><span>意义/影响</span>${escapeHtml(impactText(item))}</p>
             ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}

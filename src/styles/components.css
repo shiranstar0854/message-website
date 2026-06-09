@@ -484,6 +484,62 @@
   line-height: 1.55;
 }
 
+.home-event-latest,
+.event-latest-update,
+.feed-locator {
+  min-width: 0;
+  padding: 9px 10px;
+  background: #f8fbfa;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.home-event-latest {
+  display: grid;
+  gap: 4px;
+}
+
+.home-event-latest strong,
+.event-latest-update strong,
+.feed-locator span {
+  color: var(--blue);
+  font-size: 0.75rem;
+  font-weight: 850;
+}
+
+.home-event-latest p,
+.event-latest-update h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.home-event-latest a,
+.event-latest-update a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-event-latest span,
+.event-latest-update span,
+.feed-locator {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.feed-locator {
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.feed-locator span {
+  margin-right: 6px;
+}
+
 .home-event-timeline,
 .event-timeline {
   display: grid;
@@ -516,6 +572,27 @@
   -webkit-line-clamp: 2;
   font-size: 0.82rem;
   line-height: 1.35;
+}
+
+.home-event-timeline small {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.event-latest-update {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+
+.event-latest-update p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .event-timeline {

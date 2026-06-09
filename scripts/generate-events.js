@@ -88,6 +88,59 @@ function uniqueValues(values, limit) {
   return [...new Set(values.map(normalizeText).filter(Boolean))].slice(0, limit);
 }
 
+function significantKeywords(item) {
+  const generic = new Set([
+    "tech",
+    "finance",
+    "business",
+    "macro",
+    "international",
+    "news",
+    "daily",
+    "media",
+    "official-agency",
+    "official-market",
+    "official-media",
+    "financial-media",
+    "realtime",
+    "hourly",
+    "periodic",
+    "ai",
+    "公共政策",
+    "宏观",
+    "国际",
+    "金融",
+    "科技",
+    "新闻",
+    "商业",
+    "监管",
+    "市场",
+    "官方机构",
+    "官方市场",
+    "官方媒体",
+    "中文财经源",
+    "小时级",
+    "日更",
+    "实时",
+    "定期"
+  ]);
+  return itemKeywords(item)
+    .map((keyword) => keyword.toLowerCase())
+    .filter((keyword) => keyword.length >= 2 && !generic.has(keyword))
+    .slice(0, 6);
+}
+
+function sharedKeywordCount(left, right) {
+  const rightKeywords = new Set(significantKeywords(right));
+  return significantKeywords(left).filter((keyword) => rightKeywords.has(keyword)).length;
+}
+
+function eventLabelForItem(item, rule) {
+  const keyword = significantKeywords(item)[0];
+  const originalKeyword = itemKeywords(item).find((value) => String(value).toLowerCase() === keyword);
+  return originalKeyword || rule?.label || compactSentence(displayTitle(item), 32);
+}
+
 function sourceAuthorityLabel(value) {
   return {
     "official-agency": "官方机构",
@@ -147,6 +200,22 @@ function buildEvidenceItems(items) {
   }));
 }
 
+function latestUpdateItem(items) {
+  const latest = [...items]
+    .filter((item) => item.publishedAt)
+    .sort((left, right) => new Date(right.publishedAt).getTime() - new Date(left.publishedAt).getTime())[0]
+    || items[0]
+    || {};
+  return {
+    title: displayTitle(latest),
+    summary: compactSentence(displaySummary(latest), 120),
+    source: latest.source,
+    url: latest.url,
+    publishedAt: latest.publishedAt,
+    score: Number(latest.score || 0)
+  };
+}
+
 function timelineItem(item) {
   return {
     date: String(item.publishedAt || "").slice(0, 10),
@@ -180,11 +249,7 @@ function heatLabel(score, itemCount) {
 }
 
 function keywordSignature(item) {
-  return itemKeywords(item)
-    .map((keyword) => keyword.toLowerCase())
-    .filter((keyword) => keyword.length >= 2 && !["daily", "media"].includes(keyword))
-    .slice(0, 2)
-    .join("|");
+  return significantKeywords(item).slice(0, 3).join("|");
 }
 
 function fallbackRuleForItem(item) {
@@ -199,17 +264,20 @@ function fallbackRuleForItem(item) {
 function groupForItem(item, groups) {
   const rule = ruleForItem(item) || fallbackRuleForItem(item);
   if (!rule) return null;
-  if (groups.has(rule.id)) return groups.get(rule.id);
 
   const similar = [...groups.values()].find((group) => {
     const representative = group.items[0];
-    const keywordOverlap = itemKeywords(item).some((keyword) => itemKeywords(representative).includes(keyword));
-    return keywordOverlap && titleSimilarity(displayTitle(item), displayTitle(representative)) >= 0.34;
+    const sharedKeywords = sharedKeywordCount(item, representative);
+    const hasSpecificSharedKeyword = significantKeywords(item).some((keyword) => significantKeywords(representative).includes(keyword) && keyword.length >= 4);
+    const similarity = titleSimilarity(displayTitle(item), displayTitle(representative));
+    return sharedKeywords >= 2 || hasSpecificSharedKeyword || (sharedKeywords >= 1 && similarity >= 0.42) || similarity >= 0.58;
   });
   if (similar) return similar;
 
-  const group = { id: rule.id, label: rule.label, items: [] };
-  groups.set(rule.id, group);
+  const signature = keywordSignature(item) || slugify(displayTitle(item));
+  const id = `${rule.id}-${slugify(signature || displayTitle(item))}`;
+  const group = { id, label: eventLabelForItem(item, rule), items: [] };
+  groups.set(id, group);
   return group;
 }
 
@@ -261,6 +329,8 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
       const topItems = sortedItems.slice(0, 6);
       const evidenceItems = buildEvidenceItems(topItems);
       const timeline = buildTimeline(sortedItems);
+      const keyDevelopments = timeline.slice(-4);
+      const latestUpdate = latestUpdateItem(sortedItems);
       const updatedAt = sortedItems
         .map((item) => item.publishedAt)
         .filter(Boolean)
@@ -274,8 +344,12 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         impactAreas: buildImpactAreas(topItems, group.label),
         watchlist: buildWatchlist(topItems, group.label),
         updatedAt,
+        latestUpdate,
+        keyDevelopments,
         itemCount: sortedItems.length,
         heat: heatLabel(Number(topItems[0]?.score || 0), sortedItems.length),
+        primarySource: latestUpdate.source || topItems[0]?.source || "",
+        sourceCount: uniqueValues(sortedItems.map((item) => item.source), 20).length,
         sources: [...new Set(sortedItems.map((item) => item.source).filter(Boolean))].slice(0, 6),
         keywords: [...new Set(sortedItems.flatMap((item) => [...(item.impactAreas || []), ...itemKeywords(item)]))].slice(0, 8),
         timeline,
@@ -283,7 +357,7 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         items: evidenceItems
       };
     })
-    .filter((event) => event.itemCount >= 2 && event.timeline.length >= 2)
+    .filter((event) => event.itemCount >= 2 && event.timeline.length >= 2 && event.itemCount <= Number(options.maxEventItems || 20))
     .sort((left, right) => Number(right.items[0]?.score || 0) - Number(left.items[0]?.score || 0)
       || new Date(right.updatedAt || 0).getTime() - new Date(left.updatedAt || 0).getTime())
     .slice(0, Number(options.limit || 8));

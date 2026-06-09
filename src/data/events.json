@@ -1,91 +1,80 @@
 {
-  "generatedAt": "2026-06-06T08:07:41.325Z",
+  "generatedAt": "2026-06-09T06:25:36.407Z",
   "lookbackDays": 90,
   "totalEvents": 8,
   "events": [
     {
-      "id": "ai-policy",
-      "title": "AI 政策与基础设施",
-      "summary": "财政部财政政策、国债、预算和财政运行新闻 相关来源：财政部财政新闻、OpenAI News、CNBC Business News",
-      "whyItMatters": "AI 政策与基础设施 会影响政策、市场、产业或国际变化判断；包含 1 条官方或市场权威来源，仍处在高时效窗口内。",
+      "id": "ai-policy-蓝佛安会见新开发银行行长-罗塞芙-财政部财政政策",
+      "title": "蓝佛安会见新开发银行行长",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻 相关来源：财政部财政新闻",
+      "whyItMatters": "蓝佛安会见新开发银行行长 会影响政策、市场、产业或国际变化判断；包含 2 条官方或市场权威来源，仍处在高时效窗口内。",
       "impactAreas": [
+        "宏观",
         "AI",
         "公共政策",
-        "蓝佛安会见新开发银行行长",
-        "罗塞芙"
+        "财政部将于"
       ],
       "watchlist": [
-        "跟踪 AI、公共政策、蓝佛安会见新开发银行行长 的后续变化",
-        "留意 财政部财政新闻、OpenAI News 是否继续发布相关信息",
+        "跟踪 宏观、AI、公共政策 的后续变化",
+        "留意 财政部财政新闻 是否继续发布相关信息",
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
-      "updatedAt": "2026-06-05T20:44:57.000Z",
-      "itemCount": 121,
+      "updatedAt": "2026-06-09T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "财政部将于6月在香港发行150亿元人民币国债",
+        "summary": "财政部财政政策、国债、预算和财政运行新闻",
+        "source": "财政部财政新闻",
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+        "publishedAt": "2026-06-09T00:00:00.000Z",
+        "score": 100
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-05",
+          "title": "蓝佛安会见新开发银行行长罗塞芙",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-08",
+          "title": "廖岷会见英中贸易协会主席吴思田",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+          "score": 100,
+          "publishedAt": "2026-06-08T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-09",
+          "title": "财政部将于6月在香港发行150亿元人民币国债",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+          "score": 100,
+          "publishedAt": "2026-06-09T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 3,
       "heat": "高",
+      "primarySource": "财政部财政新闻",
+      "sourceCount": 1,
       "sources": [
-        "财政部财政新闻",
-        "OpenAI News",
-        "CNBC Business News",
-        "Ars Technica",
-        "GitHub Blog",
-        "The New York Times"
+        "财政部财政新闻"
       ],
       "keywords": [
+        "宏观",
         "AI",
         "公共政策",
-        "蓝佛安会见新开发银行行长",
-        "罗塞芙",
+        "财政部将于",
+        "月在香港发行",
+        "亿元人民币国债",
         "财政部财政政策",
-        "国债",
-        "预算和财政运行新闻",
-        "official-agency"
+        "国债"
       ],
       "timeline": [
-        {
-          "date": "2026-06-04",
-          "title": "World Ocean Assessment highlights urgent need for science and global action",
-          "summary": "In the wood-panelled rooms of New York’s storied Explorers Club, where portraits of pioneering adventurers line the walls, diplomats, sci...",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167646",
-          "score": 90,
-          "publishedAt": "2026-06-04T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "GitHub Universe回归：共迎智能体时代",
-          "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
-          "score": 99,
-          "publishedAt": "2026-06-04T16:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "GitHub Universe is back: All together now, in the agentic era",
-          "summary": "Ariel Kanter is a writer, editor, and content strategist. Her work has been featured in The New York Times, Vanity Fair, New York Magazin...",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
-          "score": 97,
-          "publishedAt": "2026-06-04T16:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "NASA-Funded Study Shows Wildfire Smoke’s Hidden Ozone Toll",
-          "summary": "Writer/Editor (IV), Earth Science Division Wildfire smoke is stoking a new challenge for cleaner air. A NASA-supported study published Th...",
-          "source": "NASA Breaking News",
-          "url": "https://science.nasa.gov/earth/nasa-funded-study-shows-wildfire-smokes-hidden-ozone-toll",
-          "score": 91,
-          "publishedAt": "2026-06-04T18:01:59.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "NASA Hosts 2026 Review on Advanced Composite Manufacturing",
-          "summary": "Public Affairs Officer, NASA Langley Research Center NASA’s Hi-Rate Composite Aircraft Manufacturing (HiCAM) project brought together its...",
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/directorates/armd/aavp/hicam/nasa-hosts-2026-review-on-advanced-composite-manufacturing",
-          "score": 93,
-          "publishedAt": "2026-06-04T20:36:24.000Z"
-        },
         {
           "date": "2026-06-05",
           "title": "蓝佛安会见新开发银行行长罗塞芙",
@@ -96,61 +85,49 @@
           "publishedAt": "2026-06-05T00:00:00.000Z"
         },
         {
-          "date": "2026-06-05",
-          "title": "国务院办公厅关于加强监管防范风险促进私募投资基金高质量发展的指导意见",
-          "summary": "为做好私募投资基金加强监管、防范风险工作，促进私募基金高质量发展，经国务院同意，现提出以下意见。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7071204.htm",
-          "score": 96,
-          "publishedAt": "2026-06-05T00:00:00.000Z"
+          "date": "2026-06-08",
+          "title": "廖岷会见英中贸易协会主席吴思田",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+          "score": 100,
+          "publishedAt": "2026-06-08T00:00:00.000Z"
         },
         {
-          "date": "2026-06-05",
-          "title": "Haiti: Harrowing needs must be met with long-term engagement",
-          "summary": "Escalating gang violence across Haiti has pushed displacement to record levels, deepening an already severe humanitarian crisis and leavi...",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167661",
-          "score": 92,
-          "publishedAt": "2026-06-05T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "The latest AI news we announced in May 2026",
-          "summary": "Here’s a recap of our biggest AI updates from May, including announcements from Google I/O 2026, the Android Show and Google Health. Goog...",
-          "source": "Google AI Blog",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026",
-          "score": 94,
-          "publishedAt": "2026-06-05T14:45:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "First Steps: America’s Grueling Second Spacewalk",
-          "summary": "One year after Gemini IV astronaut Edward H. White completed NASA’s first spacewalk the agency prepared for a demanding second excursion....",
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/image-article/first-steps-americas-grueling-second-spacewalk",
-          "score": 94,
-          "publishedAt": "2026-06-05T15:47:27.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "NASA Concludes Antenna Mishap Investigation, Releases Report",
-          "summary": "NASA has completed the investigation into the damage sustained last year at its 70-meter radio-frequency antenna, known as the Deep Space...",
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/nasa-concludes-antenna-mishap-investigation-releases-report",
-          "score": 94,
-          "publishedAt": "2026-06-05T17:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "NASA&#8217;s X-59 Aircraft Flies Supersonic for First Time",
-          "summary": "NASA’s experimental X-59 aircraft marked a major milestone Friday, June 5, when it flew faster than the speed of sound for the first time...",
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/aeronautics/x-59-first-supersonic-flight",
-          "score": 94,
-          "publishedAt": "2026-06-05T20:44:57.000Z"
+          "date": "2026-06-09",
+          "title": "财政部将于6月在香港发行150亿元人民币国债",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+          "score": 100,
+          "publishedAt": "2026-06-09T00:00:00.000Z"
         }
       ],
       "evidenceItems": [
+        {
+          "id": "macro-item-ed071e25dc",
+          "title": "财政部将于6月在香港发行150亿元人民币国债",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-341501ee15",
+          "title": "廖岷会见英中贸易协会主席吴思田",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
+          "score": 100
+        },
         {
           "id": "finance-item-ff1cff3de8",
           "title": "蓝佛安会见新开发银行行长罗塞芙",
@@ -160,67 +137,35 @@
           "sourceAuthorityLabel": "公开来源",
           "category": "finance",
           "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-ff1cff3de8",
-          "title": "蓝佛安会见新开发银行行长罗塞芙",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
-          "source": "财政部财政新闻",
-          "sourceAuthority": "official-agency",
-          "sourceAuthorityLabel": "官方机构",
-          "category": "macro",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "tech-openai-news-f9f27c3f88",
-          "title": "Our views on AI policy and political advocacy",
-          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
-          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-          "source": "OpenAI News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-06-01T17:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "tech-openai-news-63eee503d2",
-          "title": "OpenAI’s Frontier Governance Framework",
-          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
-          "url": "https://openai.com/index/openai-frontier-governance-framework",
-          "source": "OpenAI News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-28T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-cnbc-business-news-fda9a36c9d",
-          "title": "Pope Leo is concerned about AI replacing human work. Traders share his concern long term",
-          "summary": "The leader of the Catholic Church warned about artificial intelligence upending the labor market. Traders on Kalshi see unemployment jumping before 2030.",
-          "url": "https://www.cnbc.com/2026/05/26/traders-share-pope-leos-worries-on-ais-job-market-impact.html",
-          "source": "CNBC Business News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-26T19:31:51.000Z",
-          "score": 100
-        },
-        {
-          "id": "tech-ars-technica-d139148591",
-          "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
-          "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
-          "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile",
-          "source": "Ars Technica",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-26T17:46:01.000Z",
           "score": 100
         }
       ],
       "items": [
         {
+          "id": "macro-item-ed071e25dc",
+          "title": "财政部将于6月在香港发行150亿元人民币国债",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-341501ee15",
+          "title": "廖岷会见英中贸易协会主席吴思田",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
+          "score": 100
+        },
+        {
           "id": "finance-item-ff1cff3de8",
           "title": "蓝佛安会见新开发银行行长罗塞芙",
           "summary": "财政部财政政策、国债、预算和财政运行新闻",
@@ -230,352 +175,279 @@
           "category": "finance",
           "publishedAt": "2026-06-05T00:00:00.000Z",
           "score": 100
-        },
-        {
-          "id": "macro-item-ff1cff3de8",
-          "title": "蓝佛安会见新开发银行行长罗塞芙",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260605_3991231.htm",
-          "source": "财政部财政新闻",
-          "sourceAuthority": "official-agency",
-          "sourceAuthorityLabel": "官方机构",
-          "category": "macro",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "tech-openai-news-f9f27c3f88",
-          "title": "Our views on AI policy and political advocacy",
-          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
-          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-          "source": "OpenAI News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-06-01T17:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "tech-openai-news-63eee503d2",
-          "title": "OpenAI’s Frontier Governance Framework",
-          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
-          "url": "https://openai.com/index/openai-frontier-governance-framework",
-          "source": "OpenAI News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-28T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-cnbc-business-news-fda9a36c9d",
-          "title": "Pope Leo is concerned about AI replacing human work. Traders share his concern long term",
-          "summary": "The leader of the Catholic Church warned about artificial intelligence upending the labor market. Traders on Kalshi see unemployment jumping before 2030.",
-          "url": "https://www.cnbc.com/2026/05/26/traders-share-pope-leos-worries-on-ais-job-market-impact.html",
-          "source": "CNBC Business News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-26T19:31:51.000Z",
-          "score": 100
-        },
-        {
-          "id": "tech-ars-technica-d139148591",
-          "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
-          "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
-          "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile",
-          "source": "Ars Technica",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-26T17:46:01.000Z",
-          "score": 100
         }
       ]
     },
     {
-      "id": "market-regulation",
-      "title": "金融监管与市场结构",
-      "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on ret... 相关来源：U.S. SEC Press Releases、中国证监会新闻发布",
-      "whyItMatters": "U.S. SEC Press Releases / finance · score 100",
+      "id": "macro-policy-央行-中国人民银行行长潘功胜会-见香港银行公会代表团",
+      "title": "央行",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息 相关来源：中国人民银行新闻发布",
+      "whyItMatters": "央行 会影响政策、市场、产业或国际变化判断；包含 2 条官方或市场权威来源，仍处在高时效窗口内。",
       "impactAreas": [
-        "finance",
-        "official-agency",
-        "hourly"
+        "宏观",
+        "央行",
+        "国际",
+        "中国人民银行行长潘功胜会"
       ],
       "watchlist": [
-        "跟踪 finance、official-agency、hourly 的后续变化",
-        "留意 U.S. SEC Press Releases、中国证监会新闻发布 是否继续发布相关信息",
+        "跟踪 宏观、央行、国际 的后续变化",
+        "留意 中国人民银行新闻发布 是否继续发布相关信息",
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
-      "updatedAt": "2026-06-05T20:17:11.000Z",
-      "itemCount": 53,
+      "updatedAt": "2026-06-08T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+        "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+        "source": "中国人民银行新闻发布",
+        "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+        "publishedAt": "2026-06-08T00:00:00.000Z",
+        "score": 100
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-08",
+          "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+          "score": 100,
+          "publishedAt": "2026-06-08T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-08",
+          "title": "中老两国央行续签相关合作文件",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
+          "score": 100,
+          "publishedAt": "2026-06-08T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 2,
       "heat": "高",
+      "primarySource": "中国人民银行新闻发布",
+      "sourceCount": 1,
       "sources": [
-        "U.S. SEC Press Releases",
-        "中国证监会新闻发布",
-        "TechCrunch",
-        "UN News",
-        "The New York Times",
-        "Ars Technica"
+        "中国人民银行新闻发布"
       ],
       "keywords": [
-        "official-agency",
-        "hourly",
-        "Security",
-        "Ababil of Minab",
-        "cybersecurity",
-        "data breach",
-        "In Brief",
-        "iran"
+        "宏观",
+        "央行",
+        "国际",
+        "中国人民银行行长潘功胜会",
+        "见香港银行公会代表团",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信",
+        "见由香港金融管理局总裁余"
       ],
       "timeline": [
         {
-          "date": "2026-05-30",
-          "title": "中国证监会印发《中国证监会关于推出商业不动产投资信托基金试点的公告》",
-          "summary": "为贯彻落实党中央、国务院决策部署和资本市场新“国九条”要求，推动不动产投资信托基金（REITs）市场高质量,2025-12-31",
-          "source": "中国证监会新闻发布",
-          "url": "https://www.csrc.gov.cn/csrc/c100028/c7605669/content.shtml",
+          "date": "2026-06-08",
+          "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
           "score": 100,
-          "publishedAt": "2026-05-30T05:42:43.399Z"
+          "publishedAt": "2026-06-08T00:00:00.000Z"
         },
         {
-          "date": "2026-06-01",
-          "title": "UN stresses the need for de-escalation in Ukraine war as attacks rise",
-          "summary": "The United Nations continues to warn against the dangerous escalation in the war in Ukraine, a senior official told the Security Council...",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167619",
-          "score": 97,
-          "publishedAt": "2026-06-01T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "Security Council LIVE: Emergency meeting on Lebanon as Israeli attacks casts pall over Iran-US negotiations",
-          "summary": "The Security Council meets late on Monday at France’s request, as concern grows over escalating violence in Lebanon between Israel and He...",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167618",
-          "score": 89,
-          "publishedAt": "2026-06-01T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "SEC Announces Four New Members of Investor Advisory Committee",
-          "summary": "The Securities and Exchange Commission today announced&nbsp;four&nbsp;new members to fill vacancies on its Investor Advisory Committee.&n...",
-          "source": "U.S. SEC Press Releases",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-50-sec-announces-four-new-members-investor-advisory-committee",
-          "score": 92,
-          "publishedAt": "2026-06-01T16:39:44.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "CISA Urges Stronger Security for Automatic Tank Gauge Systems",
-          "summary": "",
-          "source": "CISA News",
-          "url": "https://www.cisa.gov/news-events/news/cisa-urges-stronger-security-automatic-tank-gauge-systems",
-          "score": 92,
-          "publishedAt": "2026-06-02T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "SEC Publishes Draft Strategic Plan for Public Comment",
-          "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core...",
-          "source": "U.S. SEC Press Releases",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-51-sec-publishes-draft-strategic-plan-public-comment",
+          "date": "2026-06-08",
+          "title": "中老两国央行续签相关合作文件",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
           "score": 100,
-          "publishedAt": "2026-06-02T14:30:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "联合国呼吁海湾紧张局势中保持克制",
-          "summary": "联合国秘书长古特雷斯对美伊交火及伊朗攻击科威特和巴林的报道表示震惊，呼吁各方保持最大克制，避免局势升级。",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167639",
-          "score": 91,
-          "publishedAt": "2026-06-03T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "霍尔木兹危机冲击全球援助网络，非洲粮食危机加剧",
-          "summary": "中东地缘政治危机持续近百日，演变为全球人道主义危机。联合国机构警告，非洲饥饿加剧，阿富汗医疗诊所被迫拒收营养不良儿童，全球援助网络承受巨大压力。",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167653",
-          "score": 97,
-          "publishedAt": "2026-06-04T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "Undeclared chemical weapons found in Syria, including type used in notorious Ghouta massacre",
-          "summary": "Chemical weapons inspectors have uncovered a significant cache of previously undeclared chemical weapons in Syria – including rockets of...",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167652",
-          "score": 88,
-          "publishedAt": "2026-06-04T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "SEC宣布小企业资本形成咨询委员会新成员",
-          "summary": "美国证券交易委员会宣布任命5名新成员加入小企业资本形成咨询委员会，任期四年，与现有15名成员共同工作。",
-          "source": "U.S. SEC Press Releases",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
-          "score": 92,
-          "publishedAt": "2026-06-04T18:39:49.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "SEC Announces New Members of Small Business Capital Formation Advisory Committee",
-          "summary": "The Securities and Exchange Commission today announced five new members of the&nbsp;Small Business Capital Formation Advisory Committee....",
-          "source": "U.S. SEC Press Releases",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-52-sec-announces-new-members-small-business-capital-formation-advisory-committee",
-          "score": 88,
-          "publishedAt": "2026-06-04T18:39:49.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "NASA Announces Winners of 2026 University Innovation Competition",
-          "summary": "NASA announced the Massachusetts Institute of Technology project, Exploration-Class Lunar Integrated Power SystEm, as the first place win...",
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-announces-winners-of-2026-university-innovation-competition",
-          "score": 85,
-          "publishedAt": "2026-06-05T20:17:11.000Z"
+          "publishedAt": "2026-06-08T00:00:00.000Z"
         }
       ],
       "evidenceItems": [
         {
-          "id": "finance-u-s-sec-press-releases-f61d1b0566",
-          "title": "SEC Publishes Draft Strategic Plan for Public Comment",
-          "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 yea...",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-51-sec-publishes-draft-strategic-plan-public-comment",
-          "source": "U.S. SEC Press Releases",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-02T14:30:00.000Z",
+          "id": "macro-item-b0b607987f",
+          "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+          "source": "中国人民银行新闻发布",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
           "score": 100
         },
         {
-          "id": "finance-item-11cf073f69",
-          "title": "吴清主席会见花旗集团董事会主席兼首席执行官范洁恩",
-          "summary": ",2026-05-16",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633210/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-d7ff9ab08d",
-          "title": "吴清主席出席国际证监会组织理事会视频会议",
-          "summary": ",2026-05-15",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633097/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-7f3c2e9619",
-          "title": "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米",
-          "summary": ",2026-04-14",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7626187/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-b972096c73",
-          "title": "吴清主席会见澳门金融管理局行政管理委员会主席黄善文",
-          "summary": ",2026-03-31",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7623163/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-9cb9bfc584",
-          "title": "证监会严肃查处老虎等机构非法跨境展业案件",
-          "summary": "近日，证监会依法对Tiger Brokers (NZ) Limited（以下简称老虎）、富途证券国际（香港）有限,2026-05-22",
-          "url": "https://www.csrc.gov.cn/csrc/c100028/c7634330/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
+          "id": "macro-item-89eb80cf01",
+          "title": "中老两国央行续签相关合作文件",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
+          "source": "中国人民银行新闻发布",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
           "score": 100
         }
       ],
       "items": [
         {
-          "id": "finance-u-s-sec-press-releases-f61d1b0566",
-          "title": "SEC Publishes Draft Strategic Plan for Public Comment",
-          "summary": "The Securities and Exchange Commission today published a&nbsp;Draft Strategic Plan&nbsp;that focuses on returning the agency to the core mission set by Congress more than 90 yea...",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-51-sec-publishes-draft-strategic-plan-public-comment",
-          "source": "U.S. SEC Press Releases",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-02T14:30:00.000Z",
+          "id": "macro-item-b0b607987f",
+          "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+          "source": "中国人民银行新闻发布",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
           "score": 100
         },
         {
-          "id": "finance-item-11cf073f69",
-          "title": "吴清主席会见花旗集团董事会主席兼首席执行官范洁恩",
-          "summary": ",2026-05-16",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633210/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-d7ff9ab08d",
-          "title": "吴清主席出席国际证监会组织理事会视频会议",
-          "summary": ",2026-05-15",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7633097/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-7f3c2e9619",
-          "title": "吴清主席会见马来西亚证券委员会主席拿督穆罕默德·法伊兹·阿兹米",
-          "summary": ",2026-04-14",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7626187/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-b972096c73",
-          "title": "吴清主席会见澳门金融管理局行政管理委员会主席黄善文",
-          "summary": ",2026-03-31",
-          "url": "https://www.csrc.gov.cn/csrc/c106311/c7623163/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-9cb9bfc584",
-          "title": "证监会严肃查处老虎等机构非法跨境展业案件",
-          "summary": "近日，证监会依法对Tiger Brokers (NZ) Limited（以下简称老虎）、富途证券国际（香港）有限,2026-05-22",
-          "url": "https://www.csrc.gov.cn/csrc/c100028/c7634330/content.shtml",
-          "source": "中国证监会新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-30T05:42:43.399Z",
+          "id": "macro-item-89eb80cf01",
+          "title": "中老两国央行续签相关合作文件",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
+          "source": "中国人民银行新闻发布",
+          "sourceAuthority": "official-agency",
+          "sourceAuthorityLabel": "官方机构",
+          "category": "macro",
+          "publishedAt": "2026-06-08T00:00:00.000Z",
           "score": 100
         }
       ]
     },
     {
-      "id": "global-affairs",
-      "title": "国际关系与跨境影响",
-      "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。 相关来源：中国政府网要闻",
+      "id": "global-affairs-总书记的人民情怀-中国可以成功-其他发展中国家同样可以成",
+      "title": "总书记的人民情怀",
+      "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。 相关来源：中国政府网要闻",
+      "whyItMatters": "习近平总书记的重要论断为中国式现代化中的水资源管理确立了核心地位，具有全局性指导意义。",
+      "impactAreas": [
+        "水资源",
+        "中国式现代化",
+        "政策导向",
+        "公共政策"
+      ],
+      "watchlist": [
+        "跟踪 水资源、中国式现代化、政策导向 的后续变化",
+        "留意 中国政府网要闻 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-05T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "习近平总书记强调将水资源问题纳入中国式现代化",
+        "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "score": 100
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-04",
+          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+          "score": 100,
+          "publishedAt": "2026-06-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-05",
+          "title": "习近平总书记强调将水资源问题纳入中国式现代化",
+          "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 2,
+      "heat": "高",
+      "primarySource": "中国政府网要闻",
+      "sourceCount": 1,
+      "sources": [
+        "中国政府网要闻"
+      ],
+      "keywords": [
+        "水资源",
+        "中国式现代化",
+        "政策导向",
+        "公共政策",
+        "总书记的人民情怀",
+        "推进中国式现代化",
+        "要把水资源问题考虑进去",
+        "习近平总书记指出"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-04",
+          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+          "score": 100,
+          "publishedAt": "2026-06-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-05",
+          "title": "习近平总书记强调将水资源问题纳入中国式现代化",
+          "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "news-item-16e35179cd",
+          "title": "习近平总书记强调将水资源问题纳入中国式现代化",
+          "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-dd48d7849b",
+          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-04T00:00:00.000Z",
+          "score": 100
+        }
+      ],
+      "items": [
+        {
+          "id": "news-item-16e35179cd",
+          "title": "习近平总书记强调将水资源问题纳入中国式现代化",
+          "summary": "习近平总书记指出，推进中国式现代化必须考虑水资源问题。水运关乎国运，需结合世情、国情、水情深入思考，确保可持续发展。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071075.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-dd48d7849b",
+          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
+          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-04T00:00:00.000Z",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "global-affairs-地缘政治-growing-sirens",
+      "title": "地缘政治",
+      "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。 相关来源：中国政府网要闻、OpenAI News、UN News",
       "whyItMatters": "深化中朝传统友谊，推动地区和平稳定，具有重大外交意义。",
       "impactAreas": [
         "地缘政治",
@@ -585,18 +457,63 @@
       ],
       "watchlist": [
         "跟踪 地缘政治、外交、公共政策 的后续变化",
-        "留意 中国政府网要闻 是否继续发布相关信息",
+        "留意 中国政府网要闻、OpenAI News 是否继续发布相关信息",
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
-      "updatedAt": "2026-06-05T04:01:00.000Z",
-      "itemCount": 39,
+      "updatedAt": "2026-06-05T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "习近平将访朝鲜",
+        "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+        "publishedAt": "2026-06-05T00:00:00.000Z",
+        "score": 100
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-03",
+          "title": "在警报声中成长：联合国儿童权利特使谈俄乌战争对儿童的影响",
+          "summary": "战争严重影响了乌克兰儿童，他们不得不在防空洞上课或线上学习，长期承受空袭警报带来的心理压力。",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167641",
+          "score": 91,
+          "publishedAt": "2026-06-03T12:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "Endava利用AI代理重塑软件交付",
+          "summary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/endava-frontiers",
+          "score": 96,
+          "publishedAt": "2026-06-04T12:00:00.000Z"
+        },
+        {
+          "date": "2026-06-05",
+          "title": "习近平将访朝鲜",
+          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-05",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 4,
       "heat": "高",
+      "primarySource": "中国政府网要闻",
+      "sourceCount": 3,
       "sources": [
         "中国政府网要闻",
-        "科技部工作动态",
-        "The New York Times",
-        "CNBC Business News",
-        "NASA Breaking News",
+        "OpenAI News",
         "UN News"
       ],
       "keywords": [
@@ -612,33 +529,6 @@
       "timeline": [
         {
           "date": "2026-06-03",
-          "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
-          "summary": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
-          "score": 100,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "《习近平的文化情缘》等纪录片在老挝启播",
-          "summary": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
-          "score": 100,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "2026年度国际托卡马克物理与工程活动中方研讨会在上海召开",
-          "summary": "科技部在上海组织召开2026年度国际托卡马克物理与工程活动中方研讨会，聚焦核聚变研究合作与进展。",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202606/t20260603_196744.html",
-          "score": 98,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
           "title": "在警报声中成长：联合国儿童权利特使谈俄乌战争对儿童的影响",
           "summary": "战争严重影响了乌克兰儿童，他们不得不在防空洞上课或线上学习，长期承受空袭警报带来的心理压力。",
           "source": "UN News",
@@ -648,1268 +538,997 @@
         },
         {
           "date": "2026-06-04",
-          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
-          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
-          "score": 100,
-          "publishedAt": "2026-06-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "联合国警告环境捍卫者遭暴力袭击",
-          "summary": "联合国人权事务高级专员呼吁加强对环境及土地捍卫者的保护，近年来全球已有数百名此类人士被杀或遭拘留。",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167647",
-          "score": 91,
-          "publishedAt": "2026-06-04T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "世界海洋评估呼吁科学行动与全球合作",
-          "summary": "联合国发布世界海洋评估，强调海洋面临严峻挑战，亟需科学指导和全球协同行动以保护海洋生态系统。",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167646",
-          "score": 91,
-          "publishedAt": "2026-06-04T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "习近平将访朝鲜",
-          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
-          "score": 100,
-          "publishedAt": "2026-06-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "习近平将对朝鲜进行国事访问",
-          "summary": "中共中央对外联络部宣布，应朝鲜领导人金正恩邀请，习近平将于6月8日至9日对朝鲜进行国事访问。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
-          "score": 100,
-          "publishedAt": "2026-06-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
-          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
-          "score": 100,
-          "publishedAt": "2026-06-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "外交部介绍习近平总书记访问朝鲜有关安排",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
-          "score": 97,
-          "publishedAt": "2026-06-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-05",
-          "title": "Fighting Fire With Fire",
-          "summary": "In fire-prone ecosystems in Australia's Northern Territory, prescribed burns are lit to minimize the severity of fires later in the seaso...",
-          "source": "NASA Breaking News",
-          "url": "https://science.nasa.gov/earth/earth-observatory/fighting-fire-with-fire",
-          "score": 84,
-          "publishedAt": "2026-06-05T04:01:00.000Z"
-        }
-      ],
-      "evidenceItems": [
-        {
-          "id": "news-item-e9745422d0",
-          "title": "习近平将访朝鲜",
-          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
-          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-29c1ff9b38",
-          "title": "习近平将对朝鲜进行国事访问",
-          "summary": "中共中央对外联络部宣布，应朝鲜领导人金正恩邀请，习近平将于6月8日至9日对朝鲜进行国事访问。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-95fdc76139",
-          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
-          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-dd48d7849b",
-          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
-          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-24eacb2d79",
-          "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
-          "summary": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-223abc0d7f",
-          "title": "《习近平的文化情缘》等纪录片在老挝启播",
-          "summary": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        }
-      ],
-      "items": [
-        {
-          "id": "news-item-e9745422d0",
-          "title": "习近平将访朝鲜",
-          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
-          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-29c1ff9b38",
-          "title": "习近平将对朝鲜进行国事访问",
-          "summary": "中共中央对外联络部宣布，应朝鲜领导人金正恩邀请，习近平将于6月8日至9日对朝鲜进行国事访问。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071090.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-95fdc76139",
-          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
-          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-05T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-dd48d7849b",
-          "title": "总书记的人民情怀 | “中国可以成功，其他发展中国家同样可以成功”",
-          "summary": "强调实现现代化是中国人民和世界人民的共同追求，指出中国成功表明其他发展中国家也能成功。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071039.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-24eacb2d79",
-          "title": "以开放创新应对全球贸易变局——践行习近平经济思想推动贸易强国建设迈出新步伐",
-          "summary": "“要加快建设贸易强国，升级货物贸易，创新服务贸易，发展数字贸易”“逐步变大进大出为优进优出，推动贸易大国向贸易强国转变”……以习近平同志为核心的党中央作出的一系列重大战略安排，为新时代新征程贸易强国建设指明前进方向。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070964.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-223abc0d7f",
-          "title": "《习近平的文化情缘》等纪录片在老挝启播",
-          "summary": "6月1日，由中国中央广播电视总台制作的《习近平的文化情缘》《领航（国际版）》《典籍里的新思想》等三部中国纪录片，在老挝国家电视台等老挝主流媒体启播。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070955.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        }
-      ]
-    },
-    {
-      "id": "macro-policy",
-      "title": "宏观政策与利率",
-      "summary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。 相关来源：国家发展改革委新闻发布、财政部财政新闻、中国政府网要闻",
-      "whyItMatters": "作为国家发改委官方发布的成品油调价信息，影响广泛，涉及能源成本与宏观经济。",
-      "impactAreas": [
-        "国内油价",
-        "能源政策",
-        "宏观经济",
-        "日国内成品油价格调整"
-      ],
-      "watchlist": [
-        "跟踪 国内油价、能源政策、宏观经济 的后续变化",
-        "留意 国家发展改革委新闻发布、财政部财政新闻 是否继续发布相关信息",
-        "观察是否出现监管、市场价格、企业动作或国际反应"
-      ],
-      "updatedAt": "2026-06-04T20:36:24.000Z",
-      "itemCount": 29,
-      "heat": "高",
-      "sources": [
-        "国家发展改革委新闻发布",
-        "财政部财政新闻",
-        "中国政府网要闻",
-        "国家统计局数据发布",
-        "中国证监会新闻发布",
-        "中国人民银行新闻发布"
-      ],
-      "keywords": [
-        "国内油价",
-        "能源政策",
-        "宏观经济",
-        "日国内成品油价格调整",
-        "国家发展改革委发布国内成",
-        "品油价格调整消息",
-        "具体幅度待公布",
-        "此调整影响交通运输及工业"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-02",
-          "title": "财政部发行2026年记账式贴现（三十三期）国债",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "source": "财政部财政新闻",
-          "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260602_3991018.htm",
-          "score": 99,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "中国人民银行召开2026年组织人事部门负责人会议",
-          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060219164482474/index.html",
-          "score": 98,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "Be a Clump Scout and Help Reveal Secrets of Stellar Nurseries",
-          "summary": "In the mid-20th century, astronomers discovered strange \"clumpy\" galaxies filled with mysterious bright blobs – massive stellar nurseries...",
-          "source": "NASA Breaking News",
-          "url": "https://science.nasa.gov/get-involved/citizen-science/help-galaxy-zoo-clump-scout-ii-project",
-          "score": 92,
-          "publishedAt": "2026-06-02T13:19:54.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
-          "score": 100,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "财政部党校举行第82期处级干部进修班毕业典礼",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "source": "财政部财政新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260603_3991101.htm",
-          "score": 100,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "中国人民银行副行长邹澜出席上合组织成员国财长和央行行长会议",
-          "summary": "中国人民银行副行长邹澜出席在吉尔吉斯斯坦比什凯克举行的上海合作组织成员国财长和央行行长会议，与各方讨论财金合作、货币政策及金融稳定风险，并会见吉尔吉斯央行副行长，就深化合作交换意见。",
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060314175989980/index.html",
-          "score": 98,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "2026年5月下旬流通领域重要生产资料市场价格变动情况",
-          "summary": "国家统计局发布2026年5月下旬流通领域重要生产资料市场价格变动数据，涵盖钢铁、煤炭、化工等关键品类，反映近期物价走势和经济运行状况。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260603_1963874.html",
-          "score": 97,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "5月中国物流业景气指数50.3%",
-          "summary": "5月中国物流业景气指数为50.3%，环比回升0.6个百分点，重回扩张区间，显示物流业务活动趋于活跃，行业景气度有所改善。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071030.htm",
-          "score": 95,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "5月份中国物流业景气指数为50.3%",
-          "summary": "5月中国物流业景气指数50.3%，较上月回升0.6个百分点，重回扩张区间，显示物流活动趋于活跃。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070974.htm",
-          "score": 95,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "2026年6月4日国内成品油价格调整",
-          "summary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。",
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
-          "score": 100,
-          "publishedAt": "2026-06-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "央行发行国家宝藏金银纪念币",
-          "summary": "中国人民银行定于2026年6月13日发行国家宝藏（融合交流）金银纪念币一套，包括15克和3克圆形金质纪念币、15克圆形银质纪念币，背面图案分别为晋归义羌侯金印、鸭形玻璃注、驿使图画像砖、青瓷对书俑和青瓷莲花尊。",
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060418264767948/index.html",
-          "score": 98,
-          "publishedAt": "2026-06-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-04",
-          "title": "NASA主办2026年先进复合材料制造评审会",
-          "summary": "NASA的HiCAM项目在兰利研究中心召集先进复合材料联盟合作伙伴，召开2026年春季评审会，约150人参会，审查进展并规划后续工作。",
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/directorates/armd/aavp/hicam/nasa-hosts-2026-review-on-advanced-composite-manufacturing",
-          "score": 93,
-          "publishedAt": "2026-06-04T20:36:24.000Z"
-        }
-      ],
-      "evidenceItems": [
-        {
-          "id": "finance-item-1231d7d94d",
-          "title": "2026年6月4日国内成品油价格调整",
-          "summary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-a7e1b4b248",
-          "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-32ef619a3a",
-          "title": "财政部党校举行第82期处级干部进修班毕业典礼",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260603_3991101.htm",
-          "source": "财政部财政新闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-27284b737d",
-          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
-          "source": "财政部财政新闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-e9f5e3569b",
-          "title": "中央财政下达育儿补贴补助资金999亿元",
-          "summary": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
-          "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-2ad37299fe",
-          "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        }
-      ],
-      "items": [
-        {
-          "id": "finance-item-1231d7d94d",
-          "title": "2026年6月4日国内成品油价格调整",
-          "summary": "国家发展改革委发布国内成品油价格调整消息，具体幅度待公布，此调整影响交通运输及工业生产成本。",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260604_1405695.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-04T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-a7e1b4b248",
-          "title": "郑栅洁主任主持召开国有企业座谈会 围绕深化国资国企改革及推动国有企业更好服务国家重大战略听取意见建议",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260603_1405679.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-32ef619a3a",
-          "title": "财政部党校举行第82期处级干部进修班毕业典礼",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260603_3991101.htm",
-          "source": "财政部财政新闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-27284b737d",
-          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260602_3991021.htm",
-          "source": "财政部财政新闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-e9f5e3569b",
-          "title": "中央财政下达育儿补贴补助资金999亿元",
-          "summary": "记者6月2日从财政部了解到，为贯彻落实党中央、国务院决策部署，财政部近期下达2026年育儿补贴补助资金999亿元、较上年增长10.6%，支持各地为符合条件的婴幼儿发放育儿补贴，预计全年各级财政共安排补贴资金约1100亿元。",
-          "url": "https://www.gov.cn/lianbo/202606/content_7070880.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "finance-item-2ad37299fe",
-          "title": "司法部、国家发展改革委、商务部负责人就《国务院关于对外投资的规定》答记者问",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260601_1405611.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        }
-      ]
-    },
-    {
-      "id": "topic-official-agency-hourly",
-      "title": "official-agency",
-      "summary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。 相关来源：中国政府网要闻",
-      "whyItMatters": "中国政府网要闻 / news · score 100 · official-agency · hourly",
-      "impactAreas": [
-        "official-agency",
-        "hourly",
-        "news"
-      ],
-      "watchlist": [
-        "跟踪 official-agency、hourly、news 的后续变化",
-        "留意 中国政府网要闻 是否继续发布相关信息",
-        "观察是否出现监管、市场价格、企业动作或国际反应"
-      ],
-      "updatedAt": "2026-06-02T00:00:00.000Z",
-      "itemCount": 44,
-      "heat": "高",
-      "sources": [
-        "中国政府网要闻"
-      ],
-      "keywords": [
-        "official-agency",
-        "hourly"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-01",
-          "title": "前4月全国社会物流总额同比增长5.5% 即时零售交易额增长29.2%",
-          "summary": "中国物流与采购联合会数据显示：1—4月，全国社会物流总额121.7万亿元，同比增长5.5%，物流运行整体平稳、运行向好，物流市场需求持续扩容，供需适配性稳步提升。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070749.htm",
-          "score": 100,
-          "publishedAt": "2026-06-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "守护童心 筑梦未来——习近平总书记的深情寄望鼓舞新时代少年儿童成长成才",
-          "summary": "当代中国少年儿童既是实现第一个百年奋斗目标的经历者、见证者，更是实现第二个百年奋斗目标、建设社会主义现代化强国的生力军。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070741.htm",
-          "score": 100,
-          "publishedAt": "2026-06-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "创造属于我们这个时代的新文化——习近平文化思想引领文化传承发展开创新局面",
-          "summary": "2023年6月2日，习近平总书记在文化传承发展座谈会上发表重要讲话，深刻阐释中华文化传承发展的重大理论和现实问题，发出“赓续历史文脉、谱写当代华章”的时代号召。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070850.htm",
-          "score": 95,
-          "publishedAt": "2026-06-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "科技赋能夏收夏种 助力粮食稳产丰收",
-          "summary": "“三夏”农忙时节，各地以智慧农机赋能夏收夏种，助力粮食稳产丰收。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070836.htm",
-          "score": 95,
-          "publishedAt": "2026-06-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "我国推进儿童友好建设城乡全覆盖",
-          "summary": "记者从国家发展改革委了解到，今年，国家将推动儿童友好建设从试点城市向全部城市拓展、从城市向农村延伸，在建设范围上实现城乡全域覆盖。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070835.htm",
-          "score": 95,
-          "publishedAt": "2026-06-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-01",
-          "title": "谌贻琴在出席“六一”主题活动时勉励少年儿童：牢记习近平总书记嘱托 在新征程上跑好历史接力赛",
-          "summary": "6月1日，国务委员、国务院妇女儿童工作委员会主任谌贻琴来到中国妇女儿童博物馆，出席“童绘共同体——少年儿童美术作品展”主题活动，向孩子们致以节日祝贺。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070816.htm",
-          "score": 95,
-          "publishedAt": "2026-06-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "国务院印发《加快农业农村现代化“十五五”规划》",
-          "summary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
-          "score": 100,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
-          "summary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
-          "score": 100,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "助力三夏抢收 设备更新政策发力显效",
-          "summary": "今年，我国继续加力推进大规模设备更新，最近一段时间，在夏粮主产区，更新上岗的农业设备派上了大用场。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070947.htm",
-          "score": 95,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "我国将培育壮大农业新兴产业和未来产业",
-          "summary": "国务院2日对外公布的《加快农业农村现代化“十五五”规划》将因地制宜发展农业新质生产力摆在更加突出的战略位置，并首次提出培育壮大农业领域新兴产业和未来产业。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070939.htm",
-          "score": 95,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "图表：2025年全国A级景区接待游客75.1亿人次",
-          "summary": "文化和旅游部6月2日发布2025年文化和旅游发展统计公报。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7070934.htm",
-          "score": 95,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "刘国中在河北调研时强调：毫不放松抓好“三夏”生产 扎实有效开展常态化监测帮扶",
-          "summary": "中共中央政治局委员、国务院副总理刘国中1日至2日到河北调研。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070919.htm",
-          "score": 95,
-          "publishedAt": "2026-06-02T00:00:00.000Z"
-        }
-      ],
-      "evidenceItems": [
-        {
-          "id": "news-item-a8ef470e2f",
-          "title": "国务院印发《加快农业农村现代化“十五五”规划》",
-          "summary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-208d1e8eb6",
-          "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
-          "summary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-8975ededd7",
-          "title": "国务院任免国家工作人员（2026年6月1日）",
-          "summary": "任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-9a63007ce5",
-          "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-          "summary": "全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-e56ba9a94a",
-          "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
-          "summary": "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-54b91da87e",
-          "title": "国务院关于对外投资的规定",
-          "summary": "《国务院关于对外投资的规定》已经2026年4月17日国务院第83次常务会议通过，现予公布，自2026年7月1日起施行。",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        }
-      ],
-      "items": [
-        {
-          "id": "news-item-a8ef470e2f",
-          "title": "国务院印发《加快农业农村现代化“十五五”规划》",
-          "summary": "日前，国务院印发《加快农业农村现代化“十五五”规划》，明确了“十五五”时期加快农业农村现代化的思路目标、重点任务和政策措施，强调以加快农业农村现代化更好推进中国式现代化建设。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070904.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-208d1e8eb6",
-          "title": "国务院关于印发《加快农业农村现代化“十五五”规划》的通知",
-          "summary": "为科学引领未来五年农业农村高质量发展，以加快农业农村现代化更好推进中国式现代化建设，根据《中华人民共和国国民经济和社会发展第十五个五年规划纲要》，制定本规划。",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7070901.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-02T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-8975ededd7",
-          "title": "国务院任免国家工作人员（2026年6月1日）",
-          "summary": "任命袁古洁（女）为中央人民政府驻香港特别行政区联络办公室副主任。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070778.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-9a63007ce5",
-          "title": "我国优化运输结构调整成效明显 去年集装箱多式联运量同比增长超15%",
-          "summary": "全年集装箱多式联运量同比增长超过15%，铁路、水路货物周转量占综合运输的比重分别为13.8%和56.2%，优化运输结构调整成效明显。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070774.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-e56ba9a94a",
-          "title": "李强签署国务院令 公布《国务院关于对外投资的规定》",
-          "summary": "国务院总理李强日前签署国务院令，公布《国务院关于对外投资的规定》，自2026年7月1日起施行。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7070766.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "news-item-54b91da87e",
-          "title": "国务院关于对外投资的规定",
-          "summary": "《国务院关于对外投资的规定》已经2026年4月17日国务院第83次常务会议通过，现予公布，自2026年7月1日起施行。",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7070755.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-01T00:00:00.000Z",
-          "score": 100
-        }
-      ]
-    },
-    {
-      "id": "topic-banking-and-consumer-regulatory-policy",
-      "title": "Banking and Consumer Regulatory Policy",
-      "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations 相关来源：Federal Reserve",
-      "whyItMatters": "Banking and Consumer Regulatory Policy 会影响政策、市场、产业或国际变化判断；覆盖 1 个公开来源，适合作为后续观察线索。",
-      "impactAreas": [
-        "Banking and Consumer Regulatory Policy",
-        "finance"
-      ],
-      "watchlist": [
-        "跟踪 Banking and Consumer Regulatory Policy、finance 的后续变化",
-        "留意 Federal Reserve 是否继续发布相关信息",
-        "观察是否出现监管、市场价格、企业动作或国际反应"
-      ],
-      "updatedAt": "2026-06-02T15:00:00.000Z",
-      "itemCount": 2,
-      "heat": "高",
-      "sources": [
-        "Federal Reserve"
-      ],
-      "keywords": [
-        "Banking and Consumer Regulatory Policy"
-      ],
-      "timeline": [
-        {
-          "date": "2026-05-22",
-          "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "source": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
-          "score": 97,
-          "publishedAt": "2026-05-22T20:00:00.000Z"
-        },
-        {
-          "date": "2026-06-02",
-          "title": "Agencies remove additional references to reputation risk",
-          "summary": "The federal bank regulatory agencies today jointly updated certain interagency documents to remove references to reputation risk.",
-          "source": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260602a.htm",
+          "title": "Endava利用AI代理重塑软件交付",
+          "summary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/endava-frontiers",
           "score": 96,
-          "publishedAt": "2026-06-02T15:00:00.000Z"
+          "publishedAt": "2026-06-04T12:00:00.000Z"
+        },
+        {
+          "date": "2026-06-05",
+          "title": "习近平将访朝鲜",
+          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-05",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+          "score": 100,
+          "publishedAt": "2026-06-05T00:00:00.000Z"
         }
       ],
       "evidenceItems": [
         {
-          "id": "finance-federal-reserve-968d407396",
-          "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
-          "source": "Federal Reserve",
+          "id": "news-item-e9745422d0",
+          "title": "习近平将访朝鲜",
+          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+          "source": "中国政府网要闻",
           "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-22T20:00:00.000Z",
-          "score": 97
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 100
         },
         {
-          "id": "finance-federal-reserve-21243553bd",
-          "title": "Agencies remove additional references to reputation risk",
-          "summary": "The federal bank regulatory agencies today jointly updated certain interagency documents to remove references to reputation risk.",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260602a.htm",
-          "source": "Federal Reserve",
+          "id": "news-item-95fdc76139",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+          "source": "中国政府网要闻",
           "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-02T15:00:00.000Z",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "tech-openai-news-010cdd7fc8",
+          "title": "Endava利用AI代理重塑软件交付",
+          "summary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。",
+          "url": "https://openai.com/index/endava-frontiers",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-04T12:00:00.000Z",
           "score": 96
+        },
+        {
+          "id": "news-un-news-aaae5d9513",
+          "title": "在警报声中成长：联合国儿童权利特使谈俄乌战争对儿童的影响",
+          "summary": "战争严重影响了乌克兰儿童，他们不得不在防空洞上课或线上学习，长期承受空袭警报带来的心理压力。",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167641",
+          "source": "UN News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-03T12:00:00.000Z",
+          "score": 91
         }
       ],
       "items": [
         {
-          "id": "finance-federal-reserve-968d407396",
-          "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
-          "source": "Federal Reserve",
+          "id": "news-item-e9745422d0",
+          "title": "习近平将访朝鲜",
+          "summary": "应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071194.htm",
+          "source": "中国政府网要闻",
           "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-22T20:00:00.000Z",
-          "score": 97
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 100
         },
         {
-          "id": "finance-federal-reserve-21243553bd",
-          "title": "Agencies remove additional references to reputation risk",
-          "summary": "The federal bank regulatory agencies today jointly updated certain interagency documents to remove references to reputation risk.",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260602a.htm",
-          "source": "Federal Reserve",
+          "id": "news-item-95fdc76139",
+          "title": "王毅会见下任联合国秘书长候选人巴切莱特",
+          "summary": "中共中央政治局委员、外交部长王毅在京会见下任联合国秘书长候选人、智利前总统巴切莱特，双方就国际形势等交换意见。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071063.htm",
+          "source": "中国政府网要闻",
           "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-06-02T15:00:00.000Z",
+          "category": "news",
+          "publishedAt": "2026-06-05T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "tech-openai-news-010cdd7fc8",
+          "title": "Endava利用AI代理重塑软件交付",
+          "summary": "Endava采用AI代理、ChatGPT Enterprise及Codex，加速软件交付、自动化工作流，并在企业内部构建AI原生文化，成为企业级AI落地的典型案例。",
+          "url": "https://openai.com/index/endava-frontiers",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-04T12:00:00.000Z",
           "score": 96
+        },
+        {
+          "id": "news-un-news-aaae5d9513",
+          "title": "在警报声中成长：联合国儿童权利特使谈俄乌战争对儿童的影响",
+          "summary": "战争严重影响了乌克兰儿童，他们不得不在防空洞上课或线上学习，长期承受空袭警报带来的心理压力。",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167641",
+          "source": "UN News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-03T12:00:00.000Z",
+          "score": 91
         }
       ]
     },
     {
-      "id": "business-cycle",
-      "title": "商业经营与产业竞争",
-      "summary": "多家国际金融机构发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。 相关来源：中国政府网要闻、CNBC Business News、36Kr",
-      "whyItMatters": "长线外资动向是市场风向标，硬科技投资体现中国产业升级吸引力。",
+      "id": "ai-policy-policy-ai-regulation-ai-safety",
+      "title": "Policy",
+      "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says. 相关来源：Ars Technica、TechCrunch、The New York Times",
+      "whyItMatters": "Policy 会影响政策、市场、产业或国际变化判断；覆盖 3 个公开来源，适合作为后续观察线索。",
       "impactAreas": [
-        "外资动向",
-        "硬科技",
-        "中国经济",
-        "投资布局"
+        "AI",
+        "Policy",
+        "ai porn",
+        "Artificial Intelligence"
       ],
       "watchlist": [
-        "跟踪 外资动向、硬科技、中国经济 的后续变化",
-        "留意 中国政府网要闻、CNBC Business News 是否继续发布相关信息",
+        "跟踪 AI、Policy、ai porn 的后续变化",
+        "留意 Ars Technica、TechCrunch 是否继续发布相关信息",
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
-      "updatedAt": "2026-06-03T00:00:00.000Z",
-      "itemCount": 19,
+      "updatedAt": "2026-06-04T12:00:00.000Z",
+      "latestUpdate": {
+        "title": "AI’s environmental costs threaten water, land and climate",
+        "summary": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technolog...",
+        "source": "UN News",
+        "url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
+        "publishedAt": "2026-06-04T12:00:00.000Z",
+        "score": 98
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-05-26",
+          "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+          "summary": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality th...",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+          "score": 99,
+          "publishedAt": "2026-05-26T21:54:36.000Z"
+        },
+        {
+          "date": "2026-05-26",
+          "title": "Is Peter Thiel the target of Pope Leo's Gandalf quote? An investigation.",
+          "summary": "Parsing a papal proclamation.",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/05/is-peter-thiel-the-target-of-pope-leos-gandalf-quote-an-investigation",
+          "score": 96,
+          "publishedAt": "2026-05-26T22:27:32.000Z"
+        },
+        {
+          "date": "2026-06-03",
+          "title": "OpenAI公共政策议程",
+          "summary": "OpenAI发布公共政策议程，涵盖AI安全、青少年保护、劳动力转型及全球标准，旨在确保AI技术造福社会。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/public-policy-agenda",
+          "score": 97,
+          "publishedAt": "2026-06-03T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "AI’s environmental costs threaten water, land and climate",
+          "summary": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology's environmental fo...",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
+          "score": 98,
+          "publishedAt": "2026-06-04T12:00:00.000Z"
+        }
+      ],
+      "itemCount": 17,
       "heat": "高",
+      "primarySource": "UN News",
+      "sourceCount": 5,
       "sources": [
-        "中国政府网要闻",
-        "CNBC Business News",
-        "36Kr",
+        "Ars Technica",
         "TechCrunch",
         "The New York Times",
-        "中国新闻网财经"
+        "UN News",
+        "OpenAI News"
       ],
       "keywords": [
-        "外资动向",
-        "硬科技",
-        "中国经济",
-        "投资布局",
-        "公共政策",
-        "长线外资看好中国",
-        "持续加码硬科技",
-        "多家国际金融机构发布中国"
-      ],
-      "timeline": [
-        {
-          "date": "2026-05-28",
-          "title": "全球媒体聚焦｜外媒：欧洲企业加码在华业务 “融入中国供应链已成必然选择”",
-          "summary": "中国欧盟商会5月27日发布的一项最新调查报告显示，为保持全球竞争力，越来越多欧洲企业正维持或扩大其在中国大陆的供应链布局。",
-          "source": "中国新闻网财经",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630242.shtml",
-          "score": 85,
-          "publishedAt": "2026-05-28T08:22:17.000Z"
-        },
-        {
-          "date": "2026-05-28",
-          "title": "中德隐形冠军齐聚扬州 数智赋能共促产业链深度融合",
-          "summary": "中新网扬州5月28日电 (徐珊珊 崔佳明)5月28日，以“数智赋能、创新发展”为主题的2026世界隐形冠军扬州创新发展大会在扬州举行。",
-          "source": "中国新闻网财经",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630250.shtml",
-          "score": 85,
-          "publishedAt": "2026-05-28T08:28:50.000Z"
-        },
-        {
-          "date": "2026-05-28",
-          "title": "利润暴跌，日系车巨头集体失速",
-          "summary": "日本跌落全球汽车销冠宝座后，日系车企财报又迎来集体“哑火”，日系车突然不会赚钱了。",
-          "source": "中国新闻网财经",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630277.shtml",
-          "score": 86,
-          "publishedAt": "2026-05-28T09:01:52.000Z"
-        },
-        {
-          "date": "2026-05-28",
-          "title": "9万平方米展现“智造” 第26届立嘉国际智能装备展览会启幕",
-          "summary": "中新网重庆5月28日电 (记者 刘贤)2026重庆国际工业博览会暨第26届立嘉国际智能装备展览会28日在重庆启幕，总展出面积达9万平方米，汇聚1300家海内外头部知名品牌企业，集中展出1100台(套)1吨以上高端装备、上万件精密核心功能部件。",
-          "source": "中国新闻网财经",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-28/10630288.shtml",
-          "score": 86,
-          "publishedAt": "2026-05-28T09:33:38.000Z"
-        },
-        {
-          "date": "2026-05-28",
-          "title": "Still a developer. Just outside. Our latest GitHub Shop collection is here.",
-          "summary": "Finding the perfect gift for your favorite developer is easy with our top tips.",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/news-insights/company-news/still-a-developer-just-outside-our-latest-github-shop-collection-is-here",
-          "score": 86,
-          "publishedAt": "2026-05-28T18:18:43.000Z"
-        },
-        {
-          "date": "2026-05-29",
-          "title": "半年访谈600+用户、获千万元融资，这名清华毕业生想把脑机“戴”进运动场｜早期项目",
-          "summary": "已积累约500小时多模态数据，包含脑电、IMU、训练事件和主观反馈等维度，覆盖射击、高尔夫等运动场景。",
-          "source": "36Kr",
-          "url": "https://36kr.com/p/3827323136004992?f=rss",
-          "score": 91,
-          "publishedAt": "2026-05-29T00:30:00.000Z"
-        },
-        {
-          "date": "2026-05-29",
-          "title": "「卡玺CardChic」 获天使轮融资，以中国文化IP＋精品化打造收藏卡品牌 | 36氪首发",
-          "summary": "“以高端收藏卡及对战卡牌构建国产卡牌新生态。",
-          "source": "36Kr",
-          "url": "https://36kr.com/p/3829202710045827?f=rss",
-          "score": 91,
-          "publishedAt": "2026-05-29T01:01:06.000Z"
-        },
-        {
-          "date": "2026-05-29",
-          "title": "智博会观察：从“附属板块”到“独立展馆” 具身智能站上产业“C位”",
-          "summary": "中新网天津5月29日电 (记者 孙玲玲)2026世界智能产业博览会28日在天津开幕。",
-          "source": "中国新闻网财经",
-          "url": "https://www.chinanews.com.cn/cj/2026/05-29/10630614.shtml",
-          "score": 86,
-          "publishedAt": "2026-05-29T01:19:57.000Z"
-        },
-        {
-          "date": "2026-05-29",
-          "title": "36氪首发 | 李泽湘系投过的星空摄影设备品牌再获数百万美金融资，产品即将登陆众筹",
-          "summary": "让星野创作从“小众技术”变成一种大众化体验。",
-          "source": "36Kr",
-          "url": "https://36kr.com/p/3829705374098823?f=rss",
-          "score": 91,
-          "publishedAt": "2026-05-29T01:39:23.000Z"
-        },
-        {
-          "date": "2026-05-29",
-          "title": "千里科技再添筹码，或将整合吉利辅助驾驶团队｜36氪独家",
-          "summary": "千里科技冲击2026年底百万辆ASD装车目标。",
-          "source": "36Kr",
-          "url": "https://36kr.com/p/3830580716365449?f=rss",
-          "score": 90,
-          "publishedAt": "2026-05-29T16:28:31.000Z"
-        },
-        {
-          "date": "2026-05-31",
-          "title": "国务院山西留神峪煤矿事故调查组公告",
-          "summary": "国务院山西长治山西通洲集团留神峪煤业有限公司“5·22”特别重大瓦斯爆炸事故调查组决定于2026年5月31日至6月20日，设立举报电话和举报信箱，受理本次事故有关问题的来信和来电。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070728.htm",
-          "score": 95,
-          "publishedAt": "2026-05-31T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-03",
-          "title": "长线外资看好中国 持续加码硬科技",
-          "summary": "多家国际金融机构发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071033.htm",
-          "score": 95,
-          "publishedAt": "2026-06-03T00:00:00.000Z"
-        }
-      ],
-      "evidenceItems": [
-        {
-          "id": "news-item-c59277d04a",
-          "title": "长线外资看好中国 持续加码硬科技",
-          "summary": "多家国际金融机构发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071033.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 95
-        },
-        {
-          "id": "news-item-bb09937030",
-          "title": "国务院山西留神峪煤矿事故调查组公告",
-          "summary": "国务院山西长治山西通洲集团留神峪煤业有限公司“5·22”特别重大瓦斯爆炸事故调查组决定于2026年5月31日至6月20日，设立举报电话和举报信箱，受理本次事故有关问题的来信和来电。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070728.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-05-31T00:00:00.000Z",
-          "score": 95
-        },
-        {
-          "id": "finance-cnbc-business-news-64f3eab758",
-          "title": "Dropbox CEO Drew Houston to step down after 19 years at helm of cloud storage pioneer",
-          "summary": "Dropbox CEO Drew Houston, who started the cloud storage company when he was 24, plans to step down and assume the role of executive chairman.",
-          "url": "https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html",
-          "source": "CNBC Business News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-26T17:27:27.000Z",
-          "score": 93
-        },
-        {
-          "id": "tech-36kr-d433e6d844",
-          "title": "36氪首发 | 李泽湘系投过的星空摄影设备品牌再获数百万美金融资，产品即将登陆众筹",
-          "summary": "让星野创作从“小众技术”变成一种大众化体验。",
-          "url": "https://36kr.com/p/3829705374098823?f=rss",
-          "source": "36Kr",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-29T01:39:23.000Z",
-          "score": 91
-        },
-        {
-          "id": "tech-36kr-06fb36429c",
-          "title": "「卡玺CardChic」 获天使轮融资，以中国文化IP＋精品化打造收藏卡品牌 | 36氪首发",
-          "summary": "“以高端收藏卡及对战卡牌构建国产卡牌新生态。",
-          "url": "https://36kr.com/p/3829202710045827?f=rss",
-          "source": "36Kr",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-29T01:01:06.000Z",
-          "score": 91
-        },
-        {
-          "id": "tech-36kr-4124dbe0e8",
-          "title": "半年访谈600+用户、获千万元融资，这名清华毕业生想把脑机“戴”进运动场｜早期项目",
-          "summary": "已积累约500小时多模态数据，包含脑电、IMU、训练事件和主观反馈等维度，覆盖射击、高尔夫等运动场景。",
-          "url": "https://36kr.com/p/3827323136004992?f=rss",
-          "source": "36Kr",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-29T00:30:00.000Z",
-          "score": 91
-        }
-      ],
-      "items": [
-        {
-          "id": "news-item-c59277d04a",
-          "title": "长线外资看好中国 持续加码硬科技",
-          "summary": "多家国际金融机构发布中国经济积极展望，调高对中国科技企业投资比重，加快在华投资布局。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071033.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-06-03T00:00:00.000Z",
-          "score": 95
-        },
-        {
-          "id": "news-item-bb09937030",
-          "title": "国务院山西留神峪煤矿事故调查组公告",
-          "summary": "国务院山西长治山西通洲集团留神峪煤业有限公司“5·22”特别重大瓦斯爆炸事故调查组决定于2026年5月31日至6月20日，设立举报电话和举报信箱，受理本次事故有关问题的来信和来电。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070728.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "news",
-          "publishedAt": "2026-05-31T00:00:00.000Z",
-          "score": 95
-        },
-        {
-          "id": "finance-cnbc-business-news-64f3eab758",
-          "title": "Dropbox CEO Drew Houston to step down after 19 years at helm of cloud storage pioneer",
-          "summary": "Dropbox CEO Drew Houston, who started the cloud storage company when he was 24, plans to step down and assume the role of executive chairman.",
-          "url": "https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html",
-          "source": "CNBC Business News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "finance",
-          "publishedAt": "2026-05-26T17:27:27.000Z",
-          "score": 93
-        },
-        {
-          "id": "tech-36kr-d433e6d844",
-          "title": "36氪首发 | 李泽湘系投过的星空摄影设备品牌再获数百万美金融资，产品即将登陆众筹",
-          "summary": "让星野创作从“小众技术”变成一种大众化体验。",
-          "url": "https://36kr.com/p/3829705374098823?f=rss",
-          "source": "36Kr",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-29T01:39:23.000Z",
-          "score": 91
-        },
-        {
-          "id": "tech-36kr-06fb36429c",
-          "title": "「卡玺CardChic」 获天使轮融资，以中国文化IP＋精品化打造收藏卡品牌 | 36氪首发",
-          "summary": "“以高端收藏卡及对战卡牌构建国产卡牌新生态。",
-          "url": "https://36kr.com/p/3829202710045827?f=rss",
-          "source": "36Kr",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-29T01:01:06.000Z",
-          "score": 91
-        },
-        {
-          "id": "tech-36kr-4124dbe0e8",
-          "title": "半年访谈600+用户、获千万元融资，这名清华毕业生想把脑机“戴”进运动场｜早期项目",
-          "summary": "已积累约500小时多模态数据，包含脑电、IMU、训练事件和主观反馈等维度，覆盖射击、高尔夫等运动场景。",
-          "url": "https://36kr.com/p/3827323136004992?f=rss",
-          "source": "36Kr",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-05-29T00:30:00.000Z",
-          "score": 91
-        }
-      ]
-    },
-    {
-      "id": "topic-official-agency",
-      "title": "official-agency",
-      "summary": "科技部科技政策、科研合作、标准和创新体系工作动态 相关来源：科技部工作动态",
-      "whyItMatters": "科技部工作动态 / tech · score 92 · official-agency · daily",
-      "impactAreas": [
-        "official-agency",
-        "daily",
-        "tech"
-      ],
-      "watchlist": [
-        "跟踪 official-agency、daily、tech 的后续变化",
-        "留意 科技部工作动态 是否继续发布相关信息",
-        "观察是否出现监管、市场价格、企业动作或国际反应"
-      ],
-      "updatedAt": "2026-05-26T00:00:00.000Z",
-      "itemCount": 3,
-      "heat": "高",
-      "sources": [
-        "科技部工作动态"
-      ],
-      "keywords": [
-        "official-agency",
-        "daily"
+        "AI",
+        "Policy",
+        "ai porn",
+        "Artificial Intelligence",
+        "etc",
+        "fbi",
+        "nudify",
+        "revenge porn"
       ],
       "timeline": [
         {
           "date": "2026-05-25",
-          "title": "《人体基因数据研究伦理指引》发布",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260525_196672.html",
-          "score": 90,
-          "publishedAt": "2026-05-25T00:00:00.000Z"
+          "title": "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
+          "summary": "The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the pa...",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html",
+          "score": 99,
+          "publishedAt": "2026-05-25T18:35:03.000Z"
+        },
+        {
+          "date": "2026-05-25",
+          "title": "Citing Gandalf, Pope Leo says we must \"disarm\" AI",
+          "summary": "In an age of AI, Pope looks for \"artisans of hope.\"",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/05/citing-gandalf-pope-leo-says-we-must-disarm-ai",
+          "score": 96,
+          "publishedAt": "2026-05-25T21:07:42.000Z"
+        },
+        {
+          "date": "2026-05-25",
+          "title": "Main Takeaways From Pope Leo’s Encyclical on A.I.",
+          "summary": "In his letter, the first American pontiff called for putting care for humans at the heart of technological change.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/05/25/us/pope-leo-encyclical-highlights.html",
+          "score": 99,
+          "publishedAt": "2026-05-25T21:16:24.000Z"
         },
         {
           "date": "2026-05-26",
-          "title": "第九届中国平方公里阵列射电望远镜（SKA）科学年度研讨会在沪召开",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196681.html",
-          "score": 92,
-          "publishedAt": "2026-05-26T00:00:00.000Z"
+          "title": "7-Eleven data breach affects over 185,000 people&#8217;s personal data",
+          "summary": "The data breach included names, dates of birth, postal addresses, and Social Security numbers, according to a state government listing.",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/05/26/7-eleven-data-breach-affects-over-185000-peoples-personal-data",
+          "score": 96,
+          "publishedAt": "2026-05-26T13:04:56.000Z"
         },
         {
           "date": "2026-05-26",
-          "title": "科技部副部长邱勇赴吉尔吉斯斯坦出席上海合作组织成员国第十届科技部长会议",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196680.html",
+          "title": "Iranian hackers blamed for breach of Los Angeles transit system that took weeks to recover",
+          "summary": "An Israeli cybersecurity firm said Iran’s government is behind Ababil of Minab, a fake hacktivist persona that has claimed a series of da...",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/05/26/iranian-hackers-blamed-for-breach-of-los-angeles-transit-system-that-took-weeks-to-recover",
+          "score": 100,
+          "publishedAt": "2026-05-26T15:26:27.000Z"
+        },
+        {
+          "date": "2026-05-26",
+          "title": "Dutch government blocks US company from acquisition, citing &#8216;risk to public interest&#8217;",
+          "summary": "The move to block the acquisition of the cloud company that hosts the Dutch digital ID service comes as Europe continues to reduce its re...",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/05/26/dutch-government-blocks-us-company-from-acquisition-citing-risk-to-public-interest",
           "score": 92,
-          "publishedAt": "2026-05-26T00:00:00.000Z"
+          "publishedAt": "2026-05-26T15:44:23.000Z"
+        },
+        {
+          "date": "2026-05-26",
+          "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
+          "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile",
+          "score": 100,
+          "publishedAt": "2026-05-26T17:46:01.000Z"
+        },
+        {
+          "date": "2026-05-26",
+          "title": "Yuval Noah Harari on Donald Trump’s Core Delusion",
+          "summary": "The best-selling author of “Sapiens” and “Nexus” discusses the core delusions deranging our politics.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/05/26/opinion/ezra-klein-podcast-yuval-noah-harari.html",
+          "score": 91,
+          "publishedAt": "2026-05-26T20:10:10.000Z"
+        },
+        {
+          "date": "2026-05-26",
+          "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+          "summary": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality th...",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+          "score": 99,
+          "publishedAt": "2026-05-26T21:54:36.000Z"
+        },
+        {
+          "date": "2026-05-26",
+          "title": "Is Peter Thiel the target of Pope Leo's Gandalf quote? An investigation.",
+          "summary": "Parsing a papal proclamation.",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/tech-policy/2026/05/is-peter-thiel-the-target-of-pope-leos-gandalf-quote-an-investigation",
+          "score": 96,
+          "publishedAt": "2026-05-26T22:27:32.000Z"
+        },
+        {
+          "date": "2026-06-03",
+          "title": "OpenAI公共政策议程",
+          "summary": "OpenAI发布公共政策议程，涵盖AI安全、青少年保护、劳动力转型及全球标准，旨在确保AI技术造福社会。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/public-policy-agenda",
+          "score": 97,
+          "publishedAt": "2026-06-03T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "AI’s environmental costs threaten water, land and climate",
+          "summary": "Artificial Intelligence is not only responsible for worrying amounts of earth-warming greenhouse gases: the technology's environmental fo...",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167658",
+          "score": 98,
+          "publishedAt": "2026-06-04T12:00:00.000Z"
         }
       ],
       "evidenceItems": [
         {
-          "id": "tech-item-634d741529",
-          "title": "第九届中国平方公里阵列射电望远镜（SKA）科学年度研讨会在沪召开",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196681.html",
-          "source": "科技部工作动态",
+          "id": "tech-ars-technica-d139148591",
+          "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
+          "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
+          "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile",
+          "source": "Ars Technica",
           "sourceAuthorityLabel": "公开来源",
           "category": "tech",
-          "publishedAt": "2026-05-26T00:00:00.000Z",
-          "score": 92
+          "publishedAt": "2026-05-26T17:46:01.000Z",
+          "score": 100
         },
         {
-          "id": "tech-item-f77c7f0ef2",
-          "title": "科技部副部长邱勇赴吉尔吉斯斯坦出席上海合作组织成员国第十届科技部长会议",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196680.html",
-          "source": "科技部工作动态",
+          "id": "tech-techcrunch-fe5a45240d",
+          "title": "Iranian hackers blamed for breach of Los Angeles transit system that took weeks to recover",
+          "summary": "An Israeli cybersecurity firm said Iran’s government is behind Ababil of Minab, a fake hacktivist persona that has claimed a series of data breaches after the start of the war in Iran.",
+          "url": "https://techcrunch.com/2026/05/26/iranian-hackers-blamed-for-breach-of-los-angeles-transit-system-that-took-weeks-to-recover",
+          "source": "TechCrunch",
           "sourceAuthorityLabel": "公开来源",
           "category": "tech",
-          "publishedAt": "2026-05-26T00:00:00.000Z",
-          "score": 92
+          "publishedAt": "2026-05-26T15:26:27.000Z",
+          "score": 100
         },
         {
-          "id": "tech-item-8a871c99b1",
-          "title": "《人体基因数据研究伦理指引》发布",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260525_196672.html",
-          "source": "科技部工作动态",
+          "id": "tech-ars-technica-59ba9e6d60",
+          "title": "Trump abruptly cancels EO signing event after top AI firm CEOs declined to go",
+          "summary": "Trump delays AI safety testing EO, claiming it would be an innovation “blocker.”",
+          "url": "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos",
+          "source": "Ars Technica",
           "sourceAuthorityLabel": "公开来源",
           "category": "tech",
-          "publishedAt": "2026-05-25T00:00:00.000Z",
-          "score": 90
+          "publishedAt": "2026-05-22T16:51:40.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-the-new-york-times-1546e6b5b4",
+          "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+          "summary": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality through technology.",
+          "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+          "source": "The New York Times",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-26T21:54:36.000Z",
+          "score": 99
+        },
+        {
+          "id": "news-the-new-york-times-2422bf1072",
+          "title": "Main Takeaways From Pope Leo’s Encyclical on A.I.",
+          "summary": "In his letter, the first American pontiff called for putting care for humans at the heart of technological change.",
+          "url": "https://www.nytimes.com/2026/05/25/us/pope-leo-encyclical-highlights.html",
+          "source": "The New York Times",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-25T21:16:24.000Z",
+          "score": 99
+        },
+        {
+          "id": "news-the-new-york-times-0b41cd8032",
+          "title": "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
+          "summary": "The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the papacy?",
+          "url": "https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html",
+          "source": "The New York Times",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-25T18:35:03.000Z",
+          "score": 99
         }
       ],
       "items": [
         {
-          "id": "tech-item-634d741529",
-          "title": "第九届中国平方公里阵列射电望远镜（SKA）科学年度研讨会在沪召开",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196681.html",
-          "source": "科技部工作动态",
+          "id": "tech-ars-technica-d139148591",
+          "title": "FBI agent explains how easy it is to ID people posting AI porn without consent",
+          "summary": "A creepy saved post on Instagram linked man to AI porn account, FBI says.",
+          "url": "https://arstechnica.com/tech-policy/2026/05/fbi-easily-nabs-man-selling-sexy-deepfakes-who-used-his-own-photo-in-profile",
+          "source": "Ars Technica",
           "sourceAuthorityLabel": "公开来源",
           "category": "tech",
-          "publishedAt": "2026-05-26T00:00:00.000Z",
-          "score": 92
+          "publishedAt": "2026-05-26T17:46:01.000Z",
+          "score": 100
         },
         {
-          "id": "tech-item-f77c7f0ef2",
-          "title": "科技部副部长邱勇赴吉尔吉斯斯坦出席上海合作组织成员国第十届科技部长会议",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260526_196680.html",
-          "source": "科技部工作动态",
+          "id": "tech-techcrunch-fe5a45240d",
+          "title": "Iranian hackers blamed for breach of Los Angeles transit system that took weeks to recover",
+          "summary": "An Israeli cybersecurity firm said Iran’s government is behind Ababil of Minab, a fake hacktivist persona that has claimed a series of data breaches after the start of the war in Iran.",
+          "url": "https://techcrunch.com/2026/05/26/iranian-hackers-blamed-for-breach-of-los-angeles-transit-system-that-took-weeks-to-recover",
+          "source": "TechCrunch",
           "sourceAuthorityLabel": "公开来源",
           "category": "tech",
-          "publishedAt": "2026-05-26T00:00:00.000Z",
-          "score": 92
+          "publishedAt": "2026-05-26T15:26:27.000Z",
+          "score": 100
         },
         {
-          "id": "tech-item-8a871c99b1",
-          "title": "《人体基因数据研究伦理指引》发布",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202605/t20260525_196672.html",
-          "source": "科技部工作动态",
+          "id": "tech-ars-technica-59ba9e6d60",
+          "title": "Trump abruptly cancels EO signing event after top AI firm CEOs declined to go",
+          "summary": "Trump delays AI safety testing EO, claiming it would be an innovation “blocker.”",
+          "url": "https://arstechnica.com/tech-policy/2026/05/trump-canceled-ai-safety-testing-eo-after-snub-from-tech-ceos",
+          "source": "Ars Technica",
           "sourceAuthorityLabel": "公开来源",
           "category": "tech",
-          "publishedAt": "2026-05-25T00:00:00.000Z",
-          "score": 90
+          "publishedAt": "2026-05-22T16:51:40.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-the-new-york-times-1546e6b5b4",
+          "title": "At the A.I. Epicenter, Technologists Dismiss Pope Leo’s Warnings About the New Technology",
+          "summary": "Pope Leo XIV’s spiritual message on artificial intelligence arrived as Silicon Valley’s A.I. enthusiasts pursue their own spirituality through technology.",
+          "url": "https://www.nytimes.com/2026/05/26/technology/pope-leo-ai-religion.html",
+          "source": "The New York Times",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-26T21:54:36.000Z",
+          "score": 99
+        },
+        {
+          "id": "news-the-new-york-times-2422bf1072",
+          "title": "Main Takeaways From Pope Leo’s Encyclical on A.I.",
+          "summary": "In his letter, the first American pontiff called for putting care for humans at the heart of technological change.",
+          "url": "https://www.nytimes.com/2026/05/25/us/pope-leo-encyclical-highlights.html",
+          "source": "The New York Times",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-25T21:16:24.000Z",
+          "score": 99
+        },
+        {
+          "id": "news-the-new-york-times-0b41cd8032",
+          "title": "As A.I. Fever Rises in Silicon Valley, Pope Leo Has a Few Words",
+          "summary": "The American pope wants to take artificial intelligence down a notch. Is he challenging the tech companies, or will tech take over the papacy?",
+          "url": "https://www.nytimes.com/2026/05/25/technology/pope-ai-silicon-valley.html",
+          "source": "The New York Times",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-25T18:35:03.000Z",
+          "score": 99
+        }
+      ]
+    },
+    {
+      "id": "ai-policy-global-affairs",
+      "title": "Global Affairs",
+      "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI sa... 相关来源：OpenAI News",
+      "whyItMatters": "OpenAI News / tech · score 100 · Global Affairs",
+      "impactAreas": [
+        "Global Affairs",
+        "tech",
+        "AI治理",
+        "国家安全"
+      ],
+      "watchlist": [
+        "跟踪 Global Affairs、tech、AI治理 的后续变化",
+        "留意 OpenAI News 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-04T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "智能时代的生物防御",
+        "summary": "OpenAI发布AI驱动的生物弹性行动计划，旨在利用人工智能加强生物防御，应对未来生物威胁。",
+        "source": "OpenAI News",
+        "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+        "publishedAt": "2026-06-04T00:00:00.000Z",
+        "score": 92
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-02",
+          "title": "Codex is becoming a productivity tool for everyone",
+          "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflo...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/codex-for-knowledge-work",
+          "score": 95,
+          "publishedAt": "2026-06-02T02:00:00.000Z"
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Advancing youth safety and opportunity through global leadership",
+          "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportun...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+          "score": 92,
+          "publishedAt": "2026-06-02T07:00:00.000Z"
+        },
+        {
+          "date": "2026-06-03",
+          "title": "前沿AI民主治理蓝图",
+          "summary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/frontier-safety-blueprint",
+          "score": 99,
+          "publishedAt": "2026-06-03T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "智能时代的生物防御",
+          "summary": "OpenAI发布AI驱动的生物弹性行动计划，旨在利用人工智能加强生物防御，应对未来生物威胁。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+          "score": 92,
+          "publishedAt": "2026-06-04T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 8,
+      "heat": "高",
+      "primarySource": "OpenAI News",
+      "sourceCount": 1,
+      "sources": [
+        "OpenAI News"
+      ],
+      "keywords": [
+        "Global Affairs",
+        "AI治理",
+        "国家安全",
+        "政策法规",
+        "AI政策",
+        "市场监管",
+        "blueprint",
+        "for"
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-25",
+          "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+          "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attributio...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+          "score": 86,
+          "publishedAt": "2026-05-25T00:00:00.000Z"
+        },
+        {
+          "date": "2026-05-27",
+          "title": "Election information and safeguards in 2026",
+          "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/election-safeguards-2026",
+          "score": 95,
+          "publishedAt": "2026-05-27T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-01",
+          "title": "Building the infrastructure for the Intelligence Age in Michigan",
+          "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jo...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/stargate-michigan-data-center",
+          "score": 93,
+          "publishedAt": "2026-06-01T12:00:00.000Z"
+        },
+        {
+          "date": "2026-06-01",
+          "title": "Our views on AI policy and political advocacy",
+          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside poli...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+          "score": 100,
+          "publishedAt": "2026-06-01T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Codex is becoming a productivity tool for everyone",
+          "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflo...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/codex-for-knowledge-work",
+          "score": 95,
+          "publishedAt": "2026-06-02T02:00:00.000Z"
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Advancing youth safety and opportunity through global leadership",
+          "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportun...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+          "score": 92,
+          "publishedAt": "2026-06-02T07:00:00.000Z"
+        },
+        {
+          "date": "2026-06-03",
+          "title": "前沿AI民主治理蓝图",
+          "summary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/frontier-safety-blueprint",
+          "score": 99,
+          "publishedAt": "2026-06-03T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "智能时代的生物防御",
+          "summary": "OpenAI发布AI驱动的生物弹性行动计划，旨在利用人工智能加强生物防御，应对未来生物威胁。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+          "score": 92,
+          "publishedAt": "2026-06-04T00:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "tech-openai-news-f9f27c3f88",
+          "title": "Our views on AI policy and political advocacy",
+          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-01T17:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "tech-openai-news-a3d6a8c521",
+          "title": "前沿AI民主治理蓝图",
+          "summary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。",
+          "url": "https://openai.com/index/frontier-safety-blueprint",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-03T10:00:00.000Z",
+          "score": 99
+        },
+        {
+          "id": "tech-openai-news-968c7d1345",
+          "title": "Codex is becoming a productivity tool for everyone",
+          "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+          "url": "https://openai.com/index/codex-for-knowledge-work",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-02T02:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-openai-news-6f071c9489",
+          "title": "Election information and safeguards in 2026",
+          "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+          "url": "https://openai.com/index/election-safeguards-2026",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-27T00:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-openai-news-de25d7330f",
+          "title": "Building the infrastructure for the Intelligence Age in Michigan",
+          "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+          "url": "https://openai.com/index/stargate-michigan-data-center",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-01T12:00:00.000Z",
+          "score": 93
+        },
+        {
+          "id": "tech-openai-news-3afb2678a0",
+          "title": "智能时代的生物防御",
+          "summary": "OpenAI发布AI驱动的生物弹性行动计划，旨在利用人工智能加强生物防御，应对未来生物威胁。",
+          "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-04T00:00:00.000Z",
+          "score": 92
+        }
+      ],
+      "items": [
+        {
+          "id": "tech-openai-news-f9f27c3f88",
+          "title": "Our views on AI policy and political advocacy",
+          "summary": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf.",
+          "url": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-01T17:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "tech-openai-news-a3d6a8c521",
+          "title": "前沿AI民主治理蓝图",
+          "summary": "OpenAI提出美国前沿AI治理蓝图，建议建立联邦框架以确保安全、韧性和国家安全。",
+          "url": "https://openai.com/index/frontier-safety-blueprint",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-03T10:00:00.000Z",
+          "score": 99
+        },
+        {
+          "id": "tech-openai-news-968c7d1345",
+          "title": "Codex is becoming a productivity tool for everyone",
+          "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+          "url": "https://openai.com/index/codex-for-knowledge-work",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-02T02:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-openai-news-6f071c9489",
+          "title": "Election information and safeguards in 2026",
+          "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+          "url": "https://openai.com/index/election-safeguards-2026",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-27T00:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-openai-news-de25d7330f",
+          "title": "Building the infrastructure for the Intelligence Age in Michigan",
+          "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+          "url": "https://openai.com/index/stargate-michigan-data-center",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-01T12:00:00.000Z",
+          "score": 93
+        },
+        {
+          "id": "tech-openai-news-3afb2678a0",
+          "title": "智能时代的生物防御",
+          "summary": "OpenAI发布AI驱动的生物弹性行动计划，旨在利用人工智能加强生物防御，应对未来生物威胁。",
+          "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-04T00:00:00.000Z",
+          "score": 92
+        }
+      ]
+    },
+    {
+      "id": "ai-policy-safety",
+      "title": "Safety",
+      "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align wi... 相关来源：OpenAI News",
+      "whyItMatters": "OpenAI News / tech · score 100 · Safety",
+      "impactAreas": [
+        "Safety",
+        "tech"
+      ],
+      "watchlist": [
+        "跟踪 Safety、tech 的后续变化",
+        "留意 OpenAI News 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-05-29T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "A shared playbook for trustworthy third party evaluations",
+        "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and vali...",
+        "source": "OpenAI News",
+        "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+        "publishedAt": "2026-05-29T00:00:00.000Z",
+        "score": 92
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-05-28",
+          "title": "OpenAI’s Frontier Governance Framework",
+          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/openai-frontier-governance-framework",
+          "score": 100,
+          "publishedAt": "2026-05-28T00:00:00.000Z"
+        },
+        {
+          "date": "2026-05-29",
+          "title": "A shared playbook for trustworthy third party evaluations",
+          "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier sy...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+          "score": 92,
+          "publishedAt": "2026-05-29T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 2,
+      "heat": "高",
+      "primarySource": "OpenAI News",
+      "sourceCount": 1,
+      "sources": [
+        "OpenAI News"
+      ],
+      "keywords": [
+        "Safety"
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-28",
+          "title": "OpenAI’s Frontier Governance Framework",
+          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/openai-frontier-governance-framework",
+          "score": 100,
+          "publishedAt": "2026-05-28T00:00:00.000Z"
+        },
+        {
+          "date": "2026-05-29",
+          "title": "A shared playbook for trustworthy third party evaluations",
+          "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier sy...",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+          "score": 92,
+          "publishedAt": "2026-05-29T00:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "tech-openai-news-63eee503d2",
+          "title": "OpenAI’s Frontier Governance Framework",
+          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+          "url": "https://openai.com/index/openai-frontier-governance-framework",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-28T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "tech-openai-news-ccb2982689",
+          "title": "A shared playbook for trustworthy third party evaluations",
+          "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+          "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-29T00:00:00.000Z",
+          "score": 92
+        }
+      ],
+      "items": [
+        {
+          "id": "tech-openai-news-63eee503d2",
+          "title": "OpenAI’s Frontier Governance Framework",
+          "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+          "url": "https://openai.com/index/openai-frontier-governance-framework",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-28T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "tech-openai-news-ccb2982689",
+          "title": "A shared playbook for trustworthy third party evaluations",
+          "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+          "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-29T00:00:00.000Z",
+          "score": 92
+        }
+      ]
+    },
+    {
+      "id": "topic-developer-skills-github-git-developer-skills-github-git",
+      "title": "Developer skills",
+      "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区... 相关来源：GitHub Blog",
+      "whyItMatters": "GitHub Universe作为开发者社区风向标，其主题和展示项目反映当前技术趋势，尤其智能体与开源的结合值得关注。",
+      "impactAreas": [
+        "开源社区",
+        "开发者工具",
+        "人工智能",
+        "Company news"
+      ],
+      "watchlist": [
+        "跟踪 开源社区、开发者工具、人工智能 的后续变化",
+        "留意 GitHub Blog 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-04T16:00:00.000Z",
+      "latestUpdate": {
+        "title": "GitHub Universe回归：共迎智能体时代",
+        "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
+        "source": "GitHub Blog",
+        "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+        "publishedAt": "2026-06-04T16:00:00.000Z",
+        "score": 99
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-05-25",
+          "title": "GitHub for Beginners: Getting started with Git and GitHub in VS Code",
+          "summary": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community.",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code",
+          "score": 87,
+          "publishedAt": "2026-05-25T16:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "GitHub Universe回归：共迎智能体时代",
+          "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+          "score": 99,
+          "publishedAt": "2026-06-04T16:00:00.000Z"
+        }
+      ],
+      "itemCount": 2,
+      "heat": "高",
+      "primarySource": "GitHub Blog",
+      "sourceCount": 1,
+      "sources": [
+        "GitHub Blog"
+      ],
+      "keywords": [
+        "开源社区",
+        "开发者工具",
+        "人工智能",
+        "Company news",
+        "News & insights",
+        "GitHub Universe",
+        "GitHub",
+        "Universe"
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-25",
+          "title": "GitHub for Beginners: Getting started with Git and GitHub in VS Code",
+          "summary": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community.",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code",
+          "score": 87,
+          "publishedAt": "2026-05-25T16:00:00.000Z"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "GitHub Universe回归：共迎智能体时代",
+          "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+          "score": 99,
+          "publishedAt": "2026-06-04T16:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "tech-github-blog-1ea8d75964",
+          "title": "GitHub Universe回归：共迎智能体时代",
+          "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
+          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-04T16:00:00.000Z",
+          "score": 99
+        },
+        {
+          "id": "tech-github-blog-42b8e0f8a3",
+          "title": "GitHub for Beginners: Getting started with Git and GitHub in VS Code",
+          "summary": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community.",
+          "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-25T16:00:00.000Z",
+          "score": 87
+        }
+      ],
+      "items": [
+        {
+          "id": "tech-github-blog-1ea8d75964",
+          "title": "GitHub Universe回归：共迎智能体时代",
+          "summary": "GitHub Universe 2025大会回归，聚焦智能体时代。会议展示多个开源项目，包括从Appwrite到Zulip的精彩展示。作者回顾了历届最难忘的会议环节，并邀请维护者参与2026年大会。大会强调开源社区的协作与创新。",
+          "url": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-04T16:00:00.000Z",
+          "score": 99
+        },
+        {
+          "id": "tech-github-blog-42b8e0f8a3",
+          "title": "GitHub for Beginners: Getting started with Git and GitHub in VS Code",
+          "summary": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community.",
+          "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-05-25T16:00:00.000Z",
+          "score": 87
         }
       ]
     }

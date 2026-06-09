@@ -4,6 +4,7 @@
     totalEvents: 0,
     events: []
   };
+  const EVENT_REFRESH_MS = 120000;
 
   async function loadJson(url, fallback) {
     if (window.location.protocol === "file:") return fallback;
@@ -104,6 +105,11 @@
     container.innerHTML = events.map((event) => {
       const evidenceItems = event.evidenceItems || event.items || [];
       const timeline = event.timeline || evidenceItems;
+      const latest = event.latestUpdate || evidenceItems[0] || {};
+      const latestUrl = safeExternalUrl(latest.url);
+      const latestTitle = latestUrl
+        ? `<a href="${escapeHtml(latestUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(latest.title || "")}</a>`
+        : escapeHtml(latest.title || "");
       return `
         <article class="event-card">
           <div class="event-card-head">
@@ -112,6 +118,12 @@
               <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
             </div>
             <strong>${escapeHtml(event.heat || "中")}</strong>
+          </div>
+          <div class="event-latest-update">
+            <strong>最新进展</strong>
+            <h3>${latestTitle}</h3>
+            <p>${escapeHtml(latest.summary || "")}</p>
+            <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 发布时间：${escapeHtml(formatDate(latest.publishedAt || event.updatedAt))} · 来源数：${Number(event.sourceCount || event.sources?.length || 0)}</span>
           </div>
           <div class="event-explainer-grid">
             <section>
@@ -130,7 +142,7 @@
           </div>
           <h3 class="event-evidence-title">时间线</h3>
           <ol class="event-timeline">
-            ${timeline.map((item) => {
+            ${(event.keyDevelopments || timeline).map((item) => {
               const safeUrl = safeExternalUrl(item.url);
               const title = safeUrl
                 ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
@@ -168,13 +180,30 @@
     }).join("");
   }
 
-  async function init() {
-    const data = await loadJson("src/data/events.json", FALLBACK_EVENTS);
+  function updateMeta(data) {
     const meta = document.getElementById("events-meta");
     if (meta) {
-      meta.textContent = `事件更新时间：${formatDate(data.generatedAt)}；回看近 ${Number(data.lookbackDays || 90)} 天；共 ${Number(data.totalEvents || 0)} 个重点事件。`;
+      meta.textContent = `事件更新时间：${formatDate(data.generatedAt)}；自动刷新：2分钟；回看近 ${Number(data.lookbackDays || 90)} 天；共 ${Number(data.totalEvents || 0)} 个重点事件。`;
     }
+  }
+
+  async function init() {
+    const data = await loadJson("src/data/events.json", FALLBACK_EVENTS);
+    updateMeta(data);
     renderExplainedEvents(document.getElementById("events-list"), data);
+    if (window.location.protocol !== "file:") {
+      setInterval(async () => {
+        const refreshed = await loadJson("src/data/events.json", FALLBACK_EVENTS);
+        if (refreshed.generatedAt && refreshed.generatedAt !== data.generatedAt) {
+          data.generatedAt = refreshed.generatedAt;
+          data.totalEvents = refreshed.totalEvents;
+          data.lookbackDays = refreshed.lookbackDays;
+          data.events = refreshed.events || [];
+          updateMeta(data);
+          renderExplainedEvents(document.getElementById("events-list"), data);
+        }
+      }, EVENT_REFRESH_MS);
+    }
   }
 
   document.addEventListener("DOMContentLoaded", init);
