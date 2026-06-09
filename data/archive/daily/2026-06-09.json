@@ -1,16 +1,16 @@
 {
   "date": "2026-06-09",
-  "generatedAt": "2026-06-09T00:01:02.755Z",
+  "generatedAt": "2026-06-09T09:01:01.621Z",
   "totals": {
     "sources": 20,
-    "healthySources": 10,
-    "rawItems": 39,
-    "normalizedItems": 39,
-    "filteredItems": 37,
-    "dedupedItems": 37,
-    "scoredItems": 37,
-    "enrichmentAttempted": 32,
-    "enrichmentFailed": 1
+    "healthySources": 9,
+    "rawItems": 60,
+    "normalizedItems": 60,
+    "filteredItems": 57,
+    "dedupedItems": 57,
+    "scoredItems": 57,
+    "enrichmentAttempted": 53,
+    "enrichmentFailed": 9
   },
   "sourceHealth": [
     {
@@ -22,11 +22,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "lastSuccessAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
+      "lastSuccessAt": "2026-06-09T09:00:26.310Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -38,11 +38,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "lastSuccessAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
+      "lastSuccessAt": "2026-06-09T09:00:26.310Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -54,11 +54,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "lastSuccessAt": "2026-06-07T09:00:26.928Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
+      "lastSuccessAt": "2026-06-06T00:00:19.959Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -70,11 +70,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -86,11 +86,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -102,11 +102,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
       "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -118,11 +118,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
       "lastSuccessAt": "2026-06-04T09:00:49.633Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -134,11 +134,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "lastSuccessAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
+      "lastSuccessAt": "2026-06-09T09:00:26.310Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -150,28 +150,28 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
       "id": "nasa-breaking-news",
       "name": "NASA Breaking News",
       "category": "news",
-      "status": "healthy",
-      "itemCount": 4,
-      "responseStatus": 200,
-      "attempts": 1,
+      "status": "failed",
+      "itemCount": 0,
+      "responseStatus": 429,
+      "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "lastSuccessAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
+      "lastSuccessAt": "2026-06-06T00:00:19.959Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
+      "failureCount": 1
     },
     {
       "id": "un-news",
@@ -182,11 +182,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "lastSuccessAt": "2026-06-09T00:00:27.444Z",
+      "lastCheckedAt": "2026-06-09T09:00:26.310Z",
+      "lastSuccessAt": "2026-06-09T09:00:26.310Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:27.444Z",
-      "cacheExpiresAt": "2026-06-11T00:00:27.444Z",
+      "cacheStartedAt": "2026-06-09T09:00:26.310Z",
+      "cacheExpiresAt": "2026-06-11T09:00:26.310Z",
       "failureCount": 0
     },
     {
@@ -201,11 +201,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     },
     {
@@ -215,17 +215,17 @@
       "sourceType": "webpage",
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
-      "status": "healthy",
-      "itemCount": 2,
-      "responseStatus": 200,
+      "status": "failed",
+      "itemCount": 0,
+      "responseStatus": null,
       "attempts": 2,
-      "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
-      "lastSuccessAt": "2026-06-09T00:00:36.305Z",
+      "error": "fetch failed",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
+      "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
+      "failureCount": 1
     },
     {
       "id": "csrc-news",
@@ -239,50 +239,50 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     },
     {
-      "id": "sse-news",
-      "name": "上海证券交易所要闻",
+      "id": "yicai-finance",
+      "name": "第一财经",
       "category": "finance",
       "sourceType": "webpage",
-      "sourceAuthority": "official-market",
-      "timelinessTier": "daily",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 1,
+      "itemCount": 10,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
-      "lastSuccessAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
+      "lastSuccessAt": "2026-06-09T09:00:36.376Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     },
     {
-      "id": "szse-news",
-      "name": "深圳证券交易所要闻",
+      "id": "nbd-finance",
+      "name": "每日经济新闻",
       "category": "finance",
       "sourceType": "webpage",
-      "sourceAuthority": "official-market",
-      "timelinessTier": "daily",
-      "status": "failed",
-      "itemCount": 0,
-      "responseStatus": null,
-      "attempts": 2,
-      "error": "fetch failed",
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
-      "lastSuccessAt": null,
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "status": "healthy",
+      "itemCount": 10,
+      "responseStatus": 200,
+      "attempts": 1,
+      "error": null,
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
+      "lastSuccessAt": "2026-06-09T09:00:36.376Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
-      "failureCount": 1
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
+      "failureCount": 0
     },
     {
       "id": "ndrc-news",
@@ -296,11 +296,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
-      "lastSuccessAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
+      "lastSuccessAt": "2026-06-09T09:00:36.376Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     },
     {
@@ -311,15 +311,15 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "daily",
       "status": "healthy",
-      "itemCount": 1,
+      "itemCount": 3,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
-      "lastSuccessAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
+      "lastSuccessAt": "2026-06-09T09:00:36.376Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     },
     {
@@ -332,13 +332,13 @@
       "status": "empty",
       "itemCount": 0,
       "responseStatus": 200,
-      "attempts": 2,
+      "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     },
     {
@@ -353,316 +353,108 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-09T00:00:36.305Z",
-      "lastSuccessAt": "2026-06-09T00:00:36.305Z",
+      "lastCheckedAt": "2026-06-09T09:00:36.376Z",
+      "lastSuccessAt": "2026-06-09T09:00:36.376Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-09T00:00:36.305Z",
-      "cacheExpiresAt": "2026-06-11T00:00:36.305Z",
+      "cacheStartedAt": "2026-06-09T09:00:36.376Z",
+      "cacheExpiresAt": "2026-06-11T09:00:36.376Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 37
+    "availableItems": 57
   },
   "items": [
     {
-      "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
-      "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
-      "source": "U.S. SEC Press Releases",
-      "sourceType": "rss",
-      "category": "finance",
-      "publishedAt": "2026-06-08T14:36:00.000Z",
-      "summary": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
-      "contentExcerpt": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
-      "sourceLanguage": "en",
-      "score": 100,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "AI",
-        "市场监管",
-        "SEC",
-        "Establishes",
-        "Joint",
-        "Data",
-        "Standards",
-        "Required"
-      ],
-      "impactAreas": [
-        "AI",
-        "市场监管",
-        "SEC",
-        "Establishes"
-      ]
-    },
-    {
-      "id": "international-un-news-f2241a8d62",
-      "title": "Why sustainable alternatives to plastic are struggling to compete",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167670",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "summary": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
-      "contentExcerpt": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.",
-      "sourceLanguage": "en",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/28-05-2025-Doumeizel-seaweed-04.jpg/image770x420cropped.jpg",
-      "score": 100,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "AI",
-        "regulation",
-        "tariff",
-        "AI政策",
-        "地缘政治",
-        "Why",
-        "sustainable",
-        "alternatives"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-item-3f5399639e",
-      "title": "推动境内外资本市场互学互鉴 “2026年交易所国际培训班暨欧亚资本市场交流活动”成功举办",
-      "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260608_10821075.shtml",
-      "source": "上海证券交易所要闻",
-      "sourceType": "webpage",
-      "category": "international",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "上海证券交易所新闻、规则、市场服务和上市公司相关动态",
-      "contentExcerpt": "上海证券交易所新闻、规则、市场服务和上市公司相关动态",
-      "sourceLanguage": "zh",
-      "score": 100,
-      "duplicateCount": 0,
-      "tags": [
-        "official-market",
-        "daily"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "市场监管",
-        "推动境内外资本市场互学互",
-        "年交易所国际培训班暨欧亚",
-        "资本市场交流活动",
-        "成功举办",
-        "上海证券交易所新闻"
-      ],
-      "impactAreas": [
-        "国际",
-        "商业"
-      ]
-    },
-    {
-      "id": "international-un-news-891e51e688",
-      "title": "Security Council LIVE: UN officials warn humanitarian toll in Ukraine is worsening",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167674",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "summary": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
-      "contentExcerpt": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
-      "sourceLanguage": "en",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/15-12-2025-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
-      "score": 99,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "AI",
-        "security",
-        "地缘政治",
-        "市场监管",
-        "Council",
-        "LIVE",
-        "officials",
-        "warn"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-9f25381f5b",
-      "title": "Children are dying as US sanctions push Cuba to the brink, warns UN human rights chief",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167671",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "summary": "Children are dying because doctors cannot access essential medicines, UN human rights chief&nbsp;Volker Türk&nbsp;said in a&nbsp;stark warning&nbsp;on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
-      "contentExcerpt": "Children are dying because doctors cannot access essential medicines, UN human rights chief Volker Türk said in a stark warning on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
-      "sourceLanguage": "en",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/21-01-2026-UN-Cuba-01.jpg/image770x420cropped.jpg",
-      "score": 99,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "AI",
-        "sanction",
-        "地缘政治",
-        "Children",
-        "are",
-        "dying",
-        "sanctions",
-        "push"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-e3b0ae800c",
-      "title": "From firefights to football matches: Life on a UN peacekeeping frontline",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167666",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "summary": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-      "contentExcerpt": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-      "sourceLanguage": "en",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-MINUSCA-CAR-09.jpg/image770x420cropped.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "AI",
-        "election",
-        "地缘政治",
-        "firefights",
-        "football",
-        "matches",
-        "Life",
-        "peacekeeping"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-nasa-breaking-news-3020f927bb",
-      "title": "How NASA Science and Artemis Are Shaping the 2026 FIFA World Cup",
-      "url": "https://www.nasa.gov/centers-and-facilities/johnson/how-nasa-science-and-artemis-are-shaping-the-2026-fifa-world-cup",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-08T19:36:08.000Z",
-      "summary": "As&#160;the FIFA World Cup&#160;approaches, NASA is bringing&#160;space science and&#160;engineering&#160;to soccer fans&#160;worldwide.&#160;From&#160;June 11&#160;to July 19,&#160;2026,&#160;NASA will&#160;host an&#160;exhibit&#160;at FIFA Fan Festival™&#160;Houston where visitors can learn how research aboard the International Space Station benefits life on Earth&#160;and&#160;experience missions in low Earth orbit, the Moon,&#160;and&#160;beyond&#160;through the Artemis program.&#160; On...",
-      "contentExcerpt": "Johnson Space Center Office of Communications As the FIFA World Cup approaches, NASA is bringing space science and engineering to soccer fans worldwide. From June 11 to July 19, 2026, NASA will host an exhibit at FIFA Fan Festival™ Houston where visitors can learn how research aboard the International Space Station benefits life on Earth and experience missions in low Earth orbit, the Moon, and beyond through the Artemis program. On June 11, as the FIFA World Cup begins, NASA’s exhibit at Fan...",
-      "sourceLanguage": "en",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/iss074e0361795.jpg",
-      "score": 87,
-      "duplicateCount": 0,
-      "tags": [
-        "Johnson Space Center",
-        "International Space Station (ISS)"
-      ],
-      "keywords": [
-        "Johnson Space Center",
-        "How",
-        "NASA",
-        "Science",
-        "and",
-        "Artemis",
-        "Are",
-        "Shaping"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-nasa-breaking-news-d4242b2fb0",
-      "title": "Digging Back in Time in the UAE",
-      "url": "https://science.nasa.gov/earth/earth-observatory/digging-back-in-time-in-the-uae",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-08T04:01:00.000Z",
-      "summary": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival.",
-      "contentExcerpt": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival. About an hour’s drive east of Dubai’s gleaming towers and artificial islands, a quieter, more natural landscape takes shape. At the far northern edge of the Rub’ al Khali, a saffron-colored sand sea laps against the Al-Hajar Mountains. A series of pale ridges rises finlike from the desert plain, with the largest—Jabal al Fāyah—standing 412 m...",
-      "sourceLanguage": "en",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/digging-back-in-time-in-the-uae/fayapaleo_oli_20251023_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 85,
-      "duplicateCount": 0,
-      "tags": [],
-      "keywords": [
-        "Digging",
-        "Back",
-        "Time",
-        "the",
-        "UAE",
-        "Once",
-        "below",
-        "shallow"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "macro-item-b0b607987f",
-      "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
-      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
-      "source": "中国人民银行新闻发布",
+      "id": "macro-item-e0e1a876aa",
+      "title": "廖岷与巴西财政部副部长阿伦卡斯特罗共同主持中巴（西）财金分委会第十二次会议",
+      "title_original": "廖岷与巴西财政部副部长阿伦卡斯特罗共同主持中巴（西）财金分委会第十二次会议",
+      "title_zh": "廖岷与巴西财政部副部长阿伦卡斯特罗共同主持中巴（西）财金分委会第十二次会议",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991371.htm",
+      "source": "财政部财政新闻",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "contentExcerpt": "中国人民银行行长潘功胜会见香港银行公会代表团。2026年6月8日。中国人民银行行长潘功胜会见由香港金融管理局总裁余伟文率领的香港银行公会代表团。双方就当前宏观经济形势、深化内地与香港金融市场互联互通合作、加强香港离岸人民币市场建设、巩固提升香港国际金融中心地位等议题进行了交流。中国人民银行副行长邹澜参加会见。",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "score": 100,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
-        "hourly"
+        "daily"
+      ],
+      "article_keywords": [
+        "AI",
+        "宏观",
+        "公共政策",
+        "廖岷与巴西财政部副部长阿",
+        "伦卡斯特罗共同主持中巴",
+        "财金分委会第十二次会议",
+        "财政部财政政策",
+        "国债"
       ],
       "keywords": [
-        "央行",
-        "中国人民银行行长潘功胜会",
-        "见香港银行公会代表团",
-        "中国人民银行新闻发布",
-        "货币政策和金融市场运行信",
-        "见由香港金融管理局总裁余",
-        "伟文率领的香港银行公会代",
-        "表团"
+        "AI",
+        "宏观",
+        "公共政策",
+        "廖岷与巴西财政部副部长阿",
+        "伦卡斯特罗共同主持中巴",
+        "财金分委会第十二次会议",
+        "财政部财政政策",
+        "国债"
       ],
       "impactAreas": [
         "宏观"
       ]
     },
     {
-      "id": "macro-item-89eb80cf01",
-      "title": "中老两国央行续签相关合作文件",
-      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
-      "source": "中国人民银行新闻发布",
+      "id": "macro-item-ed071e25dc",
+      "title": "财政部将于6月在香港发行150亿元人民币国债",
+      "title_original": "财政部将于6月在香港发行150亿元人民币国债",
+      "title_zh": "财政部将于6月在香港发行150亿元人民币国债",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm",
+      "source": "财政部财政新闻",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "contentExcerpt": "中老两国央行续签相关合作文件。在老挝人民革命党总书记、国家主席通伦访华期间。中国人民银行与老挝人民民主共和国银行续签了《中国人民银行与老挝人民民主共和国银行人民币/老挝基普双边本币互换协议》。同时。两国央行还续签了《中国人民银行与老挝人民民主共和国银行关于加强金融创新、数字支付和法定数字货币合作的谅解备忘录》。上述合作文件的签署将有助于促进中老双边金融合作。深化两国经贸关系。",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
+      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "score": 100,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
-        "hourly"
+        "daily"
+      ],
+      "article_keywords": [
+        "AI",
+        "宏观",
+        "公共政策",
+        "财政部将于",
+        "月在香港发行",
+        "亿元人民币国债",
+        "财政部财政政策",
+        "国债"
       ],
       "keywords": [
-        "央行",
-        "中老两国央行续签相关合作",
-        "文件",
-        "中国人民银行新闻发布",
-        "货币政策和金融市场运行信",
-        "在老挝人民革命党总书记",
-        "国家主席通伦访华期间",
-        "中国人民银行与老挝人民民"
+        "AI",
+        "宏观",
+        "公共政策",
+        "财政部将于",
+        "月在香港发行",
+        "亿元人民币国债",
+        "财政部财政政策",
+        "国债"
       ],
       "impactAreas": [
         "宏观"
@@ -671,19 +463,34 @@
     {
       "id": "macro-item-25770d4c4c",
       "title": "国家发展改革委与老挝有关部门签署合作文件",
+      "title_original": "国家发展改革委与老挝有关部门签署合作文件",
+      "title_zh": "国家发展改革委与老挝有关部门签署合作文件",
       "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260608_1405748.html",
       "source": "国家发展改革委新闻发布",
       "sourceType": "webpage",
       "category": "macro",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "summary_original": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+      "summary_zh": "国家发展改革委宏观政策、价格、产业和经济运行信息",
       "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "score": 100,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "daily"
+      ],
+      "article_keywords": [
+        "AI",
+        "宏观",
+        "国家发展改革委与老挝有关",
+        "部门签署合作文件",
+        "国家发展改革委宏观政策",
+        "价格",
+        "产业和经济运行信息"
       ],
       "keywords": [
         "AI",
@@ -701,22 +508,39 @@
     {
       "id": "macro-item-341501ee15",
       "title": "廖岷会见英中贸易协会主席吴思田",
+      "title_original": "廖岷会见英中贸易协会主席吴思田",
+      "title_zh": "廖岷会见英中贸易协会主席吴思田",
       "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
       "source": "财政部财政新闻",
       "sourceType": "webpage",
       "category": "macro",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
+      "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
       "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "score": 100,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "daily"
       ],
+      "article_keywords": [
+        "AI",
+        "宏观",
+        "公共政策",
+        "廖岷会见英中贸易协会主席",
+        "吴思田",
+        "财政部财政政策",
+        "国债",
+        "预算和财政运行新闻"
+      ],
       "keywords": [
         "AI",
+        "宏观",
         "公共政策",
         "廖岷会见英中贸易协会主席",
         "吴思田",
@@ -729,20 +553,892 @@
       ]
     },
     {
+      "id": "macro-item-b0b607987f",
+      "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
+      "title_original": "中国人民银行行长潘功胜会见香港银行公会代表团",
+      "title_zh": "中国人民银行行长潘功胜会见香港银行公会代表团",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "summary_original": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "summary_zh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "contentExcerpt": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 99,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "央行",
+        "中国人民银行行长潘功胜会",
+        "见香港银行公会代表团",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ],
+      "keywords": [
+        "宏观",
+        "央行",
+        "中国人民银行行长潘功胜会",
+        "见香港银行公会代表团",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-89eb80cf01",
+      "title": "中老两国央行续签相关合作文件",
+      "title_original": "中老两国央行续签相关合作文件",
+      "title_zh": "中老两国央行续签相关合作文件",
+      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
+      "source": "中国人民银行新闻发布",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-08T00:00:00.000Z",
+      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "summary_original": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "summary_zh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "contentExcerpt": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 99,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "央行",
+        "中老两国央行续签相关合作",
+        "文件",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ],
+      "keywords": [
+        "宏观",
+        "央行",
+        "中老两国央行续签相关合作",
+        "文件",
+        "中国人民银行新闻发布",
+        "货币政策和金融市场运行信"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-424127515a",
+      "title": "5月汽车销量前十已无燃油车",
+      "title_original": "5月汽车销量前十已无燃油车",
+      "title_zh": "5月汽车销量前十已无燃油车",
+      "url": "https://www.yicai.com/news/103221115.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "燃油车正在被加速挤出主流消费人群的视野。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "商业",
+        "月汽车销量前十已无燃油车",
+        "第一财经中文财经",
+        "产业和市场新闻",
+        "燃油车正在被加速挤出主流",
+        "消费人群的视野"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "商业",
+        "月汽车销量前十已无燃油车",
+        "第一财经中文财经",
+        "产业和市场新闻",
+        "燃油车正在被加速挤出主流",
+        "消费人群的视野"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-f95db0e40e",
+      "title": "在永州，寻找低线城市高质量发展的密码",
+      "title_original": "在永州，寻找低线城市高质量发展的密码",
+      "title_zh": "在永州，寻找低线城市高质量发展的密码",
+      "url": "https://www.yicai.com/news/103221036.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "在永州",
+        "寻找低线城市高质量发展的",
+        "密码",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "在永州",
+        "寻找低线城市高质量发展的",
+        "密码",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-81ef9a874f",
+      "title": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+      "title_original": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+      "title_zh": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+      "url": "https://www.yicai.com/news/103220407.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "金价高位回撤，积存金投资者悲喜不相通。有人“追高被套”后忍痛清仓，有人浮盈转亏仍逆势加仓。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "金价高位回撤",
+        "追高被套",
+        "到逆势加仓",
+        "积存金投资者分化明显",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "金价高位回撤",
+        "追高被套",
+        "到逆势加仓",
+        "积存金投资者分化明显",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-26e62835c5",
+      "title": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+      "title_original": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+      "title_zh": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+      "url": "https://www.yicai.com/news/103218925.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "在公路上奔驰的每一辆车，都在为一个即将到来的税费制度改革拐点投票。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "道路养护资金已陷困境",
+        "缺口高达",
+        "油电不同权",
+        "急需破局",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "道路养护资金已陷困境",
+        "缺口高达",
+        "油电不同权",
+        "急需破局",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-48b3ef19e3",
+      "title": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+      "title_original": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+      "title_zh": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+      "url": "https://www.yicai.com/news/103219174.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "黄仁勋表示，存储的供应短缺没有结束，这种状况还将持续数年。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "AI芯片",
+        "黄仁勋警告存储供应短缺将",
+        "持续数年",
+        "英伟达与",
+        "海力士达成合作",
+        "第一财经中文财经"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "AI芯片",
+        "黄仁勋警告存储供应短缺将",
+        "持续数年",
+        "英伟达与",
+        "海力士达成合作",
+        "第一财经中文财经"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-2e8e01b593",
+      "title": "关于开设“涉企侵权投诉举报专区”的公告",
+      "title_original": "关于开设“涉企侵权投诉举报专区”的公告",
+      "title_zh": "关于开设“涉企侵权投诉举报专区”的公告",
+      "url": "https://www.yicai.com/news/102062384.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "关于开设",
+        "涉企侵权投诉举报专区",
+        "的公告",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "关于开设",
+        "涉企侵权投诉举报专区",
+        "的公告",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-2e923618c4",
+      "title": "第一财经网络举报受理和处置规则",
+      "title_original": "第一财经网络举报受理和处置规则",
+      "title_zh": "第一财经网络举报受理和处置规则",
+      "url": "https://www.yicai.com/news/102944648.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "第一财经网络举报受理和处",
+        "置规则",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "第一财经网络举报受理和处",
+        "置规则",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-0562977267",
+      "title": "普洛斯算力中心引入浙江国资战略股东",
+      "title_original": "普洛斯算力中心引入浙江国资战略股东",
+      "title_zh": "普洛斯算力中心引入浙江国资战略股东",
+      "url": "https://www.yicai.com/news/102794012.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经官方网站，7X24小时提供股市行情、经济大势、金融政策、行业动态、专家分析等财经资讯；全网独家直播谈股论金、今日股市、公司与行业、解码财商、头脑风暴等第一财经电视节目。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "AI芯片",
+        "商业",
+        "X24",
+        "普洛斯算力中心引入浙江国",
+        "资战略股东",
+        "第一财经中文财经"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "AI芯片",
+        "商业",
+        "X24",
+        "普洛斯算力中心引入浙江国",
+        "资战略股东",
+        "第一财经中文财经"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-ef74c162dd",
+      "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
+      "title_original": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
+      "title_zh": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
+      "url": "https://www.yicai.com/news/102464166.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-09T09:00:36.376Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经官方网站，7X24小时提供股市行情、经济大势、金融政策、行业动态、专家分析等财经资讯；全网独家直播谈股论金、今日股市、公司与行业、解码财商、头脑风暴等第一财经电视节目。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "商业",
+        "X24",
+        "泰国总理佩通坦",
+        "钦那瓦一行参访华彬集团",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "商业",
+        "X24",
+        "泰国总理佩通坦",
+        "钦那瓦一行参访华彬集团",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "news-item-86c1890bfa",
+      "title": "习近平结束对朝鲜国事访问回到北京",
+      "title_original": "习近平结束对朝鲜国事访问回到北京",
+      "title_zh": "习近平结束对朝鲜国事访问回到北京",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071621.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月9日下午，中共中央总书记、国家主席习近平在圆满结束对朝鲜国事访问后回到北京。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平结束对朝鲜国事访问",
+        "回到北京",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日下午",
+        "中共中央总书记"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平结束对朝鲜国事访问",
+        "回到北京",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "日下午",
+        "中共中央总书记"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平结束对朝鲜国事访问",
+        "回到北京",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-2b9a315e88",
+      "title": "习近平出席金正恩举行的欢送仪式",
+      "title_original": "习近平出席金正恩举行的欢送仪式",
+      "title_zh": "习近平出席金正恩举行的欢送仪式",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071619.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "当地时间6月9日下午，中共中央总书记、国家主席习近平结束对朝鲜的国事访问离开平壤。朝鲜劳动党总书记、国务委员长金正恩和夫人李雪主到机场送行，为习近平和夫人彭丽媛举行隆重的欢送仪式。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平出席金正恩举行的欢",
+        "送仪式",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日下午"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平出席金正恩举行的欢",
+        "送仪式",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日下午"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平出席金正恩举行的欢",
+        "送仪式",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-7e02ca2ba2",
+      "title": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "title_original": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "title_zh": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071615.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "当地时间6月9日，中共中央总书记、国家主席习近平和夫人彭丽媛在平壤锦绣山迎宾馆出席朝鲜劳动党总书记、国务委员长金正恩和夫人李雪主举行的小范围午宴。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平夫妇出席金正恩夫妇",
+        "举行的小范围午宴",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "中共中央总书记"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平夫妇出席金正恩夫妇",
+        "举行的小范围午宴",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "中共中央总书记"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平夫妇出席金正恩夫妇",
+        "举行的小范围午宴",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-c60527d760",
+      "title": "习近平同格鲁吉亚总统卡韦拉什维利就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+      "title_original": "习近平同格鲁吉亚总统卡韦拉什维利就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+      "title_zh": "习近平同格鲁吉亚总统卡韦拉什维利就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071578.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月9日，国家主席习近平同格鲁吉亚总统卡韦拉什维利互致贺电，庆祝两国建交34周年。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平同格鲁吉亚总统卡韦",
+        "拉什维利就中格建交",
+        "周年互致贺电并共同宣布将",
+        "双边关系提升为全面战略伙",
+        "伴关系",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平同格鲁吉亚总统卡韦",
+        "拉什维利就中格建交",
+        "周年互致贺电并共同宣布将",
+        "双边关系提升为全面战略伙",
+        "伴关系",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平同格鲁吉亚总统卡韦",
+        "拉什维利就中格建交",
+        "周年互致贺电并共同宣布将"
+      ]
+    },
+    {
+      "id": "news-item-43e40616be",
+      "title": "习近平参访朝鲜劳动党中央干部学校",
+      "title_original": "习近平参访朝鲜劳动党中央干部学校",
+      "title_zh": "习近平参访朝鲜劳动党中央干部学校",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071564.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "当地时间6月9日上午，中共中央总书记、国家主席习近平在朝鲜劳动党总书记、国务委员长金正恩陪同下，参访位于平壤的朝鲜劳动党中央干部学校。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平参访朝鲜劳动党中央",
+        "干部学校",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日上午"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平参访朝鲜劳动党中央",
+        "干部学校",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日上午"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平参访朝鲜劳动党中央",
+        "干部学校",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-8c526702db",
+      "title": "习近平和彭丽媛参谒中朝友谊塔",
+      "title_original": "习近平和彭丽媛参谒中朝友谊塔",
+      "title_zh": "习近平和彭丽媛参谒中朝友谊塔",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071562.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "当地时间6月9日上午，正在朝鲜进行国事访问的中共中央总书记、国家主席习近平和夫人彭丽媛参谒中朝友谊塔。朝鲜劳动党总书记、国务委员长金正恩和夫人李雪主陪同。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平和彭丽媛参谒中朝友",
+        "谊塔",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日上午"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平和彭丽媛参谒中朝友",
+        "谊塔",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日上午"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平和彭丽媛参谒中朝友",
+        "谊塔",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-54287ab726",
+      "title": "习近平向加拿大新任总督路易丝·阿伯致贺电",
+      "title_original": "习近平向加拿大新任总督路易丝·阿伯致贺电",
+      "title_zh": "习近平向加拿大新任总督路易丝·阿伯致贺电",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071551.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日，国家主席习近平致电路易丝·阿伯，祝贺她就任加拿大第三十一任总督。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平向加拿大新任总督路",
+        "易丝",
+        "阿伯致贺电",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "国家主席习近平致电路易丝"
+      ],
+      "keywords": [
+        "公共政策",
+        "习近平向加拿大新任总督路",
+        "易丝",
+        "阿伯致贺电",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "国家主席习近平致电路易丝"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "习近平向加拿大新任总督路",
+        "易丝",
+        "阿伯致贺电"
+      ]
+    },
+    {
       "id": "news-un-news-bf4a4fdd26",
       "title": "Afghanistan faces ‘lost generation of talent and potential,’ Security Council hears",
+      "title_original": "Afghanistan faces ‘lost generation of talent and potential,’ Security Council hears",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167677",
       "source": "UN News",
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
       "summary": "As the Security Council met on Afghanistan, senior officials and civil society representatives delivered a clear warning Monday: despite relative security under the Taliban, worsening humanitarian conditions, restrictions on women and growing economic pressures are creating a fragile and uncertain future.&nbsp;",
+      "summary_original": "As the Security Council met on Afghanistan, senior officials and civil society representatives delivered a clear warning Monday: despite relative security under the Taliban, worsening humanitarian conditions, restrictions on women and growing economic pressures are creating a fragile and uncertain future.&nbsp;",
       "contentExcerpt": "As the Security Council met on Afghanistan, senior officials and civil society representatives delivered a clear warning Monday: despite relative security under the Taliban, worsening humanitarian conditions, restrictions on women and growing economic pressures are creating a fragile and uncertain future.",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/12-01-2023_UNICEF_Afghanistan.jpg/image770x420cropped.jpg",
-      "score": 98,
+      "score": 97,
       "duplicateCount": 0,
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "security",
+        "地缘政治",
+        "市场监管",
+        "Afghanistan",
+        "faces",
+        "lost",
+        "generation"
+      ],
       "keywords": [
         "AI",
         "security",
@@ -763,20 +1459,36 @@
     {
       "id": "news-item-c2178f894a",
       "title": "习近平和彭丽媛观看朝鲜专场文艺演出",
+      "title_original": "习近平和彭丽媛观看朝鲜专场文艺演出",
+      "title_zh": "习近平和彭丽媛观看朝鲜专场文艺演出",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071529.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "当地时间6月8日晚，中共中央总书记、国家主席习近平和夫人彭丽媛在朝鲜劳动党总书记、国务委员长金正恩和夫人李雪主陪同下，在平壤体育馆同朝鲜各界群众一道观看专场文艺演出。",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平和彭丽媛观看朝鲜专",
+        "场文艺演出",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日晚"
       ],
       "keywords": [
         "公共政策",
@@ -798,20 +1510,36 @@
     {
       "id": "news-item-a1f1c35bfb",
       "title": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
+      "title_original": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
+      "title_zh": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071528.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月8日，在赴平壤对朝鲜民主主义人民共和国进行国事访问之际，中共中央总书记、国家主席习近平在朝鲜《劳动新闻》发表题为《继往开来、砥砺同行 续写中朝传统友谊崭新篇章》的署名文章。",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "让中朝传统友谊焕发更加璀",
+        "璨的时代光辉",
+        "习近平总书记署名文章为中",
+        "朝关系不断迈向新高度提供",
+        "指引",
+        "中国政府网要闻列表",
+        "覆盖国务院"
       ],
       "keywords": [
         "公共政策",
@@ -833,20 +1561,36 @@
     {
       "id": "news-item-088f917fe2",
       "title": "我国海洋生态状况稳中向好",
+      "title_original": "我国海洋生态状况稳中向好",
+      "title_zh": "我国海洋生态状况稳中向好",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071522.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "自然资源部今天发布的《中国海洋生态预警监测公报》显示，2025年，我国珊瑚礁、海草床、红树林、海岛生态系统状况以优良为主。",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "我国海洋生态状况稳中向好",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "自然资源部今天发布的",
+        "中国海洋生态预警监测公报",
+        "显示"
       ],
       "keywords": [
         "公共政策",
@@ -868,20 +1612,36 @@
     {
       "id": "news-item-36513d63d7",
       "title": "“十五五”现代化应急体系有了“建设指南”",
+      "title_original": "“十五五”现代化应急体系有了“建设指南”",
+      "title_zh": "“十五五”现代化应急体系有了“建设指南”",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071514.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "应急管理关乎人民群众生命财产安全，关乎改革发展稳定大局。国务院日前印发《现代化应急体系建设“十五五”规划》，对“十五五”时期安全生产、防灾减灾救灾等工作作出部署。",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "AI政策",
+        "公共政策",
+        "十五五",
+        "现代化应急体系有了",
+        "建设指南",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
       ],
       "keywords": [
         "AI政策",
@@ -903,20 +1663,36 @@
     {
       "id": "news-item-481779502f",
       "title": "习近平出席金正恩举行的欢迎宴会",
+      "title_original": "习近平出席金正恩举行的欢迎宴会",
+      "title_zh": "习近平出席金正恩举行的欢迎宴会",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071505.htm",
       "source": "中国政府网要闻",
       "sourceType": "webpage",
       "category": "news",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "当地时间6月8日晚，中共中央总书记、国家主席习近平和夫人彭丽媛在平壤木兰馆出席朝鲜劳动党总书记、国务委员长金正恩举行的欢迎宴会。",
       "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
         "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "习近平出席金正恩举行的欢",
+        "迎宴会",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "当地时间",
+        "日晚"
       ],
       "keywords": [
         "公共政策",
@@ -936,328 +1712,34 @@
       ]
     },
     {
-      "id": "news-item-7bf0ca4545",
-      "title": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071504.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月8日，我国“十五五”期间开工建设的首个国家重大标志性工程——三峡水运新通道破土动工，有利于提升长江黄金水道通航能力。",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "十五五",
-        "首个国家重大工程开工",
-        "三峡枢纽将迎新通道",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "我国"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "十五五",
-        "首个国家重大工程开工",
-        "三峡枢纽将迎新通道"
-      ]
-    },
-    {
-      "id": "news-item-fc3b306816",
-      "title": "【视频】习近平在朝鲜媒体发表署名文章",
-      "url": "https://tv.cctv.com/2026/06/08/VIDENVElayHpBe7r8jdln6uu260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平在朝鲜媒体发表署名",
-        "文章",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平在朝鲜媒体发表署名",
-        "文章"
-      ]
-    },
-    {
-      "id": "news-item-44c7824245",
-      "title": "【视频】习近平同金正恩举行会谈",
-      "url": "https://tv.cctv.com/2026/06/08/VIDE1PCryEXC67mzAWtN7Z4A260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平同金正恩举行会谈",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平同金正恩举行会谈",
-        "中国政府网要闻列表"
-      ]
-    },
-    {
-      "id": "news-item-ae5535e570",
-      "title": "【视频】习近平出席金正恩举行的欢迎仪式",
-      "url": "https://tv.cctv.com/2026/06/08/VIDEERWuxUKOoThkpAYbMqIA260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "迎仪式",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "迎仪式"
-      ]
-    },
-    {
-      "id": "news-item-26c6dedb7b",
-      "title": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
-      "url": "https://tv.cctv.com/2026/06/08/VIDEhpj4Z4APgEqA8ttWGr1i260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "[视频]习近平抵达平壤开始对朝鲜进行国事访问",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平抵达平壤开始对朝鲜",
-        "进行国事访问",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平抵达平壤开始对朝鲜",
-        "进行国事访问"
-      ]
-    },
-    {
-      "id": "news-item-83ef928bf5",
-      "title": "【视频】习近平离京对朝鲜进行国事访问",
-      "url": "https://tv.cctv.com/2026/06/08/VIDECC0jmvGvWVMlkxnawjpd260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平离京对朝鲜进行国事",
-        "访问",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平离京对朝鲜进行国事",
-        "访问"
-      ]
-    },
-    {
-      "id": "news-item-aa7fc56efa",
-      "title": "【视频】丁薛祥出席三峡水运新通道工程开工仪式",
-      "url": "https://tv.cctv.com/2026/06/08/VIDEsjsYU1Vb4nU4RfDlIfCG260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "[视频]丁薛祥出席三峡水运新通道工程开工仪式",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "丁薛祥出席三峡水运新通道",
-        "工程开工仪式",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "丁薛祥出席三峡水运新通道",
-        "工程开工仪式"
-      ]
-    },
-    {
-      "id": "news-item-aa16dceb84",
-      "title": "丁薛祥出席三峡水运新通道工程开工仪式",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071474.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "三峡水运新通道工程开工仪式8日上午在湖北省宜昌市举行。中共中央政治局常委、国务院副总理丁薛祥出席开工仪式，并宣布工程正式开工。",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "公共政策",
-        "丁薛祥出席三峡水运新通道",
-        "工程开工仪式",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "三峡水运新通道工程开工仪",
-        "日上午在湖北省宜昌市举行"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "丁薛祥出席三峡水运新通道",
-        "工程开工仪式",
-        "中国政府网要闻列表"
-      ]
-    },
-    {
-      "id": "news-item-ddbcaa1f53",
-      "title": "国务院印发《现代化应急体系建设“十五五”规划》",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071459.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "国务院日前印发《现代化应急体系建设“十五五”规划》（以下简称《规划》），对“十五五”时期安全生产、防灾减灾救灾等工作作出部署。",
-      "sourceLanguage": "zh",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "keywords": [
-        "AI政策",
-        "公共政策",
-        "国务院印发",
-        "现代化应急体系建设",
-        "十五五",
-        "规划",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "impactAreas": [
-        "AI政策",
-        "公共政策",
-        "国务院印发",
-        "现代化应急体系建设"
-      ]
-    },
-    {
       "id": "news-un-news-5306e2817a",
       "title": "‘Rare, untreatable strain’: Ebola toll mounts in eastern DR Congo",
+      "title_original": "‘Rare, untreatable strain’: Ebola toll mounts in eastern DR Congo",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167678",
       "source": "UN News",
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
       "summary": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country&#039;s Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
+      "summary_original": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country&#039;s Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
       "contentExcerpt": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country's Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/08-06-2026-WHO-DR-Congo-ebola.jpg/image770x420cropped.jpg",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "Rare",
+        "untreatable",
+        "strain",
+        "Ebola",
+        "toll",
+        "mounts",
+        "eastern"
+      ],
       "keywords": [
         "AI",
         "Rare",
@@ -1278,18 +1760,32 @@
     {
       "id": "news-un-news-d7d4550ce0",
       "title": "Humanity’s future depends on protecting the rapidly changing ocean",
+      "title_original": "Humanity’s future depends on protecting the rapidly changing ocean",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167654",
       "source": "UN News",
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-07T12:00:00.000Z",
       "summary": "The ocean covers more than 70 per cent of the planet&nbsp;and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
+      "summary_original": "The ocean covers more than 70 per cent of the planet&nbsp;and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
       "contentExcerpt": "The ocean covers more than 70 per cent of the planet and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/13-05-2026-Ocean-Image-Bank-Polynesia.jpg/image770x420cropped.jpg",
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0,
       "tags": [],
+      "article_keywords": [
+        "AI",
+        "Humanity",
+        "future",
+        "depends",
+        "protecting",
+        "the",
+        "rapidly",
+        "changing"
+      ],
       "keywords": [
         "AI",
         "Humanity",
@@ -1310,20 +1806,34 @@
     {
       "id": "news-nasa-breaking-news-bc88dad91c",
       "title": "NASA’s INCUS Satellites Progress Toward Launch",
+      "title_original": "NASA’s INCUS Satellites Progress Toward Launch",
       "url": "https://science.nasa.gov/photojournal/nasas-incus-satellites-progress-toward-launch",
       "source": "NASA Breaking News",
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-08T15:22:07.000Z",
       "summary": "Description One of the three satellites that make up NASA’s INCUS (Investigation of Convective Updrafts) mission sits on a fixture at the facilities of Blue Canyon Technologies in Lafayette, Colorado. The satellite completed testing in preparation for launch in late May 2026. The mission will make the first space-based survey of the dynamics of tropical […]",
+      "summary_original": "Description One of the three satellites that make up NASA’s INCUS (Investigation of Convective Updrafts) mission sits on a fixture at the facilities of Blue Canyon Technologies in Lafayette, Colorado. The satellite completed testing in preparation for launch in late May 2026. The mission will make the first space-based survey of the dynamics of tropical […]",
       "contentExcerpt": "One of the three satellites that make up NASA’s INCUS (Investigation of Convective Updrafts) mission sits on a fixture at the facilities of Blue Canyon Technologies in Lafayette, Colorado. The satellite completed testing in preparation for launch in late May 2026. The mission will make the first space-based survey of the dynamics of tropical convective storms. The three nearly identical satellites will fly in tight coordination in low Earth orbit, with the first and second satellites separate...",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26614/PIA26614.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 86,
+      "score": 84,
       "duplicateCount": 0,
       "tags": [
         "Investigation of Convective Updrafts (INCUS)",
         "Photojournal"
+      ],
+      "article_keywords": [
+        "Photojournal",
+        "地缘政治",
+        "市场监管",
+        "NASA",
+        "INCUS",
+        "Satellites",
+        "Progress",
+        "Toward"
       ],
       "keywords": [
         "Photojournal",
@@ -1345,18 +1855,32 @@
     {
       "id": "news-un-news-14c5aafd21",
       "title": "Countries urged to ‘go further, faster’ and deliver on climate commitments",
+      "title_original": "Countries urged to ‘go further, faster’ and deliver on climate commitments",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167673",
       "source": "UN News",
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
       "summary": "The United Nations climate chief called on Monday for countries to step up action to implement existing commitments, warning that fossil fuel dependency is deepening economic instability and exposing vulnerable communities to worsening climate impacts.&nbsp;",
+      "summary_original": "The United Nations climate chief called on Monday for countries to step up action to implement existing commitments, warning that fossil fuel dependency is deepening economic instability and exposing vulnerable communities to worsening climate impacts.&nbsp;",
       "contentExcerpt": "The United Nations climate chief called on Monday for countries to step up action to implement existing commitments, warning that fossil fuel dependency is deepening economic instability and exposing vulnerable communities to worsening climate impacts.",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/23-04-2026-UNDP-Bolivia.jpg/image770x420cropped.jpg",
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0,
       "tags": [],
+      "article_keywords": [
+        "地缘政治",
+        "Countries",
+        "urged",
+        "further",
+        "faster",
+        "and",
+        "deliver",
+        "climate"
+      ],
       "keywords": [
         "地缘政治",
         "Countries",
@@ -1377,18 +1901,32 @@
     {
       "id": "news-un-news-41529f05c8",
       "title": "More than half of staff who died in service worked in Gaza, UN chief says at memorial",
+      "title_original": "More than half of staff who died in service worked in Gaza, UN chief says at memorial",
       "url": "https://news.un.org/feed/view/en/story/2026/06/1167669",
       "source": "UN News",
       "sourceType": "rss",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
       "summary": "From peacekeepers to math teachers, 136 UN personnel who lost their lives in the line of duty in 2025 were commemorated on Monday morning in an annual service hosted by the Secretary-General.",
+      "summary_original": "From peacekeepers to math teachers, 136 UN personnel who lost their lives in the line of duty in 2025 were commemorated on Monday morning in an annual service hosted by the Secretary-General.",
       "contentExcerpt": "From peacekeepers to math teachers, 136 UN personnel who lost their lives in the line of duty in 2025 were commemorated on Monday morning in an annual service hosted by the Secretary-General.",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/06-04-2024_WHO_Hospital_Shia_Gaza.jpg/image770x420cropped.jpg",
-      "score": 84,
+      "score": 83,
       "duplicateCount": 0,
       "tags": [],
+      "article_keywords": [
+        "市场监管",
+        "than",
+        "half",
+        "staff",
+        "who",
+        "died",
+        "service",
+        "worked"
+      ],
       "keywords": [
         "市场监管",
         "than",
@@ -1407,30 +1945,185 @@
       ]
     },
     {
+      "id": "news-un-news-2a85f2f46a",
+      "title": "Deadly quake strikes Philippines on first day of school year",
+      "title_original": "Deadly quake strikes Philippines on first day of school year",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167672",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-08T12:00:00.000Z",
+      "summary": "A powerful earthquake struck the southern Philippine island of Mindanao on Monday morning just as millions of children were returning to school after the summer break.",
+      "summary_original": "A powerful earthquake struck the southern Philippine island of Mindanao on Monday morning just as millions of children were returning to school after the summer break.",
+      "contentExcerpt": "A powerful earthquake struck the southern Philippine island of Mindanao on Monday morning just as millions of children were returning to school after the summer break.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/08-06-2026-BFP12-Philippines.jpg/image770x420cropped.jpg",
+      "score": 83,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "Deadly",
+        "quake",
+        "strikes",
+        "Philippines",
+        "first",
+        "day",
+        "school",
+        "year"
+      ],
+      "keywords": [
+        "Deadly",
+        "quake",
+        "strikes",
+        "Philippines",
+        "first",
+        "day",
+        "school",
+        "year"
+      ],
+      "impactAreas": [
+        "Deadly",
+        "quake",
+        "strikes",
+        "Philippines"
+      ]
+    },
+    {
+      "id": "business-item-08b4faa46e",
+      "title": "5月高频数据折射消费活力迸发、产业向新向智",
+      "title_original": "5月高频数据折射消费活力迸发、产业向新向智",
+      "title_zh": "5月高频数据折射消费活力迸发、产业向新向智",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071592.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者9日从国家发展改革委国家信息中心了解到，5月份，线下消费支付金额同比增长2.4%，增速较上月提高0.7个百分点，消费市场活力迸发；人工智能、人形机器人等前沿领域资本投资金额同比增长约5倍，产业发展向新向智，新兴产业拔节生长。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "公共政策",
+        "月高频数据折射消费活力迸",
+        "产业向新向智",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者"
+      ],
+      "keywords": [
+        "商业",
+        "公共政策",
+        "月高频数据折射消费活力迸",
+        "产业向新向智",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-49cf0f1417",
+      "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
+      "title_original": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
+      "title_zh": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "北京时间6月9日凌晨1点，苹果CEO蒂姆·库克主持的WWDC 2026开幕。会上苹果展示了Siri AI和Apple Intelligence，其中Siri AI能理解个人情境，执行跨App任务，还被打造为独立应用。本届WWDC是苹果管理层交接之际的关键节点，市场关注其能否重获定义用户体验的能力。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "AI",
+        "商业",
+        "financial-media",
+        "消费电子",
+        "Siri",
+        "CEO",
+        "WWDC",
+        "Apple"
+      ],
+      "keywords": [
+        "AI",
+        "商业",
+        "financial-media",
+        "消费电子",
+        "Siri",
+        "CEO",
+        "WWDC",
+        "Apple"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
       "id": "business-openai-news-26e324e887",
       "title": "Confidential submission of draft S-1 to the SEC",
+      "title_original": "Confidential submission of draft S-1 to the SEC",
       "url": "https://openai.com/index/openai-submits-confidential-s-1",
       "source": "OpenAI News",
       "sourceType": "rss",
       "category": "business",
       "publishedAt": "2026-06-08T14:00:00.000Z",
       "summary": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
+      "summary_original": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
       "contentExcerpt": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
       "sourceLanguage": "en",
-      "score": 94,
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "Company"
       ],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "商业",
         "Company",
         "市场监管",
         "Confidential",
         "submission",
         "draft",
-        "S-1",
-        "the"
+        "S-1"
+      ],
+      "keywords": [
+        "AI",
+        "商业",
+        "Company",
+        "市场监管",
+        "Confidential",
+        "submission",
+        "draft",
+        "S-1"
       ],
       "impactAreas": [
         "商业"
@@ -1439,28 +2132,42 @@
     {
       "id": "business-openai-news-a1e84dd92f",
       "title": "Built to benefit everyone: our plan",
+      "title_original": "Built to benefit everyone: our plan",
       "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
       "source": "OpenAI News",
       "sourceType": "rss",
       "category": "business",
       "publishedAt": "2026-06-08T01:30:00.000Z",
       "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
+      "summary_original": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
       "contentExcerpt": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
       "sourceLanguage": "en",
-      "score": 93,
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Company"
       ],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "商业",
         "Company",
         "AI政策",
         "Built",
         "benefit",
         "everyone",
-        "our",
-        "plan"
+        "our"
+      ],
+      "keywords": [
+        "AI",
+        "商业",
+        "Company",
+        "AI政策",
+        "Built",
+        "benefit",
+        "everyone",
+        "our"
       ],
       "impactAreas": [
         "商业"
@@ -1469,51 +2176,855 @@
     {
       "id": "business-openai-news-31bfebfcba",
       "title": "Introducing the OpenAI Economic Research Exchange",
+      "title_original": "Introducing the OpenAI Economic Research Exchange",
       "url": "https://openai.com/index/economic-research-exchange",
       "source": "OpenAI News",
       "sourceType": "rss",
       "category": "business",
       "publishedAt": "2026-06-08T00:00:00.000Z",
       "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
+      "summary_original": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
       "contentExcerpt": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
       "sourceLanguage": "en",
-      "score": 93,
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 92,
       "duplicateCount": 0,
       "tags": [
         "Company"
       ],
-      "keywords": [
+      "article_keywords": [
         "AI",
+        "商业",
         "Company",
         "Introducing",
         "the",
         "OpenAI",
         "Economic",
-        "Research",
-        "Exchange"
+        "Research"
+      ],
+      "keywords": [
+        "AI",
+        "商业",
+        "Company",
+        "Introducing",
+        "the",
+        "OpenAI",
+        "Economic",
+        "Research"
       ],
       "impactAreas": [
         "商业"
       ]
     },
     {
+      "id": "business-item-de2a40d8a8",
+      "title": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "title_original": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "title_zh": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420923.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "加入",
+        "反向讨薪",
+        "的队伍",
+        "多家头部券商修订薪酬管理",
+        "制度",
+        "每日经济新闻中文财经"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "加入",
+        "反向讨薪",
+        "的队伍",
+        "多家头部券商修订薪酬管理",
+        "制度",
+        "每日经济新闻中文财经"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-470d04987a",
+      "title": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
+      "title_original": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
+      "title_zh": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "6月8日晚，丰光精密披露拟1.12亿元收购唯实深蓝51%股权，取得控制权。标的评估增值率568.33%，交易对方包括唯实人企管及四名自然人，支付方式为现金分期。丰光精密股票连续两日涨停，发布异动公告。交易对方承诺唯实深蓝2026年至2028年扣非净利润不低于6000万元，否则现金补偿。此次收购对丰光精密有战略意义，但也提示了多项风险。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "财报",
+        "市场监管",
+        "连续两天",
+        "涨停后",
+        "丰光精密披露拟",
+        "亿元控股惯性导航企业唯实"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "财报",
+        "市场监管",
+        "连续两天",
+        "涨停后",
+        "丰光精密披露拟",
+        "亿元控股惯性导航企业唯实"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-af2ac8198e",
+      "title": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "title_original": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "title_zh": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420871.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "今年前",
+        "个月我国货物贸易进出口同",
+        "比增长",
+        "每日经济新闻中文财经",
+        "公司和市场新闻"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "今年前",
+        "个月我国货物贸易进出口同",
+        "比增长",
+        "每日经济新闻中文财经",
+        "公司和市场新闻"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-0527481a85",
+      "title": "恒指跌，恒科涨，智谱跌超13%；芯片股爆发，天数智芯涨超11%｜港股收盘 2026-06-09 16:47",
+      "title_original": "恒指跌，恒科涨，智谱跌超13%；芯片股爆发，天数智芯涨超11%｜港股收盘 2026-06-09 16:47",
+      "title_zh": "恒指跌，恒科涨，智谱跌超13%；芯片股爆发，天数智芯涨超11%｜港股收盘 2026-06-09 16:47",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4421175.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "AI芯片",
+        "恒指跌",
+        "恒科涨",
+        "智谱跌超",
+        "芯片股爆发",
+        "天数智芯涨超"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "AI芯片",
+        "恒指跌",
+        "恒科涨",
+        "智谱跌超",
+        "芯片股爆发",
+        "天数智芯涨超"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-1b61142321",
+      "title": "APP窗口乱跳转，工信部出手：要求企业立即自查整改，将对违规APP予以约谈、通报、下架 2026-06-09 16:05",
+      "title_original": "APP窗口乱跳转，工信部出手：要求企业立即自查整改，将对违规APP予以约谈、通报、下架 2026-06-09 16:05",
+      "title_zh": "APP窗口乱跳转，工信部出手：要求企业立即自查整改，将对违规APP予以约谈、通报、下架 2026-06-09 16:05",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4421132.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "点击按钮关闭开屏广告，却触发另一个广告；每逢购物节，更是“条条道路通电商”……近日，APP窗口乱跳转的现象引发关注。工业和信息化部信息通信管理局5月21日通报31款App及SDK存在侵害用户权益行为，",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "APP",
+        "SDK",
+        "窗口乱跳转",
+        "工信部出手",
+        "要求企业立即自查整改",
+        "将对违规"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "APP",
+        "SDK",
+        "窗口乱跳转",
+        "工信部出手",
+        "要求企业立即自查整改",
+        "将对违规"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-3543e14e9b",
+      "title": "赵梦澈宣布离开辛选，辛巴旗下四大徒弟全数离开直播行业！辛选此前被传降薪、裁员，主播已从签约制变为合伙制 2026-06-09 16:05",
+      "title_original": "赵梦澈宣布离开辛选，辛巴旗下四大徒弟全数离开直播行业！辛选此前被传降薪、裁员，主播已从签约制变为合伙制 2026-06-09 16:05",
+      "title_zh": "赵梦澈宣布离开辛选，辛巴旗下四大徒弟全数离开直播行业！辛选此前被传降薪、裁员，主播已从签约制变为合伙制 2026-06-09 16:05",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4421131.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "赵梦澈宣布离开辛选",
+        "辛巴旗下四大徒弟全数离开",
+        "直播行业",
+        "辛选此前被传降薪",
+        "裁员",
+        "主播已从签约制变为合伙制"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "赵梦澈宣布离开辛选",
+        "辛巴旗下四大徒弟全数离开",
+        "直播行业",
+        "辛选此前被传降薪",
+        "裁员",
+        "主播已从签约制变为合伙制"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-905368b7fd",
+      "title": "长安福特新能源业务停摆？长安汽车挂牌转让其40%股权，代号CX810车型量产成谜 2026-06-09 15:59",
+      "title_original": "长安福特新能源业务停摆？长安汽车挂牌转让其40%股权，代号CX810车型量产成谜 2026-06-09 15:59",
+      "title_zh": "长安福特新能源业务停摆？长安汽车挂牌转让其40%股权，代号CX810车型量产成谜 2026-06-09 15:59",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4421040.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "CX810",
+        "长安福特新能源业务停摆",
+        "长安汽车挂牌转让其",
+        "股权",
+        "代号",
+        "车型量产成谜"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "CX810",
+        "长安福特新能源业务停摆",
+        "长安汽车挂牌转让其",
+        "股权",
+        "代号",
+        "车型量产成谜"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-d3ab8451f1",
+      "title": "沪指重回4000点，科技股大涨，非科技股也“罕见”涨了！有三大原因 2026-06-09 15:57",
+      "title_original": "沪指重回4000点，科技股大涨，非科技股也“罕见”涨了！有三大原因 2026-06-09 15:57",
+      "title_zh": "沪指重回4000点，科技股大涨，非科技股也“罕见”涨了！有三大原因 2026-06-09 15:57",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4421119.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "沪指重回",
+        "科技股大涨",
+        "非科技股也",
+        "罕见",
+        "涨了",
+        "有三大原因"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "沪指重回",
+        "科技股大涨",
+        "非科技股也",
+        "罕见",
+        "涨了",
+        "有三大原因"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "international-item-0482a851a5",
+      "title": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "title_original": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "title_zh": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071543.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日，在2026年“文明对话国际日”来临之际，中共中央政治局委员、外交部长王毅以视频方式向全球主题活动发表致辞。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "王毅向",
+        "文明对话国际日",
+        "全球主题活动发表视频致辞",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "王毅向",
+        "文明对话国际日",
+        "全球主题活动发表视频致辞",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-f2241a8d62",
+      "title": "Why sustainable alternatives to plastic are struggling to compete",
+      "title_original": "Why sustainable alternatives to plastic are struggling to compete",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167670",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-08T12:00:00.000Z",
+      "summary": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
+      "summary_original": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
+      "contentExcerpt": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/28-05-2025-Doumeizel-seaweed-04.jpg/image770x420cropped.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "regulation",
+        "tariff",
+        "国际",
+        "AI政策",
+        "地缘政治",
+        "Why",
+        "sustainable"
+      ],
+      "keywords": [
+        "AI",
+        "regulation",
+        "tariff",
+        "国际",
+        "AI政策",
+        "地缘政治",
+        "Why",
+        "sustainable"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-891e51e688",
+      "title": "Security Council LIVE: UN officials warn humanitarian toll in Ukraine is worsening",
+      "title_original": "Security Council LIVE: UN officials warn humanitarian toll in Ukraine is worsening",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167674",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-08T12:00:00.000Z",
+      "summary": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
+      "summary_original": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
+      "contentExcerpt": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/15-12-2025-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
+      "score": 98,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "Council",
+        "LIVE",
+        "officials"
+      ],
+      "keywords": [
+        "AI",
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "Council",
+        "LIVE",
+        "officials"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-9f25381f5b",
+      "title": "Children are dying as US sanctions push Cuba to the brink, warns UN human rights chief",
+      "title_original": "Children are dying as US sanctions push Cuba to the brink, warns UN human rights chief",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167671",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-08T12:00:00.000Z",
+      "summary": "Children are dying because doctors cannot access essential medicines, UN human rights chief&nbsp;Volker Türk&nbsp;said in a&nbsp;stark warning&nbsp;on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
+      "summary_original": "Children are dying because doctors cannot access essential medicines, UN human rights chief&nbsp;Volker Türk&nbsp;said in a&nbsp;stark warning&nbsp;on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
+      "contentExcerpt": "Children are dying because doctors cannot access essential medicines, UN human rights chief Volker Türk said in a stark warning on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/21-01-2026-UN-Cuba-01.jpg/image770x420cropped.jpg",
+      "score": 98,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "sanction",
+        "国际",
+        "地缘政治",
+        "Children",
+        "are",
+        "dying",
+        "sanctions"
+      ],
+      "keywords": [
+        "AI",
+        "sanction",
+        "国际",
+        "地缘政治",
+        "Children",
+        "are",
+        "dying",
+        "sanctions"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-e3b0ae800c",
+      "title": "From firefights to football matches: Life on a UN peacekeeping frontline",
+      "title_original": "From firefights to football matches: Life on a UN peacekeeping frontline",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167666",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-07T12:00:00.000Z",
+      "summary": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
+      "summary_original": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
+      "contentExcerpt": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-MINUSCA-CAR-09.jpg/image770x420cropped.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "election",
+        "国际",
+        "地缘政治",
+        "firefights",
+        "football",
+        "matches",
+        "Life"
+      ],
+      "keywords": [
+        "AI",
+        "election",
+        "国际",
+        "地缘政治",
+        "firefights",
+        "football",
+        "matches",
+        "Life"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-item-16b15009cf",
+      "title": "全球最大27.1万立方米LNG运输船开工建造",
+      "title_original": "全球最大27.1万立方米LNG运输船开工建造",
+      "title_zh": "全球最大27.1万立方米LNG运输船开工建造",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420906.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "商业",
+        "financial-media",
+        "LNG",
+        "全球最大",
+        "万立方米",
+        "运输船开工建造",
+        "每日经济新闻中文财经"
+      ],
+      "keywords": [
+        "国际",
+        "商业",
+        "financial-media",
+        "LNG",
+        "全球最大",
+        "万立方米",
+        "运输船开工建造",
+        "每日经济新闻中文财经"
+      ],
+      "impactAreas": [
+        "国际",
+        "商业"
+      ]
+    },
+    {
+      "id": "international-nasa-breaking-news-3020f927bb",
+      "title": "How NASA Science and Artemis Are Shaping the 2026 FIFA World Cup",
+      "title_original": "How NASA Science and Artemis Are Shaping the 2026 FIFA World Cup",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/how-nasa-science-and-artemis-are-shaping-the-2026-fifa-world-cup",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-08T19:36:08.000Z",
+      "summary": "As&#160;the FIFA World Cup&#160;approaches, NASA is bringing&#160;space science and&#160;engineering&#160;to soccer fans&#160;worldwide.&#160;From&#160;June 11&#160;to July 19,&#160;2026,&#160;NASA will&#160;host an&#160;exhibit&#160;at FIFA Fan Festival™&#160;Houston where visitors can learn how research aboard the International Space Station benefits life on Earth&#160;and&#160;experience missions in low Earth orbit, the Moon,&#160;and&#160;beyond&#160;through the Artemis program.&#160; On...",
+      "summary_original": "As&#160;the FIFA World Cup&#160;approaches, NASA is bringing&#160;space science and&#160;engineering&#160;to soccer fans&#160;worldwide.&#160;From&#160;June 11&#160;to July 19,&#160;2026,&#160;NASA will&#160;host an&#160;exhibit&#160;at FIFA Fan Festival™&#160;Houston where visitors can learn how research aboard the International Space Station benefits life on Earth&#160;and&#160;experience missions in low Earth orbit, the Moon,&#160;and&#160;beyond&#160;through the Artemis program.&#160; On...",
+      "contentExcerpt": "Johnson Space Center Office of Communications As the FIFA World Cup approaches, NASA is bringing space science and engineering to soccer fans worldwide. From June 11 to July 19, 2026, NASA will host an exhibit at FIFA Fan Festival™ Houston where visitors can learn how research aboard the International Space Station benefits life on Earth and experience missions in low Earth orbit, the Moon, and beyond through the Artemis program. On June 11, as the FIFA World Cup begins, NASA’s exhibit at Fan...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/iss074e0361795.jpg",
+      "score": 86,
+      "duplicateCount": 0,
+      "tags": [
+        "Johnson Space Center",
+        "International Space Station (ISS)"
+      ],
+      "article_keywords": [
+        "国际",
+        "Johnson Space Center",
+        "How",
+        "NASA",
+        "Science",
+        "and",
+        "Artemis",
+        "Are"
+      ],
+      "keywords": [
+        "国际",
+        "Johnson Space Center",
+        "How",
+        "NASA",
+        "Science",
+        "and",
+        "Artemis",
+        "Are"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-nasa-breaking-news-d4242b2fb0",
+      "title": "Digging Back in Time in the UAE",
+      "title_original": "Digging Back in Time in the UAE",
+      "url": "https://science.nasa.gov/earth/earth-observatory/digging-back-in-time-in-the-uae",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-08T04:01:00.000Z",
+      "summary": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival.",
+      "summary_original": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival.",
+      "contentExcerpt": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival. About an hour’s drive east of Dubai’s gleaming towers and artificial islands, a quieter, more natural landscape takes shape. At the far northern edge of the Rub’ al Khali, a saffron-colored sand sea laps against the Al-Hajar Mountains. A series of pale ridges rises finlike from the desert plain, with the largest—Jabal al Fāyah—standing 412 m...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/digging-back-in-time-in-the-uae/fayapaleo_oli_20251023_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 84,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "国际",
+        "Digging",
+        "Back",
+        "Time",
+        "the",
+        "UAE",
+        "Once",
+        "below"
+      ],
+      "keywords": [
+        "国际",
+        "Digging",
+        "Back",
+        "Time",
+        "the",
+        "UAE",
+        "Once",
+        "below"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
+      "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
+      "title_original": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+      "source": "U.S. SEC Press Releases",
+      "sourceType": "rss",
+      "category": "finance",
+      "publishedAt": "2026-06-08T14:36:00.000Z",
+      "summary": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
+      "summary_original": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
+      "contentExcerpt": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Establishes",
+        "Joint",
+        "Data",
+        "Standards",
+        "Required"
+      ],
+      "keywords": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Establishes",
+        "Joint",
+        "Data",
+        "Standards",
+        "Required"
+      ],
+      "impactAreas": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Establishes"
+      ]
+    },
+    {
       "id": "tech-github-blog-a5fc3356b6",
       "title": "GitHub for Beginners: Answers to some common questions",
+      "title_original": "GitHub for Beginners: Answers to some common questions",
       "url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions",
       "source": "GitHub Blog",
       "sourceType": "rss",
       "category": "tech",
       "publishedAt": "2026-06-08T16:00:00.000Z",
       "summary": "Find the answers to some of the most common GitHub-related questions. The post GitHub for Beginners: Answers to some common questions appeared first on The GitHub Blog .",
+      "summary_original": "Find the answers to some of the most common GitHub-related questions. The post GitHub for Beginners: Answers to some common questions appeared first on The GitHub Blog .",
       "contentExcerpt": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community. She finds joy in helping others learn about the tech industry and loves sharing her experience as a software developer. Find her online @itsthatladydev. Discover how to use VS Code to interact with GitHub and maintain your projects. Learn how to find opportunities to contribute to the open source community. Discover how to use VS Code to interact with GitHub and mai...",
       "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/06/GIT952_THUMB_GFB_B.png?fit=1280%2C720",
-      "score": 87,
+      "score": 85,
       "duplicateCount": 0,
       "tags": [
         "Developer skills",
         "GitHub",
         "GitHub for beginners"
+      ],
+      "article_keywords": [
+        "Developer skills",
+        "GitHub",
+        "GitHub for beginners",
+        "地缘政治",
+        "for",
+        "Beginners",
+        "Answers",
+        "some"
       ],
       "keywords": [
         "Developer skills",
