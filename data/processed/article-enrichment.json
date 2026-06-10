@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-10T08:15:05.827Z",
+  "generatedAt": "2026-06-10T08:24:28.250Z",
   "totals": {
-    "attempted": 34,
-    "excerptCount": 28,
-    "imageCount": 15,
+    "attempted": 58,
+    "excerptCount": 51,
+    "imageCount": 35,
     "failed": 6,
-    "skipped": 2
+    "skipped": 4
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 2,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 1,
+      "skipped": 3,
       "disabled": true
     },
     "google-ai": {
@@ -61,7 +61,7 @@
     "cisa-news": {
       "sourceId": "cisa-news",
       "sourceName": "CISA News",
-      "attempted": 0,
+      "attempted": 1,
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 9,
+      "excerptCount": 9,
+      "imageCount": 9,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 8,
-      "excerptCount": 8,
-      "imageCount": 8,
+      "attempted": 12,
+      "excerptCount": 12,
+      "imageCount": 12,
       "failed": 0,
       "skipped": 0,
       "disabled": false
