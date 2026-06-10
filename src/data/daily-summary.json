@@ -1,36 +1,61 @@
 {
-  "generatedAt": "2026-06-09T11:00:27.786Z",
+  "generatedAt": "2026-06-10T11:00:24.918Z",
   "method": "deepseek-chat-completions",
   "llmProvider": "deepseek-chat-completions",
   "llmEnabled": true,
   "llmConfigured": true,
-  "fallbackCount": 1,
-  "errorCount": 1,
+  "fallbackCount": 0,
+  "errorCount": 0,
   "summaryShape": "channel-daily-brief",
   "channelSummaries": [
     {
       "id": "tech",
       "label": "科技",
-      "overview": "GitHub推出面向初学者的常见问题解答，涵盖VS Code交互、项目维护及开源贡献。",
-      "focus": "降低编程入门门槛，鼓励更多人参与开源。",
-      "whyItMatters": "帮助新手快速上手，促进科技社区多样性。",
+      "overview": "GitHub和OpenAI推动AI辅助编程进入新阶段，自定义代理和Codex使开发从单次提示转向复杂工作流，提升效率。",
+      "focus": "AI代码生成代理与工作流整合",
+      "whyItMatters": "赋能开发者，变革软件开发方式，提升生产力与创新。",
       "watchlist": [
-        "GitHub后续教育资源",
-        "社区反馈与改进"
+        "自定义代理在企业中的采用率",
+        "Codex在更多场景的应用与效果",
+        "AI代码生成对传统开发流程的冲击"
       ],
       "keyPoints": [
-        "学习VS Code与GitHub协作",
-        "维护项目与寻找开源的技巧",
-        "开源贡献机会介绍"
+        "GitHub Copilot CLI推出自定义代理功能",
+        "Notion利用Codex构建AI语音输入并倍增效率",
+        "Nextdoor借助Codex突破跨平台开发限制"
       ],
       "highlights": [
+        {
+          "id": "tech-github-blog-31372dc48b",
+          "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+          "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+          "source": "GitHub Blog",
+          "score": 93,
+          "summary": "GitHub在Build 2026推出Copilot CLI自定义代理功能，使代理能适应用户现有开发方式，从单次提示转向复杂工作流，旨在赋能开发者，推动AI辅助编程进入新阶段。"
+        },
+        {
+          "id": "tech-openai-news-c9b177c6bf",
+          "title": "What Codex unlocks for Notion",
+          "url": "https://openai.com/index/notion",
+          "source": "OpenAI News",
+          "score": 93,
+          "summary": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。"
+        },
+        {
+          "id": "tech-openai-news-c9581f0791",
+          "title": "How engineers at Nextdoor use Codex to build without limits",
+          "url": "https://openai.com/index/nextdoor",
+          "source": "OpenAI News",
+          "score": 85,
+          "summary": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。"
+        },
         {
           "id": "tech-github-blog-a5fc3356b6",
           "title": "GitHub for Beginners: Answers to some common questions",
           "url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions",
           "source": "GitHub Blog",
-          "score": 85,
-          "summary": "GitHub开发者倡导者Kedasha分享学习经验，帮助他人了解科技行业。文章教如何使用VS Code与GitHub交互、维护项目，并寻找开源贡献机会。"
+          "score": 83,
+          "summary": "GitHub开发者倡导者Kedasha分享初学者常见问题解答，涵盖如何使用VS Code与GitHub交互、维护项目，以及寻找开源贡献机会，帮助新手快速入门。"
         }
       ],
       "summaryMethod": "deepseek-chat-completions"
@@ -38,17 +63,16 @@
     {
       "id": "finance",
       "label": "金融",
-      "overview": "SEC依据《2022年财务数据透明法案》制定最终规则，统一跨机构数据提交标准。",
-      "focus": "提升金融数据一致性与透明度，降低监管成本。",
-      "whyItMatters": "强化市场诚信，保护投资者，提高监管效率。",
+      "overview": "SEC根据2022年金融数据透明法案最终确定联合数据标准，统一金融监管数据提交技术规范。",
+      "focus": "金融数据透明度与标准化",
+      "whyItMatters": "提升数据可比性与监管效率，促进市场公平与稳定。",
       "watchlist": [
-        "行业合规调整",
-        "数据标准实施效果"
+        "金融机构合规调整进度",
+        "数据标准对市场透明度的实际影响"
       ],
       "keyPoints": [
-        "确立跨机构数据技术标准",
-        "推动监管数据共享与互操作性",
-        "落实法案要求"
+        "SEC建立联合数据标准",
+        "依据《2022年金融数据透明法案》"
       ],
       "highlights": [
         {
@@ -56,8 +80,8 @@
           "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
           "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
           "source": "U.S. SEC Press Releases",
-          "score": 100,
-          "summary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+          "score": 97,
+          "summary": "美国证券交易委员会（SEC）根据《2022年金融数据透明法案》最终确定了联合数据标准，旨在统一向金融监管机构提交数据的技术规范，提升数据透明度和可比性。"
         }
       ],
       "summaryMethod": "deepseek-chat-completions"
@@ -65,228 +89,144 @@
     {
       "id": "news",
       "label": "新闻",
-      "overview": "习近平结束对朝鲜国事访问回国，期间参访干部学校、出席活动；同时中格建交34周年并提升为全面战略伙伴关系。",
-      "focus": "深化中朝传统友谊，加强中格全面合作。",
-      "whyItMatters": "巩固周边外交，推动双边关系发展，影响地区稳定。",
+      "overview": "习近平推动海洋强国并访朝加强中朝合作，人形机器人实景实训启动，夏粮收获近七成。",
+      "focus": "国家战略、外交与科技民生",
+      "whyItMatters": "涵盖海洋经济、外交关系、前沿科技和粮食安全，影响深远。",
       "watchlist": [
-        "后续中朝合作项目",
-        "中格合作领域拓展"
+        "中朝后续合作措施",
+        "人形机器人场景验证与规模化",
+        "夏粮最终产量与秋粮准备"
       ],
       "keyPoints": [
-        "习近平访朝成果丰硕",
-        "中朝高层互动频繁",
-        "中格关系升级为全面战略伙伴"
+        "习近平访朝提升中朝全面战略伙伴关系",
+        "人形机器人与具身智能实景实训专项行动启动",
+        "全国夏粮小麦收获进度68.54%"
       ],
       "highlights": [
         {
-          "id": "news-item-86c1890bfa",
-          "title": "习近平结束对朝鲜国事访问回到北京",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071621.htm",
+          "id": "news-item-88238d428f",
+          "title": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071738.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "6月9日下午，习近平圆满结束对朝鲜国事访问后回到北京。此次访问旨在深化中朝传统友谊，推动两国关系健康稳定发展。"
+          "summary": "习近平关于推动海洋经济高质量发展的重要论述，引领海洋强国建设。6月8日世界海洋日，我国主题为“守护蔚蓝 向海图强”。"
         },
         {
-          "id": "news-item-2b9a315e88",
-          "title": "习近平出席金正恩举行的欢送仪式",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071619.htm",
+          "id": "news-item-a9be202e29",
+          "title": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071734.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "当地时间6月9日下午，习近平结束对朝鲜国事访问离开平壤，金正恩夫妇到机场送行并举行隆重欢送仪式。"
+          "summary": "应金正恩邀请，习近平主席于6月8日至9日对朝鲜进行国事访问。访问结束之际，中联部部长刘海星向记者介绍此访，强调弘扬优良传统、密切团结协作。"
         },
         {
-          "id": "news-item-7e02ca2ba2",
-          "title": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071615.htm",
+          "id": "news-item-bf2d80cf58",
+          "title": "人形机器人与具身智能实景实训专项行动启动",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "当地时间6月9日，习近平和彭丽媛在平壤出席金正恩夫妇举行的小范围午宴，体现中朝高层友好互动。"
+          "summary": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。"
         },
         {
-          "id": "news-item-c60527d760",
-          "title": "习近平同格鲁吉亚总统卡韦拉什维利就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071578.htm",
+          "id": "news-item-645ff3899a",
+          "title": "全国夏粮小麦已收获近七成",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071706.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "习近平与格鲁吉亚总统卡韦拉什维利互致贺电，庆祝两国建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。"
+          "summary": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。麦收进度快于去年同期，为全年粮食丰收奠定基础。"
         },
         {
-          "id": "news-item-43e40616be",
-          "title": "习近平参访朝鲜劳动党中央干部学校",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071564.htm",
+          "id": "news-item-6966311ba6",
+          "title": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+          "url": "https://tv.cctv.com/2026/06/09/VIDEW5gMig4z7JaLkW5WsGUm260609.shtml",
           "source": "中国政府网要闻",
-          "score": 100,
-          "summary": "习近平在朝鲜劳动党总书记金正恩陪同下，参访了位于平壤的朝鲜劳动党中央干部学校，推动两党关系发展。"
+          "score": 95,
+          "summary": "中国国家主席习近平与格鲁吉亚总统互致贺电，庆祝建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。此举标志着两国合作进入新阶段，将深化政治互信与务实合作。"
         }
       ],
       "summaryMethod": "deepseek-chat-completions"
     }
   ],
-  "errors": [
-    {
-      "id": "business-openai-news-26e324e887",
-      "message": "Expected double-quoted property name in JSON at position 103"
-    }
-  ],
   "totalSummaries": 3,
   "items": [
     {
-      "id": "news-item-86c1890bfa",
-      "title": "习近平结束对朝鲜国事访问回到北京",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071621.htm",
+      "id": "news-item-88238d428f",
+      "title": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071738.htm",
       "source": "中国政府网要闻",
       "sourceId": "govcn-yaowen",
       "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
       "score": 100,
-      "aiSummary": "6月9日下午，习近平圆满结束对朝鲜国事访问后回到北京。此次访问旨在深化中朝传统友谊，推动两国关系健康稳定发展。",
-      "summaryReason": "作为最高领导人外交活动，此行标志中朝关系新进展，对东北亚地缘格局有重要影响。",
-      "translatedTitle": "习近平结束对朝鲜国事访问回到北京",
-      "importance": "国家元首外交，涉及邻国关系与地区稳定。",
+      "aiSummary": "习近平关于推动海洋经济高质量发展的重要论述，引领海洋强国建设。6月8日世界海洋日，我国主题为“守护蔚蓝 向海图强”。",
+      "summaryReason": "来自中国政府网，权威发布习近平主席关于海洋经济的重要论述，指引海洋强国建设方向。",
+      "translatedTitle": "习近平推动海洋经济高质量发展论述引领海洋强国建设",
+      "importance": "体现国家高层对海洋经济高质量发展的战略部署，具有政策指导意义。",
       "impactAreas": [
+        "海洋经济",
+        "海洋强国",
+        "政策引领"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-a9be202e29",
+      "title": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071734.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "score": 100,
+      "aiSummary": "应金正恩邀请，习近平主席于6月8日至9日对朝鲜进行国事访问。访问结束之际，中联部部长刘海星向记者介绍此访，强调弘扬优良传统、密切团结协作。",
+      "summaryReason": "此次访问是中国领导人近期重要外交活动，体现中朝传统友谊，对地区地缘政治有影响。",
+      "translatedTitle": "习近平访朝：弘扬传统密切协作 刘海星谈成果",
+      "importance": "展现了中朝高层互动，是两国关系发展的重要节点。",
+      "impactAreas": [
+        "外交",
         "地缘政治",
-        "外交关系",
-        "东北亚"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-2b9a315e88",
-      "title": "习近平出席金正恩举行的欢送仪式",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071619.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "当地时间6月9日下午，习近平结束对朝鲜国事访问离开平壤，金正恩夫妇到机场送行并举行隆重欢送仪式。",
-      "summaryReason": "此事件显示中朝高层互动密切，反映两国关系现状，对地区外交格局有指示意义。",
-      "translatedTitle": "习近平结束访朝鲜 金正恩举行欢送仪式",
-      "importance": "中朝领导人外事活动，体现双边关系动态，影响东北亚地缘政治。",
-      "impactAreas": [
-        "地缘政治",
         "中朝关系",
-        "外交"
+        "国际关系"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-7e02ca2ba2",
-      "title": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071615.htm",
+      "id": "news-item-bf2d80cf58",
+      "title": "人形机器人与具身智能实景实训专项行动启动",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
       "source": "中国政府网要闻",
       "sourceId": "govcn-yaowen",
       "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
       "score": 100,
-      "aiSummary": "当地时间6月9日，习近平和彭丽媛在平壤出席金正恩夫妇举行的小范围午宴，体现中朝高层友好互动。",
-      "summaryReason": "该事件是中朝两国领导人最新直接接触，反映双边关系动态，具有外交象征意义。",
-      "translatedTitle": "习近平夫妇出席金正恩夫妇小范围午宴",
-      "importance": "中朝领导人会晤是重要外交活动，有助于稳定东北亚局势，但细节有限，整体影响需观察。",
+      "aiSummary": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。",
+      "summaryReason": "政策明确推动人形机器人产业化示范，目标具体且规模可观，标志国家层面对具身智能落地的加速支持。",
+      "translatedTitle": "人形机器人与具身智能实景实训行动启动",
+      "importance": "国家部委联合推动人形机器人产业化示范，目标清晰，将加速具身智能在真实场景的应用和规模化部署。",
       "impactAreas": [
-        "中朝关系",
-        "外交",
-        "地缘政治"
+        "人形机器人",
+        "具身智能",
+        "产业政策"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-c60527d760",
-      "title": "习近平同格鲁吉亚总统卡韦拉什维利就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071578.htm",
+      "id": "news-item-645ff3899a",
+      "title": "全国夏粮小麦已收获近七成",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071706.htm",
       "source": "中国政府网要闻",
       "sourceId": "govcn-yaowen",
       "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
       "score": 100,
-      "aiSummary": "习近平与格鲁吉亚总统卡韦拉什维利互致贺电，庆祝两国建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。",
-      "summaryReason": "中格关系升级为全面战略伙伴，体现中国外交布局深化，是重要双边外交事件。",
-      "translatedTitle": "习近平同格鲁吉亚总统就建交34周年互致贺电并宣布提升为全面战略伙伴关系",
-      "importance": "中格关系提升至新高度，影响区域合作与“一带一路”建设。",
+      "aiSummary": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。麦收进度快于去年同期，为全年粮食丰收奠定基础。",
+      "summaryReason": "夏粮是全年粮食生产第一季，收获进度直接关系粮食安全，是宏观经济重要先行指标。",
+      "translatedTitle": "全国夏粮小麦已收获近七成",
+      "importance": "夏粮产量占全年粮食总产约1/4，进度数据反映农业运行状况，对物价和民生有重要影响。",
       "impactAreas": [
-        "外交关系",
-        "地缘政治",
-        "一带一路"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-43e40616be",
-      "title": "习近平参访朝鲜劳动党中央干部学校",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071564.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "习近平在朝鲜劳动党总书记金正恩陪同下，参访了位于平壤的朝鲜劳动党中央干部学校，推动两党关系发展。",
-      "summaryReason": "此次参访是中朝高层互动的重要环节，体现两党传统友谊，对地区政治格局有积极影响。",
-      "translatedTitle": "习近平参访朝鲜劳动党中央干部学校",
-      "importance": "强化中朝政治互信，为双边合作注入新动力，凸显中国对朝关系的高度重视。",
-      "impactAreas": [
-        "中朝关系",
-        "外交",
-        "政治"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-8c526702db",
-      "title": "习近平和彭丽媛参谒中朝友谊塔",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071562.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "当地时间6月9日上午，习近平和夫人彭丽媛在朝鲜进行国事访问期间，参谒中朝友谊塔，金正恩夫妇陪同。",
-      "summaryReason": "展示中朝高层互动，外交象征意义强。",
-      "translatedTitle": "习近平彭丽媛参谒中朝友谊塔",
-      "importance": "体现中朝传统友谊，双边关系重要动态。",
-      "impactAreas": [
-        "中朝关系",
-        "外交",
-        "地缘政治"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-54287ab726",
-      "title": "习近平向加拿大新任总督路易丝·阿伯致贺电",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071551.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "score": 100,
-      "aiSummary": "国家主席习近平6月8日致电路易丝·阿伯，祝贺她就任加拿大第三十一任总督，体现中加友好关系。",
-      "summaryReason": "重要外交事件，中加关系新动向。",
-      "translatedTitle": "习近平致贺电祝贺加拿大新任总督路易丝·阿伯",
-      "importance": "中等，外交礼仪性事件。",
-      "impactAreas": [
-        "外交",
-        "中加关系",
-        "国际政治"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
-      "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
-      "source": "U.S. SEC Press Releases",
-      "sourceId": "sec-press",
-      "category": "finance",
-      "publishedAt": "2026-06-08T14:36:00.000Z",
-      "score": 100,
-      "aiSummary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
-      "summaryReason": "该规则统一了金融监管数据标准，影响金融机构的数据报告和合规要求。",
-      "translatedTitle": "SEC根据财务数据透明法案建立联合数据标准",
-      "importance": "加强金融数据监管，提高市场透明度和效率。",
-      "impactAreas": [
-        "金融监管",
-        "数据标准",
-        "SEC"
+        "农业",
+        "粮食安全",
+        "经济指标"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -299,15 +239,75 @@
       "category": "international",
       "publishedAt": "2026-06-08T12:00:00.000Z",
       "score": 100,
-      "aiSummary": "塑料污染严重，但可持续替代品（如海藻）因关税、法规碎片化和化石基塑料的市场优势而难以推广。",
-      "summaryReason": "揭示塑料污染治理困境，可持续替代品面临经济和政策障碍。",
-      "translatedTitle": "为何塑料可持续替代品难以竞争",
-      "importance": "反映全球塑料污染治理的瓶颈及替代品发展的挑战，影响环保政策与产业方向。",
+      "aiSummary": "塑料污染威胁海洋，但可持续替代品（如海藻）因关税、法规碎片化和化石塑料的市场优势而发展受阻。",
+      "summaryReason": "塑料污染问题严峻，替代品发展阻碍反映环境与经济利益的冲突，影响全球环保进程。",
+      "translatedTitle": "塑料可持续替代品为何难以竞争",
+      "importance": "揭示塑料污染治理中可持续方案面临的政策与经济壁垒，对环保政策制定有警示意义。",
       "impactAreas": [
         "塑料污染",
-        "可持续材料",
+        "可持续发展",
         "国际贸易",
         "环境政策"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "macro-federal-reserve-e31f48d06f",
+      "title": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260609a.htm",
+      "source": "Federal Reserve",
+      "sourceId": "federal-reserve",
+      "category": "macro",
+      "publishedAt": "2026-06-09T20:00:00.000Z",
+      "score": 98,
+      "aiSummary": "美联储委员会周二宣布，年度银行压力测试结果将于6月24日下午4点（美东时间）公布。该测试评估大型银行在严重经济衰退情景下的资本充足性，对银行股及金融监管政策具有重要参考意义。",
+      "summaryReason": "美联储压力测试结果直接影响银行资本要求和股息回购计划，是衡量银行业稳健性的关键指标，投资者和监管机构高度关注。",
+      "translatedTitle": "美联储宣布6月24日发布年度银行压力测试结果",
+      "importance": "美联储年度压力测试是衡量大型银行抗风险能力的核心监管工具，结果将影响银行资本政策和市场预期。",
+      "impactAreas": [
+        "银行监管",
+        "美联储",
+        "金融稳定"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
+      "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+      "source": "U.S. SEC Press Releases",
+      "sourceId": "sec-press",
+      "category": "finance",
+      "publishedAt": "2026-06-08T14:36:00.000Z",
+      "score": 97,
+      "aiSummary": "美国证券交易委员会（SEC）根据《2022年金融数据透明法案》最终确定了联合数据标准，旨在统一向金融监管机构提交数据的技术规范，提升数据透明度和可比性。",
+      "summaryReason": "该规则涉及金融数据标准化，影响监管效率与市场透明度，对金融机构合规和数据治理有深远意义。",
+      "translatedTitle": "SEC依据《2022年金融数据透明法案》制定联合数据标准",
+      "importance": "作为《金融数据透明法案》的重要实施步骤，该标准将重塑金融监管数据生态，推动行业数字化转型。",
+      "impactAreas": [
+        "金融监管",
+        "数据标准",
+        "合规"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-openai-news-c87c9f548d",
+      "title": "Industrial policy for the Intelligence Age",
+      "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "international",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 96,
+      "aiSummary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+      "summaryReason": "该政策框架体现AI治理新思路，对全球科技发展和监管具有前瞻性影响。",
+      "translatedTitle": "智能时代的产业政策",
+      "importance": "OpenAI发布AI产业政策蓝图，可能引导未来全球AI治理与经济发展方向。",
+      "impactAreas": [
+        "AI治理",
+        "产业政策",
+        "科技战略"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -319,16 +319,15 @@
       "sourceId": "un-news",
       "category": "international",
       "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 98,
-      "aiSummary": "联合国安理会周一召开会议，关注乌克兰局势升级。联合国官员警告称，自2022年俄全面入侵以来，战争已达到最致命时刻，最近数月发生最广泛空袭，前线两侧平民伤亡持续增加。",
-      "summaryReason": "该事件反映当前战争烈度上升，人道危机恶化，是国际社会关注焦点，影响全球地缘政治格局。",
-      "translatedTitle": "联合国安理会：乌克兰人道主义损失加剧",
-      "importance": "联合国安理会紧急会议，官员警告战争至最致命阶段，人道主义损失严重，具有重大国际影响。",
+      "score": 96,
+      "aiSummary": "联合国安理会周一召开会议，讨论乌克兰局势。联合国官员警告，自2022年俄全面入侵以来，战争已达到最致命阶段。近期双方遭受大规模空袭，平民伤亡持续上升。",
+      "summaryReason": "安理会紧急会议凸显乌克兰局势严峻，人道主义危机升级，对国际安全与稳定构成重大威胁。",
+      "translatedTitle": "安理会就乌克兰局势召开会议：人道主义灾难加剧",
+      "importance": "该事件反映俄乌冲突持续恶化，可能引发新一轮国际制裁与援助调整，影响全球地缘政治格局。",
       "impactAreas": [
         "地缘政治",
         "人道主义",
-        "联合国",
-        "战争"
+        "联合国"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -340,15 +339,254 @@
       "sourceId": "un-news",
       "category": "international",
       "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 98,
-      "aiSummary": "联合国人权高专蒂尔克警告，因美国制裁导致古巴医生无法获得基本药物，儿童正在死亡，呼吁立即解除制裁。制裁造成广泛伤害。",
-      "summaryReason": "美国制裁对古巴造成人道主义危机，儿童死亡事件凸显制裁的严重人道影响，需国际关注。",
-      "translatedTitle": "联合国人权高专警告：美国制裁致古巴儿童死亡",
-      "importance": "高。涉及国际人道主义危机，联合国权威机构发声，可能引发外交博弈。",
+      "score": 96,
+      "aiSummary": "联合国人权事务高级专员沃尔克·蒂尔克周一发出严厉警告，称美国制裁导致古巴医生无法获取基本药物，儿童因此死亡，呼吁立即解除制裁。",
+      "summaryReason": "美国制裁引发古巴医疗危机，儿童死亡凸显人道主义灾难，国际社会高度关注。",
+      "translatedTitle": "美国制裁致古巴危机 联合国人权高官警告儿童死亡",
+      "importance": "联合国最高人权官员的警告凸显制裁对古巴人民造成的严重人道主义影响，可能推动国际舆论压力。",
       "impactAreas": [
+        "美国制裁",
+        "人道主义危机",
+        "儿童健康"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-nasa-breaking-news-457a0950f2",
+      "title": "Tyndall’s Trail of Bergs",
+      "url": "https://science.nasa.gov/earth/earth-observatory/tyndalls-trail-of-bergs",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "international",
+      "publishedAt": "2026-06-10T04:01:00.000Z",
+      "score": 95,
+      "aiSummary": "冰从南巴塔哥尼亚冰川崩解，漂过冰前湖。该冰原是南半球除南极外最大冰体，沿安第斯山脉延伸数百公里，多条冰川入海或入湖。宇航员在空间站拍摄到这一景象。",
+      "summaryReason": "冰川崩解是气候变化的重要指标，NASA的观测为全球变暖研究提供数据。",
+      "translatedTitle": "廷德尔冰川的冰山踪迹",
+      "importance": "该事件直观反映冰川消融趋势，对理解海平面上升和生态环境变化具有科学价值。",
+      "impactAreas": [
+        "冰川",
+        "气候变化",
+        "地球观测"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-6966311ba6",
+      "title": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+      "url": "https://tv.cctv.com/2026/06/09/VIDEW5gMig4z7JaLkW5WsGUm260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "中国国家主席习近平与格鲁吉亚总统互致贺电，庆祝建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。此举标志着两国合作进入新阶段，将深化政治互信与务实合作。",
+      "summaryReason": "中格关系升级是中国外交重要进展，体现“一带一路”框架下合作深化，对高加索地区地缘格局有积极影响。",
+      "translatedTitle": "习近平与格鲁吉亚总统宣布关系提升为全面战略伙伴",
+      "importance": "中格关系提升至全面战略伙伴关系，是中国推进周边外交与欧亚区域合作的关键举措，具有标志性意义。",
+      "impactAreas": [
+        "外交关系",
         "地缘政治",
-        "人道主义",
-        "国际关系"
+        "一带一路"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-363bfb183c",
+      "title": "【视频】习近平向加拿大新任总督致贺电",
+      "url": "https://tv.cctv.com/2026/06/09/VIDESaq4X49TKqGnwU9O7e4Y260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "习近平主席向加拿大新任总督致贺电，体现中加友好交流。",
+      "summaryReason": "外交互动，反映中加关系动态。",
+      "translatedTitle": "习近平向加拿大新任总督致贺电",
+      "importance": "中国领导人致贺电，标志双边关系新进展。",
+      "impactAreas": [
+        "外交关系",
+        "中加关系"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-5714ca2498",
+      "title": "【视频】习近平结束对朝鲜国事访问回到北京",
+      "url": "https://tv.cctv.com/2026/06/09/VIDEkhDbKMgRje1LKF76Ebw2260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "国家主席习近平圆满结束对朝鲜的国事访问，乘专机回到北京。此次访问深化中朝传统友谊与战略沟通。",
+      "summaryReason": "中朝领导人会晤对地区稳定与双边合作具有重要影响，外界高度关注。",
+      "translatedTitle": "【视频】习近平结束对朝鲜国事访问回到北京",
+      "importance": "体现中国外交布局关键一环，强化与朝鲜的战略协作。",
+      "impactAreas": [
+        "中朝关系",
+        "外交",
+        "地缘政治"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-a46713b192",
+      "title": "【视频】习近平出席金正恩举行的欢送仪式",
+      "url": "https://tv.cctv.com/2026/06/09/VIDEbsnglfHmTVbjmMW0erbQ260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "习近平主席出席朝鲜领导人金正恩举行的欢送仪式，体现中朝友好关系与高层战略沟通。",
+      "summaryReason": "中朝领导人互动显示两国关系紧密，影响东北亚地缘政治格局。",
+      "translatedTitle": "视频：习近平出席金正恩欢送仪式",
+      "importance": "中朝高层交往标志双边关系稳定，对地区稳定有重要意义。",
+      "impactAreas": [
+        "中朝关系",
+        "外交",
+        "地缘政治"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-eb4c53949f",
+      "title": "【视频】习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "url": "https://tv.cctv.com/2026/06/09/VIDENnLmDK7lQdEgJfgyxgpP260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "习近平夫妇应邀出席金正恩夫妇举办的小范围午宴，体现中朝高层密切互动。",
+      "summaryReason": "中朝领导人会晤显示两国关系紧密，对地区稳定有重要影响。",
+      "translatedTitle": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "importance": "最高级别外交活动，反映中朝特殊关系及地区动态。",
+      "impactAreas": [
+        "中朝关系",
+        "地缘政治",
+        "外交"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-dff863c29b",
+      "title": "【视频】习近平参访朝鲜劳动党中央干部学校",
+      "url": "https://tv.cctv.com/2026/06/09/VIDEGxMX2IUHwkM102RUs5W2260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "习近平访问朝鲜劳动党中央干部学校，加强党际交流与合作，深化中朝传统友谊。",
+      "summaryReason": "此访彰显中朝高层政治互信，对地区稳定及社会主义国家间交往具有重要示范意义。",
+      "translatedTitle": "习近平参访朝鲜劳动党中央干部学校",
+      "importance": "中朝关系新里程碑，展现党际外交独特作用，影响东北亚政治格局。",
+      "impactAreas": [
+        "外交",
+        "中朝关系",
+        "政党交流"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-70d56f88e6",
+      "title": "【视频】习近平和彭丽媛参谒中朝友谊塔",
+      "url": "https://tv.cctv.com/2026/06/09/VIDEJKN9ks5yycbG3jegN3qn260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "习近平主席和夫人彭丽媛参谒中朝友谊塔，缅怀志愿军烈士，巩固中朝传统友谊。",
+      "summaryReason": "国家领导人亲自参谒，体现对中朝关系的高度重视，具有重要外交象征意义。",
+      "translatedTitle": "习近平和彭丽媛参谒中朝友谊塔",
+      "importance": "此事件凸显中朝传统友谊的延续，是两国高层政治互信的象征，对稳定东北亚局势有积极影响。",
+      "impactAreas": [
+        "中朝关系",
+        "外交",
+        "领导活动"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-d3b1b639a9",
+      "title": "【视频】习近平和彭丽媛观看朝鲜专场文艺演出",
+      "url": "https://tv.cctv.com/2026/06/09/VIDE2n8Uh4OwnHuQhwsFLVAU260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "中国国家主席习近平与夫人彭丽媛在朝鲜访问期间，观看了朝方精心准备的专场文艺演出，体现中朝友好交流。",
+      "summaryReason": "作为两国高层互动的重要环节，该活动展示了中朝关系的现状与人文交流深度。",
+      "translatedTitle": "习近平和彭丽媛观看朝鲜专场文艺演出",
+      "importance": "中朝领导人共同观看演出是双边关系密切的象征，对地区稳定有积极信号。",
+      "impactAreas": [
+        "中朝关系",
+        "外交",
+        "文化活动"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-dde929c248",
+      "title": "【视频】习近平出席金正恩举行的欢迎宴会",
+      "url": "https://tv.cctv.com/2026/06/09/VIDEKTvaPwYa4HtIAD2aeTOv260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "习近平主席出席朝鲜领导人金正恩举行的欢迎宴会，中朝高层互动引关注。",
+      "summaryReason": "中朝领导人会晤体现双边关系深化，是重要外交事件。",
+      "translatedTitle": "习近平出席金正恩欢迎宴会",
+      "importance": "高层外交互动，彰显中朝传统友谊，影响东北亚局势。",
+      "impactAreas": [
+        "外交",
+        "中朝关系",
+        "东北亚"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-05d51472bf",
+      "title": "【视频】谌贻琴访问保加利亚",
+      "url": "https://tv.cctv.com/2026/06/09/VIDE0HmHksjsywvY7gkPeMY4260609.shtml",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "国务委员谌贻琴应邀访问保加利亚，推动双边关系发展及务实合作。",
+      "summaryReason": "中国高层外访，显示对中东欧外交的重视，涉及双边关系与区域合作。",
+      "translatedTitle": "谌贻琴访问保加利亚",
+      "importance": "高层访问体现中国外交布局，对中保及中国-中东欧合作有示范意义。",
+      "impactAreas": [
+        "外交访问",
+        "中保关系",
+        "欧洲"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-item-ab6a278362",
+      "title": "图表：2026年前5月我国货物贸易进出口延续稳定增长",
+      "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071661.htm",
+      "source": "中国政府网要闻",
+      "sourceId": "govcn-yaowen",
+      "category": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "score": 95,
+      "aiSummary": "海关总署6月9日发布数据，今年前5个月我国货物贸易进出口总值20.68万亿元，同比增长15.3%，增速较前4个月加快0.4个百分点，延续稳定增长态势。",
+      "summaryReason": "官方最新外贸数据显示增长加速，反映经济稳定和外部需求增强。",
+      "translatedTitle": "前5月我国货物贸易进出口增长15.3%",
+      "importance": "外贸数据是宏观经济重要指标，增速回升表明稳外贸政策见效。",
+      "impactAreas": [
+        "外贸",
+        "经济数据",
+        "宏观经济"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -360,137 +598,259 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 97,
-      "aiSummary": "联合国安理会周一听取汇报，尽管塔利班统治下相对安全，但人道主义状况恶化、对妇女的限制和经济压力正在造成脆弱和不确定的未来。",
-      "summaryReason": "该事件涉及阿富汗人道主义危机和妇女权利问题，具有国际关注度，可能影响地区稳定和人道援助。",
-      "translatedTitle": "阿富汗面临“人才与潜力流失的一代”，安理会听到警告",
-      "importance": "阿富汗局势持续恶化，安理会警告可能导致一代人失去机会，影响全球人道主义议程。",
-      "impactAreas": [
-        "阿富汗",
-        "人道主义",
-        "妇女权利",
-        "联合国"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-item-c2178f894a",
-      "title": "习近平和彭丽媛观看朝鲜专场文艺演出",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071529.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
       "score": 95,
-      "aiSummary": "当地时间6月8日晚，习近平主席和夫人彭丽媛在朝鲜平壤体育馆，与朝鲜各界群众一同观看专场文艺演出，金正恩夫妇陪同。",
-      "summaryReason": "中朝最高领导人夫妇共同出席文艺活动，体现两国友好关系。",
-      "translatedTitle": "习近平夫妇观看朝鲜专场文艺演出",
-      "importance": "中朝高层互动，增进政治互信，展示文化外交。",
+      "aiSummary": "联合国安理会周一就阿富汗局势举行会议，高级官员和民间社会代表警告称，尽管塔利班统治下相对安全，但日益恶化的人道主义状况、对妇女的限制和经济压力正造成脆弱且不确定的未来。",
+      "summaryReason": "安理会正式会议发出明确警告，阿富汗人道危机加剧、妇女权利受压制，可能产生长期负面影响，需国际关注。",
+      "translatedTitle": "阿富汗面临“人才与潜能失落的一代”，安理会听取警告",
+      "importance": "反映阿富汗人道与妇女权利危机升级，安理会层级的正式警告凸显问题紧迫性，对国际援助和政策有重要影响。",
       "impactAreas": [
-        "中朝关系",
-        "高层外交",
-        "文化交流"
+        "地缘政治",
+        "人道危机",
+        "女性权益"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-a1f1c35bfb",
-      "title": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071528.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
+      "id": "news-nasa-breaking-news-abb3c2dc53",
+      "title": "Flight Dynamics Research Facility Characteristics",
+      "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
       "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "习近平主席在访朝前夕于朝鲜《劳动新闻》发表署名文章，强调继往开来、砥砺同行，续写中朝传统友谊崭新篇章，为两国关系发展提供指引。",
-      "summaryReason": "该文为习近平访朝前的重要表态，提升中朝合作预期，对地区外交格局有深远影响。",
-      "translatedTitle": "习近平署名文章指引中朝关系迈向新高度",
-      "importance": "习近平主席署名文章是高层外交信号，凸显中朝传统友谊的战略意义，引导双边关系发展。",
+      "publishedAt": "2026-06-09T20:47:02.000Z",
+      "score": 93,
+      "aiSummary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+      "summaryReason": "该设施是NASA在空气动力学测试领域的重要进展，对飞行器安全与性能研究具有关键作用。",
+      "translatedTitle": "飞行动力学研究设施特点",
+      "importance": "强化美国航空试验基础能力，支撑未来飞行器设计与安全认证。",
       "impactAreas": [
-        "外交关系",
-        "中朝合作",
-        "地缘政治"
+        "航空航天",
+        "测试技术",
+        "风洞设施"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-088f917fe2",
-      "title": "我国海洋生态状况稳中向好",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071522.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
+      "id": "tech-github-blog-31372dc48b",
+      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
+      "source": "GitHub Blog",
+      "sourceId": "github-blog",
+      "category": "tech",
+      "publishedAt": "2026-06-09T16:00:00.000Z",
+      "score": 93,
+      "aiSummary": "GitHub在Build 2026推出Copilot CLI自定义代理功能，使代理能适应用户现有开发方式，从单次提示转向复杂工作流，旨在赋能开发者，推动AI辅助编程进入新阶段。",
+      "summaryReason": "GitHub Copilot是广泛使用的AI编程工具，自定义代理功能提升开发效率，标志AI从辅助到协作的演进，影响开发者工作模式。",
+      "translatedTitle": "GitHub Copilot CLI自定义代理：从提示到工作流",
+      "importance": "高。直接影响开发者日常编码流程，降低AI工具使用门槛，加速AI与软件开发深度融合。",
+      "impactAreas": [
+        "AI编程",
+        "GitHub",
+        "开发者工具",
+        "工作流自动化"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "tech-openai-news-c9b177c6bf",
+      "title": "What Codex unlocks for Notion",
+      "url": "https://openai.com/index/notion",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-06-09T10:00:00.000Z",
+      "score": 93,
+      "aiSummary": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
+      "summaryReason": "案例展示了AI代码生成工具如何快速实现复杂功能，显著提升开发效率和产品体验，对技术应用有示范意义。",
+      "translatedTitle": "Codex为Notion解锁的能力",
+      "importance": "高，因为Codex改变了软件工程工作流，使小团队能够快速交付高级功能。",
+      "impactAreas": [
+        "AI代码生成",
+        "效率工具",
+        "语音交互",
+        "产品开发"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-c63518c72e",
+      "title": "NASA Marches Toward Artemis III Mission in 2027, Names Crew Members",
+      "url": "https://www.nasa.gov/news-release/nasa-marches-toward-artemis-iii-mission-in-2027-names-crew-members",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
       "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "自然资源部发布的《中国海洋生态预警监测公报》显示，2025年我国珊瑚礁、海草床、红树林、海岛等生态系统状况以优良为主，海洋生态持续改善。",
-      "summaryReason": "官方权威数据表明海洋生态保护成效显著，对生态政策制定和公众认知有重要参考价值。",
-      "translatedTitle": "我国海洋生态状况稳中向好",
-      "importance": "反映国家在海洋生态保护方面的积极进展，为后续治理提供科学依据。",
+      "publishedAt": "2026-06-09T16:12:02.000Z",
+      "score": 92,
+      "aiSummary": "NASA宣布Artemis III任务四名主要宇航员及一名后备，该任务将于2027年在地球轨道进行关键测试，为2028年Artemis IV登月任务奠定基础。",
+      "summaryReason": "首次公布Artemis III宇航员，标志着人类重返月球计划迈出重要一步，对深空探索具有里程碑意义。",
+      "translatedTitle": "NASA推进2027年Artemis III任务，公布机组人员",
+      "importance": "高，Artemis III是NASA月球探索关键测试任务，直接影响后续登月计划实施。",
       "impactAreas": [
-        "海洋生态",
-        "环境保护",
-        "政策评估"
+        "航天探索",
+        "NASA",
+        "月球任务",
+        "载人航天"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-36513d63d7",
-      "title": "“十五五”现代化应急体系有了“建设指南”",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071514.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
+      "id": "news-nasa-breaking-news-7fe1155d41",
+      "title": "NASA Knows: What Is Mass Distribution?",
+      "url": "https://www.nasa.gov/learning-resources/nasa-knows-what-is-mass-distribution",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
       "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "国务院印发《现代化应急体系建设“十五五”规划》，部署安全生产、防灾减灾救灾等工作。",
-      "summaryReason": "该规划事关人民生命财产安全与改革发展稳定大局，是未来五年应急管理工作的纲领性文件。",
-      "translatedTitle": "“十五五”现代化应急体系有了“建设指南”",
-      "importance": "国家级规划，指导“十五五”时期应急体系建设，影响广泛。",
+      "publishedAt": "2026-06-09T14:26:32.000Z",
+      "score": 92,
+      "aiSummary": "质量分布影响从星系形状到飞机设计再到行星自转的一切，可用于绘制恒星图、确定行星成分等。本文以足球为例，解释质量分布如何影响旋转和轨迹。",
+      "summaryReason": "该文以通俗易懂的方式解释物理概念，适合学生了解基础科学原理。",
+      "translatedTitle": "NASA科普：质量分布是什么？",
+      "importance": "普及基础科学知识，激发青少年对空间科学和物理的兴趣。",
       "impactAreas": [
-        "应急管理",
-        "安全生产",
-        "防灾减灾"
+        "空间科学",
+        "物理教育",
+        "飞机设计"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-item-481779502f",
-      "title": "习近平出席金正恩举行的欢迎宴会",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071505.htm",
-      "source": "中国政府网要闻",
-      "sourceId": "govcn-yaowen",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "score": 95,
-      "aiSummary": "当地时间6月8日晚，习近平主席和夫人彭丽媛在平壤木兰馆出席朝鲜领导人金正恩举行的欢迎宴会，体现中朝高层密切互动。",
-      "summaryReason": "中朝最高领导人会晤是重要外交信号，影响朝鲜半岛局势及双边关系走向。",
-      "translatedTitle": "习近平出席金正恩举行的欢迎宴会",
-      "importance": "此会晤是中朝传统友谊的象征，对地区稳定与合作具有战略意义。",
-      "impactAreas": [
-        "中朝关系",
-        "外交",
-        "国际政治"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "international-un-news-e3b0ae800c",
-      "title": "From firefights to football matches: Life on a UN peacekeeping frontline",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167666",
+      "id": "international-un-news-0ad50eae69",
+      "title": "Sudan war: Drone attacks damage key aid routes",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167688",
       "source": "UN News",
       "sourceId": "un-news",
       "category": "international",
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "score": 95,
-      "aiSummary": "在中非共和国泽米奥镇，2025年12月总统选举前夕，AAKG叛军发动进攻试图夺城破坏投票。联合国维和部队在冲突中保护平民，并努力维持日常活动，如足球赛，展现战乱中的生活片段。",
-      "summaryReason": "此事件突显维和部队在选举安全中的关键作用，叛军行动威胁民主进程，影响地区稳定。",
-      "translatedTitle": "从交火到足球：联合国维和前线实录",
-      "importance": "中非共和国选举前夕叛军进攻，联合国维和部队面临挑战，关乎该国和平过渡与平民安全。",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 92,
+      "aiSummary": "联合国称，苏丹桥梁、道路等民用基础设施遭持续袭击，人道主义援助通道被切断，平民面临更大风险。",
+      "summaryReason": "说明人道主义危机加剧，援助受阻可能引发更严重的人道灾难。",
+      "translatedTitle": "苏丹战争：无人机袭击破坏关键援助路线",
+      "importance": "苏丹冲突升级威胁人道主义救援，地区稳定受损，需国际关注。",
       "impactAreas": [
-        "维和行动",
-        "中非共和国",
+        "人道主义危机",
+        "地缘冲突",
+        "国际援助"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-un-news-59fad970ed",
+      "title": "World News in Brief: Call for action against child labour, ICC Prosecutor suspended, WFP raises awareness in Egypt",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167687",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 92,
+      "aiSummary": "在6月12日世界无童工日来临之际，联合国敦促各国政府和社会各界加快行动，结束仍在影响数百万儿童的童工危机。",
+      "summaryReason": "联合国官方呼吁，聚焦全球童工问题，具有权威性和时效性，但非突发重大事件。",
+      "translatedTitle": "联合国呼吁加速消除童工",
+      "importance": "联合国在世界无童工日前夕发出呼吁，强调童工问题的紧迫性和全球影响，需国际社会持续关注。",
+      "impactAreas": [
+        "儿童保护",
+        "劳工权益",
+        "国际组织"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-un-news-deb751b89c",
+      "title": "Marking historic progress on rights for persons with disabilities, UN conference tackles critical gaps",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167683",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 92,
+      "aiSummary": "联合国秘书长在第19届全球残疾人权利会议上指出，过去二十年取得了历史性进展，但实现承诺仍需克服重大差距。会议聚焦残障人士权利保障的不足，呼吁国际社会加速行动。",
+      "summaryReason": "该事件涉及联合国推动人权进程，突显全球在残疾人权利方面的成就与不足，具有政策和社会影响。",
+      "translatedTitle": "联合国残疾人权利会议：历史性进展与持续挑战",
+      "importance": "联合国高层会议，标志残疾人权利二十年进展评估，对全球人权议程有重要推动作用。",
+      "impactAreas": [
+        "联合国",
+        "人权",
+        "社会政策"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-un-news-051e655fff",
+      "title": "Building trust and lab testing at the heart of DRC Ebola response: WHO",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167679",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 92,
+      "aiSummary": "世卫组织称，刚果（金）东部埃博拉疫情中，大规模早期检测和接触者追踪有助于控制病毒传播。",
+      "summaryReason": "该进展对全球公共卫生安全及未来疫情应对具有参考价值。",
+      "translatedTitle": "刚果（金）埃博拉应对：信任与检测是关键",
+      "importance": "显示早期检测和社区信任在控制埃博拉中的关键作用。",
+      "impactAreas": [
+        "公共卫生",
+        "埃博拉",
+        "刚果（金）",
+        "世卫组织"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-nasa-breaking-news-af76b94cd8",
+      "title": "San Francisco’s Metropolitan Mosaic",
+      "url": "https://science.nasa.gov/missions/station/san-franciscos-metropolitan-mosaic",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "international",
+      "publishedAt": "2026-06-09T04:00:00.000Z",
+      "score": 92,
+      "aiSummary": "2026年5月27日，国际空间站宇航员在天气短暂转晴时拍摄旧金山湾区，画面展示了城市发展、绿地和海洋活动的融合，包括金门大桥等标志性建筑。",
+      "summaryReason": "该图像从太空视角呈现了人类活动与自然环境的交织，对理解城市扩张有直观价值。",
+      "translatedTitle": "旧金山大都市景观",
+      "importance": "展示了航天技术如何帮助监测城市发展与环境变化，为土地利用规划提供参考。",
+      "impactAreas": [
+        "城市发展",
+        "航天观测",
+        "土地利用"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-e36313e3d4",
+      "title": "Fresh strikes on Tyre kill eight, as UN puts Lebanon destruction bill at $365 million, and rising",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167685",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "联合国最新评估显示，黎巴嫩贝鲁特和黎巴嫩山省建筑损失超3.65亿美元，提尔新袭击致8人死亡，停火协议脆弱，战斗持续。",
+      "summaryReason": "联合国官方数据揭示冲突造成重大经济损失和人员伤亡，突显停火失效与局势恶化，对国际社会关注黎巴嫩危机具有高度重要性。",
+      "translatedTitle": "提尔新袭击致8人死亡，联合国称黎巴嫩损失超3.65亿美元",
+      "importance": "联合国评估显示黎巴嫩冲突经济损失严重，停火脆弱，人道危机加剧，是国际关注焦点。",
+      "impactAreas": [
         "地缘政治",
-        "选举安全"
+        "人道主义",
+        "经济损失"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-un-news-5facff0fde",
+      "title": "Palestinians face systematic abuse by Israeli settlers and Hamas alike: Independent investigators",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167682",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 91,
+      "aiSummary": "联合国人权理事会独立调查员报告称，巴勒斯坦平民在约旦河西岸面临以色列定居者暴力升级，同时在加沙地带遭受哈马斯基于恐惧的统治，陷入双重困境。",
+      "summaryReason": "报告揭示巴勒斯坦人遭受来自以色列定居者和哈马斯的系统性虐待，凸显人道危机与冲突复杂性。",
+      "translatedTitle": "巴勒斯坦人遭以色列定居者和哈马斯双重系统性虐待",
+      "importance": "联合国官方报告指责双方暴行，可能影响国际社会对巴以问题的立场与援助决策。",
+      "impactAreas": [
+        "巴以冲突",
+        "人权问题",
+        "人道危机"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -502,54 +862,37 @@
       "sourceId": "openai-news",
       "category": "business",
       "publishedAt": "2026-06-08T14:00:00.000Z",
-      "score": 93,
-      "aiSummary": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
-      "summaryReason": "OpenAI News / business · score 93 · Company",
-      "importance": "OpenAI News；评分 93；更新频率 daily",
+      "score": 90,
+      "aiSummary": "OpenAI确认已向SEC秘密提交S-1表格，但尚未确定后续行动的时机。",
+      "summaryReason": "这是OpenAI首次公开确认上市步骤，表明其正在推进IPO。",
+      "translatedTitle": "OpenAI秘密提交S-1草案给SEC",
+      "importance": "高：标志着OpenAI向公开市场迈出关键一步，影响AI行业和资本市场。",
       "impactAreas": [
-        "商业"
-      ],
-      "summaryMethod": "extractive"
-    },
-    {
-      "id": "business-openai-news-a1e84dd92f",
-      "title": "Built to benefit everyone: our plan",
-      "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "business",
-      "publishedAt": "2026-06-08T01:30:00.000Z",
-      "score": 92,
-      "aiSummary": "OpenAI发布愿景，聚焦AI普及、安全与共同繁荣，旨在确保通用人工智能造福全社会。",
-      "summaryReason": "该计划体现OpenAI对社会责任的重视，可能引导行业向更包容、安全的方向发展。",
-      "translatedTitle": "惠及所有人的计划",
-      "importance": "OpenAI提出AGI普惠路线，对技术伦理和行业标准具有标杆意义。",
-      "impactAreas": [
-        "人工智能",
-        "公司战略",
-        "安全",
-        "社会责任"
+        "IPO",
+        "AI公司",
+        "SEC",
+        "资本市场"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "business-openai-news-31bfebfcba",
-      "title": "Introducing the OpenAI Economic Research Exchange",
-      "url": "https://openai.com/index/economic-research-exchange",
-      "source": "OpenAI News",
-      "sourceId": "openai-news",
-      "category": "business",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "score": 92,
-      "aiSummary": "OpenAI推出经济研究交流项目（Economic Research Exchange），旨在系统研究人工智能对就业、生产率及整体经济的影响。现已开放申请，面向选定研究项目。",
-      "summaryReason": "该平台将推动AI经济影响的学术研究，为政策制定和产业调整提供依据，引发社会各界关注。",
-      "translatedTitle": "OpenAI启动经济研究交流项目",
-      "importance": "AI对经济和就业的影响是当前热点，OpenAI主导此项研究，有望提供权威见解。",
+      "id": "news-un-news-fe1aa10e58",
+      "title": "Security Council LIVE: Central Africa in the spotlight, including outlawed Lord&#039;s Resistance Army",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167680",
+      "source": "UN News",
+      "sourceId": "un-news",
+      "category": "news",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 89,
+      "aiSummary": "联合国安理会今日会议讨论中非局势，重点打击已致超10万人死亡的上帝抵抗军（LRA）。区域办公室汇报了加强平民保护、人道准入及跨境合作的战略。",
+      "summaryReason": "反映联合国应对非洲长期安全威胁的协调行动，涉及区域稳定与人道主义危机。",
+      "translatedTitle": "安理会聚焦中非及上帝抵抗军",
+      "importance": "中非安全局势持续紧张，上帝抵抗军是地区主要暴力来源，影响多国和平与发展。",
       "impactAreas": [
-        "AI",
-        "经济研究",
-        "就业市场",
-        "生产率"
+        "联合国",
+        "中非",
+        "安全",
+        "人道主义"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -561,36 +904,94 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 91,
-      "aiSummary": "刚果（金）东部埃博拉疫情持续蔓延，确诊病例已达515例，波及三个省份。联合国高级官员赴疫情中心伊图里省进行为期三天的评估访问。",
-      "summaryReason": "埃博拉出现罕见难治疗毒株，病例数快速上升，联合国紧急评估，可能引发更大范围公共卫生危机。",
-      "translatedTitle": "刚果（金）东部埃博拉疫情：罕见毒株难治疗",
-      "importance": "刚果（金）埃博拉疫情严峻，罕见毒株威胁全球公共卫生安全。",
+      "score": 89,
+      "aiSummary": "联合国高级援助官员抵达刚果（金）伊图里省，即埃博拉疫情中心，进行为期三天评估。东部三省确诊病例已达515例，毒株罕见且无有效治疗手段。",
+      "summaryReason": "罕见不可治疗毒株导致疫情失控，确诊病例持续攀升，国际公共卫生面临新挑战。",
+      "translatedTitle": "罕见且无治疗手段毒株：刚果（金）东部埃博拉疫情恶化",
+      "importance": "联合国高官实地评估表明疫情严重性，确诊病例快速增加，需紧急国际协调应对。",
       "impactAreas": [
         "公共卫生",
-        "国际援助",
-        "传染病",
-        "非洲"
+        "疫情监测",
+        "国际援助"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
     {
-      "id": "news-un-news-d7d4550ce0",
-      "title": "Humanity’s future depends on protecting the rapidly changing ocean",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167654",
-      "source": "UN News",
-      "sourceId": "un-news",
+      "id": "news-nasa-breaking-news-f1bb8d0e7c",
+      "title": "Artemis III Crew Announced",
+      "url": "https://www.nasa.gov/image-article/artemis-iii-crew-announced",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
       "category": "news",
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "score": 89,
-      "aiSummary": "海洋覆盖地球70%以上，调节气候、维持生物多样性，支持全球经济与文化，是生命基石。保护海洋对应对气候变化、可持续利用资源至关重要。",
-      "summaryReason": "海洋生态与气候变化紧密相关，影响全球粮食安全、经济发展和生物多样性保护，是当前重大议题。",
-      "translatedTitle": "人类未来取决于保护快速变化的海洋",
-      "importance": "海洋健康直接关系全球生态平衡与人类长期生存发展，具有极高战略意义。",
+      "publishedAt": "2026-06-09T19:32:29.000Z",
+      "score": 85,
+      "aiSummary": "NASA公布阿尔忒弥斯三号任务机组，包括三位NASA宇航员和一位欧空局宇航员。任务将在近地轨道测试猎户座飞船与SpaceX及蓝色起源商业着陆器的集成操作，为重返月球奠定基础。",
+      "summaryReason": "这是阿尔忒弥斯计划首次公布载人任务机组，标志着美国重返月球关键一步，同时验证商业合作伙伴能力。",
+      "translatedTitle": "阿尔忒弥斯三号机组人员公布",
+      "importance": "阿尔忒弥斯三号是NASA重返月球计划的重要里程碑，将测试关键技术与商业合作模式，对后续月球探索任务有深远影响。",
       "impactAreas": [
-        "气候变化",
-        "海洋生态",
-        "可持续发展"
+        "太空探索",
+        "商业航天"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "international-nasa-breaking-news-453fad9eef",
+      "title": "June 2026 Satellite Puzzler",
+      "url": "https://science.nasa.gov/earth/earth-observatory/june-2026-satellite-puzzler",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "international",
+      "publishedAt": "2026-06-09T15:51:12.000Z",
+      "score": 85,
+      "aiSummary": "NASA地球观测站每月发布一张卫星图像谜题，2026年6月图片已公布，邀请用户识别位置并分享线索。",
+      "summaryReason": "该项目通过互动方式提升公众对地球观测的兴趣，体现NASA在科学普及方面的持续努力。",
+      "translatedTitle": "2026年6月卫星谜题",
+      "importance": "增强公众对卫星遥感技术的认知，促进地理与地球科学教育。",
+      "impactAreas": [
+        "卫星遥感",
+        "科学教育",
+        "公众参与"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "tech-openai-news-c9581f0791",
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "url": "https://openai.com/index/nextdoor",
+      "source": "OpenAI News",
+      "sourceId": "openai-news",
+      "category": "tech",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "score": 85,
+      "aiSummary": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
+      "summaryReason": "展示了AI辅助编程在复杂问题排查和多平台开发中的实际应用，提升了开发效率与创新能力。",
+      "translatedTitle": "Nextdoor工程师如何利用Codex无限制构建",
+      "importance": "推动AI在软件开发中的深度应用，加速产品迭代，降低技术门槛，对开发者社区和AI工具发展有示范意义。",
+      "impactAreas": [
+        "AI编程",
+        "效率工具",
+        "产品开发"
+      ],
+      "summaryMethod": "deepseek-chat-completions"
+    },
+    {
+      "id": "news-nasa-breaking-news-89dcdfa40f",
+      "title": "La NASA avanza hacia la misión Artemis III en 2027 y anuncia a su tripulación",
+      "url": "https://www.nasa.gov/news-release/la-nasa-avanza-hacia-la-mision-artemis-iii-en-2027-y-anuncia-a-su-tripulacion",
+      "source": "NASA Breaking News",
+      "sourceId": "nasa-breaking-news",
+      "category": "news",
+      "publishedAt": "2026-06-09T16:19:35.000Z",
+      "score": 84,
+      "aiSummary": "NASA宣布阿尔忒弥斯III载人月球任务将于2027年执行，并公布四名主要宇航员及一名替补。该任务是近年来最复杂的载人航天任务之一，旨在为人类重返月球奠定基础。",
+      "summaryReason": "该任务标志人类重返月球的关键步骤，机组人员公布意味着任务进入实质准备阶段，对深空探索具有里程碑意义。",
+      "translatedTitle": "NASA推进2027年阿尔忒弥斯III任务并公布机组人员",
+      "importance": "阿尔忒弥斯III是继阿波罗之后首次载人登月任务，2027年执行将推动月球科研与长期驻留技术验证。",
+      "impactAreas": [
+        "航天探索",
+        "NASA",
+        "深空任务"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -602,16 +1003,16 @@
       "sourceId": "nasa-breaking-news",
       "category": "international",
       "publishedAt": "2026-06-08T19:36:08.000Z",
-      "score": 86,
-      "aiSummary": "NASA宣布将在2026年世界杯休斯顿球迷节设立展台，展示国际空间站研究成果及阿尔忒弥斯探月任务，让球迷体验太空科学如何改善地球生活。展台将于6月11日世界杯开幕当天开放。",
-      "summaryReason": "该事件将航天科技与全球顶级体育赛事结合，通过大众化科普提升公众对NASA任务及太空探索的关注度。",
-      "translatedTitle": "NASA科学与阿尔忒弥斯计划助力2026世界杯",
-      "importance": "NASA借助世界杯这一全球瞩目平台，推广太空科学教育，并增强公众对阿尔忒弥斯重返月球计划的支持。",
+      "score": 83,
+      "aiSummary": "NASA将在2026年世界杯期间于休斯顿球迷节举办展览，展示国际空间站研究成果及阿尔忒弥斯探月计划，让球迷体验太空科学如何改善地球生活并探索月球与深空。",
+      "summaryReason": "NASA借助世界杯这一全球盛事，向公众普及太空科学和探月计划，提升公众对航天技术的认知与兴趣。",
+      "translatedTitle": "NASA科学与阿尔忒弥斯计划助力2026年世界杯",
+      "importance": "将航天科技与顶级体育赛事结合，创新科普形式，扩大NASA的影响力和公众参与度。",
       "impactAreas": [
         "航天科普",
-        "体育营销",
-        "国际空间站",
-        "阿尔忒弥斯"
+        "国际赛事",
+        "阿尔忒弥斯",
+        "国际空间站"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -623,56 +1024,16 @@
       "sourceId": "github-blog",
       "category": "tech",
       "publishedAt": "2026-06-08T16:00:00.000Z",
-      "score": 85,
-      "aiSummary": "GitHub开发者倡导者Kedasha分享学习经验，帮助他人了解科技行业。文章教如何使用VS Code与GitHub交互、维护项目，并寻找开源贡献机会。",
-      "summaryReason": "为GitHub新手提供实用入门指南，降低学习门槛，促进开源参与。",
+      "score": 83,
+      "aiSummary": "GitHub开发者倡导者Kedasha分享初学者常见问题解答，涵盖如何使用VS Code与GitHub交互、维护项目，以及寻找开源贡献机会，帮助新手快速入门。",
+      "summaryReason": "针对开发者技能入门，提供实用操作指引，尤其适合刚接触GitHub的开发者，提升协作效率。",
       "translatedTitle": "GitHub初学者指南：常见问题解答",
-      "importance": "帮助开发者快速掌握GitHub基础操作，提升协作效率，推动开源社区发展。",
+      "importance": "为开发者提供基础但关键的操作知识，降低GitHub学习曲线，促进开源参与。",
       "impactAreas": [
+        "GitHub",
         "开发者工具",
-        "开源社区",
-        "编程教育"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-nasa-breaking-news-bc88dad91c",
-      "title": "NASA’s INCUS Satellites Progress Toward Launch",
-      "url": "https://science.nasa.gov/photojournal/nasas-incus-satellites-progress-toward-launch",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "news",
-      "publishedAt": "2026-06-08T15:22:07.000Z",
-      "score": 84,
-      "aiSummary": "NASA的INCUS任务由三颗卫星组成，旨在首次从太空调查热带对流风暴动力学。卫星已在Blue Canyon Technologies完成测试，计划2026年5月底发射。三颗卫星将在低地球轨道紧密编队飞行，研究风暴内部上升气流。",
-      "summaryReason": "该任务将填补从太空观测热带风暴动力学的空白，提升风暴预测能力，对气象学和防灾具有重要意义。",
-      "translatedTitle": "NASA INCUS卫星发射在即",
-      "importance": "首次从太空系统研究热带对流风暴动力学，有望改进天气预报和气候模型，为灾害预警提供关键数据。",
-      "impactAreas": [
-        "航天发射",
-        "气象卫星",
-        "地球科学"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "international-nasa-breaking-news-d4242b2fb0",
-      "title": "Digging Back in Time in the UAE",
-      "url": "https://science.nasa.gov/earth/earth-observatory/digging-back-in-time-in-the-uae",
-      "source": "NASA Breaking News",
-      "sourceId": "nasa-breaking-news",
-      "category": "international",
-      "publishedAt": "2026-06-08T04:01:00.000Z",
-      "score": 84,
-      "aiSummary": "NASA报道，阿联酋Jabal al Fāyah原是浅海，现为沙漠中的山脊，留存早期人类生存痕迹，揭示该地区从海洋到沙漠的变迁。",
-      "summaryReason": "该新闻涉及地质历史与人类早期适应，对理解气候变迁和人类迁徙有科研价值。",
-      "translatedTitle": "阿联酋远古遗迹：沙漠下的海洋记忆",
-      "importance": "展现自然与人类历史的互动，提醒气候变化对地貌的长期影响。",
-      "impactAreas": [
-        "地质发现",
-        "考古",
-        "人类起源",
-        "气候变迁"
+        "开源贡献",
+        "VS Code"
       ],
       "summaryMethod": "deepseek-chat-completions"
     },
@@ -684,57 +1045,15 @@
       "sourceId": "un-news",
       "category": "news",
       "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 83,
-      "aiSummary": "联合国气候负责人呼吁各国加强行动，落实现有承诺，警告化石燃料依赖加剧经济不稳定，使脆弱社区面临更严重气候影响。",
-      "summaryReason": "此新闻关乎全球气候行动紧迫性与经济稳定，影响能源转型方向。",
-      "translatedTitle": "联合国敦促各国更快更远落实气候承诺",
-      "importance": "气候承诺落实进展直接影响全球减排路径与极端天气应对能力。",
+      "score": 81,
+      "aiSummary": "联合国气候主管呼吁各国加快落实气候承诺，警告对化石燃料的依赖加剧经济不稳定，并使脆弱社区面临更严重的气候影响。",
+      "summaryReason": "该报道反映全球气候行动紧迫性，涉及能源转型与经济稳定议题，对政策制定具有警示意义。",
+      "translatedTitle": "联合国敦促各国更快更进一步履行气候承诺",
+      "importance": "强调气候承诺落实的紧迫性，警示化石燃料依赖风险，推动全球能源转型进程。",
       "impactAreas": [
-        "气候政策",
-        "化石燃料",
-        "经济稳定",
-        "联合国"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-un-news-41529f05c8",
-      "title": "More than half of staff who died in service worked in Gaza, UN chief says at memorial",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167669",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 83,
-      "aiSummary": "联合国秘书长在年度纪念活动上表示，2025年共有136名工作人员因公殉职，其中超过一半在加沙工作。",
-      "summaryReason": "反映了加沙冲突对国际组织人员的伤亡影响，突显人道主义危机。",
-      "translatedTitle": "秘书长：殉职联合国员工超半数在加沙",
-      "importance": "联合国员工在冲突地区的高伤亡率，凸显加沙局势的严峻性和国际组织的风险。",
-      "impactAreas": [
-        "加沙冲突",
+        "气候变化",
         "联合国",
-        "人道主义",
-        "地缘政治"
-      ],
-      "summaryMethod": "deepseek-chat-completions"
-    },
-    {
-      "id": "news-un-news-2a85f2f46a",
-      "title": "Deadly quake strikes Philippines on first day of school year",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167672",
-      "source": "UN News",
-      "sourceId": "un-news",
-      "category": "news",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "score": 83,
-      "aiSummary": "菲律宾南部棉兰老岛周一晨发生强震，正值数百万学生开学日，造成伤亡。",
-      "summaryReason": "震中位于人口密集区，且正值开学，对教育和社会秩序冲击大。",
-      "translatedTitle": "开学首日菲律宾遭致命地震",
-      "importance": "强震致灾，影响数百万学生返校，需紧急救援与重建。",
-      "impactAreas": [
-        "地震灾害",
-        "教育",
-        "人道救援"
+        "能源政策"
       ],
       "summaryMethod": "deepseek-chat-completions"
     }

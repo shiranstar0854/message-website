@@ -28,14 +28,14 @@
           "summary_original": "Custom agents let GitHub Copilot CLI understand your stack and team workflows, turning one-off terminal prompts into repeatable, reviewable processes. The post From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI appeared first on The GitHub Blog .",
           "contentExcerpt": "Jacklyn Lee is a Content Writer at GitHub and a former technical writer with a love for good storytelling. At Microsoft Build 2026, GitHub introduced new tools, updates, and surfaces so agents can work the way you already work. We are committed to empowering every developer by building an open, secure, and AI-powered platform that defines the future of software development. We are committed to empowering every developer by building an open, secure, and AI-powered platform that defines the fut...",
           "impactAreas": [
-            "AI",
-            "AI & ML",
-            "GitHub Copilot",
-            "GitHub Copilot CLI"
+            "AI编程",
+            "GitHub",
+            "开发者工具",
+            "工作流自动化"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://github.blog/wp-content/uploads/2026/01/CLIBanner_BlogHeader_01.jpg?fit=2400%2C1260",
           "tags": [
             "AI & ML",
@@ -64,7 +64,17 @@
           ],
           "score": 93,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "GitHub Copilot CLI自定义代理：从提示到工作流",
+          "aiSummary": "GitHub在Build 2026推出Copilot CLI自定义代理功能，使代理能适应用户现有开发方式，从单次提示转向复杂工作流，旨在赋能开发者，推动AI辅助编程进入新阶段。",
+          "summaryReason": "GitHub Copilot是广泛使用的AI编程工具，自定义代理功能提升开发效率，标志AI从辅助到协作的演进，影响开发者工作模式。",
+          "importance": "高。直接影响开发者日常编码流程，降低AI工具使用门槛，加速AI与软件开发深度融合。",
+          "title_zh": "GitHub Copilot CLI自定义代理：从提示到工作流",
+          "summary_zh": "GitHub在Build 2026推出Copilot CLI自定义代理功能，使代理能适应用户现有开发方式，从单次提示转向复杂工作流，旨在赋能开发者，推动AI辅助编程进入新阶段。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "tech-openai-news-c9b177c6bf",
@@ -84,14 +94,14 @@
           "summary_original": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
           "contentExcerpt": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
           "impactAreas": [
-            "AI",
-            "What",
-            "Codex",
-            "unlocks"
+            "AI代码生成",
+            "效率工具",
+            "语音交互",
+            "产品开发"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "tags": [],
           "article_keywords": [
             "AI",
@@ -115,7 +125,17 @@
           ],
           "score": 93,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "Codex为Notion解锁的能力",
+          "aiSummary": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
+          "summaryReason": "案例展示了AI代码生成工具如何快速实现复杂功能，显著提升开发效率和产品体验，对技术应用有示范意义。",
+          "importance": "高，因为Codex改变了软件工程工作流，使小团队能够快速交付高级功能。",
+          "title_zh": "Codex为Notion解锁的能力",
+          "summary_zh": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "tech-cisa-news-7ca65dc669",
@@ -185,14 +205,13 @@
           "summary_original": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
           "contentExcerpt": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
           "impactAreas": [
-            "How",
-            "engineers",
-            "Nextdoor",
-            "use"
+            "AI编程",
+            "效率工具",
+            "产品开发"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "tags": [],
           "article_keywords": [
             "How",
@@ -216,7 +235,17 @@
           ],
           "score": 85,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "Nextdoor工程师如何利用Codex无限制构建",
+          "aiSummary": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
+          "summaryReason": "展示了AI辅助编程在复杂问题排查和多平台开发中的实际应用，提升了开发效率与创新能力。",
+          "importance": "推动AI在软件开发中的深度应用，加速产品迭代，降低技术门槛，对开发者社区和AI工具发展有示范意义。",
+          "title_zh": "Nextdoor工程师如何利用Codex无限制构建",
+          "summary_zh": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "tech-github-blog-a5fc3356b6",
@@ -236,14 +265,14 @@
           "summary_original": "Find the answers to some of the most common GitHub-related questions. The post GitHub for Beginners: Answers to some common questions appeared first on The GitHub Blog .",
           "contentExcerpt": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community. She finds joy in helping others learn about the tech industry and loves sharing her experience as a software developer. Find her online @itsthatladydev. Discover how to use VS Code to interact with GitHub and maintain your projects. Learn how to find opportunities to contribute to the open source community. Discover how to use VS Code to interact with GitHub and mai...",
           "impactAreas": [
-            "Developer skills",
             "GitHub",
-            "GitHub for beginners",
-            "地缘政治"
+            "开发者工具",
+            "开源贡献",
+            "VS Code"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://github.blog/wp-content/uploads/2026/06/GIT952_THUMB_GFB_B.png?fit=1280%2C720",
           "tags": [
             "Developer skills",
@@ -272,7 +301,17 @@
           ],
           "score": 83,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "GitHub初学者指南：常见问题解答",
+          "aiSummary": "GitHub开发者倡导者Kedasha分享初学者常见问题解答，涵盖如何使用VS Code与GitHub交互、维护项目，以及寻找开源贡献机会，帮助新手快速入门。",
+          "summaryReason": "针对开发者技能入门，提供实用操作指引，尤其适合刚接触GitHub的开发者，提升协作效率。",
+          "importance": "为开发者提供基础但关键的操作知识，降低GitHub学习曲线，促进开源参与。",
+          "title_zh": "GitHub初学者指南：常见问题解答",
+          "summary_zh": "GitHub开发者倡导者Kedasha分享初学者常见问题解答，涵盖如何使用VS Code与GitHub交互、维护项目，以及寻找开源贡献机会，帮助新手快速入门。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         }
       ]
     },
@@ -300,14 +339,13 @@
           "summary_original": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
           "contentExcerpt": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
           "impactAreas": [
-            "AI",
-            "市场监管",
-            "SEC",
-            "Establishes"
+            "金融监管",
+            "数据标准",
+            "合规"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "tags": [],
           "article_keywords": [
             "AI",
@@ -331,7 +369,17 @@
           ],
           "score": 97,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "SEC依据《2022年金融数据透明法案》制定联合数据标准",
+          "aiSummary": "美国证券交易委员会（SEC）根据《2022年金融数据透明法案》最终确定了联合数据标准，旨在统一向金融监管机构提交数据的技术规范，提升数据透明度和可比性。",
+          "summaryReason": "该规则涉及金融数据标准化，影响监管效率与市场透明度，对金融机构合规和数据治理有深远意义。",
+          "importance": "作为《金融数据透明法案》的重要实施步骤，该标准将重塑金融监管数据生态，推动行业数字化转型。",
+          "title_zh": "SEC依据《2022年金融数据透明法案》制定联合数据标准",
+          "summary_zh": "美国证券交易委员会（SEC）根据《2022年金融数据透明法案》最终确定了联合数据标准，旨在统一向金融监管机构提交数据的技术规范，提升数据透明度和可比性。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         }
       ]
     },
@@ -360,11 +408,14 @@
           "summary_original": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
           "contentExcerpt": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
           "impactAreas": [
-            "商业"
+            "IPO",
+            "AI公司",
+            "SEC",
+            "资本市场"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "tags": [
             "Company"
           ],
@@ -390,7 +441,17 @@
           ],
           "score": 90,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "OpenAI秘密提交S-1草案给SEC",
+          "aiSummary": "OpenAI确认已向SEC秘密提交S-1表格，但尚未确定后续行动的时机。",
+          "summaryReason": "这是OpenAI首次公开确认上市步骤，表明其正在推进IPO。",
+          "importance": "高：标志着OpenAI向公开市场迈出关键一步，影响AI行业和资本市场。",
+          "title_zh": "OpenAI秘密提交S-1草案给SEC",
+          "summary_zh": "OpenAI确认已向SEC秘密提交S-1表格，但尚未确定后续行动的时机。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "business-item-00c848fad0",
@@ -1029,11 +1090,14 @@
           "summary_original": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
           "contentExcerpt": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.",
           "impactAreas": [
-            "国际"
+            "塑料污染",
+            "可持续发展",
+            "国际贸易",
+            "环境政策"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/28-05-2025-Doumeizel-seaweed-04.jpg/image770x420cropped.jpg",
           "tags": [],
           "article_keywords": [
@@ -1058,7 +1122,17 @@
           ],
           "score": 100,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "塑料可持续替代品为何难以竞争",
+          "aiSummary": "塑料污染威胁海洋，但可持续替代品（如海藻）因关税、法规碎片化和化石塑料的市场优势而发展受阻。",
+          "summaryReason": "塑料污染问题严峻，替代品发展阻碍反映环境与经济利益的冲突，影响全球环保进程。",
+          "importance": "揭示塑料污染治理中可持续方案面临的政策与经济壁垒，对环保政策制定有警示意义。",
+          "title_zh": "塑料可持续替代品为何难以竞争",
+          "summary_zh": "塑料污染威胁海洋，但可持续替代品（如海藻）因关税、法规碎片化和化石塑料的市场优势而发展受阻。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "international-openai-news-c87c9f548d",
@@ -1079,11 +1153,13 @@
           "summary_original": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
           "contentExcerpt": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
           "impactAreas": [
-            "国际"
+            "AI治理",
+            "产业政策",
+            "科技战略"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "tags": [
             "Global Affairs"
           ],
@@ -1109,7 +1185,17 @@
           ],
           "score": 96,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "智能时代的产业政策",
+          "aiSummary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "summaryReason": "该政策框架体现AI治理新思路，对全球科技发展和监管具有前瞻性影响。",
+          "importance": "OpenAI发布AI产业政策蓝图，可能引导未来全球AI治理与经济发展方向。",
+          "title_zh": "智能时代的产业政策",
+          "summary_zh": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "international-un-news-891e51e688",
@@ -1130,11 +1216,13 @@
           "summary_original": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
           "contentExcerpt": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
           "impactAreas": [
-            "国际"
+            "地缘政治",
+            "人道主义",
+            "联合国"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
           "tags": [],
           "article_keywords": [
@@ -1159,7 +1247,17 @@
           ],
           "score": 96,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "安理会就乌克兰局势召开会议：人道主义灾难加剧",
+          "aiSummary": "联合国安理会周一召开会议，讨论乌克兰局势。联合国官员警告，自2022年俄全面入侵以来，战争已达到最致命阶段。近期双方遭受大规模空袭，平民伤亡持续上升。",
+          "summaryReason": "安理会紧急会议凸显乌克兰局势严峻，人道主义危机升级，对国际安全与稳定构成重大威胁。",
+          "importance": "该事件反映俄乌冲突持续恶化，可能引发新一轮国际制裁与援助调整，影响全球地缘政治格局。",
+          "title_zh": "安理会就乌克兰局势召开会议：人道主义灾难加剧",
+          "summary_zh": "联合国安理会周一召开会议，讨论乌克兰局势。联合国官员警告，自2022年俄全面入侵以来，战争已达到最致命阶段。近期双方遭受大规模空袭，平民伤亡持续上升。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "international-un-news-9f25381f5b",
@@ -1180,11 +1278,13 @@
           "summary_original": "Children are dying because doctors cannot access essential medicines, UN human rights chief&nbsp;Volker Türk&nbsp;said in a&nbsp;stark warning&nbsp;on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
           "contentExcerpt": "Children are dying because doctors cannot access essential medicines, UN human rights chief Volker Türk said in a stark warning on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
           "impactAreas": [
-            "国际"
+            "美国制裁",
+            "人道主义危机",
+            "儿童健康"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/21-01-2026-UN-Cuba-01.jpg/image770x420cropped.jpg",
           "tags": [],
           "article_keywords": [
@@ -1209,7 +1309,17 @@
           ],
           "score": 96,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "美国制裁致古巴危机 联合国人权高官警告儿童死亡",
+          "aiSummary": "联合国人权事务高级专员沃尔克·蒂尔克周一发出严厉警告，称美国制裁导致古巴医生无法获取基本药物，儿童因此死亡，呼吁立即解除制裁。",
+          "summaryReason": "美国制裁引发古巴医疗危机，儿童死亡凸显人道主义灾难，国际社会高度关注。",
+          "importance": "联合国最高人权官员的警告凸显制裁对古巴人民造成的严重人道主义影响，可能推动国际舆论压力。",
+          "title_zh": "美国制裁致古巴危机 联合国人权高官警告儿童死亡",
+          "summary_zh": "联合国人权事务高级专员沃尔克·蒂尔克周一发出严厉警告，称美国制裁导致古巴医生无法获取基本药物，儿童因此死亡，呼吁立即解除制裁。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "international-nasa-breaking-news-457a0950f2",
@@ -1230,11 +1340,13 @@
           "summary_original": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake.",
           "contentExcerpt": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake. The Southern Patagonian Icefield is the largest expanse of ice in the Southern Hemisphere outside of Antarctica. The mass of glacial ice extends hundreds of kilometers along the spine of the Andes, feeding dozens of dynamic outlet glaciers that grind their way down from higher elevations. Many of these rivers of ice terminate in the sea or in proglacial lakes. An astronaut aboard the International Spa...",
           "impactAreas": [
-            "国际"
+            "冰川",
+            "气候变化",
+            "地球观测"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/tyndall%E2%80%99s-trail-of-bergs/ISS074-E-582898_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
           "tags": [
             "Earth Observatory",
@@ -1263,7 +1375,17 @@
           ],
           "score": 95,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "廷德尔冰川的冰山踪迹",
+          "aiSummary": "冰从南巴塔哥尼亚冰川崩解，漂过冰前湖。该冰原是南半球除南极外最大冰体，沿安第斯山脉延伸数百公里，多条冰川入海或入湖。宇航员在空间站拍摄到这一景象。",
+          "summaryReason": "冰川崩解是气候变化的重要指标，NASA的观测为全球变暖研究提供数据。",
+          "importance": "该事件直观反映冰川消融趋势，对理解海平面上升和生态环境变化具有科学价值。",
+          "title_zh": "廷德尔冰川的冰山踪迹",
+          "summary_zh": "冰从南巴塔哥尼亚冰川崩解，漂过冰前湖。该冰原是南半球除南极外最大冰体，沿安第斯山脉延伸数百公里，多条冰川入海或入湖。宇航员在空间站拍摄到这一景象。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "international-un-news-0ad50eae69",
@@ -1284,11 +1406,13 @@
           "summary_original": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
           "contentExcerpt": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
           "impactAreas": [
-            "国际"
+            "人道主义危机",
+            "地缘冲突",
+            "国际援助"
           ],
           "source_language": "en",
           "sourceLanguage": "en",
-          "translation_status": "failed",
+          "translation_status": "translated",
           "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-WFP-Chad-Sudanese.jpg/image770x420cropped.jpg",
           "tags": [],
           "article_keywords": [
@@ -1313,7 +1437,17 @@
           ],
           "score": 92,
           "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
+          "translation_error": "LLM translation is not configured.",
+          "translatedTitle": "苏丹战争：无人机袭击破坏关键援助路线",
+          "aiSummary": "联合国称，苏丹桥梁、道路等民用基础设施遭持续袭击，人道主义援助通道被切断，平民面临更大风险。",
+          "summaryReason": "说明人道主义危机加剧，援助受阻可能引发更严重的人道灾难。",
+          "importance": "苏丹冲突升级威胁人道主义救援，地区稳定受损，需国际关注。",
+          "title_zh": "苏丹战争：无人机袭击破坏关键援助路线",
+          "summary_zh": "联合国称，苏丹桥梁、道路等民用基础设施遭持续袭击，人道主义援助通道被切断，平民面临更大风险。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         }
       ]
     },
@@ -1328,7 +1462,7 @@
           "sourceId": "govcn-yaowen",
           "title": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
           "title_original": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
-          "title_zh": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+          "title_zh": "习近平推动海洋经济高质量发展论述引领海洋强国建设",
           "titleZh": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071738.htm",
           "source": "中国政府网要闻",
@@ -1341,14 +1475,13 @@
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "习近平关于推动海洋经济高质量发展的重要论述，引领海洋强国建设。6月8日世界海洋日，我国主题为“守护蔚蓝 向海图强”。",
           "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "6月8日是世界海洋日，今年我国主题是“守护蔚蓝 向海图强”。",
           "impactAreas": [
-            "公共政策",
-            "守护蔚蓝",
-            "向海图强",
-            "习近平总书记关于推动海洋"
+            "海洋经济",
+            "海洋强国",
+            "政策引领"
           ],
           "source_language": "zh",
           "sourceLanguage": "zh",
@@ -1379,14 +1512,22 @@
             "覆盖国务院"
           ],
           "score": 100,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translatedTitle": "习近平推动海洋经济高质量发展论述引领海洋强国建设",
+          "aiSummary": "习近平关于推动海洋经济高质量发展的重要论述，引领海洋强国建设。6月8日世界海洋日，我国主题为“守护蔚蓝 向海图强”。",
+          "summaryReason": "来自中国政府网，权威发布习近平主席关于海洋经济的重要论述，指引海洋强国建设方向。",
+          "importance": "体现国家高层对海洋经济高质量发展的战略部署，具有政策指导意义。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "news-item-a9be202e29",
           "sourceId": "govcn-yaowen",
           "title": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
           "title_original": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
-          "title_zh": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
+          "title_zh": "习近平访朝：弘扬传统密切协作 刘海星谈成果",
           "titleZh": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071734.htm",
           "source": "中国政府网要闻",
@@ -1399,14 +1540,14 @@
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "应金正恩邀请，习近平主席于6月8日至9日对朝鲜进行国事访问。访问结束之际，中联部部长刘海星向记者介绍此访，强调弘扬优良传统、密切团结协作。",
           "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "2026年6月8日至9日，应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平对朝鲜民主主义人民共和国进行国事访问。访问结束之际，中共中央对外联络部部长刘海星向随行记者介绍此访情况。",
           "impactAreas": [
-            "公共政策",
-            "弘扬优良传统",
-            "密切团结协作",
-            "中共中央对外联络部部长刘"
+            "外交",
+            "地缘政治",
+            "中朝关系",
+            "国际关系"
           ],
           "source_language": "zh",
           "sourceLanguage": "zh",
@@ -1437,14 +1578,22 @@
             "覆盖国务院"
           ],
           "score": 100,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translatedTitle": "习近平访朝：弘扬传统密切协作 刘海星谈成果",
+          "aiSummary": "应金正恩邀请，习近平主席于6月8日至9日对朝鲜进行国事访问。访问结束之际，中联部部长刘海星向记者介绍此访，强调弘扬优良传统、密切团结协作。",
+          "summaryReason": "此次访问是中国领导人近期重要外交活动，体现中朝传统友谊，对地区地缘政治有影响。",
+          "importance": "展现了中朝高层互动，是两国关系发展的重要节点。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "news-item-bf2d80cf58",
           "sourceId": "govcn-yaowen",
           "title": "人形机器人与具身智能实景实训专项行动启动",
           "title_original": "人形机器人与具身智能实景实训专项行动启动",
-          "title_zh": "人形机器人与具身智能实景实训专项行动启动",
+          "title_zh": "人形机器人与具身智能实景实训行动启动",
           "titleZh": "人形机器人与具身智能实景实训专项行动启动",
           "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
           "source": "中国政府网要闻",
@@ -1457,14 +1606,13 @@
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。",
           "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "工业和信息化部、国务院国资委联合印发通知，正式启动2026年度人形机器人与具身智能实景实训专项行动，提出到2026年底，人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署，开启“作业模式”；形成百个以上高价值应用场景，进一步丰富具身智能应用谱系，带动形成万台级规模落地能力。",
           "impactAreas": [
-            "公共政策",
-            "人形机器人与具身智能实景",
-            "实训专项行动启动",
-            "中国政府网要闻列表"
+            "人形机器人",
+            "具身智能",
+            "产业政策"
           ],
           "source_language": "zh",
           "sourceLanguage": "zh",
@@ -1495,7 +1643,15 @@
             "国务院国资委联合印发通知"
           ],
           "score": 100,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translatedTitle": "人形机器人与具身智能实景实训行动启动",
+          "aiSummary": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。",
+          "summaryReason": "政策明确推动人形机器人产业化示范，目标具体且规模可观，标志国家层面对具身智能落地的加速支持。",
+          "importance": "国家部委联合推动人形机器人产业化示范，目标清晰，将加速具身智能在真实场景的应用和规模化部署。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "news-item-645ff3899a",
@@ -1515,14 +1671,13 @@
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。麦收进度快于去年同期，为全年粮食丰收奠定基础。",
           "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。",
           "impactAreas": [
-            "公共政策",
-            "全国夏粮小麦已收获近七成",
-            "中国政府网要闻列表",
-            "覆盖国务院"
+            "农业",
+            "粮食安全",
+            "经济指标"
           ],
           "source_language": "zh",
           "sourceLanguage": "zh",
@@ -1553,14 +1708,22 @@
             "亿亩"
           ],
           "score": 100,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translatedTitle": "全国夏粮小麦已收获近七成",
+          "aiSummary": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。麦收进度快于去年同期，为全年粮食丰收奠定基础。",
+          "summaryReason": "夏粮是全年粮食生产第一季，收获进度直接关系粮食安全，是宏观经济重要先行指标。",
+          "importance": "夏粮产量占全年粮食总产约1/4，进度数据反映农业运行状况，对物价和民生有重要影响。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "news-item-6966311ba6",
           "sourceId": "govcn-yaowen",
           "title": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
           "title_original": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
-          "title_zh": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+          "title_zh": "习近平与格鲁吉亚总统宣布关系提升为全面战略伙伴",
           "titleZh": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
           "url": "https://tv.cctv.com/2026/06/09/VIDEW5gMig4z7JaLkW5WsGUm260609.shtml",
           "source": "中国政府网要闻",
@@ -1573,14 +1736,13 @@
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "中国国家主席习近平与格鲁吉亚总统互致贺电，庆祝建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。此举标志着两国合作进入新阶段，将深化政治互信与务实合作。",
           "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
           "impactAreas": [
-            "公共政策",
-            "视频",
-            "习近平同格鲁吉亚总统就中",
-            "格建交"
+            "外交关系",
+            "地缘政治",
+            "一带一路"
           ],
           "source_language": "zh",
           "sourceLanguage": "zh",
@@ -1611,14 +1773,22 @@
             "中国政府网要闻列表"
           ],
           "score": 95,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translatedTitle": "习近平与格鲁吉亚总统宣布关系提升为全面战略伙伴",
+          "aiSummary": "中国国家主席习近平与格鲁吉亚总统互致贺电，庆祝建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。此举标志着两国合作进入新阶段，将深化政治互信与务实合作。",
+          "summaryReason": "中格关系升级是中国外交重要进展，体现“一带一路”框架下合作深化，对高加索地区地缘格局有积极影响。",
+          "importance": "中格关系提升至全面战略伙伴关系，是中国推进周边外交与欧亚区域合作的关键举措，具有标志性意义。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         },
         {
           "id": "news-item-363bfb183c",
           "sourceId": "govcn-yaowen",
           "title": "【视频】习近平向加拿大新任总督致贺电",
           "title_original": "【视频】习近平向加拿大新任总督致贺电",
-          "title_zh": "【视频】习近平向加拿大新任总督致贺电",
+          "title_zh": "习近平向加拿大新任总督致贺电",
           "titleZh": "【视频】习近平向加拿大新任总督致贺电",
           "url": "https://tv.cctv.com/2026/06/09/VIDESaq4X49TKqGnwU9O7e4Y260609.shtml",
           "source": "中国政府网要闻",
@@ -1631,14 +1801,12 @@
           "timelinessTier": "hourly",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary_zh": "习近平主席向加拿大新任总督致贺电，体现中加友好交流。",
           "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "impactAreas": [
-            "公共政策",
-            "视频",
-            "习近平向加拿大新任总督致",
-            "贺电"
+            "外交关系",
+            "中加关系"
           ],
           "source_language": "zh",
           "sourceLanguage": "zh",
@@ -1655,7 +1823,8 @@
             "贺电",
             "中国政府网要闻列表",
             "覆盖国务院",
-            "部门政策和公共事务即时发"
+            "部门政策和公共事务即时发",
+            "外交关系"
           ],
           "keywords": [
             "公共政策",
@@ -1664,10 +1833,19 @@
             "贺电",
             "中国政府网要闻列表",
             "覆盖国务院",
-            "部门政策和公共事务即时发"
+            "部门政策和公共事务即时发",
+            "外交关系"
           ],
           "score": 95,
-          "duplicateCount": 0
+          "duplicateCount": 0,
+          "translatedTitle": "习近平向加拿大新任总督致贺电",
+          "aiSummary": "习近平主席向加拿大新任总督致贺电，体现中加友好交流。",
+          "summaryReason": "外交互动，反映中加关系动态。",
+          "importance": "中国领导人致贺电，标志双边关系新进展。",
+          "summaryLanguage": "zh",
+          "translated_at": "2026-06-10T11:00:24.918Z",
+          "summaryMethod": "deepseek-chat-completions",
+          "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
         }
       ]
     }
@@ -1844,7 +2022,7 @@
       "sourceId": "govcn-yaowen",
       "title": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
       "title_original": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
-      "title_zh": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+      "title_zh": "习近平推动海洋经济高质量发展论述引领海洋强国建设",
       "titleZh": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071738.htm",
       "source": "中国政府网要闻",
@@ -1857,14 +2035,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平关于推动海洋经济高质量发展的重要论述，引领海洋强国建设。6月8日世界海洋日，我国主题为“守护蔚蓝 向海图强”。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "6月8日是世界海洋日，今年我国主题是“守护蔚蓝 向海图强”。",
       "impactAreas": [
-        "公共政策",
-        "守护蔚蓝",
-        "向海图强",
-        "习近平总书记关于推动海洋"
+        "海洋经济",
+        "海洋强国",
+        "政策引领"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -1895,14 +2072,22 @@
         "覆盖国务院"
       ],
       "score": 100,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平推动海洋经济高质量发展论述引领海洋强国建设",
+      "aiSummary": "习近平关于推动海洋经济高质量发展的重要论述，引领海洋强国建设。6月8日世界海洋日，我国主题为“守护蔚蓝 向海图强”。",
+      "summaryReason": "来自中国政府网，权威发布习近平主席关于海洋经济的重要论述，指引海洋强国建设方向。",
+      "importance": "体现国家高层对海洋经济高质量发展的战略部署，具有政策指导意义。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-a9be202e29",
       "sourceId": "govcn-yaowen",
       "title": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
       "title_original": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
-      "title_zh": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
+      "title_zh": "习近平访朝：弘扬传统密切协作 刘海星谈成果",
       "titleZh": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
       "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071734.htm",
       "source": "中国政府网要闻",
@@ -1915,14 +2100,14 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "应金正恩邀请，习近平主席于6月8日至9日对朝鲜进行国事访问。访问结束之际，中联部部长刘海星向记者介绍此访，强调弘扬优良传统、密切团结协作。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "2026年6月8日至9日，应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平对朝鲜民主主义人民共和国进行国事访问。访问结束之际，中共中央对外联络部部长刘海星向随行记者介绍此访情况。",
       "impactAreas": [
-        "公共政策",
-        "弘扬优良传统",
-        "密切团结协作",
-        "中共中央对外联络部部长刘"
+        "外交",
+        "地缘政治",
+        "中朝关系",
+        "国际关系"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -1953,14 +2138,22 @@
         "覆盖国务院"
       ],
       "score": 100,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平访朝：弘扬传统密切协作 刘海星谈成果",
+      "aiSummary": "应金正恩邀请，习近平主席于6月8日至9日对朝鲜进行国事访问。访问结束之际，中联部部长刘海星向记者介绍此访，强调弘扬优良传统、密切团结协作。",
+      "summaryReason": "此次访问是中国领导人近期重要外交活动，体现中朝传统友谊，对地区地缘政治有影响。",
+      "importance": "展现了中朝高层互动，是两国关系发展的重要节点。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-bf2d80cf58",
       "sourceId": "govcn-yaowen",
       "title": "人形机器人与具身智能实景实训专项行动启动",
       "title_original": "人形机器人与具身智能实景实训专项行动启动",
-      "title_zh": "人形机器人与具身智能实景实训专项行动启动",
+      "title_zh": "人形机器人与具身智能实景实训行动启动",
       "titleZh": "人形机器人与具身智能实景实训专项行动启动",
       "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
       "source": "中国政府网要闻",
@@ -1973,14 +2166,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "工业和信息化部、国务院国资委联合印发通知，正式启动2026年度人形机器人与具身智能实景实训专项行动，提出到2026年底，人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署，开启“作业模式”；形成百个以上高价值应用场景，进一步丰富具身智能应用谱系，带动形成万台级规模落地能力。",
       "impactAreas": [
-        "公共政策",
-        "人形机器人与具身智能实景",
-        "实训专项行动启动",
-        "中国政府网要闻列表"
+        "人形机器人",
+        "具身智能",
+        "产业政策"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -2011,7 +2203,15 @@
         "国务院国资委联合印发通知"
       ],
       "score": 100,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "人形机器人与具身智能实景实训行动启动",
+      "aiSummary": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。",
+      "summaryReason": "政策明确推动人形机器人产业化示范，目标具体且规模可观，标志国家层面对具身智能落地的加速支持。",
+      "importance": "国家部委联合推动人形机器人产业化示范，目标清晰，将加速具身智能在真实场景的应用和规模化部署。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-645ff3899a",
@@ -2031,14 +2231,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。麦收进度快于去年同期，为全年粮食丰收奠定基础。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。",
       "impactAreas": [
-        "公共政策",
-        "全国夏粮小麦已收获近七成",
-        "中国政府网要闻列表",
-        "覆盖国务院"
+        "农业",
+        "粮食安全",
+        "经济指标"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -2069,7 +2268,15 @@
         "亿亩"
       ],
       "score": 100,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "全国夏粮小麦已收获近七成",
+      "aiSummary": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。麦收进度快于去年同期，为全年粮食丰收奠定基础。",
+      "summaryReason": "夏粮是全年粮食生产第一季，收获进度直接关系粮食安全，是宏观经济重要先行指标。",
+      "importance": "夏粮产量占全年粮食总产约1/4，进度数据反映农业运行状况，对物价和民生有重要影响。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "macro-item-e0e1a876aa",
@@ -2200,11 +2407,14 @@
       "summary_original": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
       "contentExcerpt": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.",
       "impactAreas": [
-        "国际"
+        "塑料污染",
+        "可持续发展",
+        "国际贸易",
+        "环境政策"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/28-05-2025-Doumeizel-seaweed-04.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -2229,7 +2439,17 @@
       ],
       "score": 100,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "塑料可持续替代品为何难以竞争",
+      "aiSummary": "塑料污染威胁海洋，但可持续替代品（如海藻）因关税、法规碎片化和化石塑料的市场优势而发展受阻。",
+      "summaryReason": "塑料污染问题严峻，替代品发展阻碍反映环境与经济利益的冲突，影响全球环保进程。",
+      "importance": "揭示塑料污染治理中可持续方案面临的政策与经济壁垒，对环保政策制定有警示意义。",
+      "title_zh": "塑料可持续替代品为何难以竞争",
+      "summary_zh": "塑料污染威胁海洋，但可持续替代品（如海藻）因关税、法规碎片化和化石塑料的市场优势而发展受阻。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "macro-item-87f39734f9",
@@ -2303,12 +2523,13 @@
       "summary_original": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT.",
       "contentExcerpt": "The Federal Reserve Board on Tuesday announced that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT. The Board'",
       "impactAreas": [
-        "宏观",
-        "商业"
+        "银行监管",
+        "美联储",
+        "金融稳定"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.federalreserve.gov/images/social-media/social-default-image-opengraph.jpg",
       "tags": [
         "Banking and Consumer Regulatory Policy"
@@ -2335,7 +2556,17 @@
       ],
       "score": 98,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "美联储宣布6月24日发布年度银行压力测试结果",
+      "aiSummary": "美联储委员会周二宣布，年度银行压力测试结果将于6月24日下午4点（美东时间）公布。该测试评估大型银行在严重经济衰退情景下的资本充足性，对银行股及金融监管政策具有重要参考意义。",
+      "summaryReason": "美联储压力测试结果直接影响银行资本要求和股息回购计划，是衡量银行业稳健性的关键指标，投资者和监管机构高度关注。",
+      "importance": "美联储年度压力测试是衡量大型银行抗风险能力的核心监管工具，结果将影响银行资本政策和市场预期。",
+      "title_zh": "美联储宣布6月24日发布年度银行压力测试结果",
+      "summary_zh": "美联储委员会周二宣布，年度银行压力测试结果将于6月24日下午4点（美东时间）公布。该测试评估大型银行在严重经济衰退情景下的资本充足性，对银行股及金融监管政策具有重要参考意义。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "macro-item-c4e794b348",
@@ -2845,14 +3076,13 @@
       "summary_original": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
       "contentExcerpt": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
       "impactAreas": [
-        "AI",
-        "市场监管",
-        "SEC",
-        "Establishes"
+        "金融监管",
+        "数据标准",
+        "合规"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "tags": [],
       "article_keywords": [
         "AI",
@@ -2876,7 +3106,17 @@
       ],
       "score": 97,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "SEC依据《2022年金融数据透明法案》制定联合数据标准",
+      "aiSummary": "美国证券交易委员会（SEC）根据《2022年金融数据透明法案》最终确定了联合数据标准，旨在统一向金融监管机构提交数据的技术规范，提升数据透明度和可比性。",
+      "summaryReason": "该规则涉及金融数据标准化，影响监管效率与市场透明度，对金融机构合规和数据治理有深远意义。",
+      "importance": "作为《金融数据透明法案》的重要实施步骤，该标准将重塑金融监管数据生态，推动行业数字化转型。",
+      "title_zh": "SEC依据《2022年金融数据透明法案》制定联合数据标准",
+      "summary_zh": "美国证券交易委员会（SEC）根据《2022年金融数据透明法案》最终确定了联合数据标准，旨在统一向金融监管机构提交数据的技术规范，提升数据透明度和可比性。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-openai-news-c87c9f548d",
@@ -2897,11 +3137,13 @@
       "summary_original": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
       "contentExcerpt": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
       "impactAreas": [
-        "国际"
+        "AI治理",
+        "产业政策",
+        "科技战略"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "tags": [
         "Global Affairs"
       ],
@@ -2927,7 +3169,17 @@
       ],
       "score": 96,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "智能时代的产业政策",
+      "aiSummary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+      "summaryReason": "该政策框架体现AI治理新思路，对全球科技发展和监管具有前瞻性影响。",
+      "importance": "OpenAI发布AI产业政策蓝图，可能引导未来全球AI治理与经济发展方向。",
+      "title_zh": "智能时代的产业政策",
+      "summary_zh": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-un-news-891e51e688",
@@ -2948,11 +3200,13 @@
       "summary_original": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
       "contentExcerpt": "The Security Council met on Monday amid a sharp escalation in hostilities across Ukraine, where UN officials warned that the war has reached its deadliest point since Russia’s full-scale invasion in 2022. Briefing members, Rosemary DiCarlo, Under-Secretary-General for political affairs, said recent months had seen some of the most extensive aerial attacks of the conflict, while the humanitarian toll on civilians continued to mount on both sides of the front line.",
       "impactAreas": [
-        "国际"
+        "地缘政治",
+        "人道主义",
+        "联合国"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -2977,7 +3231,17 @@
       ],
       "score": 96,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "安理会就乌克兰局势召开会议：人道主义灾难加剧",
+      "aiSummary": "联合国安理会周一召开会议，讨论乌克兰局势。联合国官员警告，自2022年俄全面入侵以来，战争已达到最致命阶段。近期双方遭受大规模空袭，平民伤亡持续上升。",
+      "summaryReason": "安理会紧急会议凸显乌克兰局势严峻，人道主义危机升级，对国际安全与稳定构成重大威胁。",
+      "importance": "该事件反映俄乌冲突持续恶化，可能引发新一轮国际制裁与援助调整，影响全球地缘政治格局。",
+      "title_zh": "安理会就乌克兰局势召开会议：人道主义灾难加剧",
+      "summary_zh": "联合国安理会周一召开会议，讨论乌克兰局势。联合国官员警告，自2022年俄全面入侵以来，战争已达到最致命阶段。近期双方遭受大规模空袭，平民伤亡持续上升。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-un-news-9f25381f5b",
@@ -2998,11 +3262,13 @@
       "summary_original": "Children are dying because doctors cannot access essential medicines, UN human rights chief&nbsp;Volker Türk&nbsp;said in a&nbsp;stark warning&nbsp;on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
       "contentExcerpt": "Children are dying because doctors cannot access essential medicines, UN human rights chief Volker Türk said in a stark warning on Monday, calling for the immediate lifting of United States sanctions against the Caribbean nation that were causing “widespread harm”.",
       "impactAreas": [
-        "国际"
+        "美国制裁",
+        "人道主义危机",
+        "儿童健康"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/21-01-2026-UN-Cuba-01.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -3027,7 +3293,17 @@
       ],
       "score": 96,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "美国制裁致古巴危机 联合国人权高官警告儿童死亡",
+      "aiSummary": "联合国人权事务高级专员沃尔克·蒂尔克周一发出严厉警告，称美国制裁导致古巴医生无法获取基本药物，儿童因此死亡，呼吁立即解除制裁。",
+      "summaryReason": "美国制裁引发古巴医疗危机，儿童死亡凸显人道主义灾难，国际社会高度关注。",
+      "importance": "联合国最高人权官员的警告凸显制裁对古巴人民造成的严重人道主义影响，可能推动国际舆论压力。",
+      "title_zh": "美国制裁致古巴危机 联合国人权高官警告儿童死亡",
+      "summary_zh": "联合国人权事务高级专员沃尔克·蒂尔克周一发出严厉警告，称美国制裁导致古巴医生无法获取基本药物，儿童因此死亡，呼吁立即解除制裁。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-nasa-breaking-news-457a0950f2",
@@ -3048,11 +3324,13 @@
       "summary_original": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake.",
       "contentExcerpt": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake. The Southern Patagonian Icefield is the largest expanse of ice in the Southern Hemisphere outside of Antarctica. The mass of glacial ice extends hundreds of kilometers along the spine of the Andes, feeding dozens of dynamic outlet glaciers that grind their way down from higher elevations. Many of these rivers of ice terminate in the sea or in proglacial lakes. An astronaut aboard the International Spa...",
       "impactAreas": [
-        "国际"
+        "冰川",
+        "气候变化",
+        "地球观测"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/tyndall%E2%80%99s-trail-of-bergs/ISS074-E-582898_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "tags": [
         "Earth Observatory",
@@ -3081,14 +3359,24 @@
       ],
       "score": 95,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "廷德尔冰川的冰山踪迹",
+      "aiSummary": "冰从南巴塔哥尼亚冰川崩解，漂过冰前湖。该冰原是南半球除南极外最大冰体，沿安第斯山脉延伸数百公里，多条冰川入海或入湖。宇航员在空间站拍摄到这一景象。",
+      "summaryReason": "冰川崩解是气候变化的重要指标，NASA的观测为全球变暖研究提供数据。",
+      "importance": "该事件直观反映冰川消融趋势，对理解海平面上升和生态环境变化具有科学价值。",
+      "title_zh": "廷德尔冰川的冰山踪迹",
+      "summary_zh": "冰从南巴塔哥尼亚冰川崩解，漂过冰前湖。该冰原是南半球除南极外最大冰体，沿安第斯山脉延伸数百公里，多条冰川入海或入湖。宇航员在空间站拍摄到这一景象。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-6966311ba6",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
       "title_original": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
-      "title_zh": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
+      "title_zh": "习近平与格鲁吉亚总统宣布关系提升为全面战略伙伴",
       "titleZh": "【视频】习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
       "url": "https://tv.cctv.com/2026/06/09/VIDEW5gMig4z7JaLkW5WsGUm260609.shtml",
       "source": "中国政府网要闻",
@@ -3101,14 +3389,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国国家主席习近平与格鲁吉亚总统互致贺电，庆祝建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。此举标志着两国合作进入新阶段，将深化政治互信与务实合作。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "习近平同格鲁吉亚总统就中格建交34周年互致贺电并共同宣布将双边关系提升为全面战略伙伴关系",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平同格鲁吉亚总统就中",
-        "格建交"
+        "外交关系",
+        "地缘政治",
+        "一带一路"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3139,14 +3426,22 @@
         "中国政府网要闻列表"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平与格鲁吉亚总统宣布关系提升为全面战略伙伴",
+      "aiSummary": "中国国家主席习近平与格鲁吉亚总统互致贺电，庆祝建交34周年，并共同宣布将双边关系提升为全面战略伙伴关系。此举标志着两国合作进入新阶段，将深化政治互信与务实合作。",
+      "summaryReason": "中格关系升级是中国外交重要进展，体现“一带一路”框架下合作深化，对高加索地区地缘格局有积极影响。",
+      "importance": "中格关系提升至全面战略伙伴关系，是中国推进周边外交与欧亚区域合作的关键举措，具有标志性意义。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-363bfb183c",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平向加拿大新任总督致贺电",
       "title_original": "【视频】习近平向加拿大新任总督致贺电",
-      "title_zh": "【视频】习近平向加拿大新任总督致贺电",
+      "title_zh": "习近平向加拿大新任总督致贺电",
       "titleZh": "【视频】习近平向加拿大新任总督致贺电",
       "url": "https://tv.cctv.com/2026/06/09/VIDESaq4X49TKqGnwU9O7e4Y260609.shtml",
       "source": "中国政府网要闻",
@@ -3159,14 +3454,12 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平主席向加拿大新任总督致贺电，体现中加友好交流。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平向加拿大新任总督致",
-        "贺电"
+        "外交关系",
+        "中加关系"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3183,7 +3476,8 @@
         "贺电",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交关系"
       ],
       "keywords": [
         "公共政策",
@@ -3192,10 +3486,19 @@
         "贺电",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平向加拿大新任总督致贺电",
+      "aiSummary": "习近平主席向加拿大新任总督致贺电，体现中加友好交流。",
+      "summaryReason": "外交互动，反映中加关系动态。",
+      "importance": "中国领导人致贺电，标志双边关系新进展。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-5714ca2498",
@@ -3215,14 +3518,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "国家主席习近平圆满结束对朝鲜的国事访问，乘专机回到北京。此次访问深化中朝传统友谊与战略沟通。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平结束对朝鲜国事访问",
-        "回到北京"
+        "中朝关系",
+        "外交",
+        "地缘政治"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3239,7 +3541,8 @@
         "回到北京",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "keywords": [
         "公共政策",
@@ -3248,17 +3551,26 @@
         "回到北京",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "【视频】习近平结束对朝鲜国事访问回到北京",
+      "aiSummary": "国家主席习近平圆满结束对朝鲜的国事访问，乘专机回到北京。此次访问深化中朝传统友谊与战略沟通。",
+      "summaryReason": "中朝领导人会晤对地区稳定与双边合作具有重要影响，外界高度关注。",
+      "importance": "体现中国外交布局关键一环，强化与朝鲜的战略协作。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-a46713b192",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平出席金正恩举行的欢送仪式",
       "title_original": "【视频】习近平出席金正恩举行的欢送仪式",
-      "title_zh": "【视频】习近平出席金正恩举行的欢送仪式",
+      "title_zh": "视频：习近平出席金正恩欢送仪式",
       "titleZh": "【视频】习近平出席金正恩举行的欢送仪式",
       "url": "https://tv.cctv.com/2026/06/09/VIDEbsnglfHmTVbjmMW0erbQ260609.shtml",
       "source": "中国政府网要闻",
@@ -3271,14 +3583,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平主席出席朝鲜领导人金正恩举行的欢送仪式，体现中朝友好关系与高层战略沟通。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "送仪式"
+        "中朝关系",
+        "外交",
+        "地缘政治"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3295,7 +3606,8 @@
         "送仪式",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "keywords": [
         "公共政策",
@@ -3304,17 +3616,26 @@
         "送仪式",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "视频：习近平出席金正恩欢送仪式",
+      "aiSummary": "习近平主席出席朝鲜领导人金正恩举行的欢送仪式，体现中朝友好关系与高层战略沟通。",
+      "summaryReason": "中朝领导人互动显示两国关系紧密，影响东北亚地缘政治格局。",
+      "importance": "中朝高层交往标志双边关系稳定，对地区稳定有重要意义。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-eb4c53949f",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平夫妇出席金正恩夫妇举行的小范围午宴",
       "title_original": "【视频】习近平夫妇出席金正恩夫妇举行的小范围午宴",
-      "title_zh": "【视频】习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "title_zh": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
       "titleZh": "【视频】习近平夫妇出席金正恩夫妇举行的小范围午宴",
       "url": "https://tv.cctv.com/2026/06/09/VIDENnLmDK7lQdEgJfgyxgpP260609.shtml",
       "source": "中国政府网要闻",
@@ -3327,14 +3648,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平夫妇应邀出席金正恩夫妇举办的小范围午宴，体现中朝高层密切互动。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平夫妇出席金正恩夫妇",
-        "举行的小范围午宴"
+        "中朝关系",
+        "地缘政治",
+        "外交"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3351,7 +3671,8 @@
         "举行的小范围午宴",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "keywords": [
         "公共政策",
@@ -3360,17 +3681,26 @@
         "举行的小范围午宴",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平夫妇出席金正恩夫妇举行的小范围午宴",
+      "aiSummary": "习近平夫妇应邀出席金正恩夫妇举办的小范围午宴，体现中朝高层密切互动。",
+      "summaryReason": "中朝领导人会晤显示两国关系紧密，对地区稳定有重要影响。",
+      "importance": "最高级别外交活动，反映中朝特殊关系及地区动态。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-dff863c29b",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平参访朝鲜劳动党中央干部学校",
       "title_original": "【视频】习近平参访朝鲜劳动党中央干部学校",
-      "title_zh": "【视频】习近平参访朝鲜劳动党中央干部学校",
+      "title_zh": "习近平参访朝鲜劳动党中央干部学校",
       "titleZh": "【视频】习近平参访朝鲜劳动党中央干部学校",
       "url": "https://tv.cctv.com/2026/06/09/VIDEGxMX2IUHwkM102RUs5W2260609.shtml",
       "source": "中国政府网要闻",
@@ -3383,14 +3713,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平访问朝鲜劳动党中央干部学校，加强党际交流与合作，深化中朝传统友谊。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平参访朝鲜劳动党中央",
-        "干部学校"
+        "外交",
+        "中朝关系",
+        "政党交流"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3407,7 +3736,8 @@
         "干部学校",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交"
       ],
       "keywords": [
         "公共政策",
@@ -3416,17 +3746,26 @@
         "干部学校",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平参访朝鲜劳动党中央干部学校",
+      "aiSummary": "习近平访问朝鲜劳动党中央干部学校，加强党际交流与合作，深化中朝传统友谊。",
+      "summaryReason": "此访彰显中朝高层政治互信，对地区稳定及社会主义国家间交往具有重要示范意义。",
+      "importance": "中朝关系新里程碑，展现党际外交独特作用，影响东北亚政治格局。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-70d56f88e6",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平和彭丽媛参谒中朝友谊塔",
       "title_original": "【视频】习近平和彭丽媛参谒中朝友谊塔",
-      "title_zh": "【视频】习近平和彭丽媛参谒中朝友谊塔",
+      "title_zh": "习近平和彭丽媛参谒中朝友谊塔",
       "titleZh": "【视频】习近平和彭丽媛参谒中朝友谊塔",
       "url": "https://tv.cctv.com/2026/06/09/VIDEJKN9ks5yycbG3jegN3qn260609.shtml",
       "source": "中国政府网要闻",
@@ -3439,14 +3778,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平主席和夫人彭丽媛参谒中朝友谊塔，缅怀志愿军烈士，巩固中朝传统友谊。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平和彭丽媛参谒中朝友",
-        "谊塔"
+        "中朝关系",
+        "外交",
+        "领导活动"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3463,7 +3801,8 @@
         "谊塔",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "keywords": [
         "公共政策",
@@ -3472,17 +3811,26 @@
         "谊塔",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平和彭丽媛参谒中朝友谊塔",
+      "aiSummary": "习近平主席和夫人彭丽媛参谒中朝友谊塔，缅怀志愿军烈士，巩固中朝传统友谊。",
+      "summaryReason": "国家领导人亲自参谒，体现对中朝关系的高度重视，具有重要外交象征意义。",
+      "importance": "此事件凸显中朝传统友谊的延续，是两国高层政治互信的象征，对稳定东北亚局势有积极影响。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-d3b1b639a9",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平和彭丽媛观看朝鲜专场文艺演出",
       "title_original": "【视频】习近平和彭丽媛观看朝鲜专场文艺演出",
-      "title_zh": "【视频】习近平和彭丽媛观看朝鲜专场文艺演出",
+      "title_zh": "习近平和彭丽媛观看朝鲜专场文艺演出",
       "titleZh": "【视频】习近平和彭丽媛观看朝鲜专场文艺演出",
       "url": "https://tv.cctv.com/2026/06/09/VIDE2n8Uh4OwnHuQhwsFLVAU260609.shtml",
       "source": "中国政府网要闻",
@@ -3495,14 +3843,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国国家主席习近平与夫人彭丽媛在朝鲜访问期间，观看了朝方精心准备的专场文艺演出，体现中朝友好交流。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平和彭丽媛观看朝鲜专",
-        "场文艺演出"
+        "中朝关系",
+        "外交",
+        "文化活动"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3519,7 +3866,8 @@
         "场文艺演出",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "keywords": [
         "公共政策",
@@ -3528,17 +3876,26 @@
         "场文艺演出",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "中朝关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平和彭丽媛观看朝鲜专场文艺演出",
+      "aiSummary": "中国国家主席习近平与夫人彭丽媛在朝鲜访问期间，观看了朝方精心准备的专场文艺演出，体现中朝友好交流。",
+      "summaryReason": "作为两国高层互动的重要环节，该活动展示了中朝关系的现状与人文交流深度。",
+      "importance": "中朝领导人共同观看演出是双边关系密切的象征，对地区稳定有积极信号。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-dde929c248",
       "sourceId": "govcn-yaowen",
       "title": "【视频】习近平出席金正恩举行的欢迎宴会",
       "title_original": "【视频】习近平出席金正恩举行的欢迎宴会",
-      "title_zh": "【视频】习近平出席金正恩举行的欢迎宴会",
+      "title_zh": "习近平出席金正恩欢迎宴会",
       "titleZh": "【视频】习近平出席金正恩举行的欢迎宴会",
       "url": "https://tv.cctv.com/2026/06/09/VIDEKTvaPwYa4HtIAD2aeTOv260609.shtml",
       "source": "中国政府网要闻",
@@ -3551,14 +3908,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "习近平主席出席朝鲜领导人金正恩举行的欢迎宴会，中朝高层互动引关注。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "迎宴会"
+        "外交",
+        "中朝关系",
+        "东北亚"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3575,7 +3931,8 @@
         "迎宴会",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交"
       ],
       "keywords": [
         "公共政策",
@@ -3584,17 +3941,26 @@
         "迎宴会",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "习近平出席金正恩欢迎宴会",
+      "aiSummary": "习近平主席出席朝鲜领导人金正恩举行的欢迎宴会，中朝高层互动引关注。",
+      "summaryReason": "中朝领导人会晤体现双边关系深化，是重要外交事件。",
+      "importance": "高层外交互动，彰显中朝传统友谊，影响东北亚局势。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-05d51472bf",
       "sourceId": "govcn-yaowen",
       "title": "【视频】谌贻琴访问保加利亚",
       "title_original": "【视频】谌贻琴访问保加利亚",
-      "title_zh": "【视频】谌贻琴访问保加利亚",
+      "title_zh": "谌贻琴访问保加利亚",
       "titleZh": "【视频】谌贻琴访问保加利亚",
       "url": "https://tv.cctv.com/2026/06/09/VIDE0HmHksjsywvY7gkPeMY4260609.shtml",
       "source": "中国政府网要闻",
@@ -3607,14 +3973,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "国务委员谌贻琴应邀访问保加利亚，推动双边关系发展及务实合作。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "impactAreas": [
-        "公共政策",
-        "视频",
-        "谌贻琴访问保加利亚",
-        "中国政府网要闻列表"
+        "外交访问",
+        "中保关系",
+        "欧洲"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3630,7 +3995,9 @@
         "谌贻琴访问保加利亚",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交访问",
+        "中保关系"
       ],
       "keywords": [
         "公共政策",
@@ -3638,17 +4005,27 @@
         "谌贻琴访问保加利亚",
         "中国政府网要闻列表",
         "覆盖国务院",
-        "部门政策和公共事务即时发"
+        "部门政策和公共事务即时发",
+        "外交访问",
+        "中保关系"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "谌贻琴访问保加利亚",
+      "aiSummary": "国务委员谌贻琴应邀访问保加利亚，推动双边关系发展及务实合作。",
+      "summaryReason": "中国高层外访，显示对中东欧外交的重视，涉及双边关系与区域合作。",
+      "importance": "高层访问体现中国外交布局，对中保及中国-中东欧合作有示范意义。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-item-ab6a278362",
       "sourceId": "govcn-yaowen",
       "title": "图表：2026年前5月我国货物贸易进出口延续稳定增长",
       "title_original": "图表：2026年前5月我国货物贸易进出口延续稳定增长",
-      "title_zh": "图表：2026年前5月我国货物贸易进出口延续稳定增长",
+      "title_zh": "前5月我国货物贸易进出口增长15.3%",
       "titleZh": "图表：2026年前5月我国货物贸易进出口延续稳定增长",
       "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7071661.htm",
       "source": "中国政府网要闻",
@@ -3661,14 +4038,13 @@
       "timelinessTier": "hourly",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "海关总署6月9日发布数据，今年前5个月我国货物贸易进出口总值20.68万亿元，同比增长15.3%，增速较前4个月加快0.4个百分点，延续稳定增长态势。",
       "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "contentExcerpt": "海关总署6月9日发布数据显示，今年前5个月，我国货物贸易进出口总值20.68万亿元，同比增速继续上行至15.3%，较前4个月加快0.4个百分点。",
       "impactAreas": [
-        "公共政策",
-        "图表",
-        "年前",
-        "月我国货物贸易进出口延续"
+        "外贸",
+        "经济数据",
+        "宏观经济"
       ],
       "source_language": "zh",
       "sourceLanguage": "zh",
@@ -3699,7 +4075,15 @@
         "部门政策和公共事务即时发"
       ],
       "score": 95,
-      "duplicateCount": 0
+      "duplicateCount": 0,
+      "translatedTitle": "前5月我国货物贸易进出口增长15.3%",
+      "aiSummary": "海关总署6月9日发布数据，今年前5个月我国货物贸易进出口总值20.68万亿元，同比增长15.3%，增速较前4个月加快0.4个百分点，延续稳定增长态势。",
+      "summaryReason": "官方最新外贸数据显示增长加速，反映经济稳定和外部需求增强。",
+      "importance": "外贸数据是宏观经济重要指标，增速回升表明稳外贸政策见效。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-bf4a4fdd26",
@@ -3719,14 +4103,13 @@
       "summary_original": "As the Security Council met on Afghanistan, senior officials and civil society representatives delivered a clear warning Monday: despite relative security under the Taliban, worsening humanitarian conditions, restrictions on women and growing economic pressures are creating a fragile and uncertain future.&nbsp;",
       "contentExcerpt": "As the Security Council met on Afghanistan, senior officials and civil society representatives delivered a clear warning Monday: despite relative security under the Taliban, worsening humanitarian conditions, restrictions on women and growing economic pressures are creating a fragile and uncertain future.",
       "impactAreas": [
-        "AI",
-        "security",
         "地缘政治",
-        "市场监管"
+        "人道危机",
+        "女性权益"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/12-01-2023_UNICEF_Afghanistan.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -3751,7 +4134,17 @@
       ],
       "score": 95,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "阿富汗面临“人才与潜能失落的一代”，安理会听取警告",
+      "aiSummary": "联合国安理会周一就阿富汗局势举行会议，高级官员和民间社会代表警告称，尽管塔利班统治下相对安全，但日益恶化的人道主义状况、对妇女的限制和经济压力正造成脆弱且不确定的未来。",
+      "summaryReason": "安理会正式会议发出明确警告，阿富汗人道危机加剧、妇女权利受压制，可能产生长期负面影响，需国际关注。",
+      "importance": "反映阿富汗人道与妇女权利危机升级，安理会层级的正式警告凸显问题紧迫性，对国际援助和政策有重要影响。",
+      "title_zh": "阿富汗面临“人才与潜能失落的一代”，安理会听取警告",
+      "summary_zh": "联合国安理会周一就阿富汗局势举行会议，高级官员和民间社会代表警告称，尽管塔利班统治下相对安全，但日益恶化的人道主义状况、对妇女的限制和经济压力正造成脆弱且不确定的未来。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-nasa-breaking-news-abb3c2dc53",
@@ -3771,14 +4164,13 @@
       "summary_original": "HomeCharacteristics The Flight Dynamics Research Facility (FDRF) is a large, subsonic wind tunnel with a vertical test section for conducting flight dynamics research for stability, controllability, free-fall and aircraft spin, and spin recovery testing of atmospheric vehicles. Characteristics Flight Dynamics Flight Research Aerosciences Evaluation and Test Capabilities",
       "contentExcerpt": "The Flight Dynamics Research Facility (FDRF) is a large, subsonic wind tunnel with a vertical test section for conducting flight dynamics research for stability, controllability, free-fall and aircraft spin, and spin recovery testing of atmospheric vehicles. Aerosciences Evaluation and Test Capabilities",
       "impactAreas": [
-        "AI",
-        "市场监管",
-        "Flight",
-        "Dynamics"
+        "航空航天",
+        "测试技术",
+        "风洞设施"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/04/clic-x047-2cf8-9.jpg",
       "tags": [
         "Aerosciences Evaluation Test Capabilities"
@@ -3805,7 +4197,17 @@
       ],
       "score": 93,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "飞行动力学研究设施特点",
+      "aiSummary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+      "summaryReason": "该设施是NASA在空气动力学测试领域的重要进展，对飞行器安全与性能研究具有关键作用。",
+      "importance": "强化美国航空试验基础能力，支撑未来飞行器设计与安全认证。",
+      "title_zh": "飞行动力学研究设施特点",
+      "summary_zh": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "tech-github-blog-31372dc48b",
@@ -3825,14 +4227,14 @@
       "summary_original": "Custom agents let GitHub Copilot CLI understand your stack and team workflows, turning one-off terminal prompts into repeatable, reviewable processes. The post From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI appeared first on The GitHub Blog .",
       "contentExcerpt": "Jacklyn Lee is a Content Writer at GitHub and a former technical writer with a love for good storytelling. At Microsoft Build 2026, GitHub introduced new tools, updates, and surfaces so agents can work the way you already work. We are committed to empowering every developer by building an open, secure, and AI-powered platform that defines the future of software development. We are committed to empowering every developer by building an open, secure, and AI-powered platform that defines the fut...",
       "impactAreas": [
-        "AI",
-        "AI & ML",
-        "GitHub Copilot",
-        "GitHub Copilot CLI"
+        "AI编程",
+        "GitHub",
+        "开发者工具",
+        "工作流自动化"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/01/CLIBanner_BlogHeader_01.jpg?fit=2400%2C1260",
       "tags": [
         "AI & ML",
@@ -3861,7 +4263,17 @@
       ],
       "score": 93,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "GitHub Copilot CLI自定义代理：从提示到工作流",
+      "aiSummary": "GitHub在Build 2026推出Copilot CLI自定义代理功能，使代理能适应用户现有开发方式，从单次提示转向复杂工作流，旨在赋能开发者，推动AI辅助编程进入新阶段。",
+      "summaryReason": "GitHub Copilot是广泛使用的AI编程工具，自定义代理功能提升开发效率，标志AI从辅助到协作的演进，影响开发者工作模式。",
+      "importance": "高。直接影响开发者日常编码流程，降低AI工具使用门槛，加速AI与软件开发深度融合。",
+      "title_zh": "GitHub Copilot CLI自定义代理：从提示到工作流",
+      "summary_zh": "GitHub在Build 2026推出Copilot CLI自定义代理功能，使代理能适应用户现有开发方式，从单次提示转向复杂工作流，旨在赋能开发者，推动AI辅助编程进入新阶段。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "tech-openai-news-c9b177c6bf",
@@ -3881,14 +4293,14 @@
       "summary_original": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
       "contentExcerpt": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
       "impactAreas": [
-        "AI",
-        "What",
-        "Codex",
-        "unlocks"
+        "AI代码生成",
+        "效率工具",
+        "语音交互",
+        "产品开发"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "tags": [],
       "article_keywords": [
         "AI",
@@ -3912,7 +4324,17 @@
       ],
       "score": 93,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "Codex为Notion解锁的能力",
+      "aiSummary": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
+      "summaryReason": "案例展示了AI代码生成工具如何快速实现复杂功能，显著提升开发效率和产品体验，对技术应用有示范意义。",
+      "importance": "高，因为Codex改变了软件工程工作流，使小团队能够快速交付高级功能。",
+      "title_zh": "Codex为Notion解锁的能力",
+      "summary_zh": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-nasa-breaking-news-c63518c72e",
@@ -3932,14 +4354,14 @@
       "summary_original": "Taking another step toward one of the most complex human spaceflight missions in recent history, NASA on Tuesday provided new Artemis&#160;III details and announced the four prime crew members and a backup for the test flight. The mission will undertake a series of challenging tests in Earth orbit in 2027, essential for Artemis IV, the [&#8230;]",
       "contentExcerpt": "Taking another step toward one of the most complex human spaceflight missions in recent history, NASA on Tuesday provided new Artemis III details and announced the four prime crew members and a backup for the test flight. The mission will undertake a series of challenging tests in Earth orbit in 2027, essential for Artemis IV, the first planned crewed mission to the lunar South Pole in 2028. During Artemis III, the agency’s SLS (Space Launch System) rocket will launch the Orion spacecraft and...",
       "impactAreas": [
-        "AI",
-        "Artemis",
-        "Artemis 3",
-        "Missions"
+        "航天探索",
+        "NASA",
+        "月球任务",
+        "载人航天"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/artemis-iii-crew.jpg",
       "tags": [
         "Artemis",
@@ -3968,7 +4390,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "NASA推进2027年Artemis III任务，公布机组人员",
+      "aiSummary": "NASA宣布Artemis III任务四名主要宇航员及一名后备，该任务将于2027年在地球轨道进行关键测试，为2028年Artemis IV登月任务奠定基础。",
+      "summaryReason": "首次公布Artemis III宇航员，标志着人类重返月球计划迈出重要一步，对深空探索具有里程碑意义。",
+      "importance": "高，Artemis III是NASA月球探索关键测试任务，直接影响后续登月计划实施。",
+      "title_zh": "NASA推进2027年Artemis III任务，公布机组人员",
+      "summary_zh": "NASA宣布Artemis III任务四名主要宇航员及一名后备，该任务将于2027年在地球轨道进行关键测试，为2028年Artemis IV登月任务奠定基础。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-nasa-breaking-news-7fe1155d41",
@@ -3988,14 +4420,13 @@
       "summary_original": "This article is for students grades 5-8. Mass distribution affects everything from galaxy shapes to aircraft design to planetary rotation. It’s used to map stars in our universe, figure out what planets are made of, and even to determine how luggage is loaded onto an airplane. Mass distribution can be a tricky thing to understand. [&#8230;]",
       "contentExcerpt": "This article is for students grades 5-8. Mass distribution affects everything from galaxy shapes to aircraft design to planetary rotation. It’s used to map stars in our universe, figure out what planets are made of, and even to determine how luggage is loaded onto an airplane. Mass distribution can be a tricky thing to understand. So, let’s explore it using an everyday example: a soccer ball. Have you ever kicked a soccer ball and wondered why it curves, spins, or sometimes wobbles? Mass dist...",
       "impactAreas": [
-        "AI",
-        "Learning Resources",
-        "Explore",
-        "For Kids and Students"
+        "空间科学",
+        "物理教育",
+        "飞机设计"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/distribution-of-mass-banner.png",
       "tags": [
         "Learning Resources",
@@ -4025,7 +4456,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "NASA科普：质量分布是什么？",
+      "aiSummary": "质量分布影响从星系形状到飞机设计再到行星自转的一切，可用于绘制恒星图、确定行星成分等。本文以足球为例，解释质量分布如何影响旋转和轨迹。",
+      "summaryReason": "该文以通俗易懂的方式解释物理概念，适合学生了解基础科学原理。",
+      "importance": "普及基础科学知识，激发青少年对空间科学和物理的兴趣。",
+      "title_zh": "NASA科普：质量分布是什么？",
+      "summary_zh": "质量分布影响从星系形状到飞机设计再到行星自转的一切，可用于绘制恒星图、确定行星成分等。本文以足球为例，解释质量分布如何影响旋转和轨迹。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "tech-cisa-news-7ca65dc669",
@@ -4096,11 +4537,13 @@
       "summary_original": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
       "contentExcerpt": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
       "impactAreas": [
-        "国际"
+        "人道主义危机",
+        "地缘冲突",
+        "国际援助"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-WFP-Chad-Sudanese.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4125,7 +4568,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "苏丹战争：无人机袭击破坏关键援助路线",
+      "aiSummary": "联合国称，苏丹桥梁、道路等民用基础设施遭持续袭击，人道主义援助通道被切断，平民面临更大风险。",
+      "summaryReason": "说明人道主义危机加剧，援助受阻可能引发更严重的人道灾难。",
+      "importance": "苏丹冲突升级威胁人道主义救援，地区稳定受损，需国际关注。",
+      "title_zh": "苏丹战争：无人机袭击破坏关键援助路线",
+      "summary_zh": "联合国称，苏丹桥梁、道路等民用基础设施遭持续袭击，人道主义援助通道被切断，平民面临更大风险。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-un-news-59fad970ed",
@@ -4146,11 +4599,13 @@
       "summary_original": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
       "contentExcerpt": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
       "impactAreas": [
-        "国际"
+        "儿童保护",
+        "劳工权益",
+        "国际组织"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/11-06-2025_UNICEF_Child_Labour_Sierra_Leone_Quarry.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4175,7 +4630,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "联合国呼吁加速消除童工",
+      "aiSummary": "在6月12日世界无童工日来临之际，联合国敦促各国政府和社会各界加快行动，结束仍在影响数百万儿童的童工危机。",
+      "summaryReason": "联合国官方呼吁，聚焦全球童工问题，具有权威性和时效性，但非突发重大事件。",
+      "importance": "联合国在世界无童工日前夕发出呼吁，强调童工问题的紧迫性和全球影响，需国际社会持续关注。",
+      "title_zh": "联合国呼吁加速消除童工",
+      "summary_zh": "在6月12日世界无童工日来临之际，联合国敦促各国政府和社会各界加快行动，结束仍在影响数百万儿童的童工危机。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-un-news-deb751b89c",
@@ -4196,11 +4661,13 @@
       "summary_original": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
       "contentExcerpt": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
       "impactAreas": [
-        "国际"
+        "联合国",
+        "人权",
+        "社会政策"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-04-2026-UNRWA-Gaza.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4225,7 +4692,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "联合国残疾人权利会议：历史性进展与持续挑战",
+      "aiSummary": "联合国秘书长在第19届全球残疾人权利会议上指出，过去二十年取得了历史性进展，但实现承诺仍需克服重大差距。会议聚焦残障人士权利保障的不足，呼吁国际社会加速行动。",
+      "summaryReason": "该事件涉及联合国推动人权进程，突显全球在残疾人权利方面的成就与不足，具有政策和社会影响。",
+      "importance": "联合国高层会议，标志残疾人权利二十年进展评估，对全球人权议程有重要推动作用。",
+      "title_zh": "联合国残疾人权利会议：历史性进展与持续挑战",
+      "summary_zh": "联合国秘书长在第19届全球残疾人权利会议上指出，过去二十年取得了历史性进展，但实现承诺仍需克服重大差距。会议聚焦残障人士权利保障的不足，呼吁国际社会加速行动。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-un-news-051e655fff",
@@ -4246,11 +4723,14 @@
       "summary_original": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to&nbsp;contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
       "contentExcerpt": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
       "impactAreas": [
-        "国际"
+        "公共卫生",
+        "埃博拉",
+        "刚果（金）",
+        "世卫组织"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-WHO-DR-Congo-ebola-03.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4275,7 +4755,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "刚果（金）埃博拉应对：信任与检测是关键",
+      "aiSummary": "世卫组织称，刚果（金）东部埃博拉疫情中，大规模早期检测和接触者追踪有助于控制病毒传播。",
+      "summaryReason": "该进展对全球公共卫生安全及未来疫情应对具有参考价值。",
+      "importance": "显示早期检测和社区信任在控制埃博拉中的关键作用。",
+      "title_zh": "刚果（金）埃博拉应对：信任与检测是关键",
+      "summary_zh": "世卫组织称，刚果（金）东部埃博拉疫情中，大规模早期检测和接触者追踪有助于控制病毒传播。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-nasa-breaking-news-af76b94cd8",
@@ -4296,11 +4786,13 @@
       "summary_original": "Urban development, green spaces, and maritime activity converge in this Northern California city.",
       "contentExcerpt": "Urban development, green spaces, and maritime activity converge in this Northern California city. A period of unsettled weather brought scattered showers and thunderstorms to California’s Bay Area on May 27, 2026. That afternoon, a break in the clouds left downtown San Francisco and nearby communities beneath mostly cloud-free skies, allowing an astronaut aboard the International Space Station to take this photograph. The image captures two of the region's iconic bridges. The Golden Gate Brid...",
       "impactAreas": [
-        "国际"
+        "城市发展",
+        "航天观测",
+        "土地利用"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/san-francisco%E2%80%99s-metropolitan-mosaic/ISS074-E-619284_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "tags": [
         "Earth Observatory",
@@ -4329,7 +4821,17 @@
       ],
       "score": 92,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "旧金山大都市景观",
+      "aiSummary": "2026年5月27日，国际空间站宇航员在天气短暂转晴时拍摄旧金山湾区，画面展示了城市发展、绿地和海洋活动的融合，包括金门大桥等标志性建筑。",
+      "summaryReason": "该图像从太空视角呈现了人类活动与自然环境的交织，对理解城市扩张有直观价值。",
+      "importance": "展示了航天技术如何帮助监测城市发展与环境变化，为土地利用规划提供参考。",
+      "title_zh": "旧金山大都市景观",
+      "summary_zh": "2026年5月27日，国际空间站宇航员在天气短暂转晴时拍摄旧金山湾区，画面展示了城市发展、绿地和海洋活动的融合，包括金门大桥等标志性建筑。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-e36313e3d4",
@@ -4349,14 +4851,13 @@
       "summary_original": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
       "contentExcerpt": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
       "impactAreas": [
-        "AI",
-        "Fresh",
-        "strikes",
-        "Tyre"
+        "地缘政治",
+        "人道主义",
+        "经济损失"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/02-06-2026-UNHCR-Lebanon-02.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4381,7 +4882,17 @@
       ],
       "score": 91,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "提尔新袭击致8人死亡，联合国称黎巴嫩损失超3.65亿美元",
+      "aiSummary": "联合国最新评估显示，黎巴嫩贝鲁特和黎巴嫩山省建筑损失超3.65亿美元，提尔新袭击致8人死亡，停火协议脆弱，战斗持续。",
+      "summaryReason": "联合国官方数据揭示冲突造成重大经济损失和人员伤亡，突显停火失效与局势恶化，对国际社会关注黎巴嫩危机具有高度重要性。",
+      "importance": "联合国评估显示黎巴嫩冲突经济损失严重，停火脆弱，人道危机加剧，是国际关注焦点。",
+      "title_zh": "提尔新袭击致8人死亡，联合国称黎巴嫩损失超3.65亿美元",
+      "summary_zh": "联合国最新评估显示，黎巴嫩贝鲁特和黎巴嫩山省建筑损失超3.65亿美元，提尔新袭击致8人死亡，停火协议脆弱，战斗持续。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-5facff0fde",
@@ -4401,14 +4912,13 @@
       "summary_original": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
       "contentExcerpt": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
       "impactAreas": [
-        "AI",
-        "Palestinians",
-        "face",
-        "systematic"
+        "巴以冲突",
+        "人权问题",
+        "人道危机"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-02-2025-UNICEF-West-Bank-05.jpg/image560x340cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4433,7 +4943,17 @@
       ],
       "score": 91,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "巴勒斯坦人遭以色列定居者和哈马斯双重系统性虐待",
+      "aiSummary": "联合国人权理事会独立调查员报告称，巴勒斯坦平民在约旦河西岸面临以色列定居者暴力升级，同时在加沙地带遭受哈马斯基于恐惧的统治，陷入双重困境。",
+      "summaryReason": "报告揭示巴勒斯坦人遭受来自以色列定居者和哈马斯的系统性虐待，凸显人道危机与冲突复杂性。",
+      "importance": "联合国官方报告指责双方暴行，可能影响国际社会对巴以问题的立场与援助决策。",
+      "title_zh": "巴勒斯坦人遭以色列定居者和哈马斯双重系统性虐待",
+      "summary_zh": "联合国人权理事会独立调查员报告称，巴勒斯坦平民在约旦河西岸面临以色列定居者暴力升级，同时在加沙地带遭受哈马斯基于恐惧的统治，陷入双重困境。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "business-openai-news-26e324e887",
@@ -4454,11 +4974,14 @@
       "summary_original": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
       "contentExcerpt": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
       "impactAreas": [
-        "商业"
+        "IPO",
+        "AI公司",
+        "SEC",
+        "资本市场"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "tags": [
         "Company"
       ],
@@ -4484,7 +5007,17 @@
       ],
       "score": 90,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "OpenAI秘密提交S-1草案给SEC",
+      "aiSummary": "OpenAI确认已向SEC秘密提交S-1表格，但尚未确定后续行动的时机。",
+      "summaryReason": "这是OpenAI首次公开确认上市步骤，表明其正在推进IPO。",
+      "importance": "高：标志着OpenAI向公开市场迈出关键一步，影响AI行业和资本市场。",
+      "title_zh": "OpenAI秘密提交S-1草案给SEC",
+      "summary_zh": "OpenAI确认已向SEC秘密提交S-1表格，但尚未确定后续行动的时机。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-fe1aa10e58",
@@ -4504,14 +5037,14 @@
       "summary_original": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
       "contentExcerpt": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
       "impactAreas": [
-        "security",
-        "美联储",
-        "市场监管",
-        "Council"
+        "联合国",
+        "中非",
+        "安全",
+        "人道主义"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/09-04-2026_UNP_SC_UNMIK.jpg/image560x340cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4536,7 +5069,17 @@
       ],
       "score": 89,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "安理会聚焦中非及上帝抵抗军",
+      "aiSummary": "联合国安理会今日会议讨论中非局势，重点打击已致超10万人死亡的上帝抵抗军（LRA）。区域办公室汇报了加强平民保护、人道准入及跨境合作的战略。",
+      "summaryReason": "反映联合国应对非洲长期安全威胁的协调行动，涉及区域稳定与人道主义危机。",
+      "importance": "中非安全局势持续紧张，上帝抵抗军是地区主要暴力来源，影响多国和平与发展。",
+      "title_zh": "安理会聚焦中非及上帝抵抗军",
+      "summary_zh": "联合国安理会今日会议讨论中非局势，重点打击已致超10万人死亡的上帝抵抗军（LRA）。区域办公室汇报了加强平民保护、人道准入及跨境合作的战略。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-5306e2817a",
@@ -4556,14 +5099,13 @@
       "summary_original": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country&#039;s Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
       "contentExcerpt": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country&#039;s Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
       "impactAreas": [
-        "AI",
-        "Rare",
-        "untreatable",
-        "strain"
+        "公共卫生",
+        "疫情监测",
+        "国际援助"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/08-06-2026-WHO-DR-Congo-ebola.jpg/image560x340cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -4588,7 +5130,17 @@
       ],
       "score": 89,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "罕见且无治疗手段毒株：刚果（金）东部埃博拉疫情恶化",
+      "aiSummary": "联合国高级援助官员抵达刚果（金）伊图里省，即埃博拉疫情中心，进行为期三天评估。东部三省确诊病例已达515例，毒株罕见且无有效治疗手段。",
+      "summaryReason": "罕见不可治疗毒株导致疫情失控，确诊病例持续攀升，国际公共卫生面临新挑战。",
+      "importance": "联合国高官实地评估表明疫情严重性，确诊病例快速增加，需紧急国际协调应对。",
+      "title_zh": "罕见且无治疗手段毒株：刚果（金）东部埃博拉疫情恶化",
+      "summary_zh": "联合国高级援助官员抵达刚果（金）伊图里省，即埃博拉疫情中心，进行为期三天评估。东部三省确诊病例已达515例，毒株罕见且无有效治疗手段。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "business-item-00c848fad0",
@@ -5101,14 +5653,12 @@
       "summary_original": "NASA astronaut Andre Douglas, ESA (European Space Agency) astronaut Luca Parmitano, and NASA astronauts Randy Bresnik and Frank Rubio take a photo together on June 9, 2026. The four were announced as the Artemis III crew. NASA&#8217;s Artemis III mission in low Earth orbit will test integrated operations between the Orion spacecraft and one or [&#8230;]",
       "contentExcerpt": "NASA/Robert Markowitz NASA astronaut Andre Douglas , ESA (European Space Agency) astronaut Luca Parmitano , and NASA astronauts Randy Bresnik and Frank Rubio take a photo together on June 9, 2026. The four were announced as the Artemis III crew. NASA&#8217;s Artemis III mission in low Earth orbit will test integrated operations between the Orion spacecraft and one or both commercial landers from SpaceX and Blue Origin respectively. Learn more about the next Artemis mission and the crew. Image...",
       "impactAreas": [
-        "Andre Douglas",
-        "Artemis 3",
-        "Bob Hines",
-        "Frank Rubio"
+        "太空探索",
+        "商业航天"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/jsc2026e392659.jpg?w=2048",
       "tags": [
         "Andre Douglas",
@@ -5138,7 +5688,17 @@
       ],
       "score": 85,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "阿尔忒弥斯三号机组人员公布",
+      "aiSummary": "NASA公布阿尔忒弥斯三号任务机组，包括三位NASA宇航员和一位欧空局宇航员。任务将在近地轨道测试猎户座飞船与SpaceX及蓝色起源商业着陆器的集成操作，为重返月球奠定基础。",
+      "summaryReason": "这是阿尔忒弥斯计划首次公布载人任务机组，标志着美国重返月球关键一步，同时验证商业合作伙伴能力。",
+      "importance": "阿尔忒弥斯三号是NASA重返月球计划的重要里程碑，将测试关键技术与商业合作模式，对后续月球探索任务有深远影响。",
+      "title_zh": "阿尔忒弥斯三号机组人员公布",
+      "summary_zh": "NASA公布阿尔忒弥斯三号任务机组，包括三位NASA宇航员和一位欧空局宇航员。任务将在近地轨道测试猎户座飞船与SpaceX及蓝色起源商业着陆器的集成操作，为重返月球奠定基础。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-nasa-breaking-news-453fad9eef",
@@ -5159,11 +5719,13 @@
       "summary_original": "Your challenge is to tell us the location of the satellite image and why it is interesting.",
       "contentExcerpt": "Every month, NASA Earth Observatory features a puzzling satellite image. The June 2026 puzzler appears above. Your Challenge Identify the location shown in this satellite image. Share what clues you see, where you think it is, and what makes this place interesting or unique to you. How to Answer Submit your response using this form and select “Puzzler Answer” as the topic. Please include your preferred name or alias. You can keep it simple and just guess the location. Want to impress us? Tell...",
       "impactAreas": [
-        "国际"
+        "卫星遥感",
+        "科学教育",
+        "公众参与"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/satellite-puzzler/june-2026-satellite-puzzler/junepuzzler.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
       "tags": [
         "Earth Observatory"
@@ -5190,7 +5752,17 @@
       ],
       "score": 85,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "2026年6月卫星谜题",
+      "aiSummary": "NASA地球观测站每月发布一张卫星图像谜题，2026年6月图片已公布，邀请用户识别位置并分享线索。",
+      "summaryReason": "该项目通过互动方式提升公众对地球观测的兴趣，体现NASA在科学普及方面的持续努力。",
+      "importance": "增强公众对卫星遥感技术的认知，促进地理与地球科学教育。",
+      "title_zh": "2026年6月卫星谜题",
+      "summary_zh": "NASA地球观测站每月发布一张卫星图像谜题，2026年6月图片已公布，邀请用户识别位置并分享线索。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "tech-openai-news-c9581f0791",
@@ -5210,14 +5782,13 @@
       "summary_original": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
       "contentExcerpt": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
       "impactAreas": [
-        "How",
-        "engineers",
-        "Nextdoor",
-        "use"
+        "AI编程",
+        "效率工具",
+        "产品开发"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "tags": [],
       "article_keywords": [
         "How",
@@ -5241,7 +5812,17 @@
       ],
       "score": 85,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "Nextdoor工程师如何利用Codex无限制构建",
+      "aiSummary": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
+      "summaryReason": "展示了AI辅助编程在复杂问题排查和多平台开发中的实际应用，提升了开发效率与创新能力。",
+      "importance": "推动AI在软件开发中的深度应用，加速产品迭代，降低技术门槛，对开发者社区和AI工具发展有示范意义。",
+      "title_zh": "Nextdoor工程师如何利用Codex无限制构建",
+      "summary_zh": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-nasa-breaking-news-89dcdfa40f",
@@ -5261,14 +5842,13 @@
       "summary_original": "Read this release in English here. La NASA dio el martes otro paso hacia una de las misiones tripuladas más complejas de la historia reciente al ofrecer nuevos detalles sobre Artemis III y anunciar a los cuatro miembros principales de la tripulación y a un suplente para este vuelo de prueba. En 2027, la misión [&#8230;]",
       "contentExcerpt": "La tripulación de Artemis III posa para una foto oficial en sus trajes espaciales naranjas (de izquierda a derecha: Andre Douglas, Luca Parmitano, Randy Bresnik y Frank Rubio). Crédito: NASA/Bill Stafford Read this release in English here . La NASA dio el martes otro paso hacia una de las misiones tripuladas más complejas de la historia reciente al ofrecer nuevos detalles sobre Artemis III y anunciar a los cuatro miembros principales de la tripulación y a un suplente para este vuelo de prueba...",
       "impactAreas": [
-        "NASA en español",
+        "航天探索",
         "NASA",
-        "avanza",
-        "hacia"
+        "深空任务"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/jsc2026e391567.jpg?w=1024",
       "tags": [
         "NASA en español"
@@ -5295,7 +5875,17 @@
       ],
       "score": 84,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "NASA推进2027年阿尔忒弥斯III任务并公布机组人员",
+      "aiSummary": "NASA宣布阿尔忒弥斯III载人月球任务将于2027年执行，并公布四名主要宇航员及一名替补。该任务是近年来最复杂的载人航天任务之一，旨在为人类重返月球奠定基础。",
+      "summaryReason": "该任务标志人类重返月球的关键步骤，机组人员公布意味着任务进入实质准备阶段，对深空探索具有里程碑意义。",
+      "importance": "阿尔忒弥斯III是继阿波罗之后首次载人登月任务，2027年执行将推动月球科研与长期驻留技术验证。",
+      "title_zh": "NASA推进2027年阿尔忒弥斯III任务并公布机组人员",
+      "summary_zh": "NASA宣布阿尔忒弥斯III载人月球任务将于2027年执行，并公布四名主要宇航员及一名替补。该任务是近年来最复杂的载人航天任务之一，旨在为人类重返月球奠定基础。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "international-nasa-breaking-news-3020f927bb",
@@ -5316,11 +5906,14 @@
       "summary_original": "As&#160;the FIFA World Cup&#160;approaches, NASA is bringing&#160;space science and&#160;engineering&#160;to soccer fans&#160;worldwide.&#160;From&#160;June 11&#160;to July 19,&#160;2026,&#160;NASA will&#160;host an&#160;exhibit&#160;at FIFA Fan Festival™&#160;Houston where visitors can learn how research aboard the International Space Station benefits life on Earth&#160;and&#160;experience missions in low Earth orbit, the Moon,&#160;and&#160;beyond&#160;through the Artemis program.&#160; On...",
       "contentExcerpt": "Johnson Space Center Office of Communications As the FIFA World Cup approaches, NASA is bringing space science and engineering to soccer fans worldwide. From June 11 to July 19, 2026, NASA will host an exhibit at FIFA Fan Festival™ Houston where visitors can learn how research aboard the International Space Station benefits life on Earth and experience missions in low Earth orbit, the Moon, and beyond through the Artemis program. On June 11, as the FIFA World Cup begins, NASA’s exhibit at Fan...",
       "impactAreas": [
-        "国际"
+        "航天科普",
+        "国际赛事",
+        "阿尔忒弥斯",
+        "国际空间站"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/iss074e0361795.jpg",
       "tags": [
         "Johnson Space Center",
@@ -5348,7 +5941,17 @@
       ],
       "score": 83,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "NASA科学与阿尔忒弥斯计划助力2026年世界杯",
+      "aiSummary": "NASA将在2026年世界杯期间于休斯顿球迷节举办展览，展示国际空间站研究成果及阿尔忒弥斯探月计划，让球迷体验太空科学如何改善地球生活并探索月球与深空。",
+      "summaryReason": "NASA借助世界杯这一全球盛事，向公众普及太空科学和探月计划，提升公众对航天技术的认知与兴趣。",
+      "importance": "将航天科技与顶级体育赛事结合，创新科普形式，扩大NASA的影响力和公众参与度。",
+      "title_zh": "NASA科学与阿尔忒弥斯计划助力2026年世界杯",
+      "summary_zh": "NASA将在2026年世界杯期间于休斯顿球迷节举办展览，展示国际空间站研究成果及阿尔忒弥斯探月计划，让球迷体验太空科学如何改善地球生活并探索月球与深空。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "tech-github-blog-a5fc3356b6",
@@ -5368,14 +5971,14 @@
       "summary_original": "Find the answers to some of the most common GitHub-related questions. The post GitHub for Beginners: Answers to some common questions appeared first on The GitHub Blog .",
       "contentExcerpt": "Kedasha is a Developer Advocate at GitHub where she enjoys sharing the lessons she's learned with the wider developer community. She finds joy in helping others learn about the tech industry and loves sharing her experience as a software developer. Find her online @itsthatladydev. Discover how to use VS Code to interact with GitHub and maintain your projects. Learn how to find opportunities to contribute to the open source community. Discover how to use VS Code to interact with GitHub and mai...",
       "impactAreas": [
-        "Developer skills",
         "GitHub",
-        "GitHub for beginners",
-        "地缘政治"
+        "开发者工具",
+        "开源贡献",
+        "VS Code"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/06/GIT952_THUMB_GFB_B.png?fit=1280%2C720",
       "tags": [
         "Developer skills",
@@ -5404,7 +6007,17 @@
       ],
       "score": 83,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "GitHub初学者指南：常见问题解答",
+      "aiSummary": "GitHub开发者倡导者Kedasha分享初学者常见问题解答，涵盖如何使用VS Code与GitHub交互、维护项目，以及寻找开源贡献机会，帮助新手快速入门。",
+      "summaryReason": "针对开发者技能入门，提供实用操作指引，尤其适合刚接触GitHub的开发者，提升协作效率。",
+      "importance": "为开发者提供基础但关键的操作知识，降低GitHub学习曲线，促进开源参与。",
+      "title_zh": "GitHub初学者指南：常见问题解答",
+      "summary_zh": "GitHub开发者倡导者Kedasha分享初学者常见问题解答，涵盖如何使用VS Code与GitHub交互、维护项目，以及寻找开源贡献机会，帮助新手快速入门。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-14c5aafd21",
@@ -5424,14 +6037,13 @@
       "summary_original": "The United Nations climate chief called on Monday for countries to step up action to implement existing commitments, warning that fossil fuel dependency is deepening economic instability and exposing vulnerable communities to worsening climate impacts.&nbsp;",
       "contentExcerpt": "The United Nations climate chief called on Monday for countries to step up action to implement existing commitments, warning that fossil fuel dependency is deepening economic instability and exposing vulnerable communities to worsening climate impacts.&nbsp;",
       "impactAreas": [
-        "地缘政治",
-        "Countries",
-        "urged",
-        "further"
+        "气候变化",
+        "联合国",
+        "能源政策"
       ],
       "source_language": "en",
       "sourceLanguage": "en",
-      "translation_status": "failed",
+      "translation_status": "translated",
       "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/23-04-2026-UNDP-Bolivia.jpg/image560x340cropped.jpg",
       "tags": [],
       "article_keywords": [
@@ -5456,7 +6068,17 @@
       ],
       "score": 81,
       "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
+      "translation_error": "LLM translation is not configured.",
+      "translatedTitle": "联合国敦促各国更快更进一步履行气候承诺",
+      "aiSummary": "联合国气候主管呼吁各国加快落实气候承诺，警告对化石燃料的依赖加剧经济不稳定，并使脆弱社区面临更严重的气候影响。",
+      "summaryReason": "该报道反映全球气候行动紧迫性，涉及能源转型与经济稳定议题，对政策制定具有警示意义。",
+      "importance": "强调气候承诺落实的紧迫性，警示化石燃料依赖风险，推动全球能源转型进程。",
+      "title_zh": "联合国敦促各国更快更进一步履行气候承诺",
+      "summary_zh": "联合国气候主管呼吁各国加快落实气候承诺，警告对化石燃料的依赖加剧经济不稳定，并使脆弱社区面临更严重的气候影响。",
+      "summaryLanguage": "zh",
+      "translated_at": "2026-06-10T11:00:24.918Z",
+      "summaryMethod": "deepseek-chat-completions",
+      "summaryGeneratedAt": "2026-06-10T11:00:24.918Z"
     },
     {
       "id": "news-un-news-41529f05c8",
@@ -5570,5 +6192,15 @@
     "translated": 0,
     "failed": 33,
     "notRequired": 39
+  },
+  "summaryGeneratedAt": "2026-06-10T11:00:24.918Z",
+  "summaryMethod": "extractive",
+  "summaryStats": {
+    "llmEnabled": true,
+    "llmConfigured": true,
+    "llmAttempted": 45,
+    "llmSucceeded": 45,
+    "fallbackCount": 0,
+    "errorCount": 0
   }
 }
