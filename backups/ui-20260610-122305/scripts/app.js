@@ -173,7 +173,7 @@
     return impactAreas(item, data).slice(0, 2);
   }
 
-  function selectTopHotspots(items, limit = 5) {
+  function selectTopHotspots(items) {
     const seenKeys = new Set();
     return [...(items || [])]
       .sort((left, right) => hotspotRankScore(right) - hotspotRankScore(left)
@@ -185,7 +185,7 @@
         seenKeys.add(key);
         return true;
       })
-      .slice(0, limit);
+      .slice(0, 5);
   }
 
   function hotspotEventKey(item) {
@@ -205,14 +205,14 @@
     const container = document.getElementById("top-hotspot-list");
     if (!container) return;
 
-    const items = selectTopHotspots(data.items || [], 12);
+    const items = selectTopHotspots(data.items || []);
     if (!items.length) {
       container.innerHTML = `<div class="empty-state compact-empty">暂无核心热点，信息流更新后会自动生成。</div>`;
       return;
     }
 
     const renderHotspotCard = (item, index) => {
-      const detailUrl = window.MessageChooseRender.itemDetailUrl(item);
+      const safeUrl = window.MessageChooseRender.safeExternalUrl(item.url);
       const summary = shortExplanation(item);
       const source = item.source || "公开来源";
       const updatedAt = formatShortDate(item.publishedAt);
@@ -230,22 +230,15 @@
           </div>
         </div>`;
       return `
-        <article class="top-hotspot-card top-hotspot-row${index === 0 ? " is-primary" : ""}${index >= 5 ? " is-compact" : ""}">
-          <a class="top-hotspot-link" href="${escapeHtml(detailUrl)}">${cardContent}</a>
+        <article class="top-hotspot-card top-hotspot-row${index === 0 ? " is-primary" : ""}">
+          ${safeUrl
+            ? `<a class="top-hotspot-link" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${cardContent}</a>`
+            : `<div class="top-hotspot-link">${cardContent}</div>`}
         </article>
       `;
     };
 
-    const primaryItems = items.slice(0, 5);
-    const moreItems = items.slice(5);
-    container.innerHTML = `
-      ${primaryItems.map((item, index) => renderHotspotCard(item, index)).join("")}
-      ${moreItems.length ? `
-        <div class="hotspot-more-list" aria-label="其余热点">
-          ${moreItems.map((item, index) => renderHotspotCard(item, index + 5)).join("")}
-        </div>
-      ` : ""}
-    `;
+    container.innerHTML = items.map((item, index) => renderHotspotCard(item, index)).join("");
   }
 
   function renderHomeEvents(eventData) {
@@ -265,7 +258,7 @@
       const latest = event.latestUpdate || evidence[0] || {};
       const latestUrl = window.MessageChooseRender.safeExternalUrl(latest.url);
       const latestTitle = latestUrl
-        ? `<a href="${escapeHtml(window.MessageChooseRender.itemDetailUrl(latest))}">${escapeHtml(latest.title || "")}</a>`
+        ? `<a href="${escapeHtml(latestUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(latest.title || "")}</a>`
         : escapeHtml(latest.title || "");
       return `
         <article class="home-event-card">
@@ -280,17 +273,12 @@
             <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 时间：${escapeHtml(formatShortDate(latest.publishedAt || event.updatedAt))}</span>
           </div>
           <ol class="home-event-timeline">
-            ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => {
-              const itemTitle = window.MessageChooseRender.safeExternalUrl(item.url)
-                ? `<a href="${escapeHtml(window.MessageChooseRender.itemDetailUrl(item))}">${escapeHtml(item.title || "")}</a>`
-                : escapeHtml(item.title || "");
-              return `
+            ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => `
               <li>
                 <time>${escapeHtml(formatTimelineDate(item.date || item.publishedAt))}</time>
-                <span>${itemTitle}<small>${escapeHtml(item.source || "")}</small></span>
+                <span>${escapeHtml(item.title || "")}<small>${escapeHtml(item.source || "")}</small></span>
               </li>
-            `;
-            }).join("")}
+            `).join("")}
           </ol>
           <a class="text-link" href="events.html">查看事件追踪</a>
         </article>

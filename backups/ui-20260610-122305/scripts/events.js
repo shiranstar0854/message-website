@@ -49,14 +49,6 @@
     }
   }
 
-  function itemDetailUrl(item) {
-    const id = String(item?.id || "").trim();
-    if (id) return `article.html?id=${encodeURIComponent(id)}`;
-
-    const url = safeExternalUrl(item?.url);
-    return url ? `article.html?url=${encodeURIComponent(url)}` : "article.html";
-  }
-
   function renderEvents(container, data) {
     if (!container) return;
     const events = data.events || [];
@@ -84,7 +76,7 @@
           ${(event.items || []).map((item) => {
             const safeUrl = safeExternalUrl(item.url);
             const title = safeUrl
-              ? `<a href="${escapeHtml(itemDetailUrl(item))}">${escapeHtml(item.title)}</a>`
+              ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
               : escapeHtml(item.title);
             return `
               <li>
@@ -116,7 +108,7 @@
       const latest = event.latestUpdate || evidenceItems[0] || {};
       const latestUrl = safeExternalUrl(latest.url);
       const latestTitle = latestUrl
-        ? `<a href="${escapeHtml(itemDetailUrl(latest))}">${escapeHtml(latest.title || "")}</a>`
+        ? `<a href="${escapeHtml(latestUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(latest.title || "")}</a>`
         : escapeHtml(latest.title || "");
       return `
         <article class="event-card">
@@ -153,7 +145,7 @@
             ${(event.keyDevelopments || timeline).map((item) => {
               const safeUrl = safeExternalUrl(item.url);
               const title = safeUrl
-                ? `<a href="${escapeHtml(itemDetailUrl(item))}">${escapeHtml(item.title)}</a>`
+                ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
                 : escapeHtml(item.title);
               return `
                 <li>
@@ -172,7 +164,7 @@
             ${evidenceItems.map((item) => {
               const safeUrl = safeExternalUrl(item.url);
               const title = safeUrl
-                ? `<a href="${escapeHtml(itemDetailUrl(item))}">${escapeHtml(item.title)}</a>`
+                ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
                 : escapeHtml(item.title);
               return `
                 <li>

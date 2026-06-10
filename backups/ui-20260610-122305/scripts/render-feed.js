@@ -28,14 +28,6 @@
     }
   }
 
-  function itemDetailUrl(item) {
-    const id = String(item?.id || "").trim();
-    if (id) return `article.html?id=${encodeURIComponent(id)}`;
-
-    const url = safeExternalUrl(item?.url);
-    return url ? `article.html?url=${encodeURIComponent(url)}` : "article.html";
-  }
-
   function renderChannelSummary(container, data) {
     const channels = Object.values(data.channels || {});
     container.innerHTML = channels.map((channel) => `
@@ -91,10 +83,6 @@
     return item.title_zh || item.titleZh || item.translatedTitle || item.title || "未命名信息";
   }
 
-  function displayOriginalTitle(item) {
-    return item.title_original || item.titleOriginal || item.title || displayTitle(item);
-  }
-
   function displaySummary(item) {
     return item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "";
   }
@@ -133,26 +121,35 @@
         .join("");
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
-      const detailUrl = itemDetailUrl(item);
-      const title = `<a href="${escapeHtml(detailUrl)}">${escapeHtml(displayOriginalTitle(item))}</a>`;
+      const safeUrl = safeExternalUrl(item.url);
+      const summary = displaySummary(item);
+      const title = safeUrl
+        ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(displayTitle(item))}</a>`
+        : escapeHtml(displayTitle(item));
+      const originalEntry = safeUrl && isEnglishSourceItem(item)
+        ? `<a class="original-entry" href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">原文入口</a>`
+        : "";
       const originalTitle = item.title_original || item.title;
       const translationText = translationLabel(item);
 
       return `
-        <article class="feed-card news-shelf-item">
+        <article class="feed-card">
           <div>
-            <div class="news-shelf-topline">
-              <span>${escapeHtml(item.source || "公开来源")}</span>
-              <span>${formatDate(item.publishedAt)}</span>
-            </div>
             <h3>${title}</h3>
             ${originalTitle && displayTitle(item) !== originalTitle ? `<p class="original-title">原文：${escapeHtml(originalTitle)}</p>` : ""}
+            <p class="feed-locator"><span>事件定位</span>来源：${escapeHtml(item.source || "公开来源")} · 发布时间：${formatDate(item.publishedAt)} · 采集：${formatDate(item.fetchedAt)}</p>
+            ${renderSummary(summary)}
+            <p class="impact-line"><span>意义/影响</span>${escapeHtml(impactText(item))}</p>
+            ${item.summaryReason ? `<p class="summary-reason">${escapeHtml(item.summaryReason)}</p>` : ""}
             <div class="item-meta">
-              <span>${escapeHtml(item.category || "news")}</span>
+              <span>${escapeHtml(item.source)}</span>
+              <span>发布 ${formatDate(item.publishedAt)}</span>
+              <span>采集 ${formatDate(item.fetchedAt)}</span>
               <span>${escapeHtml(sourceAuthorityLabel(item.sourceAuthority))}</span>
               <span>${escapeHtml(timelinessLabel(item.timelinessTier))}</span>
               ${translationText ? `<span>${escapeHtml(translationText)}</span>` : ""}
               <span>${escapeHtml(item.sourceType || "rss")}${duplicateText}</span>
+              ${originalEntry}
             </div>
             <div class="tag-row" aria-label="标签">${tags}</div>
             ${item.searchHitLabels?.length ? `
@@ -160,7 +157,6 @@
                 ${item.searchHitLabels.map((label) => `<span>${escapeHtml(label)}</span>`).join("")}
               </div>
             ` : ""}
-            <a class="summary-entry-link" href="${escapeHtml(detailUrl)}">AI 摘要</a>
           </div>
           <div class="score-block" aria-label="评分 ${score}">
             <div class="score-value">${score}</div>
@@ -196,6 +192,7 @@
             <span>${Number(channel.totalItems || 0)} 条</span>
           </div>
           <div class="tag-row" aria-label="${escapeHtml(channel.label || channel.id)}主要来源">${sources}</div>
+          ${channel.modelSummary ? `<p class="weekly-model-summary">${escapeHtml(channel.modelSummary)}</p>` : ""}
           ${channel.focus ? `<p class="summary-focus">${escapeHtml(channel.focus)}</p>` : ""}
           ${channel.whyItMatters ? `<p class="summary-explainer">${escapeHtml(channel.whyItMatters)}</p>` : ""}
           ${channel.weekSignals?.length ? `
@@ -210,7 +207,10 @@
           ` : ""}
           <ul class="weekly-highlight-list">
             ${highlights.map((item) => {
-              const title = `<a href="${escapeHtml(itemDetailUrl(item))}">${escapeHtml(item.title)}</a>`;
+              const safeUrl = safeExternalUrl(item.url);
+              const title = safeUrl
+                ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+                : escapeHtml(item.title);
               return `
                 <li>
                   <h3>${title}</h3>
@@ -249,7 +249,6 @@
     renderFeed,
     renderWeeklyReview,
     renderSummary,
-    safeExternalUrl,
-    itemDetailUrl
+    safeExternalUrl
   };
 })();

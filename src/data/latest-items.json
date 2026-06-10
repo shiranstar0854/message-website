@@ -1,8 +1,8 @@
 {
   "siteName": "Message Choose",
-  "generatedAt": "2026-06-09T06:31:53.451Z",
+  "generatedAt": "2026-06-10T08:15:13.152Z",
   "defaultLimit": 6,
-  "totalItems": 56,
+  "totalItems": 36,
   "channels": {
     "tech": {
       "id": "tech",
@@ -62,7 +62,7 @@
             "Answers",
             "some"
           ],
-          "score": 86,
+          "score": 83,
           "duplicateCount": 0,
           "translation_error": "LLM translation is not configured."
         }
@@ -121,7 +121,7 @@
             "Standards",
             "Required"
           ],
-          "score": 100,
+          "score": 97,
           "duplicateCount": 0,
           "translation_error": "LLM translation is not configured."
         }
@@ -131,7 +131,7 @@
       "id": "business",
       "label": "商业",
       "description": "公司经营、财报、产业竞争、并购上市与消费市场。",
-      "count": 11,
+      "count": 9,
       "items": [
         {
           "id": "business-item-49cf0f1417",
@@ -185,7 +185,7 @@
             "WWDC",
             "Apple"
           ],
-          "score": 96,
+          "score": 92,
           "duplicateCount": 0
         },
         {
@@ -235,109 +235,7 @@
             "draft",
             "S-1"
           ],
-          "score": 94,
-          "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
-        },
-        {
-          "id": "business-openai-news-a1e84dd92f",
-          "sourceId": "openai-news",
-          "title": "Built to benefit everyone: our plan",
-          "title_original": "Built to benefit everyone: our plan",
-          "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
-          "source": "OpenAI News",
-          "sourceType": "rss",
-          "category": "business",
-          "primaryCategory": "tech",
-          "publishedAt": "2026-06-08T01:30:00.000Z",
-          "fetchedAt": "2026-06-09T00:00:27.444Z",
-          "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-          "sourceAuthority": "media",
-          "timelinessTier": "daily",
-          "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
-          "summary_original": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
-          "contentExcerpt": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
-          "impactAreas": [
-            "商业"
-          ],
-          "source_language": "en",
-          "sourceLanguage": "en",
-          "translation_status": "failed",
-          "tags": [
-            "Company"
-          ],
-          "article_keywords": [
-            "AI",
-            "商业",
-            "Company",
-            "AI政策",
-            "Built",
-            "benefit",
-            "everyone",
-            "our"
-          ],
-          "keywords": [
-            "AI",
-            "商业",
-            "Company",
-            "AI政策",
-            "Built",
-            "benefit",
-            "everyone",
-            "our"
-          ],
-          "score": 92,
-          "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
-        },
-        {
-          "id": "business-openai-news-31bfebfcba",
-          "sourceId": "openai-news",
-          "title": "Introducing the OpenAI Economic Research Exchange",
-          "title_original": "Introducing the OpenAI Economic Research Exchange",
-          "url": "https://openai.com/index/economic-research-exchange",
-          "source": "OpenAI News",
-          "sourceType": "rss",
-          "category": "business",
-          "primaryCategory": "tech",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T00:00:27.444Z",
-          "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-          "sourceAuthority": "media",
-          "timelinessTier": "daily",
-          "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
-          "summary_original": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
-          "contentExcerpt": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
-          "impactAreas": [
-            "商业"
-          ],
-          "source_language": "en",
-          "sourceLanguage": "en",
-          "translation_status": "failed",
-          "tags": [
-            "Company"
-          ],
-          "article_keywords": [
-            "AI",
-            "商业",
-            "Company",
-            "Introducing",
-            "the",
-            "OpenAI",
-            "Economic",
-            "Research"
-          ],
-          "keywords": [
-            "AI",
-            "商业",
-            "Company",
-            "Introducing",
-            "the",
-            "OpenAI",
-            "Economic",
-            "Research"
-          ],
-          "score": 92,
+          "score": 91,
           "duplicateCount": 0,
           "translation_error": "LLM translation is not configured."
         },
@@ -349,61 +247,6 @@
           "title_zh": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
           "titleZh": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
           "url": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
-          "source": "每日经济新闻",
-          "sourceType": "webpage",
-          "category": "business",
-          "primaryCategory": "finance",
-          "publishedAt": "2026-06-09T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "financial-media",
-          "timelinessTier": "hourly",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-          "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-          "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
-          "contentExcerpt": "6月8日晚，丰光精密披露拟1.12亿元收购唯实深蓝51%股权，取得控制权。标的评估增值率568.33%，交易对方包括唯实人企管及四名自然人，支付方式为现金分期。丰光精密股票连续两日涨停，发布异动公告。交易对方承诺唯实深蓝2026年至2028年扣非净利润不低于6000万元，否则现金补偿。此次收购对丰光精密有战略意义，但也提示了多项风险。",
-          "impactAreas": [
-            "商业"
-          ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "tags": [
-            "financial-media",
-            "hourly"
-          ],
-          "article_keywords": [
-            "商业",
-            "financial-media",
-            "财报",
-            "市场监管",
-            "连续两天",
-            "涨停后",
-            "丰光精密披露拟",
-            "亿元控股惯性导航企业唯实"
-          ],
-          "keywords": [
-            "商业",
-            "financial-media",
-            "财报",
-            "市场监管",
-            "连续两天",
-            "涨停后",
-            "丰光精密披露拟",
-            "亿元控股惯性导航企业唯实"
-          ],
-          "score": 88,
-          "duplicateCount": 0
-        },
-        {
-          "id": "business-item-af2ac8198e",
-          "sourceId": "nbd-finance",
-          "title": "今年前5个月我国货物贸易进出口同比增长15.3%",
-          "title_original": "今年前5个月我国货物贸易进出口同比增长15.3%",
-          "title_zh": "今年前5个月我国货物贸易进出口同比增长15.3%",
-          "titleZh": "今年前5个月我国货物贸易进出口同比增长15.3%",
-          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420871.html",
           "source": "每日经济新闻",
           "sourceType": "webpage",
           "category": "business",
@@ -431,11 +274,67 @@
           "article_keywords": [
             "商业",
             "financial-media",
+            "市场监管",
+            "连续两天",
+            "涨停后",
+            "丰光精密披露拟",
+            "亿元控股惯性导航企业唯实",
+            "深蓝"
+          ],
+          "keywords": [
+            "商业",
+            "financial-media",
+            "市场监管",
+            "连续两天",
+            "涨停后",
+            "丰光精密披露拟",
+            "亿元控股惯性导航企业唯实",
+            "深蓝"
+          ],
+          "score": 84,
+          "duplicateCount": 0
+        },
+        {
+          "id": "business-item-af2ac8198e",
+          "sourceId": "nbd-finance",
+          "title": "今年前5个月我国货物贸易进出口同比增长15.3%",
+          "title_original": "今年前5个月我国货物贸易进出口同比增长15.3%",
+          "title_zh": "今年前5个月我国货物贸易进出口同比增长15.3%",
+          "titleZh": "今年前5个月我国货物贸易进出口同比增长15.3%",
+          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420871.html",
+          "source": "每日经济新闻",
+          "sourceType": "webpage",
+          "category": "business",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+          "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+          "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
+          "contentExcerpt": "海关总署今天公布统计数据显示，今年前5个月，我国货物贸易进出口同比增长15.3%，延续稳定增长态势。据海关统计，今年前5个月，我国货物贸易进出口总值20.68万亿元，同比增长15.3%。其中，对东盟、",
+          "impactAreas": [
+            "商业"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "商业",
+            "financial-media",
             "今年前",
             "个月我国货物贸易进出口同",
             "比增长",
             "每日经济新闻中文财经",
-            "公司和市场新闻"
+            "公司和市场新闻",
+            "海关总署今天公布统计数据"
           ],
           "keywords": [
             "商业",
@@ -444,9 +343,118 @@
             "个月我国货物贸易进出口同",
             "比增长",
             "每日经济新闻中文财经",
+            "公司和市场新闻",
+            "海关总署今天公布统计数据"
+          ],
+          "score": 84,
+          "duplicateCount": 0
+        },
+        {
+          "id": "business-item-d8d8fd7bbf",
+          "sourceId": "nbd-finance",
+          "title": "微信官宣大动作！腾讯凑齐美团京东“三巨头” 2026-06-09 13:37",
+          "title_original": "微信官宣大动作！腾讯凑齐美团京东“三巨头” 2026-06-09 13:37",
+          "title_zh": "微信官宣大动作！腾讯凑齐美团京东“三巨头” 2026-06-09 13:37",
+          "titleZh": "微信官宣大动作！腾讯凑齐美团京东“三巨头” 2026-06-09 13:37",
+          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420970.html",
+          "source": "每日经济新闻",
+          "sourceType": "webpage",
+          "category": "business",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+          "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+          "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
+          "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+          "impactAreas": [
+            "商业"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "商业",
+            "financial-media",
+            "微信官宣大动作",
+            "腾讯凑齐美团京东",
+            "三巨头",
+            "每日经济新闻中文财经",
             "公司和市场新闻"
           ],
-          "score": 88,
+          "keywords": [
+            "商业",
+            "financial-media",
+            "微信官宣大动作",
+            "腾讯凑齐美团京东",
+            "三巨头",
+            "每日经济新闻中文财经",
+            "公司和市场新闻"
+          ],
+          "score": 84,
+          "duplicateCount": 0
+        },
+        {
+          "id": "business-item-9f164f7572",
+          "sourceId": "nbd-finance",
+          "title": "行业ETF风向标丨中韩半导体ETF华泰柏瑞（513310）成交额超50亿元，三只科创半导体设备ETF半日涨幅超6.5% 2026-06-09 13:27",
+          "title_original": "行业ETF风向标丨中韩半导体ETF华泰柏瑞（513310）成交额超50亿元，三只科创半导体设备ETF半日涨幅超6.5% 2026-06-09 13:27",
+          "title_zh": "行业ETF风向标丨中韩半导体ETF华泰柏瑞（513310）成交额超50亿元，三只科创半导体设备ETF半日涨幅超6.5% 2026-06-09 13:27",
+          "titleZh": "行业ETF风向标丨中韩半导体ETF华泰柏瑞（513310）成交额超50亿元，三只科创半导体设备ETF半日涨幅超6.5% 2026-06-09 13:27",
+          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420934.html",
+          "source": "每日经济新闻",
+          "sourceType": "webpage",
+          "category": "business",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+          "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+          "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
+          "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+          "impactAreas": [
+            "商业"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "商业",
+            "financial-media",
+            "ETF",
+            "行业",
+            "风向标丨中韩半导体",
+            "华泰柏瑞",
+            "成交额超",
+            "亿元"
+          ],
+          "keywords": [
+            "商业",
+            "financial-media",
+            "ETF",
+            "行业",
+            "风向标丨中韩半导体",
+            "华泰柏瑞",
+            "成交额超",
+            "亿元"
+          ],
+          "score": 84,
           "duplicateCount": 0
         }
       ]
@@ -455,7 +463,7 @@
       "id": "macro",
       "label": "宏观",
       "description": "财政货币政策、经济数据、利率、通胀与周期信号。",
-      "count": 14,
+      "count": 10,
       "items": [
         {
           "id": "macro-item-ed071e25dc",
@@ -513,224 +521,6 @@
           "duplicateCount": 0
         },
         {
-          "id": "macro-item-b0b607987f",
-          "sourceId": "pbc-news",
-          "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
-          "title_original": "中国人民银行行长潘功胜会见香港银行公会代表团",
-          "title_zh": "中国人民银行行长潘功胜会见香港银行公会代表团",
-          "titleZh": "中国人民银行行长潘功胜会见香港银行公会代表团",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
-          "source": "中国人民银行新闻发布",
-          "sourceType": "webpage",
-          "category": "macro",
-          "primaryCategory": "finance",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "summary_original": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "summary_zh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "summaryZh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "contentExcerpt": "中国人民银行行长潘功胜会见香港银行公会代表团。2026年6月8日。中国人民银行行长潘功胜会见由香港金融管理局总裁余伟文率领的香港银行公会代表团。双方就当前宏观经济形势、深化内地与香港金融市场互联互通合作、加强香港离岸人民币市场建设、巩固提升香港国际金融中心地位等议题进行了交流。中国人民银行副行长邹澜参加会见。",
-          "impactAreas": [
-            "宏观"
-          ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "article_keywords": [
-            "宏观",
-            "央行",
-            "国际",
-            "中国人民银行行长潘功胜会",
-            "见香港银行公会代表团",
-            "中国人民银行新闻发布",
-            "货币政策和金融市场运行信",
-            "见由香港金融管理局总裁余"
-          ],
-          "keywords": [
-            "宏观",
-            "央行",
-            "国际",
-            "中国人民银行行长潘功胜会",
-            "见香港银行公会代表团",
-            "中国人民银行新闻发布",
-            "货币政策和金融市场运行信",
-            "见由香港金融管理局总裁余"
-          ],
-          "score": 100,
-          "duplicateCount": 0
-        },
-        {
-          "id": "macro-item-89eb80cf01",
-          "sourceId": "pbc-news",
-          "title": "中老两国央行续签相关合作文件",
-          "title_original": "中老两国央行续签相关合作文件",
-          "title_zh": "中老两国央行续签相关合作文件",
-          "titleZh": "中老两国央行续签相关合作文件",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
-          "source": "中国人民银行新闻发布",
-          "sourceType": "webpage",
-          "category": "macro",
-          "primaryCategory": "finance",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "summary_original": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "summary_zh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "summaryZh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "contentExcerpt": "中老两国央行续签相关合作文件。在老挝人民革命党总书记、国家主席通伦访华期间。中国人民银行与老挝人民民主共和国银行续签了《中国人民银行与老挝人民民主共和国银行人民币/老挝基普双边本币互换协议》。同时。两国央行还续签了《中国人民银行与老挝人民民主共和国银行关于加强金融创新、数字支付和法定数字货币合作的谅解备忘录》。上述合作文件的签署将有助于促进中老双边金融合作。深化两国经贸关系。",
-          "impactAreas": [
-            "宏观"
-          ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
-          "article_keywords": [
-            "宏观",
-            "央行",
-            "中老两国央行续签相关合作",
-            "文件",
-            "中国人民银行新闻发布",
-            "货币政策和金融市场运行信",
-            "在老挝人民革命党总书记",
-            "国家主席通伦访华期间"
-          ],
-          "keywords": [
-            "宏观",
-            "央行",
-            "中老两国央行续签相关合作",
-            "文件",
-            "中国人民银行新闻发布",
-            "货币政策和金融市场运行信",
-            "在老挝人民革命党总书记",
-            "国家主席通伦访华期间"
-          ],
-          "score": 100,
-          "duplicateCount": 0
-        },
-        {
-          "id": "macro-item-25770d4c4c",
-          "sourceId": "ndrc-news",
-          "title": "国家发展改革委与老挝有关部门签署合作文件",
-          "title_original": "国家发展改革委与老挝有关部门签署合作文件",
-          "title_zh": "国家发展改革委与老挝有关部门签署合作文件",
-          "titleZh": "国家发展改革委与老挝有关部门签署合作文件",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260608_1405748.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceType": "webpage",
-          "category": "macro",
-          "primaryCategory": "finance",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "daily",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "summary_original": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "summary_zh": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "summaryZh": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "impactAreas": [
-            "宏观"
-          ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "tags": [
-            "official-agency",
-            "daily"
-          ],
-          "article_keywords": [
-            "AI",
-            "宏观",
-            "国家发展改革委与老挝有关",
-            "部门签署合作文件",
-            "国家发展改革委宏观政策",
-            "价格",
-            "产业和经济运行信息"
-          ],
-          "keywords": [
-            "AI",
-            "宏观",
-            "国家发展改革委与老挝有关",
-            "部门签署合作文件",
-            "国家发展改革委宏观政策",
-            "价格",
-            "产业和经济运行信息"
-          ],
-          "score": 100,
-          "duplicateCount": 0
-        },
-        {
-          "id": "macro-item-341501ee15",
-          "sourceId": "mof-news",
-          "title": "廖岷会见英中贸易协会主席吴思田",
-          "title_original": "廖岷会见英中贸易协会主席吴思田",
-          "title_zh": "廖岷会见英中贸易协会主席吴思田",
-          "titleZh": "廖岷会见英中贸易协会主席吴思田",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
-          "source": "财政部财政新闻",
-          "sourceType": "webpage",
-          "category": "macro",
-          "primaryCategory": "finance",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "daily",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
-          "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
-          "summaryZh": "财政部财政政策、国债、预算和财政运行新闻",
-          "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-          "impactAreas": [
-            "宏观"
-          ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "tags": [
-            "official-agency",
-            "daily"
-          ],
-          "article_keywords": [
-            "AI",
-            "宏观",
-            "公共政策",
-            "廖岷会见英中贸易协会主席",
-            "吴思田",
-            "财政部财政政策",
-            "国债",
-            "预算和财政运行新闻"
-          ],
-          "keywords": [
-            "AI",
-            "宏观",
-            "公共政策",
-            "廖岷会见英中贸易协会主席",
-            "吴思田",
-            "财政部财政政策",
-            "国债",
-            "预算和财政运行新闻"
-          ],
-          "score": 100,
-          "duplicateCount": 0
-        },
-        {
           "id": "macro-item-024cd3dded",
           "sourceId": "yicai-finance",
           "title": "5月汽车销量前十已无燃油车",
@@ -782,7 +572,225 @@
             "燃油车正在被加速挤出主流",
             "消费人群的视野"
           ],
-          "score": 97,
+          "score": 94,
+          "duplicateCount": 0
+        },
+        {
+          "id": "macro-item-30c25cae36",
+          "sourceId": "yicai-finance",
+          "title": "在永州，寻找低线城市高质量发展的密码",
+          "title_original": "在永州，寻找低线城市高质量发展的密码",
+          "title_zh": "在永州，寻找低线城市高质量发展的密码",
+          "titleZh": "在永州，寻找低线城市高质量发展的密码",
+          "url": "https://www.yicai.com/news/103221036.html",
+          "source": "第一财经",
+          "sourceType": "webpage",
+          "category": "macro",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T06:09:51.635Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+          "summaryZh": "第一财经中文财经、宏观、产业和市场新闻",
+          "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+          "impactAreas": [
+            "宏观"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "宏观",
+            "financial-media",
+            "在永州",
+            "寻找低线城市高质量发展的",
+            "密码",
+            "第一财经中文财经",
+            "产业和市场新闻"
+          ],
+          "keywords": [
+            "宏观",
+            "financial-media",
+            "在永州",
+            "寻找低线城市高质量发展的",
+            "密码",
+            "第一财经中文财经",
+            "产业和市场新闻"
+          ],
+          "score": 94,
+          "duplicateCount": 0
+        },
+        {
+          "id": "macro-item-77da5aa322",
+          "sourceId": "yicai-finance",
+          "title": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+          "title_original": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+          "title_zh": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+          "titleZh": "金价高位回撤：从“追高被套”到逆势加仓，积存金投资者分化明显",
+          "url": "https://www.yicai.com/news/103220407.html",
+          "source": "第一财经",
+          "sourceType": "webpage",
+          "category": "macro",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T06:09:51.635Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+          "summaryZh": "第一财经中文财经、宏观、产业和市场新闻",
+          "contentExcerpt": "金价高位回撤，积存金投资者悲喜不相通。有人“追高被套”后忍痛清仓，有人浮盈转亏仍逆势加仓。",
+          "impactAreas": [
+            "宏观"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "宏观",
+            "financial-media",
+            "金价高位回撤",
+            "追高被套",
+            "到逆势加仓",
+            "积存金投资者分化明显",
+            "第一财经中文财经",
+            "产业和市场新闻"
+          ],
+          "keywords": [
+            "宏观",
+            "financial-media",
+            "金价高位回撤",
+            "追高被套",
+            "到逆势加仓",
+            "积存金投资者分化明显",
+            "第一财经中文财经",
+            "产业和市场新闻"
+          ],
+          "score": 94,
+          "duplicateCount": 0
+        },
+        {
+          "id": "macro-item-4741fc380e",
+          "sourceId": "yicai-finance",
+          "title": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+          "title_original": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+          "title_zh": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+          "titleZh": "道路养护资金已陷困境：缺口高达50%，“油电不同权”急需破局",
+          "url": "https://www.yicai.com/news/103218925.html",
+          "source": "第一财经",
+          "sourceType": "webpage",
+          "category": "macro",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T06:09:51.635Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+          "summaryZh": "第一财经中文财经、宏观、产业和市场新闻",
+          "contentExcerpt": "在公路上奔驰的每一辆车，都在为一个即将到来的税费制度改革拐点投票。",
+          "impactAreas": [
+            "宏观"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "宏观",
+            "financial-media",
+            "道路养护资金已陷困境",
+            "缺口高达",
+            "油电不同权",
+            "急需破局",
+            "第一财经中文财经",
+            "产业和市场新闻"
+          ],
+          "keywords": [
+            "宏观",
+            "financial-media",
+            "道路养护资金已陷困境",
+            "缺口高达",
+            "油电不同权",
+            "急需破局",
+            "第一财经中文财经",
+            "产业和市场新闻"
+          ],
+          "score": 94,
+          "duplicateCount": 0
+        },
+        {
+          "id": "macro-item-2b145eff20",
+          "sourceId": "yicai-finance",
+          "title": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+          "title_original": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+          "title_zh": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+          "titleZh": "黄仁勋警告存储供应短缺将持续数年，英伟达与SK海力士达成合作",
+          "url": "https://www.yicai.com/news/103219174.html",
+          "source": "第一财经",
+          "sourceType": "webpage",
+          "category": "macro",
+          "primaryCategory": "finance",
+          "publishedAt": "2026-06-09T06:09:51.635Z",
+          "fetchedAt": "2026-06-09T06:09:51.635Z",
+          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+          "sourceAuthority": "financial-media",
+          "timelinessTier": "hourly",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+          "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+          "summaryZh": "第一财经中文财经、宏观、产业和市场新闻",
+          "contentExcerpt": "黄仁勋表示，存储的供应短缺没有结束，这种状况还将持续数年。",
+          "impactAreas": [
+            "宏观"
+          ],
+          "source_language": "zh",
+          "sourceLanguage": "zh",
+          "translation_status": "not_required",
+          "tags": [
+            "financial-media",
+            "hourly"
+          ],
+          "article_keywords": [
+            "宏观",
+            "financial-media",
+            "AI芯片",
+            "黄仁勋警告存储供应短缺将",
+            "持续数年",
+            "英伟达与",
+            "海力士达成合作",
+            "第一财经中文财经"
+          ],
+          "keywords": [
+            "宏观",
+            "financial-media",
+            "AI芯片",
+            "黄仁勋警告存储供应短缺将",
+            "持续数年",
+            "英伟达与",
+            "海力士达成合作",
+            "第一财经中文财经"
+          ],
+          "score": 94,
           "duplicateCount": 0
         }
       ]
@@ -791,7 +799,7 @@
       "id": "international",
       "label": "国际",
       "description": "国际关系、地缘政治、全球监管和跨境市场事件。",
-      "count": 8,
+      "count": 6,
       "items": [
         {
           "id": "international-item-0482a851a5",
@@ -923,7 +931,7 @@
           "source_language": "en",
           "sourceLanguage": "en",
           "translation_status": "failed",
-          "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/15-12-2025-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
+          "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
           "tags": [],
           "article_keywords": [
             "AI",
@@ -945,7 +953,7 @@
             "LIVE",
             "officials"
           ],
-          "score": 99,
+          "score": 96,
           "duplicateCount": 0,
           "translation_error": "LLM translation is not configured."
         },
@@ -995,57 +1003,7 @@
             "dying",
             "sanctions"
           ],
-          "score": 99,
-          "duplicateCount": 0,
-          "translation_error": "LLM translation is not configured."
-        },
-        {
-          "id": "international-un-news-e3b0ae800c",
-          "sourceId": "un-news",
-          "title": "From firefights to football matches: Life on a UN peacekeeping frontline",
-          "title_original": "From firefights to football matches: Life on a UN peacekeeping frontline",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167666",
-          "source": "UN News",
-          "sourceType": "rss",
-          "category": "international",
-          "primaryCategory": "news",
-          "publishedAt": "2026-06-07T12:00:00.000Z",
-          "fetchedAt": "2026-06-09T00:00:27.444Z",
-          "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-          "sourceAuthority": "media",
-          "timelinessTier": "daily",
-          "summary": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-          "summary_original": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-          "contentExcerpt": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-          "impactAreas": [
-            "国际"
-          ],
-          "source_language": "en",
-          "sourceLanguage": "en",
-          "translation_status": "failed",
-          "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-MINUSCA-CAR-09.jpg/image770x420cropped.jpg",
-          "tags": [],
-          "article_keywords": [
-            "AI",
-            "election",
-            "国际",
-            "地缘政治",
-            "firefights",
-            "football",
-            "matches",
-            "Life"
-          ],
-          "keywords": [
-            "AI",
-            "election",
-            "国际",
-            "地缘政治",
-            "firefights",
-            "football",
-            "matches",
-            "Life"
-          ],
-          "score": 95,
+          "score": 96,
           "duplicateCount": 0,
           "translation_error": "LLM translation is not configured."
         },
@@ -1102,8 +1060,61 @@
             "天内记录到超",
             "起交火"
           ],
-          "score": 88,
+          "score": 84,
           "duplicateCount": 0
+        },
+        {
+          "id": "international-nasa-breaking-news-3020f927bb",
+          "sourceId": "nasa-breaking-news",
+          "title": "How NASA Science and Artemis Are Shaping the 2026 FIFA World Cup",
+          "title_original": "How NASA Science and Artemis Are Shaping the 2026 FIFA World Cup",
+          "url": "https://www.nasa.gov/centers-and-facilities/johnson/how-nasa-science-and-artemis-are-shaping-the-2026-fifa-world-cup",
+          "source": "NASA Breaking News",
+          "sourceType": "rss",
+          "category": "international",
+          "primaryCategory": "news",
+          "publishedAt": "2026-06-08T19:36:08.000Z",
+          "fetchedAt": "2026-06-09T00:00:27.444Z",
+          "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "As&#160;the FIFA World Cup&#160;approaches, NASA is bringing&#160;space science and&#160;engineering&#160;to soccer fans&#160;worldwide.&#160;From&#160;June 11&#160;to July 19,&#160;2026,&#160;NASA will&#160;host an&#160;exhibit&#160;at FIFA Fan Festival™&#160;Houston where visitors can learn how research aboard the International Space Station benefits life on Earth&#160;and&#160;experience missions in low Earth orbit, the Moon,&#160;and&#160;beyond&#160;through the Artemis program.&#160; On...",
+          "summary_original": "As&#160;the FIFA World Cup&#160;approaches, NASA is bringing&#160;space science and&#160;engineering&#160;to soccer fans&#160;worldwide.&#160;From&#160;June 11&#160;to July 19,&#160;2026,&#160;NASA will&#160;host an&#160;exhibit&#160;at FIFA Fan Festival™&#160;Houston where visitors can learn how research aboard the International Space Station benefits life on Earth&#160;and&#160;experience missions in low Earth orbit, the Moon,&#160;and&#160;beyond&#160;through the Artemis program.&#160; On...",
+          "contentExcerpt": "Johnson Space Center Office of Communications As the FIFA World Cup approaches, NASA is bringing space science and engineering to soccer fans worldwide. From June 11 to July 19, 2026, NASA will host an exhibit at FIFA Fan Festival™ Houston where visitors can learn how research aboard the International Space Station benefits life on Earth and experience missions in low Earth orbit, the Moon, and beyond through the Artemis program. On June 11, as the FIFA World Cup begins, NASA’s exhibit at Fan...",
+          "impactAreas": [
+            "国际"
+          ],
+          "source_language": "en",
+          "sourceLanguage": "en",
+          "translation_status": "failed",
+          "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/iss074e0361795.jpg",
+          "tags": [
+            "Johnson Space Center",
+            "International Space Station (ISS)"
+          ],
+          "article_keywords": [
+            "国际",
+            "Johnson Space Center",
+            "How",
+            "NASA",
+            "Science",
+            "and",
+            "Artemis",
+            "Are"
+          ],
+          "keywords": [
+            "国际",
+            "Johnson Space Center",
+            "How",
+            "NASA",
+            "Science",
+            "and",
+            "Artemis",
+            "Are"
+          ],
+          "score": 83,
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         }
       ]
     },
@@ -1111,7 +1122,7 @@
       "id": "news",
       "label": "新闻",
       "description": "公共政策、国际事件、社会治理与重大突发消息。",
-      "count": 21,
+      "count": 9,
       "items": [
         {
           "id": "news-item-43e40616be",
@@ -1168,7 +1179,7 @@
             "当地时间",
             "日上午"
           ],
-          "score": 100,
+          "score": 96,
           "duplicateCount": 0
         },
         {
@@ -1226,7 +1237,7 @@
             "当地时间",
             "日上午"
           ],
-          "score": 100,
+          "score": 96,
           "duplicateCount": 0
         },
         {
@@ -1284,7 +1295,7 @@
             "部门政策和公共事务即时发",
             "国家主席习近平致电路易丝"
           ],
-          "score": 100,
+          "score": 96,
           "duplicateCount": 0
         },
         {
@@ -1335,125 +1346,116 @@
             "lost",
             "generation"
           ],
-          "score": 98,
+          "score": 95,
           "duplicateCount": 0,
           "translation_error": "LLM translation is not configured."
         },
         {
-          "id": "news-item-c2178f894a",
-          "sourceId": "govcn-yaowen",
-          "title": "习近平和彭丽媛观看朝鲜专场文艺演出",
-          "title_original": "习近平和彭丽媛观看朝鲜专场文艺演出",
-          "title_zh": "习近平和彭丽媛观看朝鲜专场文艺演出",
-          "titleZh": "习近平和彭丽媛观看朝鲜专场文艺演出",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071529.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
+          "id": "news-un-news-5306e2817a",
+          "sourceId": "un-news",
+          "title": "‘Rare, untreatable strain’: Ebola toll mounts in eastern DR Congo",
+          "title_original": "‘Rare, untreatable strain’: Ebola toll mounts in eastern DR Congo",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167678",
+          "source": "UN News",
+          "sourceType": "rss",
           "category": "news",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "当地时间6月8日晚，中共中央总书记、国家主席习近平和夫人彭丽媛在朝鲜劳动党总书记、国务委员长金正恩和夫人李雪主陪同下，在平壤体育馆同朝鲜各界群众一道观看专场文艺演出。",
+          "publishedAt": "2026-06-08T12:00:00.000Z",
+          "fetchedAt": "2026-06-09T00:00:27.444Z",
+          "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country&#039;s Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
+          "summary_original": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country&#039;s Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
+          "contentExcerpt": "The top UN aid official in the Democratic Republic of the Congo (DRC) is in Ituri province – the epicentre of the country's Ebola outbreak – for a three-day assessment visit, as the confirmed case count reaches 515 across three eastern provinces.",
           "impactAreas": [
-            "公共政策",
-            "习近平和彭丽媛观看朝鲜专",
-            "场文艺演出",
-            "中国政府网要闻列表"
+            "AI",
+            "Rare",
+            "untreatable",
+            "strain"
           ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
-          "tags": [
-            "official-agency",
-            "hourly"
-          ],
+          "source_language": "en",
+          "sourceLanguage": "en",
+          "translation_status": "failed",
+          "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/08-06-2026-WHO-DR-Congo-ebola.jpg/image770x420cropped.jpg",
+          "tags": [],
           "article_keywords": [
-            "公共政策",
-            "习近平和彭丽媛观看朝鲜专",
-            "场文艺演出",
-            "中国政府网要闻列表",
-            "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "当地时间",
-            "日晚"
+            "AI",
+            "Rare",
+            "untreatable",
+            "strain",
+            "Ebola",
+            "toll",
+            "mounts",
+            "eastern"
           ],
           "keywords": [
-            "公共政策",
-            "习近平和彭丽媛观看朝鲜专",
-            "场文艺演出",
-            "中国政府网要闻列表",
-            "覆盖国务院",
-            "部门政策和公共事务即时发",
-            "当地时间",
-            "日晚"
+            "AI",
+            "Rare",
+            "untreatable",
+            "strain",
+            "Ebola",
+            "toll",
+            "mounts",
+            "eastern"
           ],
-          "score": 96,
-          "duplicateCount": 0
+          "score": 89,
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         },
         {
-          "id": "news-item-a1f1c35bfb",
-          "sourceId": "govcn-yaowen",
-          "title": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-          "title_original": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-          "title_zh": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-          "titleZh": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071528.htm",
-          "source": "中国政府网要闻",
-          "sourceType": "webpage",
+          "id": "news-nasa-breaking-news-bc88dad91c",
+          "sourceId": "nasa-breaking-news",
+          "title": "NASA’s INCUS Satellites Progress Toward Launch",
+          "title_original": "NASA’s INCUS Satellites Progress Toward Launch",
+          "url": "https://science.nasa.gov/photojournal/nasas-incus-satellites-progress-toward-launch",
+          "source": "NASA Breaking News",
+          "sourceType": "rss",
           "category": "news",
-          "publishedAt": "2026-06-08T00:00:00.000Z",
-          "fetchedAt": "2026-06-09T06:09:51.635Z",
-          "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-          "sourceAuthority": "official-agency",
-          "timelinessTier": "hourly",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "contentExcerpt": "6月8日，在赴平壤对朝鲜民主主义人民共和国进行国事访问之际，中共中央总书记、国家主席习近平在朝鲜《劳动新闻》发表题为《继往开来、砥砺同行 续写中朝传统友谊崭新篇章》的署名文章。",
+          "publishedAt": "2026-06-08T15:22:07.000Z",
+          "fetchedAt": "2026-06-09T00:00:27.444Z",
+          "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
+          "sourceAuthority": "media",
+          "timelinessTier": "daily",
+          "summary": "Description One of the three satellites that make up NASA’s INCUS (Investigation of Convective Updrafts) mission sits on a fixture at the facilities of Blue Canyon Technologies in Lafayette, Colorado. The satellite completed testing in preparation for launch in late May 2026. The mission will make the first space-based survey of the dynamics of tropical […]",
+          "summary_original": "Description One of the three satellites that make up NASA’s INCUS (Investigation of Convective Updrafts) mission sits on a fixture at the facilities of Blue Canyon Technologies in Lafayette, Colorado. The satellite completed testing in preparation for launch in late May 2026. The mission will make the first space-based survey of the dynamics of tropical […]",
+          "contentExcerpt": "One of the three satellites that make up NASA’s INCUS (Investigation of Convective Updrafts) mission sits on a fixture at the facilities of Blue Canyon Technologies in Lafayette, Colorado. The satellite completed testing in preparation for launch in late May 2026. The mission will make the first space-based survey of the dynamics of tropical convective storms. The three nearly identical satellites will fly in tight coordination in low Earth orbit, with the first and second satellites separate...",
           "impactAreas": [
-            "公共政策",
-            "让中朝传统友谊焕发更加璀",
-            "璨的时代光辉",
-            "习近平总书记署名文章为中"
+            "Photojournal",
+            "地缘政治",
+            "市场监管",
+            "NASA"
           ],
-          "source_language": "zh",
-          "sourceLanguage": "zh",
-          "translation_status": "not_required",
-          "imageUrl": "https://www.gov.cn/images/150.jpg",
+          "source_language": "en",
+          "sourceLanguage": "en",
+          "translation_status": "failed",
+          "imageUrl": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26614/PIA26614.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
           "tags": [
-            "official-agency",
-            "hourly"
+            "Investigation of Convective Updrafts (INCUS)",
+            "Photojournal"
           ],
           "article_keywords": [
-            "公共政策",
-            "让中朝传统友谊焕发更加璀",
-            "璨的时代光辉",
-            "习近平总书记署名文章为中",
-            "朝关系不断迈向新高度提供",
-            "指引",
-            "中国政府网要闻列表",
-            "覆盖国务院"
+            "Photojournal",
+            "地缘政治",
+            "市场监管",
+            "NASA",
+            "INCUS",
+            "Satellites",
+            "Progress",
+            "Toward"
           ],
           "keywords": [
-            "公共政策",
-            "让中朝传统友谊焕发更加璀",
-            "璨的时代光辉",
-            "习近平总书记署名文章为中",
-            "朝关系不断迈向新高度提供",
-            "指引",
-            "中国政府网要闻列表",
-            "覆盖国务院"
+            "Photojournal",
+            "地缘政治",
+            "市场监管",
+            "NASA",
+            "INCUS",
+            "Satellites",
+            "Progress",
+            "Toward"
           ],
-          "score": 96,
-          "duplicateCount": 0
+          "score": 82,
+          "duplicateCount": 0,
+          "translation_error": "LLM translation is not configured."
         }
       ]
     }
@@ -1515,6 +1517,163 @@
       "duplicateCount": 0
     },
     {
+      "id": "international-item-0482a851a5",
+      "sourceId": "govcn-yaowen",
+      "title": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "title_original": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "title_zh": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "titleZh": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071543.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "primaryCategory": "news",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "fetchedAt": "2026-06-09T06:09:51.635Z",
+      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日，在2026年“文明对话国际日”来临之际，中共中央政治局委员、外交部长王毅以视频方式向全球主题活动发表致辞。",
+      "impactAreas": [
+        "国际"
+      ],
+      "source_language": "zh",
+      "sourceLanguage": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "王毅向",
+        "文明对话国际日",
+        "全球主题活动发表视频致辞",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "王毅向",
+        "文明对话国际日",
+        "全球主题活动发表视频致辞",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "score": 100,
+      "duplicateCount": 0
+    },
+    {
+      "id": "international-un-news-f2241a8d62",
+      "sourceId": "un-news",
+      "title": "Why sustainable alternatives to plastic are struggling to compete",
+      "title_original": "Why sustainable alternatives to plastic are struggling to compete",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167670",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "primaryCategory": "news",
+      "publishedAt": "2026-06-08T12:00:00.000Z",
+      "fetchedAt": "2026-06-09T00:00:27.444Z",
+      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
+      "summary_original": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
+      "contentExcerpt": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.",
+      "impactAreas": [
+        "国际"
+      ],
+      "source_language": "en",
+      "sourceLanguage": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/28-05-2025-Doumeizel-seaweed-04.jpg/image770x420cropped.jpg",
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "regulation",
+        "tariff",
+        "国际",
+        "AI政策",
+        "地缘政治",
+        "Why",
+        "sustainable"
+      ],
+      "keywords": [
+        "AI",
+        "regulation",
+        "tariff",
+        "国际",
+        "AI政策",
+        "地缘政治",
+        "Why",
+        "sustainable"
+      ],
+      "score": 100,
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
+    },
+    {
+      "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
+      "sourceId": "sec-press",
+      "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
+      "title_original": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+      "source": "U.S. SEC Press Releases",
+      "sourceType": "rss",
+      "category": "finance",
+      "publishedAt": "2026-06-08T14:36:00.000Z",
+      "fetchedAt": "2026-06-09T00:00:27.444Z",
+      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
+      "sourceAuthority": "media",
+      "timelinessTier": "daily",
+      "summary": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
+      "summary_original": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
+      "contentExcerpt": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
+      "impactAreas": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Establishes"
+      ],
+      "source_language": "en",
+      "sourceLanguage": "en",
+      "translation_status": "failed",
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Establishes",
+        "Joint",
+        "Data",
+        "Standards",
+        "Required"
+      ],
+      "keywords": [
+        "AI",
+        "市场监管",
+        "SEC",
+        "Establishes",
+        "Joint",
+        "Data",
+        "Standards",
+        "Required"
+      ],
+      "score": 97,
+      "duplicateCount": 0,
+      "translation_error": "LLM translation is not configured."
+    },
+    {
       "id": "news-item-43e40616be",
       "sourceId": "govcn-yaowen",
       "title": "习近平参访朝鲜劳动党中央干部学校",
@@ -1569,7 +1728,7 @@
         "当地时间",
         "日上午"
       ],
-      "score": 100,
+      "score": 96,
       "duplicateCount": 0
     },
     {
@@ -1627,7 +1786,7 @@
         "当地时间",
         "日上午"
       ],
-      "score": 100,
+      "score": 96,
       "duplicateCount": 0
     },
     {
@@ -1685,382 +1844,7 @@
         "部门政策和公共事务即时发",
         "国家主席习近平致电路易丝"
       ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "international-item-0482a851a5",
-      "sourceId": "govcn-yaowen",
-      "title": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
-      "title_original": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
-      "title_zh": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
-      "titleZh": "王毅向2026年“文明对话国际日”全球主题活动发表视频致辞",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071543.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "international",
-      "primaryCategory": "news",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月8日，在2026年“文明对话国际日”来临之际，中共中央政治局委员、外交部长王毅以视频方式向全球主题活动发表致辞。",
-      "impactAreas": [
-        "国际"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "国际",
-        "地缘政治",
-        "公共政策",
-        "王毅向",
-        "文明对话国际日",
-        "全球主题活动发表视频致辞",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "keywords": [
-        "国际",
-        "地缘政治",
-        "公共政策",
-        "王毅向",
-        "文明对话国际日",
-        "全球主题活动发表视频致辞",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
-      "sourceId": "sec-press",
-      "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
-      "title_original": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
-      "source": "U.S. SEC Press Releases",
-      "sourceType": "rss",
-      "category": "finance",
-      "publishedAt": "2026-06-08T14:36:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
-      "summary_original": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
-      "contentExcerpt": "The U.S. Securities and Exchange Commission established joint data standards under the Financial Data Transparency Act of 2022. The final rule establishes technical standards for data submitted to certain financial regulatory agencies. Eight additional…",
-      "impactAreas": [
-        "AI",
-        "市场监管",
-        "SEC",
-        "Establishes"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "市场监管",
-        "SEC",
-        "Establishes",
-        "Joint",
-        "Data",
-        "Standards",
-        "Required"
-      ],
-      "keywords": [
-        "AI",
-        "市场监管",
-        "SEC",
-        "Establishes",
-        "Joint",
-        "Data",
-        "Standards",
-        "Required"
-      ],
-      "score": 100,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
-    },
-    {
-      "id": "international-un-news-f2241a8d62",
-      "sourceId": "un-news",
-      "title": "Why sustainable alternatives to plastic are struggling to compete",
-      "title_original": "Why sustainable alternatives to plastic are struggling to compete",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167670",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "primaryCategory": "news",
-      "publishedAt": "2026-06-08T12:00:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
-      "summary_original": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.&nbsp;",
-      "contentExcerpt": "Plastic pollution is choking the ocean, but sustainable alternatives - including seaweed - remain held back by tariffs, fragmented regulations and the overwhelming market advantage enjoyed by fossil fuel-based plastics.",
-      "impactAreas": [
-        "国际"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/28-05-2025-Doumeizel-seaweed-04.jpg/image770x420cropped.jpg",
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "regulation",
-        "tariff",
-        "国际",
-        "AI政策",
-        "地缘政治",
-        "Why",
-        "sustainable"
-      ],
-      "keywords": [
-        "AI",
-        "regulation",
-        "tariff",
-        "国际",
-        "AI政策",
-        "地缘政治",
-        "Why",
-        "sustainable"
-      ],
-      "score": 100,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
-    },
-    {
-      "id": "macro-item-b0b607987f",
-      "sourceId": "pbc-news",
-      "title": "中国人民银行行长潘功胜会见香港银行公会代表团",
-      "title_original": "中国人民银行行长潘功胜会见香港银行公会代表团",
-      "title_zh": "中国人民银行行长潘功胜会见香港银行公会代表团",
-      "titleZh": "中国人民银行行长潘功胜会见香港银行公会代表团",
-      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819584639132/index.html",
-      "source": "中国人民银行新闻发布",
-      "sourceType": "webpage",
-      "category": "macro",
-      "primaryCategory": "finance",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summary_original": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summary_zh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summaryZh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "contentExcerpt": "中国人民银行行长潘功胜会见香港银行公会代表团。2026年6月8日。中国人民银行行长潘功胜会见由香港金融管理局总裁余伟文率领的香港银行公会代表团。双方就当前宏观经济形势、深化内地与香港金融市场互联互通合作、加强香港离岸人民币市场建设、巩固提升香港国际金融中心地位等议题进行了交流。中国人民银行副行长邹澜参加会见。",
-      "impactAreas": [
-        "宏观"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "宏观",
-        "央行",
-        "国际",
-        "中国人民银行行长潘功胜会",
-        "见香港银行公会代表团",
-        "中国人民银行新闻发布",
-        "货币政策和金融市场运行信",
-        "见由香港金融管理局总裁余"
-      ],
-      "keywords": [
-        "宏观",
-        "央行",
-        "国际",
-        "中国人民银行行长潘功胜会",
-        "见香港银行公会代表团",
-        "中国人民银行新闻发布",
-        "货币政策和金融市场运行信",
-        "见由香港金融管理局总裁余"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "macro-item-89eb80cf01",
-      "sourceId": "pbc-news",
-      "title": "中老两国央行续签相关合作文件",
-      "title_original": "中老两国央行续签相关合作文件",
-      "title_zh": "中老两国央行续签相关合作文件",
-      "titleZh": "中老两国央行续签相关合作文件",
-      "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026060819453047380/index.html",
-      "source": "中国人民银行新闻发布",
-      "sourceType": "webpage",
-      "category": "macro",
-      "primaryCategory": "finance",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summary_original": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summary_zh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "summaryZh": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-      "contentExcerpt": "中老两国央行续签相关合作文件。在老挝人民革命党总书记、国家主席通伦访华期间。中国人民银行与老挝人民民主共和国银行续签了《中国人民银行与老挝人民民主共和国银行人民币/老挝基普双边本币互换协议》。同时。两国央行还续签了《中国人民银行与老挝人民民主共和国银行关于加强金融创新、数字支付和法定数字货币合作的谅解备忘录》。上述合作文件的签署将有助于促进中老双边金融合作。深化两国经贸关系。",
-      "impactAreas": [
-        "宏观"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "宏观",
-        "央行",
-        "中老两国央行续签相关合作",
-        "文件",
-        "中国人民银行新闻发布",
-        "货币政策和金融市场运行信",
-        "在老挝人民革命党总书记",
-        "国家主席通伦访华期间"
-      ],
-      "keywords": [
-        "宏观",
-        "央行",
-        "中老两国央行续签相关合作",
-        "文件",
-        "中国人民银行新闻发布",
-        "货币政策和金融市场运行信",
-        "在老挝人民革命党总书记",
-        "国家主席通伦访华期间"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "macro-item-25770d4c4c",
-      "sourceId": "ndrc-news",
-      "title": "国家发展改革委与老挝有关部门签署合作文件",
-      "title_original": "国家发展改革委与老挝有关部门签署合作文件",
-      "title_zh": "国家发展改革委与老挝有关部门签署合作文件",
-      "titleZh": "国家发展改革委与老挝有关部门签署合作文件",
-      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260608_1405748.html",
-      "source": "国家发展改革委新闻发布",
-      "sourceType": "webpage",
-      "category": "macro",
-      "primaryCategory": "finance",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "daily",
-      "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "summary_original": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "summary_zh": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "summaryZh": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-      "impactAreas": [
-        "宏观"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "tags": [
-        "official-agency",
-        "daily"
-      ],
-      "article_keywords": [
-        "AI",
-        "宏观",
-        "国家发展改革委与老挝有关",
-        "部门签署合作文件",
-        "国家发展改革委宏观政策",
-        "价格",
-        "产业和经济运行信息"
-      ],
-      "keywords": [
-        "AI",
-        "宏观",
-        "国家发展改革委与老挝有关",
-        "部门签署合作文件",
-        "国家发展改革委宏观政策",
-        "价格",
-        "产业和经济运行信息"
-      ],
-      "score": 100,
-      "duplicateCount": 0
-    },
-    {
-      "id": "macro-item-341501ee15",
-      "sourceId": "mof-news",
-      "title": "廖岷会见英中贸易协会主席吴思田",
-      "title_original": "廖岷会见英中贸易协会主席吴思田",
-      "title_zh": "廖岷会见英中贸易协会主席吴思田",
-      "titleZh": "廖岷会见英中贸易协会主席吴思田",
-      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260608_3991301.htm",
-      "source": "财政部财政新闻",
-      "sourceType": "webpage",
-      "category": "macro",
-      "primaryCategory": "finance",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "daily",
-      "summary": "财政部财政政策、国债、预算和财政运行新闻",
-      "summary_original": "财政部财政政策、国债、预算和财政运行新闻",
-      "summary_zh": "财政部财政政策、国债、预算和财政运行新闻",
-      "summaryZh": "财政部财政政策、国债、预算和财政运行新闻",
-      "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-      "impactAreas": [
-        "宏观"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "tags": [
-        "official-agency",
-        "daily"
-      ],
-      "article_keywords": [
-        "AI",
-        "宏观",
-        "公共政策",
-        "廖岷会见英中贸易协会主席",
-        "吴思田",
-        "财政部财政政策",
-        "国债",
-        "预算和财政运行新闻"
-      ],
-      "keywords": [
-        "AI",
-        "宏观",
-        "公共政策",
-        "廖岷会见英中贸易协会主席",
-        "吴思田",
-        "财政部财政政策",
-        "国债",
-        "预算和财政运行新闻"
-      ],
-      "score": 100,
+      "score": 96,
       "duplicateCount": 0
     },
     {
@@ -2087,7 +1871,7 @@
       "source_language": "en",
       "sourceLanguage": "en",
       "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/15-12-2025-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
         "AI",
@@ -2109,7 +1893,7 @@
         "LIVE",
         "officials"
       ],
-      "score": 99,
+      "score": 96,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -2159,7 +1943,7 @@
         "dying",
         "sanctions"
       ],
-      "score": 99,
+      "score": 96,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -2211,7 +1995,7 @@
         "lost",
         "generation"
       ],
-      "score": 98,
+      "score": 95,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -2267,7 +2051,7 @@
         "燃油车正在被加速挤出主流",
         "消费人群的视野"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2320,7 +2104,7 @@
         "第一财经中文财经",
         "产业和市场新闻"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2375,7 +2159,7 @@
         "第一财经中文财经",
         "产业和市场新闻"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2430,7 +2214,7 @@
         "第一财经中文财经",
         "产业和市场新闻"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2485,7 +2269,7 @@
         "海力士达成合作",
         "第一财经中文财经"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2538,7 +2322,7 @@
         "第一财经中文财经",
         "产业和市场新闻"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2589,7 +2373,7 @@
         "第一财经中文财经",
         "产业和市场新闻"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2644,7 +2428,7 @@
         "资战略股东",
         "第一财经中文财经"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2699,7 +2483,7 @@
         "第一财经中文财经",
         "产业和市场新闻"
       ],
-      "score": 97,
+      "score": 94,
       "duplicateCount": 0
     },
     {
@@ -2754,684 +2538,8 @@
         "WWDC",
         "Apple"
       ],
-      "score": 96,
+      "score": 92,
       "duplicateCount": 0
-    },
-    {
-      "id": "news-item-c2178f894a",
-      "sourceId": "govcn-yaowen",
-      "title": "习近平和彭丽媛观看朝鲜专场文艺演出",
-      "title_original": "习近平和彭丽媛观看朝鲜专场文艺演出",
-      "title_zh": "习近平和彭丽媛观看朝鲜专场文艺演出",
-      "titleZh": "习近平和彭丽媛观看朝鲜专场文艺演出",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071529.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "当地时间6月8日晚，中共中央总书记、国家主席习近平和夫人彭丽媛在朝鲜劳动党总书记、国务委员长金正恩和夫人李雪主陪同下，在平壤体育馆同朝鲜各界群众一道观看专场文艺演出。",
-      "impactAreas": [
-        "公共政策",
-        "习近平和彭丽媛观看朝鲜专",
-        "场文艺演出",
-        "中国政府网要闻列表"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "习近平和彭丽媛观看朝鲜专",
-        "场文艺演出",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "当地时间",
-        "日晚"
-      ],
-      "keywords": [
-        "公共政策",
-        "习近平和彭丽媛观看朝鲜专",
-        "场文艺演出",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "当地时间",
-        "日晚"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-a1f1c35bfb",
-      "sourceId": "govcn-yaowen",
-      "title": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-      "title_original": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-      "title_zh": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-      "titleZh": "让中朝传统友谊焕发更加璀璨的时代光辉——习近平总书记署名文章为中朝关系不断迈向新高度提供指引",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071528.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月8日，在赴平壤对朝鲜民主主义人民共和国进行国事访问之际，中共中央总书记、国家主席习近平在朝鲜《劳动新闻》发表题为《继往开来、砥砺同行 续写中朝传统友谊崭新篇章》的署名文章。",
-      "impactAreas": [
-        "公共政策",
-        "让中朝传统友谊焕发更加璀",
-        "璨的时代光辉",
-        "习近平总书记署名文章为中"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "让中朝传统友谊焕发更加璀",
-        "璨的时代光辉",
-        "习近平总书记署名文章为中",
-        "朝关系不断迈向新高度提供",
-        "指引",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "keywords": [
-        "公共政策",
-        "让中朝传统友谊焕发更加璀",
-        "璨的时代光辉",
-        "习近平总书记署名文章为中",
-        "朝关系不断迈向新高度提供",
-        "指引",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-088f917fe2",
-      "sourceId": "govcn-yaowen",
-      "title": "我国海洋生态状况稳中向好",
-      "title_original": "我国海洋生态状况稳中向好",
-      "title_zh": "我国海洋生态状况稳中向好",
-      "titleZh": "我国海洋生态状况稳中向好",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071522.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "自然资源部今天发布的《中国海洋生态预警监测公报》显示，2025年，我国珊瑚礁、海草床、红树林、海岛生态系统状况以优良为主。",
-      "impactAreas": [
-        "公共政策",
-        "我国海洋生态状况稳中向好",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "我国海洋生态状况稳中向好",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "自然资源部今天发布的",
-        "中国海洋生态预警监测公报",
-        "显示"
-      ],
-      "keywords": [
-        "公共政策",
-        "我国海洋生态状况稳中向好",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "自然资源部今天发布的",
-        "中国海洋生态预警监测公报",
-        "显示"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-36513d63d7",
-      "sourceId": "govcn-yaowen",
-      "title": "“十五五”现代化应急体系有了“建设指南”",
-      "title_original": "“十五五”现代化应急体系有了“建设指南”",
-      "title_zh": "“十五五”现代化应急体系有了“建设指南”",
-      "titleZh": "“十五五”现代化应急体系有了“建设指南”",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071514.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "应急管理关乎人民群众生命财产安全，关乎改革发展稳定大局。国务院日前印发《现代化应急体系建设“十五五”规划》，对“十五五”时期安全生产、防灾减灾救灾等工作作出部署。",
-      "impactAreas": [
-        "AI政策",
-        "公共政策",
-        "十五五",
-        "现代化应急体系有了"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "AI政策",
-        "公共政策",
-        "十五五",
-        "现代化应急体系有了",
-        "建设指南",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "AI政策",
-        "公共政策",
-        "十五五",
-        "现代化应急体系有了",
-        "建设指南",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-481779502f",
-      "sourceId": "govcn-yaowen",
-      "title": "习近平出席金正恩举行的欢迎宴会",
-      "title_original": "习近平出席金正恩举行的欢迎宴会",
-      "title_zh": "习近平出席金正恩举行的欢迎宴会",
-      "titleZh": "习近平出席金正恩举行的欢迎宴会",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071505.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "当地时间6月8日晚，中共中央总书记、国家主席习近平和夫人彭丽媛在平壤木兰馆出席朝鲜劳动党总书记、国务委员长金正恩举行的欢迎宴会。",
-      "impactAreas": [
-        "公共政策",
-        "习近平出席金正恩举行的欢",
-        "迎宴会",
-        "中国政府网要闻列表"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "习近平出席金正恩举行的欢",
-        "迎宴会",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "当地时间",
-        "日晚"
-      ],
-      "keywords": [
-        "公共政策",
-        "习近平出席金正恩举行的欢",
-        "迎宴会",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "当地时间",
-        "日晚"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-7bf0ca4545",
-      "sourceId": "govcn-yaowen",
-      "title": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
-      "title_original": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
-      "title_zh": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
-      "titleZh": "“十五五”首个国家重大工程开工 三峡枢纽将迎新通道",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071504.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月8日，我国“十五五”期间开工建设的首个国家重大标志性工程——三峡水运新通道破土动工，有利于提升长江黄金水道通航能力。",
-      "impactAreas": [
-        "公共政策",
-        "十五五",
-        "首个国家重大工程开工",
-        "三峡枢纽将迎新通道"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "十五五",
-        "首个国家重大工程开工",
-        "三峡枢纽将迎新通道",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "我国"
-      ],
-      "keywords": [
-        "公共政策",
-        "十五五",
-        "首个国家重大工程开工",
-        "三峡枢纽将迎新通道",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "我国"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-fc3b306816",
-      "sourceId": "govcn-yaowen",
-      "title": "【视频】习近平在朝鲜媒体发表署名文章",
-      "title_original": "【视频】习近平在朝鲜媒体发表署名文章",
-      "title_zh": "【视频】习近平在朝鲜媒体发表署名文章",
-      "titleZh": "【视频】习近平在朝鲜媒体发表署名文章",
-      "url": "https://tv.cctv.com/2026/06/08/VIDENVElayHpBe7r8jdln6uu260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平在朝鲜媒体发表署名",
-        "文章"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "视频",
-        "习近平在朝鲜媒体发表署名",
-        "文章",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平在朝鲜媒体发表署名",
-        "文章",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-44c7824245",
-      "sourceId": "govcn-yaowen",
-      "title": "【视频】习近平同金正恩举行会谈",
-      "title_original": "【视频】习近平同金正恩举行会谈",
-      "title_zh": "【视频】习近平同金正恩举行会谈",
-      "titleZh": "【视频】习近平同金正恩举行会谈",
-      "url": "https://tv.cctv.com/2026/06/08/VIDE1PCryEXC67mzAWtN7Z4A260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平同金正恩举行会谈",
-        "中国政府网要闻列表"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "视频",
-        "习近平同金正恩举行会谈",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平同金正恩举行会谈",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-ae5535e570",
-      "sourceId": "govcn-yaowen",
-      "title": "【视频】习近平出席金正恩举行的欢迎仪式",
-      "title_original": "【视频】习近平出席金正恩举行的欢迎仪式",
-      "title_zh": "【视频】习近平出席金正恩举行的欢迎仪式",
-      "titleZh": "【视频】习近平出席金正恩举行的欢迎仪式",
-      "url": "https://tv.cctv.com/2026/06/08/VIDEERWuxUKOoThkpAYbMqIA260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "迎仪式"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "迎仪式",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平出席金正恩举行的欢",
-        "迎仪式",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-26c6dedb7b",
-      "sourceId": "govcn-yaowen",
-      "title": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
-      "title_original": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
-      "title_zh": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
-      "titleZh": "【视频】习近平抵达平壤开始对朝鲜进行国事访问",
-      "url": "https://tv.cctv.com/2026/06/08/VIDEhpj4Z4APgEqA8ttWGr1i260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "[视频]习近平抵达平壤开始对朝鲜进行国事访问",
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平抵达平壤开始对朝鲜",
-        "进行国事访问"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "视频",
-        "习近平抵达平壤开始对朝鲜",
-        "进行国事访问",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平抵达平壤开始对朝鲜",
-        "进行国事访问",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "news-item-83ef928bf5",
-      "sourceId": "govcn-yaowen",
-      "title": "【视频】习近平离京对朝鲜进行国事访问",
-      "title_original": "【视频】习近平离京对朝鲜进行国事访问",
-      "title_zh": "【视频】习近平离京对朝鲜进行国事访问",
-      "titleZh": "【视频】习近平离京对朝鲜进行国事访问",
-      "url": "https://tv.cctv.com/2026/06/08/VIDECC0jmvGvWVMlkxnawjpd260608.shtml",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summaryZh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "impactAreas": [
-        "公共政策",
-        "视频",
-        "习近平离京对朝鲜进行国事",
-        "访问"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/28/1632795780652_242.jpg",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "视频",
-        "习近平离京对朝鲜进行国事",
-        "访问",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "公共政策",
-        "视频",
-        "习近平离京对朝鲜进行国事",
-        "访问",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "score": 96,
-      "duplicateCount": 0
-    },
-    {
-      "id": "international-un-news-e3b0ae800c",
-      "sourceId": "un-news",
-      "title": "From firefights to football matches: Life on a UN peacekeeping frontline",
-      "title_original": "From firefights to football matches: Life on a UN peacekeeping frontline",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167666",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "primaryCategory": "news",
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-      "summary_original": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-      "contentExcerpt": "Night has fallen over the town of Zémio, in the east of the Central African Republic. In a few hours, the December 2025 presidential election is due to take place, but the rebels of the “Azande Ani Kpi Gbe” (AAKG) militia have launched an offensive to seize the city and derail the polls.",
-      "impactAreas": [
-        "国际"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-MINUSCA-CAR-09.jpg/image770x420cropped.jpg",
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "election",
-        "国际",
-        "地缘政治",
-        "firefights",
-        "football",
-        "matches",
-        "Life"
-      ],
-      "keywords": [
-        "AI",
-        "election",
-        "国际",
-        "地缘政治",
-        "firefights",
-        "football",
-        "matches",
-        "Life"
-      ],
-      "score": 95,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
     },
     {
       "id": "business-openai-news-26e324e887",
@@ -3480,7 +2588,7 @@
         "draft",
         "S-1"
       ],
-      "score": 94,
+      "score": 91,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -3532,160 +2640,6 @@
         "mounts",
         "eastern"
       ],
-      "score": 92,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
-    },
-    {
-      "id": "business-openai-news-a1e84dd92f",
-      "sourceId": "openai-news",
-      "title": "Built to benefit everyone: our plan",
-      "title_original": "Built to benefit everyone: our plan",
-      "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "business",
-      "primaryCategory": "tech",
-      "publishedAt": "2026-06-08T01:30:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
-      "summary_original": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
-      "contentExcerpt": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
-      "impactAreas": [
-        "商业"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "tags": [
-        "Company"
-      ],
-      "article_keywords": [
-        "AI",
-        "商业",
-        "Company",
-        "AI政策",
-        "Built",
-        "benefit",
-        "everyone",
-        "our"
-      ],
-      "keywords": [
-        "AI",
-        "商业",
-        "Company",
-        "AI政策",
-        "Built",
-        "benefit",
-        "everyone",
-        "our"
-      ],
-      "score": 92,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
-    },
-    {
-      "id": "business-openai-news-31bfebfcba",
-      "sourceId": "openai-news",
-      "title": "Introducing the OpenAI Economic Research Exchange",
-      "title_original": "Introducing the OpenAI Economic Research Exchange",
-      "url": "https://openai.com/index/economic-research-exchange",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "business",
-      "primaryCategory": "tech",
-      "publishedAt": "2026-06-08T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
-      "summary_original": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
-      "contentExcerpt": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
-      "impactAreas": [
-        "商业"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "tags": [
-        "Company"
-      ],
-      "article_keywords": [
-        "AI",
-        "商业",
-        "Company",
-        "Introducing",
-        "the",
-        "OpenAI",
-        "Economic",
-        "Research"
-      ],
-      "keywords": [
-        "AI",
-        "商业",
-        "Company",
-        "Introducing",
-        "the",
-        "OpenAI",
-        "Economic",
-        "Research"
-      ],
-      "score": 92,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
-    },
-    {
-      "id": "news-un-news-d7d4550ce0",
-      "sourceId": "un-news",
-      "title": "Humanity’s future depends on protecting the rapidly changing ocean",
-      "title_original": "Humanity’s future depends on protecting the rapidly changing ocean",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167654",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "The ocean covers more than 70 per cent of the planet&nbsp;and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
-      "summary_original": "The ocean covers more than 70 per cent of the planet&nbsp;and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
-      "contentExcerpt": "The ocean covers more than 70 per cent of the planet and regulates climate, sustains biodiversity, and supports economies and cultures worldwide. It’s the foundation of life on Earth.",
-      "impactAreas": [
-        "AI",
-        "Humanity",
-        "future",
-        "depends"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/13-05-2026-Ocean-Image-Bank-Polynesia.jpg/image770x420cropped.jpg",
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "Humanity",
-        "future",
-        "depends",
-        "protecting",
-        "the",
-        "rapidly",
-        "changing"
-      ],
-      "keywords": [
-        "AI",
-        "Humanity",
-        "future",
-        "depends",
-        "protecting",
-        "the",
-        "rapidly",
-        "changing"
-      ],
       "score": 89,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
@@ -3698,61 +2652,6 @@
       "title_zh": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
       "titleZh": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
       "url": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "business",
-      "primaryCategory": "finance",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "6月8日晚，丰光精密披露拟1.12亿元收购唯实深蓝51%股权，取得控制权。标的评估增值率568.33%，交易对方包括唯实人企管及四名自然人，支付方式为现金分期。丰光精密股票连续两日涨停，发布异动公告。交易对方承诺唯实深蓝2026年至2028年扣非净利润不低于6000万元，否则现金补偿。此次收购对丰光精密有战略意义，但也提示了多项风险。",
-      "impactAreas": [
-        "商业"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "商业",
-        "financial-media",
-        "财报",
-        "市场监管",
-        "连续两天",
-        "涨停后",
-        "丰光精密披露拟",
-        "亿元控股惯性导航企业唯实"
-      ],
-      "keywords": [
-        "商业",
-        "financial-media",
-        "财报",
-        "市场监管",
-        "连续两天",
-        "涨停后",
-        "丰光精密披露拟",
-        "亿元控股惯性导航企业唯实"
-      ],
-      "score": 88,
-      "duplicateCount": 0
-    },
-    {
-      "id": "business-item-af2ac8198e",
-      "sourceId": "nbd-finance",
-      "title": "今年前5个月我国货物贸易进出口同比增长15.3%",
-      "title_original": "今年前5个月我国货物贸易进出口同比增长15.3%",
-      "title_zh": "今年前5个月我国货物贸易进出口同比增长15.3%",
-      "titleZh": "今年前5个月我国货物贸易进出口同比增长15.3%",
-      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420871.html",
       "source": "每日经济新闻",
       "sourceType": "webpage",
       "category": "business",
@@ -3780,11 +2679,67 @@
       "article_keywords": [
         "商业",
         "financial-media",
+        "市场监管",
+        "连续两天",
+        "涨停后",
+        "丰光精密披露拟",
+        "亿元控股惯性导航企业唯实",
+        "深蓝"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "市场监管",
+        "连续两天",
+        "涨停后",
+        "丰光精密披露拟",
+        "亿元控股惯性导航企业唯实",
+        "深蓝"
+      ],
+      "score": 84,
+      "duplicateCount": 0
+    },
+    {
+      "id": "business-item-af2ac8198e",
+      "sourceId": "nbd-finance",
+      "title": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "title_original": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "title_zh": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "titleZh": "今年前5个月我国货物贸易进出口同比增长15.3%",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420871.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "primaryCategory": "finance",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "fetchedAt": "2026-06-09T06:09:51.635Z",
+      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "海关总署今天公布统计数据显示，今年前5个月，我国货物贸易进出口同比增长15.3%，延续稳定增长态势。据海关统计，今年前5个月，我国货物贸易进出口总值20.68万亿元，同比增长15.3%。其中，对东盟、",
+      "impactAreas": [
+        "商业"
+      ],
+      "source_language": "zh",
+      "sourceLanguage": "zh",
+      "translation_status": "not_required",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
         "今年前",
         "个月我国货物贸易进出口同",
         "比增长",
         "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "公司和市场新闻",
+        "海关总署今天公布统计数据"
       ],
       "keywords": [
         "商业",
@@ -3793,9 +2748,10 @@
         "个月我国货物贸易进出口同",
         "比增长",
         "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "公司和市场新闻",
+        "海关总署今天公布统计数据"
       ],
-      "score": 88,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -3848,7 +2804,7 @@
         "每日经济新闻中文财经",
         "公司和市场新闻"
       ],
-      "score": 88,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -3904,7 +2860,7 @@
         "天内记录到超",
         "起交火"
       ],
-      "score": 88,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -3959,7 +2915,7 @@
         "成交额超",
         "亿元"
       ],
-      "score": 88,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -4010,7 +2966,7 @@
         "每日经济新闻中文财经",
         "公司和市场新闻"
       ],
-      "score": 88,
+      "score": 84,
       "duplicateCount": 0
     },
     {
@@ -4065,63 +3021,8 @@
         "去年她在这里打进四强",
         "每日经济新闻中文财经"
       ],
-      "score": 88,
+      "score": 84,
       "duplicateCount": 0
-    },
-    {
-      "id": "business-item-de2a40d8a8",
-      "sourceId": "nbd-finance",
-      "title": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
-      "title_original": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
-      "title_zh": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
-      "titleZh": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
-      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420923.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "business",
-      "primaryCategory": "finance",
-      "publishedAt": "2026-06-09T00:00:00.000Z",
-      "fetchedAt": "2026-06-09T06:09:51.635Z",
-      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "反向讨薪、递延薪酬越来越成为证券行业的标配！6月以来，东兴证券、中信证券、中金公司、招商证券、光大证券、中信建投等多家券商密集启动薪酬管理制度修订工作，将薪酬递延、追索扣回、长周期考核纳入核心条款，将",
-      "impactAreas": [
-        "商业"
-      ],
-      "source_language": "zh",
-      "sourceLanguage": "zh",
-      "translation_status": "not_required",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "商业",
-        "financial-media",
-        "市场监管",
-        "加入",
-        "反向讨薪",
-        "的队伍",
-        "多家头部券商修订薪酬管理",
-        "制度"
-      ],
-      "keywords": [
-        "商业",
-        "financial-media",
-        "市场监管",
-        "加入",
-        "反向讨薪",
-        "的队伍",
-        "多家头部券商修订薪酬管理",
-        "制度"
-      ],
-      "score": 86,
-      "duplicateCount": 1
     },
     {
       "id": "international-nasa-breaking-news-3020f927bb",
@@ -4172,7 +3073,7 @@
         "Artemis",
         "Are"
       ],
-      "score": 86,
+      "score": 83,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -4228,9 +3129,64 @@
         "Answers",
         "some"
       ],
-      "score": 86,
+      "score": 83,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
+    },
+    {
+      "id": "business-item-de2a40d8a8",
+      "sourceId": "nbd-finance",
+      "title": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "title_original": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "title_zh": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "titleZh": "加入“反向讨薪”的队伍！多家头部券商修订薪酬管理制度",
+      "url": "https://www.nbd.com.cn/articles/2026-06-09/4420923.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "primaryCategory": "finance",
+      "publishedAt": "2026-06-09T00:00:00.000Z",
+      "fetchedAt": "2026-06-09T06:09:51.635Z",
+      "sourceLastCheckedAt": "2026-06-09T06:09:51.635Z",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "summaryZh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "反向讨薪、递延薪酬越来越成为证券行业的标配！6月以来，东兴证券、中信证券、中金公司、招商证券、光大证券、中信建投等多家券商密集启动薪酬管理制度修订工作，将薪酬递延、追索扣回、长周期考核纳入核心条款，将",
+      "impactAreas": [
+        "商业"
+      ],
+      "source_language": "zh",
+      "sourceLanguage": "zh",
+      "translation_status": "not_required",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "市场监管",
+        "加入",
+        "反向讨薪",
+        "的队伍",
+        "多家头部券商修订薪酬管理",
+        "制度"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "市场监管",
+        "加入",
+        "反向讨薪",
+        "的队伍",
+        "多家头部券商修订薪酬管理",
+        "制度"
+      ],
+      "score": 82,
+      "duplicateCount": 1
     },
     {
       "id": "news-nasa-breaking-news-bc88dad91c",
@@ -4283,7 +3239,7 @@
         "Progress",
         "Toward"
       ],
-      "score": 85,
+      "score": 82,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -4335,7 +3291,7 @@
         "deliver",
         "climate"
       ],
-      "score": 84,
+      "score": 81,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -4387,7 +3343,7 @@
         "service",
         "worked"
       ],
-      "score": 84,
+      "score": 81,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     },
@@ -4417,7 +3373,7 @@
       "source_language": "en",
       "sourceLanguage": "en",
       "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/08-06-2026-BFP12-Philippines.jpg/image560x340cropped.jpg",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/08-06-2026-BFP12-Philippines.jpg/image770x420cropped.jpg",
       "tags": [],
       "article_keywords": [
         "Deadly",
@@ -4439,67 +3395,17 @@
         "school",
         "year"
       ],
-      "score": 84,
-      "duplicateCount": 0,
-      "translation_error": "LLM translation is not configured."
-    },
-    {
-      "id": "international-nasa-breaking-news-d4242b2fb0",
-      "sourceId": "nasa-breaking-news",
-      "title": "Digging Back in Time in the UAE",
-      "title_original": "Digging Back in Time in the UAE",
-      "url": "https://science.nasa.gov/earth/earth-observatory/digging-back-in-time-in-the-uae",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "international",
-      "primaryCategory": "news",
-      "publishedAt": "2026-06-08T04:01:00.000Z",
-      "fetchedAt": "2026-06-09T00:00:27.444Z",
-      "sourceLastCheckedAt": "2026-06-09T00:00:27.444Z",
-      "sourceAuthority": "media",
-      "timelinessTier": "daily",
-      "summary": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival.",
-      "summary_original": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival.",
-      "contentExcerpt": "Once below a shallow sea, Jabal al Fāyah now stands above the desert in the United Arab Emirates as a reminder of a watery past and early human survival. About an hour’s drive east of Dubai’s gleaming towers and artificial islands, a quieter, more natural landscape takes shape. At the far northern edge of the Rub’ al Khali, a saffron-colored sand sea laps against the Al-Hajar Mountains. A series of pale ridges rises finlike from the desert plain, with the largest—Jabal al Fāyah—standing 412 m...",
-      "impactAreas": [
-        "国际"
-      ],
-      "source_language": "en",
-      "sourceLanguage": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/digging-back-in-time-in-the-uae/fayapaleo_oli_20251023_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "tags": [],
-      "article_keywords": [
-        "国际",
-        "Digging",
-        "Back",
-        "Time",
-        "the",
-        "UAE",
-        "Once",
-        "below"
-      ],
-      "keywords": [
-        "国际",
-        "Digging",
-        "Back",
-        "Time",
-        "the",
-        "UAE",
-        "Once",
-        "below"
-      ],
-      "score": 84,
+      "score": 81,
       "duplicateCount": 0,
       "translation_error": "LLM translation is not configured."
     }
   ],
-  "translationGeneratedAt": "2026-06-09T06:31:53.532Z",
+  "translationGeneratedAt": "2026-06-10T08:15:13.214Z",
   "translationStats": {
     "llmConfigured": false,
-    "attempted": 18,
+    "attempted": 13,
     "translated": 0,
-    "failed": 18,
-    "notRequired": 38
+    "failed": 13,
+    "notRequired": 23
   }
 }

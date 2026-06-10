@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message Choose</title>
+    <meta name="description" content="从官方机构、市场公告和精选媒体来源筛出科技、金融、新闻高价值信息，按评分、摘要和来源状态辅助快速判断。">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand-block">
+        <a class="brand-mark" href="#feed" aria-label="Message Choose 首页">
+          <span class="brand-symbol" aria-hidden="true">MC</span>
+          <span>
+            <strong>Message Choose</strong>
+            <small>科技 · 金融 · 新闻</small>
+          </span>
+        </a>
+      </div>
+      <div class="header-status" aria-live="polite">
+        <span id="generated-at">等待数据</span>
+        <span id="total-count">0 条</span>
+      </div>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="index.html" aria-current="page">信息流</a>
+        <a href="daily-summary.html">每日摘要</a>
+        <a href="weekly-review.html">每周复盘</a>
+        <a href="history.html">历史</a>
+        <a href="about.html">关于/规则</a>
+      </nav>
+    </header>
+
+    <main class="app-shell">
+      <section class="overview-band" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">信息筛选台</h1>
+          <p>每天从活跃来源中筛出科技、金融、新闻高价值信息，用评分、摘要、发布时间和来源状态帮助快速判断是否值得打开原文。</p>
+          <div class="value-points" aria-label="站点价值说明">
+            <span>覆盖官方机构、交易所与精选媒体</span>
+            <span>保留发布时间与采集时间</span>
+            <span>异常来源公开提示</span>
+          </div>
+          <div class="search-engine-row home-search-row">
+            <label class="search-field" aria-label="关键词搜索">
+              <span>关键词搜索</span>
+              <input id="keyword-filter" type="search" placeholder="搜索标题、摘要、来源或关键词">
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="daily-focus-band" aria-labelledby="top-hotspots-title">
+        <div class="overview-metrics channel-summary-strip" id="channel-summary" aria-label="频道概览"></div>
+        <!-- STATIC_SUMMARY_START -->
+          <div class="static-summary-meta">
+            信息流更新 06/09 14:31；活跃来源 12 个，异常来源 8 个。
+          </div>
+          <div class="top-hotspots-head">
+            <div>
+              <h2 id="top-hotspots-title">今日核心热点 Top 5</h2>
+              <p>按评分、时效和来源权重筛出最值得先看的信息。</p>
+            </div>
+          </div>
+          <div class="home-intel-grid">
+            <section class="home-hotspot-panel" aria-labelledby="top-hotspots-title">
+              
+          <div class="top-hotspots" id="top-hotspot-list">
+            
+              <article class="top-hotspot-card top-hotspot-row is-primary">
+                <a class="top-hotspot-link" href="https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm">
+                  <div class="top-hotspot-rank">#1</div>
+                  <div class="top-hotspot-body">
+                    <h3>财政部将于6月在香港发行150亿元人民币国债</h3>
+                    <p class="top-hotspot-summary">财政部财政政策、国债、预算和财政运行新闻</p>
+                    <p class="top-hotspot-why">评分 100，来自财政部财政新闻。</p>
+                    <div class="top-hotspot-meta">
+                      <span>来源：财政部财政新闻</span>
+                      <span>热度：高</span>
+                      <span>更新时间：06/09 08:00</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="top-hotspot-card top-hotspot-row">
+                <a class="top-hotspot-link" href="https://www.gov.cn/yaowen/liebiao/202606/content_7071564.htm">
+                  <div class="top-hotspot-rank">#2</div>
+                  <div class="top-hotspot-body">
+                    <h3>习近平参访朝鲜劳动党中央干部学校</h3>
+                    <p class="top-hotspot-summary">中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布</p>
+                    <p class="top-hotspot-why">评分 100，来自中国政府网要闻。</p>
+                    <div class="top-hotspot-meta">
+                      <span>来源：中国政府网要闻</span>
+                      <span>热度：高</span>
+                      <span>更新时间：06/09 08:00</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="top-hotspot-card top-hotspot-row">
+                <a class="top-hotspot-link" href="https://www.gov.cn/yaowen/liebiao/202606/content_7071562.htm">
+                  <div class="top-hotspot-rank">#3</div>
+                  <div class="top-hotspot-body">
+                    <h3>习近平和彭丽媛参谒中朝友谊塔</h3>
+                    <p class="top-hotspot-summary">中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布</p>
+                    <p class="top-hotspot-why">评分 100，来自中国政府网要闻。</p>
+                    <div class="top-hotspot-meta">
+                      <span>来源：中国政府网要闻</span>
+                      <span>热度：高</span>
+                      <span>更新时间：06/09 08:00</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="top-hotspot-card top-hotspot-row">
+                <a class="top-hotspot-link" href="https://www.gov.cn/yaowen/liebiao/202606/content_7071551.htm">
+                  <div class="top-hotspot-rank">#4</div>
+                  <div class="top-hotspot-body">
+                    <h3>习近平向加拿大新任总督路易丝·阿伯致贺电</h3>
+                    <p class="top-hotspot-summary">中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布</p>
+                    <p class="top-hotspot-why">评分 100，来自中国政府网要闻。</p>
+                    <div class="top-hotspot-meta">
+                      <span>来源：中国政府网要闻</span>
+                      <span>热度：高</span>
+                      <span>更新时间：06/09 08:00</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="top-hotspot-card top-hotspot-row">
+                <a class="top-hotspot-link" href="https://www.gov.cn/yaowen/liebiao/202606/content_7071543.htm">
+                  <div class="top-hotspot-rank">#5</div>
+                  <div class="top-hotspot-body">
+                    <h3>王毅向2026年“文明对话国际日”全球主题活动发表视频致辞</h3>
+                    <p class="top-hotspot-summary">中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布</p>
+                    <p class="top-hotspot-why">评分 100，来自中国政府网要闻。</p>
+                    <div class="top-hotspot-meta">
+                      <span>来源：中国政府网要闻</span>
+                      <span>热度：高</span>
+                      <span>更新时间：06/09 08:00</span>
+                    </div>
+                  </div>
+                </a>
+              </article>
+          </div>
+            </section>
+            <aside class="home-event-panel" aria-labelledby="home-events-title">
+              <div class="top-hotspots-head compact-head">
+                <div>
+                  <h2 id="home-events-title">事件追踪</h2>
+                  <p>近 90 天连续报道时间线。</p>
+                </div>
+              </div>
+              
+          <div class="home-event-list" id="home-event-list">
+            
+              <article class="home-event-card">
+                <div class="home-event-head">
+                  <h3>地缘政治</h3>
+                  <span>热度：高</span>
+                </div>
+                <p>应朝鲜劳动党总书记金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问。 相关来源：中国政府网要闻、UN News、OpenAI News</p>
+                <div class="home-event-latest">
+                  <strong>最新进展</strong>
+                  <p><a href="https://news.un.org/feed/view/en/story/2026/06/1167671">Children are dying as US sanctions push Cuba to the brink, warns UN human rights chief</a></p>
+                  <span>来源：UN News · 时间：06/08 20:00</span>
+                </div>
+                <ol class="home-event-timeline">
+                  
+                    <li>
+                      <time>06/05 20:00</time>
+                      <span>美以打击伊朗致霍尔木兹海峡成全球热点<small>UN News</small></span>
+                    </li>
+                  
+                    <li>
+                      <time>06/07 20:00</time>
+                      <span>联合国维和前线：从枪战到足球<small>UN News</small></span>
+                    </li>
+                  
+                    <li>
+                      <time>06/08 20:00</time>
+                      <span>Children are dying as US sanctions push Cuba to the brink, warns UN human rights chief<small>UN News</small></span>
+                    </li>
+                  
+                    <li>
+                      <time>06/08 20:00</time>
+                      <span>Countries urged to ‘go further, faster’ and deliver on climate commitments<small>UN News</small></span>
+                    </li>
+                  
+                </ol>
+                <a class="text-link" href="events.html">查看事件追踪</a>
+              </article>
+              <article class="home-event-card">
+                <div class="home-event-head">
+                  <h3>蓝佛安会见新开发银行行长</h3>
+                  <span>热度：高</span>
+                </div>
+                <p>财政部财政政策、国债、预算和财政运行新闻 相关来源：财政部财政新闻</p>
+                <div class="home-event-latest">
+                  <strong>最新进展</strong>
+                  <p><a href="https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260609_3991330.htm">财政部将于6月在香港发行150亿元人民币国债</a></p>
+                  <span>来源：财政部财政新闻 · 时间：06/09 08:00</span>
+                </div>
+                <ol class="home-event-timeline">
+                  
+                    <li>
+                      <time>06/05 08:00</time>
+                      <span>蓝佛安会见新开发银行行长罗塞芙<small>财政部财政新闻</small></span>
+                    </li>
+                  
+                    <li>
+                      <time>06/08 08:00</time>
+                      <span>廖岷会见英中贸易协会主席吴思田<small>财政部财政新闻</small></span>
+                    </li>
+                  
+                    <li>
+                      <time>06/09 08:00</time>
+                      <span>财政部将于6月在香港发行150亿元人民币国债<small>财政部财政新闻</small></span>
+                    </li>
+                  
+                </ol>
+                <a class="text-link" href="events.html">查看事件追踪</a>
+              </article>
+              <article class="home-event-card">
+                <div class="home-event-head">
+                  <h3>推动中朝关系与时俱进取得</h3>
+                  <span>热度：高</span>
+                </div>
+                <p>应朝鲜最高领导人金正恩邀请，中共中央总书记、国家主席习近平将于6月8日至9日对朝鲜进行国事访问，这是习近平时隔7年再次访朝。双方最高领导人将就双边关系及共同关心问题交换意见，为传统友谊注入新内涵。 相关来源：中国政府网要闻</p>
+                <div class="home-event-latest">
+                  <strong>最新进展</strong>
+                  <p><a href="https://www.gov.cn/yaowen/liebiao/202606/content_7071413.htm">习近平访问朝鲜推动中朝关系发展</a></p>
+                  <span>来源：中国政府网要闻 · 时间：06/08 08:00</span>
+                </div>
+                <ol class="home-event-timeline">
+                  
+                    <li>
+                      <time>06/07 08:00</time>
+                      <span>习近平将访问朝鲜<small>中国政府网要闻</small></span>
+                    </li>
+                  
+                    <li>
+                      <time>06/08 08:00</time>
+                      <span>习近平访问朝鲜推动中朝关系发展<small>中国政府网要闻</small></span>
+                    </li>
+                  
+                </ol>
+                <a class="text-link" href="events.html">查看事件追踪</a>
+              </article>
+          </div>
+            </aside>
+          </div>
+          <!-- STATIC_SUMMARY_END -->
+      </section>
+
+      <div class="content-grid">
+        <section class="feed-panel" aria-labelledby="feed-title">
+          <div class="source-disclosure" id="source-disclosure">
+            <button class="source-summary-button" id="source-toggle" type="button" aria-expanded="false" aria-controls="source-status">
+              <span id="source-summary">来源状态加载中</span>
+              <span class="source-chevron" aria-hidden="true"></span>
+            </button>
+            <div id="source-status" hidden></div>
+          </div>
+
+          <div class="section-heading">
+            <div>
+              <h2 id="feed-title">筛选结果</h2>
+              <p id="result-summary">正在加载信息</p>
+            </div>
+          </div>
+          <div class="feed-list" id="feed" aria-live="polite"></div>
+          <button class="ghost-button feed-load-more" id="load-more" type="button" hidden>显示更多</button>
+        </section>
+      </div>
+    </main>
+
+    <noscript>未启用 JavaScript 时仍可查看首页静态摘要；筛选、展开和加载更多需要 JavaScript。</noscript>
+
+    <script src="src/scripts/render-feed.js?v=20260529-2"></script>
+    <script src="src/scripts/source-status.js?v=20260529-2"></script>
+    <script src="src/scripts/filters-ui.js?v=20260529-2"></script>
+    <script src="src/scripts/page-transitions.js?v=20260529-2"></script>
+    <script src="src/scripts/app.js?v=20260529-2"></script>
+  </body>
+</html>

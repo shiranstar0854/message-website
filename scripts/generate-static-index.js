@@ -54,6 +54,14 @@ function isEnglishSourceItem(item) {
   return item.source_language === "en" || item.sourceLanguage === "en" || (/^[\x00-\x7F\s.,:'"!?()-]+$/.test(`${item.title || ""} ${item.summary || ""}`) && /[A-Za-z]/.test(item.title || ""));
 }
 
+function itemDetailUrl(item) {
+  const id = String(item?.id || "").trim();
+  if (id) return `article.html?id=${encodeURIComponent(id)}`;
+
+  const url = String(item?.url || "").trim();
+  return url ? `article.html?url=${encodeURIComponent(url)}` : "article.html";
+}
+
 function displayTitle(item) {
   return item.title_zh || item.titleZh || item.translatedTitle || item.title || "未命名信息";
 }
@@ -119,7 +127,7 @@ function renderTopEvents(events) {
   const renderEventCard = (event, index) => {
     const evidence = event.evidenceItems || event.items || [];
     const latest = event.latestUpdate || evidence[0] || {};
-    const latestUrl = latest.url ? escapeHtml(latest.url) : "";
+    const latestUrl = latest.url ? escapeHtml(itemDetailUrl(latest)) : "";
     const latestTitle = latestUrl
       ? `<a href="${latestUrl}">${escapeHtml(latest.title || "")}</a>`
       : escapeHtml(latest.title || "");
@@ -136,12 +144,17 @@ function renderTopEvents(events) {
                   <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 时间：${escapeHtml(formatDate(latest.publishedAt || event.updatedAt))}</span>
                 </div>
                 <ol class="home-event-timeline">
-                  ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => `
+                  ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => {
+                    const itemTitle = item.url
+                      ? `<a href="${escapeHtml(itemDetailUrl(item))}">${escapeHtml(item.title || "")}</a>`
+                      : escapeHtml(item.title || "");
+                    return `
                     <li>
                       <time>${escapeHtml(formatDate(item.publishedAt || item.date))}</time>
-                      <span>${escapeHtml(item.title || "")}<small>${escapeHtml(item.source || "")}</small></span>
+                      <span>${itemTitle}<small>${escapeHtml(item.source || "")}</small></span>
                     </li>
-                  `).join("")}
+                  `;
+                  }).join("")}
                 </ol>
                 <a class="text-link" href="events.html">查看事件追踪</a>
               </article>`;
@@ -163,9 +176,10 @@ function renderTopHotspots(items, channels = {}) {
 
   const renderHotspotCard = (item, index) => {
     const heat = Number(item.score || 0) >= 90 ? "高" : Number(item.score || 0) >= 75 ? "中" : "低";
+    const detailUrl = itemDetailUrl(item);
     return `
-              <article class="top-hotspot-card top-hotspot-row${index === 0 ? " is-primary" : ""}">
-                <a class="top-hotspot-link" href="${escapeHtml(item.url)}">
+              <article class="top-hotspot-card top-hotspot-row${index === 0 ? " is-primary" : ""}${index >= 5 ? " is-compact" : ""}">
+                <a class="top-hotspot-link" href="${escapeHtml(detailUrl)}">
                   <div class="top-hotspot-rank">#${index + 1}</div>
                   <div class="top-hotspot-body">
                     <h3>${escapeHtml(displayTitle(item))}</h3>
@@ -181,9 +195,16 @@ function renderTopHotspots(items, channels = {}) {
               </article>`;
   };
 
+  const primaryItems = items.slice(0, 5);
+  const moreItems = items.slice(5);
+
   return `
           <div class="top-hotspots" id="top-hotspot-list">
-            ${items.map((item, index) => renderHotspotCard(item, index)).join("")}
+            ${primaryItems.map((item, index) => renderHotspotCard(item, index)).join("")}
+            ${moreItems.length ? `
+            <div class="hotspot-more-list" aria-label="其余热点">
+              ${moreItems.map((item, index) => renderHotspotCard(item, index + 5)).join("")}
+            </div>` : ""}
           </div>`;
 }
 
@@ -193,7 +214,7 @@ function generateStaticSummary() {
   const health = readJson(path.join(ROOT_DIR, "src", "data", "source-health.json"), { sources: [] });
   const healthy = (health.sources || []).filter((source) => source.status === "healthy").length;
   const failed = (health.sources || []).filter((source) => source.status !== "healthy").length;
-  const topHotspots = selectTopHotspots(latest.items || [], 5);
+  const topHotspots = selectTopHotspots(latest.items || [], 12);
   const topEvents = selectTopEvents(eventData.events || [], 5);
 
   return `${START_MARKER}
@@ -249,5 +270,6 @@ module.exports = {
   eventRankScore,
   hotspotTags,
   hotspotRankScore,
+  itemDetailUrl,
   updateIndexHtml
 };

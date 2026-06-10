@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI 摘要 - Message Choose</title>
+    <meta name="description" content="先阅读 AI 摘要，再按需打开原文。">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body data-page="article">
+    <header class="app-header">
+      <div class="brand-block">
+        <a class="brand-mark" href="index.html" aria-label="Message Choose 首页">
+          <span class="brand-symbol" aria-hidden="true">MC</span>
+          <span>
+            <strong>Message Choose</strong>
+            <small>AI 摘要</small>
+          </span>
+        </a>
+      </div>
+      <nav class="top-nav" aria-label="页面导航">
+        <a href="index.html">信息流</a>
+        <a href="events.html">重点事件</a>
+        <a href="history.html">历史</a>
+        <a href="about.html">关于/规则</a>
+      </nav>
+    </header>
+
+    <main class="app-shell article-shell">
+      <section class="article-paper" id="article-detail" aria-live="polite">
+        <p class="article-loading">正在加载 AI 摘要</p>
+      </section>
+    </main>
+
+    <script src="src/scripts/page-transitions.js?v=20260529-2"></script>
+    <script src="src/scripts/article-detail.js?v=20260610-1"></script>
+  </body>
+</html>

@@ -31,8 +31,10 @@
   }
 
   function renderHighlight(item) {
-    const detailUrl = window.MessageChooseRender.itemDetailUrl(item);
-    const title = `<a href="${escapeHtml(detailUrl)}">${escapeHtml(item.title)}</a>`;
+    const safeUrl = window.MessageChooseRender.safeExternalUrl(item.url);
+    const title = safeUrl
+      ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>`
+      : escapeHtml(item.title);
     return `
       <article class="feed-card summary-card">
         <div>
@@ -52,7 +54,7 @@
     const container = document.getElementById("daily-summary-list");
     loadJson("src/data/daily-summary.json", { channelSummaries: [] }).then((data) => {
       const channelSummaries = data.channelSummaries || [];
-      meta.textContent = `摘要更新时间：${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务`;
+      meta.textContent = `摘要更新时间：${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务 · ${data.method || "extractive"}`;
       if (!channelSummaries.length) {
         window.MessageChooseRender.renderEmptyState(container, {
           title: "暂无每日摘要",
@@ -65,6 +67,7 @@
         <article class="daily-brief-card">
           <div class="daily-brief-head">
             <h2>${escapeHtml(channel.label || channel.id)}</h2>
+            <span>${escapeHtml(channel.summaryMethod || data.method || "extractive")}</span>
           </div>
           <p class="model-summary">${escapeHtml(channel.overview || "")}</p>
           ${channel.focus ? `<p class="summary-focus">${escapeHtml(channel.focus)}</p>` : ""}
@@ -97,8 +100,8 @@
     const summary = document.getElementById("weekly-model-summary");
     const container = document.getElementById("weekly-review");
     loadJson("src/data/weekly-review.json", { channels: [], totals: {} }).then((review) => {
-      meta.textContent = `${review.weekId || "本周"} · 覆盖 ${Number(review.totals?.archiveCount || 0)} 天归档`;
-      summary.textContent = review.executiveSummary || "";
+      meta.textContent = `${review.weekId || "本周"} · 覆盖 ${Number(review.totals?.archiveCount || 0)} 天归档 · ${review.method || "extractive"}`;
+      summary.textContent = review.modelSummary || "当前周报使用本地规则生成；配置 DeepSeek 后会显示模型生成的总览。";
       window.MessageChooseRender.renderWeeklyReview(container, null, review);
     });
   }
