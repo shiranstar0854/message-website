@@ -1,16 +1,16 @@
 {
   "date": "2026-06-11",
-  "generatedAt": "2026-06-11T00:01:00.059Z",
+  "generatedAt": "2026-06-11T09:01:06.148Z",
   "totals": {
     "sources": 20,
-    "healthySources": 14,
-    "rawItems": 69,
-    "normalizedItems": 69,
-    "filteredItems": 67,
-    "dedupedItems": 66,
-    "scoredItems": 66,
-    "enrichmentAttempted": 60,
-    "enrichmentFailed": 5
+    "healthySources": 13,
+    "rawItems": 75,
+    "normalizedItems": 75,
+    "filteredItems": 73,
+    "dedupedItems": 71,
+    "scoredItems": 71,
+    "enrichmentAttempted": 64,
+    "enrichmentFailed": 6
   },
   "sourceHealth": [
     {
@@ -22,11 +22,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
-      "lastSuccessAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
+      "lastSuccessAt": "2026-06-11T09:00:30.125Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -34,15 +34,15 @@
       "name": "OpenAI News",
       "category": "tech",
       "status": "healthy",
-      "itemCount": 6,
+      "itemCount": 7,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
-      "lastSuccessAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
+      "lastSuccessAt": "2026-06-11T09:00:30.125Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -54,11 +54,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
       "lastSuccessAt": "2026-06-06T00:00:19.959Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -70,11 +70,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
       "lastSuccessAt": "2026-05-31T03:45:27.330Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -86,11 +86,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
-      "lastSuccessAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
+      "lastSuccessAt": "2026-06-11T09:00:30.125Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -102,11 +102,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
-      "lastSuccessAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
+      "lastSuccessAt": "2026-06-11T09:00:30.125Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -118,11 +118,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
-      "lastSuccessAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
+      "lastSuccessAt": "2026-06-11T09:00:30.125Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -134,11 +134,11 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
       "lastSuccessAt": "2026-06-10T09:00:28.544Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -150,28 +150,28 @@
       "responseStatus": 200,
       "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
       "lastSuccessAt": "2026-06-04T00:00:55.864Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
       "id": "nasa-breaking-news",
       "name": "NASA Breaking News",
       "category": "news",
-      "status": "healthy",
-      "itemCount": 10,
-      "responseStatus": 200,
-      "attempts": 1,
+      "status": "failed",
+      "itemCount": 0,
+      "responseStatus": 429,
+      "attempts": 2,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
       "lastSuccessAt": "2026-06-11T00:00:24.269Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
-      "failureCount": 0
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
+      "failureCount": 1
     },
     {
       "id": "un-news",
@@ -182,11 +182,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:24.269Z",
-      "lastSuccessAt": "2026-06-11T00:00:24.269Z",
+      "lastCheckedAt": "2026-06-11T09:00:30.125Z",
+      "lastSuccessAt": "2026-06-11T09:00:30.125Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:24.269Z",
-      "cacheExpiresAt": "2026-06-13T00:00:24.269Z",
+      "cacheStartedAt": "2026-06-11T09:00:30.125Z",
+      "cacheExpiresAt": "2026-06-13T09:00:30.125Z",
       "failureCount": 0
     },
     {
@@ -201,11 +201,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -220,11 +220,11 @@
       "responseStatus": null,
       "attempts": 2,
       "error": "fetch failed",
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 1
     },
     {
@@ -239,11 +239,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
       "lastSuccessAt": null,
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -258,11 +258,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -277,11 +277,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -296,11 +296,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -315,11 +315,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -334,11 +334,11 @@
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     },
     {
@@ -349,23 +349,1734 @@
       "sourceAuthority": "official-agency",
       "timelinessTier": "hourly",
       "status": "healthy",
-      "itemCount": 9,
+      "itemCount": 14,
       "responseStatus": 200,
       "attempts": 1,
       "error": null,
-      "lastCheckedAt": "2026-06-11T00:00:31.033Z",
-      "lastSuccessAt": "2026-06-11T00:00:31.033Z",
+      "lastCheckedAt": "2026-06-11T09:00:39.568Z",
+      "lastSuccessAt": "2026-06-11T09:00:39.568Z",
       "cacheTtlHours": 48,
-      "cacheStartedAt": "2026-06-11T00:00:31.033Z",
-      "cacheExpiresAt": "2026-06-13T00:00:31.033Z",
+      "cacheStartedAt": "2026-06-11T09:00:39.568Z",
+      "cacheExpiresAt": "2026-06-13T09:00:39.568Z",
       "failureCount": 0
     }
   ],
   "archivePolicy": {
     "maxItemsPerChannel": 20,
-    "availableItems": 66
+    "availableItems": 71
   },
   "items": [
+    {
+      "id": "international-item-1edde7dfee",
+      "title": "张国清将出席“全球趋同促增长峰会”",
+      "title_original": "张国清将出席“全球趋同促增长峰会”",
+      "title_zh": "张国清将出席“全球趋同促增长峰会”",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071826.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "应法国政府邀请，中共中央政治局委员、国务院副总理张国清将于6月11日以视频方式出席法方主办的“全球趋同促增长峰会”。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "公共政策",
+        "张国清将出席",
+        "全球趋同促增长峰会",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应法国政府邀请"
+      ],
+      "keywords": [
+        "国际",
+        "公共政策",
+        "张国清将出席",
+        "全球趋同促增长峰会",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "应法国政府邀请"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-item-f884c99d0c",
+      "title": "谌贻琴出席第114届国际劳工大会并会见瑞士联邦主席帕姆兰",
+      "title_original": "谌贻琴出席第114届国际劳工大会并会见瑞士联邦主席帕姆兰",
+      "title_zh": "谌贻琴出席第114届国际劳工大会并会见瑞士联邦主席帕姆兰",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071808.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月10日，国务委员谌贻琴在瑞士日内瓦出席第114届国际劳工大会并发表讲话，宣介习近平主席提出的四大全球倡议，阐述中方立场主张，表示愿与各方一道，推动国际劳工组织坚守初心使命，促进社会正义。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "公共政策",
+        "谌贻琴出席第",
+        "届国际劳工大会并会见瑞士",
+        "联邦主席帕姆兰",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "keywords": [
+        "国际",
+        "公共政策",
+        "谌贻琴出席第",
+        "届国际劳工大会并会见瑞士",
+        "联邦主席帕姆兰",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-item-190916125e",
+      "title": "推动中朝关系与时俱进 营造和平稳定发展环境——国际社会高度评价习近平总书记朝鲜之行",
+      "title_original": "推动中朝关系与时俱进 营造和平稳定发展环境——国际社会高度评价习近平总书记朝鲜之行",
+      "title_zh": "推动中朝关系与时俱进 营造和平稳定发展环境——国际社会高度评价习近平总书记朝鲜之行",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071791.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "中国大国外交再度汇聚全球目光。应朝鲜劳动党总书记、国务委员长金正恩邀请，中共中央总书记、国家主席习近平6月8日至9日对朝鲜进行国事访问。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "推动中朝关系与时俱进",
+        "营造和平稳定发展环境",
+        "国际社会高度评价习近平总",
+        "书记朝鲜之行",
+        "中国政府网要闻列表"
+      ],
+      "keywords": [
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "推动中朝关系与时俱进",
+        "营造和平稳定发展环境",
+        "国际社会高度评价习近平总",
+        "书记朝鲜之行",
+        "中国政府网要闻列表"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-openai-news-7131f39dfa",
+      "title": "PRC-linked influence operations are targeting AI debates in the US",
+      "title_original": "PRC-linked influence operations are targeting AI debates in the US",
+      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-10T12:00:00.000Z",
+      "summary": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "summary_original": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "contentExcerpt": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 98,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ],
+      "article_keywords": [
+        "AI",
+        "tariff",
+        "国际",
+        "Global Affairs",
+        "地缘政治",
+        "PRC-linked",
+        "influence",
+        "operations"
+      ],
+      "keywords": [
+        "AI",
+        "tariff",
+        "国际",
+        "Global Affairs",
+        "地缘政治",
+        "PRC-linked",
+        "influence",
+        "operations"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-openai-news-8a964269a0",
+      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+      "title_original": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.",
+      "summary_original": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.",
+      "contentExcerpt": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "Global Affairs"
+      ],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "Global Affairs",
+        "Supporting",
+        "Europe",
+        "work",
+        "ensuring",
+        "trustworthy"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "Global Affairs",
+        "Supporting",
+        "Europe",
+        "work",
+        "ensuring",
+        "trustworthy"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-nasa-breaking-news-457a0950f2",
+      "title": "Tyndall’s Trail of Bergs",
+      "title_original": "Tyndall’s Trail of Bergs",
+      "url": "https://science.nasa.gov/earth/earth-observatory/tyndalls-trail-of-bergs",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-10T04:01:00.000Z",
+      "summary": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake.",
+      "summary_original": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake.",
+      "contentExcerpt": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake. The Southern Patagonian Icefield is the largest expanse of ice in the Southern Hemisphere outside of Antarctica. The mass of glacial ice extends hundreds of kilometers along the spine of the Andes, feeding dozens of dynamic outlet glaciers that grind their way down from higher elevations. Many of these rivers of ice terminate in the sea or in proglacial lakes. An astronaut aboard the International Spa...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/tyndall%E2%80%99s-trail-of-bergs/ISS074-E-582898_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "Earth Observatory",
+        "Ice & Glaciers",
+        "International Space Station (ISS)"
+      ],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "Earth Observatory",
+        "Ice & Glaciers",
+        "Tyndall",
+        "Trail",
+        "Bergs",
+        "Ice"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "Earth Observatory",
+        "Ice & Glaciers",
+        "Tyndall",
+        "Trail",
+        "Bergs",
+        "Ice"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-openai-news-797fed5f10",
+      "title": "From data to decisions: how LSEG is scaling trusted AI",
+      "title_original": "From data to decisions: how LSEG is scaling trusted AI",
+      "url": "https://openai.com/index/lseg",
+      "source": "OpenAI News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
+      "summary_original": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
+      "contentExcerpt": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "商业",
+        "data",
+        "decisions",
+        "how",
+        "LSEG",
+        "scaling"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "商业",
+        "data",
+        "decisions",
+        "how",
+        "LSEG",
+        "scaling"
+      ],
+      "impactAreas": [
+        "国际",
+        "商业"
+      ]
+    },
+    {
+      "id": "international-item-f34fc1a422",
+      "title": "取消员工激励直接注销上亿股！山鹰国际日推两方案，拟降低总股本超3.9% 2026-06-11 16:56",
+      "title_original": "取消员工激励直接注销上亿股！山鹰国际日推两方案，拟降低总股本超3.9% 2026-06-11 16:56",
+      "title_zh": "取消员工激励直接注销上亿股！山鹰国际日推两方案，拟降低总股本超3.9% 2026-06-11 16:56",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423370.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "6月10日晚山鹰国际宣布，拟终止2025年员工持股计划，并将原计划用于激励的1.02亿股“库存股”注销。前一天，董事长提议以3亿至6亿元回购股份，且全部用于注销。近年来，山鹰国际总股本持续增长，此次“终止、注销、回购”组合拳，意在减少总股本、提升每股价值。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "商业",
+        "financial-media",
+        "取消员工激励直接注销上亿",
+        "山鹰国际日推两方案",
+        "拟降低总股本超",
+        "每日经济新闻中文财经",
+        "公司和市场新闻"
+      ],
+      "keywords": [
+        "国际",
+        "商业",
+        "financial-media",
+        "取消员工激励直接注销上亿",
+        "山鹰国际日推两方案",
+        "拟降低总股本超",
+        "每日经济新闻中文财经",
+        "公司和市场新闻"
+      ],
+      "impactAreas": [
+        "国际",
+        "商业"
+      ]
+    },
+    {
+      "id": "international-item-99a7c9e189",
+      "title": "山鹰国际董事长提议公司回购股份用于注销减资，去年和今年一季度公司净利均亏损 2026-06-11 15:42",
+      "title_original": "山鹰国际董事长提议公司回购股份用于注销减资，去年和今年一季度公司净利均亏损 2026-06-11 15:42",
+      "title_zh": "山鹰国际董事长提议公司回购股份用于注销减资，去年和今年一季度公司净利均亏损 2026-06-11 15:42",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423442.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "international",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "国际",
+        "商业",
+        "financial-media",
+        "山鹰国际董事长提议公司回",
+        "购股份用于注销减资",
+        "去年和今年一季度公司净利",
+        "均亏损",
+        "每日经济新闻中文财经"
+      ],
+      "keywords": [
+        "国际",
+        "商业",
+        "financial-media",
+        "山鹰国际董事长提议公司回",
+        "购股份用于注销减资",
+        "去年和今年一季度公司净利",
+        "均亏损",
+        "每日经济新闻中文财经"
+      ],
+      "impactAreas": [
+        "国际",
+        "商业"
+      ]
+    },
+    {
+      "id": "international-un-news-84171b069e",
+      "title": "UN rights chief urges ‘massive rethink’ of US immigration policies ahead of World Cup",
+      "title_original": "UN rights chief urges ‘massive rethink’ of US immigration policies ahead of World Cup",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167692",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-10T12:00:00.000Z",
+      "summary": "The UN&#039;s top human rights official has called for a &#039;massive rethink&#039; of US immigration and security policies ahead of the World Cup, warning that racial profiling, surveillance and aggressive enforcement are already affecting teams, officials and supporters.&nbsp;",
+      "summary_original": "The UN&#039;s top human rights official has called for a &#039;massive rethink&#039; of US immigration and security policies ahead of the World Cup, warning that racial profiling, surveillance and aggressive enforcement are already affecting teams, officials and supporters.&nbsp;",
+      "contentExcerpt": "The UN's top human rights official has called for a 'massive rethink' of US immigration and security policies ahead of the World Cup, warning that racial profiling, surveillance and aggressive enforcement are already affecting teams, officials and supporters.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/10-06-2026-Metlife-stadium.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "rights",
+        "chief",
+        "urges",
+        "massive"
+      ],
+      "keywords": [
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "rights",
+        "chief",
+        "urges",
+        "massive"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-671986aa99",
+      "title": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
+      "title_original": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-10T12:00:00.000Z",
+      "summary": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on Wednesday, amid continuing conflicts, humanitarian emergencies and concerns over regional stability. Follow live in-depth meetings coverage here.",
+      "summary_original": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on Wednesday, amid continuing conflicts, humanitarian emergencies and concerns over regional stability. Follow live in-depth meetings coverage here.",
+      "contentExcerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on Wednesday, amid continuing conflicts, humanitarian emergencies and concerns over regional stability. Follow live in-depth meetings coverage here.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/10-06-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "Middle",
+        "East",
+        "LIVE",
+        "Diplomacy"
+      ],
+      "keywords": [
+        "security",
+        "国际",
+        "地缘政治",
+        "市场监管",
+        "Middle",
+        "East",
+        "LIVE",
+        "Diplomacy"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-0ad50eae69",
+      "title": "Sudan war: Drone attacks damage key aid routes",
+      "title_original": "Sudan war: Drone attacks damage key aid routes",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167688",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
+      "summary_original": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
+      "contentExcerpt": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-WFP-Chad-Sudanese.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "地缘政治",
+        "Sudan",
+        "war",
+        "Drone",
+        "attacks",
+        "damage"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "地缘政治",
+        "Sudan",
+        "war",
+        "Drone",
+        "attacks",
+        "damage"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-59fad970ed",
+      "title": "World News in Brief: Call for action against child labour, ICC Prosecutor suspended, WFP raises awareness in Egypt",
+      "title_original": "World News in Brief: Call for action against child labour, ICC Prosecutor suspended, WFP raises awareness in Egypt",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167687",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
+      "summary_original": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
+      "contentExcerpt": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/11-06-2025_UNICEF_Child_Labour_Sierra_Leone_Quarry.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "市场监管",
+        "World",
+        "Brief",
+        "Call"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "地缘政治",
+        "公共政策",
+        "市场监管",
+        "World",
+        "Brief",
+        "Call"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-deb751b89c",
+      "title": "Marking historic progress on rights for persons with disabilities, UN conference tackles critical gaps",
+      "title_original": "Marking historic progress on rights for persons with disabilities, UN conference tackles critical gaps",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167683",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
+      "summary_original": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
+      "contentExcerpt": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-04-2026-UNRWA-Gaza.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "财报",
+        "Marking",
+        "historic",
+        "progress",
+        "rights",
+        "for"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "财报",
+        "Marking",
+        "historic",
+        "progress",
+        "rights",
+        "for"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-un-news-051e655fff",
+      "title": "Building trust and lab testing at the heart of DRC Ebola response: WHO",
+      "title_original": "Building trust and lab testing at the heart of DRC Ebola response: WHO",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167679",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to&nbsp;contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
+      "summary_original": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to&nbsp;contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
+      "contentExcerpt": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-WHO-DR-Congo-ebola-03.jpg/image770x420cropped.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "国际",
+        "Building",
+        "trust",
+        "and",
+        "lab",
+        "testing",
+        "the"
+      ],
+      "keywords": [
+        "AI",
+        "国际",
+        "Building",
+        "trust",
+        "and",
+        "lab",
+        "testing",
+        "the"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "international-nasa-breaking-news-96467a9d01",
+      "title": "GLOBE Mission Earth Educators Participate in Land Cover Community of Practice",
+      "title_original": "GLOBE Mission Earth Educators Participate in Land Cover Community of Practice",
+      "url": "https://science.nasa.gov/learning-resources/science-activation/globe-mission-earth-educators-participate-in-land-cover-community-of-practice",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "international",
+      "publishedAt": "2026-06-10T12:43:01.000Z",
+      "summary": "During the 2025-2026 school year, educators from the NASA Science Activation Program’s GLOBE (Global Learning and Observation to Benefit the Environment) Mission Earth project participated in a specialized Community of Practice led by NASA Langley Research Center to refine how students interact with NASA’s land cover data (MODIS, Landsat, and Sentinel-2).",
+      "summary_original": "During the 2025-2026 school year, educators from the NASA Science Activation Program’s GLOBE (Global Learning and Observation to Benefit the Environment) Mission Earth project participated in a specialized Community of Practice led by NASA Langley Research Center to refine how students interact with NASA’s land cover data (MODIS, Landsat, and Sentinel-2).",
+      "contentExcerpt": "During the 2025-2026 school year, educators from the NASA Science Activation Program’s GLOBE (Global Learning and Observation to Benefit the Environment) Mission Earth project participated in a specialized Community of Practice led by NASA Langley Research Center to refine how students interact with NASA's land cover data (MODIS, Landsat, and Sentinel-2). Their collaboration focused on four key areas: Through GLOBE, communities can contribute meaningful environmental data to a long-term data...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/learn/science-activation-stories/2026/The_GLOBE_program_sciact.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 85,
+      "duplicateCount": 0,
+      "tags": [
+        "Earth Science Division",
+        "Science Activation"
+      ],
+      "article_keywords": [
+        "国际",
+        "Earth Science Division",
+        "Science Activation",
+        "GLOBE",
+        "Mission",
+        "Earth",
+        "Educators",
+        "Participate"
+      ],
+      "keywords": [
+        "国际",
+        "Earth Science Division",
+        "Science Activation",
+        "GLOBE",
+        "Mission",
+        "Earth",
+        "Educators",
+        "Participate"
+      ],
+      "impactAreas": [
+        "国际"
+      ]
+    },
+    {
+      "id": "news-item-1dc53d0178",
+      "title": "八部门促铁路与旅游融合发展 打造160列以上铁路旅游列车专用车组",
+      "title_original": "八部门促铁路与旅游融合发展 打造160列以上铁路旅游列车专用车组",
+      "title_zh": "八部门促铁路与旅游融合发展 打造160列以上铁路旅游列车专用车组",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071795.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "近日，商务部、文化和旅游部、国铁集团等8部门联合印发《关于促进铁路与旅游融合发展 扩大服务消费的若干措施》，着力扩大铁路旅游新供给、创新多元化消费场景，推动形成铁路与旅游深度融合发展新局面。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "商业",
+        "八部门促铁路与旅游融合发",
+        "打造",
+        "列以上铁路旅游列车专用车",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "keywords": [
+        "公共政策",
+        "商业",
+        "八部门促铁路与旅游融合发",
+        "打造",
+        "列以上铁路旅游列车专用车",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "商业",
+        "八部门促铁路与旅游融合发",
+        "打造"
+      ]
+    },
+    {
+      "id": "news-item-221961ebac",
+      "title": "弘扬优良传统，密切团结协作——习近平总书记对朝鲜进行国事访问在中朝关系发展史上具有重要里程碑意义",
+      "title_original": "弘扬优良传统，密切团结协作——习近平总书记对朝鲜进行国事访问在中朝关系发展史上具有重要里程碑意义",
+      "title_zh": "弘扬优良传统，密切团结协作——习近平总书记对朝鲜进行国事访问在中朝关系发展史上具有重要里程碑意义",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071734.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "2026年6月8日至9日，应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平对朝鲜民主主义人民共和国进行国事访问。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "弘扬优良传统",
+        "密切团结协作",
+        "习近平总书记对朝鲜进行国",
+        "事访问在中朝关系发展史上",
+        "具有重要里程碑意义",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "keywords": [
+        "公共政策",
+        "弘扬优良传统",
+        "密切团结协作",
+        "习近平总书记对朝鲜进行国",
+        "事访问在中朝关系发展史上",
+        "具有重要里程碑意义",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "弘扬优良传统",
+        "密切团结协作",
+        "习近平总书记对朝鲜进行国"
+      ]
+    },
+    {
+      "id": "news-item-db7db8cab0",
+      "title": "工业和信息化部印发意见 推动“人工智能+信息通信”创新发展",
+      "title_original": "工业和信息化部印发意见 推动“人工智能+信息通信”创新发展",
+      "title_zh": "工业和信息化部印发意见 推动“人工智能+信息通信”创新发展",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071789.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "工业和信息化部印发《“人工智能+信息通信”创新发展实施意见（2026—2028年）》，提出到2028年，信息通信智能运营和服务能力达到国际先进水平，信息通信网络初步实现高等级自智。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 100,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "国际",
+        "工业和信息化部印发意见",
+        "推动",
+        "人工智能",
+        "信息通信",
+        "创新发展",
+        "中国政府网要闻列表"
+      ],
+      "keywords": [
+        "公共政策",
+        "国际",
+        "工业和信息化部印发意见",
+        "推动",
+        "人工智能",
+        "信息通信",
+        "创新发展",
+        "中国政府网要闻列表"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "国际",
+        "工业和信息化部印发意见",
+        "推动"
+      ]
+    },
+    {
+      "id": "news-item-d10acca14a",
+      "title": "5月汽车出口延续快速增长态势",
+      "title_original": "5月汽车出口延续快速增长态势",
+      "title_zh": "5月汽车出口延续快速增长态势",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071780.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者今天（6月10日）从中国汽车工业协会获悉，5月份，我国汽车出口延续快速增长态势。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "月汽车出口延续快速增长态",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者今天",
+        "从中国汽车工业协会获悉",
+        "月份"
+      ],
+      "keywords": [
+        "公共政策",
+        "月汽车出口延续快速增长态",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者今天",
+        "从中国汽车工业协会获悉",
+        "月份"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "月汽车出口延续快速增长态",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ]
+    },
+    {
+      "id": "news-item-ec80fb71b7",
+      "title": "让中朝传统友谊之树更加根深叶茂——习近平总书记对朝鲜进行国事访问纪实",
+      "title_original": "让中朝传统友谊之树更加根深叶茂——习近平总书记对朝鲜进行国事访问纪实",
+      "title_zh": "让中朝传统友谊之树更加根深叶茂——习近平总书记对朝鲜进行国事访问纪实",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071776.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日至9日，应朝鲜劳动党总书记、国务委员长金正恩邀请，中共中央总书记、国家主席习近平对朝鲜民主主义人民共和国进行国事访问。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "让中朝传统友谊之树更加根",
+        "深叶茂",
+        "习近平总书记对朝鲜进行国",
+        "事访问纪实",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "keywords": [
+        "公共政策",
+        "让中朝传统友谊之树更加根",
+        "深叶茂",
+        "习近平总书记对朝鲜进行国",
+        "事访问纪实",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "让中朝传统友谊之树更加根",
+        "深叶茂",
+        "习近平总书记对朝鲜进行国"
+      ]
+    },
+    {
+      "id": "news-item-ffe6f36053",
+      "title": "第三轮第六批中央生态环保督察完成进驻阶段工作",
+      "title_original": "第三轮第六批中央生态环保督察完成进驻阶段工作",
+      "title_zh": "第三轮第六批中央生态环保督察完成进驻阶段工作",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071775.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "记者6月10日从生态环境部获悉，第三轮第六批7个中央生态环境保护督察组于5月8日至9日陆续进驻辽宁、吉林、黑龙江、广东、广西、西藏、新疆7省（区）和新疆生产建设兵团，近日已全面完成督察进驻阶段工作。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "第三轮第六批中央生态环保",
+        "督察完成进驻阶段工作",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者",
+        "日从生态环境部获悉"
+      ],
+      "keywords": [
+        "公共政策",
+        "第三轮第六批中央生态环保",
+        "督察完成进驻阶段工作",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "记者",
+        "日从生态环境部获悉"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "第三轮第六批中央生态环保",
+        "督察完成进驻阶段工作",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-88238d428f",
+      "title": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+      "title_original": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+      "title_zh": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071738.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "6月8日是世界海洋日，今年我国主题是“守护蔚蓝 向海图强”。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "守护蔚蓝",
+        "向海图强",
+        "习近平总书记关于推动海洋",
+        "经济高质量发展重要论述引",
+        "领海洋强国建设",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "keywords": [
+        "公共政策",
+        "守护蔚蓝",
+        "向海图强",
+        "习近平总书记关于推动海洋",
+        "经济高质量发展重要论述引",
+        "领海洋强国建设",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "守护蔚蓝",
+        "向海图强",
+        "习近平总书记关于推动海洋"
+      ]
+    },
+    {
+      "id": "news-item-bf2d80cf58",
+      "title": "人形机器人与具身智能实景实训专项行动启动",
+      "title_original": "人形机器人与具身智能实景实训专项行动启动",
+      "title_zh": "人形机器人与具身智能实景实训专项行动启动",
+      "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "工业和信息化部、国务院国资委联合印发通知，正式启动2026年度人形机器人与具身智能实景实训专项行动，提出到2026年底，人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署，开启“作业模式”；形成百个以上高价值应用场景，进一步丰富具身智能应用谱系，带动形成万台级规模落地能力。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "人形机器人与具身智能实景",
+        "实训专项行动启动",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "工业和信息化部",
+        "国务院国资委联合印发通知"
+      ],
+      "keywords": [
+        "公共政策",
+        "人形机器人与具身智能实景",
+        "实训专项行动启动",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "工业和信息化部",
+        "国务院国资委联合印发通知"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "人形机器人与具身智能实景",
+        "实训专项行动启动",
+        "中国政府网要闻列表"
+      ]
+    },
+    {
+      "id": "news-item-645ff3899a",
+      "title": "全国夏粮小麦已收获近七成",
+      "title_original": "全国夏粮小麦已收获近七成",
+      "title_zh": "全国夏粮小麦已收获近七成",
+      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071706.htm",
+      "source": "中国政府网要闻",
+      "sourceType": "webpage",
+      "category": "news",
+      "publishedAt": "2026-06-10T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "contentExcerpt": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "imageUrl": "https://www.gov.cn/images/150.jpg",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "official-agency",
+        "hourly"
+      ],
+      "article_keywords": [
+        "公共政策",
+        "全国夏粮小麦已收获近七成",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "截至",
+        "全国已收获夏粮小麦",
+        "亿亩"
+      ],
+      "keywords": [
+        "公共政策",
+        "全国夏粮小麦已收获近七成",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发",
+        "截至",
+        "全国已收获夏粮小麦",
+        "亿亩"
+      ],
+      "impactAreas": [
+        "公共政策",
+        "全国夏粮小麦已收获近七成",
+        "中国政府网要闻列表",
+        "覆盖国务院"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-9d4c1919b2",
+      "title": "Curiosity Blog: Sols 4913-4919: Planetary explorers, freewheeling to the Yardang unit!",
+      "title_original": "Curiosity Blog: Sols 4913-4919: Planetary explorers, freewheeling to the Yardang unit!",
+      "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4913-4919-planetary-explorers-freewheeling-to-the-yardang-unit",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T21:23:02.000Z",
+      "summary": "Written by Catherine O’Connell-Cooper, APXS Strategic Planner and Payload Uplink/Downlink Lead, University of New Brunswick, Canada Earth planning day: Friday, June 5th, 2026 In a very broad sense, Curiosity has two modes of doing science – one centred around a defined science campaign (such as the recent boxwork campaign) and the other as we move […]",
+      "summary_original": "Written by Catherine O’Connell-Cooper, APXS Strategic Planner and Payload Uplink/Downlink Lead, University of New Brunswick, Canada Earth planning day: Friday, June 5th, 2026 In a very broad sense, Curiosity has two modes of doing science – one centred around a defined science campaign (such as the recent boxwork campaign) and the other as we move […]",
+      "contentExcerpt": "Mars Science Laboratory Mission Team Members Written by Catherine O’Connell-Cooper, APXS Strategic Planner and Payload Uplink/Downlink Lead, University of New Brunswick, Canada Earth planning day: Friday, June 5th, 2026 In a very broad sense, Curiosity has two modes of doing science – one centred around a defined science campaign (such as the recent boxwork campaign) and the other as we move between campaigns. During a science campaign, with a very defined start and end location, every image...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/msl/2026/curiosity-rover-updates/june/https___mars.nasa.gov_msl-raw-images_proj_msl_redops_ods_surface_sol_04916_opgs_edr_ncam_NLB_833905570EDR_S1221260NCAM00268M_.JPG/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Blogs"
+      ],
+      "article_keywords": [
+        "AI",
+        "Blogs",
+        "Curiosity",
+        "Blog",
+        "Sols",
+        "Planetary",
+        "explorers",
+        "freewheeling"
+      ],
+      "keywords": [
+        "AI",
+        "Blogs",
+        "Curiosity",
+        "Blog",
+        "Sols",
+        "Planetary",
+        "explorers",
+        "freewheeling"
+      ],
+      "impactAreas": [
+        "AI",
+        "Blogs",
+        "Curiosity",
+        "Blog"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-dc3c2be67b",
+      "title": "NASA Awards Contract for Construction Services in California",
+      "title_original": "NASA Awards Contract for Construction Services in California",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-construction-services-in-california",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T20:32:25.000Z",
+      "summary": "NASA has selected multiple small businesses for the Western Regional Multiple Award Construction Contract, which supports a broad range of facility enhancement, modernization, and sustainment work at NASA’s Armstrong Flight Research Center in Edwards, California, NASA’s Ames Research Center in California’s Silicon Valley, and other federal agencies in the region. The contract provides general construction, [&#8230;]",
+      "summary_original": "NASA has selected multiple small businesses for the Western Regional Multiple Award Construction Contract, which supports a broad range of facility enhancement, modernization, and sustainment work at NASA’s Armstrong Flight Research Center in Edwards, California, NASA’s Ames Research Center in California’s Silicon Valley, and other federal agencies in the region. The contract provides general construction, [&#8230;]",
+      "contentExcerpt": "NASA has selected multiple small businesses for the Western Regional Multiple Award Construction Contract, which supports a broad range of facility enhancement, modernization, and sustainment work at NASA’s Armstrong Flight Research Center in Edwards, California, NASA’s Ames Research Center in California’s Silicon Valley, and other federal agencies in the region. The contract provides general construction, modification, maintenance and repair, and demolition services, as well as new construct...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2022/02/nasa_meatball_large.jpg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Armstrong Flight Research Center",
+        "Ames Research Center",
+        "NASA Centers & Facilities"
+      ],
+      "article_keywords": [
+        "AI",
+        "Ames Research Center",
+        "NASA Centers & Facilities",
+        "地缘政治",
+        "NASA",
+        "Awards",
+        "Contract",
+        "for"
+      ],
+      "keywords": [
+        "AI",
+        "Ames Research Center",
+        "NASA Centers & Facilities",
+        "地缘政治",
+        "NASA",
+        "Awards",
+        "Contract",
+        "for"
+      ],
+      "impactAreas": [
+        "AI",
+        "Ames Research Center",
+        "NASA Centers & Facilities",
+        "地缘政治"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-08bf34878a",
+      "title": "NASA, NOAA to Hold Joint Session at 23rd Symposium on Operational Environmental Satellite Systems",
+      "title_original": "NASA, NOAA to Hold Joint Session at 23rd Symposium on Operational Environmental Satellite Systems",
+      "url": "https://science.nasa.gov/science-research/earth-science/nasa-noaa-to-hold-joint-session-at-23rd-symposium-on-operational-environmental-satellite-systems",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T18:09:55.000Z",
+      "summary": "Abstracts are now being accepted for the session, which will take place at the 2027 AMS Annual Meeting.",
+      "summary_original": "Abstracts are now being accepted for the session, which will take place at the 2027 AMS Annual Meeting.",
+      "contentExcerpt": "Submit your abstract for “Advancing Weather and Environmental Science Through NASA and NOAA Commercial Satellite Data Programs,” a joint session hosted by NASA’s Commercial Satellite Data Acquisition (CSDA) program, in partnership with the NOAA National Environmental Satellite, Data, and Information Service (NESDIS) Commercial Data Program (CDP). The session is part of the 23rd Symposium on Operational Environmental Satellite Systems, which will take place at the 2027 American Meteorological...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://science.nasa.gov/wp-content/uploads/2026/06/ams-joe.jpg",
+      "score": 93,
+      "duplicateCount": 0,
+      "tags": [
+        "Earth Science"
+      ],
+      "article_keywords": [
+        "AI",
+        "Earth Science",
+        "商业",
+        "NASA",
+        "NOAA",
+        "Hold",
+        "Joint",
+        "Session"
+      ],
+      "keywords": [
+        "AI",
+        "Earth Science",
+        "商业",
+        "NASA",
+        "NOAA",
+        "Hold",
+        "Joint",
+        "Session"
+      ],
+      "impactAreas": [
+        "AI",
+        "Earth Science",
+        "商业",
+        "NASA"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-75ce62e356",
+      "title": "Train Ride to NASA Kennedy for Artemis III Booster Segments",
+      "title_original": "Train Ride to NASA Kennedy for Artemis III Booster Segments",
+      "url": "https://www.nasa.gov/image-article/train-ride-to-nasa-kennedy-for-artemis-iii-booster-segments",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T16:05:29.000Z",
+      "summary": "The final booster motor segments for NASA’s SLS (Space Launch System) rocket that will help propel Artemis III astronauts on their journey to space shipped from Northrop Grumman’s Railyard Shipping Facility in Corinne, Utah on June 2. The eight booster motor segments are on their way to NASA’s Kennedy Space Center in Florida where they [&#8230;]",
+      "summary_original": "The final booster motor segments for NASA’s SLS (Space Launch System) rocket that will help propel Artemis III astronauts on their journey to space shipped from Northrop Grumman’s Railyard Shipping Facility in Corinne, Utah on June 2. The eight booster motor segments are on their way to NASA’s Kennedy Space Center in Florida where they [&#8230;]",
+      "contentExcerpt": "NASA/Brandon Hancock The final booster motor segments for NASA’s SLS (Space Launch System) rocket that will help propel Artemis III astronauts on their journey to space shipped from Northrop Grumman’s Railyard Shipping Facility in Corinne, Utah on June 2. The eight booster motor segments are on their way to NASA’s Kennedy Space Center in Florida where they will form the SLS rocket’s twin, five-segment solid rocket boosters, which produce more than 75% of the total thrust at liftoff. Follow th...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ng-06022026-artemis-iii-booster-segment-shipment-to-ksc-1-31large.jpg?w=1920",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "Train",
+        "Ride",
+        "NASA",
+        "Kennedy",
+        "for",
+        "Artemis",
+        "III"
+      ],
+      "keywords": [
+        "AI",
+        "Train",
+        "Ride",
+        "NASA",
+        "Kennedy",
+        "for",
+        "Artemis",
+        "III"
+      ],
+      "impactAreas": [
+        "AI",
+        "Train",
+        "Ride",
+        "NASA"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-db4e123143",
+      "title": "NASA Webb Finds Strongest Evidence Yet for ‘Black Hole Stars’",
+      "title_original": "NASA Webb Finds Strongest Evidence Yet for ‘Black Hole Stars’",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-finds-strongest-evidence-yet-for-black-hole-stars",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T14:00:00.000Z",
+      "summary": "The complex puzzle known as little red dots has become more complete since their initial discovery by NASA’s James Webb Space Telescope in 2022. Now a particular little red dot’s spectrum is helping connect many of the pieces. A team of astronomers led by Vasily Kokorev at the University of Texas at Austin identified the […]",
+      "summary_original": "The complex puzzle known as little red dots has become more complete since their initial discovery by NASA’s James Webb Space Telescope in 2022. Now a particular little red dot’s spectrum is helping connect many of the pieces. A team of astronomers led by Vasily Kokorev at the University of Texas at Austin identified the […]",
+      "contentExcerpt": "The complex puzzle known as little red dots has become more complete since their initial discovery by NASA’s James Webb Space Telescope in 2022. Now a particular little red dot’s spectrum is helping connect many of the pieces. A team of astronomers led by Vasily Kokorev at the University of Texas at Austin identified the lucky dot in question: GLIMPSE-17775. By carefully analyzing the dot’s spectrum captured by Webb — the deepest spectrum to date of a little red dot — the research team has id...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2026/06/STScI-01KTM4PHQTQEBK0TWEFSNGHHMC.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+      "score": 92,
+      "duplicateCount": 0,
+      "tags": [
+        "Astrophysics",
+        "Black Holes",
+        "Goddard Space Flight Center",
+        "James Webb Space Telescope (JWST)",
+        "Science & Research",
+        "The Universe"
+      ],
+      "article_keywords": [
+        "AI",
+        "Astrophysics",
+        "Black Holes",
+        "Goddard Space Flight Center",
+        "Science & Research",
+        "The Universe",
+        "NASA",
+        "Webb"
+      ],
+      "keywords": [
+        "AI",
+        "Astrophysics",
+        "Black Holes",
+        "Goddard Space Flight Center",
+        "Science & Research",
+        "The Universe",
+        "NASA",
+        "Webb"
+      ],
+      "impactAreas": [
+        "AI",
+        "Astrophysics",
+        "Black Holes",
+        "Goddard Space Flight Center"
+      ]
+    },
+    {
+      "id": "news-un-news-cfa9a0f421",
+      "title": "‘The day never stops’ for aid workers braving missiles and drones in Ukraine",
+      "title_original": "‘The day never stops’ for aid workers braving missiles and drones in Ukraine",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167690",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T12:00:00.000Z",
+      "summary": "As Russia’s full-scale invasion of Ukraine enters its fifth year, conditions in southern Ukraine have rapidly deteriorated. Maintaining humanitarian operations has become an increasingly complex balancing act between enabling aid delivery and managing risk.",
+      "summary_original": "As Russia’s full-scale invasion of Ukraine enters its fifth year, conditions in southern Ukraine have rapidly deteriorated. Maintaining humanitarian operations has become an increasingly complex balancing act between enabling aid delivery and managing risk.",
+      "contentExcerpt": "As Russia’s full-scale invasion of Ukraine enters its fifth year, conditions in southern Ukraine have rapidly deteriorated. Maintaining humanitarian operations has become an increasingly complex balancing act between enabling aid delivery and managing risk.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/10-06-2026-Olga-Scripovaisa-01.jpg/image770x420cropped.jpg",
+      "score": 91,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "The",
+        "day",
+        "never",
+        "stops",
+        "for",
+        "aid",
+        "workers"
+      ],
+      "keywords": [
+        "AI",
+        "The",
+        "day",
+        "never",
+        "stops",
+        "for",
+        "aid",
+        "workers"
+      ],
+      "impactAreas": [
+        "AI",
+        "The",
+        "day",
+        "never"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-f17d62eeab",
+      "title": "Jim Irons, Former Landsat Project Scientist, Wins Pecora Award",
+      "title_original": "Jim Irons, Former Landsat Project Scientist, Wins Pecora Award",
+      "url": "https://science.nasa.gov/missions/landsat/jim-irons-former-landsat-project-scientist-wins-pecora-award",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T14:00:00.000Z",
+      "summary": "Landsat’s Jim Irons won the prestigious William T. Pecora Award. Irons, now an emeritus scientist at NASA Goddard Space Flight Center, played an integral role in shaping the Landsat program into what it is today.",
+      "summary_original": "Landsat’s Jim Irons won the prestigious William T. Pecora Award. Irons, now an emeritus scientist at NASA Goddard Space Flight Center, played an integral role in shaping the Landsat program into what it is today.",
+      "contentExcerpt": "Last month, Landsat’s very own Jim Irons won the prestigious William T. Pecora Award. Irons, now an emeritus scientist at NASA Goddard Space Flight Center, played an integral role in shaping the Landsat program into what it is today. He served as deputy project scientist for Landsat 7 before taking over as project scientist for Landsat 8. From the earliest days of Landsat 8—then called the Landsat Data Continuity Mission (LDCM)—all the way through launch and operation, Irons worked across the...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://science.nasa.gov/wp-content/uploads/2026/05/jamesirons-pecora.jpg",
+      "score": 90,
+      "duplicateCount": 0,
+      "tags": [
+        "Earth",
+        "Landsat"
+      ],
+      "article_keywords": [
+        "security",
+        "Earth",
+        "Landsat",
+        "地缘政治",
+        "Jim",
+        "Irons",
+        "Former",
+        "Project"
+      ],
+      "keywords": [
+        "security",
+        "Earth",
+        "Landsat",
+        "地缘政治",
+        "Jim",
+        "Irons",
+        "Former",
+        "Project"
+      ],
+      "impactAreas": [
+        "security",
+        "Earth",
+        "Landsat",
+        "地缘政治"
+      ]
+    },
+    {
+      "id": "news-un-news-e36313e3d4",
+      "title": "Fresh strikes on Tyre kill eight, as UN puts Lebanon destruction bill at $365 million, and rising",
+      "title_original": "Fresh strikes on Tyre kill eight, as UN puts Lebanon destruction bill at $365 million, and rising",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167685",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
+      "summary_original": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
+      "contentExcerpt": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/02-06-2026-UNHCR-Lebanon-02.jpg/image770x420cropped.jpg",
+      "score": 89,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "Fresh",
+        "strikes",
+        "Tyre",
+        "kill",
+        "eight",
+        "puts",
+        "Lebanon"
+      ],
+      "keywords": [
+        "AI",
+        "Fresh",
+        "strikes",
+        "Tyre",
+        "kill",
+        "eight",
+        "puts",
+        "Lebanon"
+      ],
+      "impactAreas": [
+        "AI",
+        "Fresh",
+        "strikes",
+        "Tyre"
+      ]
+    },
+    {
+      "id": "news-un-news-5facff0fde",
+      "title": "Palestinians face systematic abuse by Israeli settlers and Hamas alike: Independent investigators",
+      "title_original": "Palestinians face systematic abuse by Israeli settlers and Hamas alike: Independent investigators",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167682",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
+      "summary_original": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
+      "contentExcerpt": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-02-2025-UNICEF-West-Bank-05.jpg/image770x420cropped.jpg",
+      "score": 89,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "AI",
+        "Palestinians",
+        "face",
+        "systematic",
+        "abuse",
+        "Israeli",
+        "settlers",
+        "and"
+      ],
+      "keywords": [
+        "AI",
+        "Palestinians",
+        "face",
+        "systematic",
+        "abuse",
+        "Israeli",
+        "settlers",
+        "and"
+      ],
+      "impactAreas": [
+        "AI",
+        "Palestinians",
+        "face",
+        "systematic"
+      ]
+    },
+    {
+      "id": "news-un-news-fe1aa10e58",
+      "title": "Security Council LIVE: Central Africa in the spotlight, including outlawed Lord&#039;s Resistance Army",
+      "title_original": "Security Council LIVE: Central Africa in the spotlight, including outlawed Lord&#039;s Resistance Army",
+      "url": "https://news.un.org/feed/view/en/story/2026/06/1167680",
+      "source": "UN News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-09T12:00:00.000Z",
+      "summary": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
+      "summary_original": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
+      "contentExcerpt": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/09-04-2026_UNP_SC_UNMIK.jpg/image770x420cropped.jpg",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [],
+      "article_keywords": [
+        "security",
+        "美联储",
+        "市场监管",
+        "Council",
+        "LIVE",
+        "Central",
+        "Africa",
+        "the"
+      ],
+      "keywords": [
+        "security",
+        "美联储",
+        "市场监管",
+        "Council",
+        "LIVE",
+        "Central",
+        "Africa",
+        "the"
+      ],
+      "impactAreas": [
+        "security",
+        "美联储",
+        "市场监管",
+        "Council"
+      ]
+    },
+    {
+      "id": "news-nasa-breaking-news-069988751c",
+      "title": "NASA’s CloudCube Pioneers Miniaturized Radar to Study Clouds, Precipitation",
+      "title_original": "NASA’s CloudCube Pioneers Miniaturized Radar to Study Clouds, Precipitation",
+      "url": "https://science.nasa.gov/science-research/science-enabling-technology/nasas-cloudcube-pioneers-miniaturizedradar-to-study-clouds-precipitation",
+      "source": "NASA Breaking News",
+      "sourceType": "rss",
+      "category": "news",
+      "publishedAt": "2026-06-10T12:00:00.000Z",
+      "summary": "A compact, multifrequency radar built by a team at NASA’s Jet Propulsion Laboratory will make it easier to collect information about dynamic cloud systems. Called CloudCube, this new instrument simultaneously probes the atmosphere with three radar signals, spanning 36 to 240 GHz, for optimized sensitivity to a wide range of water droplet and ice particle sizes.",
+      "summary_original": "A compact, multifrequency radar built by a team at NASA’s Jet Propulsion Laboratory will make it easier to collect information about dynamic cloud systems. Called CloudCube, this new instrument simultaneously probes the atmosphere with three radar signals, spanning 36 to 240 GHz, for optimized sensitivity to a wide range of water droplet and ice particle sizes.",
+      "contentExcerpt": "Built with funding from NASA’s Earth Science Technology Office Instrument Incubator Program, CloudCube transmits and receives Ka-, W-, and G-band signals, making it the first compact radar system capable of simultaneously probing meteorological targets at wavelengths spanning approximately one to ten millimeters. Researchers will be able to combine information from the three signals to learn more about the initiation and evolution of precipitation, as well as cloud microphysics and radiative...",
+      "sourceLanguage": "en",
+      "source_language": "en",
+      "translation_status": "failed",
+      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/science-enabling-technology/technology-highlights/2026/Monje_Image_2a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "score": 84,
+      "duplicateCount": 0,
+      "tags": [
+        "Earth Science Division",
+        "Jet Propulsion Laboratory",
+        "Science & Research",
+        "Science-enabling Technology",
+        "Technology Highlights"
+      ],
+      "article_keywords": [
+        "Earth Science Division",
+        "Jet Propulsion Laboratory",
+        "Science & Research",
+        "Science-enabling Technology",
+        "Technology Highlights",
+        "NASA",
+        "CloudCube",
+        "Pioneers"
+      ],
+      "keywords": [
+        "Earth Science Division",
+        "Jet Propulsion Laboratory",
+        "Science & Research",
+        "Science-enabling Technology",
+        "Technology Highlights",
+        "NASA",
+        "CloudCube",
+        "Pioneers"
+      ],
+      "impactAreas": [
+        "Earth Science Division",
+        "Jet Propulsion Laboratory",
+        "Science & Research",
+        "Science-enabling Technology"
+      ]
+    },
     {
       "id": "business-openai-news-fabe59611d",
       "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
@@ -428,7 +2139,7 @@
       "source_language": "zh",
       "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 97,
+      "score": 96,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -459,11 +2170,105 @@
       ]
     },
     {
-      "id": "business-item-746b6bd915",
-      "title": "比尔·盖茨就爱泼斯坦案调查在国会作证：希望能为受害者伸张正义 2026-06-11 07:56",
-      "title_original": "比尔·盖茨就爱泼斯坦案调查在国会作证：希望能为受害者伸张正义 2026-06-11 07:56",
-      "title_zh": "比尔·盖茨就爱泼斯坦案调查在国会作证：希望能为受害者伸张正义 2026-06-11 07:56",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422997.html",
+      "id": "business-item-bd565038b4",
+      "title": "高考落幕，千问、百度们争当志愿填报“参谋” 免费背后，AI服务主导权争夺战打响",
+      "title_original": "高考落幕，千问、百度们争当志愿填报“参谋” 免费背后，AI服务主导权争夺战打响",
+      "title_zh": "高考落幕，千问、百度们争当志愿填报“参谋” 免费背后，AI服务主导权争夺战打响",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423322.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "2026年全国高考结束后，阿里千问和百度在6月10日同日升级高考志愿填报服务，均免费开放。千问采用Agent形态，提供全周期服务；百度则引入真人专家审核机制。二者均试图将高考服务从一次性查询升级为持续性决策辅助，折射出AI从聊天走向办事的趋势。免费背后，企业争夺的是AI时代的用户入口和服务主导权。",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 95,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "AI",
+        "商业",
+        "financial-media",
+        "Agent",
+        "高考落幕",
+        "千问",
+        "百度们争当志愿填报",
+        "参谋"
+      ],
+      "keywords": [
+        "AI",
+        "商业",
+        "financial-media",
+        "Agent",
+        "高考落幕",
+        "千问",
+        "百度们争当志愿填报",
+        "参谋"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-ebb3ccdf52",
+      "title": "每经热评｜“鹅腿阿姨”的溃败，是诚信危机也是流量时代的情感背叛",
+      "title_original": "每经热评｜“鹅腿阿姨”的溃败，是诚信危机也是流量时代的情感背叛",
+      "title_zh": "每经热评｜“鹅腿阿姨”的溃败，是诚信危机也是流量时代的情感背叛",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423302.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "2023年冬天，一位在北大、清华周边卖烤鹅腿的阿姨登上了热搜。学子们亲切地叫她“鹅腿阿姨”。后来，她登上北大校园论坛，分享自己的生意经。北大官方公众号专门发文，说她“不随波逐流，也不唯利是图”。那时，",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 87,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "每经热评",
+        "鹅腿阿姨",
+        "的溃败",
+        "是诚信危机也是流量时代的",
+        "情感背叛",
+        "每日经济新闻中文财经"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "每经热评",
+        "鹅腿阿姨",
+        "的溃败",
+        "是诚信危机也是流量时代的",
+        "情感背叛",
+        "每日经济新闻中文财经"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-7115b3c380",
+      "title": "四部门：推进“科技成果+创业”、“民生需求+创业”等模式引领",
+      "title_original": "四部门：推进“科技成果+创业”、“民生需求+创业”等模式引领",
+      "title_zh": "四部门：推进“科技成果+创业”、“民生需求+创业”等模式引领",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423529.html",
       "source": "每日经济新闻",
       "sourceType": "webpage",
       "category": "business",
@@ -475,7 +2280,7 @@
       "sourceLanguage": "zh",
       "source_language": "zh",
       "translation_status": "not_required",
-      "score": 89,
+      "score": 87,
       "duplicateCount": 0,
       "tags": [
         "financial-media",
@@ -484,33 +2289,33 @@
       "article_keywords": [
         "商业",
         "financial-media",
-        "比尔",
-        "盖茨就爱泼斯坦案调查在国",
-        "会作证",
-        "希望能为受害者伸张正义",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "公共政策",
+        "四部门",
+        "推进",
+        "科技成果",
+        "创业",
+        "民生需求"
       ],
       "keywords": [
         "商业",
         "financial-media",
-        "比尔",
-        "盖茨就爱泼斯坦案调查在国",
-        "会作证",
-        "希望能为受害者伸张正义",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "公共政策",
+        "四部门",
+        "推进",
+        "科技成果",
+        "创业",
+        "民生需求"
       ],
       "impactAreas": [
         "商业"
       ]
     },
     {
-      "id": "business-item-af3143e823",
-      "title": "龙蟠科技加码印尼布局 印尼锂源三期项目总投资超10亿元 2026-06-11 07:35",
-      "title_original": "龙蟠科技加码印尼布局 印尼锂源三期项目总投资超10亿元 2026-06-11 07:35",
-      "title_zh": "龙蟠科技加码印尼布局 印尼锂源三期项目总投资超10亿元 2026-06-11 07:35",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422903.html",
+      "id": "business-item-01b1d2544f",
+      "title": "东西部协作取得显著成效！农业农村部：引导企业到西部协作地区投资7500多亿元，携手共建1500多个宜居宜业和美乡村⋯⋯",
+      "title_original": "东西部协作取得显著成效！农业农村部：引导企业到西部协作地区投资7500多亿元，携手共建1500多个宜居宜业和美乡村⋯⋯",
+      "title_zh": "东西部协作取得显著成效！农业农村部：引导企业到西部协作地区投资7500多亿元，携手共建1500多个宜居宜业和美乡村⋯⋯",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423304.html",
       "source": "每日经济新闻",
       "sourceType": "webpage",
       "category": "business",
@@ -522,7 +2327,7 @@
       "sourceLanguage": "zh",
       "source_language": "zh",
       "translation_status": "not_required",
-      "score": 89,
+      "score": 87,
       "duplicateCount": 0,
       "tags": [
         "financial-media",
@@ -531,31 +2336,33 @@
       "article_keywords": [
         "商业",
         "financial-media",
-        "龙蟠科技加码印尼布局",
-        "印尼锂源三期项目总投资超",
-        "亿元",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "东西部协作取得显著成效",
+        "农业农村部",
+        "引导企业到西部协作地区投",
+        "多亿元",
+        "携手共建",
+        "多个宜居宜业和美乡村"
       ],
       "keywords": [
         "商业",
         "financial-media",
-        "龙蟠科技加码印尼布局",
-        "印尼锂源三期项目总投资超",
-        "亿元",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "东西部协作取得显著成效",
+        "农业农村部",
+        "引导企业到西部协作地区投",
+        "多亿元",
+        "携手共建",
+        "多个宜居宜业和美乡村"
       ],
       "impactAreas": [
         "商业"
       ]
     },
     {
-      "id": "business-item-6fcccf255c",
-      "title": "SpaceX已吸引超过2500亿美元的投资者认购需求，“中国星链”千帆星座密集发射卫星，2030年完成超万星组网；工信部加强天基计算网络等一批关键核心技术攻关——《投资早参》 2026-06-11 07:13",
-      "title_original": "SpaceX已吸引超过2500亿美元的投资者认购需求，“中国星链”千帆星座密集发射卫星，2030年完成超万星组网；工信部加强天基计算网络等一批关键核心技术攻关——《投资早参》 2026-06-11 07:13",
-      "title_zh": "SpaceX已吸引超过2500亿美元的投资者认购需求，“中国星链”千帆星座密集发射卫星，2030年完成超万星组网；工信部加强天基计算网络等一批关键核心技术攻关——《投资早参》 2026-06-11 07:13",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422941.html",
+      "id": "business-item-8535af92a2",
+      "title": "恒生指数一度跌破24000点，恒科跌1.46%！半导体午后拉涨，澜起科技涨近6%，兆易创新涨5%｜港股收盘 2026-06-11 16:41",
+      "title_original": "恒生指数一度跌破24000点，恒科跌1.46%！半导体午后拉涨，澜起科技涨近6%，兆易创新涨5%｜港股收盘 2026-06-11 16:41",
+      "title_zh": "恒生指数一度跌破24000点，恒科跌1.46%！半导体午后拉涨，澜起科技涨近6%，兆易创新涨5%｜港股收盘 2026-06-11 16:41",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423527.html",
       "source": "每日经济新闻",
       "sourceType": "webpage",
       "category": "business",
@@ -567,7 +2374,7 @@
       "sourceLanguage": "zh",
       "source_language": "zh",
       "translation_status": "not_required",
-      "score": 89,
+      "score": 87,
       "duplicateCount": 0,
       "tags": [
         "financial-media",
@@ -576,33 +2383,33 @@
       "article_keywords": [
         "商业",
         "financial-media",
-        "SpaceX",
-        "已吸引超过",
-        "亿美元的投资者认购需求",
-        "中国星链",
-        "千帆星座密集发射卫星",
-        "年完成超万星组网"
+        "恒生指数一度跌破",
+        "恒科跌",
+        "半导体午后拉涨",
+        "澜起科技涨近",
+        "兆易创新涨",
+        "港股收盘"
       ],
       "keywords": [
         "商业",
         "financial-media",
-        "SpaceX",
-        "已吸引超过",
-        "亿美元的投资者认购需求",
-        "中国星链",
-        "千帆星座密集发射卫星",
-        "年完成超万星组网"
+        "恒生指数一度跌破",
+        "恒科跌",
+        "半导体午后拉涨",
+        "澜起科技涨近",
+        "兆易创新涨",
+        "港股收盘"
       ],
       "impactAreas": [
         "商业"
       ]
     },
     {
-      "id": "business-item-0967cd31c8",
-      "title": "07:56 伊朗武装部队称将对美作出有力回击",
-      "title_original": "07:56 伊朗武装部队称将对美作出有力回击",
-      "title_zh": "07:56 伊朗武装部队称将对美作出有力回击",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422995.html",
+      "id": "business-item-261971e2f6",
+      "title": "超4000只个股下跌，半导体、有色板块逆势拉升，影视股下挫 | A股收盘 2026-06-11 15:42",
+      "title_original": "超4000只个股下跌，半导体、有色板块逆势拉升，影视股下挫 | A股收盘 2026-06-11 15:42",
+      "title_zh": "超4000只个股下跌，半导体、有色板块逆势拉升，影视股下挫 | A股收盘 2026-06-11 15:42",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423451.html",
       "source": "每日经济新闻",
       "sourceType": "webpage",
       "category": "business",
@@ -610,11 +2417,11 @@
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "summary_original": "每日经济新闻中文财经、公司和市场新闻",
       "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "记者|黄胜编辑|张锦河 易启江 校对|程鹏6月11日，三大指数集体收绿，创业板指跌超1%。全市场超4000只个股下跌。截至收盘，沪指跌0.16%，深成指跌0.68%，创业板指跌1.13%，科创综指上涨",
       "sourceLanguage": "zh",
       "source_language": "zh",
       "translation_status": "not_required",
-      "score": 89,
+      "score": 87,
       "duplicateCount": 0,
       "tags": [
         "financial-media",
@@ -623,157 +2430,22 @@
       "article_keywords": [
         "商业",
         "financial-media",
-        "伊朗武装部队称将对美作出",
-        "有力回击",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "只个股下跌",
+        "半导体",
+        "有色板块逆势拉升",
+        "影视股下挫",
+        "股收盘",
+        "每日经济新闻中文财经"
       ],
       "keywords": [
         "商业",
         "financial-media",
-        "伊朗武装部队称将对美作出",
-        "有力回击",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
-      ],
-      "impactAreas": [
-        "商业"
-      ]
-    },
-    {
-      "id": "business-item-082b6d8643",
-      "title": "07:50 美军：商船仍在继续进出霍尔木兹海峡",
-      "title_original": "07:50 美军：商船仍在继续进出霍尔木兹海峡",
-      "title_zh": "07:50 美军：商船仍在继续进出霍尔木兹海峡",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422993.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "business",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "每经AI快讯，当地时间6月10日，美军中央司令部发布消息称，伊朗伊斯兰革命卫队声称霍尔木兹海峡已关闭的说法是错误的。当晚，商船仍在继续进出霍尔木兹海峡。伊朗伊斯兰革命卫队海军当地时间11日宣布，鉴于美",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 89,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "商业",
-        "financial-media",
-        "美军",
-        "商船仍在继续进出霍尔木兹",
-        "海峡",
-        "每日经济新闻中文财经",
-        "公司和市场新闻",
-        "每经"
-      ],
-      "keywords": [
-        "商业",
-        "financial-media",
-        "美军",
-        "商船仍在继续进出霍尔木兹",
-        "海峡",
-        "每日经济新闻中文财经",
-        "公司和市场新闻",
-        "每经"
-      ],
-      "impactAreas": [
-        "商业"
-      ]
-    },
-    {
-      "id": "business-item-76584610dc",
-      "title": "07:50 美军称没有美军舰被伊朗击中",
-      "title_original": "07:50 美军称没有美军舰被伊朗击中",
-      "title_zh": "07:50 美军称没有美军舰被伊朗击中",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422992.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "business",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "每经AI快讯，美军中央司令部今天（6月11日）在社交媒体平台最新发消息称，伊朗媒体称“伊朗在霍尔木兹海峡袭击了一艘美国军舰”——“这是虚假消息，没有美国军舰被击中”。 (CCTV国际时讯)",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 89,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "商业",
-        "financial-media",
-        "国际",
-        "CCTV",
-        "美军称没有美军舰被伊朗击",
-        "每日经济新闻中文财经",
-        "公司和市场新闻",
-        "每经"
-      ],
-      "keywords": [
-        "商业",
-        "financial-media",
-        "国际",
-        "CCTV",
-        "美军称没有美军舰被伊朗击",
-        "每日经济新闻中文财经",
-        "公司和市场新闻",
-        "每经"
-      ],
-      "impactAreas": [
-        "商业"
-      ]
-    },
-    {
-      "id": "business-item-b90c1a2d57",
-      "title": "07:46 也门亚丁附近一弹药库爆炸已致11人死亡",
-      "title_original": "07:46 也门亚丁附近一弹药库爆炸已致11人死亡",
-      "title_zh": "07:46 也门亚丁附近一弹药库爆炸已致11人死亡",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422983.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "business",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 89,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "商业",
-        "financial-media",
-        "也门亚丁附近一弹药库爆炸",
-        "已致",
-        "人死亡",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
-      ],
-      "keywords": [
-        "商业",
-        "financial-media",
-        "也门亚丁附近一弹药库爆炸",
-        "已致",
-        "人死亡",
-        "每日经济新闻中文财经",
-        "公司和市场新闻"
+        "只个股下跌",
+        "半导体",
+        "有色板块逆势拉升",
+        "影视股下挫",
+        "股收盘",
+        "每日经济新闻中文财经"
       ],
       "impactAreas": [
         "商业"
@@ -795,7 +2467,7 @@
       "source_language": "en",
       "translation_status": "failed",
       "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/picknik-1.png",
-      "score": 87,
+      "score": 86,
       "duplicateCount": 0,
       "tags": [
         "Technology Transfer & Spinoffs",
@@ -821,6 +2493,53 @@
         "Equips",
         "Astronauts",
         "Industry"
+      ],
+      "impactAreas": [
+        "商业"
+      ]
+    },
+    {
+      "id": "business-item-999eed3318",
+      "title": "5个月神话破灭！Donut Lab固态电池被实锤造假背后：从未实际生产过电池电芯，固态电池产业化仍需五到十年",
+      "title_original": "5个月神话破灭！Donut Lab固态电池被实锤造假背后：从未实际生产过电池电芯，固态电池产业化仍需五到十年",
+      "title_zh": "5个月神话破灭！Donut Lab固态电池被实锤造假背后：从未实际生产过电池电芯，固态电池产业化仍需五到十年",
+      "url": "https://www.nbd.com.cn/articles/2026-06-11/4423385.html",
+      "source": "每日经济新闻",
+      "sourceType": "webpage",
+      "category": "business",
+      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
+      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
+      "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 85,
+      "duplicateCount": 1,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "商业",
+        "financial-media",
+        "Donut",
+        "Lab",
+        "个月神话破灭",
+        "固态电池被实锤造假背后",
+        "从未实际生产过电池电芯",
+        "固态电池产业化仍需五到十"
+      ],
+      "keywords": [
+        "商业",
+        "financial-media",
+        "Donut",
+        "Lab",
+        "个月神话破灭",
+        "固态电池被实锤造假背后",
+        "从未实际生产过电池电芯",
+        "固态电池产业化仍需五到十"
       ],
       "impactAreas": [
         "商业"
@@ -1080,7 +2799,7 @@
       "source_language": "zh",
       "translation_status": "not_required",
       "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 99,
+      "score": 98,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -1111,157 +2830,15 @@
       ]
     },
     {
-      "id": "macro-item-ab7b2345aa",
-      "title": "住房公积金条例迎重大修订，利率决定机制调整引关注",
-      "title_original": "住房公积金条例迎重大修订，利率决定机制调整引关注",
-      "title_zh": "住房公积金条例迎重大修订，利率决定机制调整引关注",
-      "url": "https://www.yicai.com/news/103224317.html",
+      "id": "macro-item-3a412cabe7",
+      "title": "暴利租机贷崩盘：中介被抓、平台违规、法院穿透式定责",
+      "title_original": "暴利租机贷崩盘：中介被抓、平台违规、法院穿透式定责",
+      "title_zh": "暴利租机贷崩盘：中介被抓、平台违规、法院穿透式定责",
+      "url": "https://www.yicai.com/news/103225752.html",
       "source": "第一财经",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
-      "summary": "第一财经中文财经、宏观、产业和市场新闻",
-      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
-      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
-      "contentExcerpt": "公积金利率一端连接缴存人存款收益，一端连接贷款人融资成本，也会影响货币政策传导和银行定价体系。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 97,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "宏观",
-        "financial-media",
-        "央行",
-        "住房公积金条例迎重大修订",
-        "利率决定机制调整引关注",
-        "第一财经中文财经",
-        "产业和市场新闻",
-        "公积金利率一端连接缴存人"
-      ],
-      "keywords": [
-        "宏观",
-        "financial-media",
-        "央行",
-        "住房公积金条例迎重大修订",
-        "利率决定机制调整引关注",
-        "第一财经中文财经",
-        "产业和市场新闻",
-        "公积金利率一端连接缴存人"
-      ],
-      "impactAreas": [
-        "宏观"
-      ]
-    },
-    {
-      "id": "macro-item-c153ce5d9f",
-      "title": "史上最大IPO即将登陆：一场1.8万亿美元的“信仰豪赌”",
-      "title_original": "史上最大IPO即将登陆：一场1.8万亿美元的“信仰豪赌”",
-      "title_zh": "史上最大IPO即将登陆：一场1.8万亿美元的“信仰豪赌”",
-      "url": "https://www.yicai.com/news/103224010.html",
-      "source": "第一财经",
-      "sourceType": "webpage",
-      "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
-      "summary": "第一财经中文财经、宏观、产业和市场新闻",
-      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
-      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
-      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 97,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "宏观",
-        "商业",
-        "financial-media",
-        "IPO",
-        "史上最大",
-        "即将登陆",
-        "一场",
-        "万亿美元的"
-      ],
-      "keywords": [
-        "宏观",
-        "商业",
-        "financial-media",
-        "IPO",
-        "史上最大",
-        "即将登陆",
-        "一场",
-        "万亿美元的"
-      ],
-      "impactAreas": [
-        "宏观",
-        "商业"
-      ]
-    },
-    {
-      "id": "macro-item-e9f9a49687",
-      "title": "PPI同比涨幅创年内新高，专家研判下阶段走势",
-      "title_original": "PPI同比涨幅创年内新高，专家研判下阶段走势",
-      "title_zh": "PPI同比涨幅创年内新高，专家研判下阶段走势",
-      "url": "https://www.yicai.com/news/103223467.html",
-      "source": "第一财经",
-      "sourceType": "webpage",
-      "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
-      "summary": "第一财经中文财经、宏观、产业和市场新闻",
-      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
-      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
-      "contentExcerpt": "国际原油价格波动传导影响国内相关行业价格由涨转降或涨幅回落。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 97,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "宏观",
-        "financial-media",
-        "国际",
-        "PPI",
-        "同比涨幅创年内新高",
-        "专家研判下阶段走势",
-        "第一财经中文财经",
-        "产业和市场新闻"
-      ],
-      "keywords": [
-        "宏观",
-        "financial-media",
-        "国际",
-        "PPI",
-        "同比涨幅创年内新高",
-        "专家研判下阶段走势",
-        "第一财经中文财经",
-        "产业和市场新闻"
-      ],
-      "impactAreas": [
-        "宏观"
-      ]
-    },
-    {
-      "id": "macro-item-c42fc5ef13",
-      "title": "独家|何小鹏发内部信：本人亲自带队，最后200天冲刺机器人量产",
-      "title_original": "独家|何小鹏发内部信：本人亲自带队，最后200天冲刺机器人量产",
-      "title_zh": "独家|何小鹏发内部信：本人亲自带队，最后200天冲刺机器人量产",
-      "url": "https://www.yicai.com/news/103223315.html",
-      "source": "第一财经",
-      "sourceType": "webpage",
-      "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
@@ -1278,41 +2855,41 @@
       "article_keywords": [
         "宏观",
         "financial-media",
-        "独家",
-        "何小鹏发内部信",
-        "本人亲自带队",
-        "最后",
-        "天冲刺机器人量产",
-        "第一财经中文财经"
+        "暴利租机贷崩盘",
+        "中介被抓",
+        "平台违规",
+        "法院穿透式定责",
+        "第一财经中文财经",
+        "产业和市场新闻"
       ],
       "keywords": [
         "宏观",
         "financial-media",
-        "独家",
-        "何小鹏发内部信",
-        "本人亲自带队",
-        "最后",
-        "天冲刺机器人量产",
-        "第一财经中文财经"
+        "暴利租机贷崩盘",
+        "中介被抓",
+        "平台违规",
+        "法院穿透式定责",
+        "第一财经中文财经",
+        "产业和市场新闻"
       ],
       "impactAreas": [
         "宏观"
       ]
     },
     {
-      "id": "macro-item-cf677f4f70",
-      "title": "人形机器人实景大集训来了：从“能用”到“好用”，重塑产业生态",
-      "title_original": "人形机器人实景大集训来了：从“能用”到“好用”，重塑产业生态",
-      "title_zh": "人形机器人实景大集训来了：从“能用”到“好用”，重塑产业生态",
-      "url": "https://www.yicai.com/news/103224316.html",
+      "id": "macro-item-363bf3e3ab",
+      "title": "世界杯赛事未启生意已燃：球衣与LABUBU联名款热销，影音房热度增九成",
+      "title_original": "世界杯赛事未启生意已燃：球衣与LABUBU联名款热销，影音房热度增九成",
+      "title_zh": "世界杯赛事未启生意已燃：球衣与LABUBU联名款热销，影音房热度增九成",
+      "url": "https://www.yicai.com/news/103225914.html",
       "source": "第一财经",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
-      "contentExcerpt": "进一步丰富具身智能应用谱系，带动形成万台级规模落地能力。",
+      "contentExcerpt": "2026 年美加墨世界杯预热期间，体育品牌与文旅住宿领域营销热度高涨。",
       "sourceLanguage": "zh",
       "source_language": "zh",
       "translation_status": "not_required",
@@ -1325,20 +2902,111 @@
       "article_keywords": [
         "宏观",
         "financial-media",
-        "人形机器人实景大集训来了",
-        "能用",
-        "好用",
-        "重塑产业生态",
+        "LABUBU",
+        "世界杯赛事未启生意已燃",
+        "球衣与",
+        "联名款热销",
+        "影音房热度增九成",
+        "第一财经中文财经"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "LABUBU",
+        "世界杯赛事未启生意已燃",
+        "球衣与",
+        "联名款热销",
+        "影音房热度增九成",
+        "第一财经中文财经"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-52884f9caa",
+      "title": "2008年以来最快！黄金进入技术性熊市，地缘政治缘何无法挺住金价",
+      "title_original": "2008年以来最快！黄金进入技术性熊市，地缘政治缘何无法挺住金价",
+      "title_zh": "2008年以来最快！黄金进入技术性熊市，地缘政治缘何无法挺住金价",
+      "url": "https://www.yicai.com/news/103224672.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "国际",
+        "financial-media",
+        "年以来最快",
+        "黄金进入技术性熊市",
+        "地缘政治缘何无法挺住金价",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "国际",
+        "financial-media",
+        "年以来最快",
+        "黄金进入技术性熊市",
+        "地缘政治缘何无法挺住金价",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观",
+        "国际"
+      ]
+    },
+    {
+      "id": "macro-item-c9d819669d",
+      "title": "多地景区密集对中高考毕业生免门票",
+      "title_original": "多地景区密集对中高考毕业生免门票",
+      "title_zh": "多地景区密集对中高考毕业生免门票",
+      "url": "https://www.yicai.com/news/103224739.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "多地景区密集对中高考毕业",
+        "生免门票",
         "第一财经中文财经",
         "产业和市场新闻"
       ],
       "keywords": [
         "宏观",
         "financial-media",
-        "人形机器人实景大集训来了",
-        "能用",
-        "好用",
-        "重塑产业生态",
+        "多地景区密集对中高考毕业",
+        "生免门票",
         "第一财经中文财经",
         "产业和市场新闻"
       ],
@@ -1347,7 +3015,52 @@
       ]
     },
     {
-      "id": "macro-item-2ee0ad04ff",
+      "id": "macro-item-142b6d0b1d",
+      "title": "从矿老板提着百万现金买车到无人问津，天津港进口豪华车崩盘",
+      "title_original": "从矿老板提着百万现金买车到无人问津，天津港进口豪华车崩盘",
+      "title_zh": "从矿老板提着百万现金买车到无人问津，天津港进口豪华车崩盘",
+      "url": "https://www.yicai.com/news/103225362.html",
+      "source": "第一财经",
+      "sourceType": "webpage",
+      "category": "macro",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
+      "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
+      "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceLanguage": "zh",
+      "source_language": "zh",
+      "translation_status": "not_required",
+      "score": 97,
+      "duplicateCount": 0,
+      "tags": [
+        "financial-media",
+        "hourly"
+      ],
+      "article_keywords": [
+        "宏观",
+        "financial-media",
+        "从矿老板提着百万现金买车",
+        "到无人问津",
+        "天津港进口豪华车崩盘",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "financial-media",
+        "从矿老板提着百万现金买车",
+        "到无人问津",
+        "天津港进口豪华车崩盘",
+        "第一财经中文财经",
+        "产业和市场新闻"
+      ],
+      "impactAreas": [
+        "宏观"
+      ]
+    },
+    {
+      "id": "macro-item-97ea9b941d",
       "title": "关于开设“涉企侵权投诉举报专区”的公告",
       "title_original": "关于开设“涉企侵权投诉举报专区”的公告",
       "title_zh": "关于开设“涉企侵权投诉举报专区”的公告",
@@ -1355,7 +3068,7 @@
       "source": "第一财经",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
@@ -1392,7 +3105,7 @@
       ]
     },
     {
-      "id": "macro-item-8f8368ae25",
+      "id": "macro-item-693fb5d810",
       "title": "第一财经网络举报受理和处置规则",
       "title_original": "第一财经网络举报受理和处置规则",
       "title_zh": "第一财经网络举报受理和处置规则",
@@ -1400,7 +3113,7 @@
       "source": "第一财经",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
@@ -1435,7 +3148,7 @@
       ]
     },
     {
-      "id": "macro-item-a8cc3af208",
+      "id": "macro-item-18379ef930",
       "title": "普洛斯算力中心引入浙江国资战略股东",
       "title_original": "普洛斯算力中心引入浙江国资战略股东",
       "title_zh": "普洛斯算力中心引入浙江国资战略股东",
@@ -1443,7 +3156,7 @@
       "source": "第一财经",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
@@ -1482,7 +3195,7 @@
       ]
     },
     {
-      "id": "macro-item-e64351ab48",
+      "id": "macro-item-484bd1364a",
       "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
       "title_original": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
       "title_zh": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
@@ -1490,7 +3203,7 @@
       "source": "第一财经",
       "sourceType": "webpage",
       "category": "macro",
-      "publishedAt": "2026-06-11T00:00:31.033Z",
+      "publishedAt": "2026-06-11T09:00:39.568Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_original": "第一财经中文财经、宏观、产业和市场新闻",
       "summary_zh": "第一财经中文财经、宏观、产业和市场新闻",
@@ -1544,7 +3257,7 @@
       "source_language": "en",
       "translation_status": "failed",
       "imageUrl": "https://www.federalreserve.gov/images/social-media/social-default-image-opengraph.jpg",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "Banking and Consumer Regulatory Policy"
@@ -1575,588 +3288,6 @@
       ]
     },
     {
-      "id": "international-openai-news-7131f39dfa",
-      "title": "PRC-linked influence operations are targeting AI debates in the US",
-      "title_original": "PRC-linked influence operations are targeting AI debates in the US",
-      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-10T12:00:00.000Z",
-      "summary": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
-      "summary_original": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
-      "contentExcerpt": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "score": 99,
-      "duplicateCount": 0,
-      "tags": [
-        "Global Affairs"
-      ],
-      "article_keywords": [
-        "AI",
-        "tariff",
-        "国际",
-        "Global Affairs",
-        "地缘政治",
-        "PRC-linked",
-        "influence",
-        "operations"
-      ],
-      "keywords": [
-        "AI",
-        "tariff",
-        "国际",
-        "Global Affairs",
-        "地缘政治",
-        "PRC-linked",
-        "influence",
-        "operations"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-item-ad5663142e",
-      "title": "科技股现抛售潮，英伟达市值失守5万亿美元，甲骨文盘后跳水超7%；OpenAI史上最大基建布局曝光，租赁10GW超级数据中心丨全球科技早参 2026-06-11 07:51",
-      "title_original": "科技股现抛售潮，英伟达市值失守5万亿美元，甲骨文盘后跳水超7%；OpenAI史上最大基建布局曝光，租赁10GW超级数据中心丨全球科技早参 2026-06-11 07:51",
-      "title_zh": "科技股现抛售潮，英伟达市值失守5万亿美元，甲骨文盘后跳水超7%；OpenAI史上最大基建布局曝光，租赁10GW超级数据中心丨全球科技早参 2026-06-11 07:51",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422977.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "international",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "｜2026年6月11日 星期四｜NO.1 科技股现抛售潮，英伟达市值失守5万亿美元，甲骨文盘后跳水超7%6月10日，美伊双方互袭后，特朗普在社交媒体发文警告\"伊朗必须为拖延谈判付出代价\"，并进一步宣称",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 97,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "商业",
-        "financial-media",
-        "AI芯片",
-        "OpenAI",
-        "科技股现抛售潮",
-        "英伟达市值失守"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "商业",
-        "financial-media",
-        "AI芯片",
-        "OpenAI",
-        "科技股现抛售潮",
-        "英伟达市值失守"
-      ],
-      "impactAreas": [
-        "国际",
-        "商业"
-      ]
-    },
-    {
-      "id": "international-item-239a5b4661",
-      "title": "霍尔木兹大消息，伊朗向试图通过的船只开火！特朗普：秘密帮200多艘商船、1亿桶石油通过！美军向油轮开火致多人失踪，国际海事组织谴责 2026-06-11 07:56",
-      "title_original": "霍尔木兹大消息，伊朗向试图通过的船只开火！特朗普：秘密帮200多艘商船、1亿桶石油通过！美军向油轮开火致多人失踪，国际海事组织谴责 2026-06-11 07:56",
-      "title_zh": "霍尔木兹大消息，伊朗向试图通过的船只开火！特朗普：秘密帮200多艘商船、1亿桶石油通过！美军向油轮开火致多人失踪，国际海事组织谴责 2026-06-11 07:56",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422996.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "international",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "当地时间今天（6月11日）凌晨，伊朗伊斯兰革命卫队海军宣布，鉴于美国屡次违反停火协议，霍尔木兹海峡已关闭，直至另行通知。革命卫队警告称，任何船只不得离开其在波斯湾和阿曼湾的锚地，接近霍尔木兹海峡将被视",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "国际",
-        "商业",
-        "financial-media",
-        "霍尔木兹大消息",
-        "伊朗向试图通过的船只开火",
-        "特朗普",
-        "秘密帮",
-        "多艘商船"
-      ],
-      "keywords": [
-        "国际",
-        "商业",
-        "financial-media",
-        "霍尔木兹大消息",
-        "伊朗向试图通过的船只开火",
-        "特朗普",
-        "秘密帮",
-        "多艘商船"
-      ],
-      "impactAreas": [
-        "国际",
-        "商业"
-      ]
-    },
-    {
-      "id": "international-item-242653d2f2",
-      "title": "伊朗宣布：霍尔木兹海峡即日起对所有船只关闭，任何试图通过的船只都将受到攻击！国际油价直线拉升 2026-06-11 07:09",
-      "title_original": "伊朗宣布：霍尔木兹海峡即日起对所有船只关闭，任何试图通过的船只都将受到攻击！国际油价直线拉升 2026-06-11 07:09",
-      "title_zh": "伊朗宣布：霍尔木兹海峡即日起对所有船只关闭，任何试图通过的船只都将受到攻击！国际油价直线拉升 2026-06-11 07:09",
-      "url": "https://www.nbd.com.cn/articles/2026-06-11/4422970.html",
-      "source": "每日经济新闻",
-      "sourceType": "webpage",
-      "category": "international",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_original": "每日经济新闻中文财经、公司和市场新闻",
-      "summary_zh": "每日经济新闻中文财经、公司和市场新闻",
-      "contentExcerpt": "当地时间11日凌晨，伊朗武装部队哈塔姆·安比亚中央司令部发表声明称，鉴于本地区安全局势动荡，霍尔木兹海峡即日起对包括油轮和商船在内的所有类型船只关闭，任何试图通过该海峡的船只都将受到攻击。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "financial-media",
-        "hourly"
-      ],
-      "article_keywords": [
-        "国际",
-        "商业",
-        "financial-media",
-        "AI政策",
-        "伊朗宣布",
-        "霍尔木兹海峡即日起对所有",
-        "船只关闭",
-        "任何试图通过的船只都将受"
-      ],
-      "keywords": [
-        "国际",
-        "商业",
-        "financial-media",
-        "AI政策",
-        "伊朗宣布",
-        "霍尔木兹海峡即日起对所有",
-        "船只关闭",
-        "任何试图通过的船只都将受"
-      ],
-      "impactAreas": [
-        "国际",
-        "商业"
-      ]
-    },
-    {
-      "id": "international-nasa-breaking-news-457a0950f2",
-      "title": "Tyndall’s Trail of Bergs",
-      "title_original": "Tyndall’s Trail of Bergs",
-      "url": "https://science.nasa.gov/earth/earth-observatory/tyndalls-trail-of-bergs",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-10T04:01:00.000Z",
-      "summary": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake.",
-      "summary_original": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake.",
-      "contentExcerpt": "Ice splintered off the southern Patagonia glacier and drifted across a growing glacial lake. The Southern Patagonian Icefield is the largest expanse of ice in the Southern Hemisphere outside of Antarctica. The mass of glacial ice extends hundreds of kilometers along the spine of the Andes, feeding dozens of dynamic outlet glaciers that grind their way down from higher elevations. Many of these rivers of ice terminate in the sea or in proglacial lakes. An astronaut aboard the International Spa...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/tyndall%E2%80%99s-trail-of-bergs/ISS074-E-582898_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth Observatory",
-        "Ice & Glaciers",
-        "International Space Station (ISS)"
-      ],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "Earth Observatory",
-        "Ice & Glaciers",
-        "Tyndall",
-        "Trail",
-        "Bergs",
-        "Ice"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "Earth Observatory",
-        "Ice & Glaciers",
-        "Tyndall",
-        "Trail",
-        "Bergs",
-        "Ice"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-openai-news-797fed5f10",
-      "title": "From data to decisions: how LSEG is scaling trusted AI",
-      "title_original": "From data to decisions: how LSEG is scaling trusted AI",
-      "url": "https://openai.com/index/lseg",
-      "source": "OpenAI News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
-      "summary_original": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
-      "contentExcerpt": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "商业",
-        "data",
-        "decisions",
-        "how",
-        "LSEG",
-        "scaling"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "商业",
-        "data",
-        "decisions",
-        "how",
-        "LSEG",
-        "scaling"
-      ],
-      "impactAreas": [
-        "国际",
-        "商业"
-      ]
-    },
-    {
-      "id": "international-un-news-84171b069e",
-      "title": "UN rights chief urges ‘massive rethink’ of US immigration policies ahead of World Cup",
-      "title_original": "UN rights chief urges ‘massive rethink’ of US immigration policies ahead of World Cup",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167692",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-10T12:00:00.000Z",
-      "summary": "The UN&#039;s top human rights official has called for a &#039;massive rethink&#039; of US immigration and security policies ahead of the World Cup, warning that racial profiling, surveillance and aggressive enforcement are already affecting teams, officials and supporters.&nbsp;",
-      "summary_original": "The UN&#039;s top human rights official has called for a &#039;massive rethink&#039; of US immigration and security policies ahead of the World Cup, warning that racial profiling, surveillance and aggressive enforcement are already affecting teams, officials and supporters.&nbsp;",
-      "contentExcerpt": "The UN's top human rights official has called for a 'massive rethink' of US immigration and security policies ahead of the World Cup, warning that racial profiling, surveillance and aggressive enforcement are already affecting teams, officials and supporters.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/10-06-2026-Metlife-stadium.jpg/image770x420cropped.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "security",
-        "国际",
-        "地缘政治",
-        "市场监管",
-        "rights",
-        "chief",
-        "urges",
-        "massive"
-      ],
-      "keywords": [
-        "security",
-        "国际",
-        "地缘政治",
-        "市场监管",
-        "rights",
-        "chief",
-        "urges",
-        "massive"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-671986aa99",
-      "title": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
-      "title_original": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-10T12:00:00.000Z",
-      "summary": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on Wednesday, amid continuing conflicts, humanitarian emergencies and concerns over regional stability. Follow live in-depth meetings coverage here.",
-      "summary_original": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on Wednesday, amid continuing conflicts, humanitarian emergencies and concerns over regional stability. Follow live in-depth meetings coverage here.",
-      "contentExcerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on Wednesday, amid continuing conflicts, humanitarian emergencies and concerns over regional stability. Follow live in-depth meetings coverage here.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/10-06-2026-UN-Photo-SC-wideview.jpg/image770x420cropped.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "security",
-        "国际",
-        "地缘政治",
-        "市场监管",
-        "Middle",
-        "East",
-        "LIVE",
-        "Diplomacy"
-      ],
-      "keywords": [
-        "security",
-        "国际",
-        "地缘政治",
-        "市场监管",
-        "Middle",
-        "East",
-        "LIVE",
-        "Diplomacy"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-0ad50eae69",
-      "title": "Sudan war: Drone attacks damage key aid routes",
-      "title_original": "Sudan war: Drone attacks damage key aid routes",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167688",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
-      "summary_original": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
-      "contentExcerpt": "Escalating attacks on bridges, roads and other civilian infrastructure in Sudan are disrupting humanitarian access and putting civilians at further risk, the United Nations said on Tuesday.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/09-06-2026-WFP-Chad-Sudanese.jpg/image770x420cropped.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "地缘政治",
-        "Sudan",
-        "war",
-        "Drone",
-        "attacks",
-        "damage"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "地缘政治",
-        "Sudan",
-        "war",
-        "Drone",
-        "attacks",
-        "damage"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-59fad970ed",
-      "title": "World News in Brief: Call for action against child labour, ICC Prosecutor suspended, WFP raises awareness in Egypt",
-      "title_original": "World News in Brief: Call for action against child labour, ICC Prosecutor suspended, WFP raises awareness in Egypt",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167687",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
-      "summary_original": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
-      "contentExcerpt": "Ahead of World Day Against Child Labour on 12 June, the UN is urging governments and communities to accelerate efforts to end a crisis that still affects millions of children worldwide.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/11-06-2025_UNICEF_Child_Labour_Sierra_Leone_Quarry.jpg/image770x420cropped.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "地缘政治",
-        "公共政策",
-        "市场监管",
-        "World",
-        "Brief",
-        "Call"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "地缘政治",
-        "公共政策",
-        "市场监管",
-        "World",
-        "Brief",
-        "Call"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-deb751b89c",
-      "title": "Marking historic progress on rights for persons with disabilities, UN conference tackles critical gaps",
-      "title_original": "Marking historic progress on rights for persons with disabilities, UN conference tackles critical gaps",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167683",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
-      "summary_original": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
-      "contentExcerpt": "Historical gains have been hard-won, but much more needs to be done to advance progress in realising promises made two decades ago, said the UN chief at the opening on Tuesday of the 19th global meeting on the rights of persons with disabilities at UN Headquarters.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-04-2026-UNRWA-Gaza.jpg/image770x420cropped.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "财报",
-        "Marking",
-        "historic",
-        "progress",
-        "rights",
-        "for"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "财报",
-        "Marking",
-        "historic",
-        "progress",
-        "rights",
-        "for"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-un-news-051e655fff",
-      "title": "Building trust and lab testing at the heart of DRC Ebola response: WHO",
-      "title_original": "Building trust and lab testing at the heart of DRC Ebola response: WHO",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167679",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to&nbsp;contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
-      "summary_original": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to&nbsp;contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
-      "contentExcerpt": "In Ebola-stricken eastern Democratic Republic of the Congo (DRC) a massive push for early testing and contact tracing is helping to contain the virus, the UN World Health Organization (WHO) said on Tuesday.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-WHO-DR-Congo-ebola-03.jpg/image770x420cropped.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "国际",
-        "Building",
-        "trust",
-        "and",
-        "lab",
-        "testing",
-        "the"
-      ],
-      "keywords": [
-        "AI",
-        "国际",
-        "Building",
-        "trust",
-        "and",
-        "lab",
-        "testing",
-        "the"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
-      "id": "international-nasa-breaking-news-96467a9d01",
-      "title": "GLOBE Mission Earth Educators Participate in Land Cover Community of Practice",
-      "title_original": "GLOBE Mission Earth Educators Participate in Land Cover Community of Practice",
-      "url": "https://science.nasa.gov/learning-resources/science-activation/globe-mission-earth-educators-participate-in-land-cover-community-of-practice",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "international",
-      "publishedAt": "2026-06-10T12:43:01.000Z",
-      "summary": "During the 2025-2026 school year, educators from the NASA Science Activation Program’s GLOBE (Global Learning and Observation to Benefit the Environment) Mission Earth project participated in a specialized Community of Practice led by NASA Langley Research Center to refine how students interact with NASA’s land cover data (MODIS, Landsat, and Sentinel-2).",
-      "summary_original": "During the 2025-2026 school year, educators from the NASA Science Activation Program’s GLOBE (Global Learning and Observation to Benefit the Environment) Mission Earth project participated in a specialized Community of Practice led by NASA Langley Research Center to refine how students interact with NASA’s land cover data (MODIS, Landsat, and Sentinel-2).",
-      "contentExcerpt": "During the 2025-2026 school year, educators from the NASA Science Activation Program’s GLOBE (Global Learning and Observation to Benefit the Environment) Mission Earth project participated in a specialized Community of Practice led by NASA Langley Research Center to refine how students interact with NASA's land cover data (MODIS, Landsat, and Sentinel-2). Their collaboration focused on four key areas: Through GLOBE, communities can contribute meaningful environmental data to a long-term data...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/learn/science-activation-stories/2026/The_GLOBE_program_sciact.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 86,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth Science Division",
-        "Science Activation"
-      ],
-      "article_keywords": [
-        "国际",
-        "Earth Science Division",
-        "Science Activation",
-        "GLOBE",
-        "Mission",
-        "Earth",
-        "Educators",
-        "Participate"
-      ],
-      "keywords": [
-        "国际",
-        "Earth Science Division",
-        "Science Activation",
-        "GLOBE",
-        "Mission",
-        "Earth",
-        "Educators",
-        "Participate"
-      ],
-      "impactAreas": [
-        "国际"
-      ]
-    },
-    {
       "id": "tech-item-9760381566",
       "title": "科技部党组书记、部长阴和俊出席“构建科技大宣传格局 讲好中国科技创新故事”座谈会并讲话",
       "title_original": "科技部党组书记、部长阴和俊出席“构建科技大宣传格局 讲好中国科技创新故事”座谈会并讲话",
@@ -2173,7 +3304,7 @@
       "sourceLanguage": "zh",
       "source_language": "zh",
       "translation_status": "not_required",
-      "score": 99,
+      "score": 98,
       "duplicateCount": 0,
       "tags": [
         "official-agency",
@@ -2221,7 +3352,7 @@
       "sourceLanguage": "en",
       "source_language": "en",
       "translation_status": "failed",
-      "score": 96,
+      "score": 95,
       "duplicateCount": 0,
       "tags": [
         "Applied AI"
@@ -2269,7 +3400,7 @@
       "source_language": "en",
       "translation_status": "failed",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/01/CLIBanner_BlogHeader_01.jpg?fit=2400%2C1260",
-      "score": 95,
+      "score": 93,
       "duplicateCount": 0,
       "tags": [
         "AI & ML",
@@ -2319,7 +3450,7 @@
       "source_language": "en",
       "translation_status": "failed",
       "imageUrl": "https://github.blog/wp-content/uploads/2026/01/CLIBanner_BlogHeader_01.jpg?fit=2400%2C1260",
-      "score": 92,
+      "score": 91,
       "duplicateCount": 0,
       "tags": [
         "AI & ML",
@@ -2369,7 +3500,7 @@
       "source_language": "en",
       "translation_status": "failed",
       "imageUrl": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/06/Azure_6-9_v3-1.jpg",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [
         "AI + machine learning",
@@ -2420,7 +3551,7 @@
       "sourceLanguage": "en",
       "source_language": "en",
       "translation_status": "failed",
-      "score": 91,
+      "score": 90,
       "duplicateCount": 0,
       "tags": [],
       "article_keywords": [
@@ -2463,7 +3594,7 @@
       "sourceLanguage": "en",
       "source_language": "en",
       "translation_status": "failed",
-      "score": 90,
+      "score": 89,
       "duplicateCount": 0,
       "tags": [],
       "article_keywords": [
@@ -2506,7 +3637,7 @@
       "sourceLanguage": "en",
       "source_language": "en",
       "translation_status": "failed",
-      "score": 87,
+      "score": 86,
       "duplicateCount": 0,
       "tags": [],
       "article_keywords": [
@@ -2551,7 +3682,7 @@
       "sourceLanguage": "en",
       "source_language": "en",
       "translation_status": "failed",
-      "score": 83,
+      "score": 82,
       "duplicateCount": 0,
       "tags": [],
       "article_keywords": [
@@ -2579,893 +3710,6 @@
         "engineers",
         "Nextdoor",
         "use"
-      ]
-    },
-    {
-      "id": "news-item-d10acca14a",
-      "title": "5月汽车出口延续快速增长态势",
-      "title_original": "5月汽车出口延续快速增长态势",
-      "title_zh": "5月汽车出口延续快速增长态势",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071780.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "记者今天（6月10日）从中国汽车工业协会获悉，5月份，我国汽车出口延续快速增长态势。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "月汽车出口延续快速增长态",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "记者今天",
-        "从中国汽车工业协会获悉",
-        "月份"
-      ],
-      "keywords": [
-        "公共政策",
-        "月汽车出口延续快速增长态",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "记者今天",
-        "从中国汽车工业协会获悉",
-        "月份"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "月汽车出口延续快速增长态",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ]
-    },
-    {
-      "id": "news-item-ec80fb71b7",
-      "title": "让中朝传统友谊之树更加根深叶茂——习近平总书记对朝鲜进行国事访问纪实",
-      "title_original": "让中朝传统友谊之树更加根深叶茂——习近平总书记对朝鲜进行国事访问纪实",
-      "title_zh": "让中朝传统友谊之树更加根深叶茂——习近平总书记对朝鲜进行国事访问纪实",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071776.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月8日至9日，应朝鲜劳动党总书记、国务委员长金正恩邀请，中共中央总书记、国家主席习近平对朝鲜民主主义人民共和国进行国事访问。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "让中朝传统友谊之树更加根",
-        "深叶茂",
-        "习近平总书记对朝鲜进行国",
-        "事访问纪实",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "keywords": [
-        "公共政策",
-        "让中朝传统友谊之树更加根",
-        "深叶茂",
-        "习近平总书记对朝鲜进行国",
-        "事访问纪实",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "让中朝传统友谊之树更加根",
-        "深叶茂",
-        "习近平总书记对朝鲜进行国"
-      ]
-    },
-    {
-      "id": "news-item-ffe6f36053",
-      "title": "第三轮第六批中央生态环保督察完成进驻阶段工作",
-      "title_original": "第三轮第六批中央生态环保督察完成进驻阶段工作",
-      "title_zh": "第三轮第六批中央生态环保督察完成进驻阶段工作",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071775.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "记者6月10日从生态环境部获悉，第三轮第六批7个中央生态环境保护督察组于5月8日至9日陆续进驻辽宁、吉林、黑龙江、广东、广西、西藏、新疆7省（区）和新疆生产建设兵团，近日已全面完成督察进驻阶段工作。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "第三轮第六批中央生态环保",
-        "督察完成进驻阶段工作",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "记者",
-        "日从生态环境部获悉"
-      ],
-      "keywords": [
-        "公共政策",
-        "第三轮第六批中央生态环保",
-        "督察完成进驻阶段工作",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "记者",
-        "日从生态环境部获悉"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "第三轮第六批中央生态环保",
-        "督察完成进驻阶段工作",
-        "中国政府网要闻列表"
-      ]
-    },
-    {
-      "id": "news-item-88238d428f",
-      "title": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
-      "title_original": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
-      "title_zh": "守护蔚蓝 向海图强——习近平总书记关于推动海洋经济高质量发展重要论述引领海洋强国建设",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071738.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "6月8日是世界海洋日，今年我国主题是“守护蔚蓝 向海图强”。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "守护蔚蓝",
-        "向海图强",
-        "习近平总书记关于推动海洋",
-        "经济高质量发展重要论述引",
-        "领海洋强国建设",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "keywords": [
-        "公共政策",
-        "守护蔚蓝",
-        "向海图强",
-        "习近平总书记关于推动海洋",
-        "经济高质量发展重要论述引",
-        "领海洋强国建设",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "守护蔚蓝",
-        "向海图强",
-        "习近平总书记关于推动海洋"
-      ]
-    },
-    {
-      "id": "news-item-a9be202e29",
-      "title": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
-      "title_original": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
-      "title_zh": "弘扬优良传统，密切团结协作——中共中央对外联络部部长刘海星谈习近平总书记对朝鲜进行国事访问",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071734.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "2026年6月8日至9日，应朝鲜劳动党总书记、朝鲜民主主义人民共和国国务委员长金正恩邀请，中共中央总书记、中华人民共和国主席习近平对朝鲜民主主义人民共和国进行国事访问。访问结束之际，中共中央对外联络部部长刘海星向随行记者介绍此访情况。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "弘扬优良传统",
-        "密切团结协作",
-        "中共中央对外联络部部长刘",
-        "海星谈习近平总书记对朝鲜",
-        "进行国事访问",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "keywords": [
-        "公共政策",
-        "弘扬优良传统",
-        "密切团结协作",
-        "中共中央对外联络部部长刘",
-        "海星谈习近平总书记对朝鲜",
-        "进行国事访问",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "弘扬优良传统",
-        "密切团结协作",
-        "中共中央对外联络部部长刘"
-      ]
-    },
-    {
-      "id": "news-item-bf2d80cf58",
-      "title": "人形机器人与具身智能实景实训专项行动启动",
-      "title_original": "人形机器人与具身智能实景实训专项行动启动",
-      "title_zh": "人形机器人与具身智能实景实训专项行动启动",
-      "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "工业和信息化部、国务院国资委联合印发通知，正式启动2026年度人形机器人与具身智能实景实训专项行动，提出到2026年底，人形机器人等重点产品在一批代表性场景中率先完成应用验证和常态部署，开启“作业模式”；形成百个以上高价值应用场景，进一步丰富具身智能应用谱系，带动形成万台级规模落地能力。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "人形机器人与具身智能实景",
-        "实训专项行动启动",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "工业和信息化部",
-        "国务院国资委联合印发通知"
-      ],
-      "keywords": [
-        "公共政策",
-        "人形机器人与具身智能实景",
-        "实训专项行动启动",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "工业和信息化部",
-        "国务院国资委联合印发通知"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "人形机器人与具身智能实景",
-        "实训专项行动启动",
-        "中国政府网要闻列表"
-      ]
-    },
-    {
-      "id": "news-item-645ff3899a",
-      "title": "全国夏粮小麦已收获近七成",
-      "title_original": "全国夏粮小麦已收获近七成",
-      "title_zh": "全国夏粮小麦已收获近七成",
-      "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071706.htm",
-      "source": "中国政府网要闻",
-      "sourceType": "webpage",
-      "category": "news",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_original": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "summary_zh": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "contentExcerpt": "截至6月9日17时，全国已收获夏粮小麦2.33亿亩，收获进度68.54%。",
-      "sourceLanguage": "zh",
-      "source_language": "zh",
-      "translation_status": "not_required",
-      "imageUrl": "https://www.gov.cn/images/150.jpg",
-      "score": 96,
-      "duplicateCount": 0,
-      "tags": [
-        "official-agency",
-        "hourly"
-      ],
-      "article_keywords": [
-        "公共政策",
-        "全国夏粮小麦已收获近七成",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "截至",
-        "全国已收获夏粮小麦",
-        "亿亩"
-      ],
-      "keywords": [
-        "公共政策",
-        "全国夏粮小麦已收获近七成",
-        "中国政府网要闻列表",
-        "覆盖国务院",
-        "部门政策和公共事务即时发",
-        "截至",
-        "全国已收获夏粮小麦",
-        "亿亩"
-      ],
-      "impactAreas": [
-        "公共政策",
-        "全国夏粮小麦已收获近七成",
-        "中国政府网要闻列表",
-        "覆盖国务院"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-9d4c1919b2",
-      "title": "Curiosity Blog: Sols 4913-4919: Planetary explorers, freewheeling to the Yardang unit!",
-      "title_original": "Curiosity Blog: Sols 4913-4919: Planetary explorers, freewheeling to the Yardang unit!",
-      "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4913-4919-planetary-explorers-freewheeling-to-the-yardang-unit",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T21:23:02.000Z",
-      "summary": "Written by Catherine O’Connell-Cooper, APXS Strategic Planner and Payload Uplink/Downlink Lead, University of New Brunswick, Canada Earth planning day: Friday, June 5th, 2026 In a very broad sense, Curiosity has two modes of doing science – one centred around a defined science campaign (such as the recent boxwork campaign) and the other as we move […]",
-      "summary_original": "Written by Catherine O’Connell-Cooper, APXS Strategic Planner and Payload Uplink/Downlink Lead, University of New Brunswick, Canada Earth planning day: Friday, June 5th, 2026 In a very broad sense, Curiosity has two modes of doing science – one centred around a defined science campaign (such as the recent boxwork campaign) and the other as we move […]",
-      "contentExcerpt": "Mars Science Laboratory Mission Team Members Written by Catherine O’Connell-Cooper, APXS Strategic Planner and Payload Uplink/Downlink Lead, University of New Brunswick, Canada Earth planning day: Friday, June 5th, 2026 In a very broad sense, Curiosity has two modes of doing science – one centred around a defined science campaign (such as the recent boxwork campaign) and the other as we move between campaigns. During a science campaign, with a very defined start and end location, every image...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/msl/2026/curiosity-rover-updates/june/https___mars.nasa.gov_msl-raw-images_proj_msl_redops_ods_surface_sol_04916_opgs_edr_ncam_NLB_833905570EDR_S1221260NCAM00268M_.JPG/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Blogs"
-      ],
-      "article_keywords": [
-        "AI",
-        "Blogs",
-        "Curiosity",
-        "Blog",
-        "Sols",
-        "Planetary",
-        "explorers",
-        "freewheeling"
-      ],
-      "keywords": [
-        "AI",
-        "Blogs",
-        "Curiosity",
-        "Blog",
-        "Sols",
-        "Planetary",
-        "explorers",
-        "freewheeling"
-      ],
-      "impactAreas": [
-        "AI",
-        "Blogs",
-        "Curiosity",
-        "Blog"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-dc3c2be67b",
-      "title": "NASA Awards Contract for Construction Services in California",
-      "title_original": "NASA Awards Contract for Construction Services in California",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-construction-services-in-california",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T20:32:25.000Z",
-      "summary": "NASA has selected multiple small businesses for the Western Regional Multiple Award Construction Contract, which supports a broad range of facility enhancement, modernization, and sustainment work at NASA’s Armstrong Flight Research Center in Edwards, California, NASA’s Ames Research Center in California’s Silicon Valley, and other federal agencies in the region. The contract provides general construction, [&#8230;]",
-      "summary_original": "NASA has selected multiple small businesses for the Western Regional Multiple Award Construction Contract, which supports a broad range of facility enhancement, modernization, and sustainment work at NASA’s Armstrong Flight Research Center in Edwards, California, NASA’s Ames Research Center in California’s Silicon Valley, and other federal agencies in the region. The contract provides general construction, [&#8230;]",
-      "contentExcerpt": "NASA has selected multiple small businesses for the Western Regional Multiple Award Construction Contract, which supports a broad range of facility enhancement, modernization, and sustainment work at NASA’s Armstrong Flight Research Center in Edwards, California, NASA’s Ames Research Center in California’s Silicon Valley, and other federal agencies in the region. The contract provides general construction, modification, maintenance and repair, and demolition services, as well as new construct...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2022/02/nasa_meatball_large.jpg",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Armstrong Flight Research Center",
-        "Ames Research Center",
-        "NASA Centers & Facilities"
-      ],
-      "article_keywords": [
-        "AI",
-        "Ames Research Center",
-        "NASA Centers & Facilities",
-        "地缘政治",
-        "NASA",
-        "Awards",
-        "Contract",
-        "for"
-      ],
-      "keywords": [
-        "AI",
-        "Ames Research Center",
-        "NASA Centers & Facilities",
-        "地缘政治",
-        "NASA",
-        "Awards",
-        "Contract",
-        "for"
-      ],
-      "impactAreas": [
-        "AI",
-        "Ames Research Center",
-        "NASA Centers & Facilities",
-        "地缘政治"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-08bf34878a",
-      "title": "NASA, NOAA to Hold Joint Session at 23rd Symposium on Operational Environmental Satellite Systems",
-      "title_original": "NASA, NOAA to Hold Joint Session at 23rd Symposium on Operational Environmental Satellite Systems",
-      "url": "https://science.nasa.gov/science-research/earth-science/nasa-noaa-to-hold-joint-session-at-23rd-symposium-on-operational-environmental-satellite-systems",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T18:09:55.000Z",
-      "summary": "Abstracts are now being accepted for the session, which will take place at the 2027 AMS Annual Meeting.",
-      "summary_original": "Abstracts are now being accepted for the session, which will take place at the 2027 AMS Annual Meeting.",
-      "contentExcerpt": "Submit your abstract for “Advancing Weather and Environmental Science Through NASA and NOAA Commercial Satellite Data Programs,” a joint session hosted by NASA’s Commercial Satellite Data Acquisition (CSDA) program, in partnership with the NOAA National Environmental Satellite, Data, and Information Service (NESDIS) Commercial Data Program (CDP). The session is part of the 23rd Symposium on Operational Environmental Satellite Systems, which will take place at the 2027 American Meteorological...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://science.nasa.gov/wp-content/uploads/2026/06/ams-joe.jpg",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth Science"
-      ],
-      "article_keywords": [
-        "AI",
-        "Earth Science",
-        "商业",
-        "NASA",
-        "NOAA",
-        "Hold",
-        "Joint",
-        "Session"
-      ],
-      "keywords": [
-        "AI",
-        "Earth Science",
-        "商业",
-        "NASA",
-        "NOAA",
-        "Hold",
-        "Joint",
-        "Session"
-      ],
-      "impactAreas": [
-        "AI",
-        "Earth Science",
-        "商业",
-        "NASA"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-75ce62e356",
-      "title": "Train Ride to NASA Kennedy for Artemis III Booster Segments",
-      "title_original": "Train Ride to NASA Kennedy for Artemis III Booster Segments",
-      "url": "https://www.nasa.gov/image-article/train-ride-to-nasa-kennedy-for-artemis-iii-booster-segments",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T16:05:29.000Z",
-      "summary": "The final booster motor segments for NASA’s SLS (Space Launch System) rocket that will help propel Artemis III astronauts on their journey to space shipped from Northrop Grumman’s Railyard Shipping Facility in Corinne, Utah on June 2. The eight booster motor segments are on their way to NASA’s Kennedy Space Center in Florida where they [&#8230;]",
-      "summary_original": "The final booster motor segments for NASA’s SLS (Space Launch System) rocket that will help propel Artemis III astronauts on their journey to space shipped from Northrop Grumman’s Railyard Shipping Facility in Corinne, Utah on June 2. The eight booster motor segments are on their way to NASA’s Kennedy Space Center in Florida where they [&#8230;]",
-      "contentExcerpt": "The final booster motor segments for NASA’s SLS (Space Launch System) rocket that will help propel Artemis III astronauts on their journey to space shipped from Northrop Grumman’s Railyard Shipping Facility in Corinne, Utah on June 2. The eight booster motor segments are on their way to NASA’s Kennedy Space Center in Florida where they will form the SLS rocket’s twin, five-segment solid rocket boosters, which produce more than 75% of the total thrust at liftoff. Follow the Artemis blog for up...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://www.nasa.gov/wp-content/uploads/2026/06/ng-06022026-artemis-iii-booster-segment-shipment-to-ksc-1-31large.jpg",
-      "score": 94,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "Train",
-        "Ride",
-        "NASA",
-        "Kennedy",
-        "for",
-        "Artemis",
-        "III"
-      ],
-      "keywords": [
-        "AI",
-        "Train",
-        "Ride",
-        "NASA",
-        "Kennedy",
-        "for",
-        "Artemis",
-        "III"
-      ],
-      "impactAreas": [
-        "AI",
-        "Train",
-        "Ride",
-        "NASA"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-db4e123143",
-      "title": "NASA Webb Finds Strongest Evidence Yet for ‘Black Hole Stars’",
-      "title_original": "NASA Webb Finds Strongest Evidence Yet for ‘Black Hole Stars’",
-      "url": "https://science.nasa.gov/missions/webb/nasa-webb-finds-strongest-evidence-yet-for-black-hole-stars",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T14:00:00.000Z",
-      "summary": "The complex puzzle known as little red dots has become more complete since their initial discovery by NASA’s James Webb Space Telescope in 2022. Now a particular little red dot’s spectrum is helping connect many of the pieces. A team of astronomers led by Vasily Kokorev at the University of Texas at Austin identified the […]",
-      "summary_original": "The complex puzzle known as little red dots has become more complete since their initial discovery by NASA’s James Webb Space Telescope in 2022. Now a particular little red dot’s spectrum is helping connect many of the pieces. A team of astronomers led by Vasily Kokorev at the University of Texas at Austin identified the […]",
-      "contentExcerpt": "The complex puzzle known as little red dots has become more complete since their initial discovery by NASA’s James Webb Space Telescope in 2022. Now a particular little red dot’s spectrum is helping connect many of the pieces. A team of astronomers led by Vasily Kokorev at the University of Texas at Austin identified the lucky dot in question: GLIMPSE-17775. By carefully analyzing the dot’s spectrum captured by Webb — the deepest spectrum to date of a little red dot — the research team has id...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2026/06/STScI-01KTM4PHQTQEBK0TWEFSNGHHMC.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
-      "score": 93,
-      "duplicateCount": 0,
-      "tags": [
-        "Astrophysics",
-        "Black Holes",
-        "Goddard Space Flight Center",
-        "James Webb Space Telescope (JWST)",
-        "Science & Research",
-        "The Universe"
-      ],
-      "article_keywords": [
-        "AI",
-        "Astrophysics",
-        "Black Holes",
-        "Goddard Space Flight Center",
-        "Science & Research",
-        "The Universe",
-        "NASA",
-        "Webb"
-      ],
-      "keywords": [
-        "AI",
-        "Astrophysics",
-        "Black Holes",
-        "Goddard Space Flight Center",
-        "Science & Research",
-        "The Universe",
-        "NASA",
-        "Webb"
-      ],
-      "impactAreas": [
-        "AI",
-        "Astrophysics",
-        "Black Holes",
-        "Goddard Space Flight Center"
-      ]
-    },
-    {
-      "id": "news-un-news-cfa9a0f421",
-      "title": "‘The day never stops’ for aid workers braving missiles and drones in Ukraine",
-      "title_original": "‘The day never stops’ for aid workers braving missiles and drones in Ukraine",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167690",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T12:00:00.000Z",
-      "summary": "As Russia’s full-scale invasion of Ukraine enters its fifth year, conditions in southern Ukraine have rapidly deteriorated. Maintaining humanitarian operations has become an increasingly complex balancing act between enabling aid delivery and managing risk.",
-      "summary_original": "As Russia’s full-scale invasion of Ukraine enters its fifth year, conditions in southern Ukraine have rapidly deteriorated. Maintaining humanitarian operations has become an increasingly complex balancing act between enabling aid delivery and managing risk.",
-      "contentExcerpt": "As Russia’s full-scale invasion of Ukraine enters its fifth year, conditions in southern Ukraine have rapidly deteriorated. Maintaining humanitarian operations has become an increasingly complex balancing act between enabling aid delivery and managing risk.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/10-06-2026-Olga-Scripovaisa-01.jpg/image770x420cropped.jpg",
-      "score": 92,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "The",
-        "day",
-        "never",
-        "stops",
-        "for",
-        "aid",
-        "workers"
-      ],
-      "keywords": [
-        "AI",
-        "The",
-        "day",
-        "never",
-        "stops",
-        "for",
-        "aid",
-        "workers"
-      ],
-      "impactAreas": [
-        "AI",
-        "The",
-        "day",
-        "never"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-f17d62eeab",
-      "title": "Jim Irons, Former Landsat Project Scientist, Wins Pecora Award",
-      "title_original": "Jim Irons, Former Landsat Project Scientist, Wins Pecora Award",
-      "url": "https://science.nasa.gov/missions/landsat/jim-irons-former-landsat-project-scientist-wins-pecora-award",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T14:00:00.000Z",
-      "summary": "Landsat’s Jim Irons won the prestigious William T. Pecora Award. Irons, now an emeritus scientist at NASA Goddard Space Flight Center, played an integral role in shaping the Landsat program into what it is today.",
-      "summary_original": "Landsat’s Jim Irons won the prestigious William T. Pecora Award. Irons, now an emeritus scientist at NASA Goddard Space Flight Center, played an integral role in shaping the Landsat program into what it is today.",
-      "contentExcerpt": "Last month, Landsat’s very own Jim Irons won the prestigious William T. Pecora Award. Irons, now an emeritus scientist at NASA Goddard Space Flight Center, played an integral role in shaping the Landsat program into what it is today. He served as deputy project scientist for Landsat 7 before taking over as project scientist for Landsat 8. From the earliest days of Landsat 8—then called the Landsat Data Continuity Mission (LDCM)—all the way through launch and operation, Irons worked across the...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://science.nasa.gov/wp-content/uploads/2026/05/jamesirons-pecora.jpg",
-      "score": 91,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth",
-        "Landsat"
-      ],
-      "article_keywords": [
-        "security",
-        "Earth",
-        "Landsat",
-        "地缘政治",
-        "Jim",
-        "Irons",
-        "Former",
-        "Project"
-      ],
-      "keywords": [
-        "security",
-        "Earth",
-        "Landsat",
-        "地缘政治",
-        "Jim",
-        "Irons",
-        "Former",
-        "Project"
-      ],
-      "impactAreas": [
-        "security",
-        "Earth",
-        "Landsat",
-        "地缘政治"
-      ]
-    },
-    {
-      "id": "news-un-news-e36313e3d4",
-      "title": "Fresh strikes on Tyre kill eight, as UN puts Lebanon destruction bill at $365 million, and rising",
-      "title_original": "Fresh strikes on Tyre kill eight, as UN puts Lebanon destruction bill at $365 million, and rising",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167685",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
-      "summary_original": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
-      "contentExcerpt": "Lebanon has suffered more than $365 million in damage to buildings across Beirut and Mount Lebanon since the latest escalation, according to a new UN-led assessment released on Tuesday, as fresh strikes in Tyre underscored the fragility of a ceasefire that has failed to stop the fighting.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/02-06-2026-UNHCR-Lebanon-02.jpg/image770x420cropped.jpg",
-      "score": 90,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "Fresh",
-        "strikes",
-        "Tyre",
-        "kill",
-        "eight",
-        "puts",
-        "Lebanon"
-      ],
-      "keywords": [
-        "AI",
-        "Fresh",
-        "strikes",
-        "Tyre",
-        "kill",
-        "eight",
-        "puts",
-        "Lebanon"
-      ],
-      "impactAreas": [
-        "AI",
-        "Fresh",
-        "strikes",
-        "Tyre"
-      ]
-    },
-    {
-      "id": "news-un-news-5facff0fde",
-      "title": "Palestinians face systematic abuse by Israeli settlers and Hamas alike: Independent investigators",
-      "title_original": "Palestinians face systematic abuse by Israeli settlers and Hamas alike: Independent investigators",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167682",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
-      "summary_original": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
-      "contentExcerpt": "Palestinian civilians are trapped between escalating settler violence in the occupied West Bank and fear-based Hamas rule in the Gaza Strip, investigators appointed by the UN Human Rights Council said on Tuesday in a new report.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/12-02-2025-UNICEF-West-Bank-05.jpg/image770x420cropped.jpg",
-      "score": 90,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "AI",
-        "Palestinians",
-        "face",
-        "systematic",
-        "abuse",
-        "Israeli",
-        "settlers",
-        "and"
-      ],
-      "keywords": [
-        "AI",
-        "Palestinians",
-        "face",
-        "systematic",
-        "abuse",
-        "Israeli",
-        "settlers",
-        "and"
-      ],
-      "impactAreas": [
-        "AI",
-        "Palestinians",
-        "face",
-        "systematic"
-      ]
-    },
-    {
-      "id": "news-un-news-fe1aa10e58",
-      "title": "Security Council LIVE: Central Africa in the spotlight, including outlawed Lord&#039;s Resistance Army",
-      "title_original": "Security Council LIVE: Central Africa in the spotlight, including outlawed Lord&#039;s Resistance Army",
-      "url": "https://news.un.org/feed/view/en/story/2026/06/1167680",
-      "source": "UN News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-09T12:00:00.000Z",
-      "summary": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
-      "summary_original": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
-      "contentExcerpt": "The Security Council meets this morning to discuss the situation in Central Africa, including efforts to combat the so-called Lord’s Resistance Army (LRA), one of the region’s longest-running security threats, responsible for over 100,000 deaths, the UN estimates. Ambassadors have been briefed by the regional office (UNOCA) and its strategy for improving civilian protection, humanitarian access and cross-border cooperation.",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/09-04-2026_UNP_SC_UNMIK.jpg/image770x420cropped.jpg",
-      "score": 88,
-      "duplicateCount": 0,
-      "tags": [],
-      "article_keywords": [
-        "security",
-        "美联储",
-        "市场监管",
-        "Council",
-        "LIVE",
-        "Central",
-        "Africa",
-        "the"
-      ],
-      "keywords": [
-        "security",
-        "美联储",
-        "市场监管",
-        "Council",
-        "LIVE",
-        "Central",
-        "Africa",
-        "the"
-      ],
-      "impactAreas": [
-        "security",
-        "美联储",
-        "市场监管",
-        "Council"
-      ]
-    },
-    {
-      "id": "news-nasa-breaking-news-069988751c",
-      "title": "NASA’s CloudCube Pioneers Miniaturized Radar to Study Clouds, Precipitation",
-      "title_original": "NASA’s CloudCube Pioneers Miniaturized Radar to Study Clouds, Precipitation",
-      "url": "https://science.nasa.gov/science-research/science-enabling-technology/nasas-cloudcube-pioneers-miniaturizedradar-to-study-clouds-precipitation",
-      "source": "NASA Breaking News",
-      "sourceType": "rss",
-      "category": "news",
-      "publishedAt": "2026-06-10T12:00:00.000Z",
-      "summary": "A compact, multifrequency radar built by a team at NASA’s Jet Propulsion Laboratory will make it easier to collect information about dynamic cloud systems. Called CloudCube, this new instrument simultaneously probes the atmosphere with three radar signals, spanning 36 to 240 GHz, for optimized sensitivity to a wide range of water droplet and ice particle sizes.",
-      "summary_original": "A compact, multifrequency radar built by a team at NASA’s Jet Propulsion Laboratory will make it easier to collect information about dynamic cloud systems. Called CloudCube, this new instrument simultaneously probes the atmosphere with three radar signals, spanning 36 to 240 GHz, for optimized sensitivity to a wide range of water droplet and ice particle sizes.",
-      "contentExcerpt": "Built with funding from NASA’s Earth Science Technology Office Instrument Incubator Program, CloudCube transmits and receives Ka-, W-, and G-band signals, making it the first compact radar system capable of simultaneously probing meteorological targets at wavelengths spanning approximately one to ten millimeters. Researchers will be able to combine information from the three signals to learn more about the initiation and evolution of precipitation, as well as cloud microphysics and radiative...",
-      "sourceLanguage": "en",
-      "source_language": "en",
-      "translation_status": "failed",
-      "imageUrl": "https://assets.science.nasa.gov/content/dam/science/cds/science-enabling-technology/technology-highlights/2026/Monje_Image_2a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
-      "score": 85,
-      "duplicateCount": 0,
-      "tags": [
-        "Earth Science Division",
-        "Jet Propulsion Laboratory",
-        "Science & Research",
-        "Science-enabling Technology",
-        "Technology Highlights"
-      ],
-      "article_keywords": [
-        "Earth Science Division",
-        "Jet Propulsion Laboratory",
-        "Science & Research",
-        "Science-enabling Technology",
-        "Technology Highlights",
-        "NASA",
-        "CloudCube",
-        "Pioneers"
-      ],
-      "keywords": [
-        "Earth Science Division",
-        "Jet Propulsion Laboratory",
-        "Science & Research",
-        "Science-enabling Technology",
-        "Technology Highlights",
-        "NASA",
-        "CloudCube",
-        "Pioneers"
-      ],
-      "impactAreas": [
-        "Earth Science Division",
-        "Jet Propulsion Laboratory",
-        "Science & Research",
-        "Science-enabling Technology"
       ]
     }
   ]
