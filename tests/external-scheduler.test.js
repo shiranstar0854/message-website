@@ -32,12 +32,12 @@ test("Cloudflare scheduler dispatches the GitHub update workflow", async () => {
   );
 });
 
-test("Cloudflare scheduler dispatches the GitHub summary workflow", async () => {
+test("Cloudflare scheduler dispatches the evening daily summary workflow", async () => {
   const { runScheduledTrigger } = await loadScheduler();
   let recordedRequest;
 
   await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T11:00:00Z") },
+    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       recordedRequest = { url, options };
@@ -51,7 +51,7 @@ test("Cloudflare scheduler dispatches the GitHub summary workflow", async () => 
   );
   assert.equal(
     recordedRequest.options.body,
-    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-summary-primary" } })
+    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-summary-evening" } })
   );
 });
 
@@ -78,7 +78,7 @@ test("Cloudflare scheduler runs daily updates and weekly review from Cloudflare 
   const configPath = path.join(__dirname, "..", "external-scheduler", "cloudflare", "wrangler.jsonc");
   const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-  assert.deepEqual(config.triggers.crons, ["0,30 0,9,11 * * *", "0 1 * * 1"]);
+  assert.deepEqual(config.triggers.crons, ["0,30 0,9 * * *", "30 11 * * *", "0 1 * * 1"]);
 });
 
 test("Cloudflare daily retry trigger skips dispatch after a successful primary run exists", async () => {
@@ -86,7 +86,7 @@ test("Cloudflare daily retry trigger skips dispatch after a successful primary r
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { cron: "0,30 0,9 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url) => {
       requests.push(url);
@@ -114,7 +114,7 @@ test("Cloudflare daily retry trigger dispatches only when the primary run is mis
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { cron: "0,30 0,9 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });
@@ -137,7 +137,7 @@ test("Cloudflare daily retry trigger dispatches after a failed primary run", asy
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
+    { cron: "0,30 0,9 * * *", scheduledTime: Date.parse("2026-05-28T00:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });
@@ -169,7 +169,7 @@ test("Cloudflare afternoon update trigger dispatches the daily update workflow",
   let recordedRequest;
 
   await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T09:00:00Z") },
+    { cron: "0,30 0,9 * * *", scheduledTime: Date.parse("2026-05-28T09:00:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       recordedRequest = { url, options };
@@ -192,7 +192,7 @@ test("Cloudflare afternoon retry dispatches only when the afternoon primary run 
   const requests = [];
 
   await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T09:30:00Z") },
+    { cron: "0,30 0,9 * * *", scheduledTime: Date.parse("2026-05-28T09:30:00Z") },
     { GITHUB_TOKEN: "test-token" },
     async (url, options) => {
       requests.push({ url, options });
@@ -210,32 +210,21 @@ test("Cloudflare afternoon retry dispatches only when the afternoon primary run 
   );
 });
 
-test("Cloudflare summary retry dispatches only when the summary primary run is missing", async () => {
+test("Cloudflare scheduler does not dispatch a separate daily summary retry", async () => {
   const { runScheduledTrigger } = await loadScheduler();
-  const requests = [];
+  let called = false;
 
-  await runScheduledTrigger(
-    { cron: "0,30 0,9,11 * * *", scheduledTime: Date.parse("2026-05-28T11:30:00Z") },
+  const result = await runScheduledTrigger(
+    { cron: "30 11 * * *", scheduledTime: Date.parse("2026-05-28T11:00:00Z") },
     { GITHUB_TOKEN: "test-token" },
-    async (url, options) => {
-      requests.push({ url, options });
-      if (url.includes("/runs?")) {
-        assert.match(url, /daily-summary\.yml\/runs/);
-        return new Response(JSON.stringify({ workflow_runs: [] }), { status: 200 });
-      }
+    async () => {
+      called = true;
       return new Response(null, { status: 204 });
     }
   );
 
-  assert.equal(requests.length, 2);
-  assert.equal(
-    requests[1].url,
-    "https://api.github.com/repos/shiranstar0854/message-website/actions/workflows/daily-summary.yml/dispatches"
-  );
-  assert.equal(
-    requests[1].options.body,
-    JSON.stringify({ ref: "main", inputs: { trigger_reason: "cloudflare-summary-retry" } })
-  );
+  assert.equal(result, undefined);
+  assert.equal(called, false);
 });
 
 test("Cloudflare weekly cron dispatches the weekly review workflow", async () => {

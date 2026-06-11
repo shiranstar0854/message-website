@@ -480,9 +480,41 @@ async function generateAiSummary(nowIso = new Date().toISOString(), options = {}
   return output;
 }
 
+async function generateArticleSummaries(nowIso = new Date().toISOString(), options = {}) {
+  const latestPath = path.join(ROOT_DIR, "src", "data", "latest-items.json");
+  const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
+  const latest = readJson(latestPath, { items: [], channels: {} });
+  const summarized = await summarizeLatestDataWithLlm(latest, rules, nowIso, options);
+
+  writeJson(latestPath, summarized);
+  return summarized.summaryStats || {};
+}
+
+async function generateDailyBrief(nowIso = new Date().toISOString(), options = {}) {
+  const latestPath = path.join(ROOT_DIR, "src", "data", "latest-items.json");
+  const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
+  const latest = readJson(latestPath, { items: [], channels: {} });
+  const output = await buildDailySummaryOutput(latest, rules, nowIso, options);
+
+  writeJson(path.join(ROOT_DIR, "src", "data", "daily-summary.json"), output);
+  writeJson(path.join(ROOT_DIR, "data", "processed", "ai-summaries.json"), output);
+  return output;
+}
+
 if (require.main === module) {
-  generateAiSummary()
+  const mode = process.argv[2] || "--all";
+  const runner = mode === "--items-only"
+    ? generateArticleSummaries
+    : mode === "--daily-brief-only"
+      ? generateDailyBrief
+      : generateAiSummary;
+
+  runner()
     .then((output) => {
+      if (mode === "--items-only") {
+        console.log(`Generated article AI summaries. LLM attempts: ${output.llmAttempted || 0}; succeeded: ${output.llmSucceeded || 0}.`);
+        return;
+      }
       console.log(`Generated ${output.totalSummaries} daily summaries with ${output.method} method.`);
       if (output.fallbackCount > 0) {
         console.log(`Fallback summaries: ${output.fallbackCount}; API errors: ${output.errorCount}.`);
@@ -516,5 +548,7 @@ module.exports = {
   summarizeLatestData,
   summarizeLatestDataWithLlm,
   buildDailySummaryOutput,
-  generateAiSummary
+  generateAiSummary,
+  generateArticleSummaries,
+  generateDailyBrief
 };

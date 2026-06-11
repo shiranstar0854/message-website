@@ -19,13 +19,15 @@
     "translate:items": "node scripts/translate-items.js",
     "generate:events": "node scripts/generate-events.js",
     "summarize:daily": "node scripts/generate-ai-summary.js",
+    "summarize:items": "node scripts/generate-ai-summary.js --items-only",
+    "summarize:brief": "node scripts/generate-ai-summary.js --daily-brief-only",
     "review:weekly": "node scripts/generate-weekly-review.js",
     "generate:static": "node scripts/generate-static-index.js",
     "build:data": "node scripts/normalize-items.js && node scripts/filter-items.js && node scripts/dedupe-items.js && node scripts/score-items.js && node scripts/enrich-articles.js && node scripts/generate-latest-data.js && node scripts/translate-items.js && node scripts/generate-events.js && node scripts/generate-static-index.js",
     "audit:sources": "node scripts/source-audit.js",
     "archive:daily": "node scripts/archive-daily-data.js",
-    "update:daily": "npm run fetch:rss && npm run fetch:web && npm run build:data && npm run audit:sources && npm run archive:daily",
-    "update:summary": "npm run summarize:daily && npm run archive:daily && npm run generate:static"
+    "update:daily": "npm run fetch:rss && npm run fetch:web && npm run build:data && npm run audit:sources && npm run summarize:items && npm run archive:daily && npm run generate:static",
+    "update:summary": "npm run summarize:brief && npm run archive:daily && npm run generate:static"
   },
   "engines": {
     "node": ">=18"
