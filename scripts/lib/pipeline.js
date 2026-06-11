@@ -1,4 +1,5 @@
 const crypto = require("node:crypto");
+const { calculateImportanceScore } = require("./ai-summarizer");
 
 const DEFAULT_FETCHED_AT = () => new Date().toISOString();
 const PUBLISHED_SUMMARY_LIMIT = 500;
@@ -527,10 +528,12 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
     const rawScore = baseScore + credibilityScore + freshnessScore + keywords + categoryBoost + sourceBoost
       + authorityBoost + timelinessBoost + officialFreshnessBoost - duplicatePenaltyScore;
     const score = Math.max(0, Math.min(100, Math.round(rawScore)));
+    const importanceScore = calculateImportanceScore({ ...item, score });
 
     return {
       ...item,
       score,
+      importance_score: item.importance_score ?? importanceScore,
       keywordHits: keywordMatches.map((entry) => ({ term: entry.term, score: Number(entry.score || 0) })),
       scoreBreakdown: {
         base: baseScore,
@@ -589,6 +592,7 @@ function buildPublishedItem(item) {
     ...(titleZh ? { title_zh: truncateText(titleZh, 120), titleZh: truncateText(titleZh, 120) } : {}),
     ...(item.translatedTitle ? { translatedTitle: truncateText(item.translatedTitle, 120) } : {}),
     url: item.url,
+    original_url: item.original_url || item.url,
     source: item.source,
     sourceType: item.sourceType,
     category: item.category,
@@ -603,6 +607,17 @@ function buildPublishedItem(item) {
     ...(summaryZh ? { summary_zh: truncateText(summaryZh, PUBLISHED_SUMMARY_LIMIT), summaryZh: truncateText(summaryZh, PUBLISHED_SUMMARY_LIMIT) } : {}),
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(item.aiSummary ? { aiSummary: truncateText(item.aiSummary, PUBLISHED_SUMMARY_LIMIT) } : {}),
+    ...(item.summary_short ? { summary_short: truncateText(item.summary_short, 140) } : {}),
+    ...(Array.isArray(item.summary_points) && item.summary_points.length ? { summary_points: item.summary_points.slice(0, 5).map((point) => truncateText(point, 180)) } : {}),
+    ...(Array.isArray(item.key_data) && item.key_data.length ? { key_data: item.key_data.slice(0, 8).map((point) => truncateText(point, 80)) } : {}),
+    ...(item.why_it_matters ? { why_it_matters: truncateText(item.why_it_matters, 240) } : {}),
+    ...(item.impact ? { impact: truncateText(item.impact, 240) } : {}),
+    ...(item.risks ? { risks: truncateText(item.risks, 240) } : {}),
+    ...(item.neutrality_check ? { neutrality_check: truncateText(item.neutrality_check, 180) } : {}),
+    ...(item.confidence ? { confidence: item.confidence } : {}),
+    ...(item.timeline_event_id ? { timeline_event_id: item.timeline_event_id } : {}),
+    ...(item.ai_model ? { ai_model: item.ai_model } : {}),
+    ...(item.ai_generated_at ? { ai_generated_at: item.ai_generated_at } : {}),
     ...(item.summaryReason ? { summaryReason: truncateText(item.summaryReason, 180) } : {}),
     ...(item.importance ? { importance: truncateText(item.importance, 180) } : {}),
     ...(impactAreas.length ? { impactAreas } : {}),
@@ -615,6 +630,7 @@ function buildPublishedItem(item) {
     ...(articleKeywords.length ? { article_keywords: articleKeywords } : {}),
     ...(keywords.length ? { keywords } : {}),
     score: item.score,
+    importance_score: Number(item.importance_score ?? calculateImportanceScore(item)),
     duplicateCount: Number(item.duplicateCount || 0)
   };
 }

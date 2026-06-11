@@ -8,14 +8,14 @@ const {
   selectTopHotspots
 } = require("../scripts/generate-static-index");
 
-test("static homepage selects Top 5 by score then publish time", () => {
+test("static homepage selects Top 5 by importance_score then publish time", () => {
   const items = [
-    { id: "low", title: "Low", score: 80, publishedAt: "2026-06-01T00:00:00.000Z" },
-    { id: "older", title: "Older", score: 100, publishedAt: "2026-06-01T00:00:00.000Z" },
-    { id: "newer", title: "Newer", score: 100, publishedAt: "2026-06-02T00:00:00.000Z" },
-    { id: "mid-1", title: "Mid 1", score: 95, publishedAt: "2026-06-01T00:00:00.000Z" },
-    { id: "mid-2", title: "Mid 2", score: 94, publishedAt: "2026-06-01T00:00:00.000Z" },
-    { id: "mid-3", title: "Mid 3", score: 93, publishedAt: "2026-06-01T00:00:00.000Z" }
+    { id: "low", title: "Low", score: 100, importance_score: 80, publishedAt: "2026-06-01T00:00:00.000Z" },
+    { id: "older", title: "Older", score: 80, importance_score: 100, publishedAt: "2026-06-01T00:00:00.000Z" },
+    { id: "newer", title: "Newer", score: 80, importance_score: 100, publishedAt: "2026-06-02T00:00:00.000Z" },
+    { id: "mid-1", title: "Mid 1", score: 80, importance_score: 95, publishedAt: "2026-06-01T00:00:00.000Z" },
+    { id: "mid-2", title: "Mid 2", score: 80, importance_score: 94, publishedAt: "2026-06-01T00:00:00.000Z" },
+    { id: "mid-3", title: "Mid 3", score: 80, importance_score: 93, publishedAt: "2026-06-01T00:00:00.000Z" }
   ];
 
   const selected = selectTopHotspots(items);
@@ -62,7 +62,7 @@ test("static homepage renders Top 5 block with Chinese summary fallback", () => 
   assert.match(html, /中文摘要优先展示/);
   assert.match(html, /影响 AI 政策讨论/);
   assert.match(html, /来源：OpenAI News/);
-  assert.match(html, /热度：高/);
+  assert.match(html, /重要度：高/);
   assert.match(html, /top-hotspot-link/);
   assert.match(html, /top-hotspot-card top-hotspot-row is-primary/);
 });

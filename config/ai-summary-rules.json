@@ -8,11 +8,12 @@
     "endpoint": "https://api.deepseek.com/chat/completions",
     "model": "deepseek-v4-flash",
     "requiredSecret": "DEEPSEEK_API_KEY",
+    "itemRequiredSecret": "DEEPSEEK_API_KEY1",
     "timeoutMs": 15000,
     "maxRetries": 0,
     "maxOutputTokens": 1200,
     "fallbackMethod": "extractive",
-    "note": "Keep disabled until the GitHub Actions secret DEEPSEEK_API_KEY is configured. When enabled, selected daily and weekly outputs use DeepSeek chat completions JSON output and fall back to extractive summaries on failure."
+    "note": "Keep disabled until the GitHub Actions secrets are configured. DEEPSEEK_API_KEY is used for daily summaries and weekly reviews; DEEPSEEK_API_KEY1 is used for article-level AI summaries."
   },
   "daily": {
     "maxItemsPerChannel": 20,

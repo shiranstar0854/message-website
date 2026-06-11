@@ -51,7 +51,30 @@
   }
 
   function displaySummary(item) {
-    return item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "";
+    return item.summary_short || item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "";
+  }
+
+  function renderList(title, values) {
+    const list = Array.isArray(values) ? values.filter(Boolean) : [];
+    if (!list.length) return "";
+    return `
+      <div class="article-summary-block">
+        <strong>${escapeHtml(title)}</strong>
+        <ul class="article-point-list">
+          ${list.map((value) => `<li>${escapeHtml(value)}</li>`).join("")}
+        </ul>
+      </div>
+    `;
+  }
+
+  function renderTextBlock(title, value, className = "") {
+    if (!value) return "";
+    return `
+      <div class="article-summary-block ${className}">
+        <strong>${escapeHtml(title)}</strong>
+        <p>${escapeHtml(value)}</p>
+      </div>
+    `;
   }
 
   function findItem(items, query) {
@@ -91,12 +114,12 @@
   }
 
   function renderArticle(container, item) {
-    const originalUrl = safeExternalUrl(item.url);
+    const originalUrl = safeExternalUrl(item.original_url || item.url);
     const title = displayTitle(item);
     const originalTitle = displayOriginalTitle(item);
     const summary = displaySummary(item);
     const keywords = (item.article_keywords || item.keywords || item.tags || []).slice(0, 8);
-    const why = item.importance || item.summaryReason || "";
+    const why = item.why_it_matters || item.importance || item.summaryReason || "";
     const sourceLanguage = item.source_language || item.sourceLanguage || "zh";
     const translationStatus = item.translation_status || "";
 
@@ -105,20 +128,20 @@
       <div class="article-paper-kicker">
         <span>${escapeHtml(item.source || "公开来源")}</span>
         <span>${escapeHtml(formatDate(item.publishedAt))}</span>
-        <span>评分 ${Number(item.score || 0)}</span>
+        <span>重要度 ${Number(item.importance_score || item.score || 0)}</span>
+        ${item.confidence ? `<span>置信度 ${escapeHtml(item.confidence)}</span>` : ""}
       </div>
       <h1>${escapeHtml(title)}</h1>
       ${title !== originalTitle ? `<p class="article-original-title">${escapeHtml(originalTitle)}</p>` : ""}
       <div class="article-summary-block">
-        <strong>AI 摘要</strong>
+        <strong>核心结论</strong>
         <p>${escapeHtml(summary || "暂无摘要，建议打开原文查看。")}</p>
       </div>
-      ${why ? `
-        <div class="article-summary-block article-why-block">
-          <strong>为什么值得看</strong>
-          <p>${escapeHtml(why)}</p>
-        </div>
-      ` : ""}
+      ${renderList("关键事实", item.summary_points)}
+      ${renderList("关键数据", item.key_data)}
+      ${renderTextBlock("为什么重要", why, "article-why-block")}
+      ${renderTextBlock("影响", item.impact)}
+      ${renderTextBlock("风险与不确定性", item.risks)}
       ${keywords.length ? `
         <div class="article-keywords" aria-label="关键词">
           ${keywords.map((keyword) => `<span>${escapeHtml(keyword)}</span>`).join("")}
@@ -129,6 +152,9 @@
         <div><dt>发布时间</dt><dd>${escapeHtml(formatDate(item.publishedAt))}</dd></div>
         <div><dt>采集时间</dt><dd>${escapeHtml(formatDate(item.fetchedAt))}</dd></div>
         <div><dt>语言</dt><dd>${escapeHtml(sourceLanguage)}</dd></div>
+        ${item.timeline_event_id ? `<div><dt>事件追踪ID</dt><dd>${escapeHtml(item.timeline_event_id)}</dd></div>` : ""}
+        ${item.ai_model ? `<div><dt>摘要模型</dt><dd>${escapeHtml(item.ai_model)}</dd></div>` : ""}
+        ${item.ai_generated_at ? `<div><dt>生成时间</dt><dd>${escapeHtml(formatDate(item.ai_generated_at))}</dd></div>` : ""}
         ${translationStatus ? `<div><dt>翻译状态</dt><dd>${escapeHtml(translationStatus)}</dd></div>` : ""}
       </dl>
       <div class="article-actions">

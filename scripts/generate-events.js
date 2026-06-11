@@ -370,6 +370,45 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
   };
 }
 
+function eventItemKeys(item) {
+  return [item.id, item.url].map(normalizeText).filter(Boolean);
+}
+
+function buildTimelineEventMap(events) {
+  const map = new Map();
+  (events || []).forEach((event) => {
+    [
+      event.latestUpdate,
+      ...(event.keyDevelopments || []),
+      ...(event.timeline || []),
+      ...(event.evidenceItems || []),
+      ...(event.items || [])
+    ].filter(Boolean).forEach((item) => {
+      eventItemKeys(item).forEach((key) => {
+        if (!map.has(key)) map.set(key, event.id);
+      });
+    });
+  });
+  return map;
+}
+
+function applyTimelineEventIds(latest, events) {
+  const eventMap = buildTimelineEventMap(events);
+  const items = (latest.items || []).map((item) => {
+    const eventId = eventItemKeys(item).map((key) => eventMap.get(key)).find(Boolean);
+    return eventId ? { ...item, timeline_event_id: eventId } : item;
+  });
+  const byId = new Map(items.map((item) => [item.id, item]));
+  const channels = Object.fromEntries(Object.entries(latest.channels || {}).map(([id, channel]) => [
+    id,
+    {
+      ...channel,
+      items: (channel.items || []).map((item) => byId.get(item.id) || item)
+    }
+  ]));
+  return { ...latest, items, channels };
+}
+
 function generateEvents(options = {}) {
   const latest = readJson(LATEST_PATH, { items: [], generatedAt: "" });
   const generatedAt = latest.generatedAt || new Date().toISOString();
@@ -377,6 +416,7 @@ function generateEvents(options = {}) {
   const data = buildEvents([...(archiveItems || []), ...(latest.items || [])], generatedAt, options);
   fs.mkdirSync(path.dirname(EVENTS_PATH), { recursive: true });
   fs.writeFileSync(EVENTS_PATH, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+  fs.writeFileSync(LATEST_PATH, `${JSON.stringify(applyTimelineEventIds(latest, data.events), null, 2)}\n`, "utf8");
   return data;
 }
 
@@ -388,6 +428,8 @@ if (require.main === module) {
 module.exports = {
   buildEvents,
   buildTimeline,
+  applyTimelineEventIds,
+  buildTimelineEventMap,
   generateEvents,
   readArchiveItems
 };

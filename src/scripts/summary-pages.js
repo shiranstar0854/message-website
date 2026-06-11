@@ -33,18 +33,44 @@
   function renderHighlight(item) {
     const detailUrl = window.MessageChooseRender.itemDetailUrl(item);
     const title = `<a href="${escapeHtml(detailUrl)}">${escapeHtml(item.title)}</a>`;
+    const summary = item.summary_short || item.aiSummary || item.summary || "";
+    const originalUrl = window.MessageChooseRender.safeExternalUrl(item.original_url || item.url);
     return `
       <article class="feed-card summary-card">
         <div>
           <h3>${title}</h3>
-          ${window.MessageChooseRender.renderSummary(item.summary)}
+          ${window.MessageChooseRender.renderSummary(summary)}
           <div class="item-meta">
             <span>${escapeHtml(item.source)}</span>
-            <span>${Number(item.score || 0)}</span>
+            <span>重要度 ${Number(item.importance_score || item.score || 0)}</span>
+          </div>
+          ${Array.isArray(item.summary_points) && item.summary_points.length ? `
+            <ul class="daily-keypoints">
+              ${item.summary_points.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
+            </ul>
+          ` : ""}
+          <div class="feed-card-actions">
+            <a class="summary-entry-link" href="${escapeHtml(detailUrl)}">详情摘要</a>
+            ${originalUrl ? `<a class="original-entry" href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">查看原文</a>` : ""}
           </div>
         </div>
       </article>
     `;
+  }
+
+  function groupSummaryItems(items) {
+    const grouped = new Map();
+    (items || []).forEach((item) => {
+      if (!item.summary_short && !item.aiSummary && !item.summary) return;
+      const key = item.category || "news";
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(item);
+    });
+    return [...grouped.entries()].map(([id, values]) => ({
+      id,
+      label: values[0]?.categoryLabel || id,
+      items: values.sort((left, right) => Number(right.importance_score || right.score || 0) - Number(left.importance_score || left.score || 0))
+    }));
   }
 
   function renderDailySummary() {
@@ -52,16 +78,17 @@
     const container = document.getElementById("daily-summary-list");
     loadJson("src/data/daily-summary.json", { channelSummaries: [] }).then((data) => {
       const channelSummaries = data.channelSummaries || [];
-      meta.textContent = `摘要更新时间：${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务`;
-      if (!channelSummaries.length) {
+      const summaryItems = data.items || [];
+      meta.textContent = `摘要更新时间：${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务 · ${Number(summaryItems.length)} 条结构化摘要`;
+      if (!channelSummaries.length && !summaryItems.length) {
         window.MessageChooseRender.renderEmptyState(container, {
           title: "暂无每日摘要",
-          detail: "每日更新完成后会显示科技、金融、新闻三类重点事务。"
+          detail: "每日更新完成后会显示频道重点事务和文章结构化摘要。"
         });
         return;
       }
 
-      container.innerHTML = channelSummaries.map((channel) => `
+      const channelHtml = channelSummaries.map((channel) => `
         <article class="daily-brief-card">
           <div class="daily-brief-head">
             <h2>${escapeHtml(channel.label || channel.id)}</h2>
@@ -89,6 +116,25 @@
           ` : ""}
         </article>
       `).join("");
+
+      const itemGroups = groupSummaryItems(summaryItems);
+      const itemHtml = itemGroups.length ? `
+        <section class="summary-group">
+          <h2>文章结构化摘要</h2>
+          ${itemGroups.map((group) => `
+            <article class="daily-brief-card">
+              <div class="daily-brief-head">
+                <h2>${escapeHtml(group.label || group.id)}</h2>
+              </div>
+              <div class="feed-list">
+                ${group.items.map(renderHighlight).join("")}
+              </div>
+            </article>
+          `).join("")}
+        </section>
+      ` : "";
+
+      container.innerHTML = `${channelHtml}${itemHtml}`;
     });
   }
 
@@ -98,7 +144,7 @@
     const container = document.getElementById("weekly-review");
     loadJson("src/data/weekly-review.json", { channels: [], totals: {} }).then((review) => {
       meta.textContent = `${review.weekId || "本周"} · 覆盖 ${Number(review.totals?.archiveCount || 0)} 天归档`;
-      summary.textContent = review.executiveSummary || "";
+      summary.textContent = review.modelSummary || review.executiveSummary || "";
       window.MessageChooseRender.renderWeeklyReview(container, null, review);
     });
   }

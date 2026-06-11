@@ -35,7 +35,7 @@ function selectTopHotspots(items, limit = 5) {
   const seenKeys = new Set();
   return [...(items || [])]
     .sort((left, right) => hotspotRankScore(right) - hotspotRankScore(left)
-      || Number(right.score || 0) - Number(left.score || 0)
+      || Number(right.importance_score || right.score || 0) - Number(left.importance_score || left.score || 0)
       || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
     .filter((item) => {
       const key = hotspotEventKey(item);
@@ -67,12 +67,12 @@ function displayTitle(item) {
 }
 
 function shortExplanation(item) {
-  const text = item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "暂无摘要。";
+  const text = item.summary_short || item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "暂无摘要。";
   return text.length > 86 ? `${text.slice(0, 83).trimEnd()}...` : text;
 }
 
 function importanceText(item) {
-  return item.importance || item.summaryReason || `评分 ${Number(item.score || 0)}，来自${item.source || "公开来源"}。`;
+  return item.why_it_matters || item.importance || item.summaryReason || `重要度 ${Number(item.importance_score || item.score || 0)}，来自${item.source || "公开来源"}。`;
 }
 
 function impactAreas(item, channels = {}) {
@@ -94,9 +94,9 @@ function hotspotEventKey(item) {
 function hotspotRankScore(item) {
   const publishedTime = new Date(item.publishedAt || 0).getTime();
   const freshness = Number.isNaN(publishedTime) ? 0 : Math.max(0, 12 - (Date.now() - publishedTime) / (6 * 60 * 60 * 1000));
-  const readableBonus = (item.aiSummary || item.summaryZh || item.contentExcerpt ? 8 : 0) + (item.importance || item.summaryReason ? 5 : 0);
+  const readableBonus = (item.summary_short || item.aiSummary || item.summaryZh || item.contentExcerpt ? 8 : 0) + (item.why_it_matters || item.importance || item.summaryReason ? 5 : 0);
   const sourceBonus = ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority) ? 4 : 0;
-  return Number(item.score || 0) + freshness + readableBonus + sourceBonus;
+  return Number(item.importance_score || item.score || 0) + freshness + readableBonus + sourceBonus;
 }
 
 function eventRankScore(event) {
@@ -175,7 +175,7 @@ function renderTopHotspots(items, channels = {}) {
   }
 
   const renderHotspotCard = (item, index) => {
-    const heat = Number(item.score || 0) >= 90 ? "高" : Number(item.score || 0) >= 75 ? "中" : "低";
+    const heat = Number(item.importance_score || item.score || 0) >= 90 ? "高" : Number(item.importance_score || item.score || 0) >= 75 ? "中" : "低";
     const detailUrl = itemDetailUrl(item);
     return `
               <article class="top-hotspot-card top-hotspot-row${index === 0 ? " is-primary" : ""}${index >= 5 ? " is-compact" : ""}">
@@ -187,7 +187,7 @@ function renderTopHotspots(items, channels = {}) {
                     <p class="top-hotspot-why">${escapeHtml(importanceText(item))}</p>
                     <div class="top-hotspot-meta">
                       <span>来源：${escapeHtml(item.source || "公开来源")}</span>
-                      <span>热度：${heat}</span>
+                      <span>重要度：${heat}</span>
                       <span>更新时间：${escapeHtml(formatDate(item.publishedAt))}</span>
                     </div>
                   </div>

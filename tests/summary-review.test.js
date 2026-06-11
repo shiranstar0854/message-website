@@ -5,6 +5,7 @@ const {
   buildDeepSeekRequestBody,
   buildDailyChannelSummaries,
   buildDailySummaryOutput,
+  buildItemSummaryRules,
   detectItemLanguage,
   isLlmConfigured,
   selectSummaryIds,
@@ -45,7 +46,7 @@ test("daily summary generation adds compact summary fields to top channel items"
   assert.equal(summarized.channels.tech.items[0].aiSummary, summarized.items[0].aiSummary);
 });
 
-test("daily summary LLM path falls back when the required secret is missing", async () => {
+test("daily summary LLM path keeps existing data when the required secret is missing", async () => {
   const latest = {
     generatedAt: "2026-05-28T00:00:00.000Z",
     channels: {
@@ -77,9 +78,24 @@ test("daily summary LLM path falls back when the required secret is missing", as
   });
 
   assert.equal(isLlmConfigured(rules, {}), false);
-  assert.equal(summarized.items[0].summaryMethod, "extractive");
+  assert.equal(summarized.items[0].summaryMethod, undefined);
+  assert.equal(summarized.items[0].aiSummary, undefined);
   assert.equal(summarized.summaryStats.llmConfigured, false);
+  assert.equal(summarized.summaryStats.llmAttempted, 0);
   assert.equal(summarized.summaryStats.fallbackCount, 0);
+});
+
+test("article AI summaries use DEEPSEEK_API_KEY1 while daily briefs keep DEEPSEEK_API_KEY", () => {
+  const rules = {
+    llmProduction: {
+      enabled: true,
+      requiredSecret: "DEEPSEEK_API_KEY",
+      itemRequiredSecret: "DEEPSEEK_API_KEY1"
+    }
+  };
+
+  assert.equal(rules.llmProduction.requiredSecret, "DEEPSEEK_API_KEY");
+  assert.equal(buildItemSummaryRules(rules).llmProduction.requiredSecret, "DEEPSEEK_API_KEY1");
 });
 
 test("daily summary LLM path translates selected item summaries to Chinese", async () => {
@@ -134,11 +150,12 @@ test("daily summary LLM path translates selected item summaries to Chinese", asy
   };
 
   const summarized = await summarizeLatestDataWithLlm(latest, rules, "2026-05-28T01:00:00.000Z", {
-    env: { DEEPSEEK_API_KEY: "test-key" },
+    env: { DEEPSEEK_API_KEY1: "test-key" },
     fetchImpl
   });
 
   assert.equal(calls.length, 1);
+  assert.equal(calls[0].init.headers.Authorization, "Bearer test-key");
   assert.equal(summarized.summaryStats.llmAttempted, 1);
   assert.equal(summarized.summaryStats.llmSucceeded, 1);
   assert.equal(summarized.items[0].summaryMethod, "deepseek-chat-completions");
@@ -181,6 +198,110 @@ test("English source items are selected for AI Chinese translation even below no
   assert.equal(detectItemLanguage(latest.items[0]), "en");
   assert.equal(selected.has("english-low-score"), true);
   assert.equal(selected.has("chinese-low-score"), false);
+});
+
+test("daily summary LLM path covers non-default categories and overwrites old summaries", async () => {
+  const latest = {
+    generatedAt: "2026-05-28T00:00:00.000Z",
+    channels: {
+      macro: { id: "macro", items: [{ id: "macro-1" }] }
+    },
+    items: [{
+      id: "macro-1",
+      title: "Central bank policy update",
+      url: "https://example.test/macro",
+      source: "Official Source",
+      category: "macro",
+      score: 91,
+      summary_short: "Old extractive summary",
+      ai_model: "extractive",
+      contentExcerpt: "The central bank published a policy update with rate guidance and market liquidity notes."
+    }]
+  };
+  const calls = [];
+  const summarized = await summarizeLatestDataWithLlm(latest, {
+    llmProduction: {
+      enabled: true,
+      provider: "deepseek-chat-completions",
+      endpoint: "https://api.deepseek.com/chat/completions",
+      model: "deepseek-v4-flash",
+      requiredSecret: "DEEPSEEK_API_KEY"
+    },
+    daily: { minimumScore: 60 }
+  }, "2026-05-28T01:00:00.000Z", {
+    env: { DEEPSEEK_API_KEY1: "test-key" },
+    fetchImpl: async (url, init) => {
+      calls.push({ url, init });
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({
+          choices: [{
+            message: {
+              content: JSON.stringify({
+                summary_short: "Policy guidance changed market liquidity expectations.",
+                summary_points: ["The central bank published policy guidance.", "The update mentioned market liquidity."],
+                key_data: [],
+                why_it_matters: "It affects how investors read policy and liquidity signals.",
+                impact: "Market participants may adjust rate and liquidity expectations.",
+                risks: "The source does not provide enough detail to judge follow-up actions.",
+                neutrality_check: "Only source-provided facts are used.",
+                confidence: "medium"
+              })
+            }
+          }]
+        })
+      };
+    }
+  });
+
+  assert.equal(calls.length, 1);
+  assert.equal(summarized.items[0].category, "macro");
+  assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
+  assert.equal(summarized.items[0].summary_short, "Policy guidance changed market liquidity expectations.");
+  assert.equal(summarized.channels.macro.items[0].summary_short, summarized.items[0].summary_short);
+});
+
+test("daily summary LLM path preserves old summary when a model call fails", async () => {
+  const latest = {
+    generatedAt: "2026-05-28T00:00:00.000Z",
+    channels: {
+      macro: { id: "macro", items: [{ id: "macro-1" }] }
+    },
+    items: [{
+      id: "macro-1",
+      title: "Central bank policy update",
+      url: "https://example.test/macro",
+      source: "Official Source",
+      category: "macro",
+      score: 91,
+      summary_short: "Existing LLM summary",
+      ai_model: "deepseek-v4-flash"
+    }]
+  };
+  const summarized = await summarizeLatestDataWithLlm(latest, {
+    llmProduction: {
+      enabled: true,
+      provider: "deepseek-chat-completions",
+      endpoint: "https://api.deepseek.com/chat/completions",
+      model: "deepseek-v4-flash",
+      requiredSecret: "DEEPSEEK_API_KEY"
+    },
+    daily: { minimumScore: 60 }
+  }, "2026-05-28T01:00:00.000Z", {
+    env: { DEEPSEEK_API_KEY1: "test-key" },
+    fetchImpl: async () => ({
+      ok: false,
+      status: 500,
+      text: async () => "model unavailable"
+    })
+  });
+
+  assert.equal(summarized.summaryStats.llmAttempted, 1);
+  assert.equal(summarized.summaryStats.llmSucceeded, 0);
+  assert.equal(summarized.summaryStats.errorCount, 1);
+  assert.equal(summarized.items[0].summary_short, "Existing LLM summary");
+  assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
 });
 
 test("daily summary output builds channel-level important-affairs summaries", async () => {

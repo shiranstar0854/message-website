@@ -8,6 +8,11 @@ const {
   extractChatCompletionText,
   requestDeepSeekJson
 } = require("./lib/deepseek-summary-client");
+const {
+  buildStructuredSummaryPrompt,
+  buildExtractiveStructuredSummary,
+  buildStructuredFieldsFromResponse
+} = require("./lib/ai-summarizer");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const DEFAULT_CHANNELS = ["tech", "finance", "news"];
@@ -63,23 +68,41 @@ function buildImportance(item, maxLength = 140) {
   return truncateText(parts.join("；"), maxLength);
 }
 
+function buildItemSummaryRules(rules = {}) {
+  const llm = rules.llmProduction || {};
+  return {
+    ...rules,
+    llmProduction: {
+      ...llm,
+      requiredSecret: llm.itemRequiredSecret || llm.aiSummaryRequiredSecret || "DEEPSEEK_API_KEY1"
+    }
+  };
+}
+
 function shouldSummarize(item, rules) {
   return Number(item.score || 0) >= Number(rules.minimumScore || 0)
     && Boolean(item.title)
-    && Boolean(item.url)
-    && Boolean(item.contentExcerpt || item.summary);
+    && Boolean(item.url);
 }
 
 function selectSummaryIds(latestData, dailyRules = {}) {
   const maxItemsPerChannel = Number(dailyRules.maxItemsPerChannel || 20);
+  const maxItemsTotal = Number(dailyRules.maxItemsTotal || 0);
   const maxEnglishTranslationItems = Number(dailyRules.maxEnglishTranslationItems || 30);
+  const coverage = dailyRules.summaryCoverage || dailyRules.llmCoverage || "all";
   const selectedIds = new Set();
+  const allCandidates = sortItems((latestData.items || []).filter((item) => shouldSummarize(item, dailyRules)));
 
-  DEFAULT_CHANNELS.forEach((channel) => {
-    sortItems((latestData.items || []).filter((item) => item.category === channel && shouldSummarize(item, dailyRules)))
-      .slice(0, maxItemsPerChannel)
+  if (coverage === "all") {
+    (maxItemsTotal > 0 ? allCandidates.slice(0, maxItemsTotal) : allCandidates)
       .forEach((item) => selectedIds.add(item.id));
-  });
+  } else {
+    DEFAULT_CHANNELS.forEach((channel) => {
+      sortItems((latestData.items || []).filter((item) => item.category === channel && shouldSummarize(item, dailyRules)))
+        .slice(0, maxItemsPerChannel)
+        .forEach((item) => selectedIds.add(item.id));
+    });
+  }
 
   sortItems((latestData.items || []).filter((item) => (
     isLikelyEnglishItem(item)
@@ -103,13 +126,15 @@ function mergeItemsIntoChannels(latestData, items) {
 
 function applyExtractiveSummary(item, rules, generatedAt) {
   const sourceLanguage = detectItemLanguage(item);
+  const structured = buildExtractiveStructuredSummary(item, generatedAt, "extractive");
   const summarized = {
     ...item,
+    ...structured,
     title_original: item.title_original || item.title,
     summary_original: item.summary_original || item.summary || item.contentExcerpt || "",
-    aiSummary: summarizeText(item, rules.summaryMaxLength),
+    aiSummary: structured.summary_short || summarizeText(item, rules.summaryMaxLength),
     summaryReason: buildReason(item, rules.reasonMaxLength),
-    importance: buildImportance(item, rules.importanceMaxLength),
+    importance: structured.why_it_matters || buildImportance(item, rules.importanceMaxLength),
     source_language: item.source_language || sourceLanguage,
     sourceLanguage,
     translation_status: item.translation_status || (sourceLanguage === "en" ? "failed" : "not_required"),
@@ -124,7 +149,7 @@ function applyExtractiveSummary(item, rules, generatedAt) {
 }
 
 async function applyLlmSummary(item, rules, generatedAt, options = {}) {
-  const summary = await requestDeepSeekSummary(item, rules, options);
+  const summary = await requestDeepSeekSummary(item, rules, { ...options, generatedAt });
   const sourceLanguage = detectItemLanguage(item);
   const summarized = {
     ...item,
@@ -132,7 +157,7 @@ async function applyLlmSummary(item, rules, generatedAt, options = {}) {
     title_original: item.title_original || item.title,
     title_zh: summary.translatedTitle || item.title_zh || item.titleZh || item.translatedTitle,
     summary_original: item.summary_original || item.summary || item.contentExcerpt || "",
-    summary_zh: summary.aiSummary || item.summary_zh || item.summaryZh,
+    summary_zh: summary.summary_short || summary.aiSummary || item.summary_zh || item.summaryZh,
     source_language: item.source_language || sourceLanguage,
     sourceLanguage,
     summaryLanguage: "zh",
@@ -167,53 +192,61 @@ function summarizeLatestData(latestData, rules = {}, generatedAt = new Date().to
 }
 
 function buildSummaryPrompt(item, dailyRules = {}) {
-  const summaryMaxLength = Number(dailyRules.summaryMaxLength || 180);
-  const reasonMaxLength = Number(dailyRules.reasonMaxLength || 120);
-  return [
-    "Summarize this item for a daily tech/finance/news dashboard.",
-    "Write aiSummary and summaryReason in concise Chinese.",
-    "If the source material is primarily English, translate and summarize it into natural Chinese. Do not copy English sentences into aiSummary.",
-    `Output limits: translatedTitle <= 50 Chinese characters; aiSummary <= ${summaryMaxLength} Chinese characters; summaryReason <= ${reasonMaxLength} Chinese characters; importance <= 80 Chinese characters.`,
-    "Return JSON only with keys: translatedTitle, aiSummary, summaryReason, importance, impactAreas.",
-    "impactAreas must be an array of 2 to 4 concise Chinese tags, for example: AI芯片, 美联储, 财报, 地缘政治, 消费电子.",
-    "",
-    JSON.stringify({
-      title: item.title,
-      source: item.source,
-      category: item.category,
-      score: item.score,
-      tags: item.tags || [],
-      url: item.url,
-      publishedAt: item.publishedAt,
-      excerpt: item.contentExcerpt || item.summary || ""
-    }, null, 2)
-  ].join("\n");
+  return buildStructuredSummaryPrompt(item, dailyRules);
 }
 
 function parseSummaryResponse(responseJson, item, dailyRules = {}) {
+  const generatedAt = dailyRules.generatedAt || new Date().toISOString();
+  const compatibleResponse = responseJson.summary_short || responseJson.summary_points
+    ? responseJson
+    : {
+      summary_short: responseJson.aiSummary || responseJson.summary || "",
+      summary_points: responseJson.summaryPoints || [responseJson.aiSummary || responseJson.summary || ""].filter(Boolean),
+      key_data: responseJson.keyData || [],
+      why_it_matters: responseJson.importance || responseJson.summaryReason || "",
+      impact: Array.isArray(responseJson.impactAreas) ? responseJson.impactAreas.join("、") : "",
+      risks: responseJson.risks || "不足以判断",
+      neutrality_check: responseJson.neutrality_check || responseJson.summaryReason || "仅基于原文信息生成。",
+      confidence: responseJson.confidence || "medium"
+    };
+  const structured = buildStructuredFieldsFromResponse(
+    item,
+    compatibleResponse,
+    generatedAt,
+    dailyRules.aiModel || "deepseek"
+  );
+  const summaryShort = structured.summary_short || summarizeText(item, dailyRules.summaryMaxLength);
   return {
     translatedTitle: truncateText(responseJson.translatedTitle || "", 120),
-    aiSummary: truncateText(responseJson.aiSummary || summarizeText(item, dailyRules.summaryMaxLength), dailyRules.summaryMaxLength || 180),
-    summaryReason: truncateText(responseJson.summaryReason || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
-    importance: truncateText(responseJson.importance || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
+    aiSummary: truncateText(responseJson.aiSummary || summaryShort, dailyRules.summaryMaxLength || 180),
+    summaryReason: truncateText(responseJson.summaryReason || structured.neutrality_check || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
+    importance: truncateText(responseJson.importance || structured.why_it_matters || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
     impactAreas: Array.isArray(responseJson.impactAreas)
       ? responseJson.impactAreas.slice(0, 4).map((value) => truncateText(value, 20)).filter(Boolean)
-      : []
+      : [],
+    ...structured
   };
 }
 
 async function requestDeepSeekSummary(item, rules = {}, options = {}) {
-  const responseJson = await requestDeepSeekJson(buildSummaryPrompt(item, rules.daily || {}), rules, options);
-  return parseSummaryResponse(responseJson, item, rules.daily || {});
+  const llm = getLlmConfig(rules);
+  const dailyRules = {
+    ...(rules.daily || {}),
+    generatedAt: options.generatedAt || new Date().toISOString(),
+    aiModel: llm.model || llm.provider
+  };
+  const responseJson = await requestDeepSeekJson(buildSummaryPrompt(item, dailyRules), rules, options);
+  return parseSummaryResponse(responseJson, item, dailyRules);
 }
 
 async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = new Date().toISOString(), options = {}) {
   const dailyRules = rules.daily || {};
   const selectedIds = selectSummaryIds(latestData, dailyRules);
   const env = options.env || process.env;
-  const llmConfigured = isLlmConfigured(rules, env);
+  const itemSummaryRules = buildItemSummaryRules(rules);
+  const llmConfigured = isLlmConfigured(itemSummaryRules, env);
   const stats = {
-    llmEnabled: Boolean(rules.llmProduction?.enabled),
+    llmEnabled: Boolean(itemSummaryRules.llmProduction?.enabled),
     llmConfigured,
     llmAttempted: 0,
     llmSucceeded: 0,
@@ -229,22 +262,21 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
       continue;
     }
 
-    const fallbackItem = applyExtractiveSummary(item, dailyRules, generatedAt);
-    if (!llmConfigured || !rules.llmProduction?.enabled) {
-      items.push(fallbackItem);
+    if (!llmConfigured || !itemSummaryRules.llmProduction?.enabled) {
+      items.push(item);
       continue;
     }
 
     stats.llmAttempted += 1;
     try {
-      const llmItem = await applyLlmSummary(item, rules, generatedAt, options);
+      const llmItem = await applyLlmSummary(item, itemSummaryRules, generatedAt, options);
       stats.llmSucceeded += 1;
       items.push(llmItem);
     } catch (error) {
       stats.fallbackCount += 1;
       stats.errorCount += 1;
       errors.push({ id: item.id, message: truncateText(error.message, 180) });
-      items.push(fallbackItem);
+      items.push(item);
     }
   }
 
@@ -254,7 +286,7 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
     ...latestData,
     generatedAt: latestData.generatedAt || generatedAt,
     summaryGeneratedAt: generatedAt,
-    summaryMethod: rules.method || "extractive",
+    summaryMethod: stats.llmSucceeded > 0 ? getLlmConfig(itemSummaryRules, env).provider : (rules.method || "extractive"),
     summaryStats: stats,
     ...(errors.length ? { summaryErrors: errors.slice(0, 20) } : {}),
     channels,
@@ -413,6 +445,19 @@ async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) 
       publishedAt: item.publishedAt,
       score: item.score,
       aiSummary: item.aiSummary,
+      summary_short: item.summary_short,
+      summary_points: item.summary_points,
+      key_data: item.key_data,
+      why_it_matters: item.why_it_matters,
+      impact: item.impact,
+      risks: item.risks,
+      neutrality_check: item.neutrality_check,
+      confidence: item.confidence,
+      importance_score: item.importance_score,
+      timeline_event_id: item.timeline_event_id,
+      original_url: item.original_url,
+      ai_model: item.ai_model,
+      ai_generated_at: item.ai_generated_at,
       summaryReason: item.summaryReason,
       translatedTitle: item.translatedTitle,
       importance: item.importance,
@@ -456,6 +501,7 @@ module.exports = {
   summarizeText,
   buildReason,
   buildImportance,
+  buildItemSummaryRules,
   getLlmConfig,
   isLlmConfigured,
   buildSummaryPrompt,

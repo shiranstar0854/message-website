@@ -96,7 +96,30 @@
   }
 
   function displaySummary(item) {
-    return item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "";
+    return item.summary_short || item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || item.summary_original || "";
+  }
+
+  function importanceLabel(value) {
+    const score = Number(value || 0);
+    if (score >= 85) return "高";
+    if (score >= 65) return "中";
+    return "低";
+  }
+
+  function renderDeepSummary(item) {
+    const points = Array.isArray(item.summary_points) ? item.summary_points.slice(0, 5) : [];
+    const keyData = Array.isArray(item.key_data) ? item.key_data.slice(0, 5) : [];
+    if (!points.length && !keyData.length && !item.why_it_matters && !item.impact && !item.risks) return "";
+    return `
+      <details class="feed-deep-summary">
+        <summary>展开深度摘要</summary>
+        ${points.length ? `<ul>${points.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>` : ""}
+        ${keyData.length ? `<p><strong>关键数据</strong>${escapeHtml(keyData.join("；"))}</p>` : ""}
+        ${item.why_it_matters ? `<p><strong>为什么重要</strong>${escapeHtml(item.why_it_matters)}</p>` : ""}
+        ${item.impact ? `<p><strong>影响</strong>${escapeHtml(item.impact)}</p>` : ""}
+        ${item.risks ? `<p><strong>风险</strong>${escapeHtml(item.risks)}</p>` : ""}
+      </details>
+    `;
   }
 
   function impactText(item) {
@@ -133,7 +156,10 @@
         .join("");
       const duplicateText = item.duplicateCount > 0 ? ` · 合并 ${item.duplicateCount} 条重复` : "";
       const score = Number(item.score || 0);
+      const importanceScore = Number(item.importance_score || score);
       const detailUrl = itemDetailUrl(item);
+      const originalUrl = safeExternalUrl(item.original_url || item.url);
+      const summary = displaySummary(item);
       const title = `<a href="${escapeHtml(detailUrl)}">${escapeHtml(displayOriginalTitle(item))}</a>`;
       const originalTitle = item.title_original || item.title;
       const translationText = translationLabel(item);
@@ -146,8 +172,10 @@
               <span>${formatDate(item.publishedAt)}</span>
             </div>
             <h3>${title}</h3>
+            ${summary ? `<p class="feed-core-summary">${escapeHtml(summary)}</p>` : ""}
             ${originalTitle && displayTitle(item) !== originalTitle ? `<p class="original-title">原文：${escapeHtml(originalTitle)}</p>` : ""}
             <div class="item-meta">
+              <span>重要度：${importanceLabel(importanceScore)} ${importanceScore}</span>
               <span>${escapeHtml(item.category || "news")}</span>
               <span>${escapeHtml(sourceAuthorityLabel(item.sourceAuthority))}</span>
               <span>${escapeHtml(timelinessLabel(item.timelinessTier))}</span>
@@ -160,11 +188,15 @@
                 ${item.searchHitLabels.map((label) => `<span>${escapeHtml(label)}</span>`).join("")}
               </div>
             ` : ""}
-            <a class="summary-entry-link" href="${escapeHtml(detailUrl)}">AI 摘要</a>
+            ${renderDeepSummary(item)}
+            <div class="feed-card-actions">
+              <a class="summary-entry-link" href="${escapeHtml(detailUrl)}">详情摘要</a>
+              ${originalUrl ? `<a class="original-entry" href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">查看原文</a>` : ""}
+            </div>
           </div>
-          <div class="score-block" aria-label="评分 ${score}">
-            <div class="score-value">${score}</div>
-            <div class="score-meter"><span style="width: ${Math.max(0, Math.min(100, score))}%"></span></div>
+          <div class="score-block" aria-label="重要度 ${importanceScore}">
+            <div class="score-value">${importanceScore}</div>
+            <div class="score-meter"><span style="width: ${Math.max(0, Math.min(100, importanceScore))}%"></span></div>
           </div>
         </article>
       `;
