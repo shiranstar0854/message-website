@@ -168,7 +168,7 @@ test("daily summary LLM path translates selected item summaries to Chinese", asy
   assert.ok(summarized.items[0].keywords.includes("Codex"));
 });
 
-test("English source items are selected for AI Chinese translation even below normal score floor", () => {
+test("non-Chinese source items are selected for AI Chinese translation even below normal score floor", () => {
   const latest = {
     items: [{
       id: "english-low-score",
@@ -178,6 +178,15 @@ test("English source items are selected for AI Chinese translation even below no
       category: "news",
       score: 45,
       contentExcerpt: "The briefing outlined a coordinated climate response with funding, public health support, and local adaptation measures."
+    }, {
+      id: "japanese-low-score",
+      title: "中央銀行が政策判断を発表",
+      url: "https://example.test/jp",
+      source: "Japan Official Source",
+      sourceLanguage: "ja",
+      category: "news",
+      score: 45,
+      contentExcerpt: "声明は金融政策の今後の焦点を説明した。"
     }, {
       id: "chinese-low-score",
       title: "本地政策简讯",
@@ -197,6 +206,7 @@ test("English source items are selected for AI Chinese translation even below no
 
   assert.equal(detectItemLanguage(latest.items[0]), "en");
   assert.equal(selected.has("english-low-score"), true);
+  assert.equal(selected.has("japanese-low-score"), true);
   assert.equal(selected.has("chinese-low-score"), false);
 });
 
@@ -239,13 +249,14 @@ test("daily summary LLM path covers non-default categories and overwrites old su
           choices: [{
             message: {
               content: JSON.stringify({
-                summary_short: "Policy guidance changed market liquidity expectations.",
-                summary_points: ["The central bank published policy guidance.", "The update mentioned market liquidity."],
+                translatedTitle: "央行发布政策更新",
+                summary_short: "政策指引改变了市场对流动性的预期。",
+                summary_points: ["央行发布政策指引。", "更新提到市场流动性。"],
                 key_data: [],
-                why_it_matters: "It affects how investors read policy and liquidity signals.",
-                impact: "Market participants may adjust rate and liquidity expectations.",
-                risks: "The source does not provide enough detail to judge follow-up actions.",
-                neutrality_check: "Only source-provided facts are used.",
+                why_it_matters: "这会影响投资者理解政策和流动性信号。",
+                impact: "市场参与者可能调整利率和流动性预期。",
+                risks: "原文不足以判断后续行动。",
+                neutrality_check: "仅使用来源提供的事实。",
                 confidence: "medium"
               })
             }
@@ -258,7 +269,8 @@ test("daily summary LLM path covers non-default categories and overwrites old su
   assert.equal(calls.length, 1);
   assert.equal(summarized.items[0].category, "macro");
   assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
-  assert.equal(summarized.items[0].summary_short, "Policy guidance changed market liquidity expectations.");
+  assert.equal(summarized.items[0].summary_short, "政策指引改变了市场对流动性的预期。");
+  assert.equal(summarized.items[0].title_zh, "央行发布政策更新");
   assert.equal(summarized.channels.macro.items[0].summary_short, summarized.items[0].summary_short);
 });
 
@@ -302,6 +314,85 @@ test("daily summary LLM path preserves old summary when a model call fails", asy
   assert.equal(summarized.summaryStats.errorCount, 1);
   assert.equal(summarized.items[0].summary_short, "Existing LLM summary");
   assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
+});
+
+test("daily summary LLM path retries non-Chinese items until translated", async () => {
+  const latest = {
+    generatedAt: "2026-05-28T00:00:00.000Z",
+    channels: {
+      news: { id: "news", items: [{ id: "fr-summary-retry" }] }
+    },
+    items: [{
+      id: "fr-summary-retry",
+      title: "La banque centrale publie une decision",
+      summary: "Le communique detaille les prochaines etapes.",
+      contentExcerpt: "Le communique detaille les prochaines etapes.",
+      url: "https://example.test/fr-summary-retry",
+      source: "Banque centrale",
+      sourceLanguage: "fr",
+      category: "news",
+      score: 86
+    }]
+  };
+  let calls = 0;
+  const fetchImpl = async () => {
+    calls += 1;
+    return {
+      ok: true,
+      status: 200,
+      json: async () => ({
+        choices: [{
+          message: {
+            content: calls === 1
+              ? JSON.stringify({
+                translatedTitle: "",
+                summary_short: "",
+                summary_points: [],
+                key_data: [],
+                why_it_matters: "",
+                impact: "",
+                risks: "",
+                neutrality_check: "",
+                confidence: "low"
+              })
+              : JSON.stringify({
+                translatedTitle: "央行发布政策决定",
+                summary_short: "央行声明说明了后续政策步骤。",
+                summary_points: ["央行发布政策决定"],
+                key_data: [],
+                why_it_matters: "会影响市场对政策路径的判断。",
+                impact: "可能影响利率预期。",
+                risks: "后续执行细节不足以判断。",
+                neutrality_check: "仅基于原文信息。",
+                confidence: "medium"
+              })
+          }
+        }]
+      })
+    };
+  };
+
+  const summarized = await summarizeLatestDataWithLlm(latest, {
+    llmProduction: {
+      enabled: true,
+      endpoint: "https://api.deepseek.com/chat/completions",
+      provider: "deepseek-chat-completions",
+      model: "deepseek-v4-flash",
+      itemRequiredSecret: "DEEPSEEK_API_KEY1",
+      requiredTranslationMaxAttempts: 2,
+      maxRetries: 0
+    },
+    daily: { minimumScore: 60, summaryMaxLength: 120 }
+  }, "2026-05-28T01:00:00.000Z", {
+    env: { DEEPSEEK_API_KEY1: "test-key" },
+    fetchImpl
+  });
+
+  assert.equal(calls, 2);
+  assert.equal(summarized.summaryStats.llmSucceeded, 1);
+  assert.equal(summarized.items[0].translation_status, "translated");
+  assert.equal(summarized.items[0].translation_attempts, 2);
+  assert.equal(summarized.items[0].title_zh, "央行发布政策决定");
 });
 
 test("daily summary output builds channel-level important-affairs summaries", async () => {

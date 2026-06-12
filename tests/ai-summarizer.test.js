@@ -19,6 +19,7 @@ test("structured summary prompt requires strict JSON and anti-hype rules", () =>
   });
 
   assert.match(prompt, /strict valid JSON/);
+  assert.match(prompt, /translatedTitle/);
   assert.match(prompt, /summary_short/);
   assert.match(prompt, /summary_points/);
   assert.match(prompt, /不得|Do not use unsupported hype words/);

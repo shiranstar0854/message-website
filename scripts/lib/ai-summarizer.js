@@ -101,7 +101,7 @@ function buildStructuredSummaryPrompt(item) {
     "Do not repeat the title as the summary. Keep professional terms, but explain naturally in Chinese.",
     "The summary must be denser than the source text.",
     "Return exactly this JSON shape:",
-    "{\"summary_short\":\"\",\"summary_points\":[],\"key_data\":[],\"why_it_matters\":\"\",\"impact\":\"\",\"risks\":\"\",\"neutrality_check\":\"\",\"confidence\":\"high | medium | low\"}",
+    "{\"translatedTitle\":\"\",\"summary_short\":\"\",\"summary_points\":[],\"key_data\":[],\"why_it_matters\":\"\",\"impact\":\"\",\"risks\":\"\",\"neutrality_check\":\"\",\"confidence\":\"high | medium | low\"}",
     "",
     JSON.stringify({
       title: item.title,

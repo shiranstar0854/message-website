@@ -468,7 +468,13 @@ function extractPublishedKeywords(item, limit = KEYWORD_LIMIT) {
 }
 
 function canonicalSourceLanguage(item) {
-  return normalizeText(item.source_language || item.sourceLanguage || "").toLowerCase();
+  const explicit = normalizeText(item.source_language || item.sourceLanguage || "").toLowerCase();
+  return explicit || detectSourceLanguage(item.raw || {}, item.title, item.summary || item.contentExcerpt) || "unknown";
+}
+
+function isChineseSourceLanguage(language) {
+  const value = normalizeText(language).toLowerCase();
+  return value === "zh" || value.startsWith("zh-") || value === "cn" || value === "chinese";
 }
 
 function canonicalTitleZh(item, sourceLanguage) {
@@ -492,7 +498,7 @@ function canonicalSummaryZh(item, sourceLanguage) {
 function canonicalTranslationStatus(item, sourceLanguage, titleZh, summaryZh) {
   const explicit = firstDefined(item.translation_status, item.translationStatus, "");
   if (explicit) return normalizeText(explicit).toLowerCase();
-  if (sourceLanguage !== "en") return "not_required";
+  if (isChineseSourceLanguage(sourceLanguage)) return "not_required";
   return titleZh || summaryZh ? "translated" : "pending";
 }
 

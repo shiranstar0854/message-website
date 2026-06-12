@@ -10,7 +10,34 @@ const {
 const ROOT_DIR = path.resolve(__dirname, "..");
 
 function sourceLanguage(item) {
-  return normalizeText(item.source_language || item.sourceLanguage || detectItemLanguage(item)).toLowerCase();
+  return normalizeText(item.source_language || item.sourceLanguage || detectItemLanguage(item) || "unknown").toLowerCase();
+}
+
+function isChineseLanguage(language) {
+  const value = normalizeText(language).toLowerCase();
+  return value === "zh" || value.startsWith("zh-") || value === "cn" || value === "chinese";
+}
+
+function needsAiTranslation(item) {
+  return !isChineseLanguage(sourceLanguage(item));
+}
+
+function hasChineseText(value) {
+  return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
+function translationMaxAttempts(rules = {}, options = {}) {
+  const env = options.env || process.env;
+  return Math.max(
+    1,
+    Number(
+      options.translationMaxAttempts
+        || env.TRANSLATION_MAX_ATTEMPTS
+        || rules.llmProduction?.requiredTranslationMaxAttempts
+        || rules.llmProduction?.translationMaxAttempts
+        || 5
+    )
+  );
 }
 
 function sourceSummary(item) {
@@ -29,7 +56,7 @@ function withBaseTranslationFields(item) {
     sourceLanguage: language
   };
 
-  if (language !== "en") {
+  if (!needsAiTranslation(base)) {
     return {
       ...base,
       title_zh: item.title_zh || item.titleZh || item.title || "",
@@ -54,6 +81,9 @@ function markTranslationFailed(item, message) {
 function applyTranslation(item, summary, translatedAt) {
   const titleZh = summary.translatedTitle || item.title_zh || item.titleZh || item.translatedTitle || "";
   const summaryZh = summary.aiSummary || item.summary_zh || item.summaryZh || "";
+  const translatedSuccessfully = needsAiTranslation(item)
+    ? Boolean(titleZh && summaryZh && hasChineseText(`${titleZh} ${summaryZh}`))
+    : Boolean(titleZh || summaryZh);
   const translated = {
     ...withBaseTranslationFields(item),
     translatedTitle: titleZh,
@@ -67,7 +97,7 @@ function applyTranslation(item, summary, translatedAt) {
     impactAreas: summary.impactAreas?.length ? summary.impactAreas : item.impactAreas,
     summaryLanguage: "zh",
     translated_at: translatedAt,
-    translation_status: titleZh || summaryZh ? "translated" : "failed"
+    translation_status: translatedSuccessfully ? "translated" : "failed"
   };
   const articleKeywords = extractArticleKeywords(translated);
   return {
@@ -81,6 +111,29 @@ function mergeChannels(latestData, items) {
     const channelItems = (channel.items || []).map((item) => items.find((candidate) => candidate.id === item.id) || item);
     return [id, { ...channel, items: channelItems }];
   }));
+}
+
+async function translateItemWithRetries(base, rules, generatedAt, options = {}) {
+  const attempts = translationMaxAttempts(rules, options);
+  let lastError;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const summary = await requestDeepSeekSummary(base, rules, options);
+      const translated = applyTranslation(base, summary, generatedAt);
+      if (translated.translation_status === "translated") {
+        return {
+          ...translated,
+          translation_attempts: attempt
+        };
+      }
+      throw new Error("AI translation response did not include required Chinese title and summary.");
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  throw lastError;
 }
 
 async function translateLatestData(latestData, rules = {}, generatedAt = new Date().toISOString(), options = {}) {
@@ -98,7 +151,7 @@ async function translateLatestData(latestData, rules = {}, generatedAt = new Dat
 
   for (const item of latestData.items || []) {
     const base = withBaseTranslationFields(item);
-    if (base.source_language !== "en") {
+    if (!needsAiTranslation(base)) {
       stats.notRequired += 1;
       items.push(base);
       continue;
@@ -112,13 +165,8 @@ async function translateLatestData(latestData, rules = {}, generatedAt = new Dat
     }
 
     try {
-      const summary = await requestDeepSeekSummary(base, rules, options);
-      const translated = applyTranslation(base, summary, generatedAt);
-      if (translated.translation_status === "translated") {
-        stats.translated += 1;
-      } else {
-        stats.failed += 1;
-      }
+      const translated = await translateItemWithRetries(base, rules, generatedAt, options);
+      stats.translated += 1;
       items.push(translated);
     } catch (error) {
       stats.failed += 1;
@@ -160,7 +208,11 @@ if (require.main === module) {
 
 module.exports = {
   applyTranslation,
+  hasChineseText,
+  needsAiTranslation,
   markTranslationFailed,
+  translateItemWithRetries,
+  translationMaxAttempts,
   translateLatestData,
   translateLatestFile,
   withBaseTranslationFields

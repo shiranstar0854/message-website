@@ -31,8 +31,42 @@ function detectItemLanguage(item) {
   return "unknown";
 }
 
+function isChineseLanguage(language) {
+  const value = normalizeText(language).toLowerCase();
+  return value === "zh" || value.startsWith("zh-") || value === "cn" || value === "chinese";
+}
+
+function hasChineseText(value) {
+  return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
+function needsChineseTranslation(item) {
+  const explicitLanguage = normalizeText(item.source_language || item.sourceLanguage || "").toLowerCase();
+  if (explicitLanguage) return !isChineseLanguage(explicitLanguage);
+  return detectItemLanguage(item) !== "zh";
+}
+
+function requiredTranslationMaxAttempts(rules = {}, options = {}) {
+  const env = options.env || process.env;
+  return Math.max(
+    1,
+    Number(
+      options.translationMaxAttempts
+        || env.TRANSLATION_MAX_ATTEMPTS
+        || rules.llmProduction?.requiredTranslationMaxAttempts
+        || rules.llmProduction?.translationMaxAttempts
+        || 5
+    )
+  );
+}
+
+function hasRequiredChineseTranslation(item) {
+  if (!needsChineseTranslation(item)) return true;
+  return Boolean(item.title_zh && item.summary_zh && hasChineseText(`${item.title_zh} ${item.summary_zh}`));
+}
+
 function isLikelyEnglishItem(item) {
-  return detectItemLanguage(item) === "en";
+  return needsChineseTranslation(item);
 }
 
 function splitSentences(text) {
@@ -88,7 +122,7 @@ function shouldSummarize(item, rules) {
 function selectSummaryIds(latestData, dailyRules = {}) {
   const maxItemsPerChannel = Number(dailyRules.maxItemsPerChannel || 20);
   const maxItemsTotal = Number(dailyRules.maxItemsTotal || 0);
-  const maxEnglishTranslationItems = Number(dailyRules.maxEnglishTranslationItems || 30);
+  const maxTranslationItems = Number(dailyRules.maxNonChineseTranslationItems || dailyRules.maxEnglishTranslationItems || 30);
   const coverage = dailyRules.summaryCoverage || dailyRules.llmCoverage || "all";
   const selectedIds = new Set();
   const allCandidates = sortItems((latestData.items || []).filter((item) => shouldSummarize(item, dailyRules)));
@@ -105,13 +139,13 @@ function selectSummaryIds(latestData, dailyRules = {}) {
   }
 
   sortItems((latestData.items || []).filter((item) => (
-    isLikelyEnglishItem(item)
+    needsChineseTranslation(item)
       && Boolean(item.title)
       && Boolean(item.url)
       && Boolean(item.contentExcerpt || item.summary)
       && Number(item.score || 0) >= Number(dailyRules.translateEnglishMinimumScore || 0)
   )))
-    .slice(0, maxEnglishTranslationItems)
+    .slice(0, maxTranslationItems)
     .forEach((item) => selectedIds.add(item.id));
 
   return selectedIds;
@@ -137,7 +171,7 @@ function applyExtractiveSummary(item, rules, generatedAt) {
     importance: structured.why_it_matters || buildImportance(item, rules.importanceMaxLength),
     source_language: item.source_language || sourceLanguage,
     sourceLanguage,
-    translation_status: item.translation_status || (sourceLanguage === "en" ? "failed" : "not_required"),
+    translation_status: item.translation_status || (needsChineseTranslation({ ...item, sourceLanguage }) ? "failed" : "not_required"),
     summaryMethod: "extractive",
     summaryGeneratedAt: generatedAt
   };
@@ -151,21 +185,25 @@ function applyExtractiveSummary(item, rules, generatedAt) {
 async function applyLlmSummary(item, rules, generatedAt, options = {}) {
   const summary = await requestDeepSeekSummary(item, rules, { ...options, generatedAt });
   const sourceLanguage = detectItemLanguage(item);
+  const titleZh = summary.translatedTitle || item.title_zh || item.titleZh || item.translatedTitle;
+  const summaryZh = summary.summary_short || summary.aiSummary || item.summary_zh || item.summaryZh;
   const summarized = {
     ...item,
     ...summary,
     title_original: item.title_original || item.title,
-    title_zh: summary.translatedTitle || item.title_zh || item.titleZh || item.translatedTitle,
+    title_zh: titleZh,
     summary_original: item.summary_original || item.summary || item.contentExcerpt || "",
-    summary_zh: summary.summary_short || summary.aiSummary || item.summary_zh || item.summaryZh,
+    summary_zh: summaryZh,
     source_language: item.source_language || sourceLanguage,
     sourceLanguage,
     summaryLanguage: "zh",
     translated_at: generatedAt,
-    translation_status: sourceLanguage === "en" ? "translated" : "not_required",
     summaryMethod: getLlmConfig(rules).provider,
     summaryGeneratedAt: generatedAt
   };
+  summarized.translation_status = hasRequiredChineseTranslation(summarized)
+    ? (needsChineseTranslation(summarized) ? "translated" : "not_required")
+    : "failed";
   return {
     ...summarized,
     article_keywords: extractPublishedKeywords(summarized),
@@ -217,7 +255,7 @@ function parseSummaryResponse(responseJson, item, dailyRules = {}) {
   );
   const summaryShort = structured.summary_short || summarizeText(item, dailyRules.summaryMaxLength);
   return {
-    translatedTitle: truncateText(responseJson.translatedTitle || "", 120),
+    translatedTitle: truncateText(responseJson.translatedTitle || responseJson.title_zh || responseJson.titleZh || "", 120),
     aiSummary: truncateText(responseJson.aiSummary || summaryShort, dailyRules.summaryMaxLength || 180),
     summaryReason: truncateText(responseJson.summaryReason || structured.neutrality_check || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
     importance: truncateText(responseJson.importance || structured.why_it_matters || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
@@ -268,15 +306,34 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
     }
 
     stats.llmAttempted += 1;
-    try {
-      const llmItem = await applyLlmSummary(item, itemSummaryRules, generatedAt, options);
+    const attempts = needsChineseTranslation(item) ? requiredTranslationMaxAttempts(itemSummaryRules, options) : 1;
+    let lastError;
+    let llmItem;
+    for (let attempt = 1; attempt <= attempts; attempt += 1) {
+      try {
+        llmItem = await applyLlmSummary(item, itemSummaryRules, generatedAt, options);
+        if (hasRequiredChineseTranslation(llmItem)) {
+          llmItem = { ...llmItem, translation_attempts: attempt };
+          break;
+        }
+        throw new Error("AI summary response did not include required Chinese title and summary.");
+      } catch (error) {
+        lastError = error;
+        llmItem = undefined;
+      }
+    }
+
+    if (llmItem) {
       stats.llmSucceeded += 1;
       items.push(llmItem);
-    } catch (error) {
+    } else {
       stats.fallbackCount += 1;
       stats.errorCount += 1;
-      errors.push({ id: item.id, message: truncateText(error.message, 180) });
-      items.push(item);
+      errors.push({ id: item.id, message: truncateText(lastError?.message || "AI summary failed.", 180) });
+      items.push({
+        ...item,
+        translation_status: needsChineseTranslation(item) ? "failed" : item.translation_status
+      });
     }
   }
 
@@ -529,6 +586,8 @@ if (require.main === module) {
 module.exports = {
   detectItemLanguage,
   isLikelyEnglishItem,
+  needsChineseTranslation,
+  hasRequiredChineseTranslation,
   splitSentences,
   summarizeText,
   buildReason,
