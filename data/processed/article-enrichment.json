@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-11T09:00:55.752Z",
+  "generatedAt": "2026-06-12T00:01:16.845Z",
   "totals": {
-    "attempted": 64,
-    "excerptCount": 56,
-    "imageCount": 37,
-    "failed": 6,
+    "attempted": 59,
+    "excerptCount": 49,
+    "imageCount": 36,
+    "failed": 9,
     "skipped": 7
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 3,
+      "excerptCount": 3,
+      "imageCount": 3,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,15 +25,15 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 7,
+      "skipped": 6,
       "disabled": true
     },
     "google-ai": {
       "sourceId": "google-ai",
       "sourceName": "Google AI Blog",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -61,7 +61,7 @@
     "cisa-news": {
       "sourceId": "cisa-news",
       "sourceName": "CISA News",
-      "attempted": 2,
+      "attempted": 1,
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
@@ -85,7 +85,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 0,
+      "skipped": 1,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -101,10 +101,10 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 10,
-      "excerptCount": 9,
-      "imageCount": 9,
-      "failed": 1,
+      "attempted": 9,
+      "excerptCount": 7,
+      "imageCount": 7,
+      "failed": 2,
       "skipped": 0,
       "disabled": false,
       "lastError": "HTTP 429"
@@ -112,9 +112,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 10,
-      "excerptCount": 10,
-      "imageCount": 10,
+      "attempted": 9,
+      "excerptCount": 9,
+      "imageCount": 9,
       "failed": 0,
       "skipped": 0,
       "disabled": false
