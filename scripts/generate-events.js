@@ -21,6 +21,29 @@ function normalizeText(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
 }
 
+function hasChineseText(value) {
+  return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
+function isChineseLanguage(language) {
+  const value = normalizeText(language).toLowerCase();
+  return value === "zh" || value.startsWith("zh-") || value === "cn" || value === "chinese";
+}
+
+function inferredLanguage(item) {
+  const explicit = normalizeText(item.source_language || item.sourceLanguage || "").toLowerCase();
+  if (explicit) return explicit;
+  const text = normalizeText(`${item.title || ""} ${item.summary || ""} ${item.contentExcerpt || ""}`);
+  if (/[\u3040-\u30ff\uac00-\ud7af]/u.test(text)) return "non-zh";
+  if (/[A-Za-z]/.test(text) && !hasChineseText(text)) return "en";
+  if (hasChineseText(text)) return "zh";
+  return "unknown";
+}
+
+function needsChineseTranslation(item) {
+  return !isChineseLanguage(inferredLanguage(item));
+}
+
 function slugify(value) {
   return normalizeText(value)
     .toLowerCase()
@@ -66,7 +89,13 @@ function displayTitle(item) {
 }
 
 function displaySummary(item) {
-  return item.summary_zh || item.summaryZh || item.aiSummary || item.contentExcerpt || item.summary || "";
+  return item.summary_zh || item.summaryZh || item.summary_short || item.aiSummary || item.contentExcerpt || item.summary || "";
+}
+
+function isEventReadyItem(item) {
+  if (!needsChineseTranslation(item)) return true;
+  const translated = normalizeText(item.translation_status || item.translationStatus).toLowerCase() === "translated";
+  return translated && hasChineseText(displayTitle(item)) && hasChineseText(displaySummary(item));
 }
 
 function compactSentence(value, limit = 110) {
@@ -137,7 +166,7 @@ function sharedKeywordCount(left, right) {
 
 function eventLabelForItem(item, rule) {
   const keyword = significantKeywords(item)[0];
-  const originalKeyword = itemKeywords(item).find((value) => String(value).toLowerCase() === keyword);
+  const originalKeyword = itemKeywords(item).find((value) => String(value).toLowerCase() === keyword && hasChineseText(value));
   return originalKeyword || rule?.label || compactSentence(displayTitle(item), 32);
 }
 
@@ -156,7 +185,7 @@ function buildImpactAreas(items, fallbackLabel) {
     ...itemKeywords(item),
     item.primaryCategory,
     item.category
-  ]), 8);
+  ]).filter(hasChineseText), 8);
   return (values.length ? values : [fallbackLabel]).slice(0, 4);
 }
 
@@ -166,7 +195,8 @@ function buildExplainedSummary(items, label) {
 
 function buildWhyItMatters(items, label) {
   const top = items[0] || {};
-  if (top.importance || top.summaryReason) return top.importance || top.summaryReason;
+  const existing = top.importance || top.summaryReason;
+  if (hasChineseText(existing)) return existing;
   const officialCount = items.filter((item) => ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority)).length;
   const sourceCount = uniqueValues(items.map((item) => item.source), 6).length;
   const newestAt = top.publishedAt ? new Date(top.publishedAt).getTime() : 0;
@@ -315,7 +345,7 @@ function readArchiveItems(generatedAt, options = {}) {
 function buildEvents(items, generatedAt = new Date().toISOString(), options = {}) {
   const groups = new Map();
 
-  dedupeEventItems(items || []).forEach((item) => {
+  dedupeEventItems(items || []).filter(isEventReadyItem).forEach((item) => {
     const group = groupForItem(item, groups);
     if (!group) return;
     group.items.push(item);
@@ -351,7 +381,7 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         primarySource: latestUpdate.source || topItems[0]?.source || "",
         sourceCount: uniqueValues(sortedItems.map((item) => item.source), 20).length,
         sources: [...new Set(sortedItems.map((item) => item.source).filter(Boolean))].slice(0, 6),
-        keywords: [...new Set(sortedItems.flatMap((item) => [...(item.impactAreas || []), ...itemKeywords(item)]))].slice(0, 8),
+        keywords: [...new Set(sortedItems.flatMap((item) => [...(item.impactAreas || []), ...itemKeywords(item)]).filter(hasChineseText))].slice(0, 8),
         timeline,
         evidenceItems,
         items: evidenceItems
