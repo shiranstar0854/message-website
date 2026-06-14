@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-13T09:01:06.825Z",
+  "generatedAt": "2026-06-14T00:01:16.444Z",
   "totals": {
-    "attempted": 60,
-    "excerptCount": 53,
-    "imageCount": 39,
+    "attempted": 39,
+    "excerptCount": 32,
+    "imageCount": 20,
     "failed": 7,
-    "skipped": 4
+    "skipped": 2
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 3,
-      "excerptCount": 3,
-      "imageCount": 3,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,15 +25,15 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 2,
+      "skipped": 1,
       "disabled": true
     },
     "google-ai": {
       "sourceId": "google-ai",
       "sourceName": "Google AI Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -85,7 +85,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 2,
+      "skipped": 1,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 10,
-      "excerptCount": 10,
-      "imageCount": 10,
+      "attempted": 4,
+      "excerptCount": 4,
+      "imageCount": 4,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 15,
-      "excerptCount": 15,
-      "imageCount": 15,
+      "attempted": 10,
+      "excerptCount": 10,
+      "imageCount": 10,
       "failed": 0,
       "skipped": 0,
       "disabled": false
