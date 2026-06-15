@@ -8,30 +8,13 @@
     "url": "https://github.blog/feed/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "How we made GitHub Copilot CLI more selective about delegation",
-        "link": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
-        "guid": "https://github.blog/?p=96755",
-        "pubDate": "Fri, 12 Jun 2026 22:26:23 +0000",
-        "description": "<p>Better orchestration, fewer handoffs, faster progress, without a single new knob.</p>\n<p>The post <a href=\"https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/\">How we made GitHub Copilot CLI more selective about delegation</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><p>In agentic systems, more delegation isn&rsquo;t always better. Imagine asking Copilot CLI to make a simple change. Instead of handling it directly, it spins up a helper agent that searches the repository, waits on a result, and stalls. Work that should have taken one step now takes three. While some tasks genuinely benefit from a specialist subagent&mdash;like exploring an unfamiliar repository, checking an independent area of the code, or running a long command while the main agent keeps moving&mdash;delegation isn&rsquo;t free. Every handoff adds coordination overhead, tool calls, and wait time. If an agent delegates too eagerly, the &ldquo;help&rdquo; can become friction.&nbsp;&nbsp;</p>\n\n\n\n<p>We recently released an improvement to our agentic harness called smarter subagent delegation. This makes Copilot CLI more selective by helping the main agent: &nbsp;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Stay focused when it can move faster on its own.</li>\n\n\n\n<li>Delegate when a specialist creates real leverage.</li>\n\n\n\n<li>Parallelize work when tasks are truly independent.</li>\n</ul>\n\n\n\n<p>Smarter subagent delegation has now rolled out to 100% of Copilot CLI production traffic. If you want to get started today, simply update GitHub Copilot CLI by running&#8239;the <code>/update</code> command&#8239;in your terminal to version 1.0.42 or later.&nbsp;</p>\n\n\n\n<p>In a production A/B test, this improvement reduced tool failures per session by <strong>23%</strong>, including a <strong>27% </strong>reduction in search tool failures and an <strong>18%</strong> reduction in edit tool failures. It also improved total user wait time by <strong>5%</strong> at P95 and <strong>3%</strong> at P75, with <strong>no quality regression</strong>. Here, P95 captures wait time near the slowest 5% of sessions, while P75 reflects wait time toward the slower end of typical sessions. This means fewer unnecessary handoffs, fewer repeated searches, fewer failure-prone tool paths, and less waiting during long-running coding tasks.&nbsp;</p>\n\n\n\n<p>In this post, we&rsquo;ll walk through how we identified unnecessary delegation in Copilot CLI, what we changed to make delegation more selective, and how we validated those changes through offline evaluation and production A/B testing. We&rsquo;ll also show why those changes led to fewer failures and less waiting&mdash;and what that looks like for developers using Copilot CLI day to day.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">The problem: Delegation is powerful, but not free</p>\n\n\n\n<p>Subagents are one of the most important capabilities in an agentic CLI. They let Copilot break down complex work, run investigations in parallel, and keep the main agent focused on coordinating the final answer. For large codebases and multi-step engineering tasks, that can be the difference between a slow linear workflow and an efficient parallel one.&nbsp;</p>\n\n\n\n<p>But delegation introduces its own failure modes:&nbsp;</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Unnecessary handoffs for simple tasks that the main agent could complete faster on its own.&nbsp;</li>\n\n\n\n<li>Overuse of exploration subagents when the handoff already contains enough context.</li>\n\n\n\n<li>Repeated or overlapping searches across the main agent and subagents.&nbsp;</li>\n\n\n\n<li>Sequential delegation, where the main agent waits for a subagent instead of treating delegation as an opportunity for parallel work.&nbsp;</li>\n\n\n\n<li>Failure-prone subagent paths, including stale file paths, moved files, incorrect relative paths, and workspace mismatches.&nbsp;&nbsp;</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img data-recalc-dims=\"1\" fetchpriority=\"high\" decoding=\"async\" width=\"768\" height=\"432\" src=\"https://github.blog/wp-content/uploads/2026/06/fig1-tool-failures.gif?resize=768%2C432\" alt=\"Animated Copilot CLI session showing unnecessary subagent delegation. The main agent idles while multiple subagents repeat searches, use stale or ambiguous file paths, and accumulate tool failures, increasing from 0 to 5.\" class=\"wp-image-96756\"><figcaption class=\"wp-element-caption\"><em>Figure 1. Example: tool call failure by subagents while main agent is idling.</em>&nbsp;</figcaption></figure>\n\n\n\n<p>Our goal: help developers use subagents when they create leverage, avoid them when they add overhead, and parallelize work when the task genuinely benefits from independent execution.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">From problem signals to shipped improvement</p>\n\n\n\n<p>The way we identified the problem became the way we solved it. Instead of treating agent trajectory analysis, product changes, evaluation, and rollout as separate activities, we used them as one feedback loop: observe the agent behavior, isolate the orchestration bottleneck, make a targeted change, validate it offline, measure it online, and ship only once the end-to-end workflow improved.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" decoding=\"async\" height=\"425\" width=\"1024\" src=\"https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?resize=1024%2C425\" alt=\"Flow diagram of the smarter subagent delegation improvement loop: analyze initial signals from telemetry, A/B experiments, human side-by-side reviews, and agent comparison evals; create offline evals; make a product change; validate offline and online; then release when results are good. Dashed arrows show feedback loops for bad changes and online disagreements.\" class=\"wp-image-96757\" srcset=\"https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=3280 3280w, https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=300 300w, https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=768 768w, https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=1536 1536w, https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=2048 2048w, https://github.blog/wp-content/uploads/2026/06/fig2-slide-4-diagram.png?w=3000 3000w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\"><em>Figure 2. The end-to-end improvement loop: analyze, change, validate, and ship.</em></figcaption></figure>\n\n\n\n<p class=\"is-typography-preset-h3\">1. Analyze: Let LLMs identify the delegation bottleneck</p>\n\n\n\n<p>Instead of manually reviewing agent sessions, we used LLMs to analyze full trajectories and identify where orchestration was helping versus where it was adding overhead. That analysis surfaced a consistent pattern: subagents were sometimes being invoked for tasks that were already narrow, obvious, or fully described in the handoff.&nbsp;</p>\n\n\n\n<p>In those cases, the subagent could spend time re-searching the repository even though the main agent already had enough context to act directly. That clarified the improvement target: keep simple discovery-and-edit tasks in the main agent, and reserve subagents for work that is broader, cross-cutting, or naturally parallelizable.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h3\">2. Change: Refine the orchestration policy</p>\n\n\n\n<p>After identifying the bottleneck, we used LLMs to help translate that diagnosis into a more selective orchestration policy.</p>\n\n\n\n<p>Copilot CLI should handle focused work directly: find a file, read it, make a targeted change, and verify it. Delegation is more useful when the work requires independent context, broad exploration, or parallel execution.</p>\n\n\n\n<p>In practice, that means starting with the narrowest effective path, escalating when complexity or uncertainty creates value, and stepping back down when the task becomes focused again. Subagents should be treated as a parallelism tool, not a pause button. When Copilot launches a subagent, the main agent should continue making progress on independent work rather than simply waiting for the result.</p>\n\n\n\n<p>When a subagent is used, the handoff should also be specific: what the user asked, what is already known, what the subagent owns, and what kind of result the main agent needs back.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h3\">3. Validate: Test offline, confirm online, then ship</p>\n\n\n\n<p>Before broad rollout, we validated the change with automatically generated regression cases and existing benchmarks. This helped confirm that the new delegation guidance reduced avoidable overhead without breaking cases where subagents genuinely add value.&nbsp;</p>\n\n\n\n<p>Finally, we moved through staff and public A/B testing, then analyzed production metrics across reliability, responsiveness, subagent workload, and quality. The gains did not come primarily from making individual LLM calls faster. Instead, it reduced orchestration overhead by avoiding unnecessary subagent paths and lowering subagent workload per user.&nbsp;</p>\n\n\n\n<p>That end-to-end process let us move from problem signal to shipped improvement while keeping the user experience stable: fewer avoidable handoffs, fewer failure-prone tool paths, and no quality regression.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">Outcomes</p>\n\n\n\n<p>After rolling smarter subagent delegation to production traffic, we saw measurable percentage improvements across reliability and responsiveness (Table 1):&nbsp;</p>\n\n\n\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Dimension</th><th>Metric</th><th>Delta</th></tr></thead><tbody><tr><td>Reliability<strong>&nbsp;</strong></td><td>Tool failures per session&nbsp;</td><td>23% reduction&nbsp;</td></tr><tr><td>Reliability&nbsp;</td><td>Search tool failures</td><td>27% reduction</td></tr><tr><td>Reliability</td><td>Edit tool failures</td><td>18% reduction</td></tr><tr><td>Responsiveness</td><td>Total user wait time at P95</td><td>5% lower</td></tr><tr><td>Responsiveness</td><td>Total user wait time at P75</td><td>3% lower</td></tr><tr><td>Quality</td><td>Quality metrics</td><td>No regression</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Table 1. Production A/B test outcomes</figcaption></figure>\n\n\n\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th>Metric</th><th>Delta vs. control</th><th>Interpretation</th></tr></thead><tbody><tr><td>Failed raw subagent search calls</td><td>15% reduction</td><td>Reliability &ndash; fewer failure-prone subagent search paths.</td></tr><tr><td>Average subagent LLM duration per user</td><td>12% lower</td><td>Responsiveness &ndash; reduced orchestration overhead per user.</td></tr><tr><td>P95 subagent LLM duration per user</td><td>18% lower</td><td>Responsiveness &ndash; better worst-case subagent overhead.</td></tr></tbody></table><figcaption class=\"wp-element-caption\">Table 2. Directional agent trajectory analysis behind the A/B test outcome</figcaption></figure>\n\n\n\n<p>These results show that better orchestration can improve the developer experience even when the visible feature surface doesn&rsquo;t change. By teaching Copilot CLI when to delegate, when not to delegate, and how to parallelize the right work, we reduced friction in the agent loop itself.&nbsp;</p>\n\n\n\n<p>That is the power of GitHub Copilot as a system: the experience gets better not because developers are given more switches to manage, but because Copilot becomes better at allocating models, tools, and subagents behind the scenes.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">How this benefits developers today</p>\n\n\n\n<p>For developers using Copilot CLI, this should feel like a smoother day-to-day experience. Straightforward tasks are more likely to be handled directly, complex tasks still get specialist help when it adds value, and long-running sessions keep moving with less unnecessary waiting. In practice, Copilot CLI becomes more efficient and less noisy without asking developers to work differently.&nbsp;</p>\n\n\n\n<p>The change is intentionally behind the scenes. Your workflow stays the same, but Copilot CLI is better at coordinating the work: fewer unnecessary handoffs, less repeated search work, fewer failed tool paths, and faster progress on long-running or multi-step tasks.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">What&rsquo;s next</p>\n\n\n\n<p>This work is one step toward our larger goal of improving how Copilot CLI chooses the right model, agent, and tools across your workflow. While having more agents and models available expands what Copilot can do, the value to developers depends on how well Copilot applies them across the work they are already doing, like reading files, running commands, and moving from an issue toward a pull request.&nbsp;</p>\n\n\n\n<p>As tasks become more complex, the quality of that orchestration matters more. The best system is not the one that delegates the most, but the one that knows when to act directly, when to delegate, and how to keep work moving without adding friction.&nbsp;</p>\n\n\n\n<p>The next step is making Copilot CLI more adaptive across models, agents, skills, and tools, so developers don&rsquo;t have to decide whether a task needs a larger model, a specialist subagent, or a procedural skill. Copilot should make that decision based on the task, repository context, policy, and expected outcome.&nbsp;</p>\n\n\n\n<p>We will continue improving how Copilot CLI plans work, coordinates subagents, and measures end-to-end outcomes. That includes better visibility into main-agent and subagent behavior, deeper analysis of failure reasons, and stronger proxy metrics for orchestration quality. The goal is simple: less waiting, fewer avoidable failures, and more useful progress from every agent session.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">Get started today and share feedback</p>\n\n\n\n<p>Update GitHub Copilot CLI by running&#8239;the <code>/update</code> command&#8239;in your terminal to version 1.0.42 or later.&nbsp;&nbsp;</p>\n\n\n\n<p>Already tried it? We&rsquo;d love to hear what you think. Share feedback with the&#8239;<code>/feedback</code>&#8239;command in a CLI session or open an issue in&#8239;<a href=\"https://github.com/github/copilot-cli?utm_source=changelog-cli-repo&utm_medium=changelog&utm_campaign=msbuild-2026\" target=\"_blank\" rel=\"noreferrer noopener\">our public repository</a>.&nbsp;</p>\n\n\n\n<p class=\"is-typography-preset-h2\">Acknowledgements</p>\n\n\n\n<p>Smarter subagent delegation was made possible by collaboration across Code|AI, Copilot CLI, experimentation, human evaluation, and product teams. Thanks to everyone who helped identify the problem, design the process, validate the outcome, and ship the improvement to production.&nbsp;</p>\n</body></html>\n<p>The post <a href=\"https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/\">How we made GitHub Copilot CLI more selective about delegation</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "feedImageUrl": "https://github.blog/wp-content/uploads/2026/06/fig1-tool-failures.gif?resize=768%2C432",
-        "categories": [
-          "AI & ML",
-          "GitHub Copilot",
-          "AI agents",
-          "coding agent",
-          "GitHub Copilot CLI"
-        ]
-      }
-    ],
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -43,26 +26,13 @@
     "url": "https://openai.com/news/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "New OpenAI Academy courses for the next era of work",
-        "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
-        "guid": "https://openai.com/index/academy-courses-applying-ai-at-work",
-        "pubDate": "Fri, 12 Jun 2026 10:00:00 GMT",
-        "description": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": [
-          "AI Adoption"
-        ]
-      }
-    ],
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -75,10 +45,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -93,10 +63,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -111,10 +81,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -129,10 +99,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -147,10 +117,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -164,24 +134,13 @@
     "url": "https://www.sec.gov/news/pressreleases.rss",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "SEC Appoints John Moses as Director of the Office of Investor Education and Assistance",
-        "link": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
-        "guid": "3789a5d3-1f4f-45fc-b88f-536e0f65c4f5",
-        "pubDate": "Fri, 12 Jun 2026 12:30:00 -0400",
-        "description": "The Securities and Exchange Commission has appointed John Moses as Director of the agency’s Office of Investor Education and Assistance, which provides services and resources to help investors build their financial futures and protect against investment…",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": []
-      }
-    ],
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -194,10 +153,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -282,7 +241,7 @@
     ],
     "stale": true,
     "latestAttempt": {
-      "fetchedAt": "2026-06-14T09:00:30.790Z",
+      "fetchedAt": "2026-06-15T00:00:29.392Z",
       "ok": false,
       "status": 429,
       "itemCount": 0,
@@ -298,13 +257,23 @@
     "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 10,
-    "fetchedAt": "2026-06-14T09:00:30.790Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-15T00:00:29.392Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-14T09:00:30.790Z",
-    "cacheExpiresAt": "2026-06-16T09:00:30.790Z",
+    "cacheStartedAt": "2026-06-15T00:00:29.392Z",
+    "cacheExpiresAt": "2026-06-17T00:00:29.392Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "Refugee turned peacemaker: The young woman leader transforming communities in the Central African Republic",
+        "link": "https://news.un.org/feed/view/en/story/2026/06/1167705",
+        "guid": "https://news.un.org/en/story/2026/06/1167705",
+        "pubDate": "Sun, 14 Jun 2026 12:00:00 +0000",
+        "description": "In the heart of the Central African Republic (CAR), a nation long marked by conflict, Nina Mireille Yankinon stands as a symbol of resilience, leadership, and hope, dedicating her life to helping communities torn apart by war.&nbsp;",
+        "content": "",
+        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2026-WFP-Central-African-Republic-01.jpg/image560x340cropped.jpg",
+        "categories": []
+      },
       {
         "title": "Instability, war and closed borders: How aid workers get emergency food to hungry Afghan children",
         "link": "https://news.un.org/feed/view/en/story/2026/06/1167684",
@@ -313,96 +282,6 @@
         "description": "The odyssey begins in Indonesia and ends, 15,000 kilometres later, in Kabul, the capital of Afghanistan. Along the way, critical food aid destined for young Afghan students crosses nine countries, over land and sea, skirting geopolitical unrest and conflict zones.",
         "content": "",
         "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/03-03-2026-WFP-Afghanistan-05.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Security Council weighs future of UN war crimes mechanism as closure nears",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167715",
-        "guid": "https://news.un.org/en/story/2026/06/1167715",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "The Security Council on Friday weighed the future of the UN mechanism responsible for completing the remaining work of the international tribunals for Rwanda and the former Yugoslavia, as members debated how to preserve its legacy while bringing its mandate to an orderly close.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/09-04-2026_UNP_SC_UNMIK.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Women and girls caught up in Yemen’s ‘forgotten crisis’ bear the heaviest toll as funding falls",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167708",
-        "guid": "https://news.un.org/en/story/2026/06/1167708",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "Yemen remains gripped by one of the world’s worst humanitarian crises, with 22 million – out of a population of 35 million – requiring assistance. Women and girls account for half of those in need, and two-thirds of them are of childbearing age, placing reproductive health at the heart of the emergency.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/12-06-2026_Yemen-UNFPA.JPG/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "More strikes impact Lebanon hospitals as humanitarian situation deteriorates",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167714",
-        "guid": "https://news.un.org/en/story/2026/06/1167714",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "The humanitarian situation in Lebanon is being pushed further into crisis as hostilities continue between Israeli forces and Hezbollah militants – and essential services and healthcare are targeted.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/01-06-2026-UNIFIL-Lebanon.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "UN ‘encouraged’ by talk of possible US-Iran ceasefire deal",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167713",
-        "guid": "https://news.un.org/en/story/2026/06/1167713",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "The United Nations continues to monitor developments amid conflicting reports on Friday of a possible ceasefire deal between the United States and Iran, the Spokesperson for the Secretary-General said in New York.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/19-09-22_UN769439_Dujarric_file_photo.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "World News in Brief: State-supported safe houses in Haiti, EU pact strengthens refugee protection, demand for ‘critical minerals’ intensifies",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167712",
-        "guid": "https://news.un.org/en/story/2026/06/1167712",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "Haiti has opened its first State-supported safe house for survivors of sexual violence with support from the UN, marking a significant step in responding to the growing crisis affecting women and girls.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/21-05-2026_WFP_Haiti-06.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "‘Perilous moment’ threatens to reverse years of gains in HIV/AIDS response",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167710",
-        "guid": "https://news.un.org/en/story/2026/06/1167710",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "External funding cuts, a backlash against human rights, and chronic under-investment in HIV prevention and community services are threatening to reverse years of hard-won progress in the AIDS response, a UN report warned on Friday.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/05-02-2025-WHO-Pakistan.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Ukraine civilian casualty toll in May highest in four years, UN monitors say",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167707",
-        "guid": "https://news.un.org/en/story/2026/06/1167707",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "More civilians were killed and injured in Ukraine in May than in any other month in the past four years, UN investigators said on Friday in their latest update.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-04-2026-HRMMU-Ukraine.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "WHO report shows progress in blood safety, but there are worrying gaps",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167703",
-        "guid": "https://news.un.org/en/story/2026/06/1167703",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "Every day, safe blood helps save the lives of women experiencing childbirth complications, accident victims, cancer patients and people living with chronic diseases. Yet despite decades of progress, access to lifesaving blood remains deeply unequal, with shortages continuing to put lives at risk in many lower-income countries, according to a new World Health Organization (WHO) report.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/12-06-2025_Blood_Donor.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "DR Congo: Ebola spreads as agencies brace for child victims",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167702",
-        "guid": "https://news.un.org/en/story/2026/06/1167702",
-        "pubDate": "Fri, 12 Jun 2026 12:00:00 +0000",
-        "description": "The deadly Ebola outbreak in eastern Democratic Republic of the Congo (DRC) is continuing to spread with a spike in child infections an increasingly likely scenario in the days ahead, UN agencies said on Friday.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/05-06-2026-WHO-DR-Congo-ebola-02.jpg/image560x340cropped.jpg",
         "categories": []
       }
     ],
