@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T00:01:39.935Z",
+  "generatedAt": "2026-06-16T00:00:58.132Z",
   "lookbackDays": 90,
   "decisionLanes": {
     "us_equities": "美股变化",
@@ -8,6 +8,330 @@
   },
   "marketContextStatus": "stale",
   "marketContextGeneratedAt": "2026-06-16T07:09:19.390Z",
-  "totalEvents": 0,
-  "events": []
+  "totalEvents": 1,
+  "events": [
+    {
+      "id": "macro-policy-ipo-spacex-史上最大",
+      "title": "宏观政策与利率",
+      "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+      "decisionLane": "us_equities",
+      "decisionLaneLabel": "美股变化",
+      "decisionGrade": "B",
+      "decisionSignal": "观察验证",
+      "decisionBrief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+      "marketContext": {
+        "tickers": [
+          "TSLA",
+          "QQQ"
+        ],
+        "symbols": {},
+        "topMovers": [],
+        "hasMarketData": false,
+        "status": "stale",
+        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "stale": true
+      },
+      "policyStatus": "",
+      "confirmedFacts": [
+        "SpaceX市值空降美股前十",
+        "马斯克成为全球首位万亿美元富豪",
+        "此轮造富可能源于史上最大规模IPO",
+        "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
+      ],
+      "marketRelevance": "关联标的：TSLA、QQQ；行情时间：2026-06-16T07:09:19.390Z。",
+      "riskFactors": [
+        "高估值风险、造富效应与财富集中争议",
+        "不足以判断",
+        "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+        "行情数据可能过期，需核对实时价格。"
+      ],
+      "evidenceGaps": [
+        "缺少可用行情数据或 API 密钥。",
+        "缺少官方或市场权威来源。"
+      ],
+      "sourceQuality": {
+        "sourceCount": 2,
+        "officialCount": 0,
+        "financialMediaCount": 0,
+        "timelineCount": 6,
+        "confidence": "medium"
+      },
+      "relatedEntities": [
+        "TSLA",
+        "QQQ",
+        "马斯克",
+        "SpaceX",
+        "纳斯达克"
+      ],
+      "whyItMatters": "标志科技企业市值和富豪身家达到新里程碑",
+      "impactAreas": [
+        "宏观",
+        "国际",
+        "商业",
+        "市值空降美股前十"
+      ],
+      "watchlist": [
+        "跟踪 宏观、国际、商业 的后续变化",
+        "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-16T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "影响市场重大事件： SpaceX大涨19%总市值站上2.5万亿美元；我国成功将高端卫星通信、毫米波通信终端量产成本从万元级降至千元",
+        "summary": "SpaceX市值突破2.5万亿美元，涨幅19%；我国航天科技集团联合企业将卫星通信终端量产成本从万元降至千元。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-16/4427344.html",
+        "publishedAt": "2026-06-16T00:00:00.000Z",
+        "score": 89
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-13",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-13T09:00:47.914Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "score": 87,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-14T09:00:40.480Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "影响市场重大事件： SpaceX大涨19%总市值站上2.5万亿美元；我国成功将高端卫星通信、毫米波通信终端量产成本从万元级降至千元",
+          "summary": "SpaceX市值突破2.5万亿美元，涨幅19%；我国航天科技集团联合企业将卫星通信终端量产成本从万元降至千元。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427344.html",
+          "score": 89,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 6,
+      "heat": "高",
+      "primarySource": "每日经济新闻",
+      "sourceCount": 2,
+      "sources": [
+        "第一财经",
+        "每日经济新闻"
+      ],
+      "keywords": [
+        "宏观",
+        "国际",
+        "商业",
+        "市值空降美股前十",
+        "马斯克成为全球首位万亿美",
+        "史上最大",
+        "将至",
+        "哪些早期投资者将从"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-12",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "score": 97,
+          "publishedAt": "2026-06-12T09:01:14.051Z"
+        },
+        {
+          "date": "2026-06-13",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "score": 91,
+          "publishedAt": "2026-06-13T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-13",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-13T09:00:47.914Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "score": 87,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-14T09:00:40.480Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "影响市场重大事件： SpaceX大涨19%总市值站上2.5万亿美元；我国成功将高端卫星通信、毫米波通信终端量产成本从万元级降至千元",
+          "summary": "SpaceX市值突破2.5万亿美元，涨幅19%；我国航天科技集团联合企业将卫星通信终端量产成本从万元降至千元。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427344.html",
+          "score": 89,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "macro-item-06646bdbac",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-14T09:00:40.480Z",
+          "score": 97
+        },
+        {
+          "id": "macro-item-1c8f7d7ba8",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-13T09:00:47.914Z",
+          "score": 97
+        },
+        {
+          "id": "macro-item-8b73efee6b",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-12T09:01:14.051Z",
+          "score": 97
+        },
+        {
+          "id": "international-item-969b764a62",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-13T00:00:00.000Z",
+          "score": 91
+        },
+        {
+          "id": "business-item-91638ade1b",
+          "title": "影响市场重大事件： SpaceX大涨19%总市值站上2.5万亿美元；我国成功将高端卫星通信、毫米波通信终端量产成本从万元级降至千元",
+          "summary": "SpaceX市值突破2.5万亿美元，涨幅19%；我国航天科技集团联合企业将卫星通信终端量产成本从万元降至千元。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427344.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "business",
+          "publishedAt": "2026-06-16T00:00:00.000Z",
+          "score": 89
+        },
+        {
+          "id": "business-item-5d4eb1e693",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "business",
+          "publishedAt": "2026-06-14T00:00:00.000Z",
+          "score": 87
+        }
+      ],
+      "items": [
+        {
+          "id": "macro-item-06646bdbac",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-14T09:00:40.480Z",
+          "score": 97
+        },
+        {
+          "id": "macro-item-1c8f7d7ba8",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-13T09:00:47.914Z",
+          "score": 97
+        },
+        {
+          "id": "macro-item-8b73efee6b",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-12T09:01:14.051Z",
+          "score": 97
+        },
+        {
+          "id": "international-item-969b764a62",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-13T00:00:00.000Z",
+          "score": 91
+        },
+        {
+          "id": "business-item-91638ade1b",
+          "title": "影响市场重大事件： SpaceX大涨19%总市值站上2.5万亿美元；我国成功将高端卫星通信、毫米波通信终端量产成本从万元级降至千元",
+          "summary": "SpaceX市值突破2.5万亿美元，涨幅19%；我国航天科技集团联合企业将卫星通信终端量产成本从万元降至千元。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427344.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "business",
+          "publishedAt": "2026-06-16T00:00:00.000Z",
+          "score": 89
+        },
+        {
+          "id": "business-item-5d4eb1e693",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "business",
+          "publishedAt": "2026-06-14T00:00:00.000Z",
+          "score": 87
+        }
+      ]
+    }
+  ]
 }
