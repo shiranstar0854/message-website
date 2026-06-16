@@ -57,10 +57,44 @@
     return url ? `article.html?url=${encodeURIComponent(url)}` : "article.html";
   }
 
+  function renderTextList(title, values, fallback) {
+    const items = (values || []).filter(Boolean).slice(0, 4);
+    return `
+      <section>
+        <h3>${escapeHtml(title)}</h3>
+        <ul>
+          ${(items.length ? items : [fallback]).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+      </section>
+    `;
+  }
+
+  function renderMarketContext(marketContext) {
+    const context = marketContext || {};
+    const symbols = Object.entries(context.symbols || {}).slice(0, 6);
+    if (!symbols.length && !(context.tickers || []).length) {
+      return `<p>${context.status === "unconfigured" ? "行情未配置：缺少 ALPHA_VANTAGE_API_KEY。" : "暂无可展示行情数据。"}</p>`;
+    }
+    const rows = symbols.length
+      ? symbols.map(([symbol, quote]) => `<span class="event-market-chip">${escapeHtml(symbol)} ${escapeHtml(quote.price || "")} ${escapeHtml(quote.changePercent || "")}</span>`).join("")
+      : (context.tickers || []).map((symbol) => `<span class="event-market-chip">${escapeHtml(symbol)}</span>`).join("");
+    return `
+      <div class="event-market-row">${rows}</div>
+      <p>${escapeHtml(context.stale ? "行情可能过期，交易前需核对实时价格。" : `行情时间：${context.generatedAt || "未知"}`)}</p>
+    `;
+  }
+
   function renderEvents(container, data) {
     if (!container) return;
     const events = data.events || [];
     if (!events.length) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <strong>暂无满足决策简报门槛的重点事件</strong>
+          <p>当前只展示美股变化、中美 AI 发展、中国权威政策落地三条主线中证据足够的事件；缺少 ticker、行情、权威来源或交叉验证时会暂时降级为普通信息。</p>
+        </div>
+      `;
+      return;
       window.MessageChooseRender.renderEmptyState(container, {
         title: "暂无可追踪的重点事件",
         detail: "事件页只展示至少包含两条相关信息的聚合主题，信息流更新后会自动生成。"
@@ -103,6 +137,13 @@
     if (!container) return;
     const events = data.events || [];
     if (!events.length) {
+      container.innerHTML = `
+        <div class="empty-state">
+          <strong>暂无满足决策简报门槛的重点事件</strong>
+          <p>当前只展示美股变化、中美 AI 发展、中国权威政策落地三条主线中证据足够的事件；缺少 ticker、行情、权威来源或交叉验证时会暂时降级为普通信息。</p>
+        </div>
+      `;
+      return;
       window.MessageChooseRender.renderEmptyState(container, {
         title: "暂无可追踪的重点事件",
         detail: "事件页只展示至少包含两条相关信息的聚合主题，信息流更新后会自动生成。"
@@ -122,6 +163,13 @@
         <article class="event-card">
           <div class="event-card-head">
             <div>
+              <div class="event-decision-meta">
+                <span>${escapeHtml(event.decisionLaneLabel || "决策简报")}</span>
+                <span>${escapeHtml(event.decisionGrade || "B")}级</span>
+                <span>${escapeHtml(event.decisionSignal || "观察验证")}</span>
+                <span>${escapeHtml(event.sourceQuality?.confidence || "medium")}</span>
+              </div>
+              ${event.decisionBrief ? `<p class="event-decision-brief">${escapeHtml(event.decisionBrief)}</p>` : ""}
               <h2>${escapeHtml(event.title || "重点事件")}</h2>
               <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
             </div>
@@ -132,6 +180,23 @@
             <h3>${latestTitle}</h3>
             <p>${escapeHtml(latest.summary || "")}</p>
             <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 发布时间：${escapeHtml(formatDate(latest.publishedAt || event.updatedAt))} · 来源数：${Number(event.sourceCount || event.sources?.length || 0)}</span>
+          </div>
+          <div class="event-explainer-grid event-decision-grid">
+            <section>
+              <h3>现在怎么处理</h3>
+              <p>${escapeHtml(event.decisionBrief || "纳入观察，先核对原文和后续市场反应。")}</p>
+            </section>
+            <section>
+              <h3>行情/市场相关</h3>
+              ${renderMarketContext(event.marketContext)}
+            </section>
+            ${renderTextList("确认事实", event.confirmedFacts, "暂无足够确认事实，建议打开证据原文核对。")}
+            <section>
+              <h3>政策落地状态</h3>
+              <p>${escapeHtml(event.policyStatus || event.marketRelevance || "非政策落地主线，关注后续官方发布和市场反应。")}</p>
+            </section>
+            ${renderTextList("风险与不确定性", event.riskFactors, "后续执行细节和市场反应仍需继续跟踪。")}
+            ${renderTextList("证据缺口", event.evidenceGaps, "继续观察后续官方发布和价格反应是否一致。")}
           </div>
           <div class="event-explainer-grid">
             <section>

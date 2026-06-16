@@ -6,6 +6,7 @@ const { titleSimilarity } = require("./lib/pipeline");
 const ROOT_DIR = path.resolve(__dirname, "..");
 const LATEST_PATH = path.join(ROOT_DIR, "src", "data", "latest-items.json");
 const EVENTS_PATH = path.join(ROOT_DIR, "src", "data", "events.json");
+const MARKET_CONTEXT_PATH = path.join(ROOT_DIR, "src", "data", "market-context.json");
 const ARCHIVE_DIR = path.join(ROOT_DIR, "data", "archive", "daily");
 const EVENT_LOOKBACK_DAYS = 90;
 
@@ -20,6 +21,31 @@ const EVENT_RULES = [
 function normalizeText(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
 }
+
+const US_EQUITY_SYMBOLS = ["NVDA", "MSFT", "GOOGL", "META", "AMZN", "AMD", "AVGO", "TSLA", "QQQ", "SPY", "SMH"];
+const US_EQUITY_ALIASES = [
+  { symbol: "NVDA", labels: ["NVDA", "NVIDIA", "\u82f1\u4f1f\u8fbe"] },
+  { symbol: "MSFT", labels: ["MSFT", "Microsoft", "\u5fae\u8f6f"] },
+  { symbol: "GOOGL", labels: ["GOOGL", "Google", "Alphabet", "\u8c37\u6b4c"] },
+  { symbol: "META", labels: ["META", "Meta", "Facebook"] },
+  { symbol: "AMZN", labels: ["AMZN", "Amazon", "AWS", "\u4e9a\u9a6c\u900a"] },
+  { symbol: "AMD", labels: ["AMD", "Advanced Micro Devices"] },
+  { symbol: "AVGO", labels: ["AVGO", "Broadcom", "\u535a\u901a"] },
+  { symbol: "TSLA", labels: ["TSLA", "Tesla", "\u7279\u65af\u62c9", "Elon Musk", "Musk", "\u9a6c\u65af\u514b", "SpaceX", "Starship", "Starlink"] },
+  { symbol: "QQQ", labels: ["QQQ", "Nasdaq", "Nasdaq 100", "\u7eb3\u65af\u8fbe\u514b"] },
+  { symbol: "SPY", labels: ["SPY", "S&P 500", "\u6807\u666e500"] },
+  { symbol: "SMH", labels: ["SMH", "semiconductor ETF", "chip ETF", "\u534a\u5bfc\u4f53ETF"] }
+];
+const AI_ENTITY_ALIASES = ["AI", "artificial intelligence", "OpenAI", "Google", "Microsoft", "GitHub", "NVIDIA", "compute", "chip", "model", "\u4eba\u5de5\u667a\u80fd", "\u5927\u6a21\u578b", "\u7b97\u529b", "\u82af\u7247"];
+const CHINA_POLICY_SOURCES = ["\u56fd\u52a1\u9662", "\u4e2d\u56fd\u653f\u5e9c\u7f51", "\u4eba\u6c11\u94f6\u884c", "\u4e2d\u56fd\u4eba\u6c11\u94f6\u884c", "\u8bc1\u76d1\u4f1a", "\u4e2d\u56fd\u8bc1\u76d1\u4f1a", "\u53d1\u6539\u59d4", "\u56fd\u5bb6\u53d1\u5c55\u6539\u9769\u59d4", "\u8d22\u653f\u90e8", "\u7edf\u8ba1\u5c40", "\u56fd\u5bb6\u7edf\u8ba1\u5c40", "\u79d1\u6280\u90e8", "\u5de5\u4fe1\u90e8"];
+const CHINA_POLICY_PATTERN = /(\u653f\u7b56|\u76d1\u7ba1|\u901a\u77e5|\u529e\u6cd5|\u610f\u89c1|\u8bd5\u70b9|\u6267\u884c|\u843d\u5730|\u5904\u7f5a|\u6267\u6cd5|\u53d1\u5e03|\u5f81\u6c42\u610f\u89c1|\u56fd\u52a1\u9662|\u4eba\u6c11\u94f6\u884c|\u8bc1\u76d1\u4f1a|\u53d1\u6539\u59d4|\u8d22\u653f\u90e8|\u7edf\u8ba1\u5c40|\u79d1\u6280\u90e8|\u5de5\u4fe1\u90e8)/i;
+const POLICY_STATUS_RULES = [
+  { status: "\u76d1\u7ba1\u5904\u7f5a", pattern: /(\u5904\u7f5a|\u6267\u6cd5|\u516c\u5f00\u8c34\u8d23|penalty|enforcement|sanction)/i },
+  { status: "\u5f81\u6c42\u610f\u89c1", pattern: /(\u5f81\u6c42\u610f\u89c1|consultation|proposal|proposed)/i },
+  { status: "\u8bd5\u70b9", pattern: /(\u8bd5\u70b9|pilot)/i },
+  { status: "\u843d\u5730\u6267\u884c", pattern: /(\u843d\u5730|\u6267\u884c|\u5b9e\u65bd|\u65bd\u884c|effective|implementation)/i },
+  { status: "\u53d1\u5e03", pattern: /(\u53d1\u5e03|\u516c\u5e03|announce|release|issued)/i }
+];
 
 function hasChineseText(value) {
   return /[\u4e00-\u9fff]/u.test(String(value || ""));
@@ -115,6 +141,223 @@ function buildEventSummary(items, label) {
 
 function uniqueValues(values, limit) {
   return [...new Set(values.map(normalizeText).filter(Boolean))].slice(0, limit);
+}
+
+function lowerText(value) {
+  return normalizeText(value).toLowerCase();
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function hasAnyText(text, values) {
+  const lower = lowerText(text);
+  return values.some((value) => {
+    const normalized = lowerText(value);
+    if (!normalized) return false;
+    if (/^[a-z0-9]{1,3}$/i.test(normalized)) {
+      return new RegExp(`\\b${escapeRegExp(normalized)}\\b`, "i").test(lower);
+    }
+    return lower.includes(normalized);
+  });
+}
+
+function itemDecisionText(item) {
+  return normalizeText([
+    itemText(item),
+    item.source,
+    item.url,
+    item.why_it_matters,
+    item.impact,
+    item.risks,
+    ...(item.summary_points || []),
+    ...(item.key_data || [])
+  ].filter(Boolean).join(" "));
+}
+
+function extractTickersFromText(text) {
+  const lower = lowerText(text);
+  const tickers = new Set();
+  US_EQUITY_ALIASES.forEach((entry) => {
+    if (entry.labels.some((label) => lower.includes(lowerText(label)))) {
+      tickers.add(entry.symbol);
+    }
+  });
+  [...String(text || "").matchAll(/\b[A-Z]{2,5}\b/g)]
+    .map((match) => match[0])
+    .filter((symbol) => US_EQUITY_SYMBOLS.includes(symbol))
+    .forEach((symbol) => tickers.add(symbol));
+  return [...tickers];
+}
+
+function extractRelatedEntities(items, tickers = []) {
+  const text = items.map(itemDecisionText).join(" ");
+  const entities = new Set(tickers);
+  US_EQUITY_ALIASES.forEach((entry) => {
+    entry.labels.forEach((label) => {
+      if (hasAnyText(text, [label])) entities.add(label);
+    });
+  });
+  [...AI_ENTITY_ALIASES, ...CHINA_POLICY_SOURCES, "NASA", "FAA", "FCC", "SEC", "Federal Reserve"].forEach((label) => {
+    if (hasAnyText(text, [label])) entities.add(label);
+  });
+  return [...entities].slice(0, 12);
+}
+
+function marketSymbolsFromContext(marketContext = {}) {
+  const symbols = marketContext.symbols || {};
+  return new Set(Object.keys(symbols).filter((symbol) => symbols[symbol] && symbols[symbol].status !== "missing"));
+}
+
+function buildEventMarketContext(items, marketContext = {}) {
+  const text = items.map(itemDecisionText).join(" ");
+  const inferredTickers = extractTickersFromText(text);
+  const available = marketSymbolsFromContext(marketContext);
+  const symbols = {};
+  inferredTickers.forEach((symbol) => {
+    if (marketContext.symbols?.[symbol]) symbols[symbol] = marketContext.symbols[symbol];
+  });
+  const hasMarketData = inferredTickers.some((symbol) => available.has(symbol));
+  const topMovers = (marketContext.topMovers || [])
+    .filter((entry) => inferredTickers.includes(entry.symbol))
+    .slice(0, 5);
+  return {
+    tickers: inferredTickers,
+    symbols,
+    topMovers,
+    hasMarketData,
+    status: marketContext.status || (Object.keys(marketContext.symbols || {}).length ? "available" : "missing"),
+    generatedAt: marketContext.generatedAt || "",
+    stale: Boolean(marketContext.stale)
+  };
+}
+
+function isChinaPolicySource(item) {
+  const source = `${item.source || ""} ${item.sourceId || ""}`;
+  return ["official-agency", "official-market"].includes(item.sourceAuthority)
+    && hasAnyText(source, CHINA_POLICY_SOURCES);
+}
+
+function isAiDecisionItem(item) {
+  return hasAnyText(itemDecisionText(item), AI_ENTITY_ALIASES);
+}
+
+function isStrongAiDecisionItem(item) {
+  const specificKeywords = itemKeywords(item).filter((keyword) => lowerText(keyword) !== "ai");
+  return hasAnyText([
+    displayTitle(item),
+    item.title,
+    item.source,
+    ...specificKeywords
+  ].filter(Boolean).join(" "), AI_ENTITY_ALIASES);
+}
+
+function eventDecisionLane(items, eventMarketContext) {
+  const text = items.map(itemDecisionText).join(" ");
+  if (eventMarketContext.tickers.length || eventMarketContext.hasMarketData) return "us_equities";
+  const policyItems = items.filter((item) => isChinaPolicySource(item) && CHINA_POLICY_PATTERN.test(itemDecisionText(item)));
+  if (policyItems.length >= 2) return "china_policy";
+  const aiItems = items.filter(isStrongAiDecisionItem);
+  if (aiItems.length >= 2) return "china_us_ai";
+  return "";
+}
+
+function buildPolicyStatus(items, lane) {
+  if (lane !== "china_policy") return "";
+  const text = items.map(itemDecisionText).join(" ");
+  const match = POLICY_STATUS_RULES.find((rule) => rule.pattern.test(text));
+  return match?.status || "\u53d1\u5e03";
+}
+
+function buildSourceQuality(items, timeline, eventMarketContext) {
+  const sourceCount = uniqueValues(items.map((item) => item.source), 20).length;
+  const officialCount = items.filter((item) => ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority)).length;
+  const financialMediaCount = items.filter((item) => item.sourceAuthority === "financial-media").length;
+  const confidence = officialCount > 0 && (sourceCount >= 2 || eventMarketContext.hasMarketData) ? "high"
+    : officialCount > 0 || sourceCount >= 2 ? "medium"
+      : "low";
+  return {
+    sourceCount,
+    officialCount,
+    financialMediaCount,
+    timelineCount: timeline.length,
+    confidence
+  };
+}
+
+function decisionGrade(lane, sourceQuality, eventMarketContext, topScore) {
+  if (!lane) return "C";
+  if (lane === "us_equities" && !eventMarketContext.tickers.length && !eventMarketContext.hasMarketData) return "C";
+  if (lane === "china_policy" && sourceQuality.officialCount < 1) return "C";
+  if (sourceQuality.confidence === "high" && sourceQuality.timelineCount >= 2 && Number(topScore || 0) >= 75) return "A";
+  if (sourceQuality.confidence !== "low" && sourceQuality.timelineCount >= 2 && Number(topScore || 0) >= 60) return "B";
+  return "C";
+}
+
+function decisionSignal(grade) {
+  if (grade === "A") return "\u4f18\u5148\u8ddf\u8e2a";
+  if (grade === "B") return "\u89c2\u5bdf\u9a8c\u8bc1";
+  return "\u6682\u4e0d\u884c\u52a8";
+}
+
+function decisionLaneLabel(lane) {
+  return {
+    us_equities: "\u7f8e\u80a1\u53d8\u5316",
+    china_us_ai: "\u4e2d\u7f8e AI \u53d1\u5c55",
+    china_policy: "\u4e2d\u56fd\u6743\u5a01\u653f\u7b56\u843d\u5730"
+  }[lane] || "\u91cd\u70b9\u4e8b\u4ef6";
+}
+
+function buildDecisionBrief(lane, grade, items, eventMarketContext, policyStatus) {
+  const label = decisionLaneLabel(lane);
+  const top = items[0] || {};
+  const tickers = eventMarketContext.tickers.length ? `\u5173\u8054 ${eventMarketContext.tickers.join("/")}` : "";
+  const status = policyStatus ? `\u653f\u7b56\u72b6\u6001\uff1a${policyStatus}` : "";
+  const suffix = [tickers, status].filter(Boolean).join("\uff1b");
+  if (grade === "A") return compactSentence(`${label}\u51fa\u73b0\u9ad8\u4f18\u5148\u7ea7\u4fe1\u53f7\uff0c\u5efa\u8bae\u7acb\u5373\u6838\u5bf9\u539f\u6587\u3001\u884c\u60c5\u548c\u540e\u7eed\u5b98\u65b9\u53d1\u5e03${suffix ? `\uff1b${suffix}` : ""}\u3002`, 150);
+  if (grade === "B") return compactSentence(`${label}\u503c\u5f97\u7eb3\u5165\u89c2\u5bdf\u5217\u8868\uff0c\u4f46\u9700\u7b49\u5f85\u66f4\u591a\u6765\u6e90\u6216\u5e02\u573a\u53cd\u5e94\u9a8c\u8bc1${suffix ? `\uff1b${suffix}` : ""}\u3002`, 150);
+  return compactSentence(`${label}\u8bc1\u636e\u4e0d\u8db3\uff0c\u6682\u4e0d\u4f5c\u4e3a\u4ea4\u6613\u89c2\u5bdf\u4e3b\u7ebf\u3002${displaySummary(top)}`, 150);
+}
+
+function buildConfirmedFacts(items) {
+  return uniqueValues(items.flatMap((item) => [
+    ...(item.summary_points || []),
+    displaySummary(item),
+    displayTitle(item)
+  ]), 4).map((fact) => compactSentence(fact, 120));
+}
+
+function buildMarketRelevance(lane, eventMarketContext, items) {
+  if (lane !== "us_equities") {
+    return lane === "china_us_ai"
+      ? "\u5173\u6ce8\u7f8e\u80a1 AI \u94fe\u6761\u3001\u4e2d\u56fd AI \u653f\u7b56\u548c\u7b97\u529b\u4f9b\u7ed9\u7684\u8fde\u9501\u53cd\u5e94\u3002"
+      : "\u5173\u6ce8\u653f\u7b56\u843d\u5730\u5bf9 A \u80a1\u3001\u6e2f\u80a1\u4e0e\u4e2d\u6982\u80a1\u9884\u671f\u7684\u5f71\u54cd\u3002";
+  }
+  if (!eventMarketContext.tickers.length) return "\u5c1a\u672a\u5339\u914d\u5230\u53ef\u8ddf\u8e2a\u7684\u7f8e\u80a1\u6216 ETF\u3002";
+  const changes = eventMarketContext.tickers.map((symbol) => {
+    const quote = eventMarketContext.symbols?.[symbol];
+    if (!quote) return symbol;
+    const pct = quote.changePercent || quote.change_percentage || "";
+    return pct ? `${symbol} ${pct}` : symbol;
+  });
+  return `\u5173\u8054\u6807\u7684\uff1a${changes.join("\u3001")}\uff1b\u884c\u60c5\u65f6\u95f4\uff1a${eventMarketContext.generatedAt || "\u672a\u914d\u7f6e"}\u3002`;
+}
+
+function buildRiskFactors(items, eventMarketContext, sourceQuality) {
+  const risks = uniqueValues(items.map((item) => item.risks).filter(Boolean), 3);
+  if (eventMarketContext.stale) risks.push("\u884c\u60c5\u6570\u636e\u53ef\u80fd\u8fc7\u671f\uff0c\u9700\u6838\u5bf9\u5b9e\u65f6\u4ef7\u683c\u3002");
+  if (sourceQuality.confidence === "low") risks.push("\u6765\u6e90\u9a8c\u8bc1\u4e0d\u8db3\uff0c\u4e0d\u5b9c\u5355\u72ec\u4f5c\u4e3a\u5224\u65ad\u4f9d\u636e\u3002");
+  return risks.length ? risks.slice(0, 4) : ["\u540e\u7eed\u6267\u884c\u7ec6\u8282\u548c\u5e02\u573a\u53cd\u5e94\u4ecd\u9700\u7ee7\u7eed\u8ddf\u8e2a\u3002"];
+}
+
+function buildEvidenceGaps(lane, eventMarketContext, sourceQuality) {
+  const gaps = [];
+  if (lane === "us_equities" && !eventMarketContext.hasMarketData) gaps.push("\u7f3a\u5c11\u53ef\u7528\u884c\u60c5\u6570\u636e\u6216 API \u5bc6\u94a5\u3002");
+  if (sourceQuality.sourceCount < 2) gaps.push("\u7f3a\u5c11\u8de8\u6765\u6e90\u4ea4\u53c9\u9a8c\u8bc1\u3002");
+  if (sourceQuality.officialCount < 1) gaps.push("\u7f3a\u5c11\u5b98\u65b9\u6216\u5e02\u573a\u6743\u5a01\u6765\u6e90\u3002");
+  if (!gaps.length) gaps.push("\u7ee7\u7eed\u89c2\u5bdf\u540e\u7eed\u5b98\u65b9\u53d1\u5e03\u548c\u4ef7\u683c\u53cd\u5e94\u662f\u5426\u4e00\u81f4\u3002");
+  return gaps.slice(0, 4);
 }
 
 function significantKeywords(item) {
@@ -344,6 +587,7 @@ function readArchiveItems(generatedAt, options = {}) {
 
 function buildEvents(items, generatedAt = new Date().toISOString(), options = {}) {
   const groups = new Map();
+  const marketContext = options.marketContext || {};
 
   dedupeEventItems(items || []).filter(isEventReadyItem).forEach((item) => {
     const group = groupForItem(item, groups);
@@ -366,10 +610,28 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         .filter(Boolean)
         .sort()
         .at(-1) || generatedAt;
+      const eventMarketContext = buildEventMarketContext(sortedItems, marketContext);
+      const decisionLane = eventDecisionLane(sortedItems, eventMarketContext);
+      const sourceQuality = buildSourceQuality(sortedItems, timeline, eventMarketContext);
+      const grade = decisionGrade(decisionLane, sourceQuality, eventMarketContext, Number(topItems[0]?.score || 0));
+      const policyStatus = buildPolicyStatus(sortedItems, decisionLane);
       return {
         id: group.id,
         title: group.label,
         summary: buildExplainedSummary(topItems, group.label),
+        decisionLane,
+        decisionLaneLabel: decisionLaneLabel(decisionLane),
+        decisionGrade: grade,
+        decisionSignal: decisionSignal(grade),
+        decisionBrief: buildDecisionBrief(decisionLane, grade, topItems, eventMarketContext, policyStatus),
+        marketContext: eventMarketContext,
+        policyStatus,
+        confirmedFacts: buildConfirmedFacts(topItems),
+        marketRelevance: buildMarketRelevance(decisionLane, eventMarketContext, topItems),
+        riskFactors: buildRiskFactors(topItems, eventMarketContext, sourceQuality),
+        evidenceGaps: buildEvidenceGaps(decisionLane, eventMarketContext, sourceQuality),
+        sourceQuality,
+        relatedEntities: extractRelatedEntities(sortedItems, eventMarketContext.tickers),
         whyItMatters: buildWhyItMatters(topItems, group.label),
         impactAreas: buildImpactAreas(topItems, group.label),
         watchlist: buildWatchlist(topItems, group.label),
@@ -387,14 +649,26 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         items: evidenceItems
       };
     })
-    .filter((event) => event.itemCount >= 2 && event.timeline.length >= 2 && event.itemCount <= Number(options.maxEventItems || 20))
-    .sort((left, right) => Number(right.items[0]?.score || 0) - Number(left.items[0]?.score || 0)
+    .filter((event) => event.itemCount >= 2
+      && event.timeline.length >= 2
+      && event.itemCount <= Number(options.maxEventItems || 20)
+      && event.decisionLane
+      && event.decisionGrade !== "C")
+    .sort((left, right) => ["A", "B", "C"].indexOf(left.decisionGrade) - ["A", "B", "C"].indexOf(right.decisionGrade)
+      || Number(right.items[0]?.score || 0) - Number(left.items[0]?.score || 0)
       || new Date(right.updatedAt || 0).getTime() - new Date(left.updatedAt || 0).getTime())
     .slice(0, Number(options.limit || 8));
 
   return {
     generatedAt,
     lookbackDays: Number(options.lookbackDays || EVENT_LOOKBACK_DAYS),
+    decisionLanes: {
+      us_equities: "\u7f8e\u80a1\u53d8\u5316",
+      china_us_ai: "\u4e2d\u7f8e AI \u53d1\u5c55",
+      china_policy: "\u4e2d\u56fd\u6743\u5a01\u653f\u7b56\u843d\u5730"
+    },
+    marketContextStatus: marketContext.status || "missing",
+    marketContextGeneratedAt: marketContext.generatedAt || "",
     totalEvents: events.length,
     events
   };
@@ -443,7 +717,8 @@ function generateEvents(options = {}) {
   const latest = readJson(LATEST_PATH, { items: [], generatedAt: "" });
   const generatedAt = latest.generatedAt || new Date().toISOString();
   const archiveItems = readArchiveItems(generatedAt, options);
-  const data = buildEvents([...(archiveItems || []), ...(latest.items || [])], generatedAt, options);
+  const marketContext = options.marketContext || readJson(MARKET_CONTEXT_PATH, { status: "missing", symbols: {}, topMovers: [] });
+  const data = buildEvents([...(archiveItems || []), ...(latest.items || [])], generatedAt, { ...options, marketContext });
   fs.mkdirSync(path.dirname(EVENTS_PATH), { recursive: true });
   fs.writeFileSync(EVENTS_PATH, `${JSON.stringify(data, null, 2)}\n`, "utf8");
   fs.writeFileSync(LATEST_PATH, `${JSON.stringify(applyTimelineEventIds(latest, data.events), null, 2)}\n`, "utf8");
@@ -458,6 +733,8 @@ if (require.main === module) {
 module.exports = {
   buildEvents,
   buildTimeline,
+  buildEventMarketContext,
+  eventDecisionLane,
   applyTimelineEventIds,
   buildTimelineEventMap,
   generateEvents,

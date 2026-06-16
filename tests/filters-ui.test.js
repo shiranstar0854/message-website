@@ -117,3 +117,65 @@ test("keyword search exposes hit labels for rendered feedback", () => {
   assert.ok(labels.includes("标题命中"));
   assert.ok(labels.includes("关键词命中"));
 });
+test("keyword search expands Musk and SpaceX into tradable proxy entities", () => {
+  const filters = loadFilters();
+  const items = [{
+    id: "spacex",
+    title: "NASA updates Starship launch review",
+    source: "NASA Breaking News",
+    sourceAuthority: "official-agency",
+    category: "news",
+    score: 88,
+    relatedEntities: ["SpaceX", "Starship", "TSLA", "NASA", "FAA"],
+    marketContext: { tickers: ["TSLA"], symbols: { TSLA: { changePercent: "1.2%" } } }
+  }, {
+    id: "other",
+    title: "General science update",
+    source: "Science Desk",
+    category: "news",
+    score: 99
+  }];
+
+  const result = filters.applyFilters(items, {
+    channel: "all",
+    source: "all",
+    keyword: "\u9a6c\u65af\u514b SpaceX",
+    minScore: 0,
+    sort: "score-desc"
+  });
+
+  assert.deepEqual(Array.from(result, (item) => item.id), ["spacex"]);
+  assert.ok(result[0].searchHitLabels.includes("行情/标的命中"));
+});
+
+test("keyword search ranks NVIDIA AI market matches ahead of generic AI items", () => {
+  const filters = loadFilters();
+  const items = [{
+    id: "generic-ai",
+    title: "AI product update",
+    source: "Example",
+    category: "tech",
+    score: 95,
+    summary: "General AI update."
+  }, {
+    id: "nvda-ai",
+    title: "Chip supplier update",
+    source: "Market Desk",
+    sourceAuthority: "financial-media",
+    category: "finance",
+    score: 80,
+    relatedEntities: ["NVDA", "NVIDIA"],
+    marketContext: { tickers: ["NVDA"], symbols: { NVDA: { changePercent: "2.0%" } } },
+    summary: "AI demand supports GPU suppliers."
+  }];
+
+  const result = filters.applyFilters(items, {
+    channel: "all",
+    source: "all",
+    keyword: "\u82f1\u4f1f\u8fbe AI",
+    minScore: 0,
+    sort: "score-desc"
+  });
+
+  assert.deepEqual(Array.from(result, (item) => item.id), ["nvda-ai"]);
+});

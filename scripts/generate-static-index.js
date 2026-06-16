@@ -134,6 +134,10 @@ function renderTopEvents(events) {
     return `
               <article class="home-event-card">
                 <div class="home-event-head">
+                  <div class="event-decision-meta">
+                    <span>${escapeHtml(event.decisionLaneLabel || "决策简报")}</span>
+                    <span>${escapeHtml(event.decisionSignal || "观察验证")}</span>
+                  </div>
                   <h3>${escapeHtml(event.title || "重点事件")}</h3>
                   <span>热度：${escapeHtml(event.heat || "中")}</span>
                 </div>

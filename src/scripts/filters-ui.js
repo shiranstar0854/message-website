@@ -28,8 +28,28 @@
     监管: ["regulation", "policy", "sec", "csrc", "证监会"]
   };
 
+  const DECISION_TERM_ALIASES = {
+    spacex: ["space x", "starship", "starlink", "tsla", "tesla", "elon musk", "musk", "nasa", "faa", "fcc", "\u9a6c\u65af\u514b", "\u7279\u65af\u62c9"],
+    "\u9a6c\u65af\u514b": ["elon musk", "musk", "spacex", "starship", "starlink", "tsla", "tesla", "nasa", "faa", "fcc"],
+    musk: ["elon musk", "spacex", "starship", "starlink", "tsla", "tesla"],
+    tesla: ["tsla", "\u7279\u65af\u62c9", "elon musk", "musk", "spacex"],
+    tsla: ["tesla", "\u7279\u65af\u62c9", "elon musk", "spacex"],
+    nvidia: ["nvda", "\u82f1\u4f1f\u8fbe", "gpu", "chip", "semiconductor", "smh"],
+    nvda: ["nvidia", "\u82f1\u4f1f\u8fbe", "gpu", "chip", "semiconductor", "smh"],
+    "\u82f1\u4f1f\u8fbe": ["nvidia", "nvda", "gpu", "chip", "semiconductor", "smh"],
+    openai: ["ai", "artificial intelligence", "microsoft", "msft", "\u4eba\u5de5\u667a\u80fd", "\u5927\u6a21\u578b"],
+    "\u4eba\u5de5\u667a\u80fd": ["ai", "artificial intelligence", "openai", "nvidia", "nvda", "google", "microsoft"],
+    "\u56fd\u52a1\u9662": ["\u4e2d\u56fd\u653f\u5e9c\u7f51", "\u653f\u7b56", "\u843d\u5730"],
+    "\u8bc1\u76d1\u4f1a": ["csrc", "sec", "\u76d1\u7ba1", "\u7f8e\u80a1", "\u4e2d\u56fd\u653f\u7b56"],
+    "\u4eba\u6c11\u94f6\u884c": ["pbc", "central bank", "\u592e\u884c", "\u653f\u7b56", "\u5229\u7387"],
+    "\u53d1\u6539\u59d4": ["ndrc", "\u653f\u7b56", "\u4ea7\u4e1a"],
+    "\u8d22\u653f\u90e8": ["mof", "\u653f\u7b56", "\u8d22\u653f"],
+    "\u79d1\u6280\u90e8": ["most", "ai", "\u79d1\u6280", "\u4eba\u5de5\u667a\u80fd"],
+    "\u5de5\u4fe1\u90e8": ["miit", "ai", "\u7b97\u529b", "\u82af\u7247", "\u4ea7\u4e1a"]
+  };
+
   function expandTerm(term) {
-    return [...new Set([term, ...(TERM_ALIASES[term] || [])].filter(Boolean).map(normalize))];
+    return [...new Set([term, ...(TERM_ALIASES[term] || []), ...(DECISION_TERM_ALIASES[term] || [])].filter(Boolean).map(normalize))];
   }
 
   function expandTerms(terms) {
@@ -37,11 +57,13 @@
   }
 
   function searchableText(item) {
+    const market = item.marketContext || {};
+    const sourceQuality = item.sourceQuality || {};
     return {
       title: normalize(`${item.title_zh || ""} ${item.titleZh || ""} ${item.translatedTitle || ""} ${item.title_original || ""} ${item.title || ""}`),
-      summary: normalize(`${item.summary_zh || ""} ${item.summaryZh || ""} ${item.summary_original || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""}`),
+      summary: normalize(`${item.summary_zh || ""} ${item.summaryZh || ""} ${item.summary_original || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""} ${item.decisionBrief || ""} ${item.marketRelevance || ""} ${(item.confirmedFacts || []).join(" ")} ${(item.riskFactors || []).join(" ")} ${(item.evidenceGaps || []).join(" ")}`),
       source: normalize(item.source),
-      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.article_keywords || item.keywords || []).join(" ")}`)
+      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${item.decisionLane || ""} ${item.decisionLaneLabel || ""} ${item.decisionSignal || ""} ${item.policyStatus || ""} ${(item.relatedEntities || []).join(" ")} ${(market.tickers || []).join(" ")} ${Object.keys(market.symbols || {}).join(" ")} ${sourceQuality.confidence || ""} ${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.article_keywords || item.keywords || []).join(" ")}`)
     };
   }
 
@@ -62,10 +84,14 @@
     const title = expandedTerms.reduce((score, term) => score + (fieldMatches(text.title, term) ? 1 : 0), 0);
     const keyword = expandedTerms.reduce((score, term) => score + (fieldMatches(text.labels, term) ? 1 : 0), 0);
     const relevance = expandedTerms.reduce((score, term) => score + (fieldMatches(text.summary, term) || fieldMatches(text.source, term) ? 1 : 0), 0);
+    const authority = ["official-agency", "official-market", "official-media", "financial-media"].includes(item.sourceAuthority) || item.sourceQuality?.officialCount > 0 ? 1 : 0;
+    const market = item.marketContext?.tickers?.length || Object.keys(item.marketContext?.symbols || {}).length ? 1 : 0;
     return {
       title,
       keyword,
       relevance,
+      authority,
+      market,
       freshness: freshnessScore(item),
       heat: Number(item.score || 0)
     };
@@ -74,7 +100,7 @@
   function getSearchScore(item, terms) {
     if (!terms.length) return 0;
     const score = getSearchBreakdown(item, terms);
-    return score.title * 100 + score.keyword * 70 + score.relevance * 35 + score.freshness + score.heat / 5;
+    return score.title * 100 + score.keyword * 70 + score.relevance * 35 + score.market * 20 + score.authority * 12 + score.freshness + score.heat / 5;
   }
 
   function getSearchHitLabels(item, terms) {
@@ -85,6 +111,8 @@
       breakdown.keyword > 0 ? "关键词命中" : "",
       breakdown.relevance > 0 ? "摘要/来源命中" : "",
       breakdown.freshness > 0 ? "新近发布" : ""
+      , breakdown.market > 0 ? "\u884c\u60c5/\u6807\u7684\u547d\u4e2d" : "",
+      breakdown.authority > 0 ? "\u6743\u5a01\u6765\u6e90" : ""
     ].filter(Boolean);
   }
 
@@ -113,6 +141,8 @@
       return rightScore.title - leftScore.title
         || rightScore.keyword - leftScore.keyword
         || rightScore.relevance - leftScore.relevance
+        || rightScore.market - leftScore.market
+        || rightScore.authority - leftScore.authority
         || rightScore.freshness - leftScore.freshness
         || rightScore.heat - leftScore.heat
         || new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0);

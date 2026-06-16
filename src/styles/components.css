@@ -1423,6 +1423,44 @@ output {
   line-height: 1.6;
 }
 
+.event-decision-meta,
+.event-market-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.event-decision-meta {
+  margin-bottom: 7px;
+}
+
+.event-decision-meta span,
+.event-market-chip {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 4px 7px;
+  color: var(--teal-dark);
+  background: #edf8f6;
+  border: 1px solid rgba(42, 157, 143, 0.22);
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.event-decision-brief {
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.event-decision-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .event-card-head strong {
   flex: 0 0 auto;
   padding: 5px 8px;
