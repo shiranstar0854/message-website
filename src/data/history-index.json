@@ -1,28 +1,49 @@
 {
-  "generatedAt": "2026-06-16T00:08:14.969Z",
+  "generatedAt": "2026-06-17T00:11:57.331Z",
   "retentionDays": 10,
-  "totalArchiveDays": 22,
+  "totalArchiveDays": 23,
   "totalDays": 10,
   "days": [
     {
-      "date": "2026-06-16",
-      "generatedAt": "2026-06-16T00:00:58.132Z",
-      "url": "data/archive/daily/2026-06-16.json",
-      "totalItems": 52,
+      "date": "2026-06-17",
+      "generatedAt": "2026-06-17T00:01:10.792Z",
+      "url": "data/archive/daily/2026-06-17.json",
+      "totalItems": 72,
       "totals": {
         "sources": 20,
-        "healthySources": 8,
-        "rawItems": 55,
-        "normalizedItems": 55,
-        "filteredItems": 52,
-        "dedupedItems": 52,
-        "scoredItems": 52,
-        "enrichmentAttempted": 51,
-        "enrichmentFailed": 8
+        "healthySources": 12,
+        "rawItems": 77,
+        "normalizedItems": 77,
+        "filteredItems": 74,
+        "dedupedItems": 72,
+        "scoredItems": 72,
+        "enrichmentAttempted": 71,
+        "enrichmentFailed": 0
       },
       "archivePolicy": {
         "maxItemsPerChannel": 20,
-        "availableItems": 52
+        "availableItems": 72
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "generatedAt": "2026-06-16T09:01:23.578Z",
+      "url": "data/archive/daily/2026-06-16.json",
+      "totalItems": 65,
+      "totals": {
+        "sources": 20,
+        "healthySources": 11,
+        "rawItems": 69,
+        "normalizedItems": 69,
+        "filteredItems": 67,
+        "dedupedItems": 65,
+        "scoredItems": 65,
+        "enrichmentAttempted": 64,
+        "enrichmentFailed": 7
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 65
       }
     },
     {
@@ -191,27 +212,6 @@
       "archivePolicy": {
         "maxItemsPerChannel": 20,
         "availableItems": 13
-      }
-    },
-    {
-      "date": "2026-06-07",
-      "generatedAt": "2026-06-07T09:00:57.731Z",
-      "url": "data/archive/daily/2026-06-07.json",
-      "totalItems": 18,
-      "totals": {
-        "sources": 20,
-        "healthySources": 4,
-        "rawItems": 18,
-        "normalizedItems": 18,
-        "filteredItems": 18,
-        "dedupedItems": 18,
-        "scoredItems": 18,
-        "enrichmentAttempted": 18,
-        "enrichmentFailed": 0
-      },
-      "archivePolicy": {
-        "maxItemsPerChannel": 20,
-        "availableItems": 18
       }
     }
   ]
