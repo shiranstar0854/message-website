@@ -13,7 +13,8 @@ test("buildEvents groups related high-value items into event clusters", () => {
       summary_zh: "新的 AI 安全框架发布。",
       translation_status: "translated",
       sourceLanguage: "en",
-      source: "Source A",
+      source: "OpenAI News",
+      sourceAuthority: "official-media",
       category: "tech",
       publishedAt: "2026-06-01T00:00:00.000Z",
       score: 92,
@@ -46,7 +47,7 @@ test("buildEvents groups related high-value items into event clusters", () => {
   ], "2026-06-02T03:00:00.000Z");
 
   assert.equal(data.totalEvents, 1);
-  assert.equal(data.events[0].id, "ai-policy-ai政策");
+  assert.equal(data.events[0].decisionLane, "china_us_ai");
   assert.equal(data.events[0].itemCount, 2);
   assert.deepEqual(data.events[0].items.map((item) => item.id), ["ai-1", "ai-2"]);
   assert.equal(data.events[0].latestUpdate.title, "人工智能政策听证会");
@@ -213,7 +214,6 @@ test("buildEvents only promotes China policy events from authoritative sources",
       title: "国务院发布人工智能政策落地安排",
       summary: "政策明确试点和执行节奏。",
       source: "中国政府网要闻",
-      sourceAuthority: "official-agency",
       category: "news",
       publishedAt: "2026-06-01T00:00:00.000Z",
       score: 94,
@@ -224,7 +224,6 @@ test("buildEvents only promotes China policy events from authoritative sources",
       title: "科技部发布人工智能试点执行细则",
       summary: "试点将进入落地执行阶段。",
       source: "科技部工作动态",
-      sourceAuthority: "official-agency",
       category: "tech",
       publishedAt: "2026-06-02T00:00:00.000Z",
       score: 92,

@@ -82,3 +82,37 @@ test("Alpha Vantage limit preserves previous market context as stale", async () 
   assert.equal(data.stale, true);
   assert.equal(data.symbols.NVDA.price, 120);
 });
+
+test("Alpha Vantage partial responses keep fetched quotes", async () => {
+  const outputPath = path.join(os.tmpdir(), `market-context-${Date.now()}-partial.json`);
+  const responses = [
+    {
+      "Global Quote": {
+        "01. symbol": "NVDA",
+        "05. price": "125.50",
+        "07. latest trading day": "2026-06-15",
+        "10. change percent": "2.03%"
+      }
+    },
+    { Note: "API call frequency exceeded." }
+  ];
+
+  const data = await fetchMarketData({
+    env: { ALPHA_VANTAGE_API_KEY: "test-key" },
+    outputPath,
+    previousPath: outputPath,
+    symbols: ["NVDA", "MSFT"],
+    generatedAt: "2026-06-16T00:00:00.000Z",
+    requestDelayMs: 0,
+    sentimentSymbolLimit: 0,
+    fetchImpl: async () => ({
+      ok: true,
+      json: async () => responses.shift() || { Note: "API call frequency exceeded." }
+    })
+  });
+
+  assert.equal(data.status, "partial");
+  assert.equal(data.stale, false);
+  assert.equal(data.symbols.NVDA.price, 125.5);
+  assert.equal(data.symbols.MSFT, undefined);
+});

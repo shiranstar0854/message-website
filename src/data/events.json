@@ -8,8 +8,1121 @@
   },
   "marketContextStatus": "stale",
   "marketContextGeneratedAt": "2026-06-16T07:09:19.390Z",
-  "totalEvents": 1,
+  "totalEvents": 4,
   "events": [
+    {
+      "id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。 相关来源：中国政府网要闻、财政部财政新闻",
+      "decisionLane": "china_policy",
+      "decisionLaneLabel": "中国权威政策落地",
+      "decisionGrade": "A",
+      "decisionSignal": "优先跟踪",
+      "decisionBrief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+      "marketContext": {
+        "tickers": [],
+        "symbols": {},
+        "topMovers": [],
+        "hasMarketData": false,
+        "status": "stale",
+        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "stale": true
+      },
+      "policyStatus": "落地执行",
+      "confirmedFacts": [
+        "文章来源于《求是》杂志第12期，于2026年6月16日出版。",
+        "文章为习近平总书记2012年12月至2026年4月期间关于教育、科技、人才一体化发展的重要论述节录。",
+        "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
+        "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》"
+      ],
+      "marketRelevance": "关注政策落地对 A 股、港股与中概股预期的影响。",
+      "riskFactors": [
+        "不足以判断",
+        "行情数据可能过期，需核对实时价格。"
+      ],
+      "evidenceGaps": [
+        "继续观察后续官方发布和价格反应是否一致。"
+      ],
+      "sourceQuality": {
+        "sourceCount": 4,
+        "officialCount": 20,
+        "financialMediaCount": 0,
+        "timelineCount": 12,
+        "confidence": "high"
+      },
+      "relatedEntities": [
+        "AI",
+        "人工智能",
+        "国务院",
+        "中国政府网",
+        "人民银行",
+        "中国人民银行",
+        "国家发展改革委",
+        "财政部",
+        "统计局",
+        "国家统计局",
+        "工信部"
+      ],
+      "whyItMatters": "该文章集中体现了习近平主席对教育、科技、人才协同发展的长期思考，可能对政策方向具有指导意义。",
+      "impactAreas": [
+        "公共政策",
+        "求是",
+        "杂志发表习近平总书记重要",
+        "文章"
+      ],
+      "watchlist": [
+        "跟踪 公共政策、求是、杂志发表习近平总书记重要 的后续变化",
+        "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-15T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》",
+        "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072129.htm",
+        "publishedAt": "2026-06-15T00:00:00.000Z",
+        "score": 100
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-14",
+          "title": "抓住国家发展和安全战略的牛鼻子——践行习近平总书记重要论述深入实施能源安全新战略观察",
+          "summary": "习近平总书记提出'四个革命、一个合作'能源安全新战略，为新时代能源发展指明方向。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072029.htm",
+          "score": 100,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "去年全国活跃数据总量同比增28.46%",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072025.htm",
+          "score": 100,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》",
+          "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072129.htm",
+          "score": 100,
+          "publishedAt": "2026-06-15T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "Social Financing Aggregate Increment in First 5 Months Totals 17.48 Trillion Yuan",
+          "summary": "央行数据显示，前5月社会融资规模增量17.48万亿元，5月末存量458.81万亿元，同比增7.7%。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072054.htm",
+          "score": 100,
+          "publishedAt": "2026-06-15T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 20,
+      "heat": "高",
+      "primarySource": "中国政府网要闻",
+      "sourceCount": 4,
+      "sources": [
+        "中国政府网要闻",
+        "财政部财政新闻",
+        "国家统计局数据发布",
+        "国家发展改革委新闻发布"
+      ],
+      "keywords": [
+        "公共政策",
+        "求是",
+        "杂志发表习近平总书记重要",
+        "文章",
+        "一体推进教育科技人才发展",
+        "中国政府网要闻列表",
+        "覆盖国务院",
+        "部门政策和公共事务即时发"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-10",
+          "title": "人形机器人与具身智能实景实训行动启动",
+          "summary": "工信部、国资委联合启动2026年度人形机器人与具身智能实景实训专项行动，目标年底前在代表性场景完成应用验证和常态部署，形成百个以上高价值应用场景，带动万台级规模落地。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071714.htm",
+          "score": 100,
+          "publishedAt": "2026-06-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-10",
+          "title": "郑栅洁主任主持召开经济形势专家座谈会 围绕当前经济形势和做好下一步经济工作听取意见建议",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260610_1405810.html",
+          "score": 100,
+          "publishedAt": "2026-06-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-10",
+          "title": "福建：在财政改革发展中树立和践行正确政绩观",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/fujiancaizhengxinxilianbo/202606/t20260610_3991446.htm",
+          "score": 100,
+          "publishedAt": "2026-06-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-11",
+          "title": "张国清将出席“全球趋同促增长峰会”",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071826.htm",
+          "score": 100,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-11",
+          "title": "推动中朝关系与时俱进 营造和平稳定发展环境——国际社会高度评价习近平总书记朝鲜之行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071791.htm",
+          "score": 100,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-11",
+          "title": "八部门促铁路与旅游融合发展 打造160列以上铁路旅游列车专用车组",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071795.htm",
+          "score": 100,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-11",
+          "title": "工业和信息化部印发意见 推动“人工智能+信息通信”创新发展",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7071789.htm",
+          "score": 100,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "廖岷出席亚太经合组织财政高官会并致辞",
+          "summary": "财政部发布廖岷出席APEC财政高官会并致辞的新闻。",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260612_3991522.htm",
+          "score": 100,
+          "publishedAt": "2026-06-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "抓住国家发展和安全战略的牛鼻子——践行习近平总书记重要论述深入实施能源安全新战略观察",
+          "summary": "习近平总书记提出'四个革命、一个合作'能源安全新战略，为新时代能源发展指明方向。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072029.htm",
+          "score": 100,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "去年全国活跃数据总量同比增28.46%",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072025.htm",
+          "score": 100,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》",
+          "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072129.htm",
+          "score": 100,
+          "publishedAt": "2026-06-15T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "Social Financing Aggregate Increment in First 5 Months Totals 17.48 Trillion Yuan",
+          "summary": "央行数据显示，前5月社会融资规模增量17.48万亿元，5月末存量458.81万亿元，同比增7.7%。",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072054.htm",
+          "score": 100,
+          "publishedAt": "2026-06-15T00:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "news-item-44d3182281",
+          "title": "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》",
+          "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072129.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-15T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-96e8cf4e4d",
+          "title": "Social Financing Aggregate Increment in First 5 Months Totals 17.48 Trillion Yuan",
+          "summary": "央行数据显示，前5月社会融资规模增量17.48万亿元，5月末存量458.81万亿元，同比增7.7%。",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072054.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-15T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-9499219a17",
+          "title": "抓住国家发展和安全战略的牛鼻子——践行习近平总书记重要论述深入实施能源安全新战略观察",
+          "summary": "习近平总书记提出'四个革命、一个合作'能源安全新战略，为新时代能源发展指明方向。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072029.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-14T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-a407af8820",
+          "title": "去年全国活跃数据总量同比增28.46%",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072025.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-14T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-53d9896747",
+          "title": "廖岷出席亚太经合组织财政高官会并致辞",
+          "summary": "财政部发布廖岷出席APEC财政高官会并致辞的新闻。",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260612_3991522.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-12T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "international-item-1edde7dfee",
+          "title": "张国清将出席“全球趋同促增长峰会”",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071826.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-11T00:00:00.000Z",
+          "score": 100
+        }
+      ],
+      "items": [
+        {
+          "id": "news-item-44d3182281",
+          "title": "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》",
+          "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072129.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-15T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-96e8cf4e4d",
+          "title": "Social Financing Aggregate Increment in First 5 Months Totals 17.48 Trillion Yuan",
+          "summary": "央行数据显示，前5月社会融资规模增量17.48万亿元，5月末存量458.81万亿元，同比增7.7%。",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072054.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-15T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-9499219a17",
+          "title": "抓住国家发展和安全战略的牛鼻子——践行习近平总书记重要论述深入实施能源安全新战略观察",
+          "summary": "习近平总书记提出'四个革命、一个合作'能源安全新战略，为新时代能源发展指明方向。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072029.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-14T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-a407af8820",
+          "title": "去年全国活跃数据总量同比增28.46%",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072025.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-14T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-53d9896747",
+          "title": "廖岷出席亚太经合组织财政高官会并致辞",
+          "summary": "财政部发布廖岷出席APEC财政高官会并致辞的新闻。",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260612_3991522.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-12T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "international-item-1edde7dfee",
+          "title": "张国清将出席“全球趋同促增长峰会”",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071826.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-11T00:00:00.000Z",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "lane-china_us_ai",
+      "title": "中美 AI 发展",
+      "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。 相关来源：OpenAI News、GitHub Blog、中国政府网要闻",
+      "decisionLane": "china_us_ai",
+      "decisionLaneLabel": "中美 AI 发展",
+      "decisionGrade": "A",
+      "decisionSignal": "优先跟踪",
+      "decisionBrief": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+      "marketContext": {
+        "tickers": [],
+        "symbols": {},
+        "topMovers": [],
+        "hasMarketData": false,
+        "status": "stale",
+        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "stale": true
+      },
+      "policyStatus": "",
+      "confirmedFacts": [
+        "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+        "智能时代的产业政策",
+        "安装并配置LSP服务器，以代码智能替代暴力grep/反编译",
+        "自定义代理让Copilot CLI理解技术栈与团队工作流"
+      ],
+      "marketRelevance": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
+      "riskFactors": [
+        "不足以判断",
+        "行情数据可能过期，需核对实时价格。"
+      ],
+      "evidenceGaps": [
+        "继续观察后续官方发布和价格反应是否一致。"
+      ],
+      "sourceQuality": {
+        "sourceCount": 3,
+        "officialCount": 1,
+        "financialMediaCount": 0,
+        "timelineCount": 12,
+        "confidence": "high"
+      },
+      "relatedEntities": [
+        "AI",
+        "OpenAI",
+        "GitHub",
+        "人工智能",
+        "国务院",
+        "中国政府网"
+      ],
+      "whyItMatters": "OpenAI发布AI产业政策蓝图，可能引导未来全球AI治理与经济发展方向。",
+      "impactAreas": [
+        "AI治理",
+        "产业政策",
+        "科技战略",
+        "国际"
+      ],
+      "watchlist": [
+        "跟踪 AI治理、产业政策、科技战略 的后续变化",
+        "留意 OpenAI News、GitHub Blog 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-15T20:15:31.000Z",
+      "latestUpdate": {
+        "title": "GitHub Copilot CLI 初学者指南：常用斜杠命令概览",
+        "summary": "本文介绍GitHub Copilot CLI的安装与配置，通过LSP服务器替代传统grep/反编译，自定义代理可理解技术栈与团队流程，将一次性终端提示转化为可重复、可审查的流程。同时发布CC0-1.0许可的数据集，涵盖README、I...",
+        "source": "GitHub Blog",
+        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+        "publishedAt": "2026-06-15T20:15:31.000Z",
+        "score": 95
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-12",
+          "title": "OpenAI推出新一代工作学院课程",
+          "summary": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "score": 93,
+          "publishedAt": "2026-06-12T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "OpenAI推出合作伙伴网络",
+          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "score": 94,
+          "publishedAt": "2026-06-14T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "通过新开放数据集加速多语言AI研究人员和开发者",
+          "summary": "文章主要介绍了GitHub Copilot CLI的基础使用，但标题提及的多语言AI开放数据集在内容中未涉及。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "score": 95,
+          "publishedAt": "2026-06-15T19:17:30.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "GitHub Copilot CLI 初学者指南：常用斜杠命令概览",
+          "summary": "本文介绍GitHub Copilot CLI的安装与配置，通过LSP服务器替代传统grep/反编译，自定义代理可理解技术栈与团队流程，将一次性终端提示转化为可重复、可审查的流程。同时发布CC0-1.0许可的数据集，涵盖README、Issues、PRs中的多语言开发者内容。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "score": 95,
+          "publishedAt": "2026-06-15T20:15:31.000Z"
+        }
+      ],
+      "itemCount": 14,
+      "heat": "高",
+      "primarySource": "GitHub Blog",
+      "sourceCount": 3,
+      "sources": [
+        "OpenAI News",
+        "GitHub Blog",
+        "中国政府网要闻"
+      ],
+      "keywords": [
+        "AI治理",
+        "产业政策",
+        "科技战略",
+        "国际",
+        "公共政策",
+        "地缘政治",
+        "商业",
+        "AI代码生成"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-08",
+          "title": "惠及所有人的计划",
+          "summary": "OpenAI发布愿景，聚焦AI普及、安全与共同繁荣，旨在确保通用人工智能造福全社会。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+          "score": 92,
+          "publishedAt": "2026-06-08T01:30:00.000Z"
+        },
+        {
+          "date": "2026-06-08",
+          "title": "GitHub初学者指南：常见问题解答",
+          "summary": "GitHub开发者倡导者Kedasha分享学习经验，帮助他人了解科技行业。文章教如何使用VS Code与GitHub交互、维护项目，并寻找开源贡献机会。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions",
+          "score": 85,
+          "publishedAt": "2026-06-08T16:00:00.000Z"
+        },
+        {
+          "date": "2026-06-09",
+          "title": "智能时代的产业政策",
+          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+          "score": 96,
+          "publishedAt": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-09",
+          "title": "Codex为Notion解锁的能力",
+          "summary": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/notion",
+          "score": 93,
+          "publishedAt": "2026-06-09T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-09",
+          "title": "Nextdoor工程师如何利用Codex无限制构建",
+          "summary": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/nextdoor",
+          "score": 85,
+          "publishedAt": "2026-06-09T12:00:00.000Z"
+        },
+        {
+          "date": "2026-06-11",
+          "title": "BBVA将人工智能置于银行业核心，与OpenAI合作",
+          "summary": "BBVA与OpenAI合作，将ChatGPT Enterprise推广至10万名员工，加速AI驱动的银行业转型。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/bbva",
+          "score": 92,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-11",
+          "title": "OpenAI将收购Ona",
+          "summary": "OpenAI计划收购Ona，利用其安全持久的云环境扩展Codex，以支持企业工作流中的长期运行AI代理。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/openai-to-acquire-ona",
+          "score": 92,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "Preply如何结合AI与人工导师实现个性化学习",
+          "summary": "Preply利用OpenAI推出AI生成课程摘要，结合人工导师提供个性化反馈和练习。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/preply",
+          "score": 92,
+          "publishedAt": "2026-06-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "OpenAI推出新一代工作学院课程",
+          "summary": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "score": 93,
+          "publishedAt": "2026-06-12T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "OpenAI推出合作伙伴网络",
+          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "score": 94,
+          "publishedAt": "2026-06-14T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "通过新开放数据集加速多语言AI研究人员和开发者",
+          "summary": "文章主要介绍了GitHub Copilot CLI的基础使用，但标题提及的多语言AI开放数据集在内容中未涉及。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "score": 95,
+          "publishedAt": "2026-06-15T19:17:30.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "GitHub Copilot CLI 初学者指南：常用斜杠命令概览",
+          "summary": "本文介绍GitHub Copilot CLI的安装与配置，通过LSP服务器替代传统grep/反编译，自定义代理可理解技术栈与团队流程，将一次性终端提示转化为可重复、可审查的流程。同时发布CC0-1.0许可的数据集，涵盖README、Issues、PRs中的多语言开发者内容。",
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "score": 95,
+          "publishedAt": "2026-06-15T20:15:31.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "international-openai-news-c87c9f548d",
+          "title": "智能时代的产业政策",
+          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "score": 96
+        },
+        {
+          "id": "tech-github-blog-db9f0e80c6",
+          "title": "GitHub Copilot CLI 初学者指南：常用斜杠命令概览",
+          "summary": "本文介绍GitHub Copilot CLI的安装与配置，通过LSP服务器替代传统grep/反编译，自定义代理可理解技术栈与团队流程，将一次性终端提示转化为可重复、可审查的流程。同时发布CC0-1.0许可的数据集，涵盖README、Issues、PRs中的多语言开发者内容。",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T20:15:31.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-github-blog-cde94bf4e0",
+          "title": "通过新开放数据集加速多语言AI研究人员和开发者",
+          "summary": "文章主要介绍了GitHub Copilot CLI的基础使用，但标题提及的多语言AI开放数据集在内容中未涉及。",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T19:17:30.000Z",
+          "score": 95
+        },
+        {
+          "id": "news-item-d23c6d1fee",
+          "title": "人工智能相关产品拉动外贸增长",
+          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-31T00:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "international-openai-news-60ec682462",
+          "title": "OpenAI推出合作伙伴网络",
+          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-14T17:00:00.000Z",
+          "score": 94
+        },
+        {
+          "id": "tech-openai-news-ba99a841f0",
+          "title": "OpenAI推出新一代工作学院课程",
+          "summary": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-12T10:00:00.000Z",
+          "score": 93
+        }
+      ],
+      "items": [
+        {
+          "id": "international-openai-news-c87c9f548d",
+          "title": "智能时代的产业政策",
+          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "score": 96
+        },
+        {
+          "id": "tech-github-blog-db9f0e80c6",
+          "title": "GitHub Copilot CLI 初学者指南：常用斜杠命令概览",
+          "summary": "本文介绍GitHub Copilot CLI的安装与配置，通过LSP服务器替代传统grep/反编译，自定义代理可理解技术栈与团队流程，将一次性终端提示转化为可重复、可审查的流程。同时发布CC0-1.0许可的数据集，涵盖README、Issues、PRs中的多语言开发者内容。",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T20:15:31.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-github-blog-cde94bf4e0",
+          "title": "通过新开放数据集加速多语言AI研究人员和开发者",
+          "summary": "文章主要介绍了GitHub Copilot CLI的基础使用，但标题提及的多语言AI开放数据集在内容中未涉及。",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T19:17:30.000Z",
+          "score": 95
+        },
+        {
+          "id": "news-item-d23c6d1fee",
+          "title": "人工智能相关产品拉动外贸增长",
+          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-31T00:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "international-openai-news-60ec682462",
+          "title": "OpenAI推出合作伙伴网络",
+          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-14T17:00:00.000Z",
+          "score": 94
+        },
+        {
+          "id": "tech-openai-news-ba99a841f0",
+          "title": "OpenAI推出新一代工作学院课程",
+          "summary": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-12T10:00:00.000Z",
+          "score": 93
+        }
+      ]
+    },
+    {
+      "id": "market-regulation-市场监管-than-half",
+      "title": "市场监管",
+      "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。 相关来源：U.S. SEC Press Releases、第一财经、NASA Breaking News",
+      "decisionLane": "us_equities",
+      "decisionLaneLabel": "美股变化",
+      "decisionGrade": "B",
+      "decisionSignal": "观察验证",
+      "decisionBrief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+      "marketContext": {
+        "tickers": [
+          "GOOGL"
+        ],
+        "symbols": {},
+        "topMovers": [],
+        "hasMarketData": false,
+        "status": "stale",
+        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "stale": true
+      },
+      "policyStatus": "",
+      "confirmedFacts": [
+        "[object Object]",
+        "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+        "SEC任命John Moses为投资者教育和援助办公室主任",
+        "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+      ],
+      "marketRelevance": "关联标的：GOOGL；行情时间：2026-06-16T07:09:19.390Z。",
+      "riskFactors": [
+        "不足以判断",
+        "国际化面临生态建设、用户习惯、开发者支持等不确定性风险。",
+        "全球市场对鸿蒙生态接受度未知，开发者迁移成本高，与安卓和iOS兼容性问题待解。",
+        "行情数据可能过期，需核对实时价格。"
+      ],
+      "evidenceGaps": [
+        "缺少可用行情数据或 API 密钥。",
+        "缺少官方或市场权威来源。"
+      ],
+      "sourceQuality": {
+        "sourceCount": 5,
+        "officialCount": 0,
+        "financialMediaCount": 0,
+        "timelineCount": 10,
+        "confidence": "medium"
+      },
+      "relatedEntities": [
+        "GOOGL",
+        "谷歌",
+        "AI",
+        "NASA",
+        "SEC"
+      ],
+      "whyItMatters": "此任命可能影响SEC投资者教育和服务的方向，但具体政策变化有待观察。",
+      "impactAreas": [
+        "市场监管",
+        "金融监管",
+        "数据标准",
+        "宏观"
+      ],
+      "watchlist": [
+        "跟踪 市场监管、金融监管、数据标准 的后续变化",
+        "留意 U.S. SEC Press Releases、第一财经 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-16T00:00:00.000Z",
+      "latestUpdate": {
+        "title": "A股定增一览：11家公司披露定增进展",
+        "summary": "11家A股公司披露定增进展，具体名单和金额未提及。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-16/4427378.html",
+        "publishedAt": "2026-06-16T00:00:00.000Z",
+        "score": 89
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-13",
+          "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
+          "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "score": 97,
+          "publishedAt": "2026-06-13T09:00:47.914Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "Yu Chengdong Reveals New Progress of HarmonyOS: 66 Million Terminals, Fully Evolving to Agent Architecture",
+          "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "score": 97,
+          "publishedAt": "2026-06-14T09:00:40.480Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "A股定增一览：11家公司披露定增进展",
+          "summary": "11家A股公司披露定增进展，具体名单和金额未提及。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427378.html",
+          "score": 89,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "07:29 A股股票回购一览：38家公司披露回购进展",
+          "summary": "当日38家A股公司披露股票回购进展。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427371.html",
+          "score": 89,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        }
+      ],
+      "itemCount": 10,
+      "heat": "高",
+      "primarySource": "每日经济新闻",
+      "sourceCount": 5,
+      "sources": [
+        "U.S. SEC Press Releases",
+        "第一财经",
+        "NASA Breaking News",
+        "每日经济新闻",
+        "UN News"
+      ],
+      "keywords": [
+        "市场监管",
+        "金融监管",
+        "数据标准",
+        "宏观",
+        "国际",
+        "余承东披露鸿蒙新进展",
+        "万终端",
+        "全面向"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-08",
+          "title": "秘书长：殉职联合国员工超半数在加沙",
+          "summary": "联合国秘书长在年度纪念活动上表示，2025年共有136名工作人员因公殉职，其中超过一半在加沙工作。",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167669",
+          "score": 83,
+          "publishedAt": "2026-06-08T12:00:00.000Z"
+        },
+        {
+          "date": "2026-06-08",
+          "title": "SEC根据财务数据透明法案建立联合数据标准",
+          "summary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
+          "source": "U.S. SEC Press Releases",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+          "score": 100,
+          "publishedAt": "2026-06-08T14:36:00.000Z"
+        },
+        {
+          "date": "2026-06-09",
+          "title": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
+          "score": 87,
+          "publishedAt": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-09",
+          "title": "飞行动力学研究设施特点",
+          "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+          "source": "NASA Breaking News",
+          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
+          "score": 93,
+          "publishedAt": "2026-06-09T20:47:02.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "国金证券推出股份回购计划",
+          "summary": "国金证券拟回购1.5-3亿元股份，价格上限13元/股，旨在维护公司价值及股东权益。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-12/4424855.html",
+          "score": 87,
+          "publishedAt": "2026-06-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "SEC任命John Moses为投资者教育和援助办公室主任",
+          "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+          "source": "U.S. SEC Press Releases",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
+          "score": 100,
+          "publishedAt": "2026-06-12T16:30:00.000Z"
+        },
+        {
+          "date": "2026-06-13",
+          "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
+          "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "score": 97,
+          "publishedAt": "2026-06-13T09:00:47.914Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "Yu Chengdong Reveals New Progress of HarmonyOS: 66 Million Terminals, Fully Evolving to Agent Architecture",
+          "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "score": 97,
+          "publishedAt": "2026-06-14T09:00:40.480Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "A股定增一览：11家公司披露定增进展",
+          "summary": "11家A股公司披露定增进展，具体名单和金额未提及。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427378.html",
+          "score": 89,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "07:29 A股股票回购一览：38家公司披露回购进展",
+          "summary": "当日38家A股公司披露股票回购进展。",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427371.html",
+          "score": 89,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "finance-u-s-sec-press-releases-3356aa56d2",
+          "title": "SEC任命John Moses为投资者教育和援助办公室主任",
+          "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
+          "source": "U.S. SEC Press Releases",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "finance",
+          "publishedAt": "2026-06-12T16:30:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
+          "title": "SEC根据财务数据透明法案建立联合数据标准",
+          "summary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+          "source": "U.S. SEC Press Releases",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "finance",
+          "publishedAt": "2026-06-08T14:36:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-b668b99940",
+          "title": "Yu Chengdong Reveals New Progress of HarmonyOS: 66 Million Terminals, Fully Evolving to Agent Architecture",
+          "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-14T09:00:40.480Z",
+          "score": 97
+        },
+        {
+          "id": "macro-item-75c7d3fa37",
+          "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
+          "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-13T09:00:47.914Z",
+          "score": 97
+        },
+        {
+          "id": "news-nasa-breaking-news-abb3c2dc53",
+          "title": "飞行动力学研究设施特点",
+          "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
+          "source": "NASA Breaking News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-09T20:47:02.000Z",
+          "score": 93
+        },
+        {
+          "id": "business-item-65d64f69f9",
+          "title": "A股定增一览：11家公司披露定增进展",
+          "summary": "11家A股公司披露定增进展，具体名单和金额未提及。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427378.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "business",
+          "publishedAt": "2026-06-16T00:00:00.000Z",
+          "score": 89
+        }
+      ],
+      "items": [
+        {
+          "id": "finance-u-s-sec-press-releases-3356aa56d2",
+          "title": "SEC任命John Moses为投资者教育和援助办公室主任",
+          "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
+          "source": "U.S. SEC Press Releases",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "finance",
+          "publishedAt": "2026-06-12T16:30:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
+          "title": "SEC根据财务数据透明法案建立联合数据标准",
+          "summary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+          "source": "U.S. SEC Press Releases",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "finance",
+          "publishedAt": "2026-06-08T14:36:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-b668b99940",
+          "title": "Yu Chengdong Reveals New Progress of HarmonyOS: 66 Million Terminals, Fully Evolving to Agent Architecture",
+          "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-14T09:00:40.480Z",
+          "score": 97
+        },
+        {
+          "id": "macro-item-75c7d3fa37",
+          "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
+          "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
+          "url": "https://www.yicai.com/news/103227973.html",
+          "source": "第一财经",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-13T09:00:47.914Z",
+          "score": 97
+        },
+        {
+          "id": "news-nasa-breaking-news-abb3c2dc53",
+          "title": "飞行动力学研究设施特点",
+          "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
+          "source": "NASA Breaking News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-06-09T20:47:02.000Z",
+          "score": 93
+        },
+        {
+          "id": "business-item-65d64f69f9",
+          "title": "A股定增一览：11家公司披露定增进展",
+          "summary": "11家A股公司披露定增进展，具体名单和金额未提及。",
+          "url": "https://www.nbd.com.cn/articles/2026-06-16/4427378.html",
+          "source": "每日经济新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "business",
+          "publishedAt": "2026-06-16T00:00:00.000Z",
+          "score": 89
+        }
+      ]
+    },
     {
       "id": "macro-policy-ipo-spacex-史上最大",
       "title": "宏观政策与利率",

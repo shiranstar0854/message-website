@@ -5,6 +5,8 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const MARKET_CONTEXT_PATH = path.join(ROOT_DIR, "src", "data", "market-context.json");
 const DEFAULT_SYMBOLS = ["NVDA", "MSFT", "GOOGL", "META", "AMZN", "AMD", "AVGO", "TSLA", "QQQ", "SPY", "SMH"];
 const ALPHA_VANTAGE_ENDPOINT = "https://www.alphavantage.co/query";
+const DEFAULT_REQUEST_DELAY_MS = 1200;
+const DEFAULT_SENTIMENT_SYMBOL_LIMIT = 3;
 
 function percentNumber(value) {
   const number = Number(String(value || "").replace("%", ""));
@@ -93,6 +95,10 @@ function buildFallbackContext(status, generatedAt, message = "") {
   };
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function fetchAlphaVantage(functionName, params, apiKey, fetchImpl) {
   const url = new URL(ALPHA_VANTAGE_ENDPOINT);
   url.searchParams.set("function", functionName);
@@ -116,6 +122,8 @@ async function fetchMarketData(options = {}) {
   const previous = readJson(previousPath, null);
   const fetchImpl = options.fetchImpl || globalThis.fetch;
   const symbols = options.symbols || DEFAULT_SYMBOLS;
+  const requestDelayMs = Number(options.requestDelayMs ?? env.ALPHA_VANTAGE_REQUEST_DELAY_MS ?? DEFAULT_REQUEST_DELAY_MS);
+  const sentimentSymbolLimit = Number(options.sentimentSymbolLimit ?? env.ALPHA_VANTAGE_SENTIMENT_SYMBOL_LIMIT ?? DEFAULT_SENTIMENT_SYMBOL_LIMIT);
 
   if (!apiKey || !fetchImpl) {
     const fallback = previous
@@ -125,36 +133,64 @@ async function fetchMarketData(options = {}) {
     return fallback;
   }
 
-  try {
-    const symbolQuotes = {};
-    for (const symbol of symbols) {
-      const quote = await fetchAlphaVantage("GLOBAL_QUOTE", { symbol }, apiKey, fetchImpl);
+  let requestCount = 0;
+  async function request(functionName, params) {
+    if (requestDelayMs > 0 && requestCount > 0) await sleep(requestDelayMs);
+    requestCount += 1;
+    return fetchAlphaVantage(functionName, params, apiKey, fetchImpl);
+  }
+
+  const errors = [];
+  const symbolQuotes = {};
+  const newsSentiment = {};
+  let topMovers = [];
+
+  for (const symbol of symbols) {
+    try {
+      const quote = await request("GLOBAL_QUOTE", { symbol });
       symbolQuotes[symbol] = normalizeGlobalQuote(symbol, quote, generatedAt);
+    } catch (error) {
+      errors.push(`GLOBAL_QUOTE ${symbol}: ${error.message}`);
+      break;
     }
-    const topMovers = normalizeTopMovers(await fetchAlphaVantage("TOP_GAINERS_LOSERS", {}, apiKey, fetchImpl));
-    const newsSentiment = {};
-    for (const symbol of symbols.slice(0, 8)) {
-      const sentiment = await fetchAlphaVantage("NEWS_SENTIMENT", { tickers: symbol, limit: "8" }, apiKey, fetchImpl);
-      newsSentiment[symbol] = normalizeNewsSentiment(symbol, sentiment);
-    }
-    const data = {
-      generatedAt,
-      provider: "alpha-vantage",
-      status: "available",
-      stale: false,
-      symbols: symbolQuotes,
-      topMovers,
-      newsSentiment
-    };
-    writeJson(outputPath, data);
-    return data;
-  } catch (error) {
+  }
+
+  if (Object.keys(symbolQuotes).length === 0) {
     const fallback = previous
-      ? { ...previous, status: "stale", stale: true, message: error.message, generatedAt }
-      : buildFallbackContext("stale", generatedAt, error.message);
+      ? { ...previous, status: "stale", stale: true, message: errors.join("; ") || "Alpha Vantage returned no usable quote data.", generatedAt }
+      : buildFallbackContext("stale", generatedAt, errors.join("; ") || "Alpha Vantage returned no usable quote data.");
     writeJson(outputPath, fallback);
     return fallback;
   }
+
+  try {
+    topMovers = normalizeTopMovers(await request("TOP_GAINERS_LOSERS", {}));
+  } catch (error) {
+    errors.push(`TOP_GAINERS_LOSERS: ${error.message}`);
+  }
+
+  for (const symbol of symbols.slice(0, Math.max(0, sentimentSymbolLimit))) {
+    try {
+      const sentiment = await request("NEWS_SENTIMENT", { tickers: symbol, limit: "8" });
+      newsSentiment[symbol] = normalizeNewsSentiment(symbol, sentiment);
+    } catch (error) {
+      errors.push(`NEWS_SENTIMENT ${symbol}: ${error.message}`);
+      break;
+    }
+  }
+
+  const data = {
+    generatedAt,
+    provider: "alpha-vantage",
+    status: errors.length ? "partial" : "available",
+    stale: false,
+    message: errors.join("; "),
+    symbols: symbolQuotes,
+    topMovers,
+    newsSentiment
+  };
+  writeJson(outputPath, data);
+  return data;
 }
 
 if (require.main === module) {

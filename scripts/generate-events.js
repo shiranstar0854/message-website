@@ -39,6 +39,8 @@ const US_EQUITY_ALIASES = [
 const AI_ENTITY_ALIASES = ["AI", "artificial intelligence", "OpenAI", "Google", "Microsoft", "GitHub", "NVIDIA", "compute", "chip", "model", "\u4eba\u5de5\u667a\u80fd", "\u5927\u6a21\u578b", "\u7b97\u529b", "\u82af\u7247"];
 const CHINA_POLICY_SOURCES = ["\u56fd\u52a1\u9662", "\u4e2d\u56fd\u653f\u5e9c\u7f51", "\u4eba\u6c11\u94f6\u884c", "\u4e2d\u56fd\u4eba\u6c11\u94f6\u884c", "\u8bc1\u76d1\u4f1a", "\u4e2d\u56fd\u8bc1\u76d1\u4f1a", "\u53d1\u6539\u59d4", "\u56fd\u5bb6\u53d1\u5c55\u6539\u9769\u59d4", "\u8d22\u653f\u90e8", "\u7edf\u8ba1\u5c40", "\u56fd\u5bb6\u7edf\u8ba1\u5c40", "\u79d1\u6280\u90e8", "\u5de5\u4fe1\u90e8"];
 const CHINA_POLICY_PATTERN = /(\u653f\u7b56|\u76d1\u7ba1|\u901a\u77e5|\u529e\u6cd5|\u610f\u89c1|\u8bd5\u70b9|\u6267\u884c|\u843d\u5730|\u5904\u7f5a|\u6267\u6cd5|\u53d1\u5e03|\u5f81\u6c42\u610f\u89c1|\u56fd\u52a1\u9662|\u4eba\u6c11\u94f6\u884c|\u8bc1\u76d1\u4f1a|\u53d1\u6539\u59d4|\u8d22\u653f\u90e8|\u7edf\u8ba1\u5c40|\u79d1\u6280\u90e8|\u5de5\u4fe1\u90e8)/i;
+const CHINA_POLICY_ACTION_PATTERN = /(\u653f\u7b56|\u76d1\u7ba1|\u901a\u77e5|\u529e\u6cd5|\u610f\u89c1|\u8bd5\u70b9|\u6267\u884c|\u843d\u5730|\u5904\u7f5a|\u6267\u6cd5|\u53d1\u5e03|\u516c\u5e03|\u5f81\u6c42\u610f\u89c1|\u5b9e\u65bd|\u65bd\u884c|\u89c4\u5212|policy|regulation|notice|implementation|effective|proposal|pilot)/i;
+const CHINA_POLICY_EXCLUDE_PATTERN = /(\u4efb\u547d|\u4f1a\u89c1|\u4f1a\u8c08|\u901a\u7535\u8bdd|\u62db\u5f85\u4f1a|\u62b5\u8fbe|\u8bbf\u95ee|\u515a\u5efa|\u5916\u4ea4\u90e8\u957f|\u5916\u957f)/i;
 const POLICY_STATUS_RULES = [
   { status: "\u76d1\u7ba1\u5904\u7f5a", pattern: /(\u5904\u7f5a|\u6267\u6cd5|\u516c\u5f00\u8c34\u8d23|penalty|enforcement|sanction)/i },
   { status: "\u5f81\u6c42\u610f\u89c1", pattern: /(\u5f81\u6c42\u610f\u89c1|consultation|proposal|proposed)/i },
@@ -176,6 +178,36 @@ function itemDecisionText(item) {
   ].filter(Boolean).join(" "));
 }
 
+function itemPolicyText(item) {
+  return normalizeText([
+    displayTitle(item),
+    item.title,
+    item.title_zh,
+    item.summary_zh,
+    item.aiSummary,
+    item.why_it_matters,
+    item.impact,
+    item.risks,
+    ...(item.summary_points || []),
+    ...(item.key_data || [])
+  ].filter(Boolean).join(" "));
+}
+
+function itemAiContentText(item) {
+  return normalizeText([
+    displayTitle(item),
+    item.title,
+    item.title_zh,
+    item.summary_zh,
+    item.aiSummary,
+    item.why_it_matters,
+    item.impact,
+    item.risks,
+    ...(item.summary_points || []),
+    ...(item.key_data || [])
+  ].filter(Boolean).join(" "));
+}
+
 function extractTickersFromText(text) {
   const lower = lowerText(text);
   const tickers = new Set();
@@ -234,9 +266,16 @@ function buildEventMarketContext(items, marketContext = {}) {
 }
 
 function isChinaPolicySource(item) {
-  const source = `${item.source || ""} ${item.sourceId || ""}`;
-  return ["official-agency", "official-market"].includes(item.sourceAuthority)
-    && hasAnyText(source, CHINA_POLICY_SOURCES);
+  const source = `${item.source || ""} ${item.sourceId || ""} ${item.url || ""}`;
+  return hasAnyText(source, CHINA_POLICY_SOURCES);
+}
+
+function isChinaPolicyContentItem(item) {
+  const text = itemPolicyText(item);
+  const titleText = normalizeText([displayTitle(item), item.title, item.title_zh, item.summary_zh].filter(Boolean).join(" "));
+  return isChinaPolicySource(item)
+    && CHINA_POLICY_ACTION_PATTERN.test(text)
+    && !CHINA_POLICY_EXCLUDE_PATTERN.test(titleText);
 }
 
 function isAiDecisionItem(item) {
@@ -245,34 +284,80 @@ function isAiDecisionItem(item) {
 
 function isStrongAiDecisionItem(item) {
   const specificKeywords = itemKeywords(item).filter((keyword) => lowerText(keyword) !== "ai");
-  return hasAnyText([
+  const compactText = [
     displayTitle(item),
     item.title,
     item.source,
     ...specificKeywords
-  ].filter(Boolean).join(" "), AI_ENTITY_ALIASES);
+  ].filter(Boolean).join(" ");
+  return hasAnyText(compactText, AI_ENTITY_ALIASES);
+}
+
+function isOfficialSource(item) {
+  if (["official-agency", "official-market", "official-media"].includes(item.sourceAuthority)) return true;
+  return isChinaPolicySource(item);
+}
+
+function isKnownAiSource(item) {
+  const source = `${item.source || ""} ${item.sourceId || ""} ${item.url || ""}`;
+  return hasAnyText(source, [
+    "OpenAI News",
+    "Google AI Blog",
+    "Microsoft Azure Blog",
+    "GitHub Blog",
+    "CISA News"
+  ]);
+}
+
+function isAiContentItem(item) {
+  return hasAnyText(itemAiContentText(item), AI_ENTITY_ALIASES) || isKnownAiSource(item);
+}
+
+function isTrustedAiAnchorItem(item) {
+  if (!isStrongAiDecisionItem(item) || !isAiContentItem(item)) return false;
+  if (isKnownAiSource(item)) return true;
+  return isOfficialSource(item) || item.sourceAuthority === "financial-media";
+}
+
+function forcedDecisionLaneForItem(item) {
+  if (extractTickersFromText(itemDecisionText(item)).length) return "";
+  if (isChinaPolicyContentItem(item)) return "china_policy";
+  if (isTrustedAiAnchorItem(item)) return "china_us_ai";
+  return "";
+}
+
+function isCompatibleWithForcedLane(item, lane) {
+  if (lane === "china_policy") return isChinaPolicyContentItem(item);
+  if (lane === "china_us_ai") return isAiContentItem(item);
+  return false;
 }
 
 function eventDecisionLane(items, eventMarketContext) {
-  const text = items.map(itemDecisionText).join(" ");
   if (eventMarketContext.tickers.length || eventMarketContext.hasMarketData) return "us_equities";
-  const policyItems = items.filter((item) => isChinaPolicySource(item) && CHINA_POLICY_PATTERN.test(itemDecisionText(item)));
+  const policyItems = items.filter(isChinaPolicyContentItem);
   if (policyItems.length >= 2) return "china_policy";
-  const aiItems = items.filter(isStrongAiDecisionItem);
-  if (aiItems.length >= 2) return "china_us_ai";
+  const aiItems = items.filter(isAiContentItem);
+  const aiAnchorItems = items.filter(isTrustedAiAnchorItem);
+  if (aiItems.length >= 2 && aiAnchorItems.length >= 1) return "china_us_ai";
   return "";
+}
+
+function focusItemsForDecisionLane(items, lane) {
+  if (lane === "china_policy") return items.filter(isChinaPolicyContentItem);
+  if (lane === "china_us_ai") return items.filter(isAiContentItem);
+  return items;
 }
 
 function buildPolicyStatus(items, lane) {
   if (lane !== "china_policy") return "";
-  const text = items.map(itemDecisionText).join(" ");
+  const text = items.map(itemPolicyText).join(" ");
   const match = POLICY_STATUS_RULES.find((rule) => rule.pattern.test(text));
   return match?.status || "\u53d1\u5e03";
 }
 
 function buildSourceQuality(items, timeline, eventMarketContext) {
   const sourceCount = uniqueValues(items.map((item) => item.source), 20).length;
-  const officialCount = items.filter((item) => ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority)).length;
+  const officialCount = items.filter(isOfficialSource).length;
   const financialMediaCount = items.filter((item) => item.sourceAuthority === "financial-media").length;
   const confidence = officialCount > 0 && (sourceCount >= 2 || eventMarketContext.hasMarketData) ? "high"
     : officialCount > 0 || sourceCount >= 2 ? "medium"
@@ -535,10 +620,25 @@ function fallbackRuleForItem(item) {
 }
 
 function groupForItem(item, groups) {
+  const forcedLane = forcedDecisionLaneForItem(item);
+  if (forcedLane) {
+    const id = `lane-${forcedLane}`;
+    if (!groups.has(id)) {
+      groups.set(id, {
+        id,
+        label: decisionLaneLabel(forcedLane),
+        forcedLane,
+        items: []
+      });
+    }
+    return groups.get(id);
+  }
+
   const rule = ruleForItem(item) || fallbackRuleForItem(item);
   if (!rule) return null;
 
   const similar = [...groups.values()].find((group) => {
+    if (group.forcedLane && !isCompatibleWithForcedLane(item, group.forcedLane)) return false;
     const representative = group.items[0];
     const sharedKeywords = sharedKeywordCount(item, representative);
     const hasSpecificSharedKeyword = significantKeywords(item).some((keyword) => significantKeywords(representative).includes(keyword) && keyword.length >= 4);
@@ -597,9 +697,19 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
 
   const events = [...groups.values()]
     .map((group) => {
-      const sortedItems = group.items
+      const maxEventItems = Number(options.maxEventItems || 20);
+      let sortedItems = group.items
         .sort((left, right) => Number(right.score || 0) - Number(left.score || 0)
-          || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime());
+          || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
+        .slice(0, group.forcedLane ? maxEventItems : group.items.length);
+      let eventMarketContext = buildEventMarketContext(sortedItems, marketContext);
+      let decisionLane = group.forcedLane || eventDecisionLane(sortedItems, eventMarketContext);
+      const focusedItems = focusItemsForDecisionLane(sortedItems, decisionLane);
+      if (focusedItems.length >= 2 && focusedItems.length < sortedItems.length) {
+        sortedItems = focusedItems.slice(0, maxEventItems);
+        eventMarketContext = buildEventMarketContext(sortedItems, marketContext);
+        decisionLane = group.forcedLane || eventDecisionLane(sortedItems, eventMarketContext);
+      }
       const topItems = sortedItems.slice(0, 6);
       const evidenceItems = buildEvidenceItems(topItems);
       const timeline = buildTimeline(sortedItems);
@@ -610,8 +720,6 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         .filter(Boolean)
         .sort()
         .at(-1) || generatedAt;
-      const eventMarketContext = buildEventMarketContext(sortedItems, marketContext);
-      const decisionLane = eventDecisionLane(sortedItems, eventMarketContext);
       const sourceQuality = buildSourceQuality(sortedItems, timeline, eventMarketContext);
       const grade = decisionGrade(decisionLane, sourceQuality, eventMarketContext, Number(topItems[0]?.score || 0));
       const policyStatus = buildPolicyStatus(sortedItems, decisionLane);
