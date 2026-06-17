@@ -9,10 +9,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 3,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 1,
     "items": [
       {
@@ -72,10 +72,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 1,
     "items": [
       {
@@ -103,10 +103,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 1,
     "items": [
       {
@@ -136,10 +136,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -153,13 +153,31 @@
     "url": "https://azure.microsoft.com/en-us/blog/feed/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
-    "attempts": 2,
-    "items": [],
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
+    "attempts": 1,
+    "items": [
+      {
+        "title": "Modernize your data with Azure Storage: Plan and migrate with confidence",
+        "link": "https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/",
+        "guid": "https://azure.microsoft.com/en-us/blog/?p=52171",
+        "pubDate": "Tue, 16 Jun 2026 16:00:00 +0000",
+        "description": "<p>Enterprise storage migrations are rarely just about copying data. They are about protecting business continuity, maintaining performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit at the heart of critical applications.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/\">Modernize your data with Azure Storage: Plan and migrate with confidence</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+        "content": "<p class=\"wp-block-paragraph\">Enterprise storage migrations are rarely&nbsp;just about copying&nbsp;data. They are about protecting business continuity,&nbsp;maintaining&nbsp;performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit at the heart of critical applications.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That confidence is difficult to build when migration planning is fragmented. Many organizations still rely on a patchwork of scripts, third-party tools, and disconnected processes to:&nbsp;assess environments, move data, and keep systems aligned during transition. The result can be delayed timelines, avoidable disruption, and teams&nbsp;struggling&nbsp;to keep critical workloads running.</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://azure.microsoft.com/en-gb/solutions/storage-migration/\" target=\"_blank\" rel=\"noreferrer noopener\">Explore Azure Storage migration solutions</a></div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\">A successful migration strategy starts with understanding that different data requires different approaches:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">Some workloads need dependency assessment and sequencing before anything moves.</li>\n\n\n\n<li class=\"wp-block-list-item\">Some datasets are too large to transfer efficiently over the network.&nbsp;</li>\n\n\n\n<li class=\"wp-block-list-item\">Some file systems must remain synchronized while business operations continue.</li>\n\n\n\n<li class=\"wp-block-list-item\">Some data needs to land in Azure ready to support modernization scenarios such as analytics, AI, or application transformation&nbsp;initiatives.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>In this blog,&nbsp;we’ll&nbsp;walk through how to approach Azure Storage migration from planning to execution:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">How&nbsp;Azure Migrate&nbsp;and&nbsp;Azure Copilot Migration Agent&nbsp;can support assessment and decision-making.</li>\n\n\n\n<li class=\"wp-block-list-item\">How&nbsp;to select the right Microsoft first-party migration tool.</li>\n\n\n\n<li class=\"wp-block-list-item\">Azure Storage Mover&nbsp;and&nbsp;Azure Data Box&nbsp;can help address online, offline, and phased migration scenarios across real-world customer needs.</li>\n</ul>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"tool-overview\">Tool overview</h3>\n\n\n\n<p class=\"wp-block-paragraph\"><strong><a href=\"https://azure.microsoft.com/en-us/products/azure-migrate\" target=\"_blank\" rel=\"noopener noreferrer\">Azure Migrate</a>:</strong>&nbsp;Centralized hub for migration discovery, assessment, and planning.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong><a href=\"https://learn.microsoft.com/en-us/azure/migrate/azure-copilot-migration-agent?view=migrate\" target=\"_blank\" rel=\"noopener noreferrer\">Azure Copilot Migration Agent</a>:</strong>&nbsp;AI-powered extension for Azure Migrate, streamlining storage migration decisions (preview).</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong><a href=\"https://azure.microsoft.com/en-us/products/storage-mover\" target=\"_blank\" rel=\"noopener noreferrer\">Azure Storage Mover</a>:</strong>&nbsp;Free, managed online migration and synchronization tool for file/object data.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong><a href=\"https://azure.microsoft.com/en-us/products/databox\" target=\"_blank\" rel=\"noopener noreferrer\">Azure Data Box</a>:</strong>&nbsp;Secure offline transfer&nbsp;solution&nbsp;for large-scale or bandwidth-constrained datasets.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"1-azure-storage-migration-planning-build-your-data-migration-strategy\">1. Azure&nbsp;Storage migration planning: Build your data migration strategy</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Before organizations select a migration tool, they need to understand what they are moving, how systems are connected, which workloads carry the most risk, and what the destination architecture needs to support.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Azure&nbsp;Migrate&nbsp;provides a centralized hub for migration discovery, assessment, business case development, dependency analysis, and planning. It helps teams discover infrastructure and workloads, assess&nbsp;<a href=\"https://azure.microsoft.com/en-us\" target=\"_blank\">Azure</a>&nbsp;readiness, evaluate cost considerations, understand dependencies, and organize migration activity across on-premises and&nbsp;multicloud&nbsp;environments. For customers moving servers, applications, databases, or dependent workloads to&nbsp;Azure, this creates the planning foundation needed to make informed migration decisions before execution begins.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"azure-copilot-migration-agent-preview-access-and-benefits\">Azure Copilot Migration Agent: Preview access and benefits</h3>\n\n\n\n<p class=\"wp-block-paragraph\">From there, teams need to make storage-specific decisions. Azure Storage migration guidance follows a phased approach:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">Assess the&nbsp;source&nbsp;environment.</li>\n\n\n\n<li class=\"wp-block-list-item\">Select the right Azure Storage target.</li>\n\n\n\n<li class=\"wp-block-list-item\">Define the migration strategy.</li>\n\n\n\n<li class=\"wp-block-list-item\">Select the migration tool.</li>\n\n\n\n<li class=\"wp-block-list-item\">Execute.</li>\n</ol>\n\n\n\n<p class=\"wp-block-paragraph\">This sequence matters because the right tool should follow the data requirements and destination architecture, not the other way around.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The goal is not to force every migration through a single path. It is to use the right Microsoft solution at the right stage of the journey.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"2-select-the-right-azure-migration-tool\">2. Select the right Azure migration tool</h2>\n\n\n\n<figure data-wp-context=\"{\"imageId\":\"6a318832673c4\"}\" data-wp-interactive=\"core/image\" data-wp-key=\"6a318832673c4\" class=\"wp-block-image wp-lightbox-container\"><img decoding=\"async\" data-wp-class--hide=\"state.isContentHidden\" data-wp-class--show=\"state.isContentVisible\" data-wp-init=\"callbacks.setButtonStyles\" data-wp-on--click=\"actions.showLightbox\" data-wp-on--load=\"callbacks.setButtonStyles\" data-wp-on-window--resize=\"callbacks.setButtonStyles\" src=\"https://opensource.microsoft.com/blog/wp-content/uploads/2026/06/word-image-98638-1.jpeg\" alt=\"Picture of a matrix table for Microsoft 1P migration tools and the sources and targets they each support.\" class=\"wp-image-98639\" /><button\n\t\t\tclass=\"lightbox-trigger\"\n\t\t\ttype=\"button\"\n\t\t\taria-haspopup=\"dialog\"\n\t\t\taria-label=\"Enlarge\"\n\t\t\tdata-wp-init=\"callbacks.initTriggerButton\"\n\t\t\tdata-wp-on--click=\"actions.showLightbox\"\n\t\t\tdata-wp-style--right=\"state.imageButtonRight\"\n\t\t\tdata-wp-style--top=\"state.imageButtonTop\"\n\t\t>\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" fill=\"none\" viewBox=\"0 0 12 12\">\n\t\t\t\t<path fill=\"#fff\" d=\"M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z\" />\n\t\t\t</svg>\n\t\t</button></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Optimally, tool&nbsp;selection&nbsp;comes&nbsp;after assessment, target&nbsp;selection, and migration strategy. At this stage, organizations should understand what they are moving, where it needs to land, and how it needs to move. The decision should be guided by data volume, network capacity, downtime tolerance, synchronization needs, application dependencies, and whether the migration is online, offline, or phased.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"3-cloud-data-migration-online-and-continuous-migration-with-azure-storage-mover\">3. Cloud data migration: Online and continuous&nbsp;migration with Azure Storage Mover</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Azure Storage Mover supports managed online data movement and synchronization for file and object data&nbsp;for free. It is well suited for large-scale, repeatable migrations where data needs to move over the network with orchestration, monitoring, and control, including on-premises data estates and cloud-to-cloud transfers such as AWS S3 to Azure Blob Storage.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Azure Storage Mover&nbsp;is best suited for:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">Online migration and incremental synchronization&nbsp;from on-premises&nbsp;data estates.</li>\n\n\n\n<li class=\"wp-block-list-item\">Cloud-to-cloud transfers, including AWS S3 to Azure Blob.</li>\n\n\n\n<li class=\"wp-block-list-item\">Data movement within&nbsp;<a href=\"https://azure.microsoft.com/en-us\" target=\"_blank\">Azure</a>, including blob&nbsp;container-to-container copies.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">As organizations evaluate cost, performance, and flexibility across cloud environments, the ability to move data between providers becomes more than a technical capability. It&nbsp;becomes&nbsp;a strategic advantage.&nbsp;Azure Storage Mover helps teams&nbsp;replatform&nbsp;data estates from AWS S3 to&nbsp;<a href=\"https://azure.microsoft.com/en-gb/products/storage/blobs/\" target=\"_blank\">Azure Blob Storage</a>&nbsp;without unnecessarily disrupting access or rebuilding the migration process from the&nbsp;ground up.</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" target=\"_blank\">Learn how to migrate data from AWS S3 to Azure Blob</a></div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\">While Storage Mover helps with seamless,&nbsp;large-<s>&nbsp;</s>scale data migrations from AWS S3, customers often also need to&nbsp;migrate&nbsp;and&nbsp;modernize&nbsp;applications&nbsp;accessing that&nbsp;data.&nbsp;To address this, we now offer&nbsp;a new Copilot skill&nbsp;(in&nbsp;preview)&nbsp;that supports application migration,&nbsp;delivering&nbsp;a&nbsp;more&nbsp;complete&nbsp;end-to-end migration&nbsp;experience.</p>\n\n\n\n<p class=\"wp-block-paragraph\">If&nbsp;you’re&nbsp;interested in trying the S3 app migration&nbsp;skill alongside your data migration,&nbsp;write to us at AzStorageMigration@microsoft.com.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>All current Azure Storage Mover capabilities are available at no cost. Standard storage, transaction, and networking charges apply.</strong></p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"4-offline-data-migration-azure-data-box-for-large-scale-transfers\">4. Offline data migration: Azure Data Box for large-scale transfers</h2>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.youtube.com/watch?v=trBZN7hVeOE\" target=\"_blank\" rel=\"noreferrer noopener\">Learn how Azure Data Box accelerates migration to cloud</a></div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\">Azure Data Box&nbsp;supports offline transfer for large-scale or bandwidth-constrained datasets. It is especially useful when network capacity&nbsp;or operational constraints make online transfer impractical, or when organizations need to accelerate initial bulk movement before later synchronization or cutover.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><a href=\"https://azure.microsoft.com/en-gb/pricing/details/databox/\" target=\"_blank\">Azure Data Box&nbsp;120 and&nbsp;Azure Data Box&nbsp;525&nbsp;are now available with no&nbsp;service fees</a>&nbsp;and&nbsp;no&nbsp;Microsoft-managed shipping fees.\n</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Azure Data Box is best suited for:</strong></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">Datacenter exits and hybrid cloud transformation at scale.</li>\n\n\n\n<li class=\"wp-block-list-item\">Fuel AI and machine learning with high-volume data ingestion.</li>\n\n\n\n<li class=\"wp-block-list-item\">Protect and preserve bulk backup and media archives.</li>\n\n\n\n<li class=\"wp-block-list-item\">Modernize healthcare and mission-critical data systems.</li>\n\n\n\n<li class=\"wp-block-list-item\">Enable secure migration for government and regulated workloads.</li>\n\n\n\n<li class=\"wp-block-list-item\">Power enterprise analytics and modern data platforms.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\"><a href=\"https://azure.microsoft.com/en-us/products/databox\" target=\"_blank\">Data Box</a>&nbsp;enables&nbsp;high throughput&nbsp;transfer directly to Azure datacenters, reducing dependency on network&nbsp;performance&nbsp;and helping teams meet migration timelines when bandwidth is limited. It can also be used as part of a phased strategy, with Data Box handling&nbsp;the initial&nbsp;bulk transfer and online tools supporting later synchronization or cutover.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"5-real-world-migration-scenarios-hybrid-cloud-ai-and-more\">5. Real-world migration scenarios: Hybrid cloud, AI, and more</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Most migration efforts involve more than one constraint. Teams may need to manage scale, connectivity, regulatory requirements, downtime windows, cost targets, and modernization goals at the same time. The value of Azure’s approach is realized when these solutions are used together.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"datacenter-exit-and-hybrid-cloud-expansion\">Datacenter exit and hybrid cloud expansion</h3>\n\n\n\n<p class=\"wp-block-paragraph\">For datacenter exits and hybrid cloud expansion, organizations often need to move large, heterogeneous environments under strict timelines with minimal tolerance for disruption.&nbsp;Azure Migrate&nbsp;can help&nbsp;identify&nbsp;dependencies and sequence workloads.&nbsp;Azure Data Box&nbsp;can accelerate bulk&nbsp;transfers&nbsp;independent of network constraints.&nbsp;Azure Storage Mover&nbsp;can support synchronization and final cutover. This allows teams to execute phased migrations,&nbsp;validate&nbsp;workloads before&nbsp;cutover, and&nbsp;decommission infrastructure on schedule.</p>\n\n\n\n<figure data-wp-context=\"{\"imageId\":\"6a31883270173\"}\" data-wp-interactive=\"core/image\" data-wp-key=\"6a31883270173\" class=\"wp-block-image wp-lightbox-container\"><img decoding=\"async\" data-wp-class--hide=\"state.isContentHidden\" data-wp-class--show=\"state.isContentVisible\" data-wp-init=\"callbacks.setButtonStyles\" data-wp-on--click=\"actions.showLightbox\" data-wp-on--load=\"callbacks.setButtonStyles\" data-wp-on-window--resize=\"callbacks.setButtonStyles\" src=\"https://opensource.microsoft.com/blog/wp-content/uploads/2026/06/word-image-98638-2.jpeg\" alt=\"A picture of a diagram depicting hybrid migration motions with Azure Data Box and Azure Storage Mover\" class=\"wp-image-98640\" /><button\n\t\t\tclass=\"lightbox-trigger\"\n\t\t\ttype=\"button\"\n\t\t\taria-haspopup=\"dialog\"\n\t\t\taria-label=\"Enlarge\"\n\t\t\tdata-wp-init=\"callbacks.initTriggerButton\"\n\t\t\tdata-wp-on--click=\"actions.showLightbox\"\n\t\t\tdata-wp-style--right=\"state.imageButtonRight\"\n\t\t\tdata-wp-style--top=\"state.imageButtonTop\"\n\t\t>\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" fill=\"none\" viewBox=\"0 0 12 12\">\n\t\t\t\t<path fill=\"#fff\" d=\"M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z\" />\n\t\t\t</svg>\n\t\t</button></figure>\n\n\n\n<p class=\"wp-block-paragraph\">The success of datacenter exits&nbsp;is reflected in customer migrations already executed at scale.&nbsp;For example,&nbsp;<a href=\"https://www.microsoft.com/en/customers/story/26302-copeland-azure\" target=\"_blank\">Copeland used Azure Data Box</a>&nbsp;to migrate more than 300 terabytes of data to Azure during a time-sensitive datacenter transition while&nbsp;maintaining&nbsp;business continuity.</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.microsoft.com/en/customers/story/26302-copeland-azure#customers-share-modal-dialog\" target=\"_blank\" rel=\"noreferrer noopener\">Learn how Copeland rebuilt Connect+ on Azure</a></div>\n</div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"ai-and-machine-learning-data-readiness\">AI and machine learning data readiness</h3>\n\n\n\n<p class=\"wp-block-paragraph\">For AI and machine learning readiness, organizations need large volumes of high-quality data to be centralized, accessible, and continuously updated.&nbsp;Azure Data Box&nbsp;can support rapid ingestion of massive training datasets, research archives, or historical data.&nbsp;Azure Storage Mover&nbsp;can support ongoing synchronization and pipeline updates, helping data remain current for model training, experimentation, analytics, and AI development.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"backup-media-archives-and-long-term-retention\">Backup, media archives, and long-term retention</h3>\n\n\n\n<p class=\"wp-block-paragraph\">For backup, media archives, and long-term retention, organizations often need to move large volumes of infrequently accessed data while&nbsp;maintaining&nbsp;durability, accessibility, and cost efficiency.&nbsp;<a href=\"https://azure.microsoft.com/en-us/products/databox\" target=\"_blank\">Azure Data Box</a>&nbsp;can support efficient transfer of large archival datasets, while Azure Storage tiers help&nbsp;optimize&nbsp;cost over time.&nbsp;Azure Storage Mover&nbsp;can support post-migration workflows where ongoing access or updates are&nbsp;required.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This approach is reflected in&nbsp;<a href=\"https://www.microsoft.com/en/customers/story/25537-wnet-azure-virtual-desktop\" target=\"_blank\">how&nbsp;The WNET Group modernized its media archive</a>. Using&nbsp;Azure Data Box, WNET migrated approximately 3.6 petabytes of content,&nbsp;representing&nbsp;more than 800,000 hours of media,&nbsp;to&nbsp;<a href=\"https://azure.microsoft.com/en-us\" target=\"_blank\">Azure</a>. The move enabled a datacenter exit while maintaining continuous broadcast operations, reduced asset retrieval times from up to 24 hours to under four&nbsp;hours&nbsp;and&nbsp;positioned the organization to apply machine learning for metadata enrichment and content discovery.</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.microsoft.com/en/customers/story/25537-wnet-azure-virtual-desktop\" target=\"_blank\" rel=\"noreferrer noopener\">See how The WNET Group modernized with Azure Data Box</a></div>\n</div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"healthcare-regulated-and-mission-critical-systems\">Healthcare, regulated, and mission-critical systems</h3>\n\n\n\n<p class=\"wp-block-paragraph\">For healthcare, regulated, and mission-critical systems, migration must balance security, compliance, governance, and operational continuity.&nbsp;Azure Migrate&nbsp;can help assess dependencies and&nbsp;support controlled&nbsp;sequencing.&nbsp;Azure Data Box&nbsp;can enable&nbsp;offline transfer for&nbsp;large sensitive&nbsp;datasets.&nbsp;Azure Storage Mover&nbsp;can support incremental updates where ongoing synchronization is&nbsp;required.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><a href=\"https://www.microsoft.com/en/customers/story/24804-astellas-azure-data-box\" target=\"_blank\">Astellas Pharma used Azure Data Box to transfer a 500-terabyte local file share</a>&nbsp;to Azure and meet a six-month migration timeline that&nbsp;enabled&nbsp;the closure of six global datacenters. For regulated industries, this shows how offline transfer can help organizations move quickly while&nbsp;maintaining&nbsp;continuity and control over critical data.</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.microsoft.com/en/customers/story/24804-astellas-azure-data-box#customers-share-modal-dialog\" target=\"_blank\" rel=\"noreferrer noopener\">Learn how Astellas Pharma moved to Azure</a></div>\n</div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"from-migration-execution-to-modernization-outcomes\">From migration execution to modernization outcomes</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Migration is not the&nbsp;objective,&nbsp;it is the enabling step.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Once data is&nbsp;established&nbsp;in Azure, organizations can extend into analytics, artificial intelligence, and cloud-native architecture.</p>\n\n\n\n<p class=\"wp-block-paragraph\">By aligning&nbsp;<a href=\"https://azure.microsoft.com/en-us/products/azure-migrate\" target=\"_blank\">Azure Migrate</a>,&nbsp;<a href=\"https://azure.microsoft.com/en-us/products/storage-mover\" target=\"_blank\">Azure Storage Mover</a>, and&nbsp;<a href=\"https://azure.microsoft.com/en-us/products/databox\" target=\"_blank\">Azure Data Box</a>, organizations gain a migration strategy that reflects real-world conditions while positioning data for long-term value.</p>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"get-started-with-azure-storage-migration-solutions\">Get started with Azure Storage migration solutions</h3>\n\n\n\n<p class=\"wp-block-paragraph\">\n  Explore&nbsp;<a href=\"https://azure.microsoft.com/solutions/storage-migration/\" target=\"_blank\">Azure Storage and data migration solutions</a>&nbsp;and begin building a migration strategy aligned to your environment, your timelines, and your modernization goals.\n</p>\n\n\n\n<div class=\"is-style-inline wp-block-bloginabox-theme-promotional\">\n\t\n<div class=\"promotional promotional--has-media promotional--media-right\">\n\t<div class=\"promotional__wrapper\">\n\t\t<div class=\"promotional__content-wrapper\">\n\t\t\t<div class=\"promotional__content\">\n\t\t\t\t\n\n<h2 class=\"wp-block-heading\" id=\"explore-azure-storage-migration-solutions\">Explore Azure Storage Migration solutions</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Discover Microsoft’s first-party tools for planning, managing, and executing data migrations at scale.</p>\n\n\n\n<div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a data-bi-an=\"Global CTA\" data-bi-ct=\"cta link\" data-bi-id=\"cta-block\" class=\"wp-block-button__link wp-element-button\" href=\"https://azure.microsoft.com/en-gb/solutions/storage-migration/\" target=\"_blank\" rel=\"noopener noreferrer\">Get started with Azure</a></div>\n</div>\n\n\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t<div class=\"promotional__media-wrapper\">\n\t\t\t\t<div class=\"promotional__media\">\n\t\t\t\t\t\t\t\t\t\t\t<img decoding=\"async\" width=\"2448\" height=\"1584\" src=\"https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H.jpg\" class=\"attachment-full size-full\" alt=\"Abstract sphere and cylinder in blue colors.\" loading=\"lazy\" srcset=\"https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H.jpg 2448w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H-300x194.jpg 300w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H-1024x663.jpg 1024w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H-768x497.jpg 768w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H-1536x994.jpg 1536w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/05/FY26AE-Azure-Composite-DeepBlue-002-H-2048x1325.jpg 2048w\" sizes=\"auto, (max-width: 2448px) 100vw, 2448px\" />\t\t\t\t\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t</div>\n</div>\n</div>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/\">Modernize your data with Azure Storage: Plan and migrate with confidence</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+        "feedImageUrl": "https://opensource.microsoft.com/blog/wp-content/uploads/2026/06/word-image-98638-1.jpeg",
+        "categories": [
+          "Management and governance",
+          "Migration",
+          "Storage",
+          "Customer Enablement",
+          "Datacenter",
+          "Inside Azure for IT"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -172,10 +190,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -190,10 +208,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -208,10 +226,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -226,10 +244,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -389,7 +407,14 @@
         ]
       }
     ],
-    "stale": false
+    "stale": true,
+    "latestAttempt": {
+      "fetchedAt": "2026-06-17T07:40:55.422Z",
+      "ok": false,
+      "status": 429,
+      "itemCount": 0,
+      "error": null
+    }
   },
   {
     "sourceId": "un-news",
@@ -401,10 +426,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 15,
-    "fetchedAt": "2026-06-17T00:00:28.766Z",
+    "fetchedAt": "2026-06-17T07:40:55.422Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-17T00:00:28.766Z",
-    "cacheExpiresAt": "2026-06-19T00:00:28.766Z",
+    "cacheStartedAt": "2026-06-17T07:40:55.422Z",
+    "cacheExpiresAt": "2026-06-19T07:40:55.422Z",
     "attempts": 1,
     "items": [
       {

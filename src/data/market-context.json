@@ -1,10 +1,920 @@
 {
-  "generatedAt": "2026-06-16T07:09:19.390Z",
+  "generatedAt": "2026-06-17T07:41:29.033Z",
   "provider": "alpha-vantage",
-  "status": "stale",
-  "stale": true,
-  "message": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints",
-  "symbols": {},
-  "topMovers": [],
-  "newsSentiment": {}
+  "status": "available",
+  "stale": false,
+  "message": "",
+  "symbols": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "status": "available",
+      "price": 207.41,
+      "change": -5.04,
+      "changePercent": "-2.3723%",
+      "changePercentValue": -2.3723,
+      "volume": 125694100,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "status": "available",
+      "price": 393.83,
+      "change": -5.93,
+      "changePercent": "-1.4834%",
+      "changePercentValue": -1.4834,
+      "volume": 31506846,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "status": "available",
+      "price": 373.25,
+      "change": 3.9,
+      "changePercent": "1.0559%",
+      "changePercentValue": 1.0559,
+      "volume": 24876095,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "META": {
+      "symbol": "META",
+      "status": "available",
+      "price": 600.21,
+      "change": 6.73,
+      "changePercent": "1.1340%",
+      "changePercentValue": 1.134,
+      "volume": 11344421,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "status": "available",
+      "price": 246,
+      "change": -0.02,
+      "changePercent": "-0.0081%",
+      "changePercentValue": -0.0081,
+      "volume": 35187406,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "status": "available",
+      "price": 507.29,
+      "change": -39.97,
+      "changePercent": "-7.3037%",
+      "changePercentValue": -7.3037,
+      "volume": 28411694,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "status": "available",
+      "price": 376.71,
+      "change": -17.23,
+      "changePercent": "-4.3738%",
+      "changePercentValue": -4.3738,
+      "volume": 31573669,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "status": "available",
+      "price": 404.66,
+      "change": -6.49,
+      "changePercent": "-1.5785%",
+      "changePercentValue": -1.5785,
+      "volume": 40255473,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "status": "available",
+      "price": 729.86,
+      "change": -14.14,
+      "changePercent": "-1.9005%",
+      "changePercentValue": -1.9005,
+      "volume": 45348675,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "status": "available",
+      "price": 750.33,
+      "change": -4.5,
+      "changePercent": "-0.5962%",
+      "changePercentValue": -0.5962,
+      "volume": 67093142,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    },
+    "SMH": {
+      "symbol": "SMH",
+      "status": "available",
+      "price": 616,
+      "change": -31.1,
+      "changePercent": "-4.8061%",
+      "changePercentValue": -4.8061,
+      "volume": 10949632,
+      "tradingDay": "2026-06-16",
+      "fetchedAt": "2026-06-17T07:41:29.033Z"
+    }
+  },
+  "topMovers": [
+    {
+      "symbol": "TBLAW",
+      "price": 0.0047,
+      "changeAmount": 0.0031,
+      "changePercent": "193.75%",
+      "changePercentValue": 193.75,
+      "volume": 47103,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SLBT",
+      "price": 8.89,
+      "changeAmount": 5.56,
+      "changePercent": "166.967%",
+      "changePercentValue": 166.967,
+      "volume": 32671222,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "NBRGR",
+      "price": 0.422,
+      "changeAmount": 0.232,
+      "changePercent": "122.1053%",
+      "changePercentValue": 122.1053,
+      "volume": 32,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SBFMW",
+      "price": 0.0597,
+      "changeAmount": 0.0317,
+      "changePercent": "113.2143%",
+      "changePercentValue": 113.2143,
+      "volume": 408,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "OBAI",
+      "price": 1.11,
+      "changeAmount": 0.5754,
+      "changePercent": "107.6319%",
+      "changePercentValue": 107.6319,
+      "volume": 488488917,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "CCTG",
+      "price": 1.48,
+      "changeAmount": 0.7006,
+      "changePercent": "89.8897%",
+      "changePercentValue": 89.8897,
+      "volume": 120974504,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "VLN+",
+      "price": 0.039,
+      "changeAmount": 0.018,
+      "changePercent": "85.7143%",
+      "changePercentValue": 85.7143,
+      "volume": 34141,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "CRVO",
+      "price": 4.52,
+      "changeAmount": 2.04,
+      "changePercent": "82.2581%",
+      "changePercentValue": 82.2581,
+      "volume": 198528948,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "NCPLW",
+      "price": 0.0357,
+      "changeAmount": 0.0157,
+      "changePercent": "78.5%",
+      "changePercentValue": 78.5,
+      "volume": 33571,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "WGSWW",
+      "price": 0.0051,
+      "changeAmount": 0.0022,
+      "changePercent": "75.8621%",
+      "changePercentValue": 75.8621,
+      "volume": 48784,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "NMRA",
+      "price": 1.56,
+      "changeAmount": 0.6455,
+      "changePercent": "70.585%",
+      "changePercentValue": 70.585,
+      "volume": 28205798,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SAIHW",
+      "price": 0.0497,
+      "changeAmount": 0.0197,
+      "changePercent": "65.6667%",
+      "changePercentValue": 65.6667,
+      "volume": 100,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "IVDA",
+      "price": 0.515,
+      "changeAmount": 0.1988,
+      "changePercent": "62.8716%",
+      "changePercentValue": 62.8716,
+      "volume": 357974561,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "MRNOW",
+      "price": 0.0319,
+      "changeAmount": 0.0119,
+      "changePercent": "59.5%",
+      "changePercentValue": 59.5,
+      "volume": 1372,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SVAQW",
+      "price": 0.523,
+      "changeAmount": 0.18,
+      "changePercent": "52.4781%",
+      "changePercentValue": 52.4781,
+      "volume": 370330,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SES+",
+      "price": 0.05,
+      "changeAmount": 0.017,
+      "changePercent": "51.5152%",
+      "changePercentValue": 51.5152,
+      "volume": 8365,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "BNCWZ",
+      "price": 0.0268,
+      "changeAmount": 0.0091,
+      "changePercent": "51.4124%",
+      "changePercentValue": 51.4124,
+      "volume": 278219,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "OIOWW",
+      "price": 0.056,
+      "changeAmount": 0.0186,
+      "changePercent": "49.7326%",
+      "changePercentValue": 49.7326,
+      "volume": 270,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "AMPGR",
+      "price": 3.7,
+      "changeAmount": 1.21,
+      "changePercent": "48.5944%",
+      "changePercentValue": 48.5944,
+      "volume": 30900,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "LPRO",
+      "price": 3.11,
+      "changeAmount": 1.01,
+      "changePercent": "48.0952%",
+      "changePercentValue": 48.0952,
+      "volume": 27724652,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "GDC",
+      "price": 0.0281,
+      "changeAmount": -0.077,
+      "changePercent": "-73.2636%",
+      "changePercentValue": -73.2636,
+      "volume": 682690228,
+      "direction": "loser"
+    },
+    {
+      "symbol": "CIIT",
+      "price": 0.442,
+      "changeAmount": -1.038,
+      "changePercent": "-70.1351%",
+      "changePercentValue": -70.1351,
+      "volume": 7283677,
+      "direction": "loser"
+    },
+    {
+      "symbol": "RCKTW",
+      "price": 0.003,
+      "changeAmount": -0.0067,
+      "changePercent": "-69.0722%",
+      "changePercentValue": -69.0722,
+      "volume": 204477,
+      "direction": "loser"
+    },
+    {
+      "symbol": "MYPSW",
+      "price": 0.0002,
+      "changeAmount": -0.0004,
+      "changePercent": "-66.6667%",
+      "changePercentValue": -66.6667,
+      "volume": 762698,
+      "direction": "loser"
+    },
+    {
+      "symbol": "SDOT",
+      "price": 8.67,
+      "changeAmount": -14.8,
+      "changePercent": "-63.0592%",
+      "changePercentValue": -63.0592,
+      "volume": 324442,
+      "direction": "loser"
+    },
+    {
+      "symbol": "VRXA",
+      "price": 9.46,
+      "changeAmount": -12.38,
+      "changePercent": "-56.685%",
+      "changePercentValue": -56.685,
+      "volume": 547089,
+      "direction": "loser"
+    },
+    {
+      "symbol": "LGL^",
+      "price": 0.0051,
+      "changeAmount": -0.0049,
+      "changePercent": "-49.0%",
+      "changePercentValue": -49,
+      "volume": 94773,
+      "direction": "loser"
+    },
+    {
+      "symbol": "NRSNW",
+      "price": 0.06,
+      "changeAmount": -0.05,
+      "changePercent": "-45.4545%",
+      "changePercentValue": -45.4545,
+      "volume": 5006,
+      "direction": "loser"
+    },
+    {
+      "symbol": "GIPRW",
+      "price": 0.0252,
+      "changeAmount": -0.0192,
+      "changePercent": "-43.2432%",
+      "changePercentValue": -43.2432,
+      "volume": 360,
+      "direction": "loser"
+    },
+    {
+      "symbol": "SNWV",
+      "price": 8.51,
+      "changeAmount": -6.16,
+      "changePercent": "-41.9905%",
+      "changePercentValue": -41.9905,
+      "volume": 1036711,
+      "direction": "loser"
+    },
+    {
+      "symbol": "WOK",
+      "price": 0.0507,
+      "changeAmount": -0.035,
+      "changePercent": "-40.8401%",
+      "changePercentValue": -40.8401,
+      "volume": 103964591,
+      "direction": "loser"
+    },
+    {
+      "symbol": "LIMNW",
+      "price": 0.061,
+      "changeAmount": -0.039,
+      "changePercent": "-39.0%",
+      "changePercentValue": -39,
+      "volume": 10,
+      "direction": "loser"
+    },
+    {
+      "symbol": "CUPR",
+      "price": 5.27,
+      "changeAmount": -3.14,
+      "changePercent": "-37.3365%",
+      "changePercentValue": -37.3365,
+      "volume": 980358,
+      "direction": "loser"
+    },
+    {
+      "symbol": "YMAT",
+      "price": 0.386,
+      "changeAmount": -0.2292,
+      "changePercent": "-37.2562%",
+      "changePercentValue": -37.2562,
+      "volume": 1015220,
+      "direction": "loser"
+    },
+    {
+      "symbol": "DOMO",
+      "price": 2.05,
+      "changeAmount": -1.21,
+      "changePercent": "-37.1166%",
+      "changePercentValue": -37.1166,
+      "volume": 15377310,
+      "direction": "loser"
+    },
+    {
+      "symbol": "VRXAW",
+      "price": 0.1801,
+      "changeAmount": -0.1062,
+      "changePercent": "-37.094%",
+      "changePercentValue": -37.094,
+      "volume": 54009,
+      "direction": "loser"
+    },
+    {
+      "symbol": "RGNT",
+      "price": 6.135,
+      "changeAmount": -3.265,
+      "changePercent": "-34.734%",
+      "changePercentValue": -34.734,
+      "volume": 8141867,
+      "direction": "loser"
+    },
+    {
+      "symbol": "CRGOW",
+      "price": 0.0468,
+      "changeAmount": -0.0244,
+      "changePercent": "-34.2697%",
+      "changePercentValue": -34.2697,
+      "volume": 20245,
+      "direction": "loser"
+    },
+    {
+      "symbol": "GTERR",
+      "price": 0.08,
+      "changeAmount": -0.0402,
+      "changePercent": "-33.4443%",
+      "changePercentValue": -33.4443,
+      "volume": 552,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ELTX",
+      "price": 2.76,
+      "changeAmount": -1.32,
+      "changePercent": "-32.3529%",
+      "changePercentValue": -32.3529,
+      "volume": 4796463,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ADTX",
+      "price": 0.0109,
+      "changeAmount": -0.002,
+      "changePercent": "-15.5039%",
+      "changePercentValue": -15.5039,
+      "volume": 840049575,
+      "direction": "active"
+    },
+    {
+      "symbol": "GDC",
+      "price": 0.0281,
+      "changeAmount": -0.077,
+      "changePercent": "-73.2636%",
+      "changePercentValue": -73.2636,
+      "volume": 682690228,
+      "direction": "active"
+    },
+    {
+      "symbol": "SOXS",
+      "price": 4.635,
+      "changeAmount": 0.685,
+      "changePercent": "17.3418%",
+      "changePercentValue": 17.3418,
+      "volume": 601859078,
+      "direction": "active"
+    },
+    {
+      "symbol": "OBAI",
+      "price": 1.11,
+      "changeAmount": 0.5754,
+      "changePercent": "107.6319%",
+      "changePercentValue": 107.6319,
+      "volume": 488488917,
+      "direction": "active"
+    },
+    {
+      "symbol": "TZA",
+      "price": 4.17,
+      "changeAmount": 0.11,
+      "changePercent": "2.7094%",
+      "changePercentValue": 2.7094,
+      "volume": 362736249,
+      "direction": "active"
+    },
+    {
+      "symbol": "IVDA",
+      "price": 0.515,
+      "changeAmount": 0.1988,
+      "changePercent": "62.8716%",
+      "changePercentValue": 62.8716,
+      "volume": 357974561,
+      "direction": "active"
+    },
+    {
+      "symbol": "GPUS",
+      "price": 0.2967,
+      "changeAmount": 0.0254,
+      "changePercent": "9.3623%",
+      "changePercentValue": 9.3623,
+      "volume": 335184609,
+      "direction": "active"
+    },
+    {
+      "symbol": "SPCX",
+      "price": 201.8,
+      "changeAmount": 9.3,
+      "changePercent": "4.8312%",
+      "changePercentValue": 4.8312,
+      "volume": 315261453,
+      "direction": "active"
+    },
+    {
+      "symbol": "SUGP",
+      "price": 1.11,
+      "changeAmount": 0.2295,
+      "changePercent": "26.0647%",
+      "changePercentValue": 26.0647,
+      "volume": 255517935,
+      "direction": "active"
+    },
+    {
+      "symbol": "BITO",
+      "price": 8.925,
+      "changeAmount": -0.125,
+      "changePercent": "-1.3812%",
+      "changePercentValue": -1.3812,
+      "volume": 202693500,
+      "direction": "active"
+    },
+    {
+      "symbol": "CRVO",
+      "price": 4.52,
+      "changeAmount": 2.04,
+      "changePercent": "82.2581%",
+      "changePercentValue": 82.2581,
+      "volume": 198528948,
+      "direction": "active"
+    },
+    {
+      "symbol": "YYGH",
+      "price": 0.141,
+      "changeAmount": 0.0148,
+      "changePercent": "11.7274%",
+      "changePercentValue": 11.7274,
+      "volume": 188609668,
+      "direction": "active"
+    },
+    {
+      "symbol": "SRXH",
+      "price": 0.1893,
+      "changeAmount": 0.0323,
+      "changePercent": "20.5732%",
+      "changePercentValue": 20.5732,
+      "volume": 182083615,
+      "direction": "active"
+    },
+    {
+      "symbol": "AAL",
+      "price": 15.71,
+      "changeAmount": 0.25,
+      "changePercent": "1.6171%",
+      "changePercentValue": 1.6171,
+      "volume": 133321183,
+      "direction": "active"
+    },
+    {
+      "symbol": "INTC",
+      "price": 117.05,
+      "changeAmount": -10.81,
+      "changePercent": "-8.4546%",
+      "changePercentValue": -8.4546,
+      "volume": 130492377,
+      "direction": "active"
+    },
+    {
+      "symbol": "BMNU",
+      "price": 1.01,
+      "changeAmount": -0.115,
+      "changePercent": "-10.2222%",
+      "changePercentValue": -10.2222,
+      "volume": 125134483,
+      "direction": "active"
+    },
+    {
+      "symbol": "SSPC",
+      "price": 8.21,
+      "changeAmount": -0.94,
+      "changePercent": "-10.2732%",
+      "changePercentValue": -10.2732,
+      "volume": 125013865,
+      "direction": "active"
+    },
+    {
+      "symbol": "NOK",
+      "price": 13.97,
+      "changeAmount": -0.85,
+      "changePercent": "-5.7355%",
+      "changePercentValue": -5.7355,
+      "volume": 122767587,
+      "direction": "active"
+    },
+    {
+      "symbol": "NVDA",
+      "price": 207.41,
+      "changeAmount": -5.04,
+      "changePercent": "-2.3723%",
+      "changePercentValue": -2.3723,
+      "volume": 122392848,
+      "direction": "active"
+    },
+    {
+      "symbol": "CCTG",
+      "price": 1.48,
+      "changeAmount": 0.7006,
+      "changePercent": "89.8897%",
+      "changePercentValue": 89.8897,
+      "volume": 120974504,
+      "direction": "active"
+    }
+  ],
+  "newsSentiment": {
+    "NVDA": [
+      {
+        "symbol": "NVDA",
+        "title": "Equinix, Inc. (EQIX.US) Launches 6th AI Data Center in HK",
+        "url": "https://www.aastocks.com/en/usq/news/comment.aspx?source=AAFN&id=NOW.1529394&catg=1",
+        "source": "AASTOCKS.com",
+        "timePublished": "20260617T020741",
+        "summary": "Digital infrastructure company Equinix, Inc. (EQIX.US) has launched its sixth International Business Exchange (IBX) data center, HK6, in Hong Kong. This new facility is designed to support AI innovation with liquid cooling and high power density, representing an initial investment of USD124 million. HK6 will eventually offer up to 3,550 cabinets and connects to the Hong Kong-Shenzhen Innovation and Technology Park, fostering cross-border collaboration and housing the AI Discovery Hub in partnership with Hewlett Packard Enterprise and NVIDIA.",
+        "overallSentimentScore": 0.343705,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Equinix, Inc. (EQIX.US) Launches 6th AI Data Center in HK",
+        "url": "https://www.aastocks.com/en/usq/quote/stock-news-content.aspx?symbol=NVDA&id=NOW.1529394&source=AAFN",
+        "source": "AASTOCKS.com",
+        "timePublished": "20260617T013740",
+        "summary": "Digital infrastructure company Equinix, Inc. (EQIX.US) has launched its sixth International Business Exchange (IBX) data center, HK6, in Hong Kong. This new facility is specifically designed to support AI innovation with a liquid cooling system, a initial investment of USD124 million, and a capacity for 1,000 cabinets that will expand to 3,550 upon full completion. HK6 also hosts the AI Discovery Hub, a joint initiative with Hewlett Packard Enterprise and NVIDIA, aiming to foster cross-border collaboration and accelerate AI research and development in the Greater Bay Area.",
+        "overallSentimentScore": 0.251096,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Ambarella VP sells $660,943 in shares; prices from $67.06 to $67.07",
+        "url": "https://www.investing.com/news/insider-trading-news/ambarella-vp-sells-660943-in-shares-prices-from-6706-to-6707-93CH-4746301",
+        "source": "Investing.com",
+        "timePublished": "20260617T012715",
+        "summary": "Ambarella Inc.'s (NASDAQ:AMBA) VP of Business Development, Chen Yun-Lung, sold 9,856 ordinary shares worth $660,943 on June 12, 2026, at prices ranging from $67.06 to $67.07 per share. This transaction leaves him with 66,515 shares, occurring while the stock trades above its Fair Value according to InvestingPro. The company has recent positive news including exceeding Q1 earnings estimates, maintaining revenue guidance, and securing a major AI SoC agreement, leading to analyst rating reiterations and price target increases, despite some concerns about supply chain risks.",
+        "overallSentimentScore": -0.145842,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Why FTAI Aviation (FTAI) Is Up 14.8% After Redeeming Costly Preferreds And Securitizing Engines",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nasdaq-ftai/ftai-aviation/news/why-ftai-aviation-ftai-is-up-148-after-redeeming-costly-pref/amp",
+        "source": "Simply Wall Street",
+        "timePublished": "20260617T011013",
+        "summary": "FTAI Aviation's stock rose 14.8% following strategic financial moves, including the redemption of high-yield 8.25% Series C preferred shares and a substantial US$612 million asset-backed securitization. These actions aim to strengthen its balance sheet and support new growth areas like AI power turbines and extended engine service life due to potential geopolitical developments. The company's future narrative projects significant revenue and earnings growth, alongside a fair value of $350.60, representing a 31% upside.",
+        "overallSentimentScore": 0.217021,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "United Microelectronics Corp (UMC) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-umc/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260617T010844",
+        "summary": "This article provides an earnings forecast for United Microelectronics Corp (UMC), detailing its current earnings forecast score, average price target, and analyst ratings. It also includes peer comparisons and answers frequently asked questions about expected revenue, price targets, and past EPS performance. The data indicates a \"Sell\" trend according to analyst consensus.",
+        "overallSentimentScore": -0.0945,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Intuitive Surgical Draws Big Citadel Bet as Ken Griffin Trims Nvidia, Amazon Stakes",
+        "url": "https://nai500.com/blog/2026/06/intuitive-surgical-draws-big-citadel-bet-as-ken-griffin-trims-nvidia-amazon-stakes/",
+        "source": "NAI500",
+        "timePublished": "20260616T230955",
+        "summary": "Ken Griffin's Citadel Advisors has made a significant contrarian investment in Intuitive Surgical Inc. (ISRG), increasing its stake by 30.3% in the first quarter, while simultaneously trimming positions in Nvidia Corp. and Amazon.com Inc. This move suggests a shift away from high-valued AI stocks towards opportunities with more attractive risk-reward profiles. Citadel views Intuitive Surgical's recent 20% stock decline as an overreaction to temporary challenges, believing the company's strong market moat and long-term growth potential remain intact despite increased competition and temporary margin pressures.",
+        "overallSentimentScore": 0.200726,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "GlobalFoundries OCI MSA Silicon: First Chipmaker to Deliver Open Optical Interconnect Standard - News and Statistics",
+        "url": "https://www.indexbox.io/blog/globalfoundries-targets-oci-msa-silicon-production-ramp-for-ai-data-centers/",
+        "source": "IndexBox",
+        "timePublished": "20260616T230929",
+        "summary": "GlobalFoundries is positioning itself as the first chipmaker to deliver silicon supporting the Optical Compute Interconnect Multi-Source Agreement (OCI MSA), an open standard for AI data centers. The company expects to begin volume production as early as 2027 and is currently working with customers on OCI MSA-compatible silicon, which will eliminate vendor lock-in and enable migration from copper to optical interconnects. GlobalFoundries' proprietary Scale technology, which exceeds OCI MSA specifications in wavelength and modulator performance, also supports both CWDM and DWDM standards for flexible optical scale-up and scale-out solutions.",
+        "overallSentimentScore": 0.270004,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Why Astera Labs (ALAB) Is Up 5.7% After Taiwan AI Lab Expansion And Nasdaq-100 Inclusion",
+        "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-alab/astera-labs/news/why-astera-labs-alab-is-up-57-after-taiwan-ai-lab-expansion",
+        "source": "Simply Wall Street",
+        "timePublished": "20260616T230905",
+        "summary": "Astera Labs (ALAB) saw its stock rise 5.7% following the expansion of its Taiwan AI Lab operations and its pending inclusion in the Nasdaq-100 Index. The Taiwan expansion deepens collaboration with leading chipmakers for AI infrastructure, while the Nasdaq-100 inclusion is expected to boost liquidity and visibility. Despite these positive developments, the company's investment narrative still hinges on sustained demand for AI data center connectivity and its ability to manage customer concentration risks.",
+        "overallSentimentScore": 0.348521,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      }
+    ],
+    "MSFT": [
+      {
+        "symbol": "MSFT",
+        "title": "TCS, Coforge, Infosys Gain As Nifty IT Extends Rally Amid US-Iran Peace Deal Driven Risk-On Mood",
+        "url": "https://www.ndtvprofit.com/markets/tcs-coforge-infosys-gain-as-nifty-it-extends-rally-amid-us-iran-peace-deal-driven-risk-on-mood-11647285",
+        "source": "NDTV Profit",
+        "timePublished": "20260617T041121",
+        "summary": "The Nifty IT index extended its rally for the third consecutive session, rising 1.31%, with all nine constituent stocks posting gains. This uptrend was driven by a risk-on sentiment following the US-Iran peace deal, which boosted technology stocks globally and in India. Coforge Ltd. led the gains, and the index added over Rs. 26,159 crore in market capitalization.",
+        "overallSentimentScore": 0.285799,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Glimpse Group Inc (VRAR) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-vrar/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260617T033931",
+        "summary": "The Glimpse Group Inc (VRAR) has an earnings forecast score of 8.00, ranking 108 out of 480 in its industry. Analysts have set an average price target of $2.62, with a unanimous \"Buy\" rating based on one analyst's assessment, indicating a significant upside potential of +394.34%. The company's expected revenue for the next quarter is $3.00M, and EPS is forecasted at -$0.01, an improvement from the previous quarter's -$0.05.",
+        "overallSentimentScore": 0.354284,
+        "overallSentimentLabel": "Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Silver Lake Technology Investors V sells $139,073 of Dell Technologies stock By Investing.com",
+        "url": "https://www.investing.com/news/insider-trading-news/silver-lake-technology-investors-v-sells-139073-of-dell-technologies-stock-93CH-4746358",
+        "source": "Investing.com",
+        "timePublished": "20260617T030731",
+        "summary": "Silver Lake Technology Investors V, an affiliate of Silver Lake, sold 345 shares of Dell Technologies (NASDAQ:DELL) Class C Common Stock totaling approximately $139,073 on June 12, 2026. This transaction followed the conversion of Class B shares to Class C shares. Dell's stock has seen a significant surge of about 254% over the past year and is currently considered overvalued according to InvestingPro analysis.",
+        "overallSentimentScore": 0.181441,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Silver Lake Technology Investors V sells $139,073 of Dell Technologies stock By Investing.com",
+        "url": "https://m.uk.investing.com/news/insider-trading-news/silver-lake-technology-investors-v-sells-139073-of-dell-technologies-stock-93CH-4732099?ampMode=1",
+        "source": "Investing.com",
+        "timePublished": "20260617T023730",
+        "summary": "Silver Lake Technology Investors V, L.P., an affiliate of Silver Lake, sold 345 shares of Dell Technologies Inc. (NASDAQ:DELL) Class C Common Stock for approximately $139,073 on June 12, 2026. This sale follows a significant 254% surge in DELL's stock over the past year. The transactions involved the conversion of Class B shares to Class C shares, and despite the sale, Silver Lake entities and Egon Durban retain substantial holdings in Dell.",
+        "overallSentimentScore": 0.050359,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Digimarc extends AI security tools to major enterprise platforms By Investing.com",
+        "url": "https://m.za.investing.com/news/stock-market-news/digimarc-extends-ai-security-tools-to-major-enterprise-platforms-93CH-4330470?ampMode=1",
+        "source": "Investing.com South Africa",
+        "timePublished": "20260617T020927",
+        "summary": "Digimarc Corporation announced the integration of its AI security tools with major enterprise platforms like LangChain, ServiceNow, Salesforce, Google Gemini, and Microsoft Copilot Studio. This allows AI agents on these platforms to cryptographically stamp outputs, verify authenticity, and retrieve lineage records for audit and compliance. Despite its stock surging 73% year-to-date, the company faces financial headwinds, including a 15% revenue decline over the last year.",
+        "overallSentimentScore": 0.265709,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Why FTAI Aviation (FTAI) Is Up 14.8% After Redeeming Costly Preferreds And Securitizing Engines",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nasdaq-ftai/ftai-aviation/news/why-ftai-aviation-ftai-is-up-148-after-redeeming-costly-pref/amp",
+        "source": "Simply Wall Street",
+        "timePublished": "20260617T011013",
+        "summary": "FTAI Aviation's stock rose 14.8% following strategic financial moves, including the redemption of high-yield 8.25% Series C preferred shares and a substantial US$612 million asset-backed securitization. These actions aim to strengthen its balance sheet and support new growth areas like AI power turbines and extended engine service life due to potential geopolitical developments. The company's future narrative projects significant revenue and earnings growth, alongside a fair value of $350.60, representing a 31% upside.",
+        "overallSentimentScore": 0.202896,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "TechTarget Shareholders Strongly Back Board and Governance",
+        "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/2504728/techtarget-shareholders-strongly-back-board-and-governance/",
+        "source": "The Globe and Mail",
+        "timePublished": "20260616T233955",
+        "summary": "TechTarget, Inc. (TTGT) shareholders strongly supported the company's board and governance at their 2026 annual meeting on June 11, 2026. Approximately 94% of outstanding shares were represented, with all director nominees elected, PricewaterhouseCoopers LLP ratified as independent auditor, and executive compensation approved on an advisory basis. This indicates strong investor confidence despite mixed financial performance and a \"Neutral\" rating from TipRanks' AI Analyst due to weak financials but a more constructive earnings outlook.",
+        "overallSentimentScore": 0.159361,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Dell Technologies director David Dorman sells $16.76m in shares",
+        "url": "https://m.uk.investing.com/news/insider-trading-news/dell-technologies-director-david-dorman-sells-1676m-in-shares-93CH-4731473?ampMode=1",
+        "source": "Investing.com",
+        "timePublished": "20260616T223731",
+        "summary": "David W. Dorman, a director at Dell Technologies Inc., sold 41,292 shares of Class C Common Stock totaling approximately $16.76 million on June 12, 2026. The shares were sold indirectly through a grantor retained annuity trust, which no longer holds any Dell shares following the transaction. Dorman still directly holds 78,224 shares, and the sale follows a 265% surge in Dell's stock over the past year.",
+        "overallSentimentScore": 0.112932,
+        "overallSentimentLabel": "Neutral"
+      }
+    ],
+    "GOOGL": [
+      {
+        "symbol": "GOOGL",
+        "title": "HSBC expects over $100m gains from using Google AI tools",
+        "url": "https://www.chinadailyasia.com/article/635111",
+        "source": "chinadailyhk",
+        "timePublished": "20260617T064151",
+        "summary": "HSBC is partnering with Google Cloud to integrate artificial intelligence across its global operations, anticipating over $100 million in additional revenue or savings from various projects. The bank plans to deploy more than 200 new AI use cases in the next two years, leveraging Google's advanced AI capabilities, including Gemini models. This move positions HSBC as one of the first global banks to outline a clear strategy for leveraging AI to boost efficiency and revenue, amidst industry discussions about AI's impact on employment.",
+        "overallSentimentScore": 0.07067,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Fubotv Inc (FUBO) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-fubo/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260617T051047",
+        "summary": "Fubotv Inc (FUBO) has an earnings forecast score of 8.00 and an average price target of $4.25 from 10 analysts, with most recommending a \"Buy.\" The company's expected revenue for the next quarter is $1.58 billion, and its EPS for the previous quarter was -$0.21, with a forecast of -$0.31 for the next.",
+        "overallSentimentScore": 0.188638,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "FTCS ETF Holdings List — TRADEGATE:FTCS",
+        "url": "https://www.tradingview.com/symbols/TRADEGATE-FTCS/holdings/",
+        "source": "TradingView",
+        "timePublished": "20260616T221010",
+        "summary": "This article provides the current holdings list for the Franklin S&P 500 Communication Services UCITS ETF AccumUSD (FTCS) on Tradegate Exchange, as of June 12, 2026. Key holdings include Meta Platforms, Alphabet (Class A and C), Netflix, and Verizon, detailing their weight, share count, and market value. The fund offers exposure to major communication services companies.",
+        "overallSentimentScore": 0.04701,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Hp CCO David McQuarrie sells $259,732 in company stock",
+        "url": "https://www.investing.com/news/insider-trading-news/hp-cco-david-mcquarrie-sells-259732-in-company-stock-93CH-4746020",
+        "source": "Investing.com",
+        "timePublished": "20260616T215050",
+        "summary": "HP Inc.'s Chief Commercial Officer, David P. McQuarrie, sold 10,524 shares of company stock for a total of $259,732 on June 12, 2026. Despite the sale, which was executed via a Rule 10b5-1 trading plan, InvestingPro analysis suggests HPQ stock is undervalued. The company recently reported strong Q2 2026 earnings, surpassing analyst expectations, and announced a new limited-edition AI PC in collaboration with Scuderia Ferrari.",
+        "overallSentimentScore": -0.080768,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Here’s Why Apple Inc (AAPL) Is Falling Despite AI Advancements at WWDC 2026",
+        "url": "https://www.insidermonkey.com/blog/heres-why-apple-inc-aapl-is-falling-despite-ai-advancements-at-wwdc-2026-1782450/",
+        "source": "Insider Monkey",
+        "timePublished": "20260616T185459",
+        "summary": "Apple Inc. (AAPL) shares have fallen despite significant AI announcements at WWDC 2026, as investor sentiment indicates that the company did not meet AI advancement expectations. However, analysts from Maxim and Bernstein SocGen reiterated Buy/Outperform ratings and raised price targets, highlighting progress in enhanced Siri and collaboration with Google's Gemini technology for Apple Intelligence.",
+        "overallSentimentScore": 0.184435,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Here’s Why Apple Inc (AAPL) Is Falling Despite AI Advancements at WWDC 2026",
+        "url": "https://ca.finance.yahoo.com/news/why-apple-inc-aapl-falling-184932378.html",
+        "source": "Yahoo! Finance Canada",
+        "timePublished": "20260616T183657",
+        "summary": "Despite significant AI advancements announced at WWDC 2026, shares of Apple Inc (AAPL) have fallen due to investors' unmet expectations regarding the company's AI progress. However, market analysts view the event as a meaningful first step, with firms like Maxim and Bernstein SocGen reiterating \"Buy\" and \"Outperform\" ratings, respectively, and increasing price targets based on upcoming Siri enhancements and the collaboration with Google's Gemini technology for Apple Intelligence. The article also notes that while Apple has potential, some AI stocks offer greater upside.",
+        "overallSentimentScore": 0.041846,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Applovin Corp Stock (APP) Moved Down by 4.40% on Jun 16: What Investors Need To Know",
+        "url": "https://www.tradingkey.com/news/market-movers/261971090-market-movers-app-20260616",
+        "source": "TradingKey",
+        "timePublished": "20260616T173808",
+        "summary": "Applovin Corp (APP) stock fell by 4.40% on June 16, influenced by broad weakness in the technology sector, significant share liquidations by corporate executives, and rising competitive and valuation concerns. Despite strong operational fundamentals and positive analyst growth expectations, the company faces \"SaaS-pocalypse\" pressures, insider selling impacting investor sentiment, and increased scrutiny over its AI-driven advertising platform amidst new open-source competition and data privacy regulations. Technical indicators suggest mixed signals, while fundamental analysis highlights its strong revenue and net profit within the Software & IT Services industry.",
+        "overallSentimentScore": 0.191428,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Jabil Bets Big on India's AI Infrastructure Push: Time to Buy?",
+        "url": "https://uk.finance.yahoo.com/news/jabil-bets-big-indias-ai-171500778.html",
+        "source": "Yahoo Finance UK",
+        "timePublished": "20260616T173748",
+        "summary": "Jabil is partnering with Adani Group to establish a vertically integrated AI data center infrastructure manufacturing platform in India, focusing on AI racks and supporting infrastructure. This collaboration aims to capitalize on a global market opportunity exceeding $3 trillion, driven by increasing AI investments. Despite facing competition from Flex Ltd. and Sanmina Corporation, Jabil is positioning itself as a reliable manufacturing partner for hyperscalers by expanding its capacity.",
+        "overallSentimentScore": 0.218122,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      }
+    ]
+  }
 }
