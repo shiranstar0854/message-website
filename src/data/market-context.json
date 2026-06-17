@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T07:41:29.033Z",
+  "generatedAt": "2026-06-17T09:01:06.180Z",
   "provider": "alpha-vantage",
   "status": "available",
   "stale": false,
@@ -14,7 +14,7 @@
       "changePercentValue": -2.3723,
       "volume": 125694100,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "MSFT": {
       "symbol": "MSFT",
@@ -25,7 +25,7 @@
       "changePercentValue": -1.4834,
       "volume": 31506846,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "GOOGL": {
       "symbol": "GOOGL",
@@ -36,7 +36,7 @@
       "changePercentValue": 1.0559,
       "volume": 24876095,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "META": {
       "symbol": "META",
@@ -47,7 +47,7 @@
       "changePercentValue": 1.134,
       "volume": 11344421,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "AMZN": {
       "symbol": "AMZN",
@@ -58,7 +58,7 @@
       "changePercentValue": -0.0081,
       "volume": 35187406,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "AMD": {
       "symbol": "AMD",
@@ -69,7 +69,7 @@
       "changePercentValue": -7.3037,
       "volume": 28411694,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "AVGO": {
       "symbol": "AVGO",
@@ -80,7 +80,7 @@
       "changePercentValue": -4.3738,
       "volume": 31573669,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "TSLA": {
       "symbol": "TSLA",
@@ -91,7 +91,7 @@
       "changePercentValue": -1.5785,
       "volume": 40255473,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "QQQ": {
       "symbol": "QQQ",
@@ -102,7 +102,7 @@
       "changePercentValue": -1.9005,
       "volume": 45348675,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "SPY": {
       "symbol": "SPY",
@@ -113,7 +113,7 @@
       "changePercentValue": -0.5962,
       "volume": 67093142,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     },
     "SMH": {
       "symbol": "SMH",
@@ -124,7 +124,7 @@
       "changePercentValue": -4.8061,
       "volume": 10949632,
       "tradingDay": "2026-06-16",
-      "fetchedAt": "2026-06-17T07:41:29.033Z"
+      "fetchedAt": "2026-06-17T09:01:06.180Z"
     }
   },
   "topMovers": [
@@ -673,13 +673,23 @@
     "NVDA": [
       {
         "symbol": "NVDA",
+        "title": "NVIDIA Corporation $NVDA Shares Sold by Codex Capital Asset Management L.L.C.",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-nvidia-corporation-nvda-shares-sold-by-codex-capital-asset-management-llc-2026-06-17/",
+        "source": "MarketBeat",
+        "timePublished": "20260617T074745",
+        "summary": "Codex Capital Asset Management L.L.C. reduced its stake in NVIDIA Corporation by 8.8% in Q4, selling 22,000 shares, though NVIDIA remains its largest holding at 15.5% of its portfolio. This reduction comes despite NVIDIA reporting a strong quarter with EPS and revenue beating estimates, an authorized $80 billion share buyback, and an increased quarterly dividend. Analysts largely maintain a \"Buy\" rating for NVIDIA, citing strong AI demand and its central role in the cloud buildout, even as some express concerns about rising competition and potential overheating of AI stocks.",
+        "overallSentimentScore": 0.500035,
+        "overallSentimentLabel": "Bullish"
+      },
+      {
+        "symbol": "NVDA",
         "title": "Equinix, Inc. (EQIX.US) Launches 6th AI Data Center in HK",
         "url": "https://www.aastocks.com/en/usq/news/comment.aspx?source=AAFN&id=NOW.1529394&catg=1",
         "source": "AASTOCKS.com",
         "timePublished": "20260617T020741",
         "summary": "Digital infrastructure company Equinix, Inc. (EQIX.US) has launched its sixth International Business Exchange (IBX) data center, HK6, in Hong Kong. This new facility is designed to support AI innovation with liquid cooling and high power density, representing an initial investment of USD124 million. HK6 will eventually offer up to 3,550 cabinets and connects to the Hong Kong-Shenzhen Innovation and Technology Park, fostering cross-border collaboration and housing the AI Discovery Hub in partnership with Hewlett Packard Enterprise and NVIDIA.",
-        "overallSentimentScore": 0.343705,
-        "overallSentimentLabel": "Somewhat-Bullish"
+        "overallSentimentScore": 0.355301,
+        "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "NVDA",
@@ -688,7 +698,7 @@
         "source": "AASTOCKS.com",
         "timePublished": "20260617T013740",
         "summary": "Digital infrastructure company Equinix, Inc. (EQIX.US) has launched its sixth International Business Exchange (IBX) data center, HK6, in Hong Kong. This new facility is specifically designed to support AI innovation with a liquid cooling system, a initial investment of USD124 million, and a capacity for 1,000 cabinets that will expand to 3,550 upon full completion. HK6 also hosts the AI Discovery Hub, a joint initiative with Hewlett Packard Enterprise and NVIDIA, aiming to foster cross-border collaboration and accelerate AI research and development in the Greater Bay Area.",
-        "overallSentimentScore": 0.251096,
+        "overallSentimentScore": 0.243168,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -698,8 +708,8 @@
         "source": "Investing.com",
         "timePublished": "20260617T012715",
         "summary": "Ambarella Inc.'s (NASDAQ:AMBA) VP of Business Development, Chen Yun-Lung, sold 9,856 ordinary shares worth $660,943 on June 12, 2026, at prices ranging from $67.06 to $67.07 per share. This transaction leaves him with 66,515 shares, occurring while the stock trades above its Fair Value according to InvestingPro. The company has recent positive news including exceeding Q1 earnings estimates, maintaining revenue guidance, and securing a major AI SoC agreement, leading to analyst rating reiterations and price target increases, despite some concerns about supply chain risks.",
-        "overallSentimentScore": -0.145842,
-        "overallSentimentLabel": "Neutral"
+        "overallSentimentScore": -0.150158,
+        "overallSentimentLabel": "Somewhat-Bearish"
       },
       {
         "symbol": "NVDA",
@@ -708,7 +718,7 @@
         "source": "Simply Wall Street",
         "timePublished": "20260617T011013",
         "summary": "FTAI Aviation's stock rose 14.8% following strategic financial moves, including the redemption of high-yield 8.25% Series C preferred shares and a substantial US$612 million asset-backed securitization. These actions aim to strengthen its balance sheet and support new growth areas like AI power turbines and extended engine service life due to potential geopolitical developments. The company's future narrative projects significant revenue and earnings growth, alongside a fair value of $350.60, representing a 31% upside.",
-        "overallSentimentScore": 0.217021,
+        "overallSentimentScore": 0.213437,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -718,8 +728,18 @@
         "source": "TradingKey",
         "timePublished": "20260617T010844",
         "summary": "This article provides an earnings forecast for United Microelectronics Corp (UMC), detailing its current earnings forecast score, average price target, and analyst ratings. It also includes peer comparisons and answers frequently asked questions about expected revenue, price targets, and past EPS performance. The data indicates a \"Sell\" trend according to analyst consensus.",
-        "overallSentimentScore": -0.0945,
+        "overallSentimentScore": -0.099888,
         "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Coherent Corp pours $650M into Texas photonics facility as NVIDIA deepens AI optics partnership",
+        "url": "https://cryptobriefing.com/coherent-corp-sherman-photonics-expansion-nvidia-ai/",
+        "source": "Crypto Briefing",
+        "timePublished": "20260616T233939",
+        "summary": "Coherent Corp is investing $650 million to expand its photonics facility in Sherman, Texas, quadrupling wafer production capacity and creating roughly 1,000 jobs. This expansion is a direct result of a multi-year strategic agreement with NVIDIA, which includes a $2 billion investment to advance optics for next-generation AI infrastructure. The project is also supported by up to $50 million in CHIPS Act funding, highlighting the critical role of optical interconnect technology in the future of AI.",
+        "overallSentimentScore": 0.183193,
+        "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "NVDA",
@@ -728,31 +748,31 @@
         "source": "NAI500",
         "timePublished": "20260616T230955",
         "summary": "Ken Griffin's Citadel Advisors has made a significant contrarian investment in Intuitive Surgical Inc. (ISRG), increasing its stake by 30.3% in the first quarter, while simultaneously trimming positions in Nvidia Corp. and Amazon.com Inc. This move suggests a shift away from high-valued AI stocks towards opportunities with more attractive risk-reward profiles. Citadel views Intuitive Surgical's recent 20% stock decline as an overreaction to temporary challenges, believing the company's strong market moat and long-term growth potential remain intact despite increased competition and temporary margin pressures.",
-        "overallSentimentScore": 0.200726,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "GlobalFoundries OCI MSA Silicon: First Chipmaker to Deliver Open Optical Interconnect Standard - News and Statistics",
-        "url": "https://www.indexbox.io/blog/globalfoundries-targets-oci-msa-silicon-production-ramp-for-ai-data-centers/",
-        "source": "IndexBox",
-        "timePublished": "20260616T230929",
-        "summary": "GlobalFoundries is positioning itself as the first chipmaker to deliver silicon supporting the Optical Compute Interconnect Multi-Source Agreement (OCI MSA), an open standard for AI data centers. The company expects to begin volume production as early as 2027 and is currently working with customers on OCI MSA-compatible silicon, which will eliminate vendor lock-in and enable migration from copper to optical interconnects. GlobalFoundries' proprietary Scale technology, which exceeds OCI MSA specifications in wavelength and modulator performance, also supports both CWDM and DWDM standards for flexible optical scale-up and scale-out solutions.",
-        "overallSentimentScore": 0.270004,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Why Astera Labs (ALAB) Is Up 5.7% After Taiwan AI Lab Expansion And Nasdaq-100 Inclusion",
-        "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-alab/astera-labs/news/why-astera-labs-alab-is-up-57-after-taiwan-ai-lab-expansion",
-        "source": "Simply Wall Street",
-        "timePublished": "20260616T230905",
-        "summary": "Astera Labs (ALAB) saw its stock rise 5.7% following the expansion of its Taiwan AI Lab operations and its pending inclusion in the Nasdaq-100 Index. The Taiwan expansion deepens collaboration with leading chipmakers for AI infrastructure, while the Nasdaq-100 inclusion is expected to boost liquidity and visibility. Despite these positive developments, the company's investment narrative still hinges on sustained demand for AI data center connectivity and its ability to manage customer concentration risks.",
-        "overallSentimentScore": 0.348521,
+        "overallSentimentScore": 0.237388,
         "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "MSFT": [
+      {
+        "symbol": "MSFT",
+        "title": "Advanced Micro Devices, Inc. $AMD Shares Sold by Delaney Dennis R",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-advanced-micro-devices-inc-amd-shares-sold-by-delaney-dennis-r-2026-06-17/",
+        "source": "MarketBeat",
+        "timePublished": "20260617T080005",
+        "summary": "Delaney Dennis R reduced its stake in Advanced Micro Devices (AMD) by 11.2% in the fourth quarter, selling 3,183 shares. Despite this, Wall Street maintains a \"Moderate Buy\" consensus for AMD, with an average target price of $428.65, and the company reported strong quarterly results, beating EPS and revenue estimates. AMD's stock has seen positive movement from its AI initiatives and acquisition activities, though some analysts warn of high valuation after recent rallies.",
+        "overallSentimentScore": 0.321184,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "&PARTNERS Increases Position in Salesforce Inc. $CRM",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-partners-increases-position-in-salesforce-inc-crm-2026-06-17/",
+        "source": "MarketBeat",
+        "timePublished": "20260617T072222",
+        "summary": "&PARTNERS significantly increased its holdings in Salesforce Inc. (NYSE:CRM) by 73.6% in the fourth quarter, bringing its total stake to 145,232 shares worth $38.48 million. Other institutional investors also modified their positions, with hedge funds and institutional investors collectively owning 80.43% of the company's stock. Salesforce recently announced a quarterly dividend of $0.44 per share and a $25 billion stock buyback program, while analyst ratings suggest a \"Moderate Buy\" consensus with a price target of $259.26.",
+        "overallSentimentScore": 0.319768,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
       {
         "symbol": "MSFT",
         "title": "TCS, Coforge, Infosys Gain As Nifty IT Extends Rally Amid US-Iran Peace Deal Driven Risk-On Mood",
@@ -760,7 +780,7 @@
         "source": "NDTV Profit",
         "timePublished": "20260617T041121",
         "summary": "The Nifty IT index extended its rally for the third consecutive session, rising 1.31%, with all nine constituent stocks posting gains. This uptrend was driven by a risk-on sentiment following the US-Iran peace deal, which boosted technology stocks globally and in India. Coforge Ltd. led the gains, and the index added over Rs. 26,159 crore in market capitalization.",
-        "overallSentimentScore": 0.285799,
+        "overallSentimentScore": 0.293693,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -770,8 +790,8 @@
         "source": "TradingKey",
         "timePublished": "20260617T033931",
         "summary": "The Glimpse Group Inc (VRAR) has an earnings forecast score of 8.00, ranking 108 out of 480 in its industry. Analysts have set an average price target of $2.62, with a unanimous \"Buy\" rating based on one analyst's assessment, indicating a significant upside potential of +394.34%. The company's expected revenue for the next quarter is $3.00M, and EPS is forecasted at -$0.01, an improvement from the previous quarter's -$0.05.",
-        "overallSentimentScore": 0.354284,
-        "overallSentimentLabel": "Bullish"
+        "overallSentimentScore": 0.349938,
+        "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
@@ -780,8 +800,8 @@
         "source": "Investing.com",
         "timePublished": "20260617T030731",
         "summary": "Silver Lake Technology Investors V, an affiliate of Silver Lake, sold 345 shares of Dell Technologies (NASDAQ:DELL) Class C Common Stock totaling approximately $139,073 on June 12, 2026. This transaction followed the conversion of Class B shares to Class C shares. Dell's stock has seen a significant surge of about 254% over the past year and is currently considered overvalued according to InvestingPro analysis.",
-        "overallSentimentScore": 0.181441,
-        "overallSentimentLabel": "Somewhat-Bullish"
+        "overallSentimentScore": 0.143809,
+        "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "MSFT",
@@ -790,8 +810,18 @@
         "source": "Investing.com",
         "timePublished": "20260617T023730",
         "summary": "Silver Lake Technology Investors V, L.P., an affiliate of Silver Lake, sold 345 shares of Dell Technologies Inc. (NASDAQ:DELL) Class C Common Stock for approximately $139,073 on June 12, 2026. This sale follows a significant 254% surge in DELL's stock over the past year. The transactions involved the conversion of Class B shares to Class C shares, and despite the sale, Silver Lake entities and Egon Durban retain substantial holdings in Dell.",
-        "overallSentimentScore": 0.050359,
+        "overallSentimentScore": 0.05865,
         "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Kyivstar Expands Satellite Connectivity with Starlink Mobile Light Data Service",
+        "url": "https://www.thefastmode.com/technology-solutions/49091-kyivstar-expands-satellite-connectivity-with-starlink-mobile-light-data-service",
+        "source": "The Fast Mode",
+        "timePublished": "20260617T021036",
+        "summary": "Kyivstar, Ukraine's leading digital operator, has launched Starlink Mobile light data service nationwide, allowing 4G (LTE) smartphone users to access essential apps like Viber, WhatsApp, and Google Maps via Starlink satellites when terrestrial network coverage is unavailable. This initiative significantly enhances communication capabilities and access to critical services, especially during outages and in remote areas, further building robust and resilient connectivity across Ukraine. The service is currently available for Android users, with plans to expand to other devices and applications.",
+        "overallSentimentScore": 0.173252,
+        "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
@@ -800,38 +830,8 @@
         "source": "Investing.com South Africa",
         "timePublished": "20260617T020927",
         "summary": "Digimarc Corporation announced the integration of its AI security tools with major enterprise platforms like LangChain, ServiceNow, Salesforce, Google Gemini, and Microsoft Copilot Studio. This allows AI agents on these platforms to cryptographically stamp outputs, verify authenticity, and retrieve lineage records for audit and compliance. Despite its stock surging 73% year-to-date, the company faces financial headwinds, including a 15% revenue decline over the last year.",
-        "overallSentimentScore": 0.265709,
+        "overallSentimentScore": 0.249202,
         "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Why FTAI Aviation (FTAI) Is Up 14.8% After Redeeming Costly Preferreds And Securitizing Engines",
-        "url": "https://simplywall.st/stocks/us/capital-goods/nasdaq-ftai/ftai-aviation/news/why-ftai-aviation-ftai-is-up-148-after-redeeming-costly-pref/amp",
-        "source": "Simply Wall Street",
-        "timePublished": "20260617T011013",
-        "summary": "FTAI Aviation's stock rose 14.8% following strategic financial moves, including the redemption of high-yield 8.25% Series C preferred shares and a substantial US$612 million asset-backed securitization. These actions aim to strengthen its balance sheet and support new growth areas like AI power turbines and extended engine service life due to potential geopolitical developments. The company's future narrative projects significant revenue and earnings growth, alongside a fair value of $350.60, representing a 31% upside.",
-        "overallSentimentScore": 0.202896,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "TechTarget Shareholders Strongly Back Board and Governance",
-        "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/2504728/techtarget-shareholders-strongly-back-board-and-governance/",
-        "source": "The Globe and Mail",
-        "timePublished": "20260616T233955",
-        "summary": "TechTarget, Inc. (TTGT) shareholders strongly supported the company's board and governance at their 2026 annual meeting on June 11, 2026. Approximately 94% of outstanding shares were represented, with all director nominees elected, PricewaterhouseCoopers LLP ratified as independent auditor, and executive compensation approved on an advisory basis. This indicates strong investor confidence despite mixed financial performance and a \"Neutral\" rating from TipRanks' AI Analyst due to weak financials but a more constructive earnings outlook.",
-        "overallSentimentScore": 0.159361,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Dell Technologies director David Dorman sells $16.76m in shares",
-        "url": "https://m.uk.investing.com/news/insider-trading-news/dell-technologies-director-david-dorman-sells-1676m-in-shares-93CH-4731473?ampMode=1",
-        "source": "Investing.com",
-        "timePublished": "20260616T223731",
-        "summary": "David W. Dorman, a director at Dell Technologies Inc., sold 41,292 shares of Class C Common Stock totaling approximately $16.76 million on June 12, 2026. The shares were sold indirectly through a grantor retained annuity trust, which no longer holds any Dell shares following the transaction. Dorman still directly holds 78,224 shares, and the sale follows a 265% surge in Dell's stock over the past year.",
-        "overallSentimentScore": 0.112932,
-        "overallSentimentLabel": "Neutral"
       }
     ],
     "GOOGL": [
@@ -842,7 +842,7 @@
         "source": "chinadailyhk",
         "timePublished": "20260617T064151",
         "summary": "HSBC is partnering with Google Cloud to integrate artificial intelligence across its global operations, anticipating over $100 million in additional revenue or savings from various projects. The bank plans to deploy more than 200 new AI use cases in the next two years, leveraging Google's advanced AI capabilities, including Gemini models. This move positions HSBC as one of the first global banks to outline a clear strategy for leveraging AI to boost efficiency and revenue, amidst industry discussions about AI's impact on employment.",
-        "overallSentimentScore": 0.07067,
+        "overallSentimentScore": 0.077879,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -852,8 +852,8 @@
         "source": "TradingKey",
         "timePublished": "20260617T051047",
         "summary": "Fubotv Inc (FUBO) has an earnings forecast score of 8.00 and an average price target of $4.25 from 10 analysts, with most recommending a \"Buy.\" The company's expected revenue for the next quarter is $1.58 billion, and its EPS for the previous quarter was -$0.21, with a forecast of -$0.31 for the next.",
-        "overallSentimentScore": 0.188638,
-        "overallSentimentLabel": "Somewhat-Bullish"
+        "overallSentimentScore": 0.142844,
+        "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "GOOGL",
@@ -862,7 +862,7 @@
         "source": "TradingView",
         "timePublished": "20260616T221010",
         "summary": "This article provides the current holdings list for the Franklin S&P 500 Communication Services UCITS ETF AccumUSD (FTCS) on Tradegate Exchange, as of June 12, 2026. Key holdings include Meta Platforms, Alphabet (Class A and C), Netflix, and Verizon, detailing their weight, share count, and market value. The fund offers exposure to major communication services companies.",
-        "overallSentimentScore": 0.04701,
+        "overallSentimentScore": 0.016769,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -872,7 +872,17 @@
         "source": "Investing.com",
         "timePublished": "20260616T215050",
         "summary": "HP Inc.'s Chief Commercial Officer, David P. McQuarrie, sold 10,524 shares of company stock for a total of $259,732 on June 12, 2026. Despite the sale, which was executed via a Rule 10b5-1 trading plan, InvestingPro analysis suggests HPQ stock is undervalued. The company recently reported strong Q2 2026 earnings, surpassing analyst expectations, and announced a new limited-edition AI PC in collaboration with Scuderia Ferrari.",
-        "overallSentimentScore": -0.080768,
+        "overallSentimentScore": -0.10724,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Jefferies (NYSE: JEF) offers $500K autocallable notes tied to GOOGL stock",
+        "url": "https://www.stocktitan.net/sec-filings/JEF/424b2-jefferies-financial-group-inc-prospectus-supplement-8539784be96a.html",
+        "source": "Stock Titan",
+        "timePublished": "20260616T210950",
+        "summary": "Jefferies Financial Group Inc. is offering $500,000 in Senior Autocallable Contingent Coupon Barrier Notes linked to Alphabet Inc. (GOOGL) Class A common stock. These notes pay a monthly contingent coupon of $10.83 if GOOGL's stock meets the Coupon Barrier, are autocallable after approximately three years, and expose investors to 1-to-1 downside risk at maturity if GOOGL's price falls below a specified Threshold Value. All payments are subject to Jefferies' credit risk, and the estimated value per note is $983.10.",
+        "overallSentimentScore": 0.093742,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -882,7 +892,7 @@
         "source": "Insider Monkey",
         "timePublished": "20260616T185459",
         "summary": "Apple Inc. (AAPL) shares have fallen despite significant AI announcements at WWDC 2026, as investor sentiment indicates that the company did not meet AI advancement expectations. However, analysts from Maxim and Bernstein SocGen reiterated Buy/Outperform ratings and raised price targets, highlighting progress in enhanced Siri and collaboration with Google's Gemini technology for Apple Intelligence.",
-        "overallSentimentScore": 0.184435,
+        "overallSentimentScore": 0.200071,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -892,7 +902,7 @@
         "source": "Yahoo! Finance Canada",
         "timePublished": "20260616T183657",
         "summary": "Despite significant AI advancements announced at WWDC 2026, shares of Apple Inc (AAPL) have fallen due to investors' unmet expectations regarding the company's AI progress. However, market analysts view the event as a meaningful first step, with firms like Maxim and Bernstein SocGen reiterating \"Buy\" and \"Outperform\" ratings, respectively, and increasing price targets based on upcoming Siri enhancements and the collaboration with Google's Gemini technology for Apple Intelligence. The article also notes that while Apple has potential, some AI stocks offer greater upside.",
-        "overallSentimentScore": 0.041846,
+        "overallSentimentScore": 0.059163,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -902,17 +912,7 @@
         "source": "TradingKey",
         "timePublished": "20260616T173808",
         "summary": "Applovin Corp (APP) stock fell by 4.40% on June 16, influenced by broad weakness in the technology sector, significant share liquidations by corporate executives, and rising competitive and valuation concerns. Despite strong operational fundamentals and positive analyst growth expectations, the company faces \"SaaS-pocalypse\" pressures, insider selling impacting investor sentiment, and increased scrutiny over its AI-driven advertising platform amidst new open-source competition and data privacy regulations. Technical indicators suggest mixed signals, while fundamental analysis highlights its strong revenue and net profit within the Software & IT Services industry.",
-        "overallSentimentScore": 0.191428,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Jabil Bets Big on India's AI Infrastructure Push: Time to Buy?",
-        "url": "https://uk.finance.yahoo.com/news/jabil-bets-big-indias-ai-171500778.html",
-        "source": "Yahoo Finance UK",
-        "timePublished": "20260616T173748",
-        "summary": "Jabil is partnering with Adani Group to establish a vertically integrated AI data center infrastructure manufacturing platform in India, focusing on AI racks and supporting infrastructure. This collaboration aims to capitalize on a global market opportunity exceeding $3 trillion, driven by increasing AI investments. Despite facing competition from Flex Ltd. and Sanmina Corporation, Jabil is positioning itself as a reliable manufacturing partner for hyperscalers by expanding its capacity.",
-        "overallSentimentScore": 0.218122,
+        "overallSentimentScore": 0.18923,
         "overallSentimentLabel": "Somewhat-Bullish"
       }
     ]
