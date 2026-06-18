@@ -19,6 +19,7 @@
     "generate:latest": "node scripts/generate-latest-data.js",
     "translate:items": "node scripts/translate-items.js",
     "generate:events": "node scripts/generate-events.js",
+    "analyze:events": "node scripts/generate-event-analysis.js",
     "summarize:daily": "node scripts/generate-ai-summary.js",
     "summarize:items": "node scripts/generate-ai-summary.js --items-only",
     "summarize:brief": "node scripts/generate-ai-summary.js --daily-brief-only",

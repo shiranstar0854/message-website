@@ -1,6 +1,7 @@
 {
   "allowedCategories": ["tech", "finance", "business", "macro", "international", "news"],
   "blockedSources": [],
+  "blockedSourceTiers": ["D"],
   "blockedTerms": [
     "celebrity gossip",
     "horoscope",
@@ -13,9 +14,20 @@
     "daily deals",
     "coupon",
     "promo code",
-    "rumor roundup"
+    "rumor roundup",
+    "震惊",
+    "必看",
+    "重磅爆料"
+  ],
+  "lowValueContentPatterns": [
+    "sponsored by",
+    "affiliate link",
+    "not financial advice",
+    "未经证实",
+    "网传"
   ],
   "minimumTitleLength": 12,
   "requireUrl": true,
+  "requirePublishedAt": false,
   "maxAgeHours": 48
 }

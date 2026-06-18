@@ -64,6 +64,21 @@ const DERIVED_CATEGORY_RULES = [
   }
 ];
 
+const SOURCE_TIER_ORDER = { S: 5, A: 4, B: 3, C: 2, D: 1 };
+const EVIDENCE_TYPE_WEIGHTS = {
+  official_announcement: 100,
+  financial_report: 95,
+  regulatory_document: 95,
+  research_paper: 90,
+  data_release: 90,
+  reliable_media_report: 80,
+  industry_analysis: 70,
+  market_feedback: 70,
+  expert_opinion: 60,
+  social_discussion: 40,
+  unknown: 20
+};
+
 function normalizeText(value) {
   return String(value || "")
     .replace(/<[^>]+>/g, " ")
@@ -152,6 +167,66 @@ function deriveImpactAreas(item) {
   return [...new Set(areas)].slice(0, 4);
 }
 
+function itemText(item) {
+  return normalizeText(`${item.title || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${(item.tags || []).join(" ")}`).toLowerCase();
+}
+
+function classifySourceTier(source = {}) {
+  const explicit = normalizeText(source.sourceTier || source.tier).toUpperCase();
+  if (SOURCE_TIER_ORDER[explicit]) return explicit;
+
+  const authority = normalizeText(source.sourceAuthority).toLowerCase();
+  const sourceType = normalizeText(source.sourceType).toLowerCase();
+  const sourceName = normalizeText(source.source || source.sourceName).toLowerCase();
+  const credibility = Number(source.credibility || 0);
+
+  if (["official-agency", "official-market"].includes(authority)) return "S";
+  if (authority === "official-media") return "A";
+  if (/(reuters|associated press|\bap\b|financial times|\bft\b|bloomberg|bbc|dow jones|wall street journal|wsj)/i.test(sourceName)) return "A";
+  if (/blog|substack|newsletter|social|forum|x\.com|twitter|reddit|opinion|commentary/.test(`${sourceType} ${authority} ${sourceName}`)) return "C";
+  if (/marketing|sponsored|coupon|deal|promo|aggregator|scraper|content farm/.test(`${sourceType} ${authority} ${sourceName}`)) return "D";
+  if (authority === "financial-media" || authority === "media" || credibility >= 80) return "B";
+  return credibility >= 70 ? "B" : "C";
+}
+
+function inferEvidenceType(item = {}) {
+  const explicit = normalizeText(item.evidence_type || item.evidenceType).toLowerCase();
+  if (EVIDENCE_TYPE_WEIGHTS[explicit]) return explicit;
+
+  const text = itemText(item);
+  const authority = normalizeText(item.sourceAuthority).toLowerCase();
+  const source = normalizeText(item.source).toLowerCase();
+  if (authority === "official-market" || /sec|csrc|exchange|交易所|公告|披露|filing|10-k|10-q|8-k|earnings|revenue|profit|financial report|财报|营收|利润/.test(`${source} ${text}`)) return "financial_report";
+  if (authority === "official-agency" && /regulation|regulatory|rule|监管|条例|办法|政策|央行|federal reserve|sec|csrc/.test(`${source} ${text}`)) return "regulatory_document";
+  if (authority === "official-agency" || /official announcement|press release|公告|发布|声明/.test(text)) return "official_announcement";
+  if (/paper|journal|arxiv|research|论文|研究/.test(text)) return "research_paper";
+  if (/data|dataset|统计|数据|cpi|gdp|inflation|employment|retail sales/.test(text)) return "data_release";
+  if (["official-media", "financial-media", "media"].includes(authority) || classifySourceTier(item) === "A") return "reliable_media_report";
+  if (/analysis|research note|industry|报告|分析|研报/.test(text)) return "industry_analysis";
+  if (/market|stock|share|yield|price|成交|股价|市场|收益率/.test(text)) return "market_feedback";
+  if (/opinion|commentary|expert|观点|评论|专家/.test(text)) return "expert_opinion";
+  if (/social|reddit|twitter|x\.com|discussion|讨论/.test(text)) return "social_discussion";
+  return "unknown";
+}
+
+function evidenceWeight(evidenceType) {
+  return EVIDENCE_TYPE_WEIGHTS[evidenceType] || EVIDENCE_TYPE_WEIGHTS.unknown;
+}
+
+function calculateEventRelevanceScore(item = {}, keywordMatches = []) {
+  const text = itemText(item);
+  const entityHits = [
+    /\bopenai\b|\bnvidia\b|\bfederal reserve\b|\bfed\b|\bsec\b|\bcsrc\b/i,
+    /英伟达|美联储|证监会|央行|国务院|国家统计局|发改委|交易所|监管/u
+  ].reduce((count, pattern) => count + (pattern.test(text) ? 1 : 0), 0);
+  const keywordHitScore = Math.min(25, (keywordMatches || []).length * 5);
+  const impactScore = Math.min(20, (item.impactAreas || []).length * 8);
+  const evidenceScore = Math.round(evidenceWeight(item.evidence_type || inferEvidenceType(item)) * 0.25);
+  const factScore = /发布|announced|reported|data|数据|公告|披露|confirmed|批准|released/i.test(text) ? 15 : 0;
+  const passingMentionPenalty = entityHits === 0 && keywordHitScore > 0 ? 15 : 0;
+  return Math.max(0, Math.min(100, 15 + entityHits * 10 + keywordHitScore + impactScore + evidenceScore + factScore - passingMentionPenalty));
+}
+
 function truncateText(value, limit = CONTENT_EXCERPT_LIMIT) {
   const text = String(value || "").trim();
   if (text.length <= limit) return text;
@@ -181,7 +256,7 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
   const title = decodeHtml(firstDefined(raw.title, raw.headline, raw.name, raw.guid, "Untitled item"));
   const rawUrl = firstDefined(raw.link, raw.url, raw.href, raw.guid, "");
   const url = normalizeUrl(typeof rawUrl === "object" ? rawUrl.href : rawUrl);
-  const publishedAt = normalizeDate(firstDefined(
+  const rawPublishedAt = firstDefined(
     raw.publishedAt,
     raw.published_at,
     raw.pubDate,
@@ -189,7 +264,8 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     raw.date,
     raw.published,
     raw.updated
-  ), fetchedAt);
+  );
+  const publishedAt = normalizeDate(rawPublishedAt, fetchedAt);
   const summary = decodeHtml(firstDefined(
     raw.summary,
     raw.contentSnippet,
@@ -224,6 +300,26 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
   const sourceLanguage = detectSourceLanguage(raw, title, summary || contentExcerpt);
   const derivedCategory = deriveCategory(category, { title, summary, contentExcerpt, tags });
   const impactAreas = deriveImpactAreas({ title, summary, contentExcerpt, tags });
+  const sourceProfile = {
+    source: sourceName,
+    sourceName,
+    sourceType,
+    sourceAuthority,
+    credibility,
+    sourceTier: firstDefined(rawItem.sourceTier, raw.sourceTier, sourceDefaults.sourceTier, sourceDefaults.tier, "")
+  };
+  const sourceTier = classifySourceTier(sourceProfile);
+  const evidence_type = inferEvidenceType({
+    title,
+    summary,
+    contentExcerpt,
+    tags,
+    source: sourceName,
+    sourceType,
+    sourceAuthority,
+    sourceTier,
+    evidence_type: firstDefined(rawItem.evidence_type, raw.evidence_type, raw.evidenceType, "")
+  });
   const id = [
     slugify(derivedCategory),
     slugify(sourceName),
@@ -240,6 +336,7 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     category: derivedCategory,
     ...(derivedCategory !== normalizeText(category).toLowerCase() ? { primaryCategory: normalizeText(category).toLowerCase() } : {}),
     publishedAt,
+    ...(rawPublishedAt ? {} : { publishedAtInferred: true }),
     summary,
     ...(contentExcerpt ? { contentExcerpt } : {}),
     ...(imageUrl ? { imageUrl } : {}),
@@ -247,7 +344,10 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     sourceLastCheckedAt,
     credibility: Number.isFinite(credibility) ? credibility : 70,
     sourceAuthority: normalizeText(sourceAuthority).toLowerCase(),
+    sourceTier,
     timelinessTier: normalizeText(timelinessTier).toLowerCase(),
+    evidence_type,
+    evidence_weight: evidenceWeight(evidence_type),
     tags,
     ...(impactAreas.length ? { impactAreas } : {}),
     ...(sourceLanguage ? { sourceLanguage } : {}),
@@ -280,6 +380,16 @@ function getFilterReasons(item, rules = {}) {
     }
   }
 
+  const sourceTier = normalizeText(item.sourceTier || classifySourceTier(item)).toUpperCase();
+  const blockedSourceTiers = Array.isArray(rules.blockedSourceTiers) ? rules.blockedSourceTiers.map((value) => normalizeText(value).toUpperCase()) : ["D"];
+  if (blockedSourceTiers.includes(sourceTier)) {
+    reasons.push(`blocked-source-tier:${sourceTier}`);
+  }
+
+  if (rules.requirePublishedAt === true && (!item.publishedAt || item.publishedAtInferred)) {
+    reasons.push("missing-published-at");
+  }
+
   if (Array.isArray(rules.blockedTerms)) {
     const blockedTerm = rules.blockedTerms.find((term) => haystack.includes(String(term).toLowerCase()));
     if (blockedTerm) {
@@ -291,6 +401,13 @@ function getFilterReasons(item, rules = {}) {
     const pattern = rules.lowValueTitlePatterns.find((term) => title.toLowerCase().includes(String(term).toLowerCase()));
     if (pattern) {
       reasons.push(`low-value-title:${pattern}`);
+    }
+  }
+
+  if (Array.isArray(rules.lowValueContentPatterns)) {
+    const pattern = rules.lowValueContentPatterns.find((term) => haystack.includes(String(term).toLowerCase()));
+    if (pattern) {
+      reasons.push(`low-value-content:${pattern}`);
     }
   }
 
@@ -509,17 +626,39 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
   const categoryBoosts = rules.categoryBoosts || {};
   const sourceBoosts = rules.sourceBoosts || {};
   const sourceAuthorityBoosts = rules.sourceAuthorityBoosts || {};
+  const sourceTierBoosts = rules.sourceTierBoosts || { S: 8, A: 5, B: 2, C: -18, D: -50 };
+  const evidenceTypeBoosts = rules.evidenceTypeBoosts || {
+    official_announcement: 8,
+    financial_report: 7,
+    regulatory_document: 7,
+    research_paper: 6,
+    data_release: 6,
+    reliable_media_report: 4,
+    industry_analysis: 2,
+    market_feedback: 2,
+    expert_opinion: -5,
+    social_discussion: -12,
+    unknown: -10
+  };
   const timelinessBoosts = rules.timelinessBoosts || {};
   const officialFreshnessWindowHours = Number(rules.officialFreshnessWindowHours || 24);
+  const eventRelevanceWeight = Number(rules.eventRelevanceWeight || 0.18);
+  const lowEventRelevancePenalty = Number(rules.lowEventRelevancePenalty || 10);
+  const lowEventRelevanceThreshold = Number(rules.lowEventRelevanceThreshold || 45);
 
   return items.map((item) => {
+    const sourceTier = item.sourceTier || classifySourceTier(item);
+    const evidence_type = item.evidence_type || inferEvidenceType(item);
     const credibilityScore = Number(item.credibility || 70) * sourceCredibilityWeight;
     const freshnessScore = calculateFreshnessScore(item.publishedAt, rules.freshness, nowIso);
     const keywordMatches = getKeywordMatches(item, rules.keywordWeights);
+    const eventRelevanceScore = item.event_relevance_score ?? calculateEventRelevanceScore({ ...item, evidence_type }, keywordMatches);
     const keywords = keywordMatches.reduce((total, entry) => total + Number(entry.score || 0), 0);
     const categoryBoost = Number(categoryBoosts[item.category] || 0);
     const sourceBoost = Number(sourceBoosts[item.source] || 0);
     const authorityBoost = Number(sourceAuthorityBoosts[item.sourceAuthority] || 0);
+    const sourceTierBoost = Number(sourceTierBoosts[sourceTier] || 0);
+    const evidenceTypeBoost = Number(evidenceTypeBoosts[evidence_type] || 0);
     const timelinessBoost = Number(timelinessBoosts[item.timelinessTier] || 0);
     const publishedTime = new Date(item.publishedAt || nowIso).getTime();
     const nowTime = new Date(nowIso).getTime();
@@ -531,13 +670,20 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
       ? Number(rules.officialFreshnessBoost || 0)
       : 0;
     const duplicatePenaltyScore = Number(item.duplicateCount || (item.duplicates || []).length || 0) * duplicatePenalty;
+    const eventRelevanceBoost = Number(((eventRelevanceScore - 50) * eventRelevanceWeight).toFixed(2));
+    const eventRelevancePenalty = eventRelevanceScore < lowEventRelevanceThreshold ? lowEventRelevancePenalty : 0;
     const rawScore = baseScore + credibilityScore + freshnessScore + keywords + categoryBoost + sourceBoost
-      + authorityBoost + timelinessBoost + officialFreshnessBoost - duplicatePenaltyScore;
+      + authorityBoost + sourceTierBoost + evidenceTypeBoost + timelinessBoost + officialFreshnessBoost + eventRelevanceBoost
+      - duplicatePenaltyScore - eventRelevancePenalty;
     const score = Math.max(0, Math.min(100, Math.round(rawScore)));
     const importanceScore = calculateImportanceScore({ ...item, score });
 
     return {
       ...item,
+      sourceTier,
+      evidence_type,
+      evidence_weight: evidenceWeight(evidence_type),
+      event_relevance_score: eventRelevanceScore,
       score,
       importance_score: item.importance_score ?? importanceScore,
       keywordHits: keywordMatches.map((entry) => ({ term: entry.term, score: Number(entry.score || 0) })),
@@ -549,8 +695,12 @@ function scoreItems(items, rules = {}, nowIso = DEFAULT_FETCHED_AT()) {
         categoryBoost,
         sourceBoost,
         authorityBoost,
+        sourceTierBoost,
+        evidenceTypeBoost,
         timelinessBoost,
         officialFreshnessBoost,
+        eventRelevanceBoost,
+        eventRelevancePenalty,
         duplicatePenalty: duplicatePenaltyScore
       }
     };
@@ -604,10 +754,15 @@ function buildPublishedItem(item) {
     category: item.category,
     ...(item.primaryCategory ? { primaryCategory: item.primaryCategory } : {}),
     publishedAt: item.publishedAt,
+    ...(item.publishedAtInferred ? { publishedAtInferred: true } : {}),
     fetchedAt: item.fetchedAt,
     sourceLastCheckedAt: item.sourceLastCheckedAt,
     sourceAuthority: item.sourceAuthority,
+    ...(item.sourceTier ? { sourceTier: item.sourceTier } : {}),
     timelinessTier: item.timelinessTier,
+    ...(item.evidence_type ? { evidence_type: item.evidence_type } : {}),
+    ...(item.evidence_weight ? { evidence_weight: Number(item.evidence_weight) } : {}),
+    ...(item.event_relevance_score !== undefined ? { event_relevance_score: Number(item.event_relevance_score) } : {}),
     summary: publishedSummary,
     summary_original: publishedSummary,
     ...(summaryZh ? { summary_zh: truncateText(summaryZh, PUBLISHED_SUMMARY_LIMIT), summaryZh: truncateText(summaryZh, PUBLISHED_SUMMARY_LIMIT) } : {}),
@@ -616,6 +771,22 @@ function buildPublishedItem(item) {
     ...(item.summary_short ? { summary_short: truncateText(item.summary_short, 140) } : {}),
     ...(Array.isArray(item.summary_points) && item.summary_points.length ? { summary_points: item.summary_points.slice(0, 5).map((point) => truncateText(point, 180)) } : {}),
     ...(Array.isArray(item.key_data) && item.key_data.length ? { key_data: item.key_data.slice(0, 8).map((point) => truncateText(point, 80)) } : {}),
+    ...(item.what_happened ? { what_happened: truncateText(item.what_happened, 180) } : {}),
+    ...(Array.isArray(item.confirmed_facts) && item.confirmed_facts.length ? { confirmed_facts: item.confirmed_facts.slice(0, 6).map((point) => truncateText(point, 180)) } : {}),
+    ...(item.what_changed ? { what_changed: truncateText(item.what_changed, 220) } : {}),
+    ...(item.impact_analysis ? {
+      impact_analysis: Object.fromEntries(["market", "industry", "company", "user"].map((key) => [key, truncateText(item.impact_analysis[key] || "", 180)]))
+    } : {}),
+    ...(Array.isArray(item.uncertainties) && item.uncertainties.length ? { uncertainties: item.uncertainties.slice(0, 5).map((point) => truncateText(point, 180)) } : {}),
+    ...(Array.isArray(item.watch_variables) && item.watch_variables.length ? { watch_variables: item.watch_variables.slice(0, 5).map((point) => truncateText(point, 120)) } : {}),
+    ...(item.tracking_decision ? { tracking_decision: item.tracking_decision } : {}),
+    ...(item.confidence_level ? { confidence_level: item.confidence_level } : {}),
+    ...(Array.isArray(item.source_links) && item.source_links.length ? {
+      source_links: item.source_links.slice(0, 5).map((link) => ({
+        title: truncateText(link.title || "", 120),
+        url: link.url || ""
+      })).filter((link) => link.url)
+    } : {}),
     ...(item.why_it_matters ? { why_it_matters: truncateText(item.why_it_matters, 240) } : {}),
     ...(item.impact ? { impact: truncateText(item.impact, 240) } : {}),
     ...(item.risks ? { risks: truncateText(item.risks, 240) } : {}),

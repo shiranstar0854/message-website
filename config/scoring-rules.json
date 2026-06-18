@@ -27,6 +27,29 @@
     "official-media": 3,
     "media": 0
   },
+  "sourceTierBoosts": {
+    "S": 8,
+    "A": 5,
+    "B": 2,
+    "C": -18,
+    "D": -50
+  },
+  "evidenceTypeBoosts": {
+    "official_announcement": 8,
+    "financial_report": 7,
+    "regulatory_document": 7,
+    "research_paper": 6,
+    "data_release": 6,
+    "reliable_media_report": 4,
+    "industry_analysis": 2,
+    "market_feedback": 2,
+    "expert_opinion": -5,
+    "social_discussion": -12,
+    "unknown": -10
+  },
+  "eventRelevanceWeight": 0.18,
+  "lowEventRelevanceThreshold": 45,
+  "lowEventRelevancePenalty": 10,
   "timelinessBoosts": {
     "realtime": 4,
     "hourly": 3,

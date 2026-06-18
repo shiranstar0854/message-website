@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-17T00:00:56.581Z",
+  "generatedAt": "2026-06-18T10:44:30.701Z",
   "totals": {
-    "attempted": 71,
-    "excerptCount": 71,
-    "imageCount": 42,
-    "failed": 0,
-    "skipped": 1
+    "attempted": 69,
+    "excerptCount": 68,
+    "imageCount": 40,
+    "failed": 1,
+    "skipped": 2
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 3,
-      "excerptCount": 3,
-      "imageCount": 3,
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 2,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 1,
+      "skipped": 2,
       "disabled": true
     },
     "google-ai": {
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 2,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -101,19 +101,20 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 9,
-      "excerptCount": 9,
-      "imageCount": 9,
-      "failed": 0,
+      "attempted": 8,
+      "excerptCount": 7,
+      "imageCount": 7,
+      "failed": 1,
       "skipped": 0,
-      "disabled": false
+      "disabled": false,
+      "lastError": "HTTP 429"
     },
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 15,
-      "excerptCount": 15,
-      "imageCount": 15,
+      "attempted": 12,
+      "excerptCount": 12,
+      "imageCount": 12,
       "failed": 0,
       "skipped": 0,
       "disabled": false

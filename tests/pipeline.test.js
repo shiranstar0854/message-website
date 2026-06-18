@@ -72,9 +72,38 @@ test("normalizes rss and api records into the shared item shape", () => {
   assert.equal(api.title, "Rate decision released");
   assert.equal(api.sourceType, "api");
   assert.equal(api.sourceAuthority, "official-agency");
+  assert.equal(api.sourceTier, "S");
+  assert.equal(api.evidence_type, "regulatory_document");
+  assert.equal(api.evidence_weight, 95);
   assert.equal(api.timelinessTier, "hourly");
   assert.equal(api.sourceLastCheckedAt, "2026-05-24T00:00:00.000Z");
   assert.equal(api.summary, "Policy makers held rates steady.");
+});
+
+test("classifies source tiers and evidence types during normalization", () => {
+  const report = normalizeRawItem({
+    sourceName: "Reuters",
+    sourceType: "rss",
+    category: "business",
+    title: "NVIDIA quarterly earnings report shows data center revenue growth",
+    link: "https://example.test/nvidia",
+    pubDate: "2026-05-24T00:00:00.000Z",
+    summary: "The report includes financial data and market reaction."
+  }, "2026-05-24T01:00:00.000Z");
+  const social = normalizeRawItem({
+    sourceName: "Personal Blog",
+    sourceType: "blog",
+    category: "tech",
+    title: "My opinion on AI policy",
+    link: "https://example.test/blog",
+    summary: "Opinion only."
+  }, "2026-05-24T01:00:00.000Z");
+
+  assert.equal(report.sourceTier, "A");
+  assert.equal(report.evidence_type, "financial_report");
+  assert.equal(report.evidence_weight, 95);
+  assert.equal(social.sourceTier, "C");
+  assert.equal(social.publishedAtInferred, true);
 });
 
 test("extracts RSS content and media fields for display enrichment", () => {
@@ -191,6 +220,49 @@ test("filters items by category, blocked source, low-value phrases, and minimum 
   assert.deepEqual(filtered[0].filterReasons, []);
 });
 
+test("filters D-tier and optionally inferred publication dates", () => {
+  const filtered = filterItems([
+    {
+      id: "marketing",
+      title: "AI sponsored promotion with no evidence",
+      url: "https://example.test/marketing",
+      source: "Marketing Aggregator",
+      sourceTier: "D",
+      category: "tech",
+      summary: "Sponsored content."
+    },
+    {
+      id: "inferred-date",
+      title: "AI policy update from a real source",
+      url: "https://example.test/policy",
+      source: "Official Source",
+      sourceTier: "S",
+      category: "tech",
+      summary: "Policy released.",
+      publishedAt: "2026-05-24T01:00:00.000Z",
+      publishedAtInferred: true
+    },
+    {
+      id: "valid",
+      title: "AI policy update with official date",
+      url: "https://example.test/valid",
+      source: "Official Source",
+      sourceTier: "S",
+      category: "tech",
+      summary: "Policy released.",
+      publishedAt: "2026-05-24T00:00:00.000Z"
+    }
+  ], {
+    allowedCategories: ["tech"],
+    requireUrl: true,
+    minimumTitleLength: 6,
+    blockedSourceTiers: ["D"],
+    requirePublishedAt: true
+  });
+
+  assert.deepEqual(filtered.map((item) => item.id), ["valid"]);
+});
+
 test("filters out items older than configured hard age window", () => {
   const rules = {
     allowedCategories: ["tech"],
@@ -259,6 +331,7 @@ test("scores items and builds channel-limited latest data sorted by score", () =
       source: "Official Tech",
       category: "tech",
       summary: "AI regulation has infrastructure impact.",
+      impactAreas: ["AI政策", "监管"],
       publishedAt: "2026-05-24T00:00:00.000Z",
       credibility: 90,
       sourceAuthority: "official-agency",
@@ -320,10 +393,52 @@ test("scores items and builds channel-limited latest data sorted by score", () =
   assert.ok(scored.find((item) => item.id === "ai").score > scored.find((item) => item.id === "market").score);
   assert.equal(scored.find((item) => item.id === "ai").scoreBreakdown.authorityBoost, 5);
   assert.equal(scored.find((item) => item.id === "ai").scoreBreakdown.officialFreshnessBoost, 5);
+  assert.equal(scored.find((item) => item.id === "ai").sourceTier, "S");
+  assert.equal(scored.find((item) => item.id === "ai").evidence_type, "regulatory_document");
+  assert.ok(scored.find((item) => item.id === "ai").event_relevance_score >= 45);
   assert.equal(latest.channels.tech.items.length, 1);
   assert.equal(latest.channels.tech.items[0].id, "ai");
   assert.equal(latest.channels.finance.items[0].id, "market");
   assert.equal(latest.generatedAt, "2026-05-24T12:00:00.000Z");
+});
+
+test("scores C-tier opinion sources below evidence-backed reports", () => {
+  const scored = scoreItems([
+    {
+      id: "opinion",
+      title: "Opinion about OpenAI policy",
+      url: "https://example.test/opinion",
+      source: "Personal Blog",
+      sourceType: "blog",
+      sourceTier: "C",
+      sourceAuthority: "blog",
+      category: "tech",
+      summary: "Opinion without confirmed facts.",
+      publishedAt: "2026-05-24T00:00:00.000Z",
+      credibility: 70
+    },
+    {
+      id: "official",
+      title: "OpenAI policy announcement includes developer safety requirements",
+      url: "https://example.test/official",
+      source: "Official Agency",
+      sourceAuthority: "official-agency",
+      sourceTier: "S",
+      category: "tech",
+      summary: "The agency announced requirements and provided supporting data.",
+      publishedAt: "2026-05-24T00:00:00.000Z",
+      credibility: 90,
+      impactAreas: ["AI政策", "监管"]
+    }
+  ], {
+    baseScore: 40,
+    sourceCredibilityWeight: 0.3,
+    freshness: { halfLifeHours: 72, weight: 20 },
+    keywordWeights: { highValue: [{ term: "OpenAI", score: 8 }, { term: "policy", score: 6 }] }
+  }, "2026-05-24T01:00:00.000Z");
+
+  assert.ok(scored.find((item) => item.id === "official").score > scored.find((item) => item.id === "opinion").score);
+  assert.equal(scored.find((item) => item.id === "opinion").scoreBreakdown.sourceTierBoost, -18);
 });
 
 test("latest data publishes compact display fields only", () => {
@@ -338,7 +453,11 @@ test("latest data publishes compact display fields only", () => {
     fetchedAt: "2026-05-24T01:00:00.000Z",
     sourceLastCheckedAt: "2026-05-24T01:00:00.000Z",
     sourceAuthority: "official-market",
+    sourceTier: "S",
     timelinessTier: "daily",
+    evidence_type: "financial_report",
+    evidence_weight: 95,
+    event_relevance_score: 82,
     summary: "x".repeat(900),
     contentExcerpt: "y".repeat(900),
     titleZh: "中文标题",
@@ -347,6 +466,20 @@ test("latest data publishes compact display fields only", () => {
     aiSummary: "中文摘要解释 AI policy and market structure.",
     summaryReason: "Official Source / tech",
     importance: "高分官方市场来源，涉及 AI 政策。",
+    what_happened: "官方市场来源披露 AI 政策相关信息。",
+    confirmed_facts: ["来源为官方市场", "内容涉及 AI 政策"],
+    what_changed: "信息为后续政策判断提供新材料。",
+    impact_analysis: {
+      market: "可能影响市场预期。",
+      industry: "可能影响 AI 政策相关行业。",
+      company: "目前证据不足",
+      user: "目前证据不足"
+    },
+    uncertainties: ["后续执行细节仍需确认"],
+    watch_variables: ["监管文本", "企业回应"],
+    tracking_decision: "值得追踪",
+    confidence_level: "中",
+    source_links: [{ title: "原文", url: "https://example.com/compact" }],
     impactAreas: ["AI政策", "市场监管"],
     sourceLanguage: "en",
     summaryLanguage: "zh",
@@ -374,6 +507,15 @@ test("latest data publishes compact display fields only", () => {
   assert.equal(latest.items[0].summaryReason, "Official Source / tech");
   assert.equal(latest.items[0].translatedTitle, "紧凑网站负载");
   assert.equal(latest.items[0].importance, "高分官方市场来源，涉及 AI 政策。");
+  assert.equal(latest.items[0].what_happened, "官方市场来源披露 AI 政策相关信息。");
+  assert.deepEqual(latest.items[0].confirmed_facts, ["来源为官方市场", "内容涉及 AI 政策"]);
+  assert.equal(latest.items[0].what_changed, "信息为后续政策判断提供新材料。");
+  assert.equal(latest.items[0].impact_analysis.market, "可能影响市场预期。");
+  assert.deepEqual(latest.items[0].uncertainties, ["后续执行细节仍需确认"]);
+  assert.deepEqual(latest.items[0].watch_variables, ["监管文本", "企业回应"]);
+  assert.equal(latest.items[0].tracking_decision, "值得追踪");
+  assert.equal(latest.items[0].confidence_level, "中");
+  assert.equal(latest.items[0].source_links[0].url, "https://example.com/compact");
   assert.deepEqual(latest.items[0].impactAreas, ["AI政策", "市场监管"]);
   assert.equal(latest.items[0].sourceLanguage, "en");
   assert.equal(latest.items[0].source_language, "en");
@@ -382,6 +524,10 @@ test("latest data publishes compact display fields only", () => {
   assert.equal(latest.items[0].imageUrl, "https://example.com/image.jpg");
   assert.equal(latest.items[0].fetchedAt, "2026-05-24T01:00:00.000Z");
   assert.equal(latest.items[0].sourceAuthority, "official-market");
+  assert.equal(latest.items[0].sourceTier, "S");
+  assert.equal(latest.items[0].evidence_type, "financial_report");
+  assert.equal(latest.items[0].evidence_weight, 95);
+  assert.equal(latest.items[0].event_relevance_score, 82);
   assert.equal(latest.items[0].tags.length, 8);
   assert.ok(latest.items[0].article_keywords.includes("AI"));
   assert.ok(latest.items[0].article_keywords.includes("market structure"));

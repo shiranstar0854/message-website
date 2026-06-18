@@ -558,6 +558,106 @@ function buildEvidenceItems(items) {
   }));
 }
 
+function evidenceTypeForItem(item) {
+  if (["official-agency", "official-market", "official-media"].includes(item.sourceAuthority)) return "official_announcement";
+  if (item.sourceAuthority === "financial-media") return "reliable_media_report";
+  if (item.category === "finance" || item.category === "macro") return "data_release";
+  if (item.category === "business") return "industry_analysis";
+  if (item.category === "tech") return "industry_analysis";
+  return "unknown";
+}
+
+function levelFromScore(score, itemCount = 0) {
+  if (Number(score || 0) >= 90 || Number(itemCount || 0) >= 8) return "\u9ad8";
+  if (Number(score || 0) >= 75 || Number(itemCount || 0) >= 4) return "\u4e2d";
+  return "\u4f4e";
+}
+
+function confidenceLevel(sourceQuality = {}) {
+  return {
+    high: "\u9ad8",
+    medium: "\u4e2d",
+    low: "\u4f4e"
+  }[sourceQuality.confidence] || "\u4e2d";
+}
+
+function currentStatusForGrade(grade) {
+  if (grade === "A") return "\u6301\u7eed\u8ddf\u8e2a";
+  if (grade === "B") return "\u7b49\u5f85\u65b0\u8fdb\u5c55";
+  return "\u4fe1\u606f\u4e0d\u8db3";
+}
+
+function dateOnly(value, fallback = "") {
+  const text = String(value || fallback || "");
+  if (/^\d{4}-\d{2}-\d{2}/.test(text)) return text.slice(0, 10);
+  const date = new Date(text);
+  if (Number.isNaN(date.getTime())) return "";
+  return date.toISOString().slice(0, 10);
+}
+
+function buildLatestChange(latestUpdate = {}) {
+  const title = normalizeText(latestUpdate.title);
+  const summary = normalizeText(latestUpdate.summary);
+  if (!title && !summary) return "\u6682\u65e0\u6700\u65b0\u53d8\u5316\uff0c\u8bf7\u6839\u636e\u540e\u7eed\u6293\u53d6\u5185\u5bb9\u66f4\u65b0\u3002";
+  return compactSentence([title, summary].filter(Boolean).join("\uff1a"), 180);
+}
+
+function buildEventCategories(impactAreas = [], laneLabel = "") {
+  return uniqueValues([laneLabel, ...impactAreas].filter(Boolean), 6);
+}
+
+function buildImpactAnalysis(lane, eventMarketContext, items, label) {
+  const market = buildMarketRelevance(lane, eventMarketContext, items);
+  const related = extractRelatedEntities(items, eventMarketContext.tickers).slice(0, 6);
+  const areas = buildImpactAreas(items, label).join("\u3001");
+  return {
+    market,
+    industry: areas
+      ? `\u53ef\u80fd\u5f71\u54cd ${areas} \u76f8\u5173\u5224\u65ad\uff0c\u9700\u7ee7\u7eed\u6838\u5bf9\u540e\u7eed\u8bc1\u636e\u3002`
+      : "\u76ee\u524d\u8bc1\u636e\u4e0d\u8db3\uff0c\u6682\u4e0d\u4f5c\u884c\u4e1a\u5c42\u9762\u5f3a\u5224\u65ad\u3002",
+    company: related.length
+      ? `\u5173\u8054\u5b9e\u4f53\uff1a${related.join("\u3001")}\u3002`
+      : "\u76ee\u524d\u672a\u5339\u914d\u5230\u660e\u786e\u516c\u53f8\u5c42\u9762\u5f71\u54cd\u3002",
+    user: "\u5bf9\u666e\u901a\u7528\u6237\u6216\u5f00\u53d1\u8005\u7684\u76f4\u63a5\u5f71\u54cd\u5c1a\u9700\u6839\u636e\u540e\u7eed\u4ea7\u54c1\u3001\u653f\u7b56\u6216\u5e02\u573a\u53cd\u5e94\u5224\u65ad\u3002"
+  };
+}
+
+function buildMarketFeedback(eventMarketContext = {}) {
+  const symbolRows = Object.entries(eventMarketContext.symbols || {})
+    .map(([symbol, quote]) => `${symbol} ${quote.changePercent || quote.change_percentage || quote.change || ""}`.trim())
+    .filter(Boolean);
+  const movers = (eventMarketContext.topMovers || [])
+    .map((entry) => `${entry.symbol || ""} ${entry.changePercent || entry.change_percentage || ""}`.trim())
+    .filter(Boolean);
+  return uniqueValues([...symbolRows, ...movers], 6);
+}
+
+function buildRelatedArticles(evidenceItems) {
+  return (evidenceItems || []).map((item) => ({
+    title: item.title || "",
+    source: item.source || "",
+    url: item.url || "",
+    published_at: item.publishedAt || "",
+    summary: item.summary || "",
+    relevance_score: Number(item.score || 0)
+  }));
+}
+
+function enrichTimelineItem(item) {
+  return {
+    ...item,
+    description: item.description || item.summary || "",
+    evidence_type: item.evidence_type || item.evidenceType || "unknown",
+    importance: item.importance || levelFromScore(item.score, 1),
+    sources: item.sources || [{
+      title: item.title || "",
+      source: item.source || "",
+      url: item.url || "",
+      published_at: item.publishedAt || item.date || ""
+    }]
+  };
+}
+
 function latestUpdateItem(items) {
   const latest = [...items]
     .filter((item) => item.publishedAt)
@@ -579,6 +679,15 @@ function timelineItem(item) {
     date: String(item.publishedAt || "").slice(0, 10),
     title: displayTitle(item),
     summary: compactSentence(displaySummary(item), 140),
+    description: compactSentence(displaySummary(item), 140),
+    evidence_type: evidenceTypeForItem(item),
+    importance: levelFromScore(Number(item.score || 0), 1),
+    sources: [{
+      title: displayTitle(item),
+      source: item.source || "",
+      url: item.url || "",
+      published_at: item.publishedAt || ""
+    }],
     source: item.source,
     url: item.url,
     score: Number(item.score || 0),
@@ -723,37 +832,62 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
       const sourceQuality = buildSourceQuality(sortedItems, timeline, eventMarketContext);
       const grade = decisionGrade(decisionLane, sourceQuality, eventMarketContext, Number(topItems[0]?.score || 0));
       const policyStatus = buildPolicyStatus(sortedItems, decisionLane);
+      const topScore = Number(topItems[0]?.score || 0);
+      const laneLabel = decisionLaneLabel(decisionLane);
+      const impactAreas = buildImpactAreas(topItems, group.label);
+      const watchlist = buildWatchlist(topItems, group.label);
+      const riskFactors = buildRiskFactors(topItems, eventMarketContext, sourceQuality);
+      const evidenceGaps = buildEvidenceGaps(decisionLane, eventMarketContext, sourceQuality);
+      const relatedEntities = extractRelatedEntities(sortedItems, eventMarketContext.tickers);
+      const whyItMatters = buildWhyItMatters(topItems, group.label);
+      const enrichedTimeline = timeline.map(enrichTimelineItem);
       return {
         id: group.id,
+        event_id: group.id,
         title: group.label,
         summary: buildExplainedSummary(topItems, group.label),
+        one_sentence_summary: buildExplainedSummary(topItems, group.label),
         decisionLane,
-        decisionLaneLabel: decisionLaneLabel(decisionLane),
+        decisionLaneLabel: laneLabel,
         decisionGrade: grade,
         decisionSignal: decisionSignal(grade),
         decisionBrief: buildDecisionBrief(decisionLane, grade, topItems, eventMarketContext, policyStatus),
+        current_status: currentStatusForGrade(grade),
+        category: buildEventCategories(impactAreas, laneLabel),
+        importance_level: levelFromScore(topScore, sortedItems.length),
+        confidence_level: confidenceLevel(sourceQuality),
+        last_updated: dateOnly(updatedAt, generatedAt),
+        latest_change: buildLatestChange(latestUpdate),
         marketContext: eventMarketContext,
         policyStatus,
         confirmedFacts: buildConfirmedFacts(topItems),
+        confirmed_facts: buildConfirmedFacts(topItems),
         marketRelevance: buildMarketRelevance(decisionLane, eventMarketContext, topItems),
-        riskFactors: buildRiskFactors(topItems, eventMarketContext, sourceQuality),
-        evidenceGaps: buildEvidenceGaps(decisionLane, eventMarketContext, sourceQuality),
+        riskFactors,
+        evidenceGaps,
         sourceQuality,
-        relatedEntities: extractRelatedEntities(sortedItems, eventMarketContext.tickers),
-        whyItMatters: buildWhyItMatters(topItems, group.label),
-        impactAreas: buildImpactAreas(topItems, group.label),
-        watchlist: buildWatchlist(topItems, group.label),
+        relatedEntities,
+        whyItMatters,
+        impactAreas,
+        impact_analysis: buildImpactAnalysis(decisionLane, eventMarketContext, topItems, group.label),
+        market_feedback: buildMarketFeedback(eventMarketContext),
+        uncertainties: uniqueValues([...riskFactors, ...evidenceGaps], 8),
+        watchlist,
+        watch_variables: watchlist,
         updatedAt,
         latestUpdate,
         keyDevelopments,
         itemCount: sortedItems.length,
-        heat: heatLabel(Number(topItems[0]?.score || 0), sortedItems.length),
+        heat: heatLabel(topScore, sortedItems.length),
         primarySource: latestUpdate.source || topItems[0]?.source || "",
         sourceCount: uniqueValues(sortedItems.map((item) => item.source), 20).length,
         sources: [...new Set(sortedItems.map((item) => item.source).filter(Boolean))].slice(0, 6),
         keywords: [...new Set(sortedItems.flatMap((item) => [...(item.impactAreas || []), ...itemKeywords(item)]).filter(hasChineseText))].slice(0, 8),
-        timeline,
+        timeline: enrichedTimeline,
         evidenceItems,
+        related_articles: buildRelatedArticles(evidenceItems),
+        my_questions: [],
+        analysis_notes: [],
         items: evidenceItems
       };
     })

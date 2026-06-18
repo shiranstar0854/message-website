@@ -1,43 +1,739 @@
 {
-  "generatedAt": "2026-06-17T00:01:10.792Z",
+  "generatedAt": "2026-06-18T10:44:43.639Z",
   "lookbackDays": 90,
   "decisionLanes": {
     "us_equities": "美股变化",
     "china_us_ai": "中美 AI 发展",
     "china_policy": "中国权威政策落地"
   },
-  "marketContextStatus": "stale",
-  "marketContextGeneratedAt": "2026-06-16T07:09:19.390Z",
+  "marketContextStatus": "unconfigured",
+  "marketContextGeneratedAt": "2026-06-18T10:44:29.950Z",
   "totalEvents": 4,
   "events": [
     {
-      "id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "summary": "国家发展改革委在京举办信用数智创新发展总观摩会，发布宏观政策、价格、产业和经济运行信息。 相关来源：国家发展改革委新闻发布、中国政府网要闻、国家统计局数据发布",
-      "decisionLane": "china_policy",
-      "decisionLaneLabel": "中国权威政策落地",
+      "id": "lane-china_us_ai",
+      "event_id": "lane-china_us_ai",
+      "title": "中美 AI 发展",
+      "summary": "OpenAI与Molecule.one使用基于GPT-5.4的AI化学家近乎自主地改进了药物化学中的一项挑战性反应，表明AI在化学研究中的潜力。",
+      "one_sentence_summary": "OpenAI与Molecule.one使用基于GPT-5.4的AI化学家近乎自主地改进了药物化学中的一项挑战性反应，表明AI在化学研究中的潜力。",
+      "decisionLane": "china_us_ai",
+      "decisionLaneLabel": "中美 AI 发展",
       "decisionGrade": "A",
       "decisionSignal": "优先跟踪",
-      "decisionBrief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+      "decisionBrief": "AI能够自主改进药物化学反应，可能加速药物研发流程，降低化学实验成本，并推动AI在科学发现中的应用。",
+      "current_status": "持续跟踪",
+      "category": [
+        "中美 AI 发展",
+        "AI治理",
+        "产业政策",
+        "科技战略",
+        "国际"
+      ],
+      "importance_level": "高",
+      "confidence_level": "中",
+      "last_updated": "2026-06-18",
+      "latest_change": "普洛斯算力中心引入浙江国资战略股东：普洛斯算力中心获浙江国资入股，加强资本与政策资源。",
       "marketContext": {
         "tickers": [],
         "symbols": {},
         "topMovers": [],
         "hasMarketData": false,
-        "status": "stale",
-        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "status": "unconfigured",
+        "generatedAt": "2026-06-18T10:44:29.950Z",
+        "stale": true
+      },
+      "policyStatus": "",
+      "confirmedFacts": [
+        "AI化学家基于GPT-5.4，改进了一项挑战性药物化学反应",
+        "OpenAI与Molecule.one合作进行该实验",
+        "AI化学家近乎自主完成实验，无需人工干预"
+      ],
+      "confirmed_facts": [
+        "AI化学家基于GPT-5.4，改进了一项挑战性药物化学反应",
+        "OpenAI与Molecule.one合作进行该实验",
+        "AI化学家近乎自主完成实验，无需人工干预"
+      ],
+      "marketRelevance": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
+      "riskFactors": [
+        "系统可能无法泛化到其他反应，且黑箱模型的可解释性问题存在争议。",
+        "不足以判断",
+        "使用斜杠命令可能增加用户学习成本，文章未讨论潜在风险。",
+        "行情数据可能过期，需核对实时价格。"
+      ],
+      "evidenceGaps": [
+        "继续观察后续官方发布和价格反应是否一致。"
+      ],
+      "sourceQuality": {
+        "sourceCount": 4,
+        "officialCount": 1,
+        "financialMediaCount": 1,
+        "timelineCount": 12,
+        "confidence": "high"
+      },
+      "relatedEntities": [
+        "AI",
+        "OpenAI",
+        "GitHub",
+        "model",
+        "人工智能",
+        "算力",
+        "芯片",
+        "国务院",
+        "中国政府网"
+      ],
+      "whyItMatters": "AI能够自主改进药物化学反应，可能加速药物研发流程，降低化学实验成本，并推动AI在科学发现中的应用。",
+      "impactAreas": [
+        "AI治理",
+        "产业政策",
+        "科技战略",
+        "国际"
+      ],
+      "impact_analysis": {
+        "market": "关注AI制药、算力相关板块，中国AI算力产业链可能受益",
+        "industry": "制药行业药物发现流程可能变革，AI工具需求增加，化学研发效率提升",
+        "company": "OpenAI和Molecule.one技术领先，其他AI制药公司需跟进，中国AI产品外贸增长可能获得政策支持",
+        "user": "药物研发人员可借助AI化学家提高效率，但需验证泛化性和可解释性"
+      },
+      "market_feedback": [],
+      "uncertainties": [
+        "AI化学反应改进能力是否能泛化到其他反应类型",
+        "黑箱模型的解释性不足，可能导致应用风险",
+        "实际药物研发中大规模应用仍需要时间验证",
+        "中国市场对AI化学技术的监管和接受度不确定"
+      ],
+      "watchlist": [
+        "OpenAI后续发布AI化学家技术细节或新成果",
+        "Molecule.one或其他公司是否基于此技术推进药物研发",
+        "中国是否出台进一步支持AI制药的政策",
+        "其他AI公司（如DeepMind、百度）在化学领域的进展"
+      ],
+      "watch_variables": [
+        "OpenAI后续发布AI化学家技术细节或新成果",
+        "Molecule.one或其他公司是否基于此技术推进药物研发",
+        "中国是否出台进一步支持AI制药的政策",
+        "其他AI公司（如DeepMind、百度）在化学领域的进展"
+      ],
+      "updatedAt": "2026-06-18T10:44:11.359Z",
+      "latestUpdate": {
+        "title": "普洛斯算力中心引入浙江国资战略股东",
+        "summary": "普洛斯算力中心获浙江国资入股，加强资本与政策资源。",
+        "source": "第一财经",
+        "url": "https://www.yicai.com/news/102794012.html",
+        "publishedAt": "2026-06-18T10:44:11.359Z",
+        "score": 90
+      },
+      "keyDevelopments": [
+        {
+          "date": "2026-06-17",
+          "title": "LifeSciBench简介",
+          "summary": "OpenAI推出LifeSciBench，专家审核的AI生命科学基准。",
+          "description": "OpenAI推出LifeSciBench，专家审核的AI生命科学基准。",
+          "evidence_type": "unknown",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "LifeSciBench简介",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/introducing-life-sci-bench",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-life-sci-bench",
+          "score": 87,
+          "publishedAt": "2026-06-17T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+          "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "description": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/ai-chemist-improves-reaction",
+              "published_at": "2026-06-17T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/ai-chemist-improves-reaction",
+          "score": 100,
+          "publishedAt": "2026-06-17T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "从每个Token中获取更多：Copilot如何改进上下文处理与模型路由",
+          "summary": "文章标题涉及Copilot改进，但内容重复且不完整，缺乏实质性描述，无法确认具体变化。",
+          "description": "文章标题涉及Copilot改进，但内容重复且不完整，缺乏实质性描述，无法确认具体变化。",
+          "evidence_type": "industry_analysis",
+          "importance": "低",
+          "sources": [
+            {
+              "title": "从每个Token中获取更多：Copilot如何改进上下文处理与模型路由",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+              "published_at": "2026-06-17T19:41:46.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+          "score": 65,
+          "publishedAt": "2026-06-17T19:41:46.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "普洛斯算力中心引入浙江国资战略股东",
+          "summary": "普洛斯算力中心获浙江国资入股，加强资本与政策资源。",
+          "description": "普洛斯算力中心获浙江国资入股，加强资本与政策资源。",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "普洛斯算力中心引入浙江国资战略股东",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/102794012.html",
+              "published_at": "2026-06-18T10:44:11.359Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/102794012.html",
+          "score": 90,
+          "publishedAt": "2026-06-18T10:44:11.359Z"
+        }
+      ],
+      "itemCount": 20,
+      "heat": "高",
+      "primarySource": "第一财经",
+      "sourceCount": 4,
+      "sources": [
+        "OpenAI News",
+        "GitHub Blog",
+        "中国政府网要闻",
+        "第一财经"
+      ],
+      "keywords": [
+        "AI治理",
+        "产业政策",
+        "科技战略",
+        "国际",
+        "公共政策",
+        "地缘政治",
+        "商业",
+        "AI政策"
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-11",
+          "title": "OpenAI将收购Ona",
+          "summary": "OpenAI计划收购Ona，利用其安全持久的云环境扩展Codex，以支持企业工作流中的长期运行AI代理。",
+          "description": "OpenAI计划收购Ona，利用其安全持久的云环境扩展Codex，以支持企业工作流中的长期运行AI代理。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "OpenAI将收购Ona",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/openai-to-acquire-ona",
+              "published_at": "2026-06-11T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/openai-to-acquire-ona",
+          "score": 92,
+          "publishedAt": "2026-06-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "Preply如何结合AI与人工导师实现个性化学习",
+          "summary": "Preply利用OpenAI推出AI生成课程摘要，结合人工导师提供个性化反馈和练习。",
+          "description": "Preply利用OpenAI推出AI生成课程摘要，结合人工导师提供个性化反馈和练习。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "Preply如何结合AI与人工导师实现个性化学习",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/preply",
+              "published_at": "2026-06-12T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/preply",
+          "score": 92,
+          "publishedAt": "2026-06-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-12",
+          "title": "OpenAI推出新一代工作学院课程",
+          "summary": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
+          "description": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "OpenAI推出新一代工作学院课程",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+              "published_at": "2026-06-12T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+          "score": 93,
+          "publishedAt": "2026-06-12T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "OpenAI推出合作伙伴网络",
+          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
+          "description": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "OpenAI推出合作伙伴网络",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/introducing-openai-partner-network",
+              "published_at": "2026-06-14T17:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-openai-partner-network",
+          "score": 94,
+          "publishedAt": "2026-06-14T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
+          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
+          "description": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+              "published_at": "2026-06-15T19:17:30.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "score": 94,
+          "publishedAt": "2026-06-15T19:17:30.000Z"
+        },
+        {
+          "date": "2026-06-15",
+          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
+          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
+          "description": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+              "published_at": "2026-06-15T20:15:31.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "score": 94,
+          "publishedAt": "2026-06-15T20:15:31.000Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "通过模拟部署来预测模型发布前的行为",
+          "summary": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型发布前的行为，提升安全性和评估准确性。",
+          "description": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型发布前的行为，提升安全性和评估准确性。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "通过模拟部署来预测模型发布前的行为",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/deployment-simulation",
+              "published_at": "2026-06-16T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/deployment-simulation",
+          "score": 93,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "什么是 Git Worktrees，为何使用它们？",
+          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
+          "description": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "什么是 Git Worktrees，为何使用它们？",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+              "published_at": "2026-06-16T20:58:54.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+          "score": 95,
+          "publishedAt": "2026-06-16T20:58:54.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "LifeSciBench简介",
+          "summary": "OpenAI推出LifeSciBench，专家审核的AI生命科学基准。",
+          "description": "OpenAI推出LifeSciBench，专家审核的AI生命科学基准。",
+          "evidence_type": "unknown",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "LifeSciBench简介",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/introducing-life-sci-bench",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-life-sci-bench",
+          "score": 87,
+          "publishedAt": "2026-06-17T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+          "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "description": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/ai-chemist-improves-reaction",
+              "published_at": "2026-06-17T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/ai-chemist-improves-reaction",
+          "score": 100,
+          "publishedAt": "2026-06-17T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "从每个Token中获取更多：Copilot如何改进上下文处理与模型路由",
+          "summary": "文章标题涉及Copilot改进，但内容重复且不完整，缺乏实质性描述，无法确认具体变化。",
+          "description": "文章标题涉及Copilot改进，但内容重复且不完整，缺乏实质性描述，无法确认具体变化。",
+          "evidence_type": "industry_analysis",
+          "importance": "低",
+          "sources": [
+            {
+              "title": "从每个Token中获取更多：Copilot如何改进上下文处理与模型路由",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+              "published_at": "2026-06-17T19:41:46.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+          "score": 65,
+          "publishedAt": "2026-06-17T19:41:46.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "普洛斯算力中心引入浙江国资战略股东",
+          "summary": "普洛斯算力中心获浙江国资入股，加强资本与政策资源。",
+          "description": "普洛斯算力中心获浙江国资入股，加强资本与政策资源。",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "普洛斯算力中心引入浙江国资战略股东",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/102794012.html",
+              "published_at": "2026-06-18T10:44:11.359Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/102794012.html",
+          "score": 90,
+          "publishedAt": "2026-06-18T10:44:11.359Z"
+        }
+      ],
+      "evidenceItems": [
+        {
+          "id": "tech-openai-news-03186f57cb",
+          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+          "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "url": "https://openai.com/index/ai-chemist-improves-reaction",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-17T10:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "international-openai-news-c87c9f548d",
+          "title": "智能时代的产业政策",
+          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "score": 96
+        },
+        {
+          "id": "international-github-blog-5a6c5078ad",
+          "title": "什么是 Git Worktrees，为何使用它们？",
+          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
+          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-16T20:58:54.000Z",
+          "score": 95
+        },
+        {
+          "id": "news-item-d23c6d1fee",
+          "title": "人工智能相关产品拉动外贸增长",
+          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-31T00:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-github-blog-db9f0e80c6",
+          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
+          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T20:15:31.000Z",
+          "score": 94
+        },
+        {
+          "id": "tech-github-blog-cde94bf4e0",
+          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
+          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T19:17:30.000Z",
+          "score": 94
+        }
+      ],
+      "related_articles": [
+        {
+          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+          "url": "https://openai.com/index/ai-chemist-improves-reaction"
+        },
+        {
+          "title": "OpenAI推出部署模拟方法，预测模型发布前行为",
+          "url": "https://openai.com/index/deployment-simulation"
+        },
+        {
+          "title": "人工智能相关产品拉动外贸增长",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm"
+        }
+      ],
+      "my_questions": [
+        "AI化学家能否处理其他复杂化学反应？",
+        "该AI系统的可解释性如何提升？",
+        "中国是否有本土类似技术或政策跟进？"
+      ],
+      "analysis_notes": [
+        "核心事件来源为OpenAI官方新闻，可信度高",
+        "目前仅单次反应成功，证据不足以推断通用性",
+        "中国AI外贸增长为背景信息，与事件间接相关"
+      ],
+      "items": [
+        {
+          "id": "tech-openai-news-03186f57cb",
+          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+          "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "url": "https://openai.com/index/ai-chemist-improves-reaction",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-17T10:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "international-openai-news-c87c9f548d",
+          "title": "智能时代的产业政策",
+          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
+          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+          "source": "OpenAI News",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-09T00:00:00.000Z",
+          "score": 96
+        },
+        {
+          "id": "international-github-blog-5a6c5078ad",
+          "title": "什么是 Git Worktrees，为何使用它们？",
+          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
+          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "international",
+          "publishedAt": "2026-06-16T20:58:54.000Z",
+          "score": 95
+        },
+        {
+          "id": "news-item-d23c6d1fee",
+          "title": "人工智能相关产品拉动外贸增长",
+          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+          "source": "中国政府网要闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "news",
+          "publishedAt": "2026-05-31T00:00:00.000Z",
+          "score": 95
+        },
+        {
+          "id": "tech-github-blog-db9f0e80c6",
+          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
+          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T20:15:31.000Z",
+          "score": 94
+        },
+        {
+          "id": "tech-github-blog-cde94bf4e0",
+          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
+          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
+          "source": "GitHub Blog",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "tech",
+          "publishedAt": "2026-06-15T19:17:30.000Z",
+          "score": 94
+        }
+      ],
+      "tracking_decision": "值得追踪",
+      "llm_analysis": {
+        "what_happened": "OpenAI与Molecule.one使用基于GPT-5.4的AI化学家近乎自主地改进了药物化学中的一项挑战性反应，表明AI在化学研究中的潜力。",
+        "confirmed_facts": [
+          "AI化学家基于GPT-5.4，改进了一项挑战性药物化学反应",
+          "OpenAI与Molecule.one合作进行该实验",
+          "AI化学家近乎自主完成实验，无需人工干预"
+        ],
+        "what_changed": "AI能够自主改进药物化学反应，可能加速药物研发流程，降低化学实验成本，并推动AI在科学发现中的应用。",
+        "impact_analysis": {
+          "market": "关注AI制药、算力相关板块，中国AI算力产业链可能受益",
+          "industry": "制药行业药物发现流程可能变革，AI工具需求增加，化学研发效率提升",
+          "company": "OpenAI和Molecule.one技术领先，其他AI制药公司需跟进，中国AI产品外贸增长可能获得政策支持",
+          "user": "药物研发人员可借助AI化学家提高效率，但需验证泛化性和可解释性"
+        },
+        "uncertainties": [
+          "AI化学反应改进能力是否能泛化到其他反应类型",
+          "黑箱模型的解释性不足，可能导致应用风险",
+          "实际药物研发中大规模应用仍需要时间验证",
+          "中国市场对AI化学技术的监管和接受度不确定"
+        ],
+        "watch_variables": [
+          "OpenAI后续发布AI化学家技术细节或新成果",
+          "Molecule.one或其他公司是否基于此技术推进药物研发",
+          "中国是否出台进一步支持AI制药的政策",
+          "其他AI公司（如DeepMind、百度）在化学领域的进展"
+        ],
+        "tracking_decision": "值得追踪",
+        "confidence_level": "中",
+        "source_links": [
+          {
+            "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+            "url": "https://openai.com/index/ai-chemist-improves-reaction"
+          },
+          {
+            "title": "OpenAI推出部署模拟方法，预测模型发布前行为",
+            "url": "https://openai.com/index/deployment-simulation"
+          },
+          {
+            "title": "人工智能相关产品拉动外贸增长",
+            "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm"
+          }
+        ],
+        "analysis_notes": [
+          "核心事件来源为OpenAI官方新闻，可信度高",
+          "目前仅单次反应成功，证据不足以推断通用性",
+          "中国AI外贸增长为背景信息，与事件间接相关"
+        ],
+        "my_questions": [
+          "AI化学家能否处理其他复杂化学反应？",
+          "该AI系统的可解释性如何提升？",
+          "中国是否有本土类似技术或政策跟进？"
+        ]
+      },
+      "llm_analysis_status": "succeeded",
+      "llm_analysis_model": "deepseek-v4-flash",
+      "llm_analysis_generated_at": "2026-06-18T11:27:55.691Z"
+    },
+    {
+      "id": "lane-china_policy",
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。 相关来源：中国人民银行新闻发布、国家发展改革委新闻发布、财政部财政新闻",
+      "one_sentence_summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。 相关来源：中国人民银行新闻发布、国家发展改革委新闻发布、财政部财政新闻",
+      "decisionLane": "china_policy",
+      "decisionLaneLabel": "中国权威政策落地",
+      "decisionGrade": "A",
+      "decisionSignal": "优先跟踪",
+      "decisionBrief": "新设立了一个专门服务于银行间市场数据报告的机构，此前不存在此类实体。",
+      "current_status": "持续跟踪",
+      "category": [
+        "中国权威政策落地",
+        "宏观",
+        "AI政策",
+        "央行",
+        "市场监管"
+      ],
+      "importance_level": "高",
+      "confidence_level": "高",
+      "last_updated": "2026-06-18",
+      "latest_change": "银行间市场数据报告库在上海正式开业：银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
+      "marketContext": {
+        "tickers": [],
+        "symbols": {},
+        "topMovers": [],
+        "hasMarketData": false,
+        "status": "unconfigured",
+        "generatedAt": "2026-06-18T10:44:29.950Z",
         "stale": true
       },
       "policyStatus": "落地执行",
       "confirmedFacts": [
-        "信用数智创新发展总观摩会于北京召开",
-        "涉及宏观政策、价格、产业和经济运行信息",
-        "国家发展改革委在京举办信用数智创新发展总观摩会，发布宏观政策、价格、产业和经济运行信息。",
-        "“信用数智创新发展”总观摩会在北京召开"
+        "数据报告库由七家单位发起，在上海成立",
+        "服务宏观审慎管理和金融市场监管",
+        "属于央行背景的基础设施建设",
+        "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。"
+      ],
+      "confirmed_facts": [
+        "数据报告库由七家单位发起，在上海成立",
+        "服务宏观审慎管理和金融市场监管",
+        "属于央行背景的基础设施建设",
+        "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。"
       ],
       "marketRelevance": "关注政策落地对 A 股、港股与中概股预期的影响。",
       "riskFactors": [
-        "不足以判断",
+        "尚无明确风险信息。",
+        "若后续无具体政策跟进，市场预期可能落空",
+        "目前证据不足",
         "行情数据可能过期，需核对实时价格。"
       ],
       "evidenceGaps": [
@@ -52,726 +748,651 @@
       },
       "relatedEntities": [
         "AI",
-        "人工智能",
         "国务院",
         "中国政府网",
         "人民银行",
         "中国人民银行",
+        "证监会",
+        "中国证监会",
+        "发改委",
         "国家发展改革委",
-        "财政部",
-        "统计局",
-        "国家统计局"
+        "财政部"
       ],
-      "whyItMatters": "不足以判断",
+      "whyItMatters": "新设立了一个专门服务于银行间市场数据报告的机构，此前不存在此类实体。",
       "impactAreas": [
         "宏观",
-        "信用数智创新发展",
-        "总观摩会在北京召开",
-        "国家发展改革委宏观政策"
+        "AI政策",
+        "央行",
+        "市场监管"
+      ],
+      "impact_analysis": {
+        "market": "关注政策落地对 A 股、港股与中概股预期的影响。",
+        "industry": "可能影响 宏观、AI政策、央行、市场监管 相关判断，需继续核对后续证据。",
+        "company": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行、发改委。",
+        "user": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。"
+      },
+      "market_feedback": [],
+      "uncertainties": [
+        "尚无明确风险信息。",
+        "若后续无具体政策跟进，市场预期可能落空",
+        "目前证据不足",
+        "行情数据可能过期，需核对实时价格。",
+        "继续观察后续官方发布和价格反应是否一致。"
       ],
       "watchlist": [
-        "跟踪 宏观、信用数智创新发展、总观摩会在北京召开 的后续变化",
-        "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
+        "跟踪 宏观、AI政策、央行 的后续变化",
+        "留意 中国人民银行新闻发布、国家发展改革委新闻发布 是否继续发布相关信息",
         "观察是否出现监管、市场价格、企业动作或国际反应"
       ],
-      "updatedAt": "2026-06-16T00:00:00.000Z",
+      "watch_variables": [
+        "跟踪 宏观、AI政策、央行 的后续变化",
+        "留意 中国人民银行新闻发布、国家发展改革委新闻发布 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "updatedAt": "2026-06-18T00:00:00.000Z",
       "latestUpdate": {
-        "title": "“信用数智创新发展”总观摩会在北京召开",
-        "summary": "国家发展改革委在京举办信用数智创新发展总观摩会，发布宏观政策、价格、产业和经济运行信息。",
-        "source": "国家发展改革委新闻发布",
-        "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260616_1405883.html",
-        "publishedAt": "2026-06-16T00:00:00.000Z",
+        "title": "银行间市场数据报告库在上海正式开业",
+        "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
+        "source": "中国人民银行新闻发布",
+        "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
+        "publishedAt": "2026-06-18T00:00:00.000Z",
         "score": 100
       },
       "keyDevelopments": [
         {
-          "date": "2026-06-16",
-          "title": "2026年1—5月份社会消费品零售总额增长1.4%",
-          "summary": "2026年1-5月，社会消费品零售总额同比增长1.4%，数据由国家统计局发布。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963949.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "Energy Production in May 2026",
-          "summary": "该条目标题提及2026年5月能源生产情况，但正文仅泛泛提到国家统计局多项数据发布，未提供能源生产具体数据。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963948.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "2026年5月份70个大中城市商品住宅销售价格变动情况",
-          "summary": "国家统计局发布宏观经济、价格、工业、投资和人口数据，但未提供具体房价变动数据。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963946.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "Economic Data Overview: 7 Sets of Numbers on China's Economy in May",
-          "summary": "该页面标题为经济数据速览，但摘要中未包含具体数据。",
+          "date": "2026-06-18",
+          "title": "五部门组织开展2026年新能源汽车下乡活动",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "五部门组织开展2026年新能源汽车下乡活动",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202606/content_7072636.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7072325.htm",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072636.htm",
           "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
+          "publishedAt": "2026-06-18T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "习近平给新华社老党员张连生的回信",
+          "summary": "习近平回信慰问新华社百岁老党员张连生，表达敬意和关怀。",
+          "description": "习近平回信慰问新华社百岁老党员张连生，表达敬意和关怀。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "习近平给新华社老党员张连生的回信",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "山海携手共赴振兴新征程——习近平总书记对常态化做好东西部协作工作的重要指示精神温暖人心催人奋进",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "山海携手共赴振兴新征程——习近平总书记对常态化做好东西部协作工作的重要指示精神温暖人心催人奋进",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072567.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072567.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "引领变革方向 迈向光明前景——重磅白皮书展现推动构建更加公正合理的全球治理体系的大国担当",
+          "summary": "中国政府发布全球治理白皮书，阐述构建公正合理全球治理体系的理念与行动。",
+          "description": "中国政府发布全球治理白皮书，阐述构建公正合理全球治理体系的理念与行动。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "引领变革方向 迈向光明前景——重磅白皮书展现推动构建更加公正合理的全球治理体系的大国担当",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072591.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072591.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         }
       ],
       "itemCount": 20,
       "heat": "高",
-      "primarySource": "国家发展改革委新闻发布",
+      "primarySource": "中国人民银行新闻发布",
       "sourceCount": 4,
       "sources": [
+        "中国人民银行新闻发布",
         "国家发展改革委新闻发布",
-        "中国政府网要闻",
-        "国家统计局数据发布",
-        "财政部财政新闻"
-      ],
-      "keywords": [
-        "宏观",
-        "信用数智创新发展",
-        "总观摩会在北京召开",
-        "国家发展改革委宏观政策",
-        "价格",
-        "产业和经济运行信息",
-        "国家发展改革委在京举办信",
-        "公共政策"
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-14",
-          "title": "去年全国活跃数据总量同比增28.46%",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072025.htm",
-          "score": 100,
-          "publishedAt": "2026-06-14T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-15",
-          "title": "《求是》杂志发表习近平总书记重要文章《一体推进教育科技人才发展》",
-          "summary": "《求是》杂志将于2026年6月16日发表习近平总书记关于教育科技人才一体化发展的重要文章，内容为2012年至2026年期间相关论述节录。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072129.htm",
-          "score": 100,
-          "publishedAt": "2026-06-15T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-15",
-          "title": "Social Financing Aggregate Increment in First 5 Months Totals 17.48 Trillion Yuan",
-          "summary": "央行数据显示，前5月社会融资规模增量17.48万亿元，5月末存量458.81万亿元，同比增7.7%。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072054.htm",
-          "score": 100,
-          "publishedAt": "2026-06-15T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "“信用数智创新发展”总观摩会在北京召开",
-          "summary": "国家发展改革委在京举办信用数智创新发展总观摩会，发布宏观政策、价格、产业和经济运行信息。",
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260616_1405883.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "5月份国民经济运行总体平稳、向新向优",
-          "summary": "5月份国民经济在宏观政策支持下延续总体平稳、向新向优态势，生产供给稳中有升，就业物价稳定，外贸韧性增强，新动能成长壮大。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072257.htm",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "2026年5月份规模以上工业增加值增长4.5%",
-          "summary": "2026年5月，规模以上工业增加值同比增长4.5%，数据由国家统计局发布，涉及宏观经济、价格、工业、投资和人口数据。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963953.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "2026年1—5月份全国固定资产投资基本情况",
-          "summary": "国家统计局发布2026年1-5月固定资产投资等宏观数据",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963951.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "2026年1-5月全国房地产市场基本情况",
-          "summary": "国家统计局发布2026年1-5月宏观经济、价格、工业、投资和人口数据。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963950.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "2026年1—5月份社会消费品零售总额增长1.4%",
-          "summary": "2026年1-5月，社会消费品零售总额同比增长1.4%，数据由国家统计局发布。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963949.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "Energy Production in May 2026",
-          "summary": "该条目标题提及2026年5月能源生产情况，但正文仅泛泛提到国家统计局多项数据发布，未提供能源生产具体数据。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963948.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "2026年5月份70个大中城市商品住宅销售价格变动情况",
-          "summary": "国家统计局发布宏观经济、价格、工业、投资和人口数据，但未提供具体房价变动数据。",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963946.html",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "Economic Data Overview: 7 Sets of Numbers on China's Economy in May",
-          "summary": "该页面标题为经济数据速览，但摘要中未包含具体数据。",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7072325.htm",
-          "score": 100,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        }
-      ],
-      "evidenceItems": [
-        {
-          "id": "macro-item-5412ac8ac0",
-          "title": "“信用数智创新发展”总观摩会在北京召开",
-          "summary": "国家发展改革委在京举办信用数智创新发展总观摩会，发布宏观政策、价格、产业和经济运行信息。",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260616_1405883.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-d2e0e7cd39",
-          "title": "5月份国民经济运行总体平稳、向新向优",
-          "summary": "5月份国民经济在宏观政策支持下延续总体平稳、向新向优态势，生产供给稳中有升，就业物价稳定，外贸韧性增强，新动能成长壮大。",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072257.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-22d3f73911",
-          "title": "2026年5月份规模以上工业增加值增长4.5%",
-          "summary": "2026年5月，规模以上工业增加值同比增长4.5%，数据由国家统计局发布，涉及宏观经济、价格、工业、投资和人口数据。",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963953.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-cc5035daeb",
-          "title": "2026年1—5月份全国固定资产投资基本情况",
-          "summary": "国家统计局发布2026年1-5月固定资产投资等宏观数据",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963951.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-321d210647",
-          "title": "2026年1-5月全国房地产市场基本情况",
-          "summary": "国家统计局发布2026年1-5月宏观经济、价格、工业、投资和人口数据。",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963950.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-2533954b79",
-          "title": "2026年1—5月份社会消费品零售总额增长1.4%",
-          "summary": "2026年1-5月，社会消费品零售总额同比增长1.4%，数据由国家统计局发布。",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963949.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        }
-      ],
-      "items": [
-        {
-          "id": "macro-item-5412ac8ac0",
-          "title": "“信用数智创新发展”总观摩会在北京召开",
-          "summary": "国家发展改革委在京举办信用数智创新发展总观摩会，发布宏观政策、价格、产业和经济运行信息。",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260616_1405883.html",
-          "source": "国家发展改革委新闻发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-d2e0e7cd39",
-          "title": "5月份国民经济运行总体平稳、向新向优",
-          "summary": "5月份国民经济在宏观政策支持下延续总体平稳、向新向优态势，生产供给稳中有升，就业物价稳定，外贸韧性增强，新动能成长壮大。",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072257.htm",
-          "source": "中国政府网要闻",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-22d3f73911",
-          "title": "2026年5月份规模以上工业增加值增长4.5%",
-          "summary": "2026年5月，规模以上工业增加值同比增长4.5%，数据由国家统计局发布，涉及宏观经济、价格、工业、投资和人口数据。",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963953.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-cc5035daeb",
-          "title": "2026年1—5月份全国固定资产投资基本情况",
-          "summary": "国家统计局发布2026年1-5月固定资产投资等宏观数据",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963951.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-321d210647",
-          "title": "2026年1-5月全国房地产市场基本情况",
-          "summary": "国家统计局发布2026年1-5月宏观经济、价格、工业、投资和人口数据。",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963950.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        },
-        {
-          "id": "macro-item-2533954b79",
-          "title": "2026年1—5月份社会消费品零售总额增长1.4%",
-          "summary": "2026年1-5月，社会消费品零售总额同比增长1.4%，数据由国家统计局发布。",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963949.html",
-          "source": "国家统计局数据发布",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "macro",
-          "publishedAt": "2026-06-16T00:00:00.000Z",
-          "score": 100
-        }
-      ]
-    },
-    {
-      "id": "lane-china_us_ai",
-      "title": "中美 AI 发展",
-      "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。 相关来源：OpenAI News、GitHub Blog、中国政府网要闻",
-      "decisionLane": "china_us_ai",
-      "decisionLaneLabel": "中美 AI 发展",
-      "decisionGrade": "A",
-      "decisionSignal": "优先跟踪",
-      "decisionBrief": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-      "marketContext": {
-        "tickers": [],
-        "symbols": {},
-        "topMovers": [],
-        "hasMarketData": false,
-        "status": "stale",
-        "generatedAt": "2026-06-16T07:09:19.390Z",
-        "stale": true
-      },
-      "policyStatus": "",
-      "confirmedFacts": [
-        "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
-        "智能时代的产业政策",
-        "作者Cassidy是GitHub高级开发者倡导总监，每周发布newsletter。",
-        "文章介绍git worktrees及其用途。"
-      ],
-      "marketRelevance": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
-      "riskFactors": [
-        "不足以判断",
-        "使用斜杠命令可能增加用户学习成本，文章未讨论潜在风险。",
-        "行情数据可能过期，需核对实时价格。"
-      ],
-      "evidenceGaps": [
-        "继续观察后续官方发布和价格反应是否一致。"
-      ],
-      "sourceQuality": {
-        "sourceCount": 3,
-        "officialCount": 1,
-        "financialMediaCount": 0,
-        "timelineCount": 12,
-        "confidence": "high"
-      },
-      "relatedEntities": [
-        "AI",
-        "OpenAI",
-        "GitHub",
-        "model",
-        "人工智能",
-        "国务院",
-        "中国政府网"
-      ],
-      "whyItMatters": "OpenAI发布AI产业政策蓝图，可能引导未来全球AI治理与经济发展方向。",
-      "impactAreas": [
-        "AI治理",
-        "产业政策",
-        "科技战略",
-        "国际"
-      ],
-      "watchlist": [
-        "跟踪 AI治理、产业政策、科技战略 的后续变化",
-        "留意 OpenAI News、GitHub Blog 是否继续发布相关信息",
-        "观察是否出现监管、市场价格、企业动作或国际反应"
-      ],
-      "updatedAt": "2026-06-16T20:58:54.000Z",
-      "latestUpdate": {
-        "title": "什么是 Git Worktrees，为何使用它们？",
-        "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
-        "source": "GitHub Blog",
-        "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-        "publishedAt": "2026-06-16T20:58:54.000Z",
-        "score": 95
-      },
-      "keyDevelopments": [
-        {
-          "date": "2026-06-15",
-          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
-          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-          "score": 94,
-          "publishedAt": "2026-06-15T19:17:30.000Z"
-        },
-        {
-          "date": "2026-06-15",
-          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
-          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-          "score": 94,
-          "publishedAt": "2026-06-15T20:15:31.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "通过模拟部署来预测模型发布前的行为",
-          "summary": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型发布前的行为，提升安全性和评估准确性。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/deployment-simulation",
-          "score": 93,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "什么是 Git Worktrees，为何使用它们？",
-          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-          "score": 95,
-          "publishedAt": "2026-06-16T20:58:54.000Z"
-        }
-      ],
-      "itemCount": 16,
-      "heat": "高",
-      "primarySource": "GitHub Blog",
-      "sourceCount": 3,
-      "sources": [
-        "OpenAI News",
-        "GitHub Blog",
+        "财政部财政新闻",
         "中国政府网要闻"
       ],
       "keywords": [
-        "AI治理",
-        "产业政策",
-        "科技战略",
+        "宏观",
+        "AI政策",
+        "央行",
+        "市场监管",
         "国际",
-        "公共政策",
-        "地缘政治",
         "商业",
-        "AI政策"
+        "银行间市场数据报告库在上",
+        "海正式开业"
       ],
       "timeline": [
         {
-          "date": "2026-06-09",
-          "title": "智能时代的产业政策",
-          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-          "score": 96,
-          "publishedAt": "2026-06-09T00:00:00.000Z"
+          "date": "2026-06-17",
+          "title": "廖岷主持召开财政部国际财经研究专家工作室2026年论坛",
+          "summary": "财政部副部长廖岷主持召开了国际财经研究专家工作室2026年论坛，讨论财政政策、国债、预算和财政运行，但具体内容未公布。",
+          "description": "财政部副部长廖岷主持召开了国际财经研究专家工作室2026年论坛，讨论财政政策、国债、预算和财政运行，但具体内容未公布。",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "廖岷主持召开财政部国际财经研究专家工作室2026年论坛",
+              "source": "财政部财政新闻",
+              "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260617_3991810.htm",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260617_3991810.htm",
+          "score": 100,
+          "publishedAt": "2026-06-17T00:00:00.000Z"
         },
         {
-          "date": "2026-06-09",
-          "title": "Codex为Notion解锁的能力",
-          "summary": "Notion利用OpenAI Codex模型一次性生成产品规格说明，构建网页端AI语音输入，并为小团队倍增工程效率，展示了AI代码生成在实际应用中的创新。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/notion",
-          "score": 93,
-          "publishedAt": "2026-06-09T10:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "银行间市场数据报告库在上海正式开业",
+          "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
+          "description": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "银行间市场数据报告库在上海正式开业",
+              "source": "中国人民银行新闻发布",
+              "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-09",
-          "title": "Nextdoor工程师如何利用Codex无限制构建",
-          "summary": "Nextdoor工程师借助Codex与GPT-5.5调查难以复现的问题、跨平台构建，并专注于产品成果，突破了传统开发限制。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/nextdoor",
-          "score": 85,
-          "publishedAt": "2026-06-09T12:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "国家发展改革委举行6月份新闻发布会",
+          "summary": "发改委召开6月例行发布会，传递宏观政策、价格、产业和经济运行信息，但未披露具体举措。",
+          "description": "发改委召开6月例行发布会，传递宏观政策、价格、产业和经济运行信息，但未披露具体举措。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "国家发展改革委举行6月份新闻发布会",
+              "source": "国家发展改革委新闻发布",
+              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405995.html",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405995.html",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-11",
-          "title": "BBVA将人工智能置于银行业核心，与OpenAI合作",
-          "summary": "BBVA与OpenAI合作，将ChatGPT Enterprise推广至10万名员工，加速AI驱动的银行业转型。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/bbva",
-          "score": 92,
-          "publishedAt": "2026-06-11T00:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "就业优先战略“十五五”规划答记者问",
+          "summary": "国家发改委和人社部就就业优先战略“十五五”规划答记者问，但具体内容未公开。",
+          "description": "国家发改委和人社部就就业优先战略“十五五”规划答记者问，但具体内容未公开。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "就业优先战略“十五五”规划答记者问",
+              "source": "国家发展改革委新闻发布",
+              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405994.html",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405994.html",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-11",
-          "title": "OpenAI将收购Ona",
-          "summary": "OpenAI计划收购Ona，利用其安全持久的云环境扩展Codex，以支持企业工作流中的长期运行AI代理。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/openai-to-acquire-ona",
-          "score": 92,
-          "publishedAt": "2026-06-11T00:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "2026年6月18日国内成品油价格调整",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "description": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "2026年6月18日国内成品油价格调整",
+              "source": "国家发展改革委新闻发布",
+              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-12",
-          "title": "Preply如何结合AI与人工导师实现个性化学习",
-          "summary": "Preply利用OpenAI推出AI生成课程摘要，结合人工导师提供个性化反馈和练习。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/preply",
-          "score": 92,
-          "publishedAt": "2026-06-12T00:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "企业会计准则实施问答和应用案例（2026年第二批）",
+          "summary": "财政部会计司发布2026年第二批企业会计准则实施问答和应用案例。",
+          "description": "财政部会计司发布2026年第二批企业会计准则实施问答和应用案例。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "企业会计准则实施问答和应用案例（2026年第二批）",
+              "source": "财政部财政新闻",
+              "url": "http://kjs.mof.gov.cn/gongzuotongzhi/202606/t20260618_3991879.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://kjs.mof.gov.cn/gongzuotongzhi/202606/t20260618_3991879.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-12",
-          "title": "OpenAI推出新一代工作学院课程",
-          "summary": "OpenAI发布三门学院课程，帮助人们构建实用AI技能、创建可重复工作流程，并在日常工作中应用智能体。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
-          "score": 93,
-          "publishedAt": "2026-06-12T10:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "国务院任免国家工作人员（2026年6月18日）",
+          "summary": "国务院发布任免通知，具体内容待后续披露。",
+          "description": "国务院发布任免通知，具体内容待后续披露。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "国务院任免国家工作人员（2026年6月18日）",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-14",
-          "title": "OpenAI推出合作伙伴网络",
-          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/introducing-openai-partner-network",
-          "score": 94,
-          "publishedAt": "2026-06-14T17:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "张国清在福建调研时强调 提升重点产业链自主可控水平 更好发挥标准引领保障作用",
+          "summary": "张国清在福建调研重点产业链与标准化，强调自主可控和标准引领。",
+          "description": "张国清在福建调研重点产业链与标准化，强调自主可控和标准引领。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "张国清在福建调研时强调 提升重点产业链自主可控水平 更好发挥标准引领保障作用",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072662.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072662.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-15",
-          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
-          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-          "score": 94,
-          "publishedAt": "2026-06-15T19:17:30.000Z"
+          "date": "2026-06-18",
+          "title": "五部门组织开展2026年新能源汽车下乡活动",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "五部门组织开展2026年新能源汽车下乡活动",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202606/content_7072636.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202606/content_7072636.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-15",
-          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
-          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-          "score": 94,
-          "publishedAt": "2026-06-15T20:15:31.000Z"
+          "date": "2026-06-18",
+          "title": "习近平给新华社老党员张连生的回信",
+          "summary": "习近平回信慰问新华社百岁老党员张连生，表达敬意和关怀。",
+          "description": "习近平回信慰问新华社百岁老党员张连生，表达敬意和关怀。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "习近平给新华社老党员张连生的回信",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-16",
-          "title": "通过模拟部署来预测模型发布前的行为",
-          "summary": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型发布前的行为，提升安全性和评估准确性。",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/deployment-simulation",
-          "score": 93,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
+          "date": "2026-06-18",
+          "title": "山海携手共赴振兴新征程——习近平总书记对常态化做好东西部协作工作的重要指示精神温暖人心催人奋进",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "山海携手共赴振兴新征程——习近平总书记对常态化做好东西部协作工作的重要指示精神温暖人心催人奋进",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072567.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072567.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-16",
-          "title": "什么是 Git Worktrees，为何使用它们？",
-          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-          "score": 95,
-          "publishedAt": "2026-06-16T20:58:54.000Z"
+          "date": "2026-06-18",
+          "title": "引领变革方向 迈向光明前景——重磅白皮书展现推动构建更加公正合理的全球治理体系的大国担当",
+          "summary": "中国政府发布全球治理白皮书，阐述构建公正合理全球治理体系的理念与行动。",
+          "description": "中国政府发布全球治理白皮书，阐述构建公正合理全球治理体系的理念与行动。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "引领变革方向 迈向光明前景——重磅白皮书展现推动构建更加公正合理的全球治理体系的大国担当",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072591.htm",
+              "published_at": "2026-06-18T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072591.htm",
+          "score": 100,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         }
       ],
       "evidenceItems": [
         {
-          "id": "international-openai-news-c87c9f548d",
-          "title": "智能时代的产业政策",
-          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
-          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-          "source": "OpenAI News",
+          "id": "macro-item-2347d7de2f",
+          "title": "银行间市场数据报告库在上海正式开业",
+          "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
+          "source": "中国人民银行新闻发布",
           "sourceAuthorityLabel": "公开来源",
-          "category": "international",
-          "publishedAt": "2026-06-09T00:00:00.000Z",
-          "score": 96
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
         },
         {
-          "id": "international-github-blog-5a6c5078ad",
-          "title": "什么是 Git Worktrees，为何使用它们？",
-          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
-          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-          "source": "GitHub Blog",
+          "id": "macro-item-1e104f098d",
+          "title": "国家发展改革委举行6月份新闻发布会",
+          "summary": "发改委召开6月例行发布会，传递宏观政策、价格、产业和经济运行信息，但未披露具体举措。",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405995.html",
+          "source": "国家发展改革委新闻发布",
           "sourceAuthorityLabel": "公开来源",
-          "category": "international",
-          "publishedAt": "2026-06-16T20:58:54.000Z",
-          "score": 95
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
         },
         {
-          "id": "news-item-d23c6d1fee",
-          "title": "人工智能相关产品拉动外贸增长",
-          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+          "id": "macro-item-89e4eaa93c",
+          "title": "就业优先战略“十五五”规划答记者问",
+          "summary": "国家发改委和人社部就就业优先战略“十五五”规划答记者问，但具体内容未公开。",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405994.html",
+          "source": "国家发展改革委新闻发布",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-d002a87b6b",
+          "title": "2026年6月18日国内成品油价格调整",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html",
+          "source": "国家发展改革委新闻发布",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-445ee5fd39",
+          "title": "企业会计准则实施问答和应用案例（2026年第二批）",
+          "summary": "财政部会计司发布2026年第二批企业会计准则实施问答和应用案例。",
+          "url": "http://kjs.mof.gov.cn/gongzuotongzhi/202606/t20260618_3991879.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-14f29033d6",
+          "title": "国务院任免国家工作人员（2026年6月18日）",
+          "summary": "国务院发布任免通知，具体内容待后续披露。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm",
           "source": "中国政府网要闻",
           "sourceAuthorityLabel": "公开来源",
           "category": "news",
-          "publishedAt": "2026-05-31T00:00:00.000Z",
-          "score": 95
-        },
-        {
-          "id": "tech-github-blog-db9f0e80c6",
-          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
-          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-          "source": "GitHub Blog",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-06-15T20:15:31.000Z",
-          "score": 94
-        },
-        {
-          "id": "tech-github-blog-cde94bf4e0",
-          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
-          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-          "source": "GitHub Blog",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-06-15T19:17:30.000Z",
-          "score": 94
-        },
-        {
-          "id": "international-openai-news-60ec682462",
-          "title": "OpenAI推出合作伙伴网络",
-          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
-          "url": "https://openai.com/index/introducing-openai-partner-network",
-          "source": "OpenAI News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "international",
-          "publishedAt": "2026-06-14T17:00:00.000Z",
-          "score": 94
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
         }
       ],
+      "related_articles": [
+        {
+          "title": "银行间市场数据报告库在上海正式开业",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html"
+        },
+        {
+          "title": "国家发展改革委举行6月份新闻发布会",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405995.html"
+        },
+        {
+          "title": "就业优先战略“十五五”规划答记者问",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405994.html"
+        },
+        {
+          "title": "2026年6月18日国内成品油价格调整",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html"
+        },
+        {
+          "title": "企业会计准则实施问答和应用案例（2026年第二批）",
+          "url": "http://kjs.mof.gov.cn/gongzuotongzhi/202606/t20260618_3991879.htm"
+        },
+        {
+          "title": "国务院任免国家工作人员（2026年6月18日）",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm"
+        }
+      ],
+      "my_questions": [],
+      "analysis_notes": [],
       "items": [
         {
-          "id": "international-openai-news-c87c9f548d",
-          "title": "智能时代的产业政策",
-          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
-          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-          "source": "OpenAI News",
+          "id": "macro-item-2347d7de2f",
+          "title": "银行间市场数据报告库在上海正式开业",
+          "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
+          "source": "中国人民银行新闻发布",
           "sourceAuthorityLabel": "公开来源",
-          "category": "international",
-          "publishedAt": "2026-06-09T00:00:00.000Z",
-          "score": 96
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
         },
         {
-          "id": "international-github-blog-5a6c5078ad",
-          "title": "什么是 Git Worktrees，为何使用它们？",
-          "summary": "本文由GitHub开发者倡导总监Cassidy撰写，介绍git worktrees的概念与优势，并提及Git 2.54发布及VS Code集成。",
-          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-          "source": "GitHub Blog",
+          "id": "macro-item-1e104f098d",
+          "title": "国家发展改革委举行6月份新闻发布会",
+          "summary": "发改委召开6月例行发布会，传递宏观政策、价格、产业和经济运行信息，但未披露具体举措。",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405995.html",
+          "source": "国家发展改革委新闻发布",
           "sourceAuthorityLabel": "公开来源",
-          "category": "international",
-          "publishedAt": "2026-06-16T20:58:54.000Z",
-          "score": 95
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
         },
         {
-          "id": "news-item-d23c6d1fee",
-          "title": "人工智能相关产品拉动外贸增长",
-          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
+          "id": "macro-item-89e4eaa93c",
+          "title": "就业优先战略“十五五”规划答记者问",
+          "summary": "国家发改委和人社部就就业优先战略“十五五”规划答记者问，但具体内容未公开。",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405994.html",
+          "source": "国家发展改革委新闻发布",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-d002a87b6b",
+          "title": "2026年6月18日国内成品油价格调整",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html",
+          "source": "国家发展改革委新闻发布",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "macro-item-445ee5fd39",
+          "title": "企业会计准则实施问答和应用案例（2026年第二批）",
+          "summary": "财政部会计司发布2026年第二批企业会计准则实施问答和应用案例。",
+          "url": "http://kjs.mof.gov.cn/gongzuotongzhi/202606/t20260618_3991879.htm",
+          "source": "财政部财政新闻",
+          "sourceAuthorityLabel": "公开来源",
+          "category": "macro",
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
+        },
+        {
+          "id": "news-item-14f29033d6",
+          "title": "国务院任免国家工作人员（2026年6月18日）",
+          "summary": "国务院发布任免通知，具体内容待后续披露。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm",
           "source": "中国政府网要闻",
           "sourceAuthorityLabel": "公开来源",
           "category": "news",
-          "publishedAt": "2026-05-31T00:00:00.000Z",
-          "score": 95
-        },
-        {
-          "id": "tech-github-blog-db9f0e80c6",
-          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
-          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-          "source": "GitHub Blog",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-06-15T20:15:31.000Z",
-          "score": 94
-        },
-        {
-          "id": "tech-github-blog-cde94bf4e0",
-          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
-          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-          "source": "GitHub Blog",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "tech",
-          "publishedAt": "2026-06-15T19:17:30.000Z",
-          "score": 94
-        },
-        {
-          "id": "international-openai-news-60ec682462",
-          "title": "OpenAI推出合作伙伴网络",
-          "summary": "OpenAI推出合作伙伴网络，并投资1.5亿美元，帮助全球合作伙伴加速企业AI采纳、部署和转型。",
-          "url": "https://openai.com/index/introducing-openai-partner-network",
-          "source": "OpenAI News",
-          "sourceAuthorityLabel": "公开来源",
-          "category": "international",
-          "publishedAt": "2026-06-14T17:00:00.000Z",
-          "score": 94
+          "publishedAt": "2026-06-18T00:00:00.000Z",
+          "score": 100
         }
-      ]
+      ],
+      "tracking_decision": "值得追踪",
+      "llm_analysis": {
+        "what_happened": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。 相关来源：中国人民银行新闻发布、国家发展改革委新闻发布、财政部财政新闻",
+        "confirmed_facts": [
+          "数据报告库由七家单位发起，在上海成立",
+          "服务宏观审慎管理和金融市场监管",
+          "属于央行背景的基础设施建设",
+          "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。"
+        ],
+        "what_changed": "新设立了一个专门服务于银行间市场数据报告的机构，此前不存在此类实体。",
+        "impact_analysis": {
+          "market": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "industry": "可能影响 宏观、AI政策、央行、市场监管 相关判断，需继续核对后续证据。",
+          "company": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行、发改委。",
+          "user": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。"
+        },
+        "uncertainties": [
+          "尚无明确风险信息。",
+          "若后续无具体政策跟进，市场预期可能落空",
+          "目前证据不足",
+          "行情数据可能过期，需核对实时价格。",
+          "继续观察后续官方发布和价格反应是否一致。"
+        ],
+        "watch_variables": [
+          "跟踪 宏观、AI政策、央行 的后续变化",
+          "留意 中国人民银行新闻发布、国家发展改革委新闻发布 是否继续发布相关信息",
+          "观察是否出现监管、市场价格、企业动作或国际反应"
+        ],
+        "tracking_decision": "值得追踪",
+        "confidence_level": "高",
+        "source_links": [
+          {
+            "title": "银行间市场数据报告库在上海正式开业",
+            "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html"
+          },
+          {
+            "title": "国家发展改革委举行6月份新闻发布会",
+            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405995.html"
+          },
+          {
+            "title": "就业优先战略“十五五”规划答记者问",
+            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405994.html"
+          },
+          {
+            "title": "2026年6月18日国内成品油价格调整",
+            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202606/t20260618_1405957.html"
+          },
+          {
+            "title": "企业会计准则实施问答和应用案例（2026年第二批）",
+            "url": "http://kjs.mof.gov.cn/gongzuotongzhi/202606/t20260618_3991879.htm"
+          },
+          {
+            "title": "国务院任免国家工作人员（2026年6月18日）",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm"
+          }
+        ],
+        "analysis_notes": [],
+        "my_questions": []
+      },
+      "llm_analysis_status": "fallback",
+      "llm_analysis_model": "extractive",
+      "llm_analysis_generated_at": "2026-06-18T11:27:55.691Z",
+      "llm_analysis_error": "Unexpected end of JSON input"
     },
     {
       "id": "market-regulation-市场监管-than-half",
+      "event_id": "market-regulation-市场监管-than-half",
       "title": "市场监管",
-      "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。 相关来源：U.S. SEC Press Releases、UN News、第一财经",
+      "summary": "美国证券交易委员会（SEC）任命John Moses为投资者教育和援助办公室主任，并依据《2022年财务数据透明法案》制定最终规则，确立向多家金融监管机构提交数据的技术标准。",
+      "one_sentence_summary": "美国证券交易委员会（SEC）任命John Moses为投资者教育和援助办公室主任，并依据《2022年财务数据透明法案》制定最终规则，确立向多家金融监管机构提交数据的技术标准。",
       "decisionLane": "us_equities",
       "decisionLaneLabel": "美股变化",
       "decisionGrade": "B",
       "decisionSignal": "观察验证",
-      "decisionBrief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+      "decisionBrief": "SEC投资者教育和援助办公室新任负责人到位；金融数据提交技术标准正式确立。",
+      "current_status": "等待新进展",
+      "category": [
+        "美股变化",
+        "市场监管",
+        "金融监管",
+        "数据标准",
+        "宏观"
+      ],
+      "importance_level": "高",
+      "confidence_level": "中",
+      "last_updated": "2026-06-17",
+      "latest_change": "安理会公开辩论：妇女、和平与安全：联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
       "marketContext": {
         "tickers": [
           "GOOGL"
@@ -779,18 +1400,20 @@
         "symbols": {},
         "topMovers": [],
         "hasMarketData": false,
-        "status": "stale",
-        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "status": "unconfigured",
+        "generatedAt": "2026-06-18T10:44:29.950Z",
         "stale": true
       },
       "policyStatus": "",
       "confirmedFacts": [
-        "[object Object]",
-        "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
-        "SEC任命John Moses为投资者教育和援助办公室主任",
-        "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+        "SEC任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+        "SEC依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
       ],
-      "marketRelevance": "关联标的：GOOGL；行情时间：2026-06-16T07:09:19.390Z。",
+      "confirmed_facts": [
+        "SEC任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+        "SEC依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+      ],
+      "marketRelevance": "关联标的：GOOGL；行情时间：2026-06-18T10:44:29.950Z。",
       "riskFactors": [
         "不足以判断",
         "国际化面临生态建设、用户习惯、开发者支持等不确定性风险。",
@@ -815,41 +1438,60 @@
         "NASA",
         "SEC"
       ],
-      "whyItMatters": "此任命可能影响SEC投资者教育和服务的方向，但具体政策变化有待观察。",
+      "whyItMatters": "SEC投资者教育和援助办公室新任负责人到位；金融数据提交技术标准正式确立。",
       "impactAreas": [
         "市场监管",
         "金融监管",
         "数据标准",
         "宏观"
       ],
-      "watchlist": [
-        "跟踪 市场监管、金融监管、数据标准 的后续变化",
-        "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息",
-        "观察是否出现监管、市场价格、企业动作或国际反应"
+      "impact_analysis": {
+        "market": "目前证据不足，未提及具体市场反应或关联标的。",
+        "industry": "可能影响金融监管、数据标准相关行业，需观察后续执行情况。",
+        "company": "需关注受SEC监管的金融机构及数据提供方，如GOOGL等，但未具体说明。",
+        "user": "投资者教育和援助办公室的设立可能有助于投资者教育和风险防范，但直接影响尚不明确。"
+      },
+      "market_feedback": [],
+      "uncertainties": [
+        "John Moses履新后具体政策方向未知",
+        "数据标准的具体实施时间表及对企业的实际合规成本未明确",
+        "对其他金融监管机构的数据共享效率提升程度待观察"
       ],
-      "updatedAt": "2026-06-17T00:00:00.000Z",
+      "watchlist": [
+        "SEC是否发布更多投资者教育相关规则或行动",
+        "数据标准实施后金融监管机构的数据整合反馈",
+        "相关企业（如大型金融机构）的合规调整动态"
+      ],
+      "watch_variables": [
+        "SEC是否发布更多投资者教育相关规则或行动",
+        "数据标准实施后金融监管机构的数据整合反馈",
+        "相关企业（如大型金融机构）的合规调整动态"
+      ],
+      "updatedAt": "2026-06-17T12:00:00.000Z",
       "latestUpdate": {
-        "title": "A-Share Private Placement Update: 7 Companies Disclose Progress",
-        "summary": "6月17日，A股7家公司发布定增相关公告，其中2家披露预案，3家获股东大会通过，2家获交易所通过。",
-        "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-06-17/4428752.html",
-        "publishedAt": "2026-06-17T00:00:00.000Z",
-        "score": 89
+        "title": "安理会公开辩论：妇女、和平与安全",
+        "summary": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+        "source": "UN News",
+        "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+        "publishedAt": "2026-06-17T12:00:00.000Z",
+        "score": 93
       },
       "keyDevelopments": [
         {
           "date": "2026-06-16",
-          "title": "海地的转折点？新安全部队向强大帮派开战",
-          "summary": "联合国新闻标题称，海地部署新安全力量打击帮派，被视为潜在转折点，但正文仅描述首都出租车场景，缺乏具体信息。",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167732",
-          "score": 98,
-          "publishedAt": "2026-06-16T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
           "title": "莫妮卡·朱马：在威胁汇聚之际引领全球合作",
           "summary": "莫妮卡·朱马出任联合国安全与司法职务，应对犯罪网络快速扩张、威胁界限模糊的挑战。",
+          "description": "莫妮卡·朱马出任联合国安全与司法职务，应对犯罪网络快速扩张、威胁界限模糊的挑战。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "莫妮卡·朱马：在威胁汇聚之际引领全球合作",
+              "source": "UN News",
+              "url": "https://news.un.org/feed/view/en/story/2026/06/1167734",
+              "published_at": "2026-06-16T12:00:00.000Z"
+            }
+          ],
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167734",
           "score": 91,
@@ -859,6 +1501,17 @@
           "date": "2026-06-17",
           "title": "A-Share Private Placement Update: 7 Companies Disclose Progress",
           "summary": "6月17日，A股7家公司发布定增相关公告，其中2家披露预案，3家获股东大会通过，2家获交易所通过。",
+          "description": "6月17日，A股7家公司发布定增相关公告，其中2家披露预案，3家获股东大会通过，2家获交易所通过。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "A-Share Private Placement Update: 7 Companies Disclose Progress",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-17/4428752.html",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-17/4428752.html",
           "score": 89,
@@ -868,15 +1521,46 @@
           "date": "2026-06-17",
           "title": "A股股票回购一览：26家公司披露回购进展",
           "summary": "6月17日，26家公司发布27个股票回购进展，包括股东提议、首次披露预案、股东大会通过及披露回购股份等阶段。",
+          "description": "6月17日，26家公司发布27个股票回购进展，包括股东提议、首次披露预案、股东大会通过及披露回购股份等阶段。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "A股股票回购一览：26家公司披露回购进展",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-17/4428747.html",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-17/4428747.html",
           "score": 89,
           "publishedAt": "2026-06-17T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "安理会公开辩论：妇女、和平与安全",
+          "summary": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+          "description": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "安理会公开辩论：妇女、和平与安全",
+              "source": "UN News",
+              "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+              "published_at": "2026-06-17T12:00:00.000Z"
+            }
+          ],
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+          "score": 93,
+          "publishedAt": "2026-06-17T12:00:00.000Z"
         }
       ],
-      "itemCount": 12,
+      "itemCount": 13,
       "heat": "高",
-      "primarySource": "每日经济新闻",
+      "primarySource": "UN News",
       "sourceCount": 5,
       "sources": [
         "U.S. SEC Press Releases",
@@ -898,17 +1582,19 @@
       "timeline": [
         {
           "date": "2026-06-08",
-          "title": "秘书长：殉职联合国员工超半数在加沙",
-          "summary": "联合国秘书长在年度纪念活动上表示，2025年共有136名工作人员因公殉职，其中超过一半在加沙工作。",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167669",
-          "score": 83,
-          "publishedAt": "2026-06-08T12:00:00.000Z"
-        },
-        {
-          "date": "2026-06-08",
           "title": "SEC根据财务数据透明法案建立联合数据标准",
           "summary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
+          "description": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SEC根据财务数据透明法案建立联合数据标准",
+              "source": "U.S. SEC Press Releases",
+              "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
+              "published_at": "2026-06-08T14:36:00.000Z"
+            }
+          ],
           "source": "U.S. SEC Press Releases",
           "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
           "score": 100,
@@ -918,6 +1604,17 @@
           "date": "2026-06-09",
           "title": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
           "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "连续两天30%涨停后 丰光精密披露拟1.1亿元控股惯性导航企业唯实深蓝",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
+              "published_at": "2026-06-09T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-09/4420746.html",
           "score": 87,
@@ -927,6 +1624,17 @@
           "date": "2026-06-09",
           "title": "飞行动力学研究设施特点",
           "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+          "description": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "飞行动力学研究设施特点",
+              "source": "NASA Breaking News",
+              "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
+              "published_at": "2026-06-09T20:47:02.000Z"
+            }
+          ],
           "source": "NASA Breaking News",
           "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
           "score": 93,
@@ -936,6 +1644,17 @@
           "date": "2026-06-12",
           "title": "国金证券推出股份回购计划",
           "summary": "国金证券拟回购1.5-3亿元股份，价格上限13元/股，旨在维护公司价值及股东权益。",
+          "description": "国金证券拟回购1.5-3亿元股份，价格上限13元/股，旨在维护公司价值及股东权益。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "国金证券推出股份回购计划",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-12/4424855.html",
+              "published_at": "2026-06-12T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-12/4424855.html",
           "score": 87,
@@ -945,6 +1664,17 @@
           "date": "2026-06-12",
           "title": "SEC任命John Moses为投资者教育和援助办公室主任",
           "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+          "description": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SEC任命John Moses为投资者教育和援助办公室主任",
+              "source": "U.S. SEC Press Releases",
+              "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
+              "published_at": "2026-06-12T16:30:00.000Z"
+            }
+          ],
           "source": "U.S. SEC Press Releases",
           "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
           "score": 100,
@@ -954,6 +1684,17 @@
           "date": "2026-06-13",
           "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
           "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
+          "description": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103227973.html",
+              "published_at": "2026-06-13T09:00:47.914Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103227973.html",
           "score": 97,
@@ -963,6 +1704,17 @@
           "date": "2026-06-14",
           "title": "Yu Chengdong Reveals New Progress of HarmonyOS: 66 Million Terminals, Fully Evolving to Agent Architecture",
           "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
+          "description": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "Yu Chengdong Reveals New Progress of HarmonyOS: 66 Million Terminals, Fully Evolving to Agent Architecture",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103227973.html",
+              "published_at": "2026-06-14T09:00:40.480Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103227973.html",
           "score": 97,
@@ -972,6 +1724,17 @@
           "date": "2026-06-16",
           "title": "海地的转折点？新安全部队向强大帮派开战",
           "summary": "联合国新闻标题称，海地部署新安全力量打击帮派，被视为潜在转折点，但正文仅描述首都出租车场景，缺乏具体信息。",
+          "description": "联合国新闻标题称，海地部署新安全力量打击帮派，被视为潜在转折点，但正文仅描述首都出租车场景，缺乏具体信息。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "海地的转折点？新安全部队向强大帮派开战",
+              "source": "UN News",
+              "url": "https://news.un.org/feed/view/en/story/2026/06/1167732",
+              "published_at": "2026-06-16T12:00:00.000Z"
+            }
+          ],
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167732",
           "score": 98,
@@ -981,6 +1744,17 @@
           "date": "2026-06-16",
           "title": "莫妮卡·朱马：在威胁汇聚之际引领全球合作",
           "summary": "莫妮卡·朱马出任联合国安全与司法职务，应对犯罪网络快速扩张、威胁界限模糊的挑战。",
+          "description": "莫妮卡·朱马出任联合国安全与司法职务，应对犯罪网络快速扩张、威胁界限模糊的挑战。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "莫妮卡·朱马：在威胁汇聚之际引领全球合作",
+              "source": "UN News",
+              "url": "https://news.un.org/feed/view/en/story/2026/06/1167734",
+              "published_at": "2026-06-16T12:00:00.000Z"
+            }
+          ],
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/06/1167734",
           "score": 91,
@@ -990,6 +1764,17 @@
           "date": "2026-06-17",
           "title": "A-Share Private Placement Update: 7 Companies Disclose Progress",
           "summary": "6月17日，A股7家公司发布定增相关公告，其中2家披露预案，3家获股东大会通过，2家获交易所通过。",
+          "description": "6月17日，A股7家公司发布定增相关公告，其中2家披露预案，3家获股东大会通过，2家获交易所通过。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "A-Share Private Placement Update: 7 Companies Disclose Progress",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-17/4428752.html",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-17/4428752.html",
           "score": 89,
@@ -999,10 +1784,41 @@
           "date": "2026-06-17",
           "title": "A股股票回购一览：26家公司披露回购进展",
           "summary": "6月17日，26家公司发布27个股票回购进展，包括股东提议、首次披露预案、股东大会通过及披露回购股份等阶段。",
+          "description": "6月17日，26家公司发布27个股票回购进展，包括股东提议、首次披露预案、股东大会通过及披露回购股份等阶段。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "A股股票回购一览：26家公司披露回购进展",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-17/4428747.html",
+              "published_at": "2026-06-17T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-17/4428747.html",
           "score": 89,
           "publishedAt": "2026-06-17T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "安理会公开辩论：妇女、和平与安全",
+          "summary": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+          "description": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "安理会公开辩论：妇女、和平与安全",
+              "source": "UN News",
+              "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+              "published_at": "2026-06-17T12:00:00.000Z"
+            }
+          ],
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+          "score": 93,
+          "publishedAt": "2026-06-17T12:00:00.000Z"
         }
       ],
       "evidenceItems": [
@@ -1062,17 +1878,33 @@
           "score": 97
         },
         {
-          "id": "news-nasa-breaking-news-abb3c2dc53",
-          "title": "飞行动力学研究设施特点",
-          "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
-          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
-          "source": "NASA Breaking News",
+          "id": "news-un-news-cfc18ce0c9",
+          "title": "安理会公开辩论：妇女、和平与安全",
+          "summary": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+          "source": "UN News",
           "sourceAuthorityLabel": "公开来源",
           "category": "news",
-          "publishedAt": "2026-06-09T20:47:02.000Z",
+          "publishedAt": "2026-06-17T12:00:00.000Z",
           "score": 93
         }
       ],
+      "related_articles": [
+        {
+          "title": "SEC任命John Moses为投资者教育和援助办公室主任",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance"
+        },
+        {
+          "title": "SEC根据财务数据透明法案建立联合数据标准",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022"
+        }
+      ],
+      "my_questions": [
+        "John Moses的履历及其对投资者教育政策的影响？",
+        "数据标准是否涵盖加密货币或新兴金融产品？",
+        "是否有其他主要经济体跟进类似数据标准？"
+      ],
+      "analysis_notes": [],
       "items": [
         {
           "id": "finance-u-s-sec-press-releases-3356aa56d2",
@@ -1130,27 +1962,87 @@
           "score": 97
         },
         {
-          "id": "news-nasa-breaking-news-abb3c2dc53",
-          "title": "飞行动力学研究设施特点",
-          "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
-          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
-          "source": "NASA Breaking News",
+          "id": "news-un-news-cfc18ce0c9",
+          "title": "安理会公开辩论：妇女、和平与安全",
+          "summary": "联合国安理会就妇女、和平与安全召开年度辩论，数据显示女性在和平谈判中占比极低。",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167735",
+          "source": "UN News",
           "sourceAuthorityLabel": "公开来源",
           "category": "news",
-          "publishedAt": "2026-06-09T20:47:02.000Z",
+          "publishedAt": "2026-06-17T12:00:00.000Z",
           "score": 93
         }
-      ]
+      ],
+      "tracking_decision": "值得追踪",
+      "llm_analysis": {
+        "what_happened": "美国证券交易委员会（SEC）任命John Moses为投资者教育和援助办公室主任，并依据《2022年财务数据透明法案》制定最终规则，确立向多家金融监管机构提交数据的技术标准。",
+        "confirmed_facts": [
+          "SEC任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
+          "SEC依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+        ],
+        "what_changed": "SEC投资者教育和援助办公室新任负责人到位；金融数据提交技术标准正式确立。",
+        "impact_analysis": {
+          "market": "目前证据不足，未提及具体市场反应或关联标的。",
+          "industry": "可能影响金融监管、数据标准相关行业，需观察后续执行情况。",
+          "company": "需关注受SEC监管的金融机构及数据提供方，如GOOGL等，但未具体说明。",
+          "user": "投资者教育和援助办公室的设立可能有助于投资者教育和风险防范，但直接影响尚不明确。"
+        },
+        "uncertainties": [
+          "John Moses履新后具体政策方向未知",
+          "数据标准的具体实施时间表及对企业的实际合规成本未明确",
+          "对其他金融监管机构的数据共享效率提升程度待观察"
+        ],
+        "watch_variables": [
+          "SEC是否发布更多投资者教育相关规则或行动",
+          "数据标准实施后金融监管机构的数据整合反馈",
+          "相关企业（如大型金融机构）的合规调整动态"
+        ],
+        "tracking_decision": "值得追踪",
+        "confidence_level": "中",
+        "source_links": [
+          {
+            "title": "SEC任命John Moses为投资者教育和援助办公室主任",
+            "url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance"
+          },
+          {
+            "title": "SEC根据财务数据透明法案建立联合数据标准",
+            "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022"
+          }
+        ],
+        "analysis_notes": [],
+        "my_questions": [
+          "John Moses的履历及其对投资者教育政策的影响？",
+          "数据标准是否涵盖加密货币或新兴金融产品？",
+          "是否有其他主要经济体跟进类似数据标准？"
+        ]
+      },
+      "llm_analysis_status": "succeeded",
+      "llm_analysis_model": "deepseek-v4-flash",
+      "llm_analysis_generated_at": "2026-06-18T11:27:55.691Z"
     },
     {
       "id": "macro-policy-ipo-spacex-史上最大",
+      "event_id": "macro-policy-ipo-spacex-史上最大",
       "title": "宏观政策与利率",
       "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+      "one_sentence_summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
       "decisionLane": "us_equities",
       "decisionLaneLabel": "美股变化",
       "decisionGrade": "B",
       "decisionSignal": "观察验证",
-      "decisionBrief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+      "decisionBrief": "标志科技企业市值和富豪身家达到新里程碑",
+      "current_status": "等待新进展",
+      "category": [
+        "美股变化",
+        "宏观",
+        "国际",
+        "商业",
+        "市值空降美股前十"
+      ],
+      "importance_level": "高",
+      "confidence_level": "中",
+      "last_updated": "2026-06-14",
+      "latest_change": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪：SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
       "marketContext": {
         "tickers": [
           "TSLA",
@@ -1159,8 +2051,8 @@
         "symbols": {},
         "topMovers": [],
         "hasMarketData": false,
-        "status": "stale",
-        "generatedAt": "2026-06-16T07:09:19.390Z",
+        "status": "unconfigured",
+        "generatedAt": "2026-06-18T10:44:29.950Z",
         "stale": true
       },
       "policyStatus": "",
@@ -1170,7 +2062,13 @@
         "此轮造富可能源于史上最大规模IPO",
         "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
       ],
-      "marketRelevance": "关联标的：TSLA、QQQ；行情时间：2026-06-16T07:09:19.390Z。",
+      "confirmed_facts": [
+        "SpaceX市值空降美股前十",
+        "马斯克成为全球首位万亿美元富豪",
+        "此轮造富可能源于史上最大规模IPO",
+        "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
+      ],
+      "marketRelevance": "关联标的：TSLA、QQQ；行情时间：2026-06-18T10:44:29.950Z。",
       "riskFactors": [
         "高估值风险、造富效应与财富集中争议",
         "不足以判断",
@@ -1202,7 +2100,27 @@
         "商业",
         "市值空降美股前十"
       ],
+      "impact_analysis": {
+        "market": "关联标的：TSLA、QQQ；行情时间：2026-06-18T10:44:29.950Z。",
+        "industry": "可能影响 宏观、国际、商业、市值空降美股前十 相关判断，需继续核对后续证据。",
+        "company": "关联实体：TSLA、QQQ、马斯克、SpaceX、纳斯达克。",
+        "user": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。"
+      },
+      "market_feedback": [],
+      "uncertainties": [
+        "高估值风险、造富效应与财富集中争议",
+        "不足以判断",
+        "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+        "行情数据可能过期，需核对实时价格。",
+        "缺少可用行情数据或 API 密钥。",
+        "缺少官方或市场权威来源。"
+      ],
       "watchlist": [
+        "跟踪 宏观、国际、商业 的后续变化",
+        "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+        "观察是否出现监管、市场价格、企业动作或国际反应"
+      ],
+      "watch_variables": [
         "跟踪 宏观、国际、商业 的后续变化",
         "留意 第一财经、每日经济新闻 是否继续发布相关信息",
         "观察是否出现监管、市场价格、企业动作或国际反应"
@@ -1221,6 +2139,17 @@
           "date": "2026-06-13",
           "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
           "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "description": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+              "published_at": "2026-06-13T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
           "score": 91,
@@ -1230,6 +2159,17 @@
           "date": "2026-06-13",
           "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
           "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "description": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-13T09:00:47.914Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103228502.html",
           "score": 97,
@@ -1239,6 +2179,17 @@
           "date": "2026-06-14",
           "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
           "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "description": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+              "published_at": "2026-06-14T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
           "score": 87,
@@ -1248,6 +2199,17 @@
           "date": "2026-06-14",
           "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
           "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "description": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-14T09:00:40.480Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103228502.html",
           "score": 97,
@@ -1277,6 +2239,17 @@
           "date": "2026-06-12",
           "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
           "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "description": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103227523.html",
+              "published_at": "2026-06-12T09:01:14.051Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103227523.html",
           "score": 97,
@@ -1286,6 +2259,17 @@
           "date": "2026-06-13",
           "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
           "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "description": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+              "published_at": "2026-06-13T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
           "score": 91,
@@ -1295,6 +2279,17 @@
           "date": "2026-06-13",
           "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
           "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "description": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-13T09:00:47.914Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103228502.html",
           "score": 97,
@@ -1304,6 +2299,17 @@
           "date": "2026-06-14",
           "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
           "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "description": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "sources": [
+            {
+              "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+              "published_at": "2026-06-14T00:00:00.000Z"
+            }
+          ],
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
           "score": 87,
@@ -1313,6 +2319,17 @@
           "date": "2026-06-14",
           "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
           "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "description": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "sources": [
+            {
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-14T09:00:40.480Z"
+            }
+          ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103228502.html",
           "score": 97,
@@ -1376,6 +2393,30 @@
           "score": 87
         }
       ],
+      "related_articles": [
+        {
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "url": "https://www.yicai.com/news/103228502.html"
+        },
+        {
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "url": "https://www.yicai.com/news/103228502.html"
+        },
+        {
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "url": "https://www.yicai.com/news/103227523.html"
+        },
+        {
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html"
+        },
+        {
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html"
+        }
+      ],
+      "my_questions": [],
+      "analysis_notes": [],
       "items": [
         {
           "id": "macro-item-06646bdbac",
@@ -1432,7 +2473,86 @@
           "publishedAt": "2026-06-14T00:00:00.000Z",
           "score": 87
         }
-      ]
+      ],
+      "tracking_decision": "暂时观察",
+      "llm_analysis": {
+        "what_happened": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+        "confirmed_facts": [
+          "SpaceX市值空降美股前十",
+          "马斯克成为全球首位万亿美元富豪",
+          "此轮造富可能源于史上最大规模IPO",
+          "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
+        ],
+        "what_changed": "标志科技企业市值和富豪身家达到新里程碑",
+        "impact_analysis": {
+          "market": "关联标的：TSLA、QQQ；行情时间：2026-06-18T10:44:29.950Z。",
+          "industry": "可能影响 宏观、国际、商业、市值空降美股前十 相关判断，需继续核对后续证据。",
+          "company": "关联实体：TSLA、QQQ、马斯克、SpaceX、纳斯达克。",
+          "user": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。"
+        },
+        "uncertainties": [
+          "高估值风险、造富效应与财富集中争议",
+          "不足以判断",
+          "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+          "行情数据可能过期，需核对实时价格。",
+          "缺少可用行情数据或 API 密钥。",
+          "缺少官方或市场权威来源。"
+        ],
+        "watch_variables": [
+          "跟踪 宏观、国际、商业 的后续变化",
+          "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+          "观察是否出现监管、市场价格、企业动作或国际反应"
+        ],
+        "tracking_decision": "暂时观察",
+        "confidence_level": "中",
+        "source_links": [
+          {
+            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "url": "https://www.yicai.com/news/103228502.html"
+          },
+          {
+            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "url": "https://www.yicai.com/news/103228502.html"
+          },
+          {
+            "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+            "url": "https://www.yicai.com/news/103227523.html"
+          },
+          {
+            "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+            "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html"
+          },
+          {
+            "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+            "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html"
+          }
+        ],
+        "analysis_notes": [],
+        "my_questions": []
+      },
+      "llm_analysis_status": "fallback",
+      "llm_analysis_model": "extractive",
+      "llm_analysis_generated_at": "2026-06-18T11:27:55.691Z",
+      "llm_analysis_error": "Expected ',' or ']' after array element in JSON at position 1510 (line 47 column 6)"
+    }
+  ],
+  "eventAnalysisStats": {
+    "llmEnabled": true,
+    "llmConfigured": true,
+    "llmAttempted": 4,
+    "llmSucceeded": 2,
+    "fallbackCount": 2,
+    "errorCount": 2,
+    "generatedAt": "2026-06-18T11:27:55.691Z"
+  },
+  "eventAnalysisErrors": [
+    {
+      "id": "lane-china_policy",
+      "message": "Unexpected end of JSON input"
+    },
+    {
+      "id": "macro-policy-ipo-spacex-史上最大",
+      "message": "Expected ',' or ']' after array element in JSON at position 1510 (line 47 column 6)"
     }
   ]
 }

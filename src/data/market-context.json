@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-16T07:09:19.390Z",
+  "generatedAt": "2026-06-18T10:44:29.950Z",
   "provider": "alpha-vantage",
-  "status": "stale",
+  "status": "unconfigured",
   "stale": true,
-  "message": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints",
+  "message": "ALPHA_VANTAGE_API_KEY is not configured.",
   "symbols": {},
   "topMovers": [],
   "newsSentiment": {}

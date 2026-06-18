@@ -1,5 +1,6 @@
 const path = require("node:path");
 const { readJson, writeJson } = require("./lib/file-utils");
+const { loadLocalEnv } = require("./lib/load-local-env");
 const { extractPublishedKeywords, normalizeText, sortItems, truncateText } = require("./lib/pipeline");
 const {
   getLlmConfig,
@@ -235,7 +236,7 @@ function buildSummaryPrompt(item, dailyRules = {}) {
 
 function parseSummaryResponse(responseJson, item, dailyRules = {}) {
   const generatedAt = dailyRules.generatedAt || new Date().toISOString();
-  const compatibleResponse = responseJson.summary_short || responseJson.summary_points
+  const compatibleResponse = responseJson.summary_short || responseJson.summary_points || responseJson.what_happened || responseJson.confirmed_facts
     ? responseJson
     : {
       summary_short: responseJson.aiSummary || responseJson.summary || "",
@@ -256,9 +257,9 @@ function parseSummaryResponse(responseJson, item, dailyRules = {}) {
   const summaryShort = structured.summary_short || summarizeText(item, dailyRules.summaryMaxLength);
   return {
     translatedTitle: truncateText(responseJson.translatedTitle || responseJson.title_zh || responseJson.titleZh || "", 120),
-    aiSummary: truncateText(responseJson.aiSummary || summaryShort, dailyRules.summaryMaxLength || 180),
+    aiSummary: truncateText(responseJson.aiSummary || structured.what_happened || summaryShort, dailyRules.summaryMaxLength || 180),
     summaryReason: truncateText(responseJson.summaryReason || structured.neutrality_check || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
-    importance: truncateText(responseJson.importance || structured.why_it_matters || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
+    importance: truncateText(responseJson.importance || structured.what_changed || structured.why_it_matters || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
     impactAreas: Array.isArray(responseJson.impactAreas)
       ? responseJson.impactAreas.slice(0, 4).map((value) => truncateText(value, 20)).filter(Boolean)
       : [],
@@ -301,7 +302,8 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
     }
 
     if (!llmConfigured || !itemSummaryRules.llmProduction?.enabled) {
-      items.push(item);
+      stats.fallbackCount += 1;
+      items.push(applyExtractiveSummary(item, dailyRules, generatedAt));
       continue;
     }
 
@@ -330,9 +332,12 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
       stats.fallbackCount += 1;
       stats.errorCount += 1;
       errors.push({ id: item.id, message: truncateText(lastError?.message || "AI summary failed.", 180) });
+      const fallbackItem = applyExtractiveSummary(item, dailyRules, generatedAt);
       items.push({
-        ...item,
-        translation_status: needsChineseTranslation(item) ? "failed" : item.translation_status
+        ...fallbackItem,
+        translation_status: needsChineseTranslation(item) && !hasRequiredChineseTranslation(item)
+          ? "failed"
+          : fallbackItem.translation_status
       });
     }
   }
@@ -505,6 +510,15 @@ async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) 
       summary_short: item.summary_short,
       summary_points: item.summary_points,
       key_data: item.key_data,
+      what_happened: item.what_happened,
+      confirmed_facts: item.confirmed_facts,
+      what_changed: item.what_changed,
+      impact_analysis: item.impact_analysis,
+      uncertainties: item.uncertainties,
+      watch_variables: item.watch_variables,
+      tracking_decision: item.tracking_decision,
+      confidence_level: item.confidence_level,
+      source_links: item.source_links,
       why_it_matters: item.why_it_matters,
       impact: item.impact,
       risks: item.risks,
@@ -559,6 +573,7 @@ async function generateDailyBrief(nowIso = new Date().toISOString(), options = {
 }
 
 if (require.main === module) {
+  loadLocalEnv(ROOT_DIR);
   const mode = process.argv[2] || "--all";
   const runner = mode === "--items-only"
     ? generateArticleSummaries

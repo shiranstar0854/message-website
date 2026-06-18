@@ -5,7 +5,8 @@ const {
   renderTopHotspots,
   renderTopEvents,
   selectTopEvents,
-  selectTopHotspots
+  selectTopHotspots,
+  topScoreBreakdown
 } = require("../scripts/generate-static-index");
 
 test("static homepage selects Top 5 by importance_score then publish time", () => {
@@ -42,6 +43,70 @@ test("static homepage prefers readable hotspots when scores are close", () => {
   assert.equal(selected[0].id, "readable");
 });
 
+test("static homepage ranks Top 5 by event importance score over article score alone", () => {
+  const sourceOnly = {
+    id: "source-only",
+    title: "Official daily update",
+    score: 100,
+    importance_score: 96,
+    sourceAuthority: "official-agency",
+    publishedAt: "2026-06-02T00:00:00.000Z"
+  };
+  const eventLike = {
+    id: "event-like",
+    title: "AI policy creates market and developer follow-up questions",
+    score: 82,
+    importance_score: 82,
+    sourceAuthority: "official-media",
+    duplicateCount: 3,
+    impactAreas: ["AI政策", "监管", "市场"],
+    key_data: ["企业支出", "监管回应"],
+    why_it_matters: "影响 AI 投入和监管预期。",
+    impact: "影响重要公司、开发者和市场判断。",
+    risks: "等待后续政策文本确认。",
+    timeline_event_id: "ai-policy",
+    confidence: "high",
+    category: "tech",
+    publishedAt: "2026-06-02T00:00:00.000Z"
+  };
+
+  const selected = selectTopHotspots([sourceOnly, eventLike], 2);
+
+  assert.equal(selected[0].id, "event-like");
+  assert.ok(topScoreBreakdown(eventLike).top_score > topScoreBreakdown(sourceOnly).top_score);
+});
+
+test("static homepage excludes C and D tier sources from Top 5", () => {
+  const selected = selectTopHotspots([
+    {
+      id: "social",
+      title: "Social discussion claims AI market shift",
+      score: 100,
+      importance_score: 100,
+      sourceTier: "C",
+      publishedAt: "2026-06-02T00:00:00.000Z"
+    },
+    {
+      id: "marketing",
+      title: "Sponsored AI market claim",
+      score: 100,
+      importance_score: 100,
+      sourceTier: "D",
+      publishedAt: "2026-06-02T00:00:00.000Z"
+    },
+    {
+      id: "official",
+      title: "Official AI policy data release",
+      score: 80,
+      importance_score: 80,
+      sourceTier: "S",
+      publishedAt: "2026-06-02T00:00:00.000Z"
+    }
+  ], 5);
+
+  assert.deepEqual(selected.map((item) => item.id), ["official"]);
+});
+
 test("static homepage renders Top 5 block with Chinese summary fallback", () => {
   const html = renderTopHotspots([{
     title: "OpenAI update",
@@ -62,7 +127,8 @@ test("static homepage renders Top 5 block with Chinese summary fallback", () => 
   assert.match(html, /中文摘要优先展示/);
   assert.match(html, /影响 AI 政策讨论/);
   assert.match(html, /来源：OpenAI News/);
-  assert.match(html, /重要度：高/);
+  assert.match(html, /重要度：中/);
+  assert.match(html, /Top分：60/);
   assert.match(html, /top-hotspot-link/);
   assert.match(html, /top-hotspot-card top-hotspot-row is-primary/);
 });
@@ -101,40 +167,32 @@ test("static homepage renders empty Top 5 state", () => {
   assert.match(html, /compact-empty/);
 });
 
-test("static homepage renders event tracking block with timeline fields", () => {
+test("static homepage renders event tracking cards with MVP fields and detail links", () => {
   const html = renderTopEvents([{
-    title: "AI 政策与基础设施",
-    summary: "发生了新的 AI 治理讨论。",
-    whyItMatters: "影响企业 AI 投入和监管预期。",
-    impactAreas: ["AI政策", "监管"],
-    watchlist: ["跟踪监管文本", "观察企业反应"],
-    updatedAt: "2026-06-02T00:00:00.000Z",
+    id: "openai-model-race",
+    event_id: "openai-model-race",
+    title: "OpenAI / AI 模型竞争",
+    one_sentence_summary: "模型竞争进入持续追踪阶段。",
+    current_status: "持续追踪",
+    latest_change: "等待最新信息更新",
+    importance_level: "高",
+    confidence_level: "中",
+    last_updated: "2026-06-18",
     itemCount: 3,
-    heat: "高",
-    timeline: [
-      {
-        date: "2026-06-01",
-        title: "首次传出合作消息",
-        summary: "双方开始接触。",
-        source: "Official Source",
-        score: 90
-      },
-      {
-        date: "2026-06-02",
-        title: "公司回应仍在谈判",
-        summary: "合作细节未定。",
-        source: "Reuters",
-        score: 91
-      }
-    ]
+    heat: "高"
   }]);
 
   assert.match(html, /home-event-list/);
-  assert.match(html, /热度：高/);
-  assert.match(html, /发生了新的 AI 治理讨论/);
-  assert.match(html, /首次传出合作消息/);
-  assert.match(html, /公司回应仍在谈判/);
-  assert.match(html, /查看事件追踪/);
+  assert.match(html, /OpenAI \/ AI 模型竞争/);
+  assert.match(html, /当前状态/);
+  assert.match(html, /持续追踪/);
+  assert.match(html, /最新变化/);
+  assert.match(html, /等待最新信息更新/);
+  assert.match(html, /重要性/);
+  assert.match(html, /置信度/);
+  assert.match(html, /更新时间/);
+  assert.match(html, /event\.html\?id=openai-model-race/);
+  assert.match(html, /查看追踪/);
 });
 
 test("static homepage sorts event hotspots by explanation and evidence strength", () => {

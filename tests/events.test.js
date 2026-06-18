@@ -63,6 +63,69 @@ test("buildEvents groups related high-value items into event clusters", () => {
   assert.deepEqual(data.events[0].evidenceItems.map((item) => item.id), ["ai-1", "ai-2"]);
 });
 
+test("buildEvents emits the MVP event tracking data structure", () => {
+  const data = buildEvents([
+    {
+      id: "openai-1",
+      title: "OpenAI releases enterprise AI model update",
+      summary: "OpenAI describes new model capabilities for businesses.",
+      title_zh: "OpenAI 发布企业 AI 模型更新",
+      summary_zh: "OpenAI 说明面向企业的新模型能力。",
+      translation_status: "translated",
+      sourceLanguage: "en",
+      source: "OpenAI News",
+      url: "https://openai.com/example-enterprise-model",
+      sourceAuthority: "official-media",
+      category: "tech",
+      publishedAt: "2026-06-01T00:00:00.000Z",
+      score: 93,
+      keywords: ["AI development", "OpenAI"]
+    },
+    {
+      id: "openai-2",
+      title: "AI industry follows OpenAI model update",
+      summary: "Developers discuss competition around AI models.",
+      title_zh: "AI 行业跟进 OpenAI 模型更新",
+      summary_zh: "开发者讨论 AI 模型竞争变化。",
+      translation_status: "translated",
+      sourceLanguage: "en",
+      source: "AI Industry Desk",
+      url: "https://example.com/ai-industry-followup",
+      sourceAuthority: "media",
+      category: "tech",
+      publishedAt: "2026-06-02T00:00:00.000Z",
+      score: 89,
+      keywords: ["AI development", "OpenAI"]
+    }
+  ], "2026-06-02T03:00:00.000Z");
+
+  assert.equal(data.totalEvents, 1);
+  const event = data.events[0];
+  assert.equal(event.event_id, event.id);
+  assert.equal(typeof event.one_sentence_summary, "string");
+  assert.ok(event.current_status);
+  assert.ok(Array.isArray(event.category));
+  assert.ok(event.importance_level);
+  assert.ok(event.confidence_level);
+  assert.match(event.last_updated, /^\d{4}-\d{2}-\d{2}$/);
+  assert.ok(event.latest_change);
+  assert.ok(Array.isArray(event.timeline));
+  assert.ok(event.timeline.length >= 2);
+  assert.ok(event.timeline.every((entry) => entry.date && entry.title && entry.description && entry.evidence_type && entry.importance && Array.isArray(entry.sources)));
+  assert.ok(Array.isArray(event.confirmed_facts));
+  assert.equal(typeof event.impact_analysis.market, "string");
+  assert.equal(typeof event.impact_analysis.industry, "string");
+  assert.equal(typeof event.impact_analysis.company, "string");
+  assert.equal(typeof event.impact_analysis.user, "string");
+  assert.ok(Array.isArray(event.market_feedback));
+  assert.ok(Array.isArray(event.uncertainties));
+  assert.ok(Array.isArray(event.watch_variables));
+  assert.ok(Array.isArray(event.related_articles));
+  assert.ok(event.related_articles.every((article) => article.title && article.source && article.url && article.published_at && Number.isFinite(article.relevance_score)));
+  assert.deepEqual(event.my_questions, []);
+  assert.deepEqual(event.analysis_notes, []);
+});
+
 test("buildEvents excludes untranslated non-Chinese items from event tracking", () => {
   const data = buildEvents([
     {

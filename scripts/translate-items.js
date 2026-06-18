@@ -1,5 +1,6 @@
 const path = require("node:path");
 const { readJson, writeJson } = require("./lib/file-utils");
+const { loadLocalEnv } = require("./lib/load-local-env");
 const { extractArticleKeywords, normalizeText, truncateText } = require("./lib/pipeline");
 const {
   detectItemLanguage,
@@ -195,6 +196,7 @@ async function translateLatestFile(nowIso = new Date().toISOString(), options = 
 }
 
 if (require.main === module) {
+  loadLocalEnv(ROOT_DIR);
   translateLatestFile()
     .then((data) => {
       const stats = data.translationStats || {};

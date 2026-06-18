@@ -46,7 +46,7 @@ test("daily summary generation adds compact summary fields to top channel items"
   assert.equal(summarized.channels.tech.items[0].aiSummary, summarized.items[0].aiSummary);
 });
 
-test("daily summary LLM path keeps existing data when the required secret is missing", async () => {
+test("daily summary LLM path uses extractive fallback when the required secret is missing", async () => {
   const latest = {
     generatedAt: "2026-05-28T00:00:00.000Z",
     channels: {
@@ -78,11 +78,14 @@ test("daily summary LLM path keeps existing data when the required secret is mis
   });
 
   assert.equal(isLlmConfigured(rules, {}), false);
-  assert.equal(summarized.items[0].summaryMethod, undefined);
-  assert.equal(summarized.items[0].aiSummary, undefined);
+  assert.equal(summarized.items[0].summaryMethod, "extractive");
+  assert.match(summarized.items[0].aiSummary, /market update/i);
+  assert.equal(summarized.items[0].what_happened, summarized.items[0].summary_short);
+  assert.ok(Array.isArray(summarized.items[0].confirmed_facts));
+  assert.equal(summarized.items[0].tracking_decision, "暂时观察");
   assert.equal(summarized.summaryStats.llmConfigured, false);
   assert.equal(summarized.summaryStats.llmAttempted, 0);
-  assert.equal(summarized.summaryStats.fallbackCount, 0);
+  assert.equal(summarized.summaryStats.fallbackCount, 1);
 });
 
 test("article AI summaries use DEEPSEEK_API_KEY1 while daily briefs keep DEEPSEEK_API_KEY", () => {
@@ -250,6 +253,20 @@ test("daily summary LLM path covers non-default categories and overwrites old su
             message: {
               content: JSON.stringify({
                 translatedTitle: "央行发布政策更新",
+                what_happened: "央行发布政策指引。",
+                confirmed_facts: ["央行发布政策指引。", "更新提到市场流动性。"],
+                what_changed: "政策指引改变了市场对流动性的预期。",
+                impact_analysis: {
+                  market: "市场参与者可能调整利率和流动性预期。",
+                  industry: "金融机构需要关注流动性安排。",
+                  company: "目前证据不足",
+                  user: "目前证据不足"
+                },
+                uncertainties: ["原文不足以判断后续行动。"],
+                watch_variables: ["后续政策操作", "市场利率变化"],
+                tracking_decision: "值得追踪",
+                confidence_level: "中",
+                source_links: [{ title: "原文", url: "https://example.test/macro" }],
                 summary_short: "政策指引改变了市场对流动性的预期。",
                 summary_points: ["央行发布政策指引。", "更新提到市场流动性。"],
                 key_data: [],
@@ -270,11 +287,16 @@ test("daily summary LLM path covers non-default categories and overwrites old su
   assert.equal(summarized.items[0].category, "macro");
   assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
   assert.equal(summarized.items[0].summary_short, "政策指引改变了市场对流动性的预期。");
+  assert.equal(summarized.items[0].what_happened, "央行发布政策指引。");
+  assert.equal(summarized.items[0].tracking_decision, "值得追踪");
+  assert.equal(summarized.items[0].confidence_level, "中");
+  assert.equal(summarized.items[0].impact_analysis.market, "市场参与者可能调整利率和流动性预期。");
+  assert.equal(summarized.items[0].source_links[0].url, "https://example.test/macro");
   assert.equal(summarized.items[0].title_zh, "央行发布政策更新");
   assert.equal(summarized.channels.macro.items[0].summary_short, summarized.items[0].summary_short);
 });
 
-test("daily summary LLM path preserves old summary when a model call fails", async () => {
+test("daily summary LLM path uses extractive fallback when a model call fails", async () => {
   const latest = {
     generatedAt: "2026-05-28T00:00:00.000Z",
     channels: {
@@ -311,9 +333,13 @@ test("daily summary LLM path preserves old summary when a model call fails", asy
 
   assert.equal(summarized.summaryStats.llmAttempted, 1);
   assert.equal(summarized.summaryStats.llmSucceeded, 0);
+  assert.equal(summarized.summaryStats.fallbackCount, 1);
   assert.equal(summarized.summaryStats.errorCount, 1);
-  assert.equal(summarized.items[0].summary_short, "Existing LLM summary");
-  assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
+  assert.equal(summarized.items[0].summaryMethod, "extractive");
+  assert.equal(summarized.items[0].ai_model, "extractive");
+  assert.ok(summarized.items[0].what_happened);
+  assert.ok(Array.isArray(summarized.items[0].confirmed_facts));
+  assert.equal(summarized.items[0].tracking_decision, "暂时观察");
 });
 
 test("daily summary LLM path retries non-Chinese items until translated", async () => {

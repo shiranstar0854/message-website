@@ -3,3 +3,6 @@ desktop.ini
 node_modules/
 .tools/
 .wrangler/
+.env
+.env.*
+!.env.example

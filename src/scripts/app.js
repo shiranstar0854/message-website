@@ -176,8 +176,9 @@
   function selectTopHotspots(items, limit = 5) {
     const seenKeys = new Set();
     return [...(items || [])]
+      .filter((item) => !["C", "D"].includes(String(item.sourceTier || "").toUpperCase()))
       .sort((left, right) => hotspotRankScore(right) - hotspotRankScore(left)
-        || Number(right.score || 0) - Number(left.score || 0)
+        || Number(right.importance_score || right.score || 0) - Number(left.importance_score || left.score || 0)
         || new Date(right.publishedAt || 0).getTime() - new Date(left.publishedAt || 0).getTime())
       .filter((item) => {
         const key = hotspotEventKey(item);
@@ -193,19 +194,180 @@
     return keywords || String(displayTitle(item)).toLowerCase().slice(0, 24);
   }
 
+  function numberOrNull(value) {
+    const number = Number(value);
+    return Number.isFinite(number) ? number : null;
+  }
+
+  function clampScore(value) {
+    return Math.max(0, Math.min(100, Math.round(value)));
+  }
+
+  function hasUsefulText(value) {
+    const text = String(value || "").trim();
+    return Boolean(text && !/不足以判断|暂无|unknown/i.test(text));
+  }
+
+  function textPool(item) {
+    return [
+      item.title,
+      item.title_zh,
+      item.summary,
+      item.summary_zh,
+      item.summary_short,
+      item.aiSummary,
+      item.why_it_matters,
+      item.impact,
+      item.risks,
+      ...(item.article_keywords || []),
+      ...(item.keywords || []),
+      ...(item.impactAreas || []),
+      ...(item.tags || [])
+    ].filter(Boolean).join(" ").toLowerCase();
+  }
+
+  function sourceTrustScore(item) {
+    const preset = numberOrNull(item.source_trust_score);
+    if (preset !== null) return clampScore(preset);
+    if (item.sourceTier === "S") return 96;
+    if (item.sourceTier === "A") return 86;
+    if (item.sourceTier === "B") return 72;
+    if (item.sourceTier === "C") return 35;
+    if (item.sourceTier === "D") return 10;
+    const authority = item.sourceAuthority || item.sourceType;
+    if (["official-agency", "official-market"].includes(authority)) return 94;
+    if (authority === "official-media") return 88;
+    if (authority === "financial-media") return 78;
+    if (authority === "media" || authority === "webpage" || authority === "rss") return 68;
+    return clampScore(Number(item.credibility || 60));
+  }
+
+  function multiSourceScore(item) {
+    const preset = numberOrNull(item.multi_source_score);
+    if (preset !== null) return clampScore(preset);
+    const duplicateCount = Number(item.duplicateCount || 0);
+    const sourceBonus = ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority) ? 10 : 0;
+    return clampScore(45 + Math.min(40, duplicateCount * 14) + sourceBonus);
+  }
+
+  function eventImpactScore(item) {
+    const preset = numberOrNull(item.event_impact_score);
+    if (preset !== null) return clampScore(preset);
+    const impactAreas = item.impactAreas || [];
+    const keyData = item.key_data || [];
+    const base = Number(item.importance_score || item.score || 0);
+    const relevance = numberOrNull(item.event_relevance_score);
+    const explanationBonus = hasUsefulText(item.why_it_matters) || hasUsefulText(item.impact) || hasUsefulText(item.importance) ? 8 : 0;
+    return clampScore(Math.max(base, relevance || 0, 52 + Math.min(24, impactAreas.length * 8) + Math.min(12, keyData.length * 4) + explanationBonus));
+  }
+
+  function marketFeedbackScore(item) {
+    const preset = numberOrNull(item.market_feedback_score);
+    if (preset !== null) return clampScore(preset);
+    const pool = textPool(item);
+    let score = 35;
+    if (["finance", "business", "macro"].includes(item.category || item.primaryCategory)) score += 18;
+    if (/market|stock|share|股价|成交|市场|利率|通胀|监管|政策|开发者|官方回应/.test(pool)) score += 22;
+    if ((item.key_data || []).length) score += 12;
+    if (Number(item.duplicateCount || 0) > 0) score += 8;
+    return clampScore(score);
+  }
+
+  function followUpValueScore(item) {
+    const preset = numberOrNull(item.follow_up_value_score);
+    if (preset !== null) return clampScore(preset);
+    let score = 38;
+    if (item.timeline_event_id) score += 24;
+    if (hasUsefulText(item.risks)) score += 12;
+    if (hasUsefulText(item.why_it_matters) || hasUsefulText(item.impact)) score += 14;
+    if (hasUsefulText(item.importance) || hasUsefulText(item.summaryReason)) score += 8;
+    if (hasUsefulText(item.summary_short) || hasUsefulText(item.aiSummary) || hasUsefulText(item.contentExcerpt)) score += 8;
+    if ((item.summary_points || []).length >= 2) score += 6;
+    if ((item.impactAreas || []).length >= 2) score += 6;
+    return clampScore(score);
+  }
+
+  function freshnessScore(item) {
+    const preset = numberOrNull(item.freshness_score);
+    if (preset !== null) return clampScore(preset);
+    const publishedTime = new Date(item.publishedAt || item.fetchedAt || 0).getTime();
+    if (Number.isNaN(publishedTime)) return 35;
+    const ageHours = Math.max(0, (Date.now() - publishedTime) / (60 * 60 * 1000));
+    if (ageHours <= 6) return 100;
+    if (ageHours <= 24) return clampScore(92 - ageHours * 1.5);
+    if (ageHours <= 72) return clampScore(62 - (ageHours - 24) * 0.8);
+    return 20;
+  }
+
+  function uncertaintyPenalty(item) {
+    const preset = numberOrNull(item.uncertainty_penalty);
+    if (preset !== null) return Math.max(0, preset);
+    const confidence = String(item.confidence || "").toLowerCase();
+    let penalty = confidence === "low" ? 14 : confidence === "medium" ? 6 : 0;
+    if (/不足以判断|无法确认|未证实|传闻|rumor/.test(textPool(item))) penalty += 8;
+    return penalty;
+  }
+
+  function duplicationPenalty(item) {
+    const preset = numberOrNull(item.duplication_penalty);
+    if (preset !== null) return Math.max(0, preset);
+    return Math.min(8, Math.max(0, Number(item.duplicateCount || 0) - 2) * 2);
+  }
+
+  function clickbaitPenalty(item) {
+    const preset = numberOrNull(item.clickbait_penalty);
+    if (preset !== null) return Math.max(0, preset);
+    return /震惊|爆炸|史诗级|重磅突发|必看|狂飙|!{2,}|？{2,}|\?{2,}/.test(String(item.title || "")) ? 10 : 0;
+  }
+
+  function topScoreBreakdown(item) {
+    const preset = numberOrNull(item.top_score);
+    const source = sourceTrustScore(item);
+    const multi = multiSourceScore(item);
+    const impact = eventImpactScore(item);
+    const market = marketFeedbackScore(item);
+    const followUp = followUpValueScore(item);
+    const freshness = freshnessScore(item);
+    const uncertainty = uncertaintyPenalty(item);
+    const duplication = duplicationPenalty(item);
+    const clickbait = clickbaitPenalty(item);
+    const relevance = numberOrNull(item.event_relevance_score);
+    const lowRelevancePenalty = relevance !== null && relevance < 45 ? 12 : 0;
+    const computed = source * 0.20
+      + multi * 0.20
+      + impact * 0.20
+      + market * 0.15
+      + followUp * 0.15
+      + freshness * 0.10
+      - uncertainty
+      - duplication
+      - clickbait
+      - lowRelevancePenalty;
+
+    return {
+      source_trust_score: source,
+      multi_source_score: multi,
+      event_impact_score: impact,
+      market_feedback_score: market,
+      follow_up_value_score: followUp,
+      freshness_score: freshness,
+      uncertainty_penalty: uncertainty,
+      duplication_penalty: duplication,
+      clickbait_penalty: clickbait,
+      event_relevance_penalty: lowRelevancePenalty,
+      top_score: clampScore(preset !== null ? preset : computed)
+    };
+  }
+
   function hotspotRankScore(item) {
-    const publishedTime = new Date(item.publishedAt || 0).getTime();
-    const freshness = Number.isNaN(publishedTime) ? 0 : Math.max(0, 12 - (Date.now() - publishedTime) / (6 * 60 * 60 * 1000));
-    const readableBonus = (item.summary_short || item.aiSummary || item.summaryZh || item.contentExcerpt ? 8 : 0) + (item.why_it_matters || item.importance || item.summaryReason ? 5 : 0);
-    const sourceBonus = ["official-agency", "official-market", "official-media"].includes(item.sourceAuthority) ? 4 : 0;
-    return Number(item.importance_score || item.score || 0) + freshness + readableBonus + sourceBonus;
+    return topScoreBreakdown(item).top_score;
   }
 
   function renderTopHotspots(data) {
     const container = document.getElementById("top-hotspot-list");
     if (!container) return;
 
-    const items = selectTopHotspots(data.items || [], 12);
+    const items = selectTopHotspots(data.items || [], 5);
     if (!items.length) {
       container.innerHTML = `<div class="empty-state compact-empty">暂无核心热点，信息流更新后会自动生成。</div>`;
       return;
@@ -216,7 +378,8 @@
       const summary = shortExplanation(item);
       const source = item.source || "公开来源";
       const updatedAt = formatShortDate(item.publishedAt);
-      const heat = Number(item.importance_score || item.score || 0) >= 90 ? "高" : Number(item.importance_score || item.score || 0) >= 75 ? "中" : "低";
+      const topScore = hotspotRankScore(item);
+      const heat = topScore >= 65 ? "高" : topScore >= 45 ? "中" : "低";
       const cardContent = `
         <div class="top-hotspot-rank">#${index + 1}</div>
         <div class="top-hotspot-body">
@@ -226,6 +389,7 @@
           <div class="top-hotspot-meta">
             <span>来源：${escapeHtml(source)}</span>
             <span>重要度：${heat}</span>
+            <span>Top分：${topScore}</span>
             <span>更新时间：${escapeHtml(updatedAt)}</span>
           </div>
         </div>`;
@@ -248,55 +412,102 @@
     `;
   }
 
+  const HOME_EVENT_THEMES = [
+    ["openai", "ai 模型", "ai模型", "模型竞争"],
+    ["英伟达", "nvidia", "算力", "ai 算力", "芯片"],
+    ["美联储", "fed", "federal reserve", "利率", "宏观利率"]
+  ];
+
+  function eventSearchText(event) {
+    return [
+      event.id,
+      event.event_id,
+      event.title,
+      event.summary,
+      event.one_sentence_summary,
+      ...(Array.isArray(event.category) ? event.category : [event.category]),
+      ...(Array.isArray(event.impactAreas) ? event.impactAreas : [event.impactAreas])
+    ].filter(Boolean).join(" ").toLowerCase();
+  }
+
+  function selectHomeEvents(events, limit = 3) {
+    const ranked = [...(events || [])]
+      .sort((left, right) => eventRankScore(right) - eventRankScore(left)
+        || new Date(right.last_updated || right.updatedAt || 0).getTime() - new Date(left.last_updated || left.updatedAt || 0).getTime());
+    const selected = [];
+    const used = new Set();
+
+    for (const tokens of HOME_EVENT_THEMES) {
+      const match = ranked.find((event) => {
+        const id = event.event_id || event.id || event.title;
+        return !used.has(id) && tokens.some((token) => eventSearchText(event).includes(token));
+      });
+      if (match) {
+        selected.push(match);
+        used.add(match.event_id || match.id || match.title);
+      }
+    }
+
+    for (const event of ranked) {
+      if (selected.length >= limit) break;
+      const id = event.event_id || event.id || event.title;
+      if (!used.has(id)) {
+        selected.push(event);
+        used.add(id);
+      }
+    }
+
+    return selected.slice(0, limit);
+  }
+
+  function eventDetailUrl(event) {
+    const id = String(event?.event_id || event?.id || "").trim();
+    return id ? `event.html?id=${encodeURIComponent(id)}` : "events.html";
+  }
+
+  function eventLatestChange(event) {
+    const evidence = event.evidenceItems || event.items || [];
+    const latest = event.latestUpdate || evidence[0] || {};
+    return event.latest_change || latest.title || event.summary || event.one_sentence_summary || "等待最新信息更新";
+  }
+
   function renderHomeEvents(eventData) {
     const container = document.getElementById("home-event-list");
     if (!container) return;
-    const events = [...(eventData.events || [])]
-      .sort((left, right) => eventRankScore(right) - eventRankScore(left)
-        || new Date(right.updatedAt || 0).getTime() - new Date(left.updatedAt || 0).getTime())
-      .slice(0, 3);
+    const events = selectHomeEvents(eventData.events || [], 3);
     if (!events.length) {
       container.innerHTML = `<div class="empty-state compact-empty">暂无可追踪事件，信息流更新后会自动生成。</div>`;
       return;
     }
 
     container.innerHTML = events.map((event) => {
-      const evidence = event.evidenceItems || event.items || [];
-      const latest = event.latestUpdate || evidence[0] || {};
-      const latestUrl = window.MessageChooseRender.safeExternalUrl(latest.url);
-      const latestTitle = latestUrl
-        ? `<a href="${escapeHtml(window.MessageChooseRender.itemDetailUrl(latest))}">${escapeHtml(latest.title || "")}</a>`
-        : escapeHtml(latest.title || "");
+      const detailUrl = eventDetailUrl(event);
+      const updatedAt = event.last_updated || event.updatedAt;
       return `
         <article class="home-event-card">
-          <div class="home-event-head">
-            <div class="event-decision-meta">
-              <span>${escapeHtml(event.decisionLaneLabel || "决策简报")}</span>
-              <span>${escapeHtml(event.decisionSignal || "观察验证")}</span>
+          <a class="home-event-card-link" href="${escapeHtml(detailUrl)}" aria-label="查看${escapeHtml(event.title || "重点事件")}追踪详情">
+            <div class="home-event-head">
+              <div>
+                <div class="event-decision-meta">
+                  <span>${escapeHtml(event.current_status || "持续追踪")}</span>
+                  <span>重要性：${escapeHtml(event.importance_level || event.heat || "中")}</span>
+                </div>
+                <h3>${escapeHtml(event.title || "重点事件")}</h3>
+              </div>
             </div>
-            <h3>${escapeHtml(event.title || "重点事件")}</h3>
-            <span>热度：${escapeHtml(event.heat || "中")}</span>
-          </div>
-          <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
-          <div class="home-event-latest">
-            <strong>最新进展</strong>
-            <p>${latestTitle}</p>
-            <span>来源：${escapeHtml(latest.source || event.primarySource || "公开来源")} · 时间：${escapeHtml(formatShortDate(latest.publishedAt || event.updatedAt))}</span>
-          </div>
-          <ol class="home-event-timeline">
-            ${(event.keyDevelopments || event.timeline || evidence).slice(-4).map((item) => {
-              const itemTitle = window.MessageChooseRender.safeExternalUrl(item.url)
-                ? `<a href="${escapeHtml(window.MessageChooseRender.itemDetailUrl(item))}">${escapeHtml(item.title || "")}</a>`
-                : escapeHtml(item.title || "");
-              return `
-              <li>
-                <time>${escapeHtml(formatTimelineDate(item.date || item.publishedAt))}</time>
-                <span>${itemTitle}<small>${escapeHtml(item.source || "")}</small></span>
-              </li>
-            `;
-            }).join("")}
-          </ol>
-          <a class="text-link" href="events.html">查看事件追踪</a>
+            <p class="home-event-summary">${escapeHtml(event.one_sentence_summary || event.summary || "暂无事件摘要。")}</p>
+            <div class="home-event-latest">
+              <strong>最新变化</strong>
+              <p>${escapeHtml(eventLatestChange(event))}</p>
+            </div>
+            <dl class="home-event-fields">
+              <div><dt>当前状态</dt><dd>${escapeHtml(event.current_status || "持续追踪")}</dd></div>
+              <div><dt>重要性</dt><dd>${escapeHtml(event.importance_level || event.heat || "中")}</dd></div>
+              <div><dt>置信度</dt><dd>${escapeHtml(event.confidence_level || "中")}</dd></div>
+              <div><dt>更新时间</dt><dd>${escapeHtml(formatShortDate(updatedAt))}</dd></div>
+            </dl>
+            <span class="event-detail-button home-event-detail-button">查看追踪</span>
+          </a>
         </article>
       `;
     }).join("");
@@ -304,10 +515,13 @@
 
   function eventRankScore(event) {
     const evidence = event.evidenceItems || event.items || [];
-    const updatedTime = new Date(event.updatedAt || 0).getTime();
+    const updatedTime = new Date(event.last_updated || event.updatedAt || 0).getTime();
     const freshness = Number.isNaN(updatedTime) ? 0 : Math.max(0, 16 - (Date.now() - updatedTime) / (6 * 60 * 60 * 1000));
     const topScore = Number(evidence[0]?.score || 0);
-    return topScore + freshness + (event.whyItMatters ? 8 : 0) + (event.watchlist?.length ? 5 : 0) + Math.min(10, Number(event.itemCount || evidence.length || 0));
+    return topScore + freshness
+      + (event.whyItMatters || event.impact_analysis ? 8 : 0)
+      + ((event.watchlist || event.watch_variables)?.length ? 5 : 0)
+      + Math.min(10, Number(event.itemCount || evidence.length || 0));
   }
 
   async function init() {

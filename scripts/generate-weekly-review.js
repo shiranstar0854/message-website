@@ -1,6 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { readJson, readSources, writeJson } = require("./lib/file-utils");
+const { loadLocalEnv } = require("./lib/load-local-env");
 const { sortItems, truncateText } = require("./lib/pipeline");
 const {
   getLlmConfig,
@@ -224,6 +225,7 @@ async function generateWeeklyReview(nowIso = new Date().toISOString(), options =
 }
 
 if (require.main === module) {
+  loadLocalEnv(ROOT_DIR);
   generateWeeklyReview()
     .then((review) => {
       console.log(`Generated weekly review ${review.weekId} from ${review.totals.archiveCount} daily archives.`);

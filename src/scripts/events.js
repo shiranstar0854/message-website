@@ -57,6 +57,11 @@
     return url ? `article.html?url=${encodeURIComponent(url)}` : "article.html";
   }
 
+  function eventDetailUrl(event) {
+    const id = String(event?.event_id || event?.id || "").trim();
+    return id ? `event.html?id=${encodeURIComponent(id)}` : "events.html";
+  }
+
   function renderTextList(title, values, fallback) {
     const items = (values || []).filter(Boolean).slice(0, 4);
     return `
@@ -152,6 +157,7 @@
     }
 
     container.innerHTML = events.map((event) => {
+      const detailUrl = eventDetailUrl(event);
       const evidenceItems = event.evidenceItems || event.items || [];
       const timeline = event.timeline || evidenceItems;
       const latest = event.latestUpdate || evidenceItems[0] || {};
@@ -173,7 +179,10 @@
               <h2>${escapeHtml(event.title || "重点事件")}</h2>
               <p>${escapeHtml(event.summary || "暂无事件摘要。")}</p>
             </div>
-            <strong>${escapeHtml(event.heat || "中")}</strong>
+            <div class="event-card-actions">
+              <strong>${escapeHtml(event.heat || "中")}</strong>
+              <a class="event-detail-button" href="${escapeHtml(detailUrl)}">查看追踪详情</a>
+            </div>
           </div>
           <div class="event-latest-update">
             <strong>最新进展</strong>
