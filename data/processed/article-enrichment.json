@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-18T00:01:18.449Z",
+  "generatedAt": "2026-06-18T09:01:30.020Z",
   "totals": {
-    "attempted": 65,
-    "excerptCount": 60,
-    "imageCount": 40,
-    "failed": 5,
+    "attempted": 67,
+    "excerptCount": 66,
+    "imageCount": 39,
+    "failed": 1,
     "skipped": 2
   },
   "sources": {
@@ -51,9 +51,9 @@
     "microsoft-azure": {
       "sourceId": "microsoft-azure",
       "sourceName": "Microsoft Azure Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 6,
-      "excerptCount": 6,
-      "imageCount": 6,
+      "attempted": 7,
+      "excerptCount": 7,
+      "imageCount": 7,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 14,
-      "excerptCount": 14,
-      "imageCount": 14,
+      "attempted": 13,
+      "excerptCount": 13,
+      "imageCount": 13,
       "failed": 0,
       "skipped": 0,
       "disabled": false
