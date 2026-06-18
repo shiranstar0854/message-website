@@ -1,8 +1,5 @@
 (function () {
-  const FALLBACK_EVENTS = {
-    generatedAt: "",
-    events: []
-  };
+  const FALLBACK_EVENTS = { generatedAt: "", events: [] };
 
   async function loadJson(url, fallback) {
     if (window.location.protocol === "file:") return fallback;
@@ -54,12 +51,41 @@
     return url ? `article.html?url=${encodeURIComponent(url)}` : "article.html";
   }
 
-  function renderList(title, values, fallback) {
-    const items = (values || []).filter(Boolean);
+  function asArray(value) {
+    return Array.isArray(value) ? value.filter(Boolean) : [];
+  }
+
+  function primaryAnalysis(event) {
+    const notes = asArray(event.analysis_notes);
+    return notes.find((note) => note?.is_core_analysis)
+      || notes[0]
+      || event.llm_analysis
+      || {
+        core_change: event.decisionBrief || event.whyItMatters || event.one_sentence_summary || event.summary || "",
+        confirmed_facts: event.confirmed_facts || event.confirmedFacts || [],
+        impact_analysis: event.impact_analysis || {},
+        forward_looking_scenarios: [],
+        risk_factors: (event.uncertainties || event.riskFactors || []).map((risk) => ({ risk, type: "信息风险", reason: "" })),
+        counter_arguments: [],
+        watch_variables: event.watch_variables || event.watchlist || [],
+        judgment_update: event.decisionBrief || "",
+        tracking_decision: event.tracking_decision || event.decisionSignal || "",
+        confidence_level: event.confidence_level || "",
+        confidence_reason: "",
+        source_links: event.related_articles || event.evidenceItems || event.items || [],
+        analysis_quality_score: 0,
+        quality_flags: ["使用兼容字段展示"],
+        is_core_analysis: false
+      };
+  }
+
+  function renderList(title, values, fallback, extra = "") {
+    const items = asArray(values);
     return `
-      <section>
+      <section class="event-detail-section">
         <h2>${escapeHtml(title)}</h2>
-        ${items.length ? `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : `<p>${escapeHtml(fallback)}</p>`}
+        ${extra}
+        ${items.length ? `<ul class="event-analysis-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : `<p class="event-detail-muted">${escapeHtml(fallback)}</p>`}
       </section>
     `;
   }
@@ -67,10 +93,10 @@
   function renderImpactAnalysis(analysis) {
     const data = analysis || {};
     const entries = [
-      ["市场影响", data.market],
-      ["行业影响", data.industry],
-      ["公司影响", data.company],
-      ["用户影响", data.user]
+      ["市场", data.market],
+      ["行业", data.industry],
+      ["公司", data.company],
+      ["用户 / 开发者", data.user_or_developer || data.user]
     ];
     return `
       <section class="event-detail-section">
@@ -79,7 +105,7 @@
           ${entries.map(([label, value]) => `
             <article>
               <strong>${escapeHtml(label)}</strong>
-              <p>${escapeHtml(value || "目前证据不足，暂不下结论。")}</p>
+              <p>${escapeHtml(value || "目前证据不足，暂不做确定判断。")}</p>
             </article>
           `).join("")}
         </div>
@@ -87,8 +113,98 @@
     `;
   }
 
+  function renderScenarios(scenarios) {
+    const items = asArray(scenarios);
+    return `
+      <section class="event-detail-section">
+        <h2>前瞻情景</h2>
+        ${items.length ? `
+          <div class="event-analysis-card-grid">
+            ${items.map((item) => `
+              <article class="event-analysis-card">
+                <div class="event-analysis-card-head">
+                  <strong>${escapeHtml(item.scenario || "情景")}</strong>
+                  <span>${escapeHtml(item.confidence || "中")}</span>
+                </div>
+                <dl>
+                  <div><dt>触发条件</dt><dd>${escapeHtml(item.condition || "目前证据不足")}</dd></div>
+                  <div><dt>可能结果</dt><dd>${escapeHtml(item.possible_result || "目前证据不足")}</dd></div>
+                </dl>
+              </article>
+            `).join("")}
+          </div>
+        ` : `<p class="event-detail-muted">暂无可展示的前瞻情景。</p>`}
+      </section>
+    `;
+  }
+
+  function renderRisks(risks) {
+    const items = asArray(risks);
+    return `
+      <section class="event-detail-section">
+        <h2>风险因素</h2>
+        ${items.length ? `
+          <div class="event-analysis-card-grid">
+            ${items.map((item) => `
+              <article class="event-analysis-card risk-card">
+                <div class="event-analysis-card-head">
+                  <strong>${escapeHtml(item.type || "风险")}</strong>
+                </div>
+                <p>${escapeHtml(item.risk || "")}</p>
+                <small>${escapeHtml(item.reason || "目前证据不足")}</small>
+              </article>
+            `).join("")}
+          </div>
+        ` : `<p class="event-detail-muted">暂无风险因素记录。</p>`}
+      </section>
+    `;
+  }
+
+  function renderQuality(note) {
+    const score = Number(note.analysis_quality_score || 0);
+    const flags = asArray(note.quality_flags);
+    const isCore = Boolean(note.is_core_analysis);
+    return `
+      <section class="event-detail-section">
+        <h2>分析质量提示</h2>
+        <p>${isCore ? "该分析达到核心分析标准。" : "该分析质量未达到核心分析标准，仅作参考。"}</p>
+        <div class="event-quality-meta">
+          <span class="${isCore ? "quality-ok" : "quality-warning"}">${isCore ? "核心分析" : "参考分析"}</span>
+          <span>质量分：${score}</span>
+          ${note.status ? `<span>来源：${escapeHtml(note.status)}</span>` : ""}
+        </div>
+        ${flags.length ? `<ul class="event-analysis-list">${flags.map((flag) => `<li>${escapeHtml(flag)}</li>`).join("")}</ul>` : ""}
+      </section>
+    `;
+  }
+
+  function renderSourceLinks(links) {
+    const items = asArray(links).filter((item) => item.url);
+    return `
+      <section class="event-detail-section">
+        <h2>原文入口</h2>
+        ${items.length ? `
+          <ul class="event-item-list event-related-list">
+            ${items.map((article) => {
+              const originalUrl = safeExternalUrl(article.url);
+              const detailUrl = originalUrl ? articleDetailUrl(article) : "";
+              return `
+                <li>
+                  <h3>${detailUrl ? `<a href="${escapeHtml(detailUrl)}">${escapeHtml(article.title || "相关原文")}</a>` : escapeHtml(article.title || "相关原文")}</h3>
+                  <p>${escapeHtml(article.summary || "")}</p>
+                  <span>${escapeHtml(article.source || "公开来源")} · ${escapeHtml(formatDate(article.published_at || article.publishedAt))}</span>
+                  ${originalUrl ? `<div class="event-source-actions"><a href="${escapeHtml(detailUrl)}">查看摘要</a><a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">打开原文</a></div>` : ""}
+                </li>
+              `;
+            }).join("")}
+          </ul>
+        ` : `<p class="event-detail-muted">暂无可点击原文入口。</p>`}
+      </section>
+    `;
+  }
+
   function renderTimeline(timeline) {
-    const items = (timeline || []).filter(Boolean);
+    const items = asArray(timeline);
     return `
       <section class="event-detail-section">
         <h2>事件时间线</h2>
@@ -121,74 +237,30 @@
     `;
   }
 
-  function renderRelatedArticles(articles) {
-    const items = (articles || []).filter((article) => article.title || article.url);
+  function renderAnalysisHistory(event, activeNote) {
+    const notes = asArray(event.analysis_notes).filter((note) => note && note !== activeNote);
+    if (!notes.length) return "";
     return `
       <section class="event-detail-section">
-        <h2>相关原文</h2>
-        ${items.length ? `
-          <ul class="event-item-list event-related-list">
-            ${items.map((article) => {
-              const originalUrl = safeExternalUrl(article.url);
-              const detailUrl = originalUrl ? articleDetailUrl(article) : "";
-              return `
-                <li>
-                  <h3>${detailUrl ? `<a href="${escapeHtml(detailUrl)}">${escapeHtml(article.title || "相关原文")}</a>` : escapeHtml(article.title || "相关原文")}</h3>
-                  <p>${escapeHtml(article.summary || "")}</p>
-                  <span>${escapeHtml(article.source || "公开来源")} · ${escapeHtml(formatDate(article.published_at))} · 相关度 ${Number(article.relevance_score || 0)}</span>
-                  ${originalUrl ? `<div class="event-source-actions"><a href="${escapeHtml(detailUrl)}">查看摘要</a><a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">打开原文</a></div>` : ""}
-                </li>
-              `;
-            }).join("")}
-          </ul>
-        ` : `<p class="event-detail-muted">暂无相关原文。</p>`}
-      </section>
-    `;
-  }
-
-  function renderQuestions(questions) {
-    const items = (questions || []).filter(Boolean);
-    return `
-      <section class="event-detail-section">
-        <h2>我的追问</h2>
-        ${items.length ? `
-          <ul class="event-note-list">
-            ${items.map((item) => `
-              <li>
-                <strong>${escapeHtml(item.question || "")}</strong>
-                <span>${escapeHtml(item.status || "待分析")} · ${escapeHtml(item.created_at || "")}</span>
-              </li>
-            `).join("")}
-          </ul>
-        ` : `<p class="event-detail-muted">暂无追问记录，可在后续阶段通过 JSON 手动维护。</p>`}
-      </section>
-    `;
-  }
-
-  function renderAnalysisNotes(notes) {
-    const items = (notes || []).filter(Boolean);
-    return `
-      <section class="event-detail-section">
-        <h2>分析记录</h2>
-        ${items.length ? `
-          <ul class="event-note-list">
-            ${items.map((note) => `
-              <li>
-                <strong>${escapeHtml(note.title || "分析记录")}</strong>
-                <p>${escapeHtml(note.core_judgment || "")}</p>
-                <span>${escapeHtml(note.created_at || "")}</span>
-              </li>
-            `).join("")}
-          </ul>
-        ` : `<p class="event-detail-muted">暂无分析记录。后续可补充事实、推论、不确定性和观察变量。</p>`}
+        <h2>低质量或历史分析记录</h2>
+        <div class="event-analysis-card-grid">
+          ${notes.slice(0, 6).map((note) => `
+            <article class="event-analysis-card">
+              <div class="event-analysis-card-head">
+                <strong>${escapeHtml(note.core_change || "分析记录")}</strong>
+                <span>${Number(note.analysis_quality_score || 0)}</span>
+              </div>
+              <p>${escapeHtml(note.judgment_update || note.confidence_reason || "")}</p>
+              ${asArray(note.quality_flags).length ? `<small>${escapeHtml(note.quality_flags.join("；"))}</small>` : ""}
+            </article>
+          `).join("")}
+        </div>
       </section>
     `;
   }
 
   function renderEvent(container, event) {
-    const facts = event.confirmed_facts || event.confirmedFacts || [];
-    const watchVariables = event.watch_variables || event.watchlist || [];
-    const relatedArticles = event.related_articles || event.evidenceItems || event.items || [];
+    const note = primaryAnalysis(event);
     document.title = `${event.title || "事件追踪详情"} - Message Choose`;
     container.innerHTML = `
       <article class="event-detail-view">
@@ -197,7 +269,7 @@
           <div class="event-decision-meta">
             <span>${escapeHtml(event.current_status || "持续跟踪")}</span>
             <span>重要性：${escapeHtml(event.importance_level || event.heat || "中")}</span>
-            <span>置信度：${escapeHtml(event.confidence_level || event.sourceQuality?.confidence || "中")}</span>
+            <span>置信度：${escapeHtml(note.confidence_level || event.confidence_level || "中")}</span>
             <span>更新：${escapeHtml(event.last_updated || formatDate(event.updatedAt))}</span>
           </div>
           <h1>${escapeHtml(event.title || "重点事件")}</h1>
@@ -208,27 +280,34 @@
           </div>
         </header>
 
-        <section class="event-detail-section">
-          <h2>当前判断</h2>
-          <p>${escapeHtml(event.decisionBrief || "当前证据仍需继续观察。")}</p>
-          <div class="tag-row">
-            ${(event.category || event.impactAreas || event.keywords || []).slice(0, 8).map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}
-          </div>
+        ${renderQuality(note)}
+        <section class="event-detail-section event-core-change">
+          <h2>事件核心变化</h2>
+          <p>${escapeHtml(note.core_change || "目前证据不足。")}</p>
         </section>
-
+        ${renderList("已确认事实", note.confirmed_facts, "暂无足够确认事实，建议打开证据原文核对。", "<p class=\"event-section-note\">仅展示有来源支撑的信息。</p>")}
+        ${renderImpactAnalysis(note.impact_analysis)}
+        ${renderScenarios(note.forward_looking_scenarios)}
+        ${renderRisks(note.risk_factors)}
+        ${renderList("为什么这件事可能被高估", note.counter_arguments, "暂无反向观点记录。")}
+        ${renderList("后续观察变量", note.watch_variables, "暂无后续观察变量。")}
+        <div class="event-detail-grid">
+          <section class="event-detail-section">
+            <h2>判断变化</h2>
+            <p>${escapeHtml(note.judgment_update || "目前证据不足。")}</p>
+          </section>
+          <section class="event-detail-section">
+            <h2>置信度说明</h2>
+            <p><strong>${escapeHtml(note.confidence_level || "中")}</strong>：${escapeHtml(note.confidence_reason || "目前证据不足。")}</p>
+          </section>
+          <section class="event-detail-section">
+            <h2>是否继续追踪</h2>
+            <p>${escapeHtml(note.tracking_decision || event.tracking_decision || "暂时观察")}</p>
+          </section>
+        </div>
         ${renderTimeline(event.timeline)}
-        <div class="event-detail-grid">
-          ${renderList("已确认事实", facts, "暂无足够确认事实，建议打开证据原文核对。")}
-          ${renderList("不确定性", event.uncertainties || event.riskFactors, "暂无明确不确定性记录。")}
-          ${renderList("后续观察变量", watchVariables, "暂无后续观察变量。")}
-          ${renderList("市场 / 外部反馈", event.market_feedback, "暂无可展示的市场或外部反馈。")}
-        </div>
-        ${renderImpactAnalysis(event.impact_analysis)}
-        ${renderRelatedArticles(relatedArticles)}
-        <div class="event-detail-grid">
-          ${renderQuestions(event.my_questions)}
-          ${renderAnalysisNotes(event.analysis_notes)}
-        </div>
+        ${renderSourceLinks(note.source_links || event.related_articles || event.evidenceItems || event.items)}
+        ${renderAnalysisHistory(event, note)}
       </article>
     `;
   }
