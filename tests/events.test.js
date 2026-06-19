@@ -100,8 +100,21 @@ test("buildEvents emits the MVP event tracking data structure", () => {
   ], "2026-06-02T03:00:00.000Z");
 
   assert.equal(data.totalEvents, 1);
+  assert.equal(data.schema_version, "event-tracking.v4");
+  assert.equal(data.generated_at, "2026-06-02T03:00:00.000Z");
+  assert.equal(data.meta.event_count, 1);
+  assert.equal(data.decision_lanes.length, 3);
   const event = data.events[0];
   assert.equal(event.event_id, event.id);
+  assert.equal(event.lane_id, "china_us_ai");
+  assert.equal(event.priority_grade, "A");
+  assert.ok(event.definition.one_sentence);
+  assert.ok(event.decision.requires_follow_up);
+  assert.ok(event.profile.related_item_count >= 2);
+  assert.ok(event.current_judgment.summary);
+  assert.ok(event.deep_tracking.scenario_tree.length >= 3);
+  assert.ok(event.evidence.source_links.length >= 2);
+  assert.ok(event.latest_update.title);
   assert.equal(typeof event.one_sentence_summary, "string");
   assert.ok(event.current_status);
   assert.ok(Array.isArray(event.category));
@@ -113,7 +126,9 @@ test("buildEvents emits the MVP event tracking data structure", () => {
   assert.ok(event.timeline.length >= 2);
   assert.ok(event.timeline.every((entry) => entry.date && entry.title && entry.description && entry.evidence_type && entry.importance && Array.isArray(entry.sources)));
   assert.ok(Array.isArray(event.confirmed_facts));
+  assert.ok(event.confirmed_facts.every((fact) => fact.fact && fact.evidence_url !== undefined));
   assert.equal(typeof event.impact_analysis.market, "string");
+  assert.equal(typeof event.impact.market.impact, "string");
   assert.equal(typeof event.impact_analysis.industry, "string");
   assert.equal(typeof event.impact_analysis.company, "string");
   assert.equal(typeof event.impact_analysis.user, "string");

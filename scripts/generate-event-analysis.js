@@ -38,7 +38,21 @@ function buildEventAnalysisRules(rules = {}) {
 
 function normalizeList(value, limit = 8) {
   const values = Array.isArray(value) ? value : [value];
-  return [...new Set(values.map(normalizeText).filter(Boolean))].slice(0, limit);
+  return [...new Set(values.map((item) => {
+    if (item && typeof item === "object") {
+      return normalizeText(
+        item.fact
+        || item.variable
+        || item.risk
+        || item.uncertainty
+        || item.argument
+        || item.question
+        || item.title
+        || item.summary
+      );
+    }
+    return normalizeText(item);
+  }).filter(Boolean))].slice(0, limit);
 }
 
 function normalizeLinks(value, fallbackItems = [], limit = 8) {
@@ -412,6 +426,11 @@ function buildAnalysisNote(event, eventContext, factExtraction, analysis, qualit
   return {
     id: `${eventContext.event_id || event.id || "event"}-${Date.parse(generatedAt) || Date.now()}`,
     created_at: generatedAt,
+    model: {
+      provider: "deepseek",
+      name: model || "",
+      status
+    },
     source_article_id: sourceArticle.id || sourceArticle.url || "",
     core_change: analysis.core_change,
     confirmed_facts: analysis.confirmed_facts,
@@ -426,11 +445,43 @@ function buildAnalysisNote(event, eventContext, factExtraction, analysis, qualit
     confidence_reason: analysis.confidence_reason,
     source_links: analysis.source_links,
     fact_extraction: factExtraction,
+    analysis: {
+      core_change: analysis.core_change,
+      judgment_update: analysis.judgment_update,
+      confirmed_facts: analysis.confirmed_facts,
+      impact: analysis.impact_analysis,
+      forward_scenarios: analysis.forward_looking_scenarios,
+      risks: analysis.risk_factors,
+      counter_arguments: analysis.counter_arguments,
+      watch_variables: analysis.watch_variables,
+      tracking_decision: analysis.tracking_decision,
+      confidence: {
+        level: analysis.confidence_level,
+        reason: analysis.confidence_reason
+      }
+    },
     event_context: eventContext,
     analysis_quality_score: quality.analysis_quality_score,
     quality_flags: quality.quality_flags,
     is_core_analysis: quality.is_core_analysis,
-    model,
+    quality: {
+      score: quality.analysis_quality_score,
+      threshold: QUALITY_THRESHOLD,
+      flags: quality.quality_flags,
+      is_core_analysis: quality.is_core_analysis,
+      checks: {
+        has_core_change: Boolean(analysis.core_change && analysis.core_change !== EMPTY_EVIDENCE),
+        has_confirmed_facts: Boolean((analysis.confirmed_facts || []).length),
+        has_impact: Boolean(analysis.impact_analysis && IMPACT_KEYS.some((key) => analysis.impact_analysis[key] && analysis.impact_analysis[key] !== EMPTY_EVIDENCE)),
+        has_forward_scenarios: Boolean((analysis.forward_looking_scenarios || []).length),
+        has_risks: Boolean((analysis.risk_factors || []).length),
+        has_counter_arguments: Boolean((analysis.counter_arguments || []).length),
+        has_watch_variables: Boolean((analysis.watch_variables || []).length),
+        has_confidence_reason: Boolean(analysis.confidence_reason),
+        has_source_links: Boolean((analysis.source_links || []).length)
+      }
+    },
+    model_name: model,
     status,
     ...(errorMessage ? { error: truncateText(errorMessage, 180) } : {})
   };
@@ -469,6 +520,26 @@ function applyEventAnalysis(event, analysisNote, generatedAt, model, status = "s
     url: link.url,
     published_at: link.published_at
   }));
+  const confirmedFactObjects = (coreNote?.confirmed_facts || []).map((fact, index) => {
+    const link = relatedArticles[index] || relatedArticles[0] || {};
+    return {
+      fact,
+      evidence_url: link.url || "",
+      source: link.source || "",
+      confidence: coreNote.confidence_level || "中"
+    };
+  });
+  const watchVariableObjects = (coreNote?.watch_variables || []).map((variable) => ({
+    variable,
+    why_it_matters: "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+    signal_source: "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+    update_frequency: "事件触发"
+  }));
+  const uncertaintyObjects = (coreNote?.risk_factors || []).map((risk) => ({
+    uncertainty: risk.risk,
+    why_it_matters: risk.reason || "该不确定性会影响事件判断。",
+    needed_evidence: "需要权威来源、后续报道、市场数据或执行反馈验证。"
+  }));
   return {
     ...event,
     ...(coreNote ? {
@@ -477,11 +548,20 @@ function applyEventAnalysis(event, analysisNote, generatedAt, model, status = "s
       decisionBrief: coreNote.judgment_update || coreNote.core_change,
       whyItMatters: coreNote.core_change,
       confirmedFacts: coreNote.confirmed_facts,
-      confirmed_facts: coreNote.confirmed_facts,
+      confirmed_facts_legacy: coreNote.confirmed_facts,
+      confirmed_facts: confirmedFactObjects,
       impact_analysis: coreNote.impact_analysis,
-      uncertainties: coreNote.risk_factors.map((risk) => risk.risk),
+      current_judgment: {
+        ...(event.current_judgment || {}),
+        summary: coreNote.core_change,
+        basis: coreNote.confirmed_facts,
+        latest_change: coreNote.core_change,
+        judgment_update: coreNote.judgment_update,
+        confidence_reason: coreNote.confidence_reason
+      },
+      uncertainties: uncertaintyObjects,
       watchlist: coreNote.watch_variables,
-      watch_variables: coreNote.watch_variables,
+      watch_variables: watchVariableObjects,
       related_articles: relatedArticles,
       tracking_decision: coreNote.tracking_decision,
       confidence_level: coreNote.confidence_level

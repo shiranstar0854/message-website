@@ -81,11 +81,17 @@
 
   function renderList(title, values, fallback, extra = "") {
     const items = asArray(values);
+    const itemText = (item) => {
+      if (item && typeof item === "object") {
+        return item.fact || item.variable || item.risk || item.uncertainty || item.argument || item.question || item.title || item.summary || "";
+      }
+      return item;
+    };
     return `
       <section class="event-detail-section">
         <h2>${escapeHtml(title)}</h2>
         ${extra}
-        ${items.length ? `<ul class="event-analysis-list">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : `<p class="event-detail-muted">${escapeHtml(fallback)}</p>`}
+        ${items.length ? `<ul class="event-analysis-list">${items.map((item) => `<li>${escapeHtml(itemText(item))}</li>`).join("")}</ul>` : `<p class="event-detail-muted">${escapeHtml(fallback)}</p>`}
       </section>
     `;
   }

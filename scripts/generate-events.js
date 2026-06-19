@@ -9,6 +9,25 @@ const EVENTS_PATH = path.join(ROOT_DIR, "src", "data", "events.json");
 const MARKET_CONTEXT_PATH = path.join(ROOT_DIR, "src", "data", "market-context.json");
 const ARCHIVE_DIR = path.join(ROOT_DIR, "data", "archive", "daily");
 const EVENT_LOOKBACK_DAYS = 90;
+const EVENT_TRACKING_SCHEMA_VERSION = "event-tracking.v4";
+
+const DECISION_LANES = [
+  {
+    id: "us_equities",
+    label: "美股变化",
+    description: "追踪影响美股、科技股、指数、估值和市场预期的重点事件。"
+  },
+  {
+    id: "china_us_ai",
+    label: "中美 AI 发展",
+    description: "追踪中美 AI、算力、模型、芯片、监管和产业竞争相关事件。"
+  },
+  {
+    id: "china_policy",
+    label: "中国权威政策落地",
+    description: "追踪中国官方政策、监管文件、产业政策和落地执行进展。"
+  }
+];
 
 const EVENT_RULES = [
   { id: "ai-policy", label: "AI 政策与基础设施", pattern: /(\bai\b|artificial intelligence|大模型|人工智能|算力|芯片|AI政策)/i },
@@ -387,11 +406,238 @@ function decisionSignal(grade) {
 }
 
 function decisionLaneLabel(lane) {
+  return DECISION_LANES.find((item) => item.id === lane)?.label || "\u91cd\u70b9\u4e8b\u4ef6";
+}
+
+function decisionLaneDescription(lane) {
+  return DECISION_LANES.find((item) => item.id === lane)?.description || "";
+}
+
+function priorityGradeValue(grade) {
+  return ["A", "B", "C"].includes(grade) ? grade : "C";
+}
+
+function firstSeenAt(items = [], fallback = "") {
+  return items
+    .map((item) => item.publishedAt)
+    .filter(Boolean)
+    .sort()[0] || fallback;
+}
+
+function confidenceBasis(sourceQuality = {}) {
+  return sourceQuality.confidence || "medium";
+}
+
+function evidenceTypeCounts(items = []) {
+  return items.reduce((counts, item) => {
+    const type = evidenceTypeForItem(item);
+    counts[type] = (counts[type] || 0) + 1;
+    return counts;
+  }, {});
+}
+
+function structuredSourceLink(item = {}) {
   return {
-    us_equities: "\u7f8e\u80a1\u53d8\u5316",
-    china_us_ai: "\u4e2d\u7f8e AI \u53d1\u5c55",
-    china_policy: "\u4e2d\u56fd\u6743\u5a01\u653f\u7b56\u843d\u5730"
-  }[lane] || "\u91cd\u70b9\u4e8b\u4ef6";
+    title: item.title || "",
+    source: item.source || "",
+    url: item.url || "",
+    published_at: item.publishedAt || item.published_at || "",
+    summary: item.summary || "",
+    relevance_score: Number(item.score || item.relevance_score || 0)
+  };
+}
+
+function factObjects(facts = [], evidenceItems = [], confidence = "中") {
+  return (facts || []).slice(0, 8).map((fact, index) => {
+    const evidence = evidenceItems[index] || evidenceItems[0] || {};
+    return {
+      fact: typeof fact === "string" ? fact : normalizeText(fact.fact || fact.text || fact.summary),
+      evidence_url: evidence.url || fact.evidence_url || "",
+      source: evidence.source || fact.source || "",
+      confidence
+    };
+  }).filter((item) => item.fact);
+}
+
+function impactCell(impact, evidence, confidence = "中") {
+  return {
+    impact: impact || "目前证据不足",
+    evidence,
+    uncertainty: "后续影响仍需要更多来源和市场反馈验证。",
+    confidence
+  };
+}
+
+function structuredImpact(legacyImpact = {}, evidence = [], confidence = "中") {
+  return {
+    market: impactCell(legacyImpact.market, evidence, confidence),
+    industry: impactCell(legacyImpact.industry, evidence, confidence),
+    company: impactCell(legacyImpact.company, evidence, confidence),
+    user_or_developer: impactCell(legacyImpact.user_or_developer || legacyImpact.user, evidence, confidence),
+    policy_or_regulation: impactCell(legacyImpact.policy_or_regulation || "目前证据不足", evidence, "低")
+  };
+}
+
+function structuredMarketFeedback(values = [], latestUpdate = {}) {
+  return (values || []).slice(0, 6).map((value) => ({
+    type: "市场反馈",
+    description: String(value || ""),
+    source: latestUpdate.source || "",
+    url: latestUpdate.url || "",
+    date: dateOnly(latestUpdate.publishedAt || latestUpdate.published_at || ""),
+    interpretation: "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+    confidence: "中"
+  }));
+}
+
+function structuredScenarios(event) {
+  const watchSignals = (event.watchlist || event.watch_variables || []).slice(0, 3);
+  return [
+    {
+      scenario_id: "scenario-a",
+      name: "乐观情景",
+      scenario: "乐观情景",
+      condition: "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+      path: ["新证据出现", "当前判断被强化", "事件优先级继续保持"],
+      possible_result: "事件成为需要持续跟踪的高优先级主线。",
+      probability: "中",
+      impact_level: event.importance_level || "中",
+      confidence: "中",
+      watch_signals: watchSignals
+    },
+    {
+      scenario_id: "scenario-b",
+      name: "中性情景",
+      scenario: "中性情景",
+      condition: "后续只有零散补充信息，缺少决定性证据。",
+      path: ["信息继续更新", "缺少关键验证", "维持观察"],
+      possible_result: "事件保留在观察列表，但不提高判断强度。",
+      probability: "中",
+      impact_level: "中",
+      confidence: "中",
+      watch_signals: watchSignals.slice(0, 2)
+    },
+    {
+      scenario_id: "scenario-c",
+      name: "反转情景",
+      scenario: "反转情景",
+      condition: "权威来源、市场反馈或后续执行结果否定当前判断。",
+      path: ["反向证据出现", "原判断被削弱", "降低跟踪优先级"],
+      possible_result: "当前事件可能只是短期噪声，需要重新评估。",
+      probability: "低",
+      impact_level: event.importance_level || "中",
+      confidence: "低",
+      watch_signals: watchSignals.slice(0, 2)
+    }
+  ];
+}
+
+function structuredRisks(risks = []) {
+  return (risks || []).slice(0, 6).map((risk) => ({
+    risk_type: "信息风险",
+    risk,
+    trigger: "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+    possible_consequence: "事件重要性可能被高估，跟踪优先级需要下调。",
+    severity: "中",
+    probability: "中",
+    watch_signal: "观察是否出现权威澄清、市场反应或执行细节。"
+  }));
+}
+
+function structuredCounterArguments(event) {
+  return [{
+    argument: "该事件可能被高估或误读。",
+    reason: "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+    what_would_prove_it_wrong: "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+  }];
+}
+
+function structuredUncertainties(values = []) {
+  return (values || []).slice(0, 6).map((uncertainty) => ({
+    uncertainty,
+    why_it_matters: "该不确定性会影响事件优先级和后续判断方向。",
+    needed_evidence: "需要权威来源、后续报道、市场数据或执行反馈验证。"
+  }));
+}
+
+function structuredWatchVariables(values = []) {
+  return (values || []).slice(0, 6).map((variable) => ({
+    variable,
+    why_it_matters: "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+    signal_source: "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+    update_frequency: "事件触发"
+  }));
+}
+
+function structuredNextQuestions(values = [], event = {}) {
+  const base = values.length ? values : [
+    `${event.title || "该事件"}是否会形成持续影响？`,
+    "后续是否有权威来源或市场反馈验证当前判断？"
+  ];
+  return base.slice(0, 5).map((question) => ({
+    question,
+    why_it_matters: "该问题决定事件是否值得继续提高跟踪优先级。",
+    status: "待验证"
+  }));
+}
+
+function buildDeepTracking(event, evidenceGaps = []) {
+  const watchDashboard = structuredWatchVariables(event.watchlist || event.watch_variables || []);
+  return {
+    tracking_goal: `判断${event.title || "该事件"}是否会改变行业格局、市场预期、政策方向或个人决策。`,
+    research_question: event.definition?.core_question || `这个事件后续真正需要回答的问题是什么？`,
+    current_thesis: {
+      thesis: event.current_judgment?.summary || event.decisionBrief || event.summary || "",
+      confidence: event.confidence_level || "中",
+      basis: (event.confirmedFacts || event.confirmed_facts_legacy || []).slice(0, 3),
+      what_would_change_this_view: evidenceGaps.slice(0, 3)
+    },
+    core_tensions: [{
+      tension: "短期信息热度与长期可验证影响之间的张力。",
+      side_a: "现有高分来源提示事件值得跟踪。",
+      side_b: "后续影响仍需要更多权威证据和市场反馈。",
+      why_it_matters: "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+    }],
+    key_assumptions: [{
+      assumption: "当前高分条目和来源覆盖能代表该事件的主要变化。",
+      risk_if_wrong: "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+      evidence_needed: "需要更多权威来源、市场反馈或执行细节交叉验证。"
+    }],
+    causal_chain: [{
+      step: 1,
+      cause: "高分信息和多来源报道集中出现。",
+      mechanism: "这些信息改变市场、行业、政策或用户对事件的预期。",
+      effect: "事件进入重点跟踪列表，并设置后续观察变量。",
+      confidence: event.confidence_level || "中"
+    }],
+    second_order_effects: [{
+      effect: "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+      logic_chain: ["信息集中出现", "影响外部预期", "进一步影响市场、行业、公司、政策或用户行为"],
+      affected_areas: event.impactAreas || [],
+      confidence: event.confidence_level || "中"
+    }],
+    scenario_tree: structuredScenarios(event),
+    risk_paths: structuredRisks(event.riskFactors || []),
+    contrarian_tracking: {
+      main_counter_view: "该事件可能只是短期信息集中，而非持续主线。",
+      counter_arguments: structuredCounterArguments(event),
+      disconfirming_signals: evidenceGaps.slice(0, 3)
+    },
+    watch_dashboard: watchDashboard,
+    judgment_history: [{
+      date: dateOnly(event.updatedAt || event.last_seen_at || ""),
+      judgment: event.current_judgment?.summary || event.decisionBrief || event.summary || "",
+      change_type: "初始判断",
+      reason: event.decisionBrief || "",
+      evidence_item_ids: (event.items || []).map((item) => item.id).filter(Boolean).slice(0, 5)
+    }],
+    open_questions: structuredNextQuestions([], event),
+    manual_review: {
+      needed: (event.evidenceGaps || []).length > 0 || event.confidence_level !== "高",
+      reason: "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+      review_focus: ["核对原文事实", "检查是否有反向证据", "观察后续权威发布或市场反馈"]
+    }
+  };
 }
 
 function buildDecisionBrief(lane, grade, items, eventMarketContext, policyStatus) {
@@ -634,6 +880,7 @@ function buildMarketFeedback(eventMarketContext = {}) {
 
 function buildRelatedArticles(evidenceItems) {
   return (evidenceItems || []).map((item) => ({
+    item_id: item.id || "",
     title: item.title || "",
     source: item.source || "",
     url: item.url || "",
@@ -641,6 +888,37 @@ function buildRelatedArticles(evidenceItems) {
     summary: item.summary || "",
     relevance_score: Number(item.score || 0)
   }));
+}
+
+function buildEventQuality(event = {}) {
+  const checks = {
+    has_definition: Boolean(event.definition?.one_sentence),
+    has_current_judgment: Boolean(event.current_judgment?.summary),
+    has_deep_tracking: Boolean(event.deep_tracking),
+    has_core_tensions: Boolean(event.deep_tracking?.core_tensions?.length),
+    has_key_assumptions: Boolean(event.deep_tracking?.key_assumptions?.length),
+    has_second_order_effects: Boolean(event.deep_tracking?.second_order_effects?.length),
+    has_scenario_tree: Boolean(event.deep_tracking?.scenario_tree?.length),
+    has_risk_paths: Boolean(event.deep_tracking?.risk_paths?.length),
+    has_contrarian_tracking: Boolean(event.deep_tracking?.contrarian_tracking),
+    has_watch_dashboard: Boolean(event.deep_tracking?.watch_dashboard?.length),
+    has_judgment_history: Boolean(event.deep_tracking?.judgment_history?.length),
+    has_timeline: Boolean(event.timeline?.length),
+    has_confirmed_facts: Boolean(event.confirmed_facts?.length),
+    has_impact: Boolean(event.impact),
+    has_risks: Boolean(event.risks?.length),
+    has_forward_scenarios: Boolean(event.forward_scenarios?.length),
+    has_counter_arguments: Boolean(event.counter_arguments?.length),
+    has_watch_variables: Boolean(event.watch_variables?.length),
+    has_next_questions: Boolean(event.next_questions?.length),
+    has_source_links: Boolean(event.evidence?.source_links?.length)
+  };
+  const passed = Object.values(checks).filter(Boolean).length;
+  return {
+    score: Math.round((passed / Object.keys(checks).length) * 100),
+    flags: Object.entries(checks).filter(([, value]) => !value).map(([key]) => key),
+    checks
+  };
 }
 
 function enrichTimelineItem(item) {
@@ -670,6 +948,7 @@ function latestUpdateItem(items) {
     source: latest.source,
     url: latest.url,
     publishedAt: latest.publishedAt,
+    published_at: latest.publishedAt,
     score: Number(latest.score || 0)
   };
 }
@@ -682,6 +961,8 @@ function timelineItem(item) {
     description: compactSentence(displaySummary(item), 140),
     evidence_type: evidenceTypeForItem(item),
     importance: levelFromScore(Number(item.score || 0), 1),
+    does_it_change_judgment: Number(item.score || 0) >= 85,
+    impact: item.importance || item.why_it_matters || item.summaryReason || compactSentence(displaySummary(item), 140),
     sources: [{
       title: displayTitle(item),
       source: item.source || "",
@@ -841,27 +1122,37 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
       const relatedEntities = extractRelatedEntities(sortedItems, eventMarketContext.tickers);
       const whyItMatters = buildWhyItMatters(topItems, group.label);
       const enrichedTimeline = timeline.map(enrichTimelineItem);
-      return {
+      const confirmedFactTexts = buildConfirmedFacts(topItems);
+      const summary = buildExplainedSummary(topItems, group.label);
+      const oneSentenceSummary = buildExplainedSummary(topItems, group.label);
+      const decisionBrief = buildDecisionBrief(decisionLane, grade, topItems, eventMarketContext, policyStatus);
+      const latestChange = buildLatestChange(latestUpdate);
+      const impactAnalysis = buildImpactAnalysis(decisionLane, eventMarketContext, topItems, group.label);
+      const relatedArticles = buildRelatedArticles(evidenceItems);
+      const evidenceSummary = relatedArticles.map((item) => item.summary || item.title).filter(Boolean).slice(0, 3);
+      const status = currentStatusForGrade(grade);
+      const firstSeen = firstSeenAt(sortedItems, generatedAt);
+      const legacyEvent = {
         id: group.id,
         event_id: group.id,
         title: group.label,
-        summary: buildExplainedSummary(topItems, group.label),
-        one_sentence_summary: buildExplainedSummary(topItems, group.label),
+        summary,
+        one_sentence_summary: oneSentenceSummary,
         decisionLane,
         decisionLaneLabel: laneLabel,
         decisionGrade: grade,
         decisionSignal: decisionSignal(grade),
-        decisionBrief: buildDecisionBrief(decisionLane, grade, topItems, eventMarketContext, policyStatus),
-        current_status: currentStatusForGrade(grade),
+        decisionBrief,
+        current_status: status,
         category: buildEventCategories(impactAreas, laneLabel),
         importance_level: levelFromScore(topScore, sortedItems.length),
         confidence_level: confidenceLevel(sourceQuality),
         last_updated: dateOnly(updatedAt, generatedAt),
-        latest_change: buildLatestChange(latestUpdate),
+        latest_change: latestChange,
         marketContext: eventMarketContext,
         policyStatus,
-        confirmedFacts: buildConfirmedFacts(topItems),
-        confirmed_facts: buildConfirmedFacts(topItems),
+        confirmedFacts: confirmedFactTexts,
+        confirmed_facts_legacy: confirmedFactTexts,
         marketRelevance: buildMarketRelevance(decisionLane, eventMarketContext, topItems),
         riskFactors,
         evidenceGaps,
@@ -869,7 +1160,7 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         relatedEntities,
         whyItMatters,
         impactAreas,
-        impact_analysis: buildImpactAnalysis(decisionLane, eventMarketContext, topItems, group.label),
+        impact_analysis: impactAnalysis,
         market_feedback: buildMarketFeedback(eventMarketContext),
         uncertainties: uniqueValues([...riskFactors, ...evidenceGaps], 8),
         watchlist,
@@ -885,11 +1176,97 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         keywords: [...new Set(sortedItems.flatMap((item) => [...(item.impactAreas || []), ...itemKeywords(item)]).filter(hasChineseText))].slice(0, 8),
         timeline: enrichedTimeline,
         evidenceItems,
-        related_articles: buildRelatedArticles(evidenceItems),
+        related_articles: relatedArticles,
         my_questions: [],
         analysis_notes: [],
         items: evidenceItems
       };
+      const confidence = confidenceLevel(sourceQuality);
+      const event = {
+        ...legacyEvent,
+        lane_id: decisionLane,
+        lane_label: laneLabel,
+        status: status === "持续跟踪" ? "active" : "watching",
+        priority_grade: priorityGradeValue(grade),
+        importance_score: topScore,
+        first_seen_at: firstSeen,
+        last_seen_at: updatedAt,
+        updated_at: updatedAt,
+        definition: {
+          one_sentence: oneSentenceSummary,
+          background: summary,
+          core_question: `${group.label}后续是否会形成持续影响，并改变市场、行业、政策或用户判断？`,
+          why_it_matters: whyItMatters,
+          scope: `追踪${laneLabel}相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。`
+        },
+        decision: {
+          signal: decisionSignal(grade),
+          brief: decisionBrief,
+          rationale: [
+            `属于${laneLabel}主线`,
+            `重要性评分为 ${topScore}`,
+            `证据置信度为${confidence}`
+          ],
+          market_symbols: eventMarketContext.tickers || [],
+          policy_status: policyStatus || "",
+          requires_follow_up: grade !== "C"
+        },
+        profile: {
+          impact_areas: impactAreas,
+          entities: {
+            companies: relatedEntities.filter((entity) => US_EQUITY_SYMBOLS.includes(entity) || hasAnyText(entity, ["OpenAI", "NVIDIA", "Microsoft", "Google", "Meta", "Amazon", "Tesla"])),
+            people: relatedEntities.filter((entity) => hasAnyText(entity, ["Musk", "马斯克"])),
+            institutions: relatedEntities.filter((entity) => hasAnyText(entity, [...CHINA_POLICY_SOURCES, "SEC", "Federal Reserve", "NASA", "FAA", "FCC"])),
+            countries_or_regions: [],
+            products_or_technologies: relatedEntities.filter((entity) => hasAnyText(entity, AI_ENTITY_ALIASES))
+          },
+          related_item_count: sortedItems.length
+        },
+        current_judgment: {
+          summary: decisionBrief || summary,
+          basis: confirmedFactTexts.slice(0, 4),
+          latest_change: latestChange,
+          judgment_update: "初始判断",
+          confidence_reason: sourceQuality.confidence === "high"
+            ? "包含权威来源或多来源验证，当前判断置信度较高。"
+            : "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
+        },
+        evidence: {
+          source_count: sourceQuality.sourceCount,
+          official_source_count: sourceQuality.officialCount,
+          financial_media_count: sourceQuality.financialMediaCount,
+          timeline_count: enrichedTimeline.length,
+          confidence_basis: confidenceBasis(sourceQuality),
+          evidence_types: evidenceTypeCounts(topItems),
+          primary_source: {
+            name: latestUpdate.source || topItems[0]?.source || "",
+            url: latestUpdate.url || topItems[0]?.url || ""
+          },
+          source_links: relatedArticles,
+          evidence_gaps: evidenceGaps
+        },
+        latest_update: {
+          title: latestUpdate.title || "",
+          summary: latestUpdate.summary || "",
+          source: latestUpdate.source || "",
+          url: latestUpdate.url || "",
+          published_at: latestUpdate.publishedAt || latestUpdate.published_at || "",
+          score: Number(latestUpdate.score || 0)
+        },
+        confirmed_facts: factObjects(confirmedFactTexts, evidenceItems, confidence),
+        impact: structuredImpact(impactAnalysis, evidenceSummary, confidence),
+        market_feedback: structuredMarketFeedback(buildMarketFeedback(eventMarketContext), latestUpdate),
+        forward_scenarios: structuredScenarios(legacyEvent),
+        risks: structuredRisks(riskFactors),
+        counter_arguments: structuredCounterArguments(legacyEvent),
+        uncertainties: structuredUncertainties(uniqueValues([...riskFactors, ...evidenceGaps], 8)),
+        watch_variables: structuredWatchVariables(watchlist),
+        next_questions: structuredNextQuestions([], legacyEvent),
+        related_items: relatedArticles
+      };
+      event.deep_tracking = buildDeepTracking(event, evidenceGaps);
+      event.quality = buildEventQuality(event);
+      return event;
     })
     .filter((event) => event.itemCount >= 2
       && event.timeline.length >= 2
@@ -902,12 +1279,33 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
     .slice(0, Number(options.limit || 8));
 
   return {
+    schema_version: EVENT_TRACKING_SCHEMA_VERSION,
+    generated_at: generatedAt,
+    meta: {
+      lookback_days: Number(options.lookbackDays || EVENT_LOOKBACK_DAYS),
+      event_count: events.length,
+      market_context: {
+        status: marketContext.status || "missing",
+        generated_at: marketContext.generatedAt || ""
+      },
+      llm: {
+        enabled: Boolean(options.llmProduction?.enabled),
+        provider: options.llmProduction?.provider || "",
+        method: options.llmProduction?.provider?.includes("chat") ? "chat-completions" : (options.llmProduction?.provider || ""),
+        model: options.llmProduction?.model || ""
+      },
+      stats: {
+        fallback_count: 0,
+        error_count: 0
+      }
+    },
+    decision_lanes: DECISION_LANES,
     generatedAt,
     lookbackDays: Number(options.lookbackDays || EVENT_LOOKBACK_DAYS),
     decisionLanes: {
-      us_equities: "\u7f8e\u80a1\u53d8\u5316",
-      china_us_ai: "\u4e2d\u7f8e AI \u53d1\u5c55",
-      china_policy: "\u4e2d\u56fd\u6743\u5a01\u653f\u7b56\u843d\u5730"
+      us_equities: decisionLaneLabel("us_equities"),
+      china_us_ai: decisionLaneLabel("china_us_ai"),
+      china_policy: decisionLaneLabel("china_policy")
     },
     marketContextStatus: marketContext.status || "missing",
     marketContextGeneratedAt: marketContext.generatedAt || "",
@@ -960,7 +1358,12 @@ function generateEvents(options = {}) {
   const generatedAt = latest.generatedAt || new Date().toISOString();
   const archiveItems = readArchiveItems(generatedAt, options);
   const marketContext = options.marketContext || readJson(MARKET_CONTEXT_PATH, { status: "missing", symbols: {}, topMovers: [] });
-  const data = buildEvents([...(archiveItems || []), ...(latest.items || [])], generatedAt, { ...options, marketContext });
+  const rules = options.rules || readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
+  const data = buildEvents([...(archiveItems || []), ...(latest.items || [])], generatedAt, {
+    ...options,
+    marketContext,
+    llmProduction: options.llmProduction || rules.llmProduction || {}
+  });
   fs.mkdirSync(path.dirname(EVENTS_PATH), { recursive: true });
   fs.writeFileSync(EVENTS_PATH, `${JSON.stringify(data, null, 2)}\n`, "utf8");
   fs.writeFileSync(LATEST_PATH, `${JSON.stringify(applyTimelineEventIds(latest, data.events), null, 2)}\n`, "utf8");
@@ -969,7 +1372,7 @@ function generateEvents(options = {}) {
 
 if (require.main === module) {
   const data = generateEvents();
-  console.log(`Generated ${data.totalEvents} event clusters.`);
+  console.log(`Generated ${data.meta?.event_count || data.totalEvents || 0} event clusters.`);
 }
 
 module.exports = {

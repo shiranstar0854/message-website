@@ -116,8 +116,9 @@
     const healthy = sources.filter((source) => source.status === "healthy").length;
     const empty = sources.filter((source) => source.status === "empty").length;
     const abnormal = sources.filter((source) => source.status === "failed").length;
-    const summaries = daily.channelSummaries || [];
-    meta.textContent = `摘要更新 ${formatShortDate(daily.generatedAt || data.generatedAt)}；有新内容来源 ${healthy} 个，暂无48小时内新内容 ${empty} 个，抓取失败 ${abnormal} 个。`;
+    const summaries = daily.channels || daily.channelSummaries || [];
+    const dailyGeneratedAt = daily.generated_at || daily.generatedAt || data.generatedAt;
+    meta.textContent = `摘要更新 ${formatShortDate(dailyGeneratedAt)}；有新内容来源 ${healthy} 个，暂无48小时内新内容 ${empty} 个，抓取失败 ${abnormal} 个。`;
 
     if (!summaries.length) {
       grid.innerHTML = `
@@ -128,17 +129,23 @@
       return;
     }
 
-    grid.innerHTML = summaries.slice(0, 3).map((channel) => `
-      <article class="focus-card">
-        <strong>${escapeHtml(channel.label || channel.id)}</strong>
-        <p>${escapeHtml(channel.overview || "")}</p>
-        ${(channel.keyPoints || []).length ? `
-          <ul>
-            ${(channel.keyPoints || []).slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
-          </ul>
-        ` : ""}
-      </article>
-    `).join("");
+    grid.innerHTML = summaries.slice(0, 3).map((channel) => {
+      const overview = channel.thinking_brief?.surface_summary || channel.overview || "";
+      const keyPoints = Array.isArray(channel.key_signals)
+        ? channel.key_signals.map((item) => item.signal).filter(Boolean)
+        : (channel.keyPoints || []);
+      return `
+        <article class="focus-card">
+          <strong>${escapeHtml(channel.label || channel.id)}</strong>
+          <p>${escapeHtml(overview)}</p>
+          ${keyPoints.length ? `
+            <ul>
+              ${keyPoints.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
+            </ul>
+          ` : ""}
+        </article>
+      `;
+    }).join("");
   }
 
   function channelLabel(data, category) {

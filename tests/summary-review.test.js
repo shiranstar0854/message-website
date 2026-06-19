@@ -466,14 +466,49 @@ test("daily summary output builds channel-level important-affairs summaries", as
     daily: { maxHighlightsPerChannel: 3 }
   }, "2026-05-28T01:00:00.000Z", { env: {} });
 
-  assert.equal(output.summaryShape, "channel-daily-brief");
-  assert.equal(output.totalSummaries, 3);
-  assert.deepEqual(output.channelSummaries.map((channel) => channel.id), ["tech", "finance", "news"]);
-  const techSummary = output.channelSummaries.find((channel) => channel.id === "tech");
-  assert.equal(techSummary.highlights[0].title, "AI platform update");
-  assert.match(techSummary.focus, /AI platform update/);
-  assert.match(techSummary.whyItMatters, /Official Source/);
-  assert.equal(techSummary.watchlist.length, 1);
+  assert.equal(output.schema_version, "daily-brief.v4");
+  assert.equal(output.generated_at, "2026-05-28T01:00:00.000Z");
+  assert.equal(output.meta.stats.channel_count, 3);
+  assert.equal(output.meta.stats.item_count, 3);
+  assert.deepEqual(output.channels.map((channel) => channel.id), ["tech", "finance", "news"]);
+  const techSummary = output.channels.find((channel) => channel.id === "tech");
+  assert.equal(techSummary.coverage.top_item_ids[0], "tech-1");
+  assert.equal(techSummary.thinking_brief.headline, "科技频道今日核心判断");
+  assert.ok(Array.isArray(techSummary.key_signals));
+  assert.ok(Array.isArray(techSummary.risks));
+  assert.equal(techSummary.quality.checks.has_core_judgment, true);
+  const techItem = output.items.find((item) => item.id === "tech-1");
+  assert.equal(techItem.title.original, "AI platform update");
+  assert.equal(techItem.source.id, "official-source");
+  assert.equal(techItem.summary.one_sentence, "A platform update changed the developer workflow.");
+  assert.equal(techItem.facts[0].status, "confirmed");
+  assert.equal(techItem.quality.is_structured, true);
+  assert.ok(Array.isArray(output.event_candidates));
+});
+
+test("daily summary output can ignore stale item summary errors for brief-only runs", async () => {
+  const output = await buildDailySummaryOutput({
+    summaryMethod: "extractive",
+    summaryStats: { fallbackCount: 8, errorCount: 8 },
+    summaryErrors: [{ message: "stale article summary error" }],
+    items: [{
+      id: "tech-1",
+      title: "AI platform update",
+      url: "https://example.test/tech",
+      source: "Official Source",
+      category: "tech",
+      score: 92,
+      aiSummary: "A platform update changed the developer workflow."
+    }]
+  }, {
+    method: "extractive",
+    llmProduction: { enabled: false },
+    daily: { maxHighlightsPerChannel: 3 }
+  }, "2026-05-28T01:00:00.000Z", { env: {}, includeExistingItemStats: false });
+
+  assert.equal(output.meta.stats.fallback_count, 0);
+  assert.equal(output.meta.stats.error_count, 0);
+  assert.equal(output.errors, undefined);
 });
 
 test("daily channel summary uses one DeepSeek call when configured", async () => {

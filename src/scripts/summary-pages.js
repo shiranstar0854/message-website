@@ -30,10 +30,51 @@
     }).format(date);
   }
 
+  function sourceName(item) {
+    return item.source?.name || item.source || "";
+  }
+
+  function itemScore(item) {
+    return Number(item.quality?.score || item.importance_score || item.score || 0);
+  }
+
+  function itemKeyPoints(item) {
+    if (Array.isArray(item.summary?.key_points)) return item.summary.key_points;
+    if (Array.isArray(item.summary_points)) return item.summary_points;
+    return [];
+  }
+
+  function itemSummaryText(item) {
+    return item.summary?.one_sentence || item.summary_short || item.aiSummary || item.summary || "";
+  }
+
+  function channelOverview(channel) {
+    return channel.thinking_brief?.surface_summary || channel.overview || "";
+  }
+
+  function channelFocus(channel) {
+    return channel.thinking_brief?.core_judgment || channel.focus || "";
+  }
+
+  function channelWhyItMatters(channel) {
+    return channel.thinking_brief?.why_it_matters || channel.whyItMatters || "";
+  }
+
+  function channelKeyPoints(channel) {
+    if (Array.isArray(channel.key_signals)) return channel.key_signals.map((item) => item.signal).filter(Boolean);
+    return channel.keyPoints || [];
+  }
+
+  function channelWatchlist(channel) {
+    return (channel.watch_variables || channel.watchlist || []).map((item) => item.variable || item).filter(Boolean);
+  }
+
   function renderHighlight(item) {
     const detailUrl = window.MessageChooseRender.itemDetailUrl(item);
-    const title = `<a href="${escapeHtml(detailUrl)}">${escapeHtml(item.title)}</a>`;
-    const summary = item.summary_short || item.aiSummary || item.summary || "";
+    const titleValue = item.title?.translated || item.title?.original || item.title || "";
+    const title = `<a href="${escapeHtml(detailUrl)}">${escapeHtml(titleValue)}</a>`;
+    const summary = itemSummaryText(item);
+    const keyPoints = itemKeyPoints(item);
     const originalUrl = window.MessageChooseRender.safeExternalUrl(item.original_url || item.url);
     return `
       <article class="feed-card summary-card">
@@ -41,12 +82,12 @@
           <h3>${title}</h3>
           ${window.MessageChooseRender.renderSummary(summary)}
           <div class="item-meta">
-            <span>${escapeHtml(item.source)}</span>
-            <span>重要度 ${Number(item.importance_score || item.score || 0)}</span>
+            <span>${escapeHtml(sourceName(item))}</span>
+            <span>重要度 ${itemScore(item)}</span>
           </div>
-          ${Array.isArray(item.summary_points) && item.summary_points.length ? `
+          ${keyPoints.length ? `
             <ul class="daily-keypoints">
-              ${item.summary_points.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
+              ${keyPoints.slice(0, 3).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
             </ul>
           ` : ""}
           <div class="feed-card-actions">
@@ -61,7 +102,7 @@
   function groupSummaryItems(items) {
     const grouped = new Map();
     (items || []).forEach((item) => {
-      if (!item.summary_short && !item.aiSummary && !item.summary) return;
+      if (!itemSummaryText(item)) return;
       const key = item.category || "news";
       if (!grouped.has(key)) grouped.set(key, []);
       grouped.get(key).push(item);
@@ -69,17 +110,19 @@
     return [...grouped.entries()].map(([id, values]) => ({
       id,
       label: values[0]?.categoryLabel || id,
-      items: values.sort((left, right) => Number(right.importance_score || right.score || 0) - Number(left.importance_score || left.score || 0))
+      items: values.sort((left, right) => itemScore(right) - itemScore(left))
     }));
   }
 
   function renderDailySummary() {
     const meta = document.getElementById("daily-meta");
     const container = document.getElementById("daily-summary-list");
-    loadJson("src/data/daily-summary.json", { channelSummaries: [] }).then((data) => {
-      const channelSummaries = data.channelSummaries || [];
+    loadJson("src/data/daily-summary.json", { channels: [], channelSummaries: [], items: [] }).then((data) => {
+      const channelSummaries = data.channels || data.channelSummaries || [];
       const summaryItems = data.items || [];
-      meta.textContent = `摘要更新时间：${formatDate(data.generatedAt)} · ${Number(channelSummaries.length)} 类重点事务 · ${Number(summaryItems.length)} 条结构化摘要`;
+      const summaryItemsById = new Map(summaryItems.map((item) => [item.id, item]));
+      const generatedAt = data.generated_at || data.generatedAt;
+      meta.textContent = `摘要更新时间：${formatDate(generatedAt)} · ${Number(channelSummaries.length)} 类重点事务 · ${Number(summaryItems.length)} 条结构化摘要`;
       if (!channelSummaries.length && !summaryItems.length) {
         window.MessageChooseRender.renderEmptyState(container, {
           title: "暂无每日摘要",
@@ -88,34 +131,41 @@
         return;
       }
 
-      const channelHtml = channelSummaries.map((channel) => `
-        <article class="daily-brief-card">
-          <div class="daily-brief-head">
-            <h2>${escapeHtml(channel.label || channel.id)}</h2>
-          </div>
-          <p class="model-summary">${escapeHtml(channel.overview || "")}</p>
-          ${channel.focus ? `<p class="summary-focus">${escapeHtml(channel.focus)}</p>` : ""}
-          ${channel.whyItMatters ? `<p class="summary-explainer">${escapeHtml(channel.whyItMatters)}</p>` : ""}
-          ${(channel.keyPoints || []).length ? `
-            <ul class="daily-keypoints">
-              ${(channel.keyPoints || []).map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
-            </ul>
-          ` : ""}
-          ${(channel.watchlist || []).length ? `
-            <div class="weekly-watchlist">
-              ${(channel.watchlist || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+      const channelHtml = channelSummaries.map((channel) => {
+        const keyPoints = channelKeyPoints(channel);
+        const watchlist = channelWatchlist(channel);
+        const highlights = channel.highlights || (channel.item_refs?.highlight_item_ids || [])
+          .map((id) => summaryItemsById.get(id))
+          .filter(Boolean);
+        return `
+          <article class="daily-brief-card">
+            <div class="daily-brief-head">
+              <h2>${escapeHtml(channel.label || channel.id)}</h2>
             </div>
-          ` : ""}
-          ${(channel.highlights || []).length ? `
-            <details class="daily-evidence">
-              <summary>查看依据条目</summary>
-              <div class="feed-list">
-                ${(channel.highlights || []).map(renderHighlight).join("")}
+            <p class="model-summary">${escapeHtml(channelOverview(channel))}</p>
+            ${channelFocus(channel) ? `<p class="summary-focus">${escapeHtml(channelFocus(channel))}</p>` : ""}
+            ${channelWhyItMatters(channel) ? `<p class="summary-explainer">${escapeHtml(channelWhyItMatters(channel))}</p>` : ""}
+            ${keyPoints.length ? `
+              <ul class="daily-keypoints">
+                ${keyPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}
+              </ul>
+            ` : ""}
+            ${watchlist.length ? `
+              <div class="weekly-watchlist">
+                ${watchlist.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
               </div>
-            </details>
-          ` : ""}
-        </article>
-      `).join("");
+            ` : ""}
+            ${highlights.length ? `
+              <details class="daily-evidence">
+                <summary>查看依据条目</summary>
+                <div class="feed-list">
+                  ${highlights.map(renderHighlight).join("")}
+                </div>
+              </details>
+            ` : ""}
+          </article>
+        `;
+      }).join("");
 
       const itemGroups = groupSummaryItems(summaryItems);
       const itemHtml = itemGroups.length ? `

@@ -1,9 +1,30 @@
 {
-  "generatedAt": "2026-06-18T11:10:02.024Z",
+  "generatedAt": "2026-06-19T06:20:37.315Z",
   "retentionDays": 10,
-  "totalArchiveDays": 24,
+  "totalArchiveDays": 25,
   "totalDays": 10,
   "days": [
+    {
+      "date": "2026-06-19",
+      "generatedAt": "2026-06-19T06:04:32.396Z",
+      "url": "data/archive/daily/2026-06-19.json",
+      "totalItems": 69,
+      "totals": {
+        "sources": 20,
+        "healthySources": 14,
+        "rawItems": 80,
+        "normalizedItems": 80,
+        "filteredItems": 79,
+        "dedupedItems": 78,
+        "scoredItems": 78,
+        "enrichmentAttempted": 63,
+        "enrichmentFailed": 0
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 78
+      }
+    },
     {
       "date": "2026-06-18",
       "generatedAt": "2026-06-18T10:44:43.639Z",
@@ -27,23 +48,23 @@
     },
     {
       "date": "2026-06-17",
-      "generatedAt": "2026-06-17T00:01:10.792Z",
+      "generatedAt": "2026-06-17T09:01:42.302Z",
       "url": "data/archive/daily/2026-06-17.json",
-      "totalItems": 72,
+      "totalItems": 70,
       "totals": {
         "sources": 20,
-        "healthySources": 12,
-        "rawItems": 77,
-        "normalizedItems": 77,
-        "filteredItems": 74,
-        "dedupedItems": 72,
-        "scoredItems": 72,
-        "enrichmentAttempted": 71,
-        "enrichmentFailed": 0
+        "healthySources": 13,
+        "rawItems": 86,
+        "normalizedItems": 86,
+        "filteredItems": 84,
+        "dedupedItems": 82,
+        "scoredItems": 82,
+        "enrichmentAttempted": 69,
+        "enrichmentFailed": 1
       },
       "archivePolicy": {
         "maxItemsPerChannel": 20,
-        "availableItems": 72
+        "availableItems": 82
       }
     },
     {
@@ -191,27 +212,6 @@
       "archivePolicy": {
         "maxItemsPerChannel": 20,
         "availableItems": 72
-      }
-    },
-    {
-      "date": "2026-06-09",
-      "generatedAt": "2026-06-09T09:01:01.621Z",
-      "url": "data/archive/daily/2026-06-09.json",
-      "totalItems": 57,
-      "totals": {
-        "sources": 20,
-        "healthySources": 9,
-        "rawItems": 60,
-        "normalizedItems": 60,
-        "filteredItems": 57,
-        "dedupedItems": 57,
-        "scoredItems": 57,
-        "enrichmentAttempted": 53,
-        "enrichmentFailed": 9
-      },
-      "archivePolicy": {
-        "maxItemsPerChannel": 20,
-        "availableItems": 57
       }
     }
   ]

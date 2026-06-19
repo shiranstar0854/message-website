@@ -209,6 +209,9 @@ test("event LLM analysis runs fact extraction then event analysis and stores ana
   assert.equal(event.analysis_notes.length, 1);
   assert.equal(event.analysis_notes[0].is_core_analysis, true);
   assert.equal(event.analysis_notes[0].analysis_quality_score, 100);
+  assert.equal(event.analysis_notes[0].model.status, "succeeded");
+  assert.equal(event.analysis_notes[0].analysis.core_change, "事件从讨论阶段进入官方规则发布阶段。");
+  assert.equal(event.analysis_notes[0].quality.score, 100);
   assert.equal(event.analysis_notes[0].fact_extraction.confirmed_facts[0], "监管机构发布规则");
 });
 
@@ -236,6 +239,8 @@ test("event LLM analysis writes fallback analysis when the model response fails"
   assert.equal(analyzed.eventAnalysisStats.fallbackCount, 1);
   assert.equal(analyzed.events[0].llm_analysis_status, "fallback");
   assert.ok(analyzed.events[0].analysis_notes[0].fact_extraction);
+  assert.equal(analyzed.events[0].analysis_notes[0].model.status, "fallback");
+  assert.ok(analyzed.events[0].analysis_notes[0].quality);
   assert.equal(analyzed.events[0].analysis_notes[0].is_core_analysis, false);
   assert.ok(analyzed.events[0].analysis_notes[0].analysis_quality_score < 80);
   assert.ok(analyzed.events[0].analysis_notes[0].quality_flags.includes("模型失败后使用本地兜底分析"));
