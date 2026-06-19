@@ -1,10 +1,920 @@
 {
-  "generatedAt": "2026-06-18T10:44:29.950Z",
+  "generatedAt": "2026-06-19T00:00:50.785Z",
   "provider": "alpha-vantage",
-  "status": "unconfigured",
-  "stale": true,
-  "message": "ALPHA_VANTAGE_API_KEY is not configured.",
-  "symbols": {},
-  "topMovers": [],
-  "newsSentiment": {}
+  "status": "available",
+  "stale": false,
+  "message": "",
+  "symbols": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "status": "available",
+      "price": 210.69,
+      "change": 6.04,
+      "changePercent": "2.9514%",
+      "changePercentValue": 2.9514,
+      "volume": 238041978,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "status": "available",
+      "price": 379.4,
+      "change": 0.49,
+      "changePercent": "0.1293%",
+      "changePercentValue": 0.1293,
+      "volume": 58236623,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "status": "available",
+      "price": 368.03,
+      "change": 4.24,
+      "changePercent": "1.1655%",
+      "changePercentValue": 1.1655,
+      "volume": 43869320,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "META": {
+      "symbol": "META",
+      "status": "available",
+      "price": 577.22,
+      "change": 9.64,
+      "changePercent": "1.6984%",
+      "changePercentValue": 1.6984,
+      "volume": 27384538,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "status": "available",
+      "price": 244.39,
+      "change": 6.89,
+      "changePercent": "2.9011%",
+      "changePercentValue": 2.9011,
+      "volume": 73616198,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "status": "available",
+      "price": 537.37,
+      "change": 24.89,
+      "changePercent": "4.8568%",
+      "changePercentValue": 4.8568,
+      "volume": 43600748,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "status": "available",
+      "price": 411.35,
+      "change": 18.45,
+      "changePercent": "4.6959%",
+      "changePercentValue": 4.6959,
+      "volume": 44880423,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "status": "available",
+      "price": 400.49,
+      "change": 4.11,
+      "changePercent": "1.0369%",
+      "changePercentValue": 1.0369,
+      "volume": 57790353,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "status": "available",
+      "price": 740.62,
+      "change": 18.11,
+      "changePercent": "2.5065%",
+      "changePercentValue": 2.5065,
+      "volume": 48988111,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "status": "available",
+      "price": 746.74,
+      "change": 7.664,
+      "changePercent": "1.0370%",
+      "changePercentValue": 1.037,
+      "volume": 74799004,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    },
+    "SMH": {
+      "symbol": "SMH",
+      "status": "available",
+      "price": 659.88,
+      "change": 35.91,
+      "changePercent": "5.7551%",
+      "changePercentValue": 5.7551,
+      "volume": 10876051,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T00:00:50.785Z"
+    }
+  },
+  "topMovers": [
+    {
+      "symbol": "ICCM",
+      "price": 6.4,
+      "changeAmount": 4.27,
+      "changePercent": "200.4695%",
+      "changePercentValue": 200.4695,
+      "volume": 151334815,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SNBR",
+      "price": 0.39,
+      "changeAmount": 0.2134,
+      "changePercent": "120.8381%",
+      "changePercentValue": 120.8381,
+      "volume": 895506045,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "EHGO",
+      "price": 2.89,
+      "changeAmount": 1.57,
+      "changePercent": "118.9394%",
+      "changePercentValue": 118.9394,
+      "volume": 112341863,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SDOT",
+      "price": 17.18,
+      "changeAmount": 8.51,
+      "changePercent": "98.1546%",
+      "changePercentValue": 98.1546,
+      "volume": 2994377,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "YMAT",
+      "price": 0.75,
+      "changeAmount": 0.364,
+      "changePercent": "94.3005%",
+      "changePercentValue": 94.3005,
+      "volume": 168619208,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SVAQW",
+      "price": 0.94,
+      "changeAmount": 0.417,
+      "changePercent": "79.7323%",
+      "changePercentValue": 79.7323,
+      "volume": 3370668,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "QURE",
+      "price": 48.16,
+      "changeAmount": 21.17,
+      "changePercent": "78.4365%",
+      "changePercentValue": 78.4365,
+      "volume": 19607439,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "FTHM",
+      "price": 1.11,
+      "changeAmount": 0.477,
+      "changePercent": "75.3555%",
+      "changePercentValue": 75.3555,
+      "volume": 72991110,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "ELTX",
+      "price": 4.71,
+      "changeAmount": 1.95,
+      "changePercent": "70.6522%",
+      "changePercentValue": 70.6522,
+      "volume": 50011561,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "ALOT",
+      "price": 28.35,
+      "changeAmount": 11.66,
+      "changePercent": "69.8622%",
+      "changePercentValue": 69.8622,
+      "volume": 2391577,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "HQWWW",
+      "price": 11.99,
+      "changeAmount": 4.75,
+      "changePercent": "65.6077%",
+      "changePercentValue": 65.6077,
+      "volume": 833948,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "WLDSW",
+      "price": 5.45,
+      "changeAmount": 2.05,
+      "changePercent": "60.2941%",
+      "changePercentValue": 60.2941,
+      "volume": 2368,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "ANGHW",
+      "price": 0.0163,
+      "changeAmount": 0.0057,
+      "changePercent": "53.7736%",
+      "changePercentValue": 53.7736,
+      "volume": 96548,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "GPUS",
+      "price": 0.3976,
+      "changeAmount": 0.1376,
+      "changePercent": "52.9231%",
+      "changePercentValue": 52.9231,
+      "volume": 514044657,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "LGL^",
+      "price": 0.009,
+      "changeAmount": 0.003,
+      "changePercent": "50.0%",
+      "changePercentValue": 50,
+      "volume": 222479,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "JLHL",
+      "price": 33.4,
+      "changeAmount": 10.97,
+      "changePercent": "48.9077%",
+      "changePercentValue": 48.9077,
+      "volume": 31738,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "MYXXW",
+      "price": 0.0741,
+      "changeAmount": 0.024,
+      "changePercent": "47.9042%",
+      "changePercentValue": 47.9042,
+      "volume": 2115,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "CINGW",
+      "price": 0.0268,
+      "changeAmount": 0.0084,
+      "changePercent": "45.6522%",
+      "changePercentValue": 45.6522,
+      "volume": 5843,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SVREW",
+      "price": 0.0117,
+      "changeAmount": 0.0036,
+      "changePercent": "44.4444%",
+      "changePercentValue": 44.4444,
+      "volume": 100,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "BAYAR",
+      "price": 0.1285,
+      "changeAmount": 0.0383,
+      "changePercent": "42.4612%",
+      "changePercentValue": 42.4612,
+      "volume": 10,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "INLF",
+      "price": 0.4374,
+      "changeAmount": -3.3826,
+      "changePercent": "-88.5497%",
+      "changePercentValue": -88.5497,
+      "volume": 52648820,
+      "direction": "loser"
+    },
+    {
+      "symbol": "TBLAW",
+      "price": 0.0013,
+      "changeAmount": -0.0034,
+      "changePercent": "-72.3404%",
+      "changePercentValue": -72.3404,
+      "volume": 143817,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ADTX",
+      "price": 0.0044,
+      "changeAmount": -0.0065,
+      "changePercent": "-59.633%",
+      "changePercentValue": -59.633,
+      "volume": 1072121129,
+      "direction": "loser"
+    },
+    {
+      "symbol": "NBRGR",
+      "price": 0.195,
+      "changeAmount": -0.227,
+      "changePercent": "-53.7915%",
+      "changePercentValue": -53.7915,
+      "volume": 1400,
+      "direction": "loser"
+    },
+    {
+      "symbol": "TALKW",
+      "price": 0.001,
+      "changeAmount": -0.001,
+      "changePercent": "-50.0%",
+      "changePercentValue": -50,
+      "volume": 74382,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ORGNW",
+      "price": 0.0002,
+      "changeAmount": -0.0002,
+      "changePercent": "-50.0%",
+      "changePercentValue": -50,
+      "volume": 95500,
+      "direction": "loser"
+    },
+    {
+      "symbol": "MYPSW",
+      "price": 0.0001,
+      "changeAmount": -0.0001,
+      "changePercent": "-50.0%",
+      "changePercentValue": -50,
+      "volume": 204362,
+      "direction": "loser"
+    },
+    {
+      "symbol": "VLN+",
+      "price": 0.021,
+      "changeAmount": -0.019,
+      "changePercent": "-47.5%",
+      "changePercentValue": -47.5,
+      "volume": 21586,
+      "direction": "loser"
+    },
+    {
+      "symbol": "HUMAW",
+      "price": 0.0094,
+      "changeAmount": -0.0077,
+      "changePercent": "-45.0292%",
+      "changePercentValue": -45.0292,
+      "volume": 119014,
+      "direction": "loser"
+    },
+    {
+      "symbol": "IVDAW",
+      "price": 0.0628,
+      "changeAmount": -0.0402,
+      "changePercent": "-39.0291%",
+      "changePercentValue": -39.0291,
+      "volume": 30972,
+      "direction": "loser"
+    },
+    {
+      "symbol": "VRXA",
+      "price": 5.86,
+      "changeAmount": -3.6,
+      "changePercent": "-38.055%",
+      "changePercentValue": -38.055,
+      "volume": 840264,
+      "direction": "loser"
+    },
+    {
+      "symbol": "COCHW",
+      "price": 0.0325,
+      "changeAmount": -0.0175,
+      "changePercent": "-35.0%",
+      "changePercentValue": -35,
+      "volume": 57724,
+      "direction": "loser"
+    },
+    {
+      "symbol": "SDAWW",
+      "price": 0.0801,
+      "changeAmount": -0.0399,
+      "changePercent": "-33.25%",
+      "changePercentValue": -33.25,
+      "volume": 41021,
+      "direction": "loser"
+    },
+    {
+      "symbol": "CDIOW",
+      "price": 0.012,
+      "changeAmount": -0.0058,
+      "changePercent": "-32.5843%",
+      "changePercentValue": -32.5843,
+      "volume": 3499,
+      "direction": "loser"
+    },
+    {
+      "symbol": "EVLVW",
+      "price": 0.0181,
+      "changeAmount": -0.0087,
+      "changePercent": "-32.4627%",
+      "changePercentValue": -32.4627,
+      "volume": 3509,
+      "direction": "loser"
+    },
+    {
+      "symbol": "FLZH",
+      "price": 2.61,
+      "changeAmount": -1.24,
+      "changePercent": "-32.2078%",
+      "changePercentValue": -32.2078,
+      "volume": 767217,
+      "direction": "loser"
+    },
+    {
+      "symbol": "AIMDW",
+      "price": 0.1021,
+      "changeAmount": -0.0476,
+      "changePercent": "-31.7969%",
+      "changePercentValue": -31.7969,
+      "volume": 3351,
+      "direction": "loser"
+    },
+    {
+      "symbol": "BIAFW",
+      "price": 0.1402,
+      "changeAmount": -0.0598,
+      "changePercent": "-29.9%",
+      "changePercentValue": -29.9,
+      "volume": 997,
+      "direction": "loser"
+    },
+    {
+      "symbol": "BGLWW",
+      "price": 0.1,
+      "changeAmount": -0.0401,
+      "changePercent": "-28.6224%",
+      "changePercentValue": -28.6224,
+      "volume": 29800,
+      "direction": "loser"
+    },
+    {
+      "symbol": "GPATW",
+      "price": 0.286,
+      "changeAmount": -0.114,
+      "changePercent": "-28.5%",
+      "changePercentValue": -28.5,
+      "volume": 368,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ADTX",
+      "price": 0.0044,
+      "changeAmount": -0.0065,
+      "changePercent": "-59.633%",
+      "changePercentValue": -59.633,
+      "volume": 1072121129,
+      "direction": "active"
+    },
+    {
+      "symbol": "SNBR",
+      "price": 0.39,
+      "changeAmount": 0.2134,
+      "changePercent": "120.8381%",
+      "changePercentValue": 120.8381,
+      "volume": 895506045,
+      "direction": "active"
+    },
+    {
+      "symbol": "SOXS",
+      "price": 4.45,
+      "changeAmount": -0.18,
+      "changePercent": "-3.8877%",
+      "changePercentValue": -3.8877,
+      "volume": 640104219,
+      "direction": "active"
+    },
+    {
+      "symbol": "GPUS",
+      "price": 0.3976,
+      "changeAmount": 0.1376,
+      "changePercent": "52.9231%",
+      "changePercentValue": 52.9231,
+      "volume": 514044657,
+      "direction": "active"
+    },
+    {
+      "symbol": "GDC",
+      "price": 0.0213,
+      "changeAmount": -0.0068,
+      "changePercent": "-24.1993%",
+      "changePercentValue": -24.1993,
+      "volume": 461417433,
+      "direction": "active"
+    },
+    {
+      "symbol": "AZTR",
+      "price": 0.211,
+      "changeAmount": 0.0269,
+      "changePercent": "14.6116%",
+      "changePercentValue": 14.6116,
+      "volume": 377950978,
+      "direction": "active"
+    },
+    {
+      "symbol": "TZA",
+      "price": 4.27,
+      "changeAmount": 0.1,
+      "changePercent": "2.3981%",
+      "changePercentValue": 2.3981,
+      "volume": 337243234,
+      "direction": "active"
+    },
+    {
+      "symbol": "BITO",
+      "price": 8.735,
+      "changeAmount": -0.185,
+      "changePercent": "-2.074%",
+      "changePercentValue": -2.074,
+      "volume": 319969023,
+      "direction": "active"
+    },
+    {
+      "symbol": "SPCX",
+      "price": 191.82,
+      "changeAmount": -9.98,
+      "changePercent": "-4.9455%",
+      "changePercentValue": -4.9455,
+      "volume": 198298470,
+      "direction": "active"
+    },
+    {
+      "symbol": "SRXH",
+      "price": 0.202,
+      "changeAmount": 0.012,
+      "changePercent": "6.3158%",
+      "changePercentValue": 6.3158,
+      "volume": 191962951,
+      "direction": "active"
+    },
+    {
+      "symbol": "YMAT",
+      "price": 0.75,
+      "changeAmount": 0.364,
+      "changePercent": "94.3005%",
+      "changePercentValue": 94.3005,
+      "volume": 168619208,
+      "direction": "active"
+    },
+    {
+      "symbol": "ICCM",
+      "price": 6.4,
+      "changeAmount": 4.27,
+      "changePercent": "200.4695%",
+      "changePercentValue": 200.4695,
+      "volume": 151334815,
+      "direction": "active"
+    },
+    {
+      "symbol": "OBAI",
+      "price": 1.03,
+      "changeAmount": -0.08,
+      "changePercent": "-7.2072%",
+      "changePercentValue": -7.2072,
+      "volume": 134300238,
+      "direction": "active"
+    },
+    {
+      "symbol": "AAL",
+      "price": 15.42,
+      "changeAmount": -0.29,
+      "changePercent": "-1.846%",
+      "changePercentValue": -1.846,
+      "volume": 129945415,
+      "direction": "active"
+    },
+    {
+      "symbol": "NVDA",
+      "price": 204.65,
+      "changeAmount": -2.76,
+      "changePercent": "-1.3307%",
+      "changePercentValue": -1.3307,
+      "volume": 125821684,
+      "direction": "active"
+    },
+    {
+      "symbol": "SOFI",
+      "price": 17.42,
+      "changeAmount": -0.29,
+      "changePercent": "-1.6375%",
+      "changePercentValue": -1.6375,
+      "volume": 120247477,
+      "direction": "active"
+    },
+    {
+      "symbol": "BMNU",
+      "price": 0.9438,
+      "changeAmount": -0.0762,
+      "changePercent": "-7.4706%",
+      "changePercentValue": -7.4706,
+      "volume": 117627910,
+      "direction": "active"
+    },
+    {
+      "symbol": "INTC",
+      "price": 121.1,
+      "changeAmount": 4.05,
+      "changePercent": "3.4601%",
+      "changePercentValue": 3.4601,
+      "volume": 113302403,
+      "direction": "active"
+    },
+    {
+      "symbol": "EHGO",
+      "price": 2.89,
+      "changeAmount": 1.57,
+      "changePercent": "118.9394%",
+      "changePercentValue": 118.9394,
+      "volume": 112341863,
+      "direction": "active"
+    },
+    {
+      "symbol": "NOK",
+      "price": 13.8,
+      "changeAmount": -0.18,
+      "changePercent": "-1.2876%",
+      "changePercentValue": -1.2876,
+      "volume": 102648225,
+      "direction": "active"
+    }
+  ],
+  "newsSentiment": {
+    "NVDA": [
+      {
+        "symbol": "NVDA",
+        "title": "Global Asset Allocation: The View From Europe",
+        "url": "https://www.troweprice.com/financial-intermediary/pt/en/thinking/articles/2026/q2/global-asset-allocation-view-from-europe-june-2026.html",
+        "source": "T. Rowe Price",
+        "timePublished": "20260618T214439",
+        "summary": "Despite geopolitical tensions and inflation pressures, markets have shown resilience, supported by fiscal spending and AI infrastructure investments. Central banks face complex decisions balancing persistent inflation against slowing economic activity. The article highlights key risks and themes driving asset allocation, including the potential for \"higher-for-ever\" interest rates due to structural forces and the significant shift of the MSCI Emerging Markets Index towards technology, bringing both opportunities and concentration risks.",
+        "overallSentimentScore": 0.19321,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "What Rambus (RMBS)'s DOJ Antitrust Probe and Insider Selling Flurry Means For Shareholders",
+        "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-rmbs/rambus/news/what-rambus-rmbss-doj-antitrust-probe-and-insider-selling-fl",
+        "source": "Simply Wall Street",
+        "timePublished": "20260618T213956",
+        "summary": "Rambus Inc. is facing a U.S. federal grand jury subpoena related to a Department of Justice antitrust investigation, alongside recent insider share sales and an analyst downgrade. This combination of legal scrutiny, insider selling, and a high valuation has increased investor focus on the risks associated with Rambus's current stock price and future prospects. The article discusses how these factors could impact Rambus's investment narrative, particularly as the company focuses on product ramps like its new DDR5 chipset for AI PCs.",
+        "overallSentimentScore": -0.02298,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "KLA Corp Stock (KLAC) Closed Up by 8.71% on Jun 18: A Full Analysis",
+        "url": "https://www.tradingkey.com/news/market-movers/261976856-market-movers-klac-20260618",
+        "source": "TradingKey",
+        "timePublished": "20260618T210756",
+        "summary": "KLA Corp (KLAC) stock surged 8.71% on June 18, driven by positive analyst upgrades, increased demand for AI-driven semiconductor equipment, and a technical rebound from oversold conditions. Citigroup and other firms raised price targets due to expected increases in global wafer fabrication equipment spending, especially from hyperscalers deploying agentic AI. Despite challenges like free cash flow contraction and export controls to China, the strong long-term demand for AI infrastructure and bullish sentiment propelled the stock's recovery.",
+        "overallSentimentScore": 0.363497,
+        "overallSentimentLabel": "Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Wolfe Research Reaffirms Bullish View on Arista Networks (ANET) With $175 Price Target",
+        "url": "https://www.insidermonkey.com/blog/wolfe-research-reaffirms-bullish-view-on-arista-networks-anet-with-175-price-target-1784007/",
+        "source": "Insider Monkey",
+        "timePublished": "20260618T210703",
+        "summary": "Wolfe Research has reiterated an Outperform rating and a $175 price target for Arista Networks (ANET), following meetings with the company's CFO. The research firm believes Arista Networks is well-positioned in a favorable data-switching environment, benefiting from cloud providers and LLM builders focusing on GPU utilization. The company is also gaining traction as customers move away from bundled Nvidia solutions towards best-of-breed networking options and as Ethernet deployments increase.",
+        "overallSentimentScore": 0.263211,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Monolithic Power Systems Inc Stock (MPWR) Closed Up by 8.40% on Jun 18: A Full Analysis",
+        "url": "https://www.tradingkey.com/news/market-movers/261976854-market-movers-mpwr-20260618",
+        "source": "TradingKey",
+        "timePublished": "20260618T203810",
+        "summary": "Monolithic Power Systems (MPWR) stock surged by 8.40% due to a broad recovery in the semiconductor sector, positive market sentiment, and favorable macroeconomic conditions like cooling Treasury yields. The company's strong performance in its high-margin Enterprise Data segment, which supports AI infrastructure, also bolstered investor confidence. Despite concerns over its premium valuation, stagnant gross margins, and insider selling, the rebound indicates sustained investor interest in AI-enabling companies.",
+        "overallSentimentScore": 0.289934,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Intel Stock Jumps On Reported Apple Chip Partnership",
+        "url": "https://www.rttnews.com/3661341/intel-stock-jumps-on-reported-apple-chip-partnership.aspx",
+        "source": "RTTNews",
+        "timePublished": "20260618T203757",
+        "summary": "Intel's shares surged by 10.8% after former President Donald Trump announced a deal with Apple to design and produce chips in the U.S. This partnership aims to boost domestic semiconductor manufacturing, with Intel's foundry division actively seeking major collaborations. The news has significantly increased investor confidence, with Intel's stock having risen 464% over the past year.",
+        "overallSentimentScore": 0.233048,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Arista Networks Inc Stock (ANET) Closed Up by 3.06% on Jun 18: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/261976857-market-movers-anet-20260618",
+        "source": "TradingKey",
+        "timePublished": "20260618T201504",
+        "summary": "Arista Networks Inc (ANET) stock rose 3.06% on June 18, primarily due to a positive analyst update from KeyBanc Capital, which raised its price target and reiterated an Overweight rating amid strong demand for AI infrastructure. The company's recent launch of 1.6T networking platforms also expanded its addressable market. Despite some volatility caused by insider selling and valuation concerns, the overall sentiment for Arista Networks remains bullish due to its role in the expanding AI data center ecosystem.",
+        "overallSentimentScore": 0.333623,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "SpaceX receives Baa1 rating from Moody’s with stable outlook",
+        "url": "https://www.investing.com/news/stock-market-news/spacex-receives-baa1-rating-from-moodys-with-stable-outlook-93CH-4750664",
+        "source": "Investing.com",
+        "timePublished": "20260618T201410",
+        "summary": "Moody’s Ratings has assigned SpaceX a Baa1 long-term issuer rating with a stable outlook, acknowledging its leadership in orbital launches and Starlink operations. The rating is supported by balanced financial policies, transparent governance, and Starlink's role as the primary cash flow generator. While recognizing the company's financial strengths and strategic importance to NASA and the Department of Defense, Moody's noted risks associated with high capital intensity of AI infrastructure buildout and dependence on Starship V3 for long-term growth.",
+        "overallSentimentScore": 0.18977,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      }
+    ],
+    "MSFT": [
+      {
+        "symbol": "MSFT",
+        "title": "Ralph Lauren (NYSE: RL) sets 2026 virtual meeting, board slate and pay vote",
+        "url": "https://www.stocktitan.net/sec-filings/RL/def-14a-ralph-lauren-corp-definitive-proxy-statement-551c39459904.html",
+        "source": "Stock Titan",
+        "timePublished": "20260618T211833",
+        "summary": "Ralph Lauren (NYSE: RL) is holding its 2026 Annual Meeting of Stockholders virtually on July 30, 2026, where shareholders will vote on the election of 12 directors, ratification of its independent auditor Ernst & Young LLP, and an advisory vote on executive compensation. The company highlighted strong financial performance in Fiscal 2026, including growth in total revenue and adjusted operating income, and its continued focus on the \"Next Great Chapter: Drive\" strategy. Discussions also covered the company's dual-class share structure, which the Nominating Committee again recommended retaining due to perceived long-term stability benefits and the significant economic interest of the Lauren family.",
+        "overallSentimentScore": 0.278716,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Wolfe Research Reaffirms Bullish View on Arista Networks (ANET) With $175 Price Target",
+        "url": "https://www.insidermonkey.com/blog/wolfe-research-reaffirms-bullish-view-on-arista-networks-anet-with-175-price-target-1784007/",
+        "source": "Insider Monkey",
+        "timePublished": "20260618T210703",
+        "summary": "Wolfe Research has reiterated an Outperform rating and a $175 price target for Arista Networks (ANET), following meetings with the company's CFO. The research firm believes Arista Networks is well-positioned in a favorable data-switching environment, benefiting from cloud providers and LLM builders focusing on GPU utilization. The company is also gaining traction as customers move away from bundled Nvidia solutions towards best-of-breed networking options and as Ethernet deployments increase.",
+        "overallSentimentScore": 0.27044,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Accenture PLC Stock (ACN) Moved Down by 17.99% on Jun 18: What Investors Need To Know",
+        "url": "https://www.tradingkey.com/news/market-movers/261976798-market-movers-acn-20260618",
+        "source": "TradingKey",
+        "timePublished": "20260618T193658",
+        "summary": "Accenture PLC (ACN) saw its stock drop by 17.99% following a revenue miss, slowing new bookings, and a lowered fiscal 2026 revenue growth projection. Despite beating EPS expectations and a strong cybersecurity acquisition strategy totaling $4.18 billion, investors reacted negatively to moderated guidance and significant capital expenditure during a period of decelerating organic growth. Technical indicators show a sell signal and an oversold condition, while analysts maintain an average price target of $235.49.",
+        "overallSentimentScore": -0.368703,
+        "overallSentimentLabel": "Bearish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Vail Resorts Shares Surge After Report of Takeover Defense Review",
+        "url": "https://www.citybiz.co/article/862760/vail-resorts-shares-surge-after-report-of-takeover-defense-review/",
+        "source": "citybiz",
+        "timePublished": "20260618T180921",
+        "summary": "Vail Resorts (NYSE: MTN) saw its shares surge by nearly 9% following a report that the company has engaged takeover-defense advisers. This move comes amidst an ongoing public campaign by Cloudflare CEO Matthew Prince, who is advocating for Vail Resorts to sell him Park City Mountain Resort and adopt an \"asset-light\" business model. The company has consistently rejected Prince's proposal, stating that Park City Mountain Resort is not for sale.",
+        "overallSentimentScore": 0.103656,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Jefferies projects IREN's AI cloud business to outperform data center leasing with 30% upside",
+        "url": "https://cryptobriefing.com/jefferies-iren-ai-cloud-30-percent-upside/",
+        "source": "Crypto Briefing",
+        "timePublished": "20260618T180858",
+        "summary": "Jefferies initiated coverage on IREN Limited with a Buy rating and a $79 price target, projecting a 30-36% upside. The firm believes IREN's AI cloud services will generate better returns than traditional data center leasing, a factor not yet fully priced into the market. IREN, formerly a Bitcoin miner, is transitioning into an AI and high-performance computing services provider, with a significant amount of untapped power capacity and substantial contracts already secured with Microsoft.",
+        "overallSentimentScore": 0.371581,
+        "overallSentimentLabel": "Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "The Surprisingly Simple Way Hackers Just Breached Samsung, Oracle, and Accenture",
+        "url": "https://www.inc.com/amaya-nichole/suprisingly-simple-way-hackers-just-breached-oracle-samsung-accenture/91362810",
+        "source": "Inc.com",
+        "timePublished": "20260618T173811",
+        "summary": "Hackers have compromised tens of thousands of Fortinet firewalls and VPNs used by major companies like Samsung, Oracle, and Accenture in an ongoing campaign called FortiBleed. The campaign exploits a basic cybersecurity oversight: companies failing to update firewall passwords or using credentials already leaked by cybercriminals. Experts emphasize the critical importance of secure, uncompromised credentials for externally-facing systems to prevent such attacks.",
+        "overallSentimentScore": -0.329809,
+        "overallSentimentLabel": "Somewhat-Bearish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "IREN faces $21B funding gap to transition to AI infrastructure",
+        "url": "https://cryptobriefing.com/iren-21b-funding-gap-ai-infrastructure/",
+        "source": "Crypto Briefing",
+        "timePublished": "20260618T170858",
+        "summary": "IREN, formerly Iris Energy, is transitioning from a Bitcoin miner to an AI cloud infrastructure provider, securing contracts worth $13.1 billion with Microsoft and NVIDIA. This shift requires significant capital, with the company raising billions through convertible notes, financing packages, and an expanded \"at the market\" share sale program. Despite the high demand for AI infrastructure, analysts express concern about potential shareholder dilution and the company's ability to execute at this scale.",
+        "overallSentimentScore": -0.047387,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Tyler Technologies Inc (TYL) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-tyl/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260618T163903",
+        "summary": "This article provides an earnings forecast for Tyler Technologies Inc (TYL), highlighting its strong earnings forecast score of 8.35 and an average price target of $660.00 from 23 analysts. The consensus analyst rating is \"Buy.\" It also details expected revenue for the next quarter, historical EPS performance, and future EPS expectations.",
+        "overallSentimentScore": 0.187546,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      }
+    ],
+    "GOOGL": [
+      {
+        "symbol": "GOOGL",
+        "title": "Verb Technology Company Inc (VERB) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-verb/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260618T213933",
+        "summary": "This article provides an earnings forecast for Verb Technology Company Inc (VERB), including future EPS and revenue growth estimates. Based on one analyst, the stock currently has a \"Buy\" rating with a target price indicating significant upside potential. Key financial figures and a comparison with peer companies are also presented.",
+        "overallSentimentScore": 0.140373,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet director John L. Hennessy sells $387,063 of Class C stock",
+        "url": "https://au.investing.com/news/insider-trading-news/alphabet-director-john-l-hennessy-sells-387063-of-class-c-stock-93CH-4496001",
+        "source": "Investing.com Australia",
+        "timePublished": "20260618T213745",
+        "summary": "Alphabet director John L. Hennessy sold $387,063 worth of Class C Capital Stock on June 15, 2026, as part of a Rule 10b5-1 trading plan. Despite the sale, which involved 1,050 shares at prices ranging from $366.01 to $369.89, Hennessy's trust still holds 1,481 shares. Alphabet's stock is up 110% over the past year but is considered overvalued according to InvestingPro.",
+        "overallSentimentScore": -0.066413,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Top Research Reports for Alphabet, Broadcom & Johnson & Johnson",
+        "url": "https://sg.finance.yahoo.com/news/top-research-reports-alphabet-broadcom-210900876.html",
+        "source": "Yahoo Finance Singapore",
+        "timePublished": "20260618T213708",
+        "summary": "This article summarizes new research reports from Zacks Research Daily on 16 major stocks, including Alphabet Inc. (GOOGL), Broadcom Inc. (AVGO), and Johnson & Johnson (JNJ). The reports analyze each company's performance, growth drivers, and challenges, highlighting factors like AI-driven product cycles for Alphabet, strong AI semiconductor demand for Broadcom, and momentum in Innovative Medicine for J&J. It also features reports on other companies, detailing their competitive landscapes and risk factors.",
+        "overallSentimentScore": 0.185374,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet (NASDAQ: GOOG) executive gets new dividend-equivalent stock units",
+        "url": "https://www.stocktitan.net/sec-filings/GOOG/form-4-alphabet-inc-insider-trading-activity-457001992ddf.html",
+        "source": "Stock Titan",
+        "timePublished": "20260618T212243",
+        "summary": "Alphabet Inc.'s President and CIO, Ruth Porat, received dividend-equivalent stock units (DEUs) linked to a cash dividend on June 15, 2026. These DEUs, which vest on the same schedule as her underlying Google Stock Units (GSUs), add incrementally to her substantial existing equity holdings. The transactions are routine compensation adjustments rather than open-market trades, indicating a neutral impact on insider sentiment.",
+        "overallSentimentScore": 0.022201,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet (GOOG) VP Marsida Saraci granted new GSUs and dividend units",
+        "url": "https://www.stocktitan.net/sec-filings/GOOG/form-4-alphabet-inc-insider-trading-activity-900fa4eec66d.html",
+        "source": "Stock Titan",
+        "timePublished": "20260618T212043",
+        "summary": "Alphabet Inc.'s VP and Chief Accounting Officer, Marsida Saraci, received grants of Class C Google Stock Units (GSUs) and related dividend equivalent units (DEUs). These are routine equity compensation awards that vest over multi-year schedules, contingent on her continued employment. Following these transactions, Saraci directly holds 27,348 shares of Class C capital stock and 3,660 shares of Class A common stock, in addition to the newly granted GSU/DEU awards.",
+        "overallSentimentScore": 0.024166,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Wolfe Research Reaffirms Bullish View on Arista Networks (ANET) With $175 Price Target",
+        "url": "https://www.insidermonkey.com/blog/wolfe-research-reaffirms-bullish-view-on-arista-networks-anet-with-175-price-target-1784007/",
+        "source": "Insider Monkey",
+        "timePublished": "20260618T210703",
+        "summary": "Wolfe Research has reiterated an Outperform rating and a $175 price target for Arista Networks (ANET), following meetings with the company's CFO. The research firm believes Arista Networks is well-positioned in a favorable data-switching environment, benefiting from cloud providers and LLM builders focusing on GPU utilization. The company is also gaining traction as customers move away from bundled Nvidia solutions towards best-of-breed networking options and as Ethernet deployments increase.",
+        "overallSentimentScore": 0.266514,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "SpaceX receives Baa1 rating from Moody’s with stable outlook",
+        "url": "https://www.investing.com/news/stock-market-news/spacex-receives-baa1-rating-from-moodys-with-stable-outlook-93CH-4750664",
+        "source": "Investing.com",
+        "timePublished": "20260618T201410",
+        "summary": "Moody’s Ratings has assigned SpaceX a Baa1 long-term issuer rating with a stable outlook, acknowledging its leadership in orbital launches and Starlink operations. The rating is supported by balanced financial policies, transparent governance, and Starlink's role as the primary cash flow generator. While recognizing the company's financial strengths and strategic importance to NASA and the Department of Defense, Moody's noted risks associated with high capital intensity of AI infrastructure buildout and dependence on Starship V3 for long-term growth.",
+        "overallSentimentScore": 0.196482,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Uber Robotaxi expansion could shift autonomous vehicle narrative, says BofA",
+        "url": "https://www.proactiveinvestors.com/companies/news/1094142/uber-robotaxi-expansion-could-shift-autonomous-vehicle-narrative-says-bofa-1094142.html",
+        "source": "Proactive financial news",
+        "timePublished": "20260618T200344",
+        "summary": "Uber's expanding robotaxi initiatives in the US and Europe, including partnerships with Nuro, Lucid, and WeRide, could significantly improve investor perception of the company's autonomous vehicle strategy. Bank of America maintains a 'Buy' rating on Uber shares, anticipating that successful launches will positively impact valuation and address concerns about competition in the autonomous driving sector. These developments are expected to counter the stock's recent underperformance compared to the S&P 500, which has been attributed to competitive pressures and broader weakness in internet growth stocks.",
+        "overallSentimentScore": 0.053473,
+        "overallSentimentLabel": "Neutral"
+      }
+    ]
+  }
 }
