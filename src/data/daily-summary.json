@@ -1,6 +1,6 @@
 {
   "schema_version": "daily-brief.v4",
-  "generated_at": "2026-06-19T06:18:01.839Z",
+  "generated_at": "2026-06-19T10:28:22.363Z",
   "meta": {
     "llm": {
       "enabled": true,
@@ -289,8 +289,7 @@
           "has_source_assessment": true,
           "has_evidence_refs": true
         }
-      },
-      "summaryMethod": "extractive"
+      }
     },
     {
       "id": "finance",
@@ -527,8 +526,7 @@
           "has_source_assessment": true,
           "has_evidence_refs": true
         }
-      },
-      "summaryMethod": "extractive"
+      }
     },
     {
       "id": "news",
@@ -788,13 +786,7 @@
           "has_source_assessment": true,
           "has_evidence_refs": true
         }
-      },
-      "summaryMethod": "extractive"
-    }
-  ],
-  "errors": [
-    {
-      "message": "Expected ',' or ']' after array element in JSON at position 4403 (line 1 column 4404)"
+      }
     }
   ],
   "items": [

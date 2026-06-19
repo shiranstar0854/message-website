@@ -101,11 +101,10 @@
 
     const eventData = await loadJson("src/data/events.json", { events: [] });
     const eventItems = (eventData.events || []).flatMap((event) => [
-      event.latestUpdate,
-      ...(event.keyDevelopments || []),
+      event.latest_update,
       ...(event.timeline || []),
-      ...(event.evidenceItems || []),
-      ...(event.items || [])
+      ...(event.related_items || []),
+      ...(event.evidence?.source_links || [])
     ]).filter(Boolean);
     const eventItem = findItem(eventItems, query);
     if (eventItem) return eventItem;

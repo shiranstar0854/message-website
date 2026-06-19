@@ -169,17 +169,25 @@ test("static homepage renders empty Top 5 state", () => {
 
 test("static homepage renders event tracking cards with MVP fields and detail links", () => {
   const html = renderTopEvents([{
-    id: "openai-model-race",
     event_id: "openai-model-race",
     title: "OpenAI / AI 模型竞争",
-    one_sentence_summary: "模型竞争进入持续追踪阶段。",
-    current_status: "持续追踪",
-    latest_change: "等待最新信息更新",
-    importance_level: "高",
-    confidence_level: "中",
-    last_updated: "2026-06-18",
-    itemCount: 3,
-    heat: "高"
+    status: "active",
+    priority_grade: "A",
+    updated_at: "2026-06-18T00:00:00.000Z",
+    definition: {
+      one_sentence: "模型竞争进入持续追踪阶段。"
+    },
+    current_judgment: {
+      latest_change: "等待最新信息更新"
+    },
+    evidence: {
+      confidence_basis: "中"
+    },
+    profile: {
+      related_item_count: 3,
+      impact_areas: ["AI"]
+    },
+    related_items: [{ score: 90 }]
   }]);
 
   assert.match(html, /home-event-list/);
@@ -197,19 +205,29 @@ test("static homepage renders event tracking cards with MVP fields and detail li
 
 test("static homepage sorts event hotspots by explanation and evidence strength", () => {
   const selected = selectTopEvents([{
-    id: "thin",
-    updatedAt: "2026-06-02T00:00:00.000Z",
-    itemCount: 1,
-    evidenceItems: [{ score: 90 }]
+    event_id: "thin",
+    updated_at: "2026-06-02T00:00:00.000Z",
+    profile: {
+      related_item_count: 1,
+      impact_areas: []
+    },
+    related_items: [{ score: 90 }]
   }, {
-    id: "explained",
-    updatedAt: "2026-06-02T00:00:00.000Z",
-    whyItMatters: "Important",
-    watchlist: ["Next"],
-    impactAreas: ["AI"],
-    itemCount: 4,
-    evidenceItems: [{ score: 89 }]
+    event_id: "explained",
+    updated_at: "2026-06-02T00:00:00.000Z",
+    definition: {
+      why_it_matters: "Important"
+    },
+    watch_variables: [{ variable: "Next" }],
+    profile: {
+      related_item_count: 4,
+      impact_areas: ["AI"]
+    },
+    impact: {
+      market: { impact: "Important" }
+    },
+    related_items: [{ score: 89 }]
   }]);
 
-  assert.equal(selected[0].id, "explained");
+  assert.equal(selected[0].event_id, "explained");
 });

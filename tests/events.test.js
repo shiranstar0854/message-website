@@ -46,21 +46,21 @@ test("buildEvents groups related high-value items into event clusters", () => {
     }
   ], "2026-06-02T03:00:00.000Z");
 
-  assert.equal(data.totalEvents, 1);
-  assert.equal(data.events[0].decisionLane, "china_us_ai");
-  assert.equal(data.events[0].itemCount, 2);
-  assert.deepEqual(data.events[0].items.map((item) => item.id), ["ai-1", "ai-2"]);
-  assert.equal(data.events[0].latestUpdate.title, "人工智能政策听证会");
-  assert.equal(data.events[0].primarySource, "Source B");
-  assert.equal(data.events[0].sourceCount, 2);
-  assert.deepEqual(data.events[0].keyDevelopments.map((item) => item.date), ["2026-06-01", "2026-06-04"]);
-  assert.ok(data.events[0].whyItMatters);
-  assert.ok(data.events[0].impactAreas.length > 0);
-  assert.equal(data.events[0].watchlist.length, 3);
-  assert.equal(data.events[0].lookbackDays, undefined);
+  assert.equal(data.meta.event_count, 1);
+  assert.equal(data.events[0].lane_id, "china_us_ai");
+  assert.equal(data.events[0].profile.related_item_count, 2);
+  assert.deepEqual(data.events[0].related_items.map((item) => item.item_id), ["ai-1", "ai-2"]);
+  assert.equal(data.events[0].latest_update.title, "人工智能政策听证会");
+  assert.equal(data.events[0].evidence.primary_source.name, "Source B");
+  assert.equal(data.events[0].evidence.source_count, 2);
+  assert.deepEqual(data.events[0].timeline.map((item) => item.date), ["2026-06-01", "2026-06-04"]);
+  assert.ok(data.events[0].definition.why_it_matters);
+  assert.ok(data.events[0].profile.impact_areas.length > 0);
+  assert.equal(data.events[0].watch_variables.length, 3);
+  assert.equal(data.lookbackDays, undefined);
   assert.equal(data.events[0].timeline.length, 2);
   assert.deepEqual(data.events[0].timeline.map((item) => item.date), ["2026-06-01", "2026-06-04"]);
-  assert.deepEqual(data.events[0].evidenceItems.map((item) => item.id), ["ai-1", "ai-2"]);
+  assert.deepEqual(data.events[0].related_items.map((item) => item.item_id), ["ai-1", "ai-2"]);
 });
 
 test("buildEvents emits the MVP event tracking data structure", () => {
@@ -99,13 +99,13 @@ test("buildEvents emits the MVP event tracking data structure", () => {
     }
   ], "2026-06-02T03:00:00.000Z");
 
-  assert.equal(data.totalEvents, 1);
+  assert.equal(data.meta.event_count, 1);
   assert.equal(data.schema_version, "event-tracking.v4");
   assert.equal(data.generated_at, "2026-06-02T03:00:00.000Z");
   assert.equal(data.meta.event_count, 1);
   assert.equal(data.decision_lanes.length, 3);
   const event = data.events[0];
-  assert.equal(event.event_id, event.id);
+  assert.equal(event.event_id, "lane-china_us_ai");
   assert.equal(event.lane_id, "china_us_ai");
   assert.equal(event.priority_grade, "A");
   assert.ok(event.definition.one_sentence);
@@ -115,29 +115,28 @@ test("buildEvents emits the MVP event tracking data structure", () => {
   assert.ok(event.deep_tracking.scenario_tree.length >= 3);
   assert.ok(event.evidence.source_links.length >= 2);
   assert.ok(event.latest_update.title);
-  assert.equal(typeof event.one_sentence_summary, "string");
-  assert.ok(event.current_status);
-  assert.ok(Array.isArray(event.category));
-  assert.ok(event.importance_level);
-  assert.ok(event.confidence_level);
-  assert.match(event.last_updated, /^\d{4}-\d{2}-\d{2}$/);
-  assert.ok(event.latest_change);
+  assert.equal(typeof event.definition.one_sentence, "string");
+  assert.ok(event.status);
+  assert.ok(Array.isArray(event.profile.impact_areas));
+  assert.ok(event.priority_grade);
+  assert.ok(event.evidence.confidence_basis);
+  assert.match(event.updated_at, /^\d{4}-\d{2}-\d{2}T/);
+  assert.ok(event.current_judgment.latest_change);
   assert.ok(Array.isArray(event.timeline));
   assert.ok(event.timeline.length >= 2);
   assert.ok(event.timeline.every((entry) => entry.date && entry.title && entry.description && entry.evidence_type && entry.importance && Array.isArray(entry.sources)));
   assert.ok(Array.isArray(event.confirmed_facts));
   assert.ok(event.confirmed_facts.every((fact) => fact.fact && fact.evidence_url !== undefined));
-  assert.equal(typeof event.impact_analysis.market, "string");
   assert.equal(typeof event.impact.market.impact, "string");
-  assert.equal(typeof event.impact_analysis.industry, "string");
-  assert.equal(typeof event.impact_analysis.company, "string");
-  assert.equal(typeof event.impact_analysis.user, "string");
+  assert.equal(typeof event.impact.industry.impact, "string");
+  assert.equal(typeof event.impact.company.impact, "string");
+  assert.equal(typeof event.impact.user_or_developer.impact, "string");
   assert.ok(Array.isArray(event.market_feedback));
   assert.ok(Array.isArray(event.uncertainties));
   assert.ok(Array.isArray(event.watch_variables));
-  assert.ok(Array.isArray(event.related_articles));
-  assert.ok(event.related_articles.every((article) => article.title && article.source && article.url && article.published_at && Number.isFinite(article.relevance_score)));
-  assert.deepEqual(event.my_questions, []);
+  assert.ok(Array.isArray(event.related_items));
+  assert.ok(event.related_items.every((article) => article.title && article.source && article.url && article.published_at && Number.isFinite(article.relevance_score)));
+  assert.ok(Array.isArray(event.next_questions));
   assert.deepEqual(event.analysis_notes, []);
 });
 
@@ -167,7 +166,7 @@ test("buildEvents excludes untranslated non-Chinese items from event tracking", 
     }
   ], "2026-06-02T03:00:00.000Z");
 
-  assert.equal(data.totalEvents, 0);
+  assert.equal(data.meta.event_count, 0);
 });
 
 test("buildEvents avoids broad category buckets for unrelated items", () => {
@@ -194,7 +193,7 @@ test("buildEvents avoids broad category buckets for unrelated items", () => {
     }
   ], "2026-06-02T03:00:00.000Z");
 
-  assert.equal(data.totalEvents, 0);
+  assert.equal(data.meta.event_count, 0);
 });
 
 test("buildEvents marks US equity events with market context and decision brief", () => {
@@ -240,12 +239,12 @@ test("buildEvents marks US equity events with market context and decision brief"
     }
   });
 
-  assert.equal(data.totalEvents, 1);
-  assert.equal(data.events[0].decisionLane, "us_equities");
-  assert.equal(data.events[0].decisionGrade, "A");
-  assert.equal(data.events[0].decisionSignal, "优先跟踪");
-  assert.ok(data.events[0].decisionBrief);
-  assert.deepEqual(data.events[0].marketContext.tickers.includes("NVDA"), true);
+  assert.equal(data.meta.event_count, 1);
+  assert.equal(data.events[0].lane_id, "us_equities");
+  assert.equal(data.events[0].priority_grade, "A");
+  assert.equal(data.events[0].decision.signal, "优先跟踪");
+  assert.ok(data.events[0].decision.brief);
+  assert.deepEqual(data.events[0].decision.market_symbols.includes("NVDA"), true);
 });
 
 test("buildEvents does not promote generic market stories without tickers", () => {
@@ -282,7 +281,7 @@ test("buildEvents does not promote generic market stories without tickers", () =
     marketContext: { status: "available", symbols: {}, topMovers: [] }
   });
 
-  assert.equal(data.totalEvents, 0);
+  assert.equal(data.meta.event_count, 0);
 });
 
 test("buildEvents only promotes China policy events from authoritative sources", () => {
@@ -309,16 +308,16 @@ test("buildEvents only promotes China policy events from authoritative sources",
     }
   ];
   const promoted = buildEvents(policyItems, "2026-06-02T03:00:00.000Z");
-  assert.equal(promoted.totalEvents, 1);
-  assert.equal(promoted.events[0].decisionLane, "china_policy");
-  assert.ok(promoted.events[0].policyStatus);
+  assert.equal(promoted.meta.event_count, 1);
+  assert.equal(promoted.events[0].lane_id, "china_policy");
+  assert.ok(promoted.events[0].decision.policy_status);
 
   const mediaOnly = buildEvents(policyItems.map((item) => ({
     ...item,
     source: "普通媒体",
     sourceAuthority: "media"
   })), "2026-06-02T03:00:00.000Z");
-  assert.equal(mediaOnly.totalEvents, 0);
+  assert.equal(mediaOnly.meta.event_count, 0);
 });
 
 test("buildEvents marks China-US AI events as decision briefs", () => {
@@ -355,8 +354,8 @@ test("buildEvents marks China-US AI events as decision briefs", () => {
     }
   ], "2026-06-02T03:00:00.000Z");
 
-  assert.equal(data.totalEvents, 1);
-  assert.equal(data.events[0].decisionLane, "china_us_ai");
-  assert.ok(data.events[0].decisionBrief);
-  assert.ok(data.events[0].confirmedFacts.length > 0);
+  assert.equal(data.meta.event_count, 1);
+  assert.equal(data.events[0].lane_id, "china_us_ai");
+  assert.ok(data.events[0].decision.brief);
+  assert.ok(data.events[0].confirmed_facts.length > 0);
 });

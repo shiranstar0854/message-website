@@ -57,13 +57,22 @@
   }
 
   function searchableText(item) {
-    const market = item.marketContext || {};
-    const sourceQuality = item.sourceQuality || {};
+    const definition = item.definition || {};
+    const decision = item.decision || {};
+    const evidence = item.evidence || {};
+    const profile = item.profile || {};
+    const factTexts = (item.confirmed_facts || []).map((fact) => (
+      fact && typeof fact === "object" ? fact.fact : fact
+    ));
+    const riskTexts = (item.risks || []).map((risk) => (
+      risk && typeof risk === "object" ? risk.risk : risk
+    ));
+    const evidenceGaps = evidence.evidence_gaps || [];
     return {
       title: normalize(`${item.title_zh || ""} ${item.titleZh || ""} ${item.translatedTitle || ""} ${item.title_original || ""} ${item.title || ""}`),
-      summary: normalize(`${item.summary_zh || ""} ${item.summaryZh || ""} ${item.summary_original || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""} ${item.decisionBrief || ""} ${item.marketRelevance || ""} ${(item.confirmedFacts || []).join(" ")} ${(item.riskFactors || []).join(" ")} ${(item.evidenceGaps || []).join(" ")}`),
+      summary: normalize(`${definition.one_sentence || ""} ${definition.why_it_matters || ""} ${item.summary_zh || ""} ${item.summaryZh || ""} ${item.summary_original || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""} ${decision.brief || ""} ${factTexts.join(" ")} ${riskTexts.join(" ")} ${evidenceGaps.join(" ")}`),
       source: normalize(item.source),
-      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${item.decisionLane || ""} ${item.decisionLaneLabel || ""} ${item.decisionSignal || ""} ${item.policyStatus || ""} ${(item.relatedEntities || []).join(" ")} ${(market.tickers || []).join(" ")} ${Object.keys(market.symbols || {}).join(" ")} ${sourceQuality.confidence || ""} ${(item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.article_keywords || item.keywords || []).join(" ")}`)
+      labels: normalize(`${item.category || ""} ${item.primaryCategory || ""} ${item.lane_id || ""} ${item.lane_label || ""} ${decision.signal || ""} ${decision.policy_status || ""} ${(profile.entities ? Object.values(profile.entities).flat() : []).join(" ")} ${(decision.market_symbols || []).join(" ")} ${evidence.confidence_basis || ""} ${(profile.impact_areas || item.impactAreas || []).join(" ")} ${(item.tags || []).join(" ")} ${(item.article_keywords || item.keywords || []).join(" ")}`)
     };
   }
 
@@ -84,8 +93,8 @@
     const title = expandedTerms.reduce((score, term) => score + (fieldMatches(text.title, term) ? 1 : 0), 0);
     const keyword = expandedTerms.reduce((score, term) => score + (fieldMatches(text.labels, term) ? 1 : 0), 0);
     const relevance = expandedTerms.reduce((score, term) => score + (fieldMatches(text.summary, term) || fieldMatches(text.source, term) ? 1 : 0), 0);
-    const authority = ["official-agency", "official-market", "official-media", "financial-media"].includes(item.sourceAuthority) || item.sourceQuality?.officialCount > 0 ? 1 : 0;
-    const market = item.marketContext?.tickers?.length || Object.keys(item.marketContext?.symbols || {}).length ? 1 : 0;
+    const authority = ["official-agency", "official-market", "official-media", "financial-media"].includes(item.sourceAuthority) || item.evidence?.official_source_count > 0 ? 1 : 0;
+    const market = item.decision?.market_symbols?.length ? 1 : 0;
     return {
       title,
       keyword,

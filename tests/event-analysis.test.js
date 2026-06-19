@@ -11,24 +11,46 @@ const {
 } = require("../scripts/generate-event-analysis");
 
 const sampleEvent = {
-  id: "event-1",
   event_id: "event-1",
   title: "AI 政策更新",
-  summary: "监管机构发布 AI 治理规则。",
-  one_sentence_summary: "监管机构发布 AI 治理规则。",
-  decisionBrief: "需要继续跟踪执行细则。",
-  decisionLane: "china_us_ai",
-  decisionGrade: "A",
-  confidence_level: "中",
-  confirmed_facts: ["监管机构发布规则"],
-  impact_analysis: {
-    market: "关注 AI 链条反应。",
-    industry: "影响 AI 治理。",
-    company: "目前证据不足",
-    user: "目前证据不足"
+  lane_id: "china_us_ai",
+  lane_label: "中美 AI 发展",
+  status: "active",
+  priority_grade: "A",
+  updated_at: "2026-06-18T00:00:00.000Z",
+  definition: {
+    one_sentence: "监管机构发布 AI 治理规则。",
+    background: "监管机构发布 AI 治理规则。",
+    why_it_matters: "需要继续跟踪执行细则。"
+  },
+  decision: {
+    signal: "优先跟踪",
+    brief: "需要继续跟踪执行细则。"
+  },
+  evidence: {
+    confidence_basis: "中",
+    source_links: [{
+      title: "AI 政策发布",
+      source: "官方来源",
+      url: "https://example.test/rule"
+    }]
+  },
+  confirmed_facts: [{
+    fact: "监管机构发布规则",
+    evidence_url: "https://example.test/rule"
+  }],
+  impact: {
+    market: { impact: "关注 AI 链条反应。" },
+    industry: { impact: "影响 AI 治理。" },
+    company: { impact: "目前证据不足" },
+    user_or_developer: { impact: "目前证据不足" }
   },
   uncertainties: ["执行细则仍需观察"],
-  watch_variables: ["官方问答", "实施时间", "企业反馈"],
+  watch_variables: [
+    { variable: "官方问答" },
+    { variable: "实施时间" },
+    { variable: "企业反馈" }
+  ],
   timeline: [{
     date: "2026-06-18",
     title: "AI 政策发布",
@@ -36,7 +58,7 @@ const sampleEvent = {
     source: "官方来源",
     url: "https://example.test/rule"
   }],
-  related_articles: [{
+  related_items: [{
     title: "AI 政策发布",
     source: "官方来源",
     url: "https://example.test/rule"
@@ -202,13 +224,12 @@ test("event LLM analysis runs fact extraction then event analysis and stores ana
   });
 
   assert.equal(calls.length, 2);
-  assert.equal(analyzed.eventAnalysisStats.llmAttempted, 1);
-  assert.equal(analyzed.eventAnalysisStats.llmSucceeded, 1);
+  assert.equal(analyzed.meta.stats.event_analysis.llmAttempted, 1);
+  assert.equal(analyzed.meta.stats.event_analysis.llmSucceeded, 1);
   const event = analyzed.events[0];
-  assert.equal(event.llm_analysis_status, "succeeded");
   assert.equal(event.analysis_notes.length, 1);
-  assert.equal(event.analysis_notes[0].is_core_analysis, true);
-  assert.equal(event.analysis_notes[0].analysis_quality_score, 100);
+  assert.equal(event.analysis_notes[0].quality.is_core_analysis, true);
+  assert.equal(event.analysis_notes[0].quality.score, 100);
   assert.equal(event.analysis_notes[0].model.status, "succeeded");
   assert.equal(event.analysis_notes[0].analysis.core_change, "事件从讨论阶段进入官方规则发布阶段。");
   assert.equal(event.analysis_notes[0].quality.score, 100);
@@ -234,15 +255,14 @@ test("event LLM analysis writes fallback analysis when the model response fails"
     })
   });
 
-  assert.equal(analyzed.eventAnalysisStats.llmAttempted, 1);
-  assert.equal(analyzed.eventAnalysisStats.llmSucceeded, 0);
-  assert.equal(analyzed.eventAnalysisStats.fallbackCount, 1);
-  assert.equal(analyzed.events[0].llm_analysis_status, "fallback");
+  assert.equal(analyzed.meta.stats.event_analysis.llmAttempted, 1);
+  assert.equal(analyzed.meta.stats.event_analysis.llmSucceeded, 0);
+  assert.equal(analyzed.meta.stats.event_analysis.fallbackCount, 1);
   assert.ok(analyzed.events[0].analysis_notes[0].fact_extraction);
   assert.equal(analyzed.events[0].analysis_notes[0].model.status, "fallback");
   assert.ok(analyzed.events[0].analysis_notes[0].quality);
-  assert.equal(analyzed.events[0].analysis_notes[0].is_core_analysis, false);
-  assert.ok(analyzed.events[0].analysis_notes[0].analysis_quality_score < 80);
-  assert.ok(analyzed.events[0].analysis_notes[0].quality_flags.includes("模型失败后使用本地兜底分析"));
-  assert.equal(analyzed.events[0].llm_analysis_model, "extractive");
+  assert.equal(analyzed.events[0].analysis_notes[0].quality.is_core_analysis, false);
+  assert.ok(analyzed.events[0].analysis_notes[0].quality.score < 80);
+  assert.ok(analyzed.events[0].analysis_notes[0].quality.flags.some((flag) => flag.includes("兜底分析")));
+  assert.equal(analyzed.events[0].analysis_notes[0].model.name, "extractive");
 });

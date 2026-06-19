@@ -44,8 +44,8 @@
   };
 
   const FALLBACK_EVENTS = {
-    generatedAt: "",
-    totalEvents: 0,
+    generated_at: "",
+    meta: { event_count: 0 },
     events: []
   };
   const EVENT_REFRESH_MS = 120000;
@@ -427,26 +427,28 @@
 
   function eventSearchText(event) {
     return [
-      event.id,
       event.event_id,
       event.title,
-      event.summary,
-      event.one_sentence_summary,
-      ...(Array.isArray(event.category) ? event.category : [event.category]),
-      ...(Array.isArray(event.impactAreas) ? event.impactAreas : [event.impactAreas])
+      event.definition?.one_sentence,
+      event.definition?.why_it_matters,
+      event.decision?.brief,
+      event.lane_id,
+      event.lane_label,
+      ...(event.profile?.impact_areas || []),
+      ...(event.profile?.entities ? Object.values(event.profile.entities).flat() : [])
     ].filter(Boolean).join(" ").toLowerCase();
   }
 
   function selectHomeEvents(events, limit = 3) {
     const ranked = [...(events || [])]
       .sort((left, right) => eventRankScore(right) - eventRankScore(left)
-        || new Date(right.last_updated || right.updatedAt || 0).getTime() - new Date(left.last_updated || left.updatedAt || 0).getTime());
+        || new Date(right.updated_at || 0).getTime() - new Date(left.updated_at || 0).getTime());
     const selected = [];
     const used = new Set();
 
     for (const tokens of HOME_EVENT_THEMES) {
       const match = ranked.find((event) => {
-        const id = event.event_id || event.id || event.title;
+        const id = event.event_id || event.title;
         return !used.has(id) && tokens.some((token) => eventSearchText(event).includes(token));
       });
       if (match) {
@@ -473,9 +475,9 @@
   }
 
   function eventLatestChange(event) {
-    const evidence = event.evidenceItems || event.items || [];
-    const latest = event.latestUpdate || evidence[0] || {};
-    return event.latest_change || latest.title || event.summary || event.one_sentence_summary || "等待最新信息更新";
+    const evidence = event.related_items || [];
+    const latest = event.latest_update || evidence[0] || {};
+    return event.current_judgment?.latest_change || latest.title || event.definition?.one_sentence || "等待最新信息更新";
   }
 
   function renderHomeEvents(eventData) {
@@ -489,28 +491,32 @@
 
     container.innerHTML = events.map((event) => {
       const detailUrl = eventDetailUrl(event);
-      const updatedAt = event.last_updated || event.updatedAt;
+      const updatedAt = event.updated_at;
+      const decision = event.decision || {};
+      const definition = event.definition || {};
+      const currentJudgment = event.current_judgment || {};
+      const evidence = event.evidence || {};
       return `
         <article class="home-event-card">
           <a class="home-event-card-link" href="${escapeHtml(detailUrl)}" aria-label="查看${escapeHtml(event.title || "重点事件")}追踪详情">
             <div class="home-event-head">
               <div>
                 <div class="event-decision-meta">
-                  <span>${escapeHtml(event.current_status || "持续追踪")}</span>
-                  <span>重要性：${escapeHtml(event.importance_level || event.heat || "中")}</span>
+                  <span>${escapeHtml(event.status || "active")}</span>
+                  <span>重要性：${escapeHtml(event.priority_grade || "中")}</span>
                 </div>
                 <h3>${escapeHtml(event.title || "重点事件")}</h3>
               </div>
             </div>
-            <p class="home-event-summary">${escapeHtml(event.one_sentence_summary || event.summary || "暂无事件摘要。")}</p>
+            <p class="home-event-summary">${escapeHtml(definition.one_sentence || "暂无事件摘要。")}</p>
             <div class="home-event-latest">
               <strong>最新变化</strong>
               <p>${escapeHtml(eventLatestChange(event))}</p>
             </div>
             <dl class="home-event-fields">
-              <div><dt>当前状态</dt><dd>${escapeHtml(event.current_status || "持续追踪")}</dd></div>
-              <div><dt>重要性</dt><dd>${escapeHtml(event.importance_level || event.heat || "中")}</dd></div>
-              <div><dt>置信度</dt><dd>${escapeHtml(event.confidence_level || "中")}</dd></div>
+              <div><dt>当前状态</dt><dd>${escapeHtml(event.status || "active")}</dd></div>
+              <div><dt>重要性</dt><dd>${escapeHtml(event.priority_grade || "中")}</dd></div>
+              <div><dt>置信度</dt><dd>${escapeHtml(evidence.confidence_basis || currentJudgment.confidence_reason || "中")}</dd></div>
               <div><dt>更新时间</dt><dd>${escapeHtml(formatShortDate(updatedAt))}</dd></div>
             </dl>
             <span class="event-detail-button home-event-detail-button">查看追踪</span>
@@ -521,14 +527,14 @@
   }
 
   function eventRankScore(event) {
-    const evidence = event.evidenceItems || event.items || [];
-    const updatedTime = new Date(event.last_updated || event.updatedAt || 0).getTime();
+    const evidence = event.related_items || [];
+    const updatedTime = new Date(event.updated_at || 0).getTime();
     const freshness = Number.isNaN(updatedTime) ? 0 : Math.max(0, 16 - (Date.now() - updatedTime) / (6 * 60 * 60 * 1000));
     const topScore = Number(evidence[0]?.score || 0);
     return topScore + freshness
-      + (event.whyItMatters || event.impact_analysis ? 8 : 0)
-      + ((event.watchlist || event.watch_variables)?.length ? 5 : 0)
-      + Math.min(10, Number(event.itemCount || evidence.length || 0));
+      + (event.definition?.why_it_matters || event.impact ? 8 : 0)
+      + ((event.watch_variables)?.length ? 5 : 0)
+      + Math.min(10, Number(event.profile?.related_item_count || evidence.length || 0));
   }
 
   async function init() {
@@ -598,9 +604,10 @@
     if (window.location.protocol !== "file:") {
       setInterval(async () => {
         const refreshedEvents = await loadJson("src/data/events.json", FALLBACK_EVENTS);
-        if (refreshedEvents.generatedAt && refreshedEvents.generatedAt !== eventData.generatedAt) {
-          eventData.generatedAt = refreshedEvents.generatedAt;
-          eventData.totalEvents = refreshedEvents.totalEvents;
+        const refreshedGeneratedAt = refreshedEvents.generated_at || refreshedEvents.generatedAt;
+        const currentGeneratedAt = eventData.generated_at || eventData.generatedAt;
+        if (refreshedGeneratedAt && refreshedGeneratedAt !== currentGeneratedAt) {
+          eventData.generated_at = refreshedEvents.generated_at;
           eventData.events = refreshedEvents.events || [];
           renderHomeEvents(eventData);
         }

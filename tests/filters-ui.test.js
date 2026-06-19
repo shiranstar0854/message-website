@@ -126,8 +126,8 @@ test("keyword search expands Musk and SpaceX into tradable proxy entities", () =
     sourceAuthority: "official-agency",
     category: "news",
     score: 88,
-    relatedEntities: ["SpaceX", "Starship", "TSLA", "NASA", "FAA"],
-    marketContext: { tickers: ["TSLA"], symbols: { TSLA: { changePercent: "1.2%" } } }
+    decision: { market_symbols: ["TSLA"] },
+    profile: { entities: { companies: ["SpaceX", "Starship", "TSLA"], institutions: ["NASA", "FAA"] } }
   }, {
     id: "other",
     title: "General science update",
@@ -164,8 +164,8 @@ test("keyword search ranks NVIDIA AI market matches ahead of generic AI items", 
     sourceAuthority: "financial-media",
     category: "finance",
     score: 80,
-    relatedEntities: ["NVDA", "NVIDIA"],
-    marketContext: { tickers: ["NVDA"], symbols: { NVDA: { changePercent: "2.0%" } } },
+    decision: { market_symbols: ["NVDA"] },
+    profile: { entities: { companies: ["NVDA", "NVIDIA"] } },
     summary: "AI demand supports GPU suppliers."
   }];
 

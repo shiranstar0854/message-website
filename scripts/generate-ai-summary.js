@@ -483,8 +483,7 @@ function applyDailyBriefResponse(fallbackSummaries, responseJson, rules = {}) {
       assumptions: Array.isArray(modelChannel.assumptions) && modelChannel.assumptions.length ? modelChannel.assumptions : channel.assumptions,
       risks: Array.isArray(modelChannel.risks) && modelChannel.risks.length ? modelChannel.risks : channel.risks,
       uncertainties: Array.isArray(modelChannel.uncertainties) && modelChannel.uncertainties.length ? modelChannel.uncertainties : channel.uncertainties,
-      thinking_questions: Array.isArray(modelChannel.thinking_questions) && modelChannel.thinking_questions.length ? modelChannel.thinking_questions : channel.thinking_questions,
-      summaryMethod: getLlmConfig(rules).provider
+      thinking_questions: Array.isArray(modelChannel.thinking_questions) && modelChannel.thinking_questions.length ? modelChannel.thinking_questions : channel.thinking_questions
     };
   });
 }
@@ -819,7 +818,7 @@ async function buildDailyChannelSummaries(summaryItems, rules = {}, options = {}
   const env = options.env || process.env;
   if (!isLlmConfigured(rules, env)) {
     return {
-      channels: fallbackSummaries.map((channel) => ({ ...channel, summaryMethod: rules.method || "extractive" })),
+      channels: fallbackSummaries,
       stats: {
         llmAttempted: 0,
         llmSucceeded: 0,
@@ -853,7 +852,7 @@ async function buildDailyChannelSummaries(summaryItems, rules = {}, options = {}
     };
   } catch (error) {
     return {
-      channels: fallbackSummaries.map((channel) => ({ ...channel, summaryMethod: rules.method || "extractive" })),
+      channels: fallbackSummaries,
       stats: {
         llmAttempted: 1,
         llmSucceeded: 0,
@@ -895,7 +894,6 @@ async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) 
   const includeExistingItemStats = options.includeExistingItemStats !== false;
   const itemFallbackCount = includeExistingItemStats ? Number(summarized.summaryStats?.fallbackCount || 0) : 0;
   const itemErrorCount = includeExistingItemStats ? Number(summarized.summaryStats?.errorCount || 0) : 0;
-  const itemErrors = includeExistingItemStats ? (summarized.summaryErrors || []) : [];
   const briefFallbackCount = Number(dailyBrief.stats?.fallbackCount || 0);
   const briefErrorCount = Number(dailyBrief.stats?.errorCount || 0);
   const llm = getLlmConfig(rules);
@@ -921,7 +919,6 @@ async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) 
       }
     },
     channels: dailyBrief.channels,
-    ...(itemErrors.length || dailyBrief.errors ? { errors: [...itemErrors, ...(dailyBrief.errors || [])] } : {}),
     items: dailyItems,
     event_candidates: eventCandidates
   };

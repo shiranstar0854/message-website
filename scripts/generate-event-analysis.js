@@ -94,6 +94,8 @@ function normalizeImpactAnalysis(value, fallback = {}) {
 
 function eventArticles(event = {}) {
   return [
+    ...(event.related_items || []),
+    ...(event.evidence?.source_links || []),
     ...(event.related_articles || []),
     ...(event.evidenceItems || []),
     ...(event.items || [])
@@ -101,7 +103,7 @@ function eventArticles(event = {}) {
 }
 
 function latestArticleForEvent(event = {}) {
-  const latest = event.latestUpdate || {};
+  const latest = event.latest_update || event.latestUpdate || {};
   if (latest.title || latest.url || latest.summary) {
     return {
       title: latest.title || "",
@@ -125,6 +127,11 @@ function latestArticleForEvent(event = {}) {
 
 function buildEventBackground(event = {}) {
   return truncateText(normalizeText([
+    event.definition?.background,
+    event.definition?.one_sentence,
+    event.definition?.why_it_matters,
+    event.current_judgment?.summary,
+    event.decision?.brief,
     event.summary || event.one_sentence_summary,
     event.whyItMatters,
     event.decisionBrief,
@@ -134,11 +141,23 @@ function buildEventBackground(event = {}) {
 
 function buildPreviousJudgment(event = {}) {
   return truncateText(normalizeText([
+    event.current_judgment?.summary,
+    event.current_judgment?.judgment_update,
+    event.decision?.brief,
     event.decisionBrief,
     event.whyItMatters,
     event.tracking_decision ? `追踪判断：${event.tracking_decision}` : "",
-    event.confidence_level ? `置信度：${event.confidence_level}` : ""
+    event.decision?.signal ? `追踪判断：${event.decision.signal}` : "",
+    event.confidence_level ? `置信度：${event.confidence_level}` : "",
+    event.evidence?.confidence_basis ? `置信度：${event.evidence.confidence_basis}` : ""
   ].filter(Boolean).join(" ")), 500);
+}
+
+function textFromMaybeObject(value, fields = ["fact", "variable", "risk", "uncertainty", "argument", "question", "title", "summary"]) {
+  if (value && typeof value === "object") {
+    return fields.map((field) => value[field]).find(Boolean) || "";
+  }
+  return value;
 }
 
 function normalizeTimelineItem(item = {}) {
@@ -154,18 +173,25 @@ function normalizeTimelineItem(item = {}) {
 
 function buildEventContext(event = {}) {
   const articles = eventArticles(event);
+  const facts = (event.confirmed_facts || event.confirmedFacts || []).map((item) => textFromMaybeObject(item)).filter(Boolean);
+  const watchVariables = (event.watch_variables || event.watchlist || []).map((item) => textFromMaybeObject(item)).filter(Boolean);
+  const uncertainties = [
+    ...(event.uncertainties || []),
+    ...(event.risks || []),
+    ...(event.riskFactors || [])
+  ].map((item) => textFromMaybeObject(item)).filter(Boolean);
   return {
     event_id: event.event_id || event.id || "",
     event_title: event.title || "",
     event_background: buildEventBackground(event),
-    current_status: event.current_status || "",
+    current_status: event.status || event.current_status || "",
     previous_judgment: buildPreviousJudgment(event),
     latest_article: latestArticleForEvent(event),
-    related_facts: normalizeList(event.confirmed_facts || event.confirmedFacts, 10),
+    related_facts: normalizeList(facts, 10),
     previous_timeline: (event.timeline || event.keyDevelopments || []).slice(-12).map(normalizeTimelineItem),
-    watch_variables: normalizeList(event.watch_variables || event.watchlist, 10),
+    watch_variables: normalizeList(watchVariables, 10),
     related_articles: normalizeLinks(articles, [], 10),
-    existing_uncertainties: normalizeList(event.uncertainties || event.riskFactors, 10),
+    existing_uncertainties: normalizeList(uncertainties, 10),
     existing_analysis_notes: normalizeList((event.analysis_notes || []).map((note) => (
       typeof note === "string" ? note : note.core_change || note.judgment_update || note.title
     )), 10)
@@ -432,18 +458,6 @@ function buildAnalysisNote(event, eventContext, factExtraction, analysis, qualit
       status
     },
     source_article_id: sourceArticle.id || sourceArticle.url || "",
-    core_change: analysis.core_change,
-    confirmed_facts: analysis.confirmed_facts,
-    impact_analysis: analysis.impact_analysis,
-    forward_looking_scenarios: analysis.forward_looking_scenarios,
-    risk_factors: analysis.risk_factors,
-    counter_arguments: analysis.counter_arguments,
-    watch_variables: analysis.watch_variables,
-    judgment_update: analysis.judgment_update,
-    tracking_decision: analysis.tracking_decision,
-    confidence_level: analysis.confidence_level,
-    confidence_reason: analysis.confidence_reason,
-    source_links: analysis.source_links,
     fact_extraction: factExtraction,
     analysis: {
       core_change: analysis.core_change,
@@ -458,12 +472,9 @@ function buildAnalysisNote(event, eventContext, factExtraction, analysis, qualit
       confidence: {
         level: analysis.confidence_level,
         reason: analysis.confidence_reason
-      }
+      },
+      source_links: analysis.source_links
     },
-    event_context: eventContext,
-    analysis_quality_score: quality.analysis_quality_score,
-    quality_flags: quality.quality_flags,
-    is_core_analysis: quality.is_core_analysis,
     quality: {
       score: quality.analysis_quality_score,
       threshold: QUALITY_THRESHOLD,
@@ -481,8 +492,6 @@ function buildAnalysisNote(event, eventContext, factExtraction, analysis, qualit
         has_source_links: Boolean((analysis.source_links || []).length)
       }
     },
-    model_name: model,
-    status,
     ...(errorMessage ? { error: truncateText(errorMessage, 180) } : {})
   };
 }
@@ -493,28 +502,62 @@ function legacyNotes(notes = []) {
     return {
       id: `legacy-${Math.abs([...note].reduce((hash, char) => hash + char.charCodeAt(0), 0))}`,
       created_at: "",
-      core_change: note,
-      confirmed_facts: [],
-      impact_analysis: normalizeImpactAnalysis({}),
-      forward_looking_scenarios: [],
-      risk_factors: [],
-      counter_arguments: [],
-      watch_variables: [],
-      judgment_update: "",
-      tracking_decision: "暂时观察",
-      confidence_level: "低",
-      confidence_reason: EMPTY_EVIDENCE,
-      source_links: [],
-      analysis_quality_score: 0,
-      quality_flags: ["历史非结构化记录"],
-      is_core_analysis: false
+      model: {
+        provider: "",
+        name: "legacy",
+        status: "legacy"
+      },
+      analysis: {
+        core_change: note,
+        judgment_update: "",
+        confirmed_facts: [],
+        impact: normalizeImpactAnalysis({}),
+        forward_scenarios: [],
+        risks: [],
+        counter_arguments: [],
+        watch_variables: [],
+        tracking_decision: "暂时观察",
+        confidence: {
+          level: "低",
+          reason: EMPTY_EVIDENCE
+        },
+        source_links: []
+      },
+      quality: {
+        score: 0,
+        threshold: QUALITY_THRESHOLD,
+        flags: ["历史非结构化记录"],
+        is_core_analysis: false,
+        checks: {}
+      }
     };
   });
 }
 
+function analysisView(note = {}) {
+  const analysis = note.analysis || {};
+  const confidence = analysis.confidence || {};
+  return {
+    core_change: analysis.core_change || note.core_change || "",
+    confirmed_facts: analysis.confirmed_facts || note.confirmed_facts || [],
+    impact: analysis.impact || note.impact_analysis || {},
+    forward_scenarios: analysis.forward_scenarios || note.forward_looking_scenarios || [],
+    risks: analysis.risks || note.risk_factors || [],
+    counter_arguments: analysis.counter_arguments || note.counter_arguments || [],
+    watch_variables: analysis.watch_variables || note.watch_variables || [],
+    judgment_update: analysis.judgment_update || note.judgment_update || "",
+    tracking_decision: analysis.tracking_decision || note.tracking_decision || "",
+    confidence_level: confidence.level || note.confidence_level || "中",
+    confidence_reason: confidence.reason || note.confidence_reason || "",
+    source_links: analysis.source_links || note.source_links || []
+  };
+}
+
 function applyEventAnalysis(event, analysisNote, generatedAt, model, status = "succeeded") {
-  const coreNote = analysisNote.is_core_analysis ? analysisNote : null;
-  const relatedArticles = normalizeLinks(analysisNote.source_links, eventArticles(event), 8).map((link) => ({
+  const view = analysisView(analysisNote);
+  const isCore = Boolean(analysisNote.quality?.is_core_analysis || analysisNote.is_core_analysis);
+  const coreNote = isCore ? view : null;
+  const relatedArticles = normalizeLinks(view.source_links, eventArticles(event), 8).map((link) => ({
     title: link.title,
     source: link.source,
     url: link.url,
@@ -529,13 +572,30 @@ function applyEventAnalysis(event, analysisNote, generatedAt, model, status = "s
       confidence: coreNote.confidence_level || "中"
     };
   });
+  const impactObjects = coreNote ? Object.fromEntries(IMPACT_KEYS.map((key) => [
+    key,
+    {
+      impact: coreNote.impact?.[key] || EMPTY_EVIDENCE,
+      evidence: relatedArticles.slice(0, 2),
+      confidence: coreNote.confidence_level || "中"
+    }
+  ])) : {};
+  const riskObjects = (coreNote?.risks || []).map((risk) => ({
+    risk_type: risk.type || "信息风险",
+    risk: risk.risk,
+    trigger: risk.reason || EMPTY_EVIDENCE,
+    possible_consequence: risk.reason || EMPTY_EVIDENCE,
+    severity: "中",
+    probability: "中",
+    watch_signal: risk.reason || EMPTY_EVIDENCE
+  }));
   const watchVariableObjects = (coreNote?.watch_variables || []).map((variable) => ({
     variable,
     why_it_matters: "该变量会影响后续是否维持、提高或降低跟踪优先级。",
     signal_source: "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
     update_frequency: "事件触发"
   }));
-  const uncertaintyObjects = (coreNote?.risk_factors || []).map((risk) => ({
+  const uncertaintyObjects = (coreNote?.risks || []).map((risk) => ({
     uncertainty: risk.risk,
     why_it_matters: risk.reason || "该不确定性会影响事件判断。",
     needed_evidence: "需要权威来源、后续报道、市场数据或执行反馈验证。"
@@ -543,14 +603,21 @@ function applyEventAnalysis(event, analysisNote, generatedAt, model, status = "s
   return {
     ...event,
     ...(coreNote ? {
-      summary: coreNote.core_change,
-      one_sentence_summary: coreNote.core_change,
-      decisionBrief: coreNote.judgment_update || coreNote.core_change,
-      whyItMatters: coreNote.core_change,
-      confirmedFacts: coreNote.confirmed_facts,
-      confirmed_facts_legacy: coreNote.confirmed_facts,
+      definition: {
+        ...(event.definition || {}),
+        one_sentence: coreNote.core_change || event.definition?.one_sentence || "",
+        why_it_matters: coreNote.core_change || event.definition?.why_it_matters || ""
+      },
+      decision: {
+        ...(event.decision || {}),
+        signal: coreNote.tracking_decision || event.decision?.signal || "",
+        brief: coreNote.judgment_update || coreNote.core_change || event.decision?.brief || ""
+      },
       confirmed_facts: confirmedFactObjects,
-      impact_analysis: coreNote.impact_analysis,
+      impact: {
+        ...(event.impact || {}),
+        ...impactObjects
+      },
       current_judgment: {
         ...(event.current_judgment || {}),
         summary: coreNote.core_change,
@@ -560,17 +627,11 @@ function applyEventAnalysis(event, analysisNote, generatedAt, model, status = "s
         confidence_reason: coreNote.confidence_reason
       },
       uncertainties: uncertaintyObjects,
-      watchlist: coreNote.watch_variables,
       watch_variables: watchVariableObjects,
-      related_articles: relatedArticles,
-      tracking_decision: coreNote.tracking_decision,
-      confidence_level: coreNote.confidence_level
+      risks: riskObjects,
+      related_items: relatedArticles
     } : {}),
-    analysis_notes: [analysisNote, ...legacyNotes(event.analysis_notes)].slice(0, 12),
-    llm_analysis: analysisNote,
-    llm_analysis_status: status,
-    llm_analysis_model: model,
-    llm_analysis_generated_at: generatedAt
+    analysis_notes: [analysisNote, ...legacyNotes(event.analysis_notes)].slice(0, 12)
   };
 }
 
@@ -633,17 +694,20 @@ async function analyzeEventsData(eventsData, rules = {}, generatedAt = new Date(
       const analysis = buildFallbackEventAnalysis(eventContext, factExtraction);
       const quality = downgradeNonModelQuality(scoreAnalysisQuality(analysis, factExtraction), "模型失败后使用本地兜底分析");
       const note = buildAnalysisNote(event, eventContext, factExtraction, analysis, quality, generatedAt, "extractive", "fallback", error.message);
-      events.push({
-        ...applyEventAnalysis(event, note, generatedAt, "extractive", "fallback"),
-        llm_analysis_error: truncateText(error.message || "Event LLM analysis failed.", 180)
-      });
+      events.push(applyEventAnalysis(event, note, generatedAt, "extractive", "fallback"));
     }
   }
 
   return {
     ...eventsData,
-    eventAnalysisStats: stats,
-    ...(errors.length ? { eventAnalysisErrors: errors.slice(0, 20) } : {}),
+    meta: {
+      ...(eventsData.meta || {}),
+      stats: {
+        ...(eventsData.meta?.stats || {}),
+        event_analysis: stats,
+        event_analysis_errors: errors.length
+      }
+    },
     events
   };
 }
@@ -653,7 +717,7 @@ async function generateEventAnalysis(nowIso = new Date().toISOString(), options 
   const eventsData = readJson(EVENTS_PATH, { events: [] });
   const analyzed = await analyzeEventsData(eventsData, rules, nowIso, options);
   writeJson(EVENTS_PATH, analyzed);
-  return analyzed.eventAnalysisStats || {};
+  return analyzed.meta?.stats?.event_analysis || {};
 }
 
 if (require.main === module) {

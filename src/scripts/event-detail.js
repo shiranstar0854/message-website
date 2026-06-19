@@ -57,26 +57,51 @@
 
   function primaryAnalysis(event) {
     const notes = asArray(event.analysis_notes);
-    return notes.find((note) => note?.is_core_analysis)
-      || notes[0]
-      || event.llm_analysis
-      || {
-        core_change: event.decisionBrief || event.whyItMatters || event.one_sentence_summary || event.summary || "",
-        confirmed_facts: event.confirmed_facts || event.confirmedFacts || [],
-        impact_analysis: event.impact_analysis || {},
-        forward_looking_scenarios: [],
-        risk_factors: (event.uncertainties || event.riskFactors || []).map((risk) => ({ risk, type: "信息风险", reason: "" })),
-        counter_arguments: [],
-        watch_variables: event.watch_variables || event.watchlist || [],
-        judgment_update: event.decisionBrief || "",
-        tracking_decision: event.tracking_decision || event.decisionSignal || "",
-        confidence_level: event.confidence_level || "",
-        confidence_reason: "",
-        source_links: event.related_articles || event.evidenceItems || event.items || [],
+    const selected = notes.find((note) => note?.quality?.is_core_analysis)
+      || notes[0];
+    if (selected) return normalizeAnalysisNote(selected);
+    return {
+        core_change: event.current_judgment?.summary || event.decision?.brief || event.definition?.why_it_matters || event.definition?.one_sentence || "",
+        confirmed_facts: event.confirmed_facts || [],
+        impact_analysis: event.impact || {},
+        forward_looking_scenarios: event.forward_scenarios || [],
+        risk_factors: event.risks || (event.uncertainties || []).map((risk) => ({ risk, type: "信息风险", reason: "" })),
+        counter_arguments: event.counter_arguments || [],
+        watch_variables: event.watch_variables || [],
+        judgment_update: event.current_judgment?.judgment_update || "",
+        tracking_decision: event.decision?.signal || "",
+        confidence_level: event.evidence?.confidence_basis || "",
+        confidence_reason: event.current_judgment?.confidence_reason || "",
+        source_links: event.related_items || event.evidence?.source_links || [],
         analysis_quality_score: 0,
-        quality_flags: ["使用兼容字段展示"],
+        quality_flags: ["使用事件顶层字段展示"],
         is_core_analysis: false
       };
+  }
+
+  function normalizeAnalysisNote(note = {}) {
+    const analysis = note.analysis || {};
+    const quality = note.quality || {};
+    const confidence = analysis.confidence || {};
+    return {
+      id: note.id || "",
+      core_change: analysis.core_change || "",
+      confirmed_facts: analysis.confirmed_facts || [],
+      impact_analysis: analysis.impact || {},
+      forward_looking_scenarios: analysis.forward_scenarios || [],
+      risk_factors: analysis.risks || [],
+      counter_arguments: analysis.counter_arguments || [],
+      watch_variables: analysis.watch_variables || [],
+      judgment_update: analysis.judgment_update || "",
+      tracking_decision: analysis.tracking_decision || "",
+      confidence_level: confidence.level || "",
+      confidence_reason: confidence.reason || "",
+      source_links: analysis.source_links || [],
+      analysis_quality_score: quality.score || 0,
+      quality_flags: quality.flags || [],
+      is_core_analysis: Boolean(quality.is_core_analysis),
+      status: note.model?.status || ""
+    };
   }
 
   function renderList(title, values, fallback, extra = "") {
@@ -98,11 +123,15 @@
 
   function renderImpactAnalysis(analysis) {
     const data = analysis || {};
+    const impactText = (value) => {
+      if (value && typeof value === "object") return value.impact || value.description || value.summary || "";
+      return value;
+    };
     const entries = [
-      ["市场", data.market],
-      ["行业", data.industry],
-      ["公司", data.company],
-      ["用户 / 开发者", data.user_or_developer || data.user]
+      ["市场", impactText(data.market)],
+      ["行业", impactText(data.industry)],
+      ["公司", impactText(data.company)],
+      ["用户 / 开发者", impactText(data.user_or_developer || data.user)]
     ];
     return `
       <section class="event-detail-section">
@@ -244,7 +273,9 @@
   }
 
   function renderAnalysisHistory(event, activeNote) {
-    const notes = asArray(event.analysis_notes).filter((note) => note && note !== activeNote);
+    const notes = asArray(event.analysis_notes)
+      .map(normalizeAnalysisNote)
+      .filter((note) => note && note.id !== activeNote.id);
     if (!notes.length) return "";
     return `
       <section class="event-detail-section">
@@ -267,22 +298,25 @@
 
   function renderEvent(container, event) {
     const note = primaryAnalysis(event);
+    const definition = event.definition || {};
+    const latest = event.latest_update || {};
+    const updatedAt = event.updated_at;
     document.title = `${event.title || "事件追踪详情"} - Message Choose`;
     container.innerHTML = `
       <article class="event-detail-view">
         <a class="text-link event-back-link" href="events.html">返回重点事件</a>
         <header class="event-detail-hero">
           <div class="event-decision-meta">
-            <span>${escapeHtml(event.current_status || "持续跟踪")}</span>
-            <span>重要性：${escapeHtml(event.importance_level || event.heat || "中")}</span>
-            <span>置信度：${escapeHtml(note.confidence_level || event.confidence_level || "中")}</span>
-            <span>更新：${escapeHtml(event.last_updated || formatDate(event.updatedAt))}</span>
+            <span>${escapeHtml(event.status || "active")}</span>
+            <span>重要性：${escapeHtml(event.priority_grade || "中")}</span>
+            <span>置信度：${escapeHtml(note.confidence_level || event.evidence?.confidence_basis || "中")}</span>
+            <span>更新：${escapeHtml(formatDate(updatedAt))}</span>
           </div>
           <h1>${escapeHtml(event.title || "重点事件")}</h1>
-          <p>${escapeHtml(event.one_sentence_summary || event.summary || "")}</p>
+          <p>${escapeHtml(definition.one_sentence || "")}</p>
           <div class="event-detail-latest">
             <strong>最新变化</strong>
-            <p>${escapeHtml(event.latest_change || event.latestUpdate?.summary || "暂无最新变化。")}</p>
+            <p>${escapeHtml(event.current_judgment?.latest_change || latest.summary || latest.title || "暂无最新变化。")}</p>
           </div>
         </header>
 
@@ -312,7 +346,7 @@
           </section>
         </div>
         ${renderTimeline(event.timeline)}
-        ${renderSourceLinks(note.source_links || event.related_articles || event.evidenceItems || event.items)}
+        ${renderSourceLinks(note.source_links || event.related_items || event.evidence?.source_links)}
         ${renderAnalysisHistory(event, note)}
       </article>
     `;

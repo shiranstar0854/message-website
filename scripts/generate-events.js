@@ -491,7 +491,10 @@ function structuredMarketFeedback(values = [], latestUpdate = {}) {
 }
 
 function structuredScenarios(event) {
-  const watchSignals = (event.watchlist || event.watch_variables || []).slice(0, 3);
+  const watchSignals = (event.watch_variables || []).map((item) => (
+    item && typeof item === "object" ? item.variable : item
+  )).filter(Boolean).slice(0, 3);
+  const impactLevel = event.priority_grade || "中";
   return [
     {
       scenario_id: "scenario-a",
@@ -501,7 +504,7 @@ function structuredScenarios(event) {
       path: ["新证据出现", "当前判断被强化", "事件优先级继续保持"],
       possible_result: "事件成为需要持续跟踪的高优先级主线。",
       probability: "中",
-      impact_level: event.importance_level || "中",
+      impact_level: impactLevel,
       confidence: "中",
       watch_signals: watchSignals
     },
@@ -525,7 +528,7 @@ function structuredScenarios(event) {
       path: ["反向证据出现", "原判断被削弱", "降低跟踪优先级"],
       possible_result: "当前事件可能只是短期噪声，需要重新评估。",
       probability: "低",
-      impact_level: event.importance_level || "中",
+      impact_level: impactLevel,
       confidence: "低",
       watch_signals: watchSignals.slice(0, 2)
     }
@@ -582,14 +585,19 @@ function structuredNextQuestions(values = [], event = {}) {
 }
 
 function buildDeepTracking(event, evidenceGaps = []) {
-  const watchDashboard = structuredWatchVariables(event.watchlist || event.watch_variables || []);
+  const watchDashboard = event.watch_variables || [];
+  const confirmedFactTexts = (event.confirmed_facts || []).map((fact) => (
+    fact && typeof fact === "object" ? fact.fact : fact
+  )).filter(Boolean);
+  const confidence = event.evidence?.confidence_basis || "中";
+  const relatedItems = event.related_items || event.items || [];
   return {
     tracking_goal: `判断${event.title || "该事件"}是否会改变行业格局、市场预期、政策方向或个人决策。`,
     research_question: event.definition?.core_question || `这个事件后续真正需要回答的问题是什么？`,
     current_thesis: {
-      thesis: event.current_judgment?.summary || event.decisionBrief || event.summary || "",
-      confidence: event.confidence_level || "中",
-      basis: (event.confirmedFacts || event.confirmed_facts_legacy || []).slice(0, 3),
+      thesis: event.current_judgment?.summary || event.decision?.brief || event.definition?.one_sentence || "",
+      confidence,
+      basis: confirmedFactTexts.slice(0, 3),
       what_would_change_this_view: evidenceGaps.slice(0, 3)
     },
     core_tensions: [{
@@ -608,16 +616,16 @@ function buildDeepTracking(event, evidenceGaps = []) {
       cause: "高分信息和多来源报道集中出现。",
       mechanism: "这些信息改变市场、行业、政策或用户对事件的预期。",
       effect: "事件进入重点跟踪列表，并设置后续观察变量。",
-      confidence: event.confidence_level || "中"
+      confidence
     }],
     second_order_effects: [{
       effect: "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
       logic_chain: ["信息集中出现", "影响外部预期", "进一步影响市场、行业、公司、政策或用户行为"],
-      affected_areas: event.impactAreas || [],
-      confidence: event.confidence_level || "中"
+      affected_areas: event.profile?.impact_areas || [],
+      confidence
     }],
     scenario_tree: structuredScenarios(event),
-    risk_paths: structuredRisks(event.riskFactors || []),
+    risk_paths: event.risks || [],
     contrarian_tracking: {
       main_counter_view: "该事件可能只是短期信息集中，而非持续主线。",
       counter_arguments: structuredCounterArguments(event),
@@ -625,15 +633,15 @@ function buildDeepTracking(event, evidenceGaps = []) {
     },
     watch_dashboard: watchDashboard,
     judgment_history: [{
-      date: dateOnly(event.updatedAt || event.last_seen_at || ""),
-      judgment: event.current_judgment?.summary || event.decisionBrief || event.summary || "",
+      date: dateOnly(event.updated_at || event.last_seen_at || ""),
+      judgment: event.current_judgment?.summary || event.decision?.brief || event.definition?.one_sentence || "",
       change_type: "初始判断",
-      reason: event.decisionBrief || "",
-      evidence_item_ids: (event.items || []).map((item) => item.id).filter(Boolean).slice(0, 5)
+      reason: event.decision?.brief || "",
+      evidence_item_ids: relatedItems.map((item) => item.id).filter(Boolean).slice(0, 5)
     }],
     open_questions: structuredNextQuestions([], event),
     manual_review: {
-      needed: (event.evidenceGaps || []).length > 0 || event.confidence_level !== "高",
+      needed: (event.evidence?.evidence_gaps || []).length > 0 || confidence !== "高",
       reason: "仍需要人工核对原文、来源质量和后续影响是否被高估。",
       review_focus: ["核对原文事实", "检查是否有反向证据", "观察后续权威发布或市场反馈"]
     }
@@ -903,7 +911,7 @@ function buildEventQuality(event = {}) {
     has_contrarian_tracking: Boolean(event.deep_tracking?.contrarian_tracking),
     has_watch_dashboard: Boolean(event.deep_tracking?.watch_dashboard?.length),
     has_judgment_history: Boolean(event.deep_tracking?.judgment_history?.length),
-    has_timeline: Boolean(event.timeline?.length),
+    has_timeline: Boolean(event.timeline?.length || event.evidence?.timeline_count),
     has_confirmed_facts: Boolean(event.confirmed_facts?.length),
     has_impact: Boolean(event.impact),
     has_risks: Boolean(event.risks?.length),
@@ -1183,7 +1191,8 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
       };
       const confidence = confidenceLevel(sourceQuality);
       const event = {
-        ...legacyEvent,
+        event_id: group.id,
+        title: group.label,
         lane_id: decisionLane,
         lane_label: laneLabel,
         status: status === "持续跟踪" ? "active" : "watching",
@@ -1262,20 +1271,22 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
         uncertainties: structuredUncertainties(uniqueValues([...riskFactors, ...evidenceGaps], 8)),
         watch_variables: structuredWatchVariables(watchlist),
         next_questions: structuredNextQuestions([], legacyEvent),
-        related_items: relatedArticles
+        related_items: relatedArticles,
+        timeline: enrichedTimeline,
+        analysis_notes: []
       };
       event.deep_tracking = buildDeepTracking(event, evidenceGaps);
       event.quality = buildEventQuality(event);
       return event;
     })
-    .filter((event) => event.itemCount >= 2
+    .filter((event) => event.profile.related_item_count >= 2
       && event.timeline.length >= 2
-      && event.itemCount <= Number(options.maxEventItems || 20)
-      && event.decisionLane
-      && event.decisionGrade !== "C")
-    .sort((left, right) => ["A", "B", "C"].indexOf(left.decisionGrade) - ["A", "B", "C"].indexOf(right.decisionGrade)
-      || Number(right.items[0]?.score || 0) - Number(left.items[0]?.score || 0)
-      || new Date(right.updatedAt || 0).getTime() - new Date(left.updatedAt || 0).getTime())
+      && event.profile.related_item_count <= Number(options.maxEventItems || 20)
+      && event.lane_id
+      && event.priority_grade !== "C")
+    .sort((left, right) => ["A", "B", "C"].indexOf(left.priority_grade) - ["A", "B", "C"].indexOf(right.priority_grade)
+      || Number(right.related_items[0]?.score || 0) - Number(left.related_items[0]?.score || 0)
+      || new Date(right.updated_at || 0).getTime() - new Date(left.updated_at || 0).getTime())
     .slice(0, Number(options.limit || 8));
 
   return {
@@ -1300,16 +1311,6 @@ function buildEvents(items, generatedAt = new Date().toISOString(), options = {}
       }
     },
     decision_lanes: DECISION_LANES,
-    generatedAt,
-    lookbackDays: Number(options.lookbackDays || EVENT_LOOKBACK_DAYS),
-    decisionLanes: {
-      us_equities: decisionLaneLabel("us_equities"),
-      china_us_ai: decisionLaneLabel("china_us_ai"),
-      china_policy: decisionLaneLabel("china_policy")
-    },
-    marketContextStatus: marketContext.status || "missing",
-    marketContextGeneratedAt: marketContext.generatedAt || "",
-    totalEvents: events.length,
     events
   };
 }
@@ -1322,14 +1323,13 @@ function buildTimelineEventMap(events) {
   const map = new Map();
   (events || []).forEach((event) => {
     [
-      event.latestUpdate,
-      ...(event.keyDevelopments || []),
+      event.latest_update,
       ...(event.timeline || []),
-      ...(event.evidenceItems || []),
-      ...(event.items || [])
+      ...(event.related_items || []),
+      ...(event.evidence?.source_links || [])
     ].filter(Boolean).forEach((item) => {
       eventItemKeys(item).forEach((key) => {
-        if (!map.has(key)) map.set(key, event.id);
+        if (!map.has(key)) map.set(key, event.event_id || event.id);
       });
     });
   });
@@ -1372,7 +1372,7 @@ function generateEvents(options = {}) {
 
 if (require.main === module) {
   const data = generateEvents();
-  console.log(`Generated ${data.meta?.event_count || data.totalEvents || 0} event clusters.`);
+  console.log(`Generated ${data.meta?.event_count || 0} event clusters.`);
 }
 
 module.exports = {
