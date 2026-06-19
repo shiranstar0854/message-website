@@ -1,10 +1,920 @@
 {
-  "generatedAt": "2026-06-19T06:04:20.850Z",
+  "generatedAt": "2026-06-19T09:00:59.131Z",
   "provider": "alpha-vantage",
-  "status": "unconfigured",
-  "stale": true,
-  "message": "ALPHA_VANTAGE_API_KEY is not configured.",
-  "symbols": {},
-  "topMovers": [],
-  "newsSentiment": {}
+  "status": "available",
+  "stale": false,
+  "message": "",
+  "symbols": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "status": "available",
+      "price": 210.69,
+      "change": 6.04,
+      "changePercent": "2.9514%",
+      "changePercentValue": 2.9514,
+      "volume": 241272013,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "status": "available",
+      "price": 379.4,
+      "change": 0.49,
+      "changePercent": "0.1293%",
+      "changePercentValue": 0.1293,
+      "volume": 59714157,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "status": "available",
+      "price": 368.03,
+      "change": 4.24,
+      "changePercent": "1.1655%",
+      "changePercentValue": 1.1655,
+      "volume": 44470070,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "META": {
+      "symbol": "META",
+      "status": "available",
+      "price": 577.22,
+      "change": 9.64,
+      "changePercent": "1.6984%",
+      "changePercentValue": 1.6984,
+      "volume": 28824630,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "status": "available",
+      "price": 244.39,
+      "change": 6.89,
+      "changePercent": "2.9011%",
+      "changePercentValue": 2.9011,
+      "volume": 75624415,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "status": "available",
+      "price": 537.37,
+      "change": 24.89,
+      "changePercent": "4.8568%",
+      "changePercentValue": 4.8568,
+      "volume": 43805645,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "status": "available",
+      "price": 411.35,
+      "change": 18.45,
+      "changePercent": "4.6959%",
+      "changePercentValue": 4.6959,
+      "volume": 45076052,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "status": "available",
+      "price": 400.49,
+      "change": 4.11,
+      "changePercent": "1.0369%",
+      "changePercentValue": 1.0369,
+      "volume": 58384713,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "status": "available",
+      "price": 740.62,
+      "change": 18.11,
+      "changePercent": "2.5065%",
+      "changePercentValue": 2.5065,
+      "volume": 50154595,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "status": "available",
+      "price": 746.74,
+      "change": 7.664,
+      "changePercent": "1.0370%",
+      "changePercentValue": 1.037,
+      "volume": 80875657,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    },
+    "SMH": {
+      "symbol": "SMH",
+      "status": "available",
+      "price": 659.88,
+      "change": 35.91,
+      "changePercent": "5.7551%",
+      "changePercentValue": 5.7551,
+      "volume": 11229715,
+      "tradingDay": "2026-06-18",
+      "fetchedAt": "2026-06-19T09:00:59.131Z"
+    }
+  },
+  "topMovers": [
+    {
+      "symbol": "TBLAW",
+      "price": 0.0093,
+      "changeAmount": 0.008,
+      "changePercent": "615.3846%",
+      "changePercentValue": 615.3846,
+      "volume": 388132,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "MRNOW",
+      "price": 0.049,
+      "changeAmount": 0.029,
+      "changePercent": "145.0%",
+      "changePercentValue": 145,
+      "volume": 1405536,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "ADTX",
+      "price": 0.01,
+      "changeAmount": 0.0056,
+      "changePercent": "127.2727%",
+      "changePercentValue": 127.2727,
+      "volume": 5058056431,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "RDACR",
+      "price": 0.12,
+      "changeAmount": 0.06,
+      "changePercent": "100.0%",
+      "changePercentValue": 100,
+      "volume": 393,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "GIPRW",
+      "price": 0.0479,
+      "changeAmount": 0.0227,
+      "changePercent": "90.0794%",
+      "changePercentValue": 90.0794,
+      "volume": 1504,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SAIHW",
+      "price": 0.0494,
+      "changeAmount": 0.0234,
+      "changePercent": "90.0%",
+      "changePercentValue": 90,
+      "volume": 320,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SLXNW",
+      "price": 0.0478,
+      "changeAmount": 0.0222,
+      "changePercent": "86.7188%",
+      "changePercentValue": 86.7188,
+      "volume": 11254,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "RNWWW",
+      "price": 0.0059,
+      "changeAmount": 0.0026,
+      "changePercent": "78.7879%",
+      "changePercentValue": 78.7879,
+      "volume": 35219,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "HQWWW",
+      "price": 20.52,
+      "changeAmount": 8.53,
+      "changePercent": "71.1426%",
+      "changePercentValue": 71.1426,
+      "volume": 709367,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "LNKS",
+      "price": 2.68,
+      "changeAmount": 1.08,
+      "changePercent": "67.5%",
+      "changePercentValue": 67.5,
+      "volume": 68606690,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "DAICW",
+      "price": 0.0189,
+      "changeAmount": 0.0072,
+      "changePercent": "61.5385%",
+      "changePercentValue": 61.5385,
+      "volume": 1008,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "CAST",
+      "price": 8.07,
+      "changeAmount": 2.92,
+      "changePercent": "56.699%",
+      "changePercentValue": 56.699,
+      "volume": 111130855,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "BFLY",
+      "price": 8.885,
+      "changeAmount": 3.175,
+      "changePercent": "55.6042%",
+      "changePercentValue": 55.6042,
+      "volume": 59007354,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SOUL^",
+      "price": 0.1728,
+      "changeAmount": 0.0608,
+      "changePercent": "54.2857%",
+      "changePercentValue": 54.2857,
+      "volume": 19844,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "MYSEW",
+      "price": 0.07,
+      "changeAmount": 0.024,
+      "changePercent": "52.1739%",
+      "changePercentValue": 52.1739,
+      "volume": 9438,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "ORGNW",
+      "price": 0.0003,
+      "changeAmount": 0.0001,
+      "changePercent": "50.0%",
+      "changePercentValue": 50,
+      "volume": 188193,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "EVLVW",
+      "price": 0.0268,
+      "changeAmount": 0.0087,
+      "changePercent": "48.0663%",
+      "changePercentValue": 48.0663,
+      "volume": 20244,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "CDT",
+      "price": 1.02,
+      "changeAmount": 0.327,
+      "changePercent": "47.1861%",
+      "changePercentValue": 47.1861,
+      "volume": 246127628,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SCAGW",
+      "price": 0.059,
+      "changeAmount": 0.0189,
+      "changePercent": "47.1322%",
+      "changePercentValue": 47.1322,
+      "volume": 340,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "SDAWW",
+      "price": 0.1173,
+      "changeAmount": 0.0372,
+      "changePercent": "46.4419%",
+      "changePercentValue": 46.4419,
+      "volume": 13182,
+      "direction": "gainer"
+    },
+    {
+      "symbol": "INLF",
+      "price": 0.1566,
+      "changeAmount": -0.2808,
+      "changePercent": "-64.1975%",
+      "changePercentValue": -64.1975,
+      "volume": 119925397,
+      "direction": "loser"
+    },
+    {
+      "symbol": "SNBR",
+      "price": 0.2072,
+      "changeAmount": -0.1828,
+      "changePercent": "-46.8718%",
+      "changePercentValue": -46.8718,
+      "volume": 51079932,
+      "direction": "loser"
+    },
+    {
+      "symbol": "LIDRW",
+      "price": 0.0102,
+      "changeAmount": -0.0088,
+      "changePercent": "-46.3158%",
+      "changePercentValue": -46.3158,
+      "volume": 30455,
+      "direction": "loser"
+    },
+    {
+      "symbol": "TNON",
+      "price": 0.35,
+      "changeAmount": -0.2521,
+      "changePercent": "-41.8701%",
+      "changePercentValue": -41.8701,
+      "volume": 1059339,
+      "direction": "loser"
+    },
+    {
+      "symbol": "TALKW",
+      "price": 0.0006,
+      "changeAmount": -0.0004,
+      "changePercent": "-40.0%",
+      "changePercentValue": -40,
+      "volume": 354831,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ANGHW",
+      "price": 0.01,
+      "changeAmount": -0.0063,
+      "changePercent": "-38.6503%",
+      "changePercentValue": -38.6503,
+      "volume": 50939,
+      "direction": "loser"
+    },
+    {
+      "symbol": "VEEAW",
+      "price": 0.054,
+      "changeAmount": -0.034,
+      "changePercent": "-38.6364%",
+      "changePercentValue": -38.6364,
+      "volume": 5119,
+      "direction": "loser"
+    },
+    {
+      "symbol": "EHGO",
+      "price": 1.8,
+      "changeAmount": -1.09,
+      "changePercent": "-37.7163%",
+      "changePercentValue": -37.7163,
+      "volume": 2122656,
+      "direction": "loser"
+    },
+    {
+      "symbol": "YYGH",
+      "price": 0.0803,
+      "changeAmount": -0.0486,
+      "changePercent": "-37.7036%",
+      "changePercentValue": -37.7036,
+      "volume": 77044356,
+      "direction": "loser"
+    },
+    {
+      "symbol": "SRXH",
+      "price": 0.1245,
+      "changeAmount": -0.075,
+      "changePercent": "-37.594%",
+      "changePercentValue": -37.594,
+      "volume": 378463393,
+      "direction": "loser"
+    },
+    {
+      "symbol": "LABT",
+      "price": 0.3861,
+      "changeAmount": -0.2279,
+      "changePercent": "-37.1173%",
+      "changePercentValue": -37.1173,
+      "volume": 1587566,
+      "direction": "loser"
+    },
+    {
+      "symbol": "EVGOW",
+      "price": 0.0049,
+      "changeAmount": -0.0026,
+      "changePercent": "-34.6667%",
+      "changePercentValue": -34.6667,
+      "volume": 435233,
+      "direction": "loser"
+    },
+    {
+      "symbol": "REE",
+      "price": 0.23,
+      "changeAmount": -0.117,
+      "changePercent": "-33.7176%",
+      "changePercentValue": -33.7176,
+      "volume": 823866,
+      "direction": "loser"
+    },
+    {
+      "symbol": "WLDSW",
+      "price": 3.66,
+      "changeAmount": -1.79,
+      "changePercent": "-32.844%",
+      "changePercentValue": -32.844,
+      "volume": 847,
+      "direction": "loser"
+    },
+    {
+      "symbol": "SBFMW",
+      "price": 0.0404,
+      "changeAmount": -0.0196,
+      "changePercent": "-32.6667%",
+      "changePercentValue": -32.6667,
+      "volume": 135,
+      "direction": "loser"
+    },
+    {
+      "symbol": "BAYAR",
+      "price": 0.088,
+      "changeAmount": -0.0405,
+      "changePercent": "-31.5175%",
+      "changePercentValue": -31.5175,
+      "volume": 35299,
+      "direction": "loser"
+    },
+    {
+      "symbol": "BEZ",
+      "price": 11.36,
+      "changeAmount": -5.05,
+      "changePercent": "-30.7739%",
+      "changePercentValue": -30.7739,
+      "volume": 742119,
+      "direction": "loser"
+    },
+    {
+      "symbol": "CINGW",
+      "price": 0.0186,
+      "changeAmount": -0.0082,
+      "changePercent": "-30.597%",
+      "changePercentValue": -30.597,
+      "volume": 31248,
+      "direction": "loser"
+    },
+    {
+      "symbol": "BBLGW",
+      "price": 10.11,
+      "changeAmount": -4.33,
+      "changePercent": "-29.9861%",
+      "changePercentValue": -29.9861,
+      "volume": 620,
+      "direction": "loser"
+    },
+    {
+      "symbol": "PFSA",
+      "price": 0.1809,
+      "changeAmount": -0.0771,
+      "changePercent": "-29.8837%",
+      "changePercentValue": -29.8837,
+      "volume": 14367859,
+      "direction": "loser"
+    },
+    {
+      "symbol": "ADTX",
+      "price": 0.01,
+      "changeAmount": 0.0056,
+      "changePercent": "127.2727%",
+      "changePercentValue": 127.2727,
+      "volume": 5058056431,
+      "direction": "active"
+    },
+    {
+      "symbol": "GDC",
+      "price": 0.0181,
+      "changeAmount": -0.0032,
+      "changePercent": "-15.0235%",
+      "changePercentValue": -15.0235,
+      "volume": 867154553,
+      "direction": "active"
+    },
+    {
+      "symbol": "SOXS",
+      "price": 3.58,
+      "changeAmount": -0.88,
+      "changePercent": "-19.7309%",
+      "changePercentValue": -19.7309,
+      "volume": 694912307,
+      "direction": "active"
+    },
+    {
+      "symbol": "GPUS",
+      "price": 0.359,
+      "changeAmount": -0.0389,
+      "changePercent": "-9.7763%",
+      "changePercentValue": -9.7763,
+      "volume": 611646418,
+      "direction": "active"
+    },
+    {
+      "symbol": "SRXH",
+      "price": 0.1245,
+      "changeAmount": -0.075,
+      "changePercent": "-37.594%",
+      "changePercentValue": -37.594,
+      "volume": 378463393,
+      "direction": "active"
+    },
+    {
+      "symbol": "BITO",
+      "price": 8.555,
+      "changeAmount": -0.175,
+      "changePercent": "-2.0046%",
+      "changePercentValue": -2.0046,
+      "volume": 322560663,
+      "direction": "active"
+    },
+    {
+      "symbol": "TZA",
+      "price": 4.02,
+      "changeAmount": -0.25,
+      "changePercent": "-5.8548%",
+      "changePercentValue": -5.8548,
+      "volume": 300027028,
+      "direction": "active"
+    },
+    {
+      "symbol": "SPCX",
+      "price": 185,
+      "changeAmount": -6.82,
+      "changePercent": "-3.5554%",
+      "changePercentValue": -3.5554,
+      "volume": 269470556,
+      "direction": "active"
+    },
+    {
+      "symbol": "CDT",
+      "price": 1.02,
+      "changeAmount": 0.327,
+      "changePercent": "47.1861%",
+      "changePercentValue": 47.1861,
+      "volume": 246127628,
+      "direction": "active"
+    },
+    {
+      "symbol": "MRVL",
+      "price": 310.58,
+      "changeAmount": 21.04,
+      "changePercent": "7.2667%",
+      "changePercentValue": 7.2667,
+      "volume": 235386138,
+      "direction": "active"
+    },
+    {
+      "symbol": "NVDA",
+      "price": 210.69,
+      "changeAmount": 6.04,
+      "changePercent": "2.9514%",
+      "changePercentValue": 2.9514,
+      "volume": 229879487,
+      "direction": "active"
+    },
+    {
+      "symbol": "INTC",
+      "price": 133.99,
+      "changeAmount": 12.89,
+      "changePercent": "10.6441%",
+      "changePercentValue": 10.6441,
+      "volume": 228380872,
+      "direction": "active"
+    },
+    {
+      "symbol": "WKSP",
+      "price": 0.7379,
+      "changeAmount": 0.1396,
+      "changePercent": "23.3328%",
+      "changePercentValue": 23.3328,
+      "volume": 204978857,
+      "direction": "active"
+    },
+    {
+      "symbol": "CDE",
+      "price": 17.485,
+      "changeAmount": -0.045,
+      "changePercent": "-0.2567%",
+      "changePercentValue": -0.2567,
+      "volume": 177061596,
+      "direction": "active"
+    },
+    {
+      "symbol": "AAL",
+      "price": 15.99,
+      "changeAmount": 0.57,
+      "changePercent": "3.6965%",
+      "changePercentValue": 3.6965,
+      "volume": 126074557,
+      "direction": "active"
+    },
+    {
+      "symbol": "NOK",
+      "price": 13.485,
+      "changeAmount": -0.345,
+      "changePercent": "-2.4946%",
+      "changePercentValue": -2.4946,
+      "volume": 124117172,
+      "direction": "active"
+    },
+    {
+      "symbol": "INLF",
+      "price": 0.1566,
+      "changeAmount": -0.2808,
+      "changePercent": "-64.1975%",
+      "changePercentValue": -64.1975,
+      "volume": 119925397,
+      "direction": "active"
+    },
+    {
+      "symbol": "PFE",
+      "price": 25.22,
+      "changeAmount": -0.7,
+      "changePercent": "-2.7006%",
+      "changePercentValue": -2.7006,
+      "volume": 118995191,
+      "direction": "active"
+    },
+    {
+      "symbol": "AZTR",
+      "price": 0.2114,
+      "changeAmount": 0.0084,
+      "changePercent": "4.1379%",
+      "changePercentValue": 4.1379,
+      "volume": 112426356,
+      "direction": "active"
+    },
+    {
+      "symbol": "CAST",
+      "price": 8.07,
+      "changeAmount": 2.92,
+      "changePercent": "56.699%",
+      "changePercentValue": 56.699,
+      "volume": 111130855,
+      "direction": "active"
+    }
+  ],
+  "newsSentiment": {
+    "NVDA": [
+      {
+        "symbol": "NVDA",
+        "title": "DGS Capital Management LLC Purchases Shares of 1,906 Cummins Inc. $CMI",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-dgs-capital-management-llc-purchases-shares-of-1906-cummins-inc-cmi-2026-06-19/",
+        "source": "MarketBeat",
+        "timePublished": "20260619T081525",
+        "summary": "DGS Capital Management LLC recently initiated a new position in Cummins Inc. (NYSE:CMI), purchasing 1,906 shares valued at approximately $973,000 in the fourth quarter. This move comes as Cummins reported strong quarterly results, with EPS of $6.15 and revenue of $8.40 billion, exceeding analyst expectations. The company also returned cash to shareholders with a $2.00 quarterly dividend and is currently rated a \"Moderate Buy\" by analysts with an average price target of $731.86.",
+        "overallSentimentScore": 0.182747,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Alberta Investment Management Corp Buys 300,000 Shares of Gen Digital Inc. $GEN",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-alberta-investment-management-corp-buys-300000-shares-of-gen-digital-inc-gen-2026-06-19/",
+        "source": "MarketBeat",
+        "timePublished": "20260619T075447",
+        "summary": "Alberta Investment Management Corp (AIMCo) increased its stake in Gen Digital Inc. (NASDAQ:GEN) by 24% in the fourth quarter, purchasing an additional 300,000 shares to bring its total holdings to 1.55 million shares valued at $42.1 million. Gen Digital recently reported better-than-expected quarterly earnings with an EPS of $0.67 and revenue of $1.28 billion, an increase of 27% year-over-year. The stock currently holds a consensus \"Hold\" rating from analysts with an average price target of $31.29, despite recent trading around $24.18.",
+        "overallSentimentScore": 0.324027,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "CrossGen Wealth LLC Purchases New Shares in The Home Depot, Inc. $HD",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-crossgen-wealth-llc-purchases-new-shares-in-the-home-depot-inc-hd-2026-06-19/",
+        "source": "MarketBeat",
+        "timePublished": "20260619T074453",
+        "summary": "CrossGen Wealth LLC acquired a new stake of 4,594 shares in The Home Depot, Inc., valued at approximately $1,581,000, making it their 26th largest position. Several other institutional investors also adjusted their holdings in Home Depot, which has seen its stock performance, dividends, and analyst ratings detailed in the article. The company reported strong Q1 earnings, surpassing analyst estimates, and announced a quarterly dividend.",
+        "overallSentimentScore": 0.333064,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Axxcess Wealth Management LLC Purchases 7,095 Shares of The Home Depot, Inc. $HD",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-axxcess-wealth-management-llc-purchases-7095-shares-of-the-home-depot-inc-hd-2026-06-19/",
+        "source": "MarketBeat",
+        "timePublished": "20260619T074353",
+        "summary": "Axxcess Wealth Management LLC increased its stake in The Home Depot, Inc. by 15.1% in the fourth quarter, acquiring an additional 7,095 shares, bringing its total holdings to 54,113 shares valued at $18.62 million. Several other institutional investors also adjusted their positions in Home Depot. The article details recent analyst ratings, Home Depot's price performance, dividend announcement, and its financial profile.",
+        "overallSentimentScore": 0.217878,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Equinix (EQIX) Stock Could Be 8.8% Undervalued After New AI Infrastructure Partnerships",
+        "url": "https://simplywall.st/stocks/us/real-estate/nasdaq-eqix/equinix/news/equinix-eqix-stock-could-be-88-undervalued-after-new-ai-infr",
+        "source": "Simply Wall Street",
+        "timePublished": "20260619T074241",
+        "summary": "Equinix (EQIX) has recently formed several key partnerships with companies like F5, Cisco, NVIDIA, and Presidio to focus on secure, multicloud AI deployment amidst strong share price performance. Despite a 42.94% year-to-date return, Simply Wall St's analysis suggests the stock could be 8.8% undervalued with a fair value of $1,197 compared to its current trading price of around $1,092, although its high P/E ratio raises valuation risk concerns. While aggressive capital allocation towards global data centers positions Equinix for growth in AI and digital transformation, heavy capital spending and reliance on major cloud customers present potential risks.",
+        "overallSentimentScore": 0.349099,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "CoreWeave CSO Brian Venturo sells 76,924 class A shares for $9.1m",
+        "url": "https://m.uk.investing.com/news/insider-trading-news/coreweave-cso-brian-venturo-sells-76924-class-a-shares-for-91m-93CH-4736646?ampMode=1",
+        "source": "Investing.com",
+        "timePublished": "20260619T031005",
+        "summary": "CoreWeave's Chief Strategy Officer, Brian M. Venturo, sold 76,924 Class A shares for approximately $9.11 million on June 17, 2026, through indirect holdings under a Rule 10b5-1 trading plan. The sales occurred as CoreWeave shares have seen a significant year-to-date gain, despite an InvestingPro analysis suggesting the stock is overvalued. The company also recently completed a private offering of senior notes totaling $3.25 billion and is set to join the Nasdaq-100 Index in June 2026.",
+        "overallSentimentScore": 0.057506,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "US tells ASML it’s concerned China may have top chip tool",
+        "url": "https://www.moneycontrol.com/news/business/us-tells-asml-it-s-concerned-china-may-have-top-chip-tool-13953534.html",
+        "source": "Moneycontrol.com",
+        "timePublished": "20260619T014251",
+        "summary": "The US Commerce Secretary Howard Lutnick has expressed concerns to ASML, the Dutch chip-equipment giant, that one of its top-of-the-line extreme ultraviolet lithography (EUV) machines may have entered China, violating export restrictions. ASML denies these allegations, stating it has never shipped an EUV machine or related components to China. The US claims to have evidence of non-compliance, escalating pressure on ASML and potentially straining US-EU relations, though ASML maintains full compliance with all regulations.",
+        "overallSentimentScore": 0.107077,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "President Trump claims Apple has agreed to buy chips from Intel",
+        "url": "https://siliconangle.com/2026/06/18/president-trump-claims-apple-agreed-buy-chips-intel/",
+        "source": "SiliconANGLE",
+        "timePublished": "20260619T003504",
+        "summary": "President Trump announced on Truth Social that Apple Inc. will \"design and build\" computer chips with Intel Corp. While Apple halted buying Intel processors in 2020, this deal would likely be a contract manufacturing arrangement for Intel to build Apple-designed chips, aiming to diversify Apple's supplier base and support domestic chip manufacturing. Analysts suggest Intel might initially produce Apple's M7 Series chips for MacBooks and iPads, potentially expanding to some A21 iPhone chips later.",
+        "overallSentimentScore": 0.240421,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      }
+    ],
+    "MSFT": [
+      {
+        "symbol": "MSFT",
+        "title": "DGS Capital Management LLC Purchases Shares of 1,906 Cummins Inc. $CMI",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-dgs-capital-management-llc-purchases-shares-of-1906-cummins-inc-cmi-2026-06-19/",
+        "source": "MarketBeat",
+        "timePublished": "20260619T081525",
+        "summary": "DGS Capital Management LLC recently initiated a new position in Cummins Inc. (NYSE:CMI), purchasing 1,906 shares valued at approximately $973,000 in the fourth quarter. This move comes as Cummins reported strong quarterly results, with EPS of $6.15 and revenue of $8.40 billion, exceeding analyst expectations. The company also returned cash to shareholders with a $2.00 quarterly dividend and is currently rated a \"Moderate Buy\" by analysts with an average price target of $731.86.",
+        "overallSentimentScore": 0.175887,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Blackbaud Inc (BLKB) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-blkb/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260619T081453",
+        "summary": "The article provides an earnings forecast for Blackbaud Inc (BLKB), highlighting its current earnings forecast score of 7.50, ranking 243 out of 489 in the Software & IT Services industry. Analysts maintain a \"Buy\" rating for BLKB, with a consensus price target of $70.00 and an expected upside of 72.04%. It also details expected revenue for the next quarter at $292.30M and an anticipated EPS of $1.28.",
+        "overallSentimentScore": 0.181109,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "How Ecolab (ECL) Uses CoolIT to Move Deeper Into Water-Efficient AI Data Center Cooling",
+        "url": "https://finance.yahoo.com/technology/ai/articles/ecolab-ecl-uses-coolit-move-081422822.html",
+        "source": "Yahoo Finance",
+        "timePublished": "20260619T081435",
+        "summary": "Ecolab Inc. (NYSE:ECL) is expanding its involvement in water-efficient AI data center cooling through its acquisition of CoolIT Systems. CoolIT recently developed a 15kW coldplate design for single-phase direct liquid cooling, which significantly increases capacity and supports ultra-high-density AI infrastructure. This advancement aligns with the growing need for liquid cooling solutions in data centers due to high-density GPUs, and positions Ecolab to benefit from the increasing demand for sustainable water management in the AI sector.",
+        "overallSentimentScore": 0.181419,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Infosys, Tech Mahindra, TCS Under Pressure: IT Stocks Crash To Three-Year Low After Accenture Sell-Off",
+        "url": "https://www.ndtvprofit.com/markets/infosys-at-five-year-low-techm-tcs-under-pressure-it-stocks-crash-after-accentures-weak-guidance-11657681",
+        "source": "NDTV Profit",
+        "timePublished": "20260619T041308",
+        "summary": "Indian IT stocks, including Infosys, Tech Mahindra, and TCS, experienced a significant sell-off, crashing to a three-year low following Accenture's weaker-than-expected revenue guidance. Accenture's revised outlook and ongoing client delays in discretionary spending due to a challenging macroeconomic environment intensified concerns for Indian tech companies, leading to substantial drops in their share prices. Brokerages indicate that demand remains challenging, and uncertainty could persist, potentially affecting future guidance for Indian IT firms.",
+        "overallSentimentScore": -0.584056,
+        "overallSentimentLabel": "Bearish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Siyata Mobile Inc (SYTA) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-syta/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260619T014521",
+        "summary": "This article provides an earnings forecast for Siyata Mobile Inc (SYTA), detailing current analyst ratings and expected EPS and revenue growth. Based on one analyst, SYTA currently holds a \"Hold\" rating. The article also provides a peer comparison and addresses frequently asked questions regarding recent EPS performance and overall analyst sentiment.",
+        "overallSentimentScore": 0.025889,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "GE Aerospace (NYSE: GE) Expands Into Nuclear, Space, And Silicon Carbide Power Electronics",
+        "url": "https://www.foreignpolicyjournal.com/2026/06/18/ge-aerospace-nyse-ge-expands-into-nuclear-space-and-silicon-carbide-power-electronics/",
+        "source": "Foreign Policy Journal",
+        "timePublished": "20260619T002242",
+        "summary": "GE Aerospace is expanding its strategic focus by adding Microsoft executive Judson Althoff to its board and forging key partnerships. These include a Memorandum of Understanding with Wolfspeed for high-voltage silicon carbide power modules, involvement in the commercial space sector with Starfighters Space, and linking with GE Vernova's nuclear advancements. These moves aim to integrate aerospace, power electronics, and nuclear technologies for future energy and defense markets, despite analyst divergence on long-term revenue growth.",
+        "overallSentimentScore": 0.243786,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Seeking Nuclear Exposure? Use This Tool",
+        "url": "https://www.tradingview.com/news/zacks:683cc2f31094b:0-seeking-nuclear-exposure-use-this-tool/",
+        "source": "TradingView",
+        "timePublished": "20260618T230720",
+        "summary": "The article highlights Zacks Thematic Investment Screens as a tool for investors interested in specific market niches, focusing on the nuclear energy theme. It discusses the growing importance of nuclear energy for a low-carbon future, especially with increased power demands from AI data centers, and spotlights Constellation Energy (CEG) as a key player. The article encourages investors to use Zacks Rank and reports to analyze stocks within this theme, while also briefly mentioning quantum computing as another emerging technological revolution.",
+        "overallSentimentScore": 0.379336,
+        "overallSentimentLabel": "Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Most security pros say their culture is 'just average'",
+        "url": "https://www.techtarget.com/searchsecurity/news/366644992/Most-security-pros-say-their-culture-is-just-average",
+        "source": "TechTarget",
+        "timePublished": "20260618T223937",
+        "summary": "A new survey reveals that less than one-third of cybersecurity professionals rate their organization's cybersecurity culture as better than average, with 50% calling it average and 19% fair. The study, \"The Life and Times of Cybersecurity Professionals,\" highlights a need for increased training, investment in staff and tools, and improved communication and leadership to enhance security posture and address issues like professional burnout. Effective cybersecurity leadership and soft skills are crucial to fostering a proactive security culture and balancing risk with innovation.",
+        "overallSentimentScore": 0.147471,
+        "overallSentimentLabel": "Neutral"
+      }
+    ],
+    "GOOGL": [
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet director John L. Hennessy sells $387,063 of Class C stock By Investing.com",
+        "url": "https://za.investing.com/news/insider-trading-news/alphabet-director-john-l-hennessy-sells-387063-of-class-c-stock-93CH-4336212",
+        "source": "Investing.com South Africa",
+        "timePublished": "20260618T215644",
+        "summary": "Alphabet director John L. Hennessy sold 1,050 shares of Class C Capital Stock totaling $387,063 on June 15, 2026, through a revocable trust, pursuant to a pre-arranged trading plan. Despite sales, Hennessy still holds significant Class C and Class A shares, and a substantial number of Google Stock Units. Alphabet maintains a \"GREAT\" financial health score, though its shares are considered overvalued by InvestingPro analysis following a 110% increase over the past year.",
+        "overallSentimentScore": 0.008889,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Verb Technology Company Inc (VERB) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-verb/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260618T213933",
+        "summary": "This article provides an earnings forecast for Verb Technology Company Inc (VERB), including future EPS and revenue growth estimates. Based on one analyst, the stock currently has a \"Buy\" rating with a target price indicating significant upside potential. Key financial figures and a comparison with peer companies are also presented.",
+        "overallSentimentScore": 0.165874,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet director John L. Hennessy sells $387,063 of Class C stock",
+        "url": "https://au.investing.com/news/insider-trading-news/alphabet-director-john-l-hennessy-sells-387063-of-class-c-stock-93CH-4496001",
+        "source": "Investing.com Australia",
+        "timePublished": "20260618T213745",
+        "summary": "Alphabet director John L. Hennessy sold $387,063 worth of Class C Capital Stock on June 15, 2026, as part of a Rule 10b5-1 trading plan. Despite the sale, which involved 1,050 shares at prices ranging from $366.01 to $369.89, Hennessy's trust still holds 1,481 shares. Alphabet's stock is up 110% over the past year but is considered overvalued according to InvestingPro.",
+        "overallSentimentScore": -0.051223,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Top Research Reports for Alphabet, Broadcom & Johnson & Johnson",
+        "url": "https://sg.finance.yahoo.com/news/top-research-reports-alphabet-broadcom-210900876.html",
+        "source": "Yahoo Finance Singapore",
+        "timePublished": "20260618T213708",
+        "summary": "This article summarizes new research reports from Zacks Research Daily on 16 major stocks, including Alphabet Inc. (GOOGL), Broadcom Inc. (AVGO), and Johnson & Johnson (JNJ). The reports analyze each company's performance, growth drivers, and challenges, highlighting factors like AI-driven product cycles for Alphabet, strong AI semiconductor demand for Broadcom, and momentum in Innovative Medicine for J&J. It also features reports on other companies, detailing their competitive landscapes and risk factors.",
+        "overallSentimentScore": 0.186891,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet (NASDAQ: GOOG) executive gets new dividend-equivalent stock units",
+        "url": "https://www.stocktitan.net/sec-filings/GOOG/form-4-alphabet-inc-insider-trading-activity-457001992ddf.html",
+        "source": "Stock Titan",
+        "timePublished": "20260618T212243",
+        "summary": "Alphabet Inc.'s President and CIO, Ruth Porat, received dividend-equivalent stock units (DEUs) linked to a cash dividend on June 15, 2026. These DEUs, which vest on the same schedule as her underlying Google Stock Units (GSUs), add incrementally to her substantial existing equity holdings. The transactions are routine compensation adjustments rather than open-market trades, indicating a neutral impact on insider sentiment.",
+        "overallSentimentScore": 0.009206,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet (GOOG) VP Marsida Saraci granted new GSUs and dividend units",
+        "url": "https://www.stocktitan.net/sec-filings/GOOG/form-4-alphabet-inc-insider-trading-activity-900fa4eec66d.html",
+        "source": "Stock Titan",
+        "timePublished": "20260618T212043",
+        "summary": "Alphabet Inc.'s VP and Chief Accounting Officer, Marsida Saraci, received grants of Class C Google Stock Units (GSUs) and related dividend equivalent units (DEUs). These are routine equity compensation awards that vest over multi-year schedules, contingent on her continued employment. Following these transactions, Saraci directly holds 27,348 shares of Class C capital stock and 3,660 shares of Class A common stock, in addition to the newly granted GSU/DEU awards.",
+        "overallSentimentScore": 0.041237,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet director John L. Hennessy sells $387,063 of Class C stock By Investing.com",
+        "url": "https://m.au.investing.com/news/insider-trading-news/alphabet-director-john-l-hennessy-sells-387063-of-class-c-stock-93CH-4496001?ampMode=1",
+        "source": "Investing.com Australia",
+        "timePublished": "20260618T210745",
+        "summary": "Alphabet director John L. Hennessy sold 1,050 shares of Class C Capital Stock totaling $387,063 on June 15, 2026, through a revocable trust. Following the sale, the trust holds 1,481 shares, while Hennessy also acquired dividend equivalent units and holds other Alphabet stock. This transaction occurred as Alphabet shares increased 110% over the past year, and the company maintains a \"GREAT\" financial health score according to InvestingPro.",
+        "overallSentimentScore": -0.101187,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Wolfe Research Reaffirms Bullish View on Arista Networks (ANET) With $175 Price Target",
+        "url": "https://www.insidermonkey.com/blog/wolfe-research-reaffirms-bullish-view-on-arista-networks-anet-with-175-price-target-1784007/",
+        "source": "Insider Monkey",
+        "timePublished": "20260618T210703",
+        "summary": "Wolfe Research has reiterated an Outperform rating and a $175 price target for Arista Networks (ANET), following meetings with the company's CFO. The research firm believes Arista Networks is well-positioned in a favorable data-switching environment, benefiting from cloud providers and LLM builders focusing on GPU utilization. The company is also gaining traction as customers move away from bundled Nvidia solutions towards best-of-breed networking options and as Ethernet deployments increase.",
+        "overallSentimentScore": 0.279407,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      }
+    ]
+  }
 }

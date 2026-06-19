@@ -11,10 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 2,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [
       {
@@ -87,7 +87,14 @@
         ]
       }
     ],
-    "stale": false
+    "stale": true,
+    "latestAttempt": {
+      "fetchedAt": "2026-06-19T09:00:41.190Z",
+      "ok": false,
+      "status": null,
+      "itemCount": 0,
+      "error": "fetch failed"
+    }
   },
   {
     "sourceId": "csrc-news",
@@ -101,10 +108,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -121,16 +128,16 @@
     "status": 200,
     "ok": true,
     "itemCount": 10,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [
       {
         "title": "618包裹迎来旺季：快递员加班增收，即将进入退货高峰期",
         "link": "https://www.yicai.com/news/103237727.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -142,7 +149,7 @@
       {
         "title": "多款畅销婴幼儿纸尿裤被曝检出有毒甲酰胺，涉事企业否认，问题到底出在哪？",
         "link": "https://www.yicai.com/news/103236728.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -154,7 +161,7 @@
       {
         "title": "2026年全国高校名单公布，本科高校新增47所达1412所",
         "link": "https://www.yicai.com/news/103236847.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -166,7 +173,7 @@
       {
         "title": "沃什首秀美联储“鹰派”亮相：通胀预期暴涨，年内加息前景强烈",
         "link": "https://www.yicai.com/news/103235522.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -178,7 +185,7 @@
       {
         "title": "夏日经济｜端午节首日机票低至1折，暑运票价却创历史新高",
         "link": "https://www.yicai.com/news/103237190.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -190,7 +197,7 @@
       {
         "title": "关于开设“涉企侵权投诉举报专区”的公告",
         "link": "https://www.yicai.com/news/102062384.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -202,7 +209,7 @@
       {
         "title": "第一财经网络举报受理和处置规则",
         "link": "https://www.yicai.com/news/102944648.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -214,7 +221,7 @@
       {
         "title": "江水边的创新土壤",
         "link": "https://www.yicai.com/news/102997655.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -226,7 +233,7 @@
       {
         "title": "普洛斯算力中心引入浙江国资战略股东",
         "link": "https://www.yicai.com/news/102794012.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -238,7 +245,7 @@
       {
         "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
         "link": "https://www.yicai.com/news/102464166.html",
-        "publishedAt": "2026-06-19T06:04:06.764Z",
+        "publishedAt": "2026-06-19T09:00:41.190Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -262,15 +269,39 @@
     "status": 200,
     "ok": true,
     "itemCount": 10,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [
       {
-        "title": "连续5年财务造假，合力泰拟被罚900万元，3名时任董事长也面临7位数罚款",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431500.html",
+        "title": "“机器人”获科创板政策支持引关注 行业仍面临成本上涨等压力",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431517.html",
+        "publishedAt": "2026-06-19T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "基民懵了！节前近700亿资金借道ETF离场，火爆的电网、芯片竟被狂抛",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431533.html",
+        "publishedAt": "2026-06-19T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "商务部：将对澳大利亚进口牛肉加征55%关税",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431627.html",
         "publishedAt": "2026-06-19T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -305,8 +336,8 @@
         ]
       },
       {
-        "title": "今年端午假期整体出游人群规模预计较去年同期增长4%",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431480.html",
+        "title": "激烈交火！以军1名军官3名士兵阵亡，真主党：继续抵抗！多名以高官对特朗普人身攻击，万斯大怒：别不知好歹，只有特朗普还同情以色列 2026-06-19 15:55",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431629.html",
         "publishedAt": "2026-06-19T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -317,8 +348,8 @@
         ]
       },
       {
-        "title": "瑞士证实：原定19日举行的美伊会谈“黄了”！美股三大期指齐跌，金价跳水，油价回升！万斯、伊朗代表团、巴基斯坦总理均已取消相关行程 2026-06-19 13:00",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431567.html",
+        "title": "端午档首日电影票房破亿，上映数量创近十年同期新高！《玩具总动员5》独占鳌头，冯小刚、胡歌能逆袭吗？《阿嬷》票房坚挺，已全球上映 2026-06-19 14:56",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431618.html",
         "publishedAt": "2026-06-19T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -329,8 +360,8 @@
         ]
       },
       {
-        "title": "数名中国公民在非洲因参与非法采矿活动被逮捕！中使馆提醒 2026-06-19 12:38",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431563.html",
+        "title": "以色列，突然发动夜袭！已打死16人，以军：打击行动仍在继续 2026-06-19 14:55",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431617.html",
         "publishedAt": "2026-06-19T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -341,8 +372,8 @@
         ]
       },
       {
-        "title": "哈密飞重庆航班，紧急备降南充后直接取消，旅客：临落地时出现异响！机场工作人员：航司称重庆天气恶劣，同时提及存在机械故障 2026-06-19 12:38",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431562.html",
+        "title": "全线跳水，超12万人爆仓！ 2026-06-19 14:13",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431603.html",
         "publishedAt": "2026-06-19T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -353,32 +384,8 @@
         ]
       },
       {
-        "title": "连续5年财务造假，合力泰拟被罚900万元，3名时任董事长也面临7位数罚款 2026-06-19 11:44",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431500.html",
-        "publishedAt": "2026-06-19T00:00:00.000Z",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "基民懵了！节前近700亿资金借道ETF离场，火爆的电网、芯片竟被狂抛 2026-06-19 11:43",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431533.html",
-        "publishedAt": "2026-06-19T00:00:00.000Z",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "门将脱手送“大礼”！墨西哥1-0韩国，成世界杯首支32强球队！巴西队明天出战，内马尔确定缺阵 2026-06-19 11:39",
-        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431538.html",
+        "title": "“机器人”获科创板政策支持引关注 行业仍面临成本上涨等压力 2026-06-19 14:10",
+        "link": "https://www.nbd.com.cn/articles/2026-06-19/4431517.html",
         "publishedAt": "2026-06-19T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -403,10 +410,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 3,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [
       {
@@ -460,10 +467,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 4,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [
       {
@@ -526,15 +533,15 @@
     "category": "finance",
     "credibility": 95,
     "url": "http://www.stats.gov.cn/sj/zxfb/",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "ok": false,
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
+    "attempts": 2,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -549,10 +556,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 15,
-    "fetchedAt": "2026-06-19T06:04:06.764Z",
+    "fetchedAt": "2026-06-19T09:00:41.190Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-19T06:04:06.764Z",
-    "cacheExpiresAt": "2026-06-21T06:04:06.764Z",
+    "cacheStartedAt": "2026-06-19T09:00:41.190Z",
+    "cacheExpiresAt": "2026-06-21T09:00:41.190Z",
     "attempts": 1,
     "items": [
       {
