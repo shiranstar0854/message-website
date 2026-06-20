@@ -117,6 +117,31 @@ test("keyword search exposes hit labels for rendered feedback", () => {
   assert.ok(labels.includes("标题命中"));
   assert.ok(labels.includes("关键词命中"));
 });
+
+test("keyword search accepts string and object summary fields", () => {
+  const filters = loadFilters();
+  const items = [{
+    id: "structured",
+    title: "Policy update",
+    source: "Official Source",
+    category: "macro",
+    score: 90,
+    risks: "后续执行细节不足以判断。",
+    confirmed_facts: [{ fact: "监管机构发布规则", evidence_url: "https://example.test/rule" }],
+    evidence: { evidence_gaps: "缺少执行时间表。" }
+  }];
+
+  const result = filters.applyFilters(items, {
+    channel: "all",
+    source: "all",
+    keyword: "执行细节",
+    minScore: 0,
+    sort: "score-desc"
+  });
+
+  assert.deepEqual(Array.from(result, (item) => item.id), ["structured"]);
+});
+
 test("keyword search expands Musk and SpaceX into tradable proxy entities", () => {
   const filters = loadFilters();
   const items = [{

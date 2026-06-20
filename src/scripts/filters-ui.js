@@ -56,18 +56,26 @@
     return terms.map(expandTerm);
   }
 
+  function textList(value, preferredKey) {
+    if (!value) return [];
+    const values = Array.isArray(value) ? value : [value];
+    return values.flatMap((entry) => {
+      if (!entry) return [];
+      if (typeof entry === "string") return [entry];
+      if (typeof entry !== "object") return [String(entry)];
+      if (preferredKey && entry[preferredKey]) return [entry[preferredKey]];
+      return Object.values(entry).filter((item) => typeof item === "string");
+    });
+  }
+
   function searchableText(item) {
     const definition = item.definition || {};
     const decision = item.decision || {};
     const evidence = item.evidence || {};
     const profile = item.profile || {};
-    const factTexts = (item.confirmed_facts || []).map((fact) => (
-      fact && typeof fact === "object" ? fact.fact : fact
-    ));
-    const riskTexts = (item.risks || []).map((risk) => (
-      risk && typeof risk === "object" ? risk.risk : risk
-    ));
-    const evidenceGaps = evidence.evidence_gaps || [];
+    const factTexts = textList(item.confirmed_facts, "fact");
+    const riskTexts = textList(item.risks, "risk");
+    const evidenceGaps = textList(evidence.evidence_gaps);
     return {
       title: normalize(`${item.title_zh || ""} ${item.titleZh || ""} ${item.translatedTitle || ""} ${item.title_original || ""} ${item.title || ""}`),
       summary: normalize(`${definition.one_sentence || ""} ${definition.why_it_matters || ""} ${item.summary_zh || ""} ${item.summaryZh || ""} ${item.summary_original || ""} ${item.summary || ""} ${item.contentExcerpt || ""} ${item.aiSummary || ""} ${item.importance || ""} ${decision.brief || ""} ${factTexts.join(" ")} ${riskTexts.join(" ")} ${evidenceGaps.join(" ")}`),
