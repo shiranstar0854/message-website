@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-20T00:01:09.168Z",
+  "generatedAt": "2026-06-20T09:01:08.671Z",
   "totals": {
-    "attempted": 53,
-    "excerptCount": 52,
+    "attempted": 51,
+    "excerptCount": 51,
     "imageCount": 34,
-    "failed": 1,
-    "skipped": 5
+    "failed": 0,
+    "skipped": 4
   },
   "sources": {
     "github-blog": {
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 3,
+      "skipped": 2,
       "disabled": true
     },
     "google-ai": {
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 14,
-      "excerptCount": 14,
-      "imageCount": 14,
+      "attempted": 13,
+      "excerptCount": 13,
+      "imageCount": 13,
       "failed": 0,
       "skipped": 0,
       "disabled": false
