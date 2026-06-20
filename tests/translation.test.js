@@ -163,7 +163,8 @@ test("translation writes Chinese fields for non-English foreign-language items",
 
   assert.equal(translated.items[0].source_language, "ja");
   assert.equal(translated.items[0].title_zh, "央行发布政策判断");
-  assert.equal(translated.items[0].summary_zh, "央行声明说明了后续货币政策关注点。");
+  assert.match(translated.items[0].summary_zh, /央行声明说明了后续货币政策关注点/);
+  assert.ok(translated.items[0].summary_zh.length > 40);
   assert.equal(translated.items[0].translation_status, "translated");
   assert.equal(translated.translationStats.translated, 1);
 });

@@ -159,6 +159,8 @@ test("event analysis prompt uses fact extraction and event_context", () => {
   assert.match(prompt, /core_change/);
   assert.match(prompt, /forward_looking_scenarios/);
   assert.match(prompt, /counter_arguments/);
+  assert.match(prompt, /detailed Chinese analysis/);
+  assert.match(prompt, /2-4 complete sentences/);
 });
 
 test("event analysis validation produces deep analysis structure", () => {

@@ -31,7 +31,7 @@ function buildEventAnalysisRules(rules = {}) {
     llmProduction: {
       ...llm,
       requiredSecret: llm.eventRequiredSecret || llm.requiredSecret || "DEEPSEEK_API_KEY",
-      maxOutputTokens: Number(llm.eventMaxOutputTokens || llm.maxOutputTokens || 1800)
+      maxOutputTokens: Number(llm.eventMaxOutputTokens || llm.maxOutputTokens || 3600)
     }
   };
 }
@@ -88,7 +88,7 @@ function normalizeImpactAnalysis(value, fallback = {}) {
   const legacyUser = source.user || fallback.user;
   return Object.fromEntries(IMPACT_KEYS.map((key) => [
     key,
-    truncateText(normalizeText(source[key] || fallback[key] || (key === "user_or_developer" ? legacyUser : "") || EMPTY_EVIDENCE), 260)
+    truncateText(normalizeText(source[key] || fallback[key] || (key === "user_or_developer" ? legacyUser : "") || EMPTY_EVIDENCE), 520)
   ]));
 }
 
@@ -257,6 +257,7 @@ async function extractFacts(eventContext, rules = {}, options = {}) {
 
 function buildEventAnalysisPrompt(eventContext, factExtraction) {
   return [
+    "Write detailed Chinese analysis, not short labels. core_change and judgment_update should each be 2-4 complete sentences. Every impact_analysis value, scenario possible_result, risk reason, counter_argument, and confidence_reason should be explanatory enough for display on the event page.",
     "你是事件分析器，不是文章摘要器。",
     "你的任务是基于事实提取结果、事件背景和历史判断，分析这条信息对整个事件的意义。",
     "必须回答：新信息改变了什么、哪些是已确认事实、影响对象是谁、有哪些前瞻情景、风险、反向观点、观察变量、置信度和是否值得继续追踪。",
@@ -276,17 +277,17 @@ function buildEventAnalysisPrompt(eventContext, factExtraction) {
 function normalizeScenario(value = {}) {
   return {
     scenario: truncateText(normalizeText(value.scenario), 120),
-    condition: truncateText(normalizeText(value.condition), 220),
-    possible_result: truncateText(normalizeText(value.possible_result), 260),
+    condition: truncateText(normalizeText(value.condition), 360),
+    possible_result: truncateText(normalizeText(value.possible_result), 420),
     confidence: CONFIDENCE_LEVELS.has(value.confidence) ? value.confidence : "中"
   };
 }
 
 function normalizeRisk(value = {}) {
   return {
-    risk: truncateText(normalizeText(value.risk), 180),
+    risk: truncateText(normalizeText(value.risk), 260),
     type: RISK_TYPES.has(value.type) ? value.type : "信息风险",
-    reason: truncateText(normalizeText(value.reason || EMPTY_EVIDENCE), 220)
+    reason: truncateText(normalizeText(value.reason || EMPTY_EVIDENCE), 420)
   };
 }
 
@@ -306,17 +307,17 @@ function normalizeEventAnalysis(value, eventContext = {}, factExtraction = {}) {
   const trackingDecision = TRACKING_DECISIONS.has(value.tracking_decision) ? value.tracking_decision : "暂时观察";
   const confidenceLevel = CONFIDENCE_LEVELS.has(value.confidence_level) ? value.confidence_level : "中";
   return {
-    core_change: truncateText(normalizeText(value.core_change || value.what_changed || eventContext.previous_judgment || EMPTY_EVIDENCE), 300),
+    core_change: truncateText(normalizeText(value.core_change || value.what_changed || eventContext.previous_judgment || EMPTY_EVIDENCE), 700),
     confirmed_facts: confirmedFacts.length ? confirmedFacts : [EMPTY_EVIDENCE],
     impact_analysis: normalizeImpactAnalysis(value.impact_analysis),
     forward_looking_scenarios: scenarios,
     risk_factors: risks,
     counter_arguments: normalizeList(value.counter_arguments, 6),
     watch_variables: normalizeList(value.watch_variables || eventContext.watch_variables, 8),
-    judgment_update: truncateText(normalizeText(value.judgment_update || "信息不足，无法判断"), 220),
+    judgment_update: truncateText(normalizeText(value.judgment_update || value.core_change || eventContext.previous_judgment || EMPTY_EVIDENCE), 520),
     tracking_decision: trackingDecision,
     confidence_level: confidenceLevel,
-    confidence_reason: truncateText(normalizeText(value.confidence_reason || EMPTY_EVIDENCE), 260),
+    confidence_reason: truncateText(normalizeText(value.confidence_reason || EMPTY_EVIDENCE), 520),
     source_links: normalizeLinks(value.source_links, factExtraction.evidence_links || eventContext.related_articles, 8)
   };
 }

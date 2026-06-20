@@ -153,6 +153,8 @@ function buildStructuredSummaryPrompt(item) {
     "Do not use unsupported hype words such as 重大, 革命性, 颠覆性, game-changing, revolutionary, disruptive.",
     "Do not repeat the title as the analysis. Keep professional terms, but explain naturally in Chinese.",
     "The analysis must explain what happened, what changed, why it matters, and whether it deserves continued tracking.",
+    "Write analytical Chinese paragraphs, not headline fragments. what_happened, what_changed, why_it_matters, impact, risks, and neutrality_check should each be 2-4 complete sentences when source evidence allows it.",
+    "summary_short can be compact, but aiSummary-compatible fields must provide enough context for a reader who has not opened the source article.",
     "Return exactly this JSON shape:",
     "{\"translatedTitle\":\"\",\"what_happened\":\"\",\"confirmed_facts\":[],\"what_changed\":\"\",\"impact_analysis\":{\"market\":\"\",\"industry\":\"\",\"company\":\"\",\"user\":\"\"},\"uncertainties\":[],\"watch_variables\":[],\"tracking_decision\":\"值得追踪 | 暂时观察 | 不值得追踪\",\"confidence_level\":\"高 | 中 | 低\",\"source_links\":[{\"title\":\"\",\"url\":\"\"}],\"summary_short\":\"\",\"summary_points\":[],\"key_data\":[],\"why_it_matters\":\"\",\"impact\":\"\",\"risks\":\"\",\"neutrality_check\":\"\",\"confidence\":\"high | medium | low\"}",
     "",

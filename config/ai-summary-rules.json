@@ -12,14 +12,17 @@
     "timeoutMs": 15000,
     "maxRetries": 0,
     "requiredTranslationMaxAttempts": 5,
-    "maxOutputTokens": 1200,
+    "maxOutputTokens": 2200,
+    "dailyBriefMaxOutputTokens": 4200,
+    "eventMaxOutputTokens": 3600,
     "fallbackMethod": "extractive",
     "note": "Keep disabled until the GitHub Actions secrets are configured. DEEPSEEK_API_KEY is used for daily summaries and weekly reviews; DEEPSEEK_API_KEY1 is used for article-level AI summaries."
   },
   "daily": {
     "maxItemsPerChannel": 20,
-    "summaryMaxLength": 180,
-    "reasonMaxLength": 120,
+    "summaryMaxLength": 360,
+    "reasonMaxLength": 220,
+    "importanceMaxLength": 260,
     "minimumScore": 60
   },
   "weekly": {

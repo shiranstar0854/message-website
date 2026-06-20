@@ -161,16 +161,27 @@ function mergeItemsIntoChannels(latestData, items) {
   }));
 }
 
+function composeDisplaySummary(structured = {}, item = {}, limit = 360) {
+  const parts = [
+    structured.what_happened || structured.summary_short || item.aiSummary || item.summary_zh || item.summary,
+    structured.what_changed || structured.why_it_matters,
+    structured.impact && structured.impact !== structured.why_it_matters ? structured.impact : "",
+    structured.risks ? `需要注意：${structured.risks}` : ""
+  ].map(normalizeText).filter(Boolean);
+  return truncateText([...new Set(parts)].join(" "), limit);
+}
+
 function applyExtractiveSummary(item, rules, generatedAt) {
   const sourceLanguage = detectItemLanguage(item);
   const structured = buildExtractiveStructuredSummary(item, generatedAt, "extractive");
+  const displaySummary = composeDisplaySummary(structured, item, rules.summaryMaxLength || 360);
   const summarized = {
     ...item,
     ...structured,
     title_original: item.title_original || item.title,
     summary_original: item.summary_original || item.summary || item.contentExcerpt || "",
-    aiSummary: structured.summary_short || summarizeText(item, rules.summaryMaxLength),
-    summaryReason: buildReason(item, rules.reasonMaxLength),
+    aiSummary: displaySummary || summarizeText(item, rules.summaryMaxLength || 360),
+    summaryReason: buildReason(item, rules.reasonMaxLength || 220),
     importance: structured.why_it_matters || buildImportance(item, rules.importanceMaxLength),
     source_language: item.source_language || sourceLanguage,
     sourceLanguage,
@@ -257,11 +268,12 @@ function parseSummaryResponse(responseJson, item, dailyRules = {}) {
     dailyRules.aiModel || "deepseek"
   );
   const summaryShort = structured.summary_short || summarizeText(item, dailyRules.summaryMaxLength);
+  const displaySummary = composeDisplaySummary(structured, item, dailyRules.summaryMaxLength || 360);
   return {
     translatedTitle: truncateText(responseJson.translatedTitle || responseJson.title_zh || responseJson.titleZh || "", 120),
-    aiSummary: truncateText(responseJson.aiSummary || structured.what_happened || summaryShort, dailyRules.summaryMaxLength || 180),
-    summaryReason: truncateText(responseJson.summaryReason || structured.neutrality_check || buildReason(item, dailyRules.reasonMaxLength), dailyRules.reasonMaxLength || 120),
-    importance: truncateText(responseJson.importance || structured.what_changed || structured.why_it_matters || buildImportance(item, dailyRules.importanceMaxLength), dailyRules.importanceMaxLength || 140),
+    aiSummary: truncateText(responseJson.aiSummary || displaySummary || structured.what_happened || summaryShort, dailyRules.summaryMaxLength || 360),
+    summaryReason: truncateText(responseJson.summaryReason || structured.neutrality_check || buildReason(item, dailyRules.reasonMaxLength || 220), dailyRules.reasonMaxLength || 220),
+    importance: truncateText(responseJson.importance || structured.what_changed || structured.why_it_matters || buildImportance(item, dailyRules.importanceMaxLength || 260), dailyRules.importanceMaxLength || 260),
     impactAreas: Array.isArray(responseJson.impactAreas)
       ? responseJson.impactAreas.slice(0, 4).map((value) => truncateText(value, 20)).filter(Boolean)
       : [],
@@ -441,7 +453,9 @@ function buildDailyBriefPrompt(summaryItems, rules = {}) {
     "Do not include line breaks inside JSON string values.",
     "Use only the provided items. Do not invent facts, sources, market reactions, or event ids.",
     "Return this shape: {\"channels\":[{\"id\":\"tech\",\"thinking_brief\":{\"headline\":\"\",\"surface_summary\":\"\",\"core_judgment\":\"\",\"core_tension\":\"\",\"deep_cause\":\"\",\"why_it_matters\":\"\",\"confidence\":{\"level\":\"高/中/低\",\"reason\":\"\"}},\"key_signals\":[{\"signal_type\":\"\",\"signal\":\"\",\"explanation\":\"\",\"evidence_item_ids\":[],\"source_strength\":\"高/中/低\",\"novelty\":\"新增信息/延续信息\",\"impact_level\":\"高/中/低\"}],\"second_order_effects\":[{\"effect\":\"\",\"logic_chain\":[],\"confidence\":\"高/中/低\"}],\"contrarian_views\":[{\"view\":\"\",\"reason\":\"\",\"what_would_prove_it_wrong\":\"\"}],\"assumptions\":[{\"assumption\":\"\",\"risk_if_wrong\":\"\"}],\"risks\":[{\"risk_type\":\"\",\"risk\":\"\",\"reason\":\"\",\"severity\":\"高/中/低\",\"watch_signal\":\"\",\"evidence_item_ids\":[]}],\"uncertainties\":[{\"uncertainty\":\"\",\"why_it_matters\":\"\",\"needed_evidence\":\"\"}],\"thinking_questions\":[{\"question\":\"\",\"why_this_question_matters\":\"\",\"related_item_ids\":[]}]}]}.",
-    "Cover only tech, finance, news. Keep every string concise and analytical.",
+    "Cover only tech, finance, news. Do not make the brief terse: use analytical Chinese paragraphs.",
+    "For each channel, thinking_brief.surface_summary, core_judgment, core_tension, deep_cause, and why_it_matters should each be 80-160 Chinese characters when evidence allows it.",
+    "For each key signal, risk, uncertainty, and explanation field, write 1-3 complete analytical sentences instead of short labels.",
     "",
     JSON.stringify({
       channels: DEFAULT_CHANNELS.map((channel) => ({
