@@ -1,10 +1,8 @@
 {
   "weekId": "2026-W25",
-  "generatedAt": "2026-06-18T11:10:05.613Z",
+  "generatedAt": "2026-06-21T01:00:27.402Z",
   "method": "deepseek-chat-completions",
   "archiveDays": [
-    "2026-06-09",
-    "2026-06-10",
     "2026-06-11",
     "2026-06-12",
     "2026-06-13",
@@ -12,29 +10,32 @@
     "2026-06-15",
     "2026-06-16",
     "2026-06-17",
-    "2026-06-18"
+    "2026-06-18",
+    "2026-06-19",
+    "2026-06-20",
+    "2026-06-21"
   ],
   "totals": {
-    "archiveCount": 10,
-    "itemCount": 607
+    "archiveCount": 11,
+    "itemCount": 643
   },
   "channels": [
     {
       "id": "tech",
       "label": "科技",
-      "totalItems": 22,
+      "totalItems": 26,
       "topSources": [
         {
           "source": "GitHub Blog",
-          "count": 8
+          "count": 9
         },
         {
           "source": "OpenAI News",
-          "count": 7
+          "count": 9
         },
         {
           "source": "科技部工作动态",
-          "count": 3
+          "count": 4
         },
         {
           "source": "CISA News",
@@ -51,6 +52,15 @@
       ],
       "highlights": [
         {
+          "id": "tech-openai-news-fa31927834",
+          "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+          "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+          "source": "OpenAI News",
+          "score": 100,
+          "summary": "研究人员使用OpenAI推理模型对之前未解决的罕见病病例进行分析，成功识别出18个新诊断。",
+          "publishedAt": "2026-06-18T08:00:00.000Z"
+        },
+        {
           "id": "tech-openai-news-03186f57cb",
           "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
           "url": "https://openai.com/index/ai-chemist-improves-reaction",
@@ -60,13 +70,13 @@
           "publishedAt": "2026-06-17T10:00:00.000Z"
         },
         {
-          "id": "tech-item-8c63b819e8",
-          "title": "俄罗斯核聚变专家中国行活动成功举办",
-          "url": "https://www.most.gov.cn/kjbgz/202606/t20260616_196788.html",
+          "id": "tech-item-2f6eb6c4a7",
+          "title": "“聚焦创新引领 赋能产业升级”中国—白俄罗斯装备制造科技交流活动在白俄罗斯成功举办",
+          "url": "https://www.most.gov.cn/kjbgz/202606/t20260618_196810.html",
           "source": "科技部工作动态",
           "score": 99,
-          "summary": "俄罗斯核聚变专家中国行活动成功举办，由科技部组织。",
-          "publishedAt": "2026-06-16T00:00:00.000Z"
+          "summary": "中国和白俄罗斯在白俄罗斯举办了装备制造科技交流活动，聚焦创新引领和产业升级。",
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
           "id": "tech-github-blog-c320810e99",
@@ -76,6 +86,15 @@
           "score": 99,
           "summary": "GitHub正通过减少误报来提升秘密扫描的可靠性，以应对密钥泄露这一常见安全事件原因。当前每分钟已阻止数个密钥泄露。",
           "publishedAt": "2026-06-11T16:00:00.000Z"
+        },
+        {
+          "id": "tech-item-8c63b819e8",
+          "title": "俄罗斯核聚变专家中国行活动成功举办",
+          "url": "https://www.most.gov.cn/kjbgz/202606/t20260616_196788.html",
+          "source": "科技部工作动态",
+          "score": 98,
+          "summary": "科技部工作动态显示，俄罗斯核聚变专家访华活动成功举办，涉及科技政策、科研合作、标准和创新体系。",
+          "publishedAt": "2026-06-16T00:00:00.000Z"
         },
         {
           "id": "tech-item-a4e4ce8748",
@@ -103,59 +122,59 @@
           "score": 95,
           "summary": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity.",
           "publishedAt": "2026-06-11T00:00:00.000Z"
-        },
-        {
-          "id": "tech-github-blog-db9f0e80c6",
-          "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-          "source": "GitHub Blog",
-          "score": 94,
-          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "publishedAt": "2026-06-15T20:15:31.000Z"
-        },
-        {
-          "id": "tech-github-blog-cde94bf4e0",
-          "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
-          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-          "source": "GitHub Blog",
-          "score": 94,
-          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "publishedAt": "2026-06-15T19:17:30.000Z"
         }
       ],
       "themes": [
+        "Using AI to help physicians diagnose rare genetic diseases affecting children",
         "A near-autonomous AI chemist improves a challenging reaction in medicinal che...",
-        "俄罗斯核聚变专家中国行活动成功举办",
+        "“聚焦创新引领 赋能产业升级”中国—白俄罗斯装备制造科技交流活动在白俄罗斯成功举办",
         "Making secret scanning more trustworthy: Reducing false positives at scale",
-        "科技部部长阴和俊会见葡萄牙教育、科学和创新部部长费尔南多·亚历山大",
-        "科技部党组书记、部长阴和俊出席“构建科技大宣传格局 讲好中国科技创新故事”座谈会并讲话"
+        "俄罗斯核聚变专家中国行活动成功举办"
       ],
-      "focus": "AI在科研与安全中的应用及国际科技合作",
-      "whyItMatters": "AI提升科研效率，安全工具减少数据泄露风险，国际合作促进创新。",
+      "focus": "AI在医疗与化学领域的实用化应用，以及国际科技合作动态。",
+      "whyItMatters": "AI技术从实验室走向临床和工业化，彰显其解决实际问题的潜力；国际合作为创新提供新动力。",
       "weekSignals": [
-        "OpenAI近乎自主AI化学家改进药物反应",
-        "GitHub减少秘密扫描误报",
-        "GitHub Copilot CLI入门指南",
-        "科技部组织俄罗斯核聚变专家中国行"
+        "OpenAI模型成功识别18个儿童罕见病新诊断",
+        "OpenAI与Molecule.one合作实现近乎自主的AI化学家改进药物反应",
+        "GitHub减少秘密扫描误报，每分钟阻止多个密钥泄露",
+        "中国与白俄罗斯、葡萄牙、俄罗斯开展科技交流"
       ],
-      "modelSummary": "AI化学家优化药物反应，GitHub减少密钥误报，科技部推动国际合作。",
+      "modelSummary": "AI助力罕见病诊断与化学合成，GitHub提升密钥扫描可靠性，中国推动国际科技合作。",
       "watchlist": [
-        "AI化学家后续实际应用效果",
-        "GitHub秘密扫描误报率降低数据",
-        "核聚变合作进展"
+        "AI在其他医学领域的新应用",
+        "GitHub秘密扫描误报率变化",
+        "中国与更多国家科技合作详情"
       ]
     },
     {
       "id": "finance",
       "label": "金融",
-      "totalItems": 3,
+      "totalItems": 4,
       "topSources": [
         {
           "source": "U.S. SEC Press Releases",
-          "count": 3
+          "count": 4
         }
       ],
       "highlights": [
+        {
+          "id": "finance-u-s-sec-press-releases-fabe628d6b",
+          "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
+          "source": "U.S. SEC Press Releases",
+          "score": 100,
+          "summary": "美国证券交易委员会（SEC）和商品期货交易委员会（CFTC）联合发布公开征求意见稿，寻求关于进一步更新、澄清和协调某些衍生品产品定义的机会。",
+          "publishedAt": "2026-06-18T18:42:47.000Z"
+        },
+        {
+          "id": "finance-u-s-sec-press-releases-88b7731776",
+          "title": "SEC, CFTC Seek Public Input on Data Reporting Frameworks for Security-Based Swap and Swap Markets",
+          "url": "https://www.sec.gov/newsroom/press-releases/2026-56-sec-cftc-seek-public-input-data-reporting-frameworks-security-based-swap-swap-markets",
+          "source": "U.S. SEC Press Releases",
+          "score": 100,
+          "summary": "美国证券交易委员会（SEC）和商品期货交易委员会（CFTC）联合发布了一份征求意见稿，邀请公众就协调、现代化和简化其监管中的数据报告要求提出意见。",
+          "publishedAt": "2026-06-18T18:17:55.000Z"
+        },
         {
           "id": "finance-u-s-sec-press-releases-3356aa56d2",
           "title": "SEC Appoints John Moses as Director of the Office of Investor Education and Assistance",
@@ -164,15 +183,6 @@
           "score": 100,
           "summary": "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
           "publishedAt": "2026-06-12T16:30:00.000Z"
-        },
-        {
-          "id": "finance-u-s-sec-press-releases-ca1dbc61bd",
-          "title": "SEC Establishes Joint Data Standards as Required Under the Financial Data Transparency Act of 2022",
-          "url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
-          "source": "U.S. SEC Press Releases",
-          "score": 100,
-          "summary": "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。",
-          "publishedAt": "2026-06-08T14:36:00.000Z"
         },
         {
           "id": "finance-u-s-sec-press-releases-6e53195535",
@@ -185,138 +195,142 @@
         }
       ],
       "themes": [
+        "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Pr...",
+        "SEC, CFTC Seek Public Input on Data Reporting Frameworks for Security-Based S...",
         "SEC Appoints John Moses as Director of the Office of Investor Education and A...",
-        "SEC Establishes Joint Data Standards as Required Under the Financial Data Tra...",
         "SEC Proposes Rescission of Regulation NMS Rules 611 and 610(e)"
       ],
-      "focus": "SEC监管改革：投资者保护、数据透明与市场结构",
-      "whyItMatters": "影响金融市场透明度、投资者权益及交易规则。",
+      "focus": "美国金融衍生品监管框架的现代化与协调，以及投资者保护。",
+      "whyItMatters": "此举旨在简化监管、减少市场摩擦，可能影响衍生品市场结构和交易成本，为投资者带来更清晰规则。",
       "weekSignals": [
-        "SEC任命John Moses为投资者教育主任",
-        "SEC依据FDTA制定数据标准",
-        "SEC提议废止NMS规则611和610(e)"
+        "SEC与CFTC共同征求衍生品产品定义意见",
+        "SEC与CFTC共同征求数据报告框架意见",
+        "SEC任命John Moses为投资者教育办公室主任",
+        "SEC提议废止实施20年的NMS规则611和610(e)"
       ],
-      "modelSummary": "SEC任命投资者教育主任，建立数据标准，提议废止NMS规则部分条款。",
+      "modelSummary": "SEC与CFTC联合就衍生品定义和数据报告框架征求意见，同时任命投资者教育新主任，并提议废止NMS规则。",
       "watchlist": [
-        "数据标准实施对金融机构影响",
+        "衍生品定义征求意见反馈",
+        "数据报告框架修订进展",
         "NMS规则废止后市场结构变化"
       ]
     },
     {
       "id": "news",
       "label": "新闻",
-      "totalItems": 147,
+      "totalItems": 153,
       "topSources": [
         {
           "source": "中国政府网要闻",
-          "count": 99
+          "count": 100
         },
         {
           "source": "NASA Breaking News",
-          "count": 28
+          "count": 30
         },
         {
           "source": "UN News",
-          "count": 20
+          "count": 23
         }
       ],
       "highlights": [
         {
-          "id": "news-item-14f29033d6",
-          "title": "国务院任免国家工作人员（2026年6月18日）",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072668.htm",
+          "id": "news-item-b78e09a97d",
+          "title": "新华社评论员：牢记初心使命 永葆政治本色——论学习贯彻习近平党建思想",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072774.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "国务院发布了任免国家工作人员的通知，但具体名单未在摘要中披露。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "本文为新华社评论员文章，解读习近平党建思想，强调“不忘初心、牢记使命”是党的建设的永恒课题，重申党的宗旨立场和价值取向。 没有发现实质性政策或事件变化，仅是对既有党建思想的再阐述和宣传。 无直接可量化的影响。 需要注意：无明显风险。",
+          "publishedAt": "2026-06-20T00:00:00.000Z"
         },
         {
-          "id": "news-item-00e2323ead",
-          "title": "张国清在福建调研时强调 提升重点产业链自主可控水平 更好发挥标准引领保障作用",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072662.htm",
+          "id": "news-item-06a757529d",
+          "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "中共中央政治局委员、国务院副总理张国清于6月16日至18日在福建省调研重点产业链发展和标准化建设工作，并强调提升重点产业链自主可控水平及标准引领保障作用。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "中国政府网发布消息称，今年我国持续推进制度型开放，为深耕中国的跨国企业带来更多机遇。 目前没有具体变化细节，仅表明开放方向持续。 可能增强外资信心，促进长期投资，但具体影响取决于后续措施。 需要注意：如果开放承诺未能有效落实，或引发外资失望。",
+          "publishedAt": "2026-06-20T00:00:00.000Z"
         },
         {
-          "id": "news-item-7f30ef0b13",
-          "title": "五部门组织开展2026年新能源汽车下乡活动",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072636.htm",
+          "id": "news-item-5665b8a0db",
+          "title": "我国科技创新和产业创新融合发展步伐加快",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072787.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "五部门组织开展2026年新能源汽车下乡活动，对换购新能源汽车的乡村地区消费者，均可按政策要求申领汽车以旧换新补贴，不受补贴资格数量限制。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "中国政府持续推动科技创新与产业创新的深度融合，一批创新技术加速向具体产业转化，新动能引领作用持续增强。 目前没有明确的变化信息，仅表明政府持续推动融合并取得进展。 对产业结构升级和长期经济增长有积极推动作用，但具体影响程度尚需进一步数据验证。 需要注意：若技术转化效率不及预期或政策执行不到位，可能导致融合进程缓慢，影响新动能培育。",
+          "publishedAt": "2026-06-20T00:00:00.000Z"
         },
         {
-          "id": "news-item-49a36d5cca",
-          "title": "人民日报评论员：为发展马克思主义建党学说作出重大原创性贡献——论学习贯彻习近平党建思想",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072620.htm",
+          "id": "news-item-5abc8a0207",
+          "title": "中欧班列年开行量十年间增长10.8倍",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072786.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "伟大时代孕育科学思想，科学思想引领创新实践。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "中欧班列统一品牌十周年之际，国铁集团发布数据，年开行量从2016年的1702列增长至2025年的20022列，十年间增长10.8倍，且自2020年起每年保持万列以上。 中欧班列年开行量从2016年的千列规模跃升至2025年的两万列以上，实现了爆发式增长，标志着中欧铁路物流网络从初创阶段进入成熟运营阶段。 中欧班列成为连接亚欧的重要物流动脉，推动中欧贸易额增长，带动沿线产业园区和基础设施投资，也为中国内陆城市开放提供了新机遇。 需要...",
+          "publishedAt": "2026-06-20T00:00:00.000Z"
         },
         {
-          "id": "news-item-167c7a7a42",
-          "title": "新华社评论员：办好中国的事情，关键在党——论学习贯彻习近平党建思想",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072612.htm",
+          "id": "news-item-a098a39415",
+          "title": "端午假期第二天 中短途出行活跃",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072785.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "新华社发布评论员文章，阐述习近平党建思想，强调党的领导对中国式现代化和民族复兴的决定性作用。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "2026年6月20日是端午假期第二天，全国出行需求维持高位，中短途出行表现活跃。全国铁路预计当日发送旅客1224万人次，并计划加开旅客列车598列以应对客流。 与平日相比，铁路客运量因假期因素显著增加，铁路部门通过加开列车提升运力，中短途出行成为主流选择。 铁路客运量攀升影响运输资源配置，加开列车缓解拥挤，但可能推高运营成本；用户出行体验受客流量影响。 需要注意：目前证据不足，无法评估运力不足或安全事故等风险。",
+          "publishedAt": "2026-06-20T00:00:00.000Z"
         },
         {
-          "id": "news-item-a65d44c7b2",
-          "title": "矢志不渝做党的创新理论的坚定信仰者、忠诚实践者——习近平党建思想指引广大党员干部凝心聚力奋进新征程",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072601.htm",
+          "id": "news-item-b1c928bf87",
+          "title": "坚持以党的政治建设为统领——深入学习贯彻习近平党建思想系列述评之五",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072784.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "学习贯彻习近平党建思想，是当前和今后一个时期全党的一项重要政治任务。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "中国政府网发表了题为《坚持以党的政治建设为统领——深入学习贯彻习近平党建思想系列述评之五》的文章，强调党的政治建设是根本性建设，决定党的建设方向和效果。该文是系列述评的一部分，旨在深入阐述习近平党建思想。 文章重申并强调了党的政治建设在党建中的首要地位，但未提及具体政策或制度变化。 目前影响有限，主要在理论层面强化了政治建设的优先性，对实际政治运作的直接冲击尚待观察。 需要注意：过度强调政治建设可能导致其他领域党建任务被忽视；缺乏...",
+          "publishedAt": "2026-06-20T00:00:00.000Z"
         },
         {
-          "id": "news-item-4910b44504",
-          "title": "坚持党中央集中统一领导——深入学习贯彻习近平党建思想系列述评之二",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072595.htm",
+          "id": "news-item-331d5c85ab",
+          "title": "坚持全面从严治党——深入学习贯彻习近平党建思想系列述评之三",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072758.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "中国政府网发布了关于坚持党中央集中统一领导的党建思想系列述评文章，内容回顾党的历史成就并强调集中统一领导的重要性。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "文章引述习近平总书记讲话，强调推进党的自我革命、坚定不移全面从严治党，保持党的先进性和纯洁性。",
+          "publishedAt": "2026-06-19T00:00:00.000Z"
         },
         {
-          "id": "news-item-a48472d527",
-          "title": "习近平给新华社老党员张连生的回信",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
+          "id": "news-item-ec16e9dca6",
+          "title": "新华社评论员：以更高标准、更实举措抓好全面从严治党——论学习贯彻习近平党建思想",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072757.htm",
           "source": "中国政府网要闻",
           "score": 100,
-          "summary": "中共中央总书记习近平给新华社百岁老党员张连生回信，对其在革命战争年代及通信技术岗位的贡献表示敬意，并关切其退休生活。",
-          "publishedAt": "2026-06-18T00:00:00.000Z"
+          "summary": "新华社发表评论员文章，系统阐述习近平党建思想，强调全面从严治党的重要性与实施路径。",
+          "publishedAt": "2026-06-19T00:00:00.000Z"
         }
       ],
       "themes": [
-        "国务院任免国家工作人员（2026年6月18日）",
-        "张国清在福建调研时强调 提升重点产业链自主可控水平 更好发挥标准引领保障作用",
-        "五部门组织开展2026年新能源汽车下乡活动",
-        "人民日报评论员：为发展马克思主义建党学说作出重大原创性贡献——论学习贯彻习近平党建思想",
-        "新华社评论员：办好中国的事情，关键在党——论学习贯彻习近平党建思想"
+        "新华社评论员：牢记初心使命 永葆政治本色——论学习贯彻习近平党建思想",
+        "外资机构：越来越开放的中国市场 越来越有吸引力",
+        "我国科技创新和产业创新融合发展步伐加快",
+        "中欧班列年开行量十年间增长10.8倍",
+        "端午假期第二天 中短途出行活跃"
       ],
-      "focus": "国内政策：产业链自主可控、新能源推广与党建思想",
-      "whyItMatters": "政策导向决定产业升级方向和经济动力。",
+      "focus": "中国对外开放、科技创新与产业融合，以及基础设施建设成就。",
+      "whyItMatters": "开放与创新是经济增长关键，中欧班列增长体现一带一路物流成果，端午数据反映消费活力。",
       "weekSignals": [
-        "张国清强调提升重点产业链自主可控",
-        "五部门启动新能源汽车下乡活动",
-        "习近平给百岁老党员回信",
-        "多篇党建思想系列述评发布"
+        "外资机构称中国市场越来越有吸引力",
+        "中欧班列年开行量十年增长10.8倍",
+        "端午假期中短途出行活跃，铁路加开列车",
+        "中国强调科技创新与产业创新融合发展"
       ],
-      "modelSummary": "国务院任免、张国清调研产业链、新能源汽车下乡、习近平党建思想学习。",
+      "modelSummary": "中国持续推动开放与创新，中欧班列十年增长强劲，端午出行活跃；党建宣传加强。",
       "watchlist": [
-        "新能源汽车下乡补贴落实",
-        "产业链自主可控具体措施"
+        "后续外资进入中国的具体政策",
+        "中欧班列对沿线贸易带动作用",
+        "科技融合政策落地效果"
       ]
     }
   ],
-  "modelSummary": "本周科技聚焦AI化学家与GitHub安全扫描，金融关注SEC法规改革与投资者保护，新闻重点为国内产业链自主与新能源汽车下乡政策。",
+  "modelSummary": "本周科技聚焦AI辅助医疗诊断与自主化学研发，金融监管层推动衍生品定义与数据报告框架现代化，新闻方面中国强调科技创新与产业融合，中欧班列十年增长10.8倍。",
   "summaryStats": {
     "llmEnabled": true,
     "llmConfigured": true,
@@ -324,6 +338,6 @@
     "llmSucceeded": 1,
     "fallbackCount": 0,
     "errorCount": 0,
-    "generatedAt": "2026-06-18T11:10:05.613Z"
+    "generatedAt": "2026-06-21T01:00:27.402Z"
   }
 }
