@@ -8,11 +8,11 @@
     "url": "https://github.blog/feed/",
     "status": 200,
     "ok": true,
-    "itemCount": 2,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 1,
     "items": [
       {
@@ -29,22 +29,6 @@
           "AI agents",
           "GitHub Copilot CLI"
         ]
-      },
-      {
-        "title": "How pull request limits are cutting down the noise",
-        "link": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
-        "guid": "https://github.blog/?p=96841",
-        "pubDate": "Thu, 18 Jun 2026 16:00:00 +0000",
-        "description": "<p>Learn how pull request limits can help manage contribution volume in your repositories, and see what’s next on the roadmap.</p>\n<p>The post <a href=\"https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/\">How pull request limits are cutting down the noise</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><p class=\"wp-block-paragraph\">More people are contributing to open source than ever, most of them trying to help. The challenge is keeping up with the volume. Creating a pull request has never been easier. Reviewing one still takes a human about as long as it ever did. When great contributions and low-quality noise land in the same queue, the ones that deserve attention are harder to find.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That&rsquo;s why we&rsquo;ve introduced pull request limits. It takes on the problem we hear most: too many incoming pull requests, too much low-quality noise, and too few ways to manage the flow.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"h-how-it-works\">How it works</h2>\n\n\n\n<p class=\"wp-block-paragraph\">A pull request limit sets the maximum number of pull requests a user without write access can have open at once in your repository. Hit the limit, and you must close or merge one before opening another. Pull requests opened by Copilot or another AI agent will counts toward your limit. Trusted contributors can be placed on a bypass list, where they are exempted from limits, but don&rsquo;t gain full contributor access. Draft pull requests will not count towards your limit.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" decoding=\"async\" height=\"566\" width=\"1024\" src=\"https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?resize=1024%2C566\" alt=\"A screenshot of the 'Moderation options menu' open to the 'Interaction limits' submenu, with 'Pull request limits' at the top. The checkbox 'Limit open pull requests from users without write access' is selected.\" class=\"wp-image-96844\" srcset=\"https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?w=2064 2064w, https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?w=300 300w, https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?w=768 768w, https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?w=1024 1024w, https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?w=1536 1536w, https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?w=2048 2048w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<p class=\"wp-block-paragraph\">GitHub already has interaction limits, but those are temporary cooldowns. These new pull request limits are persistent and configurable&mdash;giving maintainers the control they told us they were missing.</p>\n\n\n\n<p class=\"wp-block-paragraph\">A cap also changes how contributors behave. When anyone can open a pull request in seconds, a polished change and a rough draft look the same in the queue. But when only a few pull requests can be open at once, a contributor must be selective and prioritize which contributions they want to be reviewed. That first judgment call happens before the pull request reaches you, and a smaller pool makes good work easier to spot.</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n<p class=\"wp-block-paragraph\">It&rsquo;s helped us want to review pull requests again. Knowing that someone hasn&rsquo;t just opened 5&ndash;10 pull requests that are slop makes it much easier to want to look. Going forward we expect it to help us manage our backlog and ensure the things people are working on are the things we need.</p>\n<cite>Nicholas Tindle, AutoGPT</cite></blockquote>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n<p class=\"wp-block-paragraph\">This feature is great. We&rsquo;ve had problems on Homebrew for a while with enthusiastic users submitting many pull requests that need near identical review. AI further accelerated it. This allows us to still have outside contribution and maintainers contribute more while gating users to a level of pull requests we can cope with.</p>\n<cite>Mike McQuaid, Homebrew</cite></blockquote>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n<p class=\"wp-block-paragraph\">At OpenClaw we get a huge volume of pull requests from the community and had to build our own bots for fighting spam. We are super glad GitHub has been able to develop out-of-the-box solutions for maintainers now to manage this volume.</p>\n<cite>Vincent Koc, OpenClaw</cite></blockquote>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"h-the-cost-to-create-outran-the-cost-to-review\">The cost to create outran the cost to review</h2>\n\n\n\n<p class=\"wp-block-paragraph\">These limits are especially crucial right now because of a change in the ecosystem. In January 2023, developers merged about 25 million pull requests a month across GitHub. Today that number tops 90 million&mdash;a roughly 3.6x increase. More people are building in the open than at any point in GitHub&rsquo;s history.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Most contributions come in good faith, and even good-faith work can pile up faster than one volunteer can answer. In February, we wrote that open source was hitting its own <a href=\"https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/\">Eternal September</a>. A pull request limit gives maintainers some of that attention back, without closing the door on the next contributor.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"h-what-s-coming-next-more-controls-for-managing-contributions\">What&rsquo;s coming next: More controls for managing contributions</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Pull request limits are just the first step. The same feedback is pointed straight at what comes after: more flexible, more granular control over how contributions flow in.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Archiving pull requests (shipping soon)</strong>: Repository admins will be able to archive pull requests, hiding low-quality or spammy pull requests out of the main pull request view. Archived pull requests stay accessible to admins, but can be filtered out of the default list. We chose archive over delete on purpose: some organizations can&rsquo;t permanently delete pull requests for legal or compliance reasons, and many maintainers want to keep them for context.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Issue limits (in development)</strong>: The controls you now have on pull requests will be applied to issues: per-repository caps on how many open issues a user without write access can have at once, with a bypass list, plus an option to restrict issue creation to collaborators.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Smarter bypass signals (up next)</strong>: The goal is less manual trust management. Instead of curating a bypass list by hand, you could let contributors clear a limit automatically based on real signals: a previously merged pull request in the repo, account age, or organization membership. That frees maintainers from curating lists by hand and gives them more time to focus on the work itself.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Cross-repository controls (exploring)</strong>: A per-repository cap helps with repeated activity in one project, but it does nothing when someone opens pull requests across hundreds of repositories at once. We&rsquo;re exploring ways to catch contributors who spray pull requests across multiple repositories, whether through trust signals, rate limiting, or other cross-repository controls.&#8239;</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"h-thank-you\">Thank you</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Open source runs on the people who show up every day. To everyone who reviews pull requests late at night, mentors a first-time contributor, triages a backlog, files issues, or tells us where our tools fall short: thank you. You shaped this feature, and your input is critical in helping us decide what comes next. We&rsquo;ll keep building with you.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Try the pull request limit in your repository settings, and <a href=\"https://github.com/orgs/community/discussions/198851\">tell us where it helps and where it doesn&rsquo;t</a>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">See you in the pull request queue. &#129505;</p>\n</body></html>\n<p>The post <a href=\"https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/\">How pull request limits are cutting down the noise</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "feedImageUrl": "https://github.blog/wp-content/uploads/2026/06/608690507-ead99df1-2879-43d6-8f5b-f04431eeefcf.jpg?resize=1024%2C566",
-        "categories": [
-          "Maintainers",
-          "Open Source",
-          "maintainers",
-          "open source",
-          "pull requests"
-        ]
       }
     ],
     "stale": false
@@ -58,38 +42,13 @@
     "url": "https://openai.com/news/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 2,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "New usage analytics and updated spend controls for enterprises",
-        "link": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-        "guid": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-        "pubDate": "Thu, 18 Jun 2026 17:00:00 GMT",
-        "description": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": [
-          "Product"
-        ]
-      },
-      {
-        "title": "Improving health intelligence in ChatGPT",
-        "link": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-        "guid": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-        "pubDate": "Thu, 18 Jun 2026 11:00:00 GMT",
-        "description": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": [
-          "Product"
-        ]
-      }
-    ],
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -102,10 +61,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -120,10 +79,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -138,10 +97,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -156,10 +115,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -173,50 +132,13 @@
     "url": "https://www.federalreserve.gov/feeds/press_all.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 3,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
-        "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618b.htm",
-        "guid": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618b.htm",
-        "pubDate": "Thu, 18 Jun 2026 19:00:00 GMT",
-        "description": "Federal Reserve Board issues enforcement action with former employee of Bank of Eufaula and S N B Bancshares, Inc.",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": [
-          "Enforcement Actions"
-        ]
-      },
-      {
-        "title": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
-        "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618a.htm",
-        "guid": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260618a.htm",
-        "pubDate": "Thu, 18 Jun 2026 15:00:00 GMT",
-        "description": "Federal Reserve Board issues enforcement action with former employee of Manufacturers and Traders Trust Company",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": [
-          "Enforcement Actions"
-        ]
-      },
-      {
-        "title": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
-        "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
-        "guid": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
-        "pubDate": "Thu, 18 Jun 2026 13:00:00 GMT",
-        "description": "Federal Reserve Board requests comment on proposal to require certain payment stablecoin issuers to maintain an effective customer identification program",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": [
-          "Banking and Consumer Regulatory Policy"
-        ]
-      }
-    ],
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -228,34 +150,13 @@
     "url": "https://www.sec.gov/news/pressreleases.rss",
     "status": 200,
     "ok": true,
-    "itemCount": 2,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "SEC, CFTC Seek Public Comment to Further Clarify and Harmonize Derivatives Product Definitions",
-        "link": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
-        "guid": "fc630f58-5818-4ca0-b099-557e0c4fd640",
-        "pubDate": "Thu, 18 Jun 2026 14:42:47 -0400",
-        "description": "The Securities and Exchange Commission and the Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to further update, clarify, and harmonize certain derivatives product definitions and…",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": []
-      },
-      {
-        "title": "SEC, CFTC Seek Public Input on Data Reporting Frameworks for Security-Based Swap and Swap Markets",
-        "link": "https://www.sec.gov/newsroom/press-releases/2026-56-sec-cftc-seek-public-input-data-reporting-frameworks-security-based-swap-swap-markets",
-        "guid": "f1e85604-38d5-4532-8a87-cc60662d5cbe",
-        "pubDate": "Thu, 18 Jun 2026 14:17:55 -0400",
-        "description": "The Securities and Exchange Commission and Commodity Futures Trading Commission today issued a joint request for public comment on potential opportunities to harmonize, modernize, and streamline data reporting requirements in their regulation of the…",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": []
-      }
-    ],
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -268,10 +169,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -437,7 +338,7 @@
     ],
     "stale": true,
     "latestAttempt": {
-      "fetchedAt": "2026-06-20T09:00:25.814Z",
+      "fetchedAt": "2026-06-21T00:00:25.845Z",
       "ok": false,
       "status": 429,
       "itemCount": 0,
@@ -453,13 +354,23 @@
     "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 15,
-    "fetchedAt": "2026-06-20T09:00:25.814Z",
+    "itemCount": 7,
+    "fetchedAt": "2026-06-21T00:00:25.845Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-20T09:00:25.814Z",
-    "cacheExpiresAt": "2026-06-22T09:00:25.814Z",
+    "cacheStartedAt": "2026-06-21T00:00:25.845Z",
+    "cacheExpiresAt": "2026-06-23T00:00:25.845Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "For one young refugee in Uganda, basketball is more than a game",
+        "link": "https://news.un.org/feed/view/en/story/2026/06/1167743",
+        "guid": "https://news.un.org/en/story/2026/06/1167743",
+        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
+        "description": "When 19-year-old Stephane Kulimushi looks around the basketball court in Kampala where he trains young refugees, he sees more than players.",
+        "content": "",
+        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/18-06-2026_DRC-Refugee_Basketball-01.jpg/image560x340cropped.jpg",
+        "categories": []
+      },
       {
         "title": "UNESCO launches consultation on fair payment for news in the digital age",
         "link": "https://news.un.org/feed/view/en/story/2026/06/1167771",
@@ -518,96 +429,6 @@
         "description": "After another deadly night of clashes in Lebanon, aid agencies issued a new alert for Gaza, where 265 Palestinian children have been killed since a ceasefire was announced in October 2025.",
         "content": "",
         "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/12-05-2026-UNICEF-Gaza.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "UN upholds freedom of movement for peacekeepers in Lebanon",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167758",
-        "guid": "https://news.un.org/en/story/2026/06/1167758",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "The United Nations has again called for freedom of movement for its peacekeepers in Lebanon who continue to closely monitor developments in the south of the country, including in the wake of the recent provisional agreement signed by the United States and Iran.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/18-04-2026-UNIFIL-Patrol.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Libya’s political process regains momentum, but window for action is narrowing, UN envoy warns",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167757",
-        "guid": "https://news.un.org/en/story/2026/06/1167757",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "Libya has been mired in political dysfunction since the collapse of Muammar Gaddafi’s regime in 2011, which shattered State institutions and triggered recurring struggles over legitimacy and power.&nbsp;",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/16-01-2026-IOM-Libya.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "From ‘media deserts’ to the invisibility of women, rights experts spotlight latest trends",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167756",
-        "guid": "https://news.un.org/en/story/2026/06/1167756",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "From the invisibility of women and girls to “media deserts” amid an artificial intelligence (AI) tsunami, dozens of UN independent experts have been shedding light on the battle for equal rights worldwide as the Geneva-based Human Rights Council continued its 62nd session on Thursday.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/21-03-2024_Wiki_AI.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Fermentation, flavour and the future of food: Making sustainability delicious",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167755",
-        "guid": "https://news.un.org/en/story/2026/06/1167755",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "Words like “sustainability” and “healthy” shouldn’t take the joy out of eating. As elite chef Jaume Biarnés has been explaining to UN News, sustainable gastronomy can be delicious, exciting and fun.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/05-10-2023_Unsplash_restaurant.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Security Council LIVE: Gaza in the spotlight as dire conditions continue",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167750",
-        "guid": "https://news.un.org/en/story/2026/06/1167750",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "The Security Council debated conditions in Gaza at the request of its 10 elected members amid concern that the territory&#039;s humanitarian crisis is being overshadowed by wider regional developments. The meeting took place under a ceasefire that has existed in name since October 2025 – but nearly 1,000 Palestinians have been killed, and most Gazans remain displaced. Relief chief Tom Fletcher told ambassadors that “fragile gains” since the truce are “the bare minimum of what Palestinians need.” Full coverage here, and wider Meetings Coverage can be found here.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/07-01-2026-WFP-Gaza-03.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Climate shocks accelerating as El Niño threat looms over already vulnerable regions",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167753",
-        "guid": "https://news.un.org/en/story/2026/06/1167753",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "Millions of people already facing hunger, displacement and economic hardship could soon face another major climate shock, as UN agencies warned on Thursday that extreme weather risks are intensifying across some of the world’s most vulnerable regions.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/01-03-2024-mada-dd-18.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "US makes $1 billion contribution to UN child rights and food agencies",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167751",
-        "guid": "https://news.un.org/en/story/2026/06/1167751",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "Two United Nations agencies have together welcomed more than $1 billion in assistance from the United States to support their operations targeting millions of children and hungry families in more than 40 countries.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/19-05-2026-WFP-Myanmar.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "‘Stop this madness’: Rights chief warns of impending atrocities as militia closes in on El Obeid, Sudan",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167752",
-        "guid": "https://news.un.org/en/story/2026/06/1167752",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "The UN’s top human rights official has issued an urgent warning that an imminent offensive against El Obeid, the capital of Sudan’s North Kordofan state, carries the risk of serious international crimes and threatens to deepen an already catastrophic humanitarian crisis.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/06-10-2025-UN-Photo-Sudan-her-lens.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "US-Iran deal: technical work can begin, says atomic energy agency",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167748",
-        "guid": "https://news.un.org/en/story/2026/06/1167748",
-        "pubDate": "Thu, 18 Jun 2026 12:00:00 +0000",
-        "description": "The head of the UN-affiliated atomic energy agency on Thursday welcomed the signing of an initial Iran-US memorandum aimed at ending the war, before proposing “to sit down” with both parties to assist with concrete measures such as verification of Iran’s nuclear programme, a key sticking point.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/10-09-2025_IAEA_nuclear.jpg/image560x340cropped.jpg",
         "categories": []
       }
     ],
