@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-06-21T09:01:28.807Z",
+  "generated_at": "2026-06-22T00:01:33.190Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 4,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-06-21T09:01:06.241Z"
+      "generated_at": "2026-06-22T00:01:01.187Z"
     },
     "llm": {
       "enabled": true,
@@ -46,13 +46,13 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-05-31T00:00:00.000Z",
-      "last_seen_at": "2026-06-21T09:00:39.287Z",
-      "updated_at": "2026-06-21T09:00:39.287Z",
+      "last_seen_at": "2026-06-22T00:00:39.125Z",
+      "updated_at": "2026-06-22T00:00:39.125Z",
       "definition": {
-        "one_sentence": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。 相关来源：OpenAI News、中国政府网要闻、GitHub Blog",
-        "background": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。 相关来源：OpenAI News、中国政府网要闻、GitHub Blog",
+        "one_sentence": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Ent... 相关来源：OpenAI News、中国政府网要闻",
+        "background": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Ent... 相关来源：OpenAI News、中国政府网要闻",
         "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "企业客户现在可以使用更精细的支出控制和用量分析功能来管理其 ChatGPT Enterprise 部署。",
+        "why_it_matters": "三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。",
         "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -99,30 +99,39 @@
       "current_judgment": {
         "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
         "basis": [
+          "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Co...",
+          "三星电子为员工部署ChatGPT和Codex",
           "OpenAI 发布面向 ChatGPT Enterprise 的新支出控制和用量分析工具。",
-          "旨在帮助组织管理 AI 成本并自信扩展。",
-          "来源为 OpenAI 官方新闻。",
-          "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。"
+          "旨在帮助组织管理 AI 成本并自信扩展。"
         ],
         "latest_change": "普洛斯算力中心引入浙江国资战略股东：第一财经中文财经、宏观、产业和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 4,
+        "source_count": 5,
         "official_source_count": 1,
-        "financial_media_count": 1,
+        "financial_media_count": 2,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "industry_analysis": 3,
-          "unknown": 3
+          "industry_analysis": 4,
+          "unknown": 2
         },
         "primary_source": {
           "name": "第一财经",
           "url": "https://www.yicai.com/news/102794012.html"
         },
         "source_links": [
+          {
+            "item_id": "business-openai-news-3d160a8e12",
+            "title": "三星电子为员工部署ChatGPT和Codex",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+            "published_at": "2026-06-21T23:00:00.000Z",
+            "summary": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
+            "relevance_score": 100
+          },
           {
             "item_id": "business-openai-news-d1c4ccdd2d",
             "title": "新的用量分析和更新的支出控制面向企业",
@@ -167,15 +176,6 @@
             "published_at": "2026-05-31T00:00:00.000Z",
             "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
             "relevance_score": 95
-          },
-          {
-            "item_id": "international-github-blog-5a6c5078ad",
-            "title": "什么是Git工作树，为什么要使用它们？",
-            "source": "GitHub Blog",
-            "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-            "published_at": "2026-06-16T20:58:54.000Z",
-            "summary": "文章介绍了GitHub开发者倡导高级总监Cassidy，并提及Git 2.54版本发布，但未具体解释git worktrees。",
-            "relevance_score": 94
           }
         ],
         "evidence_gaps": [
@@ -187,31 +187,31 @@
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "source": "第一财经",
         "url": "https://www.yicai.com/news/102794012.html",
-        "published_at": "2026-06-21T09:00:39.287Z",
+        "published_at": "2026-06-22T00:00:39.125Z",
         "score": 90
       },
       "confirmed_facts": [
         {
-          "fact": "OpenAI 发布面向 ChatGPT Enterprise 的新支出控制和用量分析工具。",
+          "fact": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Co...",
+          "evidence_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "三星电子为员工部署ChatGPT和Codex",
           "evidence_url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "旨在帮助组织管理 AI 成本并自信扩展。",
+          "fact": "OpenAI 发布面向 ChatGPT Enterprise 的新支出控制和用量分析工具。",
           "evidence_url": "https://openai.com/index/diagnose-rare-childhood-diseases",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "来源为 OpenAI 官方新闻。",
+          "fact": "旨在帮助组织管理 AI 成本并自信扩展。",
           "evidence_url": "https://openai.com/index/ai-chemist-improves-reaction",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-          "evidence_url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
           "source": "OpenAI News",
           "confidence": "高"
         }
@@ -220,9 +220,9 @@
         "market": {
           "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
           "evidence": [
+            "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
             "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-            "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。"
+            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -230,19 +230,19 @@
         "industry": {
           "impact": "可能影响 商业、AI治理、产业政策、科技战略 相关判断，需继续核对后续证据。",
           "evidence": [
+            "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
             "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-            "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。"
+            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、OpenAI、GitHub、model、人工智能、国务院。",
+          "impact": "关联实体：AI、OpenAI、model、人工智能、国务院、中国政府网。",
           "evidence": [
+            "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
             "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-            "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。"
+            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -250,9 +250,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
+            "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
             "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-            "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。"
+            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -260,9 +260,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
+            "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
             "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-            "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。"
+            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -421,6 +421,15 @@
       ],
       "related_items": [
         {
+          "item_id": "business-openai-news-3d160a8e12",
+          "title": "三星电子为员工部署ChatGPT和Codex",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "published_at": "2026-06-21T23:00:00.000Z",
+          "summary": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。 对三星而言，员工可借助AI提升效率；对行业而言，树立了企业级AI部署新标杆；对用户（员工）而言，日常工作方式可能改变。 需要注意：需关注数据泄露风险、员工过度依赖AI以及部署成本控制。",
+          "relevance_score": 100
+        },
+        {
           "item_id": "business-openai-news-d1c4ccdd2d",
           "title": "新的用量分析和更新的支出控制面向企业",
           "source": "OpenAI News",
@@ -464,40 +473,9 @@
           "published_at": "2026-05-31T00:00:00.000Z",
           "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
           "relevance_score": 95
-        },
-        {
-          "item_id": "international-github-blog-5a6c5078ad",
-          "title": "什么是Git工作树，为什么要使用它们？",
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-          "published_at": "2026-06-16T20:58:54.000Z",
-          "summary": "文章介绍了GitHub开发者倡导高级总监Cassidy，并提及Git 2.54版本发布，但未具体解释git worktrees。",
-          "relevance_score": 94
         }
       ],
       "timeline": [
-        {
-          "date": "2026-06-12",
-          "title": "Preply如何结合AI与人工导师实现个性化学习",
-          "summary": "Preply利用OpenAI推出AI生成课程摘要，结合人工导师提供个性化反馈和练习。",
-          "description": "Preply利用OpenAI推出AI生成课程摘要，结合人工导师提供个性化反馈和练习。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "展示了AI在语言学习领域的个性化应用，为在线教育提供新思路。",
-          "sources": [
-            {
-              "title": "Preply如何结合AI与人工导师实现个性化学习",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/preply",
-              "published_at": "2026-06-12T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/preply",
-          "score": 92,
-          "publishedAt": "2026-06-12T00:00:00.000Z"
-        },
         {
           "date": "2026-06-12",
           "title": "OpenAI推出新一代工作学院课程",
@@ -632,28 +610,6 @@
         },
         {
           "date": "2026-06-17",
-          "title": "LifeSciBench简介",
-          "summary": "OpenAI推出LifeSciBench，专家审核的AI生命科学基准。",
-          "description": "OpenAI推出LifeSciBench，专家审核的AI生命科学基准。",
-          "evidence_type": "unknown",
-          "importance": "中",
-          "does_it_change_judgment": true,
-          "impact": "现在有了一个标准化的基准来评估AI在生命科学领域的性能。",
-          "sources": [
-            {
-              "title": "LifeSciBench简介",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/introducing-life-sci-bench",
-              "published_at": "2026-06-17T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/introducing-life-sci-bench",
-          "score": 87,
-          "publishedAt": "2026-06-17T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-17",
           "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
           "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
           "description": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
@@ -720,6 +676,50 @@
         },
         {
           "date": "2026-06-21",
+          "title": "三星电子为员工部署ChatGPT和Codex",
+          "summary": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和...",
+          "description": "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和...",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "三星员工现在可以正式使用ChatGPT Enterprise和Codex进行工作，可能改变内部协作、编码和文档处理方式。",
+          "sources": [
+            {
+              "title": "三星电子为员工部署ChatGPT和Codex",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+              "published_at": "2026-06-21T23:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "score": 100,
+          "publishedAt": "2026-06-21T23:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "07:59 中信建投：AI重塑制药底层逻辑，商业化验证期加速突破",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "中",
+          "does_it_change_judgment": true,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "07:59 中信建投：AI重塑制药底层逻辑，商业化验证期加速突破",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-22/4432405.html",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-22/4432405.html",
+          "score": 89,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
           "title": "普洛斯算力中心引入浙江国资战略股东",
           "summary": "第一财经中文财经、宏观、产业和市场新闻",
           "description": "第一财经中文财经、宏观、产业和市场新闻",
@@ -732,13 +732,13 @@
               "title": "普洛斯算力中心引入浙江国资战略股东",
               "source": "第一财经",
               "url": "https://www.yicai.com/news/102794012.html",
-              "published_at": "2026-06-21T09:00:39.287Z"
+              "published_at": "2026-06-22T00:00:39.125Z"
             }
           ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/102794012.html",
           "score": 90,
-          "publishedAt": "2026-06-21T09:00:39.287Z"
+          "publishedAt": "2026-06-22T00:00:39.125Z"
         }
       ],
       "analysis_notes": [],
@@ -749,9 +749,9 @@
           "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
           "confidence": "high",
           "basis": [
-            "OpenAI 发布面向 ChatGPT Enterprise 的新支出控制和用量分析工具。",
-            "旨在帮助组织管理 AI 成本并自信扩展。",
-            "来源为 OpenAI 官方新闻。"
+            "三星电子向全球员工部署ChatGPT Enterprise和Codex，这是OpenAI迄今为止最大规模的企业AI部署之一。此举表明三星在内部运营中深度集成AI工具。 三星员工现在可以正式使用ChatGPT Enterprise和Co...",
+            "三星电子为员工部署ChatGPT和Codex",
+            "OpenAI 发布面向 ChatGPT Enterprise 的新支出控制和用量分析工具。"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -922,7 +922,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-21",
+            "date": "2026-06-22",
             "judgment": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
             "change_type": "初始判断",
             "reason": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
@@ -987,13 +987,13 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-06-18T00:00:00.000Z",
-      "last_seen_at": "2026-06-20T00:00:00.000Z",
-      "updated_at": "2026-06-20T00:00:00.000Z",
+      "last_seen_at": "2026-06-21T00:00:00.000Z",
+      "updated_at": "2026-06-21T00:00:00.000Z",
       "definition": {
-        "one_sentence": "我国持续推进制度型开放，为跨国企业带来机遇。 相关来源：中国政府网要闻、中国人民银行新闻发布",
-        "background": "我国持续推进制度型开放，为跨国企业带来机遇。 相关来源：中国政府网要闻、中国人民银行新闻发布",
+        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
+        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前没有具体变化细节，仅表明开放方向持续。",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 3 条官方或市场权威来源，仍处在高时效窗口内。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -1011,9 +1011,9 @@
       "profile": {
         "impact_areas": [
           "公共政策",
-          "商业",
-          "外资机构",
-          "越来越开放的中国市场"
+          "长三角地区进出口连续",
+          "个月保持增长",
+          "中国政府网要闻列表"
         ],
         "entities": {
           "companies": [],
@@ -1037,12 +1037,12 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "中国强调制度型开放持续推进",
-          "跨国企业将迎来更多机遇",
-          "我国持续推进制度型开放，为跨国企业带来机遇。",
-          "外资机构：越来越开放的中国市场 越来越有吸引力"
+          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "长三角地区进出口连续15个月保持增长",
+          "端午假期全社会跨区域人员流动量预计超6.5亿人次",
+          "服务消费提质扩容 假日经济活力迸发"
         ],
-        "latest_change": "外资机构：越来越开放的中国市场 越来越有吸引力：我国持续推进制度型开放，为跨国企业带来机遇。",
+        "latest_change": "长三角地区进出口连续15个月保持增长：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1053,41 +1053,49 @@
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "unknown": 3,
-          "official_announcement": 1,
-          "industry_analysis": 1,
-          "data_release": 1
+          "official_announcement": 3,
+          "unknown": 1,
+          "industry_analysis": 2
         },
         "primary_source": {
           "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm"
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm"
         },
         "source_links": [
+          {
+            "item_id": "news-item-5f70e7e636",
+            "title": "长三角地区进出口连续15个月保持增长",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
+            "published_at": "2026-06-21T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-e5bf2f0ce2",
+            "title": "端午假期全社会跨区域人员流动量预计超6.5亿人次",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072811.htm",
+            "published_at": "2026-06-21T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-item-6d82973ec5",
+            "title": "服务消费提质扩容 假日经济活力迸发",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
+            "published_at": "2026-06-21T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
           {
             "item_id": "news-item-06a757529d",
             "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
             "published_at": "2026-06-20T00:00:00.000Z",
-            "summary": "我国持续推进制度型开放，为跨国企业带来机遇。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-5665b8a0db",
-            "title": "China accelerates the integration of technological innovation and industrial innovation",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072787.htm",
-            "published_at": "2026-06-20T00:00:00.000Z",
-            "summary": "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-5abc8a0207",
-            "title": "中欧班列年开行量十年间增长10.8倍",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072786.htm",
-            "published_at": "2026-06-20T00:00:00.000Z",
-            "summary": "中欧班列年开行量十年增长10.8倍，2025年达20022列。",
+            "summary": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
             "relevance_score": 100
           },
           {
@@ -1096,7 +1104,7 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/lianbo/202606/content_7072776.htm",
             "published_at": "2026-06-20T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "2026年前5月消费品以旧换新政策惠及超1.1亿人次，政策成效明显。",
             "relevance_score": 100
           },
           {
@@ -1107,15 +1115,6 @@
             "published_at": "2026-06-19T00:00:00.000Z",
             "summary": "报道指出今年跨国企业加速在华高技术领域投资，共享中国产业升级红利。",
             "relevance_score": 100
-          },
-          {
-            "item_id": "macro-item-2347d7de2f",
-            "title": "银行间市场数据报告库在上海正式开业",
-            "source": "中国人民银行新闻发布",
-            "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
-            "published_at": "2026-06-18T00:00:00.000Z",
-            "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
-            "relevance_score": 100
           }
         ],
         "evidence_gaps": [
@@ -1123,35 +1122,35 @@
         ]
       },
       "latest_update": {
-        "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
-        "summary": "我国持续推进制度型开放，为跨国企业带来机遇。",
+        "title": "长三角地区进出口连续15个月保持增长",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
-        "published_at": "2026-06-20T00:00:00.000Z",
+        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
+        "published_at": "2026-06-21T00:00:00.000Z",
         "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "中国强调制度型开放持续推进",
+          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "长三角地区进出口连续15个月保持增长",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072811.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "端午假期全社会跨区域人员流动量预计超6.5亿人次",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "服务消费提质扩容 假日经济活力迸发",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "跨国企业将迎来更多机遇",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072787.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "我国持续推进制度型开放，为跨国企业带来机遇。",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072786.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "外资机构：越来越开放的中国市场 越来越有吸引力",
-          "evidence_url": "https://www.gov.cn/lianbo/202606/content_7072776.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -1160,29 +1159,29 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "我国持续推进制度型开放，为跨国企业带来机遇。",
-            "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-            "中欧班列年开行量十年增长10.8倍，2025年达20022列。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 公共政策、商业、外资机构、越来越开放的中国市场 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 公共政策、长三角地区进出口连续、个月保持增长、中国政府网要闻列表 相关判断，需继续核对后续证据。",
           "evidence": [
-            "我国持续推进制度型开放，为跨国企业带来机遇。",
-            "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-            "中欧班列年开行量十年增长10.8倍，2025年达20022列。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行、国家发展改革委。",
+          "impact": "关联实体：国务院、中国政府网、国家发展改革委。",
           "evidence": [
-            "我国持续推进制度型开放，为跨国企业带来机遇。",
-            "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-            "中欧班列年开行量十年增长10.8倍，2025年达20022列。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1190,9 +1189,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "我国持续推进制度型开放，为跨国企业带来机遇。",
-            "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-            "中欧班列年开行量十年增长10.8倍，2025年达20022列。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1200,9 +1199,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "我国持续推进制度型开放，为跨国企业带来机遇。",
-            "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-            "中欧班列年开行量十年增长10.8倍，2025年达20022列。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -1225,8 +1224,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、商业、外资机构 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+            "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -1245,8 +1244,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、商业、外资机构 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+            "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
           ]
         },
         {
@@ -1264,15 +1263,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 公共政策、商业、外资机构 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+            "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "如果开放承诺未能有效落实，或引发外资失望。",
+          "risk": "政策执行力度、外部环境变化等不确定性存在。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1281,7 +1280,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "若技术转化效率不及预期或政策执行不到位，可能导致融合进程缓慢，影响新动能培育。",
+          "risk": "政策若后续资金不足或退出，可能影响消费持续性和企业预期。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1290,7 +1289,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "目前证据不足，但根据常识，地缘政治风险、运营成本上升、回程货源不足等可能是潜在风险。",
+          "risk": "报道未提及风险，但实际投资可能受全球经济波动、政策变化等因素干扰；高技术领域过度依赖外资也可能带来技术安全考量。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1307,17 +1306,17 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "如果开放承诺未能有效落实，或引发外资失望。",
+          "uncertainty": "政策执行力度、外部环境变化等不确定性存在。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "若技术转化效率不及预期或政策执行不到位，可能导致融合进程缓慢，影响新动能培育。",
+          "uncertainty": "政策若后续资金不足或退出，可能影响消费持续性和企业预期。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "目前证据不足，但根据常识，地缘政治风险、运营成本上升、回程货源不足等可能是潜在风险。",
+          "uncertainty": "报道未提及风险，但实际投资可能受全球经济波动、政策变化等因素干扰；高技术领域过度依赖外资也可能带来技术安全考量。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -1329,13 +1328,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 公共政策、商业、外资机构 的后续变化",
+          "variable": "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -1361,30 +1360,39 @@
       ],
       "related_items": [
         {
+          "item_id": "news-item-5f70e7e636",
+          "title": "长三角地区进出口连续15个月保持增长",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
+          "published_at": "2026-06-21T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-e5bf2f0ce2",
+          "title": "端午假期全社会跨区域人员流动量预计超6.5亿人次",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072811.htm",
+          "published_at": "2026-06-21T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-item-6d82973ec5",
+          "title": "服务消费提质扩容 假日经济活力迸发",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
+          "published_at": "2026-06-21T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
           "item_id": "news-item-06a757529d",
           "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
           "published_at": "2026-06-20T00:00:00.000Z",
-          "summary": "我国持续推进制度型开放，为跨国企业带来机遇。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-5665b8a0db",
-          "title": "China accelerates the integration of technological innovation and industrial innovation",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072787.htm",
-          "published_at": "2026-06-20T00:00:00.000Z",
-          "summary": "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-5abc8a0207",
-          "title": "中欧班列年开行量十年间增长10.8倍",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072786.htm",
-          "published_at": "2026-06-20T00:00:00.000Z",
-          "summary": "中欧班列年开行量十年增长10.8倍，2025年达20022列。",
+          "summary": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
           "relevance_score": 100
         },
         {
@@ -1393,7 +1401,7 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/lianbo/202606/content_7072776.htm",
           "published_at": "2026-06-20T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "2026年前5月消费品以旧换新政策惠及超1.1亿人次，政策成效明显。",
           "relevance_score": 100
         },
         {
@@ -1403,15 +1411,6 @@
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072768.htm",
           "published_at": "2026-06-19T00:00:00.000Z",
           "summary": "报道指出今年跨国企业加速在华高技术领域投资，共享中国产业升级红利。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "macro-item-2347d7de2f",
-          "title": "银行间市场数据报告库在上海正式开业",
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026061810231435128/index.html",
-          "published_at": "2026-06-18T00:00:00.000Z",
-          "summary": "银行间市场数据报告库在上海开业，由央行支持，旨在提升市场数据服务能力。",
           "relevance_score": 100
         }
       ],
@@ -1549,28 +1548,6 @@
           "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-06-18",
-          "title": "高质量发展中保障和改善民生系列报告会首场在京举行",
-          "summary": "多重部门联合举办高质量发展与民生保障系列报告会，首场在京召开。",
-          "description": "多重部门联合举办高质量发展与民生保障系列报告会，首场在京召开。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "官方启动了一项新的形势政策系列报告会，首场聚焦民生保障与高质量发展。",
-          "sources": [
-            {
-              "title": "高质量发展中保障和改善民生系列报告会首场在京举行",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072715.htm",
-              "published_at": "2026-06-18T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072715.htm",
-          "score": 100,
-          "publishedAt": "2026-06-18T00:00:00.000Z"
-        },
-        {
           "date": "2026-06-19",
           "title": "跨国公司深耕中国市场 共享发展新机遇",
           "summary": "报道指出今年跨国企业加速在华高技术领域投资，共享中国产业升级红利。",
@@ -1595,12 +1572,12 @@
         {
           "date": "2026-06-20",
           "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
-          "summary": "我国持续推进制度型开放，为跨国企业带来机遇。",
-          "description": "我国持续推进制度型开放，为跨国企业带来机遇。",
+          "summary": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
+          "description": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "目前没有具体变化细节，仅表明开放方向持续。",
+          "impact": "目前证据不足，仅提及开放持续推进，未说明具体变化。",
           "sources": [
             {
               "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
@@ -1616,57 +1593,13 @@
         },
         {
           "date": "2026-06-20",
-          "title": "China accelerates the integration of technological innovation and industrial innovation",
-          "summary": "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-          "description": "中国政府持续推动科技创新与产业创新融合，创新技术加速产业化，新动能增强。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前没有明确的变化信息，仅表明政府持续推动融合并取得进展。",
-          "sources": [
-            {
-              "title": "China accelerates the integration of technological innovation and industrial innovation",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072787.htm",
-              "published_at": "2026-06-20T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072787.htm",
-          "score": 100,
-          "publishedAt": "2026-06-20T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-20",
-          "title": "中欧班列年开行量十年间增长10.8倍",
-          "summary": "中欧班列年开行量十年增长10.8倍，2025年达20022列。",
-          "description": "中欧班列年开行量十年增长10.8倍，2025年达20022列。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中欧班列年开行量从2016年的千列规模跃升至2025年的两万列以上，实现了爆发式增长，标志着中欧铁路物流网络从初创阶段进入成熟运营阶段。",
-          "sources": [
-            {
-              "title": "中欧班列年开行量十年间增长10.8倍",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072786.htm",
-              "published_at": "2026-06-20T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072786.htm",
-          "score": 100,
-          "publishedAt": "2026-06-20T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-20",
           "title": "前5月消费品以旧换新资金惠及超1.1亿人次",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "2026年前5月消费品以旧换新政策惠及超1.1亿人次，政策成效明显。",
+          "description": "2026年前5月消费品以旧换新政策惠及超1.1亿人次，政策成效明显。",
+          "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "消费品以旧换新政策的受惠人次突破1.1亿，显示政策覆盖面和渗透率进一步提升，对消费市场形成持续刺激。",
           "sources": [
             {
               "title": "前5月消费品以旧换新资金惠及超1.1亿人次",
@@ -1679,6 +1612,72 @@
           "url": "https://www.gov.cn/lianbo/202606/content_7072776.htm",
           "score": 100,
           "publishedAt": "2026-06-20T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-21",
+          "title": "长三角地区进出口连续15个月保持增长",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "长三角地区进出口连续15个月保持增长",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
+              "published_at": "2026-06-21T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
+          "score": 100,
+          "publishedAt": "2026-06-21T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-21",
+          "title": "端午假期全社会跨区域人员流动量预计超6.5亿人次",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "端午假期全社会跨区域人员流动量预计超6.5亿人次",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072811.htm",
+              "published_at": "2026-06-21T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072811.htm",
+          "score": 100,
+          "publishedAt": "2026-06-21T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-21",
+          "title": "服务消费提质扩容 假日经济活力迸发",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "服务消费提质扩容 假日经济活力迸发",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
+              "published_at": "2026-06-21T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
+          "score": 100,
+          "publishedAt": "2026-06-21T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -1689,9 +1688,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "中国强调制度型开放持续推进",
-            "跨国企业将迎来更多机遇",
-            "我国持续推进制度型开放，为跨国企业带来机遇。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "长三角地区进出口连续15个月保持增长",
+            "端午假期全社会跨区域人员流动量预计超6.5亿人次"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -1731,9 +1730,9 @@
             ],
             "affected_areas": [
               "公共政策",
-              "商业",
-              "外资机构",
-              "越来越开放的中国市场"
+              "长三角地区进出口连续",
+              "个月保持增长",
+              "中国政府网要闻列表"
             ],
             "confidence": "high"
           }
@@ -1754,8 +1753,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、商业、外资机构 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+              "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -1774,8 +1773,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、商业、外资机构 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+              "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
             ]
           },
           {
@@ -1793,15 +1792,15 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 公共政策、商业、外资机构 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+              "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "如果开放承诺未能有效落实，或引发外资失望。",
+            "risk": "政策执行力度、外部环境变化等不确定性存在。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1810,7 +1809,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "若技术转化效率不及预期或政策执行不到位，可能导致融合进程缓慢，影响新动能培育。",
+            "risk": "政策若后续资金不足或退出，可能影响消费持续性和企业预期。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1819,7 +1818,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "目前证据不足，但根据常识，地缘政治风险、运营成本上升、回程货源不足等可能是潜在风险。",
+            "risk": "报道未提及风险，但实际投资可能受全球经济波动、政策变化等因素干扰；高技术领域过度依赖外资也可能带来技术安全考量。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1842,13 +1841,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 公共政策、商业、外资机构 的后续变化",
+            "variable": "跟踪 公共政策、长三角地区进出口连续、个月保持增长 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -1862,7 +1861,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-20",
+            "date": "2026-06-21",
             "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
             "change_type": "初始判断",
             "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
@@ -2095,7 +2094,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL 1.1655%；行情时间：2026-06-21T09:01:06.241Z。",
+          "impact": "关联标的：GOOGL 1.1655%；行情时间：2026-06-22T00:01:01.187Z。",
           "evidence": [
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
             "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
@@ -3033,7 +3032,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 1.0369%、QQQ 2.5065%；行情时间：2026-06-21T09:01:06.241Z。",
+          "impact": "关联标的：TSLA 1.0369%、QQQ 2.5065%；行情时间：2026-06-22T00:01:01.187Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",

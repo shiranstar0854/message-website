@@ -8,29 +8,13 @@
     "url": "https://github.blog/feed/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "How we built an internal data analytics agent",
-        "link": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
-        "guid": "https://github.blog/?p=96857",
-        "pubDate": "Fri, 19 Jun 2026 16:00:00 +0000",
-        "description": "<p>Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it.</p>\n<p>The post <a href=\"https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/\">How we built an internal data analytics agent</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><p class=\"wp-block-paragraph\">Large data and analytics organizations often struggle to make access to data and insights truly self-serve. The industry tried to solve this problem, quite unsuccessfully, for decades, but now AI is giving us a credible way to do just that.</p>\n\n\n\n<p class=\"wp-block-paragraph\">At GitHub scale, providing dedicated analytics support to dozens of product teams is challenging, and therefore many teams are left to solve this problem on their own. Though there is a lot of valuable product telemetry that product and engineering teams can use to make decisions, figuring out which data model, which grain, which filter, and then write the query and validate the result has always been difficult without the support of a data analyst.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Enter Qubot, our internal GitHub Copilot-powered analytics agent. Qubot allows any Hubber (that&rsquo;s what we call GitHub employees) to ask questions about any data model in GitHub&rsquo;s data warehouse in plain language and get an answer within seconds.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Qubot is not a reporting tool or a dashboard replacement. Instead, it&rsquo;s intended for exploratory questions like &ldquo;Which cohort of users has the highest retention on this feature?&rdquo; or &ldquo;What product contributed to move this metric the most last week?&rdquo; Qubot has zero cost maintenance and helps teams ramp up quickly on datasets they may be unfamiliar with.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In this blog post, we&rsquo;ll go over how we built Qubot, how it&rsquo;s changed, and what we learned.</p>\n\n\n\n<h2 id=\"h-how-qubot-works\" class=\"wp-block-heading\">How Qubot works</h2>\n\n\n\n<p class=\"wp-block-paragraph\">The architecture has three main components: user interface, context layer, and query engine.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" fetchpriority=\"high\" decoding=\"async\" height=\"753\" width=\"1024\" src=\"https://github.blog/wp-content/uploads/2026/06/architecture.png?resize=1024%2C753\" alt=\"Diagram showing the architecture of the Qubot analytics agent. Context and users feed into Qubot, which references Trino and Kusto for answers.\" class=\"wp-image-96860\" srcset=\"https://github.blog/wp-content/uploads/2026/06/architecture.png?w=1774 1774w, https://github.blog/wp-content/uploads/2026/06/architecture.png?w=300 300w, https://github.blog/wp-content/uploads/2026/06/architecture.png?w=768 768w, https://github.blog/wp-content/uploads/2026/06/architecture.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/06/architecture.png?w=1536 1536w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /></figure>\n\n\n\n<h3 id=\"h-user-interface\" class=\"wp-block-heading\">User interface</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Qubot is accessible through Slack, VS Code, and the Copilot CLI. The Slack interface doesn&rsquo;t require any configuration, and it is the preferred collaboration tool of Hubbers. When someone posts a question in the Qubot Slack channel, a Qubot instance is spawned as a Copilot Cloud Agent running on github.com. The answer is provided directly in Slack, allowing the user to share the result with others, but also iterate in the thread to evolve or refine the question. All the results are also stored as a markdown report in a pull request that the user can reference to fine tune the query or use it in a dashboard.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Qubot is also available in VS Code and the Copilot CLI, for users that want an experience more integrated with their workflows. Qubot can be installed with one command as a plugin, and it becomes available in any agent session in VS Code or Copilot CLI alongside any other custom agents, skills, and tools configured by the user.</p>\n\n\n\n<h3 id=\"h-context-layer\" class=\"wp-block-heading\">Context layer</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Our data warehouse contains data at different stages of curation: raw events (bronze), conformed facts and dimensions (silver), and curated datasets designed for specific business use cases (gold). The context layer is built in a federated way, with knowledge that is tailored to the type of data.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>For bronze data, we have telemetry context contributed by product teams, with schema information and metadata.</li>\n\n\n\n<li>For silver data, we have examples of queries, usage guidance, mandatory filters etc, maintained by the data and analytics team.</li>\n\n\n\n<li>For gold data, we have business rules and metric definitions, contributed by teams owning those datasets.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">We also leverage our ETL pipelines to systematically enrich the context layer with additional signals and derived metadata. The context is loaded at runtime via the GitHub MCP Server, fetching it from the context layer.</p>\n\n\n\n<h3 id=\"h-context-agent\" class=\"wp-block-heading\">Context agent</h3>\n\n\n\n<p class=\"wp-block-paragraph\">The context layer is constantly enriched with new knowledge persisted across multiple repositories. At GitHub, we primarily use markdown for documentation, so we don&rsquo;t need to interface with multiple different tools.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We&rsquo;ve streamlined federated context contribution through a context agent. Teams can contribute via a standardized template or by referencing a repository containing relevant context. The agent then ingests, organizes, and normalizes this information into a structured format that has proven effective for Qubot based on our evaluations.</p>\n\n\n\n<h3 id=\"h-evaluation-framework\" class=\"wp-block-heading\">Evaluation framework</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Every change to the context layer or agent configuration gets evaluated before it ships. When someone wants to enrich the context layer with new knowledge, they can open a pull request. The new context goes through an offline eval framework that measures accuracy of the response, latency in finding the right answer, and catches regressions before they reach users.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The benchmarking framework for evaluating Qubot across structured test cases has three components:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Test cases</strong>: A curated dataset of prompts with known correct answers, ground-truth SQL, and metadata (domain, difficulty).</li>\n\n\n\n<li><strong>Automated run orchestration</strong>: A script that automates launching each test case as an agent task with the GitHub CLI <code>gh agent-task create</code>, runs multiple parallel trials, polls for completion, and saves detailed JSON results.</li>\n\n\n\n<li><strong>Stats aggregation</strong>: A reporting script that reads the saved results and computes per-test-case metrics: completion rate, accuracy, and duration (avg/min/max).</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">The end-to-end flow is: define test cases &rarr; run Qubot N times per case &rarr; collect results &rarr; aggregate stats &rarr; compare configurations.</p>\n\n\n\n<h3 id=\"h-query-engine\" class=\"wp-block-heading\">Query engine</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Qubot connects to both Kusto and Trino, the two query engines that power most of GitHub&rsquo;s analytics workloads, via a MCP server. We developed a custom implementation of the Trino MCP server, while for Kusto we deployed a local version of the Fabric RTI <a href=\"https://learn.microsoft.com/en-us/fabric/real-time-intelligence/mcp-overview\">MCP Server</a>. Kusto is fast and well-suited to exploratory questions over recent event data. Trino handles complex joins and deeper historical analysis.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Rather than forcing users to know which to use, Qubot defaults to Kusto and switches to Trino automatically when the question requires it.</p>\n\n\n\n<h2 id=\"h-what-changed-and-what-we-learned\" class=\"wp-block-heading\">What changed, and what we learned</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Qubot has been widely adopted at GitHub, with hundreds of enthusiastic users running thousands of queries. The number of questions that Hubbers ask in the data and analytics Slack channels has reduced dramatically, because now they can explore the data with greater autonomy and reach out only for complicated questions. It also allows Hubbers that never dared to dip into the data warehouse to access the data they need to drive their decision making. That is one of the reasons for offering multiple interfaces like Slack, Copilot CLI, and VS Code; Hubbers are very technical, but we wanted to offer an option with no barrier to entry and zero configuration.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We quickly discovered that the context layer is key to enriching the reasoning capabilities of Copilot and to create an expert analytics agent. In our experiments we found that structured and well curated context not only makes Qubot more accurate, but also three times faster at returning the right answer. This has profound implications on the analytics engineering discipline, because it makes this type of artifact a first class citizen in how data is modeled, rather than an afterthought.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Qubot has been a rare example of successful hub-and-spoke execution. It removes strain from the data and analytics team, as product teams own the telemetry for their surfaces and business teams own the definition of their gold data. Qubot acted as a gravitational force to centralize all this distributed knowledge into a single tool that can benefit all GitHub, providing incentives to partner teams to contribute to Qubot, instead of creating multiple tools limited to their own domains.</p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\">\n\n\n\n<h3 id=\"h-acknowledgements\" class=\"wp-block-heading\">Acknowledgements </h3>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Qubot engineering team</strong>: Weijie Tan, Tobias Tschuemperlin, Vamsi Anamaneni</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Special thanks</strong>: Yaswanth Anantharaju</p>\n</body></html>\n<p>The post <a href=\"https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/\">How we built an internal data analytics agent</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "feedImageUrl": "https://github.blog/wp-content/uploads/2026/06/architecture.png?resize=1024%2C753",
-        "categories": [
-          "AI & ML",
-          "GitHub Copilot",
-          "AI agents",
-          "GitHub Copilot CLI"
-        ]
-      }
-    ],
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -42,13 +26,26 @@
     "url": "https://openai.com/news/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
-    "attempts": 2,
-    "items": [],
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
+    "attempts": 1,
+    "items": [
+      {
+        "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+        "link": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+        "guid": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+        "pubDate": "Sun, 21 Jun 2026 23:00:00 GMT",
+        "description": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
+        "content": "",
+        "feedImageUrl": "",
+        "categories": [
+          "Company"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -61,10 +58,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -79,10 +76,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -97,10 +94,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -115,10 +112,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -133,10 +130,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -151,10 +148,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -169,10 +166,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -338,7 +335,7 @@
     ],
     "stale": true,
     "latestAttempt": {
-      "fetchedAt": "2026-06-21T09:00:25.742Z",
+      "fetchedAt": "2026-06-22T00:00:27.185Z",
       "ok": false,
       "status": 429,
       "itemCount": 0,
@@ -354,11 +351,11 @@
     "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 11,
-    "fetchedAt": "2026-06-21T09:00:25.742Z",
+    "itemCount": 3,
+    "fetchedAt": "2026-06-22T00:00:27.185Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-21T09:00:25.742Z",
-    "cacheExpiresAt": "2026-06-23T09:00:25.742Z",
+    "cacheStartedAt": "2026-06-22T00:00:27.185Z",
+    "cacheExpiresAt": "2026-06-24T00:00:27.185Z",
     "attempts": 1,
     "items": [
       {
@@ -389,86 +386,6 @@
         "description": "One month after the Bundibugyo Ebola outbreak was declared in the Democratic Republic of the Congo (DRC) and Uganda, case numbers continue to rise.&nbsp;",
         "content": "",
         "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/17-06-2026-WHO-Dr-Congo-ebola-06.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Art and culture can both fuel and counter hate, UN discussion hears on Juneteenth",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167772",
-        "guid": "https://news.un.org/en/story/2026/06/1167772",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "From a gold collar worn by an enslaved African to music preserved for nearly a century after the Holocaust, a staged reconstruction of a hate radio broadcast or porcelain coffee cups laid out in participatory remembrance, artists in a United Nations discussion on Friday used powerful images to underscore how culture can shape the fight against hatred.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/01-03-2023-UN-News-Slavery.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "For one young refugee in Uganda, basketball is more than a game",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167743",
-        "guid": "https://news.un.org/en/story/2026/06/1167743",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "When 19-year-old Stephane Kulimushi looks around the basketball court in Kampala where he trains young refugees, he sees more than players.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/18-06-2026_DRC-Refugee_Basketball-01.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "UNESCO launches consultation on fair payment for news in the digital age",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167771",
-        "guid": "https://news.un.org/en/story/2026/06/1167771",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "UN cultural agency UNESCO has launched a global consultation process to inform its Draft Guidance on Fair Compensation for News, particularly as online platforms and artificial intelligence (AI) increasingly rely on journalistic content.&nbsp;",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/11-11-2025-UNFCCC-COP30-media.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Old and new challenges for the Human Rights Council as it turns 20",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167769",
-        "guid": "https://news.un.org/en/story/2026/06/1167769",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "It’s 20 years to the day since the UN Human Rights Council began its work as the world’s principal forum tasked with promoting and defending fundamental rights everywhere, particularly the world’s most vulnerable people.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2016/06/24801/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "UN welcomes fresh Lebanon ceasefire reports as rights experts urge Iran accountability",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167768",
-        "guid": "https://news.un.org/en/story/2026/06/1167768",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "The United Nations has welcomed reports of a new ceasefire agreement between Israel and Hezbollah on Friday while warning that civilians on the ground are still fleeing amid ongoing insecurity.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/11-03-2026-IOM-Lebanon-05.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "World Refugee Day: UN calls for renewed commitment and solidarity",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167766",
-        "guid": "https://news.un.org/en/story/2026/06/1167766",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "The UN High Commissioner for Refugees has called on the international community to strengthen support for the nearly 42 million people worldwide who have fled their home countries to escape conflict, violence or persecution.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/19-06-2026-UNICEF_Chad.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "DR Congo: Efforts ramp up as Ebola outbreak accelerates beyond borders",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167765",
-        "guid": "https://news.un.org/en/story/2026/06/1167765",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "The spread of Ebola is accelerating in the eastern Democratic Republic of the Congo (DRC) amid continued armed violence, posing a grave and growing risk to the region, UN agencies warned on Friday.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/09-06-2026-UNICEF-DR-Congo-ebola-03.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Gaza: Sneeze and you might get shot, warns UNICEF in alert on child killings",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167760",
-        "guid": "https://news.un.org/en/story/2026/06/1167760",
-        "pubDate": "Fri, 19 Jun 2026 12:00:00 +0000",
-        "description": "After another deadly night of clashes in Lebanon, aid agencies issued a new alert for Gaza, where 265 Palestinian children have been killed since a ceasefire was announced in October 2025.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/12-05-2026-UNICEF-Gaza.jpg/image560x340cropped.jpg",
         "categories": []
       }
     ],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T09:01:06.241Z",
+  "generatedAt": "2026-06-22T00:01:01.187Z",
   "provider": "alpha-vantage",
   "status": "available",
   "stale": false,
@@ -14,7 +14,7 @@
       "changePercentValue": 2.9514,
       "volume": 241272013,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "MSFT": {
       "symbol": "MSFT",
@@ -25,7 +25,7 @@
       "changePercentValue": 0.1293,
       "volume": 59714157,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "GOOGL": {
       "symbol": "GOOGL",
@@ -36,7 +36,7 @@
       "changePercentValue": 1.1655,
       "volume": 44470070,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "META": {
       "symbol": "META",
@@ -47,7 +47,7 @@
       "changePercentValue": 1.6984,
       "volume": 28824630,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "AMZN": {
       "symbol": "AMZN",
@@ -58,7 +58,7 @@
       "changePercentValue": 2.9011,
       "volume": 75624415,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "AMD": {
       "symbol": "AMD",
@@ -69,7 +69,7 @@
       "changePercentValue": 4.8568,
       "volume": 43805645,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "AVGO": {
       "symbol": "AVGO",
@@ -80,7 +80,7 @@
       "changePercentValue": 4.6959,
       "volume": 45076052,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "TSLA": {
       "symbol": "TSLA",
@@ -91,7 +91,7 @@
       "changePercentValue": 1.0369,
       "volume": 58384713,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "QQQ": {
       "symbol": "QQQ",
@@ -102,7 +102,7 @@
       "changePercentValue": 2.5065,
       "volume": 50154595,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "SPY": {
       "symbol": "SPY",
@@ -113,7 +113,7 @@
       "changePercentValue": 1.037,
       "volume": 80875657,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     },
     "SMH": {
       "symbol": "SMH",
@@ -124,7 +124,7 @@
       "changePercentValue": 5.7551,
       "volume": 11229715,
       "tradingDay": "2026-06-18",
-      "fetchedAt": "2026-06-21T09:01:06.241Z"
+      "fetchedAt": "2026-06-22T00:01:01.187Z"
     }
   },
   "topMovers": [
@@ -673,168 +673,208 @@
     "NVDA": [
       {
         "symbol": "NVDA",
-        "title": "BI Asset Management Fondsmaeglerselskab A S Sells 114,388 Shares of Advanced Micro Devices, Inc. $AMD",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-bi-asset-management-fondsmaeglerselskab-a-s-sells-114388-shares-of-advanced-micro-devices-inc-amd-2026-06-21/",
-        "source": "MarketBeat",
-        "timePublished": "20260621T080203",
-        "summary": "BI Asset Management Fondsmaeglerselskab A S significantly reduced its stake in Advanced Micro Devices (AMD) by 57.1% in the first quarter, selling 114,388 shares. Despite this, AMD reported strong Q1 earnings, beating estimates with $1.37 EPS on $10.25 billion revenue, and maintains a \"Moderate Buy\" consensus rating from Wall Street analysts with a target price around $430.68. The article also notes significant institutional investment growth in AMD from other large investors and discusses recent insider selling by AMD executives.",
-        "overallSentimentScore": 0.167143,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Mars, PepsiCo and Nestlé: CPG Cycle Time Optimisation",
-        "url": "https://procurementmag.com/news/mars-pepsico-and-nestle-cpg-cycle-time-optimisation",
-        "source": "Procurement Magazine",
-        "timePublished": "20260621T074025",
-        "summary": "Mars, PepsiCo, and Nestlé are optimizing their procurement cycle times by leveraging AI and digital twins to reduce administrative friction, cut costs, and boost agility. This shift moves away from traditional bottlenecks to embrace automated, data-driven workflows, addressing new workforce expectations, market volatility, and the hidden costs of manual processes. The companies are implementing technologies like Google Cloud's Gemini Enterprise, Siemens and NVIDIA's digital twin technology, and large-scale AI and automation deployments to enhance growth, operational efficiency, and responsiveness to consumer demands.",
-        "overallSentimentScore": 0.697491,
+        "title": "ON Semiconductor Corp Stock (ON) Closed Up by 7.70% on Jun 21: Facts Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/261979959-market-movers-on-20260621",
+        "source": "TradingKey",
+        "timePublished": "20260621T201428",
+        "summary": "ON Semiconductor Corp (ON) stock closed up 7.70% due to a broad rally in the semiconductor and technology equipment sectors, lower Treasury yields, and strong demand for AI power-management chips and EV solutions. The company's robust position in the AI infrastructure boom, favorable valuation, and significant institutional backing contributed to the upward movement. While minor near-term headwinds exist, investor sentiment remains largely positive.",
+        "overallSentimentScore": 0.382268,
         "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "Should You Buy Micron Stock Before the Huge Investor Update?",
-        "url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/2569673/should-you-buy-micron-stock-before-the-huge-investor-update/",
-        "source": "The Globe and Mail",
-        "timePublished": "20260621T040309",
-        "summary": "This article from The Motley Fool, syndicated by The Globe & Mail, discusses whether investors should buy Micron (NASDAQ: MU) stock ahead of its upcoming quarterly financial results. While the article notes Micron's significance, the Motley Fool Stock Advisor team did not include Micron among their top 10 stock recommendations, instead highlighting past successes like Netflix and Nvidia. The piece emphasizes the strong performance of Stock Advisor's picks and encourages readers to consider their latest recommendations.",
-        "overallSentimentScore": 0.417956,
+        "title": "Microchip Technology Inc Stock (MCHP) Closed Up by 6.01% on Jun 21: What Signal Does It Send?",
+        "url": "https://www.tradingkey.com/news/market-movers/261979958-market-movers-mchp-20260621",
+        "source": "TradingKey",
+        "timePublished": "20260621T201413",
+        "summary": "Microchip Technology Inc (MCHP) stock rose by 6.01% on June 21, driven by a broad semiconductor rally and the company's strategic pivot towards high-growth AI infrastructure. Key factors include strong projections for its Data Center Solutions Business Unit and new AI-focused product launches. However, the stock's intraday volatility also reflects lingering challenges such as potential supply chain bottlenecks in mature-node semiconductors and high debt levels.",
+        "overallSentimentScore": 0.433432,
         "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "NYLI Global Equity R&D Leaders ETF ETF Price, Holdings, & News (NASDAQ:WRND)",
-        "url": "https://www.marketbeat.com/stocks/NASDAQ/WRND/",
-        "source": "MarketBeat",
-        "timePublished": "20260621T030954",
-        "summary": "The NYLI Global Equity R&D Leaders ETF (WRND) focuses on global large- and mid-cap companies with high R&D spending and future growth potential. The ETF, launched on February 8, 2022, currently trades at $42.58 and has shown a 14.5% increase year-to-date. Its top holdings include major tech companies like NVIDIA, Alphabet, and Apple.",
-        "overallSentimentScore": 0.322975,
+        "title": "Is Vistra (VST) One of the Stocks with Potential to Explode in 2026?",
+        "url": "https://www.insidermonkey.com/blog/is-vistra-vst-one-of-the-stocks-with-potential-to-explode-in-2026-1785967/",
+        "source": "Insider Monkey",
+        "timePublished": "20260621T193900",
+        "summary": "Morgan Stanley analyst David Arcaro maintained a \"Buy\" rating on Vistra Corp. (NYSE: VST) with a $212.00 price target. This positive outlook is primarily driven by Vistra's $1 billion foundational investment in the new Helix Digital Infrastructure platform, in collaboration with KKR, NVIDIA, and Kuwait Investment Authority. The platform aims to provide high-return, fast-growing data center infrastructure to meet increasing AI demand, with Vistra serving as Helix's preferred power provider.",
+        "overallSentimentScore": 0.27219,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "Nvidia, Oracle, and Now SpaceX Are Borrowing Billions Amid the AI Boom. Is This a Warning Sign?",
-        "url": "https://www.fool.com/investing/2026/06/20/nvidia-oracle-and-now-spacex-are-borrowing-billion/",
-        "source": "The Motley Fool",
-        "timePublished": "20260621T024023",
-        "summary": "Amidst the AI boom, major companies like Nvidia, Oracle, and SpaceX are borrowing billions, raising questions about whether this signals aggressive growth funding or potential over-leverage. While profitable companies like Nvidia, Amazon, and Alphabet are borrowing from a position of strength, Oracle's balance sheet appears more stretched, and SpaceX's significant losses make its proposed bond sale a more concerning move, requiring closer observation. The article suggests that while not an immediate warning sign for all, the financial health of the borrowers is key, especially for those with less margin for error.",
-        "overallSentimentScore": 0.232317,
+        "title": "Teradyne Inc Stock (TER) Moved Up by 7.19% on Jun 21: What Investors Need To Know",
+        "url": "https://www.tradingkey.com/news/market-movers/261979915-market-movers-ter-20260621",
+        "source": "TradingKey",
+        "timePublished": "20260621T191548",
+        "summary": "Teradyne (TER) stock surged by 7.19% due to its upcoming inclusion in the Nasdaq-100 Index, driving institutional buying and technical momentum. The company's growth is further supported by collaborations and new defense contracts in AI and automation. However, stretched valuations and recent insider selling have contributed to intraday volatility and caution among investors.",
+        "overallSentimentScore": 0.306797,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "Nvidia, Oracle, and Now SpaceX Are Borrowing Billions Amid the AI Boom. Is This a Warning Sign?",
-        "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-oracle-now-spacex-borrowing-023300337.html",
+        "title": "JFrog (FROG) Stock Looks Fully Priced After Earnings Beat And Anthropic Product Launch",
+        "url": "https://simplywall.st/stocks/us/software/nasdaq-frog/jfrog/news/jfrog-frog-stock-looks-fully-priced-after-earnings-beat-and/amp",
+        "source": "Simply Wall Street",
+        "timePublished": "20260621T184100",
+        "summary": "JFrog (FROG) shares have seen significant gains recently, with a 94% 90-day return and 103.34% one-year total shareholder return, driven by strong quarterly results and a new product launch with Anthropic. Despite this momentum and AI integration, the stock is now considered slightly overvalued, trading around its average analyst price target of $80.75 compared to a close of $82.72. Investors should consider potential risks like delayed enterprise deals or competitive pressure on pricing before making investment decisions.",
+        "overallSentimentScore": 0.193416,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Intel Is Stealing the Foundry Spotlight. Is TSMC Still the Most Important Company in Chips?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/intel-stealing-foundry-spotlight-tsmc-184100660.html",
         "source": "Yahoo Finance",
-        "timePublished": "20260621T023815",
-        "summary": "Major tech companies like Nvidia, Oracle, and SpaceX are borrowing billions of dollars to fund AI infrastructure, leading to questions about whether this signals financial strength or impending trouble. While profitable giants like Nvidia, Amazon, and Alphabet appear to be borrowing from a position of strength, Oracle's balance sheet looks more stretched and unprofitable SpaceX's borrowing is a significant concern. Investors are advised to watch cash-burning companies more closely as they have less margin for error should AI growth not meet expectations.",
-        "overallSentimentScore": 0.287218,
-        "overallSentimentLabel": "Somewhat-Bullish"
+        "timePublished": "20260621T184058",
+        "summary": "Intel's foundry business is gaining momentum with a reported Apple deal and collaboration with Nvidia, leading to a significant stock surge. Despite this, TSMC maintains its dominance in advanced chip manufacturing with much higher revenue and market share, particularly in leading-edge production. While Intel's comeback is notable, TSMC's established lead and profitability suggest it remains the more crucial player in the chip industry for now.",
+        "overallSentimentScore": 0.114169,
+        "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "NVDA",
-        "title": "Vistra stock heads into holiday weekend on gains, AI power trade pushes shares higher",
-        "url": "https://ts2.tech/en/vistra-stock-heads-into-holiday-weekend-on-gains-ai-power-trade-pushes-shares-higher/",
-        "source": "TechStock²",
-        "timePublished": "20260620T230852",
-        "summary": "Vistra stock (NYSE: VST) closed up 3.1% at $163.75 on Thursday, gaining 10.6% over the holiday-shortened week, driven by investor interest in power producers linked to AI data centers. The company is a founding partner and preferred power supplier for Helix Digital Infrastructure, a KKR-backed venture, which is positioning it closer to hyperscalers. Vistra also posted strong first-quarter net income of $1.03 billion and maintained its 2026 adjusted EBITDA forecast, with analysts issuing bullish price targets up to $230.",
-        "overallSentimentScore": 0.301322,
-        "overallSentimentLabel": "Somewhat-Bullish"
+        "title": "NXP Semiconductors NV Stock (NXPI) Moved Up by 5.05% on Jun 21: A Full Analysis",
+        "url": "https://www.tradingkey.com/news/market-movers/261979874-market-movers-nxpi-20260621",
+        "source": "TradingKey",
+        "timePublished": "20260621T181500",
+        "summary": "NXP Semiconductors NV (NXPI) stock rose by 5.05% on June 21, driven by a significant increase in institutional investor long positions, a broader tech sector rally, and favorable macroeconomic conditions like declining interest rates and reopened trade routes. Corporate initiatives, including price adjustments and dividend approvals, have also bolstered investor confidence, despite risks such as supply chain costs, automotive market exposure, valuation premiums, and ongoing insider selling. Analysts have raised price targets, focusing on growth opportunities in AI, connectivity, and automotive electrification.",
+        "overallSentimentScore": 0.378236,
+        "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "Better Buy: AMD vs. Intel After Intel's Monster Run",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/better-buy-amd-vs-intel-230300916.html",
-        "source": "Yahoo Finance",
-        "timePublished": "20260620T230747",
-        "summary": "The article compares Advanced Micro Devices (AMD) and Intel (INTC) after both companies experienced significant stock rallies. While Intel had a \"monster run\" with a 500% surge, AMD also saw over 300% growth. The analysis suggests AMD is the better buy due to its faster growth, stronger profits, and more favorable valuation despite both companies pursuing opportunities in the AI chip market.",
-        "overallSentimentScore": 0.296179,
+        "title": "Corning Inc Stock (GLW) Moved Up by 11.16% on Jun 21: What Signal Does It Send?",
+        "url": "https://www.tradingkey.com/news/market-movers/261979838-market-movers-glw-20260621",
+        "source": "TradingKey",
+        "timePublished": "20260621T171556",
+        "summary": "Corning Inc (GLW) surged 11.16% due to strong demand for its optical connectivity solutions in AI infrastructure, driven by major agreements with Amazon, Meta, and Nvidia. Despite this, the stock faces high valuation concerns, potential margin risks from its solar division's operational setbacks, and persistent softness in legacy business lines. Insider selling and intraday volatility also highlight underlying friction between growth and structural pressures.",
+        "overallSentimentScore": 0.262032,
         "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "MSFT": [
       {
         "symbol": "MSFT",
-        "title": "BI Asset Management Fondsmaeglerselskab A S Sells 31,180 Shares of American Express Company $AXP",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-bi-asset-management-fondsmaeglerselskab-a-s-sells-31180-shares-of-american-express-company-axp-2026-06-21/",
-        "source": "MarketBeat",
-        "timePublished": "20260621T080111",
-        "summary": "BI Asset Management Fondsmaeglerselskab A S reduced its stake in American Express Company by 37.1% in the first quarter, selling 31,180 shares and retaining 52,876 shares valued at approximately $15.99 million. American Express reported better-than-expected quarterly earnings of $4.28 per share but revenue below consensus at $14.21 billion, while also announcing a quarterly dividend of $0.95 per share. Analysts currently have a consensus \"Hold\" rating with a price target of $360.80 for the stock.",
-        "overallSentimentScore": 0.064803,
-        "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Arrow Electronics (ARW) Stock Could Be 6% Overvalued After Earnings And Microsoft AI Win",
-        "url": "https://simplywall.st/stocks/us/tech/nyse-arw/arrow-electronics/news/arrow-electronics-arw-stock-could-be-6-overvalued-after-earn",
-        "source": "Simply Wall Street",
-        "timePublished": "20260621T043844",
-        "summary": "Arrow Electronics (ARW) is under scrutiny after strong quarterly earnings and becoming a Frontier Distributor in the Microsoft AI Cloud Partner Program, which led to significant stock price growth. Despite a bullish market reaction, analysts believe the stock is currently 6% overvalued at $232.70, compared to their fair value estimate of $219.50, based on factors like increasing recurring revenue streams and a different future earnings multiple. However, the article notes that ARW's P/E ratio is lower than peers and the broader industry, suggesting potential caution or an overlooked re-rating.",
-        "overallSentimentScore": 0.148663,
-        "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "NYLI Global Equity R&D Leaders ETF ETF Price, Holdings, & News (NASDAQ:WRND)",
-        "url": "https://www.marketbeat.com/stocks/NASDAQ/WRND/",
-        "source": "MarketBeat",
-        "timePublished": "20260621T030954",
-        "summary": "The NYLI Global Equity R&D Leaders ETF (WRND) focuses on global large- and mid-cap companies with high R&D spending and future growth potential. The ETF, launched on February 8, 2022, currently trades at $42.58 and has shown a 14.5% increase year-to-date. Its top holdings include major tech companies like NVIDIA, Alphabet, and Apple.",
-        "overallSentimentScore": 0.336386,
+        "title": "Apple (NASDAQ: AAPL) To Hike Product Prices As Memory Costs Quadruple, CEO Tim Cook Calls It A '100-Year Flood'",
+        "url": "https://www.foreignpolicyjournal.com/2026/06/21/apple-nasdaq-aapl-to-hike-product-prices-as-memory-costs-quadruple-ceo-tim-cook-calls-it-a-100-year-flood/",
+        "source": "Foreign Policy Journal",
+        "timePublished": "20260621T232005",
+        "summary": "Apple (NASDAQ: AAPL) is preparing to raise product prices due to a quadrupling of memory and storage costs, a situation CEO Tim Cook described as a \"100-year flood.\" This cost surge is attributed to the dramatic reallocation of DRAM and NAND flash supply towards AI infrastructure by companies like Google, Microsoft, Meta, and Amazon. Cook indicated that despite Apple's efforts to mitigate these increases, the situation has become unsustainable, though he did not specify which products would be affected or when the price changes would take place.",
+        "overallSentimentScore": 0.236777,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
-        "title": "What is the Strategic Rationale Behind Synopsys's $35 Billion Ansys Acquisition",
-        "url": "https://www.kavout.com/market-lens/what-is-the-strategic-rationale-behind-synopsys-s-35-billion-ansys-acquisition",
-        "source": "Kavout",
-        "timePublished": "20260621T023852",
-        "summary": "Synopsys's $35 billion acquisition of Ansys aims to create an integrated \"silicon-to-systems\" design platform, expanding its market to $31 billion and positioning it for leadership in the AI era. This merger intensifies competition, leading rivals like Cadence to pursue counter-acquisitions, while Synopsys leverages its 46% combined market share. Early financial results for Q1 2026 are strong, indicating successful initial integration despite prior debt concerns, with robust revenue and operating margins.",
-        "overallSentimentScore": 0.307704,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Infosys Ltd Stock (INFY) Closed Down by 9.74% on Jun 20: What Investors Need To Know",
-        "url": "https://www.tradingkey.com/news/market-movers/261979325-market-movers-infy-20260620",
+        "title": "Infosys Ltd Stock (INFY) Closed Down by 9.74% on Jun 21: Key Drivers Unveiled",
+        "url": "https://www.tradingkey.com/news/market-movers/261979955-market-movers-infy-20260621",
         "source": "TradingKey",
-        "timePublished": "20260620T201434",
-        "summary": "Infosys Ltd (INFY) shares dropped by 9.74% on June 20, primarily due to Accenture's lowered revenue guidance which signaled a broad slowdown in global enterprise IT spending. This decline reflects a structural shift in client spending from traditional IT projects to targeted AI investments, impacting offshore IT providers. Macroeconomic volatility and technical breakdowns further fueled the sell-off, pushing Infosys to a multi-year low despite its solid fundamentals.",
-        "overallSentimentScore": -0.236663,
+        "timePublished": "20260621T201403",
+        "summary": "Infosys Ltd (INFY) shares dropped by 9.74% on June 21, primarily due to negative sentiment spilling over from Accenture's lowered annual revenue growth guidance, which caused a sector-wide sell-off in IT services. The decline is also attributed to a structural shift where global enterprises are reallocating budgets from traditional outsourcing to AI investments, compounded by Infosys's own conservative revenue growth outlook for the upcoming fiscal year. Technical analysis indicates a sell signal, and fundamental risks include suppressed growth forecasts and the disruptive impact of generative AI on traditional IT services.",
+        "overallSentimentScore": -0.179168,
         "overallSentimentLabel": "Somewhat-Bearish"
       },
       {
         "symbol": "MSFT",
-        "title": "Applied Digital stock ends higher as AI data-center funding shapes holiday-shortened week",
-        "url": "https://ts2.tech/en/applied-digital-stock-ends-higher-as-ai-data-center-funding-shapes-holiday-shortened-week/",
-        "source": "TechStock²",
-        "timePublished": "20260620T200944",
-        "summary": "Applied Digital's stock closed higher in a holiday-shortened week, driven by investor focus on the company's progress in funding its AI data centers. The company completed a $1.59 billion debt sale to finance its Polaris Forge 1 campus and secured a significant 210-megawatt lease at Delta Forge 2. This suggests the market is valuing Applied Digital more for its financing and execution capabilities in meeting AI demand rather than just contracted megawatts.",
-        "overallSentimentScore": 0.290245,
+        "title": "My Size Inc (MYSZ) Earnings Forecast: Future EPS & Revenue Growth Estimates",
+        "url": "https://www.tradingkey.com/markets/stocks/nasdaq-mysz/earnings",
+        "source": "TradingKey",
+        "timePublished": "20260621T191024",
+        "summary": "My Size Inc (MYSZ) has an earnings forecast score of 8.00, placing it 110th out of 489 in the Software & IT Services industry. Analysts have set an average price target of $3.00, with all forecasts indicating a \"Buy\" trend. This suggests a significant upside potential of over 550% relative to its current price.",
+        "overallSentimentScore": 0.220478,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
-        "title": "Is Axon Enterprise Inc. (AXON) a High-Growth Large-Cap Stock to Invest in Now?",
-        "url": "https://www.insidermonkey.com/blog/is-axon-enterprise-inc-axon-a-high-growth-large-cap-stock-to-invest-in-now-1785704/",
-        "source": "Insider Monkey",
-        "timePublished": "20260620T190707",
-        "summary": "Axon Enterprise Inc. (AXON) is identified as a high-growth large-cap stock, with Piper Sandler reiterating an Overweight rating and a $674 price target. The company is seen as an operating system for its customers due to platformization, significant international wins, and increasing trials, with AI driving cloud migrations expected to fuel 30% growth. Despite a lack of near-term catalysts beyond execution and product releases, current levels are considered an ideal entry point.",
-        "overallSentimentScore": 0.171905,
-        "overallSentimentLabel": "Somewhat-Bullish"
+        "title": "Caterpillar Stock Is Up Over 60% in 2026. Here’s Where CAT Could Go",
+        "url": "https://www.tikr.com/blog/caterpillar-stock-is-up-over-60-in-2026-heres-where-cat-could-go",
+        "source": "TIKR.com",
+        "timePublished": "20260621T160216",
+        "summary": "Caterpillar (CAT) stock has surged over 60% in 2026, driven by strong demand in its Power and Energy segment for data center infrastructure, despite its current trading price exceeding many analyst targets. The company's record backlog and focus on high-margin services for gas generators help justify its premium valuation, though risks from tariffs and capacity costs could impact margins. Investors are closely watching the Q2 earnings for the Power and Energy segment's margin performance to assess the durability of this re-rating.",
+        "overallSentimentScore": 0.132734,
+        "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "MSFT",
-        "title": "Expedia Group, Inc. (EXPE) A High-Growth Large -Cap Stock to Buy As it Capitalizes on Surge in Travelling Demand",
-        "url": "https://www.insidermonkey.com/blog/expedia-group-inc-expe-a-high-growth-large-cap-stock-to-buy-as-it-capitalizes-on-surge-in-travelling-demand-1785706/",
-        "source": "Insider Monkey",
-        "timePublished": "20260620T185637",
-        "summary": "Expedia Group Inc. (EXPE) is highlighted as a high-growth large-cap stock well-positioned to benefit from the increasing demand for consolidated travel bookings on a single platform. Recent global research shows a strong preference among travelers to plan and manage their entire trips through one trusted platform, a trend Expedia is capitalizing on with its expanded Rapid API ecosystem. This platform offers extensive options for flights, car rentals, and trip protection, enabling Expedia to meet the soaring travel demand effectively.",
-        "overallSentimentScore": 0.199388,
+        "title": "State Street SPDR MSCI ACWI Climate Paris Aligned ETF and iShares Core MSCI Emerging Markets ETF Comparison",
+        "url": "https://www.harianbasis.co/en/state-street-ishares-etf-comparison",
+        "source": "HarianBasis.co",
+        "timePublished": "20260621T154016",
+        "summary": "This article compares the State Street SPDR MSCI ACWI Climate Paris Aligned ETF (NZAC) and the iShares Core MSCI Emerging Markets ETF (IEMG), highlighting their distinct investment strategies. NZAC focuses on climate-aligned global equities, while IEMG provides broad exposure to emerging markets. The comparison includes metrics such as expense ratios, dividend yields, past performance, and sector allocations, helping investors understand the differences between a climate-focused global fund and a broad emerging markets fund.",
+        "overallSentimentScore": 0.135102,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Choose Your Fighter: Vanguard Mega Cap Growth ETF vs. iShares Russell 2000 Growth ETF",
+        "url": "https://www.fool.com/coverage/etfs/2026/06/21/choose-your-fighter-vanguard-mega-cap-growth-etf-vs-ishares-russell-2000-growth-etf/",
+        "source": "The Motley Fool",
+        "timePublished": "20260621T133943",
+        "summary": "This article compares the Vanguard Mega Cap Growth ETF (MGK) and the iShares Russell 2000 Growth ETF (IWO), offering insights for investors choosing between the stability of large-cap tech giants and the high-volatility potential of small-cap growth stocks. It details their expense ratios, performance, and key holdings, highlighting MGK's concentration in tech stalwarts versus IWO's broader diversification. The author expresses concern over MGK's concentration risk in AI investments and suggests IWO offers better diversification, despite its higher expense ratio.",
+        "overallSentimentScore": -0.291787,
+        "overallSentimentLabel": "Somewhat-Bearish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Choose Your Fighter: Vanguard Mega Cap Growth ETF vs. iShares Russell 2000 Growth ETF",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/choose-fighter-vanguard-mega-cap-132001840.html",
+        "source": "Yahoo Finance",
+        "timePublished": "20260621T132000",
+        "summary": "This article compares two growth ETFs: Vanguard Mega Cap Growth ETF (MGK) and iShares Russell 2000 Growth ETF (IWO). MGK focuses on large, established tech companies with high concentration in a few stocks, while IWO targets smaller, high-growth companies with greater diversification. The author highlights MGK's low expense ratio but also its concentration risk, contrasting it with IWO's higher cost but better diversification despite MGK's superior past performance.",
+        "overallSentimentScore": -0.126244,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Anthropic Filed a Confidential S-1 at a $965 Billion Valuation. Here's How to Buy in Right Now.",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/MSFT-Q/pressreleases/2571696/anthropic-filed-a-confidential-s-1-at-a-965-billion-valuation-here-s-how-to-buy-in-right-now/",
+        "source": "The Globe and Mail",
+        "timePublished": "20260621T123907",
+        "summary": "Anthropic, an AI start-up, confidentially filed an S-1 to go public with a reported $965 billion valuation. While most investors cannot buy shares directly before the IPO, the KraneShares Artificial Intelligence and Technology ETF (NASDAQ: AGIX) already holds Anthropic shares. This ETF offers exposure to both public and private AI companies, including major tech names and other pre-IPO firms like SpaceX and Nuro, though it carries risks such as short-term volatility and concentration in the AI sector.",
+        "overallSentimentScore": 0.246603,
         "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "GOOGL": [
+      {
+        "symbol": "GOOGL",
+        "title": "Apple (NASDAQ: AAPL) To Hike Product Prices As Memory Costs Quadruple, CEO Tim Cook Calls It A '100-Year Flood'",
+        "url": "https://www.foreignpolicyjournal.com/2026/06/21/apple-nasdaq-aapl-to-hike-product-prices-as-memory-costs-quadruple-ceo-tim-cook-calls-it-a-100-year-flood/",
+        "source": "Foreign Policy Journal",
+        "timePublished": "20260621T232005",
+        "summary": "Apple (NASDAQ: AAPL) is preparing to raise product prices due to a quadrupling of memory and storage costs, a situation CEO Tim Cook described as a \"100-year flood.\" This cost surge is attributed to the dramatic reallocation of DRAM and NAND flash supply towards AI infrastructure by companies like Google, Microsoft, Meta, and Amazon. Cook indicated that despite Apple's efforts to mitigate these increases, the situation has become unsustainable, though he did not specify which products would be affected or when the price changes would take place.",
+        "overallSentimentScore": 0.236777,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Infosys Ltd Stock (INFY) Closed Down by 9.74% on Jun 21: Key Drivers Unveiled",
+        "url": "https://www.tradingkey.com/news/market-movers/261979955-market-movers-infy-20260621",
+        "source": "TradingKey",
+        "timePublished": "20260621T201403",
+        "summary": "Infosys Ltd (INFY) shares dropped by 9.74% on June 21, primarily due to negative sentiment spilling over from Accenture's lowered annual revenue growth guidance, which caused a sector-wide sell-off in IT services. The decline is also attributed to a structural shift where global enterprises are reallocating budgets from traditional outsourcing to AI investments, compounded by Infosys's own conservative revenue growth outlook for the upcoming fiscal year. Technical analysis indicates a sell signal, and fundamental risks include suppressed growth forecasts and the disruptive impact of generative AI on traditional IT services.",
+        "overallSentimentScore": -0.179168,
+        "overallSentimentLabel": "Somewhat-Bearish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Anthropic Filed a Confidential S-1 at a $965 Billion Valuation. Here's How to Buy in Right Now.",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/MSFT-Q/pressreleases/2571696/anthropic-filed-a-confidential-s-1-at-a-965-billion-valuation-here-s-how-to-buy-in-right-now/",
+        "source": "The Globe and Mail",
+        "timePublished": "20260621T123907",
+        "summary": "Anthropic, an AI start-up, confidentially filed an S-1 to go public with a reported $965 billion valuation. While most investors cannot buy shares directly before the IPO, the KraneShares Artificial Intelligence and Technology ETF (NASDAQ: AGIX) already holds Anthropic shares. This ETF offers exposure to both public and private AI companies, including major tech names and other pre-IPO firms like SpaceX and Nuro, though it carries risks such as short-term volatility and concentration in the AI sector.",
+        "overallSentimentScore": 0.246603,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "SQQQ ETF Destroys Value as Long Term Hedge",
+        "url": "https://www.harianbasis.co/en/sqqq-etf-destroys-long-term-value",
+        "source": "HarianBasis.co",
+        "timePublished": "20260621T083956",
+        "summary": "The ProShares UltraPro Short QQQ (SQQQ) ETF is characterized as an instrument that destroys value when used as a long-term hedge due to its leveraged inverse structure and daily compounding reset mechanics. The fund has experienced significant capital erosion, losing 62.69% in the past year while the Nasdaq-100 gained 36.56%, and over 99.97% of its value over a decade. Analysts advise against using SQQQ for long-term strategies, recommending unleveraged inverse options instead.",
+        "overallSentimentScore": -0.032691,
+        "overallSentimentLabel": "Neutral"
+      },
       {
         "symbol": "GOOGL",
         "title": "NYLI Global Equity R&D Leaders ETF ETF Price, Holdings, & News (NASDAQ:WRND)",
@@ -842,7 +882,7 @@
         "source": "MarketBeat",
         "timePublished": "20260621T030954",
         "summary": "The NYLI Global Equity R&D Leaders ETF (WRND) focuses on global large- and mid-cap companies with high R&D spending and future growth potential. The ETF, launched on February 8, 2022, currently trades at $42.58 and has shown a 14.5% increase year-to-date. Its top holdings include major tech companies like NVIDIA, Alphabet, and Apple.",
-        "overallSentimentScore": 0.339456,
+        "overallSentimentScore": 0.316422,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -852,7 +892,7 @@
         "source": "The Motley Fool",
         "timePublished": "20260621T024023",
         "summary": "Amidst the AI boom, major companies like Nvidia, Oracle, and SpaceX are borrowing billions, raising questions about whether this signals aggressive growth funding or potential over-leverage. While profitable companies like Nvidia, Amazon, and Alphabet are borrowing from a position of strength, Oracle's balance sheet appears more stretched, and SpaceX's significant losses make its proposed bond sale a more concerning move, requiring closer observation. The article suggests that while not an immediate warning sign for all, the financial health of the borrowers is key, especially for those with less margin for error.",
-        "overallSentimentScore": 0.202285,
+        "overallSentimentScore": 0.217554,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -862,7 +902,7 @@
         "source": "Yahoo Finance",
         "timePublished": "20260621T023815",
         "summary": "Major tech companies like Nvidia, Oracle, and SpaceX are borrowing billions of dollars to fund AI infrastructure, leading to questions about whether this signals financial strength or impending trouble. While profitable giants like Nvidia, Amazon, and Alphabet appear to be borrowing from a position of strength, Oracle's balance sheet looks more stretched and unprofitable SpaceX's borrowing is a significant concern. Investors are advised to watch cash-burning companies more closely as they have less margin for error should AI growth not meet expectations.",
-        "overallSentimentScore": 0.288832,
+        "overallSentimentScore": 0.270647,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -872,48 +912,8 @@
         "source": "The Globe and Mail",
         "timePublished": "20260620T213814",
         "summary": "Netflix's stock, despite climbing 715% in the past decade, is currently trading 42% below its all-time high from June 2025. Its price-to-earnings (P/E) ratio has fallen by 59% over five years, now sitting at 24.9, which is in line with the S&P 500. While some view this as an opportunity to buy an industry leader at a fair valuation, the article suggests Netflix is neither cheap nor expensive, but fairly valued given increased competition and rising content costs.",
-        "overallSentimentScore": 0.027418,
+        "overallSentimentScore": 0.052613,
         "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Infosys Ltd Stock (INFY) Closed Down by 9.74% on Jun 20: What Investors Need To Know",
-        "url": "https://www.tradingkey.com/news/market-movers/261979325-market-movers-infy-20260620",
-        "source": "TradingKey",
-        "timePublished": "20260620T201434",
-        "summary": "Infosys Ltd (INFY) shares dropped by 9.74% on June 20, primarily due to Accenture's lowered revenue guidance which signaled a broad slowdown in global enterprise IT spending. This decline reflects a structural shift in client spending from traditional IT projects to targeted AI investments, impacting offshore IT providers. Macroeconomic volatility and technical breakdowns further fueled the sell-off, pushing Infosys to a multi-year low despite its solid fundamentals.",
-        "overallSentimentScore": -0.241708,
-        "overallSentimentLabel": "Somewhat-Bearish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "5,536 Shares in Salesforce Inc. $CRM Acquired by PeakShares LLC",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-5536-shares-in-salesforce-inc-crm-acquired-by-peakshares-llc-2026-06-20/",
-        "source": "MarketBeat",
-        "timePublished": "20260620T103228",
-        "summary": "PeakShares LLC has acquired 5,536 shares of Salesforce Inc. ($CRM), valued at $1.47 million, making it the 14th largest holding in their portfolio. Salesforce has shown strong financial performance with better-than-expected quarterly results, a significant share repurchase program, and a recently announced quarterly dividend. Analysts maintain a \"Moderate Buy\" rating for the stock, with various institutional investors also increasing their stakes in the company.",
-        "overallSentimentScore": 0.166804,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Rigetti (RGTI): Complete Commercial History 2026",
-        "url": "https://quantumzeitgeist.com/rigetti-rgti/",
-        "source": "Quantum Zeitgeist",
-        "timePublished": "20260620T001040",
-        "summary": "This article details the commercial history of Rigetti Computing (Nasdaq: RGTI), a full-stack superconducting quantum computing company, from its founding in 2013 to 2026. It highlights Rigetti's unique vertical integration, including its own chip fabrication facility (Fab-1) and the sale of its Novera quantum processing unit. The piece also discusses the company's \"fidelity-first\" roadmap under CEO Subodh Kulkarni, its financial journey through a SPAC merger and market rallies, and the strategic importance of government funding in validating its onshore manufacturing approach.",
-        "overallSentimentScore": 0.166911,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Eightco Holdings (NASDAQ: ORBS) Reports Total Holdings of Approximately $472 Million, Includes OpenAI, Beast Industries, More Than 16,000 ETH and Over 283 Million WLD Tokens",
-        "url": "https://macaubusiness.com/eightco-holdings-nasdaq-orbs-reports-total-holdings-of-approximately-472-million-includes-openai-beast-industries-more-than-16000-eth-and-over-283-million-wld-tokens/",
-        "source": "Macau Business",
-        "timePublished": "20260620T001036",
-        "summary": "Eightco Holdings Inc. (NASDAQ: ORBS) has announced total holdings valued at approximately $472 million as of June 17, 2026. These significant holdings include indirect investments in OpenAI and Beast Industries, alongside substantial amounts of 16,278 Ethereum (ETH) and 283 million Worldcoin (WLD) tokens. The company positions itself as a key player providing exposure to the mega-trends of artificial intelligence, digital identity, and the creator economy.",
-        "overallSentimentScore": 0.321154,
-        "overallSentimentLabel": "Somewhat-Bullish"
       }
     ]
   }
