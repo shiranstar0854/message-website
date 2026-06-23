@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-06-22T09:01:20.406Z",
+  "generated_at": "2026-06-23T00:01:23.692Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 4,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-06-22T09:00:58.276Z"
+      "generated_at": "2026-06-23T00:00:51.418Z"
     },
     "llm": {
       "enabled": true,
@@ -46,13 +46,13 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-05-31T00:00:00.000Z",
-      "last_seen_at": "2026-06-22T09:00:43.059Z",
-      "updated_at": "2026-06-22T09:00:43.059Z",
+      "last_seen_at": "2026-06-22T10:00:00.000Z",
+      "updated_at": "2026-06-22T10:00:00.000Z",
       "definition": {
-        "one_sentence": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。 相关来源：OpenAI News、中国政府网要闻",
-        "background": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。 相关来源：OpenAI News、中国政府网要闻",
+        "one_sentence": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工... 相关来源：OpenAI News",
+        "background": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工... 相关来源：OpenAI News",
         "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "三星员工现在可以通过企业级权限访问OpenAI的AI工具，改变了内部工作流程和AI使用方式。此前三星曾因员工使用ChatGPT导致数据泄露而禁止使用，此次正式部署可能伴随严格管控措施。",
+        "why_it_matters": "OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。",
         "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -69,10 +69,9 @@
       },
       "profile": {
         "impact_areas": [
-          "商业",
-          "AI治理",
-          "产业政策",
-          "科技战略"
+          "国际",
+          "市场监管",
+          "商业"
         ],
         "entities": {
           "companies": [
@@ -89,9 +88,7 @@
             "OpenAI",
             "GitHub",
             "model",
-            "人工智能",
-            "算力",
-            "芯片"
+            "人工智能"
           ]
         },
         "related_item_count": 20
@@ -99,37 +96,55 @@
       "current_judgment": {
         "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
         "basis": [
-          "三星电子向全体员工部署ChatGPT Enterprise和Codex",
-          "该部署是OpenAI最大企业AI项目",
-          "标志企业AI应用的重要里程碑",
-          "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。"
+          "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak...",
+          "Daybreak：保护全球每个组织的安全工具",
+          "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持...",
+          "修补地球：Daybreak计划支持开源维护者"
         ],
-        "latest_change": "普洛斯算力中心引入浙江国资战略股东：第一财经中文财经、宏观、产业和市场新闻",
+        "latest_change": "Daybreak：保护全球每个组织的安全工具：OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak...",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 5,
+        "source_count": 3,
         "official_source_count": 1,
-        "financial_media_count": 2,
+        "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "industry_analysis": 4,
-          "unknown": 2
+          "unknown": 1,
+          "industry_analysis": 5
         },
         "primary_source": {
-          "name": "第一财经",
-          "url": "https://www.yicai.com/news/102794012.html"
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/daybreak-securing-the-world"
         },
         "source_links": [
           {
+            "item_id": "international-openai-news-0f995ab88c",
+            "title": "Daybreak：保护全球每个组织的安全工具",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/daybreak-securing-the-world",
+            "published_at": "2026-06-22T10:00:00.000Z",
+            "summary": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "tech-openai-news-85a0a5b5d1",
+            "title": "修补地球：Daybreak计划支持开源维护者",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/patch-the-planet",
+            "published_at": "2026-06-22T10:00:00.000Z",
+            "summary": "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+            "relevance_score": 100
+          },
+          {
             "item_id": "business-openai-news-3d160a8e12",
-            "title": "三星电子向员工部署ChatGPT和Codex",
+            "title": "三星电子向员工推出ChatGPT和Codex",
             "source": "OpenAI News",
             "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
             "published_at": "2026-06-21T23:00:00.000Z",
-            "summary": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
+            "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
             "relevance_score": 100
           },
           {
@@ -158,24 +173,6 @@
             "published_at": "2026-06-17T10:00:00.000Z",
             "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
             "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-c87c9f548d",
-            "title": "智能时代的产业政策",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-            "published_at": "2026-06-09T00:00:00.000Z",
-            "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
-            "relevance_score": 96
-          },
-          {
-            "item_id": "news-item-d23c6d1fee",
-            "title": "人工智能相关产品拉动外贸增长",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
-            "published_at": "2026-05-31T00:00:00.000Z",
-            "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
-            "relevance_score": 95
           }
         ],
         "evidence_gaps": [
@@ -183,35 +180,35 @@
         ]
       },
       "latest_update": {
-        "title": "普洛斯算力中心引入浙江国资战略股东",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "source": "第一财经",
-        "url": "https://www.yicai.com/news/102794012.html",
-        "published_at": "2026-06-22T09:00:43.059Z",
-        "score": 90
+        "title": "Daybreak：保护全球每个组织的安全工具",
+        "summary": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak...",
+        "source": "OpenAI News",
+        "url": "https://openai.com/index/daybreak-securing-the-world",
+        "published_at": "2026-06-22T10:00:00.000Z",
+        "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "三星电子向全体员工部署ChatGPT Enterprise和Codex",
+          "fact": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak...",
+          "evidence_url": "https://openai.com/index/daybreak-securing-the-world",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "Daybreak：保护全球每个组织的安全工具",
+          "evidence_url": "https://openai.com/index/patch-the-planet",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持...",
           "evidence_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "该部署是OpenAI最大企业AI项目",
+          "fact": "修补地球：Daybreak计划支持开源维护者",
           "evidence_url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "标志企业AI应用的重要里程碑",
-          "evidence_url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-          "evidence_url": "https://openai.com/index/ai-chemist-improves-reaction",
           "source": "OpenAI News",
           "confidence": "高"
         }
@@ -220,29 +217,29 @@
         "market": {
           "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
           "evidence": [
-            "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-            "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
+            "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+            "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+            "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 商业、AI治理、产业政策、科技战略 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 国际、市场监管、商业 相关判断，需继续核对后续证据。",
           "evidence": [
-            "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-            "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
+            "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+            "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+            "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、OpenAI、model、人工智能、国务院、中国政府网。",
+          "impact": "关联实体：AI、OpenAI、model、人工智能。",
           "evidence": [
-            "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-            "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
+            "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+            "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+            "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -250,9 +247,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-            "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
+            "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+            "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+            "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -260,9 +257,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-            "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。"
+            "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+            "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+            "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -285,8 +282,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 商业、AI治理、产业政策 的后续变化",
-            "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息",
+            "跟踪 国际、市场监管、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -305,8 +302,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 商业、AI治理、产业政策 的后续变化",
-            "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息"
+            "跟踪 国际、市场监管、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
           ]
         },
         {
@@ -324,15 +321,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 商业、AI治理、产业政策 的后续变化",
-            "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息"
+            "跟踪 国际、市场监管、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "员工对AI工具的依赖可能导致批判性思维下降；企业数据外泄风险依然存在，特别是代码生成工具Codex可能触及敏感源代码。",
+          "risk": "目前证据不足，但潜在风险包括数据泄露、员工过度依赖AI、以及部署不当导致的工作流混乱。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -367,7 +364,7 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "员工对AI工具的依赖可能导致批判性思维下降；企业数据外泄风险依然存在，特别是代码生成工具Codex可能触及敏感源代码。",
+          "uncertainty": "目前证据不足，但潜在风险包括数据泄露、员工过度依赖AI、以及部署不当导致的工作流混乱。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -389,13 +386,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 商业、AI治理、产业政策 的后续变化",
+          "variable": "跟踪 国际、市场监管、商业 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息",
+          "variable": "留意 OpenAI News 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -421,12 +418,30 @@
       ],
       "related_items": [
         {
+          "item_id": "international-openai-news-0f995ab88c",
+          "title": "Daybreak：保护全球每个组织的安全工具",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "published_at": "2026-06-22T10:00:00.000Z",
+          "summary": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。 对企业安全运营效率有潜在提升作用，但需关注工具的实际效果和安全性；对安全市场规模和竞争格局可能产生中长期影响。 需要注意：AI辅助漏洞修复可能引入新漏洞或误判；OpenAI作为新进入者缺乏安全领域口碑；客户对AI决策的信任度不足。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "tech-openai-news-85a0a5b5d1",
+          "title": "修补地球：Daybreak计划支持开源维护者",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/patch-the-planet",
+          "published_at": "2026-06-22T10:00:00.000Z",
+          "summary": "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。 对开源社区，该计划提供了免费的安全加固资源；对AI行业，展示了AI在安全领域的实用场景；对OpenAI，增强了与开发者的关系。 需要注意：如果AI检测误报率过高或专家审核不及时，可能损害计划声誉；另外，计划是否可持续尚不清楚。",
+          "relevance_score": 100
+        },
+        {
           "item_id": "business-openai-news-3d160a8e12",
-          "title": "三星电子向员工部署ChatGPT和Codex",
+          "title": "三星电子向员工推出ChatGPT和Codex",
           "source": "OpenAI News",
           "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
           "published_at": "2026-06-21T23:00:00.000Z",
-          "summary": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
+          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
           "relevance_score": 100
         },
         {
@@ -455,24 +470,6 @@
           "published_at": "2026-06-17T10:00:00.000Z",
           "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
           "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-c87c9f548d",
-          "title": "智能时代的产业政策",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-          "published_at": "2026-06-09T00:00:00.000Z",
-          "summary": "OpenAI提出以人为本的AI产业政策，聚焦扩大机会、共享繁荣和建设韧性机构，以应对高级智能演进。",
-          "relevance_score": 96
-        },
-        {
-          "item_id": "news-item-d23c6d1fee",
-          "title": "人工智能相关产品拉动外贸增长",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202605/content_7070735.htm",
-          "published_at": "2026-05-31T00:00:00.000Z",
-          "summary": "今年以来，我国人工智能相关产品和服务正加快走向国际市场，成为拉动外贸增长的新动能。",
-          "relevance_score": 95
         }
       ],
       "timeline": [
@@ -676,16 +673,16 @@
         },
         {
           "date": "2026-06-21",
-          "title": "三星电子向员工部署ChatGPT和Codex",
-          "summary": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
-          "description": "三星电子全球部署ChatGPT Enterprise和Codex，为OpenAI最大企业级AI部署之一。",
+          "title": "三星电子向员工推出ChatGPT和Codex",
+          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "description": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
           "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "三星员工现在可以通过企业级权限访问OpenAI的AI工具，改变了内部工作流程和AI使用方式。此前三星曾因员工使用ChatGPT导致数据泄露而禁止使用，此次正式部署可能伴随严格管控措施。",
+          "impact": "此前，三星电子可能仅在有限范围内测试或未部署这些AI工具。现在，全球员工均可使用，标志着企业级AI的普及迈出重要一步。",
           "sources": [
             {
-              "title": "三星电子向员工部署ChatGPT和Codex",
+              "title": "三星电子向员工推出ChatGPT和Codex",
               "source": "OpenAI News",
               "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
               "published_at": "2026-06-21T23:00:00.000Z"
@@ -698,47 +695,47 @@
         },
         {
           "date": "2026-06-22",
-          "title": "金融AI能力跃升：智能体规模化应用起步，效率革新之下多重挑战待解",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "reliable_media_report",
-          "importance": "中",
+          "title": "Daybreak：保护全球每个组织的安全工具",
+          "summary": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需...",
+          "description": "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需...",
+          "evidence_type": "unknown",
+          "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "impact": "OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak工具集扩展了其产品线，直接面向企业安全需求。",
           "sources": [
             {
-              "title": "金融AI能力跃升：智能体规模化应用起步，效率革新之下多重挑战待解",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-22/4432787.html",
-              "published_at": "2026-06-22T00:00:00.000Z"
+              "title": "Daybreak：保护全球每个组织的安全工具",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/daybreak-securing-the-world",
+              "published_at": "2026-06-22T10:00:00.000Z"
             }
           ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-22/4432787.html",
-          "score": 88,
-          "publishedAt": "2026-06-22T00:00:00.000Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "score": 100,
+          "publishedAt": "2026-06-22T10:00:00.000Z"
         },
         {
           "date": "2026-06-22",
-          "title": "普洛斯算力中心引入浙江国资战略股东",
-          "summary": "第一财经中文财经、宏观、产业和市场新闻",
-          "description": "第一财经中文财经、宏观、产业和市场新闻",
-          "evidence_type": "reliable_media_report",
+          "title": "修补地球：Daybreak计划支持开源维护者",
+          "summary": "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。...",
+          "description": "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。...",
+          "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "第一财经中文财经、宏观、产业和市场新闻",
+          "impact": "OpenAI从单纯的AI模型提供商转向更主动的开源安全支持角色，为开源社区提供了新的安全维护资源。",
           "sources": [
             {
-              "title": "普洛斯算力中心引入浙江国资战略股东",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/102794012.html",
-              "published_at": "2026-06-22T09:00:43.059Z"
+              "title": "修补地球：Daybreak计划支持开源维护者",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/patch-the-planet",
+              "published_at": "2026-06-22T10:00:00.000Z"
             }
           ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/102794012.html",
-          "score": 90,
-          "publishedAt": "2026-06-22T09:00:43.059Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/patch-the-planet",
+          "score": 100,
+          "publishedAt": "2026-06-22T10:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -749,9 +746,9 @@
           "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
           "confidence": "high",
           "basis": [
-            "三星电子向全体员工部署ChatGPT Enterprise和Codex",
-            "该部署是OpenAI最大企业AI项目",
-            "标志企业AI应用的重要里程碑"
+            "OpenAI推出了名为Daybreak的新工具集，包括Codex Security和GPT-5.5-Cyber，旨在帮助组织大规模发现、验证和修补安全漏洞。 OpenAI从主要提供生成式AI模型转向推出专门的安全工具，Daybreak...",
+            "Daybreak：保护全球每个组织的安全工具",
+            "OpenAI宣布启动一项名为'Patch the Planet'的新计划，属于Daybreak项目的一部分，旨在通过人工智能和专家审核帮助开源维护者发现、验证和修复安全漏洞。 OpenAI从单纯的AI模型提供商转向更主动的开源安全支持..."
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -790,10 +787,9 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
-              "商业",
-              "AI治理",
-              "产业政策",
-              "科技战略"
+              "国际",
+              "市场监管",
+              "商业"
             ],
             "confidence": "high"
           }
@@ -814,8 +810,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 商业、AI治理、产业政策 的后续变化",
-              "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息",
+              "跟踪 国际、市场监管、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -834,8 +830,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 商业、AI治理、产业政策 的后续变化",
-              "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息"
+              "跟踪 国际、市场监管、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
             ]
           },
           {
@@ -853,15 +849,15 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 商业、AI治理、产业政策 的后续变化",
-              "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息"
+              "跟踪 国际、市场监管、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "员工对AI工具的依赖可能导致批判性思维下降；企业数据外泄风险依然存在，特别是代码生成工具Codex可能触及敏感源代码。",
+            "risk": "目前证据不足，但潜在风险包括数据泄露、员工过度依赖AI、以及部署不当导致的工作流混乱。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -902,13 +898,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 商业、AI治理、产业政策 的后续变化",
+            "variable": "跟踪 国际、市场监管、商业 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 OpenAI News、中国政府网要闻 是否继续发布相关信息",
+            "variable": "留意 OpenAI News 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -990,10 +986,10 @@
       "last_seen_at": "2026-06-22T00:00:00.000Z",
       "updated_at": "2026-06-22T00:00:00.000Z",
       "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
+        "one_sentence": "三部门发布利用外资固稳促优行动方案，提出15条举措。 相关来源：中国政府网要闻、中国人民银行新闻发布、财政部财政新闻",
+        "background": "三部门发布利用外资固稳促优行动方案，提出15条举措。 相关来源：中国政府网要闻、中国人民银行新闻发布、财政部财政新闻",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 3 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "新方案发布后，中国吸引外资的政策框架将迎来新的优化调整，可能涉及更开放的市场准入和更便利的外商投资环境，但具体变化取决于尚未公布的举措细节。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -1037,12 +1033,12 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "三部门出台利用外资固稳促优行动方案",
-          "李强将出席第十七届夏季达沃斯论坛",
-          "前5月国家铁路发送货物16.7亿吨 同比增长1.8%"
+          "商务部等三部门印发利用外资行动方案",
+          "方案围绕五方面提出15条举措",
+          "旨在稳住外资基本盘并优化结构",
+          "三部门发布利用外资固稳促优行动方案，提出15条举措。"
         ],
-        "latest_change": "三部门出台利用外资固稳促优行动方案：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "latest_change": "Three Departments Issue Action Plan to Stabilize and Optimize Foreign Investment Utilization：三部门发布利用外资固稳促优行动方案，提出15条举措。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1053,9 +1049,8 @@
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 3,
-          "industry_analysis": 1,
-          "unknown": 2
+          "unknown": 2,
+          "official_announcement": 4
         },
         "primary_source": {
           "name": "中国政府网要闻",
@@ -1064,56 +1059,56 @@
         "source_links": [
           {
             "item_id": "news-item-c3471ba444",
-            "title": "三部门出台利用外资固稳促优行动方案",
+            "title": "Three Departments Issue Action Plan to Stabilize and Optimize Foreign Investment Utilization",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/lianbo/202606/content_7072844.htm",
             "published_at": "2026-06-22T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-c5727e5879",
-            "title": "李强将出席第十七届夏季达沃斯论坛",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072841.htm",
-            "published_at": "2026-06-22T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "三部门发布利用外资固稳促优行动方案，提出15条举措。",
             "relevance_score": 100
           },
           {
             "item_id": "news-item-950a3029ad",
-            "title": "前5月国家铁路发送货物16.7亿吨 同比增长1.8%",
+            "title": "First 5 months: National railway freight volume 1.67 billion tons, up 1.8% YoY",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072819.htm",
+            "published_at": "2026-06-22T00:00:00.000Z",
+            "summary": "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-845b7bea45",
+            "title": "2026年5月金融市场运行情况",
+            "source": "中国人民银行新闻发布",
+            "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062211021396080/index.html",
+            "published_at": "2026-06-22T00:00:00.000Z",
+            "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-154fcf1215",
+            "title": "2026年1-5月财政收支情况",
+            "source": "财政部财政新闻",
+            "url": "http://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm",
+            "published_at": "2026-06-22T00:00:00.000Z",
+            "summary": "财政部财政政策、国债、预算和财政运行新闻",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-cd80782173",
+            "title": "全国夏播进入高峰 科技赋能提质增效",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072958.htm",
             "published_at": "2026-06-22T00:00:00.000Z",
             "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "business-item-6d82973ec5",
-            "title": "服务消费提质扩容 假日经济活力迸发",
+            "item_id": "news-item-84cb18e4a8",
+            "title": "国家出台多项举措推动利用外资固稳促优",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
-            "published_at": "2026-06-21T00:00:00.000Z",
-            "summary": "端午假期服务消费成假日经济亮点，强调沉浸体验与科技融合。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-5f70e7e636",
-            "title": "长三角地区进出口连续15个月保持增长",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
-            "published_at": "2026-06-21T00:00:00.000Z",
-            "summary": "长三角地区进出口连续15个月保持增长，前5个月创历史新高。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-06a757529d",
-            "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
-            "published_at": "2026-06-20T00:00:00.000Z",
-            "summary": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072957.htm",
+            "published_at": "2026-06-22T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           }
         ],
@@ -1122,8 +1117,8 @@
         ]
       },
       "latest_update": {
-        "title": "三部门出台利用外资固稳促优行动方案",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "title": "Three Departments Issue Action Plan to Stabilize and Optimize Foreign Investment Utilization",
+        "summary": "三部门发布利用外资固稳促优行动方案，提出15条举措。",
         "source": "中国政府网要闻",
         "url": "https://www.gov.cn/lianbo/202606/content_7072844.htm",
         "published_at": "2026-06-22T00:00:00.000Z",
@@ -1131,27 +1126,27 @@
       },
       "confirmed_facts": [
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "fact": "商务部等三部门印发利用外资行动方案",
           "evidence_url": "https://www.gov.cn/lianbo/202606/content_7072844.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "三部门出台利用外资固稳促优行动方案",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072841.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "李强将出席第十七届夏季达沃斯论坛",
+          "fact": "方案围绕五方面提出15条举措",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072819.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "前5月国家铁路发送货物16.7亿吨 同比增长1.8%",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
-          "source": "中国政府网要闻",
+          "fact": "旨在稳住外资基本盘并优化结构",
+          "evidence_url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062211021396080/index.html",
+          "source": "中国人民银行新闻发布",
+          "confidence": "高"
+        },
+        {
+          "fact": "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+          "evidence_url": "http://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm",
+          "source": "财政部财政新闻",
           "confidence": "高"
         }
       ],
@@ -1159,9 +1154,9 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+            "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+            "中国人民银行新闻发布、货币政策和金融市场运行信息"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1169,19 +1164,19 @@
         "industry": {
           "impact": "可能影响 公共政策、宏观、三部门出台利用外资固稳促、优行动方案 相关判断，需继续核对后续证据。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+            "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+            "中国人民银行新闻发布、货币政策和金融市场运行信息"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：国务院、中国政府网、国家发展改革委、财政部。",
+          "impact": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行、国家发展改革委。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+            "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+            "中国人民银行新闻发布、货币政策和金融市场运行信息"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1189,9 +1184,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+            "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+            "中国人民银行新闻发布、货币政策和金融市场运行信息"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1199,9 +1194,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+            "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+            "中国人民银行新闻发布、货币政策和金融市场运行信息"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -1225,7 +1220,7 @@
           "confidence": "中",
           "watch_signals": [
             "跟踪 公共政策、宏观、三部门出台利用外资固稳促 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息",
+            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -1245,7 +1240,7 @@
           "confidence": "中",
           "watch_signals": [
             "跟踪 公共政策、宏观、三部门出台利用外资固稳促 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
+            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
           ]
         },
         {
@@ -1264,14 +1259,14 @@
           "confidence": "低",
           "watch_signals": [
             "跟踪 公共政策、宏观、三部门出台利用外资固稳促 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
+            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "目前未提及风险，但需警惕服务消费过热或科技体验同质化等潜在问题。",
+          "risk": "若举措力度不及预期或国际竞争加剧，外资流入可能持续放缓；政策执行中的协调难度也可能影响效果。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1280,16 +1275,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "目前未提及明显风险，但需关注全球贸易保护主义抬头、外需波动等潜在不利因素。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "政策执行力度、外部环境变化等不确定性存在。",
+          "risk": "如果后续增速放缓，可能预示工业需求走弱；数据仅截至5月，需关注6月及以后趋势。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1306,17 +1292,12 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "目前未提及风险，但需警惕服务消费过热或科技体验同质化等潜在问题。",
+          "uncertainty": "若举措力度不及预期或国际竞争加剧，外资流入可能持续放缓；政策执行中的协调难度也可能影响效果。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "目前未提及明显风险，但需关注全球贸易保护主义抬头、外需波动等潜在不利因素。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "政策执行力度、外部环境变化等不确定性存在。",
+          "uncertainty": "如果后续增速放缓，可能预示工业需求走弱；数据仅截至5月，需关注6月及以后趋势。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -1334,7 +1315,7 @@
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -1361,270 +1342,72 @@
       "related_items": [
         {
           "item_id": "news-item-c3471ba444",
-          "title": "三部门出台利用外资固稳促优行动方案",
+          "title": "Three Departments Issue Action Plan to Stabilize and Optimize Foreign Investment Utilization",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/lianbo/202606/content_7072844.htm",
           "published_at": "2026-06-22T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-c5727e5879",
-          "title": "李强将出席第十七届夏季达沃斯论坛",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072841.htm",
-          "published_at": "2026-06-22T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "三部门发布利用外资固稳促优行动方案，提出15条举措。",
           "relevance_score": 100
         },
         {
           "item_id": "news-item-950a3029ad",
-          "title": "前5月国家铁路发送货物16.7亿吨 同比增长1.8%",
+          "title": "First 5 months: National railway freight volume 1.67 billion tons, up 1.8% YoY",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072819.htm",
+          "published_at": "2026-06-22T00:00:00.000Z",
+          "summary": "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-845b7bea45",
+          "title": "2026年5月金融市场运行情况",
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062211021396080/index.html",
+          "published_at": "2026-06-22T00:00:00.000Z",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-154fcf1215",
+          "title": "2026年1-5月财政收支情况",
+          "source": "财政部财政新闻",
+          "url": "http://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm",
+          "published_at": "2026-06-22T00:00:00.000Z",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-cd80782173",
+          "title": "全国夏播进入高峰 科技赋能提质增效",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072958.htm",
           "published_at": "2026-06-22T00:00:00.000Z",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "business-item-6d82973ec5",
-          "title": "服务消费提质扩容 假日经济活力迸发",
+          "item_id": "news-item-84cb18e4a8",
+          "title": "国家出台多项举措推动利用外资固稳促优",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
-          "published_at": "2026-06-21T00:00:00.000Z",
-          "summary": "端午假期服务消费成假日经济亮点，强调沉浸体验与科技融合。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-5f70e7e636",
-          "title": "长三角地区进出口连续15个月保持增长",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
-          "published_at": "2026-06-21T00:00:00.000Z",
-          "summary": "长三角地区进出口连续15个月保持增长，前5个月创历史新高。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-06a757529d",
-          "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
-          "published_at": "2026-06-20T00:00:00.000Z",
-          "summary": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072957.htm",
+          "published_at": "2026-06-22T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
-          "date": "2026-06-18",
-          "title": "习近平给新华社老党员张连生的回信",
-          "summary": "习近平回信慰问新华社百岁老党员张连生，表达敬意和关怀。",
-          "description": "习近平回信慰问新华社百岁老党员张连生，表达敬意和关怀。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "本次回信为领导人对老党员的个人关怀，未涉及政策或体制变动，对市场、行业、公司、用户无直接改变。",
-          "sources": [
-            {
-              "title": "习近平给新华社老党员张连生的回信",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
-              "published_at": "2026-06-18T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072587.htm",
-          "score": 100,
-          "publishedAt": "2026-06-18T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "山海携手共赴振兴新征程——习近平总书记对常态化做好东西部协作工作的重要指示精神温暖人心催人奋进",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "不足以判断",
-          "sources": [
-            {
-              "title": "山海携手共赴振兴新征程——习近平总书记对常态化做好东西部协作工作的重要指示精神温暖人心催人奋进",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072567.htm",
-              "published_at": "2026-06-18T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072567.htm",
-          "score": 100,
-          "publishedAt": "2026-06-18T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "引领变革方向 迈向光明前景——重磅白皮书展现推动构建更加公正合理的全球治理体系的大国担当",
-          "summary": "中国政府发布全球治理白皮书，阐述构建公正合理全球治理体系的理念与行动。",
-          "description": "中国政府发布全球治理白皮书，阐述构建公正合理全球治理体系的理念与行动。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "发布了新的白皮书，系统阐述中国在全球治理方面的立场和主张。",
-          "sources": [
-            {
-              "title": "引领变革方向 迈向光明前景——重磅白皮书展现推动构建更加公正合理的全球治理体系的大国担当",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072591.htm",
-              "published_at": "2026-06-18T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072591.htm",
-          "score": 100,
-          "publishedAt": "2026-06-18T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "【视频】王小洪在河北调研时强调 深入学习贯彻习近平经济思想 努力推动高质量发展再上新台阶",
-          "summary": "王小洪河北调研，强调学习贯彻习近平经济思想，推动高质量发展，但具体内容未详。",
-          "description": "王小洪河北调研，强调学习贯彻习近平经济思想，推动高质量发展，但具体内容未详。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，无具体政策或行动变化。",
-          "sources": [
-            {
-              "title": "【视频】王小洪在河北调研时强调 深入学习贯彻习近平经济思想 努力推动高质量发展再上新台阶",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/18/VIDEDdkaOnT2fVQ3a74meTUe260618.shtml",
-              "published_at": "2026-06-18T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/18/VIDEDdkaOnT2fVQ3a74meTUe260618.shtml",
-          "score": 100,
-          "publishedAt": "2026-06-18T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-19",
-          "title": "跨国公司深耕中国市场 共享发展新机遇",
-          "summary": "报道指出今年跨国企业加速在华高技术领域投资，共享中国产业升级红利。",
-          "description": "报道指出今年跨国企业加速在华高技术领域投资，共享中国产业升级红利。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "跨国企业在华投资方向从传统制造业、服务业进一步向高技术领域集中，投资速度有所加快，反映出中国产业升级对外资吸引力的增强。",
-          "sources": [
-            {
-              "title": "跨国公司深耕中国市场 共享发展新机遇",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072768.htm",
-              "published_at": "2026-06-19T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072768.htm",
-          "score": 100,
-          "publishedAt": "2026-06-19T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-20",
-          "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
-          "summary": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
-          "description": "中国政府称制度型开放持续推进，为跨国企业带来更多机遇。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，仅提及开放持续推进，未说明具体变化。",
-          "sources": [
-            {
-              "title": "外资机构：越来越开放的中国市场 越来越有吸引力",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
-              "published_at": "2026-06-20T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072788.htm",
-          "score": 100,
-          "publishedAt": "2026-06-20T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-20",
-          "title": "前5月消费品以旧换新资金惠及超1.1亿人次",
-          "summary": "2026年前5月消费品以旧换新政策惠及超1.1亿人次，政策成效明显。",
-          "description": "2026年前5月消费品以旧换新政策惠及超1.1亿人次，政策成效明显。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "消费品以旧换新政策的受惠人次突破1.1亿，显示政策覆盖面和渗透率进一步提升，对消费市场形成持续刺激。",
-          "sources": [
-            {
-              "title": "前5月消费品以旧换新资金惠及超1.1亿人次",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/lianbo/202606/content_7072776.htm",
-              "published_at": "2026-06-20T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7072776.htm",
-          "score": 100,
-          "publishedAt": "2026-06-20T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-21",
-          "title": "服务消费提质扩容 假日经济活力迸发",
-          "summary": "端午假期服务消费成假日经济亮点，强调沉浸体验与科技融合。",
-          "description": "端午假期服务消费成假日经济亮点，强调沉浸体验与科技融合。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "服务消费在假日经济中的角色显著提升，消费形态向体验化、科技化升级，但具体变化幅度未量化。",
-          "sources": [
-            {
-              "title": "服务消费提质扩容 假日经济活力迸发",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
-              "published_at": "2026-06-21T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072808.htm",
-          "score": 100,
-          "publishedAt": "2026-06-21T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-21",
-          "title": "长三角地区进出口连续15个月保持增长",
-          "summary": "长三角地区进出口连续15个月保持增长，前5个月创历史新高。",
-          "description": "长三角地区进出口连续15个月保持增长，前5个月创历史新高。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "长三角地区进出口数据延续了长期增长态势，今年以来累计规模达到新的历史高点，表明该区域外贸韧性得到进一步巩固。",
-          "sources": [
-            {
-              "title": "长三角地区进出口连续15个月保持增长",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
-              "published_at": "2026-06-21T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072813.htm",
-          "score": 100,
-          "publishedAt": "2026-06-21T00:00:00.000Z"
-        },
-        {
           "date": "2026-06-22",
-          "title": "三部门出台利用外资固稳促优行动方案",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "Three Departments Issue Action Plan to Stabilize and Optimize Foreign Investment Utilization",
+          "summary": "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+          "description": "三部门发布利用外资固稳促优行动方案，提出15条举措。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "新方案发布后，中国吸引外资的政策框架将迎来新的优化调整，可能涉及更开放的市场准入和更便利的外商投资环境，但具体变化取决于尚未公布的举措细节。",
           "sources": [
             {
-              "title": "三部门出台利用外资固稳促优行动方案",
+              "title": "Three Departments Issue Action Plan to Stabilize and Optimize Foreign Investment Utilization",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/lianbo/202606/content_7072844.htm",
               "published_at": "2026-06-22T00:00:00.000Z"
@@ -1637,38 +1420,16 @@
         },
         {
           "date": "2026-06-22",
-          "title": "李强将出席第十七届夏季达沃斯论坛",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "First 5 months: National railway freight volume 1.67 billion tons, up 1.8% YoY",
+          "summary": "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+          "description": "1-5月国家铁路货运量16.7亿吨，同比增1.8%，日均装车创单日新高。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "相比去年同期，国家铁路货运量继续保持增长，且装车效率提升，单日装车纪录被刷新。",
           "sources": [
             {
-              "title": "李强将出席第十七届夏季达沃斯论坛",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072841.htm",
-              "published_at": "2026-06-22T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072841.htm",
-          "score": 100,
-          "publishedAt": "2026-06-22T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "前5月国家铁路发送货物16.7亿吨 同比增长1.8%",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "前5月国家铁路发送货物16.7亿吨 同比增长1.8%",
+              "title": "First 5 months: National railway freight volume 1.67 billion tons, up 1.8% YoY",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072819.htm",
               "published_at": "2026-06-22T00:00:00.000Z"
@@ -1676,6 +1437,226 @@
           ],
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072819.htm",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "2026年5月金融市场运行情况",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "description": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "sources": [
+            {
+              "title": "2026年5月金融市场运行情况",
+              "source": "中国人民银行新闻发布",
+              "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062211021396080/index.html",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062211021396080/index.html",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "2026年1-5月财政收支情况",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "2026年1-5月财政收支情况",
+              "source": "财政部财政新闻",
+              "url": "http://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://gks.mof.gov.cn/tongjishuju/202606/t20260622_3992033.htm",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "全国夏播进入高峰 科技赋能提质增效",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "全国夏播进入高峰 科技赋能提质增效",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072958.htm",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072958.htm",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "国家出台多项举措推动利用外资固稳促优",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国家出台多项举措推动利用外资固稳促优",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072957.htm",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072957.htm",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "李强在辽宁大连调研时强调 大力发展高端装备制造业 加快建设现代化产业体系",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "李强在辽宁大连调研时强调 大力发展高端装备制造业 加快建设现代化产业体系",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072927.htm",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072927.htm",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "【视频】丁薛祥出席第四届中国国际供应链促进博览会开幕式并作主旨讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】丁薛祥出席第四届中国国际供应链促进博览会开幕式并作主旨讲话",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/22/VIDE5xp4VBVbsQ8jasQ9BU2Z260622.shtml",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/22/VIDE5xp4VBVbsQ8jasQ9BU2Z260622.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "【视频】李强将出席第十七届夏季达沃斯论坛",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】李强将出席第十七届夏季达沃斯论坛",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/22/VIDELZtWzYCcES2o4zRnEXNo260622.shtml",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/22/VIDELZtWzYCcES2o4zRnEXNo260622.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "【视频】李强在辽宁大连调研",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】李强在辽宁大连调研",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/22/VIDEqfgxP9zOXuw30H4zE0h9260622.shtml",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/22/VIDEqfgxP9zOXuw30H4zE0h9260622.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "丁薛祥出席第四届中国国际供应链促进博览会开幕式并作主旨讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "丁薛祥出席第四届中国国际供应链促进博览会开幕式并作主旨讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072893.htm",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072893.htm",
+          "score": 100,
+          "publishedAt": "2026-06-22T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "孟加拉国总理塔里克将访华",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "孟加拉国总理塔里克将访华",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072881.htm",
+              "published_at": "2026-06-22T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7072881.htm",
           "score": 100,
           "publishedAt": "2026-06-22T00:00:00.000Z"
         }
@@ -1688,9 +1669,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "三部门出台利用外资固稳促优行动方案",
-            "李强将出席第十七届夏季达沃斯论坛"
+            "商务部等三部门印发利用外资行动方案",
+            "方案围绕五方面提出15条举措",
+            "旨在稳住外资基本盘并优化结构"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -1754,7 +1735,7 @@
             "confidence": "中",
             "watch_signals": [
               "跟踪 公共政策、宏观、三部门出台利用外资固稳促 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息",
+              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -1774,7 +1755,7 @@
             "confidence": "中",
             "watch_signals": [
               "跟踪 公共政策、宏观、三部门出台利用外资固稳促 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
+              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
             ]
           },
           {
@@ -1793,14 +1774,14 @@
             "confidence": "低",
             "watch_signals": [
               "跟踪 公共政策、宏观、三部门出台利用外资固稳促 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
+              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "目前未提及风险，但需警惕服务消费过热或科技体验同质化等潜在问题。",
+            "risk": "若举措力度不及预期或国际竞争加剧，外资流入可能持续放缓；政策执行中的协调难度也可能影响效果。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1809,16 +1790,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "目前未提及明显风险，但需关注全球贸易保护主义抬头、外需波动等潜在不利因素。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "政策执行力度、外部环境变化等不确定性存在。",
+            "risk": "如果后续增速放缓，可能预示工业需求走弱；数据仅截至5月，需关注6月及以后趋势。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1847,7 +1819,7 @@
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -1926,13 +1898,13 @@
       "priority_grade": "B",
       "importance_score": 100,
       "first_seen_at": "2026-06-08T12:00:00.000Z",
-      "last_seen_at": "2026-06-19T04:00:00.000Z",
-      "updated_at": "2026-06-19T04:00:00.000Z",
+      "last_seen_at": "2026-06-23T00:00:00.000Z",
+      "updated_at": "2026-06-23T00:00:00.000Z",
       "definition": {
-        "one_sentence": "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。 相关来源：U.S. SEC Press Releases、UN News、第一财经",
-        "background": "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。 相关来源：U.S. SEC Press Releases、UN News、第一财经",
+        "one_sentence": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、U.S. SEC Press Releases、UN News",
+        "background": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、U.S. SEC Press Releases、UN News",
         "core_question": "市场监管后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前仅发布征求意见稿，尚未有规则变更。",
+        "why_it_matters": "市场监管 会影响政策、市场、产业或国际变化判断；覆盖 4 个公开来源，仍处在高时效窗口内。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -1951,10 +1923,10 @@
       },
       "profile": {
         "impact_areas": [
+          "商业",
           "市场监管",
-          "金融监管",
-          "数据标准",
-          "宏观"
+          "股定增一览",
+          "家公司披露定增进展"
         ],
         "entities": {
           "companies": [
@@ -1970,35 +1942,45 @@
             "AI"
           ]
         },
-        "related_item_count": 15
+        "related_item_count": 17
       },
       "current_judgment": {
         "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
         "basis": [
+          "每日经济新闻中文财经、公司和市场新闻",
+          "07:51 A股定增一览：11家公司披露定增进展",
           "SEC和CFTC发布征求意见稿。",
-          "旨在澄清和协调衍生品产品定义。",
-          "目前为早期阶段，需持续关注。",
-          "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。"
+          "旨在澄清和协调衍生品产品定义。"
         ],
-        "latest_change": "热带风暴阿瑟：2026年大西洋飓风季首个命名风暴阿瑟于6月中旬袭击美国墨西哥湾沿岸，NASA卫星捕捉到其图像。",
+        "latest_change": "07:51 A股定增一览：11家公司披露定增进展：每日经济新闻中文财经、公司和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
         "source_count": 5,
         "official_source_count": 0,
-        "financial_media_count": 0,
+        "financial_media_count": 2,
         "timeline_count": 12,
         "confidence_basis": "medium",
         "evidence_types": {
-          "data_release": 5,
+          "reliable_media_report": 1,
+          "data_release": 4,
           "unknown": 1
         },
         "primary_source": {
-          "name": "NASA Breaking News",
-          "url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-arthur"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html"
         },
         "source_links": [
+          {
+            "item_id": "business-item-1a8ca6d469",
+            "title": "07:51 A股定增一览：11家公司披露定增进展",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+            "published_at": "2026-06-23T00:00:00.000Z",
+            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "relevance_score": 100
+          },
           {
             "item_id": "finance-u-s-sec-press-releases-fabe628d6b",
             "title": "SEC和CFTC就进一步澄清和协调衍生品产品定义征求意见",
@@ -2043,15 +2025,6 @@
             "published_at": "2026-06-14T09:00:40.480Z",
             "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
             "relevance_score": 97
-          },
-          {
-            "item_id": "macro-item-75c7d3fa37",
-            "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103227973.html",
-            "published_at": "2026-06-13T09:00:47.914Z",
-            "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
-            "relevance_score": 97
           }
         ],
         "evidence_gaps": [
@@ -2059,56 +2032,56 @@
         ]
       },
       "latest_update": {
-        "title": "热带风暴阿瑟",
-        "summary": "2026年大西洋飓风季首个命名风暴阿瑟于6月中旬袭击美国墨西哥湾沿岸，NASA卫星捕捉到其图像。",
-        "source": "NASA Breaking News",
-        "url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-arthur",
-        "published_at": "2026-06-19T04:00:00.000Z",
-        "score": 88
+        "title": "07:51 A股定增一览：11家公司披露定增进展",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+        "published_at": "2026-06-23T00:00:00.000Z",
+        "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "SEC和CFTC发布征求意见稿。",
+          "fact": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "07:51 A股定增一览：11家公司披露定增进展",
           "evidence_url": "https://www.sec.gov/newsroom/press-releases/2026-57-sec-cftc-seek-public-comment-further-clarify-harmonize-derivatives-product-definitions",
           "source": "U.S. SEC Press Releases",
           "confidence": "中"
         },
         {
-          "fact": "旨在澄清和协调衍生品产品定义。",
+          "fact": "SEC和CFTC发布征求意见稿。",
           "evidence_url": "https://www.sec.gov/newsroom/press-releases/2026-55-sec-appoints-john-moses-director-office-investor-education-assistance",
           "source": "U.S. SEC Press Releases",
           "confidence": "中"
         },
         {
-          "fact": "目前为早期阶段，需持续关注。",
+          "fact": "旨在澄清和协调衍生品产品定义。",
           "evidence_url": "https://www.sec.gov/newsroom/press-releases/2026-53-sec-establishes-joint-data-standards-required-under-financial-data-transparency-act-2022",
           "source": "U.S. SEC Press Releases",
-          "confidence": "中"
-        },
-        {
-          "fact": "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
-          "evidence_url": "https://news.un.org/feed/view/en/story/2026/06/1167732",
-          "source": "UN News",
           "confidence": "中"
         }
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL 1.1655%；行情时间：2026-06-22T09:00:58.276Z。",
+          "impact": "关联标的：GOOGL -4.9860%；行情时间：2026-06-23T00:00:51.418Z。",
           "evidence": [
+            "每日经济新闻中文财经、公司和市场新闻",
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
-            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
-            "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "industry": {
-          "impact": "可能影响 市场监管、金融监管、数据标准、宏观 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 商业、市场监管、股定增一览、家公司披露定增进展 相关判断，需继续核对后续证据。",
           "evidence": [
+            "每日经济新闻中文财经、公司和市场新闻",
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
-            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
-            "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2116,9 +2089,9 @@
         "company": {
           "impact": "关联实体：GOOGL、谷歌、AI、SEC。",
           "evidence": [
+            "每日经济新闻中文财经、公司和市场新闻",
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
-            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
-            "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2126,9 +2099,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
+            "每日经济新闻中文财经、公司和市场新闻",
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
-            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
-            "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2136,9 +2109,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
+            "每日经济新闻中文财经、公司和市场新闻",
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
-            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
-            "美国证券交易委员会依据《2022年财务数据透明法案》制定最终规则，确立了向多家金融监管机构提交数据的技术标准，旨在提升数据一致性和透明度。"
+            "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -2147,10 +2120,10 @@
       "market_feedback": [
         {
           "type": "市场反馈",
-          "description": "GOOGL 1.1655%",
-          "source": "NASA Breaking News",
-          "url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-arthur",
-          "date": "2026-06-19",
+          "description": "GOOGL -4.9860%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+          "date": "2026-06-23",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -2171,8 +2144,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 市场监管、金融监管、数据标准 的后续变化",
-            "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息",
+            "跟踪 商业、市场监管、股定增一览 的后续变化",
+            "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -2191,8 +2164,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 市场监管、金融监管、数据标准 的后续变化",
-            "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息"
+            "跟踪 商业、市场监管、股定增一览 的后续变化",
+            "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息"
           ]
         },
         {
@@ -2210,8 +2183,8 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 市场监管、金融监管、数据标准 的后续变化",
-            "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息"
+            "跟踪 商业、市场监管、股定增一览 的后续变化",
+            "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息"
           ]
         }
       ],
@@ -2275,13 +2248,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 市场监管、金融监管、数据标准 的后续变化",
+          "variable": "跟踪 商业、市场监管、股定增一览 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息",
+          "variable": "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -2306,6 +2279,15 @@
         }
       ],
       "related_items": [
+        {
+          "item_id": "business-item-1a8ca6d469",
+          "title": "07:51 A股定增一览：11家公司披露定增进展",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+          "published_at": "2026-06-23T00:00:00.000Z",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "relevance_score": 100
+        },
         {
           "item_id": "finance-u-s-sec-press-releases-fabe628d6b",
           "title": "SEC和CFTC就进一步澄清和协调衍生品产品定义征求意见",
@@ -2350,62 +2332,9 @@
           "published_at": "2026-06-14T09:00:40.480Z",
           "summary": "鸿蒙终端数达6600万，正全面向Agent架构演进。华为面临从中国走向全球的挑战，需与苹果、谷歌竞争。",
           "relevance_score": 97
-        },
-        {
-          "item_id": "macro-item-75c7d3fa37",
-          "title": "Yu Chengdong Discloses New Progress of HarmonyOS: 66 Million Terminals, Moving to Agent Architecture Fully",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103227973.html",
-          "published_at": "2026-06-13T09:00:47.914Z",
-          "summary": "余承东披露鸿蒙已覆盖6600万终端，全面向Agent架构演进，华为面临从中国走向全球的挑战。",
-          "relevance_score": 97
         }
       ],
       "timeline": [
-        {
-          "date": "2026-06-09",
-          "title": "飞行动力学研究设施特点",
-          "summary": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
-          "description": "NASA新建大型亚音速风洞，垂直试验段用于飞行器稳定性、可控性、自由落体及旋转恢复测试，提升航空评估能力。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "强化美国航空试验基础能力，支撑未来飞行器设计与安全认证。",
-          "sources": [
-            {
-              "title": "飞行动力学研究设施特点",
-              "source": "NASA Breaking News",
-              "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
-              "published_at": "2026-06-09T20:47:02.000Z"
-            }
-          ],
-          "source": "NASA Breaking News",
-          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics",
-          "score": 93,
-          "publishedAt": "2026-06-09T20:47:02.000Z"
-        },
-        {
-          "date": "2026-06-12",
-          "title": "国金证券推出股份回购计划",
-          "summary": "国金证券拟回购1.5-3亿元股份，价格上限13元/股，旨在维护公司价值及股东权益。",
-          "description": "国金证券拟回购1.5-3亿元股份，价格上限13元/股，旨在维护公司价值及股东权益。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": true,
-          "impact": "上市公司回购股份通常用于稳定股价、传递信心，对股东权益有积极意义。",
-          "sources": [
-            {
-              "title": "国金证券推出股份回购计划",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-12/4424855.html",
-              "published_at": "2026-06-12T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-12/4424855.html",
-          "score": 87,
-          "publishedAt": "2026-06-12T00:00:00.000Z"
-        },
         {
           "date": "2026-06-12",
           "title": "SEC任命John Moses为投资者教育和援助办公室主任",
@@ -2625,6 +2554,50 @@
           "url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-arthur",
           "score": 88,
           "publishedAt": "2026-06-19T04:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "07:51 A股定增一览：11家公司披露定增进展",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "07:51 A股定增一览：11家公司披露定增进展",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-23/4433775.html",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "07:36 盯盯拍递表港交所",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "07:36 盯盯拍递表港交所",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-23/4433767.html",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-23/4433767.html",
+          "score": 83,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -2635,9 +2608,9 @@
           "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
           "confidence": "medium",
           "basis": [
-            "SEC和CFTC发布征求意见稿。",
-            "旨在澄清和协调衍生品产品定义。",
-            "目前为早期阶段，需持续关注。"
+            "每日经济新闻中文财经、公司和市场新闻",
+            "07:51 A股定增一览：11家公司披露定增进展",
+            "SEC和CFTC发布征求意见稿。"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -2676,10 +2649,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
+              "商业",
               "市场监管",
-              "金融监管",
-              "数据标准",
-              "宏观"
+              "股定增一览",
+              "家公司披露定增进展"
             ],
             "confidence": "medium"
           }
@@ -2700,8 +2673,8 @@
             "impact_level": "B",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 市场监管、金融监管、数据标准 的后续变化",
-              "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息",
+              "跟踪 商业、市场监管、股定增一览 的后续变化",
+              "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -2720,8 +2693,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 市场监管、金融监管、数据标准 的后续变化",
-              "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息"
+              "跟踪 商业、市场监管、股定增一览 的后续变化",
+              "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息"
             ]
           },
           {
@@ -2739,8 +2712,8 @@
             "impact_level": "B",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 市场监管、金融监管、数据标准 的后续变化",
-              "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息"
+              "跟踪 商业、市场监管、股定增一览 的后续变化",
+              "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息"
             ]
           }
         ],
@@ -2788,13 +2761,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 市场监管、金融监管、数据标准 的后续变化",
+            "variable": "跟踪 商业、市场监管、股定增一览 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 U.S. SEC Press Releases、UN News 是否继续发布相关信息",
+            "variable": "留意 每日经济新闻、U.S. SEC Press Releases 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -2808,7 +2781,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-19",
+            "date": "2026-06-23",
             "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
             "change_type": "初始判断",
             "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
@@ -3032,7 +3005,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 1.0369%、QQQ 2.5065%；行情时间：2026-06-22T09:00:58.276Z。",
+          "impact": "关联标的：TSLA 1.1386%、QQQ -0.2507%；行情时间：2026-06-23T00:00:51.418Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
@@ -3085,7 +3058,7 @@
       "market_feedback": [
         {
           "type": "市场反馈",
-          "description": "TSLA 1.0369%",
+          "description": "TSLA 1.1386%",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103228502.html",
           "date": "2026-06-14",
@@ -3094,7 +3067,7 @@
         },
         {
           "type": "市场反馈",
-          "description": "QQQ 2.5065%",
+          "description": "QQQ -0.2507%",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103228502.html",
           "date": "2026-06-14",
