@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-06-24T00:01:18.707Z",
+  "generated_at": "2026-06-24T09:01:22.207Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 6,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-06-24T00:00:49.570Z"
+      "generated_at": "2026-06-24T09:00:54.211Z"
     },
     "llm": {
       "enabled": true,
@@ -37,6 +37,1884 @@
     }
   ],
   "events": [
+    {
+      "event_id": "lane-china_us_ai",
+      "title": "中美 AI 发展",
+      "lane_id": "china_us_ai",
+      "lane_label": "中美 AI 发展",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-05-31T00:00:00.000Z",
+      "last_seen_at": "2026-06-24T09:00:33.389Z",
+      "updated_at": "2026-06-24T09:00:33.389Z",
+      "definition": {
+        "one_sentence": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。 相关来源：OpenAI News",
+        "background": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。 相关来源：OpenAI News",
+        "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "OpenAI公开宣布加入Appia基金会，旨在推动AI共享标准的制定，标志着其在AI治理和标准化方面迈出具体一步。",
+        "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+        "rationale": [
+          "属于中美 AI 发展主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "国际",
+          "AI政策",
+          "商业",
+          "市场监管"
+        ],
+        "entities": {
+          "companies": [
+            "OpenAI"
+          ],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI",
+            "OpenAI",
+            "GitHub",
+            "model",
+            "人工智能"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+        "basis": [
+          "OpenAI宣布加入Appia基金会",
+          "旨在推动先进AI的共享标准",
+          "支持评估框架、安全实践和全球合作",
+          "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。"
+        ],
+        "latest_change": "当AI助力年轻人撬动资本，电影艺术该如何捍卫？：第一财经中文财经、宏观、产业和市场新闻",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 4,
+        "official_source_count": 1,
+        "financial_media_count": 1,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "unknown": 2,
+          "industry_analysis": 4
+        },
+        "primary_source": {
+          "name": "第一财经",
+          "url": "https://www.yicai.com/news/103243249.html"
+        },
+        "source_links": [
+          {
+            "item_id": "international-openai-news-e3064d34d6",
+            "title": "助力构建先进AI的共享标准",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+            "published_at": "2026-06-23T13:00:00.000Z",
+            "summary": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-af291a244f",
+            "title": "Omio如何构建对话式旅行的未来",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/omio",
+            "published_at": "2026-06-23T00:00:00.000Z",
+            "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "international-openai-news-0f995ab88c",
+            "title": "Daybreak：保护全球每个组织的工具",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/daybreak-securing-the-world",
+            "published_at": "2026-06-22T10:00:00.000Z",
+            "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "tech-openai-news-85a0a5b5d1",
+            "title": "修补星球：Daybreak倡议支持开源维护者",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/patch-the-planet",
+            "published_at": "2026-06-22T10:00:00.000Z",
+            "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-3d160a8e12",
+            "title": "三星电子向员工推出ChatGPT和Codex",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+            "published_at": "2026-06-21T23:00:00.000Z",
+            "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-d1c4ccdd2d",
+            "title": "新的用量分析和更新的支出控制面向企业",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+            "published_at": "2026-06-18T17:00:00.000Z",
+            "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "当AI助力年轻人撬动资本，电影艺术该如何捍卫？",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "source": "第一财经",
+        "url": "https://www.yicai.com/news/103243249.html",
+        "published_at": "2026-06-24T09:00:33.389Z",
+        "score": 99
+      },
+      "confirmed_facts": [
+        {
+          "fact": "OpenAI宣布加入Appia基金会",
+          "evidence_url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "旨在推动先进AI的共享标准",
+          "evidence_url": "https://openai.com/index/omio",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "支持评估框架、安全实践和全球合作",
+          "evidence_url": "https://openai.com/index/daybreak-securing-the-world",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+          "evidence_url": "https://openai.com/index/patch-the-planet",
+          "source": "OpenAI News",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
+          "evidence": [
+            "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 国际、AI政策、商业、市场监管 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：AI、OpenAI、人工智能。",
+          "evidence": [
+            "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 国际、AI政策、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 国际、AI政策、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 国际、AI政策、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "标准化可能限制创新速度，或导致过于保守的规范；如果开放程度不足，可能形成垄断性标准。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "技术成熟度不足或用户接受度低可能导致项目不及预期。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "新工具可能存在未知的安全漏洞或误报问题，依赖AI决策可能带来新的风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "标准化可能限制创新速度，或导致过于保守的规范；如果开放程度不足，可能形成垄断性标准。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "技术成熟度不足或用户接受度低可能导致项目不及预期。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "新工具可能存在未知的安全漏洞或误报问题，依赖AI决策可能带来新的风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 国际、AI政策、商业 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 OpenAI News 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中美 AI 发展是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "international-openai-news-e3064d34d6",
+          "title": "助力构建先进AI的共享标准",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+          "published_at": "2026-06-23T13:00:00.000Z",
+          "summary": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-af291a244f",
+          "title": "Omio如何构建对话式旅行的未来",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/omio",
+          "published_at": "2026-06-23T00:00:00.000Z",
+          "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "international-openai-news-0f995ab88c",
+          "title": "Daybreak：保护全球每个组织的工具",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "published_at": "2026-06-22T10:00:00.000Z",
+          "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "tech-openai-news-85a0a5b5d1",
+          "title": "修补星球：Daybreak倡议支持开源维护者",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/patch-the-planet",
+          "published_at": "2026-06-22T10:00:00.000Z",
+          "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-3d160a8e12",
+          "title": "三星电子向员工推出ChatGPT和Codex",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "published_at": "2026-06-21T23:00:00.000Z",
+          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-d1c4ccdd2d",
+          "title": "新的用量分析和更新的支出控制面向企业",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+          "published_at": "2026-06-18T17:00:00.000Z",
+          "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-15",
+          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
+          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
+          "description": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "简化开发者代码检索与理解流程，使终端命令可重复可审查，开放数据集促进多语言研究。",
+          "sources": [
+            {
+              "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+              "published_at": "2026-06-15T20:15:31.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
+          "score": 94,
+          "publishedAt": "2026-06-15T20:15:31.000Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "通过模拟部署预测模型行为",
+          "summary": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型部署前的行为，以提升安全性和评估准确性。",
+          "description": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型部署前的行为，以提升安全性和评估准确性。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "该方法可在模型实际部署前预判风险，降低上线后的安全威胁，提高AI治理的前瞻性。",
+          "sources": [
+            {
+              "title": "通过模拟部署预测模型行为",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/deployment-simulation",
+              "published_at": "2026-06-16T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/deployment-simulation",
+          "score": 92,
+          "publishedAt": "2026-06-16T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-16",
+          "title": "什么是Git工作树，为什么要使用它们？",
+          "summary": "文章介绍了GitHub开发者倡导高级总监Cassidy，并提及Git 2.54版本发布，但未具体解释git worktrees。",
+          "description": "文章介绍了GitHub开发者倡导高级总监Cassidy，并提及Git 2.54版本发布，但未具体解释git worktrees。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "不足以判断",
+          "sources": [
+            {
+              "title": "什么是Git工作树，为什么要使用它们？",
+              "source": "GitHub Blog",
+              "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+              "published_at": "2026-06-16T20:58:54.000Z"
+            }
+          ],
+          "source": "GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
+          "score": 94,
+          "publishedAt": "2026-06-16T20:58:54.000Z"
+        },
+        {
+          "date": "2026-06-17",
+          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+          "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "description": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "AI化学家获得了近乎自主改进药物化学反应的能力，减少了人工干预需求。",
+          "sources": [
+            {
+              "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/ai-chemist-improves-reaction",
+              "published_at": "2026-06-17T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/ai-chemist-improves-reaction",
+          "score": 100,
+          "publishedAt": "2026-06-17T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "利用AI帮助医生诊断影响儿童的罕见遗传病",
+          "summary": "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
+          "description": "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "该研究展示了AI在罕见病诊断中的潜在价值，可能提高诊断效率和准确性。",
+          "sources": [
+            {
+              "title": "利用AI帮助医生诊断影响儿童的罕见遗传病",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+              "published_at": "2026-06-18T08:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+          "score": 100,
+          "publishedAt": "2026-06-18T08:00:00.000Z"
+        },
+        {
+          "date": "2026-06-18",
+          "title": "新的用量分析和更新的支出控制面向企业",
+          "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
+          "description": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "企业客户现在可以使用更精细的支出控制和用量分析功能来管理其 ChatGPT Enterprise 部署。",
+          "sources": [
+            {
+              "title": "新的用量分析和更新的支出控制面向企业",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+              "published_at": "2026-06-18T17:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+          "score": 100,
+          "publishedAt": "2026-06-18T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-21",
+          "title": "三星电子向员工推出ChatGPT和Codex",
+          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "description": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此前，三星电子可能仅在有限范围内测试或未部署这些AI工具。现在，全球员工均可使用，标志着企业级AI的普及迈出重要一步。",
+          "sources": [
+            {
+              "title": "三星电子向员工推出ChatGPT和Codex",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+              "published_at": "2026-06-21T23:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "score": 100,
+          "publishedAt": "2026-06-21T23:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "Daybreak：保护全球每个组织的工具",
+          "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
+          "description": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此前，组织通常依赖手动或半自动化的漏洞管理流程。Daybreak工具的推出，可能使AI驱动的全流程自动化漏洞管理成为可选项，但来源未提供变更前后的对比数据。",
+          "sources": [
+            {
+              "title": "Daybreak：保护全球每个组织的工具",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/daybreak-securing-the-world",
+              "published_at": "2026-06-22T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "score": 100,
+          "publishedAt": "2026-06-22T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "修补星球：Daybreak倡议支持开源维护者",
+          "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
+          "description": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI新增了一项针对开源安全的倡议，为维护者提供AI驱动的漏洞修复工具。此前，OpenAI在开源安全领域没有类似的专项支持计划。",
+          "sources": [
+            {
+              "title": "修补星球：Daybreak倡议支持开源维护者",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/patch-the-planet",
+              "published_at": "2026-06-22T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/patch-the-planet",
+          "score": 100,
+          "publishedAt": "2026-06-22T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "Omio如何构建对话式旅行的未来",
+          "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+          "description": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "Omio从传统旅行平台转向AI原生公司，将对话式AI集成到产品中。",
+          "sources": [
+            {
+              "title": "Omio如何构建对话式旅行的未来",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/omio",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/omio",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "助力构建先进AI的共享标准",
+          "summary": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+          "description": "OpenAI通过Appia基金会推动AI共享标准，重点支持评估框架和安全实践。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI公开宣布加入Appia基金会，旨在推动AI共享标准的制定，标志着其在AI治理和标准化方面迈出具体一步。",
+          "sources": [
+            {
+              "title": "助力构建先进AI的共享标准",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+              "published_at": "2026-06-23T13:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+          "score": 100,
+          "publishedAt": "2026-06-23T13:00:00.000Z"
+        },
+        {
+          "date": "2026-06-24",
+          "title": "当AI助力年轻人撬动资本，电影艺术该如何捍卫？",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "description": "第一财经中文财经、宏观、产业和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "第一财经中文财经、宏观、产业和市场新闻",
+          "sources": [
+            {
+              "title": "当AI助力年轻人撬动资本，电影艺术该如何捍卫？",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103243249.html",
+              "published_at": "2026-06-24T09:00:33.389Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103243249.html",
+          "score": 99,
+          "publishedAt": "2026-06-24T09:00:33.389Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中美 AI 发展是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+          "confidence": "high",
+          "basis": [
+            "OpenAI宣布加入Appia基金会",
+            "旨在推动先进AI的共享标准",
+            "支持评估框架、安全实践和全球合作"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "国际",
+              "AI政策",
+              "商业",
+              "市场监管"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 国际、AI政策、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 国际、AI政策、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 国际、AI政策、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "标准化可能限制创新速度，或导致过于保守的规范；如果开放程度不足，可能形成垄断性标准。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "技术成熟度不足或用户接受度低可能导致项目不及预期。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "新工具可能存在未知的安全漏洞或误报问题，依赖AI决策可能带来新的风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 国际、AI政策、商业 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 OpenAI News 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-06-24",
+            "judgment": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+            "change_type": "初始判断",
+            "reason": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中美 AI 发展是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "lane_id": "china_policy",
+      "lane_label": "中国权威政策落地",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-06-22T00:00:00.000Z",
+      "last_seen_at": "2026-06-24T00:00:00.000Z",
+      "updated_at": "2026-06-24T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、财政部财政新闻",
+        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、财政部财政新闻",
+        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 2 条官方或市场权威来源，仍处在高时效窗口内。",
+        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "rationale": [
+          "属于中国权威政策落地主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "落地执行",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "公共政策",
+          "李强在第十七届夏季达沃斯",
+          "论坛开幕式上的致辞",
+          "全文"
+        ],
+        "entities": {
+          "companies": [],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网",
+            "国家发展改革委",
+            "财政部",
+            "统计局",
+            "国家统计局"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI",
+            "compute"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "basis": [
+          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+          "李强出席2026年夏季达沃斯论坛开幕式并致辞",
+          "会议为内部学习教育性质"
+        ],
+        "latest_change": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 3,
+        "official_source_count": 20,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "official_announcement": 2,
+          "data_release": 2,
+          "unknown": 2
+        },
+        "primary_source": {
+          "name": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm"
+        },
+        "source_links": [
+          {
+            "item_id": "news-item-d174246fe3",
+            "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
+            "published_at": "2026-06-24T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-28e17e2d13",
+            "title": "李强出席2026年夏季达沃斯论坛开幕式并致辞",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
+            "published_at": "2026-06-24T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-214141e8af",
+            "title": "财政部召开树立和践行正确政绩观学习教育工作推进会",
+            "source": "财政部财政新闻",
+            "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
+            "published_at": "2026-06-23T00:00:00.000Z",
+            "summary": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-669425a79e",
+            "title": "五方面十五条举措出台 推动利用外资固稳促优",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/zhengce/202606/content_7072990.htm",
+            "published_at": "2026-06-23T00:00:00.000Z",
+            "summary": "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-52715f823f",
+            "title": "决算情况总体较好 财政政策更加积极——聚焦2025年中央决算报告",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073144.htm",
+            "published_at": "2026-06-23T00:00:00.000Z",
+            "summary": "2025年中央决算报告显示财政政策更加积极，着力稳经济。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "international-item-42d8f6a916",
+            "title": "王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073161.htm",
+            "published_at": "2026-06-23T00:00:00.000Z",
+            "summary": "王小洪调研北京禁毒工作，强调综合施策系统治理。",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
+        "published_at": "2026-06-24T00:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "李强出席2026年夏季达沃斯论坛开幕式并致辞",
+          "evidence_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
+          "source": "财政部财政新闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "会议为内部学习教育性质",
+          "evidence_url": "https://www.gov.cn/zhengce/202606/content_7072990.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞、全文 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委、财政部。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "不存在基于此信息的明显风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "国际竞争加剧（如其他国家的优惠政策）可能削弱方案吸引力；国内执行层面若存在地方保护或落地不畅，会影响政策效果。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "政策效果存在不确定性，过于积极的财政政策可能增加赤字或债务风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "不存在基于此信息的明显风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "国际竞争加剧（如其他国家的优惠政策）可能削弱方案吸引力；国内执行层面若存在地方保护或落地不畅，会影响政策效果。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "政策效果存在不确定性，过于积极的财政政策可能增加赤字或债务风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中国权威政策落地是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "news-item-d174246fe3",
+          "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
+          "published_at": "2026-06-24T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-28e17e2d13",
+          "title": "李强出席2026年夏季达沃斯论坛开幕式并致辞",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
+          "published_at": "2026-06-24T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-214141e8af",
+          "title": "财政部召开树立和践行正确政绩观学习教育工作推进会",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
+          "published_at": "2026-06-23T00:00:00.000Z",
+          "summary": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-669425a79e",
+          "title": "五方面十五条举措出台 推动利用外资固稳促优",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/202606/content_7072990.htm",
+          "published_at": "2026-06-23T00:00:00.000Z",
+          "summary": "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-52715f823f",
+          "title": "决算情况总体较好 财政政策更加积极——聚焦2025年中央决算报告",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073144.htm",
+          "published_at": "2026-06-23T00:00:00.000Z",
+          "summary": "2025年中央决算报告显示财政政策更加积极，着力稳经济。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "international-item-42d8f6a916",
+          "title": "王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073161.htm",
+          "published_at": "2026-06-23T00:00:00.000Z",
+          "summary": "王小洪调研北京禁毒工作，强调综合施策系统治理。",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-23",
+          "title": "张国清出席全国进一步深化国资国企改革动员部署视频会议",
+          "summary": "国务院副总理张国清出席全国深化国资国企改革动员部署视频会议，但具体内容未披露。",
+          "description": "国务院副总理张国清出席全国深化国资国企改革动员部署视频会议，但具体内容未披露。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，无法判断政策或改革方向发生变化。会议仅处于动员部署阶段，尚未发布具体实施文件或明确改革细节。",
+          "sources": [
+            {
+              "title": "张国清出席全国进一步深化国资国企改革动员部署视频会议",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/23/VIDEVOP0ntMyli4Rf3nulIRM260623.shtml",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/23/VIDEVOP0ntMyli4Rf3nulIRM260623.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "张国清在全国进一步深化国资国企改革动员部署视频会议上强调 突出战略使命 聚焦主责主业 坚定不移深化国资国企改革",
+          "summary": "全国深化国资国企改革动员部署会议在京召开，张国清强调聚焦主责主业，改革方向明确但细节待出。",
+          "description": "全国深化国资国企改革动员部署会议在京召开，张国清强调聚焦主责主业，改革方向明确但细节待出。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此次会议标志着新一轮国资国企改革进入动员部署阶段，明确了改革的核心导向是战略使命和主责主业。目前尚未公布具体改革措施或政策文件，但高规格的会议显示中央对国企改革的重视程度提升。",
+          "sources": [
+            {
+              "title": "张国清在全国进一步深化国资国企改革动员部署视频会议上强调 突出战略使命 聚焦主责主业 坚定不移深化国资国企改革",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073100.htm",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073100.htm",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "我国利用外资结构持续优化",
+          "summary": "2026年1-5月新设外资企业超2.5万家，同比增长5.3%，但结构优化证据不足。",
+          "description": "2026年1-5月新设外资企业超2.5万家，同比增长5.3%，但结构优化证据不足。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "与去年同期相比，新设外商投资企业数量出现增长，表明外资进入中国的活跃度有所提升。",
+          "sources": [
+            {
+              "title": "我国利用外资结构持续优化",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073154.htm",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073154.htm",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "何立峰在河南调研：加快完善产业创新体系，推动外贸稳规模优结构",
+          "summary": "何立峰在河南调研，强调完善产业创新体系和稳定外贸结构。",
+          "description": "何立峰在河南调研，强调完善产业创新体系和稳定外贸结构。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，仅知高层调研聚焦产业创新和外贸结构，但未提及具体政策变化或行动。",
+          "sources": [
+            {
+              "title": "何立峰在河南调研：加快完善产业创新体系，推动外贸稳规模优结构",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/23/VIDEud8bsimjOVrwFbsi2Ybt260623.shtml",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/23/VIDEud8bsimjOVrwFbsi2Ybt260623.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "刘国中在江苏调研强调生物医药和脑机接口产业",
+          "summary": "刘国中调研江苏，强调生物医药和脑机接口产业发展方向。",
+          "description": "刘国中调研江苏，强调生物医药和脑机接口产业发展方向。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，未明确具体政策或行动变化。调研表态可能预示未来产业扶持方向。",
+          "sources": [
+            {
+              "title": "刘国中在江苏调研强调生物医药和脑机接口产业",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/23/VIDEn954HVotlPxwf0W4cyKU260623.shtml",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/23/VIDEn954HVotlPxwf0W4cyKU260623.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
+          "summary": "何立峰河南调研，强调产业创新与外贸稳定，释放政策信号。",
+          "description": "何立峰河南调研，强调产业创新与外贸稳定，释放政策信号。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此次调研释放了中央对产业创新和外贸稳定的政策信号，但未宣布任何具体政策措施或调整现有制度框架。当前政策体系未发生实质性变化。",
+          "sources": [
+            {
+              "title": "何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073149.htm",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073149.htm",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "十四届全国人大常委会第二十三次会议在京举行 审议商标法修订草案等",
+          "summary": "十四届全国人大常委会第二十三次会议召开，审议商标法修订草案，具体内容待公布。",
+          "description": "十四届全国人大常委会第二十三次会议召开，审议商标法修订草案，具体内容待公布。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前仅知会议召开并审议商标法修订草案，具体修订内容、表决结果等尚未公布，因此法律条款的实质性变更尚不明确。",
+          "sources": [
+            {
+              "title": "十四届全国人大常委会第二十三次会议在京举行 审议商标法修订草案等",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073128.htm",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073128.htm",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "报告显示全国统一大市场“四梁八柱”基本建立",
+          "summary": "国务院报告称全国统一大市场框架基本建成。",
+          "description": "国务院报告称全国统一大市场框架基本建成。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "报告正式确认了全国统一大市场建设已进入框架基本建成阶段，但具体政策调整或新增措施尚未披露。",
+          "sources": [
+            {
+              "title": "报告显示全国统一大市场“四梁八柱”基本建立",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073119.htm",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073119.htm",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "Liu Guozhong emphasizes building bio-pharmaceutical emerging pillar industry and nurturing brain-computer interface f...",
+          "summary": "刘国中江苏调研强调生物医药为新兴支柱产业，脑机接口为未来产业，释放政策信号。",
+          "description": "刘国中江苏调研强调生物医药为新兴支柱产业，脑机接口为未来产业，释放政策信号。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "高层公开明确将生物医药定位为新兴支柱产业，并首次在调研层面系统提出培育脑机接口未来产业，释放了政策将向这两大领域倾斜的信号。",
+          "sources": [
+            {
+              "title": "Liu Guozhong emphasizes building bio-pharmaceutical emerging pillar industry and nurturing brain-computer interface f...",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073116.htm",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073116.htm",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "2026年6月中旬流通领域重要生产资料市场价格变动情况",
+          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "description": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "sources": [
+            {
+              "title": "2026年6月中旬流通领域重要生产资料市场价格变动情况",
+              "source": "国家统计局数据发布",
+              "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260623_1963989.html",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "国家统计局数据发布",
+          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260623_1963989.html",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-24",
+          "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
+              "published_at": "2026-06-24T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
+          "score": 100,
+          "publishedAt": "2026-06-24T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-24",
+          "title": "李强出席2026年夏季达沃斯论坛开幕式并致辞",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "李强出席2026年夏季达沃斯论坛开幕式并致辞",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
+              "published_at": "2026-06-24T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
+          "score": 100,
+          "publishedAt": "2026-06-24T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+          "confidence": "high",
+          "basis": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
+            "李强出席2026年夏季达沃斯论坛开幕式并致辞"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "公共政策",
+              "李强在第十七届夏季达沃斯",
+              "论坛开幕式上的致辞",
+              "全文"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "不存在基于此信息的明显风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "国际竞争加剧（如其他国家的优惠政策）可能削弱方案吸引力；国内执行层面若存在地方保护或落地不畅，会影响政策效果。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "政策效果存在不确定性，过于积极的财政政策可能增加赤字或债务风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-06-24",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "change_type": "初始判断",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中国权威政策落地是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
     {
       "event_id": "ai-policy-ai政策-各地麦收高效推进-助力夏粮颗粒归仓",
       "title": "AI政策",
@@ -108,21 +1986,20 @@
           "公众意见征集启动。",
           "SEC与CFTC联合征求公众意见，旨在协调、现代化和简化掉期市场数据报告规则。"
         ],
-        "latest_change": "07:51 联合国：黎以停火大体维持 各方应保护平民安全：每日经济新闻中文财经、公司和市场新闻",
+        "latest_change": "联合国：黎以停火大体维持 各方应保护平民安全：联合国确认黎以停火大体维持，但仍有零星交火，平民安全需关注。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
         "source_count": 7,
         "official_source_count": 1,
-        "financial_media_count": 1,
+        "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
           "data_release": 3,
           "industry_analysis": 1,
-          "unknown": 1,
-          "reliable_media_report": 1
+          "unknown": 2
         },
         "primary_source": {
           "name": "每日经济新闻",
@@ -176,11 +2053,11 @@
           },
           {
             "item_id": "international-item-2b152fe0e7",
-            "title": "07:51 联合国：黎以停火大体维持 各方应保护平民安全",
+            "title": "联合国：黎以停火大体维持 各方应保护平民安全",
             "source": "每日经济新闻",
             "url": "https://www.nbd.com.cn/articles/2026-06-24/4435225.html",
             "published_at": "2026-06-24T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "summary": "联合国确认黎以停火大体维持，但仍有零星交火，平民安全需关注。",
             "relevance_score": 95
           }
         ],
@@ -189,8 +2066,8 @@
         ]
       },
       "latest_update": {
-        "title": "07:51 联合国：黎以停火大体维持 各方应保护平民安全",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "title": "联合国：黎以停火大体维持 各方应保护平民安全",
+        "summary": "联合国确认黎以停火大体维持，但仍有零星交火，平民安全需关注。",
         "source": "每日经济新闻",
         "url": "https://www.nbd.com.cn/articles/2026-06-24/4435225.html",
         "published_at": "2026-06-24T00:00:00.000Z",
@@ -224,7 +2101,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.7967%；行情时间：2026-06-24T00:00:49.570Z。",
+          "impact": "关联标的：MSFT 1.7967%；行情时间：2026-06-24T09:00:54.211Z。",
           "evidence": [
             "SEC与CFTC联合征求公众意见，旨在协调、现代化和简化掉期市场数据报告规则。",
             "七部门联合发布行动方案，推动平台经济大中小企业协同发展至2028年。",
@@ -483,11 +2360,11 @@
         },
         {
           "item_id": "international-item-2b152fe0e7",
-          "title": "07:51 联合国：黎以停火大体维持 各方应保护平民安全",
+          "title": "联合国：黎以停火大体维持 各方应保护平民安全",
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-06-24/4435225.html",
           "published_at": "2026-06-24T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary": "联合国确认黎以停火大体维持，但仍有零星交火，平民安全需关注。",
           "relevance_score": 95
         }
       ],
@@ -714,16 +2591,16 @@
         },
         {
           "date": "2026-06-23",
-          "title": "从洞察到行动：代理式云运维的下一阶段",
-          "summary": "微软Azure博客发布文章，介绍代理式云运维（agentic cloud operations）的概念，并展示Azure Copilot如何将可观测性、治理和优化连接起来，帮助用户从洞察转向行动。文章属于技术前瞻性内容，没有提供具体案例或数据。 文章提出了一种云运维的新范式...",
-          "description": "微软Azure博客发布文章，介绍代理式云运维（agentic cloud operations）的概念，并展示Azure Copilot如何将可观测性、治理和优化连接起来，帮助用户从洞察转向行动。文章属于技术前瞻性内容，没有提供具体案例或数据。 文章提出了一种云运维的新范式...",
+          "title": "从洞察到行动：代理云操作的下一个阶段",
+          "summary": "微软Azure介绍代理云操作下阶段，Azure Copilot整合可观测性、治理与优化。",
+          "description": "微软Azure介绍代理云操作下阶段，Azure Copilot整合可观测性、治理与优化。",
           "evidence_type": "industry_analysis",
           "importance": "低",
           "does_it_change_judgment": false,
-          "impact": "文章提出了一种云运维的新范式——代理式云运维，即通过AI助手自动连接监控、合规和性能优化环节。目前尚不清楚该模式是否已有实际部署或产品更新。",
+          "impact": "目前证据不足",
           "sources": [
             {
-              "title": "从洞察到行动：代理式云运维的下一阶段",
+              "title": "从洞察到行动：代理云操作的下一个阶段",
               "source": "Microsoft Azure Blog",
               "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations",
               "published_at": "2026-06-23T15:45:00.000Z"
@@ -736,16 +2613,16 @@
         },
         {
           "date": "2026-06-24",
-          "title": "07:51 联合国：黎以停火大体维持 各方应保护平民安全",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "reliable_media_report",
+          "title": "联合国：黎以停火大体维持 各方应保护平民安全",
+          "summary": "联合国确认黎以停火大体维持，但仍有零星交火，平民安全需关注。",
+          "description": "联合国确认黎以停火大体维持，但仍有零星交火，平民安全需关注。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "impact": "从全面冲突转为大体停火状态，但零星军事活动持续，平民安全仍受威胁。",
           "sources": [
             {
-              "title": "07:51 联合国：黎以停火大体维持 各方应保护平民安全",
+              "title": "联合国：黎以停火大体维持 各方应保护平民安全",
               "source": "每日经济新闻",
               "url": "https://www.nbd.com.cn/articles/2026-06-24/4435225.html",
               "published_at": "2026-06-24T00:00:00.000Z"
@@ -995,1173 +2872,253 @@
       }
     },
     {
-      "event_id": "lane-china_us_ai",
-      "title": "中美 AI 发展",
-      "lane_id": "china_us_ai",
-      "lane_label": "中美 AI 发展",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-05-31T00:00:00.000Z",
-      "last_seen_at": "2026-06-23T13:00:00.000Z",
-      "updated_at": "2026-06-23T13:00:00.000Z",
+      "event_id": "macro-policy-ipo-spacex-史上最大",
+      "title": "宏观政策与利率",
+      "lane_id": "us_equities",
+      "lane_label": "美股变化",
+      "status": "watching",
+      "priority_grade": "B",
+      "importance_score": 97,
+      "first_seen_at": "2026-06-12T09:01:14.051Z",
+      "last_seen_at": "2026-06-24T00:00:00.000Z",
+      "updated_at": "2026-06-24T00:00:00.000Z",
       "definition": {
-        "one_sentence": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安... 相关来源：OpenAI News",
-        "background": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安... 相关来源：OpenAI News",
-        "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。",
-        "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+        "one_sentence": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+        "background": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+        "core_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "标志科技企业市值和富豪身家达到新里程碑",
+        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
-        "signal": "优先跟踪",
-        "brief": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+        "signal": "观察验证",
+        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
         "rationale": [
-          "属于中美 AI 发展主线",
-          "重要性评分为 100",
-          "证据置信度为高"
+          "属于美股变化主线",
+          "重要性评分为 97",
+          "证据置信度为中"
         ],
-        "market_symbols": [],
+        "market_symbols": [
+          "TSLA",
+          "QQQ"
+        ],
         "policy_status": "",
         "requires_follow_up": true
       },
       "profile": {
         "impact_areas": [
+          "宏观",
           "国际",
-          "AI政策",
           "商业",
-          "市场监管"
+          "市值空降美股前十"
         ],
         "entities": {
           "companies": [
-            "OpenAI"
+            "TSLA",
+            "QQQ"
           ],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网"
+          "people": [
+            "马斯克"
           ],
+          "institutions": [],
           "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI",
-            "OpenAI",
-            "GitHub",
-            "model",
-            "人工智能"
-          ]
+          "products_or_technologies": []
         },
-        "related_item_count": 20
+        "related_item_count": 6
       },
       "current_judgment": {
-        "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
         "basis": [
-          "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合...",
-          "助力构建先进AI共享标准",
-          "Omio使用OpenAI技术推动对话式旅行",
-          "加速产品开发并转向AI原生公司"
+          "SpaceX市值空降美股前十",
+          "马斯克成为全球首位万亿美元富豪",
+          "此轮造富可能源于史上最大规模IPO",
+          "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
         ],
-        "latest_change": "助力构建先进AI共享标准：OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合...",
+        "latest_change": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45：每日经济新闻中文财经、公司和市场新闻",
         "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
-        "source_count": 3,
-        "official_source_count": 1,
-        "financial_media_count": 0,
-        "timeline_count": 12,
-        "confidence_basis": "high",
+        "source_count": 2,
+        "official_source_count": 0,
+        "financial_media_count": 1,
+        "timeline_count": 6,
+        "confidence_basis": "medium",
         "evidence_types": {
-          "unknown": 2,
-          "industry_analysis": 4
-        },
-        "primary_source": {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
-        },
-        "source_links": [
-          {
-            "item_id": "international-openai-news-e3064d34d6",
-            "title": "助力构建先进AI共享标准",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-            "published_at": "2026-06-23T13:00:00.000Z",
-            "summary": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "business-openai-news-af291a244f",
-            "title": "Omio如何构建对话式旅行的未来",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/omio",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-0f995ab88c",
-            "title": "Daybreak：保护全球每个组织的工具",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/daybreak-securing-the-world",
-            "published_at": "2026-06-22T10:00:00.000Z",
-            "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "tech-openai-news-85a0a5b5d1",
-            "title": "修补星球：Daybreak倡议支持开源维护者",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/patch-the-planet",
-            "published_at": "2026-06-22T10:00:00.000Z",
-            "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "business-openai-news-3d160a8e12",
-            "title": "三星电子向员工推出ChatGPT和Codex",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-            "published_at": "2026-06-21T23:00:00.000Z",
-            "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "business-openai-news-d1c4ccdd2d",
-            "title": "新的用量分析和更新的支出控制面向企业",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-            "published_at": "2026-06-18T17:00:00.000Z",
-            "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
-        ]
-      },
-      "latest_update": {
-        "title": "助力构建先进AI共享标准",
-        "summary": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合...",
-        "source": "OpenAI News",
-        "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-        "published_at": "2026-06-23T13:00:00.000Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合...",
-          "evidence_url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "助力构建先进AI共享标准",
-          "evidence_url": "https://openai.com/index/omio",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "Omio使用OpenAI技术推动对话式旅行",
-          "evidence_url": "https://openai.com/index/daybreak-securing-the-world",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "加速产品开发并转向AI原生公司",
-          "evidence_url": "https://openai.com/index/patch-the-planet",
-          "source": "OpenAI News",
-          "confidence": "高"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
-          "evidence": [
-            "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "industry": {
-          "impact": "可能影响 国际、AI政策、商业、市场监管 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "company": {
-          "impact": "关联实体：AI、OpenAI、人工智能。",
-          "evidence": [
-            "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 国际、AI政策、商业 的后续变化",
-            "留意 OpenAI News 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 国际、AI政策、商业 的后续变化",
-            "留意 OpenAI News 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 国际、AI政策、商业 的后续变化",
-            "留意 OpenAI News 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "技术成熟度不足或用户接受度低可能导致项目不及预期。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "新工具可能存在未知的安全漏洞或误报问题，依赖AI决策可能带来新的风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "依赖AI可能引入误报或漏报风险；专家评审资源有限，可能无法覆盖大量项目。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "技术成熟度不足或用户接受度低可能导致项目不及预期。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "新工具可能存在未知的安全漏洞或误报问题，依赖AI决策可能带来新的风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "依赖AI可能引入误报或漏报风险；专家评审资源有限，可能无法覆盖大量项目。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 国际、AI政策、商业 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 OpenAI News 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中美 AI 发展是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "international-openai-news-e3064d34d6",
-          "title": "助力构建先进AI共享标准",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-          "published_at": "2026-06-23T13:00:00.000Z",
-          "summary": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI行业的安全规范和合作模式。 需要注意：标准可能偏向OpenAI技术路线，或导致碎片化；合作效果取决于多方参与程度。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "business-openai-news-af291a244f",
-          "title": "Omio如何构建对话式旅行的未来",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/omio",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-0f995ab88c",
-          "title": "Daybreak：保护全球每个组织的工具",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/daybreak-securing-the-world",
-          "published_at": "2026-06-22T10:00:00.000Z",
-          "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "tech-openai-news-85a0a5b5d1",
-          "title": "修补星球：Daybreak倡议支持开源维护者",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/patch-the-planet",
-          "published_at": "2026-06-22T10:00:00.000Z",
-          "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "business-openai-news-3d160a8e12",
-          "title": "三星电子向员工推出ChatGPT和Codex",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-          "published_at": "2026-06-21T23:00:00.000Z",
-          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "business-openai-news-d1c4ccdd2d",
-          "title": "新的用量分析和更新的支出控制面向企业",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-          "published_at": "2026-06-18T17:00:00.000Z",
-          "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-15",
-          "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
-          "summary": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "description": "文章主要面向初学者介绍GitHub Copilot CLI，讲解如何使用斜杠命令控制终端AI代理，并强调通过减少噪声来提升告警的可靠性和可操作性，以及利用上下文感知的LLM推理改进验证步骤。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "文章未提及多语言AI开放数据集的具体内容，仅涉及GitHub Copilot CLI的使用和改进，因此其重要性不足以判断。",
-          "sources": [
-            {
-              "title": "通过新的开放数据集加速构建多语言AI的研究人员和开发者",
-              "source": "GitHub Blog",
-              "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-              "published_at": "2026-06-15T19:17:30.000Z"
-            }
-          ],
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-          "score": 94,
-          "publishedAt": "2026-06-15T19:17:30.000Z"
-        },
-        {
-          "date": "2026-06-15",
-          "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
-          "summary": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "description": "介绍GitHub Copilot CLI的安装与LSP服务器配置、自定义代理功能，并提及新发布的CC0-1.0许可证仓库级数据集。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "简化开发者代码检索与理解流程，使终端命令可重复可审查，开放数据集促进多语言研究。",
-          "sources": [
-            {
-              "title": "初学者指南：GitHub Copilot CLI 常用斜杠命令概述",
-              "source": "GitHub Blog",
-              "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-              "published_at": "2026-06-15T20:15:31.000Z"
-            }
-          ],
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-          "score": 94,
-          "publishedAt": "2026-06-15T20:15:31.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "通过模拟部署预测模型行为",
-          "summary": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型部署前的行为，以提升安全性和评估准确性。",
-          "description": "OpenAI推出部署模拟方法，利用真实对话数据预测AI模型部署前的行为，以提升安全性和评估准确性。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该方法可在模型实际部署前预判风险，降低上线后的安全威胁，提高AI治理的前瞻性。",
-          "sources": [
-            {
-              "title": "通过模拟部署预测模型行为",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/deployment-simulation",
-              "published_at": "2026-06-16T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/deployment-simulation",
-          "score": 92,
-          "publishedAt": "2026-06-16T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-16",
-          "title": "什么是Git工作树，为什么要使用它们？",
-          "summary": "文章介绍了GitHub开发者倡导高级总监Cassidy，并提及Git 2.54版本发布，但未具体解释git worktrees。",
-          "description": "文章介绍了GitHub开发者倡导高级总监Cassidy，并提及Git 2.54版本发布，但未具体解释git worktrees。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "不足以判断",
-          "sources": [
-            {
-              "title": "什么是Git工作树，为什么要使用它们？",
-              "source": "GitHub Blog",
-              "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-              "published_at": "2026-06-16T20:58:54.000Z"
-            }
-          ],
-          "source": "GitHub Blog",
-          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them",
-          "score": 94,
-          "publishedAt": "2026-06-16T20:58:54.000Z"
-        },
-        {
-          "date": "2026-06-17",
-          "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
-          "summary": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
-          "description": "OpenAI与Molecule.one用GPT-5.4的AI化学家改进了药物化学反应，推动药物化学研究。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "AI化学家获得了近乎自主改进药物化学反应的能力，减少了人工干预需求。",
-          "sources": [
-            {
-              "title": "近乎自主的AI化学家改进了药物化学中的一项挑战性反应",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/ai-chemist-improves-reaction",
-              "published_at": "2026-06-17T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/ai-chemist-improves-reaction",
-          "score": 100,
-          "publishedAt": "2026-06-17T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "利用AI帮助医生诊断影响儿童的罕见遗传病",
-          "summary": "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-          "description": "OpenAI推理模型在罕见病诊断中识别出18个新病例，表明AI可辅助医生提升诊断能力。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该研究展示了AI在罕见病诊断中的潜在价值，可能提高诊断效率和准确性。",
-          "sources": [
-            {
-              "title": "利用AI帮助医生诊断影响儿童的罕见遗传病",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-              "published_at": "2026-06-18T08:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-          "score": 100,
-          "publishedAt": "2026-06-18T08:00:00.000Z"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "新的用量分析和更新的支出控制面向企业",
-          "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-          "description": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "企业客户现在可以使用更精细的支出控制和用量分析功能来管理其 ChatGPT Enterprise 部署。",
-          "sources": [
-            {
-              "title": "新的用量分析和更新的支出控制面向企业",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-              "published_at": "2026-06-18T17:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-          "score": 100,
-          "publishedAt": "2026-06-18T17:00:00.000Z"
-        },
-        {
-          "date": "2026-06-21",
-          "title": "三星电子向员工推出ChatGPT和Codex",
-          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
-          "description": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "此前，三星电子可能仅在有限范围内测试或未部署这些AI工具。现在，全球员工均可使用，标志着企业级AI的普及迈出重要一步。",
-          "sources": [
-            {
-              "title": "三星电子向员工推出ChatGPT和Codex",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-              "published_at": "2026-06-21T23:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-          "score": 100,
-          "publishedAt": "2026-06-21T23:00:00.000Z"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "Daybreak：保护全球每个组织的工具",
-          "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
-          "description": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "此前，组织通常依赖手动或半自动化的漏洞管理流程。Daybreak工具的推出，可能使AI驱动的全流程自动化漏洞管理成为可选项，但来源未提供变更前后的对比数据。",
-          "sources": [
-            {
-              "title": "Daybreak：保护全球每个组织的工具",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/daybreak-securing-the-world",
-              "published_at": "2026-06-22T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/daybreak-securing-the-world",
-          "score": 100,
-          "publishedAt": "2026-06-22T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "修补星球：Daybreak倡议支持开源维护者",
-          "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
-          "description": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI新增了一项针对开源安全的倡议，为维护者提供AI驱动的漏洞修复工具。此前，OpenAI在开源安全领域没有类似的专项支持计划。",
-          "sources": [
-            {
-              "title": "修补星球：Daybreak倡议支持开源维护者",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/patch-the-planet",
-              "published_at": "2026-06-22T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/patch-the-planet",
-          "score": 100,
-          "publishedAt": "2026-06-22T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Omio如何构建对话式旅行的未来",
-          "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-          "description": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "Omio从传统旅行平台转向AI原生公司，将对话式AI集成到产品中。",
-          "sources": [
-            {
-              "title": "Omio如何构建对话式旅行的未来",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/omio",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/omio",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "助力构建先进AI共享标准",
-          "summary": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI...",
-          "description": "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。 短期影响有限，长期可能塑造AI...",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合作姿态。",
-          "sources": [
-            {
-              "title": "助力构建先进AI共享标准",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-              "published_at": "2026-06-23T13:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-          "score": 100,
-          "publishedAt": "2026-06-23T13:00:00.000Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中美 AI 发展是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-          "confidence": "high",
-          "basis": [
-            "OpenAI宣布通过Appia Foundation（应为原始名称，照录）支持评估框架、安全实践和全球合作，帮助构建先进人工智能的共享标准。 OpenAI从单方开发转向参与标准共建，通过基金会推动行业统一的评估和安全规范，表明其开放合...",
-            "助力构建先进AI共享标准",
-            "Omio使用OpenAI技术推动对话式旅行"
-          ],
-          "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "国际",
-              "AI政策",
-              "商业",
-              "市场监管"
-            ],
-            "confidence": "high"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "A",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 国际、AI政策、商业 的后续变化",
-              "留意 OpenAI News 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 国际、AI政策、商业 的后续变化",
-              "留意 OpenAI News 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "A",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 国际、AI政策、商业 的后续变化",
-              "留意 OpenAI News 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "技术成熟度不足或用户接受度低可能导致项目不及预期。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "新工具可能存在未知的安全漏洞或误报问题，依赖AI决策可能带来新的风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "依赖AI可能引入误报或漏报风险；专家评审资源有限，可能无法覆盖大量项目。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 国际、AI政策、商业 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 OpenAI News 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-06-23",
-            "judgment": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-            "change_type": "初始判断",
-            "reason": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中美 AI 发展是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
-      "event_id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "lane_id": "china_policy",
-      "lane_label": "中国权威政策落地",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-06-22T00:00:00.000Z",
-      "last_seen_at": "2026-06-23T00:00:00.000Z",
-      "updated_at": "2026-06-23T00:00:00.000Z",
-      "definition": {
-        "one_sentence": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。 相关来源：财政部财政新闻、中国政府网要闻",
-        "background": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。 相关来源：财政部财政新闻、中国政府网要闻",
-        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前证据不足，无法确定具体变化。会议本身是例行学习教育活动，未宣布政策调整或新措施。",
-        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "rationale": [
-          "属于中国权威政策落地主线",
-          "重要性评分为 100",
-          "证据置信度为高"
-        ],
-        "market_symbols": [],
-        "policy_status": "落地执行",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "宏观",
-          "公共政策",
-          "财政部召开树立和践行正确",
-          "政绩观学习教育工作推进会"
-        ],
-        "entities": {
-          "companies": [],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网",
-            "人民银行",
-            "中国人民银行",
-            "国家发展改革委",
-            "财政部"
-          ],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "basis": [
-          "会议为内部学习教育性质",
-          "未披露实质政策内容",
-          "对市场无直接影响",
-          "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。"
-        ],
-        "latest_change": "财政部召开树立和践行正确政绩观学习教育工作推进会：财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-        "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
-      },
-      "evidence": {
-        "source_count": 3,
-        "official_source_count": 20,
-        "financial_media_count": 0,
-        "timeline_count": 12,
-        "confidence_basis": "high",
-        "evidence_types": {
-          "data_release": 1,
+          "data_release": 3,
           "unknown": 1,
-          "official_announcement": 4
+          "industry_analysis": 1,
+          "reliable_media_report": 1
         },
         "primary_source": {
-          "name": "财政部财政新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html"
         },
         "source_links": [
           {
-            "item_id": "macro-item-214141e8af",
-            "title": "财政部召开树立和践行正确政绩观学习教育工作推进会",
-            "source": "财政部财政新闻",
-            "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-            "relevance_score": 100
+            "item_id": "macro-item-06646bdbac",
+            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103228502.html",
+            "published_at": "2026-06-14T09:00:40.480Z",
+            "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "relevance_score": 97
           },
           {
-            "item_id": "news-item-669425a79e",
-            "title": "五方面十五条举措出台 推动利用外资固稳促优",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/zhengce/202606/content_7072990.htm",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-            "relevance_score": 100
+            "item_id": "macro-item-1c8f7d7ba8",
+            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103228502.html",
+            "published_at": "2026-06-13T09:00:47.914Z",
+            "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "relevance_score": 97
           },
           {
-            "item_id": "international-item-42d8f6a916",
-            "title": "王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073161.htm",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
+            "item_id": "macro-item-8b73efee6b",
+            "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103227523.html",
+            "published_at": "2026-06-12T09:01:14.051Z",
+            "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+            "relevance_score": 97
           },
           {
-            "item_id": "business-item-5671f8ea2a",
-            "title": "我国将全链条扩大汽车消费",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073155.htm",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
+            "item_id": "international-item-969b764a62",
+            "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+            "published_at": "2026-06-13T00:00:00.000Z",
+            "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+            "relevance_score": 91
           },
           {
-            "item_id": "news-item-3859361314",
-            "title": "我国利用外资结构持续优化",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073154.htm",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
+            "item_id": "business-item-5d4eb1e693",
+            "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+            "published_at": "2026-06-14T00:00:00.000Z",
+            "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+            "relevance_score": 87
           },
           {
-            "item_id": "international-item-ba2b407ee6",
-            "title": "【视频】王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
-            "source": "中国政府网要闻",
-            "url": "https://tv.cctv.com/2026/06/23/VIDEJyhUZxHiJhM55yg2VVq5260623.shtml",
-            "published_at": "2026-06-23T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
+            "item_id": "business-item-981374a846",
+            "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+            "published_at": "2026-06-24T00:00:00.000Z",
+            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "relevance_score": 82
           }
         ],
         "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
+          "缺少官方或市场权威来源。"
         ]
       },
       "latest_update": {
-        "title": "财政部召开树立和践行正确政绩观学习教育工作推进会",
-        "summary": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-        "source": "财政部财政新闻",
-        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
-        "published_at": "2026-06-23T00:00:00.000Z",
-        "score": 100
+        "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+        "published_at": "2026-06-24T00:00:00.000Z",
+        "score": 82
       },
       "confirmed_facts": [
         {
-          "fact": "会议为内部学习教育性质",
-          "evidence_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
-          "source": "财政部财政新闻",
-          "confidence": "高"
+          "fact": "SpaceX市值空降美股前十",
+          "evidence_url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "confidence": "中"
         },
         {
-          "fact": "未披露实质政策内容",
-          "evidence_url": "https://www.gov.cn/zhengce/202606/content_7072990.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
+          "fact": "马斯克成为全球首位万亿美元富豪",
+          "evidence_url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "confidence": "中"
         },
         {
-          "fact": "对市场无直接影响",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073161.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
+          "fact": "此轮造富可能源于史上最大规模IPO",
+          "evidence_url": "https://www.yicai.com/news/103227523.html",
+          "source": "第一财经",
+          "confidence": "中"
         },
         {
-          "fact": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073155.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
+          "fact": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
         }
       ],
       "impact": {
         "market": {
-          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "impact": "关联标的：TSLA -5.7869%、QQQ -3.2929%；行情时间：2026-06-24T09:00:54.211Z。",
           "evidence": [
-            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-            "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
+          "confidence": "中"
         },
         "industry": {
-          "impact": "可能影响 宏观、公共政策、财政部召开树立和践行正确、政绩观学习教育工作推进会 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 宏观、国际、商业、市值空降美股前十 相关判断，需继续核对后续证据。",
           "evidence": [
-            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-            "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
+          "confidence": "中"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委、财政部。",
+          "impact": "关联实体：TSLA、QQQ、特斯拉、马斯克、SpaceX、纳斯达克。",
           "evidence": [
-            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-            "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
+          "confidence": "中"
         },
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-            "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
+          "confidence": "中"
         },
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-            "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
         }
       },
-      "market_feedback": [],
+      "market_feedback": [
+        {
+          "type": "市场反馈",
+          "description": "TSLA -5.7869%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "date": "2026-06-24",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "QQQ -3.2929%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "date": "2026-06-24",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        }
+      ],
       "forward_scenarios": [
         {
           "scenario_id": "scenario-a",
@@ -2178,8 +3135,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
-            "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
+            "跟踪 宏观、国际、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -2198,8 +3155,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
-            "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
+            "跟踪 宏观、国际、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
           ]
         },
         {
@@ -2217,15 +3174,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
-            "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
+            "跟踪 宏观、国际、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "不存在基于此信息的明显风险。",
+          "risk": "高估值风险、造富效应与财富集中争议",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2234,7 +3191,16 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "国际竞争加剧（如其他国家的优惠政策）可能削弱方案吸引力；国内执行层面若存在地方保护或落地不畅，会影响政策效果。",
+          "risk": "不足以判断",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2251,30 +3217,35 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "不存在基于此信息的明显风险。",
+          "uncertainty": "高估值风险、造富效应与财富集中争议",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "国际竞争加剧（如其他国家的优惠政策）可能削弱方案吸引力；国内执行层面若存在地方保护或落地不畅，会影响政策效果。",
+          "uncertainty": "不足以判断",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "uncertainty": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "缺少官方或市场权威来源。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         }
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
+          "variable": "跟踪 宏观、国际、商业 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
+          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -2288,7 +3259,7 @@
       ],
       "next_questions": [
         {
-          "question": "中国权威政策落地是否会形成持续影响？",
+          "question": "宏观政策与利率是否会形成持续影响？",
           "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
           "status": "待验证"
         },
@@ -2300,340 +3271,208 @@
       ],
       "related_items": [
         {
-          "item_id": "macro-item-214141e8af",
-          "title": "财政部召开树立和践行正确政绩观学习教育工作推进会",
-          "source": "财政部财政新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260623_3992077.htm",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "财政部召开内部学习教育推进会，无具体政策动态，追踪价值低。",
-          "relevance_score": 100
+          "item_id": "macro-item-06646bdbac",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "published_at": "2026-06-14T09:00:40.480Z",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "relevance_score": 97
         },
         {
-          "item_id": "news-item-669425a79e",
-          "title": "五方面十五条举措出台 推动利用外资固稳促优",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/202606/content_7072990.htm",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "商务部等部门印发《利用外资固稳促优行动方案》，提出5方面15条举措，旨在‘十五五’时期塑造吸引外资新优势。",
-          "relevance_score": 100
+          "item_id": "macro-item-1c8f7d7ba8",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "published_at": "2026-06-13T09:00:47.914Z",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "relevance_score": 97
         },
         {
-          "item_id": "international-item-42d8f6a916",
-          "title": "王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073161.htm",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
+          "item_id": "macro-item-8b73efee6b",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "published_at": "2026-06-12T09:01:14.051Z",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "relevance_score": 97
         },
         {
-          "item_id": "business-item-5671f8ea2a",
-          "title": "我国将全链条扩大汽车消费",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073155.htm",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
+          "item_id": "international-item-969b764a62",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "published_at": "2026-06-13T00:00:00.000Z",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "relevance_score": 91
         },
         {
-          "item_id": "news-item-3859361314",
-          "title": "我国利用外资结构持续优化",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073154.htm",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
+          "item_id": "business-item-5d4eb1e693",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "published_at": "2026-06-14T00:00:00.000Z",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "relevance_score": 87
         },
         {
-          "item_id": "international-item-ba2b407ee6",
-          "title": "【视频】王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/23/VIDEJyhUZxHiJhM55yg2VVq5260623.shtml",
-          "published_at": "2026-06-23T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
+          "item_id": "business-item-981374a846",
+          "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "published_at": "2026-06-24T00:00:00.000Z",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "relevance_score": 82
         }
       ],
       "timeline": [
         {
-          "date": "2026-06-23",
-          "title": "我国利用外资结构持续优化",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "date": "2026-06-12",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "description": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "提及SpaceX上市可能带来的财富效应，但缺乏具体细节。",
           "sources": [
             {
-              "title": "我国利用外资结构持续优化",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073154.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
+              "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103227523.html",
+              "published_at": "2026-06-12T09:01:14.051Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073154.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "score": 97,
+          "publishedAt": "2026-06-12T09:01:14.051Z"
         },
         {
-          "date": "2026-06-23",
-          "title": "【视频】王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "date": "2026-06-13",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "description": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "这些事件涉及科技造富、美联储政策、地缘政治、就业预测、技术封锁和半导体行业，对全球经济和市场有重要影响。",
           "sources": [
             {
-              "title": "【视频】王小洪在北京调研禁毒工作时强调 坚持综合施策系统治理 纵深推进新时代禁毒人民战争",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/23/VIDEJyhUZxHiJhM55yg2VVq5260623.shtml",
-              "published_at": "2026-06-23T00:00:00.000Z"
+              "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+              "published_at": "2026-06-13T00:00:00.000Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/23/VIDEJyhUZxHiJhM55yg2VVq5260623.shtml",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "score": 91,
+          "publishedAt": "2026-06-13T00:00:00.000Z"
         },
         {
-          "date": "2026-06-23",
-          "title": "【视频】张国清出席全国进一步深化国资国企改革动员部署视频会议",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "date": "2026-06-13",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "description": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "该事件彰显SpaceX巨大市场价值，并创造个人财富新纪录，可能引发太空经济投资热潮。",
           "sources": [
             {
-              "title": "【视频】张国清出席全国进一步深化国资国企改革动员部署视频会议",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/23/VIDEVOP0ntMyli4Rf3nulIRM260623.shtml",
-              "published_at": "2026-06-23T00:00:00.000Z"
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-13T09:00:47.914Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/23/VIDEVOP0ntMyli4Rf3nulIRM260623.shtml",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-13T09:00:47.914Z"
         },
         {
-          "date": "2026-06-23",
-          "title": "【视频】何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
+          "date": "2026-06-14",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "description": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "SpaceX上市创全球最大IPO纪录，市值跻身全美前六，标志着商业航天领域的里程碑。",
           "sources": [
             {
-              "title": "【视频】何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/23/VIDEud8bsimjOVrwFbsi2Ybt260623.shtml",
-              "published_at": "2026-06-23T00:00:00.000Z"
+              "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+              "published_at": "2026-06-14T00:00:00.000Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/23/VIDEud8bsimjOVrwFbsi2Ybt260623.shtml",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "score": 87,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
         },
         {
-          "date": "2026-06-23",
-          "title": "【视频】刘国中在江苏调研时强调 打造生物医药新兴支柱产业 培育发展脑机接口未来产业",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "date": "2026-06-14",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "description": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "标志科技企业市值和富豪身家达到新里程碑",
           "sources": [
             {
-              "title": "【视频】刘国中在江苏调研时强调 打造生物医药新兴支柱产业 培育发展脑机接口未来产业",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/23/VIDEn954HVotlPxwf0W4cyKU260623.shtml",
-              "published_at": "2026-06-23T00:00:00.000Z"
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-14T09:00:40.480Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/23/VIDEn954HVotlPxwf0W4cyKU260623.shtml",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-14T09:00:40.480Z"
         },
         {
-          "date": "2026-06-23",
-          "title": "何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "date": "2026-06-24",
+          "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
           "sources": [
             {
-              "title": "何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073149.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
+              "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+              "published_at": "2026-06-24T00:00:00.000Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073149.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "决算情况总体较好 财政政策更加积极——聚焦2025年中央决算报告",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "决算情况总体较好 财政政策更加积极——聚焦2025年中央决算报告",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073144.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073144.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "十四届全国人大常委会第二十三次会议在京举行 审议商标法修订草案等 赵乐际主持",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "十四届全国人大常委会第二十三次会议在京举行 审议商标法修订草案等 赵乐际主持",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073128.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073128.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "柬埔寨人民党主席、参议院主席洪森将访华",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "柬埔寨人民党主席、参议院主席洪森将访华",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073121.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073121.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "报告显示全国统一大市场“四梁八柱”基本建立",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "报告显示全国统一大市场“四梁八柱”基本建立",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073119.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073119.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "刘国中在江苏调研时强调 打造生物医药新兴支柱产业 培育发展脑机接口未来产业",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "刘国中在江苏调研时强调 打造生物医药新兴支柱产业 培育发展脑机接口未来产业",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073116.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073116.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "张国清在全国进一步深化国资国企改革动员部署视频会议上强调 突出战略使命 聚焦主责主业 坚定不移深化国资国企改革",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "张国清在全国进一步深化国资国企改革动员部署视频会议上强调 突出战略使命 聚焦主责主业 坚定不移深化国资国企改革",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073100.htm",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073100.htm",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "score": 82,
+          "publishedAt": "2026-06-24T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
       "deep_tracking": {
-        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "tracking_goal": "判断宏观政策与利率是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-          "confidence": "high",
+          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+          "confidence": "medium",
           "basis": [
-            "会议为内部学习教育性质",
-            "未披露实质政策内容",
-            "对市场无直接影响"
+            "SpaceX市值空降美股前十",
+            "马斯克成为全球首位万亿美元富豪",
+            "此轮造富可能源于史上最大规模IPO"
           ],
           "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
+            "缺少官方或市场权威来源。"
           ]
         },
         "core_tensions": [
@@ -2657,7 +3496,7 @@
             "cause": "高分信息和多来源报道集中出现。",
             "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
             "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
+            "confidence": "medium"
           }
         ],
         "second_order_effects": [
@@ -2670,11 +3509,11 @@
             ],
             "affected_areas": [
               "宏观",
-              "公共政策",
-              "财政部召开树立和践行正确",
-              "政绩观学习教育工作推进会"
+              "国际",
+              "商业",
+              "市值空降美股前十"
             ],
-            "confidence": "high"
+            "confidence": "medium"
           }
         ],
         "scenario_tree": [
@@ -2690,11 +3529,11 @@
             ],
             "possible_result": "事件成为需要持续跟踪的高优先级主线。",
             "probability": "中",
-            "impact_level": "A",
+            "impact_level": "B",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
-              "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
+              "跟踪 宏观、国际、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -2713,8 +3552,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
-              "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
+              "跟踪 宏观、国际、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
             ]
           },
           {
@@ -2729,18 +3568,18 @@
             ],
             "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
             "probability": "低",
-            "impact_level": "A",
+            "impact_level": "B",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
-              "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
+              "跟踪 宏观、国际、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "不存在基于此信息的明显风险。",
+            "risk": "高估值风险、造富效应与财富集中争议",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2749,7 +3588,16 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "国际竞争加剧（如其他国家的优惠政策）可能削弱方案吸引力；国内执行层面若存在地方保护或落地不畅，会影响政策效果。",
+            "risk": "不足以判断",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2767,18 +3615,18 @@
             }
           ],
           "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
+            "缺少官方或市场权威来源。"
           ]
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 宏观、公共政策、财政部召开树立和践行正确 的后续变化",
+            "variable": "跟踪 宏观、国际、商业 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
+            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -2792,16 +3640,16 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-23",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "date": "2026-06-24",
+            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
             "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
             "evidence_item_ids": []
           }
         ],
         "open_questions": [
           {
-            "question": "中国权威政策落地是否会形成持续影响？",
+            "question": "宏观政策与利率是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -2911,7 +3759,7 @@
           "目前为早期阶段，需持续关注。",
           "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。"
         ],
-        "latest_change": "NASA任命Sean Gallagher为首席信息官：NASA正式任命Sean Gallagher为首席信息官（CIO），负责该机构全部信息技术产品与服务组合。Gallagher自1月起担任代理职务，即日起转为永久职位。 Gallagher从代理首席信息官转为正式任命，NASA信息技术领...",
+        "latest_change": "NASA任命肖恩·加拉格尔为首席信息官：NASA正式任命肖恩·加拉格尔为首席信息官，负责机构IT产品与服务。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
@@ -2990,8 +3838,8 @@
         ]
       },
       "latest_update": {
-        "title": "NASA任命Sean Gallagher为首席信息官",
-        "summary": "NASA正式任命Sean Gallagher为首席信息官（CIO），负责该机构全部信息技术产品与服务组合。Gallagher自1月起担任代理职务，即日起转为永久职位。 Gallagher从代理首席信息官转为正式任命，NASA信息技术领...",
+        "title": "NASA任命肖恩·加拉格尔为首席信息官",
+        "summary": "NASA正式任命肖恩·加拉格尔为首席信息官，负责机构IT产品与服务。",
         "source": "NASA Breaking News",
         "url": "https://www.nasa.gov/news-release/nasa-names-sean-gallagher-as-chief-information-officer",
         "published_at": "2026-06-23T21:32:03.000Z",
@@ -3025,7 +3873,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -1.0152%；行情时间：2026-06-24T00:00:49.570Z。",
+          "impact": "关联标的：GOOGL -1.0152%；行情时间：2026-06-24T09:00:54.211Z。",
           "evidence": [
             "SEC和CFTC联合就衍生品产品定义协调征求意见，暂无规则变更。",
             "美国证券交易委员会任命John Moses为投资者教育和援助办公室主任，该办公室旨在帮助投资者构建财务未来并防范投资风险。",
@@ -3493,16 +4341,16 @@
         },
         {
           "date": "2026-06-23",
-          "title": "联合国安理会新决议支持追究袭击维和人员责任",
-          "summary": "联合国安理会一致通过决议，呼吁追究针对维和人员犯罪的责任。 联合国安理会通过新决议，明确要求对袭击维和人员行为进行问责，可能加大国际社会对此类犯罪的关注和行动。 对国际维和行动有积极影响，但实际效果取决于后续执行力度。 需要注意：各国执行不力可能导致决议流于形式；可能引发部...",
-          "description": "联合国安理会一致通过决议，呼吁追究针对维和人员犯罪的责任。 联合国安理会通过新决议，明确要求对袭击维和人员行为进行问责，可能加大国际社会对此类犯罪的关注和行动。 对国际维和行动有积极影响，但实际效果取决于后续执行力度。 需要注意：各国执行不力可能导致决议流于形式；可能引发部...",
+          "title": "新安理会决议支持追究袭击维和人员责任",
+          "summary": "联合国安理会通过决议呼吁追究袭击维和人员责任。",
+          "description": "联合国安理会通过决议呼吁追究袭击维和人员责任。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "联合国安理会通过新决议，明确要求对袭击维和人员行为进行问责，可能加大国际社会对此类犯罪的关注和行动。",
+          "impact": "安理会通过新决议，强化了对维和人员安全的保护机制，并要求各国承担追究责任的法律义务。此前虽有类似呼吁，但此次以正式决议形式明确立场。",
           "sources": [
             {
-              "title": "联合国安理会新决议支持追究袭击维和人员责任",
+              "title": "新安理会决议支持追究袭击维和人员责任",
               "source": "UN News",
               "url": "https://news.un.org/feed/view/en/story/2026/06/1167789",
               "published_at": "2026-06-23T12:00:00.000Z"
@@ -3516,12 +4364,12 @@
         {
           "date": "2026-06-23",
           "title": "气候危机：联合国秘书长提出清洁能源转型解决方案蓝图",
-          "summary": "联合国秘书长古特雷斯在致命热浪席卷欧洲之际发表呼吁，要求全球采取更雄心勃勃的气候行动，以防化石燃料引发不可逆转的气候危机。 目前未见具体政策或行动方案改变，仅联合国秘书长再次发出加强气候行动的呼吁。 目前该事件仅为呼吁，尚未产生可测量的影响。 需要注意：如果全球不采取更积极...",
-          "description": "联合国秘书长古特雷斯在致命热浪席卷欧洲之际发表呼吁，要求全球采取更雄心勃勃的气候行动，以防化石燃料引发不可逆转的气候危机。 目前未见具体政策或行动方案改变，仅联合国秘书长再次发出加强气候行动的呼吁。 目前该事件仅为呼吁，尚未产生可测量的影响。 需要注意：如果全球不采取更积极...",
+          "summary": "联合国秘书长古特雷斯在热浪中呼吁应对气候变化，但具体方案未明。",
+          "description": "联合国秘书长古特雷斯在热浪中呼吁应对气候变化，但具体方案未明。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "目前未见具体政策或行动方案改变，仅联合国秘书长再次发出加强气候行动的呼吁。",
+          "impact": "目前没有具体政策或行动的变化，仅停留在呼吁层面。",
           "sources": [
             {
               "title": "气候危机：联合国秘书长提出清洁能源转型解决方案蓝图",
@@ -3537,16 +4385,16 @@
         },
         {
           "date": "2026-06-23",
-          "title": "NASA任命Sean Gallagher为首席信息官",
-          "summary": "NASA正式任命Sean Gallagher为首席信息官（CIO），负责该机构全部信息技术产品与服务组合。Gallagher自1月起担任代理职务，即日起转为永久职位。 Gallagher从代理首席信息官转为正式任命，NASA信息技术领导层得以稳定。 该任命主要影响NASA内...",
-          "description": "NASA正式任命Sean Gallagher为首席信息官（CIO），负责该机构全部信息技术产品与服务组合。Gallagher自1月起担任代理职务，即日起转为永久职位。 Gallagher从代理首席信息官转为正式任命，NASA信息技术领导层得以稳定。 该任命主要影响NASA内...",
+          "title": "NASA任命肖恩·加拉格尔为首席信息官",
+          "summary": "NASA正式任命肖恩·加拉格尔为首席信息官，负责机构IT产品与服务。",
+          "description": "NASA正式任命肖恩·加拉格尔为首席信息官，负责机构IT产品与服务。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "Gallagher从代理首席信息官转为正式任命，NASA信息技术领导层得以稳定。",
+          "impact": "NASA首席信息官从代理状态转为正式任命，人事安排得以确定，没有政策或组织架构上的其他变化。",
           "sources": [
             {
-              "title": "NASA任命Sean Gallagher为首席信息官",
+              "title": "NASA任命肖恩·加拉格尔为首席信息官",
               "source": "NASA Breaking News",
               "url": "https://www.nasa.gov/news-release/nasa-names-sean-gallagher-as-chief-information-officer",
               "published_at": "2026-06-23T21:32:03.000Z"
@@ -3807,10 +4655,10 @@
       "last_seen_at": "2026-06-23T15:00:00.000Z",
       "updated_at": "2026-06-23T15:00:00.000Z",
       "definition": {
-        "one_sentence": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。 相关来源：NASA Breaking News、Google AI Blog",
-        "background": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。 相关来源：NASA Breaking News、Google AI Blog",
+        "one_sentence": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。 相关来源：NASA Breaking News、Google AI Blog",
+        "background": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。 相关来源：NASA Breaking News、Google AI Blog",
         "core_question": "AI 政策与基础设施后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "页面进行了例行更新，但未说明具体内容变化。",
+        "why_it_matters": "页面进行了更新，但具体更新内容未说明，可能包括新增或修改的合作项目信息。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -3852,12 +4700,12 @@
       "current_judgment": {
         "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
         "basis": [
-          "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
-          "NASA航空研究任务局研究机会征集（更新于6月23日）",
-          "谷歌AMIE系统在《自然》发表研究",
-          "在复杂疾病管理中与初级保健医生表现相当"
+          "NASA ARMD研究机会页面于2026年6月23日更新。",
+          "页面汇总与NASA航空创新者合作的机会。",
+          "大多数机会通过NSPIRES系统发布。",
+          "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。"
         ],
-        "latest_change": "NASA航空研究任务局研究机会征集（更新于6月23日）：NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+        "latest_change": "ARMD研究机会（更新于6月23日）：NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
@@ -3878,11 +4726,11 @@
         "source_links": [
           {
             "item_id": "news-nasa-breaking-news-46d862cc96",
-            "title": "NASA航空研究任务局研究机会征集（更新于6月23日）",
+            "title": "ARMD研究机会（更新于6月23日）",
             "source": "NASA Breaking News",
             "url": "https://www.nasa.gov/aeronautics/armd-solicitations",
             "published_at": "2026-06-23T15:00:00.000Z",
-            "summary": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+            "summary": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
             "relevance_score": 90
           },
           {
@@ -3900,8 +4748,8 @@
         ]
       },
       "latest_update": {
-        "title": "NASA航空研究任务局研究机会征集（更新于6月23日）",
-        "summary": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+        "title": "ARMD研究机会（更新于6月23日）",
+        "summary": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
         "source": "NASA Breaking News",
         "url": "https://www.nasa.gov/aeronautics/armd-solicitations",
         "published_at": "2026-06-23T15:00:00.000Z",
@@ -3909,25 +4757,25 @@
       },
       "confirmed_facts": [
         {
-          "fact": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+          "fact": "NASA ARMD研究机会页面于2026年6月23日更新。",
           "evidence_url": "https://www.nasa.gov/aeronautics/armd-solicitations",
           "source": "NASA Breaking News",
           "confidence": "中"
         },
         {
-          "fact": "NASA航空研究任务局研究机会征集（更新于6月23日）",
+          "fact": "页面汇总与NASA航空创新者合作的机会。",
           "evidence_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
           "source": "Google AI Blog",
           "confidence": "中"
         },
         {
-          "fact": "谷歌AMIE系统在《自然》发表研究",
+          "fact": "大多数机会通过NSPIRES系统发布。",
           "evidence_url": "https://www.nasa.gov/aeronautics/armd-solicitations",
           "source": "NASA Breaking News",
           "confidence": "中"
         },
         {
-          "fact": "在复杂疾病管理中与初级保健医生表现相当",
+          "fact": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
           "evidence_url": "https://www.nasa.gov/aeronautics/armd-solicitations",
           "source": "NASA Breaking News",
           "confidence": "中"
@@ -3935,9 +4783,9 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -1.0152%；行情时间：2026-06-24T00:00:49.570Z。",
+          "impact": "关联标的：GOOGL -1.0152%；行情时间：2026-06-24T09:00:54.211Z。",
           "evidence": [
-            "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+            "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -3946,7 +4794,7 @@
         "industry": {
           "impact": "可能影响 AI 政策与基础设施 相关判断，需继续核对后续证据。",
           "evidence": [
-            "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+            "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -3955,7 +4803,7 @@
         "company": {
           "impact": "关联实体：GOOGL、Google、谷歌、AI、model、NASA。",
           "evidence": [
-            "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+            "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -3964,7 +4812,7 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+            "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -3973,7 +4821,7 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+            "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -4054,6 +4902,15 @@
       "risks": [
         {
           "risk_type": "信息风险",
+          "risk": "由于信息不足，无法评估风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "实际应用效果和监管审批存在不确定性",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -4070,6 +4927,11 @@
         }
       ],
       "uncertainties": [
+        {
+          "uncertainty": "由于信息不足，无法评估风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
         {
           "uncertainty": "实际应用效果和监管审批存在不确定性",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
@@ -4116,11 +4978,11 @@
       "related_items": [
         {
           "item_id": "news-nasa-breaking-news-46d862cc96",
-          "title": "NASA航空研究任务局研究机会征集（更新于6月23日）",
+          "title": "ARMD研究机会（更新于6月23日）",
           "source": "NASA Breaking News",
           "url": "https://www.nasa.gov/aeronautics/armd-solicitations",
           "published_at": "2026-06-23T15:00:00.000Z",
-          "summary": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+          "summary": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
           "relevance_score": 90
         },
         {
@@ -4158,16 +5020,16 @@
         },
         {
           "date": "2026-06-23",
-          "title": "NASA航空研究任务局研究机会征集（更新于6月23日）",
-          "summary": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
-          "description": "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
+          "title": "ARMD研究机会（更新于6月23日）",
+          "summary": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
+          "description": "NASA更新了ARMD研究机会页面，汇总合作研究项目，但具体更新内容未详细说明。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "页面进行了例行更新，但未说明具体内容变化。",
+          "impact": "页面进行了更新，但具体更新内容未说明，可能包括新增或修改的合作项目信息。",
           "sources": [
             {
-              "title": "NASA航空研究任务局研究机会征集（更新于6月23日）",
+              "title": "ARMD研究机会（更新于6月23日）",
               "source": "NASA Breaking News",
               "url": "https://www.nasa.gov/aeronautics/armd-solicitations",
               "published_at": "2026-06-23T15:00:00.000Z"
@@ -4187,9 +5049,9 @@
           "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
           "confidence": "medium",
           "basis": [
-            "NASA更新了ARMD研究机会征集页面，列出与航空创新者合作的机会，通过NSPIRES系统征集提案。 页面进行了例行更新，但未说明具体内容变化。 目前证据不足。 需要注意：目前证据不足。",
-            "NASA航空研究任务局研究机会征集（更新于6月23日）",
-            "谷歌AMIE系统在《自然》发表研究"
+            "NASA ARMD研究机会页面于2026年6月23日更新。",
+            "页面汇总与NASA航空创新者合作的机会。",
+            "大多数机会通过NSPIRES系统发布。"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -4296,6 +5158,15 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
+            "risk": "由于信息不足，无法评估风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "实际应用效果和监管审批存在不确定性",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -4349,790 +5220,6 @@
         "open_questions": [
           {
             "question": "AI 政策与基础设施是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
-      "event_id": "macro-policy-ipo-spacex-史上最大",
-      "title": "宏观政策与利率",
-      "lane_id": "us_equities",
-      "lane_label": "美股变化",
-      "status": "watching",
-      "priority_grade": "B",
-      "importance_score": 97,
-      "first_seen_at": "2026-06-12T09:01:14.051Z",
-      "last_seen_at": "2026-06-14T09:00:40.480Z",
-      "updated_at": "2026-06-14T09:00:40.480Z",
-      "definition": {
-        "one_sentence": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
-        "background": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
-        "core_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "标志科技企业市值和富豪身家达到新里程碑",
-        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "观察验证",
-        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
-        "rationale": [
-          "属于美股变化主线",
-          "重要性评分为 97",
-          "证据置信度为中"
-        ],
-        "market_symbols": [
-          "TSLA",
-          "QQQ"
-        ],
-        "policy_status": "",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "宏观",
-          "国际",
-          "商业",
-          "市值空降美股前十"
-        ],
-        "entities": {
-          "companies": [
-            "TSLA",
-            "QQQ"
-          ],
-          "people": [
-            "马斯克"
-          ],
-          "institutions": [],
-          "countries_or_regions": [],
-          "products_or_technologies": []
-        },
-        "related_item_count": 5
-      },
-      "current_judgment": {
-        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
-        "basis": [
-          "SpaceX市值空降美股前十",
-          "马斯克成为全球首位万亿美元富豪",
-          "此轮造富可能源于史上最大规模IPO",
-          "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
-        ],
-        "latest_change": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪：SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-        "judgment_update": "初始判断",
-        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
-      },
-      "evidence": {
-        "source_count": 2,
-        "official_source_count": 0,
-        "financial_media_count": 0,
-        "timeline_count": 5,
-        "confidence_basis": "medium",
-        "evidence_types": {
-          "data_release": 3,
-          "unknown": 1,
-          "industry_analysis": 1
-        },
-        "primary_source": {
-          "name": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html"
-        },
-        "source_links": [
-          {
-            "item_id": "macro-item-06646bdbac",
-            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103228502.html",
-            "published_at": "2026-06-14T09:00:40.480Z",
-            "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "relevance_score": 97
-          },
-          {
-            "item_id": "macro-item-1c8f7d7ba8",
-            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103228502.html",
-            "published_at": "2026-06-13T09:00:47.914Z",
-            "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "relevance_score": 97
-          },
-          {
-            "item_id": "macro-item-8b73efee6b",
-            "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103227523.html",
-            "published_at": "2026-06-12T09:01:14.051Z",
-            "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-            "relevance_score": 97
-          },
-          {
-            "item_id": "international-item-969b764a62",
-            "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-            "published_at": "2026-06-13T00:00:00.000Z",
-            "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-            "relevance_score": 91
-          },
-          {
-            "item_id": "business-item-5d4eb1e693",
-            "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-            "published_at": "2026-06-14T00:00:00.000Z",
-            "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-            "relevance_score": 87
-          }
-        ],
-        "evidence_gaps": [
-          "缺少官方或市场权威来源。"
-        ]
-      },
-      "latest_update": {
-        "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-        "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-        "source": "第一财经",
-        "url": "https://www.yicai.com/news/103228502.html",
-        "published_at": "2026-06-14T09:00:40.480Z",
-        "score": 97
-      },
-      "confirmed_facts": [
-        {
-          "fact": "SpaceX市值空降美股前十",
-          "evidence_url": "https://www.yicai.com/news/103228502.html",
-          "source": "第一财经",
-          "confidence": "中"
-        },
-        {
-          "fact": "马斯克成为全球首位万亿美元富豪",
-          "evidence_url": "https://www.yicai.com/news/103228502.html",
-          "source": "第一财经",
-          "confidence": "中"
-        },
-        {
-          "fact": "此轮造富可能源于史上最大规模IPO",
-          "evidence_url": "https://www.yicai.com/news/103227523.html",
-          "source": "第一财经",
-          "confidence": "中"
-        },
-        {
-          "fact": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-          "source": "每日经济新闻",
-          "confidence": "中"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关联标的：TSLA -5.7869%、QQQ -3.2929%；行情时间：2026-06-24T00:00:49.570Z。",
-          "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "industry": {
-          "impact": "可能影响 宏观、国际、商业、市值空降美股前十 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "company": {
-          "impact": "关联实体：TSLA、QQQ、马斯克、SpaceX、纳斯达克。",
-          "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [
-        {
-          "type": "市场反馈",
-          "description": "TSLA -5.7869%",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "date": "2026-06-14",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "QQQ -3.2929%",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "date": "2026-06-14",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        }
-      ],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、国际、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、国际、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 宏观、国际、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "高估值风险、造富效应与财富集中争议",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "不足以判断",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "高估值风险、造富效应与财富集中争议",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "不足以判断",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "缺少官方或市场权威来源。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 宏观、国际、商业 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "宏观政策与利率是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "macro-item-06646bdbac",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "published_at": "2026-06-14T09:00:40.480Z",
-          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "relevance_score": 97
-        },
-        {
-          "item_id": "macro-item-1c8f7d7ba8",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "published_at": "2026-06-13T09:00:47.914Z",
-          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-          "relevance_score": 97
-        },
-        {
-          "item_id": "macro-item-8b73efee6b",
-          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103227523.html",
-          "published_at": "2026-06-12T09:01:14.051Z",
-          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-          "relevance_score": 97
-        },
-        {
-          "item_id": "international-item-969b764a62",
-          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-          "published_at": "2026-06-13T00:00:00.000Z",
-          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-          "relevance_score": 91
-        },
-        {
-          "item_id": "business-item-5d4eb1e693",
-          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-          "published_at": "2026-06-14T00:00:00.000Z",
-          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-          "relevance_score": 87
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-12",
-          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-          "description": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "提及SpaceX上市可能带来的财富效应，但缺乏具体细节。",
-          "sources": [
-            {
-              "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103227523.html",
-              "published_at": "2026-06-12T09:01:14.051Z"
-            }
-          ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103227523.html",
-          "score": 97,
-          "publishedAt": "2026-06-12T09:01:14.051Z"
-        },
-        {
-          "date": "2026-06-13",
-          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-          "description": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "这些事件涉及科技造富、美联储政策、地缘政治、就业预测、技术封锁和半导体行业，对全球经济和市场有重要影响。",
-          "sources": [
-            {
-              "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-              "published_at": "2026-06-13T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-          "score": 91,
-          "publishedAt": "2026-06-13T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-13",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-          "description": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该事件彰显SpaceX巨大市场价值，并创造个人财富新纪录，可能引发太空经济投资热潮。",
-          "sources": [
-            {
-              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103228502.html",
-              "published_at": "2026-06-13T09:00:47.914Z"
-            }
-          ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "score": 97,
-          "publishedAt": "2026-06-13T09:00:47.914Z"
-        },
-        {
-          "date": "2026-06-14",
-          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-          "description": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": true,
-          "impact": "SpaceX上市创全球最大IPO纪录，市值跻身全美前六，标志着商业航天领域的里程碑。",
-          "sources": [
-            {
-              "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-              "published_at": "2026-06-14T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-          "score": 87,
-          "publishedAt": "2026-06-14T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-14",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "description": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "标志科技企业市值和富豪身家达到新里程碑",
-          "sources": [
-            {
-              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103228502.html",
-              "published_at": "2026-06-14T09:00:40.480Z"
-            }
-          ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "score": 97,
-          "publishedAt": "2026-06-14T09:00:40.480Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断宏观政策与利率是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
-          "confidence": "medium",
-          "basis": [
-            "SpaceX市值空降美股前十",
-            "马斯克成为全球首位万亿美元富豪",
-            "此轮造富可能源于史上最大规模IPO"
-          ],
-          "what_would_change_this_view": [
-            "缺少官方或市场权威来源。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "medium"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "宏观",
-              "国际",
-              "商业",
-              "市值空降美股前十"
-            ],
-            "confidence": "medium"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "B",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、国际、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、国际、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "B",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 宏观、国际、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "高估值风险、造富效应与财富集中争议",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "不足以判断",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "缺少官方或市场权威来源。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 宏观、国际、商业 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-06-14",
-            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
-            "change_type": "初始判断",
-            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "宏观政策与利率是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
