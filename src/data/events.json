@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-06-25T00:01:28.331Z",
+  "generated_at": "2026-06-25T09:01:20.055Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 6,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-06-25T00:01:02.725Z"
+      "generated_at": "2026-06-25T09:00:45.900Z"
     },
     "llm": {
       "enabled": true,
@@ -46,13 +46,13 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-05-31T00:00:00.000Z",
-      "last_seen_at": "2026-06-25T00:00:00.000Z",
-      "updated_at": "2026-06-25T00:00:00.000Z",
+      "last_seen_at": "2026-06-25T09:00:32.469Z",
+      "updated_at": "2026-06-25T09:00:32.469Z",
       "definition": {
-        "one_sentence": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、OpenAI News",
-        "background": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、OpenAI News",
+        "one_sentence": "OpenAI参与Appia基金会推动AI共享标准建设。 相关来源：OpenAI News",
+        "background": "OpenAI参与Appia基金会推动AI共享标准建设。 相关来源：OpenAI News",
         "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中美 AI 发展 会影响政策、市场、产业或国际变化判断；覆盖 2 个公开来源，仍处在高时效窗口内。",
+        "why_it_matters": "OpenAI从单纯技术研发转向积极参与行业标准制定，通过基金会形式推动全球协作。",
         "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -69,10 +69,10 @@
       },
       "profile": {
         "impact_areas": [
+          "国际",
+          "AI政策",
           "商业",
-          "财报",
-          "AI芯片",
-          "美国芯片巨头发布"
+          "市场监管"
         ],
         "entities": {
           "companies": [
@@ -89,8 +89,7 @@
             "OpenAI",
             "GitHub",
             "model",
-            "人工智能",
-            "芯片"
+            "人工智能"
           ]
         },
         "related_item_count": 20
@@ -98,12 +97,12 @@
       "current_judgment": {
         "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
         "basis": [
-          "每日经济新闻中文财经、公司和市场新闻",
-          "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
           "OpenAI通过Appia基金会支持AI评估框架、安全实践和全球合作。",
-          "此举标志OpenAI从技术研发转向标准制定参与。"
+          "此举标志OpenAI从技术研发转向标准制定参与。",
+          "目前缺乏具体执行细节，影响力有待观察。",
+          "OpenAI参与Appia基金会推动AI共享标准建设。"
         ],
-        "latest_change": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44：每日经济新闻中文财经、公司和市场新闻",
+        "latest_change": "黄仁勋股东大会放言：本轮AI基建周期长达数十年：第一财经中文财经、宏观、产业和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -114,24 +113,14 @@
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "reliable_media_report": 1,
           "unknown": 2,
-          "industry_analysis": 3
+          "industry_analysis": 4
         },
         "primary_source": {
-          "name": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html"
+          "name": "第一财经",
+          "url": "https://www.yicai.com/news/103244887.html"
         },
         "source_links": [
-          {
-            "item_id": "business-item-a7f038942f",
-            "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
-            "published_at": "2026-06-25T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
-            "relevance_score": 100
-          },
           {
             "item_id": "international-openai-news-e3064d34d6",
             "title": "助力构建先进AI共享标准",
@@ -176,6 +165,15 @@
             "published_at": "2026-06-21T23:00:00.000Z",
             "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
             "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-d1c4ccdd2d",
+            "title": "新的用量分析和更新的支出控制面向企业",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+            "published_at": "2026-06-18T17:00:00.000Z",
+            "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
+            "relevance_score": 100
           }
         ],
         "evidence_gaps": [
@@ -183,35 +181,35 @@
         ]
       },
       "latest_update": {
-        "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
-        "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
-        "published_at": "2026-06-25T00:00:00.000Z",
-        "score": 100
+        "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "source": "第一财经",
+        "url": "https://www.yicai.com/news/103244887.html",
+        "published_at": "2026-06-25T09:00:32.469Z",
+        "score": 99
       },
       "confirmed_facts": [
         {
-          "fact": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
-          "source": "每日经济新闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
+          "fact": "OpenAI通过Appia基金会支持AI评估框架、安全实践和全球合作。",
           "evidence_url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "OpenAI通过Appia基金会支持AI评估框架、安全实践和全球合作。",
+          "fact": "此举标志OpenAI从技术研发转向标准制定参与。",
           "evidence_url": "https://openai.com/index/omio",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "此举标志OpenAI从技术研发转向标准制定参与。",
+          "fact": "目前缺乏具体执行细节，影响力有待观察。",
           "evidence_url": "https://openai.com/index/daybreak-securing-the-world",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "OpenAI参与Appia基金会推动AI共享标准建设。",
+          "evidence_url": "https://openai.com/index/patch-the-planet",
           "source": "OpenAI News",
           "confidence": "高"
         }
@@ -220,29 +218,29 @@
         "market": {
           "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
             "OpenAI参与Appia基金会推动AI共享标准建设。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。"
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 商业、财报、AI芯片、美国芯片巨头发布 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 国际、AI政策、商业、市场监管 相关判断，需继续核对后续证据。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
             "OpenAI参与Appia基金会推动AI共享标准建设。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。"
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、OpenAI、人工智能、芯片。",
+          "impact": "关联实体：AI、OpenAI、人工智能。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
             "OpenAI参与Appia基金会推动AI共享标准建设。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。"
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -250,9 +248,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
             "OpenAI参与Appia基金会推动AI共享标准建设。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。"
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -260,9 +258,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
             "OpenAI参与Appia基金会推动AI共享标准建设。",
-            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。"
+            "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+            "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -285,8 +283,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 商业、财报、AI芯片 的后续变化",
-            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
+            "跟踪 国际、AI政策、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -305,8 +303,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 商业、财报、AI芯片 的后续变化",
-            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
+            "跟踪 国际、AI政策、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
           ]
         },
         {
@@ -324,8 +322,8 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 商业、财报、AI芯片 的后续变化",
-            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
+            "跟踪 国际、AI政策、商业 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
           ]
         }
       ],
@@ -389,13 +387,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 商业、财报、AI芯片 的后续变化",
+          "variable": "跟踪 国际、AI政策、商业 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
+          "variable": "留意 OpenAI News 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -420,15 +418,6 @@
         }
       ],
       "related_items": [
-        {
-          "item_id": "business-item-a7f038942f",
-          "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
-          "published_at": "2026-06-25T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "relevance_score": 100
-        },
         {
           "item_id": "international-openai-news-e3064d34d6",
           "title": "助力构建先进AI共享标准",
@@ -472,6 +461,15 @@
           "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
           "published_at": "2026-06-21T23:00:00.000Z",
           "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-d1c4ccdd2d",
+          "title": "新的用量分析和更新的支出控制面向企业",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+          "published_at": "2026-06-18T17:00:00.000Z",
+          "summary": "OpenAI 为 ChatGPT Enterprise 增加支出控制和用量分析功能，帮助企业控制成本。",
           "relevance_score": 100
         }
       ],
@@ -720,25 +718,25 @@
         },
         {
           "date": "2026-06-25",
-          "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "description": "第一财经中文财经、宏观、产业和市场新闻",
           "evidence_type": "reliable_media_report",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "impact": "第一财经中文财经、宏观、产业和市场新闻",
           "sources": [
             {
-              "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
-              "published_at": "2026-06-25T00:00:00.000Z"
+              "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103244887.html",
+              "published_at": "2026-06-25T09:00:32.469Z"
             }
           ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
-          "score": 100,
-          "publishedAt": "2026-06-25T00:00:00.000Z"
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103244887.html",
+          "score": 99,
+          "publishedAt": "2026-06-25T09:00:32.469Z"
         }
       ],
       "analysis_notes": [],
@@ -749,9 +747,9 @@
           "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
           "confidence": "high",
           "basis": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点 2026-06-25 07:44",
-            "OpenAI通过Appia基金会支持AI评估框架、安全实践和全球合作。"
+            "OpenAI通过Appia基金会支持AI评估框架、安全实践和全球合作。",
+            "此举标志OpenAI从技术研发转向标准制定参与。",
+            "目前缺乏具体执行细节，影响力有待观察。"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -790,10 +788,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
+              "国际",
+              "AI政策",
               "商业",
-              "财报",
-              "AI芯片",
-              "美国芯片巨头发布"
+              "市场监管"
             ],
             "confidence": "high"
           }
@@ -814,8 +812,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 商业、财报、AI芯片 的后续变化",
-              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
+              "跟踪 国际、AI政策、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -834,8 +832,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 商业、财报、AI芯片 的后续变化",
-              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
+              "跟踪 国际、AI政策、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
             ]
           },
           {
@@ -853,8 +851,8 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 商业、财报、AI芯片 的后续变化",
-              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
+              "跟踪 国际、AI政策、商业 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
             ]
           }
         ],
@@ -902,13 +900,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 商业、财报、AI芯片 的后续变化",
+            "variable": "跟踪 国际、AI政策、商业 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
+            "variable": "留意 OpenAI News 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -987,33 +985,33 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-06-23T00:00:00.000Z",
-      "last_seen_at": "2026-06-24T00:00:00.000Z",
-      "updated_at": "2026-06-24T00:00:00.000Z",
+      "last_seen_at": "2026-06-25T00:00:00.000Z",
+      "updated_at": "2026-06-25T00:00:00.000Z",
       "definition": {
-        "one_sentence": "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。 相关来源：中国政府网要闻、财政部财政新闻",
-        "background": "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。 相关来源：中国政府网要闻、财政部财政新闻",
+        "one_sentence": "财政部财政政策、国债、预算和财政运行新闻 相关来源：财政部财政新闻、中国政府网要闻",
+        "background": "财政部财政政策、国债、预算和财政运行新闻 相关来源：财政部财政新闻、中国政府网要闻",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前证据不足，无法确认具体政策或表态变化。",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 2 条官方或市场权威来源，仍处在高时效窗口内。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "rationale": [
           "属于中国权威政策落地主线",
           "重要性评分为 100",
           "证据置信度为高"
         ],
         "market_symbols": [],
-        "policy_status": "监管处罚",
+        "policy_status": "落地执行",
         "requires_follow_up": true
       },
       "profile": {
         "impact_areas": [
+          "宏观",
           "公共政策",
-          "李强在第十七届夏季达沃斯",
-          "论坛开幕式上的致辞",
-          "全文"
+          "廖岷出席第十三届巴黎论坛",
+          "年会"
         ],
         "entities": {
           "companies": [],
@@ -1034,14 +1032,14 @@
         "related_item_count": 20
       },
       "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "李强总理在大连夏季达沃斯论坛开幕式致辞",
-          "致辞内容未在本篇中完整展示",
-          "论坛于2026年6月24日开幕",
-          "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。"
+          "财政部财政政策、国债、预算和财政运行新闻",
+          "廖岷出席第十三届巴黎论坛年会",
+          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来"
         ],
-        "latest_change": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）：李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
+        "latest_change": "廖岷出席第十三届巴黎论坛年会：财政部财政政策、国债、预算和财政运行新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1052,14 +1050,33 @@
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "unknown": 2,
-          "official_announcement": 4
+          "official_announcement": 2,
+          "unknown": 3,
+          "data_release": 1
         },
         "primary_source": {
-          "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm"
+          "name": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm"
         },
         "source_links": [
+          {
+            "item_id": "macro-item-da90ff9bb2",
+            "title": "廖岷出席第十三届巴黎论坛年会",
+            "source": "财政部财政新闻",
+            "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
+            "published_at": "2026-06-25T00:00:00.000Z",
+            "summary": "财政部财政政策、国债、预算和财政运行新闻",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-188c76e99f",
+            "title": "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073237.htm",
+            "published_at": "2026-06-25T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
           {
             "item_id": "news-item-d174246fe3",
             "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
@@ -1080,38 +1097,20 @@
           },
           {
             "item_id": "macro-item-cc04802bec",
-            "title": "2026年5月份全国彩票销售情况",
+            "title": "2026年5月全国彩票销售情况",
             "source": "财政部财政新闻",
             "url": "http://zhs.mof.gov.cn/zonghexinxi/202606/t20260624_3992152.htm",
             "published_at": "2026-06-24T00:00:00.000Z",
-            "summary": "财政部财政政策、国债、预算和财政运行新闻",
+            "summary": "财政部发布5月彩票销售报告，但内容未提供具体数据。",
             "relevance_score": 100
           },
           {
             "item_id": "news-item-cc3727f439",
-            "title": "国务院新闻办举行新闻发布会 介绍民族团结进步促进法",
+            "title": "国务院新闻办举行新闻发布会介绍民族团结进步促进法",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073226.htm",
             "published_at": "2026-06-24T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-2e8011c770",
-            "title": "十四届全国人大常委会第二十三次会议举行联组会议",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073211.htm",
-            "published_at": "2026-06-24T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-a8e3a08046",
-            "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073204.htm",
-            "published_at": "2026-06-24T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "国务院新闻办举行新闻发布会介绍民族团结进步促进法。",
             "relevance_score": 100
           }
         ],
@@ -1120,35 +1119,35 @@
         ]
       },
       "latest_update": {
-        "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
-        "summary": "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-        "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
-        "published_at": "2026-06-24T00:00:00.000Z",
+        "title": "廖岷出席第十三届巴黎论坛年会",
+        "summary": "财政部财政政策、国债、预算和财政运行新闻",
+        "source": "财政部财政新闻",
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
+        "published_at": "2026-06-25T00:00:00.000Z",
         "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "李强总理在大连夏季达沃斯论坛开幕式致辞",
+          "fact": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
+          "source": "财政部财政新闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "廖岷出席第十三届巴黎论坛年会",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073237.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "致辞内容未在本篇中完整展示",
+          "fact": "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "论坛于2026年6月24日开幕",
-          "evidence_url": "http://zhs.mof.gov.cn/zonghexinxi/202606/t20260624_3992152.htm",
-          "source": "财政部财政新闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073226.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -1157,19 +1156,19 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-            "李强总理出席2026年夏季达沃斯论坛开幕式并致辞，多国政要参加。",
-            "财政部财政政策、国债、预算和财政运行新闻"
+            "财政部财政政策、国债、预算和财政运行新闻",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞、全文 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 宏观、公共政策、廖岷出席第十三届巴黎论坛、年会 相关判断，需继续核对后续证据。",
           "evidence": [
-            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-            "李强总理出席2026年夏季达沃斯论坛开幕式并致辞，多国政要参加。",
-            "财政部财政政策、国债、预算和财政运行新闻"
+            "财政部财政政策、国债、预算和财政运行新闻",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1177,9 +1176,9 @@
         "company": {
           "impact": "关联实体：AI、国务院、中国政府网、财政部。",
           "evidence": [
-            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-            "李强总理出席2026年夏季达沃斯论坛开幕式并致辞，多国政要参加。",
-            "财政部财政政策、国债、预算和财政运行新闻"
+            "财政部财政政策、国债、预算和财政运行新闻",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1187,9 +1186,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-            "李强总理出席2026年夏季达沃斯论坛开幕式并致辞，多国政要参加。",
-            "财政部财政政策、国债、预算和财政运行新闻"
+            "财政部财政政策、国债、预算和财政运行新闻",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -1197,9 +1196,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。",
-            "李强总理出席2026年夏季达沃斯论坛开幕式并致辞，多国政要参加。",
-            "财政部财政政策、国债、预算和财政运行新闻"
+            "财政部财政政策、国债、预算和财政运行新闻",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "李强总理在夏季达沃斯论坛致辞，但内容未详述，需关注后续全文。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -1222,8 +1221,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
-            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+            "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
+            "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -1242,8 +1241,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
-            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+            "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
+            "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
           ]
         },
         {
@@ -1261,8 +1260,8 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
-            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+            "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
+            "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
           ]
         }
       ],
@@ -1279,6 +1278,15 @@
         {
           "risk_type": "信息风险",
           "risk": "目前证据不足，但需关注论坛期间是否出现贸易摩擦或地缘政治分歧。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "目前无法识别风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1305,6 +1313,11 @@
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
+          "uncertainty": "目前无法识别风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
           "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
@@ -1312,13 +1325,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+          "variable": "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+          "variable": "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -1344,6 +1357,24 @@
       ],
       "related_items": [
         {
+          "item_id": "macro-item-da90ff9bb2",
+          "title": "廖岷出席第十三届巴黎论坛年会",
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
+          "published_at": "2026-06-25T00:00:00.000Z",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-188c76e99f",
+          "title": "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073237.htm",
+          "published_at": "2026-06-25T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
           "item_id": "news-item-d174246fe3",
           "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
           "source": "中国政府网要闻",
@@ -1363,83 +1394,65 @@
         },
         {
           "item_id": "macro-item-cc04802bec",
-          "title": "2026年5月份全国彩票销售情况",
+          "title": "2026年5月全国彩票销售情况",
           "source": "财政部财政新闻",
           "url": "http://zhs.mof.gov.cn/zonghexinxi/202606/t20260624_3992152.htm",
           "published_at": "2026-06-24T00:00:00.000Z",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "summary": "财政部发布5月彩票销售报告，但内容未提供具体数据。",
           "relevance_score": 100
         },
         {
           "item_id": "news-item-cc3727f439",
-          "title": "国务院新闻办举行新闻发布会 介绍民族团结进步促进法",
+          "title": "国务院新闻办举行新闻发布会介绍民族团结进步促进法",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073226.htm",
           "published_at": "2026-06-24T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-2e8011c770",
-          "title": "十四届全国人大常委会第二十三次会议举行联组会议",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073211.htm",
-          "published_at": "2026-06-24T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-a8e3a08046",
-          "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073204.htm",
-          "published_at": "2026-06-24T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "国务院新闻办举行新闻发布会介绍民族团结进步促进法。",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
           "date": "2026-06-23",
-          "title": "十四届全国人大常委会第二十三次会议在京举行 审议商标法修订草案等 赵乐际主持",
-          "summary": "全国人大常委会第二十三次会议审议商标法修订草案，尚未有具体结果。",
-          "description": "全国人大常委会第二十三次会议审议商标法修订草案，尚未有具体结果。",
+          "title": "何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
+          "summary": "何立峰在河南调研，要求加快完善产业创新体系，持续推动外贸稳规模优结构。",
+          "description": "何立峰在河南调研，要求加快完善产业创新体系，持续推动外贸稳规模优结构。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "全国人大常委会启动商标法修订草案的审议程序，这标志着商标法修改进入立法审议阶段。但尚未形成正式修订决定，具体条款和最终影响仍待后续会议确认。",
+          "impact": "目前证据不足，无法确认具体变化。该表态可能预示着未来政策将聚焦产业创新和外贸结构优化，但尚无明确行动。",
           "sources": [
             {
-              "title": "十四届全国人大常委会第二十三次会议在京举行 审议商标法修订草案等 赵乐际主持",
+              "title": "何立峰在河南调研时指出 加快完善产业创新体系 持续推动外贸稳规模优结构",
               "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073128.htm",
+              "url": "https://tv.cctv.com/2026/06/23/VIDEud8bsimjOVrwFbsi2Ybt260623.shtml",
               "published_at": "2026-06-23T00:00:00.000Z"
             }
           ],
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073128.htm",
+          "url": "https://tv.cctv.com/2026/06/23/VIDEud8bsimjOVrwFbsi2Ybt260623.shtml",
           "score": 100,
           "publishedAt": "2026-06-23T00:00:00.000Z"
         },
         {
           "date": "2026-06-23",
-          "title": "报告显示全国统一大市场“四梁八柱”基本建立",
-          "summary": "国务院报告称全国统一大市场“四梁八柱”基本建立，阶段性成效获确认。",
-          "description": "国务院报告称全国统一大市场“四梁八柱”基本建立，阶段性成效获确认。",
+          "title": "刘国中在江苏调研时强调 打造生物医药新兴支柱产业 培育发展脑机接口未来产业",
+          "summary": "刘国中调研江苏，强调发展生物医药和脑机接口产业。",
+          "description": "刘国中调研江苏，强调发展生物医药和脑机接口产业。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "报告确认了全国统一大市场建设在框架层面取得阶段性进展，但未披露具体措施或量化数据。",
+          "impact": "目前证据不足，仅知高层释放政策信号，尚未有具体措施落地。",
           "sources": [
             {
-              "title": "报告显示全国统一大市场“四梁八柱”基本建立",
+              "title": "刘国中在江苏调研时强调 打造生物医药新兴支柱产业 培育发展脑机接口未来产业",
               "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073119.htm",
+              "url": "https://tv.cctv.com/2026/06/23/VIDEn954HVotlPxwf0W4cyKU260623.shtml",
               "published_at": "2026-06-23T00:00:00.000Z"
             }
           ],
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073119.htm",
+          "url": "https://tv.cctv.com/2026/06/23/VIDEn954HVotlPxwf0W4cyKU260623.shtml",
           "score": 100,
           "publishedAt": "2026-06-23T00:00:00.000Z"
         },
@@ -1489,16 +1502,16 @@
         },
         {
           "date": "2026-06-24",
-          "title": "2026年5月份全国彩票销售情况",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "description": "财政部财政政策、国债、预算和财政运行新闻",
-          "evidence_type": "official_announcement",
+          "title": "2026年5月全国彩票销售情况",
+          "summary": "财政部发布5月彩票销售报告，但内容未提供具体数据。",
+          "description": "财政部发布5月彩票销售报告，但内容未提供具体数据。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "impact": "目前无法确认与上月或去年同期相比的变化，因报告具体数据未在内容中提供。",
           "sources": [
             {
-              "title": "2026年5月份全国彩票销售情况",
+              "title": "2026年5月全国彩票销售情况",
               "source": "财政部财政新闻",
               "url": "http://zhs.mof.gov.cn/zonghexinxi/202606/t20260624_3992152.htm",
               "published_at": "2026-06-24T00:00:00.000Z"
@@ -1511,16 +1524,16 @@
         },
         {
           "date": "2026-06-24",
-          "title": "国务院新闻办举行新闻发布会 介绍民族团结进步促进法",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "国务院新闻办举行新闻发布会介绍民族团结进步促进法",
+          "summary": "国务院新闻办举行新闻发布会介绍民族团结进步促进法。",
+          "description": "国务院新闻办举行新闻发布会介绍民族团结进步促进法。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前证据不足，无法确定该法律是否已有变化或新进展。仅知举办了介绍该法律的新闻发布会。",
           "sources": [
             {
-              "title": "国务院新闻办举行新闻发布会 介绍民族团结进步促进法",
+              "title": "国务院新闻办举行新闻发布会介绍民族团结进步促进法",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073226.htm",
               "published_at": "2026-06-24T00:00:00.000Z"
@@ -1534,12 +1547,12 @@
         {
           "date": "2026-06-24",
           "title": "十四届全国人大常委会第二十三次会议举行联组会议",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "全国人大常委会联组会议审议统一大市场报告并专题询问",
+          "description": "全国人大常委会联组会议审议统一大市场报告并专题询问",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "本次联组会议对全国统一大市场建设工作进行了专题审议和询问，体现了全国人大常委会对这项工作的监督和推进，但具体审议结果和后续措施尚未公布。",
           "sources": [
             {
               "title": "十四届全国人大常委会第二十三次会议举行联组会议",
@@ -1555,38 +1568,16 @@
         },
         {
           "date": "2026-06-24",
-          "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
+          "summary": "习近平在山东德州考察，强调推进农业农村现代化，但无具体政策出台。",
+          "description": "习近平在山东德州考察，强调推进农业农村现代化，但无具体政策出台。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前未发现因本次考察直接导致的具体政策或措施变化，考察本身属于常规性调研，尚未改变现有农业农村政策框架。",
           "sources": [
             {
-              "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073204.htm",
-              "published_at": "2026-06-24T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073204.htm",
-          "score": 100,
-          "publishedAt": "2026-06-24T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-24",
-          "title": "【视频】习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "【视频】习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
+              "title": "习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
               "source": "中国政府网要闻",
               "url": "https://tv.cctv.com/2026/06/24/VIDERIngxa94yVqMRtGqjwNM260624.shtml?spm=C22822.PoD9Ximuq55U.Eg7ko2OSzdbK.3",
               "published_at": "2026-06-24T00:00:00.000Z"
@@ -1599,16 +1590,16 @@
         },
         {
           "date": "2026-06-24",
-          "title": "【视频】李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
+          "summary": "李强出席2026夏季达沃斯论坛工商界代表座谈会，具体交流内容待披露。",
+          "description": "李强出席2026夏季达沃斯论坛工商界代表座谈会，具体交流内容待披露。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "本次座谈会是李强总理在论坛期间与工商界代表的正式交流，可能就经济政策、营商环境等议题进行了沟通，但具体内容未在摘要中披露。",
           "sources": [
             {
-              "title": "【视频】李强出席2026年夏季达沃斯论坛工商界代表座谈会",
+              "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
               "source": "中国政府网要闻",
               "url": "https://tv.cctv.com/2026/06/24/VIDEaYsKz4wFYDNkmedtwG6s260624.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.1",
               "published_at": "2026-06-24T00:00:00.000Z"
@@ -1621,7 +1612,7 @@
         },
         {
           "date": "2026-06-24",
-          "title": "【视频】李强出席2026年夏季达沃斯论坛开幕式并致辞",
+          "title": "图表：截至2026年5月底我国电动汽车充电基础设施达2249.7万个",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "evidence_type": "official_announcement",
@@ -1630,20 +1621,42 @@
           "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "sources": [
             {
-              "title": "【视频】李强出席2026年夏季达沃斯论坛开幕式并致辞",
+              "title": "图表：截至2026年5月底我国电动汽车充电基础设施达2249.7万个",
               "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/24/VIDEkLmeXjIaA3rmN6VWgW45260624.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.4",
+              "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7073207.htm",
               "published_at": "2026-06-24T00:00:00.000Z"
             }
           ],
           "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/24/VIDEkLmeXjIaA3rmN6VWgW45260624.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.4",
+          "url": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7073207.htm",
           "score": 100,
           "publishedAt": "2026-06-24T00:00:00.000Z"
         },
         {
-          "date": "2026-06-24",
-          "title": "习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
+          "date": "2026-06-25",
+          "title": "廖岷出席第十三届巴黎论坛年会",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "廖岷出席第十三届巴黎论坛年会",
+              "source": "财政部财政新闻",
+              "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
+              "published_at": "2026-06-25T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
+          "score": 100,
+          "publishedAt": "2026-06-25T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "evidence_type": "official_announcement",
@@ -1652,16 +1665,16 @@
           "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "sources": [
             {
-              "title": "习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
+              "title": "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来",
               "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073194.htm",
-              "published_at": "2026-06-24T00:00:00.000Z"
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073237.htm",
+              "published_at": "2026-06-25T00:00:00.000Z"
             }
           ],
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073194.htm",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073237.htm",
           "score": 100,
-          "publishedAt": "2026-06-24T00:00:00.000Z"
+          "publishedAt": "2026-06-25T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -1669,12 +1682,12 @@
         "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
         "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "李强总理在大连夏季达沃斯论坛开幕式致辞",
-            "致辞内容未在本篇中完整展示",
-            "论坛于2026年6月24日开幕"
+            "财政部财政政策、国债、预算和财政运行新闻",
+            "廖岷出席第十三届巴黎论坛年会",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -1713,10 +1726,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
+              "宏观",
               "公共政策",
-              "李强在第十七届夏季达沃斯",
-              "论坛开幕式上的致辞",
-              "全文"
+              "廖岷出席第十三届巴黎论坛",
+              "年会"
             ],
             "confidence": "high"
           }
@@ -1737,8 +1750,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
-              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+              "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
+              "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -1757,8 +1770,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
-              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+              "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
+              "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
             ]
           },
           {
@@ -1776,8 +1789,8 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
-              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+              "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
+              "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息"
             ]
           }
         ],
@@ -1794,6 +1807,15 @@
           {
             "risk_type": "信息风险",
             "risk": "目前证据不足，但需关注论坛期间是否出现贸易摩擦或地缘政治分歧。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "目前无法识别风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1816,13 +1838,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 公共政策、李强在第十七届夏季达沃斯、论坛开幕式上的致辞 的后续变化",
+            "variable": "跟踪 宏观、公共政策、廖岷出席第十三届巴黎论坛 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+            "variable": "留意 财政部财政新闻、中国政府网要闻 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -1836,10 +1858,10 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-24",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+            "date": "2026-06-25",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
             "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
             "evidence_item_ids": []
           }
         ],
@@ -1901,8 +1923,8 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-06-05T00:00:00.000Z",
-      "last_seen_at": "2026-06-23T15:45:00.000Z",
-      "updated_at": "2026-06-23T15:45:00.000Z",
+      "last_seen_at": "2026-06-25T00:00:00.000Z",
+      "updated_at": "2026-06-25T00:00:00.000Z",
       "definition": {
         "one_sentence": "SEC与CFTC联合征求公众意见，旨在协调、现代化和简化掉期市场数据报告规则。 相关来源：U.S. SEC Press Releases、每日经济新闻、UN News",
         "background": "SEC与CFTC联合征求公众意见，旨在协调、现代化和简化掉期市场数据报告规则。 相关来源：U.S. SEC Press Releases、每日经济新闻、UN News",
@@ -1953,7 +1975,7 @@
             "大模型"
           ]
         },
-        "related_item_count": 19
+        "related_item_count": 20
       },
       "current_judgment": {
         "summary": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 MSFT。",
@@ -1963,14 +1985,14 @@
           "公众意见征集启动。",
           "SEC与CFTC联合征求公众意见，旨在协调、现代化和简化掉期市场数据报告规则。"
         ],
-        "latest_change": "从洞察到行动：代理云操作的下一个阶段：微软发布代理云操作新阶段博客，强调Azure Copilot整合可观测性、治理与优化。",
+        "latest_change": "公安机关依法严厉打击非法占用农用地犯罪：每日经济新闻中文财经、公司和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
         "source_count": 7,
         "official_source_count": 1,
-        "financial_media_count": 0,
+        "financial_media_count": 1,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
@@ -1979,8 +2001,8 @@
           "unknown": 1
         },
         "primary_source": {
-          "name": "Microsoft Azure Blog",
-          "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4437189.html"
         },
         "source_links": [
           {
@@ -2043,12 +2065,12 @@
         ]
       },
       "latest_update": {
-        "title": "从洞察到行动：代理云操作的下一个阶段",
-        "summary": "微软发布代理云操作新阶段博客，强调Azure Copilot整合可观测性、治理与优化。",
-        "source": "Microsoft Azure Blog",
-        "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations",
-        "published_at": "2026-06-23T15:45:00.000Z",
-        "score": 64
+        "title": "公安机关依法严厉打击非法占用农用地犯罪",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-25/4437189.html",
+        "published_at": "2026-06-25T00:00:00.000Z",
+        "score": 82
       },
       "confirmed_facts": [
         {
@@ -2078,7 +2100,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT -2.2677%；行情时间：2026-06-25T00:01:02.725Z。",
+          "impact": "关联标的：MSFT -2.2677%；行情时间：2026-06-25T09:00:45.900Z。",
           "evidence": [
             "SEC与CFTC联合征求公众意见，旨在协调、现代化和简化掉期市场数据报告规则。",
             "七部门联合发布行动方案，推动平台经济大中小企业协同发展至2028年。",
@@ -2132,9 +2154,9 @@
         {
           "type": "市场反馈",
           "description": "MSFT -2.2677%",
-          "source": "Microsoft Azure Blog",
-          "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations",
-          "date": "2026-06-23",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4437189.html",
+          "date": "2026-06-25",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -2346,28 +2368,6 @@
         }
       ],
       "timeline": [
-        {
-          "date": "2026-06-17",
-          "title": "国家发展改革委：中国将探索开展人工智能监管合作，共同防范人工智能安全风险",
-          "summary": "中国发布白皮书，宣布将探索人工智能监管合作，坚持多边主义推动AI安全公平发展，并依托多边平台弥合智能鸿沟。",
-          "description": "中国发布白皮书，宣布将探索人工智能监管合作，坚持多边主义推动AI安全公平发展，并依托多边平台弥合智能鸿沟。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": true,
-          "impact": "中国在全球治理中提出AI监管合作，表明积极参与国际规则制定，有助于构建更加公正合理的全球AI治理体系。",
-          "sources": [
-            {
-              "title": "国家发展改革委：中国将探索开展人工智能监管合作，共同防范人工智能安全风险",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-17/4429244.html",
-              "published_at": "2026-06-17T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-17/4429244.html",
-          "score": 87,
-          "publishedAt": "2026-06-17T00:00:00.000Z"
-        },
         {
           "date": "2026-06-18",
           "title": "促进平台经济大中小企业协同发展 七部门联合发布行动方案",
@@ -2609,6 +2609,28 @@
           "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations",
           "score": 64,
           "publishedAt": "2026-06-23T15:45:00.000Z"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "公安机关依法严厉打击非法占用农用地犯罪",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "公安机关依法严厉打击非法占用农用地犯罪",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-25/4437189.html",
+              "published_at": "2026-06-25T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4437189.html",
+          "score": 82,
+          "publishedAt": "2026-06-25T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -2792,7 +2814,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-23",
+            "date": "2026-06-25",
             "judgment": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 MSFT。",
             "change_type": "初始判断",
             "reason": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 MSFT。",
@@ -2857,18 +2879,18 @@
       "priority_grade": "B",
       "importance_score": 100,
       "first_seen_at": "2026-06-09T00:00:00.000Z",
-      "last_seen_at": "2026-06-24T06:00:00.000Z",
-      "updated_at": "2026-06-24T06:00:00.000Z",
+      "last_seen_at": "2026-06-25T00:00:00.000Z",
+      "updated_at": "2026-06-25T00:00:00.000Z",
       "definition": {
-        "one_sentence": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU... 相关来源：OpenAI News、每日经济新闻",
-        "background": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU... 相关来源：OpenAI News、每日经济新闻",
+        "one_sentence": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。 相关来源：每日经济新闻、OpenAI News",
+        "background": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。 相关来源：每日经济新闻、OpenAI News",
         "core_question": "AI芯片后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。",
+        "why_it_matters": "美光科技的财务业绩出现爆发式增长，营收和利润大幅超预期，市场对其未来盈利能力预期显著上调。股价盘后大涨反映了投资者对AI等需求驱动下芯片行业前景的乐观情绪，并带动整个芯片板块和纳斯达克指数期货上行。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "观察验证",
-        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA。",
+        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA/QQQ。",
         "rationale": [
           "属于美股变化主线",
           "重要性评分为 100",
@@ -2877,23 +2899,25 @@
         "market_symbols": [
           "NVDA",
           "AVGO",
-          "TSLA"
+          "TSLA",
+          "QQQ"
         ],
         "policy_status": "",
         "requires_follow_up": true
       },
       "profile": {
         "impact_areas": [
+          "财报",
           "商业",
           "AI芯片",
-          "国际",
-          "宏观"
+          "美国芯片巨头发布"
         ],
         "entities": {
           "companies": [
             "NVDA",
             "AVGO",
             "TSLA",
+            "QQQ",
             "OpenAI"
           ],
           "people": [
@@ -2904,46 +2928,64 @@
           "products_or_technologies": [
             "AI",
             "OpenAI",
-            "chip",
-            "算力"
+            "chip"
           ]
         },
-        "related_item_count": 10
+        "related_item_count": 12
       },
       "current_judgment": {
-        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA。",
+        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA/QQQ。",
         "basis": [
-          "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理...",
-          "OpenAI和博通发布LLM推理优化芯片",
-          "霍尔木兹海峡封锁110天后重开，油价短期承压但恐再度破百。",
-          "美联储10月加息概率升至100%，全球流动性或收紧。"
+          "美光第三财季营收414.6亿美元，同比增346%",
+          "调整后运营收益336.8亿美元，去年同期24.9亿美元",
+          "股价盘后涨近16%，带动芯片板块和纳指期货上涨",
+          "业绩超预期主要得益于AI等需求驱动"
         ],
-        "latest_change": "OpenAI和博通发布LLM推理优化芯片：OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理...",
+        "latest_change": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点：美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
         "source_count": 2,
         "official_source_count": 0,
-        "financial_media_count": 0,
-        "timeline_count": 10,
+        "financial_media_count": 1,
+        "timeline_count": 12,
         "confidence_basis": "medium",
         "evidence_types": {
-          "industry_analysis": 5,
+          "industry_analysis": 4,
+          "reliable_media_report": 1,
           "data_release": 1
         },
         "primary_source": {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html"
         },
         "source_links": [
           {
+            "item_id": "business-item-a7f038942f",
+            "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+            "published_at": "2026-06-25T00:00:00.000Z",
+            "summary": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-item-cdb80635bf",
+            "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+            "published_at": "2026-06-25T00:00:00.000Z",
+            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "relevance_score": 100
+          },
+          {
             "item_id": "business-openai-news-d5deb4e7df",
-            "title": "OpenAI和博通发布LLM推理优化芯片",
+            "title": "OpenAI与Broadcom发布LLM推理优化芯片",
             "source": "OpenAI News",
             "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
             "published_at": "2026-06-24T06:00:00.000Z",
-            "summary": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
+            "summary": "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。",
             "relevance_score": 100
           },
           {
@@ -2972,24 +3014,6 @@
             "published_at": "2026-06-12T00:00:00.000Z",
             "summary": "每日经济新闻中文财经、公司和市场新闻",
             "relevance_score": 93
-          },
-          {
-            "item_id": "business-item-9ea10a924b",
-            "title": "金融AI能力跃升：智能体规模化应用起步，效率革新之下多重挑战待解",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-22/4432787.html",
-            "published_at": "2026-06-22T00:00:00.000Z",
-            "summary": "金融行业算力Token化共识形成，为智能体规模化应用扫清障碍，但标准未统一，挑战仍在。",
-            "relevance_score": 88
-          },
-          {
-            "item_id": "business-item-26f8072f38",
-            "title": "港股三大指数飘绿，恒指逼近年内低点；光通信板块下挫，智谱跌超7%，较最高点已跌去47% | 港股收盘 2026-06-10 16:52",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-10/4422351.html",
-            "published_at": "2026-06-10T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
-            "relevance_score": 87
           }
         ],
         "evidence_gaps": [
@@ -2997,66 +3021,66 @@
         ]
       },
       "latest_update": {
-        "title": "OpenAI和博通发布LLM推理优化芯片",
-        "summary": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理...",
-        "source": "OpenAI News",
-        "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-        "published_at": "2026-06-24T06:00:00.000Z",
+        "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点",
+        "summary": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+        "published_at": "2026-06-25T00:00:00.000Z",
         "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理...",
+          "fact": "美光第三财季营收414.6亿美元，同比增346%",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "调整后运营收益336.8亿美元，去年同期24.9亿美元",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "股价盘后涨近16%，带动芯片板块和纳指期货上涨",
           "evidence_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
           "source": "OpenAI News",
           "confidence": "中"
         },
         {
-          "fact": "OpenAI和博通发布LLM推理优化芯片",
+          "fact": "业绩超预期主要得益于AI等需求驱动",
           "evidence_url": "https://www.nbd.com.cn/articles/2026-06-20/4431803.html",
-          "source": "每日经济新闻",
-          "confidence": "中"
-        },
-        {
-          "fact": "霍尔木兹海峡封锁110天后重开，油价短期承压但恐再度破百。",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-15/4426534.html",
-          "source": "每日经济新闻",
-          "confidence": "中"
-        },
-        {
-          "fact": "美联储10月加息概率升至100%，全球流动性或收紧。",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-12/4424755.html",
           "source": "每日经济新闻",
           "confidence": "中"
         }
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -0.5199%、AVGO 0.5051%、TSLA -1.5932%；行情时间：2026-06-25T00:01:02.725Z。",
+          "impact": "关联标的：NVDA -0.5199%、AVGO 0.5051%、TSLA -1.5932%、QQQ -0.4246%；行情时间：2026-06-25T09:00:45.900Z。",
           "evidence": [
-            "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
-            "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
-            "不足以判断"
+            "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+            "每日经济新闻中文财经、公司和市场新闻",
+            "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "industry": {
-          "impact": "可能影响 商业、AI芯片、国际、宏观 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 财报、商业、AI芯片、美国芯片巨头发布 相关判断，需继续核对后续证据。",
           "evidence": [
-            "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
-            "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
-            "不足以判断"
+            "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+            "每日经济新闻中文财经、公司和市场新闻",
+            "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "company": {
-          "impact": "关联实体：NVDA、AVGO、TSLA、英伟达、Broadcom、博通。",
+          "impact": "关联实体：NVDA、AVGO、TSLA、QQQ、英伟达、Broadcom。",
           "evidence": [
-            "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
-            "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
-            "不足以判断"
+            "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+            "每日经济新闻中文财经、公司和市场新闻",
+            "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -3064,9 +3088,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
-            "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
-            "不足以判断"
+            "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+            "每日经济新闻中文财经、公司和市场新闻",
+            "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -3074,9 +3098,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
-            "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
-            "不足以判断"
+            "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+            "每日经济新闻中文财经、公司和市场新闻",
+            "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -3086,36 +3110,45 @@
         {
           "type": "市场反馈",
           "description": "NVDA -0.5199%",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-          "date": "2026-06-24",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "date": "2026-06-25",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         },
         {
           "type": "市场反馈",
           "description": "AVGO 0.5051%",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-          "date": "2026-06-24",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "date": "2026-06-25",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         },
         {
           "type": "市场反馈",
           "description": "TSLA -1.5932%",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-          "date": "2026-06-24",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "date": "2026-06-25",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         },
         {
           "type": "市场反馈",
-          "description": "NVDA -4.1457%",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-          "date": "2026-06-24",
+          "description": "QQQ -0.4246%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "date": "2026-06-25",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "NVDA -0.5649%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "date": "2026-06-25",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -3136,8 +3169,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 商业、AI芯片、国际 的后续变化",
-            "留意 OpenAI News、每日经济新闻 是否继续发布相关信息",
+            "跟踪 财报、商业、AI芯片 的后续变化",
+            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -3156,8 +3189,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 商业、AI芯片、国际 的后续变化",
-            "留意 OpenAI News、每日经济新闻 是否继续发布相关信息"
+            "跟踪 财报、商业、AI芯片 的后续变化",
+            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
           ]
         },
         {
@@ -3175,33 +3208,33 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 商业、AI芯片、国际 的后续变化",
-            "留意 OpenAI News、每日经济新闻 是否继续发布相关信息"
+            "跟踪 财报、商业、AI芯片 的后续变化",
+            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
+          "risk": "高增长主要受益于AI特殊需求，若下游资本开支放缓或新增产能过快，可能引发供过于求、价格下跌，导致业绩回落。全球经济不确定性也是潜在风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "目前证据不足，无法评估实际性能、量产可行性及成本优势，且面临现有生态（如CUDA）的竞争壁垒。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "油价若突破100美元将加剧通胀，迫使全球央行更紧缩；SpaceX估值暴跌可能引发科技板块连锁反应；AI算力瓶颈若长期不解决，可能拖累商业化进程。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "不足以判断",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "Token计量标准不统一可能导致资源浪费或兼容性问题，智能体规模化应用可能带来新的运营风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -3218,17 +3251,17 @@
       ],
       "uncertainties": [
         {
+          "uncertainty": "高增长主要受益于AI特殊需求，若下游资本开支放缓或新增产能过快，可能引发供过于求、价格下跌，导致业绩回落。全球经济不确定性也是潜在风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "目前证据不足，无法评估实际性能、量产可行性及成本优势，且面临现有生态（如CUDA）的竞争壁垒。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
           "uncertainty": "油价若突破100美元将加剧通胀，迫使全球央行更紧缩；SpaceX估值暴跌可能引发科技板块连锁反应；AI算力瓶颈若长期不解决，可能拖累商业化进程。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "不足以判断",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "Token计量标准不统一可能导致资源浪费或兼容性问题，智能体规模化应用可能带来新的运营风险。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -3240,13 +3273,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 商业、AI芯片、国际 的后续变化",
+          "variable": "跟踪 财报、商业、AI芯片 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 OpenAI News、每日经济新闻 是否继续发布相关信息",
+          "variable": "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -3272,12 +3305,30 @@
       ],
       "related_items": [
         {
+          "item_id": "business-item-a7f038942f",
+          "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "published_at": "2026-06-25T00:00:00.000Z",
+          "summary": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-item-cdb80635bf",
+          "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+          "published_at": "2026-06-25T00:00:00.000Z",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "relevance_score": 100
+        },
+        {
           "item_id": "business-openai-news-d5deb4e7df",
-          "title": "OpenAI和博通发布LLM推理优化芯片",
+          "title": "OpenAI与Broadcom发布LLM推理优化芯片",
           "source": "OpenAI News",
           "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
           "published_at": "2026-06-24T06:00:00.000Z",
-          "summary": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，将显著降低推理成本、提高响应速度，推动更多实时AI应用成为可能。 需要注意：芯片性能可能不及宣传，开发周期长且成本高昂，面临英伟达等成熟厂商的强力竞争。",
+          "summary": "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。",
           "relevance_score": 100
         },
         {
@@ -3306,24 +3357,6 @@
           "published_at": "2026-06-12T00:00:00.000Z",
           "summary": "每日经济新闻中文财经、公司和市场新闻",
           "relevance_score": 93
-        },
-        {
-          "item_id": "business-item-9ea10a924b",
-          "title": "金融AI能力跃升：智能体规模化应用起步，效率革新之下多重挑战待解",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-22/4432787.html",
-          "published_at": "2026-06-22T00:00:00.000Z",
-          "summary": "金融行业算力Token化共识形成，为智能体规模化应用扫清障碍，但标准未统一，挑战仍在。",
-          "relevance_score": 88
-        },
-        {
-          "item_id": "business-item-26f8072f38",
-          "title": "港股三大指数飘绿，恒指逼近年内低点；光通信板块下挫，智谱跌超7%，较最高点已跌去47% | 港股收盘 2026-06-10 16:52",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-10/4422351.html",
-          "published_at": "2026-06-10T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "relevance_score": 87
         }
       ],
       "timeline": [
@@ -3527,16 +3560,16 @@
         },
         {
           "date": "2026-06-24",
-          "title": "OpenAI和博通发布LLM推理优化芯片",
-          "summary": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，...",
-          "description": "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。 若芯片性能达到预期，...",
+          "title": "OpenAI与Broadcom发布LLM推理优化芯片",
+          "summary": "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。",
+          "description": "OpenAI与Broadcom推出定制AI芯片Jalapeño，专为LLM推理优化，旨在提升性能与效率。",
           "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理提供专用硬件方案。",
+          "impact": "之前AI推理主要依赖通用芯片（如GPU），现在出现了专门为LLM推理定制的高效芯片，可能降低推理成本并带来性能提升。",
           "sources": [
             {
-              "title": "OpenAI和博通发布LLM推理优化芯片",
+              "title": "OpenAI与Broadcom发布LLM推理优化芯片",
               "source": "OpenAI News",
               "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
               "published_at": "2026-06-24T06:00:00.000Z"
@@ -3546,6 +3579,50 @@
           "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
           "score": 100,
           "publishedAt": "2026-06-24T06:00:00.000Z"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点",
+          "summary": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+          "description": "美光科技第三财季营收同比增346%，运营收益大幅扭亏，股价盘后涨约16%，带动芯片股和纳指期货大涨。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "美光科技的财务业绩出现爆发式增长，营收和利润大幅超预期，市场对其未来盈利能力预期显著上调。股价盘后大涨反映了投资者对AI等需求驱动下芯片行业前景的乐观情绪，并带动整个芯片板块和纳斯达克指数期货上行。",
+          "sources": [
+            {
+              "title": "美国芯片巨头发布“炸裂”财报：单季度营收暴增346%！股价盘后暴涨近16%，带动美股芯片股集体大涨，纳指期货涨超500点",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+              "published_at": "2026-06-25T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436584.html",
+          "score": 100,
+          "publishedAt": "2026-06-25T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+              "published_at": "2026-06-25T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+          "score": 100,
+          "publishedAt": "2026-06-25T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -3553,12 +3630,12 @@
         "tracking_goal": "判断AI芯片是否会改变行业格局、市场预期、政策方向或个人决策。",
         "research_question": "AI芯片后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA。",
+          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA/QQQ。",
           "confidence": "medium",
           "basis": [
-            "OpenAI与博通联合宣布推出一款名为Jalapeño的定制AI芯片，专为大型语言模型（LLM）推理任务设计，旨在提升性能、效率和可扩展性。 该芯片的发布标志着OpenAI正式进入芯片设计领域，可能减少对通用GPU的依赖，并为AI推理...",
-            "OpenAI和博通发布LLM推理优化芯片",
-            "霍尔木兹海峡封锁110天后重开，油价短期承压但恐再度破百。"
+            "美光第三财季营收414.6亿美元，同比增346%",
+            "调整后运营收益336.8亿美元，去年同期24.9亿美元",
+            "股价盘后涨近16%，带动芯片板块和纳指期货上涨"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -3597,10 +3674,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
+              "财报",
               "商业",
               "AI芯片",
-              "国际",
-              "宏观"
+              "美国芯片巨头发布"
             ],
             "confidence": "medium"
           }
@@ -3621,8 +3698,8 @@
             "impact_level": "B",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 商业、AI芯片、国际 的后续变化",
-              "留意 OpenAI News、每日经济新闻 是否继续发布相关信息",
+              "跟踪 财报、商业、AI芯片 的后续变化",
+              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -3641,8 +3718,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 商业、AI芯片、国际 的后续变化",
-              "留意 OpenAI News、每日经济新闻 是否继续发布相关信息"
+              "跟踪 财报、商业、AI芯片 的后续变化",
+              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
             ]
           },
           {
@@ -3660,33 +3737,33 @@
             "impact_level": "B",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 商业、AI芯片、国际 的后续变化",
-              "留意 OpenAI News、每日经济新闻 是否继续发布相关信息"
+              "跟踪 财报、商业、AI芯片 的后续变化",
+              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
+            "risk": "高增长主要受益于AI特殊需求，若下游资本开支放缓或新增产能过快，可能引发供过于求、价格下跌，导致业绩回落。全球经济不确定性也是潜在风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "目前证据不足，无法评估实际性能、量产可行性及成本优势，且面临现有生态（如CUDA）的竞争壁垒。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "油价若突破100美元将加剧通胀，迫使全球央行更紧缩；SpaceX估值暴跌可能引发科技板块连锁反应；AI算力瓶颈若长期不解决，可能拖累商业化进程。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "不足以判断",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "Token计量标准不统一可能导致资源浪费或兼容性问题，智能体规模化应用可能带来新的运营风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -3709,13 +3786,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 商业、AI芯片、国际 的后续变化",
+            "variable": "跟踪 财报、商业、AI芯片 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 OpenAI News、每日经济新闻 是否继续发布相关信息",
+            "variable": "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -3729,10 +3806,10 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-06-24",
-            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA。",
+            "date": "2026-06-25",
+            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA/QQQ。",
             "change_type": "初始判断",
-            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA。",
+            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/AVGO/TSLA/QQQ。",
             "evidence_item_ids": []
           }
         ],
@@ -3962,7 +4039,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA -1.5932%、QQQ -0.4246%；行情时间：2026-06-25T00:01:02.725Z。",
+          "impact": "关联标的：TSLA -1.5932%、QQQ -0.4246%；行情时间：2026-06-25T09:00:45.900Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
@@ -4749,7 +4826,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.2427%；行情时间：2026-06-25T00:01:02.725Z。",
+          "impact": "关联标的：GOOGL -0.2427%；行情时间：2026-06-25T09:00:45.900Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
