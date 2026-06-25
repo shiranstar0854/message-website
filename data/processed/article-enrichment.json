@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-24T09:01:12.844Z",
+  "generatedAt": "2026-06-25T00:01:21.422Z",
   "totals": {
-    "attempted": 66,
-    "excerptCount": 66,
-    "imageCount": 44,
+    "attempted": 61,
+    "excerptCount": 60,
+    "imageCount": 40,
     "failed": 0,
-    "skipped": 5
+    "skipped": 4
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 3,
-      "excerptCount": 3,
-      "imageCount": 3,
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 2,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 5,
+      "skipped": 3,
       "disabled": true
     },
     "google-ai": {
@@ -61,7 +61,7 @@
     "cisa-news": {
       "sourceId": "cisa-news",
       "sourceName": "CISA News",
-      "attempted": 0,
+      "attempted": 1,
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
@@ -85,15 +85,15 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 0,
+      "skipped": 1,
       "disabled": true
     },
     "cfpb-newsroom": {
       "sourceId": "cfpb-newsroom",
       "sourceName": "CFPB Newsroom",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 9,
-      "excerptCount": 9,
-      "imageCount": 9,
+      "attempted": 10,
+      "excerptCount": 10,
+      "imageCount": 10,
       "failed": 0,
       "skipped": 0,
       "disabled": false
