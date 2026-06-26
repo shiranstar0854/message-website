@@ -10,13 +10,38 @@
     "url": "https://www.most.gov.cn/kjbgz/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
-    "items": [],
+    "items": [
+      {
+        "title": "中俄高技术和创新工作组第十七次会议在俄罗斯召开",
+        "link": "https://www.most.gov.cn/kjbgz/202606/t20260625_196835.html",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      },
+      {
+        "title": "科学技术部国际科技合作中心与俄罗斯项目管理机构签署谅解备忘录",
+        "link": "https://www.most.gov.cn/kjbgz/202606/t20260625_196834.html",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -28,15 +53,15 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "ok": false,
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
+    "attempts": 2,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -51,10 +76,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -71,16 +96,16 @@
     "status": 200,
     "ok": true,
     "itemCount": 10,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [
       {
-        "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-        "link": "https://www.yicai.com/news/103244887.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "title": "“十五五”能源规划出炉：2030年非化石能源将成电量主体",
+        "link": "https://www.yicai.com/news/103247083.html",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -90,9 +115,33 @@
         ]
       },
       {
-        "title": "新一轮国资国企改革定调：突出战略使命，聚焦主责主业",
-        "link": "https://www.yicai.com/news/103244733.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "title": "长三角外贸前5月创新高，AI产业链成新增长极",
+        "link": "https://www.yicai.com/news/103246944.html",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "金价跌回3字头、半年回撤30%，牛市终结还是深度调整？",
+        "link": "https://www.yicai.com/news/103246552.html",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+        "link": "https://www.yicai.com/news/103244887.html",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -104,31 +153,7 @@
       {
         "title": "50年前的高温已成常态！英国开启“蒸笼”模式，空调缘何成“稀缺品”？",
         "link": "https://www.yicai.com/news/103245353.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "中国县域城镇居民人均收入10强出炉",
-        "link": "https://www.yicai.com/news/103244414.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "苹果会掉、薯片会爆：为什么机器人完不成手头的工作",
-        "link": "https://www.yicai.com/news/103245822.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -140,7 +165,7 @@
       {
         "title": "关于开设“涉企侵权投诉举报专区”的公告",
         "link": "https://www.yicai.com/news/102062384.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -152,7 +177,7 @@
       {
         "title": "第一财经网络举报受理和处置规则",
         "link": "https://www.yicai.com/news/102944648.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -164,7 +189,7 @@
       {
         "title": "江水边的创新土壤",
         "link": "https://www.yicai.com/news/102997655.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -176,7 +201,7 @@
       {
         "title": "普洛斯算力中心引入浙江国资战略股东",
         "link": "https://www.yicai.com/news/102794012.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -188,7 +213,7 @@
       {
         "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
         "link": "https://www.yicai.com/news/102464166.html",
-        "publishedAt": "2026-06-25T09:00:32.469Z",
+        "publishedAt": "2026-06-26T00:00:29.551Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -212,16 +237,16 @@
     "status": 200,
     "ok": true,
     "itemCount": 10,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [
       {
-        "title": "预计2030年有六成患者可达功能性治愈 南方医院院长孙剑：过去说控制乙肝，今天有底气讲可治愈了",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4436986.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "加码Harness人才布局，DeepSeek的AI发展路径由轻转重？",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437842.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -231,9 +256,9 @@
         ]
       },
       {
-        "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "加码Harness人才布局，DeepSeek的AI发展路径由轻转重？ 2026-06-26 07:44",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437842.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -243,9 +268,9 @@
         ]
       },
       {
-        "title": "公安机关依法严厉打击非法占用农用地犯罪",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437189.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "上调多款产品价格，苹果跌超6%；IBM推出全球首款小于1纳米的芯片技术丨全球科技早参 2026-06-26 07:40",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437913.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -255,9 +280,9 @@
         ]
       },
       {
-        "title": "商务部回应中美经贸磋商最新进展",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437174.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "一货船在阿曼湾遭袭，霍尔木兹海峡疏散行动暂停，伊朗警告；美股震荡，国际油价上涨；2名中国公民遇难，委内瑞拉地震已致188死丨每经早参 2026-06-26 06:47",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437900.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -267,9 +292,9 @@
         ]
       },
       {
-        "title": "实测 | 豆包专业版五大办公技能：327张图3分钟归档，PPT配图“偶开天窗”，数据图表识别仍需“人工兜底”",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4436981.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "07:59 纽约期金失守4030美元/盎司，日内跌0.44%",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437927.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -279,9 +304,9 @@
         ]
       },
       {
-        "title": "生态环境部：截至2025年，全国1310个县级及以上城市集中式饮用水水源达标率达到96.7% 2026-06-25 16:58",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437203.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "07:51 10年期日本国债期货早盘下跌0.16点",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437925.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -291,9 +316,9 @@
         ]
       },
       {
-        "title": "2777.77元！联讯仪器登顶A股“股王” 2026-06-25 16:54",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437229.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "07:51 日经225指数期货在早盘交易中下跌1.85%",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437924.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -303,9 +328,9 @@
         ]
       },
       {
-        "title": "高能级培育多元体育产业 成都市双流区探索“体育+”融合新路径 2026-06-25 16:35",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437149.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "07:51 特朗普称将用伊朗的钱买美国农产品",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437923.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -315,9 +340,9 @@
         ]
       },
       {
-        "title": "无人车追尾特斯拉，致3车连撞！车主拒绝10万私了；涉事公司：车辆无行驶证，没法买交强险，但投保公众责任险 2026-06-25 16:33",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437290.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "07:44 A股定增一览：10家公司披露定增进展",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437922.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -327,9 +352,9 @@
         ]
       },
       {
-        "title": "一杯约30元、3年关店上百家，知名连锁咖啡品牌被曝创始人失联，总部已解散，商标待拍卖！曾是资本的宠儿，为何如今走上破产这条路？ 2026-06-25 16:33",
-        "link": "https://www.nbd.com.cn/articles/2026-06-25/4437289.html",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "title": "07:41 A股分红派息转增一览：42股今日股权登记",
+        "link": "https://www.nbd.com.cn/articles/2026-06-26/4437919.html",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -353,10 +378,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -372,29 +397,17 @@
     "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
     "status": 200,
     "ok": true,
-    "itemCount": 2,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "itemCount": 1,
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [
       {
         "title": "廖岷出席第十三届巴黎论坛年会",
         "link": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260625_3992298.htm",
         "publishedAt": "2026-06-25T00:00:00.000Z",
-        "summary": "财政部财政政策、国债、预算和财政运行新闻",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "daily",
-        "tags": [
-          "official-agency",
-          "daily"
-        ]
-      },
-      {
-        "title": "2026年5月份全国彩票销售情况",
-        "link": "http://zhs.mof.gov.cn/zonghexinxi/202606/t20260624_3992152.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
         "summary": "财政部财政政策、国债、预算和财政运行新闻",
         "sourceAuthority": "official-agency",
         "timelinessTier": "daily",
@@ -418,10 +431,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -437,13 +450,169 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 14,
-    "fetchedAt": "2026-06-25T09:00:32.469Z",
+    "itemCount": 15,
+    "fetchedAt": "2026-06-26T00:00:29.551Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-06-25T09:00:32.469Z",
-    "cacheExpiresAt": "2026-06-27T09:00:32.469Z",
+    "cacheStartedAt": "2026-06-26T00:00:29.551Z",
+    "cacheExpiresAt": "2026-06-28T00:00:29.551Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "王毅同奥地利外长赖辛格会谈",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073329.htm",
+        "publishedAt": "2026-06-26T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "前4个月我国新兴产业和未来产业新设企业37.3万户",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073326.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "我国土地资源利用效率全面提升",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073324.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "“在党的领导下把家园建设得越来越美”——习近平总书记在山东德州考察纪实",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073301.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "我国科技创新成果丰硕 为高质量发展注入强劲动能",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073281.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "六部门印发计划促进美丽中国建设全民行动",
+        "link": "https://www.gov.cn/lianbo/202606/content_7073279.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "李强同孟加拉国总理塔里克会谈",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073278.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】丁薛祥出席第九届中国—亚欧博览会开幕式并会见与会外国政要",
+        "link": "https://tv.cctv.com/2026/06/25/VIDEZDFD4NdA1WZEBWGDzng9260625.shtml?spm=C22822.PdLkHPciHw3l.EH5ohVdKzf2B.1",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】李强同孟加拉国总理会谈",
+        "link": "https://tv.cctv.com/2026/06/25/VIDE3QGehiuAQ4xOC5EsriX7260625.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.1",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】李强举行仪式欢迎孟加拉国总理访华",
+        "link": "https://tv.cctv.com/2026/06/25/VIDEsxmifBsJC2D4M0neuU4J260625.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.4",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "丁薛祥出席第九届中国－亚欧博览会开幕式并会见与会外国政要",
+        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073267.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "国务院办公厅关于进一步完善大中型水库移民后期扶持政策的通知",
+        "link": "https://www.gov.cn/zhengce/content/202606/content_7073259.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "我国发电装机突破40亿千瓦 位居全球首位",
+        "link": "https://www.gov.cn/lianbo/202606/content_7073248.htm",
+        "publishedAt": "2026-06-25T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "家园越建越美 日子越过越好——习近平总书记在山东德州考察时的重要讲话激励广大干部群众真抓实干向未来",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073237.htm",
@@ -460,150 +629,6 @@
         "title": "总书记谆谆嘱托基层党组织进一步发挥党建引领作用",
         "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073232.htm",
         "publishedAt": "2026-06-25T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "王毅同巴基斯坦副总理兼外长达尔通电话",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073228.htm",
-        "publishedAt": "2026-06-25T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "国务院新闻办举行新闻发布会 介绍民族团结进步促进法",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073226.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "十四届全国人大常委会第二十三次会议举行联组会议",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073211.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "图表：截至2026年5月底我国电动汽车充电基础设施达2249.7万个",
-        "link": "https://www.gov.cn/zhengce/jiedu/tujie/202606/content_7073207.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073204.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "坚持建设堪当民族复兴重任的高素质干部队伍——深入学习贯彻习近平党建思想系列述评之九",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073205.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "【视频】习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
-        "link": "https://tv.cctv.com/2026/06/24/VIDERIngxa94yVqMRtGqjwNM260624.shtml?spm=C22822.PoD9Ximuq55U.Eg7ko2OSzdbK.3",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "【视频】李强出席2026年夏季达沃斯论坛工商界代表座谈会",
-        "link": "https://tv.cctv.com/2026/06/24/VIDEaYsKz4wFYDNkmedtwG6s260624.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.1",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "【视频】李强出席2026年夏季达沃斯论坛开幕式并致辞",
-        "link": "https://tv.cctv.com/2026/06/24/VIDEkLmeXjIaA3rmN6VWgW45260624.shtml?spm=C22822.PXknP6DRl1xj.E1OBEhO1s0Ty.4",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "习近平在山东德州考察时强调 以扎实举措推进农业农村现代化 用勤劳和智慧创造更加美好生活",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073194.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "李强在第十七届夏季达沃斯论坛开幕式上的致辞（全文）",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073192.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "李强出席2026年夏季达沃斯论坛开幕式并致辞",
-        "link": "https://www.gov.cn/yaowen/liebiao/202606/content_7073191.htm",
-        "publishedAt": "2026-06-24T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
         "timelinessTier": "hourly",
