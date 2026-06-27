@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-26T09:01:14.560Z",
+  "generatedAt": "2026-06-27T00:01:18.833Z",
   "totals": {
-    "attempted": 67,
-    "excerptCount": 66,
-    "imageCount": 46,
-    "failed": 0,
-    "skipped": 2
+    "attempted": 61,
+    "excerptCount": 59,
+    "imageCount": 38,
+    "failed": 2,
+    "skipped": 3
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 1,
-      "excerptCount": 1,
-      "imageCount": 1,
+      "attempted": 3,
+      "excerptCount": 3,
+      "imageCount": 3,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 1,
+      "skipped": 2,
       "disabled": true
     },
     "google-ai": {
@@ -61,7 +61,7 @@
     "cisa-news": {
       "sourceId": "cisa-news",
       "sourceName": "CISA News",
-      "attempted": 1,
+      "attempted": 0,
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 3,
-      "excerptCount": 3,
-      "imageCount": 3,
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 2,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -101,19 +101,20 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 10,
-      "excerptCount": 10,
-      "imageCount": 10,
-      "failed": 0,
+      "attempted": 8,
+      "excerptCount": 6,
+      "imageCount": 6,
+      "failed": 2,
       "skipped": 0,
-      "disabled": false
+      "disabled": false,
+      "lastError": "HTTP 429"
     },
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 15,
-      "excerptCount": 15,
-      "imageCount": 15,
+      "attempted": 10,
+      "excerptCount": 10,
+      "imageCount": 10,
       "failed": 0,
       "skipped": 0,
       "disabled": false
