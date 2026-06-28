@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-28T00:01:12.309Z",
+  "generatedAt": "2026-06-28T09:01:12.904Z",
   "totals": {
     "attempted": 49,
-    "excerptCount": 49,
-    "imageCount": 29,
-    "failed": 0,
+    "excerptCount": 48,
+    "imageCount": 30,
+    "failed": 1,
     "skipped": 2
   },
   "sources": {
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 9,
-      "excerptCount": 9,
-      "imageCount": 9,
+      "attempted": 6,
+      "excerptCount": 6,
+      "imageCount": 6,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 10,
-      "excerptCount": 10,
-      "imageCount": 10,
+      "attempted": 8,
+      "excerptCount": 8,
+      "imageCount": 8,
       "failed": 0,
       "skipped": 0,
       "disabled": false
