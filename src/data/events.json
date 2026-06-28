@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-06-27T09:01:17.995Z",
+  "generated_at": "2026-06-28T00:01:19.442Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 7,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-06-27T09:00:50.206Z"
+      "generated_at": "2026-06-28T00:00:51.541Z"
     },
     "llm": {
       "enabled": true,
@@ -49,10 +49,10 @@
       "last_seen_at": "2026-06-27T00:00:00.000Z",
       "updated_at": "2026-06-27T00:00:00.000Z",
       "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、中国人民银行新闻发布、财政部财政新闻",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、中国人民银行新闻发布、财政部财政新闻",
+        "one_sentence": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。 相关来源：中国政府网要闻、国家统计局数据发布",
+        "background": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。 相关来源：中国政府网要闻、国家统计局数据发布",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 3 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "本次会议是2025年中央决算审查的初步阶段，目前尚未公布最终审查结果或具体修改意见，财政监督程序正在推进中。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -69,10 +69,10 @@
       },
       "profile": {
         "impact_areas": [
+          "宏观",
           "公共政策",
-          "张国清在浙江调研时强调",
-          "强化科技创新和产业创新深",
-          "度融合"
+          "第十四届全国人民代表大会",
+          "财政经济委员会关于"
         ],
         "entities": {
           "companies": [],
@@ -80,10 +80,10 @@
           "institutions": [
             "国务院",
             "中国政府网",
-            "人民银行",
-            "中国人民银行",
             "国家发展改革委",
             "财政部",
+            "统计局",
+            "国家统计局",
             "科技部"
           ],
           "countries_or_regions": [],
@@ -96,12 +96,12 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-          "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
-          "全国人民代表大会常务委员会关于批准2025年中央决算的决议"
+          "全国人大财经委第五十次全体会议听取多部门报告",
+          "对2025年中央决算草案进行初步审查",
+          "提出初步审查意见，具体内容未公布",
+          "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。"
         ],
-        "latest_change": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "latest_change": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告：全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -112,31 +112,31 @@
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 3,
-          "data_release": 2,
-          "unknown": 1
+          "data_release": 1,
+          "unknown": 2,
+          "official_announcement": 3
         },
         "primary_source": {
           "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm"
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073523.htm"
         },
         "source_links": [
-          {
-            "item_id": "news-item-094158bfda",
-            "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
-            "published_at": "2026-06-27T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
           {
             "item_id": "macro-item-6338d43904",
             "title": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073523.htm",
             "published_at": "2026-06-27T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-094158bfda",
+            "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
+            "published_at": "2026-06-27T00:00:00.000Z",
+            "summary": "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
             "relevance_score": 100
           },
           {
@@ -145,34 +145,34 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073522.htm",
             "published_at": "2026-06-27T00:00:00.000Z",
+            "summary": "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-afd4f94acc",
+            "title": "2026年1—5月份全国规模以上工业企业利润增长18.8%",
+            "source": "国家统计局数据发布",
+            "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+            "published_at": "2026-06-27T00:00:00.000Z",
+            "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-851cb310b2",
+            "title": "夏粮收购陆续展开 质优价稳购销两旺",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073538.htm",
+            "published_at": "2026-06-27T00:00:00.000Z",
             "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "macro-item-eb5fd18b02",
-            "title": "中蒙两国央行续签双边本币互换协议",
-            "source": "中国人民银行新闻发布",
-            "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062609244316027/index.html",
-            "published_at": "2026-06-26T00:00:00.000Z",
-            "summary": "中蒙央行续签150亿元/7.85万亿图格里克本币互换协议，有效期三年，延续金融合作。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "macro-item-643eb88eb3",
-            "title": "Ministry of Finance Successfully Issues Euro Sovereign Bonds in Luxembourg",
-            "source": "财政部财政新闻",
-            "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260626_3992370.htm",
-            "published_at": "2026-06-26T00:00:00.000Z",
-            "summary": "财政部在卢森堡成功发行欧元主权债券，具体细节待披露。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-43d26c4dec",
-            "title": "“十五五”开好局起好步：到2030年我国将初步建成新型能源体系",
+            "item_id": "news-item-940ed85ef0",
+            "title": "王小洪在吉林调研时强调 强化创新驱动 丰富政策供给 助力推动新时代东北全面振兴",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073506.htm",
-            "published_at": "2026-06-26T00:00:00.000Z",
-            "summary": "国务院新闻办发布会介绍“十五五”加快新型能源体系建设规划，标题提出到2030年初步建成。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073531.htm",
+            "published_at": "2026-06-27T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           }
         ],
@@ -181,36 +181,36 @@
         ]
       },
       "latest_update": {
-        "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "title": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
+        "summary": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
         "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
+        "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073523.htm",
         "published_at": "2026-06-27T00:00:00.000Z",
         "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
+          "fact": "全国人大财经委第五十次全体会议听取多部门报告",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073523.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
+          "fact": "对2025年中央决算草案进行初步审查",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "提出初步审查意见，具体内容未公布",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073522.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "全国人民代表大会常务委员会关于批准2025年中央决算的决议",
-          "evidence_url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062609244316027/index.html",
-          "source": "中国人民银行新闻发布",
+          "fact": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+          "evidence_url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+          "source": "国家统计局数据发布",
           "confidence": "高"
         }
       ],
@@ -218,29 +218,29 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+            "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+            "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深、度融合 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 宏观、公共政策、第十四届全国人民代表大会、财政经济委员会关于 相关判断，需继续核对后续证据。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+            "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+            "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行、国家发展改革委。",
+          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委、财政部、统计局。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+            "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+            "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -248,9 +248,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+            "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+            "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -258,9 +258,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+            "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+            "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -283,8 +283,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+            "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
+            "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -303,8 +303,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+            "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
+            "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息"
           ]
         },
         {
@@ -322,15 +322,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+            "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
+            "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "目前信息未揭示任何风险，协议执行需关注双方经济基本面变化对互换额度的实际使用情况。",
+          "risk": "目前证据不足，无法评估具体风险。但若审查发现决算与预算存在较大偏差或资金违规问题，可能引发监管加强或政策调整。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -339,7 +339,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "目前无明显风险。若未来发行成本较高，可能增加偿债压力，但暂未披露相关数据。",
+          "risk": "目前证据不足，未有明确风险描述。若后续政策执行不力或与调研方向不符，可能导致预期落空。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -348,7 +348,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "规划尚未公开细节，存在政策不及预期或执行滞后的风险。此外，国际能源形势变化、技术瓶颈等可能影响目标实现。",
+          "risk": "目前证据不足，但审计报告可能揭示预算执行中的问题，需关注后续整改要求。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -365,17 +365,17 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "目前信息未揭示任何风险，协议执行需关注双方经济基本面变化对互换额度的实际使用情况。",
+          "uncertainty": "目前证据不足，无法评估具体风险。但若审查发现决算与预算存在较大偏差或资金违规问题，可能引发监管加强或政策调整。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "目前无明显风险。若未来发行成本较高，可能增加偿债压力，但暂未披露相关数据。",
+          "uncertainty": "目前证据不足，未有明确风险描述。若后续政策执行不力或与调研方向不符，可能导致预期落空。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "规划尚未公开细节，存在政策不及预期或执行滞后的风险。此外，国际能源形势变化、技术瓶颈等可能影响目标实现。",
+          "uncertainty": "目前证据不足，但审计报告可能揭示预算执行中的问题，需关注后续整改要求。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -387,13 +387,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
+          "variable": "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -419,21 +419,21 @@
       ],
       "related_items": [
         {
-          "item_id": "news-item-094158bfda",
-          "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
-          "published_at": "2026-06-27T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
           "item_id": "macro-item-6338d43904",
           "title": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073523.htm",
           "published_at": "2026-06-27T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-094158bfda",
+          "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
+          "published_at": "2026-06-27T00:00:00.000Z",
+          "summary": "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
           "relevance_score": 100
         },
         {
@@ -442,47 +442,91 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073522.htm",
           "published_at": "2026-06-27T00:00:00.000Z",
+          "summary": "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-afd4f94acc",
+          "title": "2026年1—5月份全国规模以上工业企业利润增长18.8%",
+          "source": "国家统计局数据发布",
+          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+          "published_at": "2026-06-27T00:00:00.000Z",
+          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-851cb310b2",
+          "title": "夏粮收购陆续展开 质优价稳购销两旺",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073538.htm",
+          "published_at": "2026-06-27T00:00:00.000Z",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "macro-item-eb5fd18b02",
-          "title": "中蒙两国央行续签双边本币互换协议",
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026062609244316027/index.html",
-          "published_at": "2026-06-26T00:00:00.000Z",
-          "summary": "中蒙央行续签150亿元/7.85万亿图格里克本币互换协议，有效期三年，延续金融合作。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "macro-item-643eb88eb3",
-          "title": "Ministry of Finance Successfully Issues Euro Sovereign Bonds in Luxembourg",
-          "source": "财政部财政新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260626_3992370.htm",
-          "published_at": "2026-06-26T00:00:00.000Z",
-          "summary": "财政部在卢森堡成功发行欧元主权债券，具体细节待披露。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-43d26c4dec",
-          "title": "“十五五”开好局起好步：到2030年我国将初步建成新型能源体系",
+          "item_id": "news-item-940ed85ef0",
+          "title": "王小洪在吉林调研时强调 强化创新驱动 丰富政策供给 助力推动新时代东北全面振兴",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073506.htm",
-          "published_at": "2026-06-26T00:00:00.000Z",
-          "summary": "国务院新闻办发布会介绍“十五五”加快新型能源体系建设规划，标题提出到2030年初步建成。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073531.htm",
+          "published_at": "2026-06-27T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
           "date": "2026-06-26",
-          "title": "中华人民共和国主席令（第七十九号）",
-          "summary": "2026年6月26日，全国人大常委会决定免去关志鸥的自然资源部部长职务，主席令已发布。",
-          "description": "2026年6月26日，全国人大常委会决定免去关志鸥的自然资源部部长职务，主席令已发布。",
+          "title": "【视频】谌贻琴在江西调研时强调 坚决落实就业优先战略 推动体育产业高质量发展",
+          "summary": "谌贻琴在江西调研，强调就业优先战略和体育产业高质量发展，目前无具体政策细节。",
+          "description": "谌贻琴在江西调研，强调就业优先战略和体育产业高质量发展，目前无具体政策细节。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "关志鸥不再担任自然资源部部长职务，该职位出现空缺或待继任者。",
+          "impact": "目前证据不足，调研本身不构成直接的政策或市场变化，仅属于政府工作调研。",
+          "sources": [
+            {
+              "title": "【视频】谌贻琴在江西调研时强调 坚决落实就业优先战略 推动体育产业高质量发展",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/06/26/VIDEmYg42Ccm8AGlxYqiYdYd260626.shtml",
+              "published_at": "2026-06-26T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/06/26/VIDEmYg42Ccm8AGlxYqiYdYd260626.shtml",
+          "score": 100,
+          "publishedAt": "2026-06-26T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-26",
+          "title": "Ding Xuexiang emphasizes leveraging advantages and fostering new growth drivers to accelerate high-quality economic a...",
+          "summary": "丁薛祥在新疆调研，强调突出优势特色、培育新动能，加快高质量发展。",
+          "description": "丁薛祥在新疆调研，强调突出优势特色、培育新动能，加快高质量发展。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前未发生具体政策或状态变化，但高层调研释放了新疆新发展方向的信号。",
+          "sources": [
+            {
+              "title": "Ding Xuexiang emphasizes leveraging advantages and fostering new growth drivers to accelerate high-quality economic a...",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073468.htm",
+              "published_at": "2026-06-26T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073468.htm",
+          "score": 100,
+          "publishedAt": "2026-06-26T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-26",
+          "title": "中华人民共和国主席令（第七十九号）",
+          "summary": "关志鸥被免去自然资源部部长职务",
+          "description": "关志鸥被免去自然资源部部长职务",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "关志鸥不再担任自然资源部部长，该职位出现空缺。",
           "sources": [
             {
               "title": "中华人民共和国主席令（第七十九号）",
@@ -498,16 +542,16 @@
         },
         {
           "date": "2026-06-26",
-          "title": "中华人民共和国主席令（第七十八号）",
-          "summary": "全国人大常委会通过修改注册会计师法决定，2027年1月1日施行。",
-          "description": "全国人大常委会通过修改注册会计师法决定，2027年1月1日施行。",
+          "title": "中华人民共和国主席令（第七十八号）——修改注册会计师法",
+          "summary": "全国人大常委会通过修改注册会计师法的决定，自2027年1月1日起施行。",
+          "description": "全国人大常委会通过修改注册会计师法的决定，自2027年1月1日起施行。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "《注册会计师法》将依据本次修改决定进行更新，但具体修改条款尚未公开。法律将于2027年1月1日正式生效，此前为过渡期。",
+          "impact": "注册会计师法将迎来修改，具体修改内容未在本文中披露。施行日期为2027年1月1日，意味着有一段时间的过渡期。",
           "sources": [
             {
-              "title": "中华人民共和国主席令（第七十八号）",
+              "title": "中华人民共和国主席令（第七十八号）——修改注册会计师法",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073453.htm",
               "published_at": "2026-06-26T00:00:00.000Z"
@@ -521,12 +565,12 @@
         {
           "date": "2026-06-26",
           "title": "中华人民共和国主席令（第七十七号）",
-          "summary": "商标法经全国人大常委会修订通过，2027年1月1日起施行。",
-          "description": "商标法经全国人大常委会修订通过，2027年1月1日起施行。",
+          "summary": "全国人大常委会通过商标法修订，2027年1月1日起施行，具体修改内容待公布。",
+          "description": "全国人大常委会通过商标法修订，2027年1月1日起施行，具体修改内容待公布。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "商标法完成修订，法律文本更新，施行日期设定为2027年初，现行商标法将在新法施行后废止。",
+          "impact": "具体修订内容尚未公开，但确认商标法整体进行了修订。法律条文、制度设计或程序规则有所调整，需等待全文公布后才能明确变化细节。",
           "sources": [
             {
               "title": "中华人民共和国主席令（第七十七号）",
@@ -542,38 +586,16 @@
         },
         {
           "date": "2026-06-26",
-          "title": "十四届全国人大常委会第二十三次会议在京闭幕",
-          "summary": "十四届全国人大常委会第二十三次会议在京闭幕，具体成果待后续公布。",
-          "description": "十四届全国人大常委会第二十三次会议在京闭幕，具体成果待后续公布。",
+          "title": "谌贻琴向上合组织妇女论坛开幕式发表视频致辞",
+          "summary": "谌贻琴向上合妇女论坛视频致辞，但具体内容未公开。",
+          "description": "谌贻琴向上合妇女论坛视频致辞，但具体内容未公开。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "目前证据不足。本次会议的具体决议、法律通过情况或人事任免结果未在提供材料中披露。",
+          "impact": "目前证据不足，致辞内容未披露，无明显政策或合作机制变化。",
           "sources": [
             {
-              "title": "十四届全国人大常委会第二十三次会议在京闭幕",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073445.htm",
-              "published_at": "2026-06-26T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073445.htm",
-          "score": 100,
-          "publishedAt": "2026-06-26T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Chen Yiqin Delivers Video Speech at SCO Women's Forum Opening",
-          "summary": "谌贻琴在上合组织妇女论坛开幕式发表视频致辞。",
-          "description": "谌贻琴在上合组织妇女论坛开幕式发表视频致辞。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，仅记录了该论坛开幕及中方高级别官员致辞，未提及具体政策或立场变化。",
-          "sources": [
-            {
-              "title": "Chen Yiqin Delivers Video Speech at SCO Women's Forum Opening",
+              "title": "谌贻琴向上合组织妇女论坛开幕式发表视频致辞",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073440.htm",
               "published_at": "2026-06-26T00:00:00.000Z"
@@ -585,124 +607,14 @@
           "publishedAt": "2026-06-26T00:00:00.000Z"
         },
         {
-          "date": "2026-06-26",
-          "title": "谌贻琴在江西调研时强调 坚决落实就业优先战略 推动体育产业高质量发展",
-          "summary": "国务委员谌贻琴在江西调研就业和体育工作，强调落实就业优先战略和推动体育产业高质量发展，但暂无具体措施。",
-          "description": "国务委员谌贻琴在江西调研就业和体育工作，强调落实就业优先战略和推动体育产业高质量发展，但暂无具体措施。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前暂无具体政策或措施出台，调研本身不构成直接变化。",
-          "sources": [
-            {
-              "title": "谌贻琴在江西调研时强调 坚决落实就业优先战略 推动体育产业高质量发展",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073426.htm",
-              "published_at": "2026-06-26T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073426.htm",
-          "score": 100,
-          "publishedAt": "2026-06-26T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "国务院任免国家工作人员（2026年6月26日）",
-          "summary": "国务院于2026年6月26日发布任免通知，具体名单未披露。",
-          "description": "国务院于2026年6月26日发布任免通知，具体名单未披露。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家工作人员职务可能发生变动，但具体变动内容未知。",
-          "sources": [
-            {
-              "title": "国务院任免国家工作人员（2026年6月26日）",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073418.htm",
-              "published_at": "2026-06-26T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073418.htm",
-          "score": 100,
-          "publishedAt": "2026-06-26T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "中华人民共和国和孟加拉人民共和国联合公报",
-          "summary": "孟加拉总理拉赫曼应李强邀请访华并出席达沃斯论坛，具体成果待后续公报。",
-          "description": "孟加拉总理拉赫曼应李强邀请访华并出席达沃斯论坛，具体成果待后续公报。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，暂无具体协议或成果公布。此次访问是两国高层外交互动，但具体双边关系变化需等待联合公报全文。",
-          "sources": [
-            {
-              "title": "中华人民共和国和孟加拉人民共和国联合公报",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073406.htm",
-              "published_at": "2026-06-26T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073406.htm",
-          "score": 100,
-          "publishedAt": "2026-06-26T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "【视频】谌贻琴在江西调研时强调 坚决落实就业优先战略 推动体育产业高质量发展",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "【视频】谌贻琴在江西调研时强调 坚决落实就业优先战略 推动体育产业高质量发展",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/06/26/VIDEmYg42Ccm8AGlxYqiYdYd260626.shtml",
-              "published_at": "2026-06-26T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/06/26/VIDEmYg42Ccm8AGlxYqiYdYd260626.shtml",
-          "score": 100,
-          "publishedAt": "2026-06-26T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
-              "published_at": "2026-06-27T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
-          "score": 100,
-          "publishedAt": "2026-06-27T00:00:00.000Z"
-        },
-        {
           "date": "2026-06-27",
           "title": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+          "description": "全国人大财经委对2025年中央决算草案进行初步审查，提出审查意见。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "本次会议是2025年中央决算审查的初步阶段，目前尚未公布最终审查结果或具体修改意见，财政监督程序正在推进中。",
           "sources": [
             {
               "title": "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告",
@@ -718,13 +630,35 @@
         },
         {
           "date": "2026-06-27",
-          "title": "全国人民代表大会常务委员会关于批准2025年中央决算的决议",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
+          "summary": "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+          "description": "张国清副总理在浙江调研，强调科技创新与产业创新融合及质量管理，现有信息未涉及具体政策变化，建议观察后续落实。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前没有出台具体政策或措施变化，此次调研属于高层对既定方向的再次强调和督导，尚未带来直接的政策调整或执行变动。",
+          "sources": [
+            {
+              "title": "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
+              "published_at": "2026-06-27T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073528.htm",
+          "score": 100,
+          "publishedAt": "2026-06-27T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-27",
+          "title": "全国人民代表大会常务委员会关于批准2025年中央决算的决议",
+          "summary": "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。",
+          "description": "全国人大常委会听取2025年中央决算和审计工作报告并批准决算。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，但标题表明全国人大常委会已正式批准2025年中央决算，完成法定审批程序。",
           "sources": [
             {
               "title": "全国人民代表大会常务委员会关于批准2025年中央决算的决议",
@@ -737,6 +671,72 @@
           "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073522.htm",
           "score": 100,
           "publishedAt": "2026-06-27T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-27",
+          "title": "2026年1—5月份全国规模以上工业企业利润增长18.8%",
+          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "description": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "sources": [
+            {
+              "title": "2026年1—5月份全国规模以上工业企业利润增长18.8%",
+              "source": "国家统计局数据发布",
+              "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+              "published_at": "2026-06-27T00:00:00.000Z"
+            }
+          ],
+          "source": "国家统计局数据发布",
+          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260627_1964019.html",
+          "score": 100,
+          "publishedAt": "2026-06-27T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-27",
+          "title": "夏粮收购陆续展开 质优价稳购销两旺",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "夏粮收购陆续展开 质优价稳购销两旺",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073538.htm",
+              "published_at": "2026-06-27T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073538.htm",
+          "score": 100,
+          "publishedAt": "2026-06-27T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-27",
+          "title": "王小洪在吉林调研时强调 强化创新驱动 丰富政策供给 助力推动新时代东北全面振兴",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "王小洪在吉林调研时强调 强化创新驱动 丰富政策供给 助力推动新时代东北全面振兴",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073531.htm",
+              "published_at": "2026-06-27T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073531.htm",
+          "score": 100,
+          "publishedAt": "2026-06-27T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -747,9 +747,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "张国清在浙江调研时强调 强化科技创新和产业创新深度融合 全面加强质量管理增加高质量供给",
-            "第十四届全国人民代表大会财政经济委员会关于2025年中央决算草案审查结果的报告"
+            "全国人大财经委第五十次全体会议听取多部门报告",
+            "对2025年中央决算草案进行初步审查",
+            "提出初步审查意见，具体内容未公布"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -788,10 +788,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
+              "宏观",
               "公共政策",
-              "张国清在浙江调研时强调",
-              "强化科技创新和产业创新深",
-              "度融合"
+              "第十四届全国人民代表大会",
+              "财政经济委员会关于"
             ],
             "confidence": "high"
           }
@@ -812,8 +812,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+              "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
+              "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -832,8 +832,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+              "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
+              "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息"
             ]
           },
           {
@@ -851,15 +851,15 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+              "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
+              "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "目前信息未揭示任何风险，协议执行需关注双方经济基本面变化对互换额度的实际使用情况。",
+            "risk": "目前证据不足，无法评估具体风险。但若审查发现决算与预算存在较大偏差或资金违规问题，可能引发监管加强或政策调整。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -868,7 +868,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "目前无明显风险。若未来发行成本较高，可能增加偿债压力，但暂未披露相关数据。",
+            "risk": "目前证据不足，未有明确风险描述。若后续政策执行不力或与调研方向不符，可能导致预期落空。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -877,7 +877,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "规划尚未公开细节，存在政策不及预期或执行滞后的风险。此外，国际能源形势变化、技术瓶颈等可能影响目标实现。",
+            "risk": "目前证据不足，但审计报告可能揭示预算执行中的问题，需关注后续整改要求。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -900,13 +900,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 公共政策、张国清在浙江调研时强调、强化科技创新和产业创新深 的后续变化",
+            "variable": "跟踪 宏观、公共政策、第十四届全国人民代表大会 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻、国家统计局数据发布 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -1044,7 +1044,7 @@
           "每日经济新闻中文财经、公司和市场新闻",
           "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？"
         ],
-        "latest_change": "NASA测试新型在轨加油设备：NASA马歇尔航天飞行中心与L3Harris公司合作，对一种开发中的低温耦合器（cryocoupler）进行了操作测试。该技术旨在支持未来航天器在近地轨道完成加油后，再向深空推进。 本次测试将低温耦合器的技术成熟度向前推进一步，但尚未...",
+        "latest_change": "NASA测试用于未来太空加油任务的新型加油装置：NASA正在测试一种名为低温耦合器（cryocoupler）的新型加油装置，该装置可使航天器在地球轨道上完成燃料加注，为后续深空探测任务做准备。目前测试活动正在进行中，具体技术细节和测试结果尚未完整公布。 NASA开始公开测试一种专为...",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1123,12 +1123,12 @@
         ]
       },
       "latest_update": {
-        "title": "NASA测试新型在轨加油设备",
-        "summary": "NASA马歇尔航天飞行中心与L3Harris公司合作，对一种开发中的低温耦合器（cryocoupler）进行了操作测试。该技术旨在支持未来航天器在近地轨道完成加油后，再向深空推进。 本次测试将低温耦合器的技术成熟度向前推进一步，但尚未...",
+        "title": "NASA测试用于未来太空加油任务的新型加油装置",
+        "summary": "NASA正在测试一种名为低温耦合器（cryocoupler）的新型加油装置，该装置可使航天器在地球轨道上完成燃料加注，为后续深空探测任务做准备。目前测试活动正在进行中，具体技术细节和测试结果尚未完整公布。 NASA开始公开测试一种专为...",
         "source": "NASA Breaking News",
         "url": "https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions",
         "published_at": "2026-06-26T18:44:07.000Z",
-        "score": 78
+        "score": 76
       },
       "confirmed_facts": [
         {
@@ -1158,7 +1158,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -1.8388%；行情时间：2026-06-27T09:00:50.206Z。",
+          "impact": "关联标的：GOOGL -1.8388%；行情时间：2026-06-28T00:00:51.541Z。",
           "evidence": [
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻",
@@ -1634,16 +1634,16 @@
         },
         {
           "date": "2026-06-26",
-          "title": "NASA测试新型在轨加油设备",
-          "summary": "NASA马歇尔航天飞行中心与L3Harris公司合作，对一种开发中的低温耦合器（cryocoupler）进行了操作测试。该技术旨在支持未来航天器在近地轨道完成加油后，再向深空推进。 本次测试将低温耦合器的技术成熟度向前推进一步，但尚未公布测试结果或具体性能数据。 短期影响有...",
-          "description": "NASA马歇尔航天飞行中心与L3Harris公司合作，对一种开发中的低温耦合器（cryocoupler）进行了操作测试。该技术旨在支持未来航天器在近地轨道完成加油后，再向深空推进。 本次测试将低温耦合器的技术成熟度向前推进一步，但尚未公布测试结果或具体性能数据。 短期影响有...",
+          "title": "NASA测试用于未来太空加油任务的新型加油装置",
+          "summary": "NASA正在测试一种名为低温耦合器（cryocoupler）的新型加油装置，该装置可使航天器在地球轨道上完成燃料加注，为后续深空探测任务做准备。目前测试活动正在进行中，具体技术细节和测试结果尚未完整公布。 NASA开始公开测试一种专为太空加油设计的低温耦合器，这标志着未来深...",
+          "description": "NASA正在测试一种名为低温耦合器（cryocoupler）的新型加油装置，该装置可使航天器在地球轨道上完成燃料加注，为后续深空探测任务做准备。目前测试活动正在进行中，具体技术细节和测试结果尚未完整公布。 NASA开始公开测试一种专为太空加油设计的低温耦合器，这标志着未来深...",
           "evidence_type": "unknown",
           "importance": "中",
           "does_it_change_judgment": false,
-          "impact": "本次测试将低温耦合器的技术成熟度向前推进一步，但尚未公布测试结果或具体性能数据。",
+          "impact": "NASA开始公开测试一种专为太空加油设计的低温耦合器，这标志着未来深空任务在轨燃料补给技术进入实际验证阶段。",
           "sources": [
             {
-              "title": "NASA测试新型在轨加油设备",
+              "title": "NASA测试用于未来太空加油任务的新型加油装置",
               "source": "NASA Breaking News",
               "url": "https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions",
               "published_at": "2026-06-26T18:44:07.000Z"
@@ -1651,7 +1651,7 @@
           ],
           "source": "NASA Breaking News",
           "url": "https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions",
-          "score": 78,
+          "score": 76,
           "publishedAt": "2026-06-26T18:44:07.000Z"
         }
       ],
@@ -1895,10 +1895,10 @@
       "last_seen_at": "2026-06-26T10:00:00.000Z",
       "updated_at": "2026-06-26T10:00:00.000Z",
       "definition": {
-        "one_sentence": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。 相关来源：OpenAI News",
-        "background": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。 相关来源：OpenAI News",
+        "one_sentence": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。 相关来源：OpenAI News",
+        "background": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。 相关来源：OpenAI News",
         "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "OpenAI 首次公开预览 GPT-5.6 Sol，展示了该模型在多项能力上的提升以及新的安全技术。",
+        "why_it_matters": "OpenAI推出了GPT-5.6 Sol的预览，相较于前代模型，其在特定领域的能力有所增强，并提升了安全防护措施。",
         "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -1943,12 +1943,12 @@
       "current_judgment": {
         "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
         "basis": [
-          "OpenAI 发布了 GPT-5.6 Sol 的预览。",
-          "它在编码、科学和网络安全方面能力更强。",
-          "配备了最先进的安全栈。",
-          "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。"
+          "OpenAI预览GPT-5.6 Sol。",
+          "模型在编程、科学和网络安全领域能力更强。",
+          "配备最先进安全堆栈。",
+          "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。"
         ],
-        "latest_change": "GPT-5.6 Sol 预览：下一代模型：OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+        "latest_change": "预览GPT-5.6 Sol：下一代模型：OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1969,11 +1969,11 @@
         "source_links": [
           {
             "item_id": "tech-openai-news-fc602e9f59",
-            "title": "GPT-5.6 Sol 预览：下一代模型",
+            "title": "预览GPT-5.6 Sol：下一代模型",
             "source": "OpenAI News",
             "url": "https://openai.com/index/previewing-gpt-5-6-sol",
             "published_at": "2026-06-26T10:00:00.000Z",
-            "summary": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+            "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
             "relevance_score": 100
           },
           {
@@ -2027,8 +2027,8 @@
         ]
       },
       "latest_update": {
-        "title": "GPT-5.6 Sol 预览：下一代模型",
-        "summary": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+        "title": "预览GPT-5.6 Sol：下一代模型",
+        "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
         "source": "OpenAI News",
         "url": "https://openai.com/index/previewing-gpt-5-6-sol",
         "published_at": "2026-06-26T10:00:00.000Z",
@@ -2036,25 +2036,25 @@
       },
       "confirmed_facts": [
         {
-          "fact": "OpenAI 发布了 GPT-5.6 Sol 的预览。",
+          "fact": "OpenAI预览GPT-5.6 Sol。",
           "evidence_url": "https://openai.com/index/previewing-gpt-5-6-sol",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "它在编码、科学和网络安全方面能力更强。",
+          "fact": "模型在编程、科学和网络安全领域能力更强。",
           "evidence_url": "https://openai.com/index/how-agents-are-transforming-work",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "配备了最先进的安全栈。",
+          "fact": "配备最先进安全堆栈。",
           "evidence_url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+          "fact": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
           "evidence_url": "https://openai.com/index/omio",
           "source": "OpenAI News",
           "confidence": "高"
@@ -2064,7 +2064,7 @@
         "market": {
           "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
           "evidence": [
-            "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+            "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
             "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
             "OpenAI参与Appia基金会推动AI共享标准建设。"
           ],
@@ -2074,7 +2074,7 @@
         "industry": {
           "impact": "可能影响 AI政策、市场监管、商业、国际 相关判断，需继续核对后续证据。",
           "evidence": [
-            "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+            "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
             "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
             "OpenAI参与Appia基金会推动AI共享标准建设。"
           ],
@@ -2084,7 +2084,7 @@
         "company": {
           "impact": "关联实体：AI、OpenAI、model、人工智能。",
           "evidence": [
-            "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+            "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
             "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
             "OpenAI参与Appia基金会推动AI共享标准建设。"
           ],
@@ -2094,7 +2094,7 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+            "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
             "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
             "OpenAI参与Appia基金会推动AI共享标准建设。"
           ],
@@ -2104,7 +2104,7 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+            "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
             "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
             "OpenAI参与Appia基金会推动AI共享标准建设。"
           ],
@@ -2176,7 +2176,7 @@
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "目前证据不足",
+          "risk": "目前证据不足，主要风险在于实际性能与宣传不符，或安全堆栈存在未知漏洞。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2211,7 +2211,7 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "目前证据不足",
+          "uncertainty": "目前证据不足，主要风险在于实际性能与宣传不符，或安全堆栈存在未知漏洞。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -2266,11 +2266,11 @@
       "related_items": [
         {
           "item_id": "tech-openai-news-fc602e9f59",
-          "title": "GPT-5.6 Sol 预览：下一代模型",
+          "title": "预览GPT-5.6 Sol：下一代模型",
           "source": "OpenAI News",
           "url": "https://openai.com/index/previewing-gpt-5-6-sol",
           "published_at": "2026-06-26T10:00:00.000Z",
-          "summary": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
           "relevance_score": 100
         },
         {
@@ -2564,16 +2564,16 @@
         },
         {
           "date": "2026-06-26",
-          "title": "GPT-5.6 Sol 预览：下一代模型",
-          "summary": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
-          "description": "OpenAI 预览 GPT-5.6 Sol，强化编码、科学和网络安全能力，搭配先进安全栈。",
+          "title": "预览GPT-5.6 Sol：下一代模型",
+          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+          "description": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
           "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "OpenAI 首次公开预览 GPT-5.6 Sol，展示了该模型在多项能力上的提升以及新的安全技术。",
+          "impact": "OpenAI推出了GPT-5.6 Sol的预览，相较于前代模型，其在特定领域的能力有所增强，并提升了安全防护措施。",
           "sources": [
             {
-              "title": "GPT-5.6 Sol 预览：下一代模型",
+              "title": "预览GPT-5.6 Sol：下一代模型",
               "source": "OpenAI News",
               "url": "https://openai.com/index/previewing-gpt-5-6-sol",
               "published_at": "2026-06-26T10:00:00.000Z"
@@ -2593,9 +2593,9 @@
           "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
           "confidence": "high",
           "basis": [
-            "OpenAI 发布了 GPT-5.6 Sol 的预览。",
-            "它在编码、科学和网络安全方面能力更强。",
-            "配备了最先进的安全栈。"
+            "OpenAI预览GPT-5.6 Sol。",
+            "模型在编程、科学和网络安全领域能力更强。",
+            "配备最先进安全堆栈。"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -2705,7 +2705,7 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "目前证据不足",
+            "risk": "目前证据不足，主要风险在于实际性能与宣传不符，或安全堆栈存在未知漏洞。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2972,7 +2972,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.6399%；行情时间：2026-06-27T09:00:50.206Z。",
+          "impact": "关联标的：NVDA -1.6399%；行情时间：2026-06-28T00:00:51.541Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -3701,7 +3701,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.6399%、AVGO -3.6658%、TSLA 1.2236%；行情时间：2026-06-27T09:00:50.206Z。",
+          "impact": "关联标的：NVDA -1.6399%、AVGO -3.6658%、TSLA 1.2236%；行情时间：2026-06-28T00:00:51.541Z。",
           "evidence": [
             "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。",
             "OpenAI与博通联合发布定制AI推理芯片Jalapeño，旨在提升LLM推理性能与效率。",
@@ -4644,7 +4644,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 1.2236%、QQQ -1.3764%；行情时间：2026-06-27T09:00:50.206Z。",
+          "impact": "关联标的：TSLA 1.2236%、QQQ -1.3764%；行情时间：2026-06-28T00:00:51.541Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
@@ -5431,7 +5431,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -1.8388%；行情时间：2026-06-27T09:00:50.206Z。",
+          "impact": "关联标的：GOOGL -1.8388%；行情时间：2026-06-28T00:00:51.541Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
