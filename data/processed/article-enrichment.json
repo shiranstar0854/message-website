@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-30T09:01:15.746Z",
+  "generatedAt": "2026-07-01T00:01:12.614Z",
   "totals": {
-    "attempted": 59,
-    "excerptCount": 58,
-    "imageCount": 34,
+    "attempted": 65,
+    "excerptCount": 64,
+    "imageCount": 39,
     "failed": 1,
-    "skipped": 2
+    "skipped": 6
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 3,
+      "excerptCount": 3,
+      "imageCount": 3,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 2,
+      "skipped": 5,
       "disabled": true
     },
     "google-ai": {
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 0,
-      "excerptCount": 0,
-      "imageCount": 0,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -85,7 +85,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 0,
+      "skipped": 1,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 5,
-      "excerptCount": 5,
-      "imageCount": 5,
+      "attempted": 6,
+      "excerptCount": 6,
+      "imageCount": 6,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 8,
-      "excerptCount": 8,
-      "imageCount": 8,
+      "attempted": 10,
+      "excerptCount": 10,
+      "imageCount": 10,
       "failed": 0,
       "skipped": 0,
       "disabled": false
