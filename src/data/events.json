@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-01T00:01:21.130Z",
+  "generated_at": "2026-07-01T09:01:22.088Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 8,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-01T00:00:47.936Z"
+      "generated_at": "2026-07-01T09:00:51.403Z"
     },
     "llm": {
       "enabled": true,
@@ -45,26 +45,26 @@
       "status": "active",
       "priority_grade": "A",
       "importance_score": 100,
-      "first_seen_at": "2026-06-29T00:00:00.000Z",
+      "first_seen_at": "2026-06-30T00:00:00.000Z",
       "last_seen_at": "2026-07-01T00:00:00.000Z",
       "updated_at": "2026-07-01T00:00:00.000Z",
       "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、财政部财政新闻、国家统计局数据发布",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、财政部财政新闻、国家统计局数据发布",
+        "one_sentence": "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。 相关来源：中国政府网要闻、国家发展改革委新闻发布",
+        "background": "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。 相关来源：中国政府网要闻、国家发展改革委新闻发布",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 1 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "官方正式公布了庆祝大会的具体安排和时间，包括领导人出席和表彰内容，此前尚未有如此详细的预告。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
         "rationale": [
           "属于中国权威政策落地主线",
           "重要性评分为 100",
           "证据置信度为高"
         ],
         "market_symbols": [],
-        "policy_status": "落地执行",
+        "policy_status": "发布",
         "requires_follow_up": true
       },
       "profile": {
@@ -80,28 +80,28 @@
           "institutions": [
             "国务院",
             "中国政府网",
-            "人民银行",
-            "中国人民银行",
+            "国家发展改革委",
             "财政部",
             "统计局",
             "国家统计局"
           ],
           "countries_or_regions": [],
           "products_or_technologies": [
-            "AI"
+            "AI",
+            "人工智能"
           ]
         },
         "related_item_count": 20
       },
       "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
         "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "快讯：庆祝中国共产党成立105周年大会将举行",
-          "会议于2026年6月30日在深圳举行",
-          "为第四轮多边磋商"
+          "庆祝大会定于7月1日上午10时在人民大会堂举行",
+          "习近平将颁授“七一勋章”并发表重要讲话",
+          "大会还将表彰优秀党员、党务工作者和先进基层党组织",
+          "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。"
         ],
-        "latest_change": "快讯：庆祝中国共产党成立105周年大会将举行：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "latest_change": "快讯：庆祝中国共产党成立105周年大会将举行：中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -112,9 +112,8 @@
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 1,
-          "data_release": 2,
-          "unknown": 3
+          "unknown": 1,
+          "official_announcement": 5
         },
         "primary_source": {
           "name": "中国政府网要闻",
@@ -127,52 +126,52 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073849.htm",
             "published_at": "2026-07-01T00:00:00.000Z",
+            "summary": "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-ba6f7aaf03",
+            "title": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
+            "source": "国家发展改革委新闻发布",
+            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
+            "published_at": "2026-07-01T00:00:00.000Z",
+            "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-5663997cc9",
+            "title": "国务院任免国家工作人员（2026年7月1日）",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073978.htm",
+            "published_at": "2026-07-01T00:00:00.000Z",
             "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "macro-item-606e0c3cac",
-            "title": "上海合作组织开发银行多边磋商第四次会议在广东深圳举行",
-            "source": "财政部财政新闻",
-            "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260630_3992522.htm",
-            "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "macro-item-4266e1b0f4",
-            "title": "2026年6月中国采购经理指数运行情况",
-            "source": "国家统计局数据发布",
-            "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260630_1964032.html",
-            "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-03295b0ea8",
-            "title": "中共中央政治局召开会议 研究部署防汛抗旱工作 中共中央总书记习近平主持会议",
+            "item_id": "news-item-31a55e8b9e",
+            "title": "中共中央关于授予“七一勋章”的决定",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073773.htm",
-            "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "中共中央政治局召开会议部署防汛抗旱工作。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
+            "published_at": "2026-07-01T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-5d2fb6fafa",
-            "title": "Xi Jinping exchanges congratulatory messages with Seychelles President Herminie on 50th anniversary of diplomatic ties",
+            "item_id": "news-item-7cfe85db5b",
+            "title": "香港举行升旗仪式和酒会庆祝回归祖国29周年",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073768.htm",
-            "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "习近平与塞舌尔总统互致贺电庆祝建交50周年，属常规外交活动。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
+            "published_at": "2026-07-01T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-7ffd4ff626",
-            "title": "《求是》杂志重新发表习近平总书记重要文章《做焦裕禄式的县委书记》",
+            "item_id": "news-item-07c0eac7cb",
+            "title": "习近平：在庆祝中国共产党成立105周年大会上的讲话",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073766.htm",
-            "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "官方宣布《求是》杂志重新发表习近平总书记2015年文章《做焦裕禄式的县委书记》，意在重申基层干部作风建设要求。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
+            "published_at": "2026-07-01T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           }
         ],
@@ -182,7 +181,7 @@
       },
       "latest_update": {
         "title": "快讯：庆祝中国共产党成立105周年大会将举行",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "summary": "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
         "source": "中国政府网要闻",
         "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073849.htm",
         "published_at": "2026-07-01T00:00:00.000Z",
@@ -190,26 +189,26 @@
       },
       "confirmed_facts": [
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "fact": "庆祝大会定于7月1日上午10时在人民大会堂举行",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073849.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "快讯：庆祝中国共产党成立105周年大会将举行",
-          "evidence_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260630_3992522.htm",
-          "source": "财政部财政新闻",
+          "fact": "习近平将颁授“七一勋章”并发表重要讲话",
+          "evidence_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
+          "source": "国家发展改革委新闻发布",
           "confidence": "高"
         },
         {
-          "fact": "会议于2026年6月30日在深圳举行",
-          "evidence_url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260630_1964032.html",
-          "source": "国家统计局数据发布",
+          "fact": "大会还将表彰优秀党员、党务工作者和先进基层党组织",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073978.htm",
+          "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "为第四轮多边磋商",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073773.htm",
+          "fact": "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -218,9 +217,9 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-            "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。"
+            "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -228,19 +227,19 @@
         "industry": {
           "impact": "可能影响 公共政策、快讯、庆祝中国共产党成立、周年大会将举行 相关判断，需继续核对后续证据。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-            "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。"
+            "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、财政部、统计局、国家统计局。",
+          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-            "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。"
+            "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -248,9 +247,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-            "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。"
+            "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -258,9 +257,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-            "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。"
+            "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -284,7 +283,7 @@
           "confidence": "中",
           "watch_signals": [
             "跟踪 公共政策、快讯、庆祝中国共产党成立 的后续变化",
-            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+            "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -304,7 +303,7 @@
           "confidence": "中",
           "watch_signals": [
             "跟踪 公共政策、快讯、庆祝中国共产党成立 的后续变化",
-            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+            "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
           ]
         },
         {
@@ -323,32 +322,14 @@
           "confidence": "低",
           "watch_signals": [
             "跟踪 公共政策、快讯、庆祝中国共产党成立 的后续变化",
-            "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+            "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "信息不透明可能导致市场猜测，但暂无直接风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "数据缺失可能导致市场猜测和不确定性，增加短期波动风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "若会议部署未能及时有效落实，可能面临汛期灾害风险。但具体风险需待措施公布后评估。",
+          "risk": "目前证据不足",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -365,17 +346,7 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "信息不透明可能导致市场猜测，但暂无直接风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "数据缺失可能导致市场猜测和不确定性，增加短期波动风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "若会议部署未能及时有效落实，可能面临汛期灾害风险。但具体风险需待措施公布后评估。",
+          "uncertainty": "目前证据不足",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -393,7 +364,7 @@
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -424,301 +395,59 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073849.htm",
           "published_at": "2026-07-01T00:00:00.000Z",
+          "summary": "中共中央宣布7月1日举行建党105周年庆祝大会，习近平将颁授勋章并发表讲话。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-ba6f7aaf03",
+          "title": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
+          "published_at": "2026-07-01T00:00:00.000Z",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-5663997cc9",
+          "title": "国务院任免国家工作人员（2026年7月1日）",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073978.htm",
+          "published_at": "2026-07-01T00:00:00.000Z",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "macro-item-606e0c3cac",
-          "title": "上海合作组织开发银行多边磋商第四次会议在广东深圳举行",
-          "source": "财政部财政新闻",
-          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202606/t20260630_3992522.htm",
-          "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "上合组织开发银行多边磋商第四次会议在深圳召开，但具体内容未披露。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "macro-item-4266e1b0f4",
-          "title": "2026年6月中国采购经理指数运行情况",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202606/t20260630_1964032.html",
-          "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "国家统计局发布6月PMI数据，但具体数值未公开，需关注后续详细数据。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-03295b0ea8",
-          "title": "中共中央政治局召开会议 研究部署防汛抗旱工作 中共中央总书记习近平主持会议",
+          "item_id": "news-item-31a55e8b9e",
+          "title": "中共中央关于授予“七一勋章”的决定",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073773.htm",
-          "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "中共中央政治局召开会议部署防汛抗旱工作。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
+          "published_at": "2026-07-01T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-5d2fb6fafa",
-          "title": "Xi Jinping exchanges congratulatory messages with Seychelles President Herminie on 50th anniversary of diplomatic ties",
+          "item_id": "news-item-7cfe85db5b",
+          "title": "香港举行升旗仪式和酒会庆祝回归祖国29周年",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073768.htm",
-          "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "习近平与塞舌尔总统互致贺电庆祝建交50周年，属常规外交活动。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
+          "published_at": "2026-07-01T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-7ffd4ff626",
-          "title": "《求是》杂志重新发表习近平总书记重要文章《做焦裕禄式的县委书记》",
+          "item_id": "news-item-07c0eac7cb",
+          "title": "习近平：在庆祝中国共产党成立105周年大会上的讲话",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073766.htm",
-          "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "官方宣布《求是》杂志重新发表习近平总书记2015年文章《做焦裕禄式的县委书记》，意在重申基层干部作风建设要求。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
+          "published_at": "2026-07-01T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
-          "date": "2026-06-30",
-          "title": "党员10128.6万名 基层党组织543.1万个 中国共产党党员队伍稳步壮大 组织体系日趋严密",
-          "summary": "截至2025年底，中共党员总数达10128.6万名，基层组织543.1万个，均实现净增长。",
-          "description": "截至2025年底，中共党员总数达10128.6万名，基层组织543.1万个，均实现净增长。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "党员数量稳步增加，基层党组织数量也保持增长，显示党组织体系持续扩大和严密化。",
-          "sources": [
-            {
-              "title": "党员10128.6万名 基层党组织543.1万个 中国共产党党员队伍稳步壮大 组织体系日趋严密",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073760.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073760.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "6月份我国制造业PMI为50.3%",
-          "summary": "6月制造业PMI为50.3%，环比回升0.3个百分点，重返扩张区间。",
-          "description": "6月制造业PMI为50.3%，环比回升0.3个百分点，重返扩张区间。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "PMI从5月份的50.0%（荣枯线）升至50.3%，表明制造业景气水平有所回升，结束了此前一个月的临界值状态。",
-          "sources": [
-            {
-              "title": "6月份我国制造业PMI为50.3%",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/lianbo/202606/content_7073759.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202606/content_7073759.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "中国人民银行召开“两优一先”表彰大会暨“光荣在党50年”纪念章颁发仪式",
-          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "description": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "sources": [
-            {
-              "title": "中国人民银行召开“两优一先”表彰大会暨“光荣在党50年”纪念章颁发仪式",
-              "source": "中国人民银行新闻发布",
-              "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026063018452585084/index.html",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026063018452585084/index.html",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "中国人民银行优秀共产党员、优秀党务工作者、先进基层党组织表彰名单",
-          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "description": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国人民银行新闻发布、货币政策和金融市场运行信息",
-          "sources": [
-            {
-              "title": "中国人民银行优秀共产党员、优秀党务工作者、先进基层党组织表彰名单",
-              "source": "中国人民银行新闻发布",
-              "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026063020002759897/index.html",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026063020002759897/index.html",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "2026年第三季度国债发行有关安排公布",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "description": "财政部财政政策、国债、预算和财政运行新闻",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "财政部财政政策、国债、预算和财政运行新闻",
-          "sources": [
-            {
-              "title": "2026年第三季度国债发行有关安排公布",
-              "source": "财政部财政新闻",
-              "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260630_3992519.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "财政部财政新闻",
-          "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260630_3992519.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "财政部第一次续发行2026年记账式附息（十二期）国债",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "description": "财政部财政政策、国债、预算和财政运行新闻",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "财政部财政政策、国债、预算和财政运行新闻",
-          "sources": [
-            {
-              "title": "财政部第一次续发行2026年记账式附息（十二期）国债",
-              "source": "财政部财政新闻",
-              "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260630_3992526.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "财政部财政新闻",
-          "url": "http://zwgls.mof.gov.cn/ywgg/202606/t20260630_3992526.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "2025年我国水运多项指标稳居世界第一",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "2025年我国水运多项指标稳居世界第一",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073844.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073844.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "夏播粮食近八成 夏管全面展开",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "夏播粮食近八成 夏管全面展开",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073842.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073842.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "新华社社评：奋力谱写强党强国新篇章——热烈庆祝中国共产党成立105周年",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "新华社社评：奋力谱写强党强国新篇章——热烈庆祝中国共产党成立105周年",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073825.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073825.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "李强签署国务院令 公布《退役军人就业创业促进条例》",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "李强签署国务院令 公布《退役军人就业创业促进条例》",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073794.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202606/content_7073794.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "退役军人就业创业促进条例",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "退役军人就业创业促进条例",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/zhengce/content/202606/content_7073788.htm",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202606/content_7073788.htm",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
           "date": "2026-07-01",
-          "title": "快讯：庆祝中国共产党成立105周年大会将举行",
+          "title": "中共中央关于授予“七一勋章”的决定",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "evidence_type": "official_announcement",
@@ -727,14 +456,256 @@
           "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "sources": [
             {
-              "title": "快讯：庆祝中国共产党成立105周年大会将举行",
+              "title": "中共中央关于授予“七一勋章”的决定",
               "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073849.htm",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
               "published_at": "2026-07-01T00:00:00.000Z"
             }
           ],
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073849.htm",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "香港举行升旗仪式和酒会庆祝回归祖国29周年",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "香港举行升旗仪式和酒会庆祝回归祖国29周年",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "习近平：在庆祝中国共产党成立105周年大会上的讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "习近平：在庆祝中国共产党成立105周年大会上的讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "庆祝中国共产党成立105周年大会在京隆重举行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "庆祝中国共产党成立105周年大会在京隆重举行",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073947.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073947.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "快讯：习近平在庆祝中国共产党成立105周年大会上发表重要讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "快讯：习近平在庆祝中国共产党成立105周年大会上发表重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073914.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073914.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "快讯：习近平等为受表彰的全国“两优一先”代表颁奖",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "快讯：习近平等为受表彰的全国“两优一先”代表颁奖",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073909.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073909.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "快讯：习近平为“七一勋章”获得者颁授勋章",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "快讯：习近平为“七一勋章”获得者颁授勋章",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073901.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073901.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "快讯：庆祝中国共产党成立105周年大会开始",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "快讯：庆祝中国共产党成立105周年大会开始",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "庆祝香港回归祖国29周年活动启动礼举行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "庆祝香港回归祖国29周年活动启动礼举行",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "人民日报社论：砥砺初心使命 书写时代答卷——热烈庆祝中国共产党成立105周年",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "人民日报社论：砥砺初心使命 书写时代答卷——热烈庆祝中国共产党成立105周年",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "税收数据显示：我国具身智能产业总体发展向好",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "税收数据显示：我国具身智能产业总体发展向好",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202607/content_7073860.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7073860.htm",
           "score": 100,
           "publishedAt": "2026-07-01T00:00:00.000Z"
         }
@@ -744,12 +715,12 @@
         "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
         "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
           "confidence": "high",
           "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "快讯：庆祝中国共产党成立105周年大会将举行",
-            "会议于2026年6月30日在深圳举行"
+            "庆祝大会定于7月1日上午10时在人民大会堂举行",
+            "习近平将颁授“七一勋章”并发表重要讲话",
+            "大会还将表彰优秀党员、党务工作者和先进基层党组织"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -813,7 +784,7 @@
             "confidence": "中",
             "watch_signals": [
               "跟踪 公共政策、快讯、庆祝中国共产党成立 的后续变化",
-              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+              "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -833,7 +804,7 @@
             "confidence": "中",
             "watch_signals": [
               "跟踪 公共政策、快讯、庆祝中国共产党成立 的后续变化",
-              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+              "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
             ]
           },
           {
@@ -852,32 +823,14 @@
             "confidence": "低",
             "watch_signals": [
               "跟踪 公共政策、快讯、庆祝中国共产党成立 的后续变化",
-              "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息"
+              "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "信息不透明可能导致市场猜测，但暂无直接风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "数据缺失可能导致市场猜测和不确定性，增加短期波动风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "若会议部署未能及时有效落实，可能面临汛期灾害风险。但具体风险需待措施公布后评估。",
+            "risk": "目前证据不足",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -906,7 +859,7 @@
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻、财政部财政新闻 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -921,9 +874,9 @@
         "judgment_history": [
           {
             "date": "2026-07-01",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
             "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
             "evidence_item_ids": []
           }
         ],
@@ -988,10 +941,10 @@
       "last_seen_at": "2026-06-30T09:00:00.000Z",
       "updated_at": "2026-06-30T09:00:00.000Z",
       "definition": {
-        "one_sentence": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化... 相关来源：OpenAI News",
-        "background": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化... 相关来源：OpenAI News",
+        "one_sentence": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。 相关来源：OpenAI News",
+        "background": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。 相关来源：OpenAI News",
         "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。",
+        "why_it_matters": "新数据的发布提供了 ChatGPT 采纳趋势的最新指标，但具体量化变化在提供的摘要中未披露。",
         "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -1036,12 +989,12 @@
       "current_judgment": {
         "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
         "basis": [
-          "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用...",
-          "ChatGPT采用率如何扩大",
-          "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBe...",
-          "GeneBench-Pro基准测试发布"
+          "OpenAI 发布 ChatGPT 采用率新数据",
+          "全球用户使用量增加",
+          "用户探索更多功能",
+          "增长覆盖各区域和语言"
         ],
-        "latest_change": "ChatGPT采用率如何扩大：OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用...",
+        "latest_change": "ChatGPT 用户增长情况：OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1062,20 +1015,20 @@
         "source_links": [
           {
             "item_id": "international-openai-news-6fbc3708a9",
-            "title": "ChatGPT采用率如何扩大",
+            "title": "ChatGPT 用户增长情况",
             "source": "OpenAI News",
             "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
             "published_at": "2026-06-30T09:00:00.000Z",
-            "summary": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
+            "summary": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
             "relevance_score": 100
           },
           {
             "item_id": "international-openai-news-adcd2971e7",
-            "title": "GeneBench-Pro基准测试发布",
+            "title": "推出GeneBench-Pro",
             "source": "OpenAI News",
             "url": "https://openai.com/index/introducing-genebench-pro",
             "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+            "summary": "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
             "relevance_score": 100
           },
           {
@@ -1120,8 +1073,8 @@
         ]
       },
       "latest_update": {
-        "title": "ChatGPT采用率如何扩大",
-        "summary": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用...",
+        "title": "ChatGPT 用户增长情况",
+        "summary": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
         "source": "OpenAI News",
         "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
         "published_at": "2026-06-30T09:00:00.000Z",
@@ -1129,25 +1082,25 @@
       },
       "confirmed_facts": [
         {
-          "fact": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用...",
+          "fact": "OpenAI 发布 ChatGPT 采用率新数据",
           "evidence_url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "ChatGPT采用率如何扩大",
+          "fact": "全球用户使用量增加",
           "evidence_url": "https://openai.com/index/introducing-genebench-pro",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBe...",
+          "fact": "用户探索更多功能",
           "evidence_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
           "source": "OpenAI News",
           "confidence": "高"
         },
         {
-          "fact": "GeneBench-Pro基准测试发布",
+          "fact": "增长覆盖各区域和语言",
           "evidence_url": "https://openai.com/index/hp-frontier-partnership",
           "source": "OpenAI News",
           "confidence": "高"
@@ -1157,8 +1110,8 @@
         "market": {
           "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
           "evidence": [
-            "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
-            "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+            "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
+            "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
             "OpenAI新报告分析AI对欧盟就业的影响。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -1167,8 +1120,8 @@
         "industry": {
           "impact": "可能影响 国际、商业、地缘政治、AI政策 相关判断，需继续核对后续证据。",
           "evidence": [
-            "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
-            "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+            "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
+            "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
             "OpenAI新报告分析AI对欧盟就业的影响。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -1177,8 +1130,8 @@
         "company": {
           "impact": "关联实体：AI、OpenAI、model、人工智能。",
           "evidence": [
-            "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
-            "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+            "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
+            "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
             "OpenAI新报告分析AI对欧盟就业的影响。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -1187,8 +1140,8 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
-            "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+            "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
+            "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
             "OpenAI新报告分析AI对欧盟就业的影响。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -1197,8 +1150,8 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
-            "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+            "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
+            "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
             "OpenAI新报告分析AI对欧盟就业的影响。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
@@ -1269,25 +1222,25 @@
       "risks": [
         {
           "risk_type": "信息风险",
+          "risk": "由于数据来自 OpenAI 自身，可能存在选择性披露；缺乏具体数字使得外部验证困难。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "如果基准设计不够全面或存在偏差，可能误导AI研发方向。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "技术集成风险、数据安全与合规风险、对OpenAI平台的过度依赖、企业内部变革阻力。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "目前证据不足，主要风险在于实际性能与宣传不符，或安全堆栈存在未知漏洞。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1304,17 +1257,17 @@
       ],
       "uncertainties": [
         {
+          "uncertainty": "由于数据来自 OpenAI 自身，可能存在选择性披露；缺乏具体数字使得外部验证困难。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "如果基准设计不够全面或存在偏差，可能误导AI研发方向。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
           "uncertainty": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "技术集成风险、数据安全与合规风险、对OpenAI平台的过度依赖、企业内部变革阻力。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "目前证据不足，主要风险在于实际性能与宣传不符，或安全堆栈存在未知漏洞。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -1359,20 +1312,20 @@
       "related_items": [
         {
           "item_id": "international-openai-news-6fbc3708a9",
-          "title": "ChatGPT采用率如何扩大",
+          "title": "ChatGPT 用户增长情况",
           "source": "OpenAI News",
           "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
           "published_at": "2026-06-30T09:00:00.000Z",
-          "summary": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势将推动AI行业竞争，促进技术迭代，同时提升用户对AI助手的依赖。 需要注意：过度依赖AI可能导致人类技能退化，数据隐私问题也需要关注。",
+          "summary": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
           "relevance_score": 100
         },
         {
           "item_id": "international-openai-news-adcd2971e7",
-          "title": "GeneBench-Pro基准测试发布",
+          "title": "推出GeneBench-Pro",
           "source": "OpenAI News",
           "url": "https://openai.com/index/introducing-genebench-pro",
           "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。 该基准测试可能影响AI在生物医药行业的研究和应用方向，但目前尚缺乏实证数据支持。 需要注意：若基准测试设计不完善或被滥用，可能导致误导性结论；此外，目前信息不足，无法评估真实影响。",
+          "summary": "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
           "relevance_score": 100
         },
         {
@@ -1613,16 +1566,16 @@
         },
         {
           "date": "2026-06-30",
-          "title": "GeneBench-Pro基准测试发布",
-          "summary": "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可...",
-          "description": "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可...",
+          "title": "推出GeneBench-Pro",
+          "summary": "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
+          "description": "OpenAI推出GeneBench-Pro基准，用于测试AI在基因组学和生物学中的性能。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBench-Pro填补了这一空白。它的出现可能改变AI在生命科学领域能力的评估方式。",
+          "impact": "此前没有专门针对基因组学和生物学领域、使用真实复杂数据集的AI性能基准，GeneBench-Pro填补了这一空白。",
           "sources": [
             {
-              "title": "GeneBench-Pro基准测试发布",
+              "title": "推出GeneBench-Pro",
               "source": "OpenAI News",
               "url": "https://openai.com/index/introducing-genebench-pro",
               "published_at": "2026-06-30T00:00:00.000Z"
@@ -1635,16 +1588,16 @@
         },
         {
           "date": "2026-06-30",
-          "title": "核心转储流行病学：修复一个存在18年的bug",
-          "summary": "OpenAI工程师通过大规模核心转储数据分析，成功定位并修复了导致罕见基础设施崩溃的硬件故障和一个存在18年的软件bug。 基础设施的稳定性得到提升，一个长期存在的bug被消除。 直接提升了OpenAI基础设施的稳定性，可能减少未来类似崩溃。 需要注意：修复可能引入新问题，...",
-          "description": "OpenAI工程师通过大规模核心转储数据分析，成功定位并修复了导致罕见基础设施崩溃的硬件故障和一个存在18年的软件bug。 基础设施的稳定性得到提升，一个长期存在的bug被消除。 直接提升了OpenAI基础设施的稳定性，可能减少未来类似崩溃。 需要注意：修复可能引入新问题，...",
+          "title": "核心转储流行病学：修复一个18年的bug",
+          "summary": "OpenAI用核心转储流行病学方法修复18年bug。",
+          "description": "OpenAI用核心转储流行病学方法修复18年bug。",
           "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "基础设施的稳定性得到提升，一个长期存在的bug被消除。",
+          "impact": "目前证据不足，未提及基础设施或系统行为的具体变化。",
           "sources": [
             {
-              "title": "核心转储流行病学：修复一个存在18年的bug",
+              "title": "核心转储流行病学：修复一个18年的bug",
               "source": "OpenAI News",
               "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
               "published_at": "2026-06-30T00:00:00.000Z"
@@ -1657,16 +1610,16 @@
         },
         {
           "date": "2026-06-30",
-          "title": "ChatGPT采用率如何扩大",
-          "summary": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势...",
-          "description": "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。 增长趋势...",
+          "title": "ChatGPT 用户增长情况",
+          "summary": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
+          "description": "OpenAI 发布新数据，显示 ChatGPT 全球采纳度持续增长，用户使用频率和探索的功能增加，增长覆盖多个地区和语言。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用户活跃度提升和功能使用多样化。",
+          "impact": "新数据的发布提供了 ChatGPT 采纳趋势的最新指标，但具体量化变化在提供的摘要中未披露。",
           "sources": [
             {
-              "title": "ChatGPT采用率如何扩大",
+              "title": "ChatGPT 用户增长情况",
               "source": "OpenAI News",
               "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
               "published_at": "2026-06-30T09:00:00.000Z"
@@ -1686,9 +1639,9 @@
           "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
           "confidence": "high",
           "basis": [
-            "OpenAI发布了最新的Signals数据，显示ChatGPT的全球采用率正在增长，用户使用频率增加，探索更多功能，并且增长覆盖多个地区和语言。 根据OpenAI新公布的数据，ChatGPT的用户采纳情况发生了变化，表现为全球范围内用...",
-            "ChatGPT采用率如何扩大",
-            "OpenAI发布了GeneBench-Pro，这是一个用于评估人工智能在基因组学、生物学和科学研究领域性能的新基准测试。该基准测试使用复杂、真实世界的数据集。 此前缺少一个专门针对基因组学和生物学领域AI性能的标准化基准，GeneBe..."
+            "OpenAI 发布 ChatGPT 采用率新数据",
+            "全球用户使用量增加",
+            "用户探索更多功能"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -1798,25 +1751,25 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
+            "risk": "由于数据来自 OpenAI 自身，可能存在选择性披露；缺乏具体数字使得外部验证困难。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "如果基准设计不够全面或存在偏差，可能误导AI研发方向。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "技术集成风险、数据安全与合规风险、对OpenAI平台的过度依赖、企业内部变革阻力。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "目前证据不足，主要风险在于实际性能与宣传不符，或安全堆栈存在未知漏洞。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2098,7 +2051,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL 1.0519%；行情时间：2026-07-01T00:00:47.936Z。",
+          "impact": "关联标的：GOOGL 1.0519%；行情时间：2026-07-01T09:00:51.403Z。",
           "evidence": [
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻",
@@ -2857,10 +2810,10 @@
       "last_seen_at": "2026-07-01T00:00:00.000Z",
       "updated_at": "2026-07-01T00:00:00.000Z",
       "definition": {
-        "one_sentence": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、第一财经、OpenAI News",
-        "background": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、第一财经、OpenAI News",
+        "one_sentence": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。 相关来源：每日经济新闻、第一财经、OpenAI News",
+        "background": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。 相关来源：每日经济新闻、第一财经、OpenAI News",
         "core_question": "AI芯片后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "AI芯片 会影响政策、市场、产业或国际变化判断；覆盖 3 个公开来源，仍处在高时效窗口内。",
+        "why_it_matters": "Anthropic推出了新一代中端AI模型Claude Sonnet 5，在保持较强性能的同时大幅降价，改变了其产品线的性价比格局。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -2913,23 +2866,23 @@
       "current_judgment": {
         "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/AVGO/TSLA/SMH。",
         "basis": [
-          "每日经济新闻中文财经、公司和市场新闻",
-          "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46",
-          "韩国宣布超4755万亿韩元AI投资计划",
-          "旨在争夺全球AI产业主导权"
+          "Claude Sonnet 5性能逼近Opus 4.8",
+          "价格大幅下调60%",
+          "2026年6月30日发布",
+          "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。"
         ],
-        "latest_change": "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46：每日经济新闻中文财经、公司和市场新闻",
+        "latest_change": "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46：Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
         "source_count": 4,
         "official_source_count": 0,
-        "financial_media_count": 1,
+        "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "medium",
         "evidence_types": {
-          "reliable_media_report": 1,
+          "unknown": 1,
           "data_release": 3,
           "industry_analysis": 2
         },
@@ -2944,7 +2897,7 @@
             "source": "每日经济新闻",
             "url": "https://www.nbd.com.cn/articles/2026-07-01/4442833.html",
             "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "summary": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
             "relevance_score": 100
           },
           {
@@ -2999,7 +2952,7 @@
       },
       "latest_update": {
         "title": "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "summary": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
         "source": "每日经济新闻",
         "url": "https://www.nbd.com.cn/articles/2026-07-01/4442833.html",
         "published_at": "2026-07-01T00:00:00.000Z",
@@ -3007,25 +2960,25 @@
       },
       "confirmed_facts": [
         {
-          "fact": "每日经济新闻中文财经、公司和市场新闻",
+          "fact": "Claude Sonnet 5性能逼近Opus 4.8",
           "evidence_url": "https://www.nbd.com.cn/articles/2026-07-01/4442833.html",
           "source": "每日经济新闻",
           "confidence": "中"
         },
         {
-          "fact": "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46",
+          "fact": "价格大幅下调60%",
           "evidence_url": "https://www.yicai.com/news/103251937.html",
           "source": "第一财经",
           "confidence": "中"
         },
         {
-          "fact": "韩国宣布超4755万亿韩元AI投资计划",
+          "fact": "2026年6月30日发布",
           "evidence_url": "https://www.yicai.com/news/103250925.html",
           "source": "第一财经",
           "confidence": "中"
         },
         {
-          "fact": "旨在争夺全球AI产业主导权",
+          "fact": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
           "evidence_url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
           "source": "每日经济新闻",
           "confidence": "中"
@@ -3033,9 +2986,9 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA 2.6260%、MSFT 1.2074%、AVGO 1.4230%、TSLA 2.1270%、SMH 3.7833%；行情时间：2026-07-01T00:00:47.936Z。",
+          "impact": "关联标的：NVDA 2.6260%、MSFT 1.2074%、AVGO 1.4230%、TSLA 2.1270%、SMH 3.7833%；行情时间：2026-07-01T09:00:51.403Z。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
+            "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
             "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
             "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。"
           ],
@@ -3045,7 +2998,7 @@
         "industry": {
           "impact": "可能影响 国际、商业、AI芯片、宏观 相关判断，需继续核对后续证据。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
+            "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
             "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
             "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。"
           ],
@@ -3055,7 +3008,7 @@
         "company": {
           "impact": "关联实体：NVDA、MSFT、AVGO、TSLA、SMH、英伟达。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
+            "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
             "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
             "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。"
           ],
@@ -3065,7 +3018,7 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
+            "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
             "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
             "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。"
           ],
@@ -3075,7 +3028,7 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
+            "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
             "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
             "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。"
           ],
@@ -3131,7 +3084,7 @@
         },
         {
           "type": "市场反馈",
-          "description": "NVDA 1.2673%",
+          "description": "NVDA 2.626%",
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-07-01/4442833.html",
           "date": "2026-07-01",
@@ -3202,6 +3155,15 @@
       "risks": [
         {
           "risk_type": "信息风险",
+          "risk": "如果实际性能未达宣称水平，可能损害Anthropic信誉。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "投资规模过大可能导致财政压力；如果AI技术发展不及预期，巨额投资可能面临浪费风险；同时全球化竞争可能引发技术封锁或贸易摩擦。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -3212,15 +3174,6 @@
         {
           "risk_type": "信息风险",
           "risk": "若销量持续低迷且芯片价格居高不下，车企可能陷入经营困境，行业整体衰退风险增加。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "过度乐观的表述可能抬高市场预期，若后续业绩不及预期，将引发回调风险。物理AI概念尚处早期，商业模式不确定性高。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -3237,17 +3190,17 @@
       ],
       "uncertainties": [
         {
+          "uncertainty": "如果实际性能未达宣称水平，可能损害Anthropic信誉。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
           "uncertainty": "投资规模过大可能导致财政压力；如果AI技术发展不及预期，巨额投资可能面临浪费风险；同时全球化竞争可能引发技术封锁或贸易摩擦。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
           "uncertainty": "若销量持续低迷且芯片价格居高不下，车企可能陷入经营困境，行业整体衰退风险增加。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "过度乐观的表述可能抬高市场预期，若后续业绩不及预期，将引发回调风险。物理AI概念尚处早期，商业模式不确定性高。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -3296,7 +3249,7 @@
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-07-01/4442833.html",
           "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
           "relevance_score": 100
         },
         {
@@ -3591,12 +3544,12 @@
         {
           "date": "2026-07-01",
           "title": "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "reliable_media_report",
+          "summary": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
+          "description": "Anthropic发布中端模型Claude Sonnet 5，性能接近Opus 4.8且价格降60%。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "impact": "Anthropic推出了新一代中端AI模型Claude Sonnet 5，在保持较强性能的同时大幅降价，改变了其产品线的性价比格局。",
           "sources": [
             {
               "title": "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46",
@@ -3619,9 +3572,9 @@
           "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/AVGO/TSLA/SMH。",
           "confidence": "medium",
           "basis": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "Anthropic发布Claude Sonnet 5，性能逼近Opus 4.8、价格砍掉60%；英伟达老款GPU RTX 3060重新在美上市丨全球科技早参 2026-07-01 07:46",
-            "韩国宣布超4755万亿韩元AI投资计划"
+            "Claude Sonnet 5性能逼近Opus 4.8",
+            "价格大幅下调60%",
+            "2026年6月30日发布"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -3731,6 +3684,15 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
+            "risk": "如果实际性能未达宣称水平，可能损害Anthropic信誉。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "投资规模过大可能导致财政压力；如果AI技术发展不及预期，巨额投资可能面临浪费风险；同时全球化竞争可能引发技术封锁或贸易摩擦。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -3741,15 +3703,6 @@
           {
             "risk_type": "信息风险",
             "risk": "若销量持续低迷且芯片价格居高不下，车企可能陷入经营困境，行业整体衰退风险增加。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "过度乐观的表述可能抬高市场预期，若后续业绩不及预期，将引发回调风险。物理AI概念尚处早期，商业模式不确定性高。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -3912,21 +3865,20 @@
           "此轮造富可能源于史上最大规模IPO",
           "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
         ],
-        "latest_change": "美股SpaceX涨超4%；美公布6亿美元月球任务计划，推进月球基地建设；海南文昌超级卫星工厂产线顺利通过贯通测试总结报告评审；八部门：到2030年工业互联网产业增加值突破2.5万亿——《投资早参》 2026-07-01 07:24：每日经济新闻中文财经、公司和市场新闻",
+        "latest_change": "U.S. Stock Market: SpaceX Up Over 4%; U.S. Announces $600 Million Moon Mission Plan; Hainan Wenchang Super Satellite...：美股三大指数收涨，道指创收盘新高。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
         "source_count": 2,
         "official_source_count": 0,
-        "financial_media_count": 1,
+        "financial_media_count": 0,
         "timeline_count": 7,
         "confidence_basis": "medium",
         "evidence_types": {
           "data_release": 3,
           "unknown": 1,
-          "industry_analysis": 1,
-          "reliable_media_report": 1
+          "industry_analysis": 2
         },
         "primary_source": {
           "name": "每日经济新闻",
@@ -3980,11 +3932,11 @@
           },
           {
             "item_id": "business-item-83a534fbd2",
-            "title": "美股SpaceX涨超4%；美公布6亿美元月球任务计划，推进月球基地建设；海南文昌超级卫星工厂产线顺利通过贯通测试总结报告评审；八部门：到2030年工业互联网产业增加值突破2.5万亿——《投资早参》 2026-07-01 07:24",
+            "title": "U.S. Stock Market: SpaceX Up Over 4%; U.S. Announces $600 Million Moon Mission Plan; Hainan Wenchang Super Satellite...",
             "source": "每日经济新闻",
             "url": "https://www.nbd.com.cn/articles/2026-07-01/4442751.html",
             "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "summary": "美股三大指数收涨，道指创收盘新高。",
             "relevance_score": 83
           }
         ],
@@ -3993,8 +3945,8 @@
         ]
       },
       "latest_update": {
-        "title": "美股SpaceX涨超4%；美公布6亿美元月球任务计划，推进月球基地建设；海南文昌超级卫星工厂产线顺利通过贯通测试总结报告评审；八部门：到2030年工业互联网产业增加值突破2.5万亿——《投资早参》 2026-07-01 07:24",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "title": "U.S. Stock Market: SpaceX Up Over 4%; U.S. Announces $600 Million Moon Mission Plan; Hainan Wenchang Super Satellite...",
+        "summary": "美股三大指数收涨，道指创收盘新高。",
         "source": "每日经济新闻",
         "url": "https://www.nbd.com.cn/articles/2026-07-01/4442751.html",
         "published_at": "2026-07-01T00:00:00.000Z",
@@ -4028,7 +3980,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 2.1270%、QQQ 1.7015%、SPY 0.7787%；行情时间：2026-07-01T00:00:47.936Z。",
+          "impact": "关联标的：TSLA 2.1270%、QQQ 1.7015%、SPY 0.7787%；行情时间：2026-07-01T09:00:51.403Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
@@ -4305,11 +4257,11 @@
         },
         {
           "item_id": "business-item-83a534fbd2",
-          "title": "美股SpaceX涨超4%；美公布6亿美元月球任务计划，推进月球基地建设；海南文昌超级卫星工厂产线顺利通过贯通测试总结报告评审；八部门：到2030年工业互联网产业增加值突破2.5万亿——《投资早参》 2026-07-01 07:24",
+          "title": "U.S. Stock Market: SpaceX Up Over 4%; U.S. Announces $600 Million Moon Mission Plan; Hainan Wenchang Super Satellite...",
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-07-01/4442751.html",
           "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary": "美股三大指数收涨，道指创收盘新高。",
           "relevance_score": 83
         }
       ],
@@ -4448,16 +4400,16 @@
         },
         {
           "date": "2026-07-01",
-          "title": "美股SpaceX涨超4%；美公布6亿美元月球任务计划，推进月球基地建设；海南文昌超级卫星工厂产线顺利通过贯通测试总结报告评审；八部门：到2030年工业互联网产业增加值突破2.5万亿——《投资早参》 2026-07-01 07:24",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "reliable_media_report",
+          "title": "U.S. Stock Market: SpaceX Up Over 4%; U.S. Announces $600 Million Moon Mission Plan; Hainan Wenchang Super Satellite...",
+          "summary": "美股三大指数收涨，道指创收盘新高。",
+          "description": "美股三大指数收涨，道指创收盘新高。",
+          "evidence_type": "industry_analysis",
           "importance": "中",
           "does_it_change_judgment": false,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "impact": "美股市场延续上行趋势，道指创收盘新高，市场风险偏好有所回升。",
           "sources": [
             {
-              "title": "美股SpaceX涨超4%；美公布6亿美元月球任务计划，推进月球基地建设；海南文昌超级卫星工厂产线顺利通过贯通测试总结报告评审；八部门：到2030年工业互联网产业增加值突破2.5万亿——《投资早参》 2026-07-01 07:24",
+              "title": "U.S. Stock Market: SpaceX Up Over 4%; U.S. Announces $600 Million Moon Mission Plan; Hainan Wenchang Super Satellite...",
               "source": "每日经济新闻",
               "url": "https://www.nbd.com.cn/articles/2026-07-01/4442751.html",
               "published_at": "2026-07-01T00:00:00.000Z"
@@ -4846,7 +4798,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.2074%；行情时间：2026-07-01T00:00:47.936Z。",
+          "impact": "关联标的：MSFT 1.2074%；行情时间：2026-07-01T09:00:51.403Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -5459,7 +5411,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA 2.6260%；行情时间：2026-07-01T00:00:47.936Z。",
+          "impact": "关联标的：NVDA 2.6260%；行情时间：2026-07-01T09:00:51.403Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -5521,7 +5473,7 @@
         },
         {
           "type": "市场反馈",
-          "description": "NVDA 1.2673%",
+          "description": "NVDA 2.626%",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103244887.html",
           "date": "2026-06-26",
@@ -6153,7 +6105,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL 1.0519%；行情时间：2026-07-01T00:00:47.936Z。",
+          "impact": "关联标的：GOOGL 1.0519%；行情时间：2026-07-01T09:00:51.403Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
