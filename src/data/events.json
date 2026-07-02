@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-02T00:01:20.855Z",
+  "generated_at": "2026-07-02T09:31:34.396Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 8,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-02T00:00:56.301Z"
+      "generated_at": "2026-07-02T09:31:09.819Z"
     },
     "llm": {
       "enabled": true,
@@ -37,6 +37,894 @@
     }
   ],
   "events": [
+    {
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "lane_id": "china_policy",
+      "lane_label": "中国权威政策落地",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-07-01T00:00:00.000Z",
+      "last_seen_at": "2026-07-02T00:00:00.000Z",
+      "updated_at": "2026-07-02T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "科技部科技政策、科研合作、标准和创新体系工作动态 相关来源：科技部工作动态、国家发展改革委新闻发布、中国政府网要闻",
+        "background": "科技部科技政策、科研合作、标准和创新体系工作动态 相关来源：科技部工作动态、国家发展改革委新闻发布、中国政府网要闻",
+        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 6 条官方或市场权威来源，仍处在高时效窗口内。",
+        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
+        "rationale": [
+          "属于中国权威政策落地主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "发布",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "重大科研基础设施和大型科",
+          "研仪器管理共享创新服务高",
+          "级研修班在杭州举办",
+          "科技部科技政策"
+        ],
+        "entities": {
+          "companies": [],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网",
+            "国家发展改革委",
+            "科技部"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
+        "basis": [
+          "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+          "监管中心组织召开2026年度科技监管工作交流会",
+          "国家发展改革委宏观政策、价格、产业和经济运行信息"
+        ],
+        "latest_change": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办：科技部科技政策、科研合作、标准和创新体系工作动态",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 3,
+        "official_source_count": 20,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "official_announcement": 6
+        },
+        "primary_source": {
+          "name": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html"
+        },
+        "source_links": [
+          {
+            "item_id": "tech-item-fe5b4ef019",
+            "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+            "source": "科技部工作动态",
+            "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "tech-item-0e7d101107",
+            "title": "监管中心组织召开2026年度科技监管工作交流会",
+            "source": "科技部工作动态",
+            "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-7ee384bc09",
+            "title": "郑栅洁同志讲授树立和践行正确政绩观学习教育专题党课并赴中国共产党历史展览馆开展主题党日活动",
+            "source": "国家发展改革委新闻发布",
+            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260702_1406211.html",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-5537a1dc11",
+            "title": "国务院关于《残疾人保障和发展“十五五”规划》的批复",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-4793d575b3",
+            "title": "国务院关于《体育强国建设“十五五”规划》的批复",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-468861f823",
+            "title": "国务院关于同意在上海市设立上海辰山国家植物园的批复",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/zhengce/content/202607/content_7074090.htm",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+        "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+        "source": "科技部工作动态",
+        "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
+        "published_at": "2026-07-02T00:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "evidence_url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
+          "source": "科技部工作动态",
+          "confidence": "高"
+        },
+        {
+          "fact": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+          "evidence_url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
+          "source": "科技部工作动态",
+          "confidence": "高"
+        },
+        {
+          "fact": "监管中心组织召开2026年度科技监管工作交流会",
+          "evidence_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260702_1406211.html",
+          "source": "国家发展改革委新闻发布",
+          "confidence": "高"
+        },
+        {
+          "fact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "evidence_url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "evidence": [
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办、科技部科技政策 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委、科技部。",
+          "evidence": [
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "国家发展改革委宏观政策、价格、产业和经济运行信息"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+            "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+            "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+            "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "后续执行细节和市场反应仍需继续跟踪。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "后续执行细节和市场反应仍需继续跟踪。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中国权威政策落地是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "tech-item-fe5b4ef019",
+          "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "tech-item-0e7d101107",
+          "title": "监管中心组织召开2026年度科技监管工作交流会",
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-7ee384bc09",
+          "title": "郑栅洁同志讲授树立和践行正确政绩观学习教育专题党课并赴中国共产党历史展览馆开展主题党日活动",
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260702_1406211.html",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-5537a1dc11",
+          "title": "国务院关于《残疾人保障和发展“十五五”规划》的批复",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-4793d575b3",
+          "title": "国务院关于《体育强国建设“十五五”规划》的批复",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-468861f823",
+          "title": "国务院关于同意在上海市设立上海辰山国家植物园的批复",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074090.htm",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-01",
+          "title": "快讯：庆祝中国共产党成立105周年大会开始",
+          "summary": "庆祝中国共产党成立105周年大会开始，军乐团奏国歌，全场高唱国歌。",
+          "description": "庆祝中国共产党成立105周年大会开始，军乐团奏国歌，全场高唱国歌。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足。该快讯仅报道大会开始，未提及任何政策或人事变动。",
+          "sources": [
+            {
+              "title": "快讯：庆祝中国共产党成立105周年大会开始",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "庆祝香港回归祖国29周年活动启动礼举行",
+          "summary": "香港各界庆典委员会举行庆祝回归29周年启动礼，主题为“维港同庆廿九载 香江奋进启新程”。",
+          "description": "香港各界庆典委员会举行庆祝回归29周年启动礼，主题为“维港同庆廿九载 香江奋进启新程”。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "该活动属于年度常规庆祝仪式，未显示政策或社会格局变化，仅作为纪念节点正常进行。",
+          "sources": [
+            {
+              "title": "庆祝香港回归祖国29周年活动启动礼举行",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
+          "summary": "文章标题确认，但正文缺失，无法分析具体内容。",
+          "description": "文章标题确认，但正文缺失，无法分析具体内容。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "未提供文章正文，无法判断具体变化内容。",
+          "sources": [
+            {
+              "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-01",
+          "title": "People's Daily Editorial: Forge Ahead with Original Aspiration, Write the Answer Sheet of the Times - Warmly Celebrat...",
+          "summary": "《人民日报》发表社论庆祝建党105周年，强调初心使命与时代答卷。",
+          "description": "《人民日报》发表社论庆祝建党105周年，强调初心使命与时代答卷。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，社论本身未提及具体政策或形势变化。",
+          "sources": [
+            {
+              "title": "People's Daily Editorial: Forge Ahead with Original Aspiration, Write the Answer Sheet of the Times - Warmly Celebrat...",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
+              "published_at": "2026-07-01T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
+          "score": 100,
+          "publishedAt": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "description": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "sources": [
+            {
+              "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+              "source": "科技部工作动态",
+              "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "监管中心组织召开2026年度科技监管工作交流会",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "description": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "sources": [
+            {
+              "title": "监管中心组织召开2026年度科技监管工作交流会",
+              "source": "科技部工作动态",
+              "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "郑栅洁同志讲授树立和践行正确政绩观学习教育专题党课并赴中国共产党历史展览馆开展主题党日活动",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "description": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "sources": [
+            {
+              "title": "郑栅洁同志讲授树立和践行正确政绩观学习教育专题党课并赴中国共产党历史展览馆开展主题党日活动",
+              "source": "国家发展改革委新闻发布",
+              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260702_1406211.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260702_1406211.html",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "国务院关于《残疾人保障和发展“十五五”规划》的批复",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院关于《残疾人保障和发展“十五五”规划》的批复",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "国务院关于《体育强国建设“十五五”规划》的批复",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院关于《体育强国建设“十五五”规划》的批复",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "国务院关于同意在上海市设立上海辰山国家植物园的批复",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院关于同意在上海市设立上海辰山国家植物园的批复",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/zhengce/content/202607/content_7074090.htm",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074090.htm",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "不断创造无愧于时代和人民的新业绩——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话鼓舞全党全军全国各族人民坚定信心接续奋斗",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "不断创造无愧于时代和人民的新业绩——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话鼓舞全党全军全国各族人民坚定信心接续奋斗",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074037.htm",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074037.htm",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "人民日报评论员：奋进新征程、建功新时代，奋力创造新的历史辉煌——论学习贯彻习近平总书记在庆祝中国共产党成立一百零五周年大会上重要讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "人民日报评论员：奋进新征程、建功新时代，奋力创造新的历史辉煌——论学习贯彻习近平总书记在庆祝中国共产党成立一百零五周年大会上重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074030.htm",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074030.htm",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
+          "confidence": "high",
+          "basis": [
+            "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
+            "监管中心组织召开2026年度科技监管工作交流会"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "重大科研基础设施和大型科",
+              "研仪器管理共享创新服务高",
+              "级研修班在杭州举办",
+              "科技部科技政策"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+              "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+              "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+              "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "后续执行细节和市场反应仍需继续跟踪。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 科技部工作动态、国家发展改革委新闻发布 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-07-02",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
+            "change_type": "初始判断",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：发布。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中国权威政策落地是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
     {
       "event_id": "topic-消费电子-空天地海-新一代通信网建设提速-消费电子-空天地海-新一代通信网建设提速",
       "title": "消费电子",
@@ -109,20 +997,19 @@
           "每日经济新闻中文财经、公司和市场新闻",
           "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？"
         ],
-        "latest_change": "涨近9%！Meta拟对外出售算力，挑战亚马逊、微软和谷歌；SpaceX“造AI手机”传闻带飞高通，马斯克火速否认丨全球科技早参 2026-07-02 07:56：每日经济新闻中文财经、公司和市场新闻",
+        "latest_change": "Meta to Sell Computing Power, Challenging Tech Giants; SpaceX Denies AI Phone Rumor：Meta计划出售闲置AI算力进入云计算市场，挑战亚马逊、微软和谷歌；SpaceX AI手机传闻被否认。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
         "source_count": 5,
         "official_source_count": 1,
-        "financial_media_count": 1,
+        "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "unknown": 3,
-          "industry_analysis": 2,
-          "reliable_media_report": 1
+          "unknown": 4,
+          "industry_analysis": 2
         },
         "primary_source": {
           "name": "每日经济新闻",
@@ -158,11 +1045,11 @@
           },
           {
             "item_id": "international-item-3080ca86df",
-            "title": "涨近9%！Meta拟对外出售算力，挑战亚马逊、微软和谷歌；SpaceX“造AI手机”传闻带飞高通，马斯克火速否认丨全球科技早参 2026-07-02 07:56",
+            "title": "Meta to Sell Computing Power, Challenging Tech Giants; SpaceX Denies AI Phone Rumor",
             "source": "每日经济新闻",
             "url": "https://www.nbd.com.cn/articles/2026-07-02/4444634.html",
             "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "summary": "Meta计划出售闲置AI算力进入云计算市场，挑战亚马逊、微软和谷歌；SpaceX AI手机传闻被否认。",
             "relevance_score": 91
           },
           {
@@ -189,8 +1076,8 @@
         ]
       },
       "latest_update": {
-        "title": "涨近9%！Meta拟对外出售算力，挑战亚马逊、微软和谷歌；SpaceX“造AI手机”传闻带飞高通，马斯克火速否认丨全球科技早参 2026-07-02 07:56",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "title": "Meta to Sell Computing Power, Challenging Tech Giants; SpaceX Denies AI Phone Rumor",
+        "summary": "Meta计划出售闲置AI算力进入云计算市场，挑战亚马逊、微软和谷歌；SpaceX AI手机传闻被否认。",
         "source": "每日经济新闻",
         "url": "https://www.nbd.com.cn/articles/2026-07-02/4444634.html",
         "published_at": "2026-07-02T00:00:00.000Z",
@@ -224,7 +1111,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 3.0186%、GOOGL 1.0745%、META 8.8090%、AMZN 1.4098%、TSLA 1.1175%；行情时间：2026-07-02T00:00:56.301Z。",
+          "impact": "关联标的：MSFT 3.0186%、GOOGL 1.0745%、META 8.8090%、AMZN 1.4098%、TSLA 1.1175%；行情时间：2026-07-02T09:31:09.819Z。",
           "evidence": [
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻",
@@ -393,6 +1280,15 @@
         },
         {
           "risk_type": "信息风险",
+          "risk": "Meta缺乏云服务经验，可能面临技术、信任和监管风险；算力出售可能影响自身AI研发资源；SpaceX传闻若为假，高通股价波动可能回归。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -411,6 +1307,11 @@
       "uncertainties": [
         {
           "uncertainty": "不足以判断",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "Meta缺乏云服务经验，可能面临技术、信任和监管风险；算力出售可能影响自身AI研发资源；SpaceX传闻若为假，高通股价波动可能回归。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -487,11 +1388,11 @@
         },
         {
           "item_id": "international-item-3080ca86df",
-          "title": "涨近9%！Meta拟对外出售算力，挑战亚马逊、微软和谷歌；SpaceX“造AI手机”传闻带飞高通，马斯克火速否认丨全球科技早参 2026-07-02 07:56",
+          "title": "Meta to Sell Computing Power, Challenging Tech Giants; SpaceX Denies AI Phone Rumor",
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-07-02/4444634.html",
           "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "summary": "Meta计划出售闲置AI算力进入云计算市场，挑战亚马逊、微软和谷歌；SpaceX AI手机传闻被否认。",
           "relevance_score": 91
         },
         {
@@ -758,16 +1659,16 @@
         },
         {
           "date": "2026-07-02",
-          "title": "涨近9%！Meta拟对外出售算力，挑战亚马逊、微软和谷歌；SpaceX“造AI手机”传闻带飞高通，马斯克火速否认丨全球科技早参 2026-07-02 07:56",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "reliable_media_report",
+          "title": "Meta to Sell Computing Power, Challenging Tech Giants; SpaceX Denies AI Phone Rumor",
+          "summary": "Meta计划出售闲置AI算力进入云计算市场，挑战亚马逊、微软和谷歌；SpaceX AI手机传闻被否认。",
+          "description": "Meta计划出售闲置AI算力进入云计算市场，挑战亚马逊、微软和谷歌；SpaceX AI手机传闻被否认。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "impact": "Meta从主要自用AI算力转向对外商业化销售，直接进入云计算市场竞争，可能改变AI算力市场格局。",
           "sources": [
             {
-              "title": "涨近9%！Meta拟对外出售算力，挑战亚马逊、微软和谷歌；SpaceX“造AI手机”传闻带飞高通，马斯克火速否认丨全球科技早参 2026-07-02 07:56",
+              "title": "Meta to Sell Computing Power, Challenging Tech Giants; SpaceX Denies AI Phone Rumor",
               "source": "每日经济新闻",
               "url": "https://www.nbd.com.cn/articles/2026-07-02/4444634.html",
               "published_at": "2026-07-02T00:00:00.000Z"
@@ -908,6 +1809,15 @@
           },
           {
             "risk_type": "信息风险",
+            "risk": "Meta缺乏云服务经验，可能面临技术、信任和监管风险；算力出售可能影响自身AI研发资源；SpaceX传闻若为假，高通股价波动可能回归。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -961,942 +1871,6 @@
         "open_questions": [
           {
             "question": "消费电子是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
-      "event_id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "lane_id": "china_policy",
-      "lane_label": "中国权威政策落地",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-06-30T00:00:00.000Z",
-      "last_seen_at": "2026-07-01T00:00:00.000Z",
-      "updated_at": "2026-07-01T00:00:00.000Z",
-      "definition": {
-        "one_sentence": "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。 相关来源：国家发展改革委新闻发布、中国政府网要闻",
-        "background": "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。 相关来源：国家发展改革委新闻发布、中国政府网要闻",
-        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前证据不足，无法判断该会议直接导致了何种具体变化。会议属于内部学习教育活动，无公开可见的政策调整或事件发生。",
-        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "rationale": [
-          "属于中国权威政策落地主线",
-          "重要性评分为 100",
-          "证据置信度为高"
-        ],
-        "market_symbols": [],
-        "policy_status": "落地执行",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "宏观",
-          "国家发展改革委召开树立和",
-          "践行正确政绩观学习教育工",
-          "作推进会"
-        ],
-        "entities": {
-          "companies": [],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网",
-            "国家发展改革委",
-            "财政部"
-          ],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI",
-            "人工智能"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "basis": [
-          "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
-          "会议时间为2026年7月1日",
-          "会议内容涉及宏观政策、价格、产业和经济运行信息",
-          "暂无具体决议或政策变动公开"
-        ],
-        "latest_change": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会：国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-        "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
-      },
-      "evidence": {
-        "source_count": 3,
-        "official_source_count": 20,
-        "financial_media_count": 0,
-        "timeline_count": 12,
-        "confidence_basis": "high",
-        "evidence_types": {
-          "data_release": 1,
-          "unknown": 5
-        },
-        "primary_source": {
-          "name": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html"
-        },
-        "source_links": [
-          {
-            "item_id": "macro-item-ba6f7aaf03",
-            "title": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
-            "source": "国家发展改革委新闻发布",
-            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
-            "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-31a55e8b9e",
-            "title": "中共中央关于授予'七一勋章'的决定",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
-            "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-7cfe85db5b",
-            "title": "香港举行升旗仪式和酒会庆祝回归祖国29周年",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
-            "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-07c0eac7cb",
-            "title": "习近平：在庆祝中国共产党成立105周年大会上的讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
-            "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "习近平在建党105周年大会上发表讲话，回顾历史，展望未来，未涉具体政策。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-99ff1e3330",
-            "title": "庆祝中国共产党成立105周年大会在京隆重举行",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073947.htm",
-            "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "庆祝中国共产党成立105周年大会在京举行。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-117e214508",
-            "title": "Breaking News: Xi Jinping Delivers Important Speech at Celebration of the 105th Anniversary of the Founding of the Co...",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073914.htm",
-            "published_at": "2026-07-01T00:00:00.000Z",
-            "summary": "习近平在建党105周年大会上发表讲话，具体内容待公布。",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
-        ]
-      },
-      "latest_update": {
-        "title": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
-        "summary": "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-        "source": "国家发展改革委新闻发布",
-        "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
-        "published_at": "2026-07-01T00:00:00.000Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
-          "evidence_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
-          "source": "国家发展改革委新闻发布",
-          "confidence": "高"
-        },
-        {
-          "fact": "会议时间为2026年7月1日",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "会议内容涉及宏观政策、价格、产业和经济运行信息",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "暂无具体决议或政策变动公开",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
-          "evidence": [
-            "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-            "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-            "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "industry": {
-          "impact": "可能影响 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工、作推进会 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-            "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-            "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委。",
-          "evidence": [
-            "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-            "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-            "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-            "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-            "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-            "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-            "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-            "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-            "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-            "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "目前证据不足，无明确风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "没有明显风险，但信息不完整可能导致误判。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "目前证据不足",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "目前证据不足，无明确风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "没有明显风险，但信息不完整可能导致误判。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "目前证据不足",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中国权威政策落地是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "macro-item-ba6f7aaf03",
-          "title": "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406173.html",
-          "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "国家发展改革委召开内学习教育会议，无具体政策发布，影响待定。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-31a55e8b9e",
-          "title": "中共中央关于授予'七一勋章'的决定",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073953.htm",
-          "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "中共中央发布授予“七一勋章”的决定，具体细节待公布。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-7cfe85db5b",
-          "title": "香港举行升旗仪式和酒会庆祝回归祖国29周年",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073952.htm",
-          "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "香港特区政府7月1日举行升旗仪式和酒会，庆祝回归祖国29周年。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-07c0eac7cb",
-          "title": "习近平：在庆祝中国共产党成立105周年大会上的讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073949.htm",
-          "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "习近平在建党105周年大会上发表讲话，回顾历史，展望未来，未涉具体政策。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-99ff1e3330",
-          "title": "庆祝中国共产党成立105周年大会在京隆重举行",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073947.htm",
-          "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "庆祝中国共产党成立105周年大会在京举行。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-117e214508",
-          "title": "Breaking News: Xi Jinping Delivers Important Speech at Celebration of the 105th Anniversary of the Founding of the Co...",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073914.htm",
-          "published_at": "2026-07-01T00:00:00.000Z",
-          "summary": "习近平在建党105周年大会上发表讲话，具体内容待公布。",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "title": "习近平向‘七一勋章’获得者授予勋章",
-          "summary": "习近平在乐曲中为七一勋章获得者授勋，全场鼓掌。",
-          "description": "习近平在乐曲中为七一勋章获得者授勋，全场鼓掌。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "本次仪式完成授勋，属于既定流程，未提及任何政策或制度变革。唯一变化是授勋动作本身，但属于例行荣誉授予。",
-          "sources": [
-            {
-              "title": "习近平向‘七一勋章’获得者授予勋章",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073901.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073901.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "快讯：庆祝中国共产党成立105周年大会开始",
-          "summary": "庆祝中国共产党成立105周年大会开始，军乐团奏国歌，全场高唱国歌。",
-          "description": "庆祝中国共产党成立105周年大会开始，军乐团奏国歌，全场高唱国歌。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足。该快讯仅报道大会开始，未提及任何政策或人事变动。",
-          "sources": [
-            {
-              "title": "快讯：庆祝中国共产党成立105周年大会开始",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "庆祝香港回归祖国29周年活动启动礼举行",
-          "summary": "香港各界庆典委员会举行庆祝回归29周年启动礼，主题为“维港同庆廿九载 香江奋进启新程”。",
-          "description": "香港各界庆典委员会举行庆祝回归29周年启动礼，主题为“维港同庆廿九载 香江奋进启新程”。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该活动属于年度常规庆祝仪式，未显示政策或社会格局变化，仅作为纪念节点正常进行。",
-          "sources": [
-            {
-              "title": "庆祝香港回归祖国29周年活动启动礼举行",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
-          "summary": "文章标题确认，但正文缺失，无法分析具体内容。",
-          "description": "文章标题确认，但正文缺失，无法分析具体内容。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "未提供文章正文，无法判断具体变化内容。",
-          "sources": [
-            {
-              "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "People's Daily Editorial: Forge Ahead with Original Aspiration, Write the Answer Sheet of the Times - Warmly Celebrat...",
-          "summary": "《人民日报》发表社论庆祝建党105周年，强调初心使命与时代答卷。",
-          "description": "《人民日报》发表社论庆祝建党105周年，强调初心使命与时代答卷。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，社论本身未提及具体政策或形势变化。",
-          "sources": [
-            {
-              "title": "People's Daily Editorial: Forge Ahead with Original Aspiration, Write the Answer Sheet of the Times - Warmly Celebrat...",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "税收数据显示：我国具身智能产业总体发展向好",
-          "summary": "税收数据表明具身智能产业在2026年1-5月发展向好，国家已将其纳入战略规划。",
-          "description": "税收数据表明具身智能产业在2026年1-5月发展向好，国家已将其纳入战略规划。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "具身智能从概念讨论上升为国家战略级未来产业，税收数据首次公开佐证其产业正在快速发展。",
-          "sources": [
-            {
-              "title": "税收数据显示：我国具身智能产业总体发展向好",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/lianbo/202607/content_7073860.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7073860.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "全国促进民营经济发展壮大现场会在江苏省南京市召开",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "description": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "sources": [
-            {
-              "title": "全国促进民营经济发展壮大现场会在江苏省南京市召开",
-              "source": "国家发展改革委新闻发布",
-              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406193.html",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260701_1406193.html",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "《习近平谈治国理政》第五卷土耳其推介会在安卡拉举行",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "《习近平谈治国理政》第五卷土耳其推介会在安卡拉举行",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074011.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074011.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "刘国中在中国白俄罗斯地方合作论坛开幕式上发表视频致辞",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "刘国中在中国白俄罗斯地方合作论坛开幕式上发表视频致辞",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074003.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074003.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "世界政党政要热烈祝贺中国共产党成立105周年",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "世界政党政要热烈祝贺中国共产党成立105周年",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073995.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073995.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "习近平致电祝贺德拉埃斯普列亚当选哥伦比亚总统",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "习近平致电祝贺德拉埃斯普列亚当选哥伦比亚总统",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073985.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073985.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "中共中央关于表彰全国优秀共产党员、全国优秀党务工作者和全国先进基层党组织的决定",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "中共中央关于表彰全国优秀共产党员、全国优秀党务工作者和全国先进基层党组织的决定",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073982.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073982.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-          "confidence": "high",
-          "basis": [
-            "国家发展改革委召开树立和践行正确政绩观学习教育工作推进会",
-            "会议时间为2026年7月1日",
-            "会议内容涉及宏观政策、价格、产业和经济运行信息"
-          ],
-          "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "宏观",
-              "国家发展改革委召开树立和",
-              "践行正确政绩观学习教育工",
-              "作推进会"
-            ],
-            "confidence": "high"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "A",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-              "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-              "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "A",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-              "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "目前证据不足，无明确风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "没有明显风险，但信息不完整可能导致误判。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "目前证据不足",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 宏观、国家发展改革委召开树立和、践行正确政绩观学习教育工 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-07-01",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中国权威政策落地是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -2951,7 +2925,7 @@
             "Microsoft"
           ]
         },
-        "related_item_count": 18
+        "related_item_count": 20
       },
       "current_judgment": {
         "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/GOOGL/META/AMZN/AVGO/TSLA/SPY/SMH。",
@@ -2961,7 +2935,7 @@
           "算力被强调为核心消费资源",
           "全球AI基建竞赛可能进一步激化"
         ],
-        "latest_change": "美股齐跌，费城半导体指数跌超6%；美联储主席：当前通胀水平仍过高；凯恩双响，英格兰晋级世界杯16强；A股天价离婚！分手费2.4亿丨每经早参 2026-07-02 06:02：每日经济新闻中文财经、公司和市场新闻",
+        "latest_change": "【美股盘前】Meta下场“卖算力”，闪迪跌超4%，美光、西部数据跌3%；美国6月非农今晚发布；马斯克暗示人形机器人或已进入量产准备阶段；光通信板块走低 2026-07-02 17:27：每日经济新闻中文财经、公司和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
@@ -2978,7 +2952,7 @@
         },
         "primary_source": {
           "name": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html"
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html"
         },
         "source_links": [
           {
@@ -3027,13 +3001,13 @@
             "relevance_score": 100
           },
           {
-            "item_id": "macro-item-906e8dd838",
-            "title": "美股齐跌，费城半导体指数跌超6%；美联储主席：当前通胀水平仍过高；凯恩双响，英格兰晋级世界杯16强；A股天价离婚！分手费2.4亿丨每经早参 2026-07-02 06:02",
+            "item_id": "business-item-da4d2af04d",
+            "title": "【美股盘前】Meta下场“卖算力”，闪迪跌超4%，美光、西部数据跌3%；美国6月非农今晚发布；马斯克暗示人形机器人或已进入量产准备阶段；光通信板块走低 2026-07-02 17:27",
             "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+            "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
             "published_at": "2026-07-02T00:00:00.000Z",
             "summary": "每日经济新闻中文财经、公司和市场新闻",
-            "relevance_score": 98
+            "relevance_score": 99
           }
         ],
         "evidence_gaps": [
@@ -3041,12 +3015,12 @@
         ]
       },
       "latest_update": {
-        "title": "美股齐跌，费城半导体指数跌超6%；美联储主席：当前通胀水平仍过高；凯恩双响，英格兰晋级世界杯16强；A股天价离婚！分手费2.4亿丨每经早参 2026-07-02 06:02",
+        "title": "【美股盘前】Meta下场“卖算力”，闪迪跌超4%，美光、西部数据跌3%；美国6月非农今晚发布；马斯克暗示人形机器人或已进入量产准备阶段；光通信板块走低 2026-07-02 17:27",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+        "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
         "published_at": "2026-07-02T00:00:00.000Z",
-        "score": 98
+        "score": 99
       },
       "confirmed_facts": [
         {
@@ -3076,7 +3050,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.2544%、MSFT 3.0186%、GOOGL 1.0745%、META 8.8090%、AMZN 1.4098%、AVGO -2.2263%、TSLA 1.1175%、SPY -0.1352%、SMH -5.4018%；行情时间：2026-07-02T00:00:56.301Z。",
+          "impact": "关联标的：NVDA -1.2544%、MSFT 3.0186%、GOOGL 1.0745%、META 8.8090%、AMZN 1.4098%、AVGO -2.2263%、TSLA 1.1175%、SPY -0.1352%、SMH -5.4018%；行情时间：2026-07-02T09:31:09.819Z。",
           "evidence": [
             "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
             "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
@@ -3131,7 +3105,7 @@
           "type": "市场反馈",
           "description": "NVDA -1.2544%",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
@@ -3140,7 +3114,7 @@
           "type": "市场反馈",
           "description": "MSFT 3.0186%",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
@@ -3149,7 +3123,7 @@
           "type": "市场反馈",
           "description": "GOOGL 1.0745%",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
@@ -3158,7 +3132,7 @@
           "type": "市场反馈",
           "description": "META 8.8090%",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
@@ -3167,7 +3141,7 @@
           "type": "市场反馈",
           "description": "AMZN 1.4098%",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
@@ -3176,7 +3150,7 @@
           "type": "市场反馈",
           "description": "AVGO -2.2263%",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
@@ -3379,60 +3353,16 @@
           "relevance_score": 100
         },
         {
-          "item_id": "macro-item-906e8dd838",
-          "title": "美股齐跌，费城半导体指数跌超6%；美联储主席：当前通胀水平仍过高；凯恩双响，英格兰晋级世界杯16强；A股天价离婚！分手费2.4亿丨每经早参 2026-07-02 06:02",
+          "item_id": "business-item-da4d2af04d",
+          "title": "【美股盘前】Meta下场“卖算力”，闪迪跌超4%，美光、西部数据跌3%；美国6月非农今晚发布；马斯克暗示人形机器人或已进入量产准备阶段；光通信板块走低 2026-07-02 17:27",
           "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
           "published_at": "2026-07-02T00:00:00.000Z",
           "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "relevance_score": 98
+          "relevance_score": 99
         }
       ],
       "timeline": [
-        {
-          "date": "2026-06-22",
-          "title": "金融AI能力跃升：智能体规模化应用起步，效率革新之下多重挑战待解",
-          "summary": "金融行业算力Token化共识形成，为智能体规模化应用扫清障碍，但标准未统一，挑战仍在。",
-          "description": "金融行业算力Token化共识形成，为智能体规模化应用扫清障碍，但标准未统一，挑战仍在。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": true,
-          "impact": "金融AI领域从分散的算力管理向Token化、可交易方向转变，智能体规模化应用的条件更加成熟，效率有望显著提升。",
-          "sources": [
-            {
-              "title": "金融AI能力跃升：智能体规模化应用起步，效率革新之下多重挑战待解",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-22/4432787.html",
-              "published_at": "2026-06-22T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-22/4432787.html",
-          "score": 88,
-          "publishedAt": "2026-06-22T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "国家能源局：将算力设施、多晶硅、锂离子电池制造等纳入可再生能源电力消费最低比重目标考核",
-          "summary": "国家能源局将算力、多晶硅、锂电制造纳入可再生能源电力消费考核，扩大绿色电力强制使用范围。",
-          "description": "国家能源局将算力、多晶硅、锂电制造纳入可再生能源电力消费考核，扩大绿色电力强制使用范围。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": false,
-          "impact": "政策扩大了可再生能源电力消费考核的覆盖行业，将高耗能且快速增长的算力、多晶硅和锂离子电池制造行业新增为强制考核对象，要求其消费的可再生能源电力达到最低比重。",
-          "sources": [
-            {
-              "title": "国家能源局：将算力设施、多晶硅、锂离子电池制造等纳入可再生能源电力消费最低比重目标考核",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-22/4432991.html",
-              "published_at": "2026-06-22T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-22/4432991.html",
-          "score": 82,
-          "publishedAt": "2026-06-22T00:00:00.000Z"
-        },
         {
           "date": "2026-06-24",
           "title": "恒指、恒科齐涨！芯片股爆发，华虹宏力涨超15%，兆易创新涨超5%！医药生物上涨，化工、银行、有色下跌｜港股收盘 2026-06-24 16:28",
@@ -3633,7 +3563,7 @@
         },
         {
           "date": "2026-07-02",
-          "title": "美股齐跌，费城半导体指数跌超6%；美联储主席：当前通胀水平仍过高；凯恩双响，英格兰晋级世界杯16强；A股天价离婚！分手费2.4亿丨每经早参 2026-07-02 06:02",
+          "title": "【美股盘前】Meta下场“卖算力”，闪迪跌超4%，美光、西部数据跌3%；美国6月非农今晚发布；马斯克暗示人形机器人或已进入量产准备阶段；光通信板块走低 2026-07-02 17:27",
           "summary": "每日经济新闻中文财经、公司和市场新闻",
           "description": "每日经济新闻中文财经、公司和市场新闻",
           "evidence_type": "reliable_media_report",
@@ -3642,7 +3572,29 @@
           "impact": "每日经济新闻中文财经、公司和市场新闻",
           "sources": [
             {
-              "title": "美股齐跌，费城半导体指数跌超6%；美联储主席：当前通胀水平仍过高；凯恩双响，英格兰晋级世界杯16强；A股天价离婚！分手费2.4亿丨每经早参 2026-07-02 06:02",
+              "title": "【美股盘前】Meta下场“卖算力”，闪迪跌超4%，美光、西部数据跌3%；美国6月非农今晚发布；马斯克暗示人形机器人或已进入量产准备阶段；光通信板块走低 2026-07-02 17:27",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
+          "score": 99,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "美股齐跌，大型科技股涨跌不一",
+          "summary": "美股三大指数小幅收跌，科技股分化，Meta涨超8%，英伟达跌超1%。",
+          "description": "美股三大指数小幅收跌，科技股分化，Meta涨超8%，英伟达跌超1%。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "美股市场整体小幅下跌，但科技股内部出现分化，Meta和微软表现强劲，英伟达则承压下跌。与近期市场趋势相比，当前波动幅度不大，未出现系统性变化。",
+          "sources": [
+            {
+              "title": "美股齐跌，大型科技股涨跌不一",
               "source": "每日经济新闻",
               "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
               "published_at": "2026-07-02T00:00:00.000Z"
@@ -3651,6 +3603,28 @@
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-07-02/4444549.html",
           "score": 98,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "影响市场重大事件：国家召集271家火箭、卫星公司成立商业航天创新联合体干大事；苹果公司拟向长鑫存储以及长江存储采购存储芯片，用于在中国市场销售的设备 2026-07-02 07:36",
+          "summary": "国家航天局牵头成立商业航天联合体，苹果拟采购国产存储芯片。",
+          "description": "国家航天局牵头成立商业航天联合体，苹果拟采购国产存储芯片。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "国家航天局从直接管理转向牵头成立行业联合体，推动商业航天协同发展。苹果公司对中国本土存储芯片供应商的采购意向，可能改变其在中国市场的供应链结构。",
+          "sources": [
+            {
+              "title": "影响市场重大事件：国家召集271家火箭、卫星公司成立商业航天创新联合体干大事；苹果公司拟向长鑫存储以及长江存储采购存储芯片，用于在中国市场销售的设备 2026-07-02 07:36",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-02/4444615.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4444615.html",
+          "score": 83,
           "publishedAt": "2026-07-02T00:00:00.000Z"
         }
       ],
@@ -3903,22 +3877,23 @@
       "last_seen_at": "2026-07-01T18:15:00.000Z",
       "updated_at": "2026-07-01T18:15:00.000Z",
       "definition": {
-        "one_sentence": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更... 相关来源：Google AI Blog、NASA Breaking News",
-        "background": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更... 相关来源：Google AI Blog、NASA Breaking News",
+        "one_sentence": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。 相关来源：Google AI Blog、NASA Breaking News",
+        "background": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。 相关来源：Google AI Blog、NASA Breaking News",
         "core_question": "AI 政策与基础设施后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。",
+        "why_it_matters": "谷歌在其产品线中新增了多项AI驱动的功能，提升了翻译、设备交互和智能家居体验。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "观察验证",
-        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL/AMZN。",
         "rationale": [
           "属于美股变化主线",
           "重要性评分为 89",
           "证据置信度为中"
         ],
         "market_symbols": [
-          "GOOGL"
+          "GOOGL",
+          "AMZN"
         ],
         "policy_status": "",
         "requires_follow_up": true
@@ -3930,6 +3905,7 @@
         "entities": {
           "companies": [
             "GOOGL",
+            "AMZN",
             "Google"
           ],
           "people": [],
@@ -3946,14 +3922,14 @@
         "related_item_count": 3
       },
       "current_judgment": {
-        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL/AMZN。",
         "basis": [
-          "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更...",
-          "2026年6月最新AI新闻",
-          "NASA ARMD于2026年6月23日更新研究征集页面",
-          "征集通过NSPIRES系统进行"
+          "谷歌推出Gemini 3.5 Live Translate，提供实时翻译",
+          "Android 17加入AI驱动的功能",
+          "新Google Home Speaker专为Gemini设计",
+          "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。"
         ],
-        "latest_change": "2026年6月最新AI新闻：Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更...",
+        "latest_change": "2026年6月我们公布的最新AI新闻：谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
@@ -3974,11 +3950,11 @@
         "source_links": [
           {
             "item_id": "tech-google-ai-blog-345262b70c",
-            "title": "2026年6月最新AI新闻",
+            "title": "2026年6月我们公布的最新AI新闻",
             "source": "Google AI Blog",
             "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
             "published_at": "2026-07-01T18:15:00.000Z",
-            "summary": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+            "summary": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
             "relevance_score": 89
           },
           {
@@ -4005,8 +3981,8 @@
         ]
       },
       "latest_update": {
-        "title": "2026年6月最新AI新闻",
-        "summary": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更...",
+        "title": "2026年6月我们公布的最新AI新闻",
+        "summary": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
         "source": "Google AI Blog",
         "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
         "published_at": "2026-07-01T18:15:00.000Z",
@@ -4014,25 +3990,25 @@
       },
       "confirmed_facts": [
         {
-          "fact": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更...",
+          "fact": "谷歌推出Gemini 3.5 Live Translate，提供实时翻译",
           "evidence_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
           "source": "Google AI Blog",
           "confidence": "中"
         },
         {
-          "fact": "2026年6月最新AI新闻",
+          "fact": "Android 17加入AI驱动的功能",
           "evidence_url": "https://www.nasa.gov/aeronautics/armd-solicitations",
           "source": "NASA Breaking News",
           "confidence": "中"
         },
         {
-          "fact": "NASA ARMD于2026年6月23日更新研究征集页面",
+          "fact": "新Google Home Speaker专为Gemini设计",
           "evidence_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
           "source": "Google AI Blog",
           "confidence": "中"
         },
         {
-          "fact": "征集通过NSPIRES系统进行",
+          "fact": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
           "evidence_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
           "source": "Google AI Blog",
           "confidence": "中"
@@ -4040,9 +4016,9 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL 1.0745%；行情时间：2026-07-02T00:00:56.301Z。",
+          "impact": "关联标的：GOOGL 1.0745%、AMZN 1.4098%；行情时间：2026-07-02T09:31:09.819Z。",
           "evidence": [
-            "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+            "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
@@ -4052,7 +4028,7 @@
         "industry": {
           "impact": "可能影响 AI 政策与基础设施 相关判断，需继续核对后续证据。",
           "evidence": [
-            "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+            "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
@@ -4060,9 +4036,9 @@
           "confidence": "中"
         },
         "company": {
-          "impact": "关联实体：GOOGL、Google、谷歌、AI、model、NASA。",
+          "impact": "关联实体：GOOGL、AMZN、Google、谷歌、亚马逊、AI。",
           "evidence": [
-            "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+            "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
@@ -4072,7 +4048,7 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+            "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
@@ -4082,7 +4058,7 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+            "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌医疗AI研究显示AMIE在复杂疾病管理上堪比初级保健医生。"
           ],
@@ -4094,6 +4070,15 @@
         {
           "type": "市场反馈",
           "description": "GOOGL 1.0745%",
+          "source": "Google AI Blog",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
+          "date": "2026-07-01",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "AMZN 1.4098%",
           "source": "Google AI Blog",
           "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
           "date": "2026-07-01",
@@ -4164,6 +4149,15 @@
       "risks": [
         {
           "risk_type": "信息风险",
+          "risk": "风险包括技术成熟度不足、隐私问题和市场接受度不确定性。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "目前证据不足",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -4189,6 +4183,11 @@
         }
       ],
       "uncertainties": [
+        {
+          "uncertainty": "风险包括技术成熟度不足、隐私问题和市场接受度不确定性。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
         {
           "uncertainty": "目前证据不足",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
@@ -4240,11 +4239,11 @@
       "related_items": [
         {
           "item_id": "tech-google-ai-blog-345262b70c",
-          "title": "2026年6月最新AI新闻",
+          "title": "2026年6月我们公布的最新AI新闻",
           "source": "Google AI Blog",
           "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
           "published_at": "2026-07-01T18:15:00.000Z",
-          "summary": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。 对用户而言，更智能的工具和翻译功能可节省时间；对Google而言，巩固了其AI生态布局；对行业而言，可能推动竞争对手加快AI整合。 需要注意：缺乏具体性能数据和用户反馈，实际效果不明；过度依赖AI可能引发隐私和可靠性担忧。",
+          "summary": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
           "relevance_score": 89
         },
         {
@@ -4313,16 +4312,16 @@
         },
         {
           "date": "2026-07-01",
-          "title": "2026年6月最新AI新闻",
-          "summary": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用...",
-          "description": "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更智能、更实用。 Google的设备和应用...",
+          "title": "2026年6月我们公布的最新AI新闻",
+          "summary": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
+          "description": "谷歌6月发布多项AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的智能音箱。",
           "evidence_type": "industry_analysis",
           "importance": "中",
           "does_it_change_judgment": true,
-          "impact": "Google的设备和应用新增了AI功能，例如更智能的工具、翻译功能和学习辅助，旨在简化用户日常任务并提升体验。",
+          "impact": "谷歌在其产品线中新增了多项AI驱动的功能，提升了翻译、设备交互和智能家居体验。",
           "sources": [
             {
-              "title": "2026年6月最新AI新闻",
+              "title": "2026年6月我们公布的最新AI新闻",
               "source": "Google AI Blog",
               "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
               "published_at": "2026-07-01T18:15:00.000Z"
@@ -4339,12 +4338,12 @@
         "tracking_goal": "判断AI 政策与基础设施是否会改变行业格局、市场预期、政策方向或个人决策。",
         "research_question": "AI 政策与基础设施后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL/AMZN。",
           "confidence": "medium",
           "basis": [
-            "Google在2026年6月发布了一系列AI更新，包括推出Gemini 3.5 Live Translate、Android 17的新功能以及专为Gemini打造的新款Google Home Speaker。这些更新旨在让设备和应用更...",
-            "2026年6月最新AI新闻",
-            "NASA ARMD于2026年6月23日更新研究征集页面"
+            "谷歌推出Gemini 3.5 Live Translate，提供实时翻译",
+            "Android 17加入AI驱动的功能",
+            "新Google Home Speaker专为Gemini设计"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -4451,6 +4450,15 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
+            "risk": "风险包括技术成熟度不足、隐私问题和市场接受度不确定性。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "目前证据不足",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -4504,9 +4512,9 @@
         "judgment_history": [
           {
             "date": "2026-07-01",
-            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL/AMZN。",
             "change_type": "初始判断",
-            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL。",
+            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 GOOGL/AMZN。",
             "evidence_item_ids": []
           }
         ],
@@ -4699,7 +4707,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 3.0186%；行情时间：2026-07-02T00:00:56.301Z。",
+          "impact": "关联标的：MSFT 3.0186%；行情时间：2026-07-02T09:31:09.819Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -5312,7 +5320,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.2544%；行情时间：2026-07-02T00:00:56.301Z。",
+          "impact": "关联标的：NVDA -1.2544%；行情时间：2026-07-02T09:31:09.819Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -5366,15 +5374,6 @@
         {
           "type": "市场反馈",
           "description": "NVDA -1.2544%",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "date": "2026-06-26",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "NVDA 2.626%",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103244887.html",
           "date": "2026-06-26",
@@ -6043,7 +6042,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 1.1175%、QQQ -1.5250%；行情时间：2026-07-02T00:00:56.301Z。",
+          "impact": "关联标的：TSLA 1.1175%、QQQ -1.5250%；行情时间：2026-07-02T09:31:09.819Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
