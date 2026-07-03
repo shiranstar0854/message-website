@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-03T00:01:18.311Z",
+  "generated_at": "2026-07-03T09:01:21.856Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 7,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-03T00:00:46.442Z"
+      "generated_at": "2026-07-03T09:00:56.288Z"
     },
     "llm": {
       "enabled": true,
@@ -38,6 +38,894 @@
   ],
   "events": [
     {
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "lane_id": "china_policy",
+      "lane_label": "中国权威政策落地",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-07-02T00:00:00.000Z",
+      "last_seen_at": "2026-07-03T00:00:00.000Z",
+      "updated_at": "2026-07-03T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "国家发展改革委宏观政策、价格、产业和经济运行信息 相关来源：国家发展改革委新闻发布、中国政府网要闻",
+        "background": "国家发展改革委宏观政策、价格、产业和经济运行信息 相关来源：国家发展改革委新闻发布、中国政府网要闻",
+        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 6 条官方或市场权威来源，仍处在高时效窗口内。",
+        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "rationale": [
+          "属于中国权威政策落地主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "落地执行",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "宏观",
+          "日国内成品油价格调整",
+          "国家发展改革委宏观政策",
+          "价格"
+        ],
+        "entities": {
+          "companies": [],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网",
+            "国家发展改革委",
+            "科技部"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "basis": [
+          "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "2026年7月3日国内成品油价格调整",
+          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "纳米比亚总统恩代特瓦将访华"
+        ],
+        "latest_change": "2026年7月3日国内成品油价格调整：国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 3,
+        "official_source_count": 20,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "official_announcement": 6
+        },
+        "primary_source": {
+          "name": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html"
+        },
+        "source_links": [
+          {
+            "item_id": "macro-item-04a0cfd506",
+            "title": "2026年7月3日国内成品油价格调整",
+            "source": "国家发展改革委新闻发布",
+            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-356afd55c8",
+            "title": "纳米比亚总统恩代特瓦将访华",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-42b359e360",
+            "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-f3fd35f9bf",
+            "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-0e1416501c",
+            "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "international-item-b5ac6b29d5",
+            "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "2026年7月3日国内成品油价格调整",
+        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "source": "国家发展改革委新闻发布",
+        "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+        "published_at": "2026-07-03T00:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "evidence_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+          "source": "国家发展改革委新闻发布",
+          "confidence": "高"
+        },
+        {
+          "fact": "2026年7月3日国内成品油价格调整",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "纳米比亚总统恩代特瓦将访华",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "evidence": [
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 宏观、日国内成品油价格调整、国家发展改革委宏观政策、价格 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委。",
+          "evidence": [
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+            "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+            "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+            "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "后续执行细节和市场反应仍需继续跟踪。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "后续执行细节和市场反应仍需继续跟踪。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中国权威政策落地是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "macro-item-04a0cfd506",
+          "title": "2026年7月3日国内成品油价格调整",
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-356afd55c8",
+          "title": "纳米比亚总统恩代特瓦将访华",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-42b359e360",
+          "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-f3fd35f9bf",
+          "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-0e1416501c",
+          "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "international-item-b5ac6b29d5",
+          "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-02",
+          "title": "【视频】《习近平谈治国理政》第五卷土耳其推介会在安卡拉举行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】《习近平谈治国理政》第五卷土耳其推介会在安卡拉举行",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/02/VIDEqipVMTSzzIbpDwjQyX2G260702.shtml",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/02/VIDEqipVMTSzzIbpDwjQyX2G260702.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "【视频】何立峰出席金融系统党的建设工作会议",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】何立峰出席金融系统党的建设工作会议",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/02/VIDEvyzfugFK99AreESmJPsL260702.shtml",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/02/VIDEvyzfugFK99AreESmJPsL260702.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "失业保险稳岗扩岗政策举措延续实施",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "失业保险稳岗扩岗政策举措延续实施",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202607/content_7074135.htm",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7074135.htm",
+          "score": 100,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "2026年7月3日国内成品油价格调整",
+          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "description": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "sources": [
+            {
+              "title": "2026年7月3日国内成品油价格调整",
+              "source": "国家发展改革委新闻发布",
+              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "国家发展改革委新闻发布",
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "纳米比亚总统恩代特瓦将访华",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "纳米比亚总统恩代特瓦将访华",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074152.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074152.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+          "confidence": "high",
+          "basis": [
+            "国家发展改革委宏观政策、价格、产业和经济运行信息",
+            "2026年7月3日国内成品油价格调整",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "宏观",
+              "日国内成品油价格调整",
+              "国家发展改革委宏观政策",
+              "价格"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+              "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+              "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+              "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "后续执行细节和市场反应仍需继续跟踪。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 宏观、日国内成品油价格调整、国家发展改革委宏观政策 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 国家发展改革委新闻发布、中国政府网要闻 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-07-03",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "change_type": "初始判断",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中国权威政策落地是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
       "event_id": "topic-消费电子-空天地海-新一代通信网建设提速-消费电子-空天地海-新一代通信网建设提速",
       "title": "消费电子",
       "lane_id": "us_equities",
@@ -46,13 +934,13 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-06-08T00:00:00.000Z",
-      "last_seen_at": "2026-07-02T15:00:00.000Z",
-      "updated_at": "2026-07-02T15:00:00.000Z",
+      "last_seen_at": "2026-07-03T00:00:00.000Z",
+      "updated_at": "2026-07-03T00:00:00.000Z",
       "definition": {
-        "one_sentence": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新... 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
-        "background": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新... 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
+        "one_sentence": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
+        "background": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
         "core_question": "消费电子后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。",
+        "why_it_matters": "小企业银行面临新的执法行动，而之前对法国巴黎银行及其相关实体以及Community Bankshares, Inc.的执法行动已被终止。具体执法内容未披露。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -97,17 +985,17 @@
             "芯片"
           ]
         },
-        "related_item_count": 13
+        "related_item_count": 14
       },
       "current_judgment": {
         "summary": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
         "basis": [
-          "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束...",
-          "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
-          "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
-          "“空天地海”新一代通信网建设提速，助力数智化转型"
+          "美联储2026年7月2日宣布对小企业银行执行执法行动。",
+          "同时终止对法国巴黎银行及其相关实体和Community Bankshares, Inc.的执法行动。",
+          "具体执法内容和原因尚未披露。",
+          "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。"
         ],
-        "latest_change": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动：美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束...",
+        "latest_change": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台：苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -123,17 +1011,17 @@
           "industry_analysis": 2
         },
         "primary_source": {
-          "name": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html"
         },
         "source_links": [
           {
             "item_id": "macro-federal-reserve-7d1389254b",
-            "title": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
+            "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
             "source": "Federal Reserve",
             "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
             "published_at": "2026-07-02T15:00:00.000Z",
-            "summary": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+            "summary": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
             "relevance_score": 100
           },
           {
@@ -164,6 +1052,15 @@
             "relevance_score": 93
           },
           {
+            "item_id": "international-item-69d7df546d",
+            "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
+            "relevance_score": 91
+          },
+          {
             "item_id": "business-item-a3e991abba",
             "title": "半导体、大模型概念股走强，兆易创新涨超14%，建滔集团涨超17%，智谱涨超12%丨港股收盘 2026-06-17 16:32",
             "source": "每日经济新闻",
@@ -171,15 +1068,6 @@
             "published_at": "2026-06-17T00:00:00.000Z",
             "summary": "港股收盘恒指跌0.74%，恒生科技涨0.22%，芯片半导体板块多数上涨，兆易创新涨超14%，澜起科技涨超11%，华虹宏力涨超8%。",
             "relevance_score": 87
-          },
-          {
-            "item_id": "news-un-news-fde18da20d",
-            "title": "增强韧性：印度尼西亚如何构建更安全的能源未来",
-            "source": "UN News",
-            "url": "https://news.un.org/feed/view/en/story/2026/06/1167784",
-            "published_at": "2026-06-22T12:00:00.000Z",
-            "summary": "联合国新闻文章介绍印度尼西亚为应对能源危机和气候变化，致力于构建更安全的能源未来，但缺乏具体细节。",
-            "relevance_score": 85
           }
         ],
         "evidence_gaps": [
@@ -187,34 +1075,34 @@
         ]
       },
       "latest_update": {
-        "title": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
-        "summary": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束...",
-        "source": "Federal Reserve",
-        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
-        "published_at": "2026-07-02T15:00:00.000Z",
-        "score": 100
+        "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
+        "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
+        "published_at": "2026-07-03T00:00:00.000Z",
+        "score": 91
       },
       "confirmed_facts": [
         {
-          "fact": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束...",
+          "fact": "美联储2026年7月2日宣布对小企业银行执行执法行动。",
           "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "source": "Federal Reserve",
           "confidence": "高"
         },
         {
-          "fact": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
+          "fact": "同时终止对法国巴黎银行及其相关实体和Community Bankshares, Inc.的执法行动。",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
+          "fact": "具体执法内容和原因尚未披露。",
           "evidence_url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
           "source": "每日经济新闻",
           "confidence": "高"
         },
         {
-          "fact": "“空天地海”新一代通信网建设提速，助力数智化转型",
+          "fact": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
           "evidence_url": "https://www.nasa.gov/news-release/nasa-astronaut-anil-menon-available-for-prelaunch-virtual-interviews",
           "source": "NASA Breaking News",
           "confidence": "高"
@@ -222,9 +1110,9 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-03T00:00:46.442Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-03T09:00:56.288Z。",
           "evidence": [
-            "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -234,7 +1122,7 @@
         "industry": {
           "impact": "可能影响 宏观、商业、美联储、消费电子 相关判断，需继续核对后续证据。",
           "evidence": [
-            "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -244,7 +1132,7 @@
         "company": {
           "impact": "关联实体：GOOGL、AI、大模型、芯片、国务院、中国政府网。",
           "evidence": [
-            "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -254,7 +1142,7 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -264,7 +1152,7 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -276,9 +1164,9 @@
         {
           "type": "市场反馈",
           "description": "GOOGL -0.3599%",
-          "source": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
-          "date": "2026-07-02",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
+          "date": "2026-07-03",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -346,6 +1234,15 @@
       "risks": [
         {
           "risk_type": "信息风险",
+          "risk": "执法行动细节不明，存在小企业银行股价波动的风险，以及公众对美联储执法透明度质疑的风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
           "risk": "不足以判断",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -355,7 +1252,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
+          "risk": "若实际需求不及预期，可能导致库存积压和供应链波动。折叠屏技术成熟度、产品定价过高或功能不完善也可能影响消费者接受度。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -372,12 +1269,17 @@
       ],
       "uncertainties": [
         {
+          "uncertainty": "执法行动细节不明，存在小企业银行股价波动的风险，以及公众对美联储执法透明度质疑的风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
           "uncertainty": "不足以判断",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
+          "uncertainty": "若实际需求不及预期，可能导致库存积压和供应链波动。折叠屏技术成熟度、产品定价过高或功能不完善也可能影响消费者接受度。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -422,11 +1324,11 @@
       "related_items": [
         {
           "item_id": "macro-federal-reserve-7d1389254b",
-          "title": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
+          "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
           "source": "Federal Reserve",
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "published_at": "2026-07-02T15:00:00.000Z",
-          "summary": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。 对小企业银行可能有合规成本增加，对法国巴黎银行和社区银行是监管负担解除。 需要注意：执法行动可能揭示小企业银行的合规问题，但风险未具体说明。",
+          "summary": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
           "relevance_score": 100
         },
         {
@@ -457,6 +1359,15 @@
           "relevance_score": 93
         },
         {
+          "item_id": "international-item-69d7df546d",
+          "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
+          "relevance_score": 91
+        },
+        {
           "item_id": "business-item-a3e991abba",
           "title": "半导体、大模型概念股走强，兆易创新涨超14%，建滔集团涨超17%，智谱涨超12%丨港股收盘 2026-06-17 16:32",
           "source": "每日经济新闻",
@@ -464,40 +1375,9 @@
           "published_at": "2026-06-17T00:00:00.000Z",
           "summary": "港股收盘恒指跌0.74%，恒生科技涨0.22%，芯片半导体板块多数上涨，兆易创新涨超14%，澜起科技涨超11%，华虹宏力涨超8%。",
           "relevance_score": 87
-        },
-        {
-          "item_id": "news-un-news-fde18da20d",
-          "title": "增强韧性：印度尼西亚如何构建更安全的能源未来",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/06/1167784",
-          "published_at": "2026-06-22T12:00:00.000Z",
-          "summary": "联合国新闻文章介绍印度尼西亚为应对能源危机和气候变化，致力于构建更安全的能源未来，但缺乏具体细节。",
-          "relevance_score": 85
         }
       ],
       "timeline": [
-        {
-          "date": "2026-06-09",
-          "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
-          "sources": [
-            {
-              "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
-              "published_at": "2026-06-09T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
-          "score": 95,
-          "publishedAt": "2026-06-09T00:00:00.000Z"
-        },
         {
           "date": "2026-06-11",
           "title": "NASA机器人技术演示将推进原型伽马射线探测器",
@@ -720,16 +1600,16 @@
         },
         {
           "date": "2026-07-02",
-          "title": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
-          "summary": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关...",
-          "description": "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关...",
+          "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
+          "summary": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+          "description": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
           "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "美联储对小企业银行开始新的执法行动，同时结束对法国巴黎银行和社区银行的执法，表明相关监管事项已解决。",
+          "impact": "小企业银行面临新的执法行动，而之前对法国巴黎银行及其相关实体以及Community Bankshares, Inc.的执法行动已被终止。具体执法内容未披露。",
           "sources": [
             {
-              "title": "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
+              "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
               "source": "Federal Reserve",
               "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
               "published_at": "2026-07-02T15:00:00.000Z"
@@ -739,6 +1619,28 @@
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "score": 100,
           "publishedAt": "2026-07-02T15:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
+          "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
+          "description": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "苹果折叠屏iPhone的备货预期较此前增加300万台，产量目标上调，预示着公司对折叠屏产品市场前景持乐观态度。",
+          "sources": [
+            {
+              "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
+          "score": 91,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -749,9 +1651,9 @@
           "thesis": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
           "confidence": "high",
           "basis": [
-            "美联储宣布对小企业银行（Small Business Bank）采取执法行动，并终止对法国巴黎银行相关实体和社区银行公司（Community Bankshares, Inc.）的执法行动。 美联储对小企业银行开始新的执法行动，同时结束...",
-            "美联储对小银行发出执法行动，并宣布终止对法国巴黎银行及社区银行的执法行动",
-            "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。"
+            "美联储2026年7月2日宣布对小企业银行执行执法行动。",
+            "同时终止对法国巴黎银行及其相关实体和Community Bankshares, Inc.的执法行动。",
+            "具体执法内容和原因尚未披露。"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -861,6 +1763,15 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
+            "risk": "执法行动细节不明，存在小企业银行股价波动的风险，以及公众对美联储执法透明度质疑的风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
             "risk": "不足以判断",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
@@ -870,7 +1781,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
+            "risk": "若实际需求不及预期，可能导致库存积压和供应链波动。折叠屏技术成熟度、产品定价过高或功能不完善也可能影响消费者接受度。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -913,7 +1824,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-02",
+            "date": "2026-07-03",
             "judgment": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
             "change_type": "初始判断",
             "reason": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
@@ -923,941 +1834,6 @@
         "open_questions": [
           {
             "question": "消费电子是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
-      "event_id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "lane_id": "china_policy",
-      "lane_label": "中国权威政策落地",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-07-01T00:00:00.000Z",
-      "last_seen_at": "2026-07-02T00:00:00.000Z",
-      "updated_at": "2026-07-02T00:00:00.000Z",
-      "definition": {
-        "one_sentence": "科技部在杭州举办科研仪器管理共享研修班。 相关来源：科技部工作动态、中国政府网要闻",
-        "background": "科技部在杭州举办科研仪器管理共享研修班。 相关来源：科技部工作动态、中国政府网要闻",
-        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前证据不足，未提及具体变化。",
-        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "rationale": [
-          "属于中国权威政策落地主线",
-          "重要性评分为 100",
-          "证据置信度为高"
-        ],
-        "market_symbols": [],
-        "policy_status": "落地执行",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "重大科研基础设施和大型科",
-          "研仪器管理共享创新服务高",
-          "级研修班在杭州举办",
-          "科技部科技政策"
-        ],
-        "entities": {
-          "companies": [],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网",
-            "国家发展改革委",
-            "科技部"
-          ],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "basis": [
-          "科技部在杭州举办高级研修班",
-          "主题为科研基础设施和大型科研仪器管理共享创新服务",
-          "信息发布于科技部官网2026年7月2日",
-          "科技部在杭州举办科研仪器管理共享研修班。"
-        ],
-        "latest_change": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办：科技部在杭州举办科研仪器管理共享研修班。",
-        "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
-      },
-      "evidence": {
-        "source_count": 3,
-        "official_source_count": 20,
-        "financial_media_count": 0,
-        "timeline_count": 12,
-        "confidence_basis": "high",
-        "evidence_types": {
-          "industry_analysis": 2,
-          "unknown": 4
-        },
-        "primary_source": {
-          "name": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html"
-        },
-        "source_links": [
-          {
-            "item_id": "tech-item-fe5b4ef019",
-            "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
-            "source": "科技部工作动态",
-            "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
-            "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "科技部在杭州举办科研仪器管理共享研修班。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "tech-item-0e7d101107",
-            "title": "监管中心组织召开2026年度科技监管工作交流会",
-            "source": "科技部工作动态",
-            "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
-            "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-5537a1dc11",
-            "title": "国务院批复残疾人保障和发展“十五五”规划",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
-            "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-4793d575b3",
-            "title": "国务院关于《体育强国建设“十五五”规划》的批复",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
-            "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "国务院批复《体育强国建设“十五五”规划》，原则同意并部署实施，具体内容待公布。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-3b5dc1c296",
-            "title": "不断创造无愧于时代和人民的新业绩——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话鼓舞全党全军全国各族人民坚定信心接续奋斗",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074037.htm",
-            "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "习近平总书记在建党105周年大会上发表重要讲话，回顾历程、展望前景，宣示奋进决心。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-8ac34c0463",
-            "title": "奋进新征程、建功新时代——论学习贯彻习近平总书记在庆祝中国共产党成立一百零五周年大会上重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074030.htm",
-            "published_at": "2026-07-02T00:00:00.000Z",
-            "summary": "人民日报评论员文章，学习贯彻习近平建党105周年讲话精神，目前无具体影响信息。",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
-        ]
-      },
-      "latest_update": {
-        "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
-        "summary": "科技部在杭州举办科研仪器管理共享研修班。",
-        "source": "科技部工作动态",
-        "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
-        "published_at": "2026-07-02T00:00:00.000Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "科技部在杭州举办高级研修班",
-          "evidence_url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
-          "source": "科技部工作动态",
-          "confidence": "高"
-        },
-        {
-          "fact": "主题为科研基础设施和大型科研仪器管理共享创新服务",
-          "evidence_url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
-          "source": "科技部工作动态",
-          "confidence": "高"
-        },
-        {
-          "fact": "信息发布于科技部官网2026年7月2日",
-          "evidence_url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "科技部在杭州举办科研仪器管理共享研修班。",
-          "evidence_url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
-          "evidence": [
-            "科技部在杭州举办科研仪器管理共享研修班。",
-            "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-            "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "industry": {
-          "impact": "可能影响 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办、科技部科技政策 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "科技部在杭州举办科研仪器管理共享研修班。",
-            "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-            "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、科技部。",
-          "evidence": [
-            "科技部在杭州举办科研仪器管理共享研修班。",
-            "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-            "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "科技部在杭州举办科研仪器管理共享研修班。",
-            "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-            "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "科技部在杭州举办科研仪器管理共享研修班。",
-            "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-            "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-            "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-            "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-            "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "目前证据不足，无法评估相关风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "未知。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "主要风险包括：规划目标因地方财政困难难以实现；执行过程中可能出现部门间协调不畅；残疾人群体实际获得感若低于预期可能引发社会关注。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "目前证据不足，无法评估相关风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "未知。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "主要风险包括：规划目标因地方财政困难难以实现；执行过程中可能出现部门间协调不畅；残疾人群体实际获得感若低于预期可能引发社会关注。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中国权威政策落地是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "tech-item-fe5b4ef019",
-          "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
-          "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "科技部在杭州举办科研仪器管理共享研修班。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "tech-item-0e7d101107",
-          "title": "监管中心组织召开2026年度科技监管工作交流会",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
-          "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-5537a1dc11",
-          "title": "国务院批复残疾人保障和发展“十五五”规划",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
-          "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-4793d575b3",
-          "title": "国务院关于《体育强国建设“十五五”规划》的批复",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
-          "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "国务院批复《体育强国建设“十五五”规划》，原则同意并部署实施，具体内容待公布。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-3b5dc1c296",
-          "title": "不断创造无愧于时代和人民的新业绩——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话鼓舞全党全军全国各族人民坚定信心接续奋斗",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074037.htm",
-          "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "习近平总书记在建党105周年大会上发表重要讲话，回顾历程、展望前景，宣示奋进决心。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-8ac34c0463",
-          "title": "奋进新征程、建功新时代——论学习贯彻习近平总书记在庆祝中国共产党成立一百零五周年大会上重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074030.htm",
-          "published_at": "2026-07-02T00:00:00.000Z",
-          "summary": "人民日报评论员文章，学习贯彻习近平建党105周年讲话精神，目前无具体影响信息。",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-01",
-          "title": "快讯：庆祝中国共产党成立105周年大会开始",
-          "summary": "庆祝中国共产党成立105周年大会开始，军乐团奏国歌，全场高唱国歌。",
-          "description": "庆祝中国共产党成立105周年大会开始，军乐团奏国歌，全场高唱国歌。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足。该快讯仅报道大会开始，未提及任何政策或人事变动。",
-          "sources": [
-            {
-              "title": "快讯：庆祝中国共产党成立105周年大会开始",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073893.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "庆祝香港回归祖国29周年活动启动礼举行",
-          "summary": "香港各界庆典委员会举行庆祝回归29周年启动礼，主题为“维港同庆廿九载 香江奋进启新程”。",
-          "description": "香港各界庆典委员会举行庆祝回归29周年启动礼，主题为“维港同庆廿九载 香江奋进启新程”。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该活动属于年度常规庆祝仪式，未显示政策或社会格局变化，仅作为纪念节点正常进行。",
-          "sources": [
-            {
-              "title": "庆祝香港回归祖国29周年活动启动礼举行",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073895.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
-          "summary": "文章标题确认，但正文缺失，无法分析具体内容。",
-          "description": "文章标题确认，但正文缺失，无法分析具体内容。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "未提供文章正文，无法判断具体变化内容。",
-          "sources": [
-            {
-              "title": "人民日报任仲平文章：把握历史主动 实现伟大复兴——写在中国共产党成立105周年之际",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073892.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-01",
-          "title": "People's Daily Editorial: Forge Ahead with Original Aspiration, Write the Answer Sheet of the Times - Warmly Celebrat...",
-          "summary": "《人民日报》发表社论庆祝建党105周年，强调初心使命与时代答卷。",
-          "description": "《人民日报》发表社论庆祝建党105周年，强调初心使命与时代答卷。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，社论本身未提及具体政策或形势变化。",
-          "sources": [
-            {
-              "title": "People's Daily Editorial: Forge Ahead with Original Aspiration, Write the Answer Sheet of the Times - Warmly Celebrat...",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
-              "published_at": "2026-07-01T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7073885.htm",
-          "score": 100,
-          "publishedAt": "2026-07-01T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
-          "summary": "科技部在杭州举办科研仪器管理共享研修班。",
-          "description": "科技部在杭州举办科研仪器管理共享研修班。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，未提及具体变化。",
-          "sources": [
-            {
-              "title": "重大科研基础设施和大型科研仪器管理共享创新服务高级研修班在杭州举办",
-              "source": "科技部工作动态",
-              "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196881.html",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "监管中心组织召开2026年度科技监管工作交流会",
-          "summary": "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-          "description": "监管中心召开2026年度科技监管工作交流会，讨论科技政策、科研合作、标准与创新体系。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前信息不足以说明本次交流会带来了哪些具体变化。",
-          "sources": [
-            {
-              "title": "监管中心组织召开2026年度科技监管工作交流会",
-              "source": "科技部工作动态",
-              "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260702_196880.html",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "国务院批复残疾人保障和发展“十五五”规划",
-          "summary": "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。",
-          "description": "国务院批复残疾人保障和发展“十五五”规划，原则同意并部署实施，但具体内容未披露。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足。该批复仅表明规划获得原则同意，但未公布规划具体内容。相较于“十四五”时期，本轮规划的目标、指标、重点任务和财政支持力度等关键变化尚未披露。",
-          "sources": [
-            {
-              "title": "国务院批复残疾人保障和发展“十五五”规划",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074095.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "国务院关于《体育强国建设“十五五”规划》的批复",
-          "summary": "国务院批复《体育强国建设“十五五”规划》，原则同意并部署实施，具体内容待公布。",
-          "description": "国务院批复《体育强国建设“十五五”规划》，原则同意并部署实施，具体内容待公布。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国务院正式批复了体育强国建设的“十五五”规划，意味着国家对体育事业发展的顶层设计有了阶段性更新。此前无此具体规划文件，此次批复将指导未来五年体育领域的工作方向。",
-          "sources": [
-            {
-              "title": "国务院关于《体育强国建设“十五五”规划》的批复",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074092.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "不断创造无愧于时代和人民的新业绩——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话鼓舞全党全军全国各族人民坚定信心接续奋斗",
-          "summary": "习近平总书记在建党105周年大会上发表重要讲话，回顾历程、展望前景，宣示奋进决心。",
-          "description": "习近平总书记在建党105周年大会上发表重要讲话，回顾历程、展望前景，宣示奋进决心。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，描述中未提及具体变化",
-          "sources": [
-            {
-              "title": "不断创造无愧于时代和人民的新业绩——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话鼓舞全党全军全国各族人民坚定信心接续奋斗",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074037.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074037.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "奋进新征程、建功新时代——论学习贯彻习近平总书记在庆祝中国共产党成立一百零五周年大会上重要讲话",
-          "summary": "人民日报评论员文章，学习贯彻习近平建党105周年讲话精神，目前无具体影响信息。",
-          "description": "人民日报评论员文章，学习贯彻习近平建党105周年讲话精神，目前无具体影响信息。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该文未提供具体政策或事件变化信息，仅为常规性政治宣导和理论阐释，未发现实质性政策调整或新动向。",
-          "sources": [
-            {
-              "title": "奋进新征程、建功新时代——论学习贯彻习近平总书记在庆祝中国共产党成立一百零五周年大会上重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074030.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074030.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "机电产品出口增势良好 外贸发展质效双升",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "机电产品出口增势良好 外贸发展质效双升",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074144.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074144.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "各地采取有力措施做好防汛防台风工作",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "各地采取有力措施做好防汛防台风工作",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074142.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074142.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-          "confidence": "high",
-          "basis": [
-            "科技部在杭州举办高级研修班",
-            "主题为科研基础设施和大型科研仪器管理共享创新服务",
-            "信息发布于科技部官网2026年7月2日"
-          ],
-          "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "重大科研基础设施和大型科",
-              "研仪器管理共享创新服务高",
-              "级研修班在杭州举办",
-              "科技部科技政策"
-            ],
-            "confidence": "high"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "A",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-              "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-              "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "A",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-              "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "目前证据不足，无法评估相关风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "未知。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "主要风险包括：规划目标因地方财政困难难以实现；执行过程中可能出现部门间协调不畅；残疾人群体实际获得感若低于预期可能引发社会关注。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 重大科研基础设施和大型科、研仪器管理共享创新服务高、级研修班在杭州举办 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 科技部工作动态、中国政府网要闻 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-07-02",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中国权威政策落地是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -2992,7 +2968,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-03T00:00:46.442Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-03T09:00:56.288Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -3674,7 +3650,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-03T00:00:46.442Z。",
+          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-03T09:00:56.288Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -4287,7 +4263,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-03T00:00:46.442Z。",
+          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-03T09:00:56.288Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -4341,15 +4317,6 @@
         {
           "type": "市场反馈",
           "description": "NVDA -1.3918%",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "date": "2026-06-26",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "NVDA -1.2544%",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103244887.html",
           "date": "2026-06-26",
@@ -5018,7 +4985,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-03T00:00:46.442Z。",
+          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-03T09:00:56.288Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
