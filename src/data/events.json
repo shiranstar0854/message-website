@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-03T09:01:21.856Z",
+  "generated_at": "2026-07-04T00:01:28.306Z",
   "meta": {
     "lookback_days": 90,
-    "event_count": 7,
+    "event_count": 8,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-03T09:00:56.288Z"
+      "generated_at": "2026-07-04T00:01:02.658Z"
     },
     "llm": {
       "enabled": true,
@@ -49,10 +49,10 @@
       "last_seen_at": "2026-07-03T00:00:00.000Z",
       "updated_at": "2026-07-03T00:00:00.000Z",
       "definition": {
-        "one_sentence": "国家发展改革委宏观政策、价格、产业和经济运行信息 相关来源：国家发展改革委新闻发布、中国政府网要闻",
-        "background": "国家发展改革委宏观政策、价格、产业和经济运行信息 相关来源：国家发展改革委新闻发布、中国政府网要闻",
+        "one_sentence": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。 相关来源：国家发展改革委新闻发布、中国政府网要闻",
+        "background": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。 相关来源：国家发展改革委新闻发布、中国政府网要闻",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 6 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "目前仅知有调价动作，但具体价格变动数据未披露。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -80,7 +80,9 @@
           "institutions": [
             "国务院",
             "中国政府网",
+            "发改委",
             "国家发展改革委",
+            "财政部",
             "科技部"
           ],
           "countries_or_regions": [],
@@ -93,23 +95,24 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "2026年7月3日国内成品油价格调整",
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "纳米比亚总统恩代特瓦将访华"
+          "国家发改委于2026年7月3日发布成品油价格调整通知",
+          "具体调价幅度和方向未在摘要中提供",
+          "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
+          "2026年7月3日国内成品油价格调整"
         ],
-        "latest_change": "2026年7月3日国内成品油价格调整：国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "latest_change": "2026年7月3日国内成品油价格调整：国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 3,
+        "source_count": 4,
         "official_source_count": 20,
         "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 6
+          "data_release": 1,
+          "unknown": 5
         },
         "primary_source": {
           "name": "国家发展改革委新闻发布",
@@ -122,16 +125,7 @@
             "source": "国家发展改革委新闻发布",
             "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
             "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-356afd55c8",
-            "title": "纳米比亚总统恩代特瓦将访华",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-            "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
             "relevance_score": 100
           },
           {
@@ -140,16 +134,16 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
             "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
             "relevance_score": 100
           },
           {
             "item_id": "news-item-f3fd35f9bf",
-            "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
+            "title": "Strive to Create New Historical Brilliance! - Sidelights on the Celebration of the 105th Anniversary of the Founding...",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
             "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "中共庆祝成立105周年，习近平讲话号召奋斗。",
             "relevance_score": 100
           },
           {
@@ -162,12 +156,21 @@
             "relevance_score": 100
           },
           {
-            "item_id": "international-item-b5ac6b29d5",
-            "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+            "item_id": "news-item-b94d483134",
+            "title": "习近平在庆祝中国共产党成立105周年大会上发表重要讲话",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
             "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "习近平在建党105周年大会上发表重要讲话，强调党的领导是读懂中国的关键。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-b7d91d1109",
+            "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
+            "published_at": "2026-07-03T00:00:00.000Z",
+            "summary": "习近平在建党105周年大会上讲话，激励团结奋进，但具体内容未披露。",
             "relevance_score": 100
           }
         ],
@@ -177,7 +180,7 @@
       },
       "latest_update": {
         "title": "2026年7月3日国内成品油价格调整",
-        "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+        "summary": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
         "source": "国家发展改革委新闻发布",
         "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
         "published_at": "2026-07-03T00:00:00.000Z",
@@ -185,26 +188,26 @@
       },
       "confirmed_facts": [
         {
-          "fact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
+          "fact": "国家发改委于2026年7月3日发布成品油价格调整通知",
           "evidence_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
           "source": "国家发展改革委新闻发布",
           "confidence": "高"
         },
         {
-          "fact": "2026年7月3日国内成品油价格调整",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "fact": "具体调价幅度和方向未在摘要中提供",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "纳米比亚总统恩代特瓦将访华",
+          "fact": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "2026年7月3日国内成品油价格调整",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -213,9 +216,9 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
+            "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
+            "中共庆祝成立105周年，习近平讲话号召奋斗。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -223,19 +226,19 @@
         "industry": {
           "impact": "可能影响 宏观、日国内成品油价格调整、国家发展改革委宏观政策、价格 相关判断，需继续核对后续证据。",
           "evidence": [
-            "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
+            "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
+            "中共庆祝成立105周年，习近平讲话号召奋斗。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、国家发展改革委。",
+          "impact": "关联实体：AI、国务院、中国政府网、发改委、国家发展改革委。",
           "evidence": [
-            "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
+            "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
+            "中共庆祝成立105周年，习近平讲话号召奋斗。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -243,9 +246,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
+            "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
+            "中共庆祝成立105周年，习近平讲话号召奋斗。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -253,9 +256,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
+            "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
+            "中共庆祝成立105周年，习近平讲话号召奋斗。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -325,7 +328,25 @@
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "后续执行细节和市场反应仍需继续跟踪。",
+          "risk": "可能的政策风险包括油价波动对通胀的影响，但本次信息不足。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "可能存在地方政府执行不到位、资金不足或部门协调不畅等问题，导致规划目标打折扣。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "无直接风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -342,7 +363,17 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "后续执行细节和市场反应仍需继续跟踪。",
+          "uncertainty": "可能的政策风险包括油价波动对通胀的影响，但本次信息不足。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "可能存在地方政府执行不到位、资金不足或部门协调不畅等问题，导致规划目标打折扣。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "无直接风险。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -391,16 +422,7 @@
           "source": "国家发展改革委新闻发布",
           "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
           "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-356afd55c8",
-          "title": "纳米比亚总统恩代特瓦将访华",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-          "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
           "relevance_score": 100
         },
         {
@@ -409,16 +431,16 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
           "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "国务院残工委印发残疾人保障和发展十五五规划，明确未来五年指标、政策与重点工程。",
           "relevance_score": 100
         },
         {
           "item_id": "news-item-f3fd35f9bf",
-          "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
+          "title": "Strive to Create New Historical Brilliance! - Sidelights on the Celebration of the 105th Anniversary of the Founding...",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
           "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "中共庆祝成立105周年，习近平讲话号召奋斗。",
           "relevance_score": 100
         },
         {
@@ -431,179 +453,34 @@
           "relevance_score": 100
         },
         {
-          "item_id": "international-item-b5ac6b29d5",
-          "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+          "item_id": "news-item-b94d483134",
+          "title": "习近平在庆祝中国共产党成立105周年大会上发表重要讲话",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
           "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "习近平在建党105周年大会上发表重要讲话，强调党的领导是读懂中国的关键。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-b7d91d1109",
+          "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
+          "published_at": "2026-07-03T00:00:00.000Z",
+          "summary": "习近平在建党105周年大会上讲话，激励团结奋进，但具体内容未披露。",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
-          "date": "2026-07-02",
-          "title": "【视频】《习近平谈治国理政》第五卷土耳其推介会在安卡拉举行",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "【视频】《习近平谈治国理政》第五卷土耳其推介会在安卡拉举行",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/02/VIDEqipVMTSzzIbpDwjQyX2G260702.shtml",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/02/VIDEqipVMTSzzIbpDwjQyX2G260702.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "【视频】何立峰出席金融系统党的建设工作会议",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "【视频】何立峰出席金融系统党的建设工作会议",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/02/VIDEvyzfugFK99AreESmJPsL260702.shtml",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/02/VIDEvyzfugFK99AreESmJPsL260702.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-02",
-          "title": "失业保险稳岗扩岗政策举措延续实施",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "失业保险稳岗扩岗政策举措延续实施",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/lianbo/202607/content_7074135.htm",
-              "published_at": "2026-07-02T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7074135.htm",
-          "score": 100,
-          "publishedAt": "2026-07-02T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "2026年7月3日国内成品油价格调整",
-          "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "description": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-          "sources": [
-            {
-              "title": "2026年7月3日国内成品油价格调整",
-              "source": "国家发展改革委新闻发布",
-              "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "纳米比亚总统恩代特瓦将访华",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "纳米比亚总统恩代特瓦将访华",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
           "date": "2026-07-03",
           "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "不足以判断",
           "sources": [
             {
               "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
@@ -619,38 +496,16 @@
         },
         {
           "date": "2026-07-03",
-          "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "习近平在庆祝中国共产党成立105周年大会上发表重要讲话",
+          "summary": "习近平在建党105周年大会上发表重要讲话，强调党的领导是读懂中国的关键。",
+          "description": "习近平在建党105周年大会上发表重要讲话，强调党的领导是读懂中国的关键。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "本次讲话未涉及具体政策调整或制度变化，属于政治性纪念活动，旨在重申党的历史贡献与领导地位。",
           "sources": [
             {
-              "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
+              "title": "习近平在庆祝中国共产党成立105周年大会上发表重要讲话",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
               "published_at": "2026-07-03T00:00:00.000Z"
@@ -664,12 +519,12 @@
         {
           "date": "2026-07-03",
           "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "习近平在建党105周年大会上讲话，激励团结奋进，但具体内容未披露。",
+          "description": "习近平在建党105周年大会上讲话，激励团结奋进，但具体内容未披露。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前证据不足，无法判断具体变化。讲话可能推动新一轮学习动员，但无具体政策或行动变化描述。",
           "sources": [
             {
               "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
@@ -686,12 +541,12 @@
         {
           "date": "2026-07-03",
           "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "习近平在建党105周年大会上讲话，评论员文章强调党的成就与初心使命激励党员奋斗。",
+          "description": "习近平在建党105周年大会上讲话，评论员文章强调党的成就与初心使命激励党员奋斗。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "无具体政策或行动变化，该文章是对讲话精神的进一步宣传和阐释，旨在统一思想、凝聚共识。",
           "sources": [
             {
               "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
@@ -704,6 +559,182 @@
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074152.htm",
           "score": 100,
           "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+          "summary": "习近平在建党105周年大会上的讲话引发国际热烈反响，强调党的历史使命和世界贡献。",
+          "description": "习近平在建党105周年大会上的讲话引发国际热烈反响，强调党的历史使命和世界贡献。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此次讲话重申并强化了中国共产党的历史使命和国际责任，为新时代新征程提供了前进方向，但无具体政策或制度改变。国际反响凸显了中国讲话在全球治理中的象征意义，但未涉及实质行动变化。",
+          "sources": [
+            {
+              "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "财政部 税务总局 工业和信息化部关于调整节能汽车、新能源汽车车船税优惠政策的公告",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "财政部 税务总局 工业和信息化部关于调整节能汽车、新能源汽车车船税优惠政策的公告",
+              "source": "财政部财政新闻",
+              "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260703_3992823.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260703_3992823.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "财政部 税务总局 工业和信息化部有关司负责人就调整节能汽车、新能源汽车车船税优惠政策答记者问",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "财政部 税务总局 工业和信息化部有关司负责人就调整节能汽车、新能源汽车车船税优惠政策答记者问",
+              "source": "财政部财政新闻",
+              "url": "http://szs.mof.gov.cn/zhengcejiedu/202607/t20260703_3992830.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://szs.mof.gov.cn/zhengcejiedu/202607/t20260703_3992830.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074235.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074235.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "国务院任免国家工作人员（2026年7月3日）",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院任免国家工作人员（2026年7月3日）",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074234.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074234.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "国务院印发《美丽中国建设“十五五”规划》",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院印发《美丽中国建设“十五五”规划》",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074219.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074219.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074214.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074214.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "国务院关于印发《美丽中国建设“十五五”规划》的通知",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院关于印发《美丽中国建设“十五五”规划》的通知",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -714,9 +745,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "国家发展改革委宏观政策、价格、产业和经济运行信息",
-            "2026年7月3日国内成品油价格调整",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家发改委于2026年7月3日发布成品油价格调整通知",
+            "具体调价幅度和方向未在摘要中提供",
+            "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -826,7 +857,25 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "后续执行细节和市场反应仍需继续跟踪。",
+            "risk": "可能的政策风险包括油价波动对通胀的影响，但本次信息不足。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "可能存在地方政府执行不到位、资金不足或部门协调不畅等问题，导致规划目标打折扣。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "无直接风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -934,13 +983,13 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-06-08T00:00:00.000Z",
-      "last_seen_at": "2026-07-03T00:00:00.000Z",
-      "updated_at": "2026-07-03T00:00:00.000Z",
+      "last_seen_at": "2026-07-02T15:00:00.000Z",
+      "updated_at": "2026-07-02T15:00:00.000Z",
       "definition": {
-        "one_sentence": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
-        "background": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
+        "one_sentence": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
+        "background": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
         "core_question": "消费电子后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "小企业银行面临新的执法行动，而之前对法国巴黎银行及其相关实体以及Community Bankshares, Inc.的执法行动已被终止。具体执法内容未披露。",
+        "why_it_matters": "小企业银行面临新的监管压力，可能涉及资本或合规问题；而法国巴黎银行及社区银行股份公司相关的监管程序结束，消除了不确定性。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -985,17 +1034,17 @@
             "芯片"
           ]
         },
-        "related_item_count": 14
+        "related_item_count": 13
       },
       "current_judgment": {
         "summary": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
         "basis": [
-          "美联储2026年7月2日宣布对小企业银行执行执法行动。",
-          "同时终止对法国巴黎银行及其相关实体和Community Bankshares, Inc.的执法行动。",
-          "具体执法内容和原因尚未披露。",
-          "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。"
+          "美联储于2026年7月2日发布执法行动",
+          "小企业银行被采取执法行动",
+          "BNP Paribas等机构执法行动终止",
+          "具体细节未披露，影响待评估"
         ],
-        "latest_change": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台：苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
+        "latest_change": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动：美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
@@ -1011,17 +1060,17 @@
           "industry_analysis": 2
         },
         "primary_source": {
-          "name": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html"
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm"
         },
         "source_links": [
           {
             "item_id": "macro-federal-reserve-7d1389254b",
-            "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
+            "title": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动",
             "source": "Federal Reserve",
             "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
             "published_at": "2026-07-02T15:00:00.000Z",
-            "summary": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+            "summary": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "relevance_score": 100
           },
           {
@@ -1052,15 +1101,6 @@
             "relevance_score": 93
           },
           {
-            "item_id": "international-item-69d7df546d",
-            "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
-            "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
-            "relevance_score": 91
-          },
-          {
             "item_id": "business-item-a3e991abba",
             "title": "半导体、大模型概念股走强，兆易创新涨超14%，建滔集团涨超17%，智谱涨超12%丨港股收盘 2026-06-17 16:32",
             "source": "每日经济新闻",
@@ -1068,6 +1108,15 @@
             "published_at": "2026-06-17T00:00:00.000Z",
             "summary": "港股收盘恒指跌0.74%，恒生科技涨0.22%，芯片半导体板块多数上涨，兆易创新涨超14%，澜起科技涨超11%，华虹宏力涨超8%。",
             "relevance_score": 87
+          },
+          {
+            "item_id": "news-un-news-fde18da20d",
+            "title": "增强韧性：印度尼西亚如何构建更安全的能源未来",
+            "source": "UN News",
+            "url": "https://news.un.org/feed/view/en/story/2026/06/1167784",
+            "published_at": "2026-06-22T12:00:00.000Z",
+            "summary": "联合国新闻文章介绍印度尼西亚为应对能源危机和气候变化，致力于构建更安全的能源未来，但缺乏具体细节。",
+            "relevance_score": 85
           }
         ],
         "evidence_gaps": [
@@ -1075,34 +1124,34 @@
         ]
       },
       "latest_update": {
-        "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
-        "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
-        "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
-        "published_at": "2026-07-03T00:00:00.000Z",
-        "score": 91
+        "title": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动",
+        "summary": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
+        "source": "Federal Reserve",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
+        "published_at": "2026-07-02T15:00:00.000Z",
+        "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "美联储2026年7月2日宣布对小企业银行执行执法行动。",
+          "fact": "美联储于2026年7月2日发布执法行动",
           "evidence_url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "source": "Federal Reserve",
           "confidence": "高"
         },
         {
-          "fact": "同时终止对法国巴黎银行及其相关实体和Community Bankshares, Inc.的执法行动。",
+          "fact": "小企业银行被采取执法行动",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202606/content_7071411.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "具体执法内容和原因尚未披露。",
+          "fact": "BNP Paribas等机构执法行动终止",
           "evidence_url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
           "source": "每日经济新闻",
           "confidence": "高"
         },
         {
-          "fact": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+          "fact": "具体细节未披露，影响待评估",
           "evidence_url": "https://www.nasa.gov/news-release/nasa-astronaut-anil-menon-available-for-prelaunch-virtual-interviews",
           "source": "NASA Breaking News",
           "confidence": "高"
@@ -1110,9 +1159,9 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-03T09:00:56.288Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-04T00:01:02.658Z。",
           "evidence": [
-            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+            "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -1122,7 +1171,7 @@
         "industry": {
           "impact": "可能影响 宏观、商业、美联储、消费电子 相关判断，需继续核对后续证据。",
           "evidence": [
-            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+            "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -1132,7 +1181,7 @@
         "company": {
           "impact": "关联实体：GOOGL、AI、大模型、芯片、国务院、中国政府网。",
           "evidence": [
-            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+            "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -1142,7 +1191,7 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+            "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -1152,7 +1201,7 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+            "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
             "每日经济新闻中文财经、公司和市场新闻"
           ],
@@ -1164,9 +1213,9 @@
         {
           "type": "市场反馈",
           "description": "GOOGL -0.3599%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
-          "date": "2026-07-03",
+          "source": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
+          "date": "2026-07-02",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -1234,7 +1283,7 @@
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "执法行动细节不明，存在小企业银行股价波动的风险，以及公众对美联储执法透明度质疑的风险。",
+          "risk": "若小企业银行违规严重，可能面临严厉处罚，甚至影响其持续经营能力；市场对中小银行监管预期可能升温。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1252,7 +1301,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "若实际需求不及预期，可能导致库存积压和供应链波动。折叠屏技术成熟度、产品定价过高或功能不完善也可能影响消费者接受度。",
+          "risk": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -1269,7 +1318,7 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "执法行动细节不明，存在小企业银行股价波动的风险，以及公众对美联储执法透明度质疑的风险。",
+          "uncertainty": "若小企业银行违规严重，可能面临严厉处罚，甚至影响其持续经营能力；市场对中小银行监管预期可能升温。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -1279,7 +1328,7 @@
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "若实际需求不及预期，可能导致库存积压和供应链波动。折叠屏技术成熟度、产品定价过高或功能不完善也可能影响消费者接受度。",
+          "uncertainty": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -1324,11 +1373,11 @@
       "related_items": [
         {
           "item_id": "macro-federal-reserve-7d1389254b",
-          "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
+          "title": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动",
           "source": "Federal Reserve",
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "published_at": "2026-07-02T15:00:00.000Z",
-          "summary": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+          "summary": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
           "relevance_score": 100
         },
         {
@@ -1359,15 +1408,6 @@
           "relevance_score": 93
         },
         {
-          "item_id": "international-item-69d7df546d",
-          "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
-          "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
-          "relevance_score": 91
-        },
-        {
           "item_id": "business-item-a3e991abba",
           "title": "半导体、大模型概念股走强，兆易创新涨超14%，建滔集团涨超17%，智谱涨超12%丨港股收盘 2026-06-17 16:32",
           "source": "每日经济新闻",
@@ -1375,9 +1415,40 @@
           "published_at": "2026-06-17T00:00:00.000Z",
           "summary": "港股收盘恒指跌0.74%，恒生科技涨0.22%，芯片半导体板块多数上涨，兆易创新涨超14%，澜起科技涨超11%，华虹宏力涨超8%。",
           "relevance_score": 87
+        },
+        {
+          "item_id": "news-un-news-fde18da20d",
+          "title": "增强韧性：印度尼西亚如何构建更安全的能源未来",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167784",
+          "published_at": "2026-06-22T12:00:00.000Z",
+          "summary": "联合国新闻文章介绍印度尼西亚为应对能源危机和气候变化，致力于构建更安全的能源未来，但缺乏具体细节。",
+          "relevance_score": 85
         }
       ],
       "timeline": [
+        {
+          "date": "2026-06-09",
+          "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
+              "published_at": "2026-06-09T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
+          "score": 95,
+          "publishedAt": "2026-06-09T00:00:00.000Z"
+        },
         {
           "date": "2026-06-11",
           "title": "NASA机器人技术演示将推进原型伽马射线探测器",
@@ -1600,16 +1671,16 @@
         },
         {
           "date": "2026-07-02",
-          "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
-          "summary": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
-          "description": "美联储对小企业银行采取新执法行动，并终止对法国巴黎银行等机构的执法行动，具体细节待公布。",
+          "title": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动",
+          "summary": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
+          "description": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
           "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "小企业银行面临新的执法行动，而之前对法国巴黎银行及其相关实体以及Community Bankshares, Inc.的执法行动已被终止。具体执法内容未披露。",
+          "impact": "小企业银行面临新的监管压力，可能涉及资本或合规问题；而法国巴黎银行及社区银行股份公司相关的监管程序结束，消除了不确定性。",
           "sources": [
             {
-              "title": "美联储对小企业银行采取执法行动，并终止对法国巴黎银行等机构的执法行动",
+              "title": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动",
               "source": "Federal Reserve",
               "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
               "published_at": "2026-07-02T15:00:00.000Z"
@@ -1619,28 +1690,6 @@
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "score": 100,
           "publishedAt": "2026-07-02T15:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
-          "summary": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
-          "description": "苹果上调折叠屏iPhone备货至1000万台，下半年产量目标8500万台，显示其对折叠屏产品信心。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "苹果折叠屏iPhone的备货预期较此前增加300万台，产量目标上调，预示着公司对折叠屏产品市场前景持乐观态度。",
-          "sources": [
-            {
-              "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html",
-          "score": 91,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -1651,9 +1700,9 @@
           "thesis": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
           "confidence": "high",
           "basis": [
-            "美联储2026年7月2日宣布对小企业银行执行执法行动。",
-            "同时终止对法国巴黎银行及其相关实体和Community Bankshares, Inc.的执法行动。",
-            "具体执法内容和原因尚未披露。"
+            "美联储于2026年7月2日发布执法行动",
+            "小企业银行被采取执法行动",
+            "BNP Paribas等机构执法行动终止"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -1763,7 +1812,7 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "执法行动细节不明，存在小企业银行股价波动的风险，以及公众对美联储执法透明度质疑的风险。",
+            "risk": "若小企业银行违规严重，可能面临严厉处罚，甚至影响其持续经营能力；市场对中小银行监管预期可能升温。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1781,7 +1830,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "若实际需求不及预期，可能导致库存积压和供应链波动。折叠屏技术成熟度、产品定价过高或功能不完善也可能影响消费者接受度。",
+            "risk": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -1824,7 +1873,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-03",
+            "date": "2026-07-02",
             "judgment": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
             "change_type": "初始判断",
             "reason": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
@@ -2820,6 +2869,1011 @@
       }
     },
     {
+      "event_id": "ai-policy-ai芯片-恒指跌-恒科涨",
+      "title": "AI芯片",
+      "lane_id": "us_equities",
+      "lane_label": "美股变化",
+      "status": "watching",
+      "priority_grade": "B",
+      "importance_score": 100,
+      "first_seen_at": "2026-06-09T00:00:00.000Z",
+      "last_seen_at": "2026-07-03T00:00:00.000Z",
+      "updated_at": "2026-07-03T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。 相关来源：第一财经、每日经济新闻、OpenAI News",
+        "background": "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。 相关来源：第一财经、每日经济新闻、OpenAI News",
+        "core_question": "AI芯片后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "韩国大幅增加AI投资规模，从国家层面正式加入全球AI基建竞赛，可能引发其他国家跟进或调整AI战略。此前韩国在AI领域的投资规模相对较小，此次行动标志着其姿态转向积极争夺主导权。",
+        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "观察验证",
+        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/META/AVGO/TSLA/SPY/SMH。",
+        "rationale": [
+          "属于美股变化主线",
+          "重要性评分为 100",
+          "证据置信度为中"
+        ],
+        "market_symbols": [
+          "NVDA",
+          "MSFT",
+          "META",
+          "AVGO",
+          "TSLA",
+          "SPY",
+          "SMH"
+        ],
+        "policy_status": "",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "宏观",
+          "国际",
+          "AI芯片",
+          "万亿韩元"
+        ],
+        "entities": {
+          "companies": [
+            "NVDA",
+            "MSFT",
+            "META",
+            "AVGO",
+            "TSLA",
+            "SPY",
+            "SMH",
+            "NVIDIA",
+            "Microsoft",
+            "Meta"
+          ],
+          "people": [],
+          "institutions": [],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "NVIDIA",
+            "Microsoft"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/META/AVGO/TSLA/SPY/SMH。",
+        "basis": [
+          "韩国宣布超4755万亿韩元AI投资计划",
+          "旨在争夺全球AI产业主导权",
+          "算力被强调为核心消费资源",
+          "全球AI基建竞赛可能进一步激化"
+        ],
+        "latest_change": "AI教育“卖水人”模式：单节课3至5元，不卖课程只卖算力：重庆一学校展示AI教育算力服务模式，教师实时跟踪学生答题，引新加坡教育部关注。",
+        "judgment_update": "初始判断",
+        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
+      },
+      "evidence": {
+        "source_count": 4,
+        "official_source_count": 0,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "medium",
+        "evidence_types": {
+          "data_release": 3,
+          "industry_analysis": 3
+        },
+        "primary_source": {
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html"
+        },
+        "source_links": [
+          {
+            "item_id": "macro-item-7e668ffefb",
+            "title": "超4755万亿韩元！韩国押注争夺AI产业主导权，全球AI基建竞赛将升级",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103251937.html",
+            "published_at": "2026-06-30T09:00:36.891Z",
+            "summary": "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-6e0dadcf78",
+            "title": "车企遭三重压力测试：销量降、利润跌、芯片涨",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103250925.html",
+            "published_at": "2026-06-29T09:00:39.098Z",
+            "summary": "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-item-cdb80635bf",
+            "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+            "published_at": "2026-06-25T00:00:00.000Z",
+            "summary": "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-d5deb4e7df",
+            "title": "OpenAI与博通推出针对大语言模型推理优化的定制芯片",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+            "published_at": "2026-06-24T06:00:00.000Z",
+            "summary": "OpenAI与博通联合发布定制AI推理芯片Jalapeño，旨在提升LLM推理性能与效率。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-656df8d235",
+            "title": "封锁110天后霍尔木兹海峡重开，但油价恐再涨破100美元；美联储10月加息概率达100%；马斯克称中国AI明年Q1追上Anthropic；SpaceX两日蒸发1.5万亿元 | 一周国际财经",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-20/4431803.html",
+            "published_at": "2026-06-20T00:00:00.000Z",
+            "summary": "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-item-da4d2af04d",
+            "title": "U.S. Stock Pre-market: Meta Enters Cloud Computing, SanDisk Down Over 4%, Micron and Western Digital Down 3%; U.S. Ju...",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
+            "published_at": "2026-07-02T00:00:00.000Z",
+            "summary": "Meta宣布进军云计算，导致GPU及存储板块大跌；非农和马斯克言论等待确认。",
+            "relevance_score": 99
+          }
+        ],
+        "evidence_gaps": [
+          "缺少官方或市场权威来源。"
+        ]
+      },
+      "latest_update": {
+        "title": "AI教育“卖水人”模式：单节课3至5元，不卖课程只卖算力",
+        "summary": "重庆一学校展示AI教育算力服务模式，教师实时跟踪学生答题，引新加坡教育部关注。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+        "published_at": "2026-07-03T00:00:00.000Z",
+        "score": 88
+      },
+      "confirmed_facts": [
+        {
+          "fact": "韩国宣布超4755万亿韩元AI投资计划",
+          "evidence_url": "https://www.yicai.com/news/103251937.html",
+          "source": "第一财经",
+          "confidence": "中"
+        },
+        {
+          "fact": "旨在争夺全球AI产业主导权",
+          "evidence_url": "https://www.yicai.com/news/103250925.html",
+          "source": "第一财经",
+          "confidence": "中"
+        },
+        {
+          "fact": "算力被强调为核心消费资源",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "全球AI基建竞赛可能进一步激化",
+          "evidence_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+          "source": "OpenAI News",
+          "confidence": "中"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关联标的：NVDA -1.3918%、MSFT 1.6160%、META -4.8963%、AVGO -2.4070%、TSLA -7.4888%、SPY -0.1314%、SMH -4.5402%；行情时间：2026-07-04T00:01:02.658Z。",
+          "evidence": [
+            "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+            "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+            "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "industry": {
+          "impact": "可能影响 宏观、国际、AI芯片、万亿韩元 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+            "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+            "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "company": {
+          "impact": "关联实体：NVDA、MSFT、META、AVGO、TSLA、SPY。",
+          "evidence": [
+            "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+            "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+            "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+            "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+            "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+            "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+            "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [
+        {
+          "type": "市场反馈",
+          "description": "NVDA -1.3918%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "date": "2026-07-03",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "MSFT 1.6160%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "date": "2026-07-03",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "META -4.8963%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "date": "2026-07-03",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "AVGO -2.4070%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "date": "2026-07-03",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "TSLA -7.4888%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "date": "2026-07-03",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "SPY -0.1314%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "date": "2026-07-03",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        }
+      ],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 宏观、国际、AI芯片 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 宏观、国际、AI芯片 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 宏观、国际、AI芯片 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "投资规模过大可能导致财政压力；如果AI技术发展不及预期，巨额投资可能面临浪费风险；同时全球化竞争可能引发技术封锁或贸易摩擦。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "若销量持续低迷且芯片价格居高不下，车企可能陷入经营困境，行业整体衰退风险增加。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "过度乐观的表述可能抬高市场预期，若后续业绩不及预期，将引发回调风险。物理AI概念尚处早期，商业模式不确定性高。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "投资规模过大可能导致财政压力；如果AI技术发展不及预期，巨额投资可能面临浪费风险；同时全球化竞争可能引发技术封锁或贸易摩擦。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "若销量持续低迷且芯片价格居高不下，车企可能陷入经营困境，行业整体衰退风险增加。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "过度乐观的表述可能抬高市场预期，若后续业绩不及预期，将引发回调风险。物理AI概念尚处早期，商业模式不确定性高。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "缺少官方或市场权威来源。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 宏观、国际、AI芯片 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "AI芯片是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "macro-item-7e668ffefb",
+          "title": "超4755万亿韩元！韩国押注争夺AI产业主导权，全球AI基建竞赛将升级",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103251937.html",
+          "published_at": "2026-06-30T09:00:36.891Z",
+          "summary": "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-6e0dadcf78",
+          "title": "车企遭三重压力测试：销量降、利润跌、芯片涨",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103250925.html",
+          "published_at": "2026-06-29T09:00:39.098Z",
+          "summary": "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-item-cdb80635bf",
+          "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+          "published_at": "2026-06-25T00:00:00.000Z",
+          "summary": "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-d5deb4e7df",
+          "title": "OpenAI与博通推出针对大语言模型推理优化的定制芯片",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+          "published_at": "2026-06-24T06:00:00.000Z",
+          "summary": "OpenAI与博通联合发布定制AI推理芯片Jalapeño，旨在提升LLM推理性能与效率。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-656df8d235",
+          "title": "封锁110天后霍尔木兹海峡重开，但油价恐再涨破100美元；美联储10月加息概率达100%；马斯克称中国AI明年Q1追上Anthropic；SpaceX两日蒸发1.5万亿元 | 一周国际财经",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-20/4431803.html",
+          "published_at": "2026-06-20T00:00:00.000Z",
+          "summary": "霍尔木兹海峡重开，油价风险未消；美联储加息概率100%；SpaceX市值暴跌；马斯克预测中国AI追赶时间；SK海力士周涨28%；英特尔揭示AI三大瓶颈。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-item-da4d2af04d",
+          "title": "U.S. Stock Pre-market: Meta Enters Cloud Computing, SanDisk Down Over 4%, Micron and Western Digital Down 3%; U.S. Ju...",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
+          "published_at": "2026-07-02T00:00:00.000Z",
+          "summary": "Meta宣布进军云计算，导致GPU及存储板块大跌；非农和马斯克言论等待确认。",
+          "relevance_score": 99
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-24",
+          "title": "恒指、恒科齐涨！芯片股爆发，华虹宏力涨超15%，兆易创新涨超5%！医药生物上涨，化工、银行、有色下跌｜港股收盘 2026-06-24 16:28",
+          "summary": "港股收盘恒指涨0.33%，恒科涨1.81%，半导体板块爆发，华虹宏力涨超15%，医药生物上涨，化工、银行下跌。",
+          "description": "港股收盘恒指涨0.33%，恒科涨1.81%，半导体板块爆发，华虹宏力涨超15%，医药生物上涨，化工、银行下跌。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "当日港股市场整体上涨，但板块分化明显：科技和半导体板块领涨，传统周期板块如化工、银行等下跌。",
+          "sources": [
+            {
+              "title": "恒指、恒科齐涨！芯片股爆发，华虹宏力涨超15%，兆易创新涨超5%！医药生物上涨，化工、银行、有色下跌｜港股收盘 2026-06-24 16:28",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-24/4435869.html",
+              "published_at": "2026-06-24T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435869.html",
+          "score": 82,
+          "publishedAt": "2026-06-24T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-24",
+          "title": "OpenAI与博通推出针对大语言模型推理优化的定制芯片",
+          "summary": "OpenAI与博通联合发布定制AI推理芯片Jalapeño，旨在提升LLM推理性能与效率。",
+          "description": "OpenAI与博通联合发布定制AI推理芯片Jalapeño，旨在提升LLM推理性能与效率。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "AI芯片领域出现新的竞争者，OpenAI不再完全依赖第三方芯片，而是与博通合作自研推理芯片，可能改变AI硬件供应链格局。",
+          "sources": [
+            {
+              "title": "OpenAI与博通推出针对大语言模型推理优化的定制芯片",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+              "published_at": "2026-06-24T06:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+          "score": 100,
+          "publishedAt": "2026-06-24T06:00:00.000Z"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+          "summary": "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。",
+          "description": "黄仁勋在股东大会上称AI投资回报率已有答案，并强调算力即收入，下一增长阶段是物理AI。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "黄仁勋在股东大会上公开表达了更强烈的乐观预期，尤其是关于AI投资回报率和未来增长阶段（物理AI）的论断，可能影响市场对英伟达长期发展方向的预期。但此次发言内容与此前公开表态类似，并无实质性的新信息或战略调整。",
+          "sources": [
+            {
+              "title": "英伟达股东大会黄仁勋开启“自夸”模式 称AI投资回报率的问题“已有答案”",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+              "published_at": "2026-06-25T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-25/4436827.html",
+          "score": 100,
+          "publishedAt": "2026-06-25T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-28",
+          "title": "周末，一大波利好来了！明天A股怎么走？",
+          "summary": "A股上周先反弹后下跌，出现二八行情；周末出现多条利好消息，但影响待验证，下周需关注各方动态。",
+          "description": "A股上周先反弹后下跌，出现二八行情；周末出现多条利好消息，但影响待验证，下周需关注各方动态。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "周末出现多条利好消息，可能改变市场对下周走势的预期，但具体影响尚无明确数据支撑。",
+          "sources": [
+            {
+              "title": "周末，一大波利好来了！明天A股怎么走？",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-28/4439606.html",
+              "published_at": "2026-06-28T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-28/4439606.html",
+          "score": 82,
+          "publishedAt": "2026-06-28T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-29",
+          "title": "前5个月汽车行业利润率仅3.4%！上游涨价挤压，下游竞争加剧，有车企喊出“不追求暴利，但必须有利润”",
+          "summary": "2026年1-5月汽车行业利润率跌至3.4%，受上游涨价和竞争加剧影响，车企转向保利润。",
+          "description": "2026年1-5月汽车行业利润率跌至3.4%，受上游涨价和竞争加剧影响，车企转向保利润。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "汽车行业利润率从之前的水平进一步下滑，行业从增量竞争转向存量博弈，多家车企从追求规模扩张转向强调保利润，例如精简产品矩阵。",
+          "sources": [
+            {
+              "title": "前5个月汽车行业利润率仅3.4%！上游涨价挤压，下游竞争加剧，有车企喊出“不追求暴利，但必须有利润”",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-29/4440485.html",
+              "published_at": "2026-06-29T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-29/4440485.html",
+          "score": 94,
+          "publishedAt": "2026-06-29T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-29",
+          "title": "半导体ETF周涨15%，重仓FOF却业绩平平，公募FOF年中调仓关键方向解析",
+          "summary": "上周半导体ETF涨超15%，而公募FOF业绩平平，年中调仓方向引发关注。",
+          "description": "上周半导体ETF涨超15%，而公募FOF业绩平平，年中调仓方向引发关注。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "目前证据不足",
+          "sources": [
+            {
+              "title": "半导体ETF周涨15%，重仓FOF却业绩平平，公募FOF年中调仓关键方向解析",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-29/4440502.html",
+              "published_at": "2026-06-29T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-29/4440502.html",
+          "score": 82,
+          "publishedAt": "2026-06-29T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-29",
+          "title": "车企遭三重压力测试：销量降、利润跌、芯片涨",
+          "summary": "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+          "description": "第一财经报道车企面临销量降、利润跌、芯片涨三重压力，行业前景承压。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "车企的经营环境恶化，原本的销量增长趋势可能逆转，利润空间被压缩，芯片供应紧张导致成本上升。",
+          "sources": [
+            {
+              "title": "车企遭三重压力测试：销量降、利润跌、芯片涨",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103250925.html",
+              "published_at": "2026-06-29T09:00:39.098Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103250925.html",
+          "score": 100,
+          "publishedAt": "2026-06-29T09:00:39.098Z"
+        },
+        {
+          "date": "2026-06-29",
+          "title": "Microsoft Foundry 中的 Claude 现已全面可用",
+          "summary": "Microsoft 宣布 Claude 在 Foundry 中全面可用，加速 AI 代理部署。",
+          "description": "Microsoft 宣布 Claude 在 Foundry 中全面可用，加速 AI 代理部署。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": true,
+          "impact": "Claude 在 Microsoft Foundry 的可用性状态从此前的预览或有限可用变为全面可用。具体时间线和先前状态未在公告中披露。",
+          "sources": [
+            {
+              "title": "Microsoft Foundry 中的 Claude 现已全面可用",
+              "source": "Microsoft Azure Blog",
+              "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available",
+              "published_at": "2026-06-29T17:00:00.000Z"
+            }
+          ],
+          "source": "Microsoft Azure Blog",
+          "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available",
+          "score": 86,
+          "publishedAt": "2026-06-29T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-30",
+          "title": "超4755万亿韩元！韩国押注争夺AI产业主导权，全球AI基建竞赛将升级",
+          "summary": "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+          "description": "韩国投入超4755万亿韩元争夺AI产业主导权，全球AI基建竞赛升级。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "韩国大幅增加AI投资规模，从国家层面正式加入全球AI基建竞赛，可能引发其他国家跟进或调整AI战略。此前韩国在AI领域的投资规模相对较小，此次行动标志着其姿态转向积极争夺主导权。",
+          "sources": [
+            {
+              "title": "超4755万亿韩元！韩国押注争夺AI产业主导权，全球AI基建竞赛将升级",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103251937.html",
+              "published_at": "2026-06-30T09:00:36.891Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103251937.html",
+          "score": 100,
+          "publishedAt": "2026-06-30T09:00:36.891Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "U.S. Stock Pre-market: Meta Enters Cloud Computing, SanDisk Down Over 4%, Micron and Western Digital Down 3%; U.S. Ju...",
+          "summary": "Meta宣布进军云计算，导致GPU及存储板块大跌；非农和马斯克言论等待确认。",
+          "description": "Meta宣布进军云计算，导致GPU及存储板块大跌；非农和马斯克言论等待确认。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "Meta从社交平台巨头向云计算服务提供商扩展，可能改变云计算市场竞争格局，并对现有GPU租赁和存储市场产生冲击。",
+          "sources": [
+            {
+              "title": "U.S. Stock Pre-market: Meta Enters Cloud Computing, SanDisk Down Over 4%, Micron and Western Digital Down 3%; U.S. Ju...",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445826.html",
+          "score": 99,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-02",
+          "title": "特朗普：台积电将扩大投资，我卸任时美国可能占有全球50%的芯片市场！此前他称美国的芯片产业“被偷走”",
+          "summary": "特朗普称台积电将扩大亚利桑那州晶圆厂规模，目标是使美国芯片市占率达50%。",
+          "description": "特朗普称台积电将扩大亚利桑那州晶圆厂规模，目标是使美国芯片市占率达50%。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "特朗普公开表态将美国芯片市场目标设定为50%，并强调台积电扩大投资，这反映了美国政府对芯片制造业回流的高度重视，可能影响全球半导体产业布局。",
+          "sources": [
+            {
+              "title": "特朗普：台积电将扩大投资，我卸任时美国可能占有全球50%的芯片市场！此前他称美国的芯片产业“被偷走”",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-02/4445848.html",
+              "published_at": "2026-07-02T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-02/4445848.html",
+          "score": 93,
+          "publishedAt": "2026-07-02T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "AI教育“卖水人”模式：单节课3至5元，不卖课程只卖算力",
+          "summary": "重庆一学校展示AI教育算力服务模式，教师实时跟踪学生答题，引新加坡教育部关注。",
+          "description": "重庆一学校展示AI教育算力服务模式，教师实时跟踪学生答题，引新加坡教育部关注。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": true,
+          "impact": "教育技术提供商尝试从卖课程转向卖算力，按课时收费（单节课3至5元），但具体商业模式细节和效果尚未在本文中披露。",
+          "sources": [
+            {
+              "title": "AI教育“卖水人”模式：单节课3至5元，不卖课程只卖算力",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-03/4451333.html",
+          "score": 88,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断AI芯片是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "AI芯片后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/META/AVGO/TSLA/SPY/SMH。",
+          "confidence": "medium",
+          "basis": [
+            "韩国宣布超4755万亿韩元AI投资计划",
+            "旨在争夺全球AI产业主导权",
+            "算力被强调为核心消费资源"
+          ],
+          "what_would_change_this_view": [
+            "缺少官方或市场权威来源。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "medium"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "宏观",
+              "国际",
+              "AI芯片",
+              "万亿韩元"
+            ],
+            "confidence": "medium"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "B",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 宏观、国际、AI芯片 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 宏观、国际、AI芯片 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "B",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 宏观、国际、AI芯片 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "投资规模过大可能导致财政压力；如果AI技术发展不及预期，巨额投资可能面临浪费风险；同时全球化竞争可能引发技术封锁或贸易摩擦。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "若销量持续低迷且芯片价格居高不下，车企可能陷入经营困境，行业整体衰退风险增加。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "过度乐观的表述可能抬高市场预期，若后续业绩不及预期，将引发回调风险。物理AI概念尚处早期，商业模式不确定性高。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "缺少官方或市场权威来源。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 宏观、国际、AI芯片 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-07-03",
+            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/META/AVGO/TSLA/SPY/SMH。",
+            "change_type": "初始判断",
+            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA/MSFT/META/AVGO/TSLA/SPY/SMH。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "AI芯片是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
       "event_id": "ai-policy-google-research-google-deepmind-health",
       "title": "AI 政策与基础设施",
       "lane_id": "us_equities",
@@ -2968,7 +4022,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-03T09:00:56.288Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-04T00:01:02.658Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -3650,7 +4704,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-03T09:00:56.288Z。",
+          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-04T00:01:02.658Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -4263,7 +5317,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-03T09:00:56.288Z。",
+          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-04T00:01:02.658Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -4985,7 +6039,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-03T09:00:56.288Z。",
+          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-04T00:01:02.658Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",

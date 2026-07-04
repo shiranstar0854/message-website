@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T09:00:56.288Z",
+  "generatedAt": "2026-07-04T00:01:02.658Z",
   "provider": "alpha-vantage",
   "status": "available",
   "stale": false,
@@ -14,7 +14,7 @@
       "changePercentValue": -1.3918,
       "volume": 142385548,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "MSFT": {
       "symbol": "MSFT",
@@ -25,7 +25,7 @@
       "changePercentValue": 1.616,
       "volume": 42194409,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "GOOGL": {
       "symbol": "GOOGL",
@@ -36,7 +36,7 @@
       "changePercentValue": -0.3599,
       "volume": 25999346,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "META": {
       "symbol": "META",
@@ -47,7 +47,7 @@
       "changePercentValue": -4.8963,
       "volume": 21750522,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "AMZN": {
       "symbol": "AMZN",
@@ -58,7 +58,7 @@
       "changePercentValue": 0.4013,
       "volume": 48298137,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "AMD": {
       "symbol": "AMD",
@@ -69,7 +69,7 @@
       "changePercentValue": -4.2634,
       "volume": 28228930,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "AVGO": {
       "symbol": "AVGO",
@@ -80,7 +80,7 @@
       "changePercentValue": -2.407,
       "volume": 26788850,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "TSLA": {
       "symbol": "TSLA",
@@ -91,7 +91,7 @@
       "changePercentValue": -7.4888,
       "volume": 73915762,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "QQQ": {
       "symbol": "QQQ",
@@ -102,7 +102,7 @@
       "changePercentValue": -1.7334,
       "volume": 51086080,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "SPY": {
       "symbol": "SPY",
@@ -113,7 +113,7 @@
       "changePercentValue": -0.1314,
       "volume": 57505953,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     },
     "SMH": {
       "symbol": "SMH",
@@ -122,9 +122,9 @@
       "change": -28.17,
       "changePercent": "-4.5402%",
       "changePercentValue": -4.5402,
-      "volume": 21115008,
+      "volume": 21334058,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-03T09:00:56.288Z"
+      "fetchedAt": "2026-07-04T00:01:02.658Z"
     }
   },
   "topMovers": [
@@ -673,168 +673,218 @@
     "NVDA": [
       {
         "symbol": "NVDA",
-        "title": "Generali Powszechne Towarzystwo Emerytalne Has $29.65 Million Stake in NVIDIA Corporation $NVDA",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-generali-powszechne-towarzystwo-emerytalne-has-2965-million-stake-in-nvidia-corporation-nvda-2026-07-03/",
-        "source": "MarketBeat",
-        "timePublished": "20260703T073329",
-        "summary": "Generali Powszechne Towarzystwo Emerytalne increased its stake in NVIDIA Corporation (NASDAQ:NVDA) by 61.9% in Q1 2026, bringing its total holdings to 170,000 shares valued at approximately $29.65 million. NVIDIA continues to garner significant institutional interest, with hedge funds and institutions owning 65.27% of the company, despite some recent insider selling. The company's strong fundamentals are supported by positive analyst coverage, recent earnings and revenue beats, an $80 billion share buyback authorization, and a significant dividend increase.",
-        "overallSentimentScore": 0.225101,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Himax Technologies (HIMX) Could Be 45% Undervalued After Its HE Series Launch",
-        "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-himx/himax-technologies/news/himax-technologies-himx-could-be-45-undervalued-after-its-he",
-        "source": "Simply Wall Street",
-        "timePublished": "20260703T005008",
-        "summary": "Himax Technologies (HIMX) stock has fallen 45.12% in the last month despite launching its HE Series indirect Time-of-Flight depth decoder ICs, which is a new 3D sensing platform. While the company's valuation narrative suggests it is 44.5% undervalued with a fair value of $23.70 per share due to technological breakthroughs and expected revenue expansion, a Discounted Cash Flow (DCF) model estimates a lower value of $2.32 per share, indicating the stock might be overvalued through this lens. This discrepancy raises questions about whether the company's future growth is already priced in or if there is a genuine opportunity.",
-        "overallSentimentScore": 0.266665,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Should Fortinet’s Index Exit and Partner Expansion Shift How Investors View FTNT’s Risk‑Return Profile?",
-        "url": "https://simplywall.st/stocks/us/software/nasdaq-ftnt/fortinet/news/should-fortinets-index-exit-and-partner-expansion-shift-how",
-        "source": "Simply Wall Street",
-        "timePublished": "20260703T004948",
-        "summary": "Fortinet (FTNT) was recently removed from Russell defensive indexes, which might cause technical selling but doesn't fundamentally change its near-term drivers like SASE and AI security. Concurrently, partner Liquid Networx expanded access to Fortinet's licensing and services on major cloud marketplaces, reinforcing its cloud platform adoption strategy. While this shift towards higher-margin services could buffer against hardware demand fluctuations, investors should remain aware of potential margin pressures from ongoing infrastructure and sales investments.",
-        "overallSentimentScore": 0.105736,
+        "title": "Apple Is About 4% Away From Overtaking Nvidia as the World's Most Valuable Company. Could It Happen This Month?",
+        "url": "https://www.fool.com/investing/2026/07/03/apple-is-about-4-away-from-overtaking-nvidia-as-th/",
+        "source": "The Motley Fool",
+        "timePublished": "20260703T212922",
+        "summary": "Apple is currently about 4% behind Nvidia in market capitalization, with Nvidia at $4.7 trillion and Apple at $4.5 trillion. Apple recently gained ground due to reports of an expanded iPhone lineup, while Nvidia saw a broader chip stock sell-off. Apple has a potential catalyst with its upcoming fiscal third-quarter earnings report on July 30 and rumors of new iPhones, whereas Nvidia, despite faster growth and a cheaper stock, does not report again until late August, leaving its shares exposed to AI sentiment shifts.",
+        "overallSentimentScore": 0.050377,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "NVDA",
-        "title": "VOO ETF Picks Up on Weaker Labor Market Data Amid Tech Stock Drag",
-        "url": "https://www.tipranks.com/news/voo-etf-surges-on-weaker-labor-market-data-amid-tech-stock-drag",
-        "source": "TipRanks",
-        "timePublished": "20260703T004153",
-        "summary": "The Vanguard S&P 500 ETF (VOO) saw a slight rebound after a weaker-than-expected U.S. labor market report eased concerns about a Fed interest rate hike, despite initial premarket losses. However, the ETF remains under pressure due to the Federal Reserve's commitment to a 2% inflation target and recent profit-taking in the tech sector, which significantly impacts VOO due to its market-cap-weighted structure and large holdings in major tech companies. Despite these headwinds, Wall Street analysts maintain a Strong Buy rating for VOO, with an implied upside of over 22%.",
-        "overallSentimentScore": -0.169617,
-        "overallSentimentLabel": "Somewhat-Bearish"
+        "title": "3 Reasons to Avoid TFSL and 1 Stock to Buy Instead",
+        "url": "https://www.financialcontent.com/article/stockstory-2026-7-3-3-reasons-to-avoid-tfsl-and-1-stock-to-buy-instead",
+        "source": "FinancialContent",
+        "timePublished": "20260703T193954",
+        "summary": "The article advises investors to avoid TFS Financial (TFSL) despite its recent stock price increase, citing three main reasons for potential underperformance: weak net interest income growth, a low net interest margin indicating poor loan book profitability, and barely growing earnings per share. Instead, it suggests investing in a different all-weather company, specifically mentioning the owner of Taco Bell, and also promotes an AI-driven list of top growth stocks.",
+        "overallSentimentScore": 0.143324,
+        "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "NVDA",
-        "title": "Nvidia Accelerates AI Chip Production with New Packaging Tech to Meet Soaring Demand",
-        "url": "https://www.tradingview.com/news/benzinga:273fec0b4094b:0-nvidia-accelerates-ai-chip-production-with-new-packaging-tech-to-meet-soaring-demand/",
-        "source": "TradingView",
-        "timePublished": "20260702T233943",
-        "summary": "Nvidia plans to utilize Fan-Out Panel Level Packaging (FOPLP) technology for its GB200 AI server chips sooner than initially planned. This move aims to address the production limitations of Taiwan Semiconductor Manufacturing Co.'s (TSMC) Chip on Wafer on Substrate (CoWoS) packaging. FOPLP is seen as a cost-effective alternative that can increase capacity for AI chip production, despite having slightly weaker technical specifications, as generative AI applications drive up demand.",
-        "overallSentimentScore": 0.34465,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "IWO vs. IWM: What's the Best Way to Buy Small-Cap Stocks?",
-        "url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/3108193/iwo-vs-iwm-what-s-the-best-way-to-buy-small-cap-stocks/",
-        "source": "The Globe and Mail",
-        "timePublished": "20260702T233913",
-        "summary": "This article compares two small-cap ETFs, IWM (iShares Russell 2000 ETF) and IWO (iShares Russell 2000 Growth ETF), to determine the best investment strategy for small-cap stocks. While small-caps have outperformed recently, the author suggests IWM as a better long-term choice due to its broader diversification and historical performance. The article also highlights the Motley Fool's stock recommendations.",
-        "overallSentimentScore": 0.615701,
+        "title": "Ecolab completes USD $4.75 billion CoolIT takeover",
+        "url": "https://itbrief.asia/story/ecolab-completes-usd-4-75-billion-coolit-takeover",
+        "source": "IT Brief Asia",
+        "timePublished": "20260703T184738",
+        "summary": "Ecolab has finalized its $4.75 billion acquisition of liquid cooling company CoolIT Systems, aiming to strengthen its position in water treatment and cooling solutions for dense AI data centers. This strategic move adds direct-to-chip liquid cooling capabilities, leveraging CoolIT's rapid growth driven by AI demand, and is expected to significantly boost Ecolab's high-tech division. The acquisition positions Ecolab to offer integrated cooling platforms, combining CoolIT's hardware with its own monitoring and fluids, while also impacting Ecolab's 2026 earnings guidance with some initial dilution due to financing and amortization costs.",
+        "overallSentimentScore": 0.393073,
         "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "Sandisk Announces Sampling of BiCS10 1 Tb TLC 3D NAND Flash Memory",
-        "url": "https://www.techpowerup.com/350483/sandisk-announces-sampling-of-bics10-1-tb-tlc-3d-nand-flash-memory",
-        "source": "TechPowerUp",
-        "timePublished": "20260702T231019",
-        "summary": "SanDisk has started sampling its BiCS10 1 Tb TLC 3D NAND flash memory, marking its 10th generation technology. This new flash improves bit density by 59% and offers up to 4.8 Gb/s interface speed, a 33% increase over its predecessor. It also boasts enhanced power efficiency for data I/O, reducing power consumption by 10% for input and 34% for output.",
-        "overallSentimentScore": 0.273322,
+        "title": "VT vs. SCHF: Which International ETF Is the Better Buy for Investors?",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/MSFT/pressreleases/3118612/vt-vs-schf-which-international-etf-is-the-better-buy-for-investors/",
+        "source": "The Globe and Mail",
+        "timePublished": "20260703T164043",
+        "summary": "This article compares two international ETFs, Vanguard Total World Stock ETF (VT) and Schwab International Equity ETF (SCHF), for investors looking to diversify beyond U.S. borders. VT offers broader diversification with over 10,000 holdings including U.S. and emerging markets, while SCHF focuses on developed international markets, excluding the U.S., and provides a higher dividend yield. The choice depends on an investor's strategy for international exposure, whether it's a complete global solution or a targeted international complement to existing U.S. holdings.",
+        "overallSentimentScore": 0.235517,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "3 Growth Stocks to Buy on the Dip",
-        "url": "https://www.theglobeandmail.com/investing/markets/stocks/NVDA-Q/pressreleases/3108254/3-growth-stocks-to-buy-on-the-dip/",
+        "title": "Tesla Joins Uber in Capping Employee AI Spending - Tesla (NASDAQ:TSLA), Uber Technologies (NYSE:UBER), Ac",
+        "url": "https://www.benzinga.com/markets/tech/26/07/60266189/tesla-joins-uber-in-putting-the-brakes-on-employee-ai-spending",
+        "source": "Benzinga",
+        "timePublished": "20260703T151554",
+        "summary": "Tesla has implemented a new policy to cap employee AI spending at $200 per week, following a similar move by Uber, which set a $1,500 monthly limit after its annual AI budget was exhausted quickly. This trend highlights a shift in enterprise AI adoption where companies are now focused on managing the escalating costs associated with advanced AI model usage. The challenge for companies is no longer encouraging AI adoption but managing the financial implications, potentially benefiting software providers that optimize AI usage.",
+        "overallSentimentScore": -0.106854,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "AAOI Stock Falls 17% but Still Outpaces Nvidia by 200% - Applied Optoelectronics (NASDAQ:AAOI)",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/07/60266223/this-ai-stock-beat-nvidia-by-200-then-zuckerberg-sparked-a-17-sell-off",
+        "source": "Benzinga",
+        "timePublished": "20260703T151006",
+        "summary": "Shares of Applied Optoelectronics (AAOI) dropped 17% due to comments from Meta Platforms CEO Mark Zuckerberg regarding AI infrastructure spending, which triggered a broad sell-off in photonics stocks. Despite this sharp decline, AAOI stock is still up over 205% year-to-date, significantly outperforming Nvidia. The sell-off highlights investor sensitivity to any signs of caution in the AI sector, as AAOI has been a major beneficiary of the AI infrastructure boom.",
+        "overallSentimentScore": -0.27184,
+        "overallSentimentLabel": "Somewhat-Bearish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "MSCI’s Approach to SpaceX Discredits the ESG Cartel",
+        "url": "https://www.dailysignal.com/2026/07/03/spacex-msci-esg-cartel/",
+        "source": "Daily Signal",
+        "timePublished": "20260703T150011",
+        "summary": "The article criticizes MSCI's ESG rating for SpaceX, arguing that it's absurd to rank the innovative American company on par with hostile foreign adversaries like Russia. The author contends that ESG ratings often prioritize ideological agendas over financial returns and American interests, undermining free enterprise. MSCI's rating of SpaceX is presented as evidence that ESG acts as a mechanism for ideological ends rather than genuine \"socially conscious investing.\"",
+        "overallSentimentScore": -0.1055,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Micron Trades at a Discount Despite 243% YTD Rally: Buy More MU Shares?",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/MRVL/pressreleases/3116709/micron-trades-at-a-discount-despite-243-ytd-rally-buy-more-mu-shares/",
         "source": "The Globe and Mail",
-        "timePublished": "20260702T230926",
-        "summary": "This article suggests three growth stocks—SoFi Technologies, Robinhood Markets, and TransMedics Group—that investors should consider buying after recent dips in their stock prices. Despite facing challenges such as short-seller reports or disappointing quarterly results, all three companies show strong long-term prospects, innovative business models, and significant growth opportunities. The author emphasizes that buying during temporary pullbacks can lead to above-average returns.",
-        "overallSentimentScore": 0.330598,
+        "timePublished": "20260703T143821",
+        "summary": "Micron Technology (MU) has seen a 243% year-to-date rally, driven by demand for AI memory, yet it still trades at an attractive valuation compared to its peers and the broader tech sector. The company's strong financial performance, leadership in HBM products, and increasing demand for AI memory solutions make it a compelling investment despite its recent stock surge. Micron's ability to convert AI-driven demand into substantial profits, alongside its strategic customer agreements and technological advancements, supports a strong buy recommendation.",
+        "overallSentimentScore": 0.268948,
         "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "MSFT": [
       {
         "symbol": "MSFT",
-        "title": "Fjarde AP Fonden Fourth Swedish National Pension Fund Increases Stake in Linde PLC $LIN",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-fjarde-ap-fonden-fourth-swedish-national-pension-fund-increases-stake-in-linde-plc-lin-2026-07-03/",
-        "source": "MarketBeat",
-        "timePublished": "20260703T082513",
-        "summary": "Fjarde AP Fonden Fourth Swedish National Pension Fund increased its stake in Linde PLC by 51% in the first quarter, acquiring an additional 66,260 shares to reach a total of 196,087 shares valued at approximately $97.2 million. This move follows Linde's Q1 earnings beat, with EPS of $4.33 and revenue of $8.78 billion, exceeding analyst estimates. Wall Street analysts maintain a bullish outlook on Linde, with an average \"Buy\" rating and a consensus price target of around $543.27.",
-        "overallSentimentScore": 0.256963,
+        "title": "VT vs. SCHF: Which International ETF Is the Better Buy for Investors?",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/MSFT/pressreleases/3118612/vt-vs-schf-which-international-etf-is-the-better-buy-for-investors/",
+        "source": "The Globe and Mail",
+        "timePublished": "20260703T164043",
+        "summary": "This article compares two international ETFs, Vanguard Total World Stock ETF (VT) and Schwab International Equity ETF (SCHF), for investors looking to diversify beyond U.S. borders. VT offers broader diversification with over 10,000 holdings including U.S. and emerging markets, while SCHF focuses on developed international markets, excluding the U.S., and provides a higher dividend yield. The choice depends on an investor's strategy for international exposure, whether it's a complete global solution or a targeted international complement to existing U.S. holdings.",
+        "overallSentimentScore": 0.226816,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
-        "title": "Insight Enterprise documents client zero experience for Microsoft AI stack",
-        "url": "https://www.arnnet.com.au/article/4192039/insight-enterprise-documents-client-zero-experience-for-microsoft-ai-stack.html",
-        "source": "ARNnet",
-        "timePublished": "20260703T044048",
-        "summary": "Insight Enterprises has been chosen by Microsoft as an early partner for its new AI-focused Microsoft 365 offering, E7, and agentic AI technologies. As one of the first organizations to deploy Microsoft's Frontier Suite across its 14,000+ employees, Insight will gain firsthand experience in AI transformation, acting as both customer and integrator. This strategic positioning allows Insight to offer enhanced AI solutions and services to its clients, building on its internal adoption of Microsoft Copilot and other AI tools.",
-        "overallSentimentScore": 0.253456,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Crowdstrike CEO George Kurtz sells $1.94m in CRWD stock",
-        "url": "https://m.uk.investing.com/news/stock-market-news/crowdstrike-ceo-george-kurtz-sells-194m-in-crwd-stock-93CH-4756096?ampMode=1",
-        "source": "Investing.com",
-        "timePublished": "20260703T030721",
-        "summary": "CrowdStrike Holdings Inc. CEO George Kurtz sold 2,590 shares of Class A common stock for approximately $1.94 million on July 1, 2026, pursuant to a pre-arranged 10b-1 plan. The sale occurs after a significant surge in CrowdStrike's stock price, though analysis suggests it might be overvalued. Following these transactions, Mr. Kurtz directly holds over 2 million shares.",
-        "overallSentimentScore": 0.221354,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Should Fortinet’s Index Exit and Partner Expansion Shift How Investors View FTNT’s Risk‑Return Profile?",
-        "url": "https://simplywall.st/stocks/us/software/nasdaq-ftnt/fortinet/news/should-fortinets-index-exit-and-partner-expansion-shift-how",
-        "source": "Simply Wall Street",
-        "timePublished": "20260703T004948",
-        "summary": "Fortinet (FTNT) was recently removed from Russell defensive indexes, which might cause technical selling but doesn't fundamentally change its near-term drivers like SASE and AI security. Concurrently, partner Liquid Networx expanded access to Fortinet's licensing and services on major cloud marketplaces, reinforcing its cloud platform adoption strategy. While this shift towards higher-margin services could buffer against hardware demand fluctuations, investors should remain aware of potential margin pressures from ongoing infrastructure and sales investments.",
-        "overallSentimentScore": 0.134708,
+        "title": "Tesla Joins Uber in Capping Employee AI Spending - Tesla (NASDAQ:TSLA), Uber Technologies (NYSE:UBER), Ac",
+        "url": "https://www.benzinga.com/markets/tech/26/07/60266189/tesla-joins-uber-in-putting-the-brakes-on-employee-ai-spending",
+        "source": "Benzinga",
+        "timePublished": "20260703T151554",
+        "summary": "Tesla has implemented a new policy to cap employee AI spending at $200 per week, following a similar move by Uber, which set a $1,500 monthly limit after its annual AI budget was exhausted quickly. This trend highlights a shift in enterprise AI adoption where companies are now focused on managing the escalating costs associated with advanced AI model usage. The challenge for companies is no longer encouraging AI adoption but managing the financial implications, potentially benefiting software providers that optimize AI usage.",
+        "overallSentimentScore": -0.134512,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "MSFT",
-        "title": "Marketwise general counsel Forney’s $13,608 stock withholding for taxes",
-        "url": "https://www.investing.com/news/insider-trading-news/marketwise-general-counsel-forneys-13608-stock-withholding-for-taxes-93CH-4774881",
-        "source": "Investing.com",
-        "timePublished": "20260703T003920",
-        "summary": "Marketwise, Inc.'s general counsel, Scott Daniel Forney, had 711 shares worth $13,608 withheld to cover tax obligations from the vesting of restricted stock units. This transaction, which occurred on July 1, 2026, was not a sale but rather a tax-related withholding at $19.14 per share. Following this, Forney directly holds 21,459 shares, and the company's stock has seen significant gains recently, trading at $18.86 with a 10.87% dividend yield.",
-        "overallSentimentScore": 0.1063,
+        "title": "Avast Premium Security from Gen Digital - cross?platform protection for US households",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/avast-premium-security-from-gen-digital-cross-platform-protection-for-us/69679849",
+        "source": "Ad-hoc-news.de",
+        "timePublished": "20260703T130744",
+        "summary": "Avast Premium Security, a product of Gen Digital, offers multi-platform protection for up to 10 devices, combining antivirus, ransomware shields, and Wi-Fi protection in a single subscription for US households. The service emphasizes ease of use with features like Smart Scan and Ransomware Shield, aiming to simplify digital security for everyday users. While competitive in the security market and praised for its detection rates, the article notes past privacy concerns related to data collection, which Avast claims to have addressed.",
+        "overallSentimentScore": 0.174164,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Here’s Why Jim Cramer Thinks Amazon (AMZN) is Punished by the Markets",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-amazon-see-bountiful-081822860.html",
+        "source": "Yahoo Finance",
+        "timePublished": "20260703T125000",
+        "summary": "Jim Cramer believes Amazon (AMZN) is being undervalued by the market despite strong performance in its advertising business and Prime offerings. He suggests that Wall Street is overly focused on Amazon Web Services and the lack of free cash flow, while ignoring the potential of a $50 billion semiconductor business. Cramer emphasizes that Amazon needs to demonstrate significant returns from AI investments next year to justify its capital expenditures and prevent further stock declines.",
+        "overallSentimentScore": -0.11722,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "MSFT",
-        "title": "Alphabet Earnings Preview: What to Expect",
-        "url": "https://www.barchart.com/story/news/3109195/alphabet-earnings-preview-what-to-expect",
-        "source": "Barchart.com",
-        "timePublished": "20260703T003750",
-        "summary": "Alphabet Inc. (GOOG) is poised to report strong Q2 earnings, with analysts forecasting a 23.8% year-over-year profit growth to $2.86 per share, building on a track record of beating estimates. The company's stock has significantly outperformed the S&P 500 and the Communication Services Select Sector SPDR ETF over the past year, largely driven by confidence in its AI initiatives, Google Cloud growth, and an expanding AI ecosystem. Despite a recent pullback due to an equity raise for AI funding, analysts maintain a \"Strong Buy\" rating with a potential upside of 21.8% from current levels, indicating continued investor belief in Alphabet's AI spending translating into business growth.",
-        "overallSentimentScore": 0.461064,
+        "title": "Alphabet C explores new growth avenues as investors weigh long-term potential",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/alphabet-c-explores-new-growth-avenues-as-investors-weigh-long-term/69679098",
+        "source": "Ad-hoc-news.de",
+        "timePublished": "20260703T121930",
+        "summary": "Alphabet C (GOOG) is gaining investor attention due to its diversified digital businesses, strong cash generation, and exposure to global online search, advertising, and cloud services. The company's multi-class share structure, core businesses including Google Search, YouTube, and Google Cloud, along with its \"Other Bets,\" position it for long-term growth. Despite competitive and regulatory challenges, Alphabet's scale and innovation in AI-driven applications, cloud adoption, and connected devices are key to its sustained success.",
+        "overallSentimentScore": 0.355766,
         "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "MSFT",
-        "title": "Mastercard Inc Stock (MA) Closed Up by 3.16% on Jul 2: What Signal Does It Send?",
-        "url": "https://www.tradingkey.com/news/market-movers/262007999-market-movers-ma-20260702",
-        "source": "TradingKey",
-        "timePublished": "20260702T201500",
-        "summary": "Mastercard Inc. (MA) stock rose by 3.16% on July 2nd due to a combination of bullish factors including an analyst upgrade from Piper Sandler to \"strong-buy,\" strategic entry into the Open USD stablecoin consortium, and the preliminary resolution of swipe-fee litigation. Despite these positive drivers, the article also highlights company-specific risks such as ongoing regulatory scrutiny, lingering litigation liabilities, slowing technical momentum, and elevated leverage. Technical indicators show a buy signal with MACD, but also suggest an overbought condition by Williams %R.",
-        "overallSentimentScore": 0.332666,
+        "title": "Gartner reckons AI agents will swipe $234B from software vendors by 2030",
+        "url": "https://www.sdxcentral.com/news/gartner-reckons-ai-agents-will-swipe-234b-from-software-vendors-by-2030/",
+        "source": "SDxCentral",
+        "timePublished": "20260703T121059",
+        "summary": "Gartner predicts that AI agents will impact enterprise software revenue models by $234 billion by 2030, diverting 20% of planned software spending to AI-driven alternatives. While this development poses a threat to traditional SaaS models, Gartner suggests it's a \"metamorphosis\" rather than an \"apocalypse,\" with opportunities for vendors to embed agentic capabilities into their offerings. However, the proliferation of AI agents also raises concerns about data protection laws, as some agents running on frontier-level models have been found to consistently break regulations.",
+        "overallSentimentScore": -0.047473,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Handwritten Card Service Handwrytten Releases New Integration for Hubspot",
+        "url": "https://www.prweb.com/releases/handwritten-card-service-handwrytten-releases-new-integration-for-hubspot-302816574.html",
+        "source": "PRWeb",
+        "timePublished": "20260703T120955",
+        "summary": "Handwrytten, a leading handwritten card service, has launched a new HubSpot integration allowing sales, success, and marketing teams to send robot-penned handwritten notes directly from HubSpot records or workflows. This app aims to automate the sending of personalized physical cards, which have a significantly higher open rate than emails, thereby enabling better customer engagement and efficient tracking. The integration supports various features like gift cards, printed inserts, and shared address books, with all activity logged back to the CRM timeline.",
+        "overallSentimentScore": 0.214798,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
-        "title": "Western Digital Plunges 10.9% Amid Sector-Wide Selling",
-        "url": "https://news.alphastreet.com/western-digital-plunges-10-9-amid-sector-wide-selling/",
-        "source": "AlphaStreet",
-        "timePublished": "20260702T193849",
-        "summary": "Western Digital Corporation experienced a significant 10.9% plunge, closing at $533.00, caught in a broader selloff impacting numerous computer hardware stocks. This decline, which saw several sector peers also fall, suggests industry-wide pressure rather than company-specific issues, despite recent analyst optimism with price target raises. The synchronized drop and high trading volume indicate investors are reassessing market fundamentals and risk appetite within the sector.",
-        "overallSentimentScore": -0.492206,
-        "overallSentimentLabel": "Bearish"
+        "title": "Oracle Stock And 2 AI Infrastructure Picks Backed By Founder Led Leadership",
+        "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-alab/astera-labs/news/oracle-stock-and-2-ai-infrastructure-picks-backed-by-founder",
+        "source": "Simply Wall Street",
+        "timePublished": "20260703T111010",
+        "summary": "This article highlights three founder-led companies—Astera Labs (ALAB), Oracle (ORCL), and Vicor (VICR)—that are deeply involved in the AI infrastructure buildout. It examines their operations, market positions, opportunities, and risks, emphasizing the alignment of founder interests with shareholders. The piece encourages investors to consider these stocks as part of a legacy-focused investment approach amidst a mixed global economy.",
+        "overallSentimentScore": 0.235917,
+        "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "GOOGL": [
+      {
+        "symbol": "GOOGL",
+        "title": "MSCI’s Approach to SpaceX Discredits the ESG Cartel",
+        "url": "https://www.dailysignal.com/2026/07/03/spacex-msci-esg-cartel/",
+        "source": "Daily Signal",
+        "timePublished": "20260703T150011",
+        "summary": "The article criticizes MSCI's ESG rating for SpaceX, arguing that it's absurd to rank the innovative American company on par with hostile foreign adversaries like Russia. The author contends that ESG ratings often prioritize ideological agendas over financial returns and American interests, undermining free enterprise. MSCI's rating of SpaceX is presented as evidence that ESG acts as a mechanism for ideological ends rather than genuine \"socially conscious investing.\"",
+        "overallSentimentScore": -0.077393,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Avast Premium Security from Gen Digital - cross?platform protection for US households",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/avast-premium-security-from-gen-digital-cross-platform-protection-for-us/69679849",
+        "source": "Ad-hoc-news.de",
+        "timePublished": "20260703T130744",
+        "summary": "Avast Premium Security, a product of Gen Digital, offers multi-platform protection for up to 10 devices, combining antivirus, ransomware shields, and Wi-Fi protection in a single subscription for US households. The service emphasizes ease of use with features like Smart Scan and Ransomware Shield, aiming to simplify digital security for everyday users. While competitive in the security market and praised for its detection rates, the article notes past privacy concerns related to data collection, which Avast claims to have addressed.",
+        "overallSentimentScore": 0.201483,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet C explores new growth avenues as investors weigh long-term potential",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/alphabet-c-explores-new-growth-avenues-as-investors-weigh-long-term/69679098",
+        "source": "Ad-hoc-news.de",
+        "timePublished": "20260703T121930",
+        "summary": "Alphabet C (GOOG) is gaining investor attention due to its diversified digital businesses, strong cash generation, and exposure to global online search, advertising, and cloud services. The company's multi-class share structure, core businesses including Google Search, YouTube, and Google Cloud, along with its \"Other Bets,\" position it for long-term growth. Despite competitive and regulatory challenges, Alphabet's scale and innovation in AI-driven applications, cloud adoption, and connected devices are key to its sustained success.",
+        "overallSentimentScore": 0.324081,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Verizon Communications Inc. $VZ Stake Lowered by Leonteq Securities AG",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-verizon-communications-inc-vz-stake-lowered-by-leonteq-securities-ag-2026-07-03/",
+        "source": "MarketBeat",
+        "timePublished": "20260703T093853",
+        "summary": "Leonteq Securities AG decreased its stake in Verizon Communications Inc. by 53.4% in the first quarter, now holding 57,333 shares valued at $2.88 million. Despite this, Verizon reported strong Q1 earnings, beating estimates with $1.28 per share, and reaffirmed its FY2026 EPS guidance. The company remains an attractive investment due to its 6.6% dividend yield and a \"Moderate Buy\" consensus rating from Wall Street analysts.",
+        "overallSentimentScore": 0.139988,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet president John Kent Walker sells $3.14m in Class C stock",
+        "url": "https://ng.investing.com/news/stock-market-news/alphabet-president-john-kent-walker-sells-314m-in-class-c-stock-93CH-2583430",
+        "source": "Investing.com Nigeria",
+        "timePublished": "20260703T090748",
+        "summary": "John Kent Walker, President, Global Affairs, and Chief Legal Officer of Alphabet Inc., sold approximately $3.14 million in Class C Capital Stock on June 29, 2026, through a pre-arranged trading plan. This sale involved 9,998 shares, with Alphabet shares having surged over 106% in the past year, although InvestingPro analysis indicates the stock is currently trading above its Fair Value. The article also mentions recent news regarding Alphabet, including regulatory scrutiny in South Korea, expansion of its Gemini AI product line, and the termination of a robotaxi partnership with Uber.",
+        "overallSentimentScore": 0.047434,
+        "overallSentimentLabel": "Neutral"
+      },
       {
         "symbol": "GOOGL",
         "title": "Is TeraWulf (WULF) A Bargain As It Builds A Nuclear Powered AI Platform?",
@@ -842,7 +892,7 @@
         "source": "Simply Wall Street",
         "timePublished": "20260703T054032",
         "summary": "TeraWulf (WULF) is transitioning from Bitcoin mining to a nuclear-powered AI and high-performance computing platform, highlighted by its Lake Mariner campus. Despite recent short-term share price drops, the stock shows strong year-to-date and one-year returns, and analysts still see it as undervalued. The pivot includes multi-billion-dollar hyperscale hosting agreements, promising diversified revenue streams, though execution and financing risks exist.",
-        "overallSentimentScore": 0.246938,
+        "overallSentimentScore": 0.245375,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -852,68 +902,18 @@
         "source": "Yahoo Finance",
         "timePublished": "20260703T043712",
         "summary": "Broadcom's fair value has increased to US$523.73, up from US$476.78, fueled by optimism around its AI custom chip portfolio, although analysts are divided on its AI outlook given competitive risks. While some firms praise Broadcom's \"significant dominance\" in advanced packaging and AI roadmap, others like Macquarie have downgraded the stock due to concerns about Google's insourcing efforts and the company's Q3 AI outlook not fully meeting investor expectations. Broadcom CEO Hock Tan outlined an AI chip roadmap targeting over US$100 billion in AI semiconductor revenue by fiscal 2027 and launched the AI XPV Platform, a US$35 billion financing vehicle for AI compute capacity.",
-        "overallSentimentScore": 0.21429,
+        "overallSentimentScore": 0.207185,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "GOOGL",
-        "title": "PH telcos put rivalry aside as PLDT, DITO strike landmark network-sharing deal",
-        "url": "https://insiderph.com/ph-telcos-put-rivalry-aside-as-pldt-dito-strike-landmark-network-sharing-deal",
-        "source": "InsiderPH",
-        "timePublished": "20260703T030910",
-        "summary": "PLDT, Smart, and DITO Telecommunity have signed a landmark infrastructure-sharing agreement to reduce network costs and expand 5G coverage in the Philippines. This collaboration allows them to exchange access to macro tower sites, in-building telecommunications systems, and submarine cable capacity, avoiding traditional lease and colocation fees. The deal reflects a growing trend in Asia to reduce duplicated capital spending and free up investment for next-generation networks like 5G and AI-ready infrastructure.",
-        "overallSentimentScore": 0.28571,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Crowdstrike CEO George Kurtz sells $1.94m in CRWD stock",
-        "url": "https://m.uk.investing.com/news/stock-market-news/crowdstrike-ceo-george-kurtz-sells-194m-in-crwd-stock-93CH-4756096?ampMode=1",
-        "source": "Investing.com",
-        "timePublished": "20260703T030721",
-        "summary": "CrowdStrike Holdings Inc. CEO George Kurtz sold 2,590 shares of Class A common stock for approximately $1.94 million on July 1, 2026, pursuant to a pre-arranged 10b-1 plan. The sale occurs after a significant surge in CrowdStrike's stock price, though analysis suggests it might be overvalued. Following these transactions, Mr. Kurtz directly holds over 2 million shares.",
-        "overallSentimentScore": 0.248172,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Alphabet Earnings Preview: What to Expect",
-        "url": "https://www.barchart.com/story/news/3109195/alphabet-earnings-preview-what-to-expect",
-        "source": "Barchart.com",
-        "timePublished": "20260703T003750",
-        "summary": "Alphabet Inc. (GOOG) is poised to report strong Q2 earnings, with analysts forecasting a 23.8% year-over-year profit growth to $2.86 per share, building on a track record of beating estimates. The company's stock has significantly outperformed the S&P 500 and the Communication Services Select Sector SPDR ETF over the past year, largely driven by confidence in its AI initiatives, Google Cloud growth, and an expanding AI ecosystem. Despite a recent pullback due to an equity raise for AI funding, analysts maintain a \"Strong Buy\" rating with a potential upside of 21.8% from current levels, indicating continued investor belief in Alphabet's AI spending translating into business growth.",
-        "overallSentimentScore": 0.467443,
-        "overallSentimentLabel": "Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Crowdstrike CEO George Kurtz sells $1.94m in CRWD stock By Investing.com",
-        "url": "https://m.za.investing.com/news/stock-market-news/crowdstrike-ceo-george-kurtz-sells-194m-in-crwd-stock-93CH-4355012?ampMode=1",
-        "source": "Investing.com South Africa",
-        "timePublished": "20260703T000802",
-        "summary": "CrowdStrike Holdings Inc. CEO George Kurtz sold 2,590 shares of Class A common stock for approximately $1.94 million on July 1, 2026, under a pre-arranged 10b-1 plan. Despite a 71% surge in stock price over six months, InvestingPro suggests the stock is overvalued. Following the sale, Kurtz directly holds over 2 million shares.",
-        "overallSentimentScore": 0.076916,
+        "title": "Alphabet (GOOGL) Stock Price Forecast 2026: Cloud Hit $20B But FCF Collapsed — Buy or Short?",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262008961-alphabet-googl-stock-price-forecast-2026-google-cloud-tradingkey",
+        "source": "TradingKey",
+        "timePublished": "20260703T033745",
+        "summary": "Alphabet (GOOGL) exceeded Q1 2026 expectations with $109.9 billion revenue and Google Cloud reaching $20.03 billion with a $462 billion backlog. Despite strong performance, the stock faces downward pressure due to massive AI capital expenditure, projected at $180-$190 billion for 2026 and increasing in 2027, which caused free cash flow margins to drop from 21% to 9.2%. Technically, GOOGL is trending below a descending resistance line, suggesting a potential short-term target of $341.80 if it closes under $355.50.",
+        "overallSentimentScore": 0.018778,
         "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "ARM Stock Soars 118% in a Year: Is the Buying Opportunity Gone?",
-        "url": "https://www.tradingview.com/news/zacks:7a45b5ad1094b:0-arm-stock-soars-118-in-a-year-is-the-buying-opportunity-gone/",
-        "source": "TradingView",
-        "timePublished": "20260702T163926",
-        "summary": "ARM Holdings' stock has surged 118% in the past year, significantly outperforming the semiconductor industry, driven by its expanding ecosystem and growing presence in AI infrastructure. Despite strong fundamentals and increasing adoption by major cloud providers like NVIDIA and Alphabet, the stock trades at a premium valuation, suggesting that much of the optimism is already priced in. Given its high valuation, the article suggests ARM is currently a \"Hold\" for investors seeking a more attractive entry point.",
-        "overallSentimentScore": 0.323467,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "GOOGL's AI Cloud Strategy Gets a Boost From Jack Henry: What's Ahead?",
-        "url": "https://www.tradingview.com/news/zacks:b28d32dae094b:0-googl-s-ai-cloud-strategy-gets-a-boost-from-jack-henry-what-s-ahead/",
-        "source": "TradingView",
-        "timePublished": "20260702T160958",
-        "summary": "Alphabet's Google Cloud business is strengthening its position in the financial services AI market through an expanded partnership with Jack Henry. This collaboration allows Jack Henry to leverage Google Cloud’s advanced AI and cybersecurity offerings, including Gemini Enterprise Agent Platform and Agentic Defense, for highly regulated financial institutions. The deal underscores Google Cloud's role as a primary growth driver for Alphabet, with significant revenue increases and backlog, despite facing strong competition from Microsoft and Amazon in the overall cloud domain.",
-        "overallSentimentScore": 0.244093,
-        "overallSentimentLabel": "Somewhat-Bullish"
       }
     ]
   }

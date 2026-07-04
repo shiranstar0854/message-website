@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-03T09:01:15.658Z",
+  "generatedAt": "2026-07-04T00:01:22.827Z",
   "totals": {
-    "attempted": 59,
-    "excerptCount": 58,
-    "imageCount": 34,
+    "attempted": 51,
+    "excerptCount": 51,
+    "imageCount": 29,
     "failed": 0,
-    "skipped": 1
+    "skipped": 0
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -31,9 +31,9 @@
     "google-ai": {
       "sourceId": "google-ai",
       "sourceName": "Google AI Blog",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -61,7 +61,7 @@
     "cisa-news": {
       "sourceId": "cisa-news",
       "sourceName": "CISA News",
-      "attempted": 1,
+      "attempted": 0,
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -85,7 +85,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 1,
+      "skipped": 0,
       "disabled": true
     },
     "cfpb-newsroom": {
@@ -101,9 +101,9 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 7,
-      "excerptCount": 7,
-      "imageCount": 7,
+      "attempted": 6,
+      "excerptCount": 6,
+      "imageCount": 6,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -111,9 +111,9 @@
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 6,
-      "excerptCount": 6,
-      "imageCount": 6,
+      "attempted": 7,
+      "excerptCount": 7,
+      "imageCount": 7,
       "failed": 0,
       "skipped": 0,
       "disabled": false
