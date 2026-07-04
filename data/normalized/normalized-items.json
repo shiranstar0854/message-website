@@ -10,8 +10,8 @@
     "publishedAt": "2026-07-02T16:00:00.000Z",
     "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months. The post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog .",
     "contentExcerpt": "Several years ago, GitHub Security launched an initiative to assess and improve our overall secrets hygiene. As part of that effort, we piloted the Secret Scanning capability that was under development at the time. That&rsquo;s when we found more than 20,000 secrets spread across our 15,000+ repositories. The number was significantly higher than we anticipated, but it quickly became clear that success would depend on identifying which alerts represented real risk, assigning ownership, and rem...",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 90,
     "sourceAuthority": "media",
     "sourceTier": "C",
@@ -44,6 +44,51 @@
     }
   },
   {
+    "id": "tech-microsoft-azure-blog-b0187727de",
+    "sourceId": "microsoft-azure",
+    "title": "Meet Brain: The AI system behind Azure reliability",
+    "url": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability",
+    "source": "Microsoft Azure Blog",
+    "sourceType": "rss",
+    "category": "tech",
+    "publishedAt": "2026-07-02T16:00:00.000Z",
+    "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates. The post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog .",
+    "contentExcerpt": "In this article How Azure&#039;s AI-powered reliability intelligence system works Why Brain is needed What is Brain? Azure’s centralized AIOps for cloud reliability Foundations of Azure’s digital twin for cloud health What it means to operate against a cloud intelligence system The future of agentic AI and cloud operations What&#039;s next for Azure reliability and Brain Azure reliability Takeaway: Brain is Azure’s AI-powered cloud reliability intelligence system: an AIOps system that sits as...",
+    "imageUrl": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2.jpeg",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
+    "credibility": 88,
+    "sourceAuthority": "media",
+    "sourceTier": "C",
+    "timelinessTier": "daily",
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
+    "tags": [
+      "AI + machine learning",
+      "Internet of things",
+      "Management and governance",
+      "Advancing reliability",
+      "AI"
+    ],
+    "sourceLanguage": "en",
+    "raw": {
+      "title": "Meet Brain: The AI system behind Azure reliability",
+      "link": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+      "guid": "https://azure.microsoft.com/en-us/blog/?p=52479",
+      "pubDate": "Thu, 02 Jul 2026 16:00:00 +0000",
+      "description": "<p>Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/\">Meet Brain: The AI system behind Azure reliability</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+      "content": "<aside class=\"table-of-contents-block accordion wp-block-bloginabox-theme-table-of-contents\" id=\"accordion-365565ca-231e-48cd-b688-cfc5a7713550\" data-bi-aN=\"table-of-contents\">\n\t<button class=\"btn btn-collapse\" type=\"button\" aria-expanded=\"true\" aria-controls=\"accordion-collapse-365565ca-231e-48cd-b688-cfc5a7713550\">\n\t\t<span class=\"table-of-contents-block__label\">In this article</span>\n\t\t<span class=\"table-of-contents-block__current\" aria-hidden=\"true\"></span>\n\n\t\t<svg class=\"table-of-contents-block__arrow\" aria-label=\"Toggle arrow\" width=\"18\" height=\"11\" viewBox=\"0 0 18 11\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n\t\t\t<path d=\"M15.7761 11L18 8.82043L9 0L0 8.82043L2.22394 11L9 4.35913L15.7761 11Z\" fill=\"currentColor\" />\n\t\t</svg>\n\t</button>\n\t<div id=\"accordion-collapse-365565ca-231e-48cd-b688-cfc5a7713550\" class=\"table-of-contents-block__collapse-wrapper collapse show\" data-parent=\"#accordion-365565ca-231e-48cd-b688-cfc5a7713550\">\n\t\t<div class=\"table-of-contents-block__content\">\n\t\t\t<ol class=\"table-of-contents-block__list\"><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#how-azure-s-ai-powered-reliability-intelligence-system-works\">How Azure&#039;s AI-powered reliability intelligence system works</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#why-brain-is-needed\">Why Brain is needed</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#what-is-brain-azure-s-centralized-aiops-for-cloud-reliability\">What is Brain? Azure’s centralized AIOps for cloud reliability</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#foundations-of-azure-s-digital-twin-for-cloud-health\">Foundations of Azure’s digital twin for cloud health</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#what-it-means-to-operate-against-a-cloud-intelligence-system\">What it means to operate against a cloud intelligence system</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#the-future-of-agentic-ai-and-cloud-operations\">The future of agentic AI and cloud operations</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#what-s-next-for-azure-reliability-and-brain\">What&#039;s next for Azure reliability and Brain</a></li><li class=\"table-of-contents-block__list-item\"><a class=\"table-of-contents-block__list-item-link\" href=\"#azure-reliability\">Azure reliability</a></li></ol>\t\t</div>\n\t</div>\n\t<span class=\"table-of-contents-block__progress-bar\"></span>\n</aside>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Takeaway: </strong><em>Brain is Azure’s AI-powered cloud reliability intelligence system: an AIOps system that sits as an intelligent layer on top of Azure Resource Graph and fuses platform telemetry, AI/ML models, service dependencies, and customer impact into a single, continuously updated view of how every service, region, and workload is performing. It already powers customer Azure resource health notifications, deployment safeguards, and outage declaration, and it is the foundation for agentic AI now reshaping how Azure operates. This post starts a multi-part series on what Brain is, how we built it, what we’ve learned operating it at scale, and where it goes next.</em></p>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n\n\n\n<h2 class=\"wp-block-heading\" id=\"how-azure-s-ai-powered-reliability-intelligence-system-works\">How Azure&#8217;s AI-powered reliability intelligence system works</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Azure runs on a digital twin of its own health. Brain is an <a href=\"https://azure.microsoft.com/en-us/blog/advancing-azure-service-quality-with-artificial-intelligence-aiops/\" target=\"_blank\" rel=\"noreferrer noopener\">AIOps</a>-powered cloud health intelligence system that operates as an intelligent layer on top of <a href=\"https://azure.microsoft.com/en-us/get-started/azure-portal/resource-graph\" target=\"_blank\" rel=\"noopener noreferrer\">Azure Resource Graph</a> (ARG); together, they form this digital twin. It integrates platform telemetry, AI/ML models, and data engineering to continuously maintain and enrich a real-time view of how services, regions, and customer workloads are performing across Azure. Over time, that shared picture is becoming the foundation for a more automated <a href=\"https://learn.microsoft.com/en-us/azure/reliability/?product=popular\" target=\"_blank\" rel=\"noreferrer noopener\">reliability</a> surface: one that can turn insight into action.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Today, Brain already powers important reliability workflows across Azure, such as health notifications for customer’s resources, deployment safeguards, and outage declaration. If you run on Azure, Brain is already changing three things you can notice:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">How fast we tell you when something is wrong.</li>\n\n\n\n<li class=\"wp-block-list-item\">How accurately we scope it to your resources.</li>\n\n\n\n<li class=\"wp-block-list-item\">How quickly the right engineer gets on it.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">This post is about how and what it lets you do differently.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We&#8217;re starting a multi-post series with this one to take you through what Brain is, how we built it, what it has learned operating Azure at scale, and where it goes next. Today, the foundation.</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-a89b3969 wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://learn.microsoft.com/en-us/azure/reliability/?product=popular\" target=\"_blank\" rel=\"noopener noreferrer noreferrer noopener\">Learn more about Azure reliability</a></div>\n</div>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"why-brain-is-needed\">Why Brain is needed</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Azure runs hundreds of services across more than 80 Azure regions, over 500 datacenters, and over 800,000 kilometers of fiber and subsea cable, representing one of the world&#8217;s largest global cloud footprints. And yet with the massive amount of activity these Azure services create, manage, and process worldwide, on a quietly degrading day, we will sometimes still learn about an issue from a customer before our own systems do. For customers, that gap is the worst kind of incident; the one where they are debugging their own application before they learn the fault was ours.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That gap between what we measure and what we know is the limiting factor on cloud reliability today. It is not a tooling problem. We have plenty of tools. It is a comprehension problem. The amount of signal a hyperscale cloud produces has outgrown the human ability to read it, and the conventional answer: more dashboards, more alerts, more on-call rotations. It&#8217;s a treadmill, not an answer. Every additional dashboard gives an operator another window to look through; what&#8217;s missing is something that tells them what they&#8217;re looking at, in time to act.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Closing that gap meant building something we hadn&#8217;t built yet: not better dashboards, not smarter alerts, but a continuously updated model of the platform&#8217;s health that reasons across every signal in real time, and acts on those conclusions automatically at the scale the platform demands.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"what-is-brain-azure-s-centralized-aiops-for-cloud-reliability\">What is Brain? Azure’s centralized AIOps for cloud reliability</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Brain is Azure’s centralized <a href=\"https://azure.microsoft.com/en-us/blog/advancing-azure-service-quality-with-artificial-intelligence-aiops/\" target=\"_blank\" rel=\"noopener noreferrer\">AIOps</a>-powered cloud health intelligence system that uses AI/ML, including agentic AI and data engineering, to continuously model Azure&#8217;s health and to automatically take reliability actions based on it. It has been utilized in Azure production generating resource health determinations across the platform.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">At its core, Brain is shaped by three things: what goes in, what comes out, and what those outputs drive.</p>\n\n\n\n<figure data-wp-context=\"{\"imageId\":\"6a4698769d38f\"}\" data-wp-interactive=\"core/image\" data-wp-key=\"6a4698769d38f\" class=\"wp-block-image aligncenter size-full wp-lightbox-container\"><img fetchpriority=\"high\" decoding=\"async\" width=\"1068\" height=\"597\" data-wp-class--hide=\"state.isContentHidden\" data-wp-class--show=\"state.isContentVisible\" data-wp-init=\"callbacks.setButtonStyles\" data-wp-on--click=\"actions.showLightbox\" data-wp-on--load=\"callbacks.setButtonStyles\" data-wp-on-window--resize=\"callbacks.setButtonStyles\" src=\"https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2.jpeg\" alt=\"Brain flowchart, including data sources, processing, evaluation, and actions.\" class=\"wp-image-52567\" srcset=\"https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2.jpeg 1068w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2-300x168.jpeg 300w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2-1024x572.jpeg 1024w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2-768x429.jpeg 768w\" sizes=\"(max-width: 1068px) 100vw, 1068px\" /><button\n\t\t\tclass=\"lightbox-trigger\"\n\t\t\ttype=\"button\"\n\t\t\taria-haspopup=\"dialog\"\n\t\t\taria-label=\"Enlarge\"\n\t\t\tdata-wp-init=\"callbacks.initTriggerButton\"\n\t\t\tdata-wp-on--click=\"actions.showLightbox\"\n\t\t\tdata-wp-style--right=\"state.imageButtonRight\"\n\t\t\tdata-wp-style--top=\"state.imageButtonTop\"\n\t\t>\n\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" fill=\"none\" viewBox=\"0 0 12 12\">\n\t\t\t\t<path fill=\"#fff\" d=\"M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z\" />\n\t\t\t</svg>\n\t\t</button><figcaption class=\"wp-element-caption\">Brain at a glance.</figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Brain ingests signals from three classes of source:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">Standardized service-level indicators: the SLIs Azure customers and operators already know from their reliability dashboards.</li>\n\n\n\n<li class=\"wp-block-list-item\">Domain-specific monitors that individual service teams have built and registered with Brain, and the broader telemetry stream including deployments, support volume, and cross-service dependency signals.</li>\n\n\n\n<li class=\"wp-block-list-item\">Third-party indicators that surround every Azure operation.</li>\n</ol>\n\n\n\n<p class=\"wp-block-paragraph\">Each path serves a different purpose; together, they give Brain coverage that no single path could.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Regardless of the input, Brain evaluates every subject (service, region, deployment unit, or customer resource) and returns four outputs: health state, severity, impact, and the reason for its conclusion. Standard outputs in standard vocabulary mean every downstream system speaks the same language; no more disconnect in what &#8220;impacted&#8221; means across teams.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The insights generated by Brain power a growing set of automated reliability actions, including: </p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">Outage declarations based on blast radius.</li>\n\n\n\n<li class=\"wp-block-list-item\">Customer notifications targeted to affected subscriptions and regions.</li>\n\n\n\n<li class=\"wp-block-list-item\">Incident routing to the appropriate service team.</li>\n\n\n\n<li class=\"wp-block-list-item\">Deployment gates that pause harmful rollouts.</li>\n\n\n\n<li class=\"wp-block-list-item\">Linking related incidents.</li>\n\n\n\n<li class=\"wp-block-list-item\">Diagnostic tools that help engineers investigate issues.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"foundations-of-azure-s-digital-twin-for-cloud-health\">Foundations of Azure’s digital twin for cloud health</h2>\n\n\n\n<p class=\"wp-block-paragraph\">To understand what makes &#8220;the intelligence system&#8221; different from &#8220;a dashboard,&#8221; it helps to look at what&#8217;s actually in its foundation. Brain&#8217;s representation of Azure carries, at minimum:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\"><strong>Topology:</strong> every service, region, availability zone, deployment unit, and dependency graph enabled by <a href=\"https://azure.microsoft.com/en-us/get-started/azure-portal/resource-graph\" target=\"_blank\" rel=\"noopener noreferrer\">Azure Resource Graph</a> is represented as a live model that updates as services scale, dependencies change, and new components come online. This transparency into Azure service health and downstream impact helps Azure customers understand and diagnose application issues more quickly and improves the reliability of applications built on Azure.</li>\n\n\n\n<li class=\"wp-block-list-item\"><strong>Service catalog:</strong> what each service does, who owns it, what its tier is, what its expected behavior looks like, and what its service-level objectives are.</li>\n\n\n\n<li class=\"wp-block-list-item\"><strong>Runtime state:</strong> live indicators of how every component is currently behaving, including error rates, latency, throughput, resource utilization, and error distributions across customers.</li>\n\n\n\n<li class=\"wp-block-list-item\"><strong>Intent:</strong> what&#8217;s supposed to be happening right now, which deployments are in flight, which planned operations are underway, and which capacity changes are scheduled.</li>\n\n\n\n<li class=\"wp-block-list-item\"><strong>History:</strong> prior incidents, what caused them, what mitigated them, and which signals preceded them. The system&#8217;s working memory of how Azure has gotten unhealthy before, and what worked to fix it.</li>\n\n\n\n<li class=\"wp-block-list-item\"><strong>The customer&#8217;s view:</strong> what each tenant is currently experiencing. Not just what the platform is emitting, but what&#8217;s actually arriving at the customer&#8217;s application. Errors customers see, latency customers feel, and regions where their traffic is succeeding or failing.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">None of these are novel on their own: every cloud platform has versions of each. Brain brings them together into a single, unified, AI-driven representation instead of scattering them across twelve separate dashboards in twelve separate tools that an operator has to mentally connect under time pressure.</p>\n\n\n\n<p class=\"wp-block-paragraph\">When Brain says a service is degrading, that statement is not a threshold being crossed. It is a determination made by reasoning across topology, runtime state, current intent, historical patterns, and customer-side evidence simultaneously. It is the intelligence system speaking, not a metric firing. And it is the speed of that determination measured in seconds, not in the minutes a human would take to assemble the same picture from separate tools that translates directly into customer experience: shorter incidents, sharper notifications, and faster routing.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"what-it-means-to-operate-against-a-cloud-intelligence-system\">What it means to operate against a cloud intelligence system</h2>\n\n\n\n<p class=\"wp-block-paragraph\">This is the move that changes everything for an Azure customer, and it&#8217;s the one most easily missed if you read &#8220;digital twin&#8221; as a metaphor rather than as a system.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Consider how a deployment-driven degradation typically resolves in two different worlds.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In a world without a shared intelligence system, the work is reconstruction. A rollout is in flight. A region&#8217;s error rate begins to drift.</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">The team that owns the service sees the drift in their dashboard.</li>\n\n\n\n<li class=\"wp-block-list-item\">The team that owns the upstream dependency sees a different metric drift in their dashboard.</li>\n\n\n\n<li class=\"wp-block-list-item\">The team that owns the deployment system sees the rollout proceeding normally from their dashboard.</li>\n\n\n\n<li class=\"wp-block-list-item\">None of those three teams initially have the picture; they get on a bridge and assemble it from fragments. While they assemble, the customer impact spreads. By the time the connection between the rollout, the dependency, and the customer-visible errors is made, by humans, under pressure, mid-incident, the rollout has reached more regions, the customer ticket queue has grown, and the resolution is now harder than it had to be.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">In a world with the intelligence system, the work is consumption. The rollout is in the intelligence system, Brain knows it&#8217;s in flight: what it&#8217;s changing, what regions it&#8217;s reaching, what it&#8217;s supposed to do. The error-rate drift is in the system: Brain sees it correlated to the rollout, weighted against the dependency graph, evaluated against historical patterns of what &#8220;small wobble&#8221; looks like versus what &#8220;real degradation&#8221; looks like.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The affected customers are in the system, their tenants map to platform resources affected by the upstream dependency, which is itself affected by the rollout. Brain produces a single determination: the rollout is causing customer-visible impact in this region; expected resolution requires the rollout to pause.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That determination then flows, at the same moment, to every system that needs to act on it. The deployment system pauses the rollout while the determination is true, so the next set of customers Brain would have impacted aren&#8217;t impacted at all.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The incident management system creates a single incident with the upstream dependency identified, not three duplicate incidents from three confused teams so the right engineer reaches the right problem first. The customer communication system drafts a notification with the right tenant scope and the right plain-English description, so the customers who are affected receive updates from Microsoft sooner, with information they can actually use.<br>&nbsp;<br>For Azure customers, none of that coordination is visible. What&#8217;s visible is a shorter incident, an accurate alert that hit their automation instead of a human, and diagnosis that was already named when their on call opened the bridge.&nbsp;On services where Brain’s resource-health evaluation is in production, detection precision for service-impacting issues has improved significantly, and coverage of in-scope incidents continues to expand.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In the past year, a substantial majority of Brain-integrated outages were auto-communicated to affected customers, and on those, time-to-notification improved materially compared to manually issued notifications.</p>\n\n\n\n<p class=\"wp-block-paragraph\">None of those downstream systems are doing their own investigation. They all consume the same determination from the intelligence system, in the same vocabulary, with the same supporting evidence. That is what &#8220;operating against an intelligence system&#8221; means and it is the first thing we found we had to build before any of the agentic AI work that people associate with Azure today became viable.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This not only helps to improve Azure’s reliability, but also benefits Azure customers who built their applications on top of Azure by providing transparency of service health and timely communications.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"the-future-of-agentic-ai-and-cloud-operations\">The future of agentic AI and cloud operations</h2>\n\n\n\n<p class=\"wp-block-paragraph\">There is a larger conversation happening across the cloud industry this year about agentic AI and about AI systems that act, not just observe. Microsoft is part of that conversation. But the conversation has a quiet asymmetry that gets less attention than it deserves.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Agents need something to be agentic about:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li class=\"wp-block-list-item\">A triage agent that doesn&#8217;t know the dependency graph cannot triage anything.</li>\n\n\n\n<li class=\"wp-block-list-item\">A diagnosis agent that cannot reach prior incident history cannot reason about root cause.</li>\n\n\n\n<li class=\"wp-block-list-item\">A communication agent that doesn&#8217;t know which customers are actually affected cannot write to them.</li>\n\n\n\n<li class=\"wp-block-list-item\">None of these systems are meaningfully autonomous; none of them deserve your trust if every one of them has to do their own investigation of what reality is, every time, from raw signals.</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">That is what made the health intelligence system “the digital twin”: the prerequisite, not the consequence, of agentic operations at this scale. Build the agents first, on top of fragmented data, and you get a federation of confident systems that disagree with each other in production. Build the model first, and the agents become composable: they reason from the same picture, and the picture is one you can audit.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This is the throughline of the series we&#8217;re starting today. Brain is the cloud health intelligence system the next generation of cloud agents will need. If your organization is exploring agentic AI for any operations function: your cloud, your applications, or your infrastructure, the architectural pattern Brain represents is one to look at carefully. The agents are the headline; the intelligence system underneath is the work.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"what-s-next-for-azure-reliability-and-brain\">What&#8217;s next for Azure reliability and Brain</h2>\n\n\n\n<p class=\"wp-block-paragraph\">We have the system. The system has determination. A service in a region is degrading.</p>\n\n\n\n<p class=\"wp-block-paragraph\">However, degrading compared to what? Healthy by whose definition? When two teams disagree about whether their service is healthy, which one is right? When the platform is degrading but no individual customer is impacted yet, what state are we actually in?</p>\n\n\n\n<p class=\"wp-block-paragraph\">Those are not philosophical questions. They are the next engineering questions we have to answer, because a system cannot make determinations until the people building it agree on what determinations actually are. Most of the industry, until recently, has been quietly getting this wrong.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In the next post in this series, we’ll show you exactly how, and what we built to replace the broken vocabulary of cloud health that the industry has been operating on for the last decade. To follow the series as new posts are published, see the Advancing reliability blog tag.</p>\n\n\n\n<div class=\"is-style-inline wp-block-bloginabox-theme-promotional\">\n\t\n<div class=\"promotional promotional--has-media promotional--media-right\">\n\t<div class=\"promotional__wrapper\">\n\t\t<div class=\"promotional__content-wrapper\">\n\t\t\t<div class=\"promotional__content\">\n\t\t\t\t\n\n<h2 class=\"wp-block-heading\" id=\"azure-reliability\">Azure reliability</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Query, explore, and analyze your cloud resources at scale.</p>\n\n\n\n<div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a data-bi-an=\"Global CTA\" data-bi-ct=\"cta link\" data-bi-id=\"cta-block\" class=\"wp-block-button__link wp-element-button\" href=\"https://learn.microsoft.com/en-us/azure/reliability/?product=popular\" target=\"_blank\" rel=\"noopener noreferrer noreferrer noopener\">Learn more</a></div>\n</div>\n\n\t\t\t</div>\n\t\t</div>\n\t\t\t\t\t<div class=\"promotional__media-wrapper\">\n\t\t\t\t<div class=\"promotional__media\">\n\t\t\t\t\t\t\t\t\t\t\t<img decoding=\"async\" width=\"1920\" height=\"1280\" src=\"https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/CLO20b_Jean_Alain_casual_office_003.jpg\" class=\"attachment-full size-full\" alt=\"Two people sitting at desks and working at computers.\" loading=\"lazy\" srcset=\"https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/CLO20b_Jean_Alain_casual_office_003.jpg 1920w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/CLO20b_Jean_Alain_casual_office_003-300x200.jpg 300w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/CLO20b_Jean_Alain_casual_office_003-1024x683.jpg 1024w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/CLO20b_Jean_Alain_casual_office_003-768x512.jpg 768w, https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/CLO20b_Jean_Alain_casual_office_003-1536x1024.jpg 1536w\" sizes=\"auto, (max-width: 1920px) 100vw, 1920px\" />\t\t\t\t\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t</div>\n</div>\n</div>\n\n\n\n<h3 class=\"wp-block-heading\" id=\"acknowledgments\">Acknowledgments</h3>\n\n\n\n<p class=\"wp-block-paragraph\">This work reflects the contributions of many engineers and researchers across the Brain AIOps team, MSR (Microsoft Research), and Azure service teams.</p>\n<p>The post <a href=\"https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/\">Meet Brain: The AI system behind Azure reliability</a> appeared first on <a href=\"https://azure.microsoft.com/en-us/blog\">Microsoft Azure Blog</a>.</p>",
+      "feedImageUrl": "https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/07/Brain-at-a-glance-2.jpeg",
+      "categories": [
+        "AI + machine learning",
+        "Internet of things",
+        "Management and governance",
+        "Advancing reliability",
+        "AI"
+      ]
+    }
+  },
+  {
     "id": "macro-federal-reserve-7d1389254b",
     "sourceId": "federal-reserve",
     "title": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
@@ -55,8 +100,8 @@
     "publishedAt": "2026-07-02T15:00:00.000Z",
     "summary": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
     "contentExcerpt": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 96,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -383,8 +428,8 @@
     "summary": "As drones reshape the battlefield in Ukraine, they are also creating new and increasingly complex dangers for civilians, threatening recovery efforts, agriculture and global food security long after the fighting ends.",
     "contentExcerpt": "As drones reshape the battlefield in Ukraine, they are also creating new and increasingly complex dangers for civilians, threatening recovery efforts, agriculture and global food security long after the fighting ends.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/14-05-2026-UN-Ukraine-05.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -420,8 +465,8 @@
     "summary": "The war in Sudan threatens to spiral further as the strategically-important town of El Obeid continues to face “relentless” drone attacks by advancing paramilitary militias, the UN’s human rights chief, Volker Türk, said on Friday.",
     "contentExcerpt": "The war in Sudan threatens to spiral further as the strategically-important town of El Obeid continues to face “relentless” drone attacks by advancing paramilitary militias, the UN’s human rights chief, Volker Türk, said on Friday.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/30-03-2026-UNFPA-Sudan-01.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -457,8 +502,8 @@
     "summary": "More blistering heatwaves and other weather extremes are becoming increasingly likely across the world now and in coming months, linked to strengthening El Niño conditions in the tropical Pacific, the UN World Meteorological Organization (WMO) said on Friday.",
     "contentExcerpt": "More blistering heatwaves and other weather extremes are becoming increasingly likely across the world now and in coming months, linked to strengthening El Niño conditions in the tropical Pacific, the UN World Meteorological Organization (WMO) said on Friday.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/01-03-2024-mada-dd-18.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -493,8 +538,8 @@
     "summary": "A week after earthquakes tore through northern Venezuela, hospitals in La Guaira are buckling under the weight of the disaster – and the risk of disease outbreaks in shelters is rising fast.",
     "contentExcerpt": "A week after earthquakes tore through northern Venezuela, hospitals in La Guaira are buckling under the weight of the disaster – and the risk of disease outbreaks in shelters is rising fast.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/07/02-07-2026-PAHO-Venezuela-02.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -527,8 +572,8 @@
     "summary": "The hantavirus global outbreak is officially over, Ebola outbreaks are growing in Africa and responders are helping recovery efforts in quake-hit Venezuela, the World Health Organization (WHO) chief said on Thursday, announcing updates on global health emergencies.",
     "contentExcerpt": "The hantavirus global outbreak is officially over, Ebola outbreaks are growing in Africa and responders are helping recovery efforts in quake-hit Venezuela, the World Health Organization (WHO) chief said on Thursday, announcing updates on global health emergencies.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/06/17-06-2026-WHO-Dr-Congo-ebola-03.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -563,8 +608,8 @@
     "summary": "From high participation costs and restrictions on Palestinian athletes – to bans on Muslim women wearing hijabs – racism continues to shape who gets to participate in sport,&nbsp;a new UN report published on Thursday has found.",
     "contentExcerpt": "From high participation costs and restrictions on Palestinian athletes – to bans on Muslim women wearing hijabs – racism continues to shape who gets to participate in sport,&nbsp;a new UN report published on Thursday has found.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/19-05-2025-UNICEF-DR-Congo-football.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -596,8 +641,8 @@
     "summary": "The 15-member Security Council is meeting in emergency session on Thursday morning to address the escalating tensions in the Gulf region following Iran attacks in recent days on Bahrain and Kuwait while Tehran and Washington continue to trade strikes over the Strait of Hormuz chokepoint. Stay tuned for live updates.",
     "contentExcerpt": "The 15-member Security Council is meeting in emergency session on Thursday morning to address the escalating tensions in the Gulf region following Iran attacks in recent days on Bahrain and Kuwait while Tehran and Washington continue to trade strikes over the Strait of Hormuz chokepoint. Stay tuned for live updates.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/07/01-07-2026-UN-Photo-SC-wideview.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -629,8 +674,8 @@
     "summary": "Aid agencies in Ukraine on Thursday rushed to respond to a massive uptick in deadly strikes by Russia, including one of the largest attacks on Kyiv to date.",
     "contentExcerpt": "Aid agencies in Ukraine on Thursday rushed to respond to a massive uptick in deadly strikes by Russia, including one of the largest attacks on Kyiv to date.",
     "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/07/02-07-2026-UNICEF-Ukraine-01.jpg/image560x340cropped.jpg",
-    "fetchedAt": "2026-07-04T00:00:34.291Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:34.291Z",
+    "fetchedAt": "2026-07-04T09:00:32.209Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:32.209Z",
     "credibility": 88,
     "sourceAuthority": "media",
     "sourceTier": "B",
@@ -651,7 +696,89 @@
     }
   },
   {
-    "id": "macro-item-e5557bb1de",
+    "id": "macro-item-6a4dc30631",
+    "sourceId": "yicai-finance",
+    "title": "守住4000美元保卫战！黄金结束周线四连跌，未来怎么走？",
+    "url": "https://www.yicai.com/news/103260313.html",
+    "source": "第一财经",
+    "sourceType": "webpage",
+    "category": "macro",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
+    "summary": "第一财经中文财经、宏观、产业和市场新闻",
+    "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 88,
+    "sourceAuthority": "financial-media",
+    "sourceTier": "B",
+    "timelinessTier": "hourly",
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
+    "tags": [
+      "financial-media",
+      "hourly"
+    ],
+    "impactAreas": [
+      "宏观"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "守住4000美元保卫战！黄金结束周线四连跌，未来怎么走？",
+      "link": "https://www.yicai.com/news/103260313.html",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "macro-item-ddbe8e23e3",
+    "sourceId": "yicai-finance",
+    "title": "2:3加时赛惜败阿根廷！佛得角用足球让世界看见",
+    "url": "https://www.yicai.com/news/103260323.html",
+    "source": "第一财经",
+    "sourceType": "webpage",
+    "category": "macro",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
+    "summary": "第一财经中文财经、宏观、产业和市场新闻",
+    "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 88,
+    "sourceAuthority": "financial-media",
+    "sourceTier": "B",
+    "timelinessTier": "hourly",
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
+    "tags": [
+      "financial-media",
+      "hourly"
+    ],
+    "impactAreas": [
+      "宏观"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "2:3加时赛惜败阿根廷！佛得角用足球让世界看见",
+      "link": "https://www.yicai.com/news/103260323.html",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "macro-item-82684733e7",
     "sourceId": "yicai-finance",
     "title": "明年起节能汽车、部分新能源车恢复全额征收车船税，交多少钱？",
     "url": "https://www.yicai.com/news/103259721.html",
@@ -659,11 +786,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -681,7 +808,7 @@
     "raw": {
       "title": "明年起节能汽车、部分新能源车恢复全额征收车船税，交多少钱？",
       "link": "https://www.yicai.com/news/103259721.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -692,7 +819,7 @@
     }
   },
   {
-    "id": "macro-item-275711b13f",
+    "id": "macro-item-99f7458ae6",
     "sourceId": "yicai-finance",
     "title": "央行重启净投放，万亿买断式逆回购即将落地",
     "url": "https://www.yicai.com/news/103260073.html",
@@ -700,11 +827,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -722,7 +849,7 @@
     "raw": {
       "title": "央行重启净投放，万亿买断式逆回购即将落地",
       "link": "https://www.yicai.com/news/103260073.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -733,130 +860,7 @@
     }
   },
   {
-    "id": "macro-item-80ef3d34b2",
-    "sourceId": "yicai-finance",
-    "title": "多校宣布延长研究生学制",
-    "url": "https://www.yicai.com/news/103260025.html",
-    "source": "第一财经",
-    "sourceType": "webpage",
-    "category": "macro",
-    "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
-    "summary": "第一财经中文财经、宏观、产业和市场新闻",
-    "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 88,
-    "sourceAuthority": "financial-media",
-    "sourceTier": "B",
-    "timelinessTier": "hourly",
-    "evidence_type": "research_paper",
-    "evidence_weight": 90,
-    "tags": [
-      "financial-media",
-      "hourly"
-    ],
-    "impactAreas": [
-      "宏观"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "多校宣布延长研究生学制",
-      "link": "https://www.yicai.com/news/103260025.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
-      "summary": "第一财经中文财经、宏观、产业和市场新闻",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "macro-item-b5af1d9a7c",
-    "sourceId": "yicai-finance",
-    "title": "19省份2025年平均工资出炉",
-    "url": "https://www.yicai.com/news/103259386.html",
-    "source": "第一财经",
-    "sourceType": "webpage",
-    "category": "macro",
-    "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
-    "summary": "第一财经中文财经、宏观、产业和市场新闻",
-    "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 88,
-    "sourceAuthority": "financial-media",
-    "sourceTier": "B",
-    "timelinessTier": "hourly",
-    "evidence_type": "reliable_media_report",
-    "evidence_weight": 80,
-    "tags": [
-      "financial-media",
-      "hourly"
-    ],
-    "impactAreas": [
-      "宏观"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "19省份2025年平均工资出炉",
-      "link": "https://www.yicai.com/news/103259386.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
-      "summary": "第一财经中文财经、宏观、产业和市场新闻",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "macro-item-11cc609251",
-    "sourceId": "yicai-finance",
-    "title": "非洲“蓝鲨”即将挑战卫冕冠军！佛得角用足球让世界看见",
-    "url": "https://www.yicai.com/news/103259284.html",
-    "source": "第一财经",
-    "sourceType": "webpage",
-    "category": "macro",
-    "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
-    "summary": "第一财经中文财经、宏观、产业和市场新闻",
-    "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 88,
-    "sourceAuthority": "financial-media",
-    "sourceTier": "B",
-    "timelinessTier": "hourly",
-    "evidence_type": "reliable_media_report",
-    "evidence_weight": 80,
-    "tags": [
-      "financial-media",
-      "hourly"
-    ],
-    "impactAreas": [
-      "宏观"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "非洲“蓝鲨”即将挑战卫冕冠军！佛得角用足球让世界看见",
-      "link": "https://www.yicai.com/news/103259284.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
-      "summary": "第一财经中文财经、宏观、产业和市场新闻",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "macro-item-ca7ef4a8db",
+    "id": "macro-item-9be28d61d2",
     "sourceId": "yicai-finance",
     "title": "关于开设“涉企侵权投诉举报专区”的公告",
     "url": "https://www.yicai.com/news/102062384.html",
@@ -864,11 +868,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -886,7 +890,7 @@
     "raw": {
       "title": "关于开设“涉企侵权投诉举报专区”的公告",
       "link": "https://www.yicai.com/news/102062384.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -897,7 +901,7 @@
     }
   },
   {
-    "id": "macro-item-de564fdeae",
+    "id": "macro-item-76fccd0ef4",
     "sourceId": "yicai-finance",
     "title": "第一财经网络举报受理和处置规则",
     "url": "https://www.yicai.com/news/102944648.html",
@@ -905,11 +909,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -927,7 +931,7 @@
     "raw": {
       "title": "第一财经网络举报受理和处置规则",
       "link": "https://www.yicai.com/news/102944648.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -938,7 +942,7 @@
     }
   },
   {
-    "id": "macro-item-a0fb36eac0",
+    "id": "macro-item-95315a1481",
     "sourceId": "yicai-finance",
     "title": "江水边的创新土壤",
     "url": "https://www.yicai.com/news/102997655.html",
@@ -946,11 +950,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -968,7 +972,7 @@
     "raw": {
       "title": "江水边的创新土壤",
       "link": "https://www.yicai.com/news/102997655.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -979,7 +983,7 @@
     }
   },
   {
-    "id": "macro-item-095dc598c1",
+    "id": "macro-item-bc84e00a50",
     "sourceId": "yicai-finance",
     "title": "普洛斯算力中心引入浙江国资战略股东",
     "url": "https://www.yicai.com/news/102794012.html",
@@ -987,11 +991,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1009,7 +1013,7 @@
     "raw": {
       "title": "普洛斯算力中心引入浙江国资战略股东",
       "link": "https://www.yicai.com/news/102794012.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -1020,7 +1024,7 @@
     }
   },
   {
-    "id": "macro-item-16b86d4f3f",
+    "id": "macro-item-8534ef7685",
     "sourceId": "yicai-finance",
     "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
     "url": "https://www.yicai.com/news/102464166.html",
@@ -1028,11 +1032,11 @@
     "sourceType": "webpage",
     "category": "macro",
     "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:45.163Z",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
     "summary": "第一财经中文财经、宏观、产业和市场新闻",
     "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 88,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1050,7 +1054,7 @@
     "raw": {
       "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
       "link": "https://www.yicai.com/news/102464166.html",
-      "publishedAt": "2026-07-04T00:00:45.163Z",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
       "summary": "第一财经中文财经、宏观、产业和市场新闻",
       "sourceAuthority": "financial-media",
       "timelinessTier": "hourly",
@@ -1061,19 +1065,60 @@
     }
   },
   {
-    "id": "business-item-6c44a792aa",
+    "id": "macro-item-6775391d12",
+    "sourceId": "yicai-finance",
+    "title": "双汇发展三季度业绩亮眼：肉类总外销量创新高",
+    "url": "https://www.yicai.com/news/102904326.html",
+    "source": "第一财经",
+    "sourceType": "webpage",
+    "category": "macro",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-04T09:00:42.162Z",
+    "summary": "第一财经中文财经、宏观、产业和市场新闻",
+    "contentExcerpt": "第一财经中文财经、宏观、产业和市场新闻",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 88,
+    "sourceAuthority": "financial-media",
+    "sourceTier": "B",
+    "timelinessTier": "hourly",
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
+    "tags": [
+      "financial-media",
+      "hourly"
+    ],
+    "impactAreas": [
+      "宏观"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "双汇发展三季度业绩亮眼：肉类总外销量创新高",
+      "link": "https://www.yicai.com/news/102904326.html",
+      "publishedAt": "2026-07-04T09:00:42.162Z",
+      "summary": "第一财经中文财经、宏观、产业和市场新闻",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "macro-item-002a939754",
     "sourceId": "nbd-finance",
-    "title": "普京称俄军完成对卢甘斯克地区全部控制；部分新能源车明年起缴纳车船税；事关再融资！证监会征求意见；埃及点球战胜澳大利亚丨每经早参 2026-07-04 07:36",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452087.html",
+    "title": "韩国股民上半年28亿美元“扫货”中国AI全景图；美半导体市值一周蒸发3.9万亿元，分析师：Meta没多余产能可卖；美联储加息预期降温，黄金结束四连跌 | 一周国际财经",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452171.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
-    "category": "business",
+    "category": "macro",
     "primaryCategory": "finance",
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1085,12 +1130,14 @@
       "hourly"
     ],
     "impactAreas": [
+      "宏观",
+      "国际",
       "商业"
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "普京称俄军完成对卢甘斯克地区全部控制；部分新能源车明年起缴纳车船税；事关再融资！证监会征求意见；埃及点球战胜澳大利亚丨每经早参 2026-07-04 07:36",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452087.html",
+      "title": "韩国股民上半年28亿美元“扫货”中国AI全景图；美半导体市值一周蒸发3.9万亿元，分析师：Meta没多余产能可卖；美联储加息预期降温，黄金结束四连跌 | 一周国际财经",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452171.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1102,10 +1149,10 @@
     }
   },
   {
-    "id": "business-item-191d2ada6f",
+    "id": "business-item-77d5770d06",
     "sourceId": "nbd-finance",
-    "title": "连亏多年后去年四季度扭亏为盈，监管追问原因 气派科技回复问询函：订单回暖带动盈利修复 2026-07-04 07:13",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452039.html",
+    "title": "立中集团拟发行可转债募资不超11.80亿元 用于增加泰国基地产能等",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452106.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
     "category": "business",
@@ -1113,8 +1160,8 @@
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1130,7 +1177,48 @@
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "连亏多年后去年四季度扭亏为盈，监管追问原因 气派科技回复问询函：订单回暖带动盈利修复 2026-07-04 07:13",
+      "title": "立中集团拟发行可转债募资不超11.80亿元 用于增加泰国基地产能等",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452106.html",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "business-item-139707a1be",
+    "sourceId": "nbd-finance",
+    "title": "连亏多年后去年四季度扭亏为盈，监管追问原因 气派科技回复问询函：订单回暖带动盈利修复",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452039.html",
+    "source": "每日经济新闻",
+    "sourceType": "webpage",
+    "category": "business",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "每日经济新闻中文财经、公司和市场新闻",
+    "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 86,
+    "sourceAuthority": "financial-media",
+    "sourceTier": "B",
+    "timelinessTier": "hourly",
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
+    "tags": [
+      "financial-media",
+      "hourly"
+    ],
+    "impactAreas": [
+      "商业"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "连亏多年后去年四季度扭亏为盈，监管追问原因 气派科技回复问询函：订单回暖带动盈利修复",
       "link": "https://www.nbd.com.cn/articles/2026-07-04/4452039.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
@@ -1143,10 +1231,10 @@
     }
   },
   {
-    "id": "business-item-5723d0e842",
+    "id": "business-item-08414238bc",
     "sourceId": "nbd-finance",
-    "title": "07:51 吉林省发布山洪灾害气象风险橙色预警",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452089.html",
+    "title": "电子商务法修正草案公开征求意见",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452114.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
     "category": "business",
@@ -1154,14 +1242,14 @@
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
     "timelinessTier": "hourly",
-    "evidence_type": "official_announcement",
-    "evidence_weight": 100,
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
     "tags": [
       "financial-media",
       "hourly"
@@ -1171,8 +1259,8 @@
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "07:51 吉林省发布山洪灾害气象风险橙色预警",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452089.html",
+      "title": "电子商务法修正草案公开征求意见",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452114.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1184,10 +1272,10 @@
     }
   },
   {
-    "id": "business-item-7ced1f673d",
+    "id": "business-item-67d71315ff",
     "sourceId": "nbd-finance",
-    "title": "07:48 河南省政府对郑州市政府进行安全生产约谈",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452088.html",
+    "title": "《数据产权登记工作指引（试行）》印发 促进数据安全合规高效流通",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452185.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
     "category": "business",
@@ -1195,14 +1283,14 @@
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
     "timelinessTier": "hourly",
-    "evidence_type": "reliable_media_report",
-    "evidence_weight": 80,
+    "evidence_type": "data_release",
+    "evidence_weight": 90,
     "tags": [
       "financial-media",
       "hourly"
@@ -1212,8 +1300,8 @@
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "07:48 河南省政府对郑州市政府进行安全生产约谈",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452088.html",
+      "title": "《数据产权登记工作指引（试行）》印发 促进数据安全合规高效流通",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452185.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1225,10 +1313,10 @@
     }
   },
   {
-    "id": "business-item-e3b7f35f2f",
+    "id": "business-item-fcd8624368",
     "sourceId": "nbd-finance",
-    "title": "06:59 伊朗称将回应违反谅解备忘录的行为",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452085.html",
+    "title": "城市24小时 | 文旅破“万亿”之后，中部大省打法变了 2026-07-04 14:54",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452245.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
     "category": "business",
@@ -1236,8 +1324,8 @@
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1253,8 +1341,8 @@
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "06:59 伊朗称将回应违反谅解备忘录的行为",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452085.html",
+      "title": "城市24小时 | 文旅破“万亿”之后，中部大省打法变了 2026-07-04 14:54",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452245.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1266,10 +1354,10 @@
     }
   },
   {
-    "id": "business-item-f844d76e67",
+    "id": "business-item-4410a1d1c0",
     "sourceId": "nbd-finance",
-    "title": "06:58 俄称打击乌军工设施 乌称打击俄军用机场",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452084.html",
+    "title": "蒋方舟公开回应清华教授肖鹰对其“论文造假”指控 2026-07-04 14:14",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452220.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
     "category": "business",
@@ -1277,14 +1365,14 @@
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
     "timelinessTier": "hourly",
-    "evidence_type": "reliable_media_report",
-    "evidence_weight": 80,
+    "evidence_type": "research_paper",
+    "evidence_weight": 90,
     "tags": [
       "financial-media",
       "hourly"
@@ -1294,8 +1382,8 @@
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "06:58 俄称打击乌军工设施 乌称打击俄军用机场",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452084.html",
+      "title": "蒋方舟公开回应清华教授肖鹰对其“论文造假”指控 2026-07-04 14:14",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452220.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1307,94 +1395,10 @@
     }
   },
   {
-    "id": "macro-item-44f359b333",
+    "id": "business-item-2c03f8cd6f",
     "sourceId": "nbd-finance",
-    "title": "06:58 法国10年期国债收益率涨1.7个基点",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452083.html",
-    "source": "每日经济新闻",
-    "sourceType": "webpage",
-    "category": "macro",
-    "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:00.000Z",
-    "summary": "每日经济新闻中文财经、公司和市场新闻",
-    "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 86,
-    "sourceAuthority": "financial-media",
-    "sourceTier": "B",
-    "timelinessTier": "hourly",
-    "evidence_type": "reliable_media_report",
-    "evidence_weight": 80,
-    "tags": [
-      "financial-media",
-      "hourly"
-    ],
-    "impactAreas": [
-      "宏观",
-      "商业"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "06:58 法国10年期国债收益率涨1.7个基点",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452083.html",
-      "publishedAt": "2026-07-04T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "macro-item-ac661383a0",
-    "sourceId": "nbd-finance",
-    "title": "06:58 加拿大10年期基准国债收益率跌0.4个基点",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452082.html",
-    "source": "每日经济新闻",
-    "sourceType": "webpage",
-    "category": "macro",
-    "primaryCategory": "finance",
-    "publishedAt": "2026-07-04T00:00:00.000Z",
-    "summary": "每日经济新闻中文财经、公司和市场新闻",
-    "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 86,
-    "sourceAuthority": "financial-media",
-    "sourceTier": "B",
-    "timelinessTier": "hourly",
-    "evidence_type": "reliable_media_report",
-    "evidence_weight": 80,
-    "tags": [
-      "financial-media",
-      "hourly"
-    ],
-    "impactAreas": [
-      "宏观",
-      "商业"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "06:58 加拿大10年期基准国债收益率跌0.4个基点",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452082.html",
-      "publishedAt": "2026-07-04T00:00:00.000Z",
-      "summary": "每日经济新闻中文财经、公司和市场新闻",
-      "sourceAuthority": "financial-media",
-      "timelinessTier": "hourly",
-      "tags": [
-        "financial-media",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "business-item-64c561224a",
-    "sourceId": "nbd-finance",
-    "title": "06:56 加纳首都及周边地区强降雨已致34人死亡",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452080.html",
+    "title": "日元狂跌！巨额汇市干预失败，日本政府酝酿搞“突袭” 2026-07-04 13:41",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452214.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
     "category": "business",
@@ -1402,8 +1406,8 @@
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1419,8 +1423,8 @@
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "06:56 加纳首都及周边地区强降雨已致34人死亡",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452080.html",
+      "title": "日元狂跌！巨额汇市干预失败，日本政府酝酿搞“突袭” 2026-07-04 13:41",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452214.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1432,19 +1436,19 @@
     }
   },
   {
-    "id": "macro-item-422d3ee180",
+    "id": "business-item-44eda8e24f",
     "sourceId": "nbd-finance",
-    "title": "06:56 英国10年期国债收益率涨0.6个基点",
-    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452079.html",
+    "title": "再爆冷！王楚钦/孙颖莎无缘WTT美国大满贯混双冠军，2比3不敌韩国组合；此前王楚钦男单止步16强 2026-07-04 13:32",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452211.html",
     "source": "每日经济新闻",
     "sourceType": "webpage",
-    "category": "macro",
+    "category": "business",
     "primaryCategory": "finance",
     "publishedAt": "2026-07-04T00:00:00.000Z",
     "summary": "每日经济新闻中文财经、公司和市场新闻",
     "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 86,
     "sourceAuthority": "financial-media",
     "sourceTier": "B",
@@ -1456,13 +1460,54 @@
       "hourly"
     ],
     "impactAreas": [
-      "宏观",
       "商业"
     ],
     "sourceLanguage": "zh",
     "raw": {
-      "title": "06:56 英国10年期国债收益率涨0.6个基点",
-      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452079.html",
+      "title": "再爆冷！王楚钦/孙颖莎无缘WTT美国大满贯混双冠军，2比3不敌韩国组合；此前王楚钦男单止步16强 2026-07-04 13:32",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452211.html",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "每日经济新闻中文财经、公司和市场新闻",
+      "sourceAuthority": "financial-media",
+      "timelinessTier": "hourly",
+      "tags": [
+        "financial-media",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "international-item-0faf1e430b",
+    "sourceId": "nbd-finance",
+    "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
+    "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
+    "source": "每日经济新闻",
+    "sourceType": "webpage",
+    "category": "international",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "每日经济新闻中文财经、公司和市场新闻",
+    "contentExcerpt": "每日经济新闻中文财经、公司和市场新闻",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 86,
+    "sourceAuthority": "financial-media",
+    "sourceTier": "B",
+    "timelinessTier": "hourly",
+    "evidence_type": "reliable_media_report",
+    "evidence_weight": 80,
+    "tags": [
+      "financial-media",
+      "hourly"
+    ],
+    "impactAreas": [
+      "国际",
+      "商业"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
+      "link": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
       "publishedAt": "2026-07-04T00:00:00.000Z",
       "summary": "每日经济新闻中文财经、公司和市场新闻",
       "sourceAuthority": "financial-media",
@@ -1485,8 +1530,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "国家发展改革委宏观政策、价格、产业和经济运行信息",
     "contentExcerpt": "国家发展改革委宏观政策、价格、产业和经济运行信息",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 94,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1526,8 +1571,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "财政部财政政策、国债、预算和财政运行新闻",
     "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 94,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1567,8 +1612,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "财政部财政政策、国债、预算和财政运行新闻",
     "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 94,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1608,8 +1653,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "财政部财政政策、国债、预算和财政运行新闻",
     "contentExcerpt": "财政部财政政策、国债、预算和财政运行新闻",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 94,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1638,6 +1683,458 @@
     }
   },
   {
+    "id": "macro-item-874ecbd7c8",
+    "sourceId": "stats-data-release",
+    "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
+    "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+    "source": "国家统计局数据发布",
+    "sourceType": "webpage",
+    "category": "macro",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-03T00:00:00.000Z",
+    "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+    "contentExcerpt": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 95,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "daily",
+    "evidence_type": "official_announcement",
+    "evidence_weight": 100,
+    "tags": [
+      "official-agency",
+      "daily"
+    ],
+    "impactAreas": [
+      "宏观"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
+      "link": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    }
+  },
+  {
+    "id": "macro-item-48475f431b",
+    "sourceId": "stats-data-release",
+    "title": "2026年6月下旬流通领域重要生产资料市场...",
+    "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+    "source": "国家统计局数据发布",
+    "sourceType": "webpage",
+    "category": "macro",
+    "primaryCategory": "finance",
+    "publishedAt": "2026-07-03T00:00:00.000Z",
+    "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+    "contentExcerpt": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 95,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "daily",
+    "evidence_type": "official_announcement",
+    "evidence_weight": 100,
+    "tags": [
+      "official-agency",
+      "daily"
+    ],
+    "impactAreas": [
+      "宏观"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "2026年6月下旬流通领域重要生产资料市场...",
+      "link": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "daily",
+      "tags": [
+        "official-agency",
+        "daily"
+      ]
+    }
+  },
+  {
+    "id": "news-item-85462a557e",
+    "sourceId": "govcn-yaowen",
+    "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-d294025381",
+    "sourceId": "govcn-yaowen",
+    "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
+    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
+      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-07f47179b3",
+    "sourceId": "govcn-yaowen",
+    "title": "丹麦国王腓特烈十世会见王毅",
+    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074302.htm",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "丹麦国王腓特烈十世会见王毅",
+      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074302.htm",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-10eb37b546",
+    "sourceId": "govcn-yaowen",
+    "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-d02d9b4409",
+    "sourceId": "govcn-yaowen",
+    "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
+    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
+      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-e033f9ad97",
+    "sourceId": "govcn-yaowen",
+    "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-04T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+      "publishedAt": "2026-07-04T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-d31e58760b",
+    "sourceId": "govcn-yaowen",
+    "title": "【视频】应习近平邀请 纳米比亚总统将访华",
+    "url": "https://tv.cctv.com/2026/07/03/VIDE2SPf4sfFK4ZsyuvprUmP260703.shtml",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-03T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "【视频】应习近平邀请 纳米比亚总统将访华",
+      "link": "https://tv.cctv.com/2026/07/03/VIDE2SPf4sfFK4ZsyuvprUmP260703.shtml",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-8abdf34370",
+    "sourceId": "govcn-yaowen",
+    "title": "【视频】习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
+    "url": "https://tv.cctv.com/2026/07/03/VIDE0m2GTimuQ79AebOWnFKm260703.shtml",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-03T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "【视频】习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
+      "link": "https://tv.cctv.com/2026/07/03/VIDE0m2GTimuQ79AebOWnFKm260703.shtml",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-c917e509fa",
+    "sourceId": "govcn-yaowen",
+    "title": "【视频】中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
+    "url": "https://tv.cctv.com/2026/07/03/VIDEZQQue6pdTmCNLV8OhN4c260703.shtml",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-03T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "【视频】中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
+      "link": "https://tv.cctv.com/2026/07/03/VIDEZQQue6pdTmCNLV8OhN4c260703.shtml",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
+    "id": "news-item-e2c9370d9b",
+    "sourceId": "govcn-yaowen",
+    "title": "【视频】李强主持召开国务院党组会议 学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话精神和习近平党建思想 丁薛祥出席",
+    "url": "https://tv.cctv.com/2026/07/03/VIDEQcb2Wbak4xunFP3cTzwG260703.shtml",
+    "source": "中国政府网要闻",
+    "sourceType": "webpage",
+    "category": "news",
+    "publishedAt": "2026-07-03T00:00:00.000Z",
+    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
+    "credibility": 96,
+    "sourceAuthority": "official-agency",
+    "sourceTier": "S",
+    "timelinessTier": "hourly",
+    "evidence_type": "regulatory_document",
+    "evidence_weight": 95,
+    "tags": [
+      "official-agency",
+      "hourly"
+    ],
+    "sourceLanguage": "zh",
+    "raw": {
+      "title": "【视频】李强主持召开国务院党组会议 学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话精神和习近平党建思想 丁薛祥出席",
+      "link": "https://tv.cctv.com/2026/07/03/VIDEQcb2Wbak4xunFP3cTzwG260703.shtml",
+      "publishedAt": "2026-07-03T00:00:00.000Z",
+      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+      "sourceAuthority": "official-agency",
+      "timelinessTier": "hourly",
+      "tags": [
+        "official-agency",
+        "hourly"
+      ]
+    }
+  },
+  {
     "id": "news-item-5eae9f6aa8",
     "sourceId": "govcn-yaowen",
     "title": "李强主持召开国务院党组会议 学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话精神和习近平党建思想 丁薛祥出席",
@@ -1648,8 +2145,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
     "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 96,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1685,8 +2182,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
     "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 96,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1722,8 +2219,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
     "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 96,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1759,8 +2256,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
     "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 96,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1796,8 +2293,8 @@
     "publishedAt": "2026-07-03T00:00:00.000Z",
     "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
     "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
+    "sourceLastCheckedAt": "2026-07-04T09:00:42.162Z",
     "credibility": 96,
     "sourceAuthority": "official-agency",
     "sourceTier": "S",
@@ -1812,343 +2309,6 @@
     "raw": {
       "title": "习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
       "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074214.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-7dce80219b",
-    "sourceId": "govcn-yaowen",
-    "title": "国务院关于印发《美丽中国建设“十五五”规划》的通知",
-    "url": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "国务院关于印发《美丽中国建设“十五五”规划》的通知",
-      "link": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-356afd55c8",
-    "sourceId": "govcn-yaowen",
-    "title": "纳米比亚总统恩代特瓦将访华",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "纳米比亚总统恩代特瓦将访华",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-42b359e360",
-    "sourceId": "govcn-yaowen",
-    "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-f3fd35f9bf",
-    "sourceId": "govcn-yaowen",
-    "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-0e1416501c",
-    "sourceId": "govcn-yaowen",
-    "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "international-item-b5ac6b29d5",
-    "sourceId": "govcn-yaowen",
-    "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "international",
-    "primaryCategory": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "impactAreas": [
-      "国际"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-b94d483134",
-    "sourceId": "govcn-yaowen",
-    "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-b7d91d1109",
-    "sourceId": "govcn-yaowen",
-    "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
-      "publishedAt": "2026-07-03T00:00:00.000Z",
-      "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-      "sourceAuthority": "official-agency",
-      "timelinessTier": "hourly",
-      "tags": [
-        "official-agency",
-        "hourly"
-      ]
-    }
-  },
-  {
-    "id": "news-item-44c13f0634",
-    "sourceId": "govcn-yaowen",
-    "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-    "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074152.htm",
-    "source": "中国政府网要闻",
-    "sourceType": "webpage",
-    "category": "news",
-    "publishedAt": "2026-07-03T00:00:00.000Z",
-    "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "contentExcerpt": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
-    "sourceLastCheckedAt": "2026-07-04T00:00:45.163Z",
-    "credibility": 96,
-    "sourceAuthority": "official-agency",
-    "sourceTier": "S",
-    "timelinessTier": "hourly",
-    "evidence_type": "regulatory_document",
-    "evidence_weight": 95,
-    "tags": [
-      "official-agency",
-      "hourly"
-    ],
-    "sourceLanguage": "zh",
-    "raw": {
-      "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-      "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074152.htm",
       "publishedAt": "2026-07-03T00:00:00.000Z",
       "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
       "sourceAuthority": "official-agency",

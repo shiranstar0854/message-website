@@ -11,10 +11,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -28,15 +28,15 @@
     "category": "finance",
     "credibility": 96,
     "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
-    "status": 200,
-    "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "ok": false,
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
-    "attempts": 1,
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
+    "attempts": 2,
+    "error": "fetch failed",
     "items": [],
+    "itemCount": 0,
     "stale": false
   },
   {
@@ -51,10 +51,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [],
     "stale": false
@@ -71,16 +71,40 @@
     "status": 200,
     "ok": true,
     "itemCount": 10,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [
       {
+        "title": "守住4000美元保卫战！黄金结束周线四连跌，未来怎么走？",
+        "link": "https://www.yicai.com/news/103260313.html",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "2:3加时赛惜败阿根廷！佛得角用足球让世界看见",
+        "link": "https://www.yicai.com/news/103260323.html",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
         "title": "明年起节能汽车、部分新能源车恢复全额征收车船税，交多少钱？",
         "link": "https://www.yicai.com/news/103259721.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -92,43 +116,7 @@
       {
         "title": "央行重启净投放，万亿买断式逆回购即将落地",
         "link": "https://www.yicai.com/news/103260073.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "多校宣布延长研究生学制",
-        "link": "https://www.yicai.com/news/103260025.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "19省份2025年平均工资出炉",
-        "link": "https://www.yicai.com/news/103259386.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "非洲“蓝鲨”即将挑战卫冕冠军！佛得角用足球让世界看见",
-        "link": "https://www.yicai.com/news/103259284.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -140,7 +128,7 @@
       {
         "title": "关于开设“涉企侵权投诉举报专区”的公告",
         "link": "https://www.yicai.com/news/102062384.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -152,7 +140,7 @@
       {
         "title": "第一财经网络举报受理和处置规则",
         "link": "https://www.yicai.com/news/102944648.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -164,7 +152,7 @@
       {
         "title": "江水边的创新土壤",
         "link": "https://www.yicai.com/news/102997655.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -176,7 +164,7 @@
       {
         "title": "普洛斯算力中心引入浙江国资战略股东",
         "link": "https://www.yicai.com/news/102794012.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -188,7 +176,19 @@
       {
         "title": "泰国总理佩通坦·钦那瓦一行参访华彬集团",
         "link": "https://www.yicai.com/news/102464166.html",
-        "publishedAt": "2026-07-04T00:00:45.163Z",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "双汇发展三季度业绩亮眼：肉类总外销量创新高",
+        "link": "https://www.yicai.com/news/102904326.html",
+        "publishedAt": "2026-07-04T09:00:42.162Z",
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "sourceAuthority": "financial-media",
         "timelinessTier": "hourly",
@@ -212,15 +212,15 @@
     "status": 200,
     "ok": true,
     "itemCount": 10,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [
       {
-        "title": "普京称俄军完成对卢甘斯克地区全部控制；部分新能源车明年起缴纳车船税；事关再融资！证监会征求意见；埃及点球战胜澳大利亚丨每经早参 2026-07-04 07:36",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452087.html",
+        "title": "韩国股民上半年28亿美元“扫货”中国AI全景图；美半导体市值一周蒸发3.9万亿元，分析师：Meta没多余产能可卖；美联储加息预期降温，黄金结束四连跌 | 一周国际财经",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452171.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -231,7 +231,19 @@
         ]
       },
       {
-        "title": "连亏多年后去年四季度扭亏为盈，监管追问原因 气派科技回复问询函：订单回暖带动盈利修复 2026-07-04 07:13",
+        "title": "立中集团拟发行可转债募资不超11.80亿元 用于增加泰国基地产能等",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452106.html",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "sourceAuthority": "financial-media",
+        "timelinessTier": "hourly",
+        "tags": [
+          "financial-media",
+          "hourly"
+        ]
+      },
+      {
+        "title": "连亏多年后去年四季度扭亏为盈，监管追问原因 气派科技回复问询函：订单回暖带动盈利修复",
         "link": "https://www.nbd.com.cn/articles/2026-07-04/4452039.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
@@ -243,8 +255,8 @@
         ]
       },
       {
-        "title": "07:51 吉林省发布山洪灾害气象风险橙色预警",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452089.html",
+        "title": "电子商务法修正草案公开征求意见",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452114.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -255,8 +267,8 @@
         ]
       },
       {
-        "title": "07:48 河南省政府对郑州市政府进行安全生产约谈",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452088.html",
+        "title": "《数据产权登记工作指引（试行）》印发 促进数据安全合规高效流通",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452185.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -267,8 +279,8 @@
         ]
       },
       {
-        "title": "06:59 伊朗称将回应违反谅解备忘录的行为",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452085.html",
+        "title": "城市24小时 | 文旅破“万亿”之后，中部大省打法变了 2026-07-04 14:54",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452245.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -279,8 +291,8 @@
         ]
       },
       {
-        "title": "06:58 俄称打击乌军工设施 乌称打击俄军用机场",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452084.html",
+        "title": "蒋方舟公开回应清华教授肖鹰对其“论文造假”指控 2026-07-04 14:14",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452220.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -291,8 +303,8 @@
         ]
       },
       {
-        "title": "06:58 法国10年期国债收益率涨1.7个基点",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452083.html",
+        "title": "日元狂跌！巨额汇市干预失败，日本政府酝酿搞“突袭” 2026-07-04 13:41",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452214.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -303,8 +315,8 @@
         ]
       },
       {
-        "title": "06:58 加拿大10年期基准国债收益率跌0.4个基点",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452082.html",
+        "title": "再爆冷！王楚钦/孙颖莎无缘WTT美国大满贯混双冠军，2比3不敌韩国组合；此前王楚钦男单止步16强 2026-07-04 13:32",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452211.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -315,20 +327,8 @@
         ]
       },
       {
-        "title": "06:56 加纳首都及周边地区强降雨已致34人死亡",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452080.html",
-        "publishedAt": "2026-07-04T00:00:00.000Z",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
-        "sourceAuthority": "financial-media",
-        "timelinessTier": "hourly",
-        "tags": [
-          "financial-media",
-          "hourly"
-        ]
-      },
-      {
-        "title": "06:56 英国10年期国债收益率涨0.6个基点",
-        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452079.html",
+        "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
+        "link": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
         "publishedAt": "2026-07-04T00:00:00.000Z",
         "summary": "每日经济新闻中文财经、公司和市场新闻",
         "sourceAuthority": "financial-media",
@@ -353,10 +353,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 1,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [
       {
@@ -386,10 +386,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 3,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [
       {
@@ -442,13 +442,38 @@
     "url": "http://www.stats.gov.cn/sj/zxfb/",
     "status": 200,
     "ok": true,
-    "itemCount": 0,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "itemCount": 2,
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
-    "attempts": 1,
-    "items": [],
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
+    "attempts": 2,
+    "items": [
+      {
+        "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
+        "link": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+        "publishedAt": "2026-07-03T00:00:00.000Z",
+        "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      },
+      {
+        "title": "2026年6月下旬流通领域重要生产资料市场...",
+        "link": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+        "publishedAt": "2026-07-03T00:00:00.000Z",
+        "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "daily",
+        "tags": [
+          "official-agency",
+          "daily"
+        ]
+      }
+    ],
     "stale": false
   },
   {
@@ -462,13 +487,133 @@
     "url": "https://www.gov.cn/yaowen/liebiao/YAOWENLIEBIAO.json",
     "status": 200,
     "ok": true,
-    "itemCount": 14,
-    "fetchedAt": "2026-07-04T00:00:45.163Z",
+    "itemCount": 15,
+    "fetchedAt": "2026-07-04T09:00:42.162Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-04T00:00:45.163Z",
-    "cacheExpiresAt": "2026-07-06T00:00:45.163Z",
+    "cacheStartedAt": "2026-07-04T09:00:42.162Z",
+    "cacheExpiresAt": "2026-07-06T09:00:42.162Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
+        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "丹麦国王腓特烈十世会见王毅",
+        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074302.htm",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
+        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+        "publishedAt": "2026-07-04T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】应习近平邀请 纳米比亚总统将访华",
+        "link": "https://tv.cctv.com/2026/07/03/VIDE2SPf4sfFK4ZsyuvprUmP260703.shtml",
+        "publishedAt": "2026-07-03T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
+        "link": "https://tv.cctv.com/2026/07/03/VIDE0m2GTimuQ79AebOWnFKm260703.shtml",
+        "publishedAt": "2026-07-03T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
+        "link": "https://tv.cctv.com/2026/07/03/VIDEZQQue6pdTmCNLV8OhN4c260703.shtml",
+        "publishedAt": "2026-07-03T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
+      {
+        "title": "【视频】李强主持召开国务院党组会议 学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话精神和习近平党建思想 丁薛祥出席",
+        "link": "https://tv.cctv.com/2026/07/03/VIDEQcb2Wbak4xunFP3cTzwG260703.shtml",
+        "publishedAt": "2026-07-03T00:00:00.000Z",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "sourceAuthority": "official-agency",
+        "timelinessTier": "hourly",
+        "tags": [
+          "official-agency",
+          "hourly"
+        ]
+      },
       {
         "title": "李强主持召开国务院党组会议 学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话精神和习近平党建思想 丁薛祥出席",
         "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074246.htm",
@@ -520,114 +665,6 @@
       {
         "title": "习近平《在庆祝中国共产党成立105周年大会上的讲话》单行本出版",
         "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074214.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "国务院关于印发《美丽中国建设“十五五”规划》的通知",
-        "link": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "纳米比亚总统恩代特瓦将访华",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074188.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "国务院残疾人工作委员会印发《残疾人保障和发展“十五五”规划》",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074166.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "“奋力创造新的历史辉煌！”——庆祝中国共产党成立105周年大会侧记",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074162.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "新华社评论员：奋力创造新的历史辉煌——论学习习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074161.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "勇担历史使命 为人类文明进步贡献中国力量——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话引发热烈国际反响",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074160.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "【微观察·习近平总书记在庆祝中国共产党成立一百零五周年大会上发表重要讲话】“中国共产党为什么能的关键密码”",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074159.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "奋力谱写强国建设、民族复兴新篇章——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话激励各地干部群众团结奋进勇毅前行",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074155.htm",
-        "publishedAt": "2026-07-03T00:00:00.000Z",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "sourceAuthority": "official-agency",
-        "timelinessTier": "hourly",
-        "tags": [
-          "official-agency",
-          "hourly"
-        ]
-      },
-      {
-        "title": "人民日报评论员：不懈奋斗，党领导人民创造了伟大成就——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-        "link": "https://www.gov.cn/yaowen/liebiao/202607/content_7074152.htm",
         "publishedAt": "2026-07-03T00:00:00.000Z",
         "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "sourceAuthority": "official-agency",
