@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-04T09:01:26.782Z",
+  "generated_at": "2026-07-05T00:01:25.521Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 7,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-04T09:01:02.304Z"
+      "generated_at": "2026-07-05T00:01:02.599Z"
     },
     "llm": {
       "enabled": true,
@@ -38,1839 +38,6 @@
   ],
   "events": [
     {
-      "event_id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "lane_id": "china_policy",
-      "lane_label": "中国权威政策落地",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-07-03T00:00:00.000Z",
-      "last_seen_at": "2026-07-04T00:00:00.000Z",
-      "updated_at": "2026-07-04T00:00:00.000Z",
-      "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、国家发展改革委新闻发布",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、国家发展改革委新闻发布",
-        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 5 条官方或市场权威来源，仍处在高时效窗口内。",
-        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "rationale": [
-          "属于中国权威政策落地主线",
-          "重要性评分为 100",
-          "证据置信度为高"
-        ],
-        "market_symbols": [],
-        "policy_status": "落地执行",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "公共政策",
-          "吴政隆在湖北湖南调研时指",
-          "持续增强内生动力",
-          "推动经济向新向优向好发展"
-        ],
-        "entities": {
-          "companies": [],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网",
-            "发改委",
-            "国家发展改革委",
-            "财政部",
-            "统计局",
-            "国家统计局",
-            "工信部"
-          ],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-          "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
-          "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话"
-        ],
-        "latest_change": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
-      },
-      "evidence": {
-        "source_count": 4,
-        "official_source_count": 20,
-        "financial_media_count": 0,
-        "timeline_count": 12,
-        "confidence_basis": "high",
-        "evidence_types": {
-          "official_announcement": 5,
-          "data_release": 1
-        },
-        "primary_source": {
-          "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm"
-        },
-        "source_links": [
-          {
-            "item_id": "news-item-85462a557e",
-            "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
-            "published_at": "2026-07-04T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-d294025381",
-            "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
-            "published_at": "2026-07-04T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-10eb37b546",
-            "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
-            "published_at": "2026-07-04T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-d02d9b4409",
-            "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
-            "published_at": "2026-07-04T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-e033f9ad97",
-            "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
-            "published_at": "2026-07-04T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "macro-item-04a0cfd506",
-            "title": "2026年7月3日国内成品油价格调整",
-            "source": "国家发展改革委新闻发布",
-            "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
-            "published_at": "2026-07-03T00:00:00.000Z",
-            "summary": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
-        ]
-      },
-      "latest_update": {
-        "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
-        "published_at": "2026-07-04T00:00:00.000Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
-          "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "industry": {
-          "impact": "可能影响 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力、推动经济向新向优向好发展 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、发改委、国家发展改革委。",
-          "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-            "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-            "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-            "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "可能的政策风险包括油价波动对通胀的影响，但本次信息不足。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "可能的政策风险包括油价波动对通胀的影响，但本次信息不足。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中国权威政策落地是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "news-item-85462a557e",
-          "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
-          "published_at": "2026-07-04T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-d294025381",
-          "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
-          "published_at": "2026-07-04T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-10eb37b546",
-          "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
-          "published_at": "2026-07-04T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-d02d9b4409",
-          "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
-          "published_at": "2026-07-04T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-e033f9ad97",
-          "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
-          "published_at": "2026-07-04T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "macro-item-04a0cfd506",
-          "title": "2026年7月3日国内成品油价格调整",
-          "source": "国家发展改革委新闻发布",
-          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202607/t20260703_1406245.html",
-          "published_at": "2026-07-03T00:00:00.000Z",
-          "summary": "国家发改委发布2026年7月3日成品油价格调整信息，但具体调整幅度未披露。",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-03",
-          "title": "财政部 税务总局 工业和信息化部关于调整节能汽车、新能源汽车车船税优惠政策的公告",
-          "summary": "三部门联合发布公告调整节能与新能源车船税优惠，具体内容待定。",
-          "description": "三部门联合发布公告调整节能与新能源车船税优惠，具体内容待定。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "节能汽车和新能源汽车的车船税优惠政策发生调整，但调整方向（优惠增加或减少）及具体条款尚未公布。",
-          "sources": [
-            {
-              "title": "财政部 税务总局 工业和信息化部关于调整节能汽车、新能源汽车车船税优惠政策的公告",
-              "source": "财政部财政新闻",
-              "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260703_3992823.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "财政部财政新闻",
-          "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260703_3992823.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "财政部 税务总局 工业和信息化部有关司负责人就调整节能汽车、新能源汽车车船税优惠政策答记者问",
-          "summary": "三部门就调整节能汽车、新能源汽车车船税优惠政策答记者问，但具体调整内容未披露。",
-          "description": "三部门就调整节能汽车、新能源汽车车船税优惠政策答记者问，但具体调整内容未披露。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，无法确定车船税优惠政策的具体调整内容。",
-          "sources": [
-            {
-              "title": "财政部 税务总局 工业和信息化部有关司负责人就调整节能汽车、新能源汽车车船税优惠政策答记者问",
-              "source": "财政部财政新闻",
-              "url": "http://szs.mof.gov.cn/zhengcejiedu/202607/t20260703_3992830.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "财政部财政新闻",
-          "url": "http://szs.mof.gov.cn/zhengcejiedu/202607/t20260703_3992830.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
-          "summary": "中央军委晋升上将军衔仪式举行，习近平出席并颁发命令状。",
-          "description": "中央军委晋升上将军衔仪式举行，习近平出席并颁发命令状。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "部分军官晋升为上将军衔。",
-          "sources": [
-            {
-              "title": "中央军委举行晋升上将军衔仪式 习近平颁发命令状并向晋衔的军官表示祝贺",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074235.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074235.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "国务院印发《美丽中国建设“十五五”规划》",
-          "summary": "国务院印发《美丽中国建设“十五五”规划》，明确未来五年生态文明建设路线图。",
-          "description": "国务院印发《美丽中国建设“十五五”规划》，明确未来五年生态文明建设路线图。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该规划是首次以“十五五”为周期制定的美丽中国建设专项规划，相比以往环保政策，其目标更系统、任务更具体、工程更明确，体现了国家层面对生态文明建设的持续强化。",
-          "sources": [
-            {
-              "title": "国务院印发《美丽中国建设“十五五”规划》",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074219.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074219.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "习近平在庆祝中国共产党成立105周年大会上的讲话单行本出版",
-          "summary": "习近平在建党105周年大会上的讲话单行本正式出版发行。",
-          "description": "习近平在建党105周年大会上的讲话单行本正式出版发行。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该讲话的正式单行本开始公开发行，此前仅有大会现场讲话。",
-          "sources": [
-            {
-              "title": "习近平在庆祝中国共产党成立105周年大会上的讲话单行本出版",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074214.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074214.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "国务院印发美丽中国建设“十五五”规划通知",
-          "summary": "国务院印发美丽中国建设“十五五”规划通知，要求贯彻执行，但具体规划内容尚未公开。",
-          "description": "国务院印发美丽中国建设“十五五”规划通知，要求贯彻执行，但具体规划内容尚未公开。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前仅有印发通知的动作，具体政策目标、任务和措施尚未公开，无法判断实质性变化。",
-          "sources": [
-            {
-              "title": "国务院印发美丽中国建设“十五五”规划通知",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074199.htm",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-03",
-          "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
-          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "description": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "sources": [
-            {
-              "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
-              "source": "国家统计局数据发布",
-              "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
-              "published_at": "2026-07-03T00:00:00.000Z"
-            }
-          ],
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
-          "score": 100,
-          "publishedAt": "2026-07-03T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "新华社评论员：把党的优秀特质不断发扬光大——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "保持昂扬斗志 强化使命担当——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话坚定中央和国家机关、人民团体广大干部职工砥砺前行意志",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-          "confidence": "high",
-          "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
-            "推进由治及兴 共筑复兴伟业——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话为香港各界奋进新征程指明方向"
-          ],
-          "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "公共政策",
-              "吴政隆在湖北湖南调研时指",
-              "持续增强内生动力",
-              "推动经济向新向优向好发展"
-            ],
-            "confidence": "high"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "A",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-              "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-              "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "A",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-              "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "可能的政策风险包括油价波动对通胀的影响，但本次信息不足。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 中国政府网要闻、国家发展改革委新闻发布 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-07-04",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中国权威政策落地是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
-      "event_id": "lane-china_us_ai",
-      "title": "中美 AI 发展",
-      "lane_id": "china_us_ai",
-      "lane_label": "中美 AI 发展",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-05-31T00:00:00.000Z",
-      "last_seen_at": "2026-07-04T00:00:00.000Z",
-      "updated_at": "2026-07-04T00:00:00.000Z",
-      "definition": {
-        "one_sentence": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、OpenAI News",
-        "background": "每日经济新闻中文财经、公司和市场新闻 相关来源：每日经济新闻、OpenAI News",
-        "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中美 AI 发展 会影响政策、市场、产业或国际变化判断；覆盖 2 个公开来源，仍处在高时效窗口内。",
-        "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "优先跟踪",
-        "brief": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-        "rationale": [
-          "属于中美 AI 发展主线",
-          "重要性评分为 100",
-          "证据置信度为高"
-        ],
-        "market_symbols": [],
-        "policy_status": "",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "国际",
-          "商业",
-          "韩国股民上半年",
-          "地缘政治"
-        ],
-        "entities": {
-          "companies": [
-            "OpenAI"
-          ],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网"
-          ],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI",
-            "OpenAI",
-            "GitHub",
-            "model",
-            "人工智能"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-        "basis": [
-          "每日经济新闻中文财经、公司和市场新闻",
-          "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-          "OpenAI发布Signals数据",
-          "显示ChatGPT采用率全球增长"
-        ],
-        "latest_change": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09：每日经济新闻中文财经、公司和市场新闻",
-        "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
-      },
-      "evidence": {
-        "source_count": 4,
-        "official_source_count": 1,
-        "financial_media_count": 1,
-        "timeline_count": 12,
-        "confidence_basis": "high",
-        "evidence_types": {
-          "reliable_media_report": 1,
-          "unknown": 3,
-          "industry_analysis": 2
-        },
-        "primary_source": {
-          "name": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html"
-        },
-        "source_links": [
-          {
-            "item_id": "international-item-0faf1e430b",
-            "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
-            "published_at": "2026-07-04T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-6fbc3708a9",
-            "title": "ChatGPT采用如何扩大",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-            "published_at": "2026-06-30T09:00:00.000Z",
-            "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-adcd2971e7",
-            "title": "介绍GeneBench-Pro",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/introducing-genebench-pro",
-            "published_at": "2026-06-30T00:00:00.000Z",
-            "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-ef5d8d65ca",
-            "title": "绘制欧洲AI劳动力机遇地图",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-            "published_at": "2026-06-29T07:00:00.000Z",
-            "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "business-openai-news-d244536823",
-            "title": "惠普公司与OpenAI启动Frontier战略合作",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/hp-frontier-partnership",
-            "published_at": "2026-06-28T17:00:00.000Z",
-            "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "tech-openai-news-fc602e9f59",
-            "title": "预览GPT-5.6 Sol：下一代模型",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-            "published_at": "2026-06-26T10:00:00.000Z",
-            "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
-        ]
-      },
-      "latest_update": {
-        "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-        "summary": "每日经济新闻中文财经、公司和市场新闻",
-        "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
-        "published_at": "2026-07-04T00:00:00.000Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
-          "source": "每日经济新闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-          "evidence_url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "OpenAI发布Signals数据",
-          "evidence_url": "https://openai.com/index/introducing-genebench-pro",
-          "source": "OpenAI News",
-          "confidence": "高"
-        },
-        {
-          "fact": "显示ChatGPT采用率全球增长",
-          "evidence_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-          "source": "OpenAI News",
-          "confidence": "高"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
-          "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "industry": {
-          "impact": "可能影响 国际、商业、韩国股民上半年、地缘政治 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "company": {
-          "impact": "关联实体：AI、OpenAI、model、人工智能。",
-          "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 国际、商业、韩国股民上半年 的后续变化",
-            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 国际、商业、韩国股民上半年 的后续变化",
-            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 国际、商业、韩国股民上半年 的后续变化",
-            "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "目前未提及具体风险，但过度依赖单一数据点可能带来误判。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "基准设计可能不全面，导致过度优化或偏见；缺乏标准化可能导致比较困难；若结果不理想，可能打击AI在科学领域的信心。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "目前未提及具体风险，但过度依赖单一数据点可能带来误判。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "基准设计可能不全面，导致过度优化或偏见；缺乏标准化可能导致比较困难；若结果不理想，可能打击AI在科学领域的信心。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 国际、商业、韩国股民上半年 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中美 AI 发展是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "international-item-0faf1e430b",
-          "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
-          "published_at": "2026-07-04T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-6fbc3708a9",
-          "title": "ChatGPT采用如何扩大",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-          "published_at": "2026-06-30T09:00:00.000Z",
-          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-adcd2971e7",
-          "title": "介绍GeneBench-Pro",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/introducing-genebench-pro",
-          "published_at": "2026-06-30T00:00:00.000Z",
-          "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-ef5d8d65ca",
-          "title": "绘制欧洲AI劳动力机遇地图",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-          "published_at": "2026-06-29T07:00:00.000Z",
-          "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "business-openai-news-d244536823",
-          "title": "惠普公司与OpenAI启动Frontier战略合作",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/hp-frontier-partnership",
-          "published_at": "2026-06-28T17:00:00.000Z",
-          "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "tech-openai-news-fc602e9f59",
-          "title": "预览GPT-5.6 Sol：下一代模型",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-          "published_at": "2026-06-26T10:00:00.000Z",
-          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-22",
-          "title": "Daybreak：保护全球每个组织的工具",
-          "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
-          "description": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "此前，组织通常依赖手动或半自动化的漏洞管理流程。Daybreak工具的推出，可能使AI驱动的全流程自动化漏洞管理成为可选项，但来源未提供变更前后的对比数据。",
-          "sources": [
-            {
-              "title": "Daybreak：保护全球每个组织的工具",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/daybreak-securing-the-world",
-              "published_at": "2026-06-22T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/daybreak-securing-the-world",
-          "score": 100,
-          "publishedAt": "2026-06-22T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "修补星球：Daybreak倡议支持开源维护者",
-          "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
-          "description": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI新增了一项针对开源安全的倡议，为维护者提供AI驱动的漏洞修复工具。此前，OpenAI在开源安全领域没有类似的专项支持计划。",
-          "sources": [
-            {
-              "title": "修补星球：Daybreak倡议支持开源维护者",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/patch-the-planet",
-              "published_at": "2026-06-22T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/patch-the-planet",
-          "score": 100,
-          "publishedAt": "2026-06-22T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Omio如何构建对话式旅行的未来",
-          "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-          "description": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "Omio从传统旅行平台转向AI原生公司，将对话式AI集成到产品中。",
-          "sources": [
-            {
-              "title": "Omio如何构建对话式旅行的未来",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/omio",
-              "published_at": "2026-06-23T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/omio",
-          "score": 100,
-          "publishedAt": "2026-06-23T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "助力构建先进AI共享标准",
-          "summary": "OpenAI参与Appia基金会推动AI共享标准建设。",
-          "description": "OpenAI参与Appia基金会推动AI共享标准建设。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI从单纯技术研发转向积极参与行业标准制定，通过基金会形式推动全球协作。",
-          "sources": [
-            {
-              "title": "助力构建先进AI共享标准",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-              "published_at": "2026-06-23T13:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-          "score": 100,
-          "publishedAt": "2026-06-23T13:00:00.000Z"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "AI代理如何改变工作",
-          "summary": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
-          "description": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "这项研究揭示了AI代理在提升任务复杂度和延长任务执行时间方面的能力，可能改变人们对自动化范围的认知。此前类似的成果尚未公开。",
-          "sources": [
-            {
-              "title": "AI代理如何改变工作",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/how-agents-are-transforming-work",
-              "published_at": "2026-06-25T02:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/how-agents-are-transforming-work",
-          "score": 100,
-          "publishedAt": "2026-06-25T02:00:00.000Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "预览GPT-5.6 Sol：下一代模型",
-          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
-          "description": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI推出了GPT-5.6 Sol的预览，相较于前代模型，其在特定领域的能力有所增强，并提升了安全防护措施。",
-          "sources": [
-            {
-              "title": "预览GPT-5.6 Sol：下一代模型",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-              "published_at": "2026-06-26T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-          "score": 100,
-          "publishedAt": "2026-06-26T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-28",
-          "title": "惠普公司与OpenAI启动Frontier战略合作",
-          "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
-          "description": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "惠普从之前的合作模式进一步升级，将AI更深地融入核心业务流程，可能改变其产品开发和服务交付方式。",
-          "sources": [
-            {
-              "title": "惠普公司与OpenAI启动Frontier战略合作",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/hp-frontier-partnership",
-              "published_at": "2026-06-28T17:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/hp-frontier-partnership",
-          "score": 100,
-          "publishedAt": "2026-06-28T17:00:00.000Z"
-        },
-        {
-          "date": "2026-06-29",
-          "title": "绘制欧洲AI劳动力机遇地图",
-          "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
-          "description": "OpenAI新报告分析AI对欧盟就业的影响。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI发布了一份新报告，提供了对欧盟劳动力市场受AI影响的新视角。",
-          "sources": [
-            {
-              "title": "绘制欧洲AI劳动力机遇地图",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-              "published_at": "2026-06-29T07:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-          "score": 100,
-          "publishedAt": "2026-06-29T07:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "介绍GeneBench-Pro",
-          "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
-          "description": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前尚未有测试结果公布，但该基准的引入可能改变AI在生命科学领域的评估标准。现有基准可能不够复杂，而GeneBench-Pro通过真实世界数据提升了评估的相关性。",
-          "sources": [
-            {
-              "title": "介绍GeneBench-Pro",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/introducing-genebench-pro",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/introducing-genebench-pro",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "核心转储流行病学：修复一个18年的bug",
-          "summary": "OpenAI工程师通过大规模核心转储分析，发现并修复了一个存在18年的软件bug和硬件故障。",
-          "description": "OpenAI工程师通过大规模核心转储分析，发现并修复了一个存在18年的软件bug和硬件故障。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "通过这次分析，OpenAI修复了长期存在的软件bug并解决了硬件故障，提升了基础设施的稳定性。",
-          "sources": [
-            {
-              "title": "核心转储流行病学：修复一个18年的bug",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-          "score": 98,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "ChatGPT采用如何扩大",
-          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-          "description": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI新数据显示ChatGPT的全球采用率进一步扩大，用户活跃度和功能使用广度均有所提升。",
-          "sources": [
-            {
-              "title": "ChatGPT采用如何扩大",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-              "published_at": "2026-06-30T09:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-          "score": 100,
-          "publishedAt": "2026-06-30T09:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "reliable_media_report",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
-          "sources": [
-            {
-              "title": "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-04/4452188.html",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中美 AI 发展是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-          "confidence": "high",
-          "basis": [
-            "每日经济新闻中文财经、公司和市场新闻",
-            "韩国股民上半年28亿美元“扫货”中国AI全景图：A股北方华创、寒武纪领跑，港股中芯国际、MiniMax受追捧，渣打：外资态度“发生根本变化” 2026-07-04 13:09",
-            "OpenAI发布Signals数据"
-          ],
-          "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "国际",
-              "商业",
-              "韩国股民上半年",
-              "地缘政治"
-            ],
-            "confidence": "high"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "A",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 国际、商业、韩国股民上半年 的后续变化",
-              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 国际、商业、韩国股民上半年 的后续变化",
-              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "A",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 国际、商业、韩国股民上半年 的后续变化",
-              "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "目前未提及具体风险，但过度依赖单一数据点可能带来误判。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "基准设计可能不全面，导致过度优化或偏见；缺乏标准化可能导致比较困难；若结果不理想，可能打击AI在科学领域的信心。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 国际、商业、韩国股民上半年 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-07-04",
-            "judgment": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-            "change_type": "初始判断",
-            "reason": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中美 AI 发展是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
       "event_id": "topic-消费电子-空天地海-新一代通信网建设提速-消费电子-空天地海-新一代通信网建设提速",
       "title": "消费电子",
       "lane_id": "us_equities",
@@ -1879,8 +46,8 @@
       "priority_grade": "A",
       "importance_score": 100,
       "first_seen_at": "2026-06-08T00:00:00.000Z",
-      "last_seen_at": "2026-07-02T15:00:00.000Z",
-      "updated_at": "2026-07-02T15:00:00.000Z",
+      "last_seen_at": "2026-07-05T00:00:00.000Z",
+      "updated_at": "2026-07-05T00:00:00.000Z",
       "definition": {
         "one_sentence": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
         "background": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。 相关来源：Federal Reserve、中国政府网要闻、每日经济新闻",
@@ -1930,7 +97,7 @@
             "芯片"
           ]
         },
-        "related_item_count": 13
+        "related_item_count": 14
       },
       "current_judgment": {
         "summary": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
@@ -1940,14 +107,14 @@
           "BNP Paribas等机构执法行动终止",
           "具体细节未披露，影响待评估"
         ],
-        "latest_change": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动：美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
+        "latest_change": "07:58 PC及内存硬盘价格持续高位：硬盘一天三个价 经销商喊出“非刚需别买”：每日经济新闻中文财经、公司和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
         "source_count": 6,
         "official_source_count": 1,
-        "financial_media_count": 0,
+        "financial_media_count": 1,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
@@ -1956,8 +123,8 @@
           "industry_analysis": 2
         },
         "primary_source": {
-          "name": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-05/4452392.html"
         },
         "source_links": [
           {
@@ -2020,12 +187,12 @@
         ]
       },
       "latest_update": {
-        "title": "联邦储备委员会对小企业银行采取执法行动，并宣布终止对法国巴黎银行等实体的执法行动",
-        "summary": "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
-        "source": "Federal Reserve",
-        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
-        "published_at": "2026-07-02T15:00:00.000Z",
-        "score": 100
+        "title": "07:58 PC及内存硬盘价格持续高位：硬盘一天三个价 经销商喊出“非刚需别买”",
+        "summary": "每日经济新闻中文财经、公司和市场新闻",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-07-05/4452392.html",
+        "published_at": "2026-07-05T00:00:00.000Z",
+        "score": 83
       },
       "confirmed_facts": [
         {
@@ -2055,7 +222,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-04T09:01:02.304Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-05T00:01:02.599Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -2109,9 +276,9 @@
         {
           "type": "市场反馈",
           "description": "GOOGL -0.3599%",
-          "source": "Federal Reserve",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
-          "date": "2026-07-02",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-05/4452392.html",
+          "date": "2026-07-05",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -2323,28 +490,6 @@
         }
       ],
       "timeline": [
-        {
-          "date": "2026-06-09",
-          "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "每日经济新闻中文财经、公司和市场新闻",
-          "sources": [
-            {
-              "title": "苹果开发者大会押注AI：迟到两年的Siri升级，能否重塑增长预期？",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
-              "published_at": "2026-06-09T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-09/4420679.html",
-          "score": 95,
-          "publishedAt": "2026-06-09T00:00:00.000Z"
-        },
         {
           "date": "2026-06-11",
           "title": "NASA机器人技术演示将推进原型伽马射线探测器",
@@ -2586,6 +731,28 @@
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
           "score": 100,
           "publishedAt": "2026-07-02T15:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "07:58 PC及内存硬盘价格持续高位：硬盘一天三个价 经销商喊出“非刚需别买”",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "每日经济新闻中文财经、公司和市场新闻",
+          "sources": [
+            {
+              "title": "07:58 PC及内存硬盘价格持续高位：硬盘一天三个价 经销商喊出“非刚需别买”",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-05/4452392.html",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-05/4452392.html",
+          "score": 83,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -2769,7 +936,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-02",
+            "date": "2026-07-05",
             "judgment": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
             "change_type": "初始判断",
             "reason": "美股变化出现高优先级信号，建议立即核对原文、行情和后续官方发布；关联 GOOGL。",
@@ -2779,6 +946,1883 @@
         "open_questions": [
           {
             "question": "消费电子是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "lane_id": "china_policy",
+      "lane_label": "中国权威政策落地",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-07-03T00:00:00.000Z",
+      "last_seen_at": "2026-07-04T00:00:00.000Z",
+      "updated_at": "2026-07-04T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。 相关来源：中国政府网要闻",
+        "background": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。 相关来源：中国政府网要闻",
+        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "未发布新的具体政策或措施，但调研释放了中央对地方经济工作持续关注和要求的信号，重申了既定发展方向。",
+        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "rationale": [
+          "属于中国权威政策落地主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "落地执行",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "公共政策",
+          "吴政隆在湖北湖南调研时指",
+          "持续增强内生动力",
+          "推动经济向新向优向好发展"
+        ],
+        "entities": {
+          "companies": [],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网",
+            "发改委",
+            "国家发展改革委",
+            "财政部",
+            "统计局",
+            "国家统计局"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "basis": [
+          "调研强调高质量发展和正确政绩观",
+          "重申完成全年经济目标及十五五开局要求",
+          "未公布具体新措施",
+          "体现中央对地方经济工作的持续关注"
+        ],
+        "latest_change": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展：吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 4,
+        "official_source_count": 20,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "unknown": 5,
+          "official_announcement": 1
+        },
+        "primary_source": {
+          "name": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm"
+        },
+        "source_links": [
+          {
+            "item_id": "news-item-85462a557e",
+            "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+            "published_at": "2026-07-04T00:00:00.000Z",
+            "summary": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-d294025381",
+            "title": "习近平建党105周年讲话为香港由治及兴指明方向",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+            "published_at": "2026-07-04T00:00:00.000Z",
+            "summary": "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-10eb37b546",
+            "title": "新华社评论员：把党的优秀特质不断发扬光大",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+            "published_at": "2026-07-04T00:00:00.000Z",
+            "summary": "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-d02d9b4409",
+            "title": "习近平总书记建党105周年讲话激发干部共鸣",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+            "published_at": "2026-07-04T00:00:00.000Z",
+            "summary": "习近平在建党105周年大会上讲话，引发干部强烈共鸣。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-e033f9ad97",
+            "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+            "published_at": "2026-07-04T00:00:00.000Z",
+            "summary": "人民日报评论员文章，围绕党的优秀特质与为什么能，是建党105周年纪念的一部分。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-91e4adaa23",
+            "title": "我国加快建设循环经济高质量发展体系",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074339.htm",
+            "published_at": "2026-07-04T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+        "summary": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+        "published_at": "2026-07-04T00:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "调研强调高质量发展和正确政绩观",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "重申完成全年经济目标及十五五开局要求",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "未公布具体新措施",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "体现中央对地方经济工作的持续关注",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "evidence": [
+            "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+            "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+            "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力、推动经济向新向优向好发展 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+            "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+            "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：国务院、中国政府网、国家发展改革委。",
+          "evidence": [
+            "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+            "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+            "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+            "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+            "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+            "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+            "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "若地方落实不力或经济目标未达成，可能引发问责压力；但调研本身不构成直接风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "若后续落实不力，可能削弱讲话的预期效果；外部环境变化也可能干扰融入进程。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "无明显风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "若地方落实不力或经济目标未达成，可能引发问责压力；但调研本身不构成直接风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "若后续落实不力，可能削弱讲话的预期效果；外部环境变化也可能干扰融入进程。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "无明显风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中国权威政策落地是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "news-item-85462a557e",
+          "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+          "published_at": "2026-07-04T00:00:00.000Z",
+          "summary": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-d294025381",
+          "title": "习近平建党105周年讲话为香港由治及兴指明方向",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+          "published_at": "2026-07-04T00:00:00.000Z",
+          "summary": "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-10eb37b546",
+          "title": "新华社评论员：把党的优秀特质不断发扬光大",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+          "published_at": "2026-07-04T00:00:00.000Z",
+          "summary": "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-d02d9b4409",
+          "title": "习近平总书记建党105周年讲话激发干部共鸣",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+          "published_at": "2026-07-04T00:00:00.000Z",
+          "summary": "习近平在建党105周年大会上讲话，引发干部强烈共鸣。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-e033f9ad97",
+          "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+          "published_at": "2026-07-04T00:00:00.000Z",
+          "summary": "人民日报评论员文章，围绕党的优秀特质与为什么能，是建党105周年纪念的一部分。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-91e4adaa23",
+          "title": "我国加快建设循环经济高质量发展体系",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074339.htm",
+          "published_at": "2026-07-04T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-03",
+          "title": "财政部 税务总局 工业和信息化部关于调整节能汽车、新能源汽车车船税优惠政策的公告",
+          "summary": "三部委发布调整节能及新能源汽车车船税优惠政策公告，但具体内容未披露。",
+          "description": "三部委发布调整节能及新能源汽车车船税优惠政策公告，但具体内容未披露。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，公告内容未提供调整前后的具体变化。",
+          "sources": [
+            {
+              "title": "财政部 税务总局 工业和信息化部关于调整节能汽车、新能源汽车车船税优惠政策的公告",
+              "source": "财政部财政新闻",
+              "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260703_3992823.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260703_3992823.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "财政部 税务总局 工业和信息化部有关司负责人就调整节能汽车、新能源汽车车船税优惠政策答记者问",
+          "summary": "三部委就调整节能及新能源汽车车船税优惠政策答记者问，但具体调整内容未公布。",
+          "description": "三部委就调整节能及新能源汽车车船税优惠政策答记者问，但具体调整内容未公布。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，无法确定具体调整内容。仅知三部委就车船税优惠政策调整进行了官方回应。",
+          "sources": [
+            {
+              "title": "财政部 税务总局 工业和信息化部有关司负责人就调整节能汽车、新能源汽车车船税优惠政策答记者问",
+              "source": "财政部财政新闻",
+              "url": "http://szs.mof.gov.cn/zhengcejiedu/202607/t20260703_3992830.htm",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://szs.mof.gov.cn/zhengcejiedu/202607/t20260703_3992830.htm",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
+          "summary": "国家统计局发布6月下旬生产资料价格数据，具体变动待查。",
+          "description": "国家统计局发布6月下旬生产资料价格数据，具体变动待查。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "本次数据为6月下旬最新一期，相比前期数据可能发生波动。但具体变化幅度和方向需查阅完整报告。",
+          "sources": [
+            {
+              "title": "2026年6月下旬流通领域重要生产资料市场价格变动情况",
+              "source": "国家统计局数据发布",
+              "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "国家统计局数据发布",
+          "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260703_1964057.html",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-03",
+          "title": "应习近平邀请 纳米比亚总统将访华",
+          "summary": "纳米比亚总统将于7月5日至11日应习近平邀请访华。",
+          "description": "纳米比亚总统将于7月5日至11日应习近平邀请访华。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "纳米比亚总统即将对中国进行国事访问，这是两国近期高层外交的重要动态。此前未报道同类访问安排，此次邀请开启新阶段的双边互动。",
+          "sources": [
+            {
+              "title": "应习近平邀请 纳米比亚总统将访华",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/03/VIDE2SPf4sfFK4ZsyuvprUmP260703.shtml",
+              "published_at": "2026-07-03T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/03/VIDE2SPf4sfFK4ZsyuvprUmP260703.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-03T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+          "summary": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+          "description": "吴政隆调研鄂湘，强调高质量发展与十五五开局，无新政策但释放稳经济信号。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "未发布新的具体政策或措施，但调研释放了中央对地方经济工作持续关注和要求的信号，重申了既定发展方向。",
+          "sources": [
+            {
+              "title": "吴政隆在湖北湖南调研时指出 持续增强内生动力 推动经济向新向优向好发展",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074321.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "习近平建党105周年讲话为香港由治及兴指明方向",
+          "summary": "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+          "description": "习近平建党105周年讲话为香港由治及兴明确方向，香港各界反响积极，但具体落实措施尚待观察。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "习近平讲话为香港未来发展提供了明确的政策指引，强调在由治及兴阶段需继续坚持‘一国两制’方针，并更加积极地融入国家发展大局。这标志着中央对香港的治理思路从‘止暴制乱’向‘发展振兴’进一步深化。",
+          "sources": [
+            {
+              "title": "习近平建党105周年讲话为香港由治及兴指明方向",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074319.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "新华社评论员：把党的优秀特质不断发扬光大",
+          "summary": "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。",
+          "description": "习近平在建党105周年大会上强调党的优秀特质，属理论宣传讲话，无具体事件变化。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前没有具体政策或事件变化，本次讲话是理论阐述和宣传性质的总结性论述。",
+          "sources": [
+            {
+              "title": "新华社评论员：把党的优秀特质不断发扬光大",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074296.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "习近平总书记建党105周年讲话激发干部共鸣",
+          "summary": "习近平在建党105周年大会上讲话，引发干部强烈共鸣。",
+          "description": "习近平在建党105周年大会上讲话，引发干部强烈共鸣。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，没有报告具体的变化或新政策。",
+          "sources": [
+            {
+              "title": "习近平总书记建党105周年讲话激发干部共鸣",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074293.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+          "summary": "人民日报评论员文章，围绕党的优秀特质与为什么能，是建党105周年纪念的一部分。",
+          "description": "人民日报评论员文章，围绕党的优秀特质与为什么能，是建党105周年纪念的一部分。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "本文是纪念性评论，未带来具体政策或事件变化，但官方媒体借建党周年契机强化了党的形象叙事。",
+          "sources": [
+            {
+              "title": "人民日报评论员：优秀特质，中国共产党为什么能的关键密码——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074290.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "我国加快建设循环经济高质量发展体系",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "我国加快建设循环经济高质量发展体系",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074339.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074339.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "谌贻琴在陕西调研时强调 促进养老事业和养老产业发展 持续做强做大文旅产业",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "谌贻琴在陕西调研时强调 促进养老事业和养老产业发展 持续做强做大文旅产业",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074329.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074329.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-04",
+          "title": "《习近平谈治国理政》第五卷中斯读者会在斯里兰卡首都科伦坡举行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "《习近平谈治国理政》第五卷中斯读者会在斯里兰卡首都科伦坡举行",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074331.htm",
+              "published_at": "2026-07-04T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074331.htm",
+          "score": 100,
+          "publishedAt": "2026-07-04T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+          "confidence": "high",
+          "basis": [
+            "调研强调高质量发展和正确政绩观",
+            "重申完成全年经济目标及十五五开局要求",
+            "未公布具体新措施"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "公共政策",
+              "吴政隆在湖北湖南调研时指",
+              "持续增强内生动力",
+              "推动经济向新向优向好发展"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "若地方落实不力或经济目标未达成，可能引发问责压力；但调研本身不构成直接风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "若后续落实不力，可能削弱讲话的预期效果；外部环境变化也可能干扰融入进程。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "无明显风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 公共政策、吴政隆在湖北湖南调研时指、持续增强内生动力 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-07-04",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "change_type": "初始判断",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中国权威政策落地是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
+      "event_id": "lane-china_us_ai",
+      "title": "中美 AI 发展",
+      "lane_id": "china_us_ai",
+      "lane_label": "中美 AI 发展",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-05-31T00:00:00.000Z",
+      "last_seen_at": "2026-06-30T09:00:00.000Z",
+      "updated_at": "2026-06-30T09:00:00.000Z",
+      "definition": {
+        "one_sentence": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。 相关来源：OpenAI News",
+        "background": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。 相关来源：OpenAI News",
+        "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "OpenAI新数据显示ChatGPT的全球采用率进一步扩大，用户活跃度和功能使用广度均有所提升。",
+        "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+        "rationale": [
+          "属于中美 AI 发展主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "国际",
+          "商业",
+          "地缘政治",
+          "AI政策"
+        ],
+        "entities": {
+          "companies": [
+            "OpenAI"
+          ],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI",
+            "OpenAI",
+            "GitHub",
+            "model",
+            "人工智能"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+        "basis": [
+          "OpenAI发布Signals数据",
+          "显示ChatGPT采用率全球增长",
+          "用户使用量和功能探索增加",
+          "增长覆盖多区域和语言"
+        ],
+        "latest_change": "ChatGPT采用如何扩大：OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 3,
+        "official_source_count": 1,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "unknown": 3,
+          "industry_analysis": 3
+        },
+        "primary_source": {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded"
+        },
+        "source_links": [
+          {
+            "item_id": "international-openai-news-6fbc3708a9",
+            "title": "ChatGPT采用如何扩大",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+            "published_at": "2026-06-30T09:00:00.000Z",
+            "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "international-openai-news-adcd2971e7",
+            "title": "介绍GeneBench-Pro",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/introducing-genebench-pro",
+            "published_at": "2026-06-30T00:00:00.000Z",
+            "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "international-openai-news-ef5d8d65ca",
+            "title": "绘制欧洲AI劳动力机遇地图",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+            "published_at": "2026-06-29T07:00:00.000Z",
+            "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-d244536823",
+            "title": "惠普公司与OpenAI启动Frontier战略合作",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/hp-frontier-partnership",
+            "published_at": "2026-06-28T17:00:00.000Z",
+            "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "tech-openai-news-fc602e9f59",
+            "title": "预览GPT-5.6 Sol：下一代模型",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+            "published_at": "2026-06-26T10:00:00.000Z",
+            "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "business-openai-news-7ebe6c8065",
+            "title": "AI代理如何改变工作",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/how-agents-are-transforming-work",
+            "published_at": "2026-06-25T02:00:00.000Z",
+            "summary": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "ChatGPT采用如何扩大",
+        "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+        "source": "OpenAI News",
+        "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+        "published_at": "2026-06-30T09:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "OpenAI发布Signals数据",
+          "evidence_url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "显示ChatGPT采用率全球增长",
+          "evidence_url": "https://openai.com/index/introducing-genebench-pro",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "用户使用量和功能探索增加",
+          "evidence_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "source": "OpenAI News",
+          "confidence": "高"
+        },
+        {
+          "fact": "增长覆盖多区域和语言",
+          "evidence_url": "https://openai.com/index/hp-frontier-partnership",
+          "source": "OpenAI News",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
+          "evidence": [
+            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+            "OpenAI新报告分析AI对欧盟就业的影响。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 国际、商业、地缘政治、AI政策 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+            "OpenAI新报告分析AI对欧盟就业的影响。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：AI、OpenAI、model、人工智能。",
+          "evidence": [
+            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+            "OpenAI新报告分析AI对欧盟就业的影响。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+            "OpenAI新报告分析AI对欧盟就业的影响。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+            "OpenAI新报告分析AI对欧盟就业的影响。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 国际、商业、地缘政治 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 国际、商业、地缘政治 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 国际、商业、地缘政治 的后续变化",
+            "留意 OpenAI News 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "目前未提及具体风险，但过度依赖单一数据点可能带来误判。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "基准设计可能不全面，导致过度优化或偏见；缺乏标准化可能导致比较困难；若结果不理想，可能打击AI在科学领域的信心。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "目前未提及具体风险，但过度依赖单一数据点可能带来误判。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "基准设计可能不全面，导致过度优化或偏见；缺乏标准化可能导致比较困难；若结果不理想，可能打击AI在科学领域的信心。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 国际、商业、地缘政治 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 OpenAI News 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中美 AI 发展是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "international-openai-news-6fbc3708a9",
+          "title": "ChatGPT采用如何扩大",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+          "published_at": "2026-06-30T09:00:00.000Z",
+          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "international-openai-news-adcd2971e7",
+          "title": "介绍GeneBench-Pro",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-genebench-pro",
+          "published_at": "2026-06-30T00:00:00.000Z",
+          "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "international-openai-news-ef5d8d65ca",
+          "title": "绘制欧洲AI劳动力机遇地图",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "published_at": "2026-06-29T07:00:00.000Z",
+          "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-d244536823",
+          "title": "惠普公司与OpenAI启动Frontier战略合作",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/hp-frontier-partnership",
+          "published_at": "2026-06-28T17:00:00.000Z",
+          "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "tech-openai-news-fc602e9f59",
+          "title": "预览GPT-5.6 Sol：下一代模型",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+          "published_at": "2026-06-26T10:00:00.000Z",
+          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "business-openai-news-7ebe6c8065",
+          "title": "AI代理如何改变工作",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-agents-are-transforming-work",
+          "published_at": "2026-06-25T02:00:00.000Z",
+          "summary": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-21",
+          "title": "三星电子向员工推出ChatGPT和Codex",
+          "summary": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "description": "三星电子为全球员工部署ChatGPT Enterprise和Codex，标志企业级AI大规模应用。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此前，三星电子可能仅在有限范围内测试或未部署这些AI工具。现在，全球员工均可使用，标志着企业级AI的普及迈出重要一步。",
+          "sources": [
+            {
+              "title": "三星电子向员工推出ChatGPT和Codex",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+              "published_at": "2026-06-21T23:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "score": 100,
+          "publishedAt": "2026-06-21T23:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "Daybreak：保护全球每个组织的工具",
+          "summary": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
+          "description": "OpenAI推出Daybreak工具集，含Codex Security和GPT-5.5-Cyber，用于自动化漏洞管理。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此前，组织通常依赖手动或半自动化的漏洞管理流程。Daybreak工具的推出，可能使AI驱动的全流程自动化漏洞管理成为可选项，但来源未提供变更前后的对比数据。",
+          "sources": [
+            {
+              "title": "Daybreak：保护全球每个组织的工具",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/daybreak-securing-the-world",
+              "published_at": "2026-06-22T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/daybreak-securing-the-world",
+          "score": 100,
+          "publishedAt": "2026-06-22T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-22",
+          "title": "修补星球：Daybreak倡议支持开源维护者",
+          "summary": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
+          "description": "OpenAI发布Patch the Planet倡议，用AI和专家评审帮助开源维护者修漏洞。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI新增了一项针对开源安全的倡议，为维护者提供AI驱动的漏洞修复工具。此前，OpenAI在开源安全领域没有类似的专项支持计划。",
+          "sources": [
+            {
+              "title": "修补星球：Daybreak倡议支持开源维护者",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/patch-the-planet",
+              "published_at": "2026-06-22T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/patch-the-planet",
+          "score": 100,
+          "publishedAt": "2026-06-22T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "Omio如何构建对话式旅行的未来",
+          "summary": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+          "description": "Omio借助OpenAI打造对话式旅行服务，加速AI原生转型。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "Omio从传统旅行平台转向AI原生公司，将对话式AI集成到产品中。",
+          "sources": [
+            {
+              "title": "Omio如何构建对话式旅行的未来",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/omio",
+              "published_at": "2026-06-23T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/omio",
+          "score": 100,
+          "publishedAt": "2026-06-23T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-23",
+          "title": "助力构建先进AI共享标准",
+          "summary": "OpenAI参与Appia基金会推动AI共享标准建设。",
+          "description": "OpenAI参与Appia基金会推动AI共享标准建设。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI从单纯技术研发转向积极参与行业标准制定，通过基金会形式推动全球协作。",
+          "sources": [
+            {
+              "title": "助力构建先进AI共享标准",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+              "published_at": "2026-06-23T13:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+          "score": 100,
+          "publishedAt": "2026-06-23T13:00:00.000Z"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "AI代理如何改变工作",
+          "summary": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
+          "description": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "这项研究揭示了AI代理在提升任务复杂度和延长任务执行时间方面的能力，可能改变人们对自动化范围的认知。此前类似的成果尚未公开。",
+          "sources": [
+            {
+              "title": "AI代理如何改变工作",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/how-agents-are-transforming-work",
+              "published_at": "2026-06-25T02:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-agents-are-transforming-work",
+          "score": 100,
+          "publishedAt": "2026-06-25T02:00:00.000Z"
+        },
+        {
+          "date": "2026-06-26",
+          "title": "预览GPT-5.6 Sol：下一代模型",
+          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+          "description": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI推出了GPT-5.6 Sol的预览，相较于前代模型，其在特定领域的能力有所增强，并提升了安全防护措施。",
+          "sources": [
+            {
+              "title": "预览GPT-5.6 Sol：下一代模型",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+              "published_at": "2026-06-26T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+          "score": 100,
+          "publishedAt": "2026-06-26T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-28",
+          "title": "惠普公司与OpenAI启动Frontier战略合作",
+          "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
+          "description": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "惠普从之前的合作模式进一步升级，将AI更深地融入核心业务流程，可能改变其产品开发和服务交付方式。",
+          "sources": [
+            {
+              "title": "惠普公司与OpenAI启动Frontier战略合作",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/hp-frontier-partnership",
+              "published_at": "2026-06-28T17:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/hp-frontier-partnership",
+          "score": 100,
+          "publishedAt": "2026-06-28T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-29",
+          "title": "绘制欧洲AI劳动力机遇地图",
+          "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
+          "description": "OpenAI新报告分析AI对欧盟就业的影响。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI发布了一份新报告，提供了对欧盟劳动力市场受AI影响的新视角。",
+          "sources": [
+            {
+              "title": "绘制欧洲AI劳动力机遇地图",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "published_at": "2026-06-29T07:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "score": 100,
+          "publishedAt": "2026-06-29T07:00:00.000Z"
+        },
+        {
+          "date": "2026-06-30",
+          "title": "介绍GeneBench-Pro",
+          "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+          "description": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前尚未有测试结果公布，但该基准的引入可能改变AI在生命科学领域的评估标准。现有基准可能不够复杂，而GeneBench-Pro通过真实世界数据提升了评估的相关性。",
+          "sources": [
+            {
+              "title": "介绍GeneBench-Pro",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/introducing-genebench-pro",
+              "published_at": "2026-06-30T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-genebench-pro",
+          "score": 100,
+          "publishedAt": "2026-06-30T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-30",
+          "title": "核心转储流行病学：修复一个18年的bug",
+          "summary": "OpenAI工程师通过大规模核心转储分析，发现并修复了一个存在18年的软件bug和硬件故障。",
+          "description": "OpenAI工程师通过大规模核心转储分析，发现并修复了一个存在18年的软件bug和硬件故障。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "通过这次分析，OpenAI修复了长期存在的软件bug并解决了硬件故障，提升了基础设施的稳定性。",
+          "sources": [
+            {
+              "title": "核心转储流行病学：修复一个18年的bug",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+              "published_at": "2026-06-30T00:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+          "score": 98,
+          "publishedAt": "2026-06-30T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-30",
+          "title": "ChatGPT采用如何扩大",
+          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+          "description": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI新数据显示ChatGPT的全球采用率进一步扩大，用户活跃度和功能使用广度均有所提升。",
+          "sources": [
+            {
+              "title": "ChatGPT采用如何扩大",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+              "published_at": "2026-06-30T09:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+          "score": 100,
+          "publishedAt": "2026-06-30T09:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中美 AI 发展是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+          "confidence": "high",
+          "basis": [
+            "OpenAI发布Signals数据",
+            "显示ChatGPT采用率全球增长",
+            "用户使用量和功能探索增加"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "国际",
+              "商业",
+              "地缘政治",
+              "AI政策"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 国际、商业、地缘政治 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 国际、商业、地缘政治 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 国际、商业、地缘政治 的后续变化",
+              "留意 OpenAI News 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "目前未提及具体风险，但过度依赖单一数据点可能带来误判。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "基准设计可能不全面，导致过度优化或偏见；缺乏标准化可能导致比较困难；若结果不理想，可能打击AI在科学领域的信心。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 国际、商业、地缘政治 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 OpenAI News 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-06-30",
+            "judgment": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+            "change_type": "初始判断",
+            "reason": "中美 AI 发展出现高优先级信号，建议立即核对原文、行情和后续官方发布。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中美 AI 发展是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -2974,7 +3018,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-04T09:01:02.304Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-05T00:01:02.599Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -3656,7 +3700,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-04T09:01:02.304Z。",
+          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-05T00:01:02.599Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -4269,7 +4313,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-04T09:01:02.304Z。",
+          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-05T00:01:02.599Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -4991,7 +5035,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-04T09:01:02.304Z。",
+          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-05T00:01:02.599Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
