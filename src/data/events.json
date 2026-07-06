@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-06T00:01:43.644Z",
+  "generated_at": "2026-07-06T09:01:56.176Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 7,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-06T00:01:03.020Z"
+      "generated_at": "2026-07-06T09:01:32.570Z"
     },
     "llm": {
       "enabled": true,
@@ -37,943 +37,6 @@
     }
   ],
   "events": [
-    {
-      "event_id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "lane_id": "china_policy",
-      "lane_label": "中国权威政策落地",
-      "status": "active",
-      "priority_grade": "A",
-      "importance_score": 100,
-      "first_seen_at": "2026-07-03T00:00:00.000Z",
-      "last_seen_at": "2026-07-05T00:00:00.000Z",
-      "updated_at": "2026-07-05T00:00:00.000Z",
-      "definition": {
-        "one_sentence": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。 相关来源：中国政府网要闻",
-        "background": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。 相关来源：中国政府网要闻",
-        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "目前证据不足，原文未提及此前基础设施体系状况，无法判断具体变化。",
-        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "rationale": [
-          "属于中国权威政策落地主线",
-          "重要性评分为 100",
-          "证据置信度为高"
-        ],
-        "market_symbols": [],
-        "policy_status": "落地执行",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "AI芯片",
-          "公共政策",
-          "六张网",
-          "构建现代化基础设施体系"
-        ],
-        "entities": {
-          "companies": [],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网",
-            "发改委",
-            "国家发展改革委"
-          ],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI",
-            "算力",
-            "芯片"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-        "basis": [
-          "各地区各部门落实中央部署，推进“六张网”现代化基建",
-          "体系建设涉及地下管廊、算力枢纽等多类设施",
-          "具体网络构成与投资细节尚未公布",
-          "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。"
-        ],
-        "latest_change": "“六张网”构建现代化基础设施体系：国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-        "judgment_update": "初始判断",
-        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
-      },
-      "evidence": {
-        "source_count": 2,
-        "official_source_count": 20,
-        "financial_media_count": 0,
-        "timeline_count": 12,
-        "confidence_basis": "high",
-        "evidence_types": {
-          "unknown": 3,
-          "official_announcement": 3
-        },
-        "primary_source": {
-          "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm"
-        },
-        "source_links": [
-          {
-            "item_id": "news-item-f780a14f60",
-            "title": "“六张网”构建现代化基础设施体系",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-7a299be142",
-            "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-e63a046fe0",
-            "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-6f8ccf1b1d",
-            "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-02eeac274c",
-            "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-9f086d8464",
-            "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "继续观察后续官方发布和价格反应是否一致。"
-        ]
-      },
-      "latest_update": {
-        "title": "“六张网”构建现代化基础设施体系",
-        "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-        "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-        "published_at": "2026-07-05T00:00:00.000Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "各地区各部门落实中央部署，推进“六张网”现代化基建",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "体系建设涉及地下管廊、算力枢纽等多类设施",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "具体网络构成与投资细节尚未公布",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
-          "evidence": [
-            "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "industry": {
-          "impact": "可能影响 AI芯片、公共政策、六张网、构建现代化基础设施体系 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "company": {
-          "impact": "关联实体：AI、算力、芯片、国务院、中国政府网。",
-          "evidence": [
-            "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "高"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 AI芯片、公共政策、六张网 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 AI芯片、公共政策、六张网 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 AI芯片、公共政策、六张网 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "无显著风险，但需注意过度宣传可能导致形式主义。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "无显著风险，但需注意过度宣传可能导致形式主义。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 AI芯片、公共政策、六张网 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中国权威政策落地是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "news-item-f780a14f60",
-          "title": "“六张网”构建现代化基础设施体系",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-7a299be142",
-          "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-e63a046fe0",
-          "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-6f8ccf1b1d",
-          "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-02eeac274c",
-          "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-9f086d8464",
-          "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-07-04",
-          "title": "谌贻琴在陕西调研时强调 促进养老事业和养老产业发展 持续做强做大文旅产业",
-          "summary": "谌贻琴在陕西调研，强调促进养老和文旅产业发展。",
-          "description": "谌贻琴在陕西调研，强调促进养老和文旅产业发展。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前无明显政策变化，仅高层再次强调养老和文旅产业的重要性。",
-          "sources": [
-            {
-              "title": "谌贻琴在陕西调研时强调 促进养老事业和养老产业发展 持续做强做大文旅产业",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/04/VIDEK8lQagZWDSor2I6rgVX1260704.shtml",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/04/VIDEK8lQagZWDSor2I6rgVX1260704.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-04",
-          "title": "谌贻琴在陕西调研强调促进养老事业和养老产业发展 持续做强做大文旅产业",
-          "summary": "谌贻琴在陕西调研强调促进养老和文旅产业发展，释放政策利好信号。",
-          "description": "谌贻琴在陕西调研强调促进养老和文旅产业发展，释放政策利好信号。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前尚无具体政策或法规变动，本次调研属于高层对养老和文旅产业的再次表态和方向性强调，尚未形成新的具体措施。",
-          "sources": [
-            {
-              "title": "谌贻琴在陕西调研强调促进养老事业和养老产业发展 持续做强做大文旅产业",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074329.htm",
-              "published_at": "2026-07-04T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074329.htm",
-          "score": 100,
-          "publishedAt": "2026-07-04T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "“六张网”构建现代化基础设施体系",
-          "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-          "description": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，原文未提及此前基础设施体系状况，无法判断具体变化。",
-          "sources": [
-            {
-              "title": "“六张网”构建现代化基础设施体系",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-          "description": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该讲话进一步统一了全党思想，明确了新征程上的奋斗方向，但未涉及具体政策或行动变化。",
-          "sources": [
-            {
-              "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-          "description": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前无实质性变化，该文章是对已有政治路线的重申和强调，没有提出新政策或新举措。",
-          "sources": [
-            {
-              "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "各地采取有效措施 积极应对强降雨天气",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "各地采取有效措施 积极应对强降雨天气",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074387.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074387.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074376.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074376.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "《习近平关于基层工作方法论述摘编》出版发行",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "《习近平关于基层工作方法论述摘编》出版发行",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074369.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074369.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "强国复兴 濠江有为——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话指引澳门各界同心聚力实干奋进",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "强国复兴 濠江有为——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话指引澳门各界同心聚力实干奋进",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-          "confidence": "high",
-          "basis": [
-            "各地区各部门落实中央部署，推进“六张网”现代化基建",
-            "体系建设涉及地下管廊、算力枢纽等多类设施",
-            "具体网络构成与投资细节尚未公布"
-          ],
-          "what_would_change_this_view": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "high"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "AI芯片",
-              "公共政策",
-              "六张网",
-              "构建现代化基础设施体系"
-            ],
-            "confidence": "high"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "A",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 AI芯片、公共政策、六张网 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 AI芯片、公共政策、六张网 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "A",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 AI芯片、公共政策、六张网 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "无显著风险，但需注意过度宣传可能导致形式主义。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "继续观察后续官方发布和价格反应是否一致。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 AI芯片、公共政策、六张网 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-07-05",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中国权威政策落地是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
     {
       "event_id": "topic-消费电子-空天地海-新一代通信网建设提速-消费电子-空天地海-新一代通信网建设提速",
       "title": "消费电子",
@@ -1159,7 +222,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-06T00:01:03.020Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-06T09:01:32.570Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -2869,6 +1932,943 @@
       }
     },
     {
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "lane_id": "china_policy",
+      "lane_label": "中国权威政策落地",
+      "status": "watching",
+      "priority_grade": "B",
+      "importance_score": 100,
+      "first_seen_at": "2026-07-04T00:00:00.000Z",
+      "last_seen_at": "2026-07-06T00:00:00.000Z",
+      "updated_at": "2026-07-06T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
+        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
+        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 3 条官方或市场权威来源，仍处在高时效窗口内。",
+        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "观察验证",
+        "brief": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+        "rationale": [
+          "属于中国权威政策落地主线",
+          "重要性评分为 100",
+          "证据置信度为中"
+        ],
+        "market_symbols": [],
+        "policy_status": "落地执行",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "公共政策",
+          "习近平同黑山总统米拉托维",
+          "奇就中国同黑山建交",
+          "周年互致贺电"
+        ],
+        "entities": {
+          "companies": [],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网",
+            "发改委",
+            "国家发展改革委"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI",
+            "算力",
+            "芯片"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+        "basis": [
+          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+          "5月高技术制造业相关物流需求同比增长15.1%",
+          "全年2000亿元设备更新资金总额下达完毕"
+        ],
+        "latest_change": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "judgment_update": "初始判断",
+        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
+      },
+      "evidence": {
+        "source_count": 1,
+        "official_source_count": 20,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "medium",
+        "evidence_types": {
+          "official_announcement": 3,
+          "unknown": 3
+        },
+        "primary_source": {
+          "name": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm"
+        },
+        "source_links": [
+          {
+            "item_id": "news-item-ace8a79a45",
+            "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-ab155d3298",
+            "title": "5月高技术制造业相关物流需求同比增长15.1%",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-5f51dafd93",
+            "title": "全年2000亿元设备更新资金总额下达完毕",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-f780a14f60",
+            "title": "“六张网”构建现代化基础设施体系",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
+            "published_at": "2026-07-05T00:00:00.000Z",
+            "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-7a299be142",
+            "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
+            "published_at": "2026-07-05T00:00:00.000Z",
+            "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-e63a046fe0",
+            "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
+            "published_at": "2026-07-05T00:00:00.000Z",
+            "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "缺少跨来源交叉验证。"
+        ]
+      },
+      "latest_update": {
+        "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+        "published_at": "2026-07-06T00:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "source": "中国政府网要闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+          "source": "中国政府网要闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "5月高技术制造业相关物流需求同比增长15.1%",
+          "evidence_url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+          "source": "中国政府网要闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "全年2000亿元设备更新资金总额下达完毕",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
+          "source": "中国政府网要闻",
+          "confidence": "中"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "industry": {
+          "impact": "可能影响 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交、周年互致贺电 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "company": {
+          "impact": "关联实体：AI、算力、芯片、国务院、中国政府网、国家发展改革委。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "无显著风险，但需注意过度宣传可能导致形式主义。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "无显著风险，但需注意过度宣传可能导致形式主义。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "缺少跨来源交叉验证。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中国权威政策落地是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "news-item-ace8a79a45",
+          "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-ab155d3298",
+          "title": "5月高技术制造业相关物流需求同比增长15.1%",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-5f51dafd93",
+          "title": "全年2000亿元设备更新资金总额下达完毕",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-f780a14f60",
+          "title": "“六张网”构建现代化基础设施体系",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
+          "published_at": "2026-07-05T00:00:00.000Z",
+          "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-7a299be142",
+          "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
+          "published_at": "2026-07-05T00:00:00.000Z",
+          "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-e63a046fe0",
+          "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
+          "published_at": "2026-07-05T00:00:00.000Z",
+          "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-05",
+          "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+          "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
+          "description": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "该讲话进一步统一了全党思想，明确了新征程上的奋斗方向，但未涉及具体政策或行动变化。",
+          "sources": [
+            {
+              "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+          "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
+          "description": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前无实质性变化，该文章是对已有政治路线的重申和强调，没有提出新政策或新举措。",
+          "sources": [
+            {
+              "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
+          "summary": "中国政府向委内瑞拉提供首批地震救灾物资，7月5日晚启运。",
+          "description": "中国政府向委内瑞拉提供首批地震救灾物资，7月5日晚启运。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此前未见中国对委内瑞拉地震援助的公开报道，此次启运标志着中国开始实际执行对委内瑞拉的地震救援行动。",
+          "sources": [
+            {
+              "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+          "summary": "新华社发表评论文章学习总书记七一讲话精神，强调依靠人民。无具体事件变化。",
+          "description": "新华社发表评论文章学习总书记七一讲话精神，强调依靠人民。无具体事件变化。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "本文为官方学习宣传材料，未报道具体事件变化，属于既定政治路线的重申与强调。",
+          "sources": [
+            {
+              "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
+          "summary": "习近平主席在建党105周年大会上重申党改变了人民命运，暂无具体事件变化。",
+          "description": "习近平主席在建党105周年大会上重申党改变了人民命运，暂无具体事件变化。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前没有具体政策或事件变化，讲话重申和强调了党的历史成就与立场。",
+          "sources": [
+            {
+              "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "Xi's Speech at CPC 105th Anniversary Inspires Macao to Contribute to National Rejuvenation",
+          "summary": "习近平讲话鼓舞澳门各界，强调实干担当，助力强国复兴。",
+          "description": "习近平讲话鼓舞澳门各界，强调实干担当，助力强国复兴。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前证据不足，仅澳门社会层面表达了新的共识和奋斗决心。",
+          "sources": [
+            {
+              "title": "Xi's Speech at CPC 105th Anniversary Inspires Macao to Contribute to National Rejuvenation",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
+          "summary": "张国清调研新疆央企援疆，强调产业赋能与就业导向。",
+          "description": "张国清调研新疆央企援疆，强调产业赋能与就业导向。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此次调研并未发布新政策，但明确了中央企业援疆工作的当前重点方向，即更强调产业和就业的实质性效益。",
+          "sources": [
+            {
+              "title": "张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074376.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074376.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "【视频】《习近平关于基层工作方法论述摘编》出版发行",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】《习近平关于基层工作方法论述摘编》出版发行",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/05/VIDEkpuaf9zNHOEqwIhy5DQS260705.shtml",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/05/VIDEkpuaf9zNHOEqwIhy5DQS260705.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-05",
+          "title": "【视频】张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/05/VIDE5WEoZRh6kTtGleEEaLeh260705.shtml",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/05/VIDE5WEoZRh6kTtGleEEaLeh260705.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "5月高技术制造业相关物流需求同比增长15.1%",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "5月高技术制造业相关物流需求同比增长15.1%",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "全年2000亿元设备更新资金总额下达完毕",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "全年2000亿元设备更新资金总额下达完毕",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+          "confidence": "medium",
+          "basis": [
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
+            "5月高技术制造业相关物流需求同比增长15.1%"
+          ],
+          "what_would_change_this_view": [
+            "缺少跨来源交叉验证。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "medium"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "公共政策",
+              "习近平同黑山总统米拉托维",
+              "奇就中国同黑山建交",
+              "周年互致贺电"
+            ],
+            "confidence": "medium"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "B",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "B",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "无显著风险，但需注意过度宣传可能导致形式主义。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "缺少跨来源交叉验证。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-07-06",
+            "judgment": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+            "change_type": "初始判断",
+            "reason": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中国权威政策落地是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
       "event_id": "ai-policy-google-research-google-deepmind-health",
       "title": "AI 政策与基础设施",
       "lane_id": "us_equities",
@@ -3017,7 +3017,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-06T00:01:03.020Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-06T09:01:32.570Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -3699,7 +3699,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-06T00:01:03.020Z。",
+          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-06T09:01:32.570Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -4312,7 +4312,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-06T00:01:03.020Z。",
+          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-06T09:01:32.570Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -5034,7 +5034,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-06T00:01:03.020Z。",
+          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-06T09:01:32.570Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
