@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T09:01:04.435Z",
+  "generatedAt": "2026-07-06T00:01:03.020Z",
   "provider": "alpha-vantage",
   "status": "available",
   "stale": false,
@@ -14,7 +14,7 @@
       "changePercentValue": -1.3918,
       "volume": 142385548,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "MSFT": {
       "symbol": "MSFT",
@@ -25,7 +25,7 @@
       "changePercentValue": 1.616,
       "volume": 42194409,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "GOOGL": {
       "symbol": "GOOGL",
@@ -36,7 +36,7 @@
       "changePercentValue": -0.3599,
       "volume": 25999346,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "META": {
       "symbol": "META",
@@ -47,7 +47,7 @@
       "changePercentValue": -4.8963,
       "volume": 21750522,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "AMZN": {
       "symbol": "AMZN",
@@ -58,7 +58,7 @@
       "changePercentValue": 0.4013,
       "volume": 48298137,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "AMD": {
       "symbol": "AMD",
@@ -69,7 +69,7 @@
       "changePercentValue": -4.2634,
       "volume": 28228930,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "AVGO": {
       "symbol": "AVGO",
@@ -80,7 +80,7 @@
       "changePercentValue": -2.407,
       "volume": 26788850,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "TSLA": {
       "symbol": "TSLA",
@@ -91,7 +91,7 @@
       "changePercentValue": -7.4888,
       "volume": 73915762,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "QQQ": {
       "symbol": "QQQ",
@@ -102,7 +102,7 @@
       "changePercentValue": -1.7334,
       "volume": 51086080,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "SPY": {
       "symbol": "SPY",
@@ -113,7 +113,7 @@
       "changePercentValue": -0.1314,
       "volume": 57505953,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     },
     "SMH": {
       "symbol": "SMH",
@@ -124,7 +124,7 @@
       "changePercentValue": -4.5402,
       "volume": 21334058,
       "tradingDay": "2026-07-02",
-      "fetchedAt": "2026-07-05T09:01:04.435Z"
+      "fetchedAt": "2026-07-06T00:01:03.020Z"
     }
   },
   "topMovers": [
@@ -673,176 +673,206 @@
     "NVDA": [
       {
         "symbol": "NVDA",
-        "title": "Is Arista Networks (ANET) The Best AI Stock to Buy?",
-        "url": "https://uk.finance.yahoo.com/news/arista-networks-anet-best-ai-082221558.html",
-        "source": "Yahoo Finance UK",
-        "timePublished": "20260705T082205",
-        "summary": "Arista Networks (ANET) is presented as a strong contender in the AI market, acting as the connectivity backbone for AI infrastructure in data centers. The company shows robust financial performance with high revenue and EPS growth, despite a premium valuation. Its future prospects are tied to the increasing demand for networking solutions as AI workloads shift towards more inference and require more interconnected hardware.",
-        "overallSentimentScore": 0.149435,
-        "overallSentimentLabel": "Neutral"
+        "title": "Anthropic’s Claude Available in Microsoft Corporation (MSFT) Foundry Powered by Nvidia GPUs",
+        "url": "https://www.insidermonkey.com/blog/anthropics-claude-available-in-microsoft-corporation-msft-foundry-powered-by-nvidia-gpus-1795866/",
+        "source": "Insider Monkey",
+        "timePublished": "20260705T225814",
+        "summary": "Microsoft Corporation has made Anthropic’s Claude models generally available in its Foundry, allowing organizations to integrate Claude into their Azure environments. These deployments leverage Azure infrastructure powered by Nvidia’s GB300 Blackwell Ultra GPUs, stemming from a partnership between Microsoft, Nvidia, and Anthropic. This development enables enterprises to build agentic applications within their familiar Microsoft Azure ecosystem, marking a significant step from AI experimentation to production.",
+        "overallSentimentScore": 0.365924,
+        "overallSentimentLabel": "Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "4,837 Shares in Intel Corporation $INTC Purchased by Integral Investment Advisors Inc.",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-4837-shares-in-intel-corporation-intc-purchased-by-integral-investment-advisors-inc-2026-07-05/",
-        "source": "MarketBeat",
-        "timePublished": "20260705T081059",
-        "summary": "Integral Investment Advisors Inc. initiated a new position in Intel Corporation, purchasing 4,837 shares valued at approximately $213,000 in the first quarter. This comes as Intel continues to receive bullish analyst ratings, with some price targets raised due to growth expectations in foundry, AI PC, and networking. Despite positive earnings reports and analyst optimism, the stock has experienced recent volatility amidst broader profit-taking in the chip sector and concerns about cooling AI demand.",
-        "overallSentimentScore": 0.162926,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Border to Coast Pensions Partnership Ltd Raises Stock Position in Amazon.com, Inc. $AMZN",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-border-to-coast-pensions-partnership-ltd-raises-stock-position-in-amazoncom-inc-amzn-2026-07-05/",
-        "source": "MarketBeat",
-        "timePublished": "20260705T071605",
-        "summary": "Border to Coast Pensions Partnership Ltd increased its stake in Amazon.com, Inc. by 2.4% in the first quarter, bringing its total holdings to 989,296 shares valued at approximately $206.7 million. Amazon is now the fund's 7th largest position, comprising 3.5% of its portfolio. The article also highlights Amazon's strong first-quarter earnings, new growth drivers including its Leo satellite network and expanded AI efforts, and a positive outlook from Wall Street analysts with a consensus \"Buy\" rating and a target price of $312.79.",
-        "overallSentimentScore": 0.309004,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Netflix Is Down 21% This Year. History Says This Is the Time to Buy.",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-down-21-history-says-022000639.html",
+        "title": "AMD Stock and Intel Crushed Nvidia in the First Half. Here's My Prediction for the Second Half.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-intel-crushed-nvidia-223000800.html",
         "source": "Yahoo Finance",
-        "timePublished": "20260705T021921",
-        "summary": "Netflix (NASDAQ: NFLX) shares are down 21% this year and 42% over the past year, echoing a previous market downturn in 2022. Despite current investor pessimism, historical performance suggests that buying during such dips has rewarded patient investors. The company is innovating with new initiatives like password-sharing crackdowns, ad-supported plans, and partnerships to become a central hub for television, indicating potential for future growth despite competition.",
-        "overallSentimentScore": 0.100279,
+        "timePublished": "20260705T223003",
+        "summary": "Nvidia (NVDA) significantly outperformed other AI stocks for years but saw a shift in the first half of this year, with investors rotating to Advanced Micro Devices (AMD) and Intel (INTC), causing them to soar while Nvidia had a modest gain. The author predicts Nvidia will outpace AMD and Intel in the second half due to its plans to dominate the CPU market with new releases and its attractive valuation. Nvidia is launching its first stand-alone CPU and a superchip this fall, and its stock is currently valued at about 22x forward earnings, appearing \"dirt cheap\" compared to its peers.",
+        "overallSentimentScore": -0.02549,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "NVDA",
-        "title": "Microchip Technology Inc. stock underperforms Friday when compared to competitors",
-        "url": "https://www.msn.com/en-us/money/topstocks/microchip-technology-inc-stock-underperforms-friday-when-compared-to-competitors/ar-AA26DJul?ocid=finance-verthp-feeds",
-        "source": "MSN",
-        "timePublished": "20260705T013803",
-        "summary": "The article reports that Microchip Technology Inc.'s stock underperformed on Friday compared to its competitors, including NVIDIA Corp. and Intel Corp. Despite the loss, the stock closed above its 52-week low.",
-        "overallSentimentScore": 0.042051,
+        "title": "Western Asset Diversified Income Fund Q1 2026 Commentary",
+        "url": "https://seekingalpha.com/article/4919929-western-asset-diversified-income-fund-q1-2026-commentary",
+        "source": "Seeking Alpha",
+        "timePublished": "20260705T191214",
+        "summary": "The Western Asset Diversified Income Fund's Q1 2026 performance was significantly boosted by high-yield corporates and bank loans but detracted by its duration and yield-curve positioning as US Treasury yields increased. Credit markets remain strong, supported by demand and elevated issuance driven by AI-related capital expenditures, mergers, and refinancing needs. The outlook is shaped by geopolitical risks and accelerating AI disruption.",
+        "overallSentimentScore": 0.246604,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Micron (MU) Stock Faces Michael Burry Short As Legal Risks Linger",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-stock-faces-michael-180834141.html",
+        "source": "Yahoo Finance",
+        "timePublished": "20260705T180821",
+        "summary": "Michael Burry has opened a short position against Micron Technology (MU) despite the company reporting record earnings driven by AI memory demand. This move adds to the stock's volatility, which is already influenced by an ongoing class-action lawsuit alleging price fixing and recent insider share sales. Micron's stock performance has been exceptional, but Burry's short, coupled with existing legal and valuation concerns, suggests potential future challenges for the company.",
+        "overallSentimentScore": -0.112625,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "NVDA",
-        "title": "SK Telecom to Build 15GW AI Data Center",
-        "url": "https://intellectia.ai/news/stock/sk-telecom-to-build-15gw-ai-data-center",
-        "source": "Intellectia AI",
-        "timePublished": "20260705T011017",
-        "summary": "SK Telecom announced plans to build a 15GW AI data center by 2029 to meet the increasing demand for AI model training and inference. This massive project, estimated at KRW 70 trillion for each 1GW center, aims to establish Korea as a leading AI infrastructure hub in Asia and boost national competitiveness. SK Telecom will finance the initiative through a combination of its own investments, strategic partnerships, and long-term customer contracts, leveraging SK Group's affiliates for an integrated approach to semiconductors, energy solutions, and data center operations.",
-        "overallSentimentScore": 0.396781,
-        "overallSentimentLabel": "Bullish"
+        "title": "Nvidia supplier Hon Hai’s sales beat on continued AI demand",
+        "url": "https://fortune.com/2026/07/05/nvidia-supplier-hon-hai-foxconn-sales-earnings-report-ai-demand/",
+        "source": "Fortune",
+        "timePublished": "20260705T180311",
+        "summary": "Nvidia supplier Hon Hai Precision Industry Co. (Foxconn) reported a stronger-than-expected 40% increase in quarterly sales, driven by sustained demand for AI-related products. The company anticipates continued momentum in AI server shipments and overall growth quarter-on-quarter and year-on-year, despite facing a shortage of memory chips. This performance comes as major tech companies like Alphabet, Amazon, Meta, and Microsoft are significantly increasing their AI investments.",
+        "overallSentimentScore": 0.314065,
+        "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "NVDA",
-        "title": "SK Telecom to Build 15GW AI Data Center Infrastructure",
-        "url": "https://intellectia.ai/news/stock/sk-telecom-to-build-15gw-ai-data-center-infrastructure",
-        "source": "Intellectia AI",
-        "timePublished": "20260705T001018",
-        "summary": "SK Telecom announced plans to construct a 15GW AI data center by 2029, starting with a 5GW phase, to address the surging demand for AI computing and bolster Korea's leadership in AI infrastructure. This massive investment, estimated at KRW 70 trillion per 1GW center, will be financed through SK Telecom's own funds, strategic partnerships, and long-term customer contracts. The project aims to integrate SK Group's expertise across semiconductors, energy, and data center construction while promoting regional development.",
-        "overallSentimentScore": 0.420191,
-        "overallSentimentLabel": "Bullish"
+        "title": "Enphase Energy signs $52M safe harbor deal with solar financier",
+        "url": "https://www.investing.com/news/company-news/enphase-energy-signs-52m-safe-harbor-deal-with-solar-financier-93CH-4667528",
+        "source": "Investing.com",
+        "timePublished": "20260705T173737",
+        "summary": "Enphase Energy (NASDAQ:ENPH) has secured a $52 million safe harbor agreement with a U.S. solar and battery financing company to supply IQ9 Microinverters, contributing to a total backlog of $873.7 million. This deal helps future projects retain eligibility for investment tax credits. Despite near-term sales concerns from analysts, InvestingPro data suggests the stock is undervalued, while recent analyst adjustments reflect mixed perspectives on the company's outlook.",
+        "overallSentimentScore": 0.040531,
+        "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "NVDA",
-        "title": "Corning stock drops 11% in post-rally trade as AI fiber hopes hit test",
-        "url": "https://ts2.tech/en/corning-stock-drops-11-in-post-rally-trade-as-ai-fiber-hopes-hit-test/",
+        "title": "American Express (AXP) Stock Gains Momentum as Analysts Raise Price Targets",
+        "url": "https://blockonomi.com/american-express-axp-stock-gains-momentum-as-analysts-raise-price-targets/",
+        "source": "Blockonomi",
+        "timePublished": "20260705T150710",
+        "summary": "American Express (AXP) stock is gaining momentum, trading near $351.96 after exceeding first-quarter 2026 earnings expectations and receiving multiple analyst price target increases. The company's growth is significantly driven by its success in attracting younger demographics like Millennials and Gen Z, who are engaging with premium card offerings. Analysts maintain a \"Moderate Buy\" rating, expecting continued earnings expansion and reasonable valuation metrics.",
+        "overallSentimentScore": 0.181293,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Opendoor stock turnover signals Russell index demand test after 12% gain during holiday week",
+        "url": "https://ts2.tech/en/opendoor-stock-turnover-signals-russell-index-demand-test-after-12-gain-during-holiday-week/",
         "source": "TechStock²",
-        "timePublished": "20260704T224255",
-        "summary": "Corning's stock dropped 10.81% on Thursday, closing at $196.79, as investors evaluate its \"AI-infrastructure story\" following a significant rally this year. Despite the recent dip, shares are still up over 100% in 2026, driven by expectations of increased fiber demand from AI data centers. The company has secured major deals with NVIDIA and Amazon and is expanding its manufacturing capacity, but its valuation faces scrutiny after the recent price correction and mixed analyst views.",
-        "overallSentimentScore": 0.124699,
+        "timePublished": "20260705T144048",
+        "summary": "Opendoor Technologies Inc. (NASDAQ:OPEN) saw a 12.1% stock gain in the four sessions following its inclusion in the Russell 3000 Index, accompanied by high trading volume representing 43% of its public float. The article discusses whether this initial index-driven demand will sustain after the holiday-shortened week, emphasizing the importance of Monday's trading to determine a new support level for the stock and its ability to break past the $5.17 resistance. Despite the stock boost, Opendoor is in a turnaround phase, reporting a Q1 net loss of $173 million but expecting 25% revenue growth in Q2.",
+        "overallSentimentScore": 0.060829,
         "overallSentimentLabel": "Neutral"
       }
     ],
     "MSFT": [
       {
         "symbol": "MSFT",
-        "title": "Is Arista Networks (ANET) The Best AI Stock to Buy?",
-        "url": "https://uk.finance.yahoo.com/news/arista-networks-anet-best-ai-082221558.html",
-        "source": "Yahoo Finance UK",
-        "timePublished": "20260705T082205",
-        "summary": "Arista Networks (ANET) is presented as a strong contender in the AI market, acting as the connectivity backbone for AI infrastructure in data centers. The company shows robust financial performance with high revenue and EPS growth, despite a premium valuation. Its future prospects are tied to the increasing demand for networking solutions as AI workloads shift towards more inference and require more interconnected hardware.",
-        "overallSentimentScore": 0.160695,
+        "title": "Anthropic’s Claude Available in Microsoft Corporation (MSFT) Foundry Powered by Nvidia GPUs",
+        "url": "https://www.insidermonkey.com/blog/anthropics-claude-available-in-microsoft-corporation-msft-foundry-powered-by-nvidia-gpus-1795866/",
+        "source": "Insider Monkey",
+        "timePublished": "20260705T225814",
+        "summary": "Microsoft Corporation has made Anthropic’s Claude models generally available in its Foundry, allowing organizations to integrate Claude into their Azure environments. These deployments leverage Azure infrastructure powered by Nvidia’s GB300 Blackwell Ultra GPUs, stemming from a partnership between Microsoft, Nvidia, and Anthropic. This development enables enterprises to build agentic applications within their familiar Microsoft Azure ecosystem, marking a significant step from AI experimentation to production.",
+        "overallSentimentScore": 0.342361,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
         "symbol": "MSFT",
-        "title": "Intuit Inc. $INTU Shares Sold by FUKOKU MUTUAL LIFE INSURANCE Co",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-intuit-inc-intu-shares-sold-by-fukoku-mutual-life-insurance-co-2026-07-05/",
-        "source": "MarketBeat",
-        "timePublished": "20260705T081100",
-        "summary": "FUKOKU MUTUAL LIFE INSURANCE Co significantly reduced its stake in Intuit Inc. (INTU) by 87% in the first quarter, selling 6,000 shares and retaining 896 shares valued at approximately $387,000. Despite this, analyst sentiment remains largely positive with a \"Moderate Buy\" consensus and an average target price of $498.40. Intuit recently reported strong quarterly results, beating EPS and revenue estimates, and announced a quarterly dividend of $1.20 per share.",
-        "overallSentimentScore": 0.138334,
+        "title": "Constellation Energy Stock analysis: Is CEG a strong AI data centre power demand trade idea?",
+        "url": "https://www.fxstreet.com/news/constellation-energy-stock-analysis-is-ceg-a-strong-ai-data-centre-power-demand-trade-idea-202607052217",
+        "source": "FXStreet",
+        "timePublished": "20260705T221720",
+        "summary": "This article analyzes Constellation Energy (CEG) as a potential trade idea driven by AI data center power demand. It highlights Constellation's strategic position as the largest nuclear operator in the US, crucial for supplying reliable, clean electricity to power-intensive AI data centers. While the long-term fundamentals and existing contracts with tech giants like Microsoft and Meta support the thesis, the article notes that sentiment has cooled, the stock's valuation isn't cheap, and technicals currently show weakness, suggesting it's a strong thematic play but not a short-term momentum trade.",
+        "overallSentimentScore": 0.330233,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Wisconsin energy demand to rise 40% by 2032, driven by data centers",
+        "url": "https://wausaupilotandreview.com/2026/07/05/wisconsin-energy-demand-to-rise-40-by-2032-driven-by-data-centers/",
+        "source": "Wausau Pilot & Review",
+        "timePublished": "20260705T213936",
+        "summary": "Wisconsin's energy demand is projected to increase by 40% by 2032, primarily due to the development of new hyperscale artificial intelligence data centers in the southern part of the state, including projects by Microsoft, Meta, Oracle, and OpenAI. This surge in demand necessitates significant investments in new energy supply and infrastructure, with utility companies planning billions in solar, wind, battery storage, and natural gas projects. The report also highlights a continued shift away from coal power towards natural gas and renewables, despite some delays in coal plant closures to meet immediate energy needs.",
+        "overallSentimentScore": 0.3194,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Western Asset Diversified Income Fund Q1 2026 Commentary",
+        "url": "https://seekingalpha.com/article/4919929-western-asset-diversified-income-fund-q1-2026-commentary",
+        "source": "Seeking Alpha",
+        "timePublished": "20260705T191214",
+        "summary": "The Western Asset Diversified Income Fund's Q1 2026 performance was significantly boosted by high-yield corporates and bank loans but detracted by its duration and yield-curve positioning as US Treasury yields increased. Credit markets remain strong, supported by demand and elevated issuance driven by AI-related capital expenditures, mergers, and refinancing needs. The outlook is shaped by geopolitical risks and accelerating AI disruption.",
+        "overallSentimentScore": 0.244674,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Nvidia supplier Hon Hai’s sales beat on continued AI demand",
+        "url": "https://fortune.com/2026/07/05/nvidia-supplier-hon-hai-foxconn-sales-earnings-report-ai-demand/",
+        "source": "Fortune",
+        "timePublished": "20260705T180311",
+        "summary": "Nvidia supplier Hon Hai Precision Industry Co. (Foxconn) reported a stronger-than-expected 40% increase in quarterly sales, driven by sustained demand for AI-related products. The company anticipates continued momentum in AI server shipments and overall growth quarter-on-quarter and year-on-year, despite facing a shortage of memory chips. This performance comes as major tech companies like Alphabet, Amazon, Meta, and Microsoft are significantly increasing their AI investments.",
+        "overallSentimentScore": 0.315402,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "Bronstein, Gewirtz & Grossman LLC Urges Microsoft Corporation Investors to Act: Class Action Filed Alleging Investor Harm",
+        "url": "https://www.globenewswire.com/news-release/2026/07/05/3322105/9788/en/bronstein-gewirtz-grossman-llc-urges-microsoft-corporation-investors-to-act-class-action-filed-alleging-investor-harm.html",
+        "source": "GlobeNewswire",
+        "timePublished": "20260705T160819",
+        "summary": "Bronstein, Gewirtz & Grossman, LLC has filed a class action lawsuit against Microsoft Corporation (NASDAQ: MSFT) and its officers, alleging federal securities law violations. The lawsuit claims Microsoft made misleading statements regarding its Copilot products, AI model performance, and increased capital expenditures required to address competitive shortcomings. Investors who purchased Microsoft securities between May 1, 2025, and January 28, 2026, are encouraged to join the case, with an August 11, 2026 deadline to request lead plaintiff status.",
+        "overallSentimentScore": -0.442481,
+        "overallSentimentLabel": "Bearish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "AECOM (ACM) On Russell Index Removal And Whether Its Value Case Still Holds",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nyse-acm/aecom/news/aecom-acm-on-russell-index-removal-and-whether-its-value-cas",
+        "source": "Simply Wall Street",
+        "timePublished": "20260705T111014",
+        "summary": "AECOM (ACM) has been removed from the Russell 1000 Defensive and Value Defensive Indexes, prompting increased investor scrutiny. Despite a recent share price decline and weakened momentum, the company is considered 36.6% undervalued at $67.74 with a fair value estimate of $106.88, driven by expectations of government-backed infrastructure spending and a strong backlog. Investors are advised to weigh potential upsides against risks such as dependence on government budgets and complex projects.",
+        "overallSentimentScore": -0.041646,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "MSFT",
-        "title": "Hudson Edge Investment Partners Inc. Sells 8,360 Shares of EOG Resources, Inc. $EOG",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-hudson-edge-investment-partners-inc-sells-8360-shares-of-eog-resources-inc-eog-2026-07-05/",
+        "title": "Walter Public Investments Inc. Acquires 84,763 Shares of Toronto Dominion Bank (The) $TD",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-walter-public-investments-inc-acquires-84763-shares-of-toronto-dominion-bank-the-td-2026-07-05/",
         "source": "MarketBeat",
-        "timePublished": "20260705T081041",
-        "summary": "Hudson Edge Investment Partners Inc. reduced its stake in EOG Resources (NYSE:EOG) by 12.6% in the first quarter, selling 8,360 shares and retaining 58,110 shares valued at approximately $8.4 million. This reduction comes as EOG Resources reported stronger-than-expected quarterly earnings and declared a quarterly dividend of $1.02 per share, indicating a 3.1% annualized yield. Despite this institutional selling, analysts maintain a \"Moderate Buy\" consensus rating for EOG, with an average target price of $155.25.",
-        "overallSentimentScore": 0.062136,
+        "timePublished": "20260705T103931",
+        "summary": "Walter Public Investments Inc. significantly increased its stake in Toronto Dominion Bank (NYSE:TD) by acquiring an additional 84,763 shares, bringing its total holdings to 93,763 shares valued at approximately $8.76 million. The bank also reported better-than-expected quarterly earnings of $1.74 per share, raised its quarterly dividend to $1.12, and maintains a \"Moderate Buy\" rating from analysts with an average price target of $156. Institutional investors collectively hold 52.37% of Toronto Dominion Bank's stock.",
+        "overallSentimentScore": 0.104044,
         "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Elevation Point Wealth Partners LLC Buys Shares of 22,726 Vistra Corp. $VST",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-elevation-point-wealth-partners-llc-buys-shares-of-22726-vistra-corp-vst-2026-07-05/",
-        "source": "MarketBeat",
-        "timePublished": "20260705T075756",
-        "summary": "Elevation Point Wealth Partners LLC acquired 22,726 shares of Vistra Corp. (NYSE:VST) during the first quarter, valued at approximately $3.42 million. Several other hedge funds also adjusted their positions in Vistra, collectively representing 90.88% institutional ownership. Analysts have a consensus \"Buy\" rating for Vistra with a target price of $230.31, while company insiders have recently sold shares.",
-        "overallSentimentScore": 0.172538,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "The Invesco QQQ ETF - Classic NASDAQ-100 exposure for US growth investors",
-        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/the-invesco-qqq-etf-classic-nasdaq-100-exposure-for-us-growth-investors/69692274",
-        "source": "AD HOC NEWS",
-        "timePublished": "20260705T022201",
-        "summary": "The Invesco QQQ ETF offers US growth investors concentrated access to 100 non-financial companies on the Nasdaq-100 Index. It is widely used for broad growth exposure, particularly in large-cap technology, communication services, and consumer discretionary sectors. While highly liquid and accessible, investors should note its sector concentration and market-cap weighting.",
-        "overallSentimentScore": 0.35272,
-        "overallSentimentLabel": "Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "How Investors Are Reacting To Elastic (ESTC) Launching Unified Prometheus-Powered Observability And Migration Tools",
-        "url": "https://simplywall.st/stocks/us/software/nyse-estc/elastic/news/how-investors-are-reacting-to-elastic-estc-launching-unified",
-        "source": "Simply Wall Street",
-        "timePublished": "20260705T004012",
-        "summary": "Elastic N.V. (ESTC) recently launched new unified observability capabilities, including native Prometheus support and migration tools, which aim to consolidate data for enterprises. This move aligns with Elastic's strategy to position itself as a single backend for logs, metrics, and traces, reinforcing its investment narrative around unified search, observability, and security. Despite potential challenges like competition and operational adjustments from recent workforce reductions, analysts provide varied forecasts, with some predicting significant revenue growth and a higher fair value for the company.",
-        "overallSentimentScore": 0.163789,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Cencora (COR) Could Be 15% Undervalued As Earnings Date Nears",
-        "url": "https://simplywall.st/stocks/us/healthcare/nyse-cor/cencora/news/cencora-cor-could-be-15-undervalued-as-earnings-date-nears",
-        "source": "Simply Wall Street",
-        "timePublished": "20260704T215825",
-        "summary": "Cencora (COR) is approaching its fiscal third-quarter earnings release on August 5, 2026, with current analysis suggesting it might be undervalued by 15.4%. The company's stock has shown strong long-term performance, and its investments in digital infrastructure are expected to drive higher margins and operating income. However, potential risks include increased regulatory scrutiny on drug pricing and heightened competition in specialty distribution.",
-        "overallSentimentScore": 0.198846,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "SPDR Portfolio S&P 500 ETF (SPYM) assets up as it joins Trump Accounts debut",
-        "url": "https://ts2.tech/en/spdr-portfolio-sp-500-etf-spym-assets-up-as-it-joins-trump-accounts-debut/",
-        "source": "TechStock²",
-        "timePublished": "20260704T211018",
-        "summary": "The SPDR Portfolio S&P 500 ETF (SPYM) has seen a significant increase in assets, primarily due to its selection as the default ETF for the new Trump Accounts savings plan. The fund's assets under management climbed by $35.77 billion since March 31, with more than half of this growth attributed to new inflows rather than just NAV gains. This development is expected to continue driving flows into SPYM, especially as initial contributions to Trump Accounts are directed solely towards this low-cost S&P 500 ETF.",
-        "overallSentimentScore": 0.211261,
-        "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "GOOGL": [
       {
         "symbol": "GOOGL",
+        "title": "Nvidia supplier Hon Hai’s sales beat on continued AI demand",
+        "url": "https://fortune.com/2026/07/05/nvidia-supplier-hon-hai-foxconn-sales-earnings-report-ai-demand/",
+        "source": "Fortune",
+        "timePublished": "20260705T180311",
+        "summary": "Nvidia supplier Hon Hai Precision Industry Co. (Foxconn) reported a stronger-than-expected 40% increase in quarterly sales, driven by sustained demand for AI-related products. The company anticipates continued momentum in AI server shipments and overall growth quarter-on-quarter and year-on-year, despite facing a shortage of memory chips. This performance comes as major tech companies like Alphabet, Amazon, Meta, and Microsoft are significantly increasing their AI investments.",
+        "overallSentimentScore": 0.356514,
+        "overallSentimentLabel": "Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "KKR & Co. Inc. $KKR Shares Bought by Fjarde AP Fonden Fourth Swedish National Pension Fund",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-kkr-co-inc-kkr-shares-bought-by-fjarde-ap-fonden-fourth-swedish-national-pension-fund-2026-07-05/",
+        "source": "MarketBeat",
+        "timePublished": "20260705T084223",
+        "summary": "Fjarde AP Fonden Fourth Swedish National Pension Fund increased its stake in KKR & Co. Inc. by 54.8% in the first quarter, acquiring 53,700 additional shares to own a total of 151,675 shares valued at $14.03 million. KKR & Co. Inc. recently raised its quarterly dividend to $0.195 per share and approved a $500 million share buyback program. Despite analyst price target reductions, the stock maintains a \"Moderate Buy\" consensus rating with a target price of $134.53.",
+        "overallSentimentScore": 0.225699,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Louisiana State Employees Retirement System Purchases New Shares in VeriSign, Inc. $VRSN",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-louisiana-state-employees-retirement-system-purchases-new-shares-in-verisign-inc-vrsn-2026-07-05/",
+        "source": "MarketBeat",
+        "timePublished": "20260705T084209",
+        "summary": "The Louisiana State Employees Retirement System has acquired 4,200 shares of VeriSign, Inc. (NASDAQ:VRSN) for approximately $1.043 million during the first quarter. This purchase contributes to the already high institutional ownership of 92.9% for VeriSign shares. The company recently reported strong quarterly results, surpassing EPS expectations with $2.34 per share and revenue of $428.9 million, leading analysts to rate the stock as a \"Moderate Buy\" with a target price of $327.67.",
+        "overallSentimentScore": 0.122287,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
         "title": "Is Arista Networks (ANET) The Best AI Stock to Buy?",
         "url": "https://uk.finance.yahoo.com/news/arista-networks-anet-best-ai-082221558.html",
         "source": "Yahoo Finance UK",
         "timePublished": "20260705T082205",
         "summary": "Arista Networks (ANET) is presented as a strong contender in the AI market, acting as the connectivity backbone for AI infrastructure in data centers. The company shows robust financial performance with high revenue and EPS growth, despite a premium valuation. Its future prospects are tied to the increasing demand for networking solutions as AI workloads shift towards more inference and require more interconnected hardware.",
-        "overallSentimentScore": 0.181924,
+        "overallSentimentScore": 0.177447,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -852,7 +882,7 @@
         "source": "MarketBeat",
         "timePublished": "20260705T081100",
         "summary": "FUKOKU MUTUAL LIFE INSURANCE Co significantly reduced its stake in Intuit Inc. (INTU) by 87% in the first quarter, selling 6,000 shares and retaining 896 shares valued at approximately $387,000. Despite this, analyst sentiment remains largely positive with a \"Moderate Buy\" consensus and an average target price of $498.40. Intuit recently reported strong quarterly results, beating EPS and revenue estimates, and announced a quarterly dividend of $1.20 per share.",
-        "overallSentimentScore": 0.110121,
+        "overallSentimentScore": 0.099895,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -862,7 +892,7 @@
         "source": "MarketBeat",
         "timePublished": "20260705T071605",
         "summary": "Border to Coast Pensions Partnership Ltd increased its stake in Amazon.com, Inc. by 2.4% in the first quarter, bringing its total holdings to 989,296 shares valued at approximately $206.7 million. Amazon is now the fund's 7th largest position, comprising 3.5% of its portfolio. The article also highlights Amazon's strong first-quarter earnings, new growth drivers including its Leo satellite network and expanded AI efforts, and a positive outlook from Wall Street analysts with a consensus \"Buy\" rating and a target price of $312.79.",
-        "overallSentimentScore": 0.329088,
+        "overallSentimentScore": 0.337147,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -872,48 +902,18 @@
         "source": "MarketBeat",
         "timePublished": "20260705T070759",
         "summary": "Baer Investment Advisory LLC decreased its stake in Intuit Inc. (NASDAQ:INTU) by 72.2% in the first quarter, now holding 2,029 shares valued at $877,000. This reduction comes despite Intuit reporting strong quarterly results with EPS of $12.80 and revenue of $8.56 billion, exceeding analyst expectations. The company also declared a quarterly dividend of $1.20 per share and maintains a \"Moderate Buy\" consensus rating from analysts, although several firms have recently lowered their price targets.",
-        "overallSentimentScore": 0.110206,
+        "overallSentimentScore": 0.130915,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "GOOGL",
-        "title": "Number of shareholders of Alphabet Inc. Class A – EUROTLX:4GOOGL",
-        "url": "https://www.tradingview.com/symbols/EUROTLX-4GOOGL/financials-statistics-and-ratios/number-of-shareholders/",
-        "source": "TradingView",
-        "timePublished": "20260705T040750",
-        "summary": "The document displays information related to the number of shareholders for Alphabet Inc. Class A (EUROTLX:4GOOGL) on TradingView. It provides sections for period value, change, and percentage change. This page is primarily a financial data point without extensive narrative.",
-        "overallSentimentScore": 0.009711,
-        "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "The Invesco QQQ ETF - Classic NASDAQ-100 exposure for US growth investors",
-        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/the-invesco-qqq-etf-classic-nasdaq-100-exposure-for-us-growth-investors/69692274",
-        "source": "AD HOC NEWS",
-        "timePublished": "20260705T022201",
-        "summary": "The Invesco QQQ ETF offers US growth investors concentrated access to 100 non-financial companies on the Nasdaq-100 Index. It is widely used for broad growth exposure, particularly in large-cap technology, communication services, and consumer discretionary sectors. While highly liquid and accessible, investors should note its sector concentration and market-cap weighting.",
-        "overallSentimentScore": 0.35622,
-        "overallSentimentLabel": "Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "PepsiCo Stock’s 4.1% Yield Comes With a Payout Ratio Question Worth Asking",
-        "url": "https://www.tikr.com/blog/pepsico-stocks-4-1-yield-comes-with-a-payout-ratio-question-worth-asking",
-        "source": "TIKR.com",
-        "timePublished": "20260704T150515",
-        "summary": "PepsiCo (PEP) affirmed its full-year guidance in Q1 2026 despite inflation concerns from the Iran conflict, with organic revenue up 3% and core EPS climbing 9%. While the quarterly dividend of $1.42 per share remains unchanged, the payout ratio, which peaked at 147.35% in June, has decreased to 84.49% as of March 2026. TIKR's mid-case model projects PepsiCo stock to reach $202 by December 2030, representing a 40% total return or 8% annualized, dependent on continued earnings recovery and effective cost mitigation.",
-        "overallSentimentScore": 0.093211,
-        "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Lansforsakringar Fondforvaltning AB publ Invests $2.85 Million in IonQ, Inc. $IONQ",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-lansforsakringar-fondforvaltning-ab-publ-invests-285-million-in-ionq-inc-ionq-2026-07-04/",
-        "source": "MarketBeat",
-        "timePublished": "20260704T090850",
-        "summary": "Lansforsakringar Fondforvaltning AB publ has invested $2.85 million in IonQ, Inc. by purchasing 98,702 shares in the first quarter of 2026. This move highlights growing institutional interest in IonQ, with 41.42% of its stock now held by institutional investors, despite some analyst concerns regarding valuation and insider selling. The company holds a \"Moderate Buy\" consensus rating among analysts with an average price target of $69.88, reflecting a positive long-term outlook for its quantum computing advancements.",
-        "overallSentimentScore": 0.13705,
-        "overallSentimentLabel": "Neutral"
+        "title": "Data Center Leases Top $850 Billion as Meta, Microsoft, Oracle Lead Record AI Infrastructure Spending",
+        "url": "https://www.benzinga.com/markets/tech/26/07/60269156/data-center-leases-top-850-billion-as-meta-microsoft-oracle-lead-record-ai-infrastructure-spending",
+        "source": "Benzinga",
+        "timePublished": "20260705T043832",
+        "summary": "U.S. tech companies, led by Meta, Microsoft, and Oracle, committed over $850 billion to data center leases in Q1 2026, marking a record high for AI infrastructure spending. This represents a 204% increase year-over-year and a 31% increase from the previous quarter. The surge in spending occurs despite growing community opposition related to water use, power costs, and pollution, with 71% of Americans opposing data centers near their homes and an estimated $130 billion in projects being delayed or blocked in Q1 2026.",
+        "overallSentimentScore": 0.252261,
+        "overallSentimentLabel": "Somewhat-Bullish"
       }
     ]
   }
