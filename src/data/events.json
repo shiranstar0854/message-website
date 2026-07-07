@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-06T09:01:56.176Z",
+  "generated_at": "2026-07-07T00:01:29.382Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 7,
     "market_context": {
-      "status": "available",
-      "generated_at": "2026-07-06T09:01:32.570Z"
+      "status": "stale",
+      "generated_at": "2026-07-07T00:01:24.509Z"
     },
     "llm": {
       "enabled": true,
@@ -37,6 +37,968 @@
     }
   ],
   "events": [
+    {
+      "event_id": "lane-china_policy",
+      "title": "中国权威政策落地",
+      "lane_id": "china_policy",
+      "lane_label": "中国权威政策落地",
+      "status": "active",
+      "priority_grade": "A",
+      "importance_score": 100,
+      "first_seen_at": "2026-07-05T00:00:00.000Z",
+      "last_seen_at": "2026-07-06T00:00:00.000Z",
+      "updated_at": "2026-07-06T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "中黑元首互致贺电庆祝建交20周年。 相关来源：中国政府网要闻、科技部工作动态、财政部财政新闻",
+        "background": "中黑元首互致贺电庆祝建交20周年。 相关来源：中国政府网要闻、科技部工作动态、财政部财政新闻",
+        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "没有发生实质性变化，属于正常的外交礼节性互动。",
+        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "优先跟踪",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "rationale": [
+          "属于中国权威政策落地主线",
+          "重要性评分为 100",
+          "证据置信度为高"
+        ],
+        "market_symbols": [],
+        "policy_status": "落地执行",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "公共政策",
+          "习近平同黑山总统米拉托维",
+          "奇就中国同黑山建交",
+          "周年互致贺电"
+        ],
+        "entities": {
+          "companies": [],
+          "people": [],
+          "institutions": [
+            "国务院",
+            "中国政府网",
+            "发改委",
+            "国家发展改革委",
+            "财政部",
+            "科技部"
+          ],
+          "countries_or_regions": [],
+          "products_or_technologies": [
+            "AI",
+            "算力",
+            "芯片"
+          ]
+        },
+        "related_item_count": 20
+      },
+      "current_judgment": {
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+        "basis": [
+          "2026年7月6日习近平与黑山总统互致贺电",
+          "庆祝两国建交20周年",
+          "中黑元首互致贺电庆祝建交20周年。",
+          "习近平同黑山总统就建交20周年互致贺电"
+        ],
+        "latest_change": "习近平同黑山总统就建交20周年互致贺电：中黑元首互致贺电庆祝建交20周年。",
+        "judgment_update": "初始判断",
+        "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
+      },
+      "evidence": {
+        "source_count": 3,
+        "official_source_count": 20,
+        "financial_media_count": 0,
+        "timeline_count": 12,
+        "confidence_basis": "high",
+        "evidence_types": {
+          "unknown": 3,
+          "official_announcement": 3
+        },
+        "primary_source": {
+          "name": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm"
+        },
+        "source_links": [
+          {
+            "item_id": "news-item-ace8a79a45",
+            "title": "习近平同黑山总统就建交20周年互致贺电",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "中黑元首互致贺电庆祝建交20周年。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-ab155d3298",
+            "title": "5月高技术制造业相关物流需求同比增长15.1%",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-5f51dafd93",
+            "title": "全年2000亿元设备更新资金总额下达完毕",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "international-item-c72857964a",
+            "title": "中方代表团出席国际热核聚变实验堆(ITER)计划理事会第三十八届会议",
+            "source": "科技部工作动态",
+            "url": "https://www.most.gov.cn/kjbgz/202607/t20260706_196892.html",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-8a205c529f",
+            "title": "财政部、应急管理部紧急预拨1.6亿元中央自然灾害救灾资金 支持广西、湖南、辽宁等6省（区）做好防汛防台应急抢险救灾工作",
+            "source": "财政部财政新闻",
+            "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260706_3992975.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "财政部财政政策、国债、预算和财政运行新闻",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-3c764b2ecc",
+            "title": "财政部青海监管局：“四个聚焦”扎实开展 三江源国家公园林业草原生态保护恢复资金重点绩效评价工作",
+            "source": "财政部财政新闻",
+            "url": "http://qh.mof.gov.cn/gzdt/caizhengjiancha/202607/t20260706_3992892.htm",
+            "published_at": "2026-07-06T00:00:00.000Z",
+            "summary": "财政部财政政策、国债、预算和财政运行新闻",
+            "relevance_score": 100
+          }
+        ],
+        "evidence_gaps": [
+          "继续观察后续官方发布和价格反应是否一致。"
+        ]
+      },
+      "latest_update": {
+        "title": "习近平同黑山总统就建交20周年互致贺电",
+        "summary": "中黑元首互致贺电庆祝建交20周年。",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+        "published_at": "2026-07-06T00:00:00.000Z",
+        "score": 100
+      },
+      "confirmed_facts": [
+        {
+          "fact": "2026年7月6日习近平与黑山总统互致贺电",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "庆祝两国建交20周年",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "中黑元首互致贺电庆祝建交20周年。",
+          "evidence_url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "习近平同黑山总统就建交20周年互致贺电",
+          "evidence_url": "https://www.most.gov.cn/kjbgz/202607/t20260706_196892.html",
+          "source": "科技部工作动态",
+          "confidence": "高"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "evidence": [
+            "中黑元首互致贺电庆祝建交20周年。",
+            "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+            "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "industry": {
+          "impact": "可能影响 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交、周年互致贺电 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "中黑元首互致贺电庆祝建交20周年。",
+            "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+            "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "company": {
+          "impact": "关联实体：AI、国务院、中国政府网、发改委、国家发展改革委、财政部。",
+          "evidence": [
+            "中黑元首互致贺电庆祝建交20周年。",
+            "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+            "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "中黑元首互致贺电庆祝建交20周年。",
+            "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+            "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "高"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "中黑元首互致贺电庆祝建交20周年。",
+            "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+            "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "目前证据不足",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "目前证据不足，无法评估风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "若项目执行缓慢或资金滥用，政策效果可能打折。同时，巨额国债发行增加未来财政压力。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "目前证据不足",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "目前证据不足，无法评估风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "若项目执行缓慢或资金滥用，政策效果可能打折。同时，巨额国债发行增加未来财政压力。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "继续观察后续官方发布和价格反应是否一致。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "中国权威政策落地是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "news-item-ace8a79a45",
+          "title": "习近平同黑山总统就建交20周年互致贺电",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "中黑元首互致贺电庆祝建交20周年。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-ab155d3298",
+          "title": "5月高技术制造业相关物流需求同比增长15.1%",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-5f51dafd93",
+          "title": "全年2000亿元设备更新资金总额下达完毕",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "international-item-c72857964a",
+          "title": "中方代表团出席国际热核聚变实验堆(ITER)计划理事会第三十八届会议",
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260706_196892.html",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-8a205c529f",
+          "title": "财政部、应急管理部紧急预拨1.6亿元中央自然灾害救灾资金 支持广西、湖南、辽宁等6省（区）做好防汛防台应急抢险救灾工作",
+          "source": "财政部财政新闻",
+          "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260706_3992975.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-3c764b2ecc",
+          "title": "财政部青海监管局：“四个聚焦”扎实开展 三江源国家公园林业草原生态保护恢复资金重点绩效评价工作",
+          "source": "财政部财政新闻",
+          "url": "http://qh.mof.gov.cn/gzdt/caizhengjiancha/202607/t20260706_3992892.htm",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "relevance_score": 100
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-05",
+          "title": "强国复兴 濠江有为——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话指引澳门各界同心聚力实干奋进",
+          "summary": "习近平在建党105周年大会上的讲话激励澳门各界积极表态，但尚无具体行动。",
+          "description": "习近平在建党105周年大会上的讲话激励澳门各界积极表态，但尚无具体行动。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "目前无法确认具体变化。澳门各界虽表达了积极态度，但尚未公布具体行动或政策调整。",
+          "sources": [
+            {
+              "title": "强国复兴 濠江有为——习近平总书记在庆祝中国共产党成立105周年大会上的重要讲话指引澳门各界同心聚力实干奋进",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
+              "published_at": "2026-07-05T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
+          "score": 100,
+          "publishedAt": "2026-07-05T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "习近平同黑山总统就建交20周年互致贺电",
+          "summary": "中黑元首互致贺电庆祝建交20周年。",
+          "description": "中黑元首互致贺电庆祝建交20周年。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "没有发生实质性变化，属于正常的外交礼节性互动。",
+          "sources": [
+            {
+              "title": "习近平同黑山总统就建交20周年互致贺电",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "5月高技术制造业相关物流需求同比增长15.1%",
+          "summary": "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+          "description": "前5月全国社会物流总额146.6万亿元，同比增5.2%；5月高技术制造业物流需求增15.1%，显示该领域活跃。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "与去年同期相比，全国社会物流总额增速为5.2%，而高技术制造业相关物流需求增速高达15.1%，显示高技术制造业物流需求增长明显快于总体水平。",
+          "sources": [
+            {
+              "title": "5月高技术制造业相关物流需求同比增长15.1%",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "全年2000亿元设备更新资金总额下达完毕",
+          "summary": "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。",
+          "description": "国家发改委宣布全年2000亿元设备更新资金已全部下达完毕。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "设备更新资金从分批下达转为全部到位，意味着中央财政支持已完成年度额度分配，后续工作将进入项目执行与资金拨付阶段。",
+          "sources": [
+            {
+              "title": "全年2000亿元设备更新资金总额下达完毕",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "中方代表团出席国际热核聚变实验堆(ITER)计划理事会第三十八届会议",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "description": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "sources": [
+            {
+              "title": "中方代表团出席国际热核聚变实验堆(ITER)计划理事会第三十八届会议",
+              "source": "科技部工作动态",
+              "url": "https://www.most.gov.cn/kjbgz/202607/t20260706_196892.html",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260706_196892.html",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "财政部、应急管理部紧急预拨1.6亿元中央自然灾害救灾资金 支持广西、湖南、辽宁等6省（区）做好防汛防台应急抢险救灾工作",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "财政部、应急管理部紧急预拨1.6亿元中央自然灾害救灾资金 支持广西、湖南、辽宁等6省（区）做好防汛防台应急抢险救灾工作",
+              "source": "财政部财政新闻",
+              "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260706_3992975.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260706_3992975.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "财政部青海监管局：“四个聚焦”扎实开展 三江源国家公园林业草原生态保护恢复资金重点绩效评价工作",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "财政部青海监管局：“四个聚焦”扎实开展 三江源国家公园林业草原生态保护恢复资金重点绩效评价工作",
+              "source": "财政部财政新闻",
+              "url": "http://qh.mof.gov.cn/gzdt/caizhengjiancha/202607/t20260706_3992892.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://qh.mof.gov.cn/gzdt/caizhengjiancha/202607/t20260706_3992892.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "今年“两重”建设项目清单全部下达完毕",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "今年“两重”建设项目清单全部下达完毕",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074439.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074439.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "6月份中国物流业景气指数加快扩张",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "6月份中国物流业景气指数加快扩张",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074438.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074438.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "刘国中在山东调研时强调 推动生物医药和农机装备创新发展 加快推进现代化水网建设",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "刘国中在山东调研时强调 推动生物医药和农机装备创新发展 加快推进现代化水网建设",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074433.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074433.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "“开辟了实现中华民族伟大复兴的正确道路”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之二",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "“开辟了实现中华民族伟大复兴的正确道路”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之二",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074432.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074432.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-06",
+          "title": "习近平致电祝贺藤森庆子当选秘鲁总统",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "习近平致电祝贺藤森庆子当选秘鲁总统",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074424.htm",
+              "published_at": "2026-07-06T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074424.htm",
+          "score": 100,
+          "publishedAt": "2026-07-06T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+          "confidence": "high",
+          "basis": [
+            "2026年7月6日习近平与黑山总统互致贺电",
+            "庆祝两国建交20周年",
+            "中黑元首互致贺电庆祝建交20周年。"
+          ],
+          "what_would_change_this_view": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "high"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "公共政策",
+              "习近平同黑山总统米拉托维",
+              "奇就中国同黑山建交",
+              "周年互致贺电"
+            ],
+            "confidence": "high"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "A",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+              "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+              "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "A",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+              "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "目前证据不足",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "目前证据不足，无法评估风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "若项目执行缓慢或资金滥用，政策效果可能打折。同时，巨额国债发行增加未来财政压力。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "继续观察后续官方发布和价格反应是否一致。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 中国政府网要闻、科技部工作动态 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-07-06",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "change_type": "初始判断",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "中国权威政策落地是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
     {
       "event_id": "topic-消费电子-空天地海-新一代通信网建设提速-消费电子-空天地海-新一代通信网建设提速",
       "title": "消费电子",
@@ -222,7 +1184,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-06T09:01:32.570Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-07T00:01:24.509Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -370,6 +1332,15 @@
           "severity": "中",
           "probability": "中",
           "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
         }
       ],
       "counter_arguments": [
@@ -392,6 +1363,11 @@
         },
         {
           "uncertainty": "如果印尼未能有效增强能源韧性，可能面临能源供应不稳定和气候风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -899,6 +1875,15 @@
             "severity": "中",
             "probability": "中",
             "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
           }
         ],
         "contrarian_tracking": {
@@ -1309,6 +2294,15 @@
           "severity": "中",
           "probability": "中",
           "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
         }
       ],
       "counter_arguments": [
@@ -1331,6 +2325,11 @@
         },
         {
           "uncertainty": "报告预测可能被过度依赖，且OpenAI的立场可能影响客观性。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -1838,6 +2837,15 @@
             "severity": "中",
             "probability": "中",
             "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
           }
         ],
         "contrarian_tracking": {
@@ -1932,207 +2940,189 @@
       }
     },
     {
-      "event_id": "lane-china_policy",
-      "title": "中国权威政策落地",
-      "lane_id": "china_policy",
-      "lane_label": "中国权威政策落地",
+      "event_id": "ai-policy-财报-token-api",
+      "title": "财报",
+      "lane_id": "us_equities",
+      "lane_label": "美股变化",
       "status": "watching",
       "priority_grade": "B",
-      "importance_score": 100,
-      "first_seen_at": "2026-07-04T00:00:00.000Z",
+      "importance_score": 99,
+      "first_seen_at": "2026-06-18T00:00:00.000Z",
       "last_seen_at": "2026-07-06T00:00:00.000Z",
       "updated_at": "2026-07-06T00:00:00.000Z",
       "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
-        "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 3 条官方或市场权威来源，仍处在高时效窗口内。",
-        "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+        "one_sentence": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。 相关来源：第一财经、每日经济新闻",
+        "background": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。 相关来源：第一财经、每日经济新闻",
+        "core_question": "财报后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "英伟达CEO对AI基建周期的乐观表述可能强化市场对AI长期投入的信心，但当前尚未出现具体的企业行为或政策变化。",
+        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "观察验证",
-        "brief": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
         "rationale": [
-          "属于中国权威政策落地主线",
-          "重要性评分为 100",
+          "属于美股变化主线",
+          "重要性评分为 99",
           "证据置信度为中"
         ],
-        "market_symbols": [],
-        "policy_status": "落地执行",
+        "market_symbols": [
+          "NVDA"
+        ],
+        "policy_status": "",
         "requires_follow_up": true
       },
       "profile": {
         "impact_areas": [
-          "公共政策",
-          "习近平同黑山总统米拉托维",
-          "奇就中国同黑山建交",
-          "周年互致贺电"
+          "宏观",
+          "财报",
+          "商业",
+          "黄仁勋股东大会放言"
         ],
         "entities": {
-          "companies": [],
-          "people": [],
-          "institutions": [
-            "国务院",
-            "中国政府网",
-            "发改委",
-            "国家发展改革委"
+          "companies": [
+            "NVDA"
           ],
+          "people": [],
+          "institutions": [],
           "countries_or_regions": [],
           "products_or_technologies": [
             "AI",
-            "算力",
-            "芯片"
+            "人工智能",
+            "大模型",
+            "算力"
           ]
         },
-        "related_item_count": 20
+        "related_item_count": 4
       },
       "current_judgment": {
-        "summary": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
         "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-          "5月高技术制造业相关物流需求同比增长15.1%",
-          "全年2000亿元设备更新资金总额下达完毕"
+          "英伟达CEO黄仁勋在股东大会上表示本轮AI基建周期将长达数十年",
+          "他强调“有用的AI时代”已经到来，每个token都是一个利润单位",
+          "该言论可能提振市场对AI长期投入的信心，但需观察后续实际进展",
+          "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。"
         ],
-        "latest_change": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "latest_change": "23.45万亿Token！中国大模型周调用量连续十周领跑，包揽榜单前六：DeepSeek-V4-Flash连续七周位居榜首，智谱GLM-5.2冲进前五：上周中国大模型周调用量23.45万亿Token，环比增15.01%，连续十周超美国，DeepSeek-V4-Flash连续七周第一，智谱GLM-5.2进前五。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
-        "source_count": 1,
-        "official_source_count": 20,
+        "source_count": 2,
+        "official_source_count": 0,
         "financial_media_count": 0,
-        "timeline_count": 12,
+        "timeline_count": 4,
         "confidence_basis": "medium",
         "evidence_types": {
-          "official_announcement": 3,
-          "unknown": 3
+          "data_release": 2,
+          "industry_analysis": 2
         },
         "primary_source": {
-          "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm"
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html"
         },
         "source_links": [
           {
-            "item_id": "news-item-ace8a79a45",
-            "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+            "item_id": "macro-item-9ea7e3941d",
+            "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103244887.html",
+            "published_at": "2026-06-26T09:00:35.953Z",
+            "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+            "relevance_score": 99
+          },
+          {
+            "item_id": "macro-item-5737b08405",
+            "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103244887.html",
+            "published_at": "2026-06-25T09:00:32.469Z",
+            "summary": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+            "relevance_score": 99
+          },
+          {
+            "item_id": "business-item-9109fbd2f2",
+            "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
+            "published_at": "2026-06-18T00:00:00.000Z",
+            "summary": "每日经济新闻中文财经、公司和市场新闻",
+            "relevance_score": 95
+          },
+          {
+            "item_id": "business-item-470cf82507",
+            "title": "23.45万亿Token！中国大模型周调用量连续十周领跑，包揽榜单前六：DeepSeek-V4-Flash连续七周位居榜首，智谱GLM-5.2冲进前五",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
             "published_at": "2026-07-06T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-ab155d3298",
-            "title": "5月高技术制造业相关物流需求同比增长15.1%",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
-            "published_at": "2026-07-06T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-5f51dafd93",
-            "title": "全年2000亿元设备更新资金总额下达完毕",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
-            "published_at": "2026-07-06T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-f780a14f60",
-            "title": "“六张网”构建现代化基础设施体系",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-7a299be142",
-            "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-e63a046fe0",
-            "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-            "published_at": "2026-07-05T00:00:00.000Z",
-            "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-            "relevance_score": 100
+            "summary": "上周中国大模型周调用量23.45万亿Token，环比增15.01%，连续十周超美国，DeepSeek-V4-Flash连续七周第一，智谱GLM-5.2进前五。",
+            "relevance_score": 82
           }
         ],
         "evidence_gaps": [
-          "缺少跨来源交叉验证。"
+          "缺少官方或市场权威来源。"
         ]
       },
       "latest_update": {
-        "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-        "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+        "title": "23.45万亿Token！中国大模型周调用量连续十周领跑，包揽榜单前六：DeepSeek-V4-Flash连续七周位居榜首，智谱GLM-5.2冲进前五",
+        "summary": "上周中国大模型周调用量23.45万亿Token，环比增15.01%，连续十周超美国，DeepSeek-V4-Flash连续七周第一，智谱GLM-5.2进前五。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
         "published_at": "2026-07-06T00:00:00.000Z",
-        "score": 100
+        "score": 82
       },
       "confirmed_facts": [
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
-          "source": "中国政府网要闻",
+          "fact": "英伟达CEO黄仁勋在股东大会上表示本轮AI基建周期将长达数十年",
+          "evidence_url": "https://www.yicai.com/news/103244887.html",
+          "source": "第一财经",
           "confidence": "中"
         },
         {
-          "fact": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
-          "source": "中国政府网要闻",
+          "fact": "他强调“有用的AI时代”已经到来，每个token都是一个利润单位",
+          "evidence_url": "https://www.yicai.com/news/103244887.html",
+          "source": "第一财经",
           "confidence": "中"
         },
         {
-          "fact": "5月高技术制造业相关物流需求同比增长15.1%",
-          "evidence_url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
-          "source": "中国政府网要闻",
+          "fact": "该言论可能提振市场对AI长期投入的信心，但需观察后续实际进展",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
+          "source": "每日经济新闻",
           "confidence": "中"
         },
         {
-          "fact": "全年2000亿元设备更新资金总额下达完毕",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-          "source": "中国政府网要闻",
+          "fact": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
+          "source": "每日经济新闻",
           "confidence": "中"
         }
       ],
       "impact": {
         "market": {
-          "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
+          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-07T00:01:24.509Z。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+            "每日经济新闻中文财经、公司和市场新闻"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "industry": {
-          "impact": "可能影响 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交、周年互致贺电 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 宏观、财报、商业、黄仁勋股东大会放言 相关判断，需继续核对后续证据。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+            "每日经济新闻中文财经、公司和市场新闻"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "company": {
-          "impact": "关联实体：AI、算力、芯片、国务院、中国政府网、国家发展改革委。",
+          "impact": "关联实体：NVDA、英伟达、AI、人工智能、大模型、算力。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+            "每日经济新闻中文财经、公司和市场新闻"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2140,9 +3130,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+            "每日经济新闻中文财经、公司和市场新闻"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2150,15 +3140,25 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+            "每日经济新闻中文财经、公司和市场新闻"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
         }
       },
-      "market_feedback": [],
+      "market_feedback": [
+        {
+          "type": "市场反馈",
+          "description": "NVDA -1.3918%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
+          "date": "2026-07-06",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        }
+      ],
       "forward_scenarios": [
         {
           "scenario_id": "scenario-a",
@@ -2175,8 +3175,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息",
+            "跟踪 宏观、财报、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -2195,8 +3195,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
+            "跟踪 宏观、财报、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
           ]
         },
         {
@@ -2214,15 +3214,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
+            "跟踪 宏观、财报、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
+          "risk": "该观点可能过于乐观，实际周期受技术迭代、政策、经济等多因素影响，存在落差风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2231,7 +3231,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "无显著风险，但需注意过度宣传可能导致形式主义。",
+          "risk": "言论可能过于乐观，实际基建周期受技术瓶颈、下游需求等因素制约，存在不及预期风险。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2240,7 +3240,16 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
+          "risk": "原文未充分说明后续结果，需继续跟踪。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2257,35 +3266,40 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
+          "uncertainty": "该观点可能过于乐观，实际周期受技术迭代、政策、经济等多因素影响，存在落差风险。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "无显著风险，但需注意过度宣传可能导致形式主义。",
+          "uncertainty": "言论可能过于乐观，实际基建周期受技术瓶颈、下游需求等因素制约，存在不及预期风险。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
+          "uncertainty": "原文未充分说明后续结果，需继续跟踪。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "缺少跨来源交叉验证。",
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "缺少官方或市场权威来源。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         }
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+          "variable": "跟踪 宏观、财报、商业 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -2299,7 +3313,7 @@
       ],
       "next_questions": [
         {
-          "question": "中国权威政策落地是否会形成持续影响？",
+          "question": "财报是否会形成持续影响？",
           "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
           "status": "待验证"
         },
@@ -2311,340 +3325,146 @@
       ],
       "related_items": [
         {
-          "item_id": "news-item-ace8a79a45",
-          "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
+          "item_id": "macro-item-9ea7e3941d",
+          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103244887.html",
+          "published_at": "2026-06-26T09:00:35.953Z",
+          "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+          "relevance_score": 99
+        },
+        {
+          "item_id": "macro-item-5737b08405",
+          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103244887.html",
+          "published_at": "2026-06-25T09:00:32.469Z",
+          "summary": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+          "relevance_score": 99
+        },
+        {
+          "item_id": "business-item-9109fbd2f2",
+          "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
+          "published_at": "2026-06-18T00:00:00.000Z",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "relevance_score": 95
+        },
+        {
+          "item_id": "business-item-470cf82507",
+          "title": "23.45万亿Token！中国大模型周调用量连续十周领跑，包揽榜单前六：DeepSeek-V4-Flash连续七周位居榜首，智谱GLM-5.2冲进前五",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
           "published_at": "2026-07-06T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-ab155d3298",
-          "title": "5月高技术制造业相关物流需求同比增长15.1%",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
-          "published_at": "2026-07-06T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-5f51dafd93",
-          "title": "全年2000亿元设备更新资金总额下达完毕",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
-          "published_at": "2026-07-06T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-f780a14f60",
-          "title": "“六张网”构建现代化基础设施体系",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074362.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "国家推动“六张网”基础设施建设，涵盖地下管廊与算力枢纽等多领域。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-7a299be142",
-          "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-e63a046fe0",
-          "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-          "published_at": "2026-07-05T00:00:00.000Z",
-          "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-          "relevance_score": 100
+          "summary": "上周中国大模型周调用量23.45万亿Token，环比增15.01%，连续十周超美国，DeepSeek-V4-Flash连续七周第一，智谱GLM-5.2进前五。",
+          "relevance_score": 82
         }
       ],
       "timeline": [
         {
-          "date": "2026-07-05",
-          "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-          "summary": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-          "description": "习近平总书记讲话强调坚定信心、接续奋斗，为全党指明方向。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该讲话进一步统一了全党思想，明确了新征程上的奋斗方向，但未涉及具体政策或行动变化。",
-          "sources": [
-            {
-              "title": "人民日报评论员：坚定信心、接续奋斗，不断创造无愧于时代和人民的新业绩——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074360.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "summary": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-          "description": "官方重申坚持党的基本理论、基本路线、基本方略，无具体新举措。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前无实质性变化，该文章是对已有政治路线的重申和强调，没有提出新政策或新举措。",
-          "sources": [
-            {
-              "title": "新华社评论员：坚持党的基本理论、基本路线、基本方略——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074359.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
-          "summary": "中国政府向委内瑞拉提供首批地震救灾物资，7月5日晚启运。",
-          "description": "中国政府向委内瑞拉提供首批地震救灾物资，7月5日晚启运。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "此前未见中国对委内瑞拉地震援助的公开报道，此次启运标志着中国开始实际执行对委内瑞拉的地震救援行动。",
-          "sources": [
-            {
-              "title": "中国政府援助委内瑞拉首批紧急人道主义救灾物资启运",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074397.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-          "summary": "新华社发表评论文章学习总书记七一讲话精神，强调依靠人民。无具体事件变化。",
-          "description": "新华社发表评论文章学习总书记七一讲话精神，强调依靠人民。无具体事件变化。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "本文为官方学习宣传材料，未报道具体事件变化，属于既定政治路线的重申与强调。",
-          "sources": [
-            {
-              "title": "新华社评论员：紧紧依靠人民创造历史伟业——论学习贯彻习近平总书记在庆祝中国共产党成立105周年大会重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074390.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
-          "summary": "习近平主席在建党105周年大会上重申党改变了人民命运，暂无具体事件变化。",
-          "description": "习近平主席在建党105周年大会上重申党改变了人民命运，暂无具体事件变化。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前没有具体政策或事件变化，讲话重申和强调了党的历史成就与立场。",
-          "sources": [
-            {
-              "title": "“从根本上改变了中国人民的前途命运”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074389.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "Xi's Speech at CPC 105th Anniversary Inspires Macao to Contribute to National Rejuvenation",
-          "summary": "习近平讲话鼓舞澳门各界，强调实干担当，助力强国复兴。",
-          "description": "习近平讲话鼓舞澳门各界，强调实干担当，助力强国复兴。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，仅澳门社会层面表达了新的共识和奋斗决心。",
-          "sources": [
-            {
-              "title": "Xi's Speech at CPC 105th Anniversary Inspires Macao to Contribute to National Rejuvenation",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074396.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-05",
-          "title": "张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
-          "summary": "张国清调研新疆央企援疆，强调产业赋能与就业导向。",
-          "description": "张国清调研新疆央企援疆，强调产业赋能与就业导向。",
+          "date": "2026-06-18",
+          "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
+          "summary": "每日经济新闻中文财经、公司和市场新闻",
+          "description": "每日经济新闻中文财经、公司和市场新闻",
           "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "此次调研并未发布新政策，但明确了中央企业援疆工作的当前重点方向，即更强调产业和就业的实质性效益。",
+          "impact": "不足以判断",
           "sources": [
             {
-              "title": "张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074376.htm",
-              "published_at": "2026-07-05T00:00:00.000Z"
+              "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
+              "published_at": "2026-06-18T00:00:00.000Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074376.htm",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
+          "score": 95,
+          "publishedAt": "2026-06-18T00:00:00.000Z"
         },
         {
-          "date": "2026-07-05",
-          "title": "【视频】《习近平关于基层工作方法论述摘编》出版发行",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "date": "2026-06-25",
+          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+          "summary": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+          "description": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "黄仁勋的言论可能改变市场对AI基建周期的预期，从短期爆发转向长期持续投资。",
           "sources": [
             {
-              "title": "【视频】《习近平关于基层工作方法论述摘编》出版发行",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/05/VIDEkpuaf9zNHOEqwIhy5DQS260705.shtml",
-              "published_at": "2026-07-05T00:00:00.000Z"
+              "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103244887.html",
+              "published_at": "2026-06-25T09:00:32.469Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/05/VIDEkpuaf9zNHOEqwIhy5DQS260705.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103244887.html",
+          "score": 99,
+          "publishedAt": "2026-06-25T09:00:32.469Z"
         },
         {
-          "date": "2026-07-05",
-          "title": "【视频】张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "date": "2026-06-26",
+          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+          "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+          "description": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
+          "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "英伟达CEO对AI基建周期的乐观表述可能强化市场对AI长期投入的信心，但当前尚未出现具体的企业行为或政策变化。",
           "sources": [
             {
-              "title": "【视频】张国清在新疆调研时强调 强化产业赋能 突出就业导向 提升中央企业援疆综合效益",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/05/VIDE5WEoZRh6kTtGleEEaLeh260705.shtml",
-              "published_at": "2026-07-05T00:00:00.000Z"
+              "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103244887.html",
+              "published_at": "2026-06-26T09:00:35.953Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/05/VIDE5WEoZRh6kTtGleEEaLeh260705.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-05T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-06",
-          "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
-              "published_at": "2026-07-06T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074419.htm",
-          "score": 100,
-          "publishedAt": "2026-07-06T00:00:00.000Z"
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103244887.html",
+          "score": 99,
+          "publishedAt": "2026-06-26T09:00:35.953Z"
         },
         {
           "date": "2026-07-06",
-          "title": "5月高技术制造业相关物流需求同比增长15.1%",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "title": "23.45万亿Token！中国大模型周调用量连续十周领跑，包揽榜单前六：DeepSeek-V4-Flash连续七周位居榜首，智谱GLM-5.2冲进前五",
+          "summary": "上周中国大模型周调用量23.45万亿Token，环比增15.01%，连续十周超美国，DeepSeek-V4-Flash连续七周第一，智谱GLM-5.2进前五。",
+          "description": "上周中国大模型周调用量23.45万亿Token，环比增15.01%，连续十周超美国，DeepSeek-V4-Flash连续七周第一，智谱GLM-5.2进前五。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "中国大模型周调用量环比增长15.01%，连续六周增长，连续十周超过美国，保持全球领先地位。榜单结构变化：智谱GLM-5.2进入前五，进一步巩固中国模型在前列的优势。",
           "sources": [
             {
-              "title": "5月高技术制造业相关物流需求同比增长15.1%",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
+              "title": "23.45万亿Token！中国大模型周调用量连续十周领跑，包揽榜单前六：DeepSeek-V4-Flash连续七周位居榜首，智谱GLM-5.2冲进前五",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
               "published_at": "2026-07-06T00:00:00.000Z"
             }
           ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074412.htm",
-          "score": 100,
-          "publishedAt": "2026-07-06T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-06",
-          "title": "全年2000亿元设备更新资金总额下达完毕",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "全年2000亿元设备更新资金总额下达完毕",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
-              "published_at": "2026-07-06T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7074402.htm",
-          "score": 100,
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
+          "score": 82,
           "publishedAt": "2026-07-06T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
       "deep_tracking": {
-        "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "tracking_goal": "判断财报是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "财报后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
           "confidence": "medium",
           "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "习近平同黑山总统米拉托维奇就中国同黑山建交20周年互致贺电",
-            "5月高技术制造业相关物流需求同比增长15.1%"
+            "英伟达CEO黄仁勋在股东大会上表示本轮AI基建周期将长达数十年",
+            "他强调“有用的AI时代”已经到来，每个token都是一个利润单位",
+            "该言论可能提振市场对AI长期投入的信心，但需观察后续实际进展"
           ],
           "what_would_change_this_view": [
-            "缺少跨来源交叉验证。"
+            "缺少官方或市场权威来源。"
           ]
         },
         "core_tensions": [
@@ -2680,10 +3500,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
-              "公共政策",
-              "习近平同黑山总统米拉托维",
-              "奇就中国同黑山建交",
-              "周年互致贺电"
+              "宏观",
+              "财报",
+              "商业",
+              "黄仁勋股东大会放言"
             ],
             "confidence": "medium"
           }
@@ -2704,8 +3524,8 @@
             "impact_level": "B",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息",
+              "跟踪 宏观、财报、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -2724,8 +3544,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
+              "跟踪 宏观、财报、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
             ]
           },
           {
@@ -2743,15 +3563,15 @@
             "impact_level": "B",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
+              "跟踪 宏观、财报、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "大规模基础设施项目可能面临资金平衡、环境评价、地方债务等风险，且“六张网”协同推进对跨部门协调能力要求较高。",
+            "risk": "该观点可能过于乐观，实际周期受技术迭代、政策、经济等多因素影响，存在落差风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2760,7 +3580,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "无显著风险，但需注意过度宣传可能导致形式主义。",
+            "risk": "言论可能过于乐观，实际基建周期受技术瓶颈、下游需求等因素制约，存在不及预期风险。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2769,7 +3589,16 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "无直接风险，但若后续无具体落实措施，可能引发形式主义质疑。",
+            "risk": "原文未充分说明后续结果，需继续跟踪。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2787,18 +3616,18 @@
             }
           ],
           "disconfirming_signals": [
-            "缺少跨来源交叉验证。"
+            "缺少官方或市场权威来源。"
           ]
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 公共政策、习近平同黑山总统米拉托维、奇就中国同黑山建交 的后续变化",
+            "variable": "跟踪 宏观、财报、商业 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -2813,15 +3642,15 @@
         "judgment_history": [
           {
             "date": "2026-07-06",
-            "judgment": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
             "change_type": "初始判断",
-            "reason": "中国权威政策落地值得纳入观察列表，但需等待更多来源或市场反应验证；政策状态：落地执行。",
+            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
             "evidence_item_ids": []
           }
         ],
         "open_questions": [
           {
-            "question": "中国权威政策落地是否会形成持续影响？",
+            "question": "财报是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -3017,7 +3846,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-06T09:01:32.570Z。",
+          "impact": "关联标的：GOOGL -0.3599%；行情时间：2026-07-07T00:01:24.509Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -3165,6 +3994,15 @@
           "severity": "中",
           "probability": "中",
           "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
         }
       ],
       "counter_arguments": [
@@ -3187,6 +4025,11 @@
         },
         {
           "uncertainty": "实际应用效果和监管审批存在不确定性",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -3466,6 +4309,15 @@
             "severity": "中",
             "probability": "中",
             "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
           }
         ],
         "contrarian_tracking": {
@@ -3699,7 +4551,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-06T09:01:32.570Z。",
+          "impact": "关联标的：MSFT 1.6160%；行情时间：2026-07-07T00:01:24.509Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -3824,6 +4676,15 @@
           "severity": "中",
           "probability": "中",
           "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
         }
       ],
       "counter_arguments": [
@@ -3836,6 +4697,11 @@
       "uncertainties": [
         {
           "uncertainty": "可能存在调研偏差或过度乐观，需谨慎解读。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -4069,6 +4935,15 @@
             "severity": "中",
             "probability": "中",
             "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
           }
         ],
         "contrarian_tracking": {
@@ -4116,701 +4991,6 @@
         "open_questions": [
           {
             "question": "AI 政策与基础设施是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
-      "event_id": "ai-policy-财报-token-api",
-      "title": "财报",
-      "lane_id": "us_equities",
-      "lane_label": "美股变化",
-      "status": "watching",
-      "priority_grade": "B",
-      "importance_score": 99,
-      "first_seen_at": "2026-06-18T00:00:00.000Z",
-      "last_seen_at": "2026-06-26T09:00:35.953Z",
-      "updated_at": "2026-06-26T09:00:35.953Z",
-      "definition": {
-        "one_sentence": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。 相关来源：第一财经、每日经济新闻",
-        "background": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。 相关来源：第一财经、每日经济新闻",
-        "core_question": "财报后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "英伟达CEO对AI基建周期的乐观表述可能强化市场对AI长期投入的信心，但当前尚未出现具体的企业行为或政策变化。",
-        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "观察验证",
-        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
-        "rationale": [
-          "属于美股变化主线",
-          "重要性评分为 99",
-          "证据置信度为中"
-        ],
-        "market_symbols": [
-          "NVDA"
-        ],
-        "policy_status": "",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "宏观",
-          "财报",
-          "商业",
-          "黄仁勋股东大会放言"
-        ],
-        "entities": {
-          "companies": [
-            "NVDA"
-          ],
-          "people": [],
-          "institutions": [],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI",
-            "人工智能",
-            "大模型",
-            "算力"
-          ]
-        },
-        "related_item_count": 3
-      },
-      "current_judgment": {
-        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
-        "basis": [
-          "英伟达CEO黄仁勋在股东大会上表示本轮AI基建周期将长达数十年",
-          "他强调“有用的AI时代”已经到来，每个token都是一个利润单位",
-          "该言论可能提振市场对AI长期投入的信心，但需观察后续实际进展",
-          "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。"
-        ],
-        "latest_change": "黄仁勋股东大会放言：本轮AI基建周期长达数十年：黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-        "judgment_update": "初始判断",
-        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
-      },
-      "evidence": {
-        "source_count": 2,
-        "official_source_count": 0,
-        "financial_media_count": 0,
-        "timeline_count": 3,
-        "confidence_basis": "medium",
-        "evidence_types": {
-          "data_release": 2,
-          "industry_analysis": 1
-        },
-        "primary_source": {
-          "name": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html"
-        },
-        "source_links": [
-          {
-            "item_id": "macro-item-9ea7e3941d",
-            "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103244887.html",
-            "published_at": "2026-06-26T09:00:35.953Z",
-            "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-            "relevance_score": 99
-          },
-          {
-            "item_id": "macro-item-5737b08405",
-            "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103244887.html",
-            "published_at": "2026-06-25T09:00:32.469Z",
-            "summary": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-            "relevance_score": 99
-          },
-          {
-            "item_id": "business-item-9109fbd2f2",
-            "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
-            "published_at": "2026-06-18T00:00:00.000Z",
-            "summary": "每日经济新闻中文财经、公司和市场新闻",
-            "relevance_score": 95
-          }
-        ],
-        "evidence_gaps": [
-          "缺少官方或市场权威来源。"
-        ]
-      },
-      "latest_update": {
-        "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-        "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-        "source": "第一财经",
-        "url": "https://www.yicai.com/news/103244887.html",
-        "published_at": "2026-06-26T09:00:35.953Z",
-        "score": 99
-      },
-      "confirmed_facts": [
-        {
-          "fact": "英伟达CEO黄仁勋在股东大会上表示本轮AI基建周期将长达数十年",
-          "evidence_url": "https://www.yicai.com/news/103244887.html",
-          "source": "第一财经",
-          "confidence": "中"
-        },
-        {
-          "fact": "他强调“有用的AI时代”已经到来，每个token都是一个利润单位",
-          "evidence_url": "https://www.yicai.com/news/103244887.html",
-          "source": "第一财经",
-          "confidence": "中"
-        },
-        {
-          "fact": "该言论可能提振市场对AI长期投入的信心，但需观察后续实际进展",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
-          "source": "每日经济新闻",
-          "confidence": "中"
-        },
-        {
-          "fact": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-          "evidence_url": "https://www.yicai.com/news/103244887.html",
-          "source": "第一财经",
-          "confidence": "中"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关联标的：NVDA -1.3918%；行情时间：2026-07-06T09:01:32.570Z。",
-          "evidence": [
-            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-            "每日经济新闻中文财经、公司和市场新闻"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "industry": {
-          "impact": "可能影响 宏观、财报、商业、黄仁勋股东大会放言 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-            "每日经济新闻中文财经、公司和市场新闻"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "company": {
-          "impact": "关联实体：NVDA、英伟达、AI、人工智能、大模型、算力。",
-          "evidence": [
-            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-            "每日经济新闻中文财经、公司和市场新闻"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-            "每日经济新闻中文财经、公司和市场新闻"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-            "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-            "每日经济新闻中文财经、公司和市场新闻"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [
-        {
-          "type": "市场反馈",
-          "description": "NVDA -1.3918%",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "date": "2026-06-26",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        }
-      ],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、财报、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、财报、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 宏观、财报、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "该观点可能过于乐观，实际周期受技术迭代、政策、经济等多因素影响，存在落差风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "言论可能过于乐观，实际基建周期受技术瓶颈、下游需求等因素制约，存在不及预期风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "原文未充分说明后续结果，需继续跟踪。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "该观点可能过于乐观，实际周期受技术迭代、政策、经济等多因素影响，存在落差风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "言论可能过于乐观，实际基建周期受技术瓶颈、下游需求等因素制约，存在不及预期风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "原文未充分说明后续结果，需继续跟踪。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "缺少官方或市场权威来源。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 宏观、财报、商业 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "财报是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "macro-item-9ea7e3941d",
-          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "published_at": "2026-06-26T09:00:35.953Z",
-          "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-          "relevance_score": 99
-        },
-        {
-          "item_id": "macro-item-5737b08405",
-          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "published_at": "2026-06-25T09:00:32.469Z",
-          "summary": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-          "relevance_score": 99
-        },
-        {
-          "item_id": "business-item-9109fbd2f2",
-          "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
-          "published_at": "2026-06-18T00:00:00.000Z",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "relevance_score": 95
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-18",
-          "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
-          "summary": "每日经济新闻中文财经、公司和市场新闻",
-          "description": "每日经济新闻中文财经、公司和市场新闻",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "不足以判断",
-          "sources": [
-            {
-              "title": "疯狂扩产的“Token工厂”：营收数十倍增长上演资本狂欢，API价格战、端侧分流双重夹击 赛道盈利持续承压 2026-06-18 17:49",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
-              "published_at": "2026-06-18T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-18/4430659.html",
-          "score": 95,
-          "publishedAt": "2026-06-18T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-          "summary": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-          "description": "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "黄仁勋的言论可能改变市场对AI基建周期的预期，从短期爆发转向长期持续投资。",
-          "sources": [
-            {
-              "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103244887.html",
-              "published_at": "2026-06-25T09:00:32.469Z"
-            }
-          ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "score": 99,
-          "publishedAt": "2026-06-25T09:00:32.469Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-          "summary": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-          "description": "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
-          "evidence_type": "data_release",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "英伟达CEO对AI基建周期的乐观表述可能强化市场对AI长期投入的信心，但当前尚未出现具体的企业行为或政策变化。",
-          "sources": [
-            {
-              "title": "黄仁勋股东大会放言：本轮AI基建周期长达数十年",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103244887.html",
-              "published_at": "2026-06-26T09:00:35.953Z"
-            }
-          ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103244887.html",
-          "score": 99,
-          "publishedAt": "2026-06-26T09:00:35.953Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断财报是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "财报后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
-          "confidence": "medium",
-          "basis": [
-            "英伟达CEO黄仁勋在股东大会上表示本轮AI基建周期将长达数十年",
-            "他强调“有用的AI时代”已经到来，每个token都是一个利润单位",
-            "该言论可能提振市场对AI长期投入的信心，但需观察后续实际进展"
-          ],
-          "what_would_change_this_view": [
-            "缺少官方或市场权威来源。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "medium"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "宏观",
-              "财报",
-              "商业",
-              "黄仁勋股东大会放言"
-            ],
-            "confidence": "medium"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "B",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、财报、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、财报、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "B",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 宏观、财报、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "该观点可能过于乐观，实际周期受技术迭代、政策、经济等多因素影响，存在落差风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "言论可能过于乐观，实际基建周期受技术瓶颈、下游需求等因素制约，存在不及预期风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "原文未充分说明后续结果，需继续跟踪。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "缺少官方或市场权威来源。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 宏观、财报、商业 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-06-26",
-            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
-            "change_type": "初始判断",
-            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 NVDA。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "财报是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -5034,7 +5214,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-06T09:01:32.570Z。",
+          "impact": "关联标的：TSLA -7.4888%、QQQ -1.7334%；行情时间：2026-07-07T00:01:24.509Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
@@ -5191,6 +5371,15 @@
           "severity": "中",
           "probability": "中",
           "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "行情数据可能过期，需核对实时价格。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
         }
       ],
       "counter_arguments": [
@@ -5213,6 +5402,11 @@
         },
         {
           "uncertainty": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "行情数据可能过期，需核对实时价格。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -5583,6 +5777,15 @@
           {
             "risk_type": "信息风险",
             "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "行情数据可能过期，需核对实时价格。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",

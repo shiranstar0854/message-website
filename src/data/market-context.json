@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-06T09:01:32.570Z",
+  "generatedAt": "2026-07-07T00:01:24.509Z",
   "provider": "alpha-vantage",
-  "status": "available",
-  "stale": false,
-  "message": "",
+  "status": "stale",
+  "stale": true,
+  "message": "GLOBAL_QUOTE NVDA: We have detected your API key as NHSJ4K3M12GHTQX3 and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits.",
   "symbols": {
     "NVDA": {
       "symbol": "NVDA",
