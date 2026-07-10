@@ -1,9 +1,30 @@
 {
-  "generatedAt": "2026-07-09T11:31:54.314Z",
+  "generatedAt": "2026-07-10T00:25:10.033Z",
   "retentionDays": 10,
-  "totalArchiveDays": 45,
+  "totalArchiveDays": 46,
   "totalDays": 10,
   "days": [
+    {
+      "date": "2026-07-10",
+      "generatedAt": "2026-07-10T00:01:59.221Z",
+      "url": "data/archive/daily/2026-07-10.json",
+      "totalItems": 70,
+      "totals": {
+        "sources": 20,
+        "healthySources": 11,
+        "rawItems": 79,
+        "normalizedItems": 79,
+        "filteredItems": 77,
+        "dedupedItems": 76,
+        "scoredItems": 76,
+        "enrichmentAttempted": 61,
+        "enrichmentFailed": 1
+      },
+      "archivePolicy": {
+        "maxItemsPerChannel": 20,
+        "availableItems": 76
+      }
+    },
     {
       "date": "2026-07-09",
       "generatedAt": "2026-07-09T09:07:00.178Z",
@@ -191,27 +212,6 @@
       "archivePolicy": {
         "maxItemsPerChannel": 20,
         "availableItems": 81
-      }
-    },
-    {
-      "date": "2026-06-30",
-      "generatedAt": "2026-06-30T09:01:23.141Z",
-      "url": "data/archive/daily/2026-06-30.json",
-      "totalItems": 61,
-      "totals": {
-        "sources": 20,
-        "healthySources": 11,
-        "rawItems": 67,
-        "normalizedItems": 67,
-        "filteredItems": 65,
-        "dedupedItems": 64,
-        "scoredItems": 64,
-        "enrichmentAttempted": 59,
-        "enrichmentFailed": 1
-      },
-      "archivePolicy": {
-        "maxItemsPerChannel": 20,
-        "availableItems": 64
       }
     }
   ]
