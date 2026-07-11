@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-10T09:01:59.271Z",
+  "generated_at": "2026-07-11T00:01:57.238Z",
   "meta": {
     "lookback_days": 90,
-    "event_count": 7,
+    "event_count": 8,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-10T09:01:32.560Z"
+      "generated_at": "2026-07-11T00:01:24.832Z"
     },
     "llm": {
       "enabled": true,
@@ -45,26 +45,26 @@
       "status": "active",
       "priority_grade": "A",
       "importance_score": 100,
-      "first_seen_at": "2026-07-08T00:00:00.000Z",
+      "first_seen_at": "2026-07-09T00:00:00.000Z",
       "last_seen_at": "2026-07-10T00:00:00.000Z",
       "updated_at": "2026-07-10T00:00:00.000Z",
       "definition": {
-        "one_sentence": "国家统计局宏观经济、价格、工业、投资和人口数据发布 相关来源：国家统计局数据发布、中国政府网要闻",
-        "background": "国家统计局宏观经济、价格、工业、投资和人口数据发布 相关来源：国家统计局数据发布、中国政府网要闻",
+        "one_sentence": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。 相关来源：国家统计局数据发布、中国政府网要闻、科技部工作动态",
+        "background": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。 相关来源：国家统计局数据发布、中国政府网要闻、科技部工作动态",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 5 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "2026年夏粮产量数据较往年可能有所变化，但具体数值未在提供材料中说明。此次发布提供了最新的官方产量统计，为农业生产和经济分析提供了基准数据。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "优先跟踪",
-        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+        "brief": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "rationale": [
           "属于中国权威政策落地主线",
           "重要性评分为 100",
           "证据置信度为高"
         ],
         "market_symbols": [],
-        "policy_status": "监管处罚",
+        "policy_status": "落地执行",
         "requires_follow_up": true
       },
       "profile": {
@@ -93,26 +93,27 @@
         "related_item_count": 20
       },
       "current_judgment": {
-        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+        "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "国家统计局关于2026年夏粮产量数据的公告",
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "抓住历史机遇 迎接时代挑战——习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话激励广大科技工作者勇担使命"
+          "国家统计局发布夏粮产量公告",
+          "发布时间为2026年7月10日",
+          "具体产量数据未在文本中给出",
+          "属于常规农业统计发布"
         ],
-        "latest_change": "国家统计局关于2026年夏粮产量数据的公告：国家统计局宏观经济、价格、工业、投资和人口数据发布",
+        "latest_change": "国家统计局关于2026年夏粮产量数据的公告：国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 3,
+        "source_count": 4,
         "official_source_count": 20,
         "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 5,
-          "data_release": 1
+          "data_release": 1,
+          "unknown": 4,
+          "official_announcement": 1
         },
         "primary_source": {
           "name": "国家统计局数据发布",
@@ -125,16 +126,16 @@
             "source": "国家统计局数据发布",
             "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
             "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+            "summary": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
             "relevance_score": 100
           },
           {
             "item_id": "news-item-91e273517e",
-            "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话激励广大科技工作者勇担使命",
+            "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科技奖励大会等会议上的重要讲话激励科技工作者",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
             "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
             "relevance_score": 100
           },
           {
@@ -143,7 +144,7 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
             "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
             "relevance_score": 100
           },
           {
@@ -152,25 +153,25 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
             "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
             "relevance_score": 100
           },
           {
             "item_id": "news-item-f829c5394e",
-            "title": "国家救灾响应级别针对广西提至三级 相关部门持续部署重点地区防汛防台风工作",
+            "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
             "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
             "relevance_score": 100
           },
           {
-            "item_id": "macro-item-2a3531eebe",
-            "title": "2026年6月份居民消费价格同比上涨1.0%",
-            "source": "国家统计局数据发布",
-            "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260709_1964084.html",
-            "published_at": "2026-07-09T00:00:00.000Z",
-            "summary": "2026年6月CPI同比上涨1.0%，为国家统计局官方发布。",
+            "item_id": "tech-item-d5dd255bc5",
+            "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
+            "source": "科技部工作动态",
+            "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
+            "published_at": "2026-07-10T00:00:00.000Z",
+            "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
             "relevance_score": 100
           }
         ],
@@ -180,7 +181,7 @@
       },
       "latest_update": {
         "title": "国家统计局关于2026年夏粮产量数据的公告",
-        "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+        "summary": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
         "source": "国家统计局数据发布",
         "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
         "published_at": "2026-07-10T00:00:00.000Z",
@@ -188,25 +189,25 @@
       },
       "confirmed_facts": [
         {
-          "fact": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "fact": "国家统计局发布夏粮产量公告",
           "evidence_url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
           "source": "国家统计局数据发布",
           "confidence": "高"
         },
         {
-          "fact": "国家统计局关于2026年夏粮产量数据的公告",
+          "fact": "发布时间为2026年7月10日",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "fact": "具体产量数据未在文本中给出",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话激励广大科技工作者勇担使命",
+          "fact": "属于常规农业统计发布",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
@@ -216,9 +217,9 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
+            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -226,19 +227,19 @@
         "industry": {
           "impact": "可能影响 宏观、国家统计局关于、年夏粮产量数据的公告、国家统计局宏观经济 相关判断，需继续核对后续证据。",
           "evidence": [
-            "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
+            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、统计局、国家统计局。",
+          "impact": "关联实体：AI、国务院、中国政府网、统计局、国家统计局、科技部。",
           "evidence": [
-            "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
+            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -246,9 +247,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
+            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -256,9 +257,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
+            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -328,7 +329,25 @@
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "缺乏环比及细项数据，无法准确评估价格结构风险，需警惕需求不足导致的通缩风险。",
+          "risk": "数据发布若与市场预期偏差大，可能引发粮食价格异常波动；但本次仅公告发布，未见具体数值，风险较低。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "如果配套政策未能及时跟上，讲话可能停留在口号层面，削弱市场信心。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "当前数据未提及贸易政策、供应链或汇率波动等潜在风险，但高增速能否持续需关注海外市场需求变化和贸易环境。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -345,7 +364,17 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "缺乏环比及细项数据，无法准确评估价格结构风险，需警惕需求不足导致的通缩风险。",
+          "uncertainty": "数据发布若与市场预期偏差大，可能引发粮食价格异常波动；但本次仅公告发布，未见具体数值，风险较低。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "如果配套政策未能及时跟上，讲话可能停留在口号层面，削弱市场信心。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "当前数据未提及贸易政策、供应链或汇率波动等潜在风险，但高增速能否持续需关注海外市场需求变化和贸易环境。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -394,16 +423,16 @@
           "source": "国家统计局数据发布",
           "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
           "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
+          "summary": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
           "relevance_score": 100
         },
         {
           "item_id": "news-item-91e273517e",
-          "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话激励广大科技工作者勇担使命",
+          "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科技奖励大会等会议上的重要讲话激励科技工作者",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
           "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
           "relevance_score": 100
         },
         {
@@ -412,7 +441,7 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
           "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
           "relevance_score": 100
         },
         {
@@ -421,236 +450,38 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
           "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
           "relevance_score": 100
         },
         {
           "item_id": "news-item-f829c5394e",
-          "title": "国家救灾响应级别针对广西提至三级 相关部门持续部署重点地区防汛防台风工作",
+          "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
           "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
           "relevance_score": 100
         },
         {
-          "item_id": "macro-item-2a3531eebe",
-          "title": "2026年6月份居民消费价格同比上涨1.0%",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260709_1964084.html",
-          "published_at": "2026-07-09T00:00:00.000Z",
-          "summary": "2026年6月CPI同比上涨1.0%，为国家统计局官方发布。",
+          "item_id": "tech-item-d5dd255bc5",
+          "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
+          "published_at": "2026-07-10T00:00:00.000Z",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
-          "date": "2026-07-09",
-          "title": "台风“巴威”逼近 相关地区部署防御",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "不足以判断",
-          "sources": [
-            {
-              "title": "台风“巴威”逼近 相关地区部署防御",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074882.htm",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074882.htm",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "习近平对福建泉州晋江市一鞋厂火灾事故作出重要指示强调 深入排查整治各类风险隐患 抓实抓细安全生产措施落实 坚决防止重特大事故发生 李强作出批示",
-          "summary": "习近平就福建鞋厂火灾作指示，要求排查隐患、防止重特大事故；李强批示。",
-          "description": "习近平就福建鞋厂火灾作指示，要求排查隐患、防止重特大事故；李强批示。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该事故引发最高层领导人直接关注和批示，可能推动全国范围内安全生产隐患排查行动的强化，以及相关责任追究的加速。",
-          "sources": [
-            {
-              "title": "习近平对福建泉州晋江市一鞋厂火灾事故作出重要指示强调 深入排查整治各类风险隐患 抓实抓细安全生产措施落实 坚决防止重特大事故发生 李强作出批示",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/09/VIDEPmCg01y1kcYLhzjBEe7b260709.shtml",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/09/VIDEPmCg01y1kcYLhzjBEe7b260709.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "丁薛祥在两院院士大会第二次全体会议上强调落实党中央科技部署 推进高水平科技自立自强",
-          "summary": "丁薛祥在两院院士大会上强调落实科技部署，无新政策披露。",
-          "description": "丁薛祥在两院院士大会上强调落实科技部署，无新政策披露。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "会议重申了既定科技方针，未宣布新的政策或改革措施，因此短期内可见的变化有限。",
-          "sources": [
-            {
-              "title": "丁薛祥在两院院士大会第二次全体会议上强调落实党中央科技部署 推进高水平科技自立自强",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/09/VIDEwg9SAzZfZrPLvOzyy72M260709.shtml",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/09/VIDEwg9SAzZfZrPLvOzyy72M260709.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "习近平对福建泉州晋江市一鞋厂火灾事故作出重要指示",
-          "summary": "福建晋江一鞋厂发生火灾，习近平作出指示。",
-          "description": "福建晋江一鞋厂发生火灾，习近平作出指示。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中央最高层已关注该事件，后续或将推动事故救援、调查及安全生产部署调整。",
-          "sources": [
-            {
-              "title": "习近平对福建泉州晋江市一鞋厂火灾事故作出重要指示",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074850.htm",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074850.htm",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "丁薛祥在两院院士大会第二次全体会议上强调 全力抓好党中央关于科技事业各项部署的落实 加快推进高水平科技自立自强",
-          "summary": "丁薛祥在两院院士大会上强调落实科技部署、推进高水平科技自立自强，但未披露具体新政策。",
-          "description": "丁薛祥在两院院士大会上强调落实科技部署、推进高水平科技自立自强，但未披露具体新政策。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足。讲话内容未披露具体新政策或变化。",
-          "sources": [
-            {
-              "title": "丁薛祥在两院院士大会第二次全体会议上强调 全力抓好党中央关于科技事业各项部署的落实 加快推进高水平科技自立自强",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074844.htm",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074844.htm",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "国务院印发《“十五五”碳达峰行动方案》",
-          "summary": "国务院印发“十五五”碳达峰行动方案，部署相关工作，具体内容待公布。",
-          "description": "国务院印发“十五五”碳达峰行动方案，部署相关工作，具体内容待公布。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，仅知国务院发布了新一阶段的碳达峰行动方案，取代或补充了上一阶段的政策框架，具体调整内容待方案公布后确认。",
-          "sources": [
-            {
-              "title": "国务院印发《“十五五”碳达峰行动方案》",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074833.htm",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074833.htm",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "国务院关于印发《“十五五”碳达峰行动方案》的通知",
-          "summary": "国务院印发《“十五五”碳达峰行动方案》通知，要求贯彻执行，但方案全文尚未公布。",
-          "description": "国务院印发《“十五五”碳达峰行动方案》通知，要求贯彻执行，但方案全文尚未公布。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家发布了最新一期碳达峰行动方案，标志着“十五五”时期碳达峰工作有了新的政策依据和行动纲领。具体内容及与以往方案的差异尚待全文公布。",
-          "sources": [
-            {
-              "title": "国务院关于印发《“十五五”碳达峰行动方案》的通知",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/zhengce/content/202607/content_7074826.htm",
-              "published_at": "2026-07-09T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074826.htm",
-          "score": 100,
-          "publishedAt": "2026-07-09T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "国家统计局关于2026年夏粮产量数据的公告",
-          "summary": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "description": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-          "sources": [
-            {
-              "title": "国家统计局关于2026年夏粮产量数据的公告",
-              "source": "国家统计局数据发布",
-              "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话激励广大科技工作者勇担使命",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话激励广大科技工作者勇担使命",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
           "date": "2026-07-10",
           "title": "上半年新能源汽车出口同比增长1.2倍",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
+          "description": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "汽车出口延续高增长态势，新能源汽车出口增速进一步加快至倍数级增长。",
           "sources": [
             {
               "title": "上半年新能源汽车出口同比增长1.2倍",
@@ -667,12 +498,12 @@
         {
           "date": "2026-07-10",
           "title": "人民日报评论员：扎扎实实以科技创新支撑和引领中国式现代化——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
+          "description": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前证据不足，讲话内容未在输入中详细说明，但会议强调了科技创新的重要性，可能预示着政策导向的延续或强化。",
           "sources": [
             {
               "title": "人民日报评论员：扎扎实实以科技创新支撑和引领中国式现代化——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
@@ -688,16 +519,16 @@
         },
         {
           "date": "2026-07-10",
-          "title": "国家救灾响应级别针对广西提至三级 相关部门持续部署重点地区防汛防台风工作",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
+          "summary": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
+          "description": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "六蓝水库溃口导致洪灾，人员伤亡和失联数字公布，大规模群众转移安置已基本完成。受灾范围及影响进一步明确。",
           "sources": [
             {
-              "title": "国家救灾响应级别针对广西提至三级 相关部门持续部署重点地区防汛防台风工作",
+              "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
               "published_at": "2026-07-10T00:00:00.000Z"
@@ -707,6 +538,204 @@
           "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
           "score": 100,
           "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
+          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "description": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "sources": [
+            {
+              "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
+              "source": "科技部工作动态",
+              "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "科技部工作动态",
+          "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "财政部、应急管理部再次紧急预拨8000万元中央自然灾害救灾资金 支持广西重点做好受灾群众救助工作",
+          "summary": "财政部财政政策、国债、预算和财政运行新闻",
+          "description": "财政部财政政策、国债、预算和财政运行新闻",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "财政部财政政策、国债、预算和财政运行新闻",
+          "sources": [
+            {
+              "title": "财政部、应急管理部再次紧急预拨8000万元中央自然灾害救灾资金 支持广西重点做好受灾群众救助工作",
+              "source": "财政部财政新闻",
+              "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260710_3993310.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "财政部财政新闻",
+          "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260710_3993310.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "历史性突破 长征十号乙完成全球首次海上网系回收",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "历史性突破 长征十号乙完成全球首次海上网系回收",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075015.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075015.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "中华人民共和国和纳米比亚共和国关于构建新时代中纳命运共同体的联合声明",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "中华人民共和国和纳米比亚共和国关于构建新时代中纳命运共同体的联合声明",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074987.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074987.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "张国清在国家防总专题调度2026年第9号台风“巴威”防范应对工作时强调 打出提前量 打好主动仗 全力防范应对台风“巴威”",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "张国清在国家防总专题调度2026年第9号台风“巴威”防范应对工作时强调 打出提前量 打好主动仗 全力防范应对台风“巴威”",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074986.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074986.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作时强调 细致做好受灾群众生活保障 全力支持受灾地区抢修恢复",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作时强调 细致做好受灾群众生活保障 全力支持受灾地区抢修恢复",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074985.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074985.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "李强主持召开国务院常务会议 进一步部署防汛抗洪救灾工作等",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "李强主持召开国务院常务会议 进一步部署防汛抗洪救灾工作等",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074983.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074983.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "国务院任免国家工作人员（2026年7月10日）",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院任免国家工作人员（2026年7月10日）",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074943.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074943.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "国务院关于《中医药振兴发展“十五五”规划》的批复",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "国务院关于《中医药振兴发展“十五五”规划》的批复",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -714,12 +743,12 @@
         "tracking_goal": "判断中国权威政策落地是否会改变行业格局、市场预期、政策方向或个人决策。",
         "research_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+          "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "国家统计局宏观经济、价格、工业、投资和人口数据发布",
-            "国家统计局关于2026年夏粮产量数据的公告",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "国家统计局发布夏粮产量公告",
+            "发布时间为2026年7月10日",
+            "具体产量数据未在文本中给出"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -829,7 +858,25 @@
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "缺乏环比及细项数据，无法准确评估价格结构风险，需警惕需求不足导致的通缩风险。",
+            "risk": "数据发布若与市场预期偏差大，可能引发粮食价格异常波动；但本次仅公告发布，未见具体数值，风险较低。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "如果配套政策未能及时跟上，讲话可能停留在口号层面，削弱市场信心。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "当前数据未提及贸易政策、供应链或汇率波动等潜在风险，但高增速能否持续需关注海外市场需求变化和贸易环境。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -873,9 +920,9 @@
         "judgment_history": [
           {
             "date": "2026-07-10",
-            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+            "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
             "change_type": "初始判断",
-            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：监管处罚。",
+            "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
             "evidence_item_ids": []
           }
         ],
@@ -1113,7 +1160,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.8372%；行情时间：2026-07-10T09:01:32.560Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T00:01:24.832Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -1166,7 +1213,7 @@
       "market_feedback": [
         {
           "type": "市场反馈",
-          "description": "GOOGL -0.8372%",
+          "description": "GOOGL -0.4765%",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103266197.html",
           "date": "2026-07-09",
@@ -1884,149 +1931,139 @@
       }
     },
     {
-      "event_id": "macro-policy-ipo-spacex-史上最大",
-      "title": "宏观政策与利率",
-      "lane_id": "us_equities",
-      "lane_label": "美股变化",
+      "event_id": "lane-china_us_ai",
+      "title": "中美 AI 发展",
+      "lane_id": "china_us_ai",
+      "lane_label": "中美 AI 发展",
       "status": "watching",
       "priority_grade": "B",
-      "importance_score": 97,
-      "first_seen_at": "2026-06-12T09:01:14.051Z",
-      "last_seen_at": "2026-07-10T00:00:00.000Z",
-      "updated_at": "2026-07-10T00:00:00.000Z",
+      "importance_score": 100,
+      "first_seen_at": "2026-06-17T10:00:00.000Z",
+      "last_seen_at": "2026-07-11T00:01:04.834Z",
+      "updated_at": "2026-07-11T00:01:04.834Z",
       "definition": {
-        "one_sentence": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
-        "background": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
-        "core_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "标志科技企业市值和富豪身家达到新里程碑",
-        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+        "one_sentence": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
+        "background": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
+        "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "中美 AI 发展 会影响政策、市场、产业或国际变化判断；覆盖 2 个公开来源，仍处在高时效窗口内。",
+        "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
         "signal": "观察验证",
-        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 META/AMZN/AVGO/TSLA/QQQ/SPY。",
+        "brief": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
         "rationale": [
-          "属于美股变化主线",
-          "重要性评分为 97",
+          "属于中美 AI 发展主线",
+          "重要性评分为 100",
           "证据置信度为中"
         ],
-        "market_symbols": [
-          "META",
-          "AMZN",
-          "AVGO",
-          "TSLA",
-          "QQQ",
-          "SPY"
-        ],
+        "market_symbols": [],
         "policy_status": "",
         "requires_follow_up": true
       },
       "profile": {
         "impact_areas": [
           "宏观",
-          "国际",
-          "商业",
-          "市值空降美股前十"
+          "美联储",
+          "沃什改革开启",
+          "美联储五大工作组亮相"
         ],
         "entities": {
           "companies": [
-            "META",
-            "AMZN",
-            "AVGO",
-            "TSLA",
-            "QQQ",
-            "SPY",
-            "Meta"
+            "OpenAI"
           ],
-          "people": [
-            "马斯克"
-          ],
+          "people": [],
           "institutions": [],
           "countries_or_regions": [],
-          "products_or_technologies": []
+          "products_or_technologies": [
+            "AI",
+            "OpenAI",
+            "model",
+            "人工智能"
+          ]
         },
-        "related_item_count": 7
+        "related_item_count": 20
       },
       "current_judgment": {
-        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 META/AMZN/AVGO/TSLA/QQQ/SPY。",
+        "summary": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
         "basis": [
-          "SpaceX市值空降美股前十",
-          "马斯克成为全球首位万亿美元富豪",
-          "此轮造富可能源于史上最大规模IPO",
-          "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
+          "第一财经中文财经、宏观、产业和市场新闻",
+          "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
+          "德意志电信与 OpenAI 合作",
+          "转型领域：客户服务、员工工作流、网络运营、语音"
         ],
-        "latest_change": "7月10日，全球首个海上网系可回收火箭首飞；华为发起OPEN NPO项目，共建国内首个近封装光学（NPO）光互连MSA——《投资早参》 2026-07-10 07:19：标题报道两个事件：海上可回收火箭首飞和华为发起光互连MSA项目，但正文仅含美股行情，缺乏具体信息。",
+        "latest_change": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析：第一财经中文财经、宏观、产业和市场新闻",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
       "evidence": {
         "source_count": 2,
         "official_source_count": 0,
-        "financial_media_count": 0,
-        "timeline_count": 7,
+        "financial_media_count": 2,
+        "timeline_count": 12,
         "confidence_basis": "medium",
         "evidence_types": {
-          "data_release": 3,
-          "unknown": 2,
-          "industry_analysis": 1
+          "reliable_media_report": 1,
+          "industry_analysis": 2,
+          "unknown": 3
         },
         "primary_source": {
-          "name": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html"
+          "name": "第一财经",
+          "url": "https://www.yicai.com/news/103270074.html"
         },
         "source_links": [
           {
-            "item_id": "macro-item-06646bdbac",
-            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "item_id": "macro-item-1f43726891",
+            "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
             "source": "第一财经",
-            "url": "https://www.yicai.com/news/103228502.html",
-            "published_at": "2026-06-14T09:00:40.480Z",
-            "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "relevance_score": 97
+            "url": "https://www.yicai.com/news/103270074.html",
+            "published_at": "2026-07-11T00:01:04.834Z",
+            "summary": "第一财经中文财经、宏观、产业和市场新闻",
+            "relevance_score": 100
           },
           {
-            "item_id": "macro-item-1c8f7d7ba8",
-            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103228502.html",
-            "published_at": "2026-06-13T09:00:47.914Z",
-            "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "relevance_score": 97
+            "item_id": "tech-openai-news-0f7aa66716",
+            "title": "德意志电信如何用 AI 重塑电信业",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/deutsche-telekom",
+            "published_at": "2026-07-10T07:00:00.000Z",
+            "summary": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+            "relevance_score": 100
           },
           {
-            "item_id": "macro-item-8b73efee6b",
-            "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103227523.html",
-            "published_at": "2026-06-12T09:01:14.051Z",
-            "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-            "relevance_score": 97
+            "item_id": "international-openai-news-cea92174d6",
+            "title": "我们关于政府和国家安全合作伙伴关系的方针",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/government-national-security-partnerships",
+            "published_at": "2026-07-08T13:30:00.000Z",
+            "summary": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
+            "relevance_score": 100
           },
           {
-            "item_id": "international-item-cbd3c5c3a8",
-            "title": "7月10日，全球首个海上网系可回收火箭首飞；华为发起OPEN NPO项目，共建国内首个近封装光学（NPO）光互连MSA——《投资早参》 2026-07-10 07:19",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "标题报道两个事件：海上可回收火箭首飞和华为发起光互连MSA项目，但正文仅含美股行情，缺乏具体信息。",
-            "relevance_score": 95
+            "item_id": "tech-openai-news-b5748a8d3b",
+            "title": "从编码评估中分离信号与噪声",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+            "published_at": "2026-07-08T13:00:00.000Z",
+            "summary": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
+            "relevance_score": 100
           },
           {
-            "item_id": "international-item-969b764a62",
-            "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-            "published_at": "2026-06-13T00:00:00.000Z",
-            "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-            "relevance_score": 91
+            "item_id": "international-openai-news-f32146c958",
+            "title": "帮助K-12教育工作者建立实用AI技能",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/k-12-educators-practical-skills",
+            "published_at": "2026-07-08T10:00:00.000Z",
+            "summary": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
+            "relevance_score": 100
           },
           {
-            "item_id": "business-item-5d4eb1e693",
-            "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-            "published_at": "2026-06-14T00:00:00.000Z",
-            "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-            "relevance_score": 87
+            "item_id": "international-openai-news-6fbc3708a9",
+            "title": "ChatGPT采用如何扩大",
+            "source": "OpenAI News",
+            "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+            "published_at": "2026-06-30T09:00:00.000Z",
+            "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+            "relevance_score": 100
           }
         ],
         "evidence_gaps": [
@@ -2034,66 +2071,66 @@
         ]
       },
       "latest_update": {
-        "title": "7月10日，全球首个海上网系可回收火箭首飞；华为发起OPEN NPO项目，共建国内首个近封装光学（NPO）光互连MSA——《投资早参》 2026-07-10 07:19",
-        "summary": "标题报道两个事件：海上可回收火箭首飞和华为发起光互连MSA项目，但正文仅含美股行情，缺乏具体信息。",
-        "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-        "published_at": "2026-07-10T00:00:00.000Z",
-        "score": 95
+        "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
+        "summary": "第一财经中文财经、宏观、产业和市场新闻",
+        "source": "第一财经",
+        "url": "https://www.yicai.com/news/103270074.html",
+        "published_at": "2026-07-11T00:01:04.834Z",
+        "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "SpaceX市值空降美股前十",
-          "evidence_url": "https://www.yicai.com/news/103228502.html",
+          "fact": "第一财经中文财经、宏观、产业和市场新闻",
+          "evidence_url": "https://www.yicai.com/news/103270074.html",
           "source": "第一财经",
           "confidence": "中"
         },
         {
-          "fact": "马斯克成为全球首位万亿美元富豪",
-          "evidence_url": "https://www.yicai.com/news/103228502.html",
-          "source": "第一财经",
+          "fact": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
+          "evidence_url": "https://openai.com/index/deutsche-telekom",
+          "source": "OpenAI News",
           "confidence": "中"
         },
         {
-          "fact": "此轮造富可能源于史上最大规模IPO",
-          "evidence_url": "https://www.yicai.com/news/103227523.html",
-          "source": "第一财经",
+          "fact": "德意志电信与 OpenAI 合作",
+          "evidence_url": "https://openai.com/index/government-national-security-partnerships",
+          "source": "OpenAI News",
           "confidence": "中"
         },
         {
-          "fact": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "source": "每日经济新闻",
+          "fact": "转型领域：客户服务、员工工作流、网络运营、语音",
+          "evidence_url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+          "source": "OpenAI News",
           "confidence": "中"
         }
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：META 4.7022%、AMZN 1.4038%、AVGO 3.1953%、TSLA 3.1696%、QQQ 1.6642%、SPY 0.8465%；行情时间：2026-07-10T09:01:32.560Z。",
+          "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
           "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+            "第一财经中文财经、宏观、产业和市场新闻",
+            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "industry": {
-          "impact": "可能影响 宏观、国际、商业、市值空降美股前十 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 宏观、美联储、沃什改革开启、美联储五大工作组亮相 相关判断，需继续核对后续证据。",
           "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+            "第一财经中文财经、宏观、产业和市场新闻",
+            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "company": {
-          "impact": "关联实体：META、AMZN、AVGO、TSLA、QQQ、SPY。",
+          "impact": "关联实体：AI、OpenAI、model、人工智能。",
           "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+            "第一财经中文财经、宏观、产业和市场新闻",
+            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2101,9 +2138,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+            "第一财经中文财经、宏观、产业和市场新闻",
+            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2111,70 +2148,15 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+            "第一财经中文财经、宏观、产业和市场新闻",
+            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
         }
       },
-      "market_feedback": [
-        {
-          "type": "市场反馈",
-          "description": "META 4.7022%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "date": "2026-07-10",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "AMZN 1.4038%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "date": "2026-07-10",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "AVGO 3.1953%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "date": "2026-07-10",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "TSLA 3.1696%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "date": "2026-07-10",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "QQQ 1.6642%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "date": "2026-07-10",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "SPY 0.8465%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "date": "2026-07-10",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        }
-      ],
+      "market_feedback": [],
       "forward_scenarios": [
         {
           "scenario_id": "scenario-a",
@@ -2191,8 +2173,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 宏观、国际、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+            "跟踪 宏观、美联储、沃什改革开启 的后续变化",
+            "留意 第一财经、OpenAI News 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -2211,8 +2193,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 宏观、国际、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+            "跟踪 宏观、美联储、沃什改革开启 的后续变化",
+            "留意 第一财经、OpenAI News 是否继续发布相关信息"
           ]
         },
         {
@@ -2230,15 +2212,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 宏观、国际、商业 的后续变化",
-            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+            "跟踪 宏观、美联储、沃什改革开启 的后续变化",
+            "留意 第一财经、OpenAI News 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "高估值风险、造富效应与财富集中争议",
+          "risk": "AI 技术成熟度不足可能影响实际效果；数据隐私和员工适应性是潜在挑战。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2247,7 +2229,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "不足以判断",
+          "risk": "原则可能过于笼统，缺乏具体实施细则，导致执行不透明。此外，合作可能引发隐私和道德争议。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2256,7 +2238,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "事件真实性有待验证，且技术成熟度和商业前景不明。",
+          "risk": "若基准不可靠，可能导致对AI模型性能的误判。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -2273,17 +2255,17 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "高估值风险、造富效应与财富集中争议",
+          "uncertainty": "AI 技术成熟度不足可能影响实际效果；数据隐私和员工适应性是潜在挑战。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "不足以判断",
+          "uncertainty": "原则可能过于笼统，缺乏具体实施细则，导致执行不透明。此外，合作可能引发隐私和道德争议。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "事件真实性有待验证，且技术成熟度和商业前景不明。",
+          "uncertainty": "若基准不可靠，可能导致对AI模型性能的误判。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -2295,13 +2277,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 宏观、国际、商业 的后续变化",
+          "variable": "跟踪 宏观、美联储、沃什改革开启 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+          "variable": "留意 第一财经、OpenAI News 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -2315,7 +2297,7 @@
       ],
       "next_questions": [
         {
-          "question": "宏观政策与利率是否会形成持续影响？",
+          "question": "中美 AI 发展是否会形成持续影响？",
           "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
           "status": "待验证"
         },
@@ -2327,227 +2309,337 @@
       ],
       "related_items": [
         {
-          "item_id": "macro-item-06646bdbac",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "item_id": "macro-item-1f43726891",
+          "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
           "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "published_at": "2026-06-14T09:00:40.480Z",
-          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "relevance_score": 97
+          "url": "https://www.yicai.com/news/103270074.html",
+          "published_at": "2026-07-11T00:01:04.834Z",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "relevance_score": 100
         },
         {
-          "item_id": "macro-item-1c8f7d7ba8",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "published_at": "2026-06-13T09:00:47.914Z",
-          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-          "relevance_score": 97
+          "item_id": "tech-openai-news-0f7aa66716",
+          "title": "德意志电信如何用 AI 重塑电信业",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/deutsche-telekom",
+          "published_at": "2026-07-10T07:00:00.000Z",
+          "summary": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+          "relevance_score": 100
         },
         {
-          "item_id": "macro-item-8b73efee6b",
-          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103227523.html",
-          "published_at": "2026-06-12T09:01:14.051Z",
-          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-          "relevance_score": 97
+          "item_id": "international-openai-news-cea92174d6",
+          "title": "我们关于政府和国家安全合作伙伴关系的方针",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/government-national-security-partnerships",
+          "published_at": "2026-07-08T13:30:00.000Z",
+          "summary": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
+          "relevance_score": 100
         },
         {
-          "item_id": "international-item-cbd3c5c3a8",
-          "title": "7月10日，全球首个海上网系可回收火箭首飞；华为发起OPEN NPO项目，共建国内首个近封装光学（NPO）光互连MSA——《投资早参》 2026-07-10 07:19",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "标题报道两个事件：海上可回收火箭首飞和华为发起光互连MSA项目，但正文仅含美股行情，缺乏具体信息。",
-          "relevance_score": 95
+          "item_id": "tech-openai-news-b5748a8d3b",
+          "title": "从编码评估中分离信号与噪声",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+          "published_at": "2026-07-08T13:00:00.000Z",
+          "summary": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
+          "relevance_score": 100
         },
         {
-          "item_id": "international-item-969b764a62",
-          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-          "published_at": "2026-06-13T00:00:00.000Z",
-          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-          "relevance_score": 91
+          "item_id": "international-openai-news-f32146c958",
+          "title": "帮助K-12教育工作者建立实用AI技能",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/k-12-educators-practical-skills",
+          "published_at": "2026-07-08T10:00:00.000Z",
+          "summary": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
+          "relevance_score": 100
         },
         {
-          "item_id": "business-item-5d4eb1e693",
-          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-          "published_at": "2026-06-14T00:00:00.000Z",
-          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-          "relevance_score": 87
+          "item_id": "international-openai-news-6fbc3708a9",
+          "title": "ChatGPT采用如何扩大",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+          "published_at": "2026-06-30T09:00:00.000Z",
+          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+          "relevance_score": 100
         }
       ],
       "timeline": [
         {
-          "date": "2026-06-12",
-          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-          "description": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
-          "evidence_type": "data_release",
+          "date": "2026-06-25",
+          "title": "AI代理如何改变工作",
+          "summary": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
+          "description": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
+          "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "提及SpaceX上市可能带来的财富效应，但缺乏具体细节。",
+          "impact": "这项研究揭示了AI代理在提升任务复杂度和延长任务执行时间方面的能力，可能改变人们对自动化范围的认知。此前类似的成果尚未公开。",
           "sources": [
             {
-              "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103227523.html",
-              "published_at": "2026-06-12T09:01:14.051Z"
+              "title": "AI代理如何改变工作",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/how-agents-are-transforming-work",
+              "published_at": "2026-06-25T02:00:00.000Z"
             }
           ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103227523.html",
-          "score": 97,
-          "publishedAt": "2026-06-12T09:01:14.051Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-agents-are-transforming-work",
+          "score": 100,
+          "publishedAt": "2026-06-25T02:00:00.000Z"
         },
         {
-          "date": "2026-06-13",
-          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
-          "description": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "date": "2026-06-26",
+          "title": "预览GPT-5.6 Sol：下一代模型",
+          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+          "description": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI推出了GPT-5.6 Sol的预览，相较于前代模型，其在特定领域的能力有所增强，并提升了安全防护措施。",
+          "sources": [
+            {
+              "title": "预览GPT-5.6 Sol：下一代模型",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+              "published_at": "2026-06-26T10:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+          "score": 100,
+          "publishedAt": "2026-06-26T10:00:00.000Z"
+        },
+        {
+          "date": "2026-06-28",
+          "title": "惠普公司与OpenAI启动Frontier战略合作",
+          "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
+          "description": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "惠普从之前的合作模式进一步升级，将AI更深地融入核心业务流程，可能改变其产品开发和服务交付方式。",
+          "sources": [
+            {
+              "title": "惠普公司与OpenAI启动Frontier战略合作",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/hp-frontier-partnership",
+              "published_at": "2026-06-28T17:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/hp-frontier-partnership",
+          "score": 100,
+          "publishedAt": "2026-06-28T17:00:00.000Z"
+        },
+        {
+          "date": "2026-06-29",
+          "title": "绘制欧洲AI劳动力机遇地图",
+          "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
+          "description": "OpenAI新报告分析AI对欧盟就业的影响。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "这些事件涉及科技造富、美联储政策、地缘政治、就业预测、技术封锁和半导体行业，对全球经济和市场有重要影响。",
+          "impact": "OpenAI发布了一份新报告，提供了对欧盟劳动力市场受AI影响的新视角。",
           "sources": [
             {
-              "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-              "published_at": "2026-06-13T00:00:00.000Z"
+              "title": "绘制欧洲AI劳动力机遇地图",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "published_at": "2026-06-29T07:00:00.000Z"
             }
           ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
-          "score": 91,
-          "publishedAt": "2026-06-13T00:00:00.000Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "score": 100,
+          "publishedAt": "2026-06-29T07:00:00.000Z"
         },
         {
-          "date": "2026-06-13",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-          "description": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
-          "evidence_type": "data_release",
+          "date": "2026-06-30",
+          "title": "介绍GeneBench-Pro",
+          "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+          "description": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "该事件彰显SpaceX巨大市场价值，并创造个人财富新纪录，可能引发太空经济投资热潮。",
+          "impact": "目前尚未有测试结果公布，但该基准的引入可能改变AI在生命科学领域的评估标准。现有基准可能不够复杂，而GeneBench-Pro通过真实世界数据提升了评估的相关性。",
           "sources": [
             {
-              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103228502.html",
-              "published_at": "2026-06-13T09:00:47.914Z"
+              "title": "介绍GeneBench-Pro",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/introducing-genebench-pro",
+              "published_at": "2026-06-30T00:00:00.000Z"
             }
           ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "score": 97,
-          "publishedAt": "2026-06-13T09:00:47.914Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/introducing-genebench-pro",
+          "score": 100,
+          "publishedAt": "2026-06-30T00:00:00.000Z"
         },
         {
-          "date": "2026-06-14",
-          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-          "description": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": true,
-          "impact": "SpaceX上市创全球最大IPO纪录，市值跻身全美前六，标志着商业航天领域的里程碑。",
-          "sources": [
-            {
-              "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-              "published_at": "2026-06-14T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
-          "score": 87,
-          "publishedAt": "2026-06-14T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-14",
-          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "description": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
-          "evidence_type": "data_release",
+          "date": "2026-06-30",
+          "title": "ChatGPT采用如何扩大",
+          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+          "description": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "标志科技企业市值和富豪身家达到新里程碑",
+          "impact": "OpenAI新数据显示ChatGPT的全球采用率进一步扩大，用户活跃度和功能使用广度均有所提升。",
           "sources": [
             {
-              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103228502.html",
-              "published_at": "2026-06-14T09:00:40.480Z"
+              "title": "ChatGPT采用如何扩大",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+              "published_at": "2026-06-30T09:00:00.000Z"
             }
           ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103228502.html",
-          "score": 97,
-          "publishedAt": "2026-06-14T09:00:40.480Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+          "score": 100,
+          "publishedAt": "2026-06-30T09:00:00.000Z"
         },
         {
-          "date": "2026-06-24",
-          "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
-          "summary": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
-          "description": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
-          "evidence_type": "industry_analysis",
-          "importance": "中",
-          "does_it_change_judgment": false,
-          "impact": "马斯克从万亿美元富豪状态中退出，身价缩水至9570亿美元，短期内财富大幅减少。",
+          "date": "2026-07-08",
+          "title": "帮助K-12教育工作者建立实用AI技能",
+          "summary": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
+          "description": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "此前针对K-12教育工作者的系统性AI实践培训较少，这一合作引入了一项新的免费或低成本的实操培训项目，可能改变教师获取AI技能的途径。",
           "sources": [
             {
-              "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
-              "published_at": "2026-06-24T00:00:00.000Z"
+              "title": "帮助K-12教育工作者建立实用AI技能",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/k-12-educators-practical-skills",
+              "published_at": "2026-07-08T10:00:00.000Z"
             }
           ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
-          "score": 82,
-          "publishedAt": "2026-06-24T00:00:00.000Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/k-12-educators-practical-skills",
+          "score": 100,
+          "publishedAt": "2026-07-08T10:00:00.000Z"
+        },
+        {
+          "date": "2026-07-08",
+          "title": "从编码评估中分离信号与噪声",
+          "summary": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
+          "description": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
+          "evidence_type": "industry_analysis",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "该分析揭示基准测试可能不可靠，影响对AI模型性能的评估。",
+          "sources": [
+            {
+              "title": "从编码评估中分离信号与噪声",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+              "published_at": "2026-07-08T13:00:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+          "score": 100,
+          "publishedAt": "2026-07-08T13:00:00.000Z"
+        },
+        {
+          "date": "2026-07-08",
+          "title": "我们关于政府和国家安全合作伙伴关系的方针",
+          "summary": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
+          "description": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "OpenAI首次公开阐述了其与政府和国家安全机构合作的具体原则。这代表了OpenAI在透明度和政策指导上的一个进展。",
+          "sources": [
+            {
+              "title": "我们关于政府和国家安全合作伙伴关系的方针",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/government-national-security-partnerships",
+              "published_at": "2026-07-08T13:30:00.000Z"
+            }
+          ],
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/government-national-security-partnerships",
+          "score": 100,
+          "publishedAt": "2026-07-08T13:30:00.000Z"
         },
         {
           "date": "2026-07-10",
-          "title": "7月10日，全球首个海上网系可回收火箭首飞；华为发起OPEN NPO项目，共建国内首个近封装光学（NPO）光互连MSA——《投资早参》 2026-07-10 07:19",
-          "summary": "标题报道两个事件：海上可回收火箭首飞和华为发起光互连MSA项目，但正文仅含美股行情，缺乏具体信息。",
-          "description": "标题报道两个事件：海上可回收火箭首飞和华为发起光互连MSA项目，但正文仅含美股行情，缺乏具体信息。",
-          "evidence_type": "unknown",
+          "title": "德意志电信如何用 AI 重塑电信业",
+          "summary": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+          "description": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
+          "evidence_type": "industry_analysis",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "目前证据不足，仅从标题得知两个事件发生，但市场或行业的具体变化无法确认。",
+          "impact": "德意志电信从传统电信运营商转向 AI 原生的运营模式，核心业务流程引入生成式 AI。",
           "sources": [
             {
-              "title": "7月10日，全球首个海上网系可回收火箭首飞；华为发起OPEN NPO项目，共建国内首个近封装光学（NPO）光互连MSA——《投资早参》 2026-07-10 07:19",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-              "published_at": "2026-07-10T00:00:00.000Z"
+              "title": "德意志电信如何用 AI 重塑电信业",
+              "source": "OpenAI News",
+              "url": "https://openai.com/index/deutsche-telekom",
+              "published_at": "2026-07-10T07:00:00.000Z"
             }
           ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465061.html",
-          "score": 95,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/deutsche-telekom",
+          "score": 100,
+          "publishedAt": "2026-07-10T07:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "description": "第一财经中文财经、宏观、产业和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "第一财经中文财经、宏观、产业和市场新闻",
+          "sources": [
+            {
+              "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103270074.html",
+              "published_at": "2026-07-11T00:01:04.834Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103270074.html",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:01:04.834Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "AI周期走到“加时赛”，值得关注的四个资本开支泡沫预警信号",
+          "summary": "第一财经中文财经、宏观、产业和市场新闻",
+          "description": "第一财经中文财经、宏观、产业和市场新闻",
+          "evidence_type": "reliable_media_report",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "第一财经中文财经、宏观、产业和市场新闻",
+          "sources": [
+            {
+              "title": "AI周期走到“加时赛”，值得关注的四个资本开支泡沫预警信号",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103269598.html",
+              "published_at": "2026-07-11T00:01:04.834Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103269598.html",
+          "score": 99,
+          "publishedAt": "2026-07-11T00:01:04.834Z"
         }
       ],
       "analysis_notes": [],
       "deep_tracking": {
-        "tracking_goal": "判断宏观政策与利率是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "tracking_goal": "判断中美 AI 发展是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
         "current_thesis": {
-          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 META/AMZN/AVGO/TSLA/QQQ/SPY。",
+          "thesis": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
           "confidence": "medium",
           "basis": [
-            "SpaceX市值空降美股前十",
-            "马斯克成为全球首位万亿美元富豪",
-            "此轮造富可能源于史上最大规模IPO"
+            "第一财经中文财经、宏观、产业和市场新闻",
+            "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
+            "德意志电信与 OpenAI 合作"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -2587,9 +2679,9 @@
             ],
             "affected_areas": [
               "宏观",
-              "国际",
-              "商业",
-              "市值空降美股前十"
+              "美联储",
+              "沃什改革开启",
+              "美联储五大工作组亮相"
             ],
             "confidence": "medium"
           }
@@ -2610,8 +2702,8 @@
             "impact_level": "B",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 宏观、国际、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+              "跟踪 宏观、美联储、沃什改革开启 的后续变化",
+              "留意 第一财经、OpenAI News 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -2630,8 +2722,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 宏观、国际、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+              "跟踪 宏观、美联储、沃什改革开启 的后续变化",
+              "留意 第一财经、OpenAI News 是否继续发布相关信息"
             ]
           },
           {
@@ -2649,15 +2741,15 @@
             "impact_level": "B",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 宏观、国际、商业 的后续变化",
-              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+              "跟踪 宏观、美联储、沃什改革开启 的后续变化",
+              "留意 第一财经、OpenAI News 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "高估值风险、造富效应与财富集中争议",
+            "risk": "AI 技术成熟度不足可能影响实际效果；数据隐私和员工适应性是潜在挑战。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2666,7 +2758,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "不足以判断",
+            "risk": "原则可能过于笼统，缺乏具体实施细则，导致执行不透明。此外，合作可能引发隐私和道德争议。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2675,7 +2767,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "事件真实性有待验证，且技术成熟度和商业前景不明。",
+            "risk": "若基准不可靠，可能导致对AI模型性能的误判。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -2698,13 +2790,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 宏观、国际、商业 的后续变化",
+            "variable": "跟踪 宏观、美联储、沃什改革开启 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+            "variable": "留意 第一财经、OpenAI News 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -2718,16 +2810,16 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-10",
-            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 META/AMZN/AVGO/TSLA/QQQ/SPY。",
+            "date": "2026-07-11",
+            "judgment": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
             "change_type": "初始判断",
-            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 META/AMZN/AVGO/TSLA/QQQ/SPY。",
+            "reason": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
             "evidence_item_ids": []
           }
         ],
         "open_questions": [
           {
-            "question": "宏观政策与利率是否会形成持续影响？",
+            "question": "中美 AI 发展是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
@@ -2783,13 +2875,13 @@
       "priority_grade": "B",
       "importance_score": 100,
       "first_seen_at": "2026-06-28T00:00:00.000Z",
-      "last_seen_at": "2026-07-10T00:00:00.000Z",
-      "updated_at": "2026-07-10T00:00:00.000Z",
+      "last_seen_at": "2026-07-09T13:00:00.000Z",
+      "updated_at": "2026-07-09T13:00:00.000Z",
       "definition": {
-        "one_sentence": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。 相关来源：每日经济新闻、OpenAI News",
-        "background": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。 相关来源：每日经济新闻、OpenAI News",
+        "one_sentence": "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。 相关来源：每日经济新闻、OpenAI News",
+        "background": "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。 相关来源：每日经济新闻、OpenAI News",
         "core_question": "AI 政策与基础设施后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "SK海力士通过ADR在美定价融资，改变了其资本结构，获得大额美元资金，同时创下外国在美IPO募资新纪录，可能影响其他海外企业赴美上市决策。",
+        "why_it_matters": "OpenAI推出新一代模型GPT-5.6，其中均衡版Terra在保持相近性能的同时大幅降低成本，可能改变AI模型定价格局。但当前开放范围有限，未全面面向公众。",
         "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -2808,7 +2900,6 @@
       },
       "profile": {
         "impact_areas": [
-          "国际",
           "商业",
           "发布新模型"
         ],
@@ -2828,17 +2919,17 @@
             "model"
           ]
         },
-        "related_item_count": 3
+        "related_item_count": 2
       },
       "current_judgment": {
         "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 MSFT。",
         "basis": [
-          "SK海力士ADR发行价每股149美元",
-          "募资约265亿美元",
-          "创外国赴美IPO募资新纪录",
-          "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。"
+          "OpenAI发布GPT-5.6系列模型，包括旗舰Sol、均衡Terra和轻量款",
+          "Terra性能媲美GPT-5.5，成本降低2倍",
+          "Sol性能较上一代阶跃提升",
+          "当前仅向美国本土少数可信合作伙伴开放"
         ],
-        "latest_change": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录；OpenAI发布GPT-5.6系列模型，性能超越Claude，价格为竞品四分之一丨全球科技早参：SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
+        "latest_change": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型：OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。",
         "judgment_update": "初始判断",
         "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
       },
@@ -2846,26 +2937,16 @@
         "source_count": 2,
         "official_source_count": 0,
         "financial_media_count": 0,
-        "timeline_count": 3,
+        "timeline_count": 2,
         "confidence_basis": "medium",
         "evidence_types": {
-          "unknown": 1,
           "industry_analysis": 2
         },
         "primary_source": {
-          "name": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html"
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot"
         },
         "source_links": [
-          {
-            "item_id": "international-item-9fe782d50e",
-            "title": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录；OpenAI发布GPT-5.6系列模型，性能超越Claude，价格为竞品四分之一丨全球科技早参",
-            "source": "每日经济新闻",
-            "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
-            "relevance_score": 100
-          },
           {
             "item_id": "business-item-7a5aa9ac25",
             "title": "OpenAI发布GPT-5.6系列模型，成本降低但仅限美国特定合作伙伴",
@@ -2877,12 +2958,12 @@
           },
           {
             "item_id": "tech-openai-news-9b2703c70f",
-            "title": "GPT-5.6 现成为 Microsoft 365 Copilot 首选模型",
+            "title": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型",
             "source": "OpenAI News",
             "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
             "published_at": "2026-07-09T13:00:00.000Z",
-            "summary": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。",
-            "relevance_score": 86
+            "summary": "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。",
+            "relevance_score": 85
           }
         ],
         "evidence_gaps": [
@@ -2890,56 +2971,54 @@
         ]
       },
       "latest_update": {
-        "title": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录；OpenAI发布GPT-5.6系列模型，性能超越Claude，价格为竞品四分之一丨全球科技早参",
-        "summary": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
-        "source": "每日经济新闻",
-        "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-        "published_at": "2026-07-10T00:00:00.000Z",
-        "score": 100
+        "title": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型",
+        "summary": "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。",
+        "source": "OpenAI News",
+        "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+        "published_at": "2026-07-09T13:00:00.000Z",
+        "score": 85
       },
       "confirmed_facts": [
         {
-          "fact": "SK海力士ADR发行价每股149美元",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-          "source": "每日经济新闻",
-          "confidence": "中"
-        },
-        {
-          "fact": "募资约265亿美元",
+          "fact": "OpenAI发布GPT-5.6系列模型，包括旗舰Sol、均衡Terra和轻量款",
           "evidence_url": "https://www.nbd.com.cn/articles/2026-06-28/4439704.html",
           "source": "每日经济新闻",
           "confidence": "中"
         },
         {
-          "fact": "创外国赴美IPO募资新纪录",
+          "fact": "Terra性能媲美GPT-5.5，成本降低2倍",
           "evidence_url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
           "source": "OpenAI News",
           "confidence": "中"
         },
         {
-          "fact": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
-          "evidence_url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
+          "fact": "Sol性能较上一代阶跃提升",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-28/4439704.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
+        },
+        {
+          "fact": "当前仅向美国本土少数可信合作伙伴开放",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-28/4439704.html",
           "source": "每日经济新闻",
           "confidence": "中"
         }
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.2661%；行情时间：2026-07-10T09:01:32.560Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T00:01:24.832Z。",
           "evidence": [
-            "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
-            "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。"
+            "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
         },
         "industry": {
-          "impact": "可能影响 国际、商业、发布新模型 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 商业、发布新模型 相关判断，需继续核对后续证据。",
           "evidence": [
-            "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
-            "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。"
+            "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2947,9 +3026,8 @@
         "company": {
           "impact": "关联实体：MSFT、Microsoft、微软、AI、OpenAI、model。",
           "evidence": [
-            "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
-            "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。"
+            "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2957,9 +3035,8 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
-            "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。"
+            "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "中"
@@ -2967,9 +3044,8 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
-            "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。"
+            "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -2978,10 +3054,10 @@
       "market_feedback": [
         {
           "type": "市场反馈",
-          "description": "MSFT 0.2661%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-          "date": "2026-07-10",
+          "description": "MSFT 0.1925%",
+          "source": "OpenAI News",
+          "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+          "date": "2026-07-09",
           "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
           "confidence": "中"
         }
@@ -3002,7 +3078,7 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 国际、商业、发布新模型 的后续变化",
+            "跟踪 商业、发布新模型 的后续变化",
             "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
@@ -3022,7 +3098,7 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 国际、商业、发布新模型 的后续变化",
+            "跟踪 商业、发布新模型 的后续变化",
             "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
           ]
         },
@@ -3041,21 +3117,12 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 国际、商业、发布新模型 的后续变化",
+            "跟踪 商业、发布新模型 的后续变化",
             "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "股价波动风险；募集资金使用效率风险；半导体行业周期波动可能影响投资回报。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
         {
           "risk_type": "信息风险",
           "risk": "开放范围受限可能导致市场反应不及预期；轻量款和具体价格未披露，增加了不确定性；技术细节未经独立验证。",
@@ -3067,7 +3134,7 @@
         },
         {
           "risk_type": "信息风险",
-          "risk": "如果模型更新未能带来显著改善，可能引发用户不满；过度依赖单一模型也有技术锁定风险。目前风险较低，但需持续观察。",
+          "risk": "过度依赖单一AI模型可能带来服务中断或性能瓶颈风险；用户数据隐私需持续关注；模型更新可能增加企业培训成本。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -3084,17 +3151,12 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "股价波动风险；募集资金使用效率风险；半导体行业周期波动可能影响投资回报。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
           "uncertainty": "开放范围受限可能导致市场反应不及预期；轻量款和具体价格未披露，增加了不确定性；技术细节未经独立验证。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
         {
-          "uncertainty": "如果模型更新未能带来显著改善，可能引发用户不满；过度依赖单一模型也有技术锁定风险。目前风险较低，但需持续观察。",
+          "uncertainty": "过度依赖单一AI模型可能带来服务中断或性能瓶颈风险；用户数据隐私需持续关注；模型更新可能增加企业培训成本。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -3106,7 +3168,7 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 国际、商业、发布新模型 的后续变化",
+          "variable": "跟踪 商业、发布新模型 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -3138,15 +3200,6 @@
       ],
       "related_items": [
         {
-          "item_id": "international-item-9fe782d50e",
-          "title": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录；OpenAI发布GPT-5.6系列模型，性能超越Claude，价格为竞品四分之一丨全球科技早参",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
-          "relevance_score": 100
-        },
-        {
           "item_id": "business-item-7a5aa9ac25",
           "title": "OpenAI发布GPT-5.6系列模型，成本降低但仅限美国特定合作伙伴",
           "source": "每日经济新闻",
@@ -3157,12 +3210,12 @@
         },
         {
           "item_id": "tech-openai-news-9b2703c70f",
-          "title": "GPT-5.6 现成为 Microsoft 365 Copilot 首选模型",
+          "title": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型",
           "source": "OpenAI News",
           "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
           "published_at": "2026-07-09T13:00:00.000Z",
-          "summary": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。",
-          "relevance_score": 86
+          "summary": "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。",
+          "relevance_score": 85
         }
       ],
       "timeline": [
@@ -3190,16 +3243,16 @@
         },
         {
           "date": "2026-07-09",
-          "title": "GPT-5.6 现成为 Microsoft 365 Copilot 首选模型",
-          "summary": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。",
-          "description": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel 等组件，承诺更快更高质量。目前只有 OpenAI 官方消息，建议关注实际表现。",
+          "title": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型",
+          "summary": "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。",
+          "description": "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。",
           "evidence_type": "industry_analysis",
           "importance": "中",
           "does_it_change_judgment": true,
-          "impact": "Microsoft 365 Copilot 的底层模型从之前的版本更换为 GPT-5.6，用户在使用 Copilot 时将获得升级后的 AI 响应。具体性能提升幅度尚未披露，但官方强调速度和质量均有改善。",
+          "impact": "Microsoft 365 Copilot将其底层AI模型升级为GPT-5.6，替代了此前版本。新模型带来了更强的AI能力，覆盖多个Office组件。",
           "sources": [
             {
-              "title": "GPT-5.6 现成为 Microsoft 365 Copilot 首选模型",
+              "title": "GPT-5.6 成为 Microsoft 365 Copilot 首选模型",
               "source": "OpenAI News",
               "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
               "published_at": "2026-07-09T13:00:00.000Z"
@@ -3207,30 +3260,8 @@
           ],
           "source": "OpenAI News",
           "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-          "score": 86,
+          "score": 85,
           "publishedAt": "2026-07-09T13:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录；OpenAI发布GPT-5.6系列模型，性能超越Claude，价格为竞品四分之一丨全球科技早参",
-          "summary": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
-          "description": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "SK海力士通过ADR在美定价融资，改变了其资本结构，获得大额美元资金，同时创下外国在美IPO募资新纪录，可能影响其他海外企业赴美上市决策。",
-          "sources": [
-            {
-              "title": "SK海力士ADR定价149美元，募资约265亿美元，刷新外国企业赴美IPO纪录；OpenAI发布GPT-5.6系列模型，性能超越Claude，价格为竞品四分之一丨全球科技早参",
-              "source": "每日经济新闻",
-              "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-10/4465084.html",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -3241,9 +3272,9 @@
           "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 MSFT。",
           "confidence": "medium",
           "basis": [
-            "SK海力士ADR发行价每股149美元",
-            "募资约265亿美元",
-            "创外国赴美IPO募资新纪录"
+            "OpenAI发布GPT-5.6系列模型，包括旗舰Sol、均衡Terra和轻量款",
+            "Terra性能媲美GPT-5.5，成本降低2倍",
+            "Sol性能较上一代阶跃提升"
           ],
           "what_would_change_this_view": [
             "缺少官方或市场权威来源。"
@@ -3282,7 +3313,6 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
-              "国际",
               "商业",
               "发布新模型"
             ],
@@ -3305,7 +3335,7 @@
             "impact_level": "B",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 国际、商业、发布新模型 的后续变化",
+              "跟踪 商业、发布新模型 的后续变化",
               "留意 每日经济新闻、OpenAI News 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
@@ -3325,7 +3355,7 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 国际、商业、发布新模型 的后续变化",
+              "跟踪 商业、发布新模型 的后续变化",
               "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
             ]
           },
@@ -3344,21 +3374,12 @@
             "impact_level": "B",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 国际、商业、发布新模型 的后续变化",
+              "跟踪 商业、发布新模型 的后续变化",
               "留意 每日经济新闻、OpenAI News 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "股价波动风险；募集资金使用效率风险；半导体行业周期波动可能影响投资回报。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
           {
             "risk_type": "信息风险",
             "risk": "开放范围受限可能导致市场反应不及预期；轻量款和具体价格未披露，增加了不确定性；技术细节未经独立验证。",
@@ -3370,7 +3391,7 @@
           },
           {
             "risk_type": "信息风险",
-            "risk": "如果模型更新未能带来显著改善，可能引发用户不满；过度依赖单一模型也有技术锁定风险。目前风险较低，但需持续观察。",
+            "risk": "过度依赖单一AI模型可能带来服务中断或性能瓶颈风险；用户数据隐私需持续关注；模型更新可能增加企业培训成本。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -3393,7 +3414,7 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 国际、商业、发布新模型 的后续变化",
+            "variable": "跟踪 商业、发布新模型 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -3413,7 +3434,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-10",
+            "date": "2026-07-09",
             "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 MSFT。",
             "change_type": "初始判断",
             "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 MSFT。",
@@ -3628,7 +3649,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA -0.6565%；行情时间：2026-07-10T09:01:32.560Z。",
+          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-11T00:01:24.832Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -3679,6 +3700,15 @@
         }
       },
       "market_feedback": [
+        {
+          "type": "市场反馈",
+          "description": "NVDA 4.0339%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
+          "date": "2026-07-06",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
         {
           "type": "市场反馈",
           "description": "NVDA -0.6565%",
@@ -4353,7 +4383,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.8372%；行情时间：2026-07-10T09:01:32.560Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T00:01:24.832Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -4406,7 +4436,7 @@
       "market_feedback": [
         {
           "type": "市场反馈",
-          "description": "GOOGL -0.8372%",
+          "description": "GOOGL -0.4765%",
           "source": "Google AI Blog",
           "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
           "date": "2026-07-01",
@@ -5035,7 +5065,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.2661%；行情时间：2026-07-10T09:01:32.560Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T00:01:24.832Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -5083,7 +5113,7 @@
       "market_feedback": [
         {
           "type": "市场反馈",
-          "description": "MSFT 0.2661%",
+          "description": "MSFT 0.1925%",
           "source": "Microsoft Azure Blog",
           "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum",
           "date": "2026-06-29",
@@ -5452,6 +5482,830 @@
         "open_questions": [
           {
             "question": "AI 政策与基础设施是否会形成持续影响？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          },
+          {
+            "question": "后续是否有权威来源或市场反馈验证当前判断？",
+            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+            "status": "待验证"
+          }
+        ],
+        "manual_review": {
+          "needed": true,
+          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
+          "review_focus": [
+            "核对原文事实",
+            "检查是否有反向证据",
+            "观察后续权威发布或市场反馈"
+          ]
+        }
+      },
+      "quality": {
+        "score": 100,
+        "flags": [],
+        "checks": {
+          "has_definition": true,
+          "has_current_judgment": true,
+          "has_deep_tracking": true,
+          "has_core_tensions": true,
+          "has_key_assumptions": true,
+          "has_second_order_effects": true,
+          "has_scenario_tree": true,
+          "has_risk_paths": true,
+          "has_contrarian_tracking": true,
+          "has_watch_dashboard": true,
+          "has_judgment_history": true,
+          "has_timeline": true,
+          "has_confirmed_facts": true,
+          "has_impact": true,
+          "has_risks": true,
+          "has_forward_scenarios": true,
+          "has_counter_arguments": true,
+          "has_watch_variables": true,
+          "has_next_questions": true,
+          "has_source_links": true
+        }
+      }
+    },
+    {
+      "event_id": "macro-policy-ipo-spacex-史上最大",
+      "title": "宏观政策与利率",
+      "lane_id": "us_equities",
+      "lane_label": "美股变化",
+      "status": "watching",
+      "priority_grade": "B",
+      "importance_score": 97,
+      "first_seen_at": "2026-06-12T09:01:14.051Z",
+      "last_seen_at": "2026-06-24T00:00:00.000Z",
+      "updated_at": "2026-06-24T00:00:00.000Z",
+      "definition": {
+        "one_sentence": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+        "background": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。 相关来源：第一财经、每日经济新闻",
+        "core_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "why_it_matters": "标志科技企业市值和富豪身家达到新里程碑",
+        "scope": "追踪美股变化相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
+      },
+      "decision": {
+        "signal": "观察验证",
+        "brief": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+        "rationale": [
+          "属于美股变化主线",
+          "重要性评分为 97",
+          "证据置信度为中"
+        ],
+        "market_symbols": [
+          "TSLA",
+          "QQQ"
+        ],
+        "policy_status": "",
+        "requires_follow_up": true
+      },
+      "profile": {
+        "impact_areas": [
+          "宏观",
+          "国际",
+          "商业",
+          "市值空降美股前十"
+        ],
+        "entities": {
+          "companies": [
+            "TSLA",
+            "QQQ"
+          ],
+          "people": [
+            "马斯克"
+          ],
+          "institutions": [],
+          "countries_or_regions": [],
+          "products_or_technologies": []
+        },
+        "related_item_count": 6
+      },
+      "current_judgment": {
+        "summary": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+        "basis": [
+          "SpaceX市值空降美股前十",
+          "马斯克成为全球首位万亿美元富豪",
+          "此轮造富可能源于史上最大规模IPO",
+          "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。"
+        ],
+        "latest_change": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45：马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
+        "judgment_update": "初始判断",
+        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
+      },
+      "evidence": {
+        "source_count": 2,
+        "official_source_count": 0,
+        "financial_media_count": 0,
+        "timeline_count": 6,
+        "confidence_basis": "medium",
+        "evidence_types": {
+          "data_release": 3,
+          "unknown": 1,
+          "industry_analysis": 2
+        },
+        "primary_source": {
+          "name": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html"
+        },
+        "source_links": [
+          {
+            "item_id": "macro-item-06646bdbac",
+            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103228502.html",
+            "published_at": "2026-06-14T09:00:40.480Z",
+            "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "relevance_score": 97
+          },
+          {
+            "item_id": "macro-item-1c8f7d7ba8",
+            "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103228502.html",
+            "published_at": "2026-06-13T09:00:47.914Z",
+            "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "relevance_score": 97
+          },
+          {
+            "item_id": "macro-item-8b73efee6b",
+            "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+            "source": "第一财经",
+            "url": "https://www.yicai.com/news/103227523.html",
+            "published_at": "2026-06-12T09:01:14.051Z",
+            "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+            "relevance_score": 97
+          },
+          {
+            "item_id": "international-item-969b764a62",
+            "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+            "published_at": "2026-06-13T00:00:00.000Z",
+            "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+            "relevance_score": 91
+          },
+          {
+            "item_id": "business-item-5d4eb1e693",
+            "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+            "published_at": "2026-06-14T00:00:00.000Z",
+            "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+            "relevance_score": 87
+          },
+          {
+            "item_id": "business-item-981374a846",
+            "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+            "source": "每日经济新闻",
+            "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+            "published_at": "2026-06-24T00:00:00.000Z",
+            "summary": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
+            "relevance_score": 82
+          }
+        ],
+        "evidence_gaps": [
+          "缺少官方或市场权威来源。"
+        ]
+      },
+      "latest_update": {
+        "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+        "summary": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
+        "source": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+        "published_at": "2026-06-24T00:00:00.000Z",
+        "score": 82
+      },
+      "confirmed_facts": [
+        {
+          "fact": "SpaceX市值空降美股前十",
+          "evidence_url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "confidence": "中"
+        },
+        {
+          "fact": "马斯克成为全球首位万亿美元富豪",
+          "evidence_url": "https://www.yicai.com/news/103228502.html",
+          "source": "第一财经",
+          "confidence": "中"
+        },
+        {
+          "fact": "此轮造富可能源于史上最大规模IPO",
+          "evidence_url": "https://www.yicai.com/news/103227523.html",
+          "source": "第一财经",
+          "confidence": "中"
+        },
+        {
+          "fact": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "evidence_url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "source": "每日经济新闻",
+          "confidence": "中"
+        }
+      ],
+      "impact": {
+        "market": {
+          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-11T00:01:24.832Z。",
+          "evidence": [
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "industry": {
+          "impact": "可能影响 宏观、国际、商业、市值空降美股前十 相关判断，需继续核对后续证据。",
+          "evidence": [
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "company": {
+          "impact": "关联实体：TSLA、QQQ、特斯拉、马斯克、SpaceX、纳斯达克。",
+          "evidence": [
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "user_or_developer": {
+          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
+          "evidence": [
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "中"
+        },
+        "policy_or_regulation": {
+          "impact": "目前证据不足",
+          "evidence": [
+            "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+            "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+            "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。"
+          ],
+          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
+          "confidence": "低"
+        }
+      },
+      "market_feedback": [
+        {
+          "type": "市场反馈",
+          "description": "TSLA 0.2976%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "date": "2026-06-24",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        },
+        {
+          "type": "市场反馈",
+          "description": "QQQ 0.3083%",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "date": "2026-06-24",
+          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
+          "confidence": "中"
+        }
+      ],
+      "forward_scenarios": [
+        {
+          "scenario_id": "scenario-a",
+          "name": "乐观情景",
+          "scenario": "乐观情景",
+          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+          "path": [
+            "新证据出现",
+            "当前判断被强化",
+            "事件优先级继续保持"
+          ],
+          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 宏观、国际、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+            "观察是否出现监管、市场价格、企业动作或国际反应"
+          ]
+        },
+        {
+          "scenario_id": "scenario-b",
+          "name": "中性情景",
+          "scenario": "中性情景",
+          "condition": "后续只有零散补充信息，缺少决定性证据。",
+          "path": [
+            "信息继续更新",
+            "缺少关键验证",
+            "维持观察"
+          ],
+          "possible_result": "事件保留在观察列表，但不提高判断强度。",
+          "probability": "中",
+          "impact_level": "中",
+          "confidence": "中",
+          "watch_signals": [
+            "跟踪 宏观、国际、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+          ]
+        },
+        {
+          "scenario_id": "scenario-c",
+          "name": "反转情景",
+          "scenario": "反转情景",
+          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+          "path": [
+            "反向证据出现",
+            "原判断被削弱",
+            "降低跟踪优先级"
+          ],
+          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+          "probability": "低",
+          "impact_level": "中",
+          "confidence": "低",
+          "watch_signals": [
+            "跟踪 宏观、国际、商业 的后续变化",
+            "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk_type": "信息风险",
+          "risk": "高估值风险、造富效应与财富集中争议",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "不足以判断",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        }
+      ],
+      "counter_arguments": [
+        {
+          "argument": "该事件可能被高估或误读。",
+          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "uncertainty": "高估值风险、造富效应与财富集中争议",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "不足以判断",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "缺少官方或市场权威来源。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        }
+      ],
+      "watch_variables": [
+        {
+          "variable": "跟踪 宏观、国际、商业 的后续变化",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        },
+        {
+          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+          "update_frequency": "事件触发"
+        }
+      ],
+      "next_questions": [
+        {
+          "question": "宏观政策与利率是否会形成持续影响？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        },
+        {
+          "question": "后续是否有权威来源或市场反馈验证当前判断？",
+          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
+          "status": "待验证"
+        }
+      ],
+      "related_items": [
+        {
+          "item_id": "macro-item-06646bdbac",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "published_at": "2026-06-14T09:00:40.480Z",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "relevance_score": 97
+        },
+        {
+          "item_id": "macro-item-1c8f7d7ba8",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "published_at": "2026-06-13T09:00:47.914Z",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "relevance_score": 97
+        },
+        {
+          "item_id": "macro-item-8b73efee6b",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "published_at": "2026-06-12T09:01:14.051Z",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "relevance_score": 97
+        },
+        {
+          "item_id": "international-item-969b764a62",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "published_at": "2026-06-13T00:00:00.000Z",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "relevance_score": 91
+        },
+        {
+          "item_id": "business-item-5d4eb1e693",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "published_at": "2026-06-14T00:00:00.000Z",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "relevance_score": 87
+        },
+        {
+          "item_id": "business-item-981374a846",
+          "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "published_at": "2026-06-24T00:00:00.000Z",
+          "summary": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
+          "relevance_score": 82
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-12",
+          "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+          "summary": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "description": "文章指出SpaceX对投资严格控制，只有早期获得股份的投资者才能参与后续再投资机会，从而可能受益。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "提及SpaceX上市可能带来的财富效应，但缺乏具体细节。",
+          "sources": [
+            {
+              "title": "史上最大IPO将至！哪些早期投资者将从SpaceX上市中“一夜暴富”？",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103227523.html",
+              "published_at": "2026-06-12T09:01:14.051Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103227523.html",
+          "score": 97,
+          "publishedAt": "2026-06-12T09:01:14.051Z"
+        },
+        {
+          "date": "2026-06-13",
+          "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+          "summary": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "description": "SpaceX上市造富，4400名员工成百万富翁；美联储新主席下周首次议息；美伊达成协议或致霍尔木兹海峡收费；高盛预测世界杯给美国6月新增4万就业；美国政府禁止外国访问特定软件；铠侠成为日本市值最高公司；华尔街限制对SK海力士和三星电子的杠杆做多。",
+          "evidence_type": "unknown",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "这些事件涉及科技造富、美联储政策、地缘政治、就业预测、技术封锁和半导体行业，对全球经济和市场有重要影响。",
+          "sources": [
+            {
+              "title": "SpaceX上市造富马斯克“朋友圈”：26年密友持股市值超800亿美元，4400人成百万富翁！凯文·沃什将迎首次议息会议，三大悬念待解；美伊就最终文本达成一致，霍尔木兹海峡或将收费 | 一周国际财经",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+              "published_at": "2026-06-13T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-13/4425543.html",
+          "score": 91,
+          "publishedAt": "2026-06-13T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-13",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "description": "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "该事件彰显SpaceX巨大市场价值，并创造个人财富新纪录，可能引发太空经济投资热潮。",
+          "sources": [
+            {
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-13T09:00:47.914Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-13T09:00:47.914Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+          "summary": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "description": "SpaceX在纳斯达克上市，募资750亿美元，市值2.1万亿美元，首日涨19.22%。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": true,
+          "impact": "SpaceX上市创全球最大IPO纪录，市值跻身全美前六，标志着商业航天领域的里程碑。",
+          "sources": [
+            {
+              "title": "每经热评 | 马斯克“万亿美元神话”背后，带给我们的真正启示是什么？",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+              "published_at": "2026-06-14T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-14/4425825.html",
+          "score": 87,
+          "publishedAt": "2026-06-14T00:00:00.000Z"
+        },
+        {
+          "date": "2026-06-14",
+          "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+          "summary": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "description": "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
+          "evidence_type": "data_release",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "标志科技企业市值和富豪身家达到新里程碑",
+          "sources": [
+            {
+              "title": "SpaceX市值空降美股前十，马斯克成为全球首位万亿美元富豪",
+              "source": "第一财经",
+              "url": "https://www.yicai.com/news/103228502.html",
+              "published_at": "2026-06-14T09:00:40.480Z"
+            }
+          ],
+          "source": "第一财经",
+          "url": "https://www.yicai.com/news/103228502.html",
+          "score": 97,
+          "publishedAt": "2026-06-14T09:00:40.480Z"
+        },
+        {
+          "date": "2026-06-24",
+          "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+          "summary": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
+          "description": "马斯克身价跌破万亿美元，降至9570亿美元，重返万亿以下。",
+          "evidence_type": "industry_analysis",
+          "importance": "中",
+          "does_it_change_judgment": false,
+          "impact": "马斯克从万亿美元富豪状态中退出，身价缩水至9570亿美元，短期内财富大幅减少。",
+          "sources": [
+            {
+              "title": "马斯克“跌落神坛”？财富急速缩水，身家8天蒸发3400亿美元，不再是万亿富豪！SpaceX股价巨震，特斯拉走势疲软…… 2026-06-24 16:45",
+              "source": "每日经济新闻",
+              "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+              "published_at": "2026-06-24T00:00:00.000Z"
+            }
+          ],
+          "source": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-06-24/4435896.html",
+          "score": 82,
+          "publishedAt": "2026-06-24T00:00:00.000Z"
+        }
+      ],
+      "analysis_notes": [],
+      "deep_tracking": {
+        "tracking_goal": "判断宏观政策与利率是否会改变行业格局、市场预期、政策方向或个人决策。",
+        "research_question": "宏观政策与利率后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
+        "current_thesis": {
+          "thesis": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+          "confidence": "medium",
+          "basis": [
+            "SpaceX市值空降美股前十",
+            "马斯克成为全球首位万亿美元富豪",
+            "此轮造富可能源于史上最大规模IPO"
+          ],
+          "what_would_change_this_view": [
+            "缺少官方或市场权威来源。"
+          ]
+        },
+        "core_tensions": [
+          {
+            "tension": "短期信息热度与长期可验证影响之间的张力。",
+            "side_a": "现有高分来源提示事件值得跟踪。",
+            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
+            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
+          }
+        ],
+        "key_assumptions": [
+          {
+            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
+            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
+            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
+          }
+        ],
+        "causal_chain": [
+          {
+            "step": 1,
+            "cause": "高分信息和多来源报道集中出现。",
+            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
+            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
+            "confidence": "medium"
+          }
+        ],
+        "second_order_effects": [
+          {
+            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
+            "logic_chain": [
+              "信息集中出现",
+              "影响外部预期",
+              "进一步影响市场、行业、公司、政策或用户行为"
+            ],
+            "affected_areas": [
+              "宏观",
+              "国际",
+              "商业",
+              "市值空降美股前十"
+            ],
+            "confidence": "medium"
+          }
+        ],
+        "scenario_tree": [
+          {
+            "scenario_id": "scenario-a",
+            "name": "乐观情景",
+            "scenario": "乐观情景",
+            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
+            "path": [
+              "新证据出现",
+              "当前判断被强化",
+              "事件优先级继续保持"
+            ],
+            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
+            "probability": "中",
+            "impact_level": "B",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 宏观、国际、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+              "观察是否出现监管、市场价格、企业动作或国际反应"
+            ]
+          },
+          {
+            "scenario_id": "scenario-b",
+            "name": "中性情景",
+            "scenario": "中性情景",
+            "condition": "后续只有零散补充信息，缺少决定性证据。",
+            "path": [
+              "信息继续更新",
+              "缺少关键验证",
+              "维持观察"
+            ],
+            "possible_result": "事件保留在观察列表，但不提高判断强度。",
+            "probability": "中",
+            "impact_level": "中",
+            "confidence": "中",
+            "watch_signals": [
+              "跟踪 宏观、国际、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+            ]
+          },
+          {
+            "scenario_id": "scenario-c",
+            "name": "反转情景",
+            "scenario": "反转情景",
+            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
+            "path": [
+              "反向证据出现",
+              "原判断被削弱",
+              "降低跟踪优先级"
+            ],
+            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
+            "probability": "低",
+            "impact_level": "B",
+            "confidence": "低",
+            "watch_signals": [
+              "跟踪 宏观、国际、商业 的后续变化",
+              "留意 第一财经、每日经济新闻 是否继续发布相关信息"
+            ]
+          }
+        ],
+        "risk_paths": [
+          {
+            "risk_type": "信息风险",
+            "risk": "高估值风险、造富效应与财富集中争议",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "不足以判断",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "美联储政策不确定性；美伊协议执行风险；技术封锁可能引发反制；半导体杠杆限制或加剧波动。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          }
+        ],
+        "contrarian_tracking": {
+          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
+          "counter_arguments": [
+            {
+              "argument": "该事件可能被高估或误读。",
+              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
+              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
+            }
+          ],
+          "disconfirming_signals": [
+            "缺少官方或市场权威来源。"
+          ]
+        },
+        "watch_dashboard": [
+          {
+            "variable": "跟踪 宏观、国际、商业 的后续变化",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "留意 第一财经、每日经济新闻 是否继续发布相关信息",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          },
+          {
+            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
+            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
+            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
+            "update_frequency": "事件触发"
+          }
+        ],
+        "judgment_history": [
+          {
+            "date": "2026-06-24",
+            "judgment": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+            "change_type": "初始判断",
+            "reason": "美股变化值得纳入观察列表，但需等待更多来源或市场反应验证；关联 TSLA/QQQ。",
+            "evidence_item_ids": []
+          }
+        ],
+        "open_questions": [
+          {
+            "question": "宏观政策与利率是否会形成持续影响？",
             "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
             "status": "待验证"
           },
