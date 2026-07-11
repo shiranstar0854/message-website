@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-11T00:01:57.238Z",
+  "generated_at": "2026-07-11T09:02:02.882Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 8,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-11T00:01:24.832Z"
+      "generated_at": "2026-07-11T09:01:37.444Z"
     },
     "llm": {
       "enabled": true,
@@ -45,14 +45,14 @@
       "status": "active",
       "priority_grade": "A",
       "importance_score": 100,
-      "first_seen_at": "2026-07-09T00:00:00.000Z",
-      "last_seen_at": "2026-07-10T00:00:00.000Z",
-      "updated_at": "2026-07-10T00:00:00.000Z",
+      "first_seen_at": "2026-07-10T00:00:00.000Z",
+      "last_seen_at": "2026-07-11T00:00:00.000Z",
+      "updated_at": "2026-07-11T00:00:00.000Z",
       "definition": {
-        "one_sentence": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。 相关来源：国家统计局数据发布、中国政府网要闻、科技部工作动态",
-        "background": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。 相关来源：国家统计局数据发布、中国政府网要闻、科技部工作动态",
+        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
+        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "2026年夏粮产量数据较往年可能有所变化，但具体数值未在提供材料中说明。此次发布提供了最新的官方产量统计，为农业生产和经济分析提供了基准数据。",
+        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 6 条官方或市场权威来源，仍处在高时效窗口内。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -69,10 +69,10 @@
       },
       "profile": {
         "impact_areas": [
-          "宏观",
-          "国家统计局关于",
-          "年夏粮产量数据的公告",
-          "国家统计局宏观经济"
+          "公共政策",
+          "人民日报评论员",
+          "传承睦邻友好",
+          "共绘时代华章"
         ],
         "entities": {
           "companies": [],
@@ -80,7 +80,6 @@
           "institutions": [
             "国务院",
             "中国政府网",
-            "财政部",
             "统计局",
             "国家统计局",
             "科技部"
@@ -95,83 +94,81 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "国家统计局发布夏粮产量公告",
-          "发布时间为2026年7月10日",
-          "具体产量数据未在文本中给出",
-          "属于常规农业统计发布"
+          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+          "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "执大象 天下往——2026年上半年中国元首外交纪实"
         ],
-        "latest_change": "国家统计局关于2026年夏粮产量数据的公告：国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
+        "latest_change": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 4,
+        "source_count": 3,
         "official_source_count": 20,
         "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "data_release": 1,
-          "unknown": 4,
-          "official_announcement": 1
+          "official_announcement": 6
         },
         "primary_source": {
-          "name": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html"
+          "name": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm"
         },
         "source_links": [
           {
-            "item_id": "macro-item-a873724bb6",
-            "title": "国家统计局关于2026年夏粮产量数据的公告",
-            "source": "国家统计局数据发布",
-            "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-91e273517e",
-            "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科技奖励大会等会议上的重要讲话激励科技工作者",
+            "item_id": "news-item-f91b10743c",
+            "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-0066b242ba",
-            "title": "上半年新能源汽车出口同比增长1.2倍",
+            "item_id": "news-item-5a3d6ee818",
+            "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-1482d8bed1",
-            "title": "人民日报评论员：扎扎实实以科技创新支撑和引领中国式现代化——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+            "item_id": "international-item-a95f7cdcfa",
+            "title": "执大象 天下往——2026年上半年中国元首外交纪实",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-f829c5394e",
-            "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
+            "item_id": "news-item-39b961cac1",
+            "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "tech-item-d5dd255bc5",
-            "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
-            "source": "科技部工作动态",
-            "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
-            "published_at": "2026-07-10T00:00:00.000Z",
-            "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+            "item_id": "news-item-2e1bc23df0",
+            "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-bb1eb064bf",
+            "title": "各地和相关部门全力做好防汛防台风工作",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           }
         ],
@@ -180,35 +177,35 @@
         ]
       },
       "latest_update": {
-        "title": "国家统计局关于2026年夏粮产量数据的公告",
-        "summary": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-        "source": "国家统计局数据发布",
-        "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
-        "published_at": "2026-07-10T00:00:00.000Z",
+        "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "source": "中国政府网要闻",
+        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
+        "published_at": "2026-07-11T00:00:00.000Z",
         "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "国家统计局发布夏粮产量公告",
-          "evidence_url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
-          "source": "国家统计局数据发布",
-          "confidence": "高"
-        },
-        {
-          "fact": "发布时间为2026年7月10日",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
+          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "具体产量数据未在文本中给出",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
+          "fact": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "属于常规农业统计发布",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
+          "fact": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "执大象 天下往——2026年上半年中国元首外交纪实",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -217,29 +214,29 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
-            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 宏观、国家统计局关于、年夏粮产量数据的公告、国家统计局宏观经济 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 公共政策、人民日报评论员、传承睦邻友好、共绘时代华章 相关判断，需继续核对后续证据。",
           "evidence": [
-            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
-            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、统计局、国家统计局、科技部。",
+          "impact": "关联实体：AI、国务院、中国政府网。",
           "evidence": [
-            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
-            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -247,9 +244,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
-            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -257,9 +254,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-            "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
-            "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -282,8 +279,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
-            "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息",
+            "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -302,8 +299,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
-            "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息"
+            "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
           ]
         },
         {
@@ -321,33 +318,15 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
-            "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息"
+            "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+            "留意 中国政府网要闻 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "数据发布若与市场预期偏差大，可能引发粮食价格异常波动；但本次仅公告发布，未见具体数值，风险较低。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "如果配套政策未能及时跟上，讲话可能停留在口号层面，削弱市场信心。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "当前数据未提及贸易政策、供应链或汇率波动等潜在风险，但高增速能否持续需关注海外市场需求变化和贸易环境。",
+          "risk": "后续执行细节和市场反应仍需继续跟踪。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -364,17 +343,7 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "数据发布若与市场预期偏差大，可能引发粮食价格异常波动；但本次仅公告发布，未见具体数值，风险较低。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "如果配套政策未能及时跟上，讲话可能停留在口号层面，削弱市场信心。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "当前数据未提及贸易政策、供应链或汇率波动等潜在风险，但高增速能否持续需关注海外市场需求变化和贸易环境。",
+          "uncertainty": "后续执行细节和市场反应仍需继续跟踪。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -386,13 +355,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
+          "variable": "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -418,224 +387,70 @@
       ],
       "related_items": [
         {
-          "item_id": "macro-item-a873724bb6",
-          "title": "国家统计局关于2026年夏粮产量数据的公告",
-          "source": "国家统计局数据发布",
-          "url": "http://www.stats.gov.cn/sj/zxfb/202607/t20260710_1964090.html",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "国家统计局发布2026年夏粮产量数据公告，这是例行官方统计发布，但具体数据未在本文提供。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-91e273517e",
-          "title": "抓住历史机遇 迎接时代挑战——习近平总书记在国家科技奖励大会等会议上的重要讲话激励科技工作者",
+          "item_id": "news-item-f91b10743c",
+          "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074912.htm",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "习近平总书记7月8日在京出席科技三会并发表讲话，肯定成就、分析态势、部署“十五五”科技强国任务。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-0066b242ba",
-          "title": "上半年新能源汽车出口同比增长1.2倍",
+          "item_id": "news-item-5a3d6ee818",
+          "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-1482d8bed1",
-          "title": "人民日报评论员：扎扎实实以科技创新支撑和引领中国式现代化——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+          "item_id": "international-item-a95f7cdcfa",
+          "title": "执大象 天下往——2026年上半年中国元首外交纪实",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-f829c5394e",
-          "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
+          "item_id": "news-item-39b961cac1",
+          "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "tech-item-d5dd255bc5",
-          "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
-          "published_at": "2026-07-10T00:00:00.000Z",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
+          "item_id": "news-item-2e1bc23df0",
+          "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-bb1eb064bf",
+          "title": "各地和相关部门全力做好防汛防台风工作",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         }
       ],
       "timeline": [
         {
           "date": "2026-07-10",
-          "title": "上半年新能源汽车出口同比增长1.2倍",
-          "summary": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
-          "description": "上半年汽车出口509.6万辆，新能源出口235.5万辆，同比分别增长65.3%和1.2倍。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "汽车出口延续高增长态势，新能源汽车出口增速进一步加快至倍数级增长。",
-          "sources": [
-            {
-              "title": "上半年新能源汽车出口同比增长1.2倍",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074898.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "人民日报评论员：扎扎实实以科技创新支撑和引领中国式现代化——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-          "summary": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
-          "description": "2026年7月8日，国家科技奖励大会等会议召开，习近平总书记出席并颁奖讲话，强调科技创新支撑中国式现代化。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足，讲话内容未在输入中详细说明，但会议强调了科技创新的重要性，可能预示着政策导向的延续或强化。",
-          "sources": [
-            {
-              "title": "人民日报评论员：扎扎实实以科技创新支撑和引领中国式现代化——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074897.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
-          "summary": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
-          "description": "广西南宁六蓝水库溃口造成26死7失联，全区39死9失联，6.45万人转移安置。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "六蓝水库溃口导致洪灾，人员伤亡和失联数字公布，大规模群众转移安置已基本完成。受灾范围及影响进一步明确。",
-          "sources": [
-            {
-              "title": "National disaster response level raised to level III for Guangxi; relevant departments continue to deploy flood and t...",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7074893.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
-          "summary": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "description": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "科技部科技政策、科研合作、标准和创新体系工作动态",
-          "sources": [
-            {
-              "title": "科技部党组召开会议传达学习习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的重要讲话精神",
-              "source": "科技部工作动态",
-              "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "科技部工作动态",
-          "url": "https://www.most.gov.cn/kjbgz/202607/t20260710_197036.html",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "财政部、应急管理部再次紧急预拨8000万元中央自然灾害救灾资金 支持广西重点做好受灾群众救助工作",
-          "summary": "财政部财政政策、国债、预算和财政运行新闻",
-          "description": "财政部财政政策、国债、预算和财政运行新闻",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "财政部财政政策、国债、预算和财政运行新闻",
-          "sources": [
-            {
-              "title": "财政部、应急管理部再次紧急预拨8000万元中央自然灾害救灾资金 支持广西重点做好受灾群众救助工作",
-              "source": "财政部财政新闻",
-              "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260710_3993310.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "财政部财政新闻",
-          "url": "http://zyhj.mof.gov.cn/gzdt/202607/t20260710_3993310.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "历史性突破 长征十号乙完成全球首次海上网系回收",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "历史性突破 长征十号乙完成全球首次海上网系回收",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075015.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075015.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "中华人民共和国和纳米比亚共和国关于构建新时代中纳命运共同体的联合声明",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "中华人民共和国和纳米比亚共和国关于构建新时代中纳命运共同体的联合声明",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074987.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074987.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
           "title": "张国清在国家防总专题调度2026年第9号台风“巴威”防范应对工作时强调 打出提前量 打好主动仗 全力防范应对台风“巴威”",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "张国清在南宁出席国家防总会议，部署台风“巴威”防范工作。",
+          "description": "张国清在南宁出席国家防总会议，部署台风“巴威”防范工作。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "会议部署了针对台风“巴威”的防范应对工作，可能推动各级部门提前采取防灾措施。但目前尚未有具体行动或结果信息。",
           "sources": [
             {
               "title": "张国清在国家防总专题调度2026年第9号台风“巴威”防范应对工作时强调 打出提前量 打好主动仗 全力防范应对台风“巴威”",
@@ -651,35 +466,13 @@
         },
         {
           "date": "2026-07-10",
-          "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作时强调 细致做好受灾群众生活保障 全力支持受灾地区抢修恢复",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作时强调 细致做好受灾群众生活保障 全力支持受灾地区抢修恢复",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074985.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074985.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
           "title": "李强主持召开国务院常务会议 进一步部署防汛抗洪救灾工作等",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "国务院常务会议进一步部署防汛抗洪救灾，体现高层对汛情的重视。",
+          "description": "国务院常务会议进一步部署防汛抗洪救灾，体现高层对汛情的重视。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "本次会议针对当前汛情形势对防汛抗洪救灾工作作出新的部署，可能调整或细化了已有措施，但具体变化内容未在摘要中说明。",
           "sources": [
             {
               "title": "李强主持召开国务院常务会议 进一步部署防汛抗洪救灾工作等",
@@ -698,10 +491,10 @@
           "title": "国务院任免国家工作人员（2026年7月10日）",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "不足以判断",
           "sources": [
             {
               "title": "国务院任免国家工作人员（2026年7月10日）",
@@ -717,16 +510,16 @@
         },
         {
           "date": "2026-07-10",
-          "title": "国务院关于《中医药振兴发展“十五五”规划》的批复",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "国务院批复《中医药振兴发展“十五五”规划》",
+          "summary": "国务院批复中医药振兴发展“十五五”规划，原则同意并部署实施。",
+          "description": "国务院批复中医药振兴发展“十五五”规划，原则同意并部署实施。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "国家正式批准了中医药在“十五五”期间的发展规划，政策支持力度进一步明确，为后续各地落实提供了权威依据。",
           "sources": [
             {
-              "title": "国务院关于《中医药振兴发展“十五五”规划》的批复",
+              "title": "国务院批复《中医药振兴发展“十五五”规划》",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
               "published_at": "2026-07-10T00:00:00.000Z"
@@ -736,6 +529,182 @@
           "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
           "score": 100,
           "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-10",
+          "title": "【视频】习近平举行仪式欢迎纳米比亚总统访华",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】习近平举行仪式欢迎纳米比亚总统访华",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/10/VIDEh0pnqsKX5lbpBtG23asg260710.shtml",
+              "published_at": "2026-07-10T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/10/VIDEh0pnqsKX5lbpBtG23asg260710.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-10T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "执大象 天下往——2026年上半年中国元首外交纪实",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "执大象 天下往——2026年上半年中国元首外交纪实",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "各地和相关部门全力做好防汛防台风工作",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "各地和相关部门全力做好防汛防台风工作",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -746,9 +715,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "国家统计局发布夏粮产量公告",
-            "发布时间为2026年7月10日",
-            "具体产量数据未在文本中给出"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+            "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -787,10 +756,10 @@
               "进一步影响市场、行业、公司、政策或用户行为"
             ],
             "affected_areas": [
-              "宏观",
-              "国家统计局关于",
-              "年夏粮产量数据的公告",
-              "国家统计局宏观经济"
+              "公共政策",
+              "人民日报评论员",
+              "传承睦邻友好",
+              "共绘时代华章"
             ],
             "confidence": "high"
           }
@@ -811,8 +780,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
-              "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息",
+              "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -831,8 +800,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
-              "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息"
+              "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
             ]
           },
           {
@@ -850,33 +819,15 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
-              "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息"
+              "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+              "留意 中国政府网要闻 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "数据发布若与市场预期偏差大，可能引发粮食价格异常波动；但本次仅公告发布，未见具体数值，风险较低。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "如果配套政策未能及时跟上，讲话可能停留在口号层面，削弱市场信心。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "当前数据未提及贸易政策、供应链或汇率波动等潜在风险，但高增速能否持续需关注海外市场需求变化和贸易环境。",
+            "risk": "后续执行细节和市场反应仍需继续跟踪。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -899,13 +850,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 宏观、国家统计局关于、年夏粮产量数据的公告 的后续变化",
+            "variable": "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 国家统计局数据发布、中国政府网要闻 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -919,7 +870,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-10",
+            "date": "2026-07-11",
             "judgment": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
             "change_type": "初始判断",
             "reason": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
@@ -1160,7 +1111,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T00:01:24.832Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T09:01:37.444Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -1939,8 +1890,8 @@
       "priority_grade": "B",
       "importance_score": 100,
       "first_seen_at": "2026-06-17T10:00:00.000Z",
-      "last_seen_at": "2026-07-11T00:01:04.834Z",
-      "updated_at": "2026-07-11T00:01:04.834Z",
+      "last_seen_at": "2026-07-11T09:01:14.158Z",
+      "updated_at": "2026-07-11T09:01:14.158Z",
       "definition": {
         "one_sentence": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
         "background": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
@@ -2012,11 +1963,11 @@
         },
         "source_links": [
           {
-            "item_id": "macro-item-1f43726891",
+            "item_id": "macro-item-96a3a85911",
             "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
             "source": "第一财经",
             "url": "https://www.yicai.com/news/103270074.html",
-            "published_at": "2026-07-11T00:01:04.834Z",
+            "published_at": "2026-07-11T09:01:14.158Z",
             "summary": "第一财经中文财经、宏观、产业和市场新闻",
             "relevance_score": 100
           },
@@ -2075,7 +2026,7 @@
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "source": "第一财经",
         "url": "https://www.yicai.com/news/103270074.html",
-        "published_at": "2026-07-11T00:01:04.834Z",
+        "published_at": "2026-07-11T09:01:14.158Z",
         "score": 100
       },
       "confirmed_facts": [
@@ -2309,11 +2260,11 @@
       ],
       "related_items": [
         {
-          "item_id": "macro-item-1f43726891",
+          "item_id": "macro-item-96a3a85911",
           "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103270074.html",
-          "published_at": "2026-07-11T00:01:04.834Z",
+          "published_at": "2026-07-11T09:01:14.158Z",
           "summary": "第一财经中文财经、宏观、产业和市场新闻",
           "relevance_score": 100
         },
@@ -2598,13 +2549,13 @@
               "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
               "source": "第一财经",
               "url": "https://www.yicai.com/news/103270074.html",
-              "published_at": "2026-07-11T00:01:04.834Z"
+              "published_at": "2026-07-11T09:01:14.158Z"
             }
           ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103270074.html",
           "score": 100,
-          "publishedAt": "2026-07-11T00:01:04.834Z"
+          "publishedAt": "2026-07-11T09:01:14.158Z"
         },
         {
           "date": "2026-07-11",
@@ -2620,13 +2571,13 @@
               "title": "AI周期走到“加时赛”，值得关注的四个资本开支泡沫预警信号",
               "source": "第一财经",
               "url": "https://www.yicai.com/news/103269598.html",
-              "published_at": "2026-07-11T00:01:04.834Z"
+              "published_at": "2026-07-11T09:01:14.158Z"
             }
           ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103269598.html",
           "score": 99,
-          "publishedAt": "2026-07-11T00:01:04.834Z"
+          "publishedAt": "2026-07-11T09:01:14.158Z"
         }
       ],
       "analysis_notes": [],
@@ -3006,7 +2957,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T00:01:24.832Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T09:01:37.444Z。",
           "evidence": [
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
             "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
@@ -3649,7 +3600,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-11T00:01:24.832Z。",
+          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-11T09:01:37.444Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -3703,15 +3654,6 @@
         {
           "type": "市场反馈",
           "description": "NVDA 4.0339%",
-          "source": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
-          "date": "2026-07-06",
-          "interpretation": "该反馈仅作为观察变量，需要结合后续价格、成交量或权威信息验证。",
-          "confidence": "中"
-        },
-        {
-          "type": "市场反馈",
-          "description": "NVDA -0.6565%",
           "source": "每日经济新闻",
           "url": "https://www.nbd.com.cn/articles/2026-07-06/4452987.html",
           "date": "2026-07-06",
@@ -4383,7 +4325,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T00:01:24.832Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T09:01:37.444Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -5065,7 +5007,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T00:01:24.832Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T09:01:37.444Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -5705,7 +5647,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-11T00:01:24.832Z。",
+          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-11T09:01:37.444Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
