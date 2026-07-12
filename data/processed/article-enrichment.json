@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-11T09:01:55.302Z",
+  "generatedAt": "2026-07-12T00:01:27.627Z",
   "totals": {
-    "attempted": 58,
-    "excerptCount": 56,
-    "imageCount": 34,
-    "failed": 2,
-    "skipped": 6
+    "attempted": 47,
+    "excerptCount": 46,
+    "imageCount": 27,
+    "failed": 1,
+    "skipped": 2
   },
   "sources": {
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 1,
+      "excerptCount": 1,
+      "imageCount": 1,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -25,7 +25,7 @@
       "excerptCount": 0,
       "imageCount": 0,
       "failed": 0,
-      "skipped": 5,
+      "skipped": 1,
       "disabled": true
     },
     "google-ai": {
@@ -71,9 +71,9 @@
     "federal-reserve": {
       "sourceId": "federal-reserve",
       "sourceName": "Federal Reserve",
-      "attempted": 2,
-      "excerptCount": 2,
-      "imageCount": 2,
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
       "failed": 0,
       "skipped": 0,
       "disabled": false
@@ -101,20 +101,19 @@
     "nasa-breaking-news": {
       "sourceId": "nasa-breaking-news",
       "sourceName": "NASA Breaking News",
-      "attempted": 8,
-      "excerptCount": 6,
-      "imageCount": 6,
-      "failed": 2,
+      "attempted": 5,
+      "excerptCount": 5,
+      "imageCount": 5,
+      "failed": 0,
       "skipped": 0,
-      "disabled": false,
-      "lastError": "HTTP 429"
+      "disabled": false
     },
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 9,
-      "excerptCount": 9,
-      "imageCount": 9,
+      "attempted": 6,
+      "excerptCount": 6,
+      "imageCount": 6,
       "failed": 0,
       "skipped": 0,
       "disabled": false

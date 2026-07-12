@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-11T09:02:02.882Z",
+  "generated_at": "2026-07-12T00:01:31.866Z",
   "meta": {
     "lookback_days": 90,
     "event_count": 8,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-11T09:01:37.444Z"
+      "generated_at": "2026-07-12T00:00:47.640Z"
     },
     "llm": {
       "enabled": true,
@@ -49,10 +49,10 @@
       "last_seen_at": "2026-07-11T00:00:00.000Z",
       "updated_at": "2026-07-11T00:00:00.000Z",
       "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻",
+        "one_sentence": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。 相关来源：中国政府网要闻、中国人民银行新闻发布",
+        "background": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。 相关来源：中国政府网要闻、中国人民银行新闻发布",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 6 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "本次互致贺电属于外交惯例，并未带来实质性政策或双边关系的变化。目前没有证据表明双方就条约内容或未来合作达成新共识。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -70,9 +70,9 @@
       "profile": {
         "impact_areas": [
           "公共政策",
-          "人民日报评论员",
-          "传承睦邻友好",
-          "共绘时代华章"
+          "习近平同朝鲜劳动党总书记",
+          "国务委员会委员长金正恩就",
+          "中朝友好合作互助条约"
         ],
         "entities": {
           "companies": [],
@@ -80,9 +80,11 @@
           "institutions": [
             "国务院",
             "中国政府网",
+            "人民银行",
+            "中国人民银行",
+            "财政部",
             "统计局",
-            "国家统计局",
-            "科技部"
+            "国家统计局"
           ],
           "countries_or_regions": [],
           "products_or_technologies": [
@@ -94,72 +96,46 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-          "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
-          "执大象 天下往——2026年上半年中国元首外交纪实"
+          "习近平与金正恩互致贺电纪念《中朝友好合作互助条约》签订65周年",
+          "目前无证据显示双边关系出现实质调整",
+          "事件常规，不构成持续追踪的独立驱动因素",
+          "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。"
         ],
-        "latest_change": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "latest_change": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电：中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 3,
+        "source_count": 4,
         "official_source_count": 20,
         "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 6
+          "unknown": 4,
+          "official_announcement": 2
         },
         "primary_source": {
           "name": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm"
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm"
         },
         "source_links": [
           {
-            "item_id": "news-item-f91b10743c",
-            "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
             "item_id": "news-item-5a3d6ee818",
-            "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+            "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
             "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-item-a95f7cdcfa",
-            "title": "执大象 天下往——2026年上半年中国元首外交纪实",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "news-item-39b961cac1",
-            "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
-            "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
             "relevance_score": 100
           },
           {
             "item_id": "news-item-2e1bc23df0",
-            "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+            "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
             "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+            "summary": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
             "relevance_score": 100
           },
           {
@@ -167,6 +143,33 @@
             "title": "各地和相关部门全力做好防汛防台风工作",
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-818885d69e",
+            "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "人民日报评论员发文，强调落实习近平科技创新讲话精神，加快科技自立自强。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "macro-item-61a0f0b638",
+            "title": "中国人民银行举办专题讲座",
+            "source": "中国人民银行新闻发布",
+            "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071112383673328/index.html",
+            "published_at": "2026-07-11T00:00:00.000Z",
+            "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-c0b27bf6c5",
+            "title": "今年前五个月我国高端船型出口量大幅增长",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075130.htm",
             "published_at": "2026-07-11T00:00:00.000Z",
             "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
@@ -177,35 +180,35 @@
         ]
       },
       "latest_update": {
-        "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+        "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
         "source": "中国政府网要闻",
-        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
+        "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
         "published_at": "2026-07-11T00:00:00.000Z",
         "score": 100
       },
       "confirmed_facts": [
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
-          "source": "中国政府网要闻",
-          "confidence": "高"
-        },
-        {
-          "fact": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
+          "fact": "习近平与金正恩互致贺电纪念《中朝友好合作互助条约》签订65周年",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
+          "fact": "目前无证据显示双边关系出现实质调整",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "执大象 天下往——2026年上半年中国元首外交纪实",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
+          "fact": "事件常规，不构成持续追踪的独立驱动因素",
+          "evidence_url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+          "source": "中国政府网要闻",
+          "confidence": "高"
+        },
+        {
+          "fact": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -214,29 +217,29 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+            "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "industry": {
-          "impact": "可能影响 公共政策、人民日报评论员、传承睦邻友好、共绘时代华章 相关判断，需继续核对后续证据。",
+          "impact": "可能影响 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就、中朝友好合作互助条约 相关判断，需继续核对后续证据。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+            "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网。",
+          "impact": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+            "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -244,9 +247,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+            "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -254,9 +257,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
+            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+            "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -279,8 +282,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息",
+            "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
+            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -299,8 +302,8 @@
           "impact_level": "中",
           "confidence": "中",
           "watch_signals": [
-            "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
+            "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
+            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
           ]
         },
         {
@@ -318,15 +321,33 @@
           "impact_level": "中",
           "confidence": "低",
           "watch_signals": [
-            "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
-            "留意 中国政府网要闻 是否继续发布相关信息"
+            "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
+            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "后续执行细节和市场反应仍需继续跟踪。",
+          "risk": "无已知风险，但需注意朝鲜半岛局势若出现波动，此事件可能被重新解读。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "无已知风险。",
+          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+          "severity": "中",
+          "probability": "中",
+          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+        },
+        {
+          "risk_type": "信息风险",
+          "risk": "目前证据不足。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -343,7 +364,17 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "后续执行细节和市场反应仍需继续跟踪。",
+          "uncertainty": "无已知风险，但需注意朝鲜半岛局势若出现波动，此事件可能被重新解读。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "无已知风险。",
+          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
+          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
+        },
+        {
+          "uncertainty": "目前证据不足。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -355,13 +386,13 @@
       ],
       "watch_variables": [
         {
-          "variable": "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+          "variable": "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -387,48 +418,21 @@
       ],
       "related_items": [
         {
-          "item_id": "news-item-f91b10743c",
-          "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
           "item_id": "news-item-5a3d6ee818",
-          "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
           "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-item-a95f7cdcfa",
-          "title": "执大象 天下往——2026年上半年中国元首外交纪实",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "news-item-39b961cac1",
-          "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
           "relevance_score": 100
         },
         {
           "item_id": "news-item-2e1bc23df0",
-          "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+          "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
           "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "summary": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
           "relevance_score": 100
         },
         {
@@ -437,6 +441,33 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
           "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-818885d69e",
+          "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "人民日报评论员发文，强调落实习近平科技创新讲话精神，加快科技自立自强。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "macro-item-61a0f0b638",
+          "title": "中国人民银行举办专题讲座",
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071112383673328/index.html",
+          "published_at": "2026-07-11T00:00:00.000Z",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-c0b27bf6c5",
+          "title": "今年前五个月我国高端船型出口量大幅增长",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075130.htm",
+          "published_at": "2026-07-11T00:00:00.000Z",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         }
@@ -444,148 +475,38 @@
       "timeline": [
         {
           "date": "2026-07-10",
-          "title": "张国清在国家防总专题调度2026年第9号台风“巴威”防范应对工作时强调 打出提前量 打好主动仗 全力防范应对台风“巴威”",
-          "summary": "张国清在南宁出席国家防总会议，部署台风“巴威”防范工作。",
-          "description": "张国清在南宁出席国家防总会议，部署台风“巴威”防范工作。",
+          "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作",
+          "summary": "张国清赴广西指导灾后保障与抢修，细节待披露。",
+          "description": "张国清赴广西指导灾后保障与抢修，细节待披露。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "会议部署了针对台风“巴威”的防范应对工作，可能推动各级部门提前采取防灾措施。但目前尚未有具体行动或结果信息。",
+          "impact": "目前无法判断具体变化，仅可知高层领导介入地方救灾指导。",
           "sources": [
             {
-              "title": "张国清在国家防总专题调度2026年第9号台风“巴威”防范应对工作时强调 打出提前量 打好主动仗 全力防范应对台风“巴威”",
+              "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作",
               "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074986.htm",
+              "url": "https://tv.cctv.com/2026/07/10/VIDEPLQan4Q33sWIemNGreY8260710.shtml",
               "published_at": "2026-07-10T00:00:00.000Z"
             }
           ],
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074986.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "李强主持召开国务院常务会议 进一步部署防汛抗洪救灾工作等",
-          "summary": "国务院常务会议进一步部署防汛抗洪救灾，体现高层对汛情的重视。",
-          "description": "国务院常务会议进一步部署防汛抗洪救灾，体现高层对汛情的重视。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "本次会议针对当前汛情形势对防汛抗洪救灾工作作出新的部署，可能调整或细化了已有措施，但具体变化内容未在摘要中说明。",
-          "sources": [
-            {
-              "title": "李强主持召开国务院常务会议 进一步部署防汛抗洪救灾工作等",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074983.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074983.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "国务院任免国家工作人员（2026年7月10日）",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "不足以判断",
-          "sources": [
-            {
-              "title": "国务院任免国家工作人员（2026年7月10日）",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074943.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7074943.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "国务院批复《中医药振兴发展“十五五”规划》",
-          "summary": "国务院批复中医药振兴发展“十五五”规划，原则同意并部署实施。",
-          "description": "国务院批复中医药振兴发展“十五五”规划，原则同意并部署实施。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "国家正式批准了中医药在“十五五”期间的发展规划，政策支持力度进一步明确，为后续各地落实提供了权威依据。",
-          "sources": [
-            {
-              "title": "国务院批复《中医药振兴发展“十五五”规划》",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/zhengce/content/202607/content_7074930.htm",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "【视频】习近平举行仪式欢迎纳米比亚总统访华",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "【视频】习近平举行仪式欢迎纳米比亚总统访华",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/10/VIDEh0pnqsKX5lbpBtG23asg260710.shtml",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/10/VIDEh0pnqsKX5lbpBtG23asg260710.shtml",
+          "url": "https://tv.cctv.com/2026/07/10/VIDEPLQan4Q33sWIemNGreY8260710.shtml",
           "score": 100,
           "publishedAt": "2026-07-10T00:00:00.000Z"
         },
         {
           "date": "2026-07-11",
-          "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+          "description": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "本次互致贺电属于外交惯例，并未带来实质性政策或双边关系的变化。目前没有证据表明双方就条约内容或未来合作达成新共识。",
           "sources": [
             {
-              "title": "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075068.htm",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+              "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
               "published_at": "2026-07-11T00:00:00.000Z"
@@ -598,60 +519,16 @@
         },
         {
           "date": "2026-07-11",
-          "title": "执大象 天下往——2026年上半年中国元首外交纪实",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+          "summary": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+          "description": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前证据不足。此次讲话为常规性政治宣示，未提及具体政策或事件变化。",
           "sources": [
             {
-              "title": "执大象 天下往——2026年上半年中国元首外交纪实",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075050.htm",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "切实维护人民群众生命财产安全——各地各部门贯彻落实习近平总书记重要指示精神全力筑牢安全生产坚固防线",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075049.htm",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "sources": [
-            {
-              "title": "“矢志追求真理，始终把准前进方向”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+              "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
               "published_at": "2026-07-11T00:00:00.000Z"
@@ -665,12 +542,12 @@
         {
           "date": "2026-07-11",
           "title": "各地和相关部门全力做好防汛防台风工作",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。",
+          "description": "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "目前证据不足，未能说明因本次指示导致了具体的政策或行动变化。",
           "sources": [
             {
               "title": "各地和相关部门全力做好防汛防台风工作",
@@ -687,12 +564,12 @@
         {
           "date": "2026-07-11",
           "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "人民日报评论员发文，强调落实习近平科技创新讲话精神，加快科技自立自强。",
+          "description": "人民日报评论员发文，强调落实习近平科技创新讲话精神，加快科技自立自强。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "该评论进一步强化了国家对高水平科技自立自强的战略导向，明确了科技工作者应把握新科技革命方向，但对具体政策和措施未提出新内容。",
           "sources": [
             {
               "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
@@ -705,6 +582,160 @@
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
           "score": 100,
           "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "中国人民银行举办专题讲座",
+          "summary": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "description": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国人民银行新闻发布、货币政策和金融市场运行信息",
+          "sources": [
+            {
+              "title": "中国人民银行举办专题讲座",
+              "source": "中国人民银行新闻发布",
+              "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071112383673328/index.html",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国人民银行新闻发布",
+          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071112383673328/index.html",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "今年前五个月我国高端船型出口量大幅增长",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "今年前五个月我国高端船型出口量大幅增长",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075130.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075130.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "支持政策多点发力 我国持续减轻家庭生养负担",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "支持政策多点发力 我国持续减轻家庭生养负担",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075127.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075127.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "各地各部门积极应对台风“巴威”",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "各地各部门积极应对台风“巴威”",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075125.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075125.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "“深深植根人民，始终拥有坚实根基”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之七",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "“深深植根人民，始终拥有坚实根基”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之七",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075123.htm",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075123.htm",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "【视频】习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/11/VIDEbloDn9jk5Ip2Xbh7uIFP260711.shtml",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/11/VIDEbloDn9jk5Ip2Xbh7uIFP260711.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-11",
+          "title": "【视频】李强举行仪式欢迎朝鲜内阁总理访华",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "【视频】李强举行仪式欢迎朝鲜内阁总理访华",
+              "source": "中国政府网要闻",
+              "url": "https://tv.cctv.com/2026/07/11/VIDEnLjdMLUl8Or18kjOfRAX260711.shtml",
+              "published_at": "2026-07-11T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://tv.cctv.com/2026/07/11/VIDEnLjdMLUl8Or18kjOfRAX260711.shtml",
+          "score": 100,
+          "publishedAt": "2026-07-11T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -715,9 +746,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "人民日报评论员：传承睦邻友好 共绘时代华章——纪念《中朝友好合作互助条约》签订65周年",
-            "习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就《中朝友好合作互助条约》签订65周年互致贺电"
+            "习近平与金正恩互致贺电纪念《中朝友好合作互助条约》签订65周年",
+            "目前无证据显示双边关系出现实质调整",
+            "事件常规，不构成持续追踪的独立驱动因素"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -757,9 +788,9 @@
             ],
             "affected_areas": [
               "公共政策",
-              "人民日报评论员",
-              "传承睦邻友好",
-              "共绘时代华章"
+              "习近平同朝鲜劳动党总书记",
+              "国务委员会委员长金正恩就",
+              "中朝友好合作互助条约"
             ],
             "confidence": "high"
           }
@@ -780,8 +811,8 @@
             "impact_level": "A",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息",
+              "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
+              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -800,8 +831,8 @@
             "impact_level": "中",
             "confidence": "中",
             "watch_signals": [
-              "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
+              "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
+              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
             ]
           },
           {
@@ -819,15 +850,33 @@
             "impact_level": "A",
             "confidence": "低",
             "watch_signals": [
-              "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
-              "留意 中国政府网要闻 是否继续发布相关信息"
+              "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
+              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "后续执行细节和市场反应仍需继续跟踪。",
+            "risk": "无已知风险，但需注意朝鲜半岛局势若出现波动，此事件可能被重新解读。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "无已知风险。",
+            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
+            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
+            "severity": "中",
+            "probability": "中",
+            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
+          },
+          {
+            "risk_type": "信息风险",
+            "risk": "目前证据不足。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -850,13 +899,13 @@
         },
         "watch_dashboard": [
           {
-            "variable": "跟踪 公共政策、人民日报评论员、传承睦邻友好 的后续变化",
+            "variable": "跟踪 公共政策、习近平同朝鲜劳动党总书记、国务委员会委员长金正恩就 的后续变化",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -1111,7 +1160,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T09:01:37.444Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-12T00:00:47.640Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -1890,8 +1939,8 @@
       "priority_grade": "B",
       "importance_score": 100,
       "first_seen_at": "2026-06-17T10:00:00.000Z",
-      "last_seen_at": "2026-07-11T09:01:14.158Z",
-      "updated_at": "2026-07-11T09:01:14.158Z",
+      "last_seen_at": "2026-07-12T00:00:31.355Z",
+      "updated_at": "2026-07-12T00:00:31.355Z",
       "definition": {
         "one_sentence": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
         "background": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
@@ -1963,11 +2012,11 @@
         },
         "source_links": [
           {
-            "item_id": "macro-item-96a3a85911",
+            "item_id": "macro-item-34652a6b4f",
             "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
             "source": "第一财经",
             "url": "https://www.yicai.com/news/103270074.html",
-            "published_at": "2026-07-11T09:01:14.158Z",
+            "published_at": "2026-07-12T00:00:31.355Z",
             "summary": "第一财经中文财经、宏观、产业和市场新闻",
             "relevance_score": 100
           },
@@ -2026,7 +2075,7 @@
         "summary": "第一财经中文财经、宏观、产业和市场新闻",
         "source": "第一财经",
         "url": "https://www.yicai.com/news/103270074.html",
-        "published_at": "2026-07-11T09:01:14.158Z",
+        "published_at": "2026-07-12T00:00:31.355Z",
         "score": 100
       },
       "confirmed_facts": [
@@ -2260,11 +2309,11 @@
       ],
       "related_items": [
         {
-          "item_id": "macro-item-96a3a85911",
+          "item_id": "macro-item-34652a6b4f",
           "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103270074.html",
-          "published_at": "2026-07-11T09:01:14.158Z",
+          "published_at": "2026-07-12T00:00:31.355Z",
           "summary": "第一财经中文财经、宏观、产业和市场新闻",
           "relevance_score": 100
         },
@@ -2536,7 +2585,7 @@
           "publishedAt": "2026-07-10T07:00:00.000Z"
         },
         {
-          "date": "2026-07-11",
+          "date": "2026-07-12",
           "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
           "summary": "第一财经中文财经、宏观、产业和市场新闻",
           "description": "第一财经中文财经、宏观、产业和市场新闻",
@@ -2549,16 +2598,16 @@
               "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
               "source": "第一财经",
               "url": "https://www.yicai.com/news/103270074.html",
-              "published_at": "2026-07-11T09:01:14.158Z"
+              "published_at": "2026-07-12T00:00:31.355Z"
             }
           ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103270074.html",
           "score": 100,
-          "publishedAt": "2026-07-11T09:01:14.158Z"
+          "publishedAt": "2026-07-12T00:00:31.355Z"
         },
         {
-          "date": "2026-07-11",
+          "date": "2026-07-12",
           "title": "AI周期走到“加时赛”，值得关注的四个资本开支泡沫预警信号",
           "summary": "第一财经中文财经、宏观、产业和市场新闻",
           "description": "第一财经中文财经、宏观、产业和市场新闻",
@@ -2571,13 +2620,13 @@
               "title": "AI周期走到“加时赛”，值得关注的四个资本开支泡沫预警信号",
               "source": "第一财经",
               "url": "https://www.yicai.com/news/103269598.html",
-              "published_at": "2026-07-11T09:01:14.158Z"
+              "published_at": "2026-07-12T00:00:31.355Z"
             }
           ],
           "source": "第一财经",
           "url": "https://www.yicai.com/news/103269598.html",
           "score": 99,
-          "publishedAt": "2026-07-11T09:01:14.158Z"
+          "publishedAt": "2026-07-12T00:00:31.355Z"
         }
       ],
       "analysis_notes": [],
@@ -2761,7 +2810,7 @@
         ],
         "judgment_history": [
           {
-            "date": "2026-07-11",
+            "date": "2026-07-12",
             "judgment": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
             "change_type": "初始判断",
             "reason": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
@@ -2957,7 +3006,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T09:01:37.444Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-12T00:00:47.640Z。",
           "evidence": [
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
             "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
@@ -3600,7 +3649,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-11T09:01:37.444Z。",
+          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-12T00:00:47.640Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -4325,7 +4374,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-11T09:01:37.444Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-12T00:00:47.640Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -5007,7 +5056,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-11T09:01:37.444Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-12T00:00:47.640Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -5647,7 +5696,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-11T09:01:37.444Z。",
+          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-12T00:00:47.640Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",
