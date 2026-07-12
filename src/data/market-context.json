@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T00:00:47.640Z",
+  "generatedAt": "2026-07-12T09:00:51.107Z",
   "provider": "alpha-vantage",
   "status": "available",
   "stale": false,
@@ -14,7 +14,7 @@
       "changePercentValue": 4.0339,
       "volume": 148421001,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "MSFT": {
       "symbol": "MSFT",
@@ -25,7 +25,7 @@
       "changePercentValue": 0.1925,
       "volume": 24644605,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "GOOGL": {
       "symbol": "GOOGL",
@@ -36,7 +36,7 @@
       "changePercentValue": -0.4765,
       "volume": 18146146,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "META": {
       "symbol": "META",
@@ -47,7 +47,7 @@
       "changePercentValue": 5.9749,
       "volume": 40608860,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "AMZN": {
       "symbol": "AMZN",
@@ -58,7 +58,7 @@
       "changePercentValue": -0.6881,
       "volume": 31653997,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "AMD": {
       "symbol": "AMD",
@@ -69,7 +69,7 @@
       "changePercentValue": 2.0431,
       "volume": 20704530,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "AVGO": {
       "symbol": "AVGO",
@@ -80,7 +80,7 @@
       "changePercentValue": -0.2842,
       "volume": 14595928,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "TSLA": {
       "symbol": "TSLA",
@@ -91,7 +91,7 @@
       "changePercentValue": 0.2976,
       "volume": 33409995,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "QQQ": {
       "symbol": "QQQ",
@@ -102,7 +102,7 @@
       "changePercentValue": 0.3083,
       "volume": 26415898,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "SPY": {
       "symbol": "SPY",
@@ -113,7 +113,7 @@
       "changePercentValue": 0.431,
       "volume": 42191313,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     },
     "SMH": {
       "symbol": "SMH",
@@ -124,7 +124,7 @@
       "changePercentValue": 0.543,
       "volume": 6608365,
       "tradingDay": "2026-07-10",
-      "fetchedAt": "2026-07-12T00:00:47.640Z"
+      "fetchedAt": "2026-07-12T09:00:51.107Z"
     }
   },
   "topMovers": [
@@ -673,12 +673,62 @@
     "NVDA": [
       {
         "symbol": "NVDA",
+        "title": "Intel’s revival rests on a risky alliance between Silicon Valley and Washington",
+        "url": "https://www.calcalistech.com/ctechnews/article/3y1td26m0",
+        "source": "CTech",
+        "timePublished": "20260712T074110",
+        "summary": "Intel's recent manufacturing deals with major tech companies like Nvidia, Tesla, and Apple, while boosting its stock, are reportedly influenced by pressure from the Trump administration. The Trump administration, which holds a 10% stake in Intel, is keen on rebuilding domestic chip manufacturing and has actively pushed companies to partner with Intel. While this political backing has aided Intel's turnaround, its long-term success hinges on the company's ability to deliver on its manufacturing promises.",
+        "overallSentimentScore": 0.232596,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "The Monday Blues. Is the Dip in Monday.com Stock a Buying Opportunity?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/monday-blues-dip-monday-com-062000916.html",
+        "source": "Yahoo Finance",
+        "timePublished": "20260712T062011",
+        "summary": "Monday.com's stock (MNDY) has dropped over 40% in 2026, primarily due to fears that AI could disrupt its business model. Despite investor concerns, the company demonstrated strong Q1 revenue growth of 24% and solid net dollar retention, with even higher rates for larger clients, leading to raised full-year guidance. The article suggests that at its current depressed valuation, with a P/S ratio below 3x and a forward P/E below 19x, the stock presents a potential buying opportunity, arguing that organizations will likely continue to value dedicated software providers for updates, security, and compliance despite AI advancements.",
+        "overallSentimentScore": 0.322948,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Himax Technologies (HIMX) Launches HE Series Depth ICs, Is The Stock Still Cheap?",
+        "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-himx/himax-technologies/news/himax-technologies-himx-launches-he-series-depth-ics-is-the",
+        "source": "Simply Wall Street",
+        "timePublished": "20260712T043309",
+        "summary": "Himax Technologies (HIMX) has launched its HE Series indirect Time-of-Flight depth decoder ICs for AI vision applications, prompting scrutiny of its valuation after significant share price gains. Despite a narrative suggesting the stock is 35.7% undervalued with a fair value of $23.70 due to technological breakthroughs and growing AI market demand, its P/E ratio of 83.2x is higher than industry averages, indicating potential valuation risk. Investors are urged to consider both the growth narrative and potential risks like trade tensions and demand swings, and to perform their own due diligence.",
+        "overallSentimentScore": 0.187828,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "How Investors Are Reacting To Vulcan Materials (VMC) Dividend Amid Russell Index Exit And Cost Pressures",
+        "url": "https://simplywall.st/stocks/us/materials/nyse-vmc/vulcan-materials/news/how-investors-are-reacting-to-vulcan-materials-vmc-dividend",
+        "source": "Simply Wall Street",
+        "timePublished": "20260712T003658",
+        "summary": "Vulcan Materials (VMC) recently declared a quarterly cash dividend of US$0.52 per share, while simultaneously being removed from the Russell 1000 Dynamic Index. This situation presents a contrast for investors, highlighting the company's commitment to regular cash returns against a backdrop of potential share price volatility due to macroeconomic pressures and index changes. The article suggests that while the dividend reinforces income stability, rising energy and funding costs, alongside index removal, could lead to increased scrutiny of VMC's financial resilience and impact its investment narrative.",
+        "overallSentimentScore": 0.088539,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
+        "title": "Arista Networks Added $34B in Value This Week—But There’s a Twist in the Numbers",
+        "url": "https://ts2.tech/en/arista-networks-added-34b-in-value-this-week-but-theres-a-twist-in-the-numbers/",
+        "source": "TechStock²",
+        "timePublished": "20260711T220708",
+        "summary": "Arista Networks saw its market capitalization increase by $34 billion this week, a gain nearly triple its 2026 revenue forecast. Despite this significant rise, analyst earnings estimates and price targets remained largely unchanged, suggesting a market re-rating rather than a fundamental shift in its near-term outlook. The rally occurred on light trading volume, raising questions about strong buying interest at current levels and putting pressure on upcoming Q2 earnings results to justify the increased valuation.",
+        "overallSentimentScore": 0.046995,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "NVDA",
         "title": "VanEck Semiconductor ETF (NASDAQ: SMH) Beats Nvidia Stock With 113% Gain As AI Wave Floods Entire Chip Sector",
         "url": "https://www.foreignpolicyjournal.com/2026/07/11/vaneck-semiconductor-etf-nasdaq-smh-beats-nvidia-stock-with-113-gain-as-ai-wave-floods-entire-chip-sector/",
         "source": "Foreign Policy Journal",
         "timePublished": "20260711T194227",
         "summary": "The VanEck Semiconductor ETF (SMH) has significantly outperformed Nvidia stock over the past year, returning 113.17% compared to Nvidia's 28.72%. This strong performance is attributed to the widespread AI infrastructure buildout benefiting the entire chip sector, not just individual companies. SMH's diversified holdings across the semiconductor value chain offer a more robust way for investors to capitalize on the AI theme with less single-stock risk.",
-        "overallSentimentScore": 0.2946,
+        "overallSentimentScore": 0.279281,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -688,7 +738,7 @@
         "source": "Investing.com",
         "timePublished": "20260711T170818",
         "summary": "Morgan Stanley reiterated Nvidia as its top semiconductor pick with an Overweight rating and a $288 price target, stating that broader AI demand beyond traditional hyperscalers is crucial for the company's continued growth. The firm believes that Nvidia's next growth phase will be driven by a diversified customer base, including enterprise, sovereign AI, and industrial sectors, alleviating concerns about reliance on a few large cloud providers. Despite market volatility and concerns over high valuations, Nvidia's stock remains positive, fueled by strong AI infrastructure spending and its dominant share in AI computing workloads.",
-        "overallSentimentScore": 0.297503,
+        "overallSentimentScore": 0.298226,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -698,61 +748,21 @@
         "source": "Yahoo Finance Singapore",
         "timePublished": "20260711T160315",
         "summary": "Morgan Stanley warns that the current stock market rally, largely driven by AI spending, faces significant risks despite aggressive growth forecasts. The bank projects AI investment to reach $1.2 trillion by 2027, but cautions that any hesitation in Q2 earnings from major AI spenders could impact the market. Additionally, potential headwinds include rising oil prices and a more hawkish Federal Reserve stance, which could challenge the current optimistic outlook.",
-        "overallSentimentScore": 0.237563,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Super Micro Computer (SMCI) Introduces DCBBS Blueprint for HPC",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-smci-introduces-160002387.html",
-        "source": "Yahoo Finance",
-        "timePublished": "20260711T155942",
-        "summary": "Super Micro Computer (SMCI) has introduced its Data Center Building Block Solutions/DCBBS Blueprint for HPC, featuring the NVIDIA Vera Rubin NVL4 platform. This blueprint aims to accelerate the deployment of converged high-performance computing and AI infrastructure through a modular, liquid-cooled architecture. The solution includes scalable units with NVIDIA Rubin GPUs and Vera CPUs, supported by advanced direct liquid cooling, and offers a comprehensive methodology for infrastructure build-out.",
-        "overallSentimentScore": 0.386726,
-        "overallSentimentLabel": "Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Y Intercept Hong Kong Ltd Buys New Position in Gen Digital Inc. $GEN",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-y-intercept-hong-kong-ltd-buys-new-position-in-gen-digital-inc-gen-2026-07-11/",
-        "source": "MarketBeat",
-        "timePublished": "20260711T153748",
-        "summary": "Y Intercept Hong Kong Ltd has initiated a new position in Gen Digital Inc. (NASDAQ:GEN) by purchasing 78,481 shares valued at approximately $1.48 million in the first quarter. This comes as Gen Digital reported strong quarterly results, with revenue up 27% year-over-year and EPS exceeding estimates. While analysts have a \"Hold\" consensus rating with an average price target of $31.29, insider trading activity has been mixed, with Director John C. Chrystal buying shares and Director Ondrej Vlcek selling a significant number.",
-        "overallSentimentScore": 0.168196,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Price Prediction: Synopsys Stock Will Be Worth This In 2030",
-        "url": "https://247wallst.com/investing/2026/07/11/price-prediction-synopsys-stock-will-be-worth-this-in-2030/",
-        "source": "24/7 Wall St.",
-        "timePublished": "20260711T152939",
-        "summary": "Synopsys (SNPS) stock, despite a 42% revenue jump, dropped 19% over the past year due to amortization charges from the Ansys acquisition. While analysts have a consensus target of $563.74, the article's base model predicts a more conservative $667.60 by 2030. Reaching the ambitious $1,100 target by 2030 would require a 148% gain from its current price and sustained mid-teens EPS compounding, along with successful Ansys integration and stabilized Design IP.",
-        "overallSentimentScore": 0.329918,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Here's Why the VanEck Semiconductor ETF Soared in the First Half of 2026 (Hint: Diversification Works in Investing)",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-vaneck-semiconductor-etf-151107038.html",
-        "source": "Yahoo Finance",
-        "timePublished": "20260711T144227",
-        "summary": "The VanEck Semiconductor ETF (SMH) saw a significant 82.1% surge in the first half of 2026, outperforming Nvidia despite Nvidia's major market cap. This strong performance is attributed to the ETF's diversified, capped approach to semiconductor stocks, particularly benefiting from the outperformance of semiconductor equipment manufacturers. The article suggests that increased AI spending and a shift in demand towards CPUs for inference (used more for inference) over GPUs (used for building models) contributed to the success, highlighting the benefits of sector-wide diversification in investing.",
-        "overallSentimentScore": 0.337231,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "NVDA",
-        "title": "Kornitzer Capital Management Inc. KS Buys 3,173 Shares of Taiwan Semiconductor Manufacturing Company Ltd. $TSM",
-        "url": "https://www.marketbeat.com/instant-alerts/filing-kornitzer-capital-management-inc-ks-buys-3173-shares-of-taiwan-semiconductor-manufacturing-company-ltd-tsm-2026-07-11/",
-        "source": "MarketBeat",
-        "timePublished": "20260711T144009",
-        "summary": "Kornitzer Capital Management Inc. KS increased its stake in Taiwan Semiconductor Manufacturing Company Ltd. (TSM) by 2.8% in the first quarter, adding 3,173 shares to its portfolio, bringing the total to 116,562 shares valued at approximately $39.4 million. Wall Street analysts maintain a \"Buy\" rating for TSM, with an average price target of $449.38, following strong quarterly results that included earnings of $3.49 per share and a raised quarterly dividend of $1.1136 per share. The company's stock performance shows a market capitalization of $2.25 trillion, and it has experienced significant insider buying recently, reflecting management's confidence despite some competitive concerns.",
-        "overallSentimentScore": 0.334035,
+        "overallSentimentScore": 0.285854,
         "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "MSFT": [
+      {
+        "symbol": "MSFT",
+        "title": "Deutsche Bank shares three key points on the dollar’s long-term trajectory",
+        "url": "https://www.investing.com/news/economy-news/deutsche-bank-shares-three-key-points-on-the-dollars-longterm-trajectory-4787308",
+        "source": "Investing.com",
+        "timePublished": "20260711T231036",
+        "summary": "Deutsche Bank has identified three key structural shifts affecting the dollar's long-term outlook: changes in how the U.S. finances its external deficit, specifically the divergence between declining official purchases of U.S. debt and rising private equity inflows into U.S. tech. They also highlight the potential impact of blockchain and tokenization in the U.S., alongside China's efforts to internationalize the renminbi, and pinpoint Asia as home to many undervalued currencies, stressing the need for investors to focus on evolving global capital flows.",
+        "overallSentimentScore": 0.111395,
+        "overallSentimentLabel": "Neutral"
+      },
       {
         "symbol": "MSFT",
         "title": "Constellation Energy Stock Up 5%, Tuesday Seen as Test",
@@ -760,7 +770,7 @@
         "source": "TechStock²",
         "timePublished": "20260711T225021",
         "summary": "Constellation Energy's stock rose 5.1% last week, mirroring gains in peer stocks Vistra Corp. and Talen Energy, suggesting a broad sector bounce rather than a specific revaluation of Constellation. The company's performance will face a crucial test on Tuesday with the release of PJM capacity-auction numbers. Constellation is also selling 4.4 GW of PJM plants and closed a deal for noteholders to swap unregistered notes, while investors are closely watching PJM auction results, CPI data, and overall market sentiment.",
-        "overallSentimentScore": 0.214843,
+        "overallSentimentScore": 0.220228,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -770,7 +780,17 @@
         "source": "Simply Wall Street",
         "timePublished": "20260711T173822",
         "summary": "ServiceNow (NOW) is back in focus following a partnership with Hitachi Digital Services to power Hitachi Intelligent Infrastructure Monitoring with its AI Platform. While the stock has shown mixed performance recently, with a significant short-term gain but longer-term declines, it trades at a discount to analyst targets and some intrinsic value estimates. The article explores differing valuation perspectives, noting that the company is considered undervalued by some analysis models, while others suggest it is expensive based on its high P/E ratio.",
-        "overallSentimentScore": 0.200038,
+        "overallSentimentScore": 0.177236,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "MSFT",
+        "title": "The Bull Case For Brighthouse Financial (BHF) Could Change Following Surging 2026 Call Option Volatility",
+        "url": "https://simplywall.st/stocks/us/insurance/nasdaq-bhf/brighthouse-financial/news/the-bull-case-for-brighthouse-financial-bhf-could-change-fol/amp",
+        "source": "Simply Wall Street",
+        "timePublished": "20260711T154107",
+        "summary": "Brighthouse Financial (BHF) is experiencing surging call option volatility for its September 2026 US$90.00 calls, indicating market anticipation of a significant stock movement. This, coupled with a Zacks Rank #3 (Hold) and recent upward earnings revisions, suggests increased focus on future developments. The article explores how this heightened volatility could influence Brighthouse Financial's investment narrative, especially given recent Q1 2026 net losses and revenue weaknesses.",
+        "overallSentimentScore": 0.20669,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -780,7 +800,7 @@
         "source": "MarketBeat",
         "timePublished": "20260711T145044",
         "summary": "Kornitzer Capital Management Inc. KS increased its stake in Fastenal Company (NASDAQ:FAST) by 49.5% in the first quarter, purchasing an additional 56,070 shares and bringing its total holdings to 169,321 shares valued at $7.86 million. Several other institutional investors also adjusted their positions in Fastenal, with the stock currently having a consensus \"Hold\" rating from analysts and an average price target of $47.75. Fastenal reported Q1 earnings per share of $0.30 and revenue of $2.20 billion, slightly above expectations.",
-        "overallSentimentScore": 0.132817,
+        "overallSentimentScore": 0.106637,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -790,7 +810,7 @@
         "source": "MarketBeat",
         "timePublished": "20260711T140946",
         "summary": "Swedbank AB recently increased its holdings in IonQ, Inc. by 147.7%, bringing its stake to 149,503 shares valued at approximately $4.31 million. Other institutional investors also adjusted their positions, with hedge funds and institutions collectively owning 41.42% of IonQ stock. Despite some insider selling, analysts generally rate IonQ as a \"Moderate Buy\" with a consensus target price of $69.88, even though the stock traded down -$1.87 to $42.90 on Friday.",
-        "overallSentimentScore": 0.189568,
+        "overallSentimentScore": 0.168553,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -800,7 +820,7 @@
         "source": "Sahm",
         "timePublished": "20260711T133819",
         "summary": "Bill Ackman's Pershing Square Capital Management invested heavily in Meta Platforms during Q4 2025. After an initial dip, the Meta position has turned positive for 2026, showing a gain of nearly $20 million since the beginning of the year. Ackman remains bullish on Meta due to its potential in AI, large user base, and experienced leadership, while also increasing positions in Microsoft and selling off Alphabet stakes.",
-        "overallSentimentScore": 0.116117,
+        "overallSentimentScore": 0.123266,
         "overallSentimentLabel": "Neutral"
       },
       {
@@ -810,31 +830,51 @@
         "source": "The Globe and Mail",
         "timePublished": "20260711T121055",
         "summary": "RBC Capital analyst David Paige maintained a Hold rating on Rackspace Technology (RXT) with a price target of $4.00, following the company's shares closing at $4.37. TipRanks notes that Paige has a strong success rate with recommended stocks. Rackspace Technology also received a maintained Hold rating from UBS with a $5.70 price target, and reported quarterly revenue of $678.1 million and a net profit of $8.3 million for the quarter ending March 31.",
-        "overallSentimentScore": 0.145616,
+        "overallSentimentScore": 0.13935,
         "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Palantir, Microsoft, Figma emerge as key AI beneficiaries ahead of Q2 software earnings: Citi",
-        "url": "https://seekingalpha.com/news/4613033-palantir-microsoft-figma-emerge-as-key-ai-beneficiaries-ahead-of-q2-software-earnings-citi",
-        "source": "Seeking Alpha",
-        "timePublished": "20260711T120815",
-        "summary": "Citi analysts have identified Palantir (PLTR), Microsoft (MSFT), and Figma (FIG) as top beneficiaries of AI deployment as Q2 software earnings approach. While IT spending has improved, Citi is selective, highlighting these companies within data infrastructure and AI enablement, along with MongoDB (MDB), as poised for growth. The report suggests a focus on selective software companies that are well-positioned to capitalize on AI advancements.",
-        "overallSentimentScore": 0.304287,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "MSFT",
-        "title": "Edison International’s $25,000 Lineworker Scholarships Signal a Workforce Strategy Shift",
-        "url": "https://futurumgroup.com/insights/edison-internationals-25000-lineworker-scholarships-signal-a-workforce-strategy-shift/",
-        "source": "The Futurum Group",
-        "timePublished": "20260711T120737",
-        "summary": "Edison International awarded $25,000 scholarships to 10 lineworker recipients, highlighting that skilled human talent remains essential even as the AI platforms market rapidly grows. This initiative suggests EIX views workforce investment and AI adoption as complementary strategies, rather than competing ones, particularly crucial for utilities deploying AI on critical infrastructure. The decision addresses challenges in AI reliability and data security, emphasizing the need for expert technicians to manage and validate AI systems in safety-critical environments.",
-        "overallSentimentScore": 0.231421,
-        "overallSentimentLabel": "Somewhat-Bullish"
       }
     ],
     "GOOGL": [
+      {
+        "symbol": "GOOGL",
+        "title": "Alphabet-A (GOOGL) Stock Forum and Discussion",
+        "url": "https://www.moomoo.com/stock/GOOGL-US/community",
+        "source": "Moomoo",
+        "timePublished": "20260712T073759",
+        "summary": "This article provides a forum and discussion space for investors and interested parties regarding Alphabet-A (GOOGL) stock. It serves as a platform for sharing insights, opinions, and analysis related to the company's performance, news, and future prospects.",
+        "overallSentimentScore": 0.025855,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Norwegian Cruise Line Holdings (NCLH) After ZeroNorth Deal And CMO Hire, Is It Undervalued",
+        "url": "https://simplywall.st/stocks/us/consumer-services/nyse-nclh/norwegian-cruise-line-holdings/news/norwegian-cruise-line-holdings-nclh-after-zeronorth-deal-and",
+        "source": "Simply Wall Street",
+        "timePublished": "20260712T013322",
+        "summary": "Norwegian Cruise Line Holdings (NCLH) has partnered with ZeroNorth for fuel procurement and hired Lee D. Applbaum as CMO, yet its share price has declined year-to-date. The company is currently considered 8.1% undervalued by a popular narrative that places its fair value at $21.33, driven by anticipated net margin expansion from measured fleet expansion and upgrades. However, a discounted cash flow (DCF) model suggests the stock is overvalued at its current price of $19.61, indicating a future cash flow value of $6.31.",
+        "overallSentimentScore": 0.084202,
+        "overallSentimentLabel": "Neutral"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "The Bull Case For Bank OZK (OZK) Could Change Following New Buyback And Dividend Hike News",
+        "url": "https://simplywall.st/stocks/us/banks/nasdaq-ozk/bank-ozk/news/the-bull-case-for-bank-ozk-ozk-could-change-following-new-bu",
+        "source": "Simply Wall Street",
+        "timePublished": "20260712T000938",
+        "summary": "Bank OZK recently announced a new quarterly dividend increase to US$0.48 per share, marking its 64th consecutive quarterly hike, and authorized a fresh US$200 million share buyback program. While these moves signal a continued focus on returning capital to shareholders, the article emphasizes that the core investment narrative, heavily reliant on commercial real estate lending, remains largely unchanged in the near term. The biggest risk for the bank continues to be asset quality if commercial real estate conditions deteriorate.",
+        "overallSentimentScore": 0.153999,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "Deutsche Bank shares three key points on the dollar’s long-term trajectory",
+        "url": "https://www.investing.com/news/economy-news/deutsche-bank-shares-three-key-points-on-the-dollars-longterm-trajectory-4787308",
+        "source": "Investing.com",
+        "timePublished": "20260711T231036",
+        "summary": "Deutsche Bank has identified three key structural shifts affecting the dollar's long-term outlook: changes in how the U.S. finances its external deficit, specifically the divergence between declining official purchases of U.S. debt and rising private equity inflows into U.S. tech. They also highlight the potential impact of blockchain and tokenization in the U.S., alongside China's efforts to internationalize the renminbi, and pinpoint Asia as home to many undervalued currencies, stressing the need for investors to focus on evolving global capital flows.",
+        "overallSentimentScore": 0.119641,
+        "overallSentimentLabel": "Neutral"
+      },
       {
         "symbol": "GOOGL",
         "title": "Broader AI demand is key for Nvidia investors, Morgan Stanley says By Investing.com",
@@ -842,7 +882,17 @@
         "source": "Investing.com",
         "timePublished": "20260711T170818",
         "summary": "Morgan Stanley reiterated Nvidia as its top semiconductor pick with an Overweight rating and a $288 price target, stating that broader AI demand beyond traditional hyperscalers is crucial for the company's continued growth. The firm believes that Nvidia's next growth phase will be driven by a diversified customer base, including enterprise, sovereign AI, and industrial sectors, alleviating concerns about reliance on a few large cloud providers. Despite market volatility and concerns over high valuations, Nvidia's stock remains positive, fueled by strong AI infrastructure spending and its dominant share in AI computing workloads.",
-        "overallSentimentScore": 0.302625,
+        "overallSentimentScore": 0.298226,
+        "overallSentimentLabel": "Somewhat-Bullish"
+      },
+      {
+        "symbol": "GOOGL",
+        "title": "The Bull Case For Brighthouse Financial (BHF) Could Change Following Surging 2026 Call Option Volatility",
+        "url": "https://simplywall.st/stocks/us/insurance/nasdaq-bhf/brighthouse-financial/news/the-bull-case-for-brighthouse-financial-bhf-could-change-fol/amp",
+        "source": "Simply Wall Street",
+        "timePublished": "20260711T154107",
+        "summary": "Brighthouse Financial (BHF) is experiencing surging call option volatility for its September 2026 US$90.00 calls, indicating market anticipation of a significant stock movement. This, coupled with a Zacks Rank #3 (Hold) and recent upward earnings revisions, suggests increased focus on future developments. The article explores how this heightened volatility could influence Brighthouse Financial's investment narrative, especially given recent Q1 2026 net losses and revenue weaknesses.",
+        "overallSentimentScore": 0.213149,
         "overallSentimentLabel": "Somewhat-Bullish"
       },
       {
@@ -852,68 +902,18 @@
         "source": "Sahm",
         "timePublished": "20260711T133819",
         "summary": "Bill Ackman's Pershing Square Capital Management invested heavily in Meta Platforms during Q4 2025. After an initial dip, the Meta position has turned positive for 2026, showing a gain of nearly $20 million since the beginning of the year. Ackman remains bullish on Meta due to its potential in AI, large user base, and experienced leadership, while also increasing positions in Microsoft and selling off Alphabet stakes.",
-        "overallSentimentScore": 0.120374,
+        "overallSentimentScore": 0.101582,
         "overallSentimentLabel": "Neutral"
       },
       {
         "symbol": "GOOGL",
-        "title": "Insiders Of Seanergy Maritime Holdings Make A Tidy Sum Selling At US$13.58",
-        "url": "https://simplywall.st/stocks/us/transportation/nasdaq-ship/seanergy-maritime-holdings/news/insiders-of-seanergy-maritime-holdings-make-a-tidy-sum-selli",
-        "source": "Simply Wall Street",
-        "timePublished": "20260711T121239",
-        "summary": "Over the past year, insiders at Seanergy Maritime Holdings (NASDAQ:SHIP) sold shares, with the largest sale by George Economou for US$142k at US$13.45 per share, below the current price of US$14.96. While the company's stock has risen 11% recently, the insider sales suggest they were content with a lower valuation, although insiders still own 31% of the shares. The article highlights that no insider buying has occurred but emphasizes the importance of considering both sales and insider ownership levels when evaluating the stock.",
-        "overallSentimentScore": 0.086032,
+        "title": "Elliman’s AI Overhaul Raises Questions About Future of Agents",
+        "url": "https://therealdeal.com/new-york/2026/07/11/ellimans-ai-overhaul-raises-questions-about-future-of-agents/",
+        "source": "The Real Deal",
+        "timePublished": "20260711T130913",
+        "summary": "Douglas Elliman's recent AI tech overhaul, led by CEO Michael Liebowitz, has sparked debate regarding the future of real estate agents, with Liebowitz suggesting it could lead to layoffs and fewer agents in the industry. While AI is streamlining administrative tasks for agents, it's also causing issues as clients use AI for potentially inaccurate property valuations. Other brokerages like Compass are also heavily investing in AI, highlighting its increasing, albeit sometimes problematic, integration into the real estate sector.",
+        "overallSentimentScore": -0.141849,
         "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Edison International’s $25,000 Lineworker Scholarships Signal a Workforce Strategy Shift",
-        "url": "https://futurumgroup.com/insights/edison-internationals-25000-lineworker-scholarships-signal-a-workforce-strategy-shift/",
-        "source": "The Futurum Group",
-        "timePublished": "20260711T120737",
-        "summary": "Edison International awarded $25,000 scholarships to 10 lineworker recipients, highlighting that skilled human talent remains essential even as the AI platforms market rapidly grows. This initiative suggests EIX views workforce investment and AI adoption as complementary strategies, rather than competing ones, particularly crucial for utilities deploying AI on critical infrastructure. The decision addresses challenges in AI reliability and data security, emphasizing the need for expert technicians to manage and validate AI systems in safety-critical environments.",
-        "overallSentimentScore": 0.261101,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Broadcom director Gayla Delly sells $728,368 in AVGO stock",
-        "url": "https://www.investing.com/news/insider-trading-news/broadcom-director-gayla-delly-sells-728368-in-avgo-stock-93CH-4787145",
-        "source": "Investing.com",
-        "timePublished": "20260710T230906",
-        "summary": "Broadcom director Gayla Delly sold 1,890 shares of AVGO stock for $728,368 on July 8, 2026. Following the sale, Ms. Delly directly holds 31,326 shares. The transaction occurs amidst significant company developments including a multi-year partnership with Apple and the unveiling of a new AI inference chip.",
-        "overallSentimentScore": 0.246302,
-        "overallSentimentLabel": "Somewhat-Bullish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Cupertino-based Apple files lawsuit accusing ChatGPT maker OpenAI of stealing trade secrets for hardware development",
-        "url": "https://abc7.com/post/cupertino-based-apple-files-lawsuit-accusing-chatgpt-maker-openai-stealing-trade-secrets-hardware-development/19482823/",
-        "source": "ABC7 Los Angeles",
-        "timePublished": "20260710T230659",
-        "summary": "Apple has filed a lawsuit against OpenAI, alleging the artificial intelligence company stole trade secrets for the development of its hardware. The lawsuit claims that two former Apple employees now at OpenAI, including Tang Tan and Chang Liu, misappropriated confidential information. Apple states it discovered a pattern of theft by former employees and asserts that OpenAI's nascent hardware business is built on these illegally obtained trade secrets.",
-        "overallSentimentScore": -0.18877,
-        "overallSentimentLabel": "Somewhat-Bearish"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "Semtech EVP and COO Asaf Silberstein sells $1.09m in stock",
-        "url": "https://www.investing.com/news/insider-trading-news/semtech-evp-and-coo-asaf-silberstein-sells-109m-in-stock-93CH-4786785",
-        "source": "Investing.com",
-        "timePublished": "20260710T202957",
-        "summary": "Asaf Silberstein, EVP and COO of Semtech Corp, sold approximately $1.09 million worth of company stock through a Family Trust on July 8, 2026. These transactions, involving 8,500 shares at prices between $124.1895 and $129.9426, were conducted under a Rule 10b5-1 trading plan. Despite the stock's significant 183% gain over the past year, InvestingPro analysis suggests it may be overvalued, although Semtech recently reported strong first-quarter results and positive Q2 outlook, leading to increased price targets from several analysts.",
-        "overallSentimentScore": 0.047334,
-        "overallSentimentLabel": "Neutral"
-      },
-      {
-        "symbol": "GOOGL",
-        "title": "DigitalOcean Holdings Inc Stock (DOCN) Closed Down by 7.49% on Jul 10: What Signal Does It Send?",
-        "url": "https://www.tradingkey.com/news/market-movers/262023622-market-movers-docn-20260710",
-        "source": "TradingKey",
-        "timePublished": "20260710T201022",
-        "summary": "DigitalOcean Holdings Inc (DOCN) stock dropped 7.49% on July 10, signaling investor concern about competitive pressures from larger cloud providers, softening demand from small and medium businesses, and high capital expenditures for AI services. Technical indicators suggest sell conditions, while analysts have a mixed outlook with an average price target of $171.02. The company faces increased competition in its niche market and execution risks with its AI-native cloud platform pivot.",
-        "overallSentimentScore": -0.24123,
-        "overallSentimentLabel": "Somewhat-Bearish"
       }
     ]
   }
