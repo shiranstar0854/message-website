@@ -56,6 +56,10 @@
               ${formatCacheWindow(source) ? `<span>${escapeHtml(formatCacheWindow(source))}</span>` : ""}
               ${Number(source.failureCount || 0) > 0 ? `<span>失败 ${Number(source.failureCount || 0)}</span>` : ""}
               ${Number(source.attempts || 1) > 1 ? `<span>尝试 ${Number(source.attempts)} 次</span>` : ""}
+              ${source.policyStatus ? `<span>策略 ${escapeHtml(source.policyStatus)}</span>` : ""}
+              ${Number.isFinite(Number(source.passRate)) ? `<span>通过率 ${Math.round(Number(source.passRate) * 100)}%</span>` : ""}
+              ${Number.isFinite(Number(source.highValueRate)) ? `<span>高价值率 ${Math.round(Number(source.highValueRate) * 100)}%</span>` : ""}
+              ${source.bodySuccessRate === null ? `<span>正文成功率 不适用</span>` : Number.isFinite(Number(source.bodySuccessRate)) ? `<span>正文成功率 ${Math.round(Number(source.bodySuccessRate) * 100)}%</span>` : ""}
             </div>
           </div>
         `).join("")}

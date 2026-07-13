@@ -172,7 +172,7 @@
       const text = searchableText(item);
       const combinedText = `${text.title} ${text.summary} ${text.source} ${text.labels}`;
       const expandedTerms = expandTerms(terms);
-      const channelMatch = state.channel === "all" || item.category === state.channel;
+      const channelMatch = state.channel === "all" || (item.displayChannel || item.category) === state.channel;
       const sourceMatch = state.source === "all" || item.source === state.source;
       const keywordMatch = !terms.length || expandedTerms.every((term) => fieldMatches(combinedText, term));
       const scoreMatch = Number(item.score || 0) >= Number(state.minScore || 0);

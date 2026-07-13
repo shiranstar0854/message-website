@@ -47,17 +47,29 @@ jobs:
         run: |
           git add data/raw/rss-items.json \
             data/raw/webpage-items.json \
+            data/raw/api-items.json \
+            data/raw/fetch-run-state.json \
             data/normalized/normalized-items.json \
             data/processed/filtered-items.json \
             data/processed/deduped-items.json \
+            data/processed/candidate-items.json \
+            data/processed/enriched-candidates.json \
+            data/processed/content-reviewed-items.json \
+            data/processed/classified-items.json \
             data/processed/scored-items.json \
+            data/processed/translated-items.json \
             data/processed/article-enrichment.json \
+            data/processed/daily-events.json \
+            data/processed/pipeline-state.json \
             data/processed/source-audit.json \
+            data/processed/source-performance-history.json \
+            data/processed/source-policy-state.json \
+            data/processed/ai-summaries.json \
             data/archive/daily \
-            src/data/events.json \
             src/data/market-context.json \
             src/data/history-index.json \
             src/data/latest-items.json \
+            src/data/daily-summary.json \
             src/data/source-health.json \
             index.html
           if git diff --cached --quiet; then

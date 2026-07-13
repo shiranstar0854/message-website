@@ -36,6 +36,16 @@ test("maps official json list items into normalized webpage records", () => {
   assert.equal(items[0].timelinessTier, "hourly");
 });
 
+test("does not use source purpose as an article summary", () => {
+  const items = mapJsonItems({
+    url: "https://example.test/list.json",
+    purpose: "Generic source description mentioning policy",
+    mapping: { title: "title", url: "url", publishedAt: "date" }
+  }, [{ title: "Company reports export growth", url: "https://example.test/item", date: "2026-07-12" }], "2026-07-12T01:00:00.000Z");
+
+  assert.equal(items[0].summary, "");
+});
+
 test("limits webpage source items to fifteen newest records", () => {
   const source = { maxItems: 60 };
   const items = Array.from({ length: 20 }, (_, index) => ({

@@ -81,12 +81,13 @@ test("Cloudflare scheduler runs daily updates and weekly review from Cloudflare 
   assert.deepEqual(config.triggers.crons, ["0,30 0,9 * * *", "30 11 * * *", "0 1 * * 1"]);
 });
 
-test("daily update workflow publishes event tracking and market context outputs", () => {
+test("daily update workflow publishes internal brief events and market context outputs", () => {
   const workflowPath = path.join(__dirname, "..", ".github", "workflows", "daily-update.yml");
   const workflow = fs.readFileSync(workflowPath, "utf8");
 
   assert.match(workflow, /ALPHA_VANTAGE_API_KEY/);
-  assert.match(workflow, /src\/data\/events\.json|src\\data\\events\.json/);
+  assert.match(workflow, /data\/processed\/daily-events\.json|data\\processed\\daily-events\.json/);
+  assert.doesNotMatch(workflow, /src\/data\/events\.json|src\\data\\events\.json/);
   assert.match(workflow, /src\/data\/market-context\.json|src\\data\\market-context\.json/);
 });
 

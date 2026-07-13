@@ -24,23 +24,21 @@
         <a href="index.html">信息流</a>
         <a href="daily-summary.html">每日摘要</a>
         <a href="weekly-review.html" aria-current="page">每周复盘</a>
-        <a href="events.html">重点事件</a>
         <a href="history.html">历史</a>
         <a href="about.html">关于/规则</a>
       </nav>
     </header>
 
-    <main class="app-shell page-shell">
-      <section class="overview-band page-hero" aria-labelledby="page-title">
-        <div>
-          <h1 id="page-title">每周复盘</h1>
-          <p id="weekly-meta">正在加载周报数据</p>
-        </div>
-      </section>
-      <section class="weekly-panel standalone-weekly">
-        <p class="model-summary" id="weekly-model-summary"></p>
-        <div class="weekly-review" id="weekly-review"></div>
-      </section>
+    <main class="app-shell page-shell daily-reading-shell">
+      <article class="weekly-article" aria-labelledby="page-title">
+        <header class="daily-article-header">
+          <p class="daily-article-kicker">每周复盘</p>
+          <h1 id="page-title">本周变化与下周验证条件</h1>
+          <p class="daily-article-meta" id="weekly-meta">正在加载周报数据</p>
+          <p class="daily-article-lead" id="weekly-model-summary"></p>
+        </header>
+        <div class="weekly-review" id="weekly-review" aria-live="polite"></div>
+      </article>
     </main>
 
     <script src="src/scripts/render-feed.js?v=20260529-2"></script>

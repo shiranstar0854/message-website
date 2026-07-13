@@ -1,0 +1,785 @@
+{
+  "generatedAt": "2026-07-12T12:29:30.027Z",
+  "sources": {
+    "github-blog": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "openai-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "google-ai": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "google-security": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "microsoft-azure": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "cisa-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "federal-reserve": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 3,
+          "fetchedCount": 3,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 3,
+          "fetchedCount": 3,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 3,
+          "fetchedCount": 3,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "sec-press": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 2,
+          "fetchedCount": 2,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "cfpb-newsroom": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "nasa-breaking-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "un-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 15,
+          "fetchedCount": 15,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 15,
+          "fetchedCount": 15,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 15,
+          "fetchedCount": 15,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": 1,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "most-work": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "pbc-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "csrc-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "yicai-finance": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 10,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 0.9,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 0.9,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 0.9,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "nbd-finance": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 10,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 0.8,
+          "duplicateRate": 0.2,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 0.8,
+          "duplicateRate": 0.2,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 10,
+          "fetchedCount": 10,
+          "passRate": 0.8,
+          "duplicateRate": 0.2,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "ndrc-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "mof-news": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "stats-data-release": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 30,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 0,
+          "fetchedCount": 0,
+          "passRate": 0,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    },
+    "govcn-yaowen": {
+      "status": "active",
+      "reason": "minimum-sample-not-met",
+      "metadataLimit": 15,
+      "bodyFetchQuota": 3,
+      "windows": {
+        "days7": {
+          "runCount": 1,
+          "metadataCount": 7,
+          "fetchedCount": 7,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days14": {
+          "runCount": 1,
+          "metadataCount": 7,
+          "fetchedCount": 7,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        },
+        "days30": {
+          "runCount": 1,
+          "metadataCount": 7,
+          "fetchedCount": 7,
+          "passRate": 1,
+          "duplicateRate": 0,
+          "highValueRate": 0,
+          "bodySuccessRate": null,
+          "averageInformationDensity": 0
+        }
+      },
+      "updatedAt": "2026-07-12T12:29:30.027Z"
+    }
+  }
+}

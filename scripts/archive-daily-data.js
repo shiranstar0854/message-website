@@ -18,6 +18,9 @@ function compactItem(item) {
     source: item.source,
     sourceType: item.sourceType,
     category: item.category,
+    ...(item.sourceCategory ? { sourceCategory: item.sourceCategory } : {}),
+    ...(item.displayChannel ? { displayChannel: item.displayChannel } : {}),
+    ...(item.secondaryTags?.length ? { secondaryTags: item.secondaryTags.slice(0, 6) } : {}),
     publishedAt: item.publishedAt,
     summary: String(item.summary || "").slice(0, 500),
     ...(item.summary_original ? { summary_original: String(item.summary_original).slice(0, 500) } : {}),
@@ -49,7 +52,8 @@ function compactItem(item) {
     tags: (item.tags || []).slice(0, 8),
     ...(item.article_keywords?.length ? { article_keywords: item.article_keywords.slice(0, 8) } : {}),
     ...(item.keywords?.length ? { keywords: item.keywords.slice(0, 8) } : {}),
-    ...(item.impactAreas?.length ? { impactAreas: item.impactAreas.slice(0, 4) } : {})
+    ...(item.impactAreas?.length ? { impactAreas: item.impactAreas.slice(0, 4) } : {}),
+    ...(item.article_brief?.schema_version === "article-brief.v1" ? { article_brief: item.article_brief } : {})
   };
 }
 
@@ -75,6 +79,9 @@ function buildHistoryIndex(retentionDays = DEFAULT_RETENTION_DAYS, options = {})
       generatedAt: archive.generatedAt || "",
       url: `data/archive/daily/${file}`,
       totalItems: Number(archive.items?.length || 0),
+      eventCount: Number(archive.events?.length || 0),
+      hasBrief: archive.brief?.schema_version === "daily-brief.v6",
+      briefUrl: archive.brief?.schema_version === "daily-brief.v6" ? `data/archive/daily/${file}` : null,
       totals: archive.totals || {},
       archivePolicy: archive.archivePolicy || {}
     };
@@ -94,6 +101,8 @@ function buildHistoryIndex(retentionDays = DEFAULT_RETENTION_DAYS, options = {})
 
 function archiveDailyData(dateOverride) {
   const latest = readJson(path.join(ROOT_DIR, "src", "data", "latest-items.json"), { items: [] });
+  const dailyBrief = readJson(path.join(ROOT_DIR, "src", "data", "daily-summary.json"), null);
+  const dailyEvents = readJson(path.join(ROOT_DIR, "data", "processed", "daily-events.json"), { events: [] });
   const health = readJson(path.join(ROOT_DIR, "src", "data", "source-health.json"), { sources: [] });
   const audit = readJson(path.join(ROOT_DIR, "data", "processed", "source-audit.json"), {});
   const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
@@ -107,6 +116,8 @@ function archiveDailyData(dateOverride) {
       maxItemsPerChannel: MAX_ITEMS_PER_CHANNEL,
       availableItems: Number(latest.totalItems || latest.items.length)
     },
+    brief: dailyBrief?.schema_version === "daily-brief.v6" ? dailyBrief : null,
+    events: dailyEvents.events || [],
     items: selectArchiveItems(latest.items || []).map(compactItem)
   };
   const filePath = path.join(ROOT_DIR, "data", "archive", "daily", `${archiveDate}.json`);

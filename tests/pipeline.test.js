@@ -9,6 +9,7 @@ const {
   scoreItems,
   buildLatestData
 } = require("../scripts/lib/pipeline");
+const { buildLatestDataSafely } = require("../scripts/generate-latest-data");
 const { extractItems } = require("../scripts/lib/rss-parser");
 const { limitNewestItems: limitNewestRssItems } = require("../scripts/fetch-rss");
 
@@ -536,4 +537,31 @@ test("latest data publishes compact display fields only", () => {
   assert.equal("raw" in latest.items[0], false);
   assert.equal("scoreBreakdown" in latest.items[0], false);
   assert.equal("filterReasons" in latest.items[0], false);
+});
+
+test("canonical categories keep the existing six-channel UI grouping", () => {
+  const latest = buildLatestData([
+    { id: "tech", title: "Model release", url: "https://example.test/tech", source: "A", category: "technology", sourceCategory: "tech", publishedAt: "2026-05-24T00:00:00.000Z", score: 90 },
+    { id: "macro", title: "Inflation data", url: "https://example.test/macro", source: "B", category: "macro", sourceCategory: "finance", publishedAt: "2026-05-24T00:00:00.000Z", score: 88 },
+    { id: "policy", title: "Regulation update", url: "https://example.test/policy", source: "C", category: "policy", sourceCategory: "news", publishedAt: "2026-05-24T00:00:00.000Z", score: 86 }
+  ], {
+    channels: [
+      { id: "tech", label: "科技" }, { id: "finance", label: "金融" },
+      { id: "business", label: "商业" }, { id: "macro", label: "宏观" },
+      { id: "international", label: "国际" }, { id: "news", label: "新闻" }
+    ]
+  });
+
+  assert.equal(latest.channels.tech.items[0].category, "technology");
+  assert.equal(latest.channels.macro.items[0].category, "macro");
+  assert.equal(latest.channels.news.items[0].category, "policy");
+  assert.equal(latest.items[0].displayChannel, "tech");
+});
+
+test("empty current output preserves the previous public feed", () => {
+  const previous = { generatedAt: "2026-07-11T00:00:00.000Z", totalItems: 1, items: [{ id: "previous" }], channels: {} };
+  const latest = buildLatestDataSafely([], { channels: [] }, previous, "2026-07-12T00:00:00.000Z");
+  assert.equal(latest.items[0].id, "previous");
+  assert.equal(latest.preservation.reason, "empty-current-pipeline-output");
+  assert.equal(latest.generatedAt, previous.generatedAt);
 });

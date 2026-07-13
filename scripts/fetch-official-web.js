@@ -1,6 +1,6 @@
 const path = require("node:path");
 const { parse } = require("node-html-parser");
-const { readJson, readSources, writeJson } = require("./lib/file-utils");
+const { readJson, readSources, recordFetchAttempts, writeJson } = require("./lib/file-utils");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const RAW_PATH = path.join(ROOT_DIR, "data", "raw", "webpage-items.json");
@@ -114,7 +114,7 @@ function mapJsonItems(source, body, fetchedAt) {
       title,
       link,
       publishedAt,
-      summary: normalizeText(item[mapping.summary || "summary"] || source.purpose || ""),
+      summary: normalizeText(item[mapping.summary || "summary"] || ""),
       sourceAuthority: source.sourceAuthority,
       timelinessTier: source.timelinessTier,
       tags: [source.sourceAuthority, source.timelinessTier].filter(Boolean)
@@ -133,7 +133,7 @@ function extractScriptItems(source, html, fetchedAt) {
       title: normalizeText(match[2]),
       link,
       publishedAt: parsedDateFromValue(link) || (source.requirePublishedDate === false ? fetchedAt : ""),
-      summary: source.purpose || "",
+      summary: "",
       sourceAuthority: source.sourceAuthority,
       timelinessTier: source.timelinessTier,
       tags: [source.sourceAuthority, source.timelinessTier].filter(Boolean)
@@ -153,7 +153,7 @@ function extractHtmlItems(source, html, fetchedAt) {
       link,
       publishedAt: parsedDateFromValue(`${link} ${anchor.parentNode?.text || ""}`)
         || (source.requirePublishedDate === false ? fetchedAt : ""),
-      summary: source.purpose || "",
+      summary: "",
       sourceAuthority: source.sourceAuthority,
       timelinessTier: source.timelinessTier,
       tags: [source.sourceAuthority, source.timelinessTier].filter(Boolean)
@@ -337,7 +337,7 @@ function mergeSourceHealth(previousHealth, nextHealth, activeSourceIds = null) {
 
 async function fetchOfficialWebSources() {
   const fetchedAt = new Date().toISOString();
-  const sources = readSources(ROOT_DIR).filter((source) => source.type === "webpage" && source.enabled !== false);
+  const sources = readSources(ROOT_DIR).filter((source) => source.type === "webpage" && source.enabled !== false && source.runtimeFetchEnabled !== false);
   const results = [];
   for (const source of sources) {
     results.push(await fetchWebpageSource(source, fetchedAt));
@@ -361,6 +361,7 @@ if (require.main === module) {
   fetchOfficialWebSources()
     .then((results) => {
       const { health } = writeFetchOutputs(results);
+      recordFetchAttempts(ROOT_DIR, "webpage", results, results[0]?.fetchedAt || new Date().toISOString());
       const webIds = new Set(results.map((result) => result.sourceId));
       const failedCount = health.sources.filter((source) => webIds.has(source.id) && source.status !== "healthy").length;
       console.log(`Fetched ${results.length} official webpage source records; ${failedCount} unavailable or empty.`);

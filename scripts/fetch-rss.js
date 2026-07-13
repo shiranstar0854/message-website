@@ -1,5 +1,5 @@
 const path = require("node:path");
-const { readJson, readSources, writeJson } = require("./lib/file-utils");
+const { readJson, readSources, recordFetchAttempts, writeJson } = require("./lib/file-utils");
 const { extractItems } = require("./lib/rss-parser");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
@@ -109,7 +109,7 @@ async function fetchRssSource(source, fetchedAt) {
 
 async function fetchRssSources() {
   const fetchedAt = new Date().toISOString();
-  const sources = readSources(ROOT_DIR).filter((source) => source.type === "rss" && source.enabled !== false);
+  const sources = readSources(ROOT_DIR).filter((source) => source.type === "rss" && source.enabled !== false && source.runtimeFetchEnabled !== false);
   const results = [];
 
   for (const source of sources) {
@@ -220,6 +220,7 @@ if (require.main === module) {
   fetchRssSources()
     .then((results) => {
       const { health } = writeFetchOutputs(results);
+      recordFetchAttempts(ROOT_DIR, "rss", results, results[0]?.fetchedAt || new Date().toISOString());
       const failedCount = health.sources.filter((source) => source.status !== "healthy").length;
       console.log(`Fetched ${results.length} RSS source records; ${failedCount} unavailable or empty.`);
     })

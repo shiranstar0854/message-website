@@ -82,7 +82,7 @@ test("removes trailing article date noise from extracted text", () => {
   assert.equal(extracted.excerptSource, "article");
 });
 
-test("selects at most twenty ranked items per channel and skips disabled sources", () => {
+test("enriches the preselected candidate pool and skips disabled sources", () => {
   const sources = [
     { id: "enabled", name: "Enabled", articleEnrichment: { enabled: true } },
     { id: "disabled", name: "Disabled", articleEnrichment: { enabled: false } }
@@ -112,7 +112,7 @@ test("selects at most twenty ranked items per channel and skips disabled sources
 
   const selected = selectEnrichmentCandidates(items, sources, 20);
 
-  assert.equal(selected.filter((item) => item.category === "tech").length, 20);
+  assert.equal(selected.filter((item) => item.category === "tech").length, 24);
   assert.equal(selected.some((item) => item.id === "disabled-news"), false);
 });
 
@@ -155,4 +155,36 @@ test("keeps daily generation alive when a single article request fails", async (
   assert.equal(result.items.find((item) => item.id === "fail").summary, "Feed summary");
   assert.equal(result.stats.totals.attempted, 2);
   assert.equal(result.stats.totals.failed, 1);
+});
+
+test("extracts common Chinese official-page content containers", () => {
+  const extracted = extractArticleData(`
+    <html><body><div id="UCAP-CONTENT">
+      <p>国务院有关部门发布实施安排，并要求相关单位在规定时间内完成公开可验证的工作。</p>
+      <p>文件同时列明后续检查条件和执行范围，为判断政策进展提供正式依据。</p>
+    </div></body></html>
+  `, { url: "https://www.gov.cn/example" });
+
+  assert.match(extracted.bodyText, /后续检查条件/);
+  assert.equal(extracted.excerptSource, "article");
+});
+
+test("marks body-disabled sources without counting a failed request", async () => {
+  const result = await enrichItems([{
+    id: "disabled",
+    title: "Metadata-only official release",
+    url: "https://example.test/disabled",
+    sourceId: "disabled-source",
+    source: "Disabled Source"
+  }], [{
+    id: "disabled-source",
+    name: "Disabled Source",
+    articleEnrichment: { enabled: false }
+  }], {
+    fetchArticle: async () => { throw new Error("must not be called"); }
+  });
+
+  assert.equal(result.items[0].bodyFetchStatus, "disabled");
+  assert.equal(result.stats.totals.attempted, 0);
+  assert.equal(result.stats.totals.failed, 0);
 });

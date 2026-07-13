@@ -1,6 +1,5 @@
 const path = require("node:path");
 const { readJson, writeJson } = require("./lib/file-utils");
-const { loadLocalEnv } = require("./lib/load-local-env");
 const { extractPublishedKeywords, normalizeText, sortItems, truncateText } = require("./lib/pipeline");
 const {
   getLlmConfig,
@@ -14,15 +13,35 @@ const {
   buildExtractiveStructuredSummary,
   buildStructuredFieldsFromResponse
 } = require("./lib/ai-summarizer");
+const {
+  articleBriefPrompt,
+  buildLocalArticleBrief,
+  validateArticleBrief
+} = require("./lib/article-brief");
+const {
+  DAILY_BRIEF_SCHEMA_VERSION,
+  buildDailyBriefPrompt: buildDailyV6Prompt,
+  buildLocalDailyBrief,
+  validateDailyBrief
+} = require("./lib/daily-brief");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const DEFAULT_CHANNELS = ["tech", "finance", "news"];
-const DAILY_BRIEF_SCHEMA_VERSION = "daily-brief.v4";
 const DAILY_SUMMARY_SCHEMA_VERSION = DAILY_BRIEF_SCHEMA_VERSION;
 const CHANNEL_LABELS = {
   tech: "科技",
   finance: "金融",
   news: "新闻"
+};
+const CATEGORY_LABELS = {
+  technology: "技术",
+  finance: "金融市场",
+  business: "商业经营",
+  macro: "宏观经济",
+  policy: "政策",
+  international: "国际事务",
+  science: "科学研究",
+  security: "安全"
 };
 
 function detectItemLanguage(item) {
@@ -191,6 +210,7 @@ function applyExtractiveSummary(item, rules, generatedAt) {
   };
   return {
     ...summarized,
+    article_brief: buildLocalArticleBrief(summarized),
     article_keywords: extractPublishedKeywords(summarized),
     keywords: extractPublishedKeywords(summarized)
   };
@@ -198,6 +218,7 @@ function applyExtractiveSummary(item, rules, generatedAt) {
 
 async function applyLlmSummary(item, rules, generatedAt, options = {}) {
   const summary = await requestDeepSeekSummary(item, rules, { ...options, generatedAt });
+  if (!summary.article_brief) throw new Error("AI summary response did not include a valid article-brief.v1 object.");
   const sourceLanguage = detectItemLanguage(item);
   const titleZh = summary.translatedTitle || item.title_zh || item.titleZh || item.translatedTitle;
   const summaryZh = summary.summary_short || summary.aiSummary || item.summary_zh || item.summaryZh;
@@ -227,7 +248,7 @@ async function applyLlmSummary(item, rules, generatedAt, options = {}) {
 
 function summarizeLatestData(latestData, rules = {}, generatedAt = new Date().toISOString()) {
   const dailyRules = rules.daily || {};
-  const selectedIds = selectSummaryIds(latestData, dailyRules);
+  const selectedIds = new Set((latestData.items || []).filter((item) => shouldSummarize(item, dailyRules)).map((item) => item.id));
   const items = (latestData.items || []).map((item) => (
     selectedIds.has(item.id) ? applyExtractiveSummary(item, dailyRules, generatedAt) : item
   ));
@@ -244,7 +265,11 @@ function summarizeLatestData(latestData, rules = {}, generatedAt = new Date().to
 }
 
 function buildSummaryPrompt(item, dailyRules = {}) {
-  return buildStructuredSummaryPrompt(item, dailyRules);
+  return [
+    buildStructuredSummaryPrompt(item, dailyRules),
+    "In addition to the preceding root fields, the same JSON object must include the following article_brief property.",
+    articleBriefPrompt(item)
+  ].join("\n\n");
 }
 
 function parseSummaryResponse(responseJson, item, dailyRules = {}) {
@@ -269,6 +294,9 @@ function parseSummaryResponse(responseJson, item, dailyRules = {}) {
   );
   const summaryShort = structured.summary_short || summarizeText(item, dailyRules.summaryMaxLength);
   const displaySummary = composeDisplaySummary(structured, item, dailyRules.summaryMaxLength || 360);
+  const articleBrief = responseJson.article_brief
+    ? validateArticleBrief(responseJson.article_brief, { ...item, ...structured })
+    : null;
   return {
     translatedTitle: truncateText(responseJson.translatedTitle || responseJson.title_zh || responseJson.titleZh || "", 120),
     aiSummary: truncateText(responseJson.aiSummary || displaySummary || structured.what_happened || summaryShort, dailyRules.summaryMaxLength || 360),
@@ -277,7 +305,8 @@ function parseSummaryResponse(responseJson, item, dailyRules = {}) {
     impactAreas: Array.isArray(responseJson.impactAreas)
       ? responseJson.impactAreas.slice(0, 4).map((value) => truncateText(value, 20)).filter(Boolean)
       : [],
-    ...structured
+    ...structured,
+    ...(articleBrief ? { article_brief: articleBrief } : {})
   };
 }
 
@@ -294,7 +323,7 @@ async function requestDeepSeekSummary(item, rules = {}, options = {}) {
 
 async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = new Date().toISOString(), options = {}) {
   const dailyRules = rules.daily || {};
-  const selectedIds = selectSummaryIds(latestData, dailyRules);
+  const selectedIds = new Set((latestData.items || []).filter((item) => shouldSummarize(item, dailyRules)).map((item) => item.id));
   const env = options.env || process.env;
   const itemSummaryRules = buildItemSummaryRules(rules);
   const llmConfigured = isLlmConfigured(itemSummaryRules, env);
@@ -322,7 +351,7 @@ async function summarizeLatestDataWithLlm(latestData, rules = {}, generatedAt = 
     }
 
     stats.llmAttempted += 1;
-    const attempts = needsChineseTranslation(item) ? requiredTranslationMaxAttempts(itemSummaryRules, options) : 1;
+    const attempts = Math.max(2, needsChineseTranslation(item) ? requiredTranslationMaxAttempts(itemSummaryRules, options) : 2);
     let lastError;
     let llmItem;
     for (let attempt = 1; attempt <= attempts; attempt += 1) {
@@ -902,40 +931,130 @@ function buildEventCandidates(items = []) {
   return [...byEvent.values()].slice(0, 12);
 }
 
-async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) {
-  const summaryItems = summarized.items.filter((item) => item.aiSummary);
-  const dailyBrief = await buildDailyChannelSummaries(summaryItems, rules, { ...options, generatedAt: nowIso });
-  const includeExistingItemStats = options.includeExistingItemStats !== false;
-  const itemFallbackCount = includeExistingItemStats ? Number(summarized.summaryStats?.fallbackCount || 0) : 0;
-  const itemErrorCount = includeExistingItemStats ? Number(summarized.summaryStats?.errorCount || 0) : 0;
-  const briefFallbackCount = Number(dailyBrief.stats?.fallbackCount || 0);
-  const briefErrorCount = Number(dailyBrief.stats?.errorCount || 0);
-  const llm = getLlmConfig(rules);
-  const dailyItems = summaryItems.map((item) => buildDailyBriefItem(item, nowIso));
-  const eventCandidates = buildEventCandidates(summaryItems);
+function briefTextLength(brief) {
+  return [brief.lead, ...(brief.paragraphs || []), brief.conclusion].join("").replace(/\s/g, "").length;
+}
 
-  return {
+function eventBriefInputs(items) {
+  const seen = new Set();
+  return sortItems(items).filter((item) => {
+    const key = item.event_id || item.timeline_event_id || item.eventClusterKey || item.id;
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 5);
+}
+
+function sourceRows(items) {
+  const seen = new Set();
+  return items.flatMap((item) => {
+    if (item.primary_source || item.supporting_sources) {
+      return [item.primary_source, ...(item.supporting_sources || [])].map((source) => ({ name: source.name || source.source || "", url: source.url || "" }));
+    }
+    return [{ name: item.source || "", url: item.original_url || item.url || "" }];
+  })
+    .filter((source) => source.name && source.url && !seen.has(source.url) && seen.add(source.url));
+}
+
+function eventFactText(item) {
+  const facts = Array.isArray(item.confirmed_facts) ? item.confirmed_facts : [];
+  return facts.map((fact) => normalizeText(fact.text || fact.fact || fact)).filter(Boolean).join("；")
+    || normalizeText(item.summary || item.current_judgment?.summary || item.what_happened || item.aiSummary || item.contentExcerpt || item.title);
+}
+
+function eventWatchValues(item) {
+  return (item.watch_variables || []).map((entry) => normalizeText(entry.variable || entry.name || entry)).filter(Boolean);
+}
+
+function eventTitle(item) {
+  return normalizeText(item.title?.translated || item.title_zh || item.translatedTitle || item.title || "");
+}
+
+function localEventBrief(items, nowIso) {
+  const events = eventBriefInputs(items).slice(0, 3);
+  const themes = [...new Set(events.map((item) => item.secondaryTags?.[0] || CATEGORY_LABELS[item.category] || item.category).filter(Boolean))].slice(0, 3);
+  const title = themes.length ? `${themes.join("、")}：今日关键变化与后续影响` : "今日重点事件与后续观察";
+  const lead = events.length
+    ? `今日信息流筛选出 ${events.length} 项具有较高信息增量的事件。以下内容先陈述已获得的事实，再说明其重要性、事件之间可能存在的联系，以及仍需验证的后续变量。`
+    : "今日通过筛选的高价值事件样本不足，暂不形成确定性趋势判断。";
+  const paragraphs = events.map((item, index) => {
+    const fact = truncateText(eventFactText(item), 150);
+    const importance = truncateText(normalizeText(item.why_it_matters || item.decision?.brief || item.importance || "该变化可能影响相关主体的后续决策，但目前证据不足以量化影响范围"), 120);
+    const watch = eventWatchValues(item).slice(0, 2);
+    const limitation = item.evidence_gaps?.length ? `现有证据仍缺少${truncateText(item.evidence_gaps.map((gap) => gap.gap || gap).join("、"), 70)}。` : "当前判断仅基于已抓取材料，后续信息可能补充或修正细节。";
+    return `第${index + 1}项事件是${truncateText(eventTitle(item), 70)}。已确认信息显示，${fact}。这件事重要，是因为${importance}。从现有证据推测，其影响取决于${watch.length ? watch.map((value) => truncateText(value, 36)).join("、") : "后续执行进度、相关主体回应和独立来源验证"}；${limitation}`;
+  });
+  const conclusion = events.length > 1
+    ? "综合来看，这些事件共同反映出政策、技术、经营与市场信号正在相互传导，但目前只能确认变化方向，不能据此推断未被来源支持的规模或结果。下一步应观察正式文件、可复核数据、企业执行动作及独立来源是否在未来数日内形成一致证据；若关键变量未出现或出现反向证据，当前趋势判断应被修正。"
+    : "由于有效样本有限，当前不宜形成跨事件趋势结论。后续需等待更多独立来源和可验证数据。";
+  const sources = sourceRows(events);
+  const limitations = [];
+  if (events.length < 3) limitations.push("本次高价值事件不足 3 项，未为满足篇幅而重复内容。");
+  if (events.some((item) => item.evidence_gaps?.length)) limitations.push("部分事件仍存在证据缺口，结论需随新增材料修正。");
+  if (briefTextLength({ lead, paragraphs, conclusion }) < 700) limitations.push("可用事实不足，正文未达到目标字数，避免使用重复或无来源内容补足篇幅。");
+  return { schema_version: DAILY_BRIEF_SCHEMA_VERSION, title, date: nowIso.slice(0, 10), updated_at: nowIso, lead, paragraphs, conclusion, sources, limitations };
+}
+
+function buildEventBriefPrompt(items, nowIso) {
+  return [
+    "根据给定事件写一篇中文每日短篇简报，只返回有效 JSON。",
+    "结构必须是 {title,date,updated_at,lead,paragraphs,conclusion,sources,limitations}。paragraphs 必须是字符串数组。",
+    "正文 lead+paragraphs+conclusion 共 700-1200 个中文字符；使用连续自然段，不使用列表式字段堆叠。",
+    "选择 3-5 个事件，先写事实，再写分析；每个事件必须说明为什么重要。推论必须使用明确的推测措辞。",
+    "不得加入输入中不存在的数字、事实或来源。后续观察必须包含具体变量、时间或可验证条件。不得重复标题和原始摘要。",
+    JSON.stringify({ date: nowIso.slice(0, 10), events: eventBriefInputs(items).map((item) => ({ id: item.event_id || item.id, title: eventTitle(item), facts: item.confirmed_facts || [], summary: item.summary || "", why_it_matters: item.why_it_matters || item.decision?.brief || "", watch_variables: item.watch_variables || [], sources: sourceRows([item]), evidence_gaps: item.evidence_gaps || [] })) })
+  ].join("\n");
+}
+
+function validateEventBrief(value, items, nowIso) {
+  if (!value || !normalizeText(value.title) || !normalizeText(value.lead) || !Array.isArray(value.paragraphs) || !normalizeText(value.conclusion)) return null;
+  const allowedUrls = new Set(sourceRows(items).map((source) => source.url));
+  const sources = (Array.isArray(value.sources) ? value.sources : []).map((source) => typeof source === "string" ? { name: source, url: "" } : source)
+    .filter((source) => source.name && source.url && allowedUrls.has(source.url));
+  const result = {
     schema_version: DAILY_BRIEF_SCHEMA_VERSION,
-    generated_at: nowIso,
-    meta: {
-      llm: {
-        enabled: Boolean(rules.llmProduction?.enabled),
-        provider: llm.provider || "",
-        method: llm.provider?.includes("chat") ? "chat-completions" : (llm.provider || summarized.summaryMethod || "extractive"),
-        model: llm.model || ""
-      },
-      stats: {
-        channel_count: dailyBrief.channels.length,
-        item_count: dailyItems.length,
-        event_candidate_count: eventCandidates.length,
-        fallback_count: itemFallbackCount + briefFallbackCount,
-        error_count: itemErrorCount + briefErrorCount
-      }
-    },
-    channels: dailyBrief.channels,
-    items: dailyItems,
-    event_candidates: eventCandidates
+    title: truncateText(value.title, 80),
+    date: nowIso.slice(0, 10),
+    updated_at: nowIso,
+    lead: normalizeText(value.lead),
+    paragraphs: value.paragraphs.map(normalizeText).filter(Boolean).slice(0, 7),
+    conclusion: normalizeText(value.conclusion),
+    sources,
+    limitations: textList(value.limitations || [], 6)
   };
+  const length = briefTextLength(result);
+  const inputText = JSON.stringify(items);
+  const outputText = [result.title, result.lead, ...result.paragraphs, result.conclusion].join(" ");
+  const inputNumbers = new Set(inputText.match(/\b\d+(?:\.\d+)?%?\b/g) || []);
+  ["3", "5", "7", ...nowIso.slice(0, 10).split("-")].forEach((number) => inputNumbers.add(String(Number(number))));
+  const outputNumbers = outputText.match(/\b\d+(?:\.\d+)?%?\b/g) || [];
+  const numbersValid = outputNumbers.every((number) => inputNumbers.has(number));
+  const eventCoverage = eventBriefInputs(items).slice(0, 5).every((item) => {
+    const title = eventTitle(item);
+    const latin = title.match(/[A-Za-z][A-Za-z0-9.-]{2,}/g) || [];
+    const chinese = [...title.matchAll(/[\u4e00-\u9fff]{2}/gu)].map((match) => match[0]);
+    const anchors = [...latin, ...chinese].filter((anchor) => !/今日|事件|相关|发布/.test(anchor));
+    return !anchors.length || anchors.some((anchor) => outputText.toLowerCase().includes(anchor.toLowerCase()));
+  });
+  if (result.paragraphs.length < Math.min(3, eventBriefInputs(items).length) || length < 700 || length > 1200 || !sources.length || !numbersValid || !eventCoverage) return null;
+  return result;
+}
+
+async function buildDailySummaryOutput(summarized, rules, nowIso, options = {}) {
+  const events = (summarized.items || []).filter((event) => event.event_id || event.id).slice(0, 5);
+  const fallback = buildLocalDailyBrief(events, nowIso);
+  if (!isLlmConfigured(rules, options.env || process.env) || events.length < 3) return fallback;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const response = await requestDeepSeekJson(buildDailyV6Prompt(events, nowIso), rules, options);
+      const validated = validateDailyBrief(response, events, nowIso);
+      if (validated) return validated;
+    } catch (error) {
+      if (attempt === 1) fallback.limitations.push(`模型生成失败，已使用本地模板：${truncateText(error.message, 80)}`);
+    }
+  }
+  fallback.limitations.push("模型输出未通过 daily-brief.v6 的结构、字数或事实白名单校验，已使用本地模板。");
+  return fallback;
 }
 
 function writeProcessedAiSummaries(output) {
@@ -955,7 +1074,8 @@ async function generateAiSummary(nowIso = new Date().toISOString(), options = {}
   const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
   const latest = readJson(latestPath, { items: [], channels: {} });
   const summarized = await summarizeLatestDataWithLlm(latest, rules, nowIso, options);
-  const output = await buildDailySummaryOutput(summarized, rules, nowIso, options);
+  const eventData = readJson(path.join(ROOT_DIR, "data", "processed", "daily-events.json"), { events: [] });
+  const output = await buildDailySummaryOutput({ items: eventData.events || [] }, rules, nowIso, options);
 
   writeJson(latestPath, summarized);
   writeJson(path.join(ROOT_DIR, "src", "data", "daily-summary.json"), output);
@@ -974,10 +1094,9 @@ async function generateArticleSummaries(nowIso = new Date().toISOString(), optio
 }
 
 async function generateDailyBrief(nowIso = new Date().toISOString(), options = {}) {
-  const latestPath = path.join(ROOT_DIR, "src", "data", "latest-items.json");
   const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
-  const latest = readJson(latestPath, { items: [], channels: {} });
-  const output = await buildDailySummaryOutput(latest, rules, nowIso, { ...options, includeExistingItemStats: false });
+  const events = readJson(path.join(ROOT_DIR, "data", "processed", "daily-events.json"), { events: [] });
+  const output = await buildDailySummaryOutput({ items: events.events || [] }, rules, nowIso, { ...options, includeExistingItemStats: false });
 
   writeJson(path.join(ROOT_DIR, "src", "data", "daily-summary.json"), output);
   writeProcessedAiSummaries(output);
@@ -985,7 +1104,6 @@ async function generateDailyBrief(nowIso = new Date().toISOString(), options = {
 }
 
 if (require.main === module) {
-  loadLocalEnv(ROOT_DIR);
   const mode = process.argv[2] || "--all";
   const runner = mode === "--items-only"
     ? generateArticleSummaries
@@ -999,10 +1117,7 @@ if (require.main === module) {
         console.log(`Generated article AI summaries. LLM attempts: ${output.llmAttempted || 0}; succeeded: ${output.llmSucceeded || 0}.`);
         return;
       }
-      console.log(`Generated ${output.channels?.length || 0} daily brief channels with ${output.meta?.llm?.method || "unknown"} method.`);
-      if (output.meta?.stats?.fallback_count > 0) {
-        console.log(`Fallback summaries: ${output.meta.stats.fallback_count}; API errors: ${output.meta.stats.error_count}.`);
-      }
+      console.log(`Generated ${output.schema_version} daily event brief with ${output.paragraphs?.length || 0} paragraphs.`);
     })
     .catch((error) => {
       console.error(error);
@@ -1037,6 +1152,9 @@ module.exports = {
   summarizeLatestData,
   summarizeLatestDataWithLlm,
   buildDailySummaryOutput,
+  buildEventBriefPrompt,
+  validateEventBrief,
+  localEventBrief,
   generateAiSummary,
   generateArticleSummaries,
   generateDailyBrief

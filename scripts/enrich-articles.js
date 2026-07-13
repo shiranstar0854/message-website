@@ -2,6 +2,7 @@ const path = require("node:path");
 const { parse } = require("node-html-parser");
 const { readJson, readSources, writeJson } = require("./lib/file-utils");
 const { normalizeImageUrl, normalizeText, sortItems, truncateText } = require("./lib/pipeline");
+const { assessContent } = require("./lib/content-selection");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const DEFAULT_LIMIT_PER_CHANNEL = 20;
@@ -53,10 +54,14 @@ function structuredArticleText(root) {
 }
 
 function paragraphsFromArticle(root) {
-  const articles = root.querySelectorAll("article");
-  return articles.flatMap((article) => article.querySelectorAll("p")
+  const selectors = ["article", "#UCAP-CONTENT", ".TRS_Editor", ".pages_content", ".article-content", ".content_area", "main"];
+  const container = selectors.map((selector) => root.querySelector(selector)).find(Boolean);
+  if (!container) return [];
+  const paragraphs = container.querySelectorAll("p")
     .map((paragraph) => normalizeText(decodeEntities(paragraph.text)))
-    .filter((text) => text.length >= 40));
+    .filter((text) => text.length >= 40);
+  const containerText = normalizeText(decodeEntities(container.text));
+  return paragraphs.length ? paragraphs : (containerText.length >= 40 ? [containerText] : []);
 }
 
 function cleanExcerpt(value) {
@@ -100,6 +105,7 @@ function extractArticleData(html, item = {}) {
 
   return {
     contentExcerpt: pageExcerpt || feedExcerpt,
+    bodyText: truncateText(articleText || metaDescription || feedExcerpt, 8000),
     imageUrl,
     excerptSource: pageExcerpt ? (articleText ? "article" : "meta") : (feedExcerpt ? "feed" : "none"),
     imageSource: metaImage ? "meta" : (imageUrl ? "feed" : "none")
@@ -110,18 +116,11 @@ function sourceAllowsEnrichment(source) {
   return source?.articleEnrichment?.enabled !== false;
 }
 
-function selectEnrichmentCandidates(items, sources, limitPerChannel = DEFAULT_LIMIT_PER_CHANNEL) {
+function selectEnrichmentCandidates(items, sources) {
   const sourceById = new Map(sources.map((source) => [source.id, source]));
   const sourceByName = new Map(sources.map((source) => [source.name, source]));
-  const counts = new Map();
-
   return sortItems(items).filter((item) => {
     if (!item.url) return false;
-    const category = item.category || "uncategorized";
-    const categoryCount = counts.get(category) || 0;
-    if (categoryCount >= limitPerChannel) return false;
-    counts.set(category, categoryCount + 1);
-
     const source = sourceById.get(item.sourceId) || sourceByName.get(item.source);
     return sourceAllowsEnrichment(source);
   });
@@ -168,10 +167,15 @@ async function fetchArticleHtml(url) {
 async function enrichOne(item, fetchArticle = fetchArticleHtml) {
   const html = await fetchArticle(item.url);
   const extracted = extractArticleData(html, item);
+  const content = assessContent({ ...item, bodyText: extracted.bodyText, contentExcerpt: extracted.contentExcerpt });
   return {
     ...item,
     ...(extracted.contentExcerpt ? { contentExcerpt: extracted.contentExcerpt } : {}),
-    ...(extracted.imageUrl ? { imageUrl: extracted.imageUrl } : {})
+    ...(extracted.bodyText ? { bodyText: extracted.bodyText } : {}),
+    ...(extracted.imageUrl ? { imageUrl: extracted.imageUrl } : {}),
+    bodyFetchStatus: "success",
+    bodyFetchError: null,
+    ...content
   };
 }
 
@@ -194,7 +198,7 @@ async function enrichItems(items, sources, options = {}) {
   const stats = createStats(sources, generatedAt);
   const sourceById = new Map(sources.map((source) => [source.id, source]));
   const sourceByName = new Map(sources.map((source) => [source.name, source]));
-  const candidates = selectEnrichmentCandidates(items, sources, options.limitPerChannel || DEFAULT_LIMIT_PER_CHANNEL);
+  const candidates = selectEnrichmentCandidates(items, sources);
   const candidateIds = new Set(candidates.map((item) => item.id));
   const enrichedById = new Map();
 
@@ -205,6 +209,14 @@ async function enrichItems(items, sources, options = {}) {
       const sourceStats = stats.sources[source.id];
       sourceStats.skipped += 1;
       stats.totals.skipped += 1;
+      enrichedById.set(item.id, {
+        ...item,
+        bodyFetchStatus: "disabled",
+        bodyFetchError: null,
+        bodyLength: 0,
+        contentDensity: 0,
+        newFactCount: 0
+      });
     }
   });
 
@@ -226,7 +238,14 @@ async function enrichItems(items, sources, options = {}) {
         stats.totals.imageCount += 1;
       }
     } catch (error) {
-      enrichedById.set(item.id, item);
+      enrichedById.set(item.id, {
+        ...item,
+        bodyFetchStatus: "failed",
+        bodyFetchError: error.message,
+        bodyLength: 0,
+        contentDensity: 0,
+        newFactCount: 0
+      });
       if (sourceStats) {
         sourceStats.failed += 1;
         sourceStats.lastError = error.message;
@@ -242,10 +261,11 @@ async function enrichItems(items, sources, options = {}) {
 }
 
 async function enrichScoredItems() {
-  const sources = readSources(ROOT_DIR).filter((source) => source.type === "rss" && source.enabled !== false);
-  const items = readJson(path.join(ROOT_DIR, "data", "processed", "scored-items.json"), []);
+  const sources = readSources(ROOT_DIR).filter((source) => source.enabled !== false);
+  const candidateData = readJson(path.join(ROOT_DIR, "data", "processed", "candidate-items.json"), { items: [] });
+  const items = candidateData.items || [];
   const result = await enrichItems(items, sources);
-  writeJson(path.join(ROOT_DIR, "data", "processed", "scored-items.json"), result.items);
+  writeJson(path.join(ROOT_DIR, "data", "processed", "enriched-candidates.json"), result.items);
   writeJson(path.join(ROOT_DIR, "data", "processed", "article-enrichment.json"), result.stats);
   return result;
 }

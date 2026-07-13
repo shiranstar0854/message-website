@@ -43,13 +43,6 @@
     channelSummaries: []
   };
 
-  const FALLBACK_EVENTS = {
-    generated_at: "",
-    meta: { event_count: 0 },
-    events: []
-  };
-  const EVENT_REFRESH_MS = 120000;
-
   async function loadJson(url, fallback) {
     if (window.location.protocol === "file:") return fallback;
 
@@ -470,8 +463,7 @@
   }
 
   function eventDetailUrl(event) {
-    const id = String(event?.event_id || event?.id || "").trim();
-    return id ? `event.html?id=${encodeURIComponent(id)}` : "events.html";
+    return "#";
   }
 
   function eventLatestChange(event) {
@@ -538,12 +530,11 @@
   }
 
   async function init() {
-    const [config, data, health, daily, eventData] = await Promise.all([
+    const [config, data, health, daily] = await Promise.all([
       loadJson("public/site-config.json", FALLBACK_CONFIG),
       loadJson("src/data/latest-items.json", FALLBACK_DATA),
       loadJson("src/data/source-health.json", FALLBACK_HEALTH),
-      loadJson("src/data/daily-summary.json", FALLBACK_DAILY),
-      loadJson("src/data/events.json", FALLBACK_EVENTS)
+      loadJson("src/data/daily-summary.json", FALLBACK_DAILY)
     ]);
 
     const feed = document.getElementById("feed");
@@ -599,20 +590,7 @@
     }
 
     window.MessageChooseRender.renderChannelSummary(summary, data);
-    renderTopHotspots(data);
-    renderHomeEvents(eventData);
-    if (window.location.protocol !== "file:") {
-      setInterval(async () => {
-        const refreshedEvents = await loadJson("src/data/events.json", FALLBACK_EVENTS);
-        const refreshedGeneratedAt = refreshedEvents.generated_at || refreshedEvents.generatedAt;
-        const currentGeneratedAt = eventData.generated_at || eventData.generatedAt;
-        if (refreshedGeneratedAt && refreshedGeneratedAt !== currentGeneratedAt) {
-          eventData.generated_at = refreshedEvents.generated_at;
-          eventData.events = refreshedEvents.events || [];
-          renderHomeEvents(eventData);
-        }
-      }, EVENT_REFRESH_MS);
-    }
+    window.MessageChooseRender.renderFeed(document.getElementById("top-hotspot-list"), selectTopHotspots(data.items || [], 5));
     renderDailyFocus(daily, data, health);
     window.MessageChooseSourceStatus.renderSourceStatus(sourceStatus, health);
     const sourceHealthSummary = window.MessageChooseSourceStatus.summarizeSourceHealth(health);

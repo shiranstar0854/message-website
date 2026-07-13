@@ -5,7 +5,7 @@ const os = require("node:os");
 const path = require("node:path");
 
 const { buildSourceHealth, buildEffectiveResults } = require("../scripts/fetch-rss");
-const { buildSourceAudit } = require("../scripts/source-audit");
+const { buildSourceAudit, buildPerformanceRun } = require("../scripts/source-audit");
 const { compactItem, selectArchiveItems, buildHistoryIndex } = require("../scripts/archive-daily-data");
 
 const PRIOR_XML = "<rss><channel><item><title>Existing item</title><link>https://example.test/existing</link></item></channel></rss>";
@@ -130,6 +130,31 @@ test("builds source audit metrics and marks fallback data", () => {
   assert.equal(audit.sources[0].enrichmentExcerptCount, 1);
 });
 
+test("performance history records the actual attempt instead of cached fallback volume", () => {
+  const run = buildPerformanceRun({
+    fetchedCount: 12,
+    retainedItems: 8,
+    deduplicatedItems: 4,
+    highValueRate: 0.75,
+    enrichmentAttempted: 3,
+    bodySuccessRate: 1,
+    averageInformationDensity: 70,
+    reviewedItems: 3
+  }, {
+    ok: false,
+    itemCount: 0,
+    isProbe: true
+  }, "2026-07-12T00:00:00.000Z");
+
+  assert.equal(run.fetchedCount, 0);
+  assert.equal(run.passedCount, 0);
+  assert.equal(run.highValueCount, 0);
+  assert.equal(run.bodyAttemptCount, 0);
+  assert.equal(run.bodySuccessRate, null);
+  assert.equal(run.fetchFailed, true);
+  assert.equal(run.isProbe, true);
+});
+
 test("daily archive compacts article payloads", () => {
   const archived = compactItem({
     id: "item-a",
@@ -223,4 +248,7 @@ test("history index exposes latest days without deleting older archive files", (
   ]);
   assert.equal(remainingFiles.length, 12);
   assert.equal(fs.existsSync(path.join(archiveDir, "2026-05-01.json")), true);
+  assert.equal(index.days[0].eventCount, 0);
+  assert.equal(index.days[0].hasBrief, false);
+  assert.equal(index.days[0].briefUrl, null);
 });

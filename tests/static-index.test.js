@@ -2,12 +2,19 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const {
+  generateStaticSummary,
   renderTopHotspots,
-  renderTopEvents,
-  selectTopEvents,
   selectTopHotspots,
   topScoreBreakdown
 } = require("../scripts/generate-static-index");
+
+test("public static homepage renders article briefs without internal fields or event tracking links", () => {
+  const html = generateStaticSummary();
+
+  assert.match(html, /核心事实/);
+  assert.doesNotMatch(html, /events\.html|event\.html|重点事件追踪/);
+  assert.doesNotMatch(html, /Top分|重要度：|置信度|抓取状态/);
+});
 
 test("static homepage selects Top 5 by importance_score then publish time", () => {
   const items = [
@@ -165,69 +172,4 @@ test("static homepage renders empty Top 5 state", () => {
 
   assert.match(html, /top-hotspot-list/);
   assert.match(html, /compact-empty/);
-});
-
-test("static homepage renders event tracking cards with MVP fields and detail links", () => {
-  const html = renderTopEvents([{
-    event_id: "openai-model-race",
-    title: "OpenAI / AI 模型竞争",
-    status: "active",
-    priority_grade: "A",
-    updated_at: "2026-06-18T00:00:00.000Z",
-    definition: {
-      one_sentence: "模型竞争进入持续追踪阶段。"
-    },
-    current_judgment: {
-      latest_change: "等待最新信息更新"
-    },
-    evidence: {
-      confidence_basis: "中"
-    },
-    profile: {
-      related_item_count: 3,
-      impact_areas: ["AI"]
-    },
-    related_items: [{ score: 90 }]
-  }]);
-
-  assert.match(html, /home-event-list/);
-  assert.match(html, /OpenAI \/ AI 模型竞争/);
-  assert.match(html, /当前状态/);
-  assert.match(html, /持续追踪/);
-  assert.match(html, /最新变化/);
-  assert.match(html, /等待最新信息更新/);
-  assert.match(html, /重要性/);
-  assert.match(html, /置信度/);
-  assert.match(html, /更新时间/);
-  assert.match(html, /event\.html\?id=openai-model-race/);
-  assert.match(html, /查看追踪/);
-});
-
-test("static homepage sorts event hotspots by explanation and evidence strength", () => {
-  const selected = selectTopEvents([{
-    event_id: "thin",
-    updated_at: "2026-06-02T00:00:00.000Z",
-    profile: {
-      related_item_count: 1,
-      impact_areas: []
-    },
-    related_items: [{ score: 90 }]
-  }, {
-    event_id: "explained",
-    updated_at: "2026-06-02T00:00:00.000Z",
-    definition: {
-      why_it_matters: "Important"
-    },
-    watch_variables: [{ variable: "Next" }],
-    profile: {
-      related_item_count: 4,
-      impact_areas: ["AI"]
-    },
-    impact: {
-      market: { impact: "Important" }
-    },
-    related_items: [{ score: 89 }]
-  }]);
-
-  assert.equal(selected[0].event_id, "explained");
 });

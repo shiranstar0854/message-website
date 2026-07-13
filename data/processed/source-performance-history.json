@@ -1,0 +1,345 @@
+{
+  "generatedAt": "2026-07-12T12:29:30.027Z",
+  "sources": {
+    "github-blog": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 2,
+        "passedCount": 2,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 2,
+        "bodySuccessCount": 2,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": 1
+      }
+    ],
+    "openai-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 2,
+        "passedCount": 2,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "google-ai": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "google-security": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "microsoft-azure": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "cisa-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "federal-reserve": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 3,
+        "passedCount": 3,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 3,
+        "bodySuccessCount": 3,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": 1
+      }
+    ],
+    "sec-press": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 2,
+        "passedCount": 2,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "cfpb-newsroom": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "nasa-breaking-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 10,
+        "passedCount": 10,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 9,
+        "bodySuccessCount": 9,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": true,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": 1
+      }
+    ],
+    "un-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 15,
+        "passedCount": 15,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 13,
+        "bodySuccessCount": 13,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": 1
+      }
+    ],
+    "most-work": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "pbc-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "csrc-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "yicai-finance": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 10,
+        "passedCount": 9,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "nbd-finance": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 10,
+        "passedCount": 8,
+        "duplicateCount": 2,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "ndrc-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "mof-news": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "stats-data-release": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 0,
+        "passedCount": 0,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ],
+    "govcn-yaowen": [
+      {
+        "generatedAt": "2026-07-12T12:29:30.027Z",
+        "fetchedCount": 7,
+        "passedCount": 7,
+        "duplicateCount": 0,
+        "highValueCount": 0,
+        "bodyAttemptCount": 0,
+        "bodySuccessCount": 0,
+        "densityTotal": 0,
+        "densityCount": 0,
+        "fetchFailed": false,
+        "isProbe": false,
+        "highValueRate": 0,
+        "bodySuccessRate": null
+      }
+    ]
+  }
+}

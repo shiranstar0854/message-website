@@ -78,6 +78,16 @@ const EVIDENCE_TYPE_WEIGHTS = {
   social_discussion: 40,
   unknown: 20
 };
+const CATEGORY_DISPLAY_CHANNELS = {
+  technology: "tech",
+  finance: "finance",
+  business: "business",
+  macro: "macro",
+  policy: "news",
+  international: "international",
+  science: "tech",
+  security: "tech"
+};
 
 function normalizeText(value) {
   return String(value || "")
@@ -249,6 +259,7 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
   const sourceName = firstDefined(rawItem.sourceName, raw.sourceName, raw.source, sourceDefaults.name, "Unknown Source");
   const sourceType = firstDefined(rawItem.sourceType, raw.sourceType, sourceDefaults.type, "rss");
   const category = firstDefined(rawItem.category, raw.category, sourceDefaults.category, "news");
+  const sourceCategory = normalizeText(category).toLowerCase() || "news";
   const credibility = Number(firstDefined(rawItem.credibility, raw.credibility, sourceDefaults.credibility, 70));
   const sourceAuthority = firstDefined(rawItem.sourceAuthority, raw.sourceAuthority, sourceDefaults.sourceAuthority, "media");
   const timelinessTier = firstDefined(rawItem.timelinessTier, raw.timelinessTier, sourceDefaults.timelinessTier, "daily");
@@ -334,6 +345,7 @@ function normalizeRawItem(rawItem, fetchedAt = DEFAULT_FETCHED_AT(), sourceDefau
     source: normalizeText(sourceName),
     sourceType: normalizeText(sourceType).toLowerCase(),
     category: derivedCategory,
+    sourceCategory,
     ...(derivedCategory !== normalizeText(category).toLowerCase() ? { primaryCategory: normalizeText(category).toLowerCase() } : {}),
     publishedAt,
     ...(rawPublishedAt ? {} : { publishedAtInferred: true }),
@@ -419,9 +431,12 @@ function getFilterReasons(item, rules = {}) {
     ? Number(rules.maxAgeHours)
     : Number(rules.maxAgeDays || 0) * 24;
   if (maxAgeHours > 0 && item.publishedAt) {
+    const extendedEvidence = ["regulatory_document", "research_paper", "data_release"].includes(item.evidence_type)
+      || /政策|监管|研究|论文|经济数据|policy|regulation|research|paper|economic data/i.test(haystack);
+    const effectiveMaxAgeHours = extendedEvidence ? Number(rules.extendedMaxAgeHours || 168) : maxAgeHours;
     const nowTime = rules.nowIso ? new Date(rules.nowIso).getTime() : Date.now();
     const ageMs = nowTime - new Date(item.publishedAt).getTime();
-    if (ageMs > maxAgeHours * 60 * 60 * 1000) {
+    if (ageMs > effectiveMaxAgeHours * 60 * 60 * 1000) {
       reasons.push("too-old");
     }
   }
@@ -467,7 +482,6 @@ function isDuplicateOfGroup(item, group, threshold) {
   return group.some((candidate) => {
     const candidateUrl = normalizeUrl(candidate.url);
     if (itemUrl && candidateUrl && itemUrl === candidateUrl) return true;
-    if (normalizeText(item.category).toLowerCase() !== normalizeText(candidate.category).toLowerCase()) return false;
     return titleSimilarity(item.title, candidate.title) >= threshold;
   });
 }
@@ -740,6 +754,7 @@ function buildPublishedItem(item) {
     ? item.impactAreas.slice(0, 4).map(normalizeText).filter(Boolean)
     : articleKeywords.slice(0, 4);
 
+  const displayChannel = item.displayChannel || CATEGORY_DISPLAY_CHANNELS[item.category] || item.sourceCategory || item.category;
   return {
     id: item.id,
     sourceId: item.sourceId,
@@ -752,6 +767,8 @@ function buildPublishedItem(item) {
     source: item.source,
     sourceType: item.sourceType,
     category: item.category,
+    sourceCategory: item.sourceCategory || item.primaryCategory || item.category,
+    displayChannel,
     ...(item.primaryCategory ? { primaryCategory: item.primaryCategory } : {}),
     publishedAt: item.publishedAt,
     ...(item.publishedAtInferred ? { publishedAtInferred: true } : {}),
@@ -823,7 +840,7 @@ function buildLatestData(items, siteConfig = {}, generatedAt = DEFAULT_FETCHED_A
   ];
 
   channelConfig.forEach((channel) => {
-    const channelItems = sortedItems.filter((item) => item.category === channel.id);
+    const channelItems = sortedItems.filter((item) => (item.displayChannel || item.category) === channel.id);
     channels[channel.id] = {
       id: channel.id,
       label: channel.label,

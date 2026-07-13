@@ -1,6 +1,5 @@
 const path = require("node:path");
 const { readJson, writeJson } = require("./lib/file-utils");
-const { loadLocalEnv } = require("./lib/load-local-env");
 const { extractArticleKeywords, normalizeText, truncateText } = require("./lib/pipeline");
 const {
   detectItemLanguage,
@@ -25,6 +24,12 @@ function needsAiTranslation(item) {
 
 function hasChineseText(value) {
   return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
+function hasExistingTranslation(item) {
+  const title = item.title_zh || item.titleZh || item.translatedTitle || "";
+  const summary = item.summary_zh || item.summaryZh || (item.summaryLanguage === "zh" ? item.aiSummary : "") || "";
+  return Boolean(title && summary && hasChineseText(`${title} ${summary}`));
 }
 
 function translationMaxAttempts(rules = {}, options = {}) {
@@ -152,6 +157,11 @@ async function translateLatestData(latestData, rules = {}, generatedAt = new Dat
 
   for (const item of latestData.items || []) {
     const base = withBaseTranslationFields(item);
+    if (needsAiTranslation(base) && hasExistingTranslation(base)) {
+      stats.notRequired += 1;
+      items.push({ ...base, translation_status: "translated" });
+      continue;
+    }
     if (!needsAiTranslation(base)) {
       stats.notRequired += 1;
       items.push(base);
@@ -189,15 +199,44 @@ async function translateLatestData(latestData, rules = {}, generatedAt = new Dat
 async function translateLatestFile(nowIso = new Date().toISOString(), options = {}) {
   const latestPath = path.join(ROOT_DIR, "src", "data", "latest-items.json");
   const latest = readJson(latestPath, { items: [], channels: {} });
+  const pipelineState = readJson(path.join(ROOT_DIR, "data", "processed", "pipeline-state.json"), {});
+  if (pipelineState.publicDataPreserved) return { ...latest, translationPreserved: true };
   const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
   const translated = await translateLatestData(latest, rules, nowIso, options);
   writeJson(latestPath, translated);
   return translated;
 }
 
+async function translateScoredItems(nowIso = new Date().toISOString(), options = {}) {
+  const input = readJson(path.join(ROOT_DIR, "data", "processed", "scored-items.json"), []);
+  const previous = readJson(path.join(ROOT_DIR, "src", "data", "latest-items.json"), { items: [] });
+  const cacheByUrl = new Map((previous.items || []).map((item) => [item.original_url || item.url, item]));
+  const items = input.map((item) => {
+    const cached = cacheByUrl.get(item.url) || {};
+    return {
+      ...item,
+      title_zh: item.title_zh || cached.title_zh || cached.translatedTitle || "",
+      summary_zh: item.summary_zh || cached.summary_zh || cached.summaryZh || "",
+      translatedTitle: item.translatedTitle || cached.translatedTitle || cached.title_zh || "",
+      summaryLanguage: item.summaryLanguage || cached.summaryLanguage || ""
+    };
+  });
+  const rules = readJson(path.join(ROOT_DIR, "config", "ai-summary-rules.json"), {});
+  const translated = await translateLatestData({ generatedAt: nowIso, items, channels: {} }, rules, nowIso, options);
+  const output = {
+    generatedAt: nowIso,
+    inputCount: input.length,
+    translationStats: translated.translationStats,
+    ...(translated.translationErrors ? { translationErrors: translated.translationErrors } : {}),
+    items: translated.items
+  };
+  writeJson(path.join(ROOT_DIR, "data", "processed", "translated-items.json"), output);
+  return output;
+}
+
 if (require.main === module) {
-  loadLocalEnv(ROOT_DIR);
-  translateLatestFile()
+  const runner = process.argv[2] === "--latest" ? translateLatestFile : translateScoredItems;
+  runner()
     .then((data) => {
       const stats = data.translationStats || {};
       console.log(`Translated ${Number(stats.translated || 0)} items; failed ${Number(stats.failed || 0)}; not required ${Number(stats.notRequired || 0)}.`);
@@ -217,5 +256,7 @@ module.exports = {
   translationMaxAttempts,
   translateLatestData,
   translateLatestFile,
+  translateScoredItems,
+  hasExistingTranslation,
   withBaseTranslationFields
 };

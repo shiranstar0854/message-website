@@ -324,8 +324,7 @@ function selectTopEvents(events, limit = 5) {
 }
 
 function eventDetailUrl(event) {
-  const id = String(event?.event_id || "").trim();
-  return id ? `event.html?id=${encodeURIComponent(id)}` : "events.html";
+  return "#";
 }
 
 function eventLatestChange(event) {
@@ -425,14 +424,36 @@ function renderTopHotspots(items, channels = {}) {
           </div>`;
 }
 
+function renderStaticBriefSection(title, value) {
+  const text = String(value || "").trim();
+  return text ? `<section class="brief-section"><h4>${escapeHtml(title)}</h4><p>${escapeHtml(text)}</p></section>` : "";
+}
+
+function renderStaticTopHotspots(items) {
+  return `<div class="top-hotspots feed-list" id="top-hotspot-list">${items.map((item) => {
+    const brief = item.article_brief || {};
+    const fallback = item.summary_short || item.summary_zh || item.aiSummary || item.contentExcerpt || item.summary || "";
+    return `<article class="feed-article top-feed-article">
+      <header class="feed-article-header">
+        <p class="feed-byline">${escapeHtml(item.source || "公开来源")} · ${escapeHtml(formatDate(item.publishedAt))}</p>
+        <h3><a href="${escapeHtml(itemDetailUrl(item))}">${escapeHtml(brief.title || displayTitle(item))}</a></h3>
+      </header>
+      <div class="feed-article-body">
+        ${renderStaticBriefSection("核心事实", brief.core_fact?.summary || fallback)}
+        ${renderStaticBriefSection("当前进展", brief.current_progress?.details)}
+        ${renderStaticBriefSection("影响", brief.impact?.direct || item.why_it_matters)}
+        <div class="brief-actions"><a href="${escapeHtml(itemDetailUrl(item))}">阅读全文</a></div>
+      </div>
+    </article>`;
+  }).join("")}</div>`;
+}
+
 function generateStaticSummary() {
   const latest = readJson(path.join(ROOT_DIR, "src", "data", "latest-items.json"), { items: [], generatedAt: "" });
-  const eventData = readJson(path.join(ROOT_DIR, "src", "data", "events.json"), { events: [], generatedAt: "" });
   const health = readJson(path.join(ROOT_DIR, "src", "data", "source-health.json"), { sources: [] });
   const healthy = (health.sources || []).filter((source) => source.status === "healthy").length;
   const failed = (health.sources || []).filter((source) => source.status !== "healthy").length;
   const topHotspots = selectTopHotspots(latest.items || [], 5);
-  const topEvents = selectTopEvents(eventData.events || [], 3);
 
   return `${START_MARKER}
           <div class="static-summary-meta">
@@ -446,19 +467,9 @@ function generateStaticSummary() {
           </div>
           <div class="home-intel-grid">
             <section class="home-hotspot-panel" aria-labelledby="top-hotspots-title">
-              ${renderTopHotspots(topHotspots, latest.channels || {})}
+              ${renderStaticTopHotspots(topHotspots)}
             </section>
           </div>
-          <section class="home-event-panel home-event-track-panel" aria-labelledby="home-events-title">
-            <div class="top-hotspots-head compact-head">
-              <div>
-                <h2 id="home-events-title">重点事件追踪</h2>
-                <p>读取事件数据，展示当前状态、最新变化和后续追踪入口。</p>
-              </div>
-              <a class="text-link" href="events.html">查看全部事件</a>
-            </div>
-            ${renderTopEvents(topEvents)}
-          </section>
           ${END_MARKER}`;
 }
 
@@ -483,8 +494,6 @@ module.exports = {
   generateStaticSummary,
   selectTopHotspots,
   renderTopHotspots,
-  selectTopEvents,
-  renderTopEvents,
   eventRankScore,
   hotspotTags,
   hotspotRankScore,

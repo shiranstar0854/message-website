@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-07-12T12:28:54.058Z",
+  "limits": {
+    "metadataMaxAgeHours": 48,
+    "extendedMaxAgeHours": 168,
+    "candidateThreshold": 60,
+    "metadataOnlyThreshold": 75,
+    "contentDensityThreshold": 55,
+    "officialContentDensityThreshold": 45,
+    "globalBodyFetchQuota": 36,
+    "categoryQuota": 8,
+    "eventTypeQuota": 5,
+    "eventClusterQuota": 3,
+    "sourceTierQuotas": {
+      "core": 5,
+      "standard": 3,
+      "experimental": 1
+    },
+    "blockedPatterns": [
+      "招聘",
+      "诚聘",
+      "促销",
+      "优惠",
+      "折扣",
+      "报名",
+      "活动预告",
+      "会议预告",
+      "教程",
+      "入门指南",
+      "how to",
+      "tutorial",
+      "webinar",
+      "register now",
+      "coupon",
+      "sponsored",
+      "giveaway",
+      "job opening",
+      "hiring"
+    ]
+  },
+  "selectedCount": 0,
+  "rejectedCount": 0,
+  "items": [],
+  "rejected": []
+}

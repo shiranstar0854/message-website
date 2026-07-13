@@ -24,20 +24,31 @@
         <a href="index.html">信息流</a>
         <a href="daily-summary.html" aria-current="page">每日摘要</a>
         <a href="weekly-review.html">每周复盘</a>
-        <a href="events.html">重点事件</a>
         <a href="history.html">历史</a>
         <a href="about.html">关于/规则</a>
       </nav>
     </header>
 
-    <main class="app-shell page-shell">
-      <section class="overview-band page-hero" aria-labelledby="page-title">
-        <div>
-          <h1 id="page-title">每日摘要</h1>
-          <p id="daily-meta">正在加载摘要数据</p>
-        </div>
-      </section>
-      <section class="summary-page-grid" id="daily-summary-list" aria-live="polite"></section>
+    <main class="app-shell page-shell daily-reading-shell">
+      <article class="daily-article" id="daily-summary-article" aria-live="polite">
+        <header class="daily-article-header">
+          <p class="daily-article-kicker">每日简报</p>
+          <h1 id="daily-article-title">正在整理今日重点事件</h1>
+          <p class="daily-article-meta" id="daily-meta">正在加载摘要数据</p>
+          <p class="daily-article-lead" id="daily-article-lead"></p>
+        </header>
+        <div class="daily-article-body" id="daily-article-body"></div>
+        <footer class="daily-article-notes">
+          <section id="daily-article-sources" hidden>
+            <p class="daily-note-label">主要来源</p>
+            <div class="daily-source-list"></div>
+          </section>
+          <section id="daily-article-limitations" hidden>
+            <p class="daily-note-label">数据限制</p>
+            <p></p>
+          </section>
+        </footer>
+      </article>
     </main>
 
     <script src="src/scripts/render-feed.js?v=20260529-2"></script>

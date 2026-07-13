@@ -1,684 +1,188 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
 
 const {
   buildDeepSeekRequestBody,
-  buildDailyChannelSummaries,
   buildDailySummaryOutput,
   buildItemSummaryRules,
-  detectItemLanguage,
-  isLlmConfigured,
-  selectSummaryIds,
   summarizeLatestData,
   summarizeLatestDataWithLlm
 } = require("../scripts/generate-ai-summary");
+const { articleBriefLength, buildLocalArticleBrief, validateArticleBrief } = require("../scripts/lib/article-brief");
+const { dailyBriefLength } = require("../scripts/lib/daily-brief");
 const {
   buildWeeklyReview,
-  enhanceWeeklyReviewWithLlm,
   filterEnabledSourceItems,
-  isoWeekId
+  validateWeeklyResponse,
+  weeklyTextLength
 } = require("../scripts/generate-weekly-review");
 
-test("daily summary generation adds compact summary fields to top channel items", () => {
-  const latest = {
-    generatedAt: "2026-05-28T00:00:00.000Z",
-    channels: {
-      tech: { id: "tech", items: [{ id: "tech-1" }] }
-    },
-    items: [{
-      id: "tech-1",
-      title: "Platform update",
-      url: "https://example.test/tech",
-      source: "Official Source",
-      category: "tech",
-      score: 91,
-      contentExcerpt: "This platform update changes the developer workflow. It includes safety controls."
-    }]
-  };
+test("daily summary frontend renders one article heading and continuous paragraphs", () => {
+  const html = fs.readFileSync(path.join(__dirname, "..", "daily-summary.html"), "utf8");
+  const script = fs.readFileSync(path.join(__dirname, "..", "src", "scripts", "summary-pages.js"), "utf8");
 
-  const summarized = summarizeLatestData(latest, {
-    method: "extractive",
-    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80 }
-  }, "2026-05-28T01:00:00.000Z");
-
-  assert.equal(summarized.items[0].summaryMethod, "extractive");
-  assert.match(summarized.items[0].aiSummary, /developer workflow/);
-  assert.equal(summarized.channels.tech.items[0].aiSummary, summarized.items[0].aiSummary);
+  assert.equal((html.match(/<h1\b/g) || []).length, 1);
+  assert.doesNotMatch(html, /<h[23]\b/);
+  assert.doesNotMatch(script, /daily-event-entry[^\n]*<h3|section\("今日重点事件"/);
+  assert.match(script, /dailyArticleParagraphs\(data\)\.map/);
 });
 
-test("daily summary LLM path uses extractive fallback when the required secret is missing", async () => {
-  const latest = {
-    generatedAt: "2026-05-28T00:00:00.000Z",
-    channels: {
-      finance: { id: "finance", items: [{ id: "finance-1" }] }
+function validArticleBrief(item) {
+  return {
+    schema_version: "article-brief.v1",
+    title: "测试机构公布流程更新",
+    core_fact: {
+      summary: "测试机构正式公布流程更新，现有材料确认该主体已经发布安排，但尚未提供完整执行结果。该事实来自输入原文，当前不对未公布结果作确定判断。",
+      participants: [item.source],
+      time: "",
+      location: ""
     },
-    items: [{
-      id: "finance-1",
-      title: "Market update",
-      url: "https://example.test/finance",
-      source: "Official Source",
-      category: "finance",
-      score: 91,
-      contentExcerpt: "A public market update explained liquidity and policy expectations."
-    }]
-  };
-  const rules = {
-    method: "extractive",
-    llmProduction: {
-      enabled: true,
-      provider: "deepseek-chat-completions",
-      model: "deepseek-v4-flash",
-      requiredSecret: "DEEPSEEK_API_KEY"
+    background: "本次更新与原文描述的既有工作流程直接相关。现有材料只说明此次公开动作及其背景，不补充原文之外的历史数据或外部原因。",
+    key_data: [],
+    current_progress: { stage: "announced", details: "相关主体已经正式公布安排，执行范围、完成时间和实际结果仍需后续材料确认。" },
+    impact: {
+      direct: "直接影响是相关使用者需要重新核对当前流程和公开条件；影响范围尚未由来源量化，因此不能写成已经发生的广泛结果。",
+      medium_long_term: "中长期影响取决于后续执行、采用情况和独立证据，当前只能作为条件性观察，不能视为已经形成稳定趋势。"
     },
-    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80 }
+    stakeholder_positions: [],
+    outlook: "后续需要观察正式执行文件、相关主体行动和可复核结果是否与当前公布方向一致。若没有新增证据，现有判断应保持有限。",
+    risks_and_uncertainties: ["来源没有提供完整执行结果，也没有提供可核实的对立方观点。"],
+    watch_variables: [{
+      variable: "正式执行结果",
+      confirmation_condition: "来源发布正式文件或可复核结果，且内容继续支持当前公布方向。",
+      invalidation_condition: "正式文件、可复核结果或主体行动与当前公布方向相反。"
+    }],
+    sources: [{ name: item.source, url: item.url }],
+    limitations: ["没有可核实的关键数据和多方态度，因此对应字段留空。"]
   };
+}
 
-  const summarized = await summarizeLatestDataWithLlm(latest, rules, "2026-05-28T01:00:00.000Z", {
-    env: {}
-  });
+function event(index, overrides = {}) {
+  const names = ["政策部门", "技术机构", "市场机构", "研究机构", "安全机构"];
+  return {
+    event_id: `daily-${String(index).padStart(12, "a")}`,
+    theme_key: `${overrides.category || "policy"}:policy_change:${names[index]}`,
+    title: `${names[index]}发布新的可验证进展`,
+    category: overrides.category || "policy",
+    event_type: overrides.event_type || "policy_change",
+    importance_score: 90 - index,
+    summary: `${names[index]}发布一项新的正式进展，来源材料确认了主体、动作和当前阶段，但尚未提供完整执行结果。`,
+    why_it_matters: "该进展可能改变相关主体的后续安排，重要性取决于正式执行和新增独立证据。",
+    confirmed_facts: [{ text: `${names[index]}已经公开相关安排，当前只能确认公告内容和已披露进度。`, status: "confirmed" }],
+    current_progress: { stage: "announced", details: "已经正式公布，尚待执行结果。" },
+    watch_variables: [{ variable: `${names[index]}后续执行`, time_window: "未来7天", confirmation_condition: "出现正式执行文件", invalidation_condition: "正式文件撤回或方向相反", evidence_needed: ["正式文件"] }],
+    entities: [names[index]],
+    primary_source: { name: `${names[index]}官网`, url: `https://example.test/${index}` },
+    supporting_sources: [],
+    evidence_gaps: [{ gap: "尚未取得完整执行结果。" }],
+    ...overrides
+  };
+}
 
-  assert.equal(isLlmConfigured(rules, {}), false);
-  assert.equal(summarized.items[0].summaryMethod, "extractive");
-  assert.match(summarized.items[0].aiSummary, /market update/i);
-  assert.equal(summarized.items[0].what_happened, summarized.items[0].summary_short);
-  assert.ok(Array.isArray(summarized.items[0].confirmed_facts));
-  assert.equal(summarized.items[0].tracking_decision, "暂时观察");
-  assert.equal(summarized.summaryStats.llmConfigured, false);
-  assert.equal(summarized.summaryStats.llmAttempted, 0);
-  assert.equal(summarized.summaryStats.fallbackCount, 1);
+test("extractive article summaries always include article-brief.v1", () => {
+  const latest = { channels: {}, items: [{ id: "one", title: "测试机构更新", url: "https://example.test/one", source: "测试机构", category: "policy", score: 90, contentExcerpt: "测试机构正式发布一项流程更新，后续执行结果尚未公布。" }] };
+  const output = summarizeLatestData(latest, { daily: { minimumScore: 60 } }, "2026-07-13T00:00:00.000Z");
+  assert.equal(output.items[0].article_brief.schema_version, "article-brief.v1");
+  assert.equal(output.items[0].article_brief.current_progress.stage, "announced");
 });
 
-test("article AI summaries use DEEPSEEK_API_KEY1 while daily briefs keep DEEPSEEK_API_KEY", () => {
-  const rules = {
-    llmProduction: {
-      enabled: true,
-      requiredSecret: "DEEPSEEK_API_KEY",
-      itemRequiredSecret: "DEEPSEEK_API_KEY1"
-    }
-  };
-
-  assert.equal(rules.llmProduction.requiredSecret, "DEEPSEEK_API_KEY");
-  assert.equal(buildItemSummaryRules(rules).llmProduction.requiredSecret, "DEEPSEEK_API_KEY1");
+test("article brief validator enforces length, entity, number and source whitelists", () => {
+  const item = { title: "测试机构公布流程更新", source: "测试机构", url: "https://example.test/item", contentExcerpt: "测试机构公布流程更新。" };
+  const brief = validArticleBrief(item);
+  const validated = validateArticleBrief(brief, item);
+  assert.ok(validated);
+  assert.ok(articleBriefLength(validated) >= 350 && articleBriefLength(validated) <= 600);
+  assert.equal(validateArticleBrief({ ...brief, core_fact: { ...brief.core_fact, participants: ["不存在的机构"] } }, item), null);
+  assert.equal(validateArticleBrief({ ...brief, impact: { ...brief.impact, direct: `${brief.impact.direct} 新增999项。` } }, item), null);
+  assert.equal(validateArticleBrief({ ...brief, sources: [{ name: "测试机构", url: "https://invalid.test" }] }, item), null);
 });
 
-test("daily summary LLM path translates selected item summaries to Chinese", async () => {
-  const latest = {
-    generatedAt: "2026-05-28T00:00:00.000Z",
-    channels: {
-      tech: { id: "tech", items: [{ id: "tech-1" }] }
-    },
-    items: [{
-      id: "tech-1",
-      title: "Codex becomes a productivity tool",
-      url: "https://example.test/tech",
-      source: "OpenAI News",
-      category: "tech",
-      score: 91,
-      contentExcerpt: "Codex helps knowledge workers with research, data analysis, and workflow automation."
-    }]
-  };
-  const rules = {
-    method: "extractive",
-    llmProduction: {
-      enabled: true,
-      provider: "deepseek-chat-completions",
-      endpoint: "https://api.deepseek.com/chat/completions",
-      model: "deepseek-v4-flash",
-      requiredSecret: "DEEPSEEK_API_KEY",
-      maxRetries: 0,
-      maxOutputTokens: 260
-    },
-    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80, reasonMaxLength: 60 }
-  };
+test("all final feed items use the article model when configured", async () => {
+  const items = [0, 1].map((index) => ({ id: `item-${index}`, title: "测试机构公布流程更新", url: `https://example.test/${index}`, source: "测试机构", category: "policy", score: 90, contentExcerpt: "测试机构正式公布流程更新，执行结果尚待确认。" }));
   const calls = [];
-  const fetchImpl = async (url, init) => {
-    calls.push({ url, init });
-    return {
-      ok: true,
-      status: 200,
-      json: async () => ({
-        choices: [{
-          message: {
-            content: JSON.stringify({
-              translatedTitle: "Codex 成为知识工作的生产力工具",
-              aiSummary: "Codex 正在成为面向知识工作的生产力工具。",
-              summaryReason: "高分科技来源，涉及工作流自动化。",
-              importance: "影响知识工作者的 AI 工具使用方式。",
-              impactAreas: ["AI政策", "开发者工具"]
-            })
-          }
-        }]
-      })
-    };
-  };
-
-  const summarized = await summarizeLatestDataWithLlm(latest, rules, "2026-05-28T01:00:00.000Z", {
-    env: { DEEPSEEK_API_KEY1: "test-key" },
-    fetchImpl
-  });
-
-  assert.equal(calls.length, 1);
-  assert.equal(calls[0].init.headers.Authorization, "Bearer test-key");
-  assert.equal(summarized.summaryStats.llmAttempted, 1);
-  assert.equal(summarized.summaryStats.llmSucceeded, 1);
-  assert.equal(summarized.items[0].summaryMethod, "deepseek-chat-completions");
-  assert.equal(summarized.items[0].sourceLanguage, "en");
-  assert.equal(summarized.items[0].summaryLanguage, "zh");
-  assert.equal(summarized.items[0].translatedTitle, "Codex 成为知识工作的生产力工具");
-  assert.equal(summarized.items[0].importance, "影响知识工作者的 AI 工具使用方式。");
-  assert.deepEqual(summarized.items[0].impactAreas, ["AI政策", "开发者工具"]);
-  assert.match(summarized.items[0].aiSummary, /生产力工具/);
-  assert.ok(summarized.items[0].keywords.includes("Codex"));
-});
-
-test("non-Chinese source items are selected for AI Chinese translation even below normal score floor", () => {
-  const latest = {
-    items: [{
-      id: "english-low-score",
-      title: "UN briefing outlines climate response",
-      url: "https://example.test/un",
-      source: "UN News",
-      category: "news",
-      score: 45,
-      contentExcerpt: "The briefing outlined a coordinated climate response with funding, public health support, and local adaptation measures."
-    }, {
-      id: "japanese-low-score",
-      title: "中央銀行が政策判断を発表",
-      url: "https://example.test/jp",
-      source: "Japan Official Source",
-      sourceLanguage: "ja",
-      category: "news",
-      score: 45,
-      contentExcerpt: "声明は金融政策の今後の焦点を説明した。"
-    }, {
-      id: "chinese-low-score",
-      title: "本地政策简讯",
-      url: "https://example.test/cn",
-      source: "中文来源",
-      category: "news",
-      score: 45,
-      contentExcerpt: "本地政策简讯介绍后续执行安排。"
-    }]
-  };
-
-  const selected = selectSummaryIds(latest, {
-    maxItemsPerChannel: 1,
-    minimumScore: 60,
-    maxEnglishTranslationItems: 5
-  });
-
-  assert.equal(detectItemLanguage(latest.items[0]), "en");
-  assert.equal(selected.has("english-low-score"), true);
-  assert.equal(selected.has("japanese-low-score"), true);
-  assert.equal(selected.has("chinese-low-score"), false);
-});
-
-test("daily summary LLM path covers non-default categories and overwrites old summaries", async () => {
-  const latest = {
-    generatedAt: "2026-05-28T00:00:00.000Z",
-    channels: {
-      macro: { id: "macro", items: [{ id: "macro-1" }] }
-    },
-    items: [{
-      id: "macro-1",
-      title: "Central bank policy update",
-      url: "https://example.test/macro",
-      source: "Official Source",
-      category: "macro",
-      score: 91,
-      summary_short: "Old extractive summary",
-      ai_model: "extractive",
-      contentExcerpt: "The central bank published a policy update with rate guidance and market liquidity notes."
-    }]
-  };
-  const calls = [];
-  const summarized = await summarizeLatestDataWithLlm(latest, {
-    llmProduction: {
-      enabled: true,
-      provider: "deepseek-chat-completions",
-      endpoint: "https://api.deepseek.com/chat/completions",
-      model: "deepseek-v4-flash",
-      requiredSecret: "DEEPSEEK_API_KEY"
-    },
+  const output = await summarizeLatestDataWithLlm({ channels: {}, items }, {
+    llmProduction: { enabled: true, provider: "deepseek-chat-completions", endpoint: "https://api.deepseek.com/chat/completions", itemRequiredSecret: "DEEPSEEK_API_KEY1", maxRetries: 0 },
     daily: { minimumScore: 60 }
-  }, "2026-05-28T01:00:00.000Z", {
+  }, "2026-07-13T00:00:00.000Z", {
     env: { DEEPSEEK_API_KEY1: "test-key" },
     fetchImpl: async (url, init) => {
       calls.push({ url, init });
-      return {
-        ok: true,
-        status: 200,
-        json: async () => ({
-          choices: [{
-            message: {
-              content: JSON.stringify({
-                translatedTitle: "央行发布政策更新",
-                what_happened: "央行发布政策指引。",
-                confirmed_facts: ["央行发布政策指引。", "更新提到市场流动性。"],
-                what_changed: "政策指引改变了市场对流动性的预期。",
-                impact_analysis: {
-                  market: "市场参与者可能调整利率和流动性预期。",
-                  industry: "金融机构需要关注流动性安排。",
-                  company: "目前证据不足",
-                  user: "目前证据不足"
-                },
-                uncertainties: ["原文不足以判断后续行动。"],
-                watch_variables: ["后续政策操作", "市场利率变化"],
-                tracking_decision: "值得追踪",
-                confidence_level: "中",
-                source_links: [{ title: "原文", url: "https://example.test/macro" }],
-                summary_short: "政策指引改变了市场对流动性的预期。",
-                summary_points: ["央行发布政策指引。", "更新提到市场流动性。"],
-                key_data: [],
-                why_it_matters: "这会影响投资者理解政策和流动性信号。",
-                impact: "市场参与者可能调整利率和流动性预期。",
-                risks: "原文不足以判断后续行动。",
-                neutrality_check: "仅使用来源提供的事实。",
-                confidence: "medium"
-              })
-            }
-          }]
-        })
-      };
+      const input = items[calls.length - 1];
+      return { ok: true, status: 200, json: async () => ({ choices: [{ message: { content: JSON.stringify({ translatedTitle: "测试机构公布流程更新", summary_short: "测试机构已经公布流程更新。", summary_points: ["测试机构已经公布流程更新。"], why_it_matters: "后续执行结果可能影响相关流程。", impact: "影响取决于后续执行。", risks: "执行结果尚未公布。", neutrality_check: "仅使用输入材料。", confidence: "medium", article_brief: validArticleBrief(input) }) } }] }) };
     }
   });
-
-  assert.equal(calls.length, 1);
-  assert.equal(summarized.items[0].category, "macro");
-  assert.equal(summarized.items[0].ai_model, "deepseek-v4-flash");
-  assert.equal(summarized.items[0].summary_short, "政策指引改变了市场对流动性的预期。");
-  assert.equal(summarized.items[0].what_happened, "央行发布政策指引。");
-  assert.equal(summarized.items[0].tracking_decision, "值得追踪");
-  assert.equal(summarized.items[0].confidence_level, "中");
-  assert.equal(summarized.items[0].impact_analysis.market, "市场参与者可能调整利率和流动性预期。");
-  assert.equal(summarized.items[0].source_links[0].url, "https://example.test/macro");
-  assert.equal(summarized.items[0].title_zh, "央行发布政策更新");
-  assert.equal(summarized.channels.macro.items[0].summary_short, summarized.items[0].summary_short);
+  assert.equal(calls.length, 2);
+  assert.equal(output.summaryStats.llmSucceeded, 2);
+  assert.ok(output.items.every((item) => item.article_brief?.schema_version === "article-brief.v1"));
 });
 
-test("daily summary LLM path uses extractive fallback when a model call fails", async () => {
-  const latest = {
-    generatedAt: "2026-05-28T00:00:00.000Z",
-    channels: {
-      macro: { id: "macro", items: [{ id: "macro-1" }] }
-    },
-    items: [{
-      id: "macro-1",
-      title: "Central bank policy update",
-      url: "https://example.test/macro",
-      source: "Official Source",
-      category: "macro",
-      score: 91,
-      summary_short: "Existing LLM summary",
-      ai_model: "deepseek-v4-flash"
-    }]
-  };
-  const summarized = await summarizeLatestDataWithLlm(latest, {
-    llmProduction: {
-      enabled: true,
-      provider: "deepseek-chat-completions",
-      endpoint: "https://api.deepseek.com/chat/completions",
-      model: "deepseek-v4-flash",
-      requiredSecret: "DEEPSEEK_API_KEY"
-    },
-    daily: { minimumScore: 60 }
-  }, "2026-05-28T01:00:00.000Z", {
-    env: { DEEPSEEK_API_KEY1: "test-key" },
-    fetchImpl: async () => ({
-      ok: false,
-      status: 500,
-      text: async () => "model unavailable"
-    })
-  });
-
-  assert.equal(summarized.summaryStats.llmAttempted, 1);
-  assert.equal(summarized.summaryStats.llmSucceeded, 0);
-  assert.equal(summarized.summaryStats.fallbackCount, 1);
-  assert.equal(summarized.summaryStats.errorCount, 1);
-  assert.equal(summarized.items[0].summaryMethod, "extractive");
-  assert.equal(summarized.items[0].ai_model, "extractive");
-  assert.ok(summarized.items[0].what_happened);
-  assert.ok(Array.isArray(summarized.items[0].confirmed_facts));
-  assert.equal(summarized.items[0].tracking_decision, "暂时观察");
-});
-
-test("daily summary LLM path retries non-Chinese items until translated", async () => {
-  const latest = {
-    generatedAt: "2026-05-28T00:00:00.000Z",
-    channels: {
-      news: { id: "news", items: [{ id: "fr-summary-retry" }] }
-    },
-    items: [{
-      id: "fr-summary-retry",
-      title: "La banque centrale publie une decision",
-      summary: "Le communique detaille les prochaines etapes.",
-      contentExcerpt: "Le communique detaille les prochaines etapes.",
-      url: "https://example.test/fr-summary-retry",
-      source: "Banque centrale",
-      sourceLanguage: "fr",
-      category: "news",
-      score: 86
-    }]
-  };
+test("article model failures retry and then use a local structured brief", async () => {
   let calls = 0;
-  const fetchImpl = async () => {
-    calls += 1;
-    return {
-      ok: true,
-      status: 200,
-      json: async () => ({
-        choices: [{
-          message: {
-            content: calls === 1
-              ? JSON.stringify({
-                translatedTitle: "",
-                summary_short: "",
-                summary_points: [],
-                key_data: [],
-                why_it_matters: "",
-                impact: "",
-                risks: "",
-                neutrality_check: "",
-                confidence: "low"
-              })
-              : JSON.stringify({
-                translatedTitle: "央行发布政策决定",
-                summary_short: "央行声明说明了后续政策步骤。",
-                summary_points: ["央行发布政策决定"],
-                key_data: [],
-                why_it_matters: "会影响市场对政策路径的判断。",
-                impact: "可能影响利率预期。",
-                risks: "后续执行细节不足以判断。",
-                neutrality_check: "仅基于原文信息。",
-                confidence: "medium"
-              })
-          }
-        }]
-      })
-    };
-  };
-
-  const summarized = await summarizeLatestDataWithLlm(latest, {
-    llmProduction: {
-      enabled: true,
-      endpoint: "https://api.deepseek.com/chat/completions",
-      provider: "deepseek-chat-completions",
-      model: "deepseek-v4-flash",
-      itemRequiredSecret: "DEEPSEEK_API_KEY1",
-      requiredTranslationMaxAttempts: 2,
-      maxRetries: 0
-    },
-    daily: { minimumScore: 60, summaryMaxLength: 120 }
-  }, "2026-05-28T01:00:00.000Z", {
-    env: { DEEPSEEK_API_KEY1: "test-key" },
-    fetchImpl
-  });
-
+  const output = await summarizeLatestDataWithLlm({ channels: {}, items: [{ id: "one", title: "测试机构更新", url: "https://example.test/one", source: "测试机构", category: "policy", score: 90, contentExcerpt: "测试机构正式公布流程更新。" }] }, {
+    llmProduction: { enabled: true, endpoint: "https://api.deepseek.com/chat/completions", itemRequiredSecret: "DEEPSEEK_API_KEY1", maxRetries: 0 }, daily: { minimumScore: 60 }
+  }, "2026-07-13T00:00:00.000Z", { env: { DEEPSEEK_API_KEY1: "test-key" }, fetchImpl: async () => { calls += 1; return { ok: false, status: 500, text: async () => "failed" }; } });
   assert.equal(calls, 2);
-  assert.equal(summarized.summaryStats.llmSucceeded, 1);
-  assert.equal(summarized.items[0].translation_status, "translated");
-  assert.equal(summarized.items[0].translation_attempts, 2);
-  assert.equal(summarized.items[0].title_zh, "央行发布政策决定");
+  assert.equal(output.summaryStats.fallbackCount, 1);
+  assert.equal(output.items[0].article_brief.schema_version, "article-brief.v1");
 });
 
-test("daily summary output builds channel-level important-affairs summaries", async () => {
-  const summarized = {
-    summaryMethod: "extractive",
-    summaryStats: { llmConfigured: false, fallbackCount: 0, errorCount: 0 },
-    items: [{
-      id: "tech-1",
-      title: "AI platform update",
-      url: "https://example.test/tech",
-      source: "Official Source",
-      sourceId: "official-source",
-      category: "tech",
-      publishedAt: "2026-05-28T00:00:00.000Z",
-      score: 92,
-      aiSummary: "A platform update changed the developer workflow.",
-      summaryReason: "Official Source / tech"
-    }, {
-      id: "finance-1",
-      title: "Market update",
-      url: "https://example.test/finance",
-      source: "Official Source",
-      sourceId: "official-source",
-      category: "finance",
-      publishedAt: "2026-05-28T00:00:00.000Z",
-      score: 91,
-      aiSummary: "A market update explained liquidity expectations.",
-      summaryReason: "Official Source / finance"
-    }, {
-      id: "news-1",
-      title: "Policy briefing",
-      url: "https://example.test/news",
-      source: "Public Agency",
-      sourceId: "public-agency",
-      category: "news",
-      publishedAt: "2026-05-28T00:00:00.000Z",
-      score: 92,
-      aiSummary: "The briefing described a new public policy timeline.",
-      summaryReason: "Public Agency / news"
-    }]
-  };
-  const output = await buildDailySummaryOutput(summarized, {
-    method: "extractive",
-    llmProduction: { enabled: false },
-    daily: { maxHighlightsPerChannel: 3 }
-  }, "2026-05-28T01:00:00.000Z", { env: {} });
-
-  assert.equal(output.schema_version, "daily-brief.v4");
-  assert.equal(output.generated_at, "2026-05-28T01:00:00.000Z");
-  assert.equal(output.meta.stats.channel_count, 3);
-  assert.equal(output.meta.stats.item_count, 3);
-  assert.deepEqual(output.channels.map((channel) => channel.id), ["tech", "finance", "news"]);
-  const techSummary = output.channels.find((channel) => channel.id === "tech");
-  assert.equal(techSummary.coverage.top_item_ids[0], "tech-1");
-  assert.equal(techSummary.thinking_brief.headline, "科技频道今日核心判断");
-  assert.ok(Array.isArray(techSummary.key_signals));
-  assert.ok(Array.isArray(techSummary.risks));
-  assert.equal(techSummary.quality.checks.has_core_judgment, true);
-  const techItem = output.items.find((item) => item.id === "tech-1");
-  assert.equal(techItem.title.original, "AI platform update");
-  assert.equal(techItem.source.id, "official-source");
-  assert.equal(techItem.summary.one_sentence, "A platform update changed the developer workflow.");
-  assert.equal(techItem.facts[0].status, "confirmed");
-  assert.equal(techItem.quality.is_structured, true);
-  assert.ok(Array.isArray(output.event_candidates));
+test("daily brief v6 uses three to five internal events and exact public fields", async () => {
+  const output = await buildDailySummaryOutput({ items: [event(0), event(1, { category: "technology" }), event(2, { category: "finance" })] }, { llmProduction: { enabled: false } }, "2026-07-13T00:00:00.000Z", { env: {} });
+  assert.equal(output.schema_version, "daily-brief.v6");
+  assert.equal(output.core_events.length, 3);
+  assert.ok(output.daily_thesis.headline && output.daily_thesis.summary);
+  assert.ok(Array.isArray(output.cross_event_links));
+  assert.ok(output.follow_up_watch.every((row) => row.confirmation_condition && row.invalidation_condition));
+  assert.equal(output.tomorrow_focus.length, 0);
+  assert.ok(dailyBriefLength(output) >= 700 || output.limitations.some((row) => row.includes("目标篇幅")));
 });
 
-test("daily summary output can ignore stale item summary errors for brief-only runs", async () => {
-  const output = await buildDailySummaryOutput({
-    summaryMethod: "extractive",
-    summaryStats: { fallbackCount: 8, errorCount: 8 },
-    summaryErrors: [{ message: "stale article summary error" }],
-    items: [{
-      id: "tech-1",
-      title: "AI platform update",
-      url: "https://example.test/tech",
-      source: "Official Source",
-      category: "tech",
-      score: 92,
-      aiSummary: "A platform update changed the developer workflow."
-    }]
-  }, {
-    method: "extractive",
-    llmProduction: { enabled: false },
-    daily: { maxHighlightsPerChannel: 3 }
-  }, "2026-05-28T01:00:00.000Z", { env: {}, includeExistingItemStats: false });
-
-  assert.equal(output.meta.stats.fallback_count, 0);
-  assert.equal(output.meta.stats.error_count, 0);
-  assert.equal(output.errors, undefined);
+test("daily brief omits unsupported key data and schedules", async () => {
+  const output = await buildDailySummaryOutput({ items: [event(0), event(1), event(2)] }, { llmProduction: { enabled: false } }, "2026-07-13T00:00:00.000Z", { env: {} });
+  assert.deepEqual(output.key_data, []);
+  assert.deepEqual(output.tomorrow_focus, []);
+  assert.ok(output.limitations.some((row) => row.includes("关键数据")));
 });
 
-test("daily channel summary uses one DeepSeek call when configured", async () => {
-  const rules = {
-    method: "extractive",
-    llmProduction: {
-      enabled: true,
-      provider: "deepseek-chat-completions",
-      endpoint: "https://api.deepseek.com/chat/completions",
-      model: "deepseek-v4-flash",
-      requiredSecret: "DEEPSEEK_API_KEY",
-      maxRetries: 0,
-      maxOutputTokens: 260
-    },
-    daily: { maxItemsPerChannel: 1, minimumScore: 60, summaryMaxLength: 80, reasonMaxLength: 60 }
-  };
-  const calls = [];
-  const fetchImpl = async (url, init) => {
-    calls.push({ url, init });
-    return {
-      ok: true,
-      status: 200,
-      json: async () => ({
-        choices: [{
-          message: {
-            content: JSON.stringify({
-              channelSummaries: {
-                tech: { overview: "科技重点是平台更新。", keyPoints: ["平台能力变化"] },
-                finance: { overview: "金融重点是市场流动性。", keyPoints: ["流动性预期"] },
-                news: { overview: "新闻重点是政策时间线。", keyPoints: ["政策执行范围"] }
-              }
-            })
-          }
-        }]
-      })
-    };
-  };
+test("weekly review v3 exposes the specified fields and stable judgment ids", () => {
+  const currentEvents = [event(0), event(1, { category: "technology", event_type: "product_launch" }), event(2, { category: "finance", event_type: "market_move" })];
+  const first = buildWeeklyReview([{ date: "2026-07-12", generatedAt: "2026-07-12T00:00:00.000Z", events: currentEvents }], {}, "2026-07-13T00:00:00.000Z");
+  const previous = { schema_version: "weekly-review.v3", major_events: [], category_trends: first.category_trends };
+  const second = buildWeeklyReview([{ date: "2026-07-12", generatedAt: "2026-07-12T00:00:00.000Z", events: currentEvents }], {}, "2026-07-13T00:00:00.000Z", previous);
+  const fields = ["week_range", "weekly_thesis", "major_events", "category_trends", "key_data_changes", "cross_event_links", "market_policy_feedback", "previous_week_validation", "cognitive_updates", "new_signals", "risks_and_uncertainties", "personal_implications", "next_week_watchlist", "sources", "limitations"];
+  assert.equal(first.schema_version, "weekly-review.v3");
+  assert.ok(fields.every((field) => first[field] !== undefined));
+  assert.equal(second.category_trends[0].judgment_id, first.category_trends[0].judgment_id);
+  assert.ok(second.next_week_watchlist.every((row) => row.observation && row.confirmation_condition && row.invalidation_condition && row.evidence_needed.length));
+  assert.ok(weeklyTextLength(first) >= 1200 || first.limitations.some((row) => row.includes("目标篇幅")));
+});
 
-  const result = await buildDailyChannelSummaries([
-    { id: "tech-1", title: "AI platform update", source: "Official", category: "tech", score: 90, aiSummary: "Platform update.", url: "https://example.test/tech" },
-    { id: "finance-1", title: "Market update", source: "Official", category: "finance", score: 90, aiSummary: "Market update.", url: "https://example.test/finance" },
-    { id: "news-1", title: "Policy briefing", source: "Official", category: "news", score: 90, aiSummary: "Policy update.", url: "https://example.test/news" }
-  ], rules, {
-    env: { DEEPSEEK_API_KEY: "test-key" },
-    fetchImpl
-  });
-  const body = JSON.parse(calls[0].init.body);
+test("weekly model validation rejects invented judgment ids", () => {
+  const base = buildWeeklyReview([{ date: "2026-07-12", generatedAt: "2026-07-12T00:00:00.000Z", events: [event(0), event(1), event(2)] }], {}, "2026-07-13T00:00:00.000Z");
+  const response = JSON.parse(JSON.stringify(base));
+  response.next_week_watchlist[0].judgment_id = "judgment-ffffffffffff";
+  assert.equal(validateWeeklyResponse(base, response), null);
+});
 
-  assert.equal(calls[0].url, "https://api.deepseek.com/chat/completions");
-  assert.equal(calls[0].init.headers.Authorization, "Bearer test-key");
+test("weekly source filter excludes disabled sources", () => {
+  const filtered = filterEnabledSourceItems([{ sourceId: "enabled", source: "Enabled" }, { sourceId: "disabled", source: "Disabled" }], [{ id: "enabled", name: "Enabled", enabled: true }, { id: "disabled", name: "Disabled", enabled: false }]);
+  assert.equal(filtered.length, 1);
+});
+
+test("article summaries use the item secret and DeepSeek JSON mode", () => {
+  const rules = { llmProduction: { enabled: true, model: "deepseek-v4-flash", requiredSecret: "DEEPSEEK_API_KEY", itemRequiredSecret: "DEEPSEEK_API_KEY1" } };
+  assert.equal(buildItemSummaryRules(rules).llmProduction.requiredSecret, "DEEPSEEK_API_KEY1");
+  const body = buildDeepSeekRequestBody("Return JSON", rules, {});
   assert.equal(body.model, "deepseek-v4-flash");
   assert.equal(body.response_format.type, "json_object");
-  assert.equal(calls.length, 1);
-  assert.equal(result.channels.find((channel) => channel.id === "news").overview, "新闻重点是政策时间线。");
-  assert.ok(result.channels.find((channel) => channel.id === "tech").focus);
-  assert.ok(result.channels.find((channel) => channel.id === "tech").whyItMatters);
-  assert.equal(result.stats.llmSucceeded, 1);
 });
 
-test("DeepSeek request body uses configured model and JSON mode", () => {
-  const body = buildDeepSeekRequestBody("Summarize Developer update as JSON", {
-    llmProduction: {
-      model: "deepseek-v4-flash"
-    },
-    daily: { summaryMaxLength: 100, reasonMaxLength: 80 }
-  }, {});
-
-  assert.equal(body.model, "deepseek-v4-flash");
-  assert.equal(body.response_format.type, "json_object");
-  assert.match(body.messages[1].content, /Developer update/);
-  assert.match(body.messages[0].content, /JSON/);
-});
-
-test("weekly review builds channel highlights from daily archives", () => {
-  const review = buildWeeklyReview([{
-    date: "2026-05-28",
-    items: [
-      {
-        id: "finance-1",
-        title: "Central bank update",
-        url: "https://example.test/finance",
-        source: "Federal Reserve",
-        category: "finance",
-        score: 95,
-        aiSummary: "Policy makers published a financial stability update.",
-        publishedAt: "2026-05-28T00:00:00.000Z"
-      },
-      {
-        id: "news-1",
-        title: "UN briefing",
-        url: "https://example.test/news",
-        source: "UN News",
-        category: "news",
-        score: 88,
-        contentExcerpt: "The briefing highlighted a global policy issue.",
-        publishedAt: "2026-05-28T00:00:00.000Z"
-      }
-    ]
-  }], {
-    weekly: { maxHighlightsPerChannel: 4, maxSourcesPerChannel: 3 }
-  }, "2026-05-28T02:00:00.000Z");
-
-  assert.equal(review.weekId, isoWeekId(new Date("2026-05-28T02:00:00.000Z")));
-  assert.equal(review.totals.archiveCount, 1);
-  assert.equal(review.channels.find((channel) => channel.id === "finance").highlights[0].source, "Federal Reserve");
-  assert.match(review.channels.find((channel) => channel.id === "finance").focus, /Central bank update/);
-  assert.match(review.channels.find((channel) => channel.id === "finance").whyItMatters, /Federal Reserve/);
-  assert.equal(review.channels.find((channel) => channel.id === "news").highlights[0].summary, "The briefing highlighted a global policy issue.");
-});
-
-test("weekly review LLM path adds model summaries when DeepSeek is configured", async () => {
-  const review = buildWeeklyReview([{
-    date: "2026-05-28",
-    items: [{
-      id: "tech-1",
-      title: "AI platform update",
-      url: "https://example.test/tech",
-      source: "Official Source",
-      category: "tech",
-      score: 91,
-      aiSummary: "A platform update changed the developer workflow.",
-      publishedAt: "2026-05-28T00:00:00.000Z"
-    }]
-  }], {
-    weekly: { maxHighlightsPerChannel: 4, maxSourcesPerChannel: 3 }
-  }, "2026-05-28T02:00:00.000Z");
-  const rules = {
-    llmProduction: {
-      enabled: true,
-      provider: "deepseek-chat-completions",
-      endpoint: "https://api.deepseek.com/chat/completions",
-      model: "deepseek-v4-flash",
-      requiredSecret: "DEEPSEEK_API_KEY"
-    }
-  };
-  const enhanced = await enhanceWeeklyReviewWithLlm(review, rules, "2026-05-28T03:00:00.000Z", {
-    env: { DEEPSEEK_API_KEY: "test-key" },
-    fetchImpl: async () => ({
-      ok: true,
-      status: 200,
-      json: async () => ({
-        choices: [{
-          message: {
-            content: JSON.stringify({
-              executiveSummary: "本周科技信息集中在平台更新。",
-              channelReviews: {
-                tech: { summary: "科技频道关注开发者平台变化。", watchlist: ["继续观察平台更新"] }
-              }
-            })
-          }
-        }]
-      })
-    })
-  });
-
-  assert.equal(enhanced.method, "deepseek-chat-completions");
-  assert.ok(enhanced.channels.find((channel) => channel.id === "tech").focus);
-  assert.ok(enhanced.channels.find((channel) => channel.id === "tech").weekSignals.length);
-  assert.equal(enhanced.modelSummary, "本周科技信息集中在平台更新。");
-  assert.equal(enhanced.channels.find((channel) => channel.id === "tech").modelSummary, "科技频道关注开发者平台变化。");
-});
-
-test("weekly review source filter excludes disabled historical sources", () => {
-  const filtered = filterEnabledSourceItems([
-    { id: "current", sourceId: "enabled-source", source: "Enabled Source" },
-    { id: "old", sourceId: "disabled-source", source: "Disabled Source" }
-  ], [
-    { id: "enabled-source", name: "Enabled Source", enabled: true },
-    { id: "disabled-source", name: "Disabled Source", enabled: false }
-  ]);
-
-  assert.deepEqual(filtered.map((item) => item.id), ["current"]);
+test("local article fallback leaves unsupported fields empty", () => {
+  const brief = buildLocalArticleBrief({ title: "测试机构更新", source: "测试机构", url: "https://example.test/local", contentExcerpt: "测试机构公布更新。" });
+  assert.equal(brief.core_fact.location, "");
+  assert.deepEqual(brief.key_data, []);
+  assert.deepEqual(brief.stakeholder_positions, []);
+  assert.ok(brief.limitations.length >= 3);
 });
