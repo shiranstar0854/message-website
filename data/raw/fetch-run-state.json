@@ -1,0 +1,206 @@
+{
+  "runId": "fetch-202607130900",
+  "generatedAt": "2026-07-13T09:00:34.203Z",
+  "attempts": {
+    "github-blog": {
+      "sourceId": "github-blog",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "openai-news": {
+      "sourceId": "openai-news",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "google-ai": {
+      "sourceId": "google-ai",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "google-security": {
+      "sourceId": "google-security",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "microsoft-azure": {
+      "sourceId": "microsoft-azure",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "cisa-news": {
+      "sourceId": "cisa-news",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "federal-reserve": {
+      "sourceId": "federal-reserve",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "sec-press": {
+      "sourceId": "sec-press",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "cfpb-newsroom": {
+      "sourceId": "cfpb-newsroom",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "nasa-breaking-news": {
+      "sourceId": "nasa-breaking-news",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "un-news": {
+      "sourceId": "un-news",
+      "stage": "rss",
+      "fetchedAt": "2026-07-13T09:00:19.121Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 4,
+      "error": null,
+      "isProbe": false
+    },
+    "most-work": {
+      "sourceId": "most-work",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "pbc-news": {
+      "sourceId": "pbc-news",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": false,
+      "status": null,
+      "itemCount": 0,
+      "error": "fetch failed",
+      "isProbe": false
+    },
+    "csrc-news": {
+      "sourceId": "csrc-news",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "yicai-finance": {
+      "sourceId": "yicai-finance",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 10,
+      "error": null,
+      "isProbe": false
+    },
+    "nbd-finance": {
+      "sourceId": "nbd-finance",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 10,
+      "error": null,
+      "isProbe": false
+    },
+    "ndrc-news": {
+      "sourceId": "ndrc-news",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "mof-news": {
+      "sourceId": "mof-news",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "stats-data-release": {
+      "sourceId": "stats-data-release",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 0,
+      "error": null,
+      "isProbe": false
+    },
+    "govcn-yaowen": {
+      "sourceId": "govcn-yaowen",
+      "stage": "webpage",
+      "fetchedAt": "2026-07-13T09:00:34.203Z",
+      "ok": true,
+      "status": 200,
+      "itemCount": 11,
+      "error": null,
+      "isProbe": false
+    }
+  }
+}

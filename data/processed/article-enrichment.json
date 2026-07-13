@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-13T00:01:23.220Z",
+  "generatedAt": "2026-07-13T09:01:11.627Z",
   "totals": {
-    "attempted": 29,
-    "excerptCount": 29,
-    "imageCount": 10,
+    "attempted": 9,
+    "excerptCount": 8,
+    "imageCount": 5,
     "failed": 0,
     "skipped": 0
   },
@@ -11,6 +11,16 @@
     "github-blog": {
       "sourceId": "github-blog",
       "sourceName": "GitHub Blog",
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "most-work": {
+      "sourceId": "most-work",
+      "sourceName": "科技部工作动态",
       "attempted": 0,
       "excerptCount": 0,
       "imageCount": 0,
@@ -78,6 +88,76 @@
       "skipped": 0,
       "disabled": false
     },
+    "pbc-news": {
+      "sourceId": "pbc-news",
+      "sourceName": "中国人民银行新闻发布",
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "csrc-news": {
+      "sourceId": "csrc-news",
+      "sourceName": "中国证监会新闻发布",
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "yicai-finance": {
+      "sourceId": "yicai-finance",
+      "sourceName": "第一财经",
+      "attempted": 2,
+      "excerptCount": 1,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "nbd-finance": {
+      "sourceId": "nbd-finance",
+      "sourceName": "每日经济新闻",
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "ndrc-news": {
+      "sourceId": "ndrc-news",
+      "sourceName": "国家发展改革委新闻发布",
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "mof-news": {
+      "sourceId": "mof-news",
+      "sourceName": "财政部财政新闻",
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
+    "stats-data-release": {
+      "sourceId": "stats-data-release",
+      "sourceName": "国家统计局数据发布",
+      "attempted": 0,
+      "excerptCount": 0,
+      "imageCount": 0,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
     "sec-press": {
       "sourceId": "sec-press",
       "sourceName": "U.S. SEC Press Releases",
@@ -108,12 +188,22 @@
       "skipped": 0,
       "disabled": false
     },
+    "govcn-yaowen": {
+      "sourceId": "govcn-yaowen",
+      "sourceName": "中国政府网要闻",
+      "attempted": 2,
+      "excerptCount": 2,
+      "imageCount": 2,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": false
+    },
     "un-news": {
       "sourceId": "un-news",
       "sourceName": "UN News",
-      "attempted": 4,
-      "excerptCount": 4,
-      "imageCount": 4,
+      "attempted": 3,
+      "excerptCount": 3,
+      "imageCount": 3,
       "failed": 0,
       "skipped": 0,
       "disabled": false
