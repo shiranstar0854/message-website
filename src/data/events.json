@@ -1,12 +1,12 @@
 {
   "schema_version": "event-tracking.v4",
-  "generated_at": "2026-07-12T09:01:17.788Z",
+  "generated_at": "2026-07-13T00:01:26.751Z",
   "meta": {
     "lookback_days": 90,
-    "event_count": 8,
+    "event_count": 7,
     "market_context": {
       "status": "available",
-      "generated_at": "2026-07-12T09:00:51.107Z"
+      "generated_at": "2026-07-13T00:00:56.385Z"
     },
     "llm": {
       "enabled": true,
@@ -49,10 +49,10 @@
       "last_seen_at": "2026-07-12T00:00:00.000Z",
       "updated_at": "2026-07-12T00:00:00.000Z",
       "definition": {
-        "one_sentence": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、中国人民银行新闻发布",
-        "background": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布 相关来源：中国政府网要闻、中国人民银行新闻发布",
+        "one_sentence": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。 相关来源：中国政府网要闻",
+        "background": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。 相关来源：中国政府网要闻",
         "core_question": "中国权威政策落地后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中国权威政策落地 会影响政策、市场、产业或国际变化判断；包含 1 条官方或市场权威来源，仍处在高时效窗口内。",
+        "why_it_matters": "此次讲话将2035年建成科技强国目标与‘十五五’时期具体战略任务相结合，为进一步部署科技工作提供了明确方向，但具体任务细节尚未公开。",
         "scope": "追踪中国权威政策落地相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
       },
       "decision": {
@@ -82,13 +82,14 @@
             "中国政府网",
             "人民银行",
             "中国人民银行",
-            "财政部",
             "统计局",
-            "国家统计局"
+            "国家统计局",
+            "科技部"
           ],
           "countries_or_regions": [],
           "products_or_technologies": [
-            "AI"
+            "AI",
+            "人工智能"
           ]
         },
         "related_item_count": 20
@@ -96,25 +97,24 @@
       "current_judgment": {
         "summary": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
         "basis": [
-          "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-          "习近平与金正恩互致贺电纪念《中朝友好合作互助条约》签订65周年",
-          "目前无证据显示双边关系出现实质调整"
+          "总书记在国家科技奖励大会等场合讲话",
+          "强调‘十五五’科技强国建设战略任务",
+          "要求抓好党中央科技部署落实",
+          "目标2035年建成科技强国"
         ],
-        "latest_change": "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话：中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "latest_change": "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话：习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
         "judgment_update": "初始判断",
         "confidence_reason": "包含权威来源或多来源验证，当前判断置信度较高。"
       },
       "evidence": {
-        "source_count": 4,
+        "source_count": 3,
         "official_source_count": 20,
         "financial_media_count": 0,
         "timeline_count": 12,
         "confidence_basis": "high",
         "evidence_types": {
-          "official_announcement": 1,
-          "unknown": 4,
-          "data_release": 1
+          "unknown": 1,
+          "official_announcement": 5
         },
         "primary_source": {
           "name": "中国政府网要闻",
@@ -127,52 +127,52 @@
             "source": "中国政府网要闻",
             "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075144.htm",
             "published_at": "2026-07-12T00:00:00.000Z",
+            "summary": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
+            "relevance_score": 100
+          },
+          {
+            "item_id": "news-item-e3572e890c",
+            "title": "我国新材料领域持续取得新突破",
+            "source": "中国政府网要闻",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075169.htm",
+            "published_at": "2026-07-12T00:00:00.000Z",
             "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-5a3d6ee818",
-            "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+            "item_id": "news-item-6e15db118a",
+            "title": "我国社会治安形势持续向好 群众安全感稳步提升",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075168.htm",
+            "published_at": "2026-07-12T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-2e1bc23df0",
-            "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+            "item_id": "news-item-6faa030230",
+            "title": "台风“巴威”登陆 各地全力应对",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075166.htm",
+            "published_at": "2026-07-12T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-bb1eb064bf",
-            "title": "各地和相关部门全力做好防汛防台风工作",
+            "item_id": "news-item-3dd43fcbd1",
+            "title": "“勇担历史使命，始终掌握战略主动”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之八",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075161.htm",
+            "published_at": "2026-07-12T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           },
           {
-            "item_id": "news-item-818885d69e",
-            "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+            "item_id": "news-item-6b65afecc7",
+            "title": "刘国中在北京调研时强调 全力以赴抓好水库安全度汛工作 切实保障人民群众生命财产安全",
             "source": "中国政府网要闻",
-            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "人民日报评论员发文，强调落实习近平科技创新讲话精神，加快科技自立自强。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "macro-item-61a0f0b638",
-            "title": "中国人民银行举办专题讲座",
-            "source": "中国人民银行新闻发布",
-            "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071112383673328/index.html",
-            "published_at": "2026-07-11T00:00:00.000Z",
-            "summary": "中国人民银行举办了一场专题讲座，但内容未透露，暂无进一步信息。",
+            "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075154.htm",
+            "published_at": "2026-07-12T00:00:00.000Z",
+            "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
             "relevance_score": 100
           }
         ],
@@ -182,7 +182,7 @@
       },
       "latest_update": {
         "title": "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-        "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+        "summary": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
         "source": "中国政府网要闻",
         "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075144.htm",
         "published_at": "2026-07-12T00:00:00.000Z",
@@ -190,26 +190,26 @@
       },
       "confirmed_facts": [
         {
-          "fact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "fact": "总书记在国家科技奖励大会等场合讲话",
           "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075144.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
+          "fact": "强调‘十五五’科技强国建设战略任务",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075169.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "习近平与金正恩互致贺电纪念《中朝友好合作互助条约》签订65周年",
-          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
+          "fact": "要求抓好党中央科技部署落实",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075168.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         },
         {
-          "fact": "目前无证据显示双边关系出现实质调整",
-          "evidence_url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
+          "fact": "目标2035年建成科技强国",
+          "evidence_url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075166.htm",
           "source": "中国政府网要闻",
           "confidence": "高"
         }
@@ -218,9 +218,9 @@
         "market": {
           "impact": "关注政策落地对 A 股、港股与中概股预期的影响。",
           "evidence": [
+            "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
             "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -228,19 +228,19 @@
         "industry": {
           "impact": "可能影响 公共政策、人民日报评论员、向着到、年建成科技强国的目标坚定 相关判断，需继续核对后续证据。",
           "evidence": [
+            "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
             "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
         },
         "company": {
-          "impact": "关联实体：AI、国务院、中国政府网、人民银行、中国人民银行。",
+          "impact": "关联实体：AI、人工智能、国务院、中国政府网、科技部。",
           "evidence": [
+            "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
             "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -248,9 +248,9 @@
         "user_or_developer": {
           "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
           "evidence": [
+            "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
             "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "高"
@@ -258,9 +258,9 @@
         "policy_or_regulation": {
           "impact": "目前证据不足",
           "evidence": [
+            "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
             "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-            "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。"
+            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布"
           ],
           "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
           "confidence": "低"
@@ -284,7 +284,7 @@
           "confidence": "中",
           "watch_signals": [
             "跟踪 公共政策、人民日报评论员、向着到 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+            "留意 中国政府网要闻 是否继续发布相关信息",
             "观察是否出现监管、市场价格、企业动作或国际反应"
           ]
         },
@@ -304,7 +304,7 @@
           "confidence": "中",
           "watch_signals": [
             "跟踪 公共政策、人民日报评论员、向着到 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+            "留意 中国政府网要闻 是否继续发布相关信息"
           ]
         },
         {
@@ -323,32 +323,14 @@
           "confidence": "低",
           "watch_signals": [
             "跟踪 公共政策、人民日报评论员、向着到 的后续变化",
-            "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+            "留意 中国政府网要闻 是否继续发布相关信息"
           ]
         }
       ],
       "risks": [
         {
           "risk_type": "信息风险",
-          "risk": "无已知风险，但需注意朝鲜半岛局势若出现波动，此事件可能被重新解读。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "无已知风险。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "目前证据不足。",
+          "risk": "若具体任务落实不力，或外部技术封锁加剧，可能延缓目标实现；政策执行中的过度集中也可能挤压市场活力。",
           "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
           "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
           "severity": "中",
@@ -365,17 +347,7 @@
       ],
       "uncertainties": [
         {
-          "uncertainty": "无已知风险，但需注意朝鲜半岛局势若出现波动，此事件可能被重新解读。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "无已知风险。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "目前证据不足。",
+          "uncertainty": "若具体任务落实不力，或外部技术封锁加剧，可能延缓目标实现；政策执行中的过度集中也可能挤压市场活力。",
           "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
           "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
         },
@@ -393,7 +365,7 @@
           "update_frequency": "事件触发"
         },
         {
-          "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+          "variable": "留意 中国政府网要闻 是否继续发布相关信息",
           "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
           "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
           "update_frequency": "事件触发"
@@ -424,122 +396,56 @@
           "source": "中国政府网要闻",
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075144.htm",
           "published_at": "2026-07-12T00:00:00.000Z",
+          "summary": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
+          "relevance_score": 100
+        },
+        {
+          "item_id": "news-item-e3572e890c",
+          "title": "我国新材料领域持续取得新突破",
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075169.htm",
+          "published_at": "2026-07-12T00:00:00.000Z",
           "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-5a3d6ee818",
-          "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
+          "item_id": "news-item-6e15db118a",
+          "title": "我国社会治安形势持续向好 群众安全感稳步提升",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075168.htm",
+          "published_at": "2026-07-12T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-2e1bc23df0",
-          "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
+          "item_id": "news-item-6faa030230",
+          "title": "台风“巴威”登陆 各地全力应对",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075166.htm",
+          "published_at": "2026-07-12T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-bb1eb064bf",
-          "title": "各地和相关部门全力做好防汛防台风工作",
+          "item_id": "news-item-3dd43fcbd1",
+          "title": "“勇担历史使命，始终掌握战略主动”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之八",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/lianbo/202607/content_7075047.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "习近平总书记指示各地各部门做好防汛防台风工作，强调确保人民生命财产安全。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075161.htm",
+          "published_at": "2026-07-12T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         },
         {
-          "item_id": "news-item-818885d69e",
-          "title": "人民日报评论员：加快推进高水平科技自立自强——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
+          "item_id": "news-item-6b65afecc7",
+          "title": "刘国中在北京调研时强调 全力以赴抓好水库安全度汛工作 切实保障人民群众生命财产安全",
           "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075044.htm",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "人民日报评论员发文，强调落实习近平科技创新讲话精神，加快科技自立自强。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "macro-item-61a0f0b638",
-          "title": "中国人民银行举办专题讲座",
-          "source": "中国人民银行新闻发布",
-          "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026071112383673328/index.html",
-          "published_at": "2026-07-11T00:00:00.000Z",
-          "summary": "中国人民银行举办了一场专题讲座，但内容未透露，暂无进一步信息。",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075154.htm",
+          "published_at": "2026-07-12T00:00:00.000Z",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
           "relevance_score": 100
         }
       ],
       "timeline": [
-        {
-          "date": "2026-07-10",
-          "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作",
-          "summary": "张国清赴广西指导灾后保障与抢修，细节待披露。",
-          "description": "张国清赴广西指导灾后保障与抢修，细节待披露。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前无法判断具体变化，仅可知高层领导介入地方救灾指导。",
-          "sources": [
-            {
-              "title": "张国清在广西指导支持受灾群众生活保障和灾后抢修恢复工作",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/10/VIDEPLQan4Q33sWIemNGreY8260710.shtml",
-              "published_at": "2026-07-10T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/10/VIDEPLQan4Q33sWIemNGreY8260710.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-10T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
-          "summary": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-          "description": "中朝领导人就条约签订65周年互致贺电，属外交例行事件，无实质变化。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "本次互致贺电属于外交惯例，并未带来实质性政策或双边关系的变化。目前没有证据表明双方就条约内容或未来合作达成新共识。",
-          "sources": [
-            {
-              "title": "习近平同金正恩就《中朝友好合作互助条约》签订65周年互致贺电",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075063.htm",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
-          "summary": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
-          "description": "习近平总书记强调“矢志追求真理，始终把准前进方向”是党的首要优秀特质。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前证据不足。此次讲话为常规性政治宣示，未提及具体政策或事件变化。",
-          "sources": [
-            {
-              "title": "矢志追求真理，始终把准前进方向——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之六",
-              "source": "中国政府网要闻",
-              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075048.htm",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
         {
           "date": "2026-07-11",
           "title": "各地和相关部门全力做好防汛防台风工作",
@@ -587,12 +493,12 @@
         {
           "date": "2026-07-11",
           "title": "中国人民银行举办专题讲座",
-          "summary": "中国人民银行举办了一场专题讲座，但内容未透露，暂无进一步信息。",
-          "description": "中国人民银行举办了一场专题讲座，但内容未透露，暂无进一步信息。",
+          "summary": "中国人民银行举办专题讲座，主题围绕货币政策与金融市场，但具体内容未公开。",
+          "description": "中国人民银行举办专题讲座，主题围绕货币政策与金融市场，但具体内容未公开。",
           "evidence_type": "data_release",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "目前证据不足，无法判断讲座带来了何种变化。",
+          "impact": "目前没有证据表明该讲座对货币政策或金融市场产生了实际变化。",
           "sources": [
             {
               "title": "中国人民银行举办专题讲座",
@@ -609,12 +515,12 @@
         {
           "date": "2026-07-11",
           "title": "支持政策多点发力 我国持续减轻家庭生养负担",
-          "summary": "我国通过全周期生育保障体系，多措并举减轻家庭生养负担。",
-          "description": "我国通过全周期生育保障体系，多措并举减轻家庭生养负担。",
+          "summary": "我国构建全周期生育保障体系，通过多渠道减轻家庭负担。",
+          "description": "我国构建全周期生育保障体系，通过多渠道减轻家庭负担。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "与过去相比，中国在生育支持政策上从单一环节扩展到全周期保障，并整合了多个直接经济补贴和服务支持手段，显示出政策系统性和力度增强。但此次发布未提供具体政策变动的时间点和量化数据。",
+          "impact": "国家进一步明确和整合了生育支持政策，从零散措施转向系统性全周期保障，强调多渠道协同减轻负担。",
           "sources": [
             {
               "title": "支持政策多点发力 我国持续减轻家庭生养负担",
@@ -630,16 +536,16 @@
         },
         {
           "date": "2026-07-11",
-          "title": "各部门积极应对台风巴威",
-          "summary": "中央气象台发布台风巴威预警，预计在浙江沿海登陆，各地启动应对。",
-          "description": "中央气象台发布台风巴威预警，预计在浙江沿海登陆，各地启动应对。",
+          "title": "各地各部门积极应对台风“巴威”",
+          "summary": "台风“巴威”预计登陆浙江沿海，各地已积极部署防御。",
+          "description": "台风“巴威”预计登陆浙江沿海，各地已积极部署防御。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "台风预警发布后，受影响地区从日常状态转入应急响应状态，开始启动防灾准备工作，但具体应对细节未披露。",
+          "impact": "台风“巴威”的预警发布后，各地从常规状态转为应急防御状态，重点加强沿海区域的人员转移和设施加固工作。",
           "sources": [
             {
-              "title": "各部门积极应对台风巴威",
+              "title": "各地各部门积极应对台风“巴威”",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075125.htm",
               "published_at": "2026-07-11T00:00:00.000Z"
@@ -652,16 +558,16 @@
         },
         {
           "date": "2026-07-11",
-          "title": "‘Deep Roots in the People, Always Have a Solid Foundation’ — Study Series No. 7 on General Secretary Xi Jinping’s Imp...",
-          "summary": "习近平总书记建党105周年讲话强调党植根人民，暂无具体政策变化。",
-          "description": "习近平总书记建党105周年讲话强调党植根人民，暂无具体政策变化。",
+          "title": "“深深植根人民，始终拥有坚实根基”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之七",
+          "summary": "习近平总书记强调党深深植根人民，是百年大党力量源泉，但无具体政策变化。",
+          "description": "习近平总书记强调党深深植根人民，是百年大党力量源泉，但无具体政策变化。",
           "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "目前无具体政策或行动变化，讲话重申了党的群众路线和执政根基，属于常规政治宣示。",
+          "impact": "本次讲话重申了党的根基在人民的根本立场，但未提出具体政策变化或新举措。",
           "sources": [
             {
-              "title": "‘Deep Roots in the People, Always Have a Solid Foundation’ — Study Series No. 7 on General Secretary Xi Jinping’s Imp...",
+              "title": "“深深植根人民，始终拥有坚实根基”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之七",
               "source": "中国政府网要闻",
               "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075123.htm",
               "published_at": "2026-07-11T00:00:00.000Z"
@@ -673,58 +579,14 @@
           "publishedAt": "2026-07-11T00:00:00.000Z"
         },
         {
-          "date": "2026-07-11",
-          "title": "Xi Jinping and Kim Jong Un Exchange Congratulatory Messages on 65th Anniversary of China-DPRK Treaty",
-          "summary": "中朝最高领导人互致贺电纪念条约签订65周年，为常规外交礼仪，无实质变化。",
-          "description": "中朝最高领导人互致贺电纪念条约签订65周年，为常规外交礼仪，无实质变化。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "本次事件为年度周期性的外交礼节性互动，未出现任何政策或关系状态的实质性变化。两国关系维持既有框架。",
-          "sources": [
-            {
-              "title": "Xi Jinping and Kim Jong Un Exchange Congratulatory Messages on 65th Anniversary of China-DPRK Treaty",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/11/VIDEbloDn9jk5Ip2Xbh7uIFP260711.shtml",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/11/VIDEbloDn9jk5Ip2Xbh7uIFP260711.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
-        {
-          "date": "2026-07-11",
-          "title": "李强举行仪式欢迎朝鲜内阁总理访华",
-          "summary": "李强欢迎朝鲜内阁总理访华，中朝高层互动。",
-          "description": "李强欢迎朝鲜内阁总理访华，中朝高层互动。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "中朝高层外交互动得以延续，具体合作内容未披露，因此未发生显著政策或关系转变。",
-          "sources": [
-            {
-              "title": "李强举行仪式欢迎朝鲜内阁总理访华",
-              "source": "中国政府网要闻",
-              "url": "https://tv.cctv.com/2026/07/11/VIDEnLjdMLUl8Or18kjOfRAX260711.shtml",
-              "published_at": "2026-07-11T00:00:00.000Z"
-            }
-          ],
-          "source": "中国政府网要闻",
-          "url": "https://tv.cctv.com/2026/07/11/VIDEnLjdMLUl8Or18kjOfRAX260711.shtml",
-          "score": 100,
-          "publishedAt": "2026-07-11T00:00:00.000Z"
-        },
-        {
           "date": "2026-07-12",
           "title": "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-          "evidence_type": "official_announcement",
+          "summary": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
+          "description": "习近平总书记重申2035年建成科技强国目标，并阐述‘十五五’时期战略任务，体现政策连续性。",
+          "evidence_type": "unknown",
           "importance": "高",
           "does_it_change_judgment": true,
-          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "impact": "此次讲话将2035年建成科技强国目标与‘十五五’时期具体战略任务相结合，为进一步部署科技工作提供了明确方向，但具体任务细节尚未公开。",
           "sources": [
             {
               "title": "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
@@ -737,6 +599,116 @@
           "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075144.htm",
           "score": 100,
           "publishedAt": "2026-07-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-12",
+          "title": "我国新材料领域持续取得新突破",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "我国新材料领域持续取得新突破",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075169.htm",
+              "published_at": "2026-07-12T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075169.htm",
+          "score": 100,
+          "publishedAt": "2026-07-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-12",
+          "title": "我国社会治安形势持续向好 群众安全感稳步提升",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "我国社会治安形势持续向好 群众安全感稳步提升",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075168.htm",
+              "published_at": "2026-07-12T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075168.htm",
+          "score": 100,
+          "publishedAt": "2026-07-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-12",
+          "title": "台风“巴威”登陆 各地全力应对",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "台风“巴威”登陆 各地全力应对",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075166.htm",
+              "published_at": "2026-07-12T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075166.htm",
+          "score": 100,
+          "publishedAt": "2026-07-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-12",
+          "title": "“勇担历史使命，始终掌握战略主动”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之八",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "“勇担历史使命，始终掌握战略主动”——深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之八",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075161.htm",
+              "published_at": "2026-07-12T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075161.htm",
+          "score": 100,
+          "publishedAt": "2026-07-12T00:00:00.000Z"
+        },
+        {
+          "date": "2026-07-12",
+          "title": "刘国中在北京调研时强调 全力以赴抓好水库安全度汛工作 切实保障人民群众生命财产安全",
+          "summary": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "description": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "evidence_type": "official_announcement",
+          "importance": "高",
+          "does_it_change_judgment": true,
+          "impact": "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
+          "sources": [
+            {
+              "title": "刘国中在北京调研时强调 全力以赴抓好水库安全度汛工作 切实保障人民群众生命财产安全",
+              "source": "中国政府网要闻",
+              "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075154.htm",
+              "published_at": "2026-07-12T00:00:00.000Z"
+            }
+          ],
+          "source": "中国政府网要闻",
+          "url": "https://www.gov.cn/yaowen/liebiao/202607/content_7075154.htm",
+          "score": 100,
+          "publishedAt": "2026-07-12T00:00:00.000Z"
         }
       ],
       "analysis_notes": [],
@@ -747,9 +719,9 @@
           "thesis": "中国权威政策落地出现高优先级信号，建议立即核对原文、行情和后续官方发布；政策状态：落地执行。",
           "confidence": "high",
           "basis": [
-            "中国政府网要闻列表，覆盖国务院、部门政策和公共事务即时发布",
-            "人民日报评论员：向着到2035年建成科技强国的目标坚定迈进——论学习贯彻习近平总书记在国家科学技术奖励大会、两院院士大会、中国科协十一大上重要讲话",
-            "习近平与金正恩互致贺电纪念《中朝友好合作互助条约》签订65周年"
+            "总书记在国家科技奖励大会等场合讲话",
+            "强调‘十五五’科技强国建设战略任务",
+            "要求抓好党中央科技部署落实"
           ],
           "what_would_change_this_view": [
             "继续观察后续官方发布和价格反应是否一致。"
@@ -813,7 +785,7 @@
             "confidence": "中",
             "watch_signals": [
               "跟踪 公共政策、人民日报评论员、向着到 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+              "留意 中国政府网要闻 是否继续发布相关信息",
               "观察是否出现监管、市场价格、企业动作或国际反应"
             ]
           },
@@ -833,7 +805,7 @@
             "confidence": "中",
             "watch_signals": [
               "跟踪 公共政策、人民日报评论员、向着到 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+              "留意 中国政府网要闻 是否继续发布相关信息"
             ]
           },
           {
@@ -852,32 +824,14 @@
             "confidence": "低",
             "watch_signals": [
               "跟踪 公共政策、人民日报评论员、向着到 的后续变化",
-              "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息"
+              "留意 中国政府网要闻 是否继续发布相关信息"
             ]
           }
         ],
         "risk_paths": [
           {
             "risk_type": "信息风险",
-            "risk": "无已知风险，但需注意朝鲜半岛局势若出现波动，此事件可能被重新解读。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "无已知风险。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "目前证据不足。",
+            "risk": "若具体任务落实不力，或外部技术封锁加剧，可能延缓目标实现；政策执行中的过度集中也可能挤压市场活力。",
             "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
             "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
             "severity": "中",
@@ -906,7 +860,7 @@
             "update_frequency": "事件触发"
           },
           {
-            "variable": "留意 中国政府网要闻、中国人民银行新闻发布 是否继续发布相关信息",
+            "variable": "留意 中国政府网要闻 是否继续发布相关信息",
             "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
             "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
             "update_frequency": "事件触发"
@@ -1161,7 +1115,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-12T09:00:51.107Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-13T00:00:56.385Z。",
           "evidence": [
             "美联储对小企业银行采取执法行动，同时终止对BNP Paribas等机构的执法行动。",
             "5月31日，长征二号丁运载火箭成功发射卫星互联网技术试验卫星，主要用于手机宽带直连卫星、天地网络融合等技术验证。这标志着我国“空天地海”一体化通信网络建设加速，为经济社会数智化转型提供支撑。",
@@ -1932,942 +1886,6 @@
       }
     },
     {
-      "event_id": "lane-china_us_ai",
-      "title": "中美 AI 发展",
-      "lane_id": "china_us_ai",
-      "lane_label": "中美 AI 发展",
-      "status": "watching",
-      "priority_grade": "B",
-      "importance_score": 100,
-      "first_seen_at": "2026-06-17T10:00:00.000Z",
-      "last_seen_at": "2026-07-12T09:00:31.217Z",
-      "updated_at": "2026-07-12T09:00:31.217Z",
-      "definition": {
-        "one_sentence": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
-        "background": "第一财经中文财经、宏观、产业和市场新闻 相关来源：第一财经、OpenAI News",
-        "core_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "why_it_matters": "中美 AI 发展 会影响政策、市场、产业或国际变化判断；覆盖 2 个公开来源，仍处在高时效窗口内。",
-        "scope": "追踪中美 AI 发展相关的权威来源、市场反馈、执行进展和反向证据；不追踪无来源支撑的短期噪声。"
-      },
-      "decision": {
-        "signal": "观察验证",
-        "brief": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
-        "rationale": [
-          "属于中美 AI 发展主线",
-          "重要性评分为 100",
-          "证据置信度为中"
-        ],
-        "market_symbols": [],
-        "policy_status": "",
-        "requires_follow_up": true
-      },
-      "profile": {
-        "impact_areas": [
-          "宏观",
-          "美联储",
-          "沃什改革开启",
-          "美联储五大工作组亮相"
-        ],
-        "entities": {
-          "companies": [
-            "OpenAI"
-          ],
-          "people": [],
-          "institutions": [],
-          "countries_or_regions": [],
-          "products_or_technologies": [
-            "AI",
-            "OpenAI",
-            "model",
-            "人工智能"
-          ]
-        },
-        "related_item_count": 20
-      },
-      "current_judgment": {
-        "summary": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
-        "basis": [
-          "第一财经中文财经、宏观、产业和市场新闻",
-          "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-          "德意志电信与 OpenAI 合作",
-          "转型领域：客户服务、员工工作流、网络运营、语音"
-        ],
-        "latest_change": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析：第一财经中文财经、宏观、产业和市场新闻",
-        "judgment_update": "初始判断",
-        "confidence_reason": "来源覆盖或后续证据仍有限，当前判断需要继续验证。"
-      },
-      "evidence": {
-        "source_count": 2,
-        "official_source_count": 0,
-        "financial_media_count": 1,
-        "timeline_count": 12,
-        "confidence_basis": "medium",
-        "evidence_types": {
-          "reliable_media_report": 1,
-          "industry_analysis": 2,
-          "unknown": 3
-        },
-        "primary_source": {
-          "name": "第一财经",
-          "url": "https://www.yicai.com/news/103270074.html"
-        },
-        "source_links": [
-          {
-            "item_id": "macro-item-c8db5e0df9",
-            "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-            "source": "第一财经",
-            "url": "https://www.yicai.com/news/103270074.html",
-            "published_at": "2026-07-12T09:00:31.217Z",
-            "summary": "第一财经中文财经、宏观、产业和市场新闻",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "tech-openai-news-0f7aa66716",
-            "title": "德意志电信如何用 AI 重塑电信业",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/deutsche-telekom",
-            "published_at": "2026-07-10T07:00:00.000Z",
-            "summary": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-cea92174d6",
-            "title": "我们关于政府和国家安全合作伙伴关系的方针",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/government-national-security-partnerships",
-            "published_at": "2026-07-08T13:30:00.000Z",
-            "summary": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "tech-openai-news-b5748a8d3b",
-            "title": "从编码评估中分离信号与噪声",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-            "published_at": "2026-07-08T13:00:00.000Z",
-            "summary": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-f32146c958",
-            "title": "帮助K-12教育工作者建立实用AI技能",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/k-12-educators-practical-skills",
-            "published_at": "2026-07-08T10:00:00.000Z",
-            "summary": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
-            "relevance_score": 100
-          },
-          {
-            "item_id": "international-openai-news-6fbc3708a9",
-            "title": "ChatGPT采用如何扩大",
-            "source": "OpenAI News",
-            "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-            "published_at": "2026-06-30T09:00:00.000Z",
-            "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-            "relevance_score": 100
-          }
-        ],
-        "evidence_gaps": [
-          "缺少官方或市场权威来源。"
-        ]
-      },
-      "latest_update": {
-        "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-        "summary": "第一财经中文财经、宏观、产业和市场新闻",
-        "source": "第一财经",
-        "url": "https://www.yicai.com/news/103270074.html",
-        "published_at": "2026-07-12T09:00:31.217Z",
-        "score": 100
-      },
-      "confirmed_facts": [
-        {
-          "fact": "第一财经中文财经、宏观、产业和市场新闻",
-          "evidence_url": "https://www.yicai.com/news/103270074.html",
-          "source": "第一财经",
-          "confidence": "中"
-        },
-        {
-          "fact": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-          "evidence_url": "https://openai.com/index/deutsche-telekom",
-          "source": "OpenAI News",
-          "confidence": "中"
-        },
-        {
-          "fact": "德意志电信与 OpenAI 合作",
-          "evidence_url": "https://openai.com/index/government-national-security-partnerships",
-          "source": "OpenAI News",
-          "confidence": "中"
-        },
-        {
-          "fact": "转型领域：客户服务、员工工作流、网络运营、语音",
-          "evidence_url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-          "source": "OpenAI News",
-          "confidence": "中"
-        }
-      ],
-      "impact": {
-        "market": {
-          "impact": "关注美股 AI 链条、中国 AI 政策和算力供给的连锁反应。",
-          "evidence": [
-            "第一财经中文财经、宏观、产业和市场新闻",
-            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "industry": {
-          "impact": "可能影响 宏观、美联储、沃什改革开启、美联储五大工作组亮相 相关判断，需继续核对后续证据。",
-          "evidence": [
-            "第一财经中文财经、宏观、产业和市场新闻",
-            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "company": {
-          "impact": "关联实体：AI、OpenAI、model、人工智能。",
-          "evidence": [
-            "第一财经中文财经、宏观、产业和市场新闻",
-            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "user_or_developer": {
-          "impact": "对普通用户或开发者的直接影响尚需根据后续产品、政策或市场反应判断。",
-          "evidence": [
-            "第一财经中文财经、宏观、产业和市场新闻",
-            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "中"
-        },
-        "policy_or_regulation": {
-          "impact": "目前证据不足",
-          "evidence": [
-            "第一财经中文财经、宏观、产业和市场新闻",
-            "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-            "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。"
-          ],
-          "uncertainty": "后续影响仍需要更多来源和市场反馈验证。",
-          "confidence": "低"
-        }
-      },
-      "market_feedback": [],
-      "forward_scenarios": [
-        {
-          "scenario_id": "scenario-a",
-          "name": "乐观情景",
-          "scenario": "乐观情景",
-          "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-          "path": [
-            "新证据出现",
-            "当前判断被强化",
-            "事件优先级继续保持"
-          ],
-          "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-            "留意 第一财经、OpenAI News 是否继续发布相关信息",
-            "观察是否出现监管、市场价格、企业动作或国际反应"
-          ]
-        },
-        {
-          "scenario_id": "scenario-b",
-          "name": "中性情景",
-          "scenario": "中性情景",
-          "condition": "后续只有零散补充信息，缺少决定性证据。",
-          "path": [
-            "信息继续更新",
-            "缺少关键验证",
-            "维持观察"
-          ],
-          "possible_result": "事件保留在观察列表，但不提高判断强度。",
-          "probability": "中",
-          "impact_level": "中",
-          "confidence": "中",
-          "watch_signals": [
-            "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-            "留意 第一财经、OpenAI News 是否继续发布相关信息"
-          ]
-        },
-        {
-          "scenario_id": "scenario-c",
-          "name": "反转情景",
-          "scenario": "反转情景",
-          "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-          "path": [
-            "反向证据出现",
-            "原判断被削弱",
-            "降低跟踪优先级"
-          ],
-          "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-          "probability": "低",
-          "impact_level": "中",
-          "confidence": "低",
-          "watch_signals": [
-            "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-            "留意 第一财经、OpenAI News 是否继续发布相关信息"
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "risk_type": "信息风险",
-          "risk": "AI 技术成熟度不足可能影响实际效果；数据隐私和员工适应性是潜在挑战。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "原则可能过于笼统，缺乏具体实施细则，导致执行不透明。此外，合作可能引发隐私和道德争议。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        },
-        {
-          "risk_type": "信息风险",
-          "risk": "若基准不可靠，可能导致对AI模型性能的误判。",
-          "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-          "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-          "severity": "中",
-          "probability": "中",
-          "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-        }
-      ],
-      "counter_arguments": [
-        {
-          "argument": "该事件可能被高估或误读。",
-          "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-          "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-        }
-      ],
-      "uncertainties": [
-        {
-          "uncertainty": "AI 技术成熟度不足可能影响实际效果；数据隐私和员工适应性是潜在挑战。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "原则可能过于笼统，缺乏具体实施细则，导致执行不透明。此外，合作可能引发隐私和道德争议。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "若基准不可靠，可能导致对AI模型性能的误判。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        },
-        {
-          "uncertainty": "缺少官方或市场权威来源。",
-          "why_it_matters": "该不确定性会影响事件优先级和后续判断方向。",
-          "needed_evidence": "需要权威来源、后续报道、市场数据或执行反馈验证。"
-        }
-      ],
-      "watch_variables": [
-        {
-          "variable": "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "留意 第一财经、OpenAI News 是否继续发布相关信息",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        },
-        {
-          "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-          "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-          "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-          "update_frequency": "事件触发"
-        }
-      ],
-      "next_questions": [
-        {
-          "question": "中美 AI 发展是否会形成持续影响？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        },
-        {
-          "question": "后续是否有权威来源或市场反馈验证当前判断？",
-          "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-          "status": "待验证"
-        }
-      ],
-      "related_items": [
-        {
-          "item_id": "macro-item-c8db5e0df9",
-          "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103270074.html",
-          "published_at": "2026-07-12T09:00:31.217Z",
-          "summary": "第一财经中文财经、宏观、产业和市场新闻",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "tech-openai-news-0f7aa66716",
-          "title": "德意志电信如何用 AI 重塑电信业",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/deutsche-telekom",
-          "published_at": "2026-07-10T07:00:00.000Z",
-          "summary": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-cea92174d6",
-          "title": "我们关于政府和国家安全合作伙伴关系的方针",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/government-national-security-partnerships",
-          "published_at": "2026-07-08T13:30:00.000Z",
-          "summary": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "tech-openai-news-b5748a8d3b",
-          "title": "从编码评估中分离信号与噪声",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-          "published_at": "2026-07-08T13:00:00.000Z",
-          "summary": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-f32146c958",
-          "title": "帮助K-12教育工作者建立实用AI技能",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/k-12-educators-practical-skills",
-          "published_at": "2026-07-08T10:00:00.000Z",
-          "summary": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
-          "relevance_score": 100
-        },
-        {
-          "item_id": "international-openai-news-6fbc3708a9",
-          "title": "ChatGPT采用如何扩大",
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-          "published_at": "2026-06-30T09:00:00.000Z",
-          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-          "relevance_score": 100
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-06-25",
-          "title": "AI代理如何改变工作",
-          "summary": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
-          "description": "OpenAI新研究显示AI代理能处理更长、更复杂的任务，提升跨角色生产力，但具体细节尚未公开。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "这项研究揭示了AI代理在提升任务复杂度和延长任务执行时间方面的能力，可能改变人们对自动化范围的认知。此前类似的成果尚未公开。",
-          "sources": [
-            {
-              "title": "AI代理如何改变工作",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/how-agents-are-transforming-work",
-              "published_at": "2026-06-25T02:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/how-agents-are-transforming-work",
-          "score": 100,
-          "publishedAt": "2026-06-25T02:00:00.000Z"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "预览GPT-5.6 Sol：下一代模型",
-          "summary": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
-          "description": "OpenAI预览了下一代模型GPT-5.6 Sol，强调其在编程、科学和网络安全方面能力更强，并配备先进安全堆栈。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI推出了GPT-5.6 Sol的预览，相较于前代模型，其在特定领域的能力有所增强，并提升了安全防护措施。",
-          "sources": [
-            {
-              "title": "预览GPT-5.6 Sol：下一代模型",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-              "published_at": "2026-06-26T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-          "score": 100,
-          "publishedAt": "2026-06-26T10:00:00.000Z"
-        },
-        {
-          "date": "2026-06-28",
-          "title": "惠普公司与OpenAI启动Frontier战略合作",
-          "summary": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
-          "description": "惠普与OpenAI扩大合作，将AI融入客户体验、软件开发和运营。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "惠普从之前的合作模式进一步升级，将AI更深地融入核心业务流程，可能改变其产品开发和服务交付方式。",
-          "sources": [
-            {
-              "title": "惠普公司与OpenAI启动Frontier战略合作",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/hp-frontier-partnership",
-              "published_at": "2026-06-28T17:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/hp-frontier-partnership",
-          "score": 100,
-          "publishedAt": "2026-06-28T17:00:00.000Z"
-        },
-        {
-          "date": "2026-06-29",
-          "title": "绘制欧洲AI劳动力机遇地图",
-          "summary": "OpenAI新报告分析AI对欧盟就业的影响。",
-          "description": "OpenAI新报告分析AI对欧盟就业的影响。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI发布了一份新报告，提供了对欧盟劳动力市场受AI影响的新视角。",
-          "sources": [
-            {
-              "title": "绘制欧洲AI劳动力机遇地图",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-              "published_at": "2026-06-29T07:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-          "score": 100,
-          "publishedAt": "2026-06-29T07:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "介绍GeneBench-Pro",
-          "summary": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
-          "description": "OpenAI发布GeneBench-Pro，一个用于测试AI在基因组学和生物学表现的真实世界基准。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "目前尚未有测试结果公布，但该基准的引入可能改变AI在生命科学领域的评估标准。现有基准可能不够复杂，而GeneBench-Pro通过真实世界数据提升了评估的相关性。",
-          "sources": [
-            {
-              "title": "介绍GeneBench-Pro",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/introducing-genebench-pro",
-              "published_at": "2026-06-30T00:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/introducing-genebench-pro",
-          "score": 100,
-          "publishedAt": "2026-06-30T00:00:00.000Z"
-        },
-        {
-          "date": "2026-06-30",
-          "title": "ChatGPT采用如何扩大",
-          "summary": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-          "description": "OpenAI新数据表明ChatGPT采用率全球增长，用户使用增加、功能探索更广。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI新数据显示ChatGPT的全球采用率进一步扩大，用户活跃度和功能使用广度均有所提升。",
-          "sources": [
-            {
-              "title": "ChatGPT采用如何扩大",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-              "published_at": "2026-06-30T09:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-          "score": 100,
-          "publishedAt": "2026-06-30T09:00:00.000Z"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "帮助K-12教育工作者建立实用AI技能",
-          "summary": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
-          "description": "OpenAI Academy与Walton Family Foundation合作，为K-12教育工作者举办AI Skills Jams实践培训。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "此前针对K-12教育工作者的系统性AI实践培训较少，这一合作引入了一项新的免费或低成本的实操培训项目，可能改变教师获取AI技能的途径。",
-          "sources": [
-            {
-              "title": "帮助K-12教育工作者建立实用AI技能",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/k-12-educators-practical-skills",
-              "published_at": "2026-07-08T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/k-12-educators-practical-skills",
-          "score": 100,
-          "publishedAt": "2026-07-08T10:00:00.000Z"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "从编码评估中分离信号与噪声",
-          "summary": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
-          "description": "OpenAI分析指出SWE-Bench Pro编码基准测试存在可靠性和准确性问题。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "该分析揭示基准测试可能不可靠，影响对AI模型性能的评估。",
-          "sources": [
-            {
-              "title": "从编码评估中分离信号与噪声",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-              "published_at": "2026-07-08T13:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-          "score": 100,
-          "publishedAt": "2026-07-08T13:00:00.000Z"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "我们关于政府和国家安全合作伙伴关系的方针",
-          "summary": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
-          "description": "OpenAI发布其与政府和国家安全合作的原则，强调负责任AI、民主问责和公共安全。",
-          "evidence_type": "unknown",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI首次公开阐述了其与政府和国家安全机构合作的具体原则。这代表了OpenAI在透明度和政策指导上的一个进展。",
-          "sources": [
-            {
-              "title": "我们关于政府和国家安全合作伙伴关系的方针",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/government-national-security-partnerships",
-              "published_at": "2026-07-08T13:30:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/government-national-security-partnerships",
-          "score": 100,
-          "publishedAt": "2026-07-08T13:30:00.000Z"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "GPT-5.5生物漏洞赏金计划",
-          "summary": "OpenAI宣布GPT-5.5生物漏洞赏金计划，但详情尚未公开。",
-          "description": "OpenAI宣布GPT-5.5生物漏洞赏金计划，但详情尚未公开。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "OpenAI推出了针对GPT-5.5生物安全漏洞的赏金项目，但缺乏详细说明。",
-          "sources": [
-            {
-              "title": "GPT-5.5生物漏洞赏金计划",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/bio-bug-bounty",
-              "published_at": "2026-07-09T10:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/bio-bug-bounty",
-          "score": 99,
-          "publishedAt": "2026-07-09T10:00:00.000Z"
-        },
-        {
-          "date": "2026-07-10",
-          "title": "德意志电信如何用 AI 重塑电信业",
-          "summary": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-          "description": "德意志电信与 OpenAI 合作推进 AI 原生转型，涵盖客户服务、员工工作流、网络运营及语音。",
-          "evidence_type": "industry_analysis",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "德意志电信从传统电信运营商转向 AI 原生的运营模式，核心业务流程引入生成式 AI。",
-          "sources": [
-            {
-              "title": "德意志电信如何用 AI 重塑电信业",
-              "source": "OpenAI News",
-              "url": "https://openai.com/index/deutsche-telekom",
-              "published_at": "2026-07-10T07:00:00.000Z"
-            }
-          ],
-          "source": "OpenAI News",
-          "url": "https://openai.com/index/deutsche-telekom",
-          "score": 100,
-          "publishedAt": "2026-07-10T07:00:00.000Z"
-        },
-        {
-          "date": "2026-07-12",
-          "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-          "summary": "第一财经中文财经、宏观、产业和市场新闻",
-          "description": "第一财经中文财经、宏观、产业和市场新闻",
-          "evidence_type": "reliable_media_report",
-          "importance": "高",
-          "does_it_change_judgment": true,
-          "impact": "第一财经中文财经、宏观、产业和市场新闻",
-          "sources": [
-            {
-              "title": "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-              "source": "第一财经",
-              "url": "https://www.yicai.com/news/103270074.html",
-              "published_at": "2026-07-12T09:00:31.217Z"
-            }
-          ],
-          "source": "第一财经",
-          "url": "https://www.yicai.com/news/103270074.html",
-          "score": 100,
-          "publishedAt": "2026-07-12T09:00:31.217Z"
-        }
-      ],
-      "analysis_notes": [],
-      "deep_tracking": {
-        "tracking_goal": "判断中美 AI 发展是否会改变行业格局、市场预期、政策方向或个人决策。",
-        "research_question": "中美 AI 发展后续是否会形成持续影响，并改变市场、行业、政策或用户判断？",
-        "current_thesis": {
-          "thesis": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
-          "confidence": "medium",
-          "basis": [
-            "第一财经中文财经、宏观、产业和市场新闻",
-            "沃什改革开启！美联储五大工作组亮相：通胀、资产负债表和AI探究全解析",
-            "德意志电信与 OpenAI 合作"
-          ],
-          "what_would_change_this_view": [
-            "缺少官方或市场权威来源。"
-          ]
-        },
-        "core_tensions": [
-          {
-            "tension": "短期信息热度与长期可验证影响之间的张力。",
-            "side_a": "现有高分来源提示事件值得跟踪。",
-            "side_b": "后续影响仍需要更多权威证据和市场反馈。",
-            "why_it_matters": "该张力决定是否需要把事件从观察升级为强跟踪主线。"
-          }
-        ],
-        "key_assumptions": [
-          {
-            "assumption": "当前高分条目和来源覆盖能代表该事件的主要变化。",
-            "risk_if_wrong": "如果来源覆盖偏窄，当前判断可能忽略更关键的反向信息。",
-            "evidence_needed": "需要更多权威来源、市场反馈或执行细节交叉验证。"
-          }
-        ],
-        "causal_chain": [
-          {
-            "step": 1,
-            "cause": "高分信息和多来源报道集中出现。",
-            "mechanism": "这些信息改变市场、行业、政策或用户对事件的预期。",
-            "effect": "事件进入重点跟踪列表，并设置后续观察变量。",
-            "confidence": "medium"
-          }
-        ],
-        "second_order_effects": [
-          {
-            "effect": "如果事件持续发酵，可能影响市场预期、行业竞争或政策执行节奏。",
-            "logic_chain": [
-              "信息集中出现",
-              "影响外部预期",
-              "进一步影响市场、行业、公司、政策或用户行为"
-            ],
-            "affected_areas": [
-              "宏观",
-              "美联储",
-              "沃什改革开启",
-              "美联储五大工作组亮相"
-            ],
-            "confidence": "medium"
-          }
-        ],
-        "scenario_tree": [
-          {
-            "scenario_id": "scenario-a",
-            "name": "乐观情景",
-            "scenario": "乐观情景",
-            "condition": "后续出现更多权威来源、市场反馈或执行细节支持当前判断。",
-            "path": [
-              "新证据出现",
-              "当前判断被强化",
-              "事件优先级继续保持"
-            ],
-            "possible_result": "事件成为需要持续跟踪的高优先级主线。",
-            "probability": "中",
-            "impact_level": "B",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-              "留意 第一财经、OpenAI News 是否继续发布相关信息",
-              "观察是否出现监管、市场价格、企业动作或国际反应"
-            ]
-          },
-          {
-            "scenario_id": "scenario-b",
-            "name": "中性情景",
-            "scenario": "中性情景",
-            "condition": "后续只有零散补充信息，缺少决定性证据。",
-            "path": [
-              "信息继续更新",
-              "缺少关键验证",
-              "维持观察"
-            ],
-            "possible_result": "事件保留在观察列表，但不提高判断强度。",
-            "probability": "中",
-            "impact_level": "中",
-            "confidence": "中",
-            "watch_signals": [
-              "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-              "留意 第一财经、OpenAI News 是否继续发布相关信息"
-            ]
-          },
-          {
-            "scenario_id": "scenario-c",
-            "name": "反转情景",
-            "scenario": "反转情景",
-            "condition": "权威来源、市场反馈或后续执行结果否定当前判断。",
-            "path": [
-              "反向证据出现",
-              "原判断被削弱",
-              "降低跟踪优先级"
-            ],
-            "possible_result": "当前事件可能只是短期噪声，需要重新评估。",
-            "probability": "低",
-            "impact_level": "B",
-            "confidence": "低",
-            "watch_signals": [
-              "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-              "留意 第一财经、OpenAI News 是否继续发布相关信息"
-            ]
-          }
-        ],
-        "risk_paths": [
-          {
-            "risk_type": "信息风险",
-            "risk": "AI 技术成熟度不足可能影响实际效果；数据隐私和员工适应性是潜在挑战。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "原则可能过于笼统，缺乏具体实施细则，导致执行不透明。此外，合作可能引发隐私和道德争议。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          },
-          {
-            "risk_type": "信息风险",
-            "risk": "若基准不可靠，可能导致对AI模型性能的误判。",
-            "trigger": "后续证据与当前判断不一致，或关键来源无法交叉验证。",
-            "possible_consequence": "事件重要性可能被高估，跟踪优先级需要下调。",
-            "severity": "中",
-            "probability": "中",
-            "watch_signal": "观察是否出现权威澄清、市场反应或执行细节。"
-          }
-        ],
-        "contrarian_tracking": {
-          "main_counter_view": "该事件可能只是短期信息集中，而非持续主线。",
-          "counter_arguments": [
-            {
-              "argument": "该事件可能被高估或误读。",
-              "reason": "当前信息可能只是短期报道集中，尚未证明会形成持续影响。",
-              "what_would_prove_it_wrong": "出现多来源验证、官方后续动作、市场持续反馈或企业实质行动。"
-            }
-          ],
-          "disconfirming_signals": [
-            "缺少官方或市场权威来源。"
-          ]
-        },
-        "watch_dashboard": [
-          {
-            "variable": "跟踪 宏观、美联储、沃什改革开启 的后续变化",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "留意 第一财经、OpenAI News 是否继续发布相关信息",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          },
-          {
-            "variable": "观察是否出现监管、市场价格、企业动作或国际反应",
-            "why_it_matters": "该变量会影响后续是否维持、提高或降低跟踪优先级。",
-            "signal_source": "官方公告 / 市场数据 / 财报 / 用户反馈 / 竞争对手动作 / 政策文件",
-            "update_frequency": "事件触发"
-          }
-        ],
-        "judgment_history": [
-          {
-            "date": "2026-07-12",
-            "judgment": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
-            "change_type": "初始判断",
-            "reason": "中美 AI 发展值得纳入观察列表，但需等待更多来源或市场反应验证。",
-            "evidence_item_ids": []
-          }
-        ],
-        "open_questions": [
-          {
-            "question": "中美 AI 发展是否会形成持续影响？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          },
-          {
-            "question": "后续是否有权威来源或市场反馈验证当前判断？",
-            "why_it_matters": "该问题决定事件是否值得继续提高跟踪优先级。",
-            "status": "待验证"
-          }
-        ],
-        "manual_review": {
-          "needed": true,
-          "reason": "仍需要人工核对原文、来源质量和后续影响是否被高估。",
-          "review_focus": [
-            "核对原文事实",
-            "检查是否有反向证据",
-            "观察后续权威发布或市场反馈"
-          ]
-        }
-      },
-      "quality": {
-        "score": 100,
-        "flags": [],
-        "checks": {
-          "has_definition": true,
-          "has_current_judgment": true,
-          "has_deep_tracking": true,
-          "has_core_tensions": true,
-          "has_key_assumptions": true,
-          "has_second_order_effects": true,
-          "has_scenario_tree": true,
-          "has_risk_paths": true,
-          "has_contrarian_tracking": true,
-          "has_watch_dashboard": true,
-          "has_judgment_history": true,
-          "has_timeline": true,
-          "has_confirmed_facts": true,
-          "has_impact": true,
-          "has_risks": true,
-          "has_forward_scenarios": true,
-          "has_counter_arguments": true,
-          "has_watch_variables": true,
-          "has_next_questions": true,
-          "has_source_links": true
-        }
-      }
-    },
-    {
       "event_id": "ai-policy-openai-gpt-5-sol",
       "title": "AI 政策与基础设施",
       "lane_id": "us_equities",
@@ -3007,7 +2025,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-12T09:00:51.107Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-13T00:00:56.385Z。",
           "evidence": [
             "OpenAI发布GPT-5.6系列，性能提升且成本降低，但仅限美国部分合作伙伴使用。",
             "OpenAI宣布GPT-5.6成为Microsoft 365 Copilot首选模型，提升办公AI能力。"
@@ -3650,7 +2668,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-12T09:00:51.107Z。",
+          "impact": "关联标的：NVDA 4.0339%；行情时间：2026-07-13T00:00:56.385Z。",
           "evidence": [
             "黄仁勋称AI基建周期长达数十年，强调有用AI时代已到来，每个token是利润单位。",
             "黄仁勋在股东大会上预测AI基建周期长达数十年，称每个token是利润单位。",
@@ -4375,7 +3393,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-12T09:00:51.107Z。",
+          "impact": "关联标的：GOOGL -0.4765%；行情时间：2026-07-13T00:00:56.385Z。",
           "evidence": [
             "NASA更新ARMD研究征集页面，提供与航空创新者合作机会，但具体内容未明确。",
             "谷歌发布6月AI更新，包括Gemini 3.5实时翻译、Android 17新功能和内置Gemini的新Home Speaker。",
@@ -5057,7 +4075,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-12T09:00:51.107Z。",
+          "impact": "关联标的：MSFT 0.1925%；行情时间：2026-07-13T00:00:56.385Z。",
           "evidence": [
             "每日经济新闻中文财经、公司和市场新闻",
             "微软联合MIT发布2026年智能体信心指数，调研300名构建者，称AI智能体正改变企业工作流程。"
@@ -5697,7 +4715,7 @@
       ],
       "impact": {
         "market": {
-          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-12T09:00:51.107Z。",
+          "impact": "关联标的：TSLA 0.2976%、QQQ 0.3083%；行情时间：2026-07-13T00:00:56.385Z。",
           "evidence": [
             "SpaceX市值进入美股前十，马斯克成首位万亿美元富豪。",
             "SpaceX市值进入美股前十，马斯克成为万亿美元富豪，被认为是史上最大规模IPO。",

@@ -8,33 +8,13 @@
     "url": "https://github.blog/feed/",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "Better tools made Copilot code review worse. Here&#8217;s how we actually improved it.",
-        "link": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
-        "guid": "https://github.blog/?p=97467",
-        "pubDate": "Fri, 10 Jul 2026 15:57:47 +0000",
-        "description": "<p>How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence.</p>\n<p>The post <a href=\"https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/\">Better tools made Copilot code review worse. Here&#8217;s how we actually improved it.</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "content": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><p class=\"wp-block-paragraph\">Give an agent better tools and it should do better work. That&rsquo;s the instinct, anyway.</p>\n\n\n\n<p class=\"wp-block-paragraph\">When you open a pull request, Copilot code review reads the diff and explores the surrounding code to find the problems that matter before they ship. To do that, it used its own code exploration tools. So when we swapped in the better-maintained, shared tools that power the Copilot CLI, <code>grep</code>, <code>glob</code>, and <code>view</code>, we expected a clean upgrade.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Instead, in our benchmarks, we found that the cost of reviews was higher and fewer issues were being caught.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But the tools weren&rsquo;t the problem. The instructions were. Once we rewrote them for the way a reviewer actually reads a pull request, the regression flipped into a win: <strong>roughly 20% lower average review cost</strong>, while maintaining the same review quality.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This is the story of how adjusting the workflows around the tools led us to a fix.</p>\n\n\n\n<h2 id=\"h-same-tools-wrong-instincts\" class=\"wp-block-heading\">Same tools, wrong instincts</h2>\n\n\n\n<p class=\"wp-block-paragraph\">If you&rsquo;ve built on top of an agent framework, you&rsquo;ve probably inherited its tools too. They work, so you keep them, until the day your use case drifts far enough from what they were designed for that they quietly start working against you. That&rsquo;s the situation we were in. Before trying to use the shared CLI tools, Copilot code review used its own code exploration tools. That tool layer was inspired by earlier agentic systems, including ideas from <a href=\"https://github.com/swe-agent/swe-agent\">SWE-agent-style repository navigation</a> and <a href=\"https://docs.github.com/en/code-security/concepts/code-scanning/copilot-autofix-for-code-scanning\">GitHub Copilot Autofix</a>: list directories, search files, search directories, and read code. Those tools worked, but they were specific to Copilot code review, and they were designed for how models behaved at the time. Earlier agentic coding models made fewer tool calls and were worse at automatically pulling in necessary context. This meant it was more important to include all relevant information in the few tool calls that the model made.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Meanwhile, the Copilot CLI harness has a shared set of Unix-inspired code exploration tools: grep, glob, and view. That harness is also used by a growing number of Copilot agent products, including <a href=\"https://docs.github.com/copilot/concepts/agents/cloud-agent/about-cloud-agent\">GitHub Copilot cloud agent</a>, so harness improvements can benefit more than one product. We wanted to clean up and share infrastructure where possible, so we experimented with using the tools from the Copilot CLI harness in Copilot code review. The goal was to reduce duplicated tool implementations, create one shared place to improve code exploration tools, and make it easier to carry those improvements across Copilot products.</p>\n\n\n\n<p class=\"wp-block-paragraph\">On paper, the migration looked simple:</p>\n\n\n\n<figure class=\"wp-block-table\"><table class=\"has-fixed-layout\"><thead><tr><th><strong>Old Copilot code review</strong></th><th><strong>GitHub Copilot CLI</strong></th><th><strong>Purpose</strong></th></tr></thead><tbody><tr><td>list_dir&nbsp;</td><td>glob&nbsp;</td><td>Discover candidate files and directories before opening&nbsp;code.&nbsp;</td></tr><tr><td>search_file&nbsp;and&nbsp;search_dir&nbsp;</td><td>grep&nbsp;</td><td>Search code for matching text, symbols, or call sites.&nbsp;</td></tr><tr><td>read_code&nbsp;</td><td>view&nbsp;</td><td>Read the relevant file contents once a path or range is known.&nbsp;</td></tr></tbody></table></figure>\n\n\n\n<p class=\"wp-block-paragraph\">The existing review tools were not thin wrappers. When searching for a directory or reading a code range, they could return the matched or requested lines plus extra surrounding code context. That added token cost, but it also matched how earlier models often benefited from having nearby context included automatically.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Initially, we hoped this would be a simple migration: swap one set of tools for another. But when we tested the shared tools in offline benchmarks, the review agent became less efficient and less effective. Average cost increased, and the number of useful comments dropped.</p>\n\n\n\n<h2 id=\"h-the-trace-revealed-a-browsing-loop\" class=\"wp-block-heading\">The trace revealed a browsing loop</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Our internal Copilot code review benchmarks were useful because they show more than a final score. They show the path the agent took, including which tools it called, how much output came back, where errors happened, and whether it was narrowing toward evidence or widening the search.</p>\n\n\n\n<p class=\"wp-block-paragraph\">When we first tried the shared Copilot CLI tools in offline benchmarks, the agent often behaved as if it was browsing a repository instead of investigating a pull request. It would search broadly, guess likely paths, read broadly, find more things to search, and carry that extra context forward.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" fetchpriority=\"high\" decoding=\"async\" height=\"478\" width=\"1024\" src=\"https://github.blog/wp-content/uploads/2026/07/1.png?resize=1024%2C478\" alt=\"Diagram showing the flow before &mdash; a simplified illustration of the general-purpose behavior we observed: widening the search, guessing paths, and accumulating context.\" class=\"wp-image-97468\" srcset=\"https://github.blog/wp-content/uploads/2026/07/1.png?w=2400 2400w, https://github.blog/wp-content/uploads/2026/07/1.png?w=300 300w, https://github.blog/wp-content/uploads/2026/07/1.png?w=768 768w, https://github.blog/wp-content/uploads/2026/07/1.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/07/1.png?w=1536 1536w, https://github.blog/wp-content/uploads/2026/07/1.png?w=2048 2048w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\">Figure 1:&nbsp;Before &mdash; a&nbsp;simplified&nbsp;illustration&nbsp;of the general-purpose&nbsp;behavior we&nbsp;observed:&nbsp;widening&nbsp;the search, guessing&nbsp;paths, and accumulating context.</figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">That pattern is understandable. Broad exploration can be useful when the task is &ldquo;understand this repo.&rdquo; But it&rsquo;s not how a reviewer would usually review a pull request.</p>\n\n\n\n<p class=\"wp-block-paragraph\">When I review a pull request, I start from the diff and ask targeted questions:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Where is this function called?</li>\n\n\n\n<li>Is this config key used anywhere else?</li>\n\n\n\n<li>Is there a test or helper with the same pattern?</li>\n\n\n\n<li>What is the smallest nearby code range that explains this behavior?</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">I do not want to open a large part of the repository before I know what I am looking for. I want the minimal context needed to answer the question, without overloading the review with unrelated code.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That matters because every tool result becomes part of the agent&rsquo;s working context. Extra file contents can be carried forward into later reasoning, increasing cost and sometimes making the review less focused. A tool result is not a disposable printout; for an agent, it&rsquo;s extra tokens that stay in the context window.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The traces made that difference visible. The shared tools were not the problem. The instructions were giving the agent the wrong instincts to do an efficient and effective review.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The tools themselves worked, but their instructions were tuned for their use within the Copilot CLI and implied the wrong workflow: the agent used grep, glob, and view like a broad coding assistant instead of a reviewer. A coding assistant may map a whole area before making a change to ensure it doesn&rsquo;t break some other corner of the code. On the other hand, a reviewer usually starts from the diff, asks whether the change introduced a problem, and then looks for the narrowest nearby evidence required to confirm or dismiss it.</p>\n\n\n\n<p class=\"wp-block-paragraph\">General coding-assistant tool instructions, like the ones used by Copilot CLI or Copilot cloud agent, make sense for an interactive assistant. A developer may ask it to understand a repository, plan a change, edit files, and continue over multiple turns.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Copilot code review has a narrower job: start from a pull request diff, gather enough surrounding evidence to decide whether a change introduces a real issue, and avoid loading context that is not needed for that review question.</p>\n\n\n\n<p class=\"wp-block-paragraph\">It was therefore clear that we couldn&rsquo;t simply replace the previous Copilot code review tools with the tools from the Copilot CLI without additional prompting work. The problem became: how do we design tool instructions that use these shared tools effectively in a code review setting?</p>\n\n\n\n<h2 id=\"h-rewriting-the-tool-instructions-for-a-reviewer-s-workflow\" class=\"wp-block-heading\">Rewriting the tool instructions for a reviewer&rsquo;s workflow</h2>\n\n\n\n<p class=\"wp-block-paragraph\">The next iterations made the guidance specific to code review. The workflow we wanted Copilot code review to follow was:</p>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Start from the diff and form specific review questions.</li>\n\n\n\n<li>Use <code>glob</code> when the path is uncertain and <code>grep</code> to find candidate files, symbols, and call sites.</li>\n\n\n\n<li>Batch cheap discovery before reading files.</li>\n\n\n\n<li>Use <code>view</code> only when the agent knows which file or line range it needs.</li>\n\n\n\n<li>Batch focused reads instead of alternating between one search and one read.</li>\n</ol>\n\n\n\n<p class=\"wp-block-paragraph\">In oversimplified form, this was the behavior we encoded:</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Generic posture:</strong> Use the available tools to inspect repository context that may be relevant.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Review-shaped guidance:</strong> Start from the diff. Narrow first with <code>grep</code> and <code>glob</code>; read exact evidence with <code>view</code>. If <code>grep</code> fails to find relevant context, retry with a simpler escaped search. If a path is wrong, pivot to <code>glob</code> instead of guessing nearby paths.</p>\n\n\n\n<p class=\"wp-block-paragraph\">For example, imagine the diff changes an authorization helper that decides whether an operation is allowed. A relevant review question is not &ldquo;show me the full contents of every file that calls this helper.&rdquo; It could instead be the narrower: &ldquo;are any request-handling callers relying on the old behavior?&rdquo;</p>\n\n\n\n<p class=\"wp-block-paragraph\">The intended path is short:</p>\n\n\n<div class=\"wp-block-code-wrapper\">\n<pre class=\"wp-block-code language-plaintext\"><code>start from the helper changed in the diff \ngrep for callers of that helper \nglob for likely route, handler, or controller files \nview the most relevant caller ranges \ndecide whether any caller changes the risk</code></pre>\n<clipboard-copy aria-label=\"Copy\" class=\"code-copy-btn\" data-copy-feedback=\"Copied!\" value=\"start from the helper changed in the diff \ngrep for callers of that helper \nglob for likely route, handler, or controller files \nview the most relevant caller ranges \ndecide whether any caller changes the risk\" tabindex=\"0\" role=\"button\"><svg aria-hidden=\"true\" height=\"16\" viewbox=\"0 0 16 16\" version=\"1.1\" width=\"16\" class=\"octicon octicon-copy js-clipboard-copy-icon\"><path d=\"M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z\"></path><path d=\"M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z\"></path></svg><svg aria-hidden=\"true\" height=\"16\" viewbox=\"0 0 16 16\" version=\"1.1\" width=\"16\" class=\"octicon octicon-check js-clipboard-check-icon\"><path d=\"M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z\"></path></svg></clipboard-copy></div>\n\n\n<p class=\"wp-block-paragraph\">The guidance also changed how the agent recovered from failed searches. If an input made <code>grep</code> fail, the better next step was one simpler, corrected search. If a path was wrong, the better next step was <code>glob</code>, not guessing neighboring paths and reading whatever happened to exist. That nudged the agent away from letting a small tool failure turn into a larger exploration loop.</p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img data-recalc-dims=\"1\" decoding=\"async\" height=\"589\" width=\"1024\" src=\"https://github.blog/wp-content/uploads/2026/07/2.png?resize=1024%2C589\" alt=\"Diagram showing the flow after: a simplified illustration of the review-shaped behavior the prompt guided toward: stay anchored to the diff, narrow with&nbsp;grep&nbsp;and&nbsp;glob, then read focused ranges with&nbsp;view.\" class=\"wp-image-97469\" srcset=\"https://github.blog/wp-content/uploads/2026/07/2.png?w=2400 2400w, https://github.blog/wp-content/uploads/2026/07/2.png?w=300 300w, https://github.blog/wp-content/uploads/2026/07/2.png?w=768 768w, https://github.blog/wp-content/uploads/2026/07/2.png?w=1024 1024w, https://github.blog/wp-content/uploads/2026/07/2.png?w=1536 1536w, https://github.blog/wp-content/uploads/2026/07/2.png?w=2048 2048w\" sizes=\"(max-width: 1000px) 100vw, 1000px\" /><figcaption class=\"wp-element-caption\">Figure 2: After &mdash; a simplified illustration of the review-shaped behavior the prompt guided toward: stay anchored to the diff, narrow with&nbsp;grep&nbsp;and&nbsp;glob, then read focused ranges with&nbsp;view.</figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">The change was small in wording and large in effect. It changed the rhythm of the agent from &ldquo;browse, read, search again&rdquo; to &ldquo;ask, narrow, read, decide.&rdquo;</p>\n\n\n\n<h2 id=\"h-benchmarks-let-us-debug-behavior-not-just-scores\" class=\"wp-block-heading\">Benchmarks let us debug behavior, not just scores</h2>\n\n\n\n<p class=\"wp-block-paragraph\">The shared harness gave us the tools. The internal Copilot code review benchmarks gave us the feedback loop.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We could run the same review examples, compare tool traces, update the instructions, and run again. That let us ask concrete questions:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Did the agent narrow first, or read broadly first?</li>\n\n\n\n<li>Did it batch independent searches?</li>\n\n\n\n<li>Did it call <code>view</code> only when it had a reason?</li>\n\n\n\n<li>Did a tool-instruction change reduce tool errors, or just move them somewhere else?</li>\n\n\n\n<li>Did the trace stay focused on evidence from the diff?</li>\n\n\n\n<li>Did the review still preserve the quality metrics we cared about?</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">The most useful signal was not &ldquo;the instructions are better.&rdquo; It was more concrete. The agent was making a similar number of tool calls, but spending more of them on relevant evidence instead of repeatedly expanding the search.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That connected product-level outcomes to understandable engineering behavior. Instead of guessing why a score moved, we could inspect the workflow that produced it.</p>\n\n\n\n<h2 id=\"h-the-result-roughly-20-lower-average-review-cost\" class=\"wp-block-heading\">The result: roughly 20% lower average review cost</h2>\n\n\n\n<p class=\"wp-block-paragraph\">In production, the tuned behavior showed <a href=\"https://github.blog/changelog/2026-06-25-copilot-code-review-analysis-depth-and-efficiency-updates/#behind-the-scenes-cli-based-file-tools-in-copilot-code-review\"><strong>roughly 20% lower average review cost</strong></a> compared with the control. Importantly, it did not show a quality signal that could block shipping.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The reduction did not come from the tools by themselves, it came from the workflow around them. Shared code exploration tools, Copilot code review custom tool instructions, and internal benchmarks made the agent&rsquo;s behavior visible enough to tune.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That framing matters when building with agents. It can be tempting to treat tools as implementation details by swapping one tool for another, then comparing the final answer. But for an agent, the tool surface is part of the product experience. It changes what the agent notices, how it searches, how much context it carries forward, and when it decides it has enough evidence.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Tool descriptions and system instructions are closer to API documentation. Unclear API docs can leave a developer confused and lead to inefficient or wrong decisions. Unclear tool prompting can do the same for an LLM; a small wording change can affect cost, quality, and the shape of the investigation because it changes how the agent spends its attention.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"same-tools-different-job\">Same tools, different job</h2>\n\n\n\n<p class=\"wp-block-paragraph\">We also tried to apply the same kind of focused tool instructions in the CLI, where it did not produce the same kind of win. That is a useful counterexample, and an important guardrail for the lesson.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Copilot code review is anchored to a diff and a review question. Copilot CLI handles broader, interactive coding tasks where exploration can be part of the job. There may be no single diff anchor, the user may change direction over multiple turns, and the right context may not be obvious at the start. The same <code>grep</code>, <code>glob</code>, and <code>view</code> tools can support both products, but the workflow around those tools has to match the product.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The takeaway is that shared tools scale when the instructions and benchmarks match the job.</p>\n\n\n\n<div class=\"wp-block-group post-content-cta has-global-padding is-layout-constrained wp-block-group-is-layout-constrained\">\n<p class=\"wp-block-paragraph\">Try it out yourself using <a href=\"https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review\">GitHub Copilot code review.</a></p>\n</div>\n</body></html>\n<p>The post <a href=\"https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/\">Better tools made Copilot code review worse. Here&#8217;s how we actually improved it.</a> appeared first on <a href=\"https://github.blog\">The GitHub Blog</a>.</p>",
-        "feedImageUrl": "https://github.blog/wp-content/uploads/2026/07/1.png?resize=1024%2C478",
-        "categories": [
-          "AI & ML",
-          "Architecture & optimization",
-          "Engineering",
-          "GitHub Copilot",
-          "LLMs",
-          "agentic workflows",
-          "developer tools",
-          "GitHub Copilot code review"
-        ]
-      }
-    ],
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -47,10 +27,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -65,10 +45,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -83,10 +63,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -101,10 +81,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -119,10 +99,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -137,10 +117,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -154,24 +134,13 @@
     "url": "https://www.sec.gov/news/pressreleases.rss",
     "status": 200,
     "ok": true,
-    "itemCount": 1,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "itemCount": 0,
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
-    "attempts": 1,
-    "items": [
-      {
-        "title": "SEC Office of Municipal Securities Updates FAQs for Registration of Municipal Advisors",
-        "link": "https://www.sec.gov/newsroom/press-releases/2026-66-sec-office-municipal-securities-updates-faqs-registration-municipal-advisors",
-        "guid": "c7c7a4d6-a90a-42e7-b0f3-4854c15efe00",
-        "pubDate": "Fri, 10 Jul 2026 12:00:32 -0400",
-        "description": "The Securities and Exchange Commission’s Office of Municipal Securities today announced it has updated its Registration of Municipal Advisors FAQs webpage to offer more clarity on municipal advisor registration and recordkeeping requirements.&nbsp;The…",
-        "content": "",
-        "feedImageUrl": "",
-        "categories": []
-      }
-    ],
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
+    "attempts": 2,
+    "items": [],
     "stale": false
   },
   {
@@ -184,10 +153,10 @@
     "status": 200,
     "ok": true,
     "itemCount": 0,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 2,
     "items": [],
     "stale": false
@@ -260,7 +229,14 @@
         ]
       }
     ],
-    "stale": false
+    "stale": true,
+    "latestAttempt": {
+      "fetchedAt": "2026-07-13T00:00:24.249Z",
+      "ok": false,
+      "status": 429,
+      "itemCount": 0,
+      "error": null
+    }
   },
   {
     "sourceId": "un-news",
@@ -271,13 +247,33 @@
     "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
     "status": 200,
     "ok": true,
-    "itemCount": 7,
-    "fetchedAt": "2026-07-12T09:00:20.971Z",
+    "itemCount": 4,
+    "fetchedAt": "2026-07-13T00:00:24.249Z",
     "cacheTtlHours": 48,
-    "cacheStartedAt": "2026-07-12T09:00:20.971Z",
-    "cacheExpiresAt": "2026-07-14T09:00:20.971Z",
+    "cacheStartedAt": "2026-07-13T00:00:24.249Z",
+    "cacheExpiresAt": "2026-07-15T00:00:24.249Z",
     "attempts": 1,
     "items": [
+      {
+        "title": "UN chief urges Iran and US to ‘urgently resume negotiations’ as Gulf strikes escalate",
+        "link": "https://news.un.org/feed/view/en/story/2026/07/1167923",
+        "guid": "https://news.un.org/en/story/2026/07/1167923",
+        "pubDate": "Sun, 12 Jul 2026 12:00:00 +0000",
+        "description": "Renewed strikes and counterstrikes between Iran and the United States in the Gulf region have raised fears of a return to all‑out war, with Washington denying Tehran’s claim that it had closed the crucial Strait of Hormuz on Sunday.",
+        "content": "",
+        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/02-03-2026-NASA-Hormuz-01.jpg/image560x340cropped.jpg",
+        "categories": []
+      },
+      {
+        "title": "Reviving communities home by home in Gaza",
+        "link": "https://news.un.org/feed/view/en/story/2026/07/1167921",
+        "guid": "https://news.un.org/en/story/2026/07/1167921",
+        "pubDate": "Sun, 12 Jul 2026 12:00:00 +0000",
+        "description": "Displacement has drastically reshaped every aspect of daily life in war-ravaged Gaza for 24-year-old Mayyada, who is seven months pregnant with twins and caring for her two-year-old daughter, but now she and her family are getting settled into a temporary home of their own.",
+        "content": "",
+        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/07/08-07-2026-UNDP-Gaza-06.jpg/image560x340cropped.jpg",
+        "categories": []
+      },
       {
         "title": "Thai youth leaders push for inclusion, partnership and lasting change",
         "link": "https://news.un.org/feed/view/en/story/2026/07/1167917",
@@ -296,56 +292,6 @@
         "description": "After thousands of buildings were destroyed in the Gaza Strip during the Israel-Hamas war, local teams and civil defense personnel continue the arduous and delicate mission to remove rubble and search for the remains of missing persons believed to still be buried under the debris of homes destroyed by Israeli airstrikes.",
         "content": "",
         "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/07/09-07-2026_UNNews_Gaza_Rubble_02.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "World News in Brief: UN spotlights education aid solution, Sri Lanka prison violence, humanitarian aid to Venezuela",
-        "link": "https://news.un.org/feed/view/en/story/2026/07/1167918",
-        "guid": "https://news.un.org/en/story/2026/07/1167918",
-        "pubDate": "Fri, 10 Jul 2026 12:00:00 +0000",
-        "description": "The UN Educational, Scientific and Cultural Organization (UNESCO) urged international lenders to expand debt-for-education swaps, warning in a Friday report that many developing countries are spending more on debt servicing than on schooling their children.&nbsp;",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/29-06-2026-UNICEF-Madagascar.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "South Sudan: UN acts ahead of drought to protect thousands",
-        "link": "https://news.un.org/feed/view/en/story/2026/07/1167915",
-        "guid": "https://news.un.org/en/story/2026/07/1167915",
-        "pubDate": "Fri, 10 Jul 2026 12:00:00 +0000",
-        "description": "As drought risk intensifies in South Sudan’s Eastern Equatoria state, a new UN-backed plan aims to protect thousands of people before the worst impacts take hold.&nbsp;",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/07/10-07-2026-WFP-South-Sudan-01.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Security Council LIVE: ‘Lost continuity of knowledge’ on Iran’s nuclear programme since US-Israel attacks, top UN official warns",
-        "link": "https://news.un.org/feed/view/en/story/2026/07/1167914",
-        "guid": "https://news.un.org/en/story/2026/07/1167914",
-        "pubDate": "Fri, 10 Jul 2026 12:00:00 +0000",
-        "description": "Since the United States and Israel launched attacks on Iran in late February, there has been a “lost continuity of knowledge” on Tehran’s nuclear programme, Rosemary DiCarlo, the UN peace affairs chief, warned the Security Council on Friday as tensions mounted amid new strikes across the Middle East.",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/29-04-2026-IRCS-Iran-Tehran-01.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "New cholera outbreak alert for Sudan’s war-weary communities",
-        "link": "https://news.un.org/feed/view/en/story/2026/07/1167913",
-        "guid": "https://news.un.org/en/story/2026/07/1167913",
-        "pubDate": "Fri, 10 Jul 2026 12:00:00 +0000",
-        "description": "In war-torn Sudan, a deadly new cholera outbreak has already claimed more than 100 lives, heightening serious concerns for vulnerable communities including in besieged El-Obeid, where daily drone attacks have continued to hamper aid access.&nbsp;",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/14-05-2026-UNOCHA-Sudan-03.jpg/image560x340cropped.jpg",
-        "categories": []
-      },
-      {
-        "title": "Aid cuts leave at least one million women and girls without vital support",
-        "link": "https://news.un.org/feed/view/en/story/2026/07/1167908",
-        "guid": "https://news.un.org/en/story/2026/07/1167908",
-        "pubDate": "Fri, 10 Jul 2026 12:00:00 +0000",
-        "description": "At least one million women and girls have lost access to critical humanitarian support since January 2025 as unprecedented aid cuts push women&#039;s organizations in crisis zones to the brink of collapse, the UN’s gender equality agency, UN Women, said on Friday.&nbsp;",
-        "content": "",
-        "feedImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/20-05-2025-UNICEF-Afghanistan.jpg/image560x340cropped.jpg",
         "categories": []
       }
     ],
